@@ -5,3 +5,6 @@
  * the mobile app).
  */
 export const SITE_URL = "https://readability.bible";
+
+/** The public source repository (AGPL-3.0-or-later). */
+export const GITHUB_URL = "https://github.com/troha708/readability";

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Logo } from "@/components/logo";
 import { SiteFooter } from "@/components/site-footer";
+import { GITHUB_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "About",
@@ -69,7 +70,11 @@ export default function AboutPage() {
           </p>
           <p>
             The app is currently built and maintained by one developer in New
-            Zealand.
+            Zealand. The code is open source under the AGPL —{" "}
+            <a className={link} href={GITHUB_URL}>
+              github.com/troha708/readability
+            </a>
+            .
           </p>
           <p>
             The goal is one intuitive app that brings you closer to

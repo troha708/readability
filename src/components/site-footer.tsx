@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { GITHUB_URL } from "@/lib/site";
 
 export function SiteFooter({ className = "" }: { className?: string }) {
   return (
@@ -31,6 +32,9 @@ export function SiteFooter({ className = "" }: { className?: string }) {
         <Link href="/credits" className="underline hover:text-neutral-600 dark:hover:text-neutral-400">
           Credits
         </Link>
+        <a href={GITHUB_URL} className="underline hover:text-neutral-600 dark:hover:text-neutral-400">
+          GitHub
+        </a>
         <a href="mailto:readablebibleapp@gmail.com" className="underline hover:text-neutral-600 dark:hover:text-neutral-400">
           Contact
         </a>
