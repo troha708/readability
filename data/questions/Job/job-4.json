@@ -1,0 +1,53 @@
+{
+  "book": "Job",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "job-4-q1",
+      "type": "multiple_choice",
+      "question": "Which friend speaks first?",
+      "options": [
+        "Bildad the Shuhite",
+        "Eliphaz the Temanite",
+        "Elihu the Buzite",
+        "Zophar the Naamathite"
+      ],
+      "answer": "Eliphaz the Temanite",
+      "verse_reference": "Job 4:1"
+    },
+    {
+      "id": "job-4-q2",
+      "type": "multiple_choice",
+      "question": "What did Eliphaz claim about the innocent?",
+      "options": [
+        "Even the upright are swept away in the wrath of God",
+        "The innocent suffer just as much as all of the guilty",
+        "No one on the whole wide earth is truly innocent before God",
+        "The innocent do not perish; the upright are not cut off"
+      ],
+      "answer": "The innocent do not perish; the upright are not cut off",
+      "verse_reference": "Job 4:7"
+    },
+    {
+      "id": "job-4-q3",
+      "type": "true_false",
+      "question": "Eliphaz described a frightening night vision in which a spirit passed before his face.",
+      "answer": "true",
+      "verse_reference": "Job 4:15"
+    },
+    {
+      "id": "job-4-q4",
+      "type": "fill_blank",
+      "question": "Eliphaz asked, 'Can mortal man be in the right before _____?'",
+      "answer": "God",
+      "verse_reference": "Job 4:17"
+    },
+    {
+      "id": "job-4-q5",
+      "type": "fill_blank",
+      "question": "Eliphaz said those who plow iniquity and sow trouble _____ the same.",
+      "answer": "reap",
+      "verse_reference": "Job 4:8"
+    }
+  ]
+}

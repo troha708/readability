@@ -1,0 +1,53 @@
+{
+  "book": "Numbers",
+  "chapter": 17,
+  "questions": [
+    {
+      "id": "numbers-17-q1",
+      "type": "multiple_choice",
+      "question": "How did God confirm that Aaron was his chosen priest?",
+      "options": [
+        "A voice from heaven named Aaron aloud",
+        "A fire fell and marked Aaron's tent",
+        "A bright shining cloud rested over Aaron alone",
+        "Aaron's staff budded and produced almonds"
+      ],
+      "answer": "Aaron's staff budded and produced almonds",
+      "verse_reference": "Numbers 17:8"
+    },
+    {
+      "id": "numbers-17-q2",
+      "type": "multiple_choice",
+      "question": "What did each leader bring to be tested before the LORD?",
+      "options": [
+        "A staff (rod) with his name",
+        "A lamb for the morning sacrifice",
+        "A bar of gold from his tribe",
+        "A young bull for the offering"
+      ],
+      "answer": "A staff (rod) with his name",
+      "verse_reference": "Numbers 17:2"
+    },
+    {
+      "id": "numbers-17-q3",
+      "type": "true_false",
+      "question": "Aaron's staff was kept before the ark as a sign to the rebels.",
+      "answer": "true",
+      "verse_reference": "Numbers 17:10"
+    },
+    {
+      "id": "numbers-17-q4",
+      "type": "fill_blank",
+      "question": "Aaron's rod budded, blossomed, and produced ripe _____.",
+      "answer": "almonds",
+      "verse_reference": "Numbers 17:8"
+    },
+    {
+      "id": "numbers-17-q5",
+      "type": "fill_blank",
+      "question": "Twelve rods were placed before the LORD, one for each _____.",
+      "answer": "tribe",
+      "verse_reference": "Numbers 17:2"
+    }
+  ]
+}

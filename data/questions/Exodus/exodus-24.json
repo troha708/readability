@@ -1,0 +1,53 @@
+{
+  "book": "Exodus",
+  "chapter": 24,
+  "questions": [
+    {
+      "id": "exodus-24-q1",
+      "type": "multiple_choice",
+      "question": "How did Moses confirm the covenant with the people?",
+      "options": [
+        "By writing it on a scroll and sealing it",
+        "By a solemn handshake before the elders",
+        "By sprinkling the blood of the covenant",
+        "By sharing a meal on the mountainside"
+      ],
+      "answer": "By sprinkling the blood of the covenant",
+      "verse_reference": "Exodus 24:8"
+    },
+    {
+      "id": "exodus-24-q2",
+      "type": "multiple_choice",
+      "question": "What happened when Moses went up the mountain to God?",
+      "options": [
+        "The glory of the LORD settled, and he stayed forty days and nights",
+        "A cloud hid him while the elders waited at the foot below",
+        "A violent and terrible storm forced him back down before he reached the very top",
+        "He spoke with God briefly and returned that same evening"
+      ],
+      "answer": "The glory of the LORD settled, and he stayed forty days and nights",
+      "verse_reference": "Exodus 24:16-18"
+    },
+    {
+      "id": "exodus-24-q3",
+      "type": "true_false",
+      "question": "The people promised, \"All that the LORD has spoken we will do.\"",
+      "answer": "true",
+      "verse_reference": "Exodus 24:3"
+    },
+    {
+      "id": "exodus-24-q4",
+      "type": "fill_blank",
+      "question": "Moses read the Book of the _____ aloud to the people.",
+      "answer": "Covenant",
+      "verse_reference": "Exodus 24:7"
+    },
+    {
+      "id": "exodus-24-q5",
+      "type": "fill_blank",
+      "question": "Moses was on the mountain for forty days and forty _____.",
+      "answer": "nights",
+      "verse_reference": "Exodus 24:18"
+    }
+  ]
+}

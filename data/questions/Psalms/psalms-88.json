@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 88,
+  "questions": [
+    {
+      "id": "psalms-88-q1",
+      "type": "multiple_choice",
+      "question": "What is distinctive about the tone of Psalm 88?",
+      "options": [
+        "It is a wisdom psalm about the two very different paths of life",
+        "It is a joyful hymn of thanksgiving for a great deliverance",
+        "It is one of the darkest laments, ending without resolution",
+        "It is a royal psalm written for the coronation of the king"
+      ],
+      "answer": "It is one of the darkest laments, ending without resolution",
+      "verse_reference": "Psalm 88:3-7"
+    },
+    {
+      "id": "psalms-88-q2",
+      "type": "multiple_choice",
+      "question": "How does the psalmist describe his condition?",
+      "options": [
+        "His soul is full of troubles and his life draws near to Sheol",
+        "His barns are full to the brim and his cup overflows with plenty",
+        "His enemies are all scattered abroad and his foes are put to flight",
+        "His heart is exceedingly glad and his tongue rejoices in the LORD"
+      ],
+      "answer": "His soul is full of troubles and his life draws near to Sheol",
+      "verse_reference": "Psalm 88:3"
+    },
+    {
+      "id": "psalms-88-q3",
+      "type": "true_false",
+      "question": "The psalmist cries out to God day and night.",
+      "answer": "true",
+      "verse_reference": "Psalm 88:1"
+    },
+    {
+      "id": "psalms-88-q4",
+      "type": "fill_blank",
+      "question": "O LORD, God of my salvation, I cry out day and _____ before you.",
+      "answer": "night",
+      "verse_reference": "Psalm 88:1"
+    },
+    {
+      "id": "psalms-88-q5",
+      "type": "fill_blank",
+      "question": "You have caused my beloved and my friend to shun me; my companions have become _____.",
+      "answer": "darkness",
+      "verse_reference": "Psalm 88:18"
+    }
+  ]
+}

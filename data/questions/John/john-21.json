@@ -1,0 +1,58 @@
+{
+  "book": "John",
+  "chapter": 21,
+  "questions": [
+    {
+      "id": "john-21-q1",
+      "type": "multiple_choice",
+      "question": "Where did Jesus appear to his disciples for the third time after his resurrection?",
+      "options": [
+        "By the Sea of Tiberias",
+        "On the Mount of Olives",
+        "In Bethany",
+        "In Jerusalem"
+      ],
+      "answer": "By the Sea of Tiberias",
+      "verse_reference": "John 21:1"
+    },
+    {
+      "id": "john-21-q2",
+      "type": "multiple_choice",
+      "question": "How many times did Jesus ask Peter 'Do you love me?'",
+      "options": [
+        "A full four times",
+        "Twice",
+        "Three times",
+        "Four times"
+      ],
+      "answer": "Three times",
+      "verse_reference": "John 21:15-17"
+    },
+    {
+      "id": "john-21-q3",
+      "type": "true_false",
+      "question": "The disciples caught no fish all night until Jesus told them to cast the net on the right side of the boat.",
+      "answer": "true",
+      "verse_reference": "John 21:3-6"
+    },
+    {
+      "id": "john-21-q4",
+      "type": "fill_blank",
+      "question": "Jesus said to Simon Peter, 'Feed my _____.'",
+      "answer": "sheep",
+      "verse_reference": "John 21:17"
+    },
+    {
+      "id": "john-21-q5",
+      "type": "fill_blank",
+      "question": "They caught a large number of fish — one hundred and _____-three — yet the net was not torn.",
+      "answer": "fifty",
+      "accept": [
+        "50",
+        "fifty-three",
+        "153"
+      ],
+      "verse_reference": "John 21:11"
+    }
+  ]
+}

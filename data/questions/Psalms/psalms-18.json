@@ -1,0 +1,57 @@
+{
+  "book": "Psalms",
+  "chapter": 18,
+  "questions": [
+    {
+      "id": "psalms-18-q1",
+      "type": "multiple_choice",
+      "question": "What occasion is Psalm 18 connected to?",
+      "options": [
+        "The day that David defeated Goliath the great Philistine warrior",
+        "The day the LORD delivered David from his enemies and from Saul",
+        "The day that David brought the ark of God up into Jerusalem",
+        "The day that David was anointed to be king over all of Israel"
+      ],
+      "answer": "The day the LORD delivered David from his enemies and from Saul",
+      "verse_reference": "Psalm 18:title"
+    },
+    {
+      "id": "psalms-18-q2",
+      "type": "multiple_choice",
+      "question": "How does David begin this psalm?",
+      "options": [
+        "'Give thanks to the LORD, for he is good'",
+        "'I love you, O LORD, my strength'",
+        "'How majestic is your name in all the earth'",
+        "'Bless the LORD, O my soul, and all within me'"
+      ],
+      "answer": "'I love you, O LORD, my strength'",
+      "verse_reference": "Psalm 18:1"
+    },
+    {
+      "id": "psalms-18-q3",
+      "type": "true_false",
+      "question": "David calls the LORD his rock, fortress, and deliverer.",
+      "answer": "true",
+      "verse_reference": "Psalm 18:2"
+    },
+    {
+      "id": "psalms-18-q4",
+      "type": "fill_blank",
+      "question": "The LORD is my rock and my fortress and my _____.",
+      "answer": "deliverer",
+      "verse_reference": "Psalm 18:2"
+    },
+    {
+      "id": "psalms-18-q5",
+      "type": "fill_blank",
+      "question": "This God, his way is perfect; the word of the LORD is _____.",
+      "answer": "flawless",
+      "accept": [
+        "true",
+        "tried"
+      ],
+      "verse_reference": "Psalm 18:30"
+    }
+  ]
+}

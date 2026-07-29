@@ -1,0 +1,53 @@
+{
+  "book": "Exodus",
+  "chapter": 33,
+  "questions": [
+    {
+      "id": "exodus-33-q1",
+      "type": "multiple_choice",
+      "question": "What did Moses ask God to show him?",
+      "options": [
+        "His glory",
+        "The promised land",
+        "The future",
+        "An angel"
+      ],
+      "answer": "His glory",
+      "verse_reference": "Exodus 33:18"
+    },
+    {
+      "id": "exodus-33-q2",
+      "type": "multiple_choice",
+      "question": "How did the LORD speak with Moses at the tent of meeting?",
+      "options": [
+        "Face to face, as one speaks to a friend",
+        "Only through visions in the night",
+        "Through Aaron, who relayed all of his words",
+        "In thunder, as on the mountaintop"
+      ],
+      "answer": "Face to face, as one speaks to a friend",
+      "verse_reference": "Exodus 33:11"
+    },
+    {
+      "id": "exodus-33-q3",
+      "type": "true_false",
+      "question": "God told Moses that no one could see his face and live.",
+      "answer": "true",
+      "verse_reference": "Exodus 33:20"
+    },
+    {
+      "id": "exodus-33-q4",
+      "type": "fill_blank",
+      "question": "God said, \"My _____ will go with you, and I will give you rest.\"",
+      "answer": "presence",
+      "verse_reference": "Exodus 33:14"
+    },
+    {
+      "id": "exodus-33-q5",
+      "type": "fill_blank",
+      "question": "God placed Moses in a cleft of the _____ and covered him as his glory passed by.",
+      "answer": "rock",
+      "verse_reference": "Exodus 33:22"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Deuteronomy",
+  "chapter": 30,
+  "questions": [
+    {
+      "id": "deuteronomy-30-q1",
+      "type": "multiple_choice",
+      "question": "What choice did Moses set before Israel?",
+      "options": [
+        "Life and good, or death and evil",
+        "The hill country or the open plains",
+        "War with the nations or peace",
+        "One king or many judges"
+      ],
+      "answer": "Life and good, or death and evil",
+      "verse_reference": "Deuteronomy 30:15-19"
+    },
+    {
+      "id": "deuteronomy-30-q2",
+      "type": "multiple_choice",
+      "question": "What did Moses urge them to choose?",
+      "options": [
+        "Life, so they and their descendants might live",
+        "Death, the path most nations chose",
+        "Wealth, to enrich all of the coming generations",
+        "Power, to rule over their enemies"
+      ],
+      "answer": "Life, so they and their descendants might live",
+      "verse_reference": "Deuteronomy 30:19"
+    },
+    {
+      "id": "deuteronomy-30-q3",
+      "type": "true_false",
+      "question": "Moses said the commandment was not too hard or far off, but near them.",
+      "answer": "true",
+      "verse_reference": "Deuteronomy 30:11-14"
+    },
+    {
+      "id": "deuteronomy-30-q4",
+      "type": "fill_blank",
+      "question": "\"I have set before you life and death... therefore choose _____.\"",
+      "answer": "life",
+      "verse_reference": "Deuteronomy 30:19"
+    },
+    {
+      "id": "deuteronomy-30-q5",
+      "type": "fill_blank",
+      "question": "The word is very near you, in your mouth and in your _____, so you can do it.",
+      "answer": "heart",
+      "verse_reference": "Deuteronomy 30:14"
+    }
+  ]
+}

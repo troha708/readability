@@ -1,0 +1,53 @@
+{
+  "book": "Judges",
+  "chapter": 6,
+  "questions": [
+    {
+      "id": "judges-6-q1",
+      "type": "multiple_choice",
+      "question": "Who oppressed Israel before Gideon, destroying their crops?",
+      "options": [
+        "The Ammonites",
+        "The Moabites",
+        "The Midianites",
+        "The Philistines"
+      ],
+      "answer": "The Midianites",
+      "verse_reference": "Judges 6:1-6"
+    },
+    {
+      "id": "judges-6-q2",
+      "type": "multiple_choice",
+      "question": "How did Gideon test God's promise twice?",
+      "options": [
+        "With fire that fell down from heaven",
+        "With a sacrifice on the altar",
+        "With a fleece of wool and the dew",
+        "With a dream sent in the night"
+      ],
+      "answer": "With a fleece of wool and the dew",
+      "verse_reference": "Judges 6:36-40"
+    },
+    {
+      "id": "judges-6-q3",
+      "type": "true_false",
+      "question": "The angel of the LORD called Gideon a \"mighty man of valor.\"",
+      "answer": "true",
+      "verse_reference": "Judges 6:12"
+    },
+    {
+      "id": "judges-6-q4",
+      "type": "fill_blank",
+      "question": "Gideon tore down his father's altar to _____ and built one to the LORD.",
+      "answer": "Baal",
+      "verse_reference": "Judges 6:25-27"
+    },
+    {
+      "id": "judges-6-q5",
+      "type": "fill_blank",
+      "question": "Gideon asked for a sign using a _____ of wool and the dew.",
+      "answer": "fleece",
+      "verse_reference": "Judges 6:37"
+    }
+  ]
+}

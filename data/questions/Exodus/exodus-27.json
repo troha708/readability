@@ -1,0 +1,57 @@
+{
+  "book": "Exodus",
+  "chapter": 27,
+  "questions": [
+    {
+      "id": "exodus-27-q1",
+      "type": "multiple_choice",
+      "question": "What was to be made of bronze for sacrifices in the courtyard?",
+      "options": [
+        "The altar of burnt offering",
+        "The ark of the testimony",
+        "The golden lampstand",
+        "The table of showbread"
+      ],
+      "answer": "The altar of burnt offering",
+      "verse_reference": "Exodus 27:1-2"
+    },
+    {
+      "id": "exodus-27-q2",
+      "type": "multiple_choice",
+      "question": "What was to be kept burning in the tabernacle?",
+      "options": [
+        "Incense only",
+        "A lamp",
+        "A fire on the ground",
+        "Nothing"
+      ],
+      "answer": "A lamp",
+      "verse_reference": "Exodus 27:20-21"
+    },
+    {
+      "id": "exodus-27-q3",
+      "type": "true_false",
+      "question": "The courtyard of the tabernacle was enclosed with linen hangings.",
+      "answer": "true",
+      "verse_reference": "Exodus 27:9"
+    },
+    {
+      "id": "exodus-27-q4",
+      "type": "fill_blank",
+      "question": "The people were to bring pure olive _____ to keep the lamp burning.",
+      "answer": "oil",
+      "verse_reference": "Exodus 27:20"
+    },
+    {
+      "id": "exodus-27-q5",
+      "type": "fill_blank",
+      "question": "The altar of burnt offering was made of acacia wood overlaid with _____.",
+      "answer": "bronze",
+      "accept": [
+        "brass",
+        "copper"
+      ],
+      "verse_reference": "Exodus 27:2"
+    }
+  ]
+}

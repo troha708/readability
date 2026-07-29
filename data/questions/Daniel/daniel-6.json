@@ -1,0 +1,53 @@
+{
+  "book": "Daniel",
+  "chapter": 6,
+  "questions": [
+    {
+      "id": "daniel-6-q1",
+      "type": "multiple_choice",
+      "question": "What law did the officials trick Darius into making to trap Daniel?",
+      "options": [
+        "That no one at all could leave the high walls of the city after dark",
+        "That no one could do any work at all on the special day set apart for the king",
+        "That no one could pray to any god or man except the king for thirty days",
+        "That no one could eat any meat or drink any wine for a full month"
+      ],
+      "answer": "That no one could pray to any god or man except the king for thirty days",
+      "verse_reference": "Daniel 6:7"
+    },
+    {
+      "id": "daniel-6-q2",
+      "type": "multiple_choice",
+      "question": "What happened when Daniel was thrown into the lions' den?",
+      "options": [
+        "God sent his angel and shut the lions' mouths",
+        "A great storm scattered the beasts in fear",
+        "The lions had already been fed and slept",
+        "The king's soldiers drove the lions away"
+      ],
+      "answer": "God sent his angel and shut the lions' mouths",
+      "verse_reference": "Daniel 6:22"
+    },
+    {
+      "id": "daniel-6-q3",
+      "type": "true_false",
+      "question": "Daniel continued to pray toward Jerusalem three times a day despite the decree.",
+      "answer": "true",
+      "verse_reference": "Daniel 6:10"
+    },
+    {
+      "id": "daniel-6-q4",
+      "type": "fill_blank",
+      "question": "My God sent his angel and shut the lions' _____.",
+      "answer": "mouths",
+      "verse_reference": "Daniel 6:22"
+    },
+    {
+      "id": "daniel-6-q5",
+      "type": "fill_blank",
+      "question": "Daniel prayed at his open windows three times a day, facing _____.",
+      "answer": "Jerusalem",
+      "verse_reference": "Daniel 6:10"
+    }
+  ]
+}

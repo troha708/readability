@@ -1,0 +1,53 @@
+{
+  "book": "Jeremiah",
+  "chapter": 45,
+  "questions": [
+    {
+      "id": "jeremiah-45-q1",
+      "type": "multiple_choice",
+      "question": "To whom is the short word of chapter 45 addressed?",
+      "options": [
+        "Ishmael the prince",
+        "Zedekiah the king",
+        "Gedaliah the governor",
+        "Baruch the scribe"
+      ],
+      "answer": "Baruch the scribe",
+      "verse_reference": "Jeremiah 45:1"
+    },
+    {
+      "id": "jeremiah-45-q2",
+      "type": "multiple_choice",
+      "question": "What did God tell Baruch not to do?",
+      "options": [
+        "Write any more of the prophet's words",
+        "Return to the city of Jerusalem",
+        "Seek great things for himself",
+        "Flee with the people to Egypt"
+      ],
+      "answer": "Seek great things for himself",
+      "verse_reference": "Jeremiah 45:5"
+    },
+    {
+      "id": "jeremiah-45-q3",
+      "type": "true_false",
+      "question": "God promised Baruch his life as a prize of war wherever he went.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 45:5"
+    },
+    {
+      "id": "jeremiah-45-q4",
+      "type": "fill_blank",
+      "question": "Do you seek _____ things for yourself? Seek them not, says the LORD.",
+      "answer": "great",
+      "verse_reference": "Jeremiah 45:5"
+    },
+    {
+      "id": "jeremiah-45-q5",
+      "type": "fill_blank",
+      "question": "I will give you your _____ as a prize of war in all places to which you may go.",
+      "answer": "life",
+      "verse_reference": "Jeremiah 45:5"
+    }
+  ]
+}

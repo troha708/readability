@@ -1,0 +1,53 @@
+{
+  "book": "Esther",
+  "chapter": 7,
+  "questions": [
+    {
+      "id": "esther-7-q1",
+      "type": "multiple_choice",
+      "question": "What did Esther reveal at the second banquet?",
+      "options": [
+        "That Haman planned to destroy her people",
+        "Only the name of her Jewish family",
+        "A secret plan to defend the whole kingdom",
+        "The full extent of her royal wealth"
+      ],
+      "answer": "That Haman planned to destroy her people",
+      "verse_reference": "Esther 7:3-6"
+    },
+    {
+      "id": "esther-7-q2",
+      "type": "multiple_choice",
+      "question": "What happened to Haman?",
+      "options": [
+        "He fled away from the palace out into the dark night",
+        "He was sent away into exile in a land far away",
+        "He was pardoned by the king and kept his high office",
+        "He was hanged on the gallows he made for Mordecai"
+      ],
+      "answer": "He was hanged on the gallows he made for Mordecai",
+      "verse_reference": "Esther 7:10"
+    },
+    {
+      "id": "esther-7-q3",
+      "type": "true_false",
+      "question": "Esther identified Haman as the wicked enemy.",
+      "answer": "true",
+      "verse_reference": "Esther 7:6"
+    },
+    {
+      "id": "esther-7-q4",
+      "type": "fill_blank",
+      "question": "The king was enraged and went into the palace _____.",
+      "answer": "garden",
+      "verse_reference": "Esther 7:7"
+    },
+    {
+      "id": "esther-7-q5",
+      "type": "fill_blank",
+      "question": "Harbona pointed out the gallows Haman had prepared for _____.",
+      "answer": "Mordecai",
+      "verse_reference": "Esther 7:9"
+    }
+  ]
+}

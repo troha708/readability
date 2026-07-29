@@ -1,0 +1,56 @@
+{
+  "book": "Psalms",
+  "chapter": 16,
+  "questions": [
+    {
+      "id": "psalms-16-q1",
+      "type": "multiple_choice",
+      "question": "What does David call God in Psalm 16?",
+      "options": [
+        "His shepherd and his guide",
+        "His fortress and his high tower",
+        "His banner and his shield",
+        "His chosen portion and his cup"
+      ],
+      "answer": "His chosen portion and his cup",
+      "verse_reference": "Psalm 16:5"
+    },
+    {
+      "id": "psalms-16-q2",
+      "type": "multiple_choice",
+      "question": "What confidence does David express about death?",
+      "options": [
+        "Death is the very final end of all the living, both the great and the small",
+        "He alone of all the men on earth will never once taste death at all",
+        "God will not abandon his soul to Sheol or let his holy one see corruption",
+        "The grave will hold him fast and firm until the whole world is renewed"
+      ],
+      "answer": "God will not abandon his soul to Sheol or let his holy one see corruption",
+      "verse_reference": "Psalm 16:10"
+    },
+    {
+      "id": "psalms-16-q3",
+      "type": "true_false",
+      "question": "David says he has set the LORD always before him; he shall not be shaken.",
+      "answer": "true",
+      "verse_reference": "Psalm 16:8"
+    },
+    {
+      "id": "psalms-16-q4",
+      "type": "fill_blank",
+      "question": "Preserve me, O God, for in you I take _____.",
+      "answer": "refuge",
+      "accept": [
+        "trust"
+      ],
+      "verse_reference": "Psalm 16:1"
+    },
+    {
+      "id": "psalms-16-q5",
+      "type": "fill_blank",
+      "question": "You make known to me the path of life; in your presence is fullness of _____.",
+      "answer": "joy",
+      "verse_reference": "Psalm 16:11"
+    }
+  ]
+}

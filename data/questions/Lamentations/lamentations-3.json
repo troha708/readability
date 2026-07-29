@@ -1,0 +1,56 @@
+{
+  "book": "Lamentations",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "lamentations-3-q1",
+      "type": "multiple_choice",
+      "question": "What famous statement of hope appears in the middle of Lamentations 3?",
+      "options": [
+        "Our days are filled with weeping, and there is no comfort to be found",
+        "The LORD has cast off his people and remembers them no more for ever",
+        "The steadfast love of the LORD never ceases; his mercies are new every morning",
+        "The crown has fallen from our head; woe to us, for we have sinned greatly"
+      ],
+      "answer": "The steadfast love of the LORD never ceases; his mercies are new every morning",
+      "verse_reference": "Lamentations 3:22-23"
+    },
+    {
+      "id": "lamentations-3-q2",
+      "type": "multiple_choice",
+      "question": "What does the poet call great in Lamentations 3?",
+      "options": [
+        "His sorrow",
+        "God's faithfulness",
+        "The city",
+        "His many cruel enemies"
+      ],
+      "answer": "God's faithfulness",
+      "verse_reference": "Lamentations 3:23"
+    },
+    {
+      "id": "lamentations-3-q3",
+      "type": "true_false",
+      "question": "Lamentations 3 says it is good that a man should wait quietly for the salvation of the LORD.",
+      "answer": "true",
+      "verse_reference": "Lamentations 3:26"
+    },
+    {
+      "id": "lamentations-3-q4",
+      "type": "fill_blank",
+      "question": "The steadfast love of the LORD never ceases; his _____ never come to an end.",
+      "answer": "mercies",
+      "accept": [
+        "compassions"
+      ],
+      "verse_reference": "Lamentations 3:22"
+    },
+    {
+      "id": "lamentations-3-q5",
+      "type": "fill_blank",
+      "question": "They are new every morning; great is your _____.",
+      "answer": "faithfulness",
+      "verse_reference": "Lamentations 3:23"
+    }
+  ]
+}

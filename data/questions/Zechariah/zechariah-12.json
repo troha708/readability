@@ -1,0 +1,53 @@
+{
+  "book": "Zechariah",
+  "chapter": 12,
+  "questions": [
+    {
+      "id": "zechariah-12-q1",
+      "type": "multiple_choice",
+      "question": "What does Zechariah 12 say God will make Jerusalem to the surrounding peoples?",
+      "options": [
+        "A burning lamp and a shining crown",
+        "A refreshing spring and a fruitful vine",
+        "A cup of staggering and a heavy stone",
+        "A strong tower and a sheltering rock"
+      ],
+      "answer": "A cup of staggering and a heavy stone",
+      "verse_reference": "Zechariah 12:2-3"
+    },
+    {
+      "id": "zechariah-12-q2",
+      "type": "multiple_choice",
+      "question": "What striking prophecy about mourning appears in Zechariah 12?",
+      "options": [
+        "They will rebuild the temple in glory",
+        "They will be scattered among the peoples",
+        "They will rise up and drive out all of the nations",
+        "They will look on him whom they pierced and mourn"
+      ],
+      "answer": "They will look on him whom they pierced and mourn",
+      "verse_reference": "Zechariah 12:10"
+    },
+    {
+      "id": "zechariah-12-q3",
+      "type": "true_false",
+      "question": "Zechariah 12 says God will pour out a spirit of grace and pleas for mercy on the house of David.",
+      "answer": "true",
+      "verse_reference": "Zechariah 12:10"
+    },
+    {
+      "id": "zechariah-12-q4",
+      "type": "fill_blank",
+      "question": "They will look on me, on him whom they have _____, and they shall mourn.",
+      "answer": "pierced",
+      "verse_reference": "Zechariah 12:10"
+    },
+    {
+      "id": "zechariah-12-q5",
+      "type": "fill_blank",
+      "question": "I will make Jerusalem a heavy _____ for all the peoples.",
+      "answer": "stone",
+      "verse_reference": "Zechariah 12:3"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "book": "Esther",
+  "chapter": 9,
+  "questions": [
+    {
+      "id": "esther-9-q1",
+      "type": "multiple_choice",
+      "question": "What happened on the day the enemies hoped to destroy the Jews?",
+      "options": [
+        "Both sides agreed to make peace and laid down their arms",
+        "The Jews were scattered abroad to all of the far provinces",
+        "The reverse occurred and the Jews overcame their enemies",
+        "The king himself stepped in and stopped all of the fighting"
+      ],
+      "answer": "The reverse occurred and the Jews overcame their enemies",
+      "verse_reference": "Esther 9:1"
+    },
+    {
+      "id": "esther-9-q2",
+      "type": "multiple_choice",
+      "question": "What feast was established to remember these days?",
+      "options": [
+        "Booths",
+        "Pentecost",
+        "Passover",
+        "Purim"
+      ],
+      "answer": "Purim",
+      "verse_reference": "Esther 9:26"
+    },
+    {
+      "id": "esther-9-q3",
+      "type": "true_false",
+      "question": "Haman's ten sons were also put to death.",
+      "answer": "true",
+      "verse_reference": "Esther 9:10"
+    },
+    {
+      "id": "esther-9-q4",
+      "type": "fill_blank",
+      "question": "Purim is named from 'Pur,' which means _____.",
+      "answer": "lot",
+      "verse_reference": "Esther 9:24-26"
+    },
+    {
+      "id": "esther-9-q5",
+      "type": "fill_blank",
+      "question": "The days of Purim were to be days of feasting, gladness, and sending gifts to the _____.",
+      "answer": "poor",
+      "accept": [
+        "needy"
+      ],
+      "verse_reference": "Esther 9:22"
+    }
+  ]
+}

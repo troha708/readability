@@ -1,0 +1,56 @@
+{
+  "book": "1 Samuel",
+  "chapter": 15,
+  "questions": [
+    {
+      "id": "1-samuel-15-q1",
+      "type": "multiple_choice",
+      "question": "What command did Saul fail to fully obey concerning the Amalekites?",
+      "options": [
+        "To drive them beyond the Jordan",
+        "To carry off only their silver",
+        "To make a treaty with their king",
+        "To destroy them completely"
+      ],
+      "answer": "To destroy them completely",
+      "verse_reference": "1 Samuel 15:3-9"
+    },
+    {
+      "id": "1-samuel-15-q2",
+      "type": "multiple_choice",
+      "question": "What did Samuel say God desires more than sacrifice?",
+      "options": [
+        "Many offerings",
+        "Fasting",
+        "To obey",
+        "Wealth"
+      ],
+      "answer": "To obey",
+      "verse_reference": "1 Samuel 15:22"
+    },
+    {
+      "id": "1-samuel-15-q3",
+      "type": "true_false",
+      "question": "Because Saul rejected God's word, God rejected him as king.",
+      "answer": "true",
+      "verse_reference": "1 Samuel 15:23-26"
+    },
+    {
+      "id": "1-samuel-15-q4",
+      "type": "fill_blank",
+      "question": "Behold, _____ is better than sacrifice, and attentiveness is better than the fat of rams.",
+      "answer": "obedience",
+      "accept": [
+        "obey"
+      ],
+      "verse_reference": "1 Samuel 15:22"
+    },
+    {
+      "id": "1-samuel-15-q5",
+      "type": "fill_blank",
+      "question": "Saul spared King _____ and the best of the livestock, disobeying God.",
+      "answer": "Agag",
+      "verse_reference": "1 Samuel 15:9"
+    }
+  ]
+}

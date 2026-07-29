@@ -1,0 +1,56 @@
+{
+  "book": "Luke",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "luke-1-q1",
+      "type": "multiple_choice",
+      "question": "Who appeared to Zechariah in the temple to announce the birth of John?",
+      "options": [
+        "Michael",
+        "Gabriel",
+        "Raphael",
+        "Uriel"
+      ],
+      "answer": "Gabriel",
+      "verse_reference": "Luke 1:19"
+    },
+    {
+      "id": "luke-1-q2",
+      "type": "multiple_choice",
+      "question": "What happened to Zechariah because he did not believe the angel's message?",
+      "options": [
+        "He went blind",
+        "He fell ill",
+        "He was sent away",
+        "He became mute"
+      ],
+      "answer": "He became mute",
+      "verse_reference": "Luke 1:20"
+    },
+    {
+      "id": "luke-1-q3",
+      "type": "true_false",
+      "question": "Mary visited Elizabeth after learning she was to be the mother of Jesus.",
+      "answer": "true",
+      "verse_reference": "Luke 1:39-40"
+    },
+    {
+      "id": "luke-1-q4",
+      "type": "fill_blank",
+      "question": "No word from God will ever _____.",
+      "answer": "fail",
+      "verse_reference": "Luke 1:37"
+    },
+    {
+      "id": "luke-1-q5",
+      "type": "fill_blank",
+      "question": "My soul magnifies the Lord. My spirit has rejoiced in God my _____.",
+      "answer": "Savior",
+      "accept": [
+        "Saviour"
+      ],
+      "verse_reference": "Luke 1:46-47"
+    }
+  ]
+}

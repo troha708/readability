@@ -1,0 +1,53 @@
+{
+  "book": "Judges",
+  "chapter": 18,
+  "questions": [
+    {
+      "id": "judges-18-q1",
+      "type": "multiple_choice",
+      "question": "Which tribe took Micah's idols and priest while seeking land?",
+      "options": [
+        "Dan",
+        "Judah",
+        "Levi",
+        "Gad"
+      ],
+      "answer": "Dan",
+      "verse_reference": "Judges 18:18-20"
+    },
+    {
+      "id": "judges-18-q2",
+      "type": "multiple_choice",
+      "question": "What city did the Danites capture and rename Dan?",
+      "options": [
+        "Hebron",
+        "Shechem",
+        "Laish",
+        "Bethel"
+      ],
+      "answer": "Laish",
+      "verse_reference": "Judges 18:27-29"
+    },
+    {
+      "id": "judges-18-q3",
+      "type": "true_false",
+      "question": "The tribe of Dan was still looking for territory to settle in.",
+      "answer": "true",
+      "verse_reference": "Judges 18:1"
+    },
+    {
+      "id": "judges-18-q4",
+      "type": "fill_blank",
+      "question": "The tribe of _____ took Micah's idols and his Levite priest.",
+      "answer": "Dan",
+      "verse_reference": "Judges 18:18-20"
+    },
+    {
+      "id": "judges-18-q5",
+      "type": "fill_blank",
+      "question": "The Danites captured the quiet city of _____ and renamed it Dan.",
+      "answer": "Laish",
+      "verse_reference": "Judges 18:27-29"
+    }
+  ]
+}

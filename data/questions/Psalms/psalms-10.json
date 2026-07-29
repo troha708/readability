@@ -1,0 +1,60 @@
+{
+  "book": "Psalms",
+  "chapter": 10,
+  "questions": [
+    {
+      "id": "psalms-10-q1",
+      "type": "multiple_choice",
+      "question": "What complaint opens Psalm 10?",
+      "options": [
+        "Why do the righteous suffer while the wicked thrive?",
+        "Why does the LORD stand far off and hide in trouble?",
+        "Why has the LORD forgotten his covenant?",
+        "Why have the nations risen up against Zion?"
+      ],
+      "answer": "Why does the LORD stand far off and hide in trouble?",
+      "verse_reference": "Psalm 10:1"
+    },
+    {
+      "id": "psalms-10-q2",
+      "type": "multiple_choice",
+      "question": "What does the wicked say in his heart?",
+      "options": [
+        "'Into your hand I commit my spirit'",
+        "'Surely goodness and mercy shall follow me'",
+        "'The LORD is my light and my salvation'",
+        "'God has forgotten, he will never see it'"
+      ],
+      "answer": "'God has forgotten, he will never see it'",
+      "verse_reference": "Psalm 10:11"
+    },
+    {
+      "id": "psalms-10-q3",
+      "type": "true_false",
+      "question": "The psalm ends affirming the LORD is king forever and hears the desire of the afflicted.",
+      "answer": "true",
+      "verse_reference": "Psalm 10:16-17"
+    },
+    {
+      "id": "psalms-10-q4",
+      "type": "fill_blank",
+      "question": "The LORD is king forever and ever; the nations _____ from his land.",
+      "answer": "perish",
+      "accept": [
+        "perished",
+        "destroyed"
+      ],
+      "verse_reference": "Psalm 10:16"
+    },
+    {
+      "id": "psalms-10-q5",
+      "type": "fill_blank",
+      "question": "You note mischief and grief, to repay it by Your _____.",
+      "answer": "hand",
+      "accept": [
+        "hands"
+      ],
+      "verse_reference": "Psalm 10:14"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Isaiah",
+  "chapter": 61,
+  "questions": [
+    {
+      "id": "isaiah-61-q1",
+      "type": "multiple_choice",
+      "question": "How does Isaiah 61 begin (later read by Jesus in Nazareth)?",
+      "options": [
+        "'Comfort, O comfort my people, says your God; speak tenderly to Jerusalem and cry aloud to her of her warfare'",
+        "'Woe to the raging nations that storm, and to the many peoples who plot in vain against the LORD and his ways'",
+        "'The Spirit of the Lord GOD is upon me, because the LORD has anointed me to bring good news to the poor'",
+        "'Arise and shine, for your great light has now come, and the glory of the LORD has risen and dawned upon you'"
+      ],
+      "answer": "'The Spirit of the Lord GOD is upon me, because the LORD has anointed me to bring good news to the poor'",
+      "verse_reference": "Isaiah 61:1"
+    },
+    {
+      "id": "isaiah-61-q2",
+      "type": "multiple_choice",
+      "question": "What does the anointed one proclaim in Isaiah 61?",
+      "options": [
+        "Sure judgment upon all the nations and the great day of wrath",
+        "Great riches to the faithful and high honor to all the wise",
+        "Liberty to the captives and the year of the LORD's favor",
+        "A brand new temple and a fully restored and holy priesthood"
+      ],
+      "answer": "Liberty to the captives and the year of the LORD's favor",
+      "verse_reference": "Isaiah 61:1-2"
+    },
+    {
+      "id": "isaiah-61-q3",
+      "type": "true_false",
+      "question": "Isaiah 61 promises a garment of praise instead of a faint spirit and beauty instead of ashes.",
+      "answer": "true",
+      "verse_reference": "Isaiah 61:3"
+    },
+    {
+      "id": "isaiah-61-q4",
+      "type": "fill_blank",
+      "question": "The Spirit of the Lord GOD is upon me, because the LORD has _____ me to bring good news to the poor.",
+      "answer": "anointed",
+      "verse_reference": "Isaiah 61:1"
+    },
+    {
+      "id": "isaiah-61-q5",
+      "type": "fill_blank",
+      "question": "To grant to those who mourn in Zion, to give them a beautiful headdress instead of _____.",
+      "answer": "ashes",
+      "verse_reference": "Isaiah 61:3"
+    }
+  ]
+}

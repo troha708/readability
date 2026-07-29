@@ -1,0 +1,56 @@
+{
+  "book": "2 Kings",
+  "chapter": 24,
+  "questions": [
+    {
+      "id": "2-kings-24-q1",
+      "type": "multiple_choice",
+      "question": "Which empire now rose to threaten and conquer Judah?",
+      "options": [
+        "Babylon",
+        "Assyria",
+        "Persia",
+        "Egypt"
+      ],
+      "answer": "Babylon",
+      "verse_reference": "2 Kings 24:1"
+    },
+    {
+      "id": "2-kings-24-q2",
+      "type": "multiple_choice",
+      "question": "What did Nebuchadnezzar do to Jerusalem in this chapter?",
+      "options": [
+        "Spared it in exchange for a yearly payment of tribute",
+        "Besieged it and carried away King Jehoiachin and many people",
+        "Rebuilt its broken walls and restored the temple",
+        "Passed it by entirely and marched on toward Egypt"
+      ],
+      "answer": "Besieged it and carried away King Jehoiachin and many people",
+      "verse_reference": "2 Kings 24:10-16"
+    },
+    {
+      "id": "2-kings-24-q3",
+      "type": "true_false",
+      "question": "The king of Babylon took the leading people of Judah into exile.",
+      "answer": "true",
+      "verse_reference": "2 Kings 24:14"
+    },
+    {
+      "id": "2-kings-24-q4",
+      "type": "fill_blank",
+      "question": "King Nebuchadnezzar came up, and Judah became his _____ for three years.",
+      "answer": "vassal",
+      "accept": [
+        "servant"
+      ],
+      "verse_reference": "2 Kings 24:1"
+    },
+    {
+      "id": "2-kings-24-q5",
+      "type": "fill_blank",
+      "question": "King Jehoiachin and many leaders were carried away to _____.",
+      "answer": "Babylon",
+      "verse_reference": "2 Kings 24:15-16"
+    }
+  ]
+}

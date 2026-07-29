@@ -1,0 +1,56 @@
+{
+  "book": "Psalms",
+  "chapter": 5,
+  "questions": [
+    {
+      "id": "psalms-5-q1",
+      "type": "multiple_choice",
+      "question": "When does David say he will direct his prayer to God?",
+      "options": [
+        "At noon",
+        "In the morning",
+        "At dusk",
+        "At night"
+      ],
+      "answer": "In the morning",
+      "verse_reference": "Psalm 5:3"
+    },
+    {
+      "id": "psalms-5-q2",
+      "type": "multiple_choice",
+      "question": "What does God not delight in, according to Psalm 5?",
+      "options": [
+        "Pride; the haughty cannot stand before him",
+        "Sacrifice; mere offerings cannot please him",
+        "Idols; false gods cannot deceive him",
+        "Wickedness; evil cannot dwell with him"
+      ],
+      "answer": "Wickedness; evil cannot dwell with him",
+      "verse_reference": "Psalm 5:4"
+    },
+    {
+      "id": "psalms-5-q3",
+      "type": "true_false",
+      "question": "David asks God to lead him in righteousness because of his enemies.",
+      "answer": "true",
+      "verse_reference": "Psalm 5:8"
+    },
+    {
+      "id": "psalms-5-q4",
+      "type": "fill_blank",
+      "question": "Let all who take refuge in you _____.",
+      "answer": "rejoice",
+      "verse_reference": "Psalm 5:11"
+    },
+    {
+      "id": "psalms-5-q5",
+      "type": "fill_blank",
+      "question": "You bless the righteous, O LORD; you cover him with favor as with a _____.",
+      "answer": "shield",
+      "accept": [
+        "buckler"
+      ],
+      "verse_reference": "Psalm 5:12"
+    }
+  ]
+}

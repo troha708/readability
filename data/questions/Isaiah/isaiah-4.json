@@ -1,0 +1,53 @@
+{
+  "book": "Isaiah",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "isaiah-4-q1",
+      "type": "multiple_choice",
+      "question": "What is 'the branch of the LORD' called in Isaiah 4?",
+      "options": [
+        "A snare and a curse",
+        "Beautiful and glorious",
+        "Withered and quite cast off",
+        "Hidden and forgotten"
+      ],
+      "answer": "Beautiful and glorious",
+      "verse_reference": "Isaiah 4:2"
+    },
+    {
+      "id": "isaiah-4-q2",
+      "type": "multiple_choice",
+      "question": "What will the LORD create over Mount Zion as protection?",
+      "options": [
+        "A wide river flowing through the midst of the holy mountain",
+        "A very high wall of cut stone built all around the city",
+        "A cloud by day and a flaming fire by night, a canopy",
+        "A great and mighty army encamped on every single side"
+      ],
+      "answer": "A cloud by day and a flaming fire by night, a canopy",
+      "verse_reference": "Isaiah 4:5"
+    },
+    {
+      "id": "isaiah-4-q3",
+      "type": "true_false",
+      "question": "Isaiah 4 speaks of a surviving remnant being called holy.",
+      "answer": "true",
+      "verse_reference": "Isaiah 4:3"
+    },
+    {
+      "id": "isaiah-4-q4",
+      "type": "fill_blank",
+      "question": "The branch of the LORD shall be beautiful and _____.",
+      "answer": "glorious",
+      "verse_reference": "Isaiah 4:2"
+    },
+    {
+      "id": "isaiah-4-q5",
+      "type": "fill_blank",
+      "question": "The Lord shall wash away the filth of the daughters of _____.",
+      "answer": "Zion",
+      "verse_reference": "Isaiah 4:4"
+    }
+  ]
+}

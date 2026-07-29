@@ -1,0 +1,53 @@
+{
+  "book": "Job",
+  "chapter": 33,
+  "questions": [
+    {
+      "id": "job-33-q1",
+      "type": "multiple_choice",
+      "question": "How did Elihu say God speaks to people?",
+      "options": [
+        "In dreams, visions, and through suffering",
+        "Only through his own specially appointed prophets",
+        "Not at all, leaving men in silence",
+        "Only through the words of kings"
+      ],
+      "answer": "In dreams, visions, and through suffering",
+      "verse_reference": "Job 33:14-19"
+    },
+    {
+      "id": "job-33-q2",
+      "type": "multiple_choice",
+      "question": "What did Elihu say a mediator/angel may do for a man?",
+      "options": [
+        "Condemn the man outright for his hidden sins",
+        "Be gracious and find a ransom to deliver him",
+        "Turn fully away and ignore all of his cries",
+        "Punish him far beyond what he ever deserved"
+      ],
+      "answer": "Be gracious and find a ransom to deliver him",
+      "verse_reference": "Job 33:23-24"
+    },
+    {
+      "id": "job-33-q3",
+      "type": "true_false",
+      "question": "Elihu invited Job to answer him if he could.",
+      "answer": "true",
+      "verse_reference": "Job 33:5"
+    },
+    {
+      "id": "job-33-q4",
+      "type": "fill_blank",
+      "question": "Elihu said God's purpose in these warnings is to turn a man back from the _____.",
+      "answer": "pit",
+      "verse_reference": "Job 33:30"
+    },
+    {
+      "id": "job-33-q5",
+      "type": "fill_blank",
+      "question": "Elihu said he too was formed from a piece of _____, like Job.",
+      "answer": "clay",
+      "verse_reference": "Job 33:6"
+    }
+  ]
+}

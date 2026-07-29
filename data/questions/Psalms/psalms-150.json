@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 150,
+  "questions": [
+    {
+      "id": "psalms-150-q1",
+      "type": "multiple_choice",
+      "question": "What is the theme of Psalm 150, the final psalm?",
+      "options": [
+        "A bitter lament poured out over a ruined city",
+        "A desperate plea for rain upon the thirsty land",
+        "A lengthy record of the deeds of the many kings",
+        "A call to praise God with all kinds of instruments"
+      ],
+      "answer": "A call to praise God with all kinds of instruments",
+      "verse_reference": "Psalm 150:3-5"
+    },
+    {
+      "id": "psalms-150-q2",
+      "type": "multiple_choice",
+      "question": "How does the book of Psalms end?",
+      "options": [
+        "'The LORD is my shepherd; I shall not want!'",
+        "'How majestic is your great name in all the earth!'",
+        "'Let everything that has breath praise the LORD!'",
+        "'Blessed is the man who fears the LORD!'"
+      ],
+      "answer": "'Let everything that has breath praise the LORD!'",
+      "verse_reference": "Psalm 150:6"
+    },
+    {
+      "id": "psalms-150-q3",
+      "type": "true_false",
+      "question": "The psalm names the trumpet, lute, harp, tambourine, strings, pipe, and cymbals for praise.",
+      "answer": "true",
+      "verse_reference": "Psalm 150:3-5"
+    },
+    {
+      "id": "psalms-150-q4",
+      "type": "fill_blank",
+      "question": "Praise God in his _____; praise him in his mighty heavens!",
+      "answer": "sanctuary",
+      "verse_reference": "Psalm 150:1"
+    },
+    {
+      "id": "psalms-150-q5",
+      "type": "fill_blank",
+      "question": "Let everything that has _____ praise the LORD! Praise the LORD!",
+      "answer": "breath",
+      "verse_reference": "Psalm 150:6"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Jeremiah",
+  "chapter": 21,
+  "questions": [
+    {
+      "id": "jeremiah-21-q1",
+      "type": "multiple_choice",
+      "question": "What did King Zedekiah want from Jeremiah in chapter 21?",
+      "options": [
+        "To anoint Jeremiah as a priest of the temple",
+        "To inquire of the LORD about the Babylonian threat",
+        "To have Jeremiah crown a new king",
+        "To ask Jeremiah to lead the army"
+      ],
+      "answer": "To inquire of the LORD about the Babylonian threat",
+      "verse_reference": "Jeremiah 21:2"
+    },
+    {
+      "id": "jeremiah-21-q2",
+      "type": "multiple_choice",
+      "question": "What two ways did God set before the people in Jeremiah 21?",
+      "options": [
+        "The way of the priest and the way of the prophet",
+        "The way of the rich and the way of the poor",
+        "The way of Egypt and the way of Assyria",
+        "The way of life and the way of death"
+      ],
+      "answer": "The way of life and the way of death",
+      "verse_reference": "Jeremiah 21:8"
+    },
+    {
+      "id": "jeremiah-21-q3",
+      "type": "true_false",
+      "question": "God said those who stayed in the city would die, but those who surrendered to the Babylonians would live.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 21:9"
+    },
+    {
+      "id": "jeremiah-21-q4",
+      "type": "fill_blank",
+      "question": "Behold, I set before you the way of _____ and the way of death.",
+      "answer": "life",
+      "verse_reference": "Jeremiah 21:8"
+    },
+    {
+      "id": "jeremiah-21-q5",
+      "type": "fill_blank",
+      "question": "I am against you, O Jerusalem, declares the LORD; I myself will fight against you with outstretched _____.",
+      "answer": "hand",
+      "verse_reference": "Jeremiah 21:5"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "book": "Matthew",
+  "chapter": 22,
+  "questions": [
+    {
+      "id": "matthew-22-q1",
+      "type": "multiple_choice",
+      "question": "In the parable of the wedding feast, what happened to the man who came without wedding clothes?",
+      "options": [
+        "He was clothed in fine new wedding garments",
+        "He was bound and cast into outer darkness",
+        "He was quietly seated at the lowest table",
+        "He was forgiven and welcomed to the feast"
+      ],
+      "answer": "He was bound and cast into outer darkness",
+      "verse_reference": "Matthew 22:13"
+    },
+    {
+      "id": "matthew-22-q2",
+      "type": "multiple_choice",
+      "question": "When asked about paying taxes to Caesar, what did Jesus ask to be shown?",
+      "options": [
+        "An old scroll",
+        "A denarius",
+        "A shekel",
+        "A talent"
+      ],
+      "answer": "A denarius",
+      "verse_reference": "Matthew 22:19"
+    },
+    {
+      "id": "matthew-22-q3",
+      "type": "true_false",
+      "question": "Jesus said the greatest commandment is to love your neighbor as yourself.",
+      "answer": "false",
+      "verse_reference": "Matthew 22:37-38"
+    },
+    {
+      "id": "matthew-22-q4",
+      "type": "fill_blank",
+      "question": "Give therefore to Caesar the things that are Caesar's, and to _____ the things that are God's.",
+      "answer": "God",
+      "verse_reference": "Matthew 22:21"
+    },
+    {
+      "id": "matthew-22-q5",
+      "type": "fill_blank",
+      "question": "You shall love the Lord your God with all your heart, with all your soul, and with all your _____.",
+      "answer": "mind",
+      "accept": [
+        "understanding"
+      ],
+      "verse_reference": "Matthew 22:37"
+    }
+  ]
+}

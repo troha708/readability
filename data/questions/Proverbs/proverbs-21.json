@@ -1,0 +1,56 @@
+{
+  "book": "Proverbs",
+  "chapter": 21,
+  "questions": [
+    {
+      "id": "proverbs-21-q1",
+      "type": "multiple_choice",
+      "question": "How is the king's heart described in Proverbs 21?",
+      "options": [
+        "A restless and surging sea that not even the very wisest can ever calm",
+        "A sealed and hidden thing that not one of his subjects may ever truly know",
+        "An immovable and solid rock that no power on all the earth can shift aside",
+        "A stream of water in the hand of the LORD, who turns it wherever he will"
+      ],
+      "answer": "A stream of water in the hand of the LORD, who turns it wherever he will",
+      "verse_reference": "Proverbs 21:1"
+    },
+    {
+      "id": "proverbs-21-q2",
+      "type": "multiple_choice",
+      "question": "What does Proverbs 21 say the LORD prefers over sacrifice?",
+      "options": [
+        "To bring great gifts of gold",
+        "To do righteousness and justice",
+        "To offer up many words of prayer",
+        "To fast and humble oneself"
+      ],
+      "answer": "To do righteousness and justice",
+      "verse_reference": "Proverbs 21:3"
+    },
+    {
+      "id": "proverbs-21-q3",
+      "type": "true_false",
+      "question": "Proverbs 21 says it is better to live in a corner of the housetop than in a house shared with a quarrelsome wife.",
+      "answer": "true",
+      "verse_reference": "Proverbs 21:9"
+    },
+    {
+      "id": "proverbs-21-q4",
+      "type": "fill_blank",
+      "question": "The king's heart is a stream of water in the hand of the _____.",
+      "answer": "LORD",
+      "accept": [
+        "Jehovah"
+      ],
+      "verse_reference": "Proverbs 21:1"
+    },
+    {
+      "id": "proverbs-21-q5",
+      "type": "fill_blank",
+      "question": "To do righteousness and justice is more acceptable to the LORD than _____.",
+      "answer": "sacrifice",
+      "verse_reference": "Proverbs 21:3"
+    }
+  ]
+}

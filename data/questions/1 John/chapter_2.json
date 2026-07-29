@@ -1,0 +1,58 @@
+{
+  "book": "1 John",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "1jn_2_1",
+      "type": "multiple_choice",
+      "question": "John says do not love the world or anything in the world because the world and its desires are doing what?",
+      "options": [
+        "Being renewed",
+        "Unchanging",
+        "Passing away",
+        "Growing stronger"
+      ],
+      "correct": "Passing away",
+      "verse_ref": "1 John 2:17",
+      "feedback": "The world and its desires pass away, but whoever does God's will lives forever."
+    },
+    {
+      "id": "1jn_2_2",
+      "type": "multiple_choice",
+      "question": "John says anyone who denies the Father and the Son is what?",
+      "options": [
+        "The antichrist",
+        "A false prophet",
+        "A heretic",
+        "A Pharisee"
+      ],
+      "correct": "The antichrist",
+      "verse_ref": "1 John 2:22",
+      "feedback": "Whoever denies the Father and the Son is the antichrist."
+    },
+    {
+      "id": "1jn_2_3",
+      "type": "true_false",
+      "question": "John says it is the last hour and many antichrists have come.",
+      "correct": true,
+      "verse_ref": "1 John 2:18",
+      "feedback": "It is the last hour; as you have heard that the antichrist is coming, many have already come."
+    },
+    {
+      "id": "1jn_2_4",
+      "type": "fill_in_the_blank",
+      "question": "Jesus Christ is the atoning sacrifice for our sins and for the sins of the whole _____.",
+      "correct": "world",
+      "verse_ref": "1 John 2:2",
+      "feedback": "He is the atoning sacrifice not only for our sins but for the sins of the whole world."
+    },
+    {
+      "id": "1jn_2_5",
+      "type": "fill_in_the_blank",
+      "question": "Anyone who claims to be in the light but hates a brother or sister is still in the _____.",
+      "correct": "darkness",
+      "verse_ref": "1 John 2:9",
+      "feedback": "Anyone who hates a brother or sister is still in the darkness."
+    }
+  ]
+}

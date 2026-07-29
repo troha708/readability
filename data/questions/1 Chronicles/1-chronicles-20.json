@@ -1,0 +1,53 @@
+{
+  "book": "1 Chronicles",
+  "chapter": 20,
+  "questions": [
+    {
+      "id": "1-chronicles-20-q1",
+      "type": "multiple_choice",
+      "question": "Which Ammonite city did Joab besiege and David capture?",
+      "options": [
+        "Damascus",
+        "Rabbah",
+        "Gath",
+        "Gezer"
+      ],
+      "answer": "Rabbah",
+      "verse_reference": "1 Chronicles 20:1"
+    },
+    {
+      "id": "1-chronicles-20-q2",
+      "type": "multiple_choice",
+      "question": "Who killed Lahmi, the brother of Goliath the Gittite?",
+      "options": [
+        "Elhanan",
+        "David",
+        "Jonathan",
+        "Sibbecai"
+      ],
+      "answer": "Elhanan",
+      "verse_reference": "1 Chronicles 20:5"
+    },
+    {
+      "id": "1-chronicles-20-q3",
+      "type": "true_false",
+      "question": "In Gath there was a man with six fingers on each hand and six toes on each foot.",
+      "answer": "true",
+      "verse_reference": "1 Chronicles 20:6"
+    },
+    {
+      "id": "1-chronicles-20-q4",
+      "type": "fill_blank",
+      "question": "David took the _____ from the head of the king of Rabbah; it weighed a talent of gold.",
+      "answer": "crown",
+      "verse_reference": "1 Chronicles 20:2"
+    },
+    {
+      "id": "1-chronicles-20-q5",
+      "type": "fill_blank",
+      "question": "The descendants of the giants in Gath fell by the hand of David and his _____.",
+      "answer": "servants",
+      "verse_reference": "1 Chronicles 20:8"
+    }
+  ]
+}

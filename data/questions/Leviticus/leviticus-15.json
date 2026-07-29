@@ -1,0 +1,54 @@
+{
+  "book": "Leviticus",
+  "chapter": 15,
+  "questions": [
+    {
+      "id": "leviticus-15-q1",
+      "type": "multiple_choice",
+      "question": "What does chapter 15 address?",
+      "options": [
+        "The yearly appointed feasts of the LORD",
+        "Bodily discharges and ritual purity",
+        "Permitted and forbidden foods",
+        "The grain and peace offerings"
+      ],
+      "answer": "Bodily discharges and ritual purity",
+      "verse_reference": "Leviticus 15:2"
+    },
+    {
+      "id": "leviticus-15-q2",
+      "type": "multiple_choice",
+      "question": "How did a person generally become clean again after becoming unclean?",
+      "options": [
+        "By traveling far outside the camp for a whole month",
+        "By offering a piece of gold to the priest",
+        "By fasting in private for seven days",
+        "By washing with water and waiting until evening"
+      ],
+      "answer": "By washing with water and waiting until evening",
+      "verse_reference": "Leviticus 15:5"
+    },
+    {
+      "id": "leviticus-15-q3",
+      "type": "true_false",
+      "question": "These laws were meant to keep Israel's uncleanness from defiling God's dwelling among them.",
+      "answer": "true",
+      "verse_reference": "Leviticus 15:31"
+    },
+    {
+      "id": "leviticus-15-q4",
+      "type": "fill_blank",
+      "question": "A person who became unclean was to bathe in _____ and remain unclean until evening.",
+      "answer": "water",
+      "verse_reference": "Leviticus 15:5"
+    },
+    {
+      "id": "leviticus-15-q5",
+      "type": "fill_blank",
+      "question": "Such a person remained unclean until the _____.",
+      "answer": "evening",
+      "accept": ["even"],
+      "verse_reference": "Leviticus 15:5"
+    }
+  ]
+}

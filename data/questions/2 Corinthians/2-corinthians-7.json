@@ -1,0 +1,56 @@
+{
+  "book": "2 Corinthians",
+  "chapter": 7,
+  "questions": [
+    {
+      "id": "2cor-7-q1",
+      "type": "multiple_choice",
+      "question": "Paul distinguishes between two types of sorrow. What does godly sorrow produce?",
+      "options": [
+        "Despair that ends in death",
+        "Bitter anger toward others",
+        "Repentance leading to salvation",
+        "Fear of the coming judgment"
+      ],
+      "answer": "Repentance leading to salvation",
+      "verse_reference": "2 Corinthians 7:10"
+    },
+    {
+      "id": "2cor-7-q2",
+      "type": "multiple_choice",
+      "question": "Who brought Paul good news about the Corinthians' response?",
+      "options": [
+        "Apollos",
+        "Barnabas",
+        "Titus",
+        "Timothy"
+      ],
+      "answer": "Titus",
+      "verse_reference": "2 Corinthians 7:6-7"
+    },
+    {
+      "id": "2cor-7-q3",
+      "type": "true_false",
+      "question": "Paul says worldly sorrow brings death.",
+      "answer": "true",
+      "verse_reference": "2 Corinthians 7:10"
+    },
+    {
+      "id": "2cor-7-q4",
+      "type": "fill_blank",
+      "question": "Godly sorrow produces repentance leading to _____, which brings no regret.",
+      "answer": "salvation",
+      "verse_reference": "2 Corinthians 7:10"
+    },
+    {
+      "id": "2cor-7-q5",
+      "type": "fill_blank",
+      "question": "I rejoice that in everything I have _____ in you.",
+      "answer": "confidence",
+      "accept": [
+        "courage"
+      ],
+      "verse_reference": "2 Corinthians 7:16"
+    }
+  ]
+}

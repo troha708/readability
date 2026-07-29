@@ -1,0 +1,59 @@
+{
+  "book": "Hebrews",
+  "chapter": 6,
+  "questions": [
+    {
+      "id": "heb_6_1",
+      "type": "multiple_choice",
+      "question": "The author compares God's promise to Abraham to what unbreakable thing?",
+      "options": [
+        "A towering pillar of fire that never goes out",
+        "A seal stamped upon them by the Holy Spirit",
+        "A covenant carved deep into tablets of stone",
+        "An oath confirmed by two unchangeable things"
+      ],
+      "correct": "An oath confirmed by two unchangeable things",
+      "verse_ref": "Hebrews 6:17-18",
+      "feedback": "God confirmed his promise with an oath — two unchangeable things in which God cannot lie."
+    },
+    {
+      "id": "heb_6_2",
+      "type": "multiple_choice",
+      "question": "What does the author call hope?",
+      "options": [
+        "A shield of faith",
+        "A sharp sword of the Spirit",
+        "A lamp for the feet",
+        "An anchor for the soul"
+      ],
+      "correct": "An anchor for the soul",
+      "verse_ref": "Hebrews 6:19",
+      "feedback": "Hope is an anchor for the soul, firm and secure."
+    },
+    {
+      "id": "heb_6_3",
+      "type": "true_false",
+      "question": "The author says it is possible to restore to repentance those who have fallen away after being enlightened.",
+      "correct": false,
+      "verse_ref": "Hebrews 6:4-6",
+      "feedback": "The author says it is impossible to restore them to repentance if they fall away."
+    },
+    {
+      "id": "heb_6_4",
+      "type": "fill_in_the_blank",
+      "question": "The author urges them to move beyond elementary teachings and press on to _____.",
+      "correct": "maturity",
+      "accept": ["perfection"],
+      "verse_ref": "Hebrews 6:1",
+      "feedback": "Leave the elementary doctrine and go on to maturity."
+    },
+    {
+      "id": "heb_6_5",
+      "type": "fill_in_the_blank",
+      "question": "God is not unjust; he will not forget their work and the _____ they have shown him.",
+      "correct": "love",
+      "verse_ref": "Hebrews 6:10",
+      "feedback": "God will not forget their work and the love they showed in his name."
+    }
+  ]
+}

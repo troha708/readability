@@ -1,0 +1,57 @@
+{
+  "book": "Exodus",
+  "chapter": 15,
+  "questions": [
+    {
+      "id": "exodus-15-q1",
+      "type": "multiple_choice",
+      "question": "What did Moses and the Israelites do after crossing the sea?",
+      "options": [
+        "Set out at once for the promised land",
+        "Grumbled against Moses about water",
+        "Sang a song of praise to the LORD",
+        "Built a great altar of uncut stones"
+      ],
+      "answer": "Sang a song of praise to the LORD",
+      "verse_reference": "Exodus 15:1"
+    },
+    {
+      "id": "exodus-15-q2",
+      "type": "multiple_choice",
+      "question": "At Marah, the water was bitter; what did Moses do to make it sweet?",
+      "options": [
+        "He prayed and the water turned fresh",
+        "He threw a tree (wood) into the water",
+        "He struck the spring twice with his staff",
+        "He cast handfuls of salt into the pool"
+      ],
+      "answer": "He threw a tree (wood) into the water",
+      "verse_reference": "Exodus 15:25"
+    },
+    {
+      "id": "exodus-15-q3",
+      "type": "true_false",
+      "question": "Miriam the prophetess led the women with a tambourine in praise.",
+      "answer": "true",
+      "verse_reference": "Exodus 15:20"
+    },
+    {
+      "id": "exodus-15-q4",
+      "type": "fill_blank",
+      "question": "\"The LORD is my strength and song, and he has become my _____.\"",
+      "answer": "salvation",
+      "verse_reference": "Exodus 15:2"
+    },
+    {
+      "id": "exodus-15-q5",
+      "type": "fill_blank",
+      "question": "Miriam, Aaron's sister, took a _____ in her hand and led the women in dancing.",
+      "answer": "tambourine",
+      "accept": [
+        "timbrel",
+        "tambour"
+      ],
+      "verse_reference": "Exodus 15:20"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Exodus",
+  "chapter": 18,
+  "questions": [
+    {
+      "id": "exodus-18-q1",
+      "type": "multiple_choice",
+      "question": "Who advised Moses to appoint capable men to help judge the people?",
+      "options": [
+        "Joshua, his young aide",
+        "Aaron, his older brother",
+        "Jethro, his father-in-law",
+        "Hur, who steadied his hands"
+      ],
+      "answer": "Jethro, his father-in-law",
+      "verse_reference": "Exodus 18:17-23"
+    },
+    {
+      "id": "exodus-18-q2",
+      "type": "multiple_choice",
+      "question": "What was Moses doing alone that wore him out?",
+      "options": [
+        "Judging all the people's disputes himself",
+        "Leading the worship at the altar alone",
+        "Building the tabernacle with his own hands",
+        "Standing guard over the camp each night"
+      ],
+      "answer": "Judging all the people's disputes himself",
+      "verse_reference": "Exodus 18:13-18"
+    },
+    {
+      "id": "exodus-18-q3",
+      "type": "true_false",
+      "question": "Jethro rejoiced and praised the LORD when he heard all God had done for Israel.",
+      "answer": "true",
+      "verse_reference": "Exodus 18:9-11"
+    },
+    {
+      "id": "exodus-18-q4",
+      "type": "fill_blank",
+      "question": "Jethro was the priest of _____ and Moses' father-in-law.",
+      "answer": "Midian",
+      "verse_reference": "Exodus 18:1"
+    },
+    {
+      "id": "exodus-18-q5",
+      "type": "fill_blank",
+      "question": "Moses appointed leaders over thousands, hundreds, fifties, and _____.",
+      "answer": "tens",
+      "verse_reference": "Exodus 18:21"
+    }
+  ]
+}

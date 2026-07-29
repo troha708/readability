@@ -1,0 +1,53 @@
+{
+  "book": "Job",
+  "chapter": 38,
+  "questions": [
+    {
+      "id": "job-38-q1",
+      "type": "multiple_choice",
+      "question": "Out of what did the LORD finally answer Job?",
+      "options": [
+        "A dream",
+        "A still small voice",
+        "A whirlwind",
+        "A burning bush"
+      ],
+      "answer": "A whirlwind",
+      "verse_reference": "Job 38:1"
+    },
+    {
+      "id": "job-38-q2",
+      "type": "multiple_choice",
+      "question": "With what question did God begin his answer?",
+      "options": [
+        "Why do you think yourself far wiser than your own Maker?",
+        "Can you somehow bring back the days of your youth again?",
+        "Where were you when I laid the foundations of the earth?",
+        "Who has ever given to me, that I should have to repay him?"
+      ],
+      "answer": "Where were you when I laid the foundations of the earth?",
+      "verse_reference": "Job 38:4"
+    },
+    {
+      "id": "job-38-q3",
+      "type": "true_false",
+      "question": "God questioned Job about commanding the morning and the gates of the sea.",
+      "answer": "true",
+      "verse_reference": "Job 38:8-12"
+    },
+    {
+      "id": "job-38-q4",
+      "type": "fill_blank",
+      "question": "God asked, 'Have you entered the storehouses of the _____?'",
+      "answer": "snow",
+      "verse_reference": "Job 38:22"
+    },
+    {
+      "id": "job-38-q5",
+      "type": "fill_blank",
+      "question": "God asked who shut in the sea with doors when it burst out from the _____.",
+      "answer": "womb",
+      "verse_reference": "Job 38:8"
+    }
+  ]
+}

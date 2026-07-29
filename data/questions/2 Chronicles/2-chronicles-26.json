@@ -1,0 +1,57 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 26,
+  "questions": [
+    {
+      "id": "2-chronicles-26-q1",
+      "type": "multiple_choice",
+      "question": "As long as Uzziah sought the LORD, what happened?",
+      "options": [
+        "He failed",
+        "God made him prosper",
+        "He was sent into exile",
+        "He grew weak"
+      ],
+      "answer": "God made him prosper",
+      "verse_reference": "2 Chronicles 26:5"
+    },
+    {
+      "id": "2-chronicles-26-q2",
+      "type": "multiple_choice",
+      "question": "What sin led to Uzziah being struck with leprosy?",
+      "options": [
+        "Setting up many idols in all of the high places throughout the land",
+        "Entering the temple to burn incense, which was the priests' duty",
+        "Stealing the gold and silver from the temple treasury",
+        "Shedding much innocent blood throughout the whole city"
+      ],
+      "answer": "Entering the temple to burn incense, which was the priests' duty",
+      "verse_reference": "2 Chronicles 26:16-19"
+    },
+    {
+      "id": "2-chronicles-26-q3",
+      "type": "true_false",
+      "question": "Uzziah was a leper until the day of his death and lived in a separate house.",
+      "answer": "true",
+      "verse_reference": "2 Chronicles 26:21"
+    },
+    {
+      "id": "2-chronicles-26-q4",
+      "type": "fill_blank",
+      "question": "When Uzziah became powerful, his _____ led to his own destruction.",
+      "answer": "arrogance",
+      "accept": [
+        "pride",
+        "proud"
+      ],
+      "verse_reference": "2 Chronicles 26:16"
+    },
+    {
+      "id": "2-chronicles-26-q5",
+      "type": "fill_blank",
+      "question": "The leprosy broke out on Uzziah's _____ as he stood at the altar.",
+      "answer": "forehead",
+      "verse_reference": "2 Chronicles 26:19"
+    }
+  ]
+}

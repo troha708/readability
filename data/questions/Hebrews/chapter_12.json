@@ -1,0 +1,58 @@
+{
+  "book": "Hebrews",
+  "chapter": 12,
+  "questions": [
+    {
+      "id": "heb_12_1",
+      "type": "multiple_choice",
+      "question": "Believers are told to run with perseverance while looking to whom?",
+      "options": [
+        "Jesus, the founder and perfecter of faith",
+        "Abraham, the great father of all the faithful",
+        "David, the king after God's heart",
+        "Moses, the giver of the law"
+      ],
+      "correct": "Jesus, the founder and perfecter of faith",
+      "verse_ref": "Hebrews 12:1-2",
+      "feedback": "Run with endurance looking to Jesus, the founder and perfecter of our faith."
+    },
+    {
+      "id": "heb_12_2",
+      "type": "multiple_choice",
+      "question": "The author says God disciplines those he accepts as what?",
+      "options": [
+        "Sons",
+        "Servants",
+        "Friends",
+        "Prophets"
+      ],
+      "correct": "Sons",
+      "verse_ref": "Hebrews 12:7",
+      "feedback": "God disciplines us as sons — what son is not disciplined by his father?"
+    },
+    {
+      "id": "heb_12_3",
+      "type": "true_false",
+      "question": "The author says Esau sold his birthright for a single meal.",
+      "correct": true,
+      "verse_ref": "Hebrews 12:16",
+      "feedback": "Esau sold his inheritance rights for a single meal."
+    },
+    {
+      "id": "heb_12_4",
+      "type": "fill_in_the_blank",
+      "question": "Since we are receiving an unshakable kingdom, let us be thankful and worship God with _____ and awe.",
+      "correct": "reverence",
+      "verse_ref": "Hebrews 12:28",
+      "feedback": "Worship God acceptably with reverence and awe."
+    },
+    {
+      "id": "heb_12_5",
+      "type": "fill_in_the_blank",
+      "question": "We are surrounded by a great cloud of _____.",
+      "correct": "witnesses",
+      "verse_ref": "Hebrews 12:1",
+      "feedback": "We are surrounded by a great cloud of witnesses."
+    }
+  ]
+}

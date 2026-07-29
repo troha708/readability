@@ -1,0 +1,57 @@
+{
+  "book": "Judges",
+  "chapter": 20,
+  "questions": [
+    {
+      "id": "judges-20-q1",
+      "type": "multiple_choice",
+      "question": "Against which tribe did the rest of Israel go to war?",
+      "options": [
+        "Judah",
+        "Dan",
+        "The Ephraimites",
+        "Benjamin"
+      ],
+      "answer": "Benjamin",
+      "verse_reference": "Judges 20:12-14"
+    },
+    {
+      "id": "judges-20-q2",
+      "type": "multiple_choice",
+      "question": "Why did Israel fight that tribe?",
+      "options": [
+        "It had taken land belonging to one of the other tribes",
+        "It had seized water rights from a neighbor",
+        "It had crowned a king without the others",
+        "It refused to hand over the wicked men of Gibeah"
+      ],
+      "answer": "It refused to hand over the wicked men of Gibeah",
+      "verse_reference": "Judges 20:12-14"
+    },
+    {
+      "id": "judges-20-q3",
+      "type": "true_false",
+      "question": "The tribe of Benjamin was nearly wiped out in the war.",
+      "answer": "true",
+      "verse_reference": "Judges 20:46-48"
+    },
+    {
+      "id": "judges-20-q4",
+      "type": "fill_blank",
+      "question": "Israel went to war against the tribe of _____ over the crime at Gibeah.",
+      "answer": "Benjamin",
+      "accept": [
+        "Benjamites",
+        "Benjamin's"
+      ],
+      "verse_reference": "Judges 20:13-14"
+    },
+    {
+      "id": "judges-20-q5",
+      "type": "fill_blank",
+      "question": "The tribe of Benjamin was almost completely _____ in the battle.",
+      "answer": "destroyed",
+      "verse_reference": "Judges 20:48"
+    }
+  ]
+}

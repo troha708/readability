@@ -1,0 +1,58 @@
+{
+  "book": "Hebrews",
+  "chapter": 5,
+  "questions": [
+    {
+      "id": "heb_5_1",
+      "type": "multiple_choice",
+      "question": "The author says Jesus was designated by God as a high priest in the order of whom?",
+      "options": [
+        "Melchizedek",
+        "Aaron",
+        "Levi",
+        "Moses"
+      ],
+      "correct": "Melchizedek",
+      "verse_ref": "Hebrews 5:10",
+      "feedback": "Jesus was designated a high priest in the order of Melchizedek."
+    },
+    {
+      "id": "heb_5_2",
+      "type": "multiple_choice",
+      "question": "The author rebukes the readers because by now they ought to be what?",
+      "options": [
+        "Teachers",
+        "Prophets",
+        "Apostles",
+        "Elders"
+      ],
+      "correct": "Teachers",
+      "verse_ref": "Hebrews 5:12",
+      "feedback": "By this time they ought to be teachers, but they still need basic instruction."
+    },
+    {
+      "id": "heb_5_3",
+      "type": "true_false",
+      "question": "Jesus learned obedience through what he suffered.",
+      "correct": true,
+      "verse_ref": "Hebrews 5:8",
+      "feedback": "Although he was a son, he learned obedience through what he suffered."
+    },
+    {
+      "id": "heb_5_4",
+      "type": "fill_in_the_blank",
+      "question": "The readers still need _____ rather than solid food.",
+      "correct": "milk",
+      "verse_ref": "Hebrews 5:12",
+      "feedback": "They need milk, not solid food, because they are spiritually immature."
+    },
+    {
+      "id": "heb_5_5",
+      "type": "fill_in_the_blank",
+      "question": "No one takes the honor of high priest upon himself but must be _____ by God.",
+      "correct": "called",
+      "verse_ref": "Hebrews 5:4",
+      "feedback": "One must be called by God to serve as high priest, just as Aaron was."
+    }
+  ]
+}

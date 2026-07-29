@@ -1,0 +1,53 @@
+{
+  "book": "Deuteronomy",
+  "chapter": 33,
+  "questions": [
+    {
+      "id": "deuteronomy-33-q1",
+      "type": "multiple_choice",
+      "question": "What did Moses do in chapter 33?",
+      "options": [
+        "Fought a final battle with Moab",
+        "Blessed the tribes of Israel",
+        "Chose a king to follow him",
+        "Built an altar of twelve stones"
+      ],
+      "answer": "Blessed the tribes of Israel",
+      "verse_reference": "Deuteronomy 33:1"
+    },
+    {
+      "id": "deuteronomy-33-q2",
+      "type": "multiple_choice",
+      "question": "How is God described as a refuge in this blessing?",
+      "options": [
+        "\"God is our refuge and strength, an ever-present help in time of trouble\"",
+        "\"The eternal God is your refuge, and underneath are the everlasting arms\"",
+        "\"He who dwells in the shelter of the Most High will rest in the shadow\"",
+        "\"The LORD is my rock, my fortress, and my deliverer in whom I take refuge\""
+      ],
+      "answer": "\"The eternal God is your refuge, and underneath are the everlasting arms\"",
+      "verse_reference": "Deuteronomy 33:27"
+    },
+    {
+      "id": "deuteronomy-33-q3",
+      "type": "true_false",
+      "question": "Moses pronounced a blessing on each of the tribes before his death.",
+      "answer": "true",
+      "verse_reference": "Deuteronomy 33:1"
+    },
+    {
+      "id": "deuteronomy-33-q4",
+      "type": "fill_blank",
+      "question": "\"The eternal God is your dwelling place, and underneath are the everlasting _____.\"",
+      "answer": "arms",
+      "verse_reference": "Deuteronomy 33:27"
+    },
+    {
+      "id": "deuteronomy-33-q5",
+      "type": "fill_blank",
+      "question": "Moses called Israel blessed, a people _____ by the LORD.",
+      "answer": "saved",
+      "verse_reference": "Deuteronomy 33:29"
+    }
+  ]
+}

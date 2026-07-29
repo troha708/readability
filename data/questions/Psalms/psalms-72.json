@@ -1,0 +1,59 @@
+{
+  "book": "Psalms",
+  "chapter": 72,
+  "questions": [
+    {
+      "id": "psalms-72-q1",
+      "type": "multiple_choice",
+      "question": "Whose psalm/prayer is Psalm 72, a prayer for the king?",
+      "options": [
+        "King David",
+        "Asaph",
+        "Moses",
+        "Solomon"
+      ],
+      "answer": "Solomon",
+      "verse_reference": "Psalm 72:title"
+    },
+    {
+      "id": "psalms-72-q2",
+      "type": "multiple_choice",
+      "question": "What does the psalm pray the king will do for the needy?",
+      "options": [
+        "Conquer the nations and take their wealth",
+        "Gather the wise and rule by their counsel",
+        "Build the temple and adorn the city",
+        "Defend the poor and deliver the needy"
+      ],
+      "answer": "Defend the poor and deliver the needy",
+      "verse_reference": "Psalm 72:4"
+    },
+    {
+      "id": "psalms-72-q3",
+      "type": "true_false",
+      "question": "The psalm prays the king will have dominion from sea to sea.",
+      "answer": "true",
+      "verse_reference": "Psalm 72:8"
+    },
+    {
+      "id": "psalms-72-q4",
+      "type": "fill_blank",
+      "question": "May he have dominion from sea to sea, and from the River to the ends of the _____!",
+      "answer": "earth",
+      "accept": [
+        "land"
+      ],
+      "verse_reference": "Psalm 72:8"
+    },
+    {
+      "id": "psalms-72-q5",
+      "type": "fill_blank",
+      "question": "Blessed be the LORD, the God of Israel, who alone does marvelous _____.",
+      "answer": "deeds",
+      "accept": [
+        "things"
+      ],
+      "verse_reference": "Psalm 72:18"
+    }
+  ]
+}

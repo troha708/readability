@@ -1,0 +1,53 @@
+{
+  "book": "Joshua",
+  "chapter": 16,
+  "questions": [
+    {
+      "id": "joshua-16-q1",
+      "type": "multiple_choice",
+      "question": "Whose inheritance does chapter 16 describe?",
+      "options": [
+        "Dan, in the far north",
+        "Judah, in the south",
+        "Ephraim, the sons of Joseph",
+        "Levi, the holy priestly tribe"
+      ],
+      "answer": "Ephraim, the sons of Joseph",
+      "verse_reference": "Joshua 16:4-5"
+    },
+    {
+      "id": "joshua-16-q2",
+      "type": "multiple_choice",
+      "question": "What did Ephraim fail to do regarding the Canaanites in Gezer?",
+      "options": [
+        "They could not capture the city",
+        "They did not drive them out",
+        "They abandoned the region entirely",
+        "They lost the land in battle"
+      ],
+      "answer": "They did not drive them out",
+      "verse_reference": "Joshua 16:10"
+    },
+    {
+      "id": "joshua-16-q3",
+      "type": "true_false",
+      "question": "The Canaanites in Gezer were put to forced labor but not driven out.",
+      "answer": "true",
+      "verse_reference": "Joshua 16:10"
+    },
+    {
+      "id": "joshua-16-q4",
+      "type": "fill_blank",
+      "question": "The descendants of _____ received their inheritance in this chapter.",
+      "answer": "Joseph",
+      "verse_reference": "Joshua 16:1-4"
+    },
+    {
+      "id": "joshua-16-q5",
+      "type": "fill_blank",
+      "question": "Ephraim did not drive out the Canaanites living in _____.",
+      "answer": "Gezer",
+      "verse_reference": "Joshua 16:10"
+    }
+  ]
+}

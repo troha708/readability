@@ -1,0 +1,74 @@
+{
+  "book": "Philippians",
+  "source": "Berean Standard Bible (CC0 Public Domain)",
+  "chapters": {
+    "1": [
+      {
+        "beforeVerse": 1,
+        "heading": "Greetings from Paul and Timothy"
+      },
+      {
+        "beforeVerse": 3,
+        "heading": "Thanksgiving and Prayer"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "Paul’s Trials Advance the Gospel"
+      },
+      {
+        "beforeVerse": 21,
+        "heading": "To Live Is Christ"
+      },
+      {
+        "beforeVerse": 27,
+        "heading": "Worthy of the Gospel"
+      }
+    ],
+    "2": [
+      {
+        "beforeVerse": 1,
+        "heading": "One in Christ"
+      },
+      {
+        "beforeVerse": 5,
+        "heading": "The Mind of Christ"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "Lights in the World"
+      },
+      {
+        "beforeVerse": 19,
+        "heading": "Timothy and Epaphroditus"
+      }
+    ],
+    "3": [
+      {
+        "beforeVerse": 1,
+        "heading": "Righteousness through Faith in Christ"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "Pressing on toward the Goal"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "Citizenship in Heaven"
+      }
+    ],
+    "4": [
+      {
+        "beforeVerse": 1,
+        "heading": "Rejoice in the Lord"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "The Generosity of the Philippians"
+      },
+      {
+        "beforeVerse": 21,
+        "heading": "Final Greetings"
+      }
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "book": "2 Kings",
+  "chapter": 10,
+  "questions": [
+    {
+      "id": "2-kings-10-q1",
+      "type": "multiple_choice",
+      "question": "What did Jehu do to the worship of Baal in Israel?",
+      "options": [
+        "Reformed it gently, sparing all of its many priests and prophets",
+        "Left it completely untouched and turned a blind eye to it",
+        "Promoted it far above the true worship of the LORD God",
+        "Destroyed it, killing its prophets and tearing down its temple"
+      ],
+      "answer": "Destroyed it, killing its prophets and tearing down its temple",
+      "verse_reference": "2 Kings 10:18-28"
+    },
+    {
+      "id": "2-kings-10-q2",
+      "type": "multiple_choice",
+      "question": "What happened to the seventy sons of Ahab?",
+      "options": [
+        "They reigned",
+        "They were killed",
+        "They fled",
+        "They were spared"
+      ],
+      "answer": "They were killed",
+      "verse_reference": "2 Kings 10:1-7"
+    },
+    {
+      "id": "2-kings-10-q3",
+      "type": "true_false",
+      "question": "Although Jehu destroyed Baal worship, he did not turn from Jeroboam's golden calves.",
+      "answer": "true",
+      "verse_reference": "2 Kings 10:29"
+    },
+    {
+      "id": "2-kings-10-q4",
+      "type": "fill_blank",
+      "question": "Jehu wiped out _____ worship from Israel by a deceptive gathering.",
+      "answer": "Baal",
+      "verse_reference": "2 Kings 10:19-28"
+    },
+    {
+      "id": "2-kings-10-q5",
+      "type": "fill_blank",
+      "question": "Jehu still did not abandon the golden _____ at Bethel and Dan.",
+      "answer": "calves",
+      "verse_reference": "2 Kings 10:29"
+    }
+  ]
+}

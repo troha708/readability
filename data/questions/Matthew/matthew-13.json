@@ -1,0 +1,53 @@
+{
+  "book": "Matthew",
+  "chapter": 13,
+  "questions": [
+    {
+      "id": "matthew-13-q1",
+      "type": "multiple_choice",
+      "question": "In the parable of the sower, what happened to the seed that fell on good ground?",
+      "options": [
+        "It produced fruit",
+        "It was eaten by birds",
+        "It withered in the sun",
+        "It was choked by thorns"
+      ],
+      "answer": "It produced fruit",
+      "verse_reference": "Matthew 13:23"
+    },
+    {
+      "id": "matthew-13-q2",
+      "type": "multiple_choice",
+      "question": "In the parable of the mustard seed, what does it grow into?",
+      "options": [
+        "A great vine",
+        "A large and fruitful garden",
+        "The greatest among herbs",
+        "A mighty oak"
+      ],
+      "answer": "The greatest among herbs",
+      "verse_reference": "Matthew 13:32"
+    },
+    {
+      "id": "matthew-13-q3",
+      "type": "true_false",
+      "question": "Jesus was honored as a prophet in his own hometown of Nazareth.",
+      "answer": "false",
+      "verse_reference": "Matthew 13:57"
+    },
+    {
+      "id": "matthew-13-q4",
+      "type": "fill_blank",
+      "question": "The Kingdom of Heaven is like treasure hidden in the _____.",
+      "answer": "field",
+      "verse_reference": "Matthew 13:44"
+    },
+    {
+      "id": "matthew-13-q5",
+      "type": "fill_blank",
+      "question": "Again, the Kingdom of Heaven is like a merchant seeking fine _____.",
+      "answer": "pearls",
+      "verse_reference": "Matthew 13:45"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 33,
+  "questions": [
+    {
+      "id": "2-chronicles-33-q1",
+      "type": "multiple_choice",
+      "question": "How is King Manasseh first described?",
+      "options": [
+        "He was righteous and tore down all of the idols",
+        "He did much evil, rebuilding high places and idols",
+        "He was weak and left the throne to other men",
+        "He was peaceful and carefully avoided every war"
+      ],
+      "answer": "He did much evil, rebuilding high places and idols",
+      "verse_reference": "2 Chronicles 33:2-3"
+    },
+    {
+      "id": "2-chronicles-33-q2",
+      "type": "multiple_choice",
+      "question": "What happened to Manasseh that led him to repent?",
+      "options": [
+        "A prophet warned him of his coming destruction",
+        "Assyria captured him with hooks and bound him in Babylon",
+        "His own sons rose up and drove him out from his royal throne",
+        "A severe drought ruined the harvest of his land"
+      ],
+      "answer": "Assyria captured him with hooks and bound him in Babylon",
+      "verse_reference": "2 Chronicles 33:11"
+    },
+    {
+      "id": "2-chronicles-33-q3",
+      "type": "true_false",
+      "question": "When Manasseh humbled himself, God brought him back to Jerusalem.",
+      "answer": "true",
+      "verse_reference": "2 Chronicles 33:12-13"
+    },
+    {
+      "id": "2-chronicles-33-q4",
+      "type": "fill_blank",
+      "question": "Manasseh's son _____ also did evil and was killed by his servants.",
+      "answer": "Amon",
+      "verse_reference": "2 Chronicles 33:21-24"
+    },
+    {
+      "id": "2-chronicles-33-q5",
+      "type": "fill_blank",
+      "question": "In distress Manasseh humbled himself greatly before the God of his _____.",
+      "answer": "fathers",
+      "verse_reference": "2 Chronicles 33:12"
+    }
+  ]
+}

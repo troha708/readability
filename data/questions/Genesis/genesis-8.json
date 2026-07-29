@@ -1,0 +1,53 @@
+{
+  "book": "Genesis",
+  "chapter": 8,
+  "questions": [
+    {
+      "id": "genesis-8-q1",
+      "type": "multiple_choice",
+      "question": "On what mountains did the ark come to rest?",
+      "options": [
+        "Moriah",
+        "Sinai",
+        "Ararat",
+        "Carmel"
+      ],
+      "answer": "Ararat",
+      "verse_reference": "Genesis 8:4"
+    },
+    {
+      "id": "genesis-8-q2",
+      "type": "multiple_choice",
+      "question": "What did the dove bring back, showing the water had receded?",
+      "options": [
+        "A small silver fish",
+        "An olive leaf",
+        "A fresh green fig",
+        "A long broken reed"
+      ],
+      "answer": "An olive leaf",
+      "verse_reference": "Genesis 8:11"
+    },
+    {
+      "id": "genesis-8-q3",
+      "type": "true_false",
+      "question": "After leaving the ark, Noah built an altar and offered burnt offerings to the LORD.",
+      "answer": "true",
+      "verse_reference": "Genesis 8:20"
+    },
+    {
+      "id": "genesis-8-q4",
+      "type": "fill_blank",
+      "question": "The first bird Noah sent out from the ark was a _____.",
+      "answer": "raven",
+      "verse_reference": "Genesis 8:7"
+    },
+    {
+      "id": "genesis-8-q5",
+      "type": "fill_blank",
+      "question": "God promised that seedtime and _____ would never cease while the earth remains.",
+      "answer": "harvest",
+      "verse_reference": "Genesis 8:22"
+    }
+  ]
+}

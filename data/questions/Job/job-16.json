@@ -1,0 +1,53 @@
+{
+  "book": "Job",
+  "chapter": 16,
+  "questions": [
+    {
+      "id": "job-16-q1",
+      "type": "multiple_choice",
+      "question": "What did Job call his friends?",
+      "options": [
+        "Faithful friends",
+        "Miserable comforters",
+        "Prophets",
+        "Wise counselors"
+      ],
+      "answer": "Miserable comforters",
+      "verse_reference": "Job 16:2"
+    },
+    {
+      "id": "job-16-q2",
+      "type": "multiple_choice",
+      "question": "Where did Job say his witness was?",
+      "options": [
+        "On earth",
+        "In heaven",
+        "Nowhere",
+        "In his friends"
+      ],
+      "answer": "In heaven",
+      "verse_reference": "Job 16:19"
+    },
+    {
+      "id": "job-16-q3",
+      "type": "true_false",
+      "question": "Job said he could speak as his friends did if their souls were in his place.",
+      "answer": "true",
+      "verse_reference": "Job 16:4"
+    },
+    {
+      "id": "job-16-q4",
+      "type": "fill_blank",
+      "question": "Job said God had bound him, and it had become a _____ that testified against him.",
+      "answer": "witness",
+      "verse_reference": "Job 16:7-8"
+    },
+    {
+      "id": "job-16-q5",
+      "type": "fill_blank",
+      "question": "Job's eye poured out _____ to God as a man pleads with his neighbor.",
+      "answer": "tears",
+      "verse_reference": "Job 16:20"
+    }
+  ]
+}

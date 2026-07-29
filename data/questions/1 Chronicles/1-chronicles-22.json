@@ -1,0 +1,53 @@
+{
+  "book": "1 Chronicles",
+  "chapter": 22,
+  "questions": [
+    {
+      "id": "1-chronicles-22-q1",
+      "type": "multiple_choice",
+      "question": "What did David declare the threshing-floor site would become?",
+      "options": [
+        "A marketplace for the city",
+        "The house of the LORD God",
+        "A royal palace for the king",
+        "A fortress to guard Jerusalem"
+      ],
+      "answer": "The house of the LORD God",
+      "verse_reference": "1 Chronicles 22:1"
+    },
+    {
+      "id": "1-chronicles-22-q2",
+      "type": "multiple_choice",
+      "question": "Why did God say David could not build the temple?",
+      "options": [
+        "He had grown too old and weak for it",
+        "He had sinned by numbering the people",
+        "He had broken his vow to the LORD",
+        "He had shed much blood and waged wars"
+      ],
+      "answer": "He had shed much blood and waged wars",
+      "verse_reference": "1 Chronicles 22:8"
+    },
+    {
+      "id": "1-chronicles-22-q3",
+      "type": "true_false",
+      "question": "David made extensive preparations of materials before his death for the temple.",
+      "answer": "true",
+      "verse_reference": "1 Chronicles 22:5"
+    },
+    {
+      "id": "1-chronicles-22-q4",
+      "type": "fill_blank",
+      "question": "David's son who would build the temple was named _____.",
+      "answer": "Solomon",
+      "verse_reference": "1 Chronicles 22:9"
+    },
+    {
+      "id": "1-chronicles-22-q5",
+      "type": "fill_blank",
+      "question": "David charged Solomon, 'Be strong and _____, and do it. Do not be afraid.'",
+      "answer": "courageous",
+      "verse_reference": "1 Chronicles 22:13"
+    }
+  ]
+}

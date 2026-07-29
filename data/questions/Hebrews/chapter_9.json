@@ -1,0 +1,58 @@
+{
+  "book": "Hebrews",
+  "chapter": 9,
+  "questions": [
+    {
+      "id": "heb_9_1",
+      "type": "multiple_choice",
+      "question": "How often did the high priest enter the Most Holy Place under the old covenant?",
+      "options": [
+        "Once a year",
+        "Daily",
+        "Weekly",
+        "Once every month"
+      ],
+      "correct": "Once a year",
+      "verse_ref": "Hebrews 9:7",
+      "feedback": "Only the high priest entered the inner room, and only once a year."
+    },
+    {
+      "id": "heb_9_2",
+      "type": "multiple_choice",
+      "question": "Christ entered heaven to appear before God on whose behalf?",
+      "options": [
+        "The priests'",
+        "The angels'",
+        "Israel's only",
+        "Ours"
+      ],
+      "correct": "Ours",
+      "verse_ref": "Hebrews 9:24",
+      "feedback": "Christ entered heaven itself to appear in God's presence on our behalf."
+    },
+    {
+      "id": "heb_9_3",
+      "type": "true_false",
+      "question": "Christ had to offer himself many times as a sacrifice.",
+      "correct": false,
+      "verse_ref": "Hebrews 9:25-26",
+      "feedback": "Christ did not need to offer himself repeatedly — he appeared once for all to do away with sin."
+    },
+    {
+      "id": "heb_9_4",
+      "type": "fill_in_the_blank",
+      "question": "Without the shedding of _____ there is no forgiveness.",
+      "correct": "blood",
+      "verse_ref": "Hebrews 9:22",
+      "feedback": "Without the shedding of blood there is no forgiveness of sins."
+    },
+    {
+      "id": "heb_9_5",
+      "type": "fill_in_the_blank",
+      "question": "People are destined to die once, and after that to face _____.",
+      "correct": "judgment",
+      "verse_ref": "Hebrews 9:27",
+      "feedback": "People are destined to die once and after that to face judgment."
+    }
+  ]
+}

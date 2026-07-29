@@ -1,0 +1,53 @@
+{
+  "book": "Matthew",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "matthew-3-q1",
+      "type": "multiple_choice",
+      "question": "Where was John the Baptist preaching?",
+      "options": [
+        "The temple in Jerusalem",
+        "The wilderness of Judea",
+        "The shores of Galilee",
+        "The city of Nazareth"
+      ],
+      "answer": "The wilderness of Judea",
+      "verse_reference": "Matthew 3:1"
+    },
+    {
+      "id": "matthew-3-q2",
+      "type": "multiple_choice",
+      "question": "What happened when Jesus came up out of the water after being baptized?",
+      "options": [
+        "All the river water turned to wine",
+        "A strong wind blew",
+        "Thunder shook the ground",
+        "The heavens were opened to him"
+      ],
+      "answer": "The heavens were opened to him",
+      "verse_reference": "Matthew 3:16"
+    },
+    {
+      "id": "matthew-3-q3",
+      "type": "true_false",
+      "question": "John the Baptist initially tried to prevent Jesus from being baptized by him.",
+      "answer": "true",
+      "verse_reference": "Matthew 3:14"
+    },
+    {
+      "id": "matthew-3-q4",
+      "type": "fill_blank",
+      "question": "Repent, for the Kingdom of _____ is at hand!",
+      "answer": "Heaven",
+      "verse_reference": "Matthew 3:2"
+    },
+    {
+      "id": "matthew-3-q5",
+      "type": "fill_blank",
+      "question": "A voice out of the heavens said, 'This is my beloved Son, with whom I am well _____.'",
+      "answer": "pleased",
+      "verse_reference": "Matthew 3:17"
+    }
+  ]
+}

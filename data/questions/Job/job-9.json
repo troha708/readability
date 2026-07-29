@@ -1,0 +1,53 @@
+{
+  "book": "Job",
+  "chapter": 9,
+  "questions": [
+    {
+      "id": "job-9-q1",
+      "type": "multiple_choice",
+      "question": "What question did Job raise about being righteous before God?",
+      "options": [
+        "Where can a man flee from God's sight?",
+        "How can a man be in the right before God?",
+        "Who can stand when the Lord is angry?",
+        "Why does the wicked man so often go unpunished?"
+      ],
+      "answer": "How can a man be in the right before God?",
+      "verse_reference": "Job 9:2"
+    },
+    {
+      "id": "job-9-q2",
+      "type": "multiple_choice",
+      "question": "How did Job describe God's power?",
+      "options": [
+        "He removes mountains and commands the sun",
+        "He is weak before the forces of nature",
+        "He is limited and cannot act freely",
+        "He is distant and far removed from all men"
+      ],
+      "answer": "He removes mountains and commands the sun",
+      "verse_reference": "Job 9:5-7"
+    },
+    {
+      "id": "job-9-q3",
+      "type": "true_false",
+      "question": "Job wished for an arbiter (umpire) to stand between him and God.",
+      "answer": "true",
+      "verse_reference": "Job 9:33"
+    },
+    {
+      "id": "job-9-q4",
+      "type": "fill_blank",
+      "question": "Job said God is wise in heart and mighty in _____.",
+      "answer": "strength",
+      "verse_reference": "Job 9:4"
+    },
+    {
+      "id": "job-9-q5",
+      "type": "fill_blank",
+      "question": "Job said even if he were innocent, his own mouth would _____ him.",
+      "answer": "condemn",
+      "verse_reference": "Job 9:20"
+    }
+  ]
+}

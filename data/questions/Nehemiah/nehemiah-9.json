@@ -1,0 +1,56 @@
+{
+  "book": "Nehemiah",
+  "chapter": 9,
+  "questions": [
+    {
+      "id": "nehemiah-9-q1",
+      "type": "multiple_choice",
+      "question": "What did the Israelites do on the day of confession?",
+      "options": [
+        "Held a great feast with much music, song, and dancing",
+        "Fasted, wore sackcloth, and confessed their sins",
+        "Built a new altar of uncut stones",
+        "Marched out to war against their enemies"
+      ],
+      "answer": "Fasted, wore sackcloth, and confessed their sins",
+      "verse_reference": "Nehemiah 9:1-2"
+    },
+    {
+      "id": "nehemiah-9-q2",
+      "type": "multiple_choice",
+      "question": "What does the long prayer in chapter 9 recount?",
+      "options": [
+        "The detailed plans for the rebuilding of the courts of the temple",
+        "A long and very complete list of all of the kings who had ruled over Judah",
+        "The future glory that was promised to the great city of Jerusalem",
+        "God's faithfulness throughout Israel's history despite their rebellion"
+      ],
+      "answer": "God's faithfulness throughout Israel's history despite their rebellion",
+      "verse_reference": "Nehemiah 9:6-31"
+    },
+    {
+      "id": "nehemiah-9-q3",
+      "type": "true_false",
+      "question": "The prayer acknowledges that God was just in all that had come upon them.",
+      "answer": "true",
+      "verse_reference": "Nehemiah 9:33"
+    },
+    {
+      "id": "nehemiah-9-q4",
+      "type": "fill_blank",
+      "question": "They confessed that God is a gracious and merciful God, slow to _____.",
+      "answer": "anger",
+      "verse_reference": "Nehemiah 9:17"
+    },
+    {
+      "id": "nehemiah-9-q5",
+      "type": "fill_blank",
+      "question": "They stood and read from the Book of the Law for a quarter of the day and confessed for another _____.",
+      "answer": "quarter",
+      "accept": [
+        "fourth"
+      ],
+      "verse_reference": "Nehemiah 9:3"
+    }
+  ]
+}

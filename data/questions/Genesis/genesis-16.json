@@ -1,0 +1,59 @@
+{
+  "book": "Genesis",
+  "chapter": 16,
+  "questions": [
+    {
+      "id": "genesis-16-q1",
+      "type": "multiple_choice",
+      "question": "Whom did Sarai give to Abram to bear a child for her?",
+      "options": [
+        "A Canaanite woman",
+        "Her servant Hagar",
+        "Her sister",
+        "Keturah"
+      ],
+      "answer": "Her servant Hagar",
+      "verse_reference": "Genesis 16:3"
+    },
+    {
+      "id": "genesis-16-q2",
+      "type": "multiple_choice",
+      "question": "What name did the angel tell Hagar to give her son?",
+      "options": [
+        "Esau his brother",
+        "Midian the wanderer",
+        "Isaac the promised",
+        "Ishmael"
+      ],
+      "answer": "Ishmael",
+      "verse_reference": "Genesis 16:11"
+    },
+    {
+      "id": "genesis-16-q3",
+      "type": "true_false",
+      "question": "Hagar gave God a name, calling him \"El Roi,\" the God who sees.",
+      "answer": "true",
+      "verse_reference": "Genesis 16:13"
+    },
+    {
+      "id": "genesis-16-q4",
+      "type": "fill_blank",
+      "question": "The name Ishmael means \"God _____,\" for the LORD heard Hagar's affliction.",
+      "answer": "hears",
+      "accept": [
+        "heard"
+      ],
+      "verse_reference": "Genesis 16:11"
+    },
+    {
+      "id": "genesis-16-q5",
+      "type": "fill_blank",
+      "question": "The angel of the LORD found Hagar by a spring in the _____.",
+      "answer": "desert",
+      "accept": [
+        "wilderness"
+      ],
+      "verse_reference": "Genesis 16:7"
+    }
+  ]
+}

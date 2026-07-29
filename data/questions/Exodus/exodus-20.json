@@ -1,0 +1,53 @@
+{
+  "book": "Exodus",
+  "chapter": 20,
+  "questions": [
+    {
+      "id": "exodus-20-q1",
+      "type": "multiple_choice",
+      "question": "What did God give to Israel in this chapter?",
+      "options": [
+        "The Ten Commandments",
+        "The Passover",
+        "The tabernacle plans",
+        "The manna"
+      ],
+      "answer": "The Ten Commandments",
+      "verse_reference": "Exodus 20:1-17"
+    },
+    {
+      "id": "exodus-20-q2",
+      "type": "multiple_choice",
+      "question": "Which commandment forbids making and worshiping idols or images?",
+      "options": [
+        "The first",
+        "The fourth",
+        "The tenth",
+        "The second"
+      ],
+      "answer": "The second",
+      "verse_reference": "Exodus 20:4"
+    },
+    {
+      "id": "exodus-20-q3",
+      "type": "true_false",
+      "question": "The first commandment is, \"You shall have no other gods before me.\"",
+      "answer": "true",
+      "verse_reference": "Exodus 20:3"
+    },
+    {
+      "id": "exodus-20-q4",
+      "type": "fill_blank",
+      "question": "\"Remember the _____ day, to keep it holy.\"",
+      "answer": "Sabbath",
+      "verse_reference": "Exodus 20:8"
+    },
+    {
+      "id": "exodus-20-q5",
+      "type": "fill_blank",
+      "question": "\"Honor your father and your _____.\"",
+      "answer": "mother",
+      "verse_reference": "Exodus 20:12"
+    }
+  ]
+}

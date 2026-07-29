@@ -1,0 +1,59 @@
+{
+  "book": "Revelation",
+  "chapter": 12,
+  "questions": [
+    {
+      "id": "rev_12_1",
+      "type": "multiple_choice",
+      "question": "The woman in heaven is clothed with what?",
+      "options": [
+        "A bright rainbow encircling the throne",
+        "The sun, with the moon under her feet",
+        "A river flowing from the temple",
+        "A sea of glass mixed with fire"
+      ],
+      "correct": "The sun, with the moon under her feet",
+      "verse_ref": "Revelation 12:1",
+      "feedback": "A woman clothed with the sun, with the moon under her feet and a crown of twelve stars."
+    },
+    {
+      "id": "rev_12_2",
+      "type": "multiple_choice",
+      "question": "The great dragon is identified as whom?",
+      "options": [
+        "Leviathan the serpent",
+        "Behemoth of old",
+        "Apollyon the destroyer",
+        "The devil, or Satan"
+      ],
+      "correct": "The devil, or Satan",
+      "verse_ref": "Revelation 12:9",
+      "feedback": "The great dragon is that ancient serpent called the devil, or Satan."
+    },
+    {
+      "id": "rev_12_3",
+      "type": "true_false",
+      "question": "The dragon's tail swept a third of the stars out of the sky.",
+      "correct": true,
+      "verse_ref": "Revelation 12:4",
+      "feedback": "The dragon's tail swept a third of the stars and flung them to earth."
+    },
+    {
+      "id": "rev_12_4",
+      "type": "fill_in_the_blank",
+      "question": "Michael and his _____ fought against the dragon.",
+      "correct": "angels",
+      "accept": ["messengers"],
+      "verse_ref": "Revelation 12:7",
+      "feedback": "Michael and his angels fought against the dragon and his angels."
+    },
+    {
+      "id": "rev_12_5",
+      "type": "fill_in_the_blank",
+      "question": "They triumphed over the dragon by the blood of the Lamb and by the word of their _____.",
+      "correct": "testimony",
+      "verse_ref": "Revelation 12:11",
+      "feedback": "They triumphed by the blood of the Lamb and the word of their testimony."
+    }
+  ]
+}

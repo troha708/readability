@@ -1,0 +1,56 @@
+{
+  "book": "Genesis",
+  "chapter": 26,
+  "questions": [
+    {
+      "id": "genesis-26-q1",
+      "type": "multiple_choice",
+      "question": "What did God tell Isaac to do during the famine?",
+      "options": [
+        "Go down to the land of Egypt",
+        "Stay in the land of Gerar",
+        "Travel back north to Haran",
+        "Build a walled city there"
+      ],
+      "answer": "Stay in the land of Gerar",
+      "verse_reference": "Genesis 26:2-6"
+    },
+    {
+      "id": "genesis-26-q2",
+      "type": "multiple_choice",
+      "question": "Like his father, what did Isaac falsely claim about his wife?",
+      "options": [
+        "She is my sister",
+        "She is dead",
+        "She is a servant",
+        "She is my mother"
+      ],
+      "answer": "She is my sister",
+      "verse_reference": "Genesis 26:7"
+    },
+    {
+      "id": "genesis-26-q3",
+      "type": "true_false",
+      "question": "Isaac reopened the wells his father Abraham had dug.",
+      "answer": "true",
+      "verse_reference": "Genesis 26:18"
+    },
+    {
+      "id": "genesis-26-q4",
+      "type": "fill_blank",
+      "question": "Isaac named an uncontested well _____, saying the LORD had given them room.",
+      "answer": "Rehoboth",
+      "accept": [
+        "Enlargements"
+      ],
+      "verse_reference": "Genesis 26:22"
+    },
+    {
+      "id": "genesis-26-q5",
+      "type": "fill_blank",
+      "question": "God appeared to Isaac at _____ and renewed the promise made to Abraham.",
+      "answer": "Beersheba",
+      "verse_reference": "Genesis 26:23-24"
+    }
+  ]
+}

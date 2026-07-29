@@ -1,0 +1,56 @@
+{
+  "book": "Leviticus",
+  "chapter": 8,
+  "questions": [
+    {
+      "id": "leviticus-8-q1",
+      "type": "multiple_choice",
+      "question": "What event takes place in chapter 8?",
+      "options": [
+        "The ordination of Aaron and his sons as priests",
+        "The making of the golden calf at Sinai",
+        "The first Passover before the exodus",
+        "The dividing of the whole land among the twelve tribes"
+      ],
+      "answer": "The ordination of Aaron and his sons as priests",
+      "verse_reference": "Leviticus 8:1-2"
+    },
+    {
+      "id": "leviticus-8-q2",
+      "type": "multiple_choice",
+      "question": "How long were Aaron and his sons to remain at the tent of meeting for their ordination?",
+      "options": [
+        "Forty days",
+        "Seven days",
+        "Three days",
+        "One day"
+      ],
+      "answer": "Seven days",
+      "verse_reference": "Leviticus 8:33"
+    },
+    {
+      "id": "leviticus-8-q3",
+      "type": "true_false",
+      "question": "Moses anointed the tabernacle and Aaron with the anointing oil.",
+      "answer": "true",
+      "verse_reference": "Leviticus 8:10-12"
+    },
+    {
+      "id": "leviticus-8-q4",
+      "type": "fill_blank",
+      "question": "Moses put some of the blood on Aaron's right _____.",
+      "answer": "earlobe",
+      "accept": [
+        "ear"
+      ],
+      "verse_reference": "Leviticus 8:23"
+    },
+    {
+      "id": "leviticus-8-q5",
+      "type": "fill_blank",
+      "question": "The ordination of the priests lasted _____ days.",
+      "answer": "seven",
+      "verse_reference": "Leviticus 8:33"
+    }
+  ]
+}

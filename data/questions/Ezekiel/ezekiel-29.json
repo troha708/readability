@@ -1,0 +1,56 @@
+{
+  "book": "Ezekiel",
+  "chapter": 29,
+  "questions": [
+    {
+      "id": "ezekiel-29-q1",
+      "type": "multiple_choice",
+      "question": "Against whom is the oracle in Ezekiel 29?",
+      "options": [
+        "Tyre and Sidon",
+        "Edom and Moab",
+        "Pharaoh and Egypt",
+        "Babylon and Chaldea"
+      ],
+      "answer": "Pharaoh and Egypt",
+      "verse_reference": "Ezekiel 29:2-3"
+    },
+    {
+      "id": "ezekiel-29-q2",
+      "type": "multiple_choice",
+      "question": "To what creature is Pharaoh compared in Ezekiel 29?",
+      "options": [
+        "A tall and towering cedar of the deep forest",
+        "An eagle soaring high above the lofty mountain peaks",
+        "The great dragon (sea monster) lying in his streams",
+        "A great lion crouching low within the thicket"
+      ],
+      "answer": "The great dragon (sea monster) lying in his streams",
+      "verse_reference": "Ezekiel 29:3"
+    },
+    {
+      "id": "ezekiel-29-q3",
+      "type": "true_false",
+      "question": "Ezekiel 29 says Egypt would be a lowly kingdom and never again exalt itself above the nations.",
+      "answer": "true",
+      "verse_reference": "Ezekiel 29:15"
+    },
+    {
+      "id": "ezekiel-29-q4",
+      "type": "fill_blank",
+      "question": "Pharaoh boasted, 'My Nile is my own; I made it for _____.'",
+      "answer": "myself",
+      "verse_reference": "Ezekiel 29:3"
+    },
+    {
+      "id": "ezekiel-29-q5",
+      "type": "fill_blank",
+      "question": "Egypt had been a staff of _____ to the house of Israel.",
+      "answer": "reeds",
+      "accept": [
+        "reed"
+      ],
+      "verse_reference": "Ezekiel 29:6"
+    }
+  ]
+}

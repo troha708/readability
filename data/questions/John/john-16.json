@@ -1,0 +1,57 @@
+{
+  "book": "John",
+  "chapter": 16,
+  "questions": [
+    {
+      "id": "john-16-q1",
+      "type": "multiple_choice",
+      "question": "Jesus said the Spirit of Truth would do what when he came?",
+      "options": [
+        "Make them rulers over the nations",
+        "Carry them up into heaven",
+        "Guide them into all truth",
+        "Give them great wealth and power"
+      ],
+      "answer": "Guide them into all truth",
+      "verse_reference": "John 16:13"
+    },
+    {
+      "id": "john-16-q2",
+      "type": "multiple_choice",
+      "question": "What comparison did Jesus use to describe the disciples' grief turning to joy?",
+      "options": [
+        "Night turning to day",
+        "A seed growing into a tree",
+        "Winter turning to spring",
+        "A woman giving birth"
+      ],
+      "answer": "A woman giving birth",
+      "verse_reference": "John 16:21"
+    },
+    {
+      "id": "john-16-q3",
+      "type": "true_false",
+      "question": "Jesus said it was to the disciples' advantage that he go away, because otherwise the Counselor would not come.",
+      "answer": "true",
+      "verse_reference": "John 16:7"
+    },
+    {
+      "id": "john-16-q4",
+      "type": "fill_blank",
+      "question": "In the world you will have _____. But take courage; I have overcome the world!",
+      "answer": "tribulation",
+      "accept": [
+        "trouble",
+        "affliction"
+      ],
+      "verse_reference": "John 16:33"
+    },
+    {
+      "id": "john-16-q5",
+      "type": "fill_blank",
+      "question": "A little while, and you will not see me. Again a little while, and you will _____ me.",
+      "answer": "see",
+      "verse_reference": "John 16:16"
+    }
+  ]
+}

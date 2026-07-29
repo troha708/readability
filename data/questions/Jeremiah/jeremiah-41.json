@@ -1,0 +1,53 @@
+{
+  "book": "Jeremiah",
+  "chapter": 41,
+  "questions": [
+    {
+      "id": "jeremiah-41-q1",
+      "type": "multiple_choice",
+      "question": "What crime did Ishmael commit in chapter 41?",
+      "options": [
+        "Deserted to the enemy camp",
+        "Murdered Gedaliah and others",
+        "Worshiped the idols of Babylon",
+        "Robbed the temple treasury"
+      ],
+      "answer": "Murdered Gedaliah and others",
+      "verse_reference": "Jeremiah 41:2"
+    },
+    {
+      "id": "jeremiah-41-q2",
+      "type": "multiple_choice",
+      "question": "Who pursued and recovered the captives Ishmael had taken?",
+      "options": [
+        "Johanan son of Kareah",
+        "Gedaliah son of Ahikam",
+        "Baruch son of Neriah",
+        "Nebuzaradan the captain"
+      ],
+      "answer": "Johanan son of Kareah",
+      "verse_reference": "Jeremiah 41:11-14"
+    },
+    {
+      "id": "jeremiah-41-q3",
+      "type": "true_false",
+      "question": "Ishmael escaped to the Ammonites after his crimes.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 41:15"
+    },
+    {
+      "id": "jeremiah-41-q4",
+      "type": "fill_blank",
+      "question": "_____ son of Nethaniah struck down Gedaliah, whom the king of Babylon had appointed.",
+      "answer": "Ishmael",
+      "verse_reference": "Jeremiah 41:2"
+    },
+    {
+      "id": "jeremiah-41-q5",
+      "type": "fill_blank",
+      "question": "The people whom Ishmael had carried away were brought back by _____.",
+      "answer": "Johanan",
+      "verse_reference": "Jeremiah 41:16"
+    }
+  ]
+}

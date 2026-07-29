@@ -1,0 +1,59 @@
+{
+  "book": "Ecclesiastes",
+  "chapter": 6,
+  "questions": [
+    {
+      "id": "ecclesiastes-6-q1",
+      "type": "multiple_choice",
+      "question": "What evil does Ecclesiastes 6 describe?",
+      "options": [
+        "A man to whom God gives wealth but not the power to enjoy it",
+        "A poor man who labors yet never escapes his poverty",
+        "A king who loses his throne to a wiser young rival",
+        "A wise man who saves a city, then is quickly forgotten"
+      ],
+      "answer": "A man to whom God gives wealth but not the power to enjoy it",
+      "verse_reference": "Ecclesiastes 6:2"
+    },
+    {
+      "id": "ecclesiastes-6-q2",
+      "type": "multiple_choice",
+      "question": "What does Ecclesiastes 6 say about desire?",
+      "options": [
+        "Desire fulfilled is a tree of life that satisfies the soul",
+        "The appetite is never satisfied, though all labor is for the mouth",
+        "A man's desire is his glory, and he should freely pursue it",
+        "The desire of the diligent is in the end richly supplied"
+      ],
+      "answer": "The appetite is never satisfied, though all labor is for the mouth",
+      "verse_reference": "Ecclesiastes 6:7, 9"
+    },
+    {
+      "id": "ecclesiastes-6-q3",
+      "type": "true_false",
+      "question": "Ecclesiastes 6 observes that all the toil of man is for his mouth, yet his appetite is not satisfied.",
+      "answer": "true",
+      "verse_reference": "Ecclesiastes 6:7"
+    },
+    {
+      "id": "ecclesiastes-6-q4",
+      "type": "fill_blank",
+      "question": "All the toil of man is for his mouth, yet his _____ is not satisfied.",
+      "answer": "appetite",
+      "accept": [
+        "soul"
+      ],
+      "verse_reference": "Ecclesiastes 6:7"
+    },
+    {
+      "id": "ecclesiastes-6-q5",
+      "type": "fill_blank",
+      "question": "Better is the sight of the eyes than the wandering of _____.",
+      "answer": "desire",
+      "accept": [
+        "soul"
+      ],
+      "verse_reference": "Ecclesiastes 6:9"
+    }
+  ]
+}

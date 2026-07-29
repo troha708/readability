@@ -1,0 +1,53 @@
+{
+  "book": "Job",
+  "chapter": 12,
+  "questions": [
+    {
+      "id": "job-12-q1",
+      "type": "multiple_choice",
+      "question": "How did Job respond to his friends' claims to wisdom?",
+      "options": [
+        "He left them all at once and flatly refused to speak",
+        "He wept aloud and would say nothing more",
+        "Sarcastically, that wisdom would die with them",
+        "He humbly agreed with all that they said"
+      ],
+      "answer": "Sarcastically, that wisdom would die with them",
+      "verse_reference": "Job 12:2"
+    },
+    {
+      "id": "job-12-q2",
+      "type": "multiple_choice",
+      "question": "To whom did Job say wisdom and might belong?",
+      "options": [
+        "God",
+        "Mankind",
+        "Kings",
+        "The wise"
+      ],
+      "answer": "God",
+      "verse_reference": "Job 12:13"
+    },
+    {
+      "id": "job-12-q3",
+      "type": "true_false",
+      "question": "Job said even the animals and birds could teach that the LORD's hand has done this.",
+      "answer": "true",
+      "verse_reference": "Job 12:7-9"
+    },
+    {
+      "id": "job-12-q4",
+      "type": "fill_blank",
+      "question": "Job said God leads counselors away stripped and makes fools of _____.",
+      "answer": "judges",
+      "verse_reference": "Job 12:17"
+    },
+    {
+      "id": "job-12-q5",
+      "type": "fill_blank",
+      "question": "Job said with God are strength and sound _____.",
+      "answer": "wisdom",
+      "verse_reference": "Job 12:16"
+    }
+  ]
+}

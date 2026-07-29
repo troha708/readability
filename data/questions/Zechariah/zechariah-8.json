@@ -1,0 +1,53 @@
+{
+  "book": "Zechariah",
+  "chapter": 8,
+  "questions": [
+    {
+      "id": "zechariah-8-q1",
+      "type": "multiple_choice",
+      "question": "What does God promise about Jerusalem in Zechariah 8?",
+      "options": [
+        "He will scatter all of the people abroad among the many nations",
+        "He will return to Zion and dwell in Jerusalem, the faithful city",
+        "He will hand the whole city over entirely to all of its enemies",
+        "He will leave the holy temple in ruins forever and ever and ever"
+      ],
+      "answer": "He will return to Zion and dwell in Jerusalem, the faithful city",
+      "verse_reference": "Zechariah 8:3"
+    },
+    {
+      "id": "zechariah-8-q2",
+      "type": "multiple_choice",
+      "question": "What scene of peace does Zechariah 8 describe?",
+      "options": [
+        "Old men and women sitting in the streets, and boys and girls playing in them",
+        "Great armies of soldiers marching out to war at the break of every morning",
+        "Many mourners weeping in their sackcloth and ashes through all of the gates",
+        "Busy merchants buying and selling all of their wares in the crowded markets"
+      ],
+      "answer": "Old men and women sitting in the streets, and boys and girls playing in them",
+      "verse_reference": "Zechariah 8:4-5"
+    },
+    {
+      "id": "zechariah-8-q3",
+      "type": "true_false",
+      "question": "Zechariah 8 says many peoples and nations will come to seek the LORD in Jerusalem.",
+      "answer": "true",
+      "verse_reference": "Zechariah 8:22"
+    },
+    {
+      "id": "zechariah-8-q4",
+      "type": "fill_blank",
+      "question": "Jerusalem shall be called the faithful _____, and the mountain of the LORD of hosts, the holy mountain.",
+      "answer": "city",
+      "verse_reference": "Zechariah 8:3"
+    },
+    {
+      "id": "zechariah-8-q5",
+      "type": "fill_blank",
+      "question": "Speak the _____ to one another; render true and peaceful judgments in your gates.",
+      "answer": "truth",
+      "verse_reference": "Zechariah 8:16"
+    }
+  ]
+}

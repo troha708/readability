@@ -1,0 +1,56 @@
+{
+  "book": "Psalms",
+  "chapter": 85,
+  "questions": [
+    {
+      "id": "psalms-85-q1",
+      "type": "multiple_choice",
+      "question": "What does Psalm 85 ask God to do?",
+      "options": [
+        "Send rain upon the thirsty ground",
+        "Establish the king upon his throne",
+        "Repay all the nations for their great cruelty",
+        "Restore his people and revive them again"
+      ],
+      "answer": "Restore his people and revive them again",
+      "verse_reference": "Psalm 85:4, 6"
+    },
+    {
+      "id": "psalms-85-q2",
+      "type": "multiple_choice",
+      "question": "What beautiful image describes God's attributes meeting?",
+      "options": [
+        "Day and night flow together at last into one single, unending, glorious light",
+        "The wide open sea and the bright open sky are joined together at the far horizon",
+        "The sun and the moon and the stars all bow low before the great throne of the LORD",
+        "Steadfast love and faithfulness meet; righteousness and peace kiss each other"
+      ],
+      "answer": "Steadfast love and faithfulness meet; righteousness and peace kiss each other",
+      "verse_reference": "Psalm 85:10"
+    },
+    {
+      "id": "psalms-85-q3",
+      "type": "true_false",
+      "question": "The psalm says the LORD will give what is good, and the land will yield its increase.",
+      "answer": "true",
+      "verse_reference": "Psalm 85:12"
+    },
+    {
+      "id": "psalms-85-q4",
+      "type": "fill_blank",
+      "question": "Righteousness and _____ kiss each other.",
+      "answer": "peace",
+      "verse_reference": "Psalm 85:10"
+    },
+    {
+      "id": "psalms-85-q5",
+      "type": "fill_blank",
+      "question": "Will you not _____ us again, that your people may rejoice in you?",
+      "answer": "revive",
+      "accept": [
+        "quicken"
+      ],
+      "verse_reference": "Psalm 85:6"
+    }
+  ]
+}

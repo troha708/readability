@@ -1,0 +1,56 @@
+{
+  "book": "Psalms",
+  "chapter": 94,
+  "questions": [
+    {
+      "id": "psalms-94-q1",
+      "type": "multiple_choice",
+      "question": "How is God addressed at the start of Psalm 94?",
+      "options": [
+        "O LORD, God of mercy",
+        "O LORD, God of great mercy",
+        "O LORD, God of peace",
+        "O LORD, God of vengeance"
+      ],
+      "answer": "O LORD, God of vengeance",
+      "verse_reference": "Psalm 94:1"
+    },
+    {
+      "id": "psalms-94-q2",
+      "type": "multiple_choice",
+      "question": "What rhetorical question rebukes those who think God does not notice?",
+      "options": [
+        "Who has measured all of the waters of the sea in the hollow of his own hand?",
+        "He who planted the ear, does he not hear? He who formed the eye, does he not see?",
+        "Who has set the fixed boundaries of the sea so that it would not pass beyond them?",
+        "Who gives food to the young ravens out in the field when they cry aloud to him?"
+      ],
+      "answer": "He who planted the ear, does he not hear? He who formed the eye, does he not see?",
+      "verse_reference": "Psalm 94:9"
+    },
+    {
+      "id": "psalms-94-q3",
+      "type": "true_false",
+      "question": "The psalm says blessed is the man whom God disciplines and teaches out of his law.",
+      "answer": "true",
+      "verse_reference": "Psalm 94:12"
+    },
+    {
+      "id": "psalms-94-q4",
+      "type": "fill_blank",
+      "question": "He who planted the ear, does he not _____?",
+      "answer": "hear",
+      "verse_reference": "Psalm 94:9"
+    },
+    {
+      "id": "psalms-94-q5",
+      "type": "fill_blank",
+      "question": "The LORD will not forsake his people; he will not abandon his _____.",
+      "answer": "heritage",
+      "accept": [
+        "inheritance"
+      ],
+      "verse_reference": "Psalm 94:14"
+    }
+  ]
+}

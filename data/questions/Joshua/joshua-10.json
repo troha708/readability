@@ -1,0 +1,53 @@
+{
+  "book": "Joshua",
+  "chapter": 10,
+  "questions": [
+    {
+      "id": "joshua-10-q1",
+      "type": "multiple_choice",
+      "question": "What remarkable miracle happened during the battle at Gibeon?",
+      "options": [
+        "The earth shook",
+        "The sun stood still",
+        "Fire fell from heaven",
+        "A great flood came"
+      ],
+      "answer": "The sun stood still",
+      "verse_reference": "Joshua 10:12-13"
+    },
+    {
+      "id": "joshua-10-q2",
+      "type": "multiple_choice",
+      "question": "What did God send down on the fleeing enemies?",
+      "options": [
+        "Bolts of fire",
+        "Swarms of locusts",
+        "Showers of arrows",
+        "Large hailstones"
+      ],
+      "answer": "Large hailstones",
+      "verse_reference": "Joshua 10:11"
+    },
+    {
+      "id": "joshua-10-q3",
+      "type": "true_false",
+      "question": "Joshua defeated five Amorite kings who had allied against Gibeon.",
+      "answer": "true",
+      "verse_reference": "Joshua 10:5-26"
+    },
+    {
+      "id": "joshua-10-q4",
+      "type": "fill_blank",
+      "question": "At Joshua's word, the _____ stood still in the sky about a full day.",
+      "answer": "sun",
+      "verse_reference": "Joshua 10:13"
+    },
+    {
+      "id": "joshua-10-q5",
+      "type": "fill_blank",
+      "question": "Joshua said, \"Sun, stand still over _____,\" and the LORD fought for Israel.",
+      "answer": "Gibeon",
+      "verse_reference": "Joshua 10:12"
+    }
+  ]
+}

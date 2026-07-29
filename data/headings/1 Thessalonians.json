@@ -1,0 +1,56 @@
+{
+  "book": "1 Thessalonians",
+  "source": "Berean Standard Bible (CC0 Public Domain)",
+  "chapters": {
+    "1": [
+      {
+        "beforeVerse": 1,
+        "heading": "Greetings to the Thessalonians"
+      }
+    ],
+    "2": [
+      {
+        "beforeVerse": 1,
+        "heading": "Paul’s Ministry"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "Paul’s Longing to Visit"
+      }
+    ],
+    "3": [
+      {
+        "beforeVerse": 1,
+        "heading": "Timothy’s Visit"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "Timothy’s Encouraging Report"
+      }
+    ],
+    "4": [
+      {
+        "beforeVerse": 1,
+        "heading": "Living to Please God"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "The Return of the Lord"
+      }
+    ],
+    "5": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Day of the Lord"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "Christian Living"
+      },
+      {
+        "beforeVerse": 23,
+        "heading": "Final Blessings and Instructions"
+      }
+    ]
+  }
+}

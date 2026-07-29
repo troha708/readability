@@ -1,0 +1,53 @@
+{
+  "book": "1 Kings",
+  "chapter": 17,
+  "questions": [
+    {
+      "id": "1-kings-17-q1",
+      "type": "multiple_choice",
+      "question": "Who declared there would be no rain except by his word?",
+      "options": [
+        "Elisha",
+        "Elijah",
+        "Nathan",
+        "Micaiah"
+      ],
+      "answer": "Elijah",
+      "verse_reference": "1 Kings 17:1"
+    },
+    {
+      "id": "1-kings-17-q2",
+      "type": "multiple_choice",
+      "question": "How was Elijah fed during the drought by the brook Cherith?",
+      "options": [
+        "By a widow",
+        "By ravens",
+        "By angels",
+        "By fishermen"
+      ],
+      "answer": "By ravens",
+      "verse_reference": "1 Kings 17:6"
+    },
+    {
+      "id": "1-kings-17-q3",
+      "type": "true_false",
+      "question": "Elijah raised the widow of Zarephath's son back to life.",
+      "answer": "true",
+      "verse_reference": "1 Kings 17:22"
+    },
+    {
+      "id": "1-kings-17-q4",
+      "type": "fill_blank",
+      "question": "_____ the prophet announced a drought, saying there would be no dew or rain.",
+      "answer": "Elijah",
+      "verse_reference": "1 Kings 17:1"
+    },
+    {
+      "id": "1-kings-17-q5",
+      "type": "fill_blank",
+      "question": "God commanded _____ to feed Elijah by the brook Cherith.",
+      "answer": "ravens",
+      "verse_reference": "1 Kings 17:4-6"
+    }
+  ]
+}

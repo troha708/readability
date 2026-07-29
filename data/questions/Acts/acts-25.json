@@ -1,0 +1,57 @@
+{
+  "book": "Acts",
+  "chapter": 25,
+  "questions": [
+    {
+      "id": "acts-25-q1",
+      "type": "multiple_choice",
+      "question": "What did Paul do when Festus asked if he was willing to go to Jerusalem for trial?",
+      "options": [
+        "He agreed to go",
+        "He asked for more time",
+        "He tried to escape",
+        "He appealed to Caesar"
+      ],
+      "answer": "He appealed to Caesar",
+      "verse_reference": "Acts 25:11"
+    },
+    {
+      "id": "acts-25-q2",
+      "type": "multiple_choice",
+      "question": "Which king came to Caesarea to visit Festus and heard Paul's case?",
+      "options": [
+        "Agrippa",
+        "Archelaus",
+        "Herod",
+        "Antipas"
+      ],
+      "answer": "Agrippa",
+      "verse_reference": "Acts 25:13,22-23"
+    },
+    {
+      "id": "acts-25-q3",
+      "type": "true_false",
+      "question": "Festus found Paul guilty of crimes against Roman law.",
+      "answer": "false",
+      "verse_reference": "Acts 25:25"
+    },
+    {
+      "id": "acts-25-q4",
+      "type": "fill_blank",
+      "question": "Paul said, 'I am standing before _____'s judgment seat, where I ought to be tried.'",
+      "answer": "Caesar",
+      "verse_reference": "Acts 25:10"
+    },
+    {
+      "id": "acts-25-q5",
+      "type": "fill_blank",
+      "question": "Festus said to Agrippa, 'It seems _____ to me to send a prisoner without specifying the charges against him.'",
+      "answer": "unreasonable",
+      "accept": [
+        "irrational",
+        "senseless"
+      ],
+      "verse_reference": "Acts 25:27"
+    }
+  ]
+}

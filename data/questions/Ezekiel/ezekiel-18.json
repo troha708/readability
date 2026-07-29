@@ -1,0 +1,60 @@
+{
+  "book": "Ezekiel",
+  "chapter": 18,
+  "questions": [
+    {
+      "id": "ezekiel-18-q1",
+      "type": "multiple_choice",
+      "question": "What proverb does Ezekiel 18 refute?",
+      "options": [
+        "'Like the mother, so the daughter, just as the old saying goes among the people'",
+        "'The fathers have eaten sour grapes, and the children's teeth are set on edge'",
+        "'A wise son always hears his father, but a scoffer will not listen to anyone'",
+        "'The wages of all the wicked is death, but the upright shall surely live on'"
+      ],
+      "answer": "'The fathers have eaten sour grapes, and the children's teeth are set on edge'",
+      "verse_reference": "Ezekiel 18:2"
+    },
+    {
+      "id": "ezekiel-18-q2",
+      "type": "multiple_choice",
+      "question": "What principle of responsibility does Ezekiel 18 teach?",
+      "options": [
+        "Only kings and rulers will answer to God for the people's sin",
+        "The soul who sins shall die; each is responsible for his own sin",
+        "No one at all can be held to account for what they have done",
+        "The children must bear the heavy guilt of their fathers' sins"
+      ],
+      "answer": "The soul who sins shall die; each is responsible for his own sin",
+      "verse_reference": "Ezekiel 18:4, 20"
+    },
+    {
+      "id": "ezekiel-18-q3",
+      "type": "true_false",
+      "question": "Ezekiel 18 says God has no pleasure in the death of anyone, but calls people to turn and live.",
+      "answer": "true",
+      "verse_reference": "Ezekiel 18:32"
+    },
+    {
+      "id": "ezekiel-18-q4",
+      "type": "fill_blank",
+      "question": "The soul who _____ shall die.",
+      "answer": "sins",
+      "accept": [
+        "sinneth"
+      ],
+      "verse_reference": "Ezekiel 18:4"
+    },
+    {
+      "id": "ezekiel-18-q5",
+      "type": "fill_blank",
+      "question": "Turn, and live! For I have no pleasure in the death of anyone, declares the Lord _____.",
+      "answer": "GOD",
+      "accept": [
+        "Yahweh",
+        "Jehovah"
+      ],
+      "verse_reference": "Ezekiel 18:32"
+    }
+  ]
+}

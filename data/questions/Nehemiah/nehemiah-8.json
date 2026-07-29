@@ -1,0 +1,53 @@
+{
+  "book": "Nehemiah",
+  "chapter": 8,
+  "questions": [
+    {
+      "id": "nehemiah-8-q1",
+      "type": "multiple_choice",
+      "question": "What did Ezra do before the assembled people at the Water Gate?",
+      "options": [
+        "Offered sacrifices on the great bronze altar",
+        "Led the army out against the enemy",
+        "Crowned a new king over Judah",
+        "Read from the Book of the Law of Moses"
+      ],
+      "answer": "Read from the Book of the Law of Moses",
+      "verse_reference": "Nehemiah 8:3"
+    },
+    {
+      "id": "nehemiah-8-q2",
+      "type": "multiple_choice",
+      "question": "How did Nehemiah and Ezra tell the people to respond instead of weeping?",
+      "options": [
+        "To rejoice, for the joy of the LORD is their strength",
+        "To fast and to humble themselves even further",
+        "To mourn and weep for a full period of seven days",
+        "To go home and rest quietly from the long reading"
+      ],
+      "answer": "To rejoice, for the joy of the LORD is their strength",
+      "verse_reference": "Nehemiah 8:10"
+    },
+    {
+      "id": "nehemiah-8-q3",
+      "type": "true_false",
+      "question": "The Levites helped the people understand the Law as it was read.",
+      "answer": "true",
+      "verse_reference": "Nehemiah 8:7-8"
+    },
+    {
+      "id": "nehemiah-8-q4",
+      "type": "fill_blank",
+      "question": "The people wept when they heard the words of the _____.",
+      "answer": "Law",
+      "verse_reference": "Nehemiah 8:9"
+    },
+    {
+      "id": "nehemiah-8-q5",
+      "type": "fill_blank",
+      "question": "They kept the Feast of _____ (Booths), which had not been done so since the days of Joshua.",
+      "answer": "Booths",
+      "verse_reference": "Nehemiah 8:14-17"
+    }
+  ]
+}

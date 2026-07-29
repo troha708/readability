@@ -1,0 +1,80 @@
+{
+  "book": "Micah",
+  "source": "Berean Standard Bible (CC0 Public Domain)",
+  "chapters": {
+    "1": [
+      {
+        "beforeVerse": 1,
+        "heading": "Judgment to Come"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "Weeping and Mourning"
+      }
+    ],
+    "2": [
+      {
+        "beforeVerse": 1,
+        "heading": "Woe to Oppressors"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "Reproof of False Prophets"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "The Remnant of Israel"
+      }
+    ],
+    "3": [
+      {
+        "beforeVerse": 1,
+        "heading": "Rulers and Prophets Condemned"
+      }
+    ],
+    "4": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Mountain of the House of the LORD"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "The Restoration of Zion"
+      }
+    ],
+    "5": [
+      {
+        "beforeVerse": 1,
+        "heading": "A Ruler from Bethlehem"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "The Remnant of Jacob"
+      }
+    ],
+    "6": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Case against Israel"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "The Punishment of Israel"
+      }
+    ],
+    "7": [
+      {
+        "beforeVerse": 1,
+        "heading": "Israel’s Great Misery"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "Israel’s Confession and Comfort"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "God’s Compassion on Israel"
+      }
+    ]
+  }
+}

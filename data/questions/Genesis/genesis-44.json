@@ -1,0 +1,56 @@
+{
+  "book": "Genesis",
+  "chapter": 44,
+  "questions": [
+    {
+      "id": "genesis-44-q1",
+      "type": "multiple_choice",
+      "question": "What was hidden in Benjamin's sack to test the brothers?",
+      "options": [
+        "Joseph's silver cup",
+        "A heavy bag of pure gold",
+        "Extra grain for the journey",
+        "A sealed letter from the king"
+      ],
+      "answer": "Joseph's silver cup",
+      "verse_reference": "Genesis 44:2"
+    },
+    {
+      "id": "genesis-44-q2",
+      "type": "multiple_choice",
+      "question": "What did Judah offer in order to save Benjamin?",
+      "options": [
+        "To fight off the Egyptian guards",
+        "To remain as a slave in his place",
+        "To flee from Egypt with him",
+        "To pay a ransom in silver"
+      ],
+      "answer": "To remain as a slave in his place",
+      "verse_reference": "Genesis 44:33"
+    },
+    {
+      "id": "genesis-44-q3",
+      "type": "true_false",
+      "question": "The brothers abandoned Benjamin to save themselves.",
+      "answer": "false",
+      "verse_reference": "Genesis 44:13"
+    },
+    {
+      "id": "genesis-44-q4",
+      "type": "fill_blank",
+      "question": "Joseph's silver cup was found in _____'s sack.",
+      "answer": "Benjamin",
+      "accept": [
+        "Beniamin"
+      ],
+      "verse_reference": "Genesis 44:12"
+    },
+    {
+      "id": "genesis-44-q5",
+      "type": "fill_blank",
+      "question": "Judah said he could not return to his father if the _____ was not with him.",
+      "answer": "boy",
+      "verse_reference": "Genesis 44:34"
+    }
+  ]
+}

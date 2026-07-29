@@ -1,0 +1,56 @@
+{
+  "book": "Song Of Solomon",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "song-of-solomon-1-q1",
+      "type": "multiple_choice",
+      "question": "How does the Song of Solomon begin?",
+      "options": [
+        "With a long, mournful, and very bitter lament over a great city left in ruins",
+        "With the bride's longing: 'Let him kiss me with the kisses of his mouth'",
+        "With a long and detailed list of the kings descended from David",
+        "With the long march of a great army setting out together to war"
+      ],
+      "answer": "With the bride's longing: 'Let him kiss me with the kisses of his mouth'",
+      "verse_reference": "Song of Solomon 1:2"
+    },
+    {
+      "id": "song-of-solomon-1-q2",
+      "type": "multiple_choice",
+      "question": "How does the woman describe herself in chapter 1?",
+      "options": [
+        "Pale and faint, much like the early morning mist",
+        "Old and weary, worn down by the passing years",
+        "Tall and stately, like a flourishing palm tree",
+        "Very dark, but lovely, like the tents of Kedar"
+      ],
+      "answer": "Very dark, but lovely, like the tents of Kedar",
+      "verse_reference": "Song of Solomon 1:5"
+    },
+    {
+      "id": "song-of-solomon-1-q3",
+      "type": "true_false",
+      "question": "The Song of Solomon is a poetic celebration of love between a bride and her beloved.",
+      "answer": "true",
+      "verse_reference": "Song of Solomon 1:1"
+    },
+    {
+      "id": "song-of-solomon-1-q4",
+      "type": "fill_blank",
+      "question": "Let him kiss me with the _____ of his mouth! For your love is better than wine.",
+      "answer": "kisses",
+      "verse_reference": "Song of Solomon 1:2"
+    },
+    {
+      "id": "song-of-solomon-1-q5",
+      "type": "fill_blank",
+      "question": "The title attributes the Song to _____.",
+      "answer": "Solomon",
+      "accept": [
+        "Solomon's"
+      ],
+      "verse_reference": "Song of Solomon 1:1"
+    }
+  ]
+}

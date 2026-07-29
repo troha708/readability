@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 41,
+  "questions": [
+    {
+      "id": "psalms-41-q1",
+      "type": "multiple_choice",
+      "question": "Whom does Psalm 41 call blessed?",
+      "options": [
+        "The one who keeps the Sabbath",
+        "The one who pays his vows",
+        "The one who fasts in secret",
+        "The one who considers the poor"
+      ],
+      "answer": "The one who considers the poor",
+      "verse_reference": "Psalm 41:1"
+    },
+    {
+      "id": "psalms-41-q2",
+      "type": "multiple_choice",
+      "question": "What does David say his close friend did?",
+      "options": [
+        "Slandered his good name throughout the land",
+        "Lifted his heel against him (betrayed him)",
+        "Forgot the kindness he had shown",
+        "Plundered his house in the night"
+      ],
+      "answer": "Lifted his heel against him (betrayed him)",
+      "verse_reference": "Psalm 41:9"
+    },
+    {
+      "id": "psalms-41-q3",
+      "type": "true_false",
+      "question": "The psalm ends with a doxology blessing the LORD, the God of Israel, from everlasting to everlasting.",
+      "answer": "true",
+      "verse_reference": "Psalm 41:13"
+    },
+    {
+      "id": "psalms-41-q4",
+      "type": "fill_blank",
+      "question": "Blessed is the one who considers the _____.",
+      "answer": "poor",
+      "verse_reference": "Psalm 41:1"
+    },
+    {
+      "id": "psalms-41-q5",
+      "type": "fill_blank",
+      "question": "As for me, I said, 'O LORD, be gracious to me; heal me, for I have _____ against you.'",
+      "answer": "sinned",
+      "verse_reference": "Psalm 41:4"
+    }
+  ]
+}

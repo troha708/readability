@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 56,
+  "questions": [
+    {
+      "id": "psalms-56-q1",
+      "type": "multiple_choice",
+      "question": "What is the occasion of Psalm 56?",
+      "options": [
+        "When Saul pursued David in the wilderness",
+        "When the Philistines seized David in Gath",
+        "When Absalom rose up against his father",
+        "When the Ziphites betrayed David to Saul"
+      ],
+      "answer": "When the Philistines seized David in Gath",
+      "verse_reference": "Psalm 56:title"
+    },
+    {
+      "id": "psalms-56-q2",
+      "type": "multiple_choice",
+      "question": "What does David say he will not fear?",
+      "options": [
+        "What his enemies whisper in secret",
+        "What the future may yet hold",
+        "What flesh (man) can do to him",
+        "What the nations plot against him"
+      ],
+      "answer": "What flesh (man) can do to him",
+      "verse_reference": "Psalm 56:4"
+    },
+    {
+      "id": "psalms-56-q3",
+      "type": "true_false",
+      "question": "David says God keeps count of his tossings and puts his tears in a bottle.",
+      "answer": "true",
+      "verse_reference": "Psalm 56:8"
+    },
+    {
+      "id": "psalms-56-q4",
+      "type": "fill_blank",
+      "question": "When I am afraid, I put my _____ in you.",
+      "answer": "trust",
+      "verse_reference": "Psalm 56:3"
+    },
+    {
+      "id": "psalms-56-q5",
+      "type": "fill_blank",
+      "question": "In God, whose word I praise, in God I trust; I shall not be _____.",
+      "answer": "afraid",
+      "verse_reference": "Psalm 56:4"
+    }
+  ]
+}

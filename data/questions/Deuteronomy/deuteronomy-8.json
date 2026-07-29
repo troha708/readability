@@ -1,0 +1,53 @@
+{
+  "book": "Deuteronomy",
+  "chapter": 8,
+  "questions": [
+    {
+      "id": "deuteronomy-8-q1",
+      "type": "multiple_choice",
+      "question": "What lesson did the wilderness and the manna teach Israel?",
+      "options": [
+        "That the LORD would always supply more than enough food",
+        "That man does not live by bread alone, but by every word of God",
+        "That bread from heaven was far sweeter than all the food of Egypt",
+        "That obedience brings rain and disobedience brings famine"
+      ],
+      "answer": "That man does not live by bread alone, but by every word of God",
+      "verse_reference": "Deuteronomy 8:3"
+    },
+    {
+      "id": "deuteronomy-8-q2",
+      "type": "multiple_choice",
+      "question": "What did Moses warn would happen when Israel became prosperous?",
+      "options": [
+        "They might forget the LORD",
+        "They would grow weak",
+        "They would be poor",
+        "Nothing"
+      ],
+      "answer": "They might forget the LORD",
+      "verse_reference": "Deuteronomy 8:11-14"
+    },
+    {
+      "id": "deuteronomy-8-q3",
+      "type": "true_false",
+      "question": "Their clothes did not wear out and their feet did not swell during forty years.",
+      "answer": "true",
+      "verse_reference": "Deuteronomy 8:4"
+    },
+    {
+      "id": "deuteronomy-8-q4",
+      "type": "fill_blank",
+      "question": "The wilderness taught that man does not live by _____ alone.",
+      "answer": "bread",
+      "verse_reference": "Deuteronomy 8:3"
+    },
+    {
+      "id": "deuteronomy-8-q5",
+      "type": "fill_blank",
+      "question": "Moses warned them to beware, lest they _____ the LORD when they were full and prosperous.",
+      "answer": "forget",
+      "verse_reference": "Deuteronomy 8:11"
+    }
+  ]
+}

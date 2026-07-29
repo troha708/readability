@@ -1,0 +1,53 @@
+{
+  "book": "Exodus",
+  "chapter": 30,
+  "questions": [
+    {
+      "id": "exodus-30-q1",
+      "type": "multiple_choice",
+      "question": "What was burned on the small golden altar each morning and evening?",
+      "options": [
+        "Incense",
+        "Grain and fine flour",
+        "Oil",
+        "Meat"
+      ],
+      "answer": "Incense",
+      "verse_reference": "Exodus 30:7-8"
+    },
+    {
+      "id": "exodus-30-q2",
+      "type": "multiple_choice",
+      "question": "What did the priests use the bronze basin for?",
+      "options": [
+        "Burning incense before the altar",
+        "Collecting the blood of the offerings",
+        "Mixing the holy anointing oil",
+        "Washing their hands and feet"
+      ],
+      "answer": "Washing their hands and feet",
+      "verse_reference": "Exodus 30:18-19"
+    },
+    {
+      "id": "exodus-30-q3",
+      "type": "true_false",
+      "question": "Every Israelite counted in the census was to give a half shekel as a ransom for his life.",
+      "answer": "true",
+      "verse_reference": "Exodus 30:13"
+    },
+    {
+      "id": "exodus-30-q4",
+      "type": "fill_blank",
+      "question": "Before serving, the priests were to wash their hands and _____.",
+      "answer": "feet",
+      "verse_reference": "Exodus 30:19"
+    },
+    {
+      "id": "exodus-30-q5",
+      "type": "fill_blank",
+      "question": "A special anointing _____ was made to consecrate the tabernacle and the priests.",
+      "answer": "oil",
+      "verse_reference": "Exodus 30:25"
+    }
+  ]
+}

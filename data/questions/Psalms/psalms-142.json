@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 142,
+  "questions": [
+    {
+      "id": "psalms-142-q1",
+      "type": "multiple_choice",
+      "question": "Where was David when he prayed Psalm 142?",
+      "options": [
+        "By the sea",
+        "In the temple",
+        "In a palace",
+        "In the cave"
+      ],
+      "answer": "In the cave",
+      "verse_reference": "Psalm 142:title"
+    },
+    {
+      "id": "psalms-142-q2",
+      "type": "multiple_choice",
+      "question": "What does David say about his refuge?",
+      "options": [
+        "He has more than friends enough to keep him safe from all harm",
+        "No one cares for his soul; the LORD is his refuge and portion",
+        "His many mighty men will surely deliver him from every danger",
+        "His own strong right hand has already won for him a sure escape"
+      ],
+      "answer": "No one cares for his soul; the LORD is his refuge and portion",
+      "verse_reference": "Psalm 142:4-5"
+    },
+    {
+      "id": "psalms-142-q3",
+      "type": "true_false",
+      "question": "David asks God to bring him out of prison so he may give thanks to God's name.",
+      "answer": "true",
+      "verse_reference": "Psalm 142:7"
+    },
+    {
+      "id": "psalms-142-q4",
+      "type": "fill_blank",
+      "question": "With my voice I cry out to the LORD; with my voice I plead for _____.",
+      "answer": "mercy",
+      "verse_reference": "Psalm 142:1"
+    },
+    {
+      "id": "psalms-142-q5",
+      "type": "fill_blank",
+      "question": "I say, 'You are my refuge, my portion in the land of the _____.'",
+      "answer": "living",
+      "verse_reference": "Psalm 142:5"
+    }
+  ]
+}

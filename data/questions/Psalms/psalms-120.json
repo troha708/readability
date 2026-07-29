@@ -1,0 +1,56 @@
+{
+  "book": "Psalms",
+  "chapter": 120,
+  "questions": [
+    {
+      "id": "psalms-120-q1",
+      "type": "multiple_choice",
+      "question": "What kind of psalm is Psalm 120, like 121-134?",
+      "options": [
+        "A maskil",
+        "A wedding song",
+        "A long psalm of Asaph",
+        "A Song of Ascents"
+      ],
+      "answer": "A Song of Ascents",
+      "verse_reference": "Psalm 120:title"
+    },
+    {
+      "id": "psalms-120-q2",
+      "type": "multiple_choice",
+      "question": "From what does the psalmist ask to be delivered?",
+      "options": [
+        "Idle hands and a slothful spirit",
+        "Greedy gain and a grasping hand",
+        "Lying lips and a deceitful tongue",
+        "Proud eyes and a haughty heart"
+      ],
+      "answer": "Lying lips and a deceitful tongue",
+      "verse_reference": "Psalm 120:2"
+    },
+    {
+      "id": "psalms-120-q3",
+      "type": "true_false",
+      "question": "The psalmist laments that he dwells among those who hate peace; he is for peace, but they are for war.",
+      "answer": "true",
+      "verse_reference": "Psalm 120:6-7"
+    },
+    {
+      "id": "psalms-120-q4",
+      "type": "fill_blank",
+      "question": "In my distress I called to the LORD, and he _____ me.",
+      "answer": "answered",
+      "accept": [
+        "heard"
+      ],
+      "verse_reference": "Psalm 120:1"
+    },
+    {
+      "id": "psalms-120-q5",
+      "type": "fill_blank",
+      "question": "I am for peace, but when I speak, they are for _____!",
+      "answer": "war",
+      "verse_reference": "Psalm 120:7"
+    }
+  ]
+}

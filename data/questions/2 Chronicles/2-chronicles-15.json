@@ -1,0 +1,53 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 15,
+  "questions": [
+    {
+      "id": "2-chronicles-15-q1",
+      "type": "multiple_choice",
+      "question": "What did the prophet Azariah tell Asa?",
+      "options": [
+        "Build a strong wall around the city",
+        "Make an alliance with a foreign king",
+        "March out to war against the north",
+        "The LORD is with you while you are with him"
+      ],
+      "answer": "The LORD is with you while you are with him",
+      "verse_reference": "2 Chronicles 15:2"
+    },
+    {
+      "id": "2-chronicles-15-q2",
+      "type": "multiple_choice",
+      "question": "What did Asa and the people do in response?",
+      "options": [
+        "Rebelled against the prophet's call",
+        "Did nothing and ignored the word",
+        "Turned to worship foreign idols",
+        "Made a covenant to seek the LORD"
+      ],
+      "answer": "Made a covenant to seek the LORD",
+      "verse_reference": "2 Chronicles 15:12"
+    },
+    {
+      "id": "2-chronicles-15-q3",
+      "type": "true_false",
+      "question": "Asa removed his grandmother Maacah from being queen mother because of her idol.",
+      "answer": "true",
+      "verse_reference": "2 Chronicles 15:16"
+    },
+    {
+      "id": "2-chronicles-15-q4",
+      "type": "fill_blank",
+      "question": "Azariah said, 'If you seek him, he will be _____ by you.'",
+      "answer": "found",
+      "verse_reference": "2 Chronicles 15:2"
+    },
+    {
+      "id": "2-chronicles-15-q5",
+      "type": "fill_blank",
+      "question": "They sought the LORD with their whole desire, and he gave them _____ all around.",
+      "answer": "rest",
+      "verse_reference": "2 Chronicles 15:15"
+    }
+  ]
+}

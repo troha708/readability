@@ -1,0 +1,60 @@
+{
+  "book": "2 Timothy",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "2tim_2_1",
+      "type": "multiple_choice",
+      "question": "Paul compares the Christian life to what three roles?",
+      "options": [
+        "Soldier, athlete, and farmer",
+        "King, priest, and prophet",
+        "Teacher, shepherd, and builder",
+        "Servant, master, and judge"
+      ],
+      "correct": "Soldier, athlete, and farmer",
+      "verse_ref": "2 Timothy 2:3-6",
+      "feedback": "Paul uses the metaphors of soldier, athlete, and farmer to describe faithful service."
+    },
+    {
+      "id": "2tim_2_2",
+      "type": "multiple_choice",
+      "question": "Paul tells Timothy to be a worker who does not need to be ashamed, correctly handling what?",
+      "options": [
+        "The word of truth",
+        "The law of Moses",
+        "Church finances",
+        "Disputes among believers"
+      ],
+      "correct": "The word of truth",
+      "verse_ref": "2 Timothy 2:15",
+      "feedback": "Be a worker who correctly handles the word of truth."
+    },
+    {
+      "id": "2tim_2_3",
+      "type": "true_false",
+      "question": "Paul says if we are faithless, God remains faithful because he cannot deny himself.",
+      "correct": true,
+      "verse_ref": "2 Timothy 2:13",
+      "feedback": "Even if we are faithless, God remains faithful — he cannot deny himself."
+    },
+    {
+      "id": "2tim_2_4",
+      "type": "fill_in_the_blank",
+      "question": "Paul says to flee youthful _____ and pursue righteousness, faith, love, and peace.",
+      "correct": "passions",
+      "accept": ["lusts"],
+      "verse_ref": "2 Timothy 2:22",
+      "feedback": "Flee youthful passions and pursue righteousness, faith, love, and peace."
+    },
+    {
+      "id": "2tim_2_5",
+      "type": "fill_in_the_blank",
+      "question": "Paul says the Lord's servant must not be quarrelsome but _____ to everyone.",
+      "correct": "kind",
+      "accept": ["gentle"],
+      "verse_ref": "2 Timothy 2:24",
+      "feedback": "The Lord's servant must be kind to everyone, able to teach, patiently enduring evil."
+    }
+  ]
+}

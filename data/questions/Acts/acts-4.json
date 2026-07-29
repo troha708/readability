@@ -1,0 +1,53 @@
+{
+  "book": "Acts",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "acts-4-q1",
+      "type": "multiple_choice",
+      "question": "Why were Peter and John arrested after healing the lame man?",
+      "options": [
+        "For practicing dark sorcery in the name of God",
+        "For stirring up a riot among the people",
+        "For speaking blasphemy against the temple",
+        "For teaching and proclaiming the resurrection"
+      ],
+      "answer": "For teaching and proclaiming the resurrection",
+      "verse_reference": "Acts 4:2"
+    },
+    {
+      "id": "acts-4-q2",
+      "type": "multiple_choice",
+      "question": "What did the early believers share with one another?",
+      "options": [
+        "Their freedom — none would submit to the rulers",
+        "Their possessions — no one claimed anything as their own",
+        "Their safety — none feared the threats of the council",
+        "Their wisdom — none claimed to know more than another"
+      ],
+      "answer": "Their possessions — no one claimed anything as their own",
+      "verse_reference": "Acts 4:32"
+    },
+    {
+      "id": "acts-4-q3",
+      "type": "true_false",
+      "question": "The rulers commanded Peter and John not to speak or teach in the name of Jesus, and they agreed to stop.",
+      "answer": "false",
+      "verse_reference": "Acts 4:18-20"
+    },
+    {
+      "id": "acts-4-q4",
+      "type": "fill_blank",
+      "question": "There is salvation in no one else, for there is no other _____ under heaven given among men, by which we must be saved.",
+      "answer": "name",
+      "verse_reference": "Acts 4:12"
+    },
+    {
+      "id": "acts-4-q5",
+      "type": "fill_blank",
+      "question": "When they had prayed, the place was _____, and they were all filled with the Holy Spirit.",
+      "answer": "shaken",
+      "verse_reference": "Acts 4:31"
+    }
+  ]
+}

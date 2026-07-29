@@ -1,0 +1,56 @@
+{
+  "book": "Psalms",
+  "chapter": 140,
+  "questions": [
+    {
+      "id": "psalms-140-q1",
+      "type": "multiple_choice",
+      "question": "From whom does David ask to be delivered in Psalm 140?",
+      "options": [
+        "Proud kings who exalt themselves over God",
+        "Evil men and violent men who plan evil",
+        "Greedy merchants who cheat with false scales",
+        "False prophets who speak their own dreams"
+      ],
+      "answer": "Evil men and violent men who plan evil",
+      "verse_reference": "Psalm 140:1"
+    },
+    {
+      "id": "psalms-140-q2",
+      "type": "multiple_choice",
+      "question": "What is David confident the LORD will do?",
+      "options": [
+        "Maintain the cause of the afflicted and execute justice for the needy",
+        "Establish the throne of the king for a full thousand generations",
+        "Send down the rain upon the fields and fill all of the barns with grain",
+        "Subdue all of the nations and gather in their tribute to Zion"
+      ],
+      "answer": "Maintain the cause of the afflicted and execute justice for the needy",
+      "verse_reference": "Psalm 140:12"
+    },
+    {
+      "id": "psalms-140-q3",
+      "type": "true_false",
+      "question": "David calls the LORD his God and the strength of his salvation, covering his head in battle.",
+      "answer": "true",
+      "verse_reference": "Psalm 140:7"
+    },
+    {
+      "id": "psalms-140-q4",
+      "type": "fill_blank",
+      "question": "Deliver me, O LORD, from evil _____; preserve me from violent men.",
+      "answer": "men",
+      "verse_reference": "Psalm 140:1"
+    },
+    {
+      "id": "psalms-140-q5",
+      "type": "fill_blank",
+      "question": "I know that the LORD upholds justice for the _____ and defends the cause of the needy.",
+      "answer": "poor",
+      "accept": [
+        "afflicted"
+      ],
+      "verse_reference": "Psalm 140:12"
+    }
+  ]
+}

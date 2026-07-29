@@ -1,0 +1,53 @@
+{
+  "book": "Isaiah",
+  "chapter": 15,
+  "questions": [
+    {
+      "id": "isaiah-15-q1",
+      "type": "multiple_choice",
+      "question": "Against which nation is the oracle in Isaiah 15?",
+      "options": [
+        "Tyre",
+        "Moab",
+        "Edom",
+        "Egypt"
+      ],
+      "answer": "Moab",
+      "verse_reference": "Isaiah 15:1"
+    },
+    {
+      "id": "isaiah-15-q2",
+      "type": "multiple_choice",
+      "question": "What is the tone of Isaiah 15?",
+      "options": [
+        "A song of joy over Moab's rescue",
+        "A lament over Moab's destruction and weeping",
+        "A call for Moab to repent and live",
+        "A treaty of lasting peace between Moab and Judah"
+      ],
+      "answer": "A lament over Moab's destruction and weeping",
+      "verse_reference": "Isaiah 15:5"
+    },
+    {
+      "id": "isaiah-15-q3",
+      "type": "true_false",
+      "question": "Isaiah 15 describes Moab's cities laid waste and its people wailing.",
+      "answer": "true",
+      "verse_reference": "Isaiah 15:1-3"
+    },
+    {
+      "id": "isaiah-15-q4",
+      "type": "fill_blank",
+      "question": "The oracle concerning _____.",
+      "answer": "Moab",
+      "verse_reference": "Isaiah 15:1"
+    },
+    {
+      "id": "isaiah-15-q5",
+      "type": "fill_blank",
+      "question": "My heart cries out for _____; her fugitives flee to Zoar.",
+      "answer": "Moab",
+      "verse_reference": "Isaiah 15:5"
+    }
+  ]
+}

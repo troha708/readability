@@ -1,0 +1,53 @@
+{
+  "book": "Luke",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "luke-3-q1",
+      "type": "multiple_choice",
+      "question": "What did John the Baptizer tell the crowds to produce as evidence of repentance?",
+      "options": [
+        "Fruits worthy of repentance",
+        "Long prayers said in public",
+        "Many days of solemn fasting",
+        "Sacrifices at the temple"
+      ],
+      "answer": "Fruits worthy of repentance",
+      "verse_reference": "Luke 3:8"
+    },
+    {
+      "id": "luke-3-q2",
+      "type": "multiple_choice",
+      "question": "About how old was Jesus when he began his ministry?",
+      "options": [
+        "Twenty years old",
+        "Twenty-five years old",
+        "Thirty years old",
+        "Thirty-five years old"
+      ],
+      "answer": "Thirty years old",
+      "verse_reference": "Luke 3:23"
+    },
+    {
+      "id": "luke-3-q3",
+      "type": "true_false",
+      "question": "The Holy Spirit descended on Jesus in bodily form like a dove at his baptism.",
+      "answer": "true",
+      "verse_reference": "Luke 3:22"
+    },
+    {
+      "id": "luke-3-q4",
+      "type": "fill_blank",
+      "question": "He who has two coats, let him give to him who has _____.",
+      "answer": "none",
+      "verse_reference": "Luke 3:11"
+    },
+    {
+      "id": "luke-3-q5",
+      "type": "fill_blank",
+      "question": "You are my beloved Son. In you I am well _____.",
+      "answer": "pleased",
+      "verse_reference": "Luke 3:22"
+    }
+  ]
+}

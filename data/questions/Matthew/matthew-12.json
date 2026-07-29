@@ -1,0 +1,56 @@
+{
+  "book": "Matthew",
+  "chapter": 12,
+  "questions": [
+    {
+      "id": "matthew-12-q1",
+      "type": "multiple_choice",
+      "question": "The Pharisees accused Jesus' disciples of doing what on the Sabbath?",
+      "options": [
+        "Working in the fields",
+        "Healing the sick",
+        "Carrying water",
+        "Plucking grain to eat"
+      ],
+      "answer": "Plucking grain to eat",
+      "verse_reference": "Matthew 12:1-2"
+    },
+    {
+      "id": "matthew-12-q2",
+      "type": "multiple_choice",
+      "question": "The Pharisees accused Jesus of casting out demons by whose power?",
+      "options": [
+        "Beelzebul's",
+        "His own",
+        "Mighty Caesar's",
+        "Moses'"
+      ],
+      "answer": "Beelzebul's",
+      "verse_reference": "Matthew 12:24"
+    },
+    {
+      "id": "matthew-12-q3",
+      "type": "true_false",
+      "question": "Jesus said that the Son of Man is Lord of the Sabbath.",
+      "answer": "true",
+      "verse_reference": "Matthew 12:8"
+    },
+    {
+      "id": "matthew-12-q4",
+      "type": "fill_blank",
+      "question": "For out of the abundance of the heart, the _____ speaks.",
+      "answer": "mouth",
+      "verse_reference": "Matthew 12:34"
+    },
+    {
+      "id": "matthew-12-q5",
+      "type": "fill_blank",
+      "question": "An evil and adulterous generation seeks after a sign, and no sign will be given to it but the sign of _____ the prophet.",
+      "answer": "Jonah",
+      "accept": [
+        "Jonas"
+      ],
+      "verse_reference": "Matthew 12:39"
+    }
+  ]
+}

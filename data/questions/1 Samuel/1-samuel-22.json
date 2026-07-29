@@ -1,0 +1,53 @@
+{
+  "book": "1 Samuel",
+  "chapter": 22,
+  "questions": [
+    {
+      "id": "1-samuel-22-q1",
+      "type": "multiple_choice",
+      "question": "Who gathered to David in the cave of Adullam?",
+      "options": [
+        "The priests and Levites from Nob",
+        "The trained soldiers of King Saul's own army",
+        "The distressed, indebted, and discontented",
+        "The kings of the surrounding nations"
+      ],
+      "answer": "The distressed, indebted, and discontented",
+      "verse_reference": "1 Samuel 22:1-2"
+    },
+    {
+      "id": "1-samuel-22-q2",
+      "type": "multiple_choice",
+      "question": "What terrible thing did Saul order at Nob?",
+      "options": [
+        "The killing of the priests who had helped David",
+        "A sudden and shameful retreat from the battlefield",
+        "A great feast to celebrate his reign as king",
+        "A binding treaty with all the Philistine cities"
+      ],
+      "answer": "The killing of the priests who had helped David",
+      "verse_reference": "1 Samuel 22:18-19"
+    },
+    {
+      "id": "1-samuel-22-q3",
+      "type": "true_false",
+      "question": "Doeg the Edomite carried out the slaughter of the priests of Nob.",
+      "answer": "true",
+      "verse_reference": "1 Samuel 22:18"
+    },
+    {
+      "id": "1-samuel-22-q4",
+      "type": "fill_blank",
+      "question": "About four hundred men gathered to David in the cave of _____.",
+      "answer": "Adullam",
+      "verse_reference": "1 Samuel 22:1-2"
+    },
+    {
+      "id": "1-samuel-22-q5",
+      "type": "fill_blank",
+      "question": "Saul had the priests of _____ killed for helping David.",
+      "answer": "Nob",
+      "verse_reference": "1 Samuel 22:18-19"
+    }
+  ]
+}

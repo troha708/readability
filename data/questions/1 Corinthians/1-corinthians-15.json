@@ -1,0 +1,53 @@
+{
+  "book": "1 Corinthians",
+  "chapter": 15,
+  "questions": [
+    {
+      "id": "1cor-15-q1",
+      "type": "multiple_choice",
+      "question": "What is the main topic of this chapter?",
+      "options": [
+        "The fall of the temple",
+        "The coming of the law",
+        "The resurrection of the dead",
+        "The long-awaited return of the exiles"
+      ],
+      "answer": "The resurrection of the dead",
+      "verse_reference": "1 Corinthians 15:12"
+    },
+    {
+      "id": "1cor-15-q2",
+      "type": "multiple_choice",
+      "question": "Paul says if Christ has not been raised, then what?",
+      "options": [
+        "The church should disband",
+        "They must try harder",
+        "Their faith is in vain",
+        "The law still applies"
+      ],
+      "answer": "Their faith is in vain",
+      "verse_reference": "1 Corinthians 15:14"
+    },
+    {
+      "id": "1cor-15-q3",
+      "type": "true_false",
+      "question": "Paul says the resurrection body is the same as the natural body.",
+      "answer": "false",
+      "verse_reference": "1 Corinthians 15:42-44"
+    },
+    {
+      "id": "1cor-15-q4",
+      "type": "fill_blank",
+      "question": "O death, where is your victory? O death, where is your _____?",
+      "answer": "sting",
+      "verse_reference": "1 Corinthians 15:55"
+    },
+    {
+      "id": "1cor-15-q5",
+      "type": "fill_blank",
+      "question": "The last _____ that will be abolished is death.",
+      "answer": "enemy",
+      "verse_reference": "1 Corinthians 15:26"
+    }
+  ]
+}

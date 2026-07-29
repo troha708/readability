@@ -1,0 +1,428 @@
+{
+  "book": "2 Kings",
+  "source": "Berean Standard Bible (CC0 Public Domain)",
+  "chapters": {
+    "1": [
+      {
+        "beforeVerse": 1,
+        "heading": "Elijah Denounces Ahaziah"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "Jehoram Succeeds Ahaziah"
+      }
+    ],
+    "2": [
+      {
+        "beforeVerse": 1,
+        "heading": "Elijah Taken Up to Heaven"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "Elisha Succeeds Elijah"
+      },
+      {
+        "beforeVerse": 19,
+        "heading": "Elisha Heals the Waters of Jericho"
+      },
+      {
+        "beforeVerse": 23,
+        "heading": "Elisha Mocked"
+      }
+    ],
+    "3": [
+      {
+        "beforeVerse": 1,
+        "heading": "Moab’s Rebellion"
+      }
+    ],
+    "4": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Widow’s Oil"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "The Shunammite Woman"
+      },
+      {
+        "beforeVerse": 18,
+        "heading": "Elisha Raises the Shunammite’s Son"
+      },
+      {
+        "beforeVerse": 38,
+        "heading": "Elisha Purifies the Poisonous Stew"
+      },
+      {
+        "beforeVerse": 42,
+        "heading": "Feeding a Hundred Men"
+      }
+    ],
+    "5": [
+      {
+        "beforeVerse": 1,
+        "heading": "Naaman Cured of Leprosy"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "Gehazi’s Greed and Leprosy"
+      }
+    ],
+    "6": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Axe Head Floats"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "Elisha Captures the Blinded Arameans"
+      },
+      {
+        "beforeVerse": 24,
+        "heading": "The Siege and Famine of Samaria"
+      }
+    ],
+    "7": [
+      {
+        "beforeVerse": 1,
+        "heading": "Elisha’s Prophecy of Plenty"
+      },
+      {
+        "beforeVerse": 3,
+        "heading": "The Arameans Flee"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "Elisha’s Prophecy Fulfilled"
+      }
+    ],
+    "8": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Shunammite’s Land Restored"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "Hazael Murders Ben-hadad"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "Jehoram Reigns in Judah"
+      },
+      {
+        "beforeVerse": 20,
+        "heading": "Edom and Libnah Rebel"
+      },
+      {
+        "beforeVerse": 25,
+        "heading": "Ahaziah Reigns in Judah"
+      }
+    ],
+    "9": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jehu Anointed King of Israel"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "Jehu Kills Joram and Ahaziah"
+      },
+      {
+        "beforeVerse": 30,
+        "heading": "Jezebel’s Violent Death"
+      }
+    ],
+    "10": [
+      {
+        "beforeVerse": 1,
+        "heading": "Ahab’s Seventy Sons Killed"
+      },
+      {
+        "beforeVerse": 18,
+        "heading": "Jehu Kills the Priests of Baal"
+      },
+      {
+        "beforeVerse": 28,
+        "heading": "Jehu Repeats Jeroboam’s Sins"
+      },
+      {
+        "beforeVerse": 34,
+        "heading": "Jehoahaz Succeeds Jehu in Israel"
+      }
+    ],
+    "11": [
+      {
+        "beforeVerse": 1,
+        "heading": "Athaliah and Joash"
+      },
+      {
+        "beforeVerse": 4,
+        "heading": "Joash Anointed King of Judah"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "The Death of Athaliah"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "Jehoiada Restores the Worship of the LORD"
+      }
+    ],
+    "12": [
+      {
+        "beforeVerse": 1,
+        "heading": "Joash Repairs the Temple"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "The Death of Joash"
+      }
+    ],
+    "13": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jehoahaz Reigns in Israel"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "Jehoash Reigns in Israel"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "Elisha’s Final Prophecy"
+      }
+    ],
+    "14": [
+      {
+        "beforeVerse": 1,
+        "heading": "Amaziah Reigns in Judah"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "Jehoash Defeats Amaziah"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "Jeroboam II Succeeds Jehoash in Israel"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "The Death of Amaziah"
+      },
+      {
+        "beforeVerse": 21,
+        "heading": "Azariah Succeeds Amaziah in Judah"
+      },
+      {
+        "beforeVerse": 23,
+        "heading": "Jeroboam II Reigns in Israel"
+      }
+    ],
+    "15": [
+      {
+        "beforeVerse": 1,
+        "heading": "Azariah Reigns in Judah"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "Zechariah Reigns in Israel"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "Shallum Reigns in Israel"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "Menahem Reigns in Israel"
+      },
+      {
+        "beforeVerse": 23,
+        "heading": "Pekahiah Reigns in Israel"
+      },
+      {
+        "beforeVerse": 27,
+        "heading": "Pekah Reigns in Israel"
+      },
+      {
+        "beforeVerse": 32,
+        "heading": "Jotham Reigns in Judah"
+      }
+    ],
+    "16": [
+      {
+        "beforeVerse": 1,
+        "heading": "Ahaz Reigns in Judah"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "The Idolatry of Ahaz"
+      }
+    ],
+    "17": [
+      {
+        "beforeVerse": 1,
+        "heading": "Hoshea the Last King of Israel"
+      },
+      {
+        "beforeVerse": 5,
+        "heading": "Israel Carried Captive to Assyria"
+      },
+      {
+        "beforeVerse": 24,
+        "heading": "Samaria Resettled"
+      }
+    ],
+    "18": [
+      {
+        "beforeVerse": 1,
+        "heading": "Hezekiah Destroys Idolatry in Judah"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "Sennacherib Invades Judah"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "Sennacherib Threatens Jerusalem"
+      }
+    ],
+    "19": [
+      {
+        "beforeVerse": 1,
+        "heading": "Isaiah’s Message of Deliverance"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "Sennacherib’s Blasphemous Letter"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "Hezekiah’s Prayer"
+      },
+      {
+        "beforeVerse": 20,
+        "heading": "Sennacherib’s Fall Prophesied"
+      },
+      {
+        "beforeVerse": 35,
+        "heading": "Jerusalem Delivered from the Assyrians"
+      }
+    ],
+    "20": [
+      {
+        "beforeVerse": 1,
+        "heading": "Hezekiah’s Illness and Recovery"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "Hezekiah Shows His Treasures"
+      },
+      {
+        "beforeVerse": 20,
+        "heading": "Manasseh Succeeds Hezekiah"
+      }
+    ],
+    "21": [
+      {
+        "beforeVerse": 1,
+        "heading": "Manasseh Reigns in Judah"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "Manasseh’s Idolatries Rebuked"
+      },
+      {
+        "beforeVerse": 19,
+        "heading": "Amon Reigns in Judah"
+      }
+    ],
+    "22": [
+      {
+        "beforeVerse": 1,
+        "heading": "Josiah Reigns in Judah"
+      },
+      {
+        "beforeVerse": 3,
+        "heading": "Funding the Temple Repairs"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "Hilkiah Finds the Book of the Law"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "Huldah’s Prophecy"
+      }
+    ],
+    "23": [
+      {
+        "beforeVerse": 1,
+        "heading": "Josiah Renews the Covenant"
+      },
+      {
+        "beforeVerse": 4,
+        "heading": "Josiah Destroys Idolatry"
+      },
+      {
+        "beforeVerse": 21,
+        "heading": "Josiah Restores the Passover"
+      },
+      {
+        "beforeVerse": 28,
+        "heading": "The Death of Josiah"
+      },
+      {
+        "beforeVerse": 31,
+        "heading": "Jehoahaz Succeeds Josiah"
+      },
+      {
+        "beforeVerse": 36,
+        "heading": "Jehoiakim Reigns in Judah"
+      }
+    ],
+    "24": [
+      {
+        "beforeVerse": 1,
+        "heading": "Babylon Controls Jehoiakim"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "Jehoiachin Reigns in Judah"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "The Captivity of Jerusalem"
+      },
+      {
+        "beforeVerse": 18,
+        "heading": "Zedekiah Reigns in Judah"
+      }
+    ],
+    "25": [
+      {
+        "beforeVerse": 1,
+        "heading": "Nebuchadnezzar Besieges Jerusalem"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "The Temple Destroyed"
+      },
+      {
+        "beforeVerse": 18,
+        "heading": "Captives Carried to Babylon"
+      },
+      {
+        "beforeVerse": 22,
+        "heading": "Gedaliah Governs in Judah"
+      },
+      {
+        "beforeVerse": 25,
+        "heading": "The Murder of Gedaliah"
+      },
+      {
+        "beforeVerse": 27,
+        "heading": "Jehoiachin Released from Prison"
+      }
+    ]
+  }
+}

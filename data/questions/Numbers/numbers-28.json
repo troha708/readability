@@ -1,0 +1,53 @@
+{
+  "book": "Numbers",
+  "chapter": 28,
+  "questions": [
+    {
+      "id": "numbers-28-q1",
+      "type": "multiple_choice",
+      "question": "What does chapter 28 mainly describe?",
+      "options": [
+        "The regular daily and festival offerings",
+        "The battles fought east of the Jordan",
+        "The numbering of the new generation",
+        "The laws of clean and unclean food"
+      ],
+      "answer": "The regular daily and festival offerings",
+      "verse_reference": "Numbers 28:2"
+    },
+    {
+      "id": "numbers-28-q2",
+      "type": "multiple_choice",
+      "question": "What offering was made every day, morning and evening?",
+      "options": [
+        "Incense burned on the golden altar",
+        "Two lambs (the continual offering)",
+        "A male goat for a sin offering",
+        "A young bull from the herd"
+      ],
+      "answer": "Two lambs (the continual offering)",
+      "verse_reference": "Numbers 28:3-4"
+    },
+    {
+      "id": "numbers-28-q3",
+      "type": "true_false",
+      "question": "Special offerings were commanded for the Sabbath, new moons, and festivals.",
+      "answer": "true",
+      "verse_reference": "Numbers 28:9-11"
+    },
+    {
+      "id": "numbers-28-q4",
+      "type": "fill_blank",
+      "question": "Two _____ a year old were offered each day as a continual burnt offering.",
+      "answer": "lambs",
+      "verse_reference": "Numbers 28:3"
+    },
+    {
+      "id": "numbers-28-q5",
+      "type": "fill_blank",
+      "question": "Extra offerings were commanded for the _____ day, a day of rest.",
+      "answer": "Sabbath",
+      "verse_reference": "Numbers 28:9"
+    }
+  ]
+}

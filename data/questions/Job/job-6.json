@@ -1,0 +1,53 @@
+{
+  "book": "Job",
+  "chapter": 6,
+  "questions": [
+    {
+      "id": "job-6-q1",
+      "type": "multiple_choice",
+      "question": "How did Job describe his complaint?",
+      "options": [
+        "Already wholly settled and at peace",
+        "Full of unexpected joy",
+        "Heavier than the sand of the sea",
+        "Light and easy to bear"
+      ],
+      "answer": "Heavier than the sand of the sea",
+      "verse_reference": "Job 6:2-3"
+    },
+    {
+      "id": "job-6-q2",
+      "type": "multiple_choice",
+      "question": "What did Job say about his friends?",
+      "options": [
+        "They were treacherous like a dried-up brook",
+        "They had truly helped him in his pain",
+        "They were wise and spoke only truth",
+        "They had stayed far away from him in his trouble"
+      ],
+      "answer": "They were treacherous like a dried-up brook",
+      "verse_reference": "Job 6:15"
+    },
+    {
+      "id": "job-6-q3",
+      "type": "true_false",
+      "question": "Job wished that God would grant his request and crush him to end his suffering.",
+      "answer": "true",
+      "verse_reference": "Job 6:8-9"
+    },
+    {
+      "id": "job-6-q4",
+      "type": "fill_blank",
+      "question": "Job asked, 'Does the wild donkey bray when it has _____?'",
+      "answer": "grass",
+      "verse_reference": "Job 6:5"
+    },
+    {
+      "id": "job-6-q5",
+      "type": "fill_blank",
+      "question": "Job asked his friends to teach him, and he would be _____.",
+      "answer": "silent",
+      "verse_reference": "Job 6:24"
+    }
+  ]
+}

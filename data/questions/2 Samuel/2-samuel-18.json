@@ -1,0 +1,53 @@
+{
+  "book": "2 Samuel",
+  "chapter": 18,
+  "questions": [
+    {
+      "id": "2-samuel-18-q1",
+      "type": "multiple_choice",
+      "question": "How was Absalom caught before his death?",
+      "options": [
+        "His chariot wheel broke on the rocky road",
+        "He was thrown when his mule stumbled",
+        "His foot was tangled in the river reeds",
+        "His head and hair caught in an oak tree"
+      ],
+      "answer": "His head and hair caught in an oak tree",
+      "verse_reference": "2 Samuel 18:9"
+    },
+    {
+      "id": "2-samuel-18-q2",
+      "type": "multiple_choice",
+      "question": "Who killed Absalom against David's orders?",
+      "options": [
+        "David",
+        "Joab",
+        "Abishai",
+        "Hushai"
+      ],
+      "answer": "Joab",
+      "verse_reference": "2 Samuel 18:14"
+    },
+    {
+      "id": "2-samuel-18-q3",
+      "type": "true_false",
+      "question": "David wept bitterly over the death of his son Absalom.",
+      "answer": "true",
+      "verse_reference": "2 Samuel 18:33"
+    },
+    {
+      "id": "2-samuel-18-q4",
+      "type": "fill_blank",
+      "question": "Absalom was caught by his head in the branches of a great _____ tree.",
+      "answer": "oak",
+      "verse_reference": "2 Samuel 18:9"
+    },
+    {
+      "id": "2-samuel-18-q5",
+      "type": "fill_blank",
+      "question": "David cried, \"O my son _____, my son, my son!\"",
+      "answer": "Absalom",
+      "verse_reference": "2 Samuel 18:33"
+    }
+  ]
+}

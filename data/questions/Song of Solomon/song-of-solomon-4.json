@@ -1,0 +1,56 @@
+{
+  "book": "Song Of Solomon",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "song-of-solomon-4-q1",
+      "type": "multiple_choice",
+      "question": "What is the focus of chapter 4?",
+      "options": [
+        "The beloved's praise of the bride's beauty",
+        "An account of a war among the nations",
+        "A report of the autumn grape harvest",
+        "The bride's confession of her very many flaws"
+      ],
+      "answer": "The beloved's praise of the bride's beauty",
+      "verse_reference": "Song of Solomon 4:1"
+    },
+    {
+      "id": "song-of-solomon-4-q2",
+      "type": "multiple_choice",
+      "question": "What does the beloved call the bride in chapter 4?",
+      "options": [
+        "Altogether beautiful, my love, with no flaw in you",
+        "Fair as the moon and bright as the morning sun",
+        "A garden locked, a spring sealed up and hidden",
+        "A lily growing among the thorns of the valley"
+      ],
+      "answer": "Altogether beautiful, my love, with no flaw in you",
+      "verse_reference": "Song of Solomon 4:7"
+    },
+    {
+      "id": "song-of-solomon-4-q3",
+      "type": "true_false",
+      "question": "The beloved calls the bride a garden locked, a spring sealed.",
+      "answer": "true",
+      "verse_reference": "Song of Solomon 4:12"
+    },
+    {
+      "id": "song-of-solomon-4-q4",
+      "type": "fill_blank",
+      "question": "You are altogether _____, my love; there is no flaw in you.",
+      "answer": "beautiful",
+      "accept": [
+        "fair"
+      ],
+      "verse_reference": "Song of Solomon 4:7"
+    },
+    {
+      "id": "song-of-solomon-4-q5",
+      "type": "fill_blank",
+      "question": "A garden locked is my sister, my bride, a spring locked, a fountain _____.",
+      "answer": "sealed",
+      "verse_reference": "Song of Solomon 4:12"
+    }
+  ]
+}

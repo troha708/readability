@@ -1,0 +1,59 @@
+{
+  "book": "Psalms",
+  "chapter": 23,
+  "questions": [
+    {
+      "id": "psalms-23-q1",
+      "type": "multiple_choice",
+      "question": "How does Psalm 23 begin?",
+      "options": [
+        "The LORD is my rock and my fortress",
+        "The LORD is my shepherd; I shall not want",
+        "The LORD is my light and my salvation",
+        "The LORD is king, robed in his great majesty"
+      ],
+      "answer": "The LORD is my shepherd; I shall not want",
+      "verse_reference": "Psalm 23:1"
+    },
+    {
+      "id": "psalms-23-q2",
+      "type": "multiple_choice",
+      "question": "Through what valley does David say he will fear no evil?",
+      "options": [
+        "The valley of final decision",
+        "The valley of the shadow of death",
+        "The valley of the dry dead bones",
+        "The valley of vision and dreams"
+      ],
+      "answer": "The valley of the shadow of death",
+      "verse_reference": "Psalm 23:4"
+    },
+    {
+      "id": "psalms-23-q3",
+      "type": "true_false",
+      "question": "David says goodness and mercy shall follow him all the days of his life.",
+      "answer": "true",
+      "verse_reference": "Psalm 23:6"
+    },
+    {
+      "id": "psalms-23-q4",
+      "type": "fill_blank",
+      "question": "He makes me lie down in green _____.",
+      "answer": "pastures",
+      "accept": [
+        "pasture"
+      ],
+      "verse_reference": "Psalm 23:2"
+    },
+    {
+      "id": "psalms-23-q5",
+      "type": "fill_blank",
+      "question": "You prepare a table before me in the presence of my _____.",
+      "answer": "enemies",
+      "accept": [
+        "adversaries"
+      ],
+      "verse_reference": "Psalm 23:5"
+    }
+  ]
+}

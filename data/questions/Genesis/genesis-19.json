@@ -1,0 +1,57 @@
+{
+  "book": "Genesis",
+  "chapter": 19,
+  "questions": [
+    {
+      "id": "genesis-19-q1",
+      "type": "multiple_choice",
+      "question": "What did the LORD rain down to destroy Sodom and Gomorrah?",
+      "options": [
+        "An earthquake",
+        "A swarm of locusts",
+        "A great flood",
+        "Burning sulfur"
+      ],
+      "answer": "Burning sulfur",
+      "verse_reference": "Genesis 19:24"
+    },
+    {
+      "id": "genesis-19-q2",
+      "type": "multiple_choice",
+      "question": "What happened to Lot's wife when she looked back?",
+      "options": [
+        "She vanished",
+        "She became a pillar of salt",
+        "She turned to stone",
+        "She was struck blind"
+      ],
+      "answer": "She became a pillar of salt",
+      "verse_reference": "Genesis 19:26"
+    },
+    {
+      "id": "genesis-19-q3",
+      "type": "true_false",
+      "question": "The angels had to grab Lot by the hand to lead him safely out of the city.",
+      "answer": "true",
+      "verse_reference": "Genesis 19:16"
+    },
+    {
+      "id": "genesis-19-q4",
+      "type": "fill_blank",
+      "question": "Lot's wife became a pillar of _____ when she looked back.",
+      "answer": "salt",
+      "verse_reference": "Genesis 19:26"
+    },
+    {
+      "id": "genesis-19-q5",
+      "type": "fill_blank",
+      "question": "Lot's daughters bore sons who became the ancestors of Moab and _____.",
+      "answer": "Ammon",
+      "accept": [
+        "Ammonites",
+        "Ben-ammi"
+      ],
+      "verse_reference": "Genesis 19:38"
+    }
+  ]
+}

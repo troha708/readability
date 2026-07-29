@@ -1,0 +1,53 @@
+{
+  "book": "Ezekiel",
+  "chapter": 16,
+  "questions": [
+    {
+      "id": "ezekiel-16-q1",
+      "type": "multiple_choice",
+      "question": "How does Ezekiel 16 portray Jerusalem?",
+      "options": [
+        "As a very wealthy merchant who traded freely with all the kingdoms of the whole wide world",
+        "As a mighty and exalted queen who ruled in peace over very many distant nations",
+        "As an abandoned infant whom God rescued, raised, and married, but who became unfaithful",
+        "As a wholly faithful bride who never once left the side of her own beloved husband"
+      ],
+      "answer": "As an abandoned infant whom God rescued, raised, and married, but who became unfaithful",
+      "verse_reference": "Ezekiel 16:4-15"
+    },
+    {
+      "id": "ezekiel-16-q2",
+      "type": "multiple_choice",
+      "question": "Despite the unfaithfulness, what does God promise at the end of chapter 16?",
+      "options": [
+        "To hand her over entirely to all of the surrounding hostile nations",
+        "To wait patiently until she had at last earned back all of his favor",
+        "To cast her off entirely and forever without any pity or any mercy",
+        "To remember his covenant and establish an everlasting covenant"
+      ],
+      "answer": "To remember his covenant and establish an everlasting covenant",
+      "verse_reference": "Ezekiel 16:60"
+    },
+    {
+      "id": "ezekiel-16-q3",
+      "type": "true_false",
+      "question": "Ezekiel 16 compares Jerusalem's sin to that of her 'sisters' Samaria and Sodom.",
+      "answer": "true",
+      "verse_reference": "Ezekiel 16:46"
+    },
+    {
+      "id": "ezekiel-16-q4",
+      "type": "fill_blank",
+      "question": "When I passed by you and saw you wallowing in your blood, I said to you, '_____!'",
+      "answer": "Live",
+      "verse_reference": "Ezekiel 16:6"
+    },
+    {
+      "id": "ezekiel-16-q5",
+      "type": "fill_blank",
+      "question": "But you trusted in your _____ and played the whore because of your renown.",
+      "answer": "beauty",
+      "verse_reference": "Ezekiel 16:15"
+    }
+  ]
+}

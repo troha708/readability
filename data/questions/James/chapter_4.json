@@ -1,0 +1,58 @@
+{
+  "book": "James",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "jas_4_1",
+      "type": "multiple_choice",
+      "question": "James says friendship with the world is what toward God?",
+      "options": [
+        "Enmity",
+        "Ignorance",
+        "Foolishness",
+        "Rebellion"
+      ],
+      "correct": "Enmity",
+      "verse_ref": "James 4:4",
+      "feedback": "Friendship with the world means enmity toward God."
+    },
+    {
+      "id": "jas_4_2",
+      "type": "multiple_choice",
+      "question": "James says if you resist the devil, what will he do?",
+      "options": [
+        "Flee from you",
+        "Attack harder",
+        "Deceive you",
+        "Return later"
+      ],
+      "correct": "Flee from you",
+      "verse_ref": "James 4:7",
+      "feedback": "Resist the devil and he will flee from you."
+    },
+    {
+      "id": "jas_4_3",
+      "type": "true_false",
+      "question": "James says your life is like a mist that appears for a little while and then vanishes.",
+      "correct": true,
+      "verse_ref": "James 4:14",
+      "feedback": "What is your life? You are a mist that appears briefly and then vanishes."
+    },
+    {
+      "id": "jas_4_4",
+      "type": "fill_in_the_blank",
+      "question": "_____ yourselves before the Lord and he will lift you up.",
+      "correct": "Humble",
+      "verse_ref": "James 4:10",
+      "feedback": "Humble yourselves before the Lord and he will lift you up."
+    },
+    {
+      "id": "jas_4_5",
+      "type": "fill_in_the_blank",
+      "question": "Anyone who knows the good they ought to do and doesn't do it, for them it is _____.",
+      "correct": "sin",
+      "verse_ref": "James 4:17",
+      "feedback": "If you know the good you ought to do and don't do it, it is sin."
+    }
+  ]
+}

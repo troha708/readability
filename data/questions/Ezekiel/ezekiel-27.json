@@ -1,0 +1,53 @@
+{
+  "book": "Ezekiel",
+  "chapter": 27,
+  "questions": [
+    {
+      "id": "ezekiel-27-q1",
+      "type": "multiple_choice",
+      "question": "What literary form is Ezekiel 27?",
+      "options": [
+        "A song of great praise for all of the wealth of the city of Tyre",
+        "A long list of all of the laws of the great trading city of Tyre",
+        "A genealogy of all of the kings who had ruled over Tyre",
+        "A lamentation over Tyre, pictured as a magnificent ship"
+      ],
+      "answer": "A lamentation over Tyre, pictured as a magnificent ship",
+      "verse_reference": "Ezekiel 27:2"
+    },
+    {
+      "id": "ezekiel-27-q2",
+      "type": "multiple_choice",
+      "question": "What does the chapter emphasize about Tyre?",
+      "options": [
+        "Its supposed faithfulness to the God of Israel",
+        "Its vast wealth and trade with many nations",
+        "Its small size and lack of defenses",
+        "Its long history of peace with Judah"
+      ],
+      "answer": "Its vast wealth and trade with many nations",
+      "verse_reference": "Ezekiel 27:12-25"
+    },
+    {
+      "id": "ezekiel-27-q3",
+      "type": "true_false",
+      "question": "Ezekiel 27 pictures the ship of Tyre wrecked and sunk in the heart of the seas.",
+      "answer": "true",
+      "verse_reference": "Ezekiel 27:26-27"
+    },
+    {
+      "id": "ezekiel-27-q4",
+      "type": "fill_blank",
+      "question": "O Tyre, you have said, 'I am perfect in _____.'",
+      "answer": "beauty",
+      "verse_reference": "Ezekiel 27:3"
+    },
+    {
+      "id": "ezekiel-27-q5",
+      "type": "fill_blank",
+      "question": "The merchants among the peoples hiss at you; you have come to a dreadful end and shall be no _____.",
+      "answer": "more",
+      "verse_reference": "Ezekiel 27:36"
+    }
+  ]
+}

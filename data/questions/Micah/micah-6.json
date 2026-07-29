@@ -1,0 +1,57 @@
+{
+  "book": "Micah",
+  "chapter": 6,
+  "questions": [
+    {
+      "id": "micah-6-q1",
+      "type": "multiple_choice",
+      "question": "What famous summary of true religion appears in Micah 6?",
+      "options": [
+        "To bring to him many thousands of rams and ten thousand rivers of oil",
+        "To offer up his own firstborn child as a payment for his transgression",
+        "To build a grand and glorious temple high upon the holy mountain",
+        "To do justice, love kindness, and walk humbly with your God"
+      ],
+      "answer": "To do justice, love kindness, and walk humbly with your God",
+      "verse_reference": "Micah 6:8"
+    },
+    {
+      "id": "micah-6-q2",
+      "type": "multiple_choice",
+      "question": "What does Micah 6 say God requires rather than thousands of rams or rivers of oil?",
+      "options": [
+        "Sacrifice, fasting, and long prayers",
+        "Justice, kindness, and humility before God",
+        "Wealth, power, and many offerings",
+        "Strength, courage, and great victory in war"
+      ],
+      "answer": "Justice, kindness, and humility before God",
+      "verse_reference": "Micah 6:7-8"
+    },
+    {
+      "id": "micah-6-q3",
+      "type": "true_false",
+      "question": "Micah 6 includes God's 'controversy' (lawsuit) with his people, recalling the exodus.",
+      "answer": "true",
+      "verse_reference": "Micah 6:3-4"
+    },
+    {
+      "id": "micah-6-q4",
+      "type": "fill_blank",
+      "question": "What does the LORD require of you but to act justly, to love _____, and to walk humbly with your God?",
+      "answer": "mercy",
+      "accept": [
+        "kindness",
+        "goodness"
+      ],
+      "verse_reference": "Micah 6:8"
+    },
+    {
+      "id": "micah-6-q5",
+      "type": "fill_blank",
+      "question": "He has told you, O man, what is _____.",
+      "answer": "good",
+      "verse_reference": "Micah 6:8"
+    }
+  ]
+}

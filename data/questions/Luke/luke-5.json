@@ -1,0 +1,53 @@
+{
+  "book": "Luke",
+  "chapter": 5,
+  "questions": [
+    {
+      "id": "luke-5-q1",
+      "type": "multiple_choice",
+      "question": "What happened when Simon Peter obeyed Jesus and let down his nets?",
+      "options": [
+        "They enclosed a great multitude of fish",
+        "They toiled all night and caught nothing",
+        "A sudden storm rose up against them",
+        "They caught a single enormous fish"
+      ],
+      "answer": "They enclosed a great multitude of fish",
+      "verse_reference": "Luke 5:6"
+    },
+    {
+      "id": "luke-5-q2",
+      "type": "multiple_choice",
+      "question": "What did Jesus tell Simon Peter after the miraculous catch of fish?",
+      "options": [
+        "Go and sell the fish",
+        "You will catch men",
+        "Build a boat",
+        "Follow the law"
+      ],
+      "answer": "You will catch men",
+      "verse_reference": "Luke 5:10"
+    },
+    {
+      "id": "luke-5-q3",
+      "type": "true_false",
+      "question": "Jesus told the leper not to tell anyone about his healing, but to show himself to the priest.",
+      "answer": "true",
+      "verse_reference": "Luke 5:14"
+    },
+    {
+      "id": "luke-5-q4",
+      "type": "fill_blank",
+      "question": "No one puts new wine into old wine _____.",
+      "answer": "skins",
+      "verse_reference": "Luke 5:37"
+    },
+    {
+      "id": "luke-5-q5",
+      "type": "fill_blank",
+      "question": "I have not come to call the righteous, but _____, to repentance.",
+      "answer": "sinners",
+      "verse_reference": "Luke 5:32"
+    }
+  ]
+}

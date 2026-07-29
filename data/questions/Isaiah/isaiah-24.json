@@ -1,0 +1,59 @@
+{
+  "book": "Isaiah",
+  "chapter": 24,
+  "questions": [
+    {
+      "id": "isaiah-24-q1",
+      "type": "multiple_choice",
+      "question": "What does the LORD do to the earth in Isaiah 24?",
+      "options": [
+        "Lays it waste and scatters its inhabitants",
+        "Gathers its peoples into one great city",
+        "Renews it with rivers and green pastures",
+        "Fills it with peace and abundant harvest"
+      ],
+      "answer": "Lays it waste and scatters its inhabitants",
+      "verse_reference": "Isaiah 24:1"
+    },
+    {
+      "id": "isaiah-24-q2",
+      "type": "multiple_choice",
+      "question": "Why is the earth defiled, according to Isaiah 24?",
+      "options": [
+        "The earth itself has grown old and worn out with the passing of ages",
+        "Its inhabitants have transgressed the laws and broken the everlasting covenant",
+        "The nations have all risen up and warred against one another without ever ceasing",
+        "A great and lasting drought has dried up all of its flowing rivers"
+      ],
+      "answer": "Its inhabitants have transgressed the laws and broken the everlasting covenant",
+      "verse_reference": "Isaiah 24:5"
+    },
+    {
+      "id": "isaiah-24-q3",
+      "type": "true_false",
+      "question": "Isaiah 24 has an apocalyptic tone, describing universal judgment on the whole earth.",
+      "answer": "true",
+      "verse_reference": "Isaiah 24:1, 19"
+    },
+    {
+      "id": "isaiah-24-q4",
+      "type": "fill_blank",
+      "question": "Behold, the LORD will empty the _____ and make it desolate.",
+      "answer": "earth",
+      "accept": [
+        "land"
+      ],
+      "verse_reference": "Isaiah 24:1"
+    },
+    {
+      "id": "isaiah-24-q5",
+      "type": "fill_blank",
+      "question": "The earth is utterly broken, the earth is split apart, the earth is violently _____.",
+      "answer": "shaken",
+      "accept": [
+        "moved"
+      ],
+      "verse_reference": "Isaiah 24:19"
+    }
+  ]
+}

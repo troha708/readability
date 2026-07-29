@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 138,
+  "questions": [
+    {
+      "id": "psalms-138-q1",
+      "type": "multiple_choice",
+      "question": "How does David give thanks in Psalm 138?",
+      "options": [
+        "With trembling fear, hiding his face from God's glory",
+        "With his whole heart, bowing toward God's holy temple",
+        "With bitter weeping, mourning over his many sins",
+        "With loud shouting, marching before the ark of God"
+      ],
+      "answer": "With his whole heart, bowing toward God's holy temple",
+      "verse_reference": "Psalm 138:1-2"
+    },
+    {
+      "id": "psalms-138-q2",
+      "type": "multiple_choice",
+      "question": "What does David say the LORD does for the lowly?",
+      "options": [
+        "He gathers the exiles, but the wicked he scatters abroad",
+        "He hears the humble, but the proud he turns aside",
+        "He feeds the hungry, but the rich he sends away empty",
+        "He regards the lowly, but the haughty he knows from afar"
+      ],
+      "answer": "He regards the lowly, but the haughty he knows from afar",
+      "verse_reference": "Psalm 138:6"
+    },
+    {
+      "id": "psalms-138-q3",
+      "type": "true_false",
+      "question": "David is confident the LORD will fulfill his purpose for him and not forsake the work of his hands.",
+      "answer": "true",
+      "verse_reference": "Psalm 138:8"
+    },
+    {
+      "id": "psalms-138-q4",
+      "type": "fill_blank",
+      "question": "I give you thanks, O LORD, with my whole _____.",
+      "answer": "heart",
+      "verse_reference": "Psalm 138:1"
+    },
+    {
+      "id": "psalms-138-q5",
+      "type": "fill_blank",
+      "question": "The LORD will fulfill his purpose for me; do not forsake the work of your _____.",
+      "answer": "hands",
+      "verse_reference": "Psalm 138:8"
+    }
+  ]
+}

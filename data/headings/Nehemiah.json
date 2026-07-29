@@ -1,0 +1,144 @@
+{
+  "book": "Nehemiah",
+  "source": "Berean Standard Bible (CC0 Public Domain)",
+  "chapters": {
+    "1": [
+      {
+        "beforeVerse": 1,
+        "heading": "Nehemiah’s Prayer"
+      }
+    ],
+    "2": [
+      {
+        "beforeVerse": 1,
+        "heading": "Nehemiah Sent to Jerusalem"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "Nehemiah Inspects the Walls"
+      }
+    ],
+    "3": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Builders of the Walls"
+      }
+    ],
+    "4": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Work Ridiculed"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "Discouragement Overcome"
+      }
+    ],
+    "5": [
+      {
+        "beforeVerse": 1,
+        "heading": "Nehemiah Defends the Oppressed"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "Nehemiah’s Generosity"
+      }
+    ],
+    "6": [
+      {
+        "beforeVerse": 1,
+        "heading": "Sanballat’s Conspiracy"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "Completion of the Wall"
+      }
+    ],
+    "7": [
+      {
+        "beforeVerse": 1,
+        "heading": "Securing the City"
+      },
+      {
+        "beforeVerse": 4,
+        "heading": "The List of Returning Exiles"
+      },
+      {
+        "beforeVerse": 70,
+        "heading": "Offerings by the Exiles"
+      }
+    ],
+    "8": [
+      {
+        "beforeVerse": 1,
+        "heading": "Ezra Reads the Law"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "The Feast of Tabernacles"
+      }
+    ],
+    "9": [
+      {
+        "beforeVerse": 1,
+        "heading": "The People Confess Their Sins"
+      }
+    ],
+    "10": [
+      {
+        "beforeVerse": 1,
+        "heading": "Signers of the Covenant"
+      },
+      {
+        "beforeVerse": 28,
+        "heading": "The Vows of the Covenant"
+      }
+    ],
+    "11": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jerusalem’s New Settlers"
+      },
+      {
+        "beforeVerse": 20,
+        "heading": "Residents Outside Jerusalem"
+      }
+    ],
+    "12": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Priests and Levites Who Returned"
+      },
+      {
+        "beforeVerse": 27,
+        "heading": "The Dedication of the Wall"
+      },
+      {
+        "beforeVerse": 44,
+        "heading": "Provisions for Temple Worship"
+      }
+    ],
+    "13": [
+      {
+        "beforeVerse": 1,
+        "heading": "Foreigners Excluded"
+      },
+      {
+        "beforeVerse": 4,
+        "heading": "The Temple Cleansed"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "Tithes Restored"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "The Sabbath Restored"
+      },
+      {
+        "beforeVerse": 23,
+        "heading": "Intermarriage Forbidden"
+      }
+    ]
+  }
+}

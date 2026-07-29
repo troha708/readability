@@ -1,0 +1,57 @@
+{
+  "book": "Deuteronomy",
+  "chapter": 13,
+  "questions": [
+    {
+      "id": "deuteronomy-13-q1",
+      "type": "multiple_choice",
+      "question": "What were they to do with a prophet who urged them to follow other gods?",
+      "options": [
+        "Follow him",
+        "Not listen to him",
+        "Pay him",
+        "Ignore him quietly"
+      ],
+      "answer": "Not listen to him",
+      "verse_reference": "Deuteronomy 13:1-3"
+    },
+    {
+      "id": "deuteronomy-13-q2",
+      "type": "multiple_choice",
+      "question": "How was Israel to respond to a temptation to idolatry, even from family?",
+      "options": [
+        "Reject it and not yield",
+        "Allow it within the family",
+        "Debate it before the elders",
+        "Hide it from the priests"
+      ],
+      "answer": "Reject it and not yield",
+      "verse_reference": "Deuteronomy 13:6-8"
+    },
+    {
+      "id": "deuteronomy-13-q3",
+      "type": "true_false",
+      "question": "God was testing Israel to see whether they loved him with all their heart.",
+      "answer": "true",
+      "verse_reference": "Deuteronomy 13:3"
+    },
+    {
+      "id": "deuteronomy-13-q4",
+      "type": "fill_blank",
+      "question": "Even if a prophet's sign came true, they were not to follow other _____.",
+      "answer": "gods",
+      "verse_reference": "Deuteronomy 13:2"
+    },
+    {
+      "id": "deuteronomy-13-q5",
+      "type": "fill_blank",
+      "question": "God allowed such prophets to arise to _____ Israel, to know if they loved him.",
+      "answer": "test",
+      "accept": [
+        "testing",
+        "prove"
+      ],
+      "verse_reference": "Deuteronomy 13:3"
+    }
+  ]
+}

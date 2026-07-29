@@ -1,0 +1,53 @@
+{
+  "book": "Ezekiel",
+  "chapter": 31,
+  "questions": [
+    {
+      "id": "ezekiel-31-q1",
+      "type": "multiple_choice",
+      "question": "To what is Egypt (Pharaoh) compared in Ezekiel 31?",
+      "options": [
+        "A boiling pot tipped from the north",
+        "A great vine bending toward a great second eagle",
+        "A great dragon lying in the rivers",
+        "A towering cedar of Lebanon, later cut down"
+      ],
+      "answer": "A towering cedar of Lebanon, later cut down",
+      "verse_reference": "Ezekiel 31:3"
+    },
+    {
+      "id": "ezekiel-31-q2",
+      "type": "multiple_choice",
+      "question": "What lesson does the felled cedar teach?",
+      "options": [
+        "That the strong will always rule over the weak in every age",
+        "That great wealth brings lasting security and safety to a nation",
+        "That pride leads to a fall; even mighty Assyria was brought down",
+        "That the great cedar would only grow taller than it was before"
+      ],
+      "answer": "That pride leads to a fall; even mighty Assyria was brought down",
+      "verse_reference": "Ezekiel 31:10-12"
+    },
+    {
+      "id": "ezekiel-31-q3",
+      "type": "true_false",
+      "question": "Ezekiel 31 uses Assyria as a cedar that was cut down, as a warning to Egypt.",
+      "answer": "true",
+      "verse_reference": "Ezekiel 31:3, 18"
+    },
+    {
+      "id": "ezekiel-31-q4",
+      "type": "fill_blank",
+      "question": "Consider Assyria, a cedar in Lebanon; the waters nourished it, and it towered _____.",
+      "answer": "high",
+      "verse_reference": "Ezekiel 31:3-4"
+    },
+    {
+      "id": "ezekiel-31-q5",
+      "type": "fill_blank",
+      "question": "Because it towered high, its heart was _____ in its height.",
+      "answer": "proud",
+      "verse_reference": "Ezekiel 31:10"
+    }
+  ]
+}

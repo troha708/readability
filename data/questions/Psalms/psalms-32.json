@@ -1,0 +1,56 @@
+{
+  "book": "Psalms",
+  "chapter": 32,
+  "questions": [
+    {
+      "id": "psalms-32-q1",
+      "type": "multiple_choice",
+      "question": "Whom does Psalm 32 call blessed?",
+      "options": [
+        "The one who gives freely to the poor",
+        "The one who fears the LORD always",
+        "The one whose transgression is forgiven",
+        "The one who walks in all God's ways"
+      ],
+      "answer": "The one whose transgression is forgiven",
+      "verse_reference": "Psalm 32:1"
+    },
+    {
+      "id": "psalms-32-q2",
+      "type": "multiple_choice",
+      "question": "What happened when David kept silent about his sin?",
+      "options": [
+        "His enemies surrounded him on every side",
+        "His friends all abandoned him in his distress",
+        "His wealth slipped away like the wind",
+        "His bones wasted away through his groaning"
+      ],
+      "answer": "His bones wasted away through his groaning",
+      "verse_reference": "Psalm 32:3"
+    },
+    {
+      "id": "psalms-32-q3",
+      "type": "true_false",
+      "question": "David says he acknowledged his sin and God forgave the iniquity of his sin.",
+      "answer": "true",
+      "verse_reference": "Psalm 32:5"
+    },
+    {
+      "id": "psalms-32-q4",
+      "type": "fill_blank",
+      "question": "I will instruct you and teach you in the way you should _____.",
+      "answer": "go",
+      "accept": [
+        "goest"
+      ],
+      "verse_reference": "Psalm 32:8"
+    },
+    {
+      "id": "psalms-32-q5",
+      "type": "fill_blank",
+      "question": "Be glad in the LORD, and rejoice, O _____!",
+      "answer": "righteous",
+      "verse_reference": "Psalm 32:11"
+    }
+  ]
+}

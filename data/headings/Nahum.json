@@ -1,0 +1,24 @@
+{
+  "book": "Nahum",
+  "source": "Berean Standard Bible (CC0 Public Domain)",
+  "chapters": {
+    "1": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Burden against Nineveh"
+      }
+    ],
+    "2": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Overthrow of Nineveh"
+      }
+    ],
+    "3": [
+      {
+        "beforeVerse": 1,
+        "heading": "Judgment on Nineveh"
+      }
+    ]
+  }
+}

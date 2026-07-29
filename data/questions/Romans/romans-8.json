@@ -1,0 +1,53 @@
+{
+  "book": "Romans",
+  "chapter": 8,
+  "questions": [
+    {
+      "id": "romans-8-q1",
+      "type": "multiple_choice",
+      "question": "What is there now for those who are in Christ Jesus?",
+      "options": [
+        "No more temptation",
+        "No suffering",
+        "No law",
+        "No condemnation"
+      ],
+      "answer": "No condemnation",
+      "verse_reference": "Romans 8:1"
+    },
+    {
+      "id": "romans-8-q2",
+      "type": "multiple_choice",
+      "question": "Paul says that all things work together for good for whom?",
+      "options": [
+        "Every single person on earth, without any single exception at all",
+        "Those who have never once stumbled into even the smallest sin",
+        "Those who love God and are called according to his purpose",
+        "Those who keep the whole of the law of Moses entirely faultlessly"
+      ],
+      "answer": "Those who love God and are called according to his purpose",
+      "verse_reference": "Romans 8:28"
+    },
+    {
+      "id": "romans-8-q3",
+      "type": "true_false",
+      "question": "Paul says that nothing can separate believers from the love of God in Christ Jesus.",
+      "answer": "true",
+      "verse_reference": "Romans 8:38-39"
+    },
+    {
+      "id": "romans-8-q4",
+      "type": "fill_blank",
+      "question": "If God is for us, who can be _____ us?",
+      "answer": "against",
+      "verse_reference": "Romans 8:31"
+    },
+    {
+      "id": "romans-8-q5",
+      "type": "fill_blank",
+      "question": "The Spirit himself testifies with our spirit that we are _____ of God.",
+      "answer": "children",
+      "verse_reference": "Romans 8:16"
+    }
+  ]
+}

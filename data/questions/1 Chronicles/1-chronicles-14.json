@@ -1,0 +1,57 @@
+{
+  "book": "1 Chronicles",
+  "chapter": 14,
+  "questions": [
+    {
+      "id": "1-chronicles-14-q1",
+      "type": "multiple_choice",
+      "question": "Who sent David cedar, masons, and carpenters to build him a house?",
+      "options": [
+        "Nahash king of Ammon",
+        "Hiram king of Tyre",
+        "Pharaoh of Egypt",
+        "Solomon his son"
+      ],
+      "answer": "Hiram king of Tyre",
+      "verse_reference": "1 Chronicles 14:1"
+    },
+    {
+      "id": "1-chronicles-14-q2",
+      "type": "multiple_choice",
+      "question": "What did David do before going to battle against the Philistines?",
+      "options": [
+        "Consulted a medium",
+        "Inquired of God",
+        "Fled",
+        "Made a treaty"
+      ],
+      "answer": "Inquired of God",
+      "verse_reference": "1 Chronicles 14:10"
+    },
+    {
+      "id": "1-chronicles-14-q3",
+      "type": "true_false",
+      "question": "David ordered the Philistines' abandoned gods to be burned with fire.",
+      "answer": "true",
+      "verse_reference": "1 Chronicles 14:12"
+    },
+    {
+      "id": "1-chronicles-14-q4",
+      "type": "fill_blank",
+      "question": "The LORD brought the fear of David on all the _____.",
+      "answer": "nations",
+      "verse_reference": "1 Chronicles 14:17"
+    },
+    {
+      "id": "1-chronicles-14-q5",
+      "type": "fill_blank",
+      "question": "David was to attack when he heard marching in the tops of the _____ trees.",
+      "answer": "balsam",
+      "accept": [
+        "mulberry",
+        "mulberries"
+      ],
+      "verse_reference": "1 Chronicles 14:15"
+    }
+  ]
+}

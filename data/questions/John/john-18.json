@@ -1,0 +1,53 @@
+{
+  "book": "John",
+  "chapter": 18,
+  "questions": [
+    {
+      "id": "john-18-q1",
+      "type": "multiple_choice",
+      "question": "Who cut off the ear of the high priest's servant in the garden?",
+      "options": [
+        "John",
+        "James",
+        "Andrew his brother",
+        "Simon Peter"
+      ],
+      "answer": "Simon Peter",
+      "verse_reference": "John 18:10"
+    },
+    {
+      "id": "john-18-q2",
+      "type": "multiple_choice",
+      "question": "Who asked Jesus, 'What is truth?' during his trial?",
+      "options": [
+        "Pilate",
+        "Herod",
+        "Annas",
+        "Caiaphas"
+      ],
+      "answer": "Pilate",
+      "verse_reference": "John 18:38"
+    },
+    {
+      "id": "john-18-q3",
+      "type": "true_false",
+      "question": "Peter denied knowing Jesus two times before the rooster crowed.",
+      "answer": "false",
+      "verse_reference": "John 18:27"
+    },
+    {
+      "id": "john-18-q4",
+      "type": "fill_blank",
+      "question": "Jesus answered, 'My Kingdom is not of this _____.'",
+      "answer": "world",
+      "verse_reference": "John 18:36"
+    },
+    {
+      "id": "john-18-q5",
+      "type": "fill_blank",
+      "question": "They all shouted, 'Not this man, but _____!' Now Barabbas was a robber.",
+      "answer": "Barabbas",
+      "verse_reference": "John 18:40"
+    }
+  ]
+}

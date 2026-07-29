@@ -1,0 +1,53 @@
+{
+  "book": "2 Samuel",
+  "chapter": 9,
+  "questions": [
+    {
+      "id": "2-samuel-9-q1",
+      "type": "multiple_choice",
+      "question": "To whom did David show kindness for Jonathan's sake?",
+      "options": [
+        "Armoni, a grandson of King Saul",
+        "Ziba, the servant of Saul's house",
+        "Ish-bosheth, a son of King Saul",
+        "Mephibosheth, Jonathan's lame son"
+      ],
+      "answer": "Mephibosheth, Jonathan's lame son",
+      "verse_reference": "2 Samuel 9:1-6"
+    },
+    {
+      "id": "2-samuel-9-q2",
+      "type": "multiple_choice",
+      "question": "What did David do for Mephibosheth?",
+      "options": [
+        "Restored his land and had him eat at the king's table",
+        "Sent him away to live safely in a distant city",
+        "Granted him a portion of the temple treasury",
+        "Gave him command over the whole royal bodyguard"
+      ],
+      "answer": "Restored his land and had him eat at the king's table",
+      "verse_reference": "2 Samuel 9:7"
+    },
+    {
+      "id": "2-samuel-9-q3",
+      "type": "true_false",
+      "question": "David showed kindness because of his covenant with Jonathan.",
+      "answer": "true",
+      "verse_reference": "2 Samuel 9:1"
+    },
+    {
+      "id": "2-samuel-9-q4",
+      "type": "fill_blank",
+      "question": "David showed kindness to _____, Jonathan's son, for Jonathan's sake.",
+      "answer": "Mephibosheth",
+      "verse_reference": "2 Samuel 9:6"
+    },
+    {
+      "id": "2-samuel-9-q5",
+      "type": "fill_blank",
+      "question": "Mephibosheth ate at the king's _____ like one of David's sons.",
+      "answer": "table",
+      "verse_reference": "2 Samuel 9:11"
+    }
+  ]
+}

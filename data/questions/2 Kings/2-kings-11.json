@@ -1,0 +1,56 @@
+{
+  "book": "2 Kings",
+  "chapter": 11,
+  "questions": [
+    {
+      "id": "2-kings-11-q1",
+      "type": "multiple_choice",
+      "question": "Who seized the throne of Judah by killing the royal family?",
+      "options": [
+        "Jezebel",
+        "Athaliah",
+        "Jehu",
+        "Hazael"
+      ],
+      "answer": "Athaliah",
+      "verse_reference": "2 Kings 11:1"
+    },
+    {
+      "id": "2-kings-11-q2",
+      "type": "multiple_choice",
+      "question": "Which child was hidden and later made king, surviving Athaliah?",
+      "options": [
+        "Joash",
+        "Amaziah",
+        "Uzziah",
+        "Ahaz"
+      ],
+      "answer": "Joash",
+      "verse_reference": "2 Kings 11:2-12"
+    },
+    {
+      "id": "2-kings-11-q3",
+      "type": "true_false",
+      "question": "The priest Jehoiada arranged to crown young Joash and overthrow Athaliah.",
+      "answer": "true",
+      "verse_reference": "2 Kings 11:4-16"
+    },
+    {
+      "id": "2-kings-11-q4",
+      "type": "fill_blank",
+      "question": "_____ tried to destroy all the royal heirs and seized the throne of Judah.",
+      "answer": "Athaliah",
+      "verse_reference": "2 Kings 11:1"
+    },
+    {
+      "id": "2-kings-11-q5",
+      "type": "fill_blank",
+      "question": "The boy _____ was hidden in the temple for six years and then made king.",
+      "answer": "Joash",
+      "accept": [
+        "Jehoash"
+      ],
+      "verse_reference": "2 Kings 11:2-12"
+    }
+  ]
+}

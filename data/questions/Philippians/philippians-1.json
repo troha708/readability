@@ -1,0 +1,61 @@
+{
+  "book": "Philippians",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "phil-1-q1",
+      "type": "multiple_choice",
+      "question": "Paul says he is confident that God who began a good work in the Philippians will do what?",
+      "options": [
+        "Set it aside and begin something wholly new",
+        "Hand the work over into their own keeping",
+        "Complete it until the day of Christ Jesus",
+        "Reward them richly for the work already done"
+      ],
+      "answer": "Complete it until the day of Christ Jesus",
+      "verse_reference": "Philippians 1:6"
+    },
+    {
+      "id": "phil-1-q2",
+      "type": "multiple_choice",
+      "question": "Paul says for him, to live is Christ and to die is what?",
+      "options": [
+        "Loss",
+        "Fear",
+        "Gain",
+        "Rest"
+      ],
+      "answer": "Gain",
+      "verse_reference": "Philippians 1:21"
+    },
+    {
+      "id": "phil-1-q3",
+      "type": "true_false",
+      "question": "Paul was writing this letter from prison.",
+      "answer": "true",
+      "verse_reference": "Philippians 1:13-14"
+    },
+    {
+      "id": "phil-1-q4",
+      "type": "fill_blank",
+      "question": "For to me, to live is Christ, and to die is _____.",
+      "answer": "gain",
+      "accept": [
+        "advantage"
+      ],
+      "verse_reference": "Philippians 1:21"
+    },
+    {
+      "id": "phil-1-q5",
+      "type": "fill_blank",
+      "question": "He who began a good work in you will carry it on to _____ until the day of Christ Jesus.",
+      "answer": "completion",
+      "accept": [
+        "complete",
+        "perform",
+        "perfect"
+      ],
+      "verse_reference": "Philippians 1:6"
+    }
+  ]
+}

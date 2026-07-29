@@ -1,0 +1,426 @@
+{
+  "book": "1 Kings",
+  "source": "Berean Standard Bible (CC0 Public Domain)",
+  "chapters": {
+    "1": [
+      {
+        "beforeVerse": 1,
+        "heading": "Abishag Cares for David"
+      },
+      {
+        "beforeVerse": 5,
+        "heading": "Adonijah Usurps the Kingdom"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "Nathan and Bathsheba before David"
+      },
+      {
+        "beforeVerse": 28,
+        "heading": "David Renews His Oath to Bathsheba"
+      },
+      {
+        "beforeVerse": 32,
+        "heading": "Solomon Anointed King"
+      },
+      {
+        "beforeVerse": 41,
+        "heading": "Adonijah Learns of Solomon’s Kingship"
+      }
+    ],
+    "2": [
+      {
+        "beforeVerse": 1,
+        "heading": "David Instructs Solomon"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "David’s Reign and Death"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "The Execution of Adonijah"
+      },
+      {
+        "beforeVerse": 28,
+        "heading": "The Execution of Joab"
+      },
+      {
+        "beforeVerse": 36,
+        "heading": "The Execution of Shimei"
+      }
+    ],
+    "3": [
+      {
+        "beforeVerse": 1,
+        "heading": "Solomon’s Prayer for Wisdom"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "Solomon Judges Wisely"
+      }
+    ],
+    "4": [
+      {
+        "beforeVerse": 1,
+        "heading": "Solomon’s Princes"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "Solomon’s Twelve Officers"
+      },
+      {
+        "beforeVerse": 20,
+        "heading": "Solomon’s Prosperity"
+      },
+      {
+        "beforeVerse": 29,
+        "heading": "Solomon’s Wisdom"
+      }
+    ],
+    "5": [
+      {
+        "beforeVerse": 1,
+        "heading": "Preparations for the Temple"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "Hiram’s Reply to Solomon"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "Solomon’s Labor Force"
+      }
+    ],
+    "6": [
+      {
+        "beforeVerse": 1,
+        "heading": "Temple Construction Begins"
+      },
+      {
+        "beforeVerse": 5,
+        "heading": "The Chambers"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "God’s Promise to Solomon"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "The Temple’s Interior"
+      },
+      {
+        "beforeVerse": 23,
+        "heading": "The Cherubim"
+      },
+      {
+        "beforeVerse": 31,
+        "heading": "The Doors"
+      },
+      {
+        "beforeVerse": 36,
+        "heading": "The Courtyard"
+      }
+    ],
+    "7": [
+      {
+        "beforeVerse": 1,
+        "heading": "Solomon’s Palace Complex"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "The Pillars and Capitals"
+      },
+      {
+        "beforeVerse": 23,
+        "heading": "The Molten Sea"
+      },
+      {
+        "beforeVerse": 27,
+        "heading": "The Ten Bronze Stands"
+      },
+      {
+        "beforeVerse": 38,
+        "heading": "The Ten Bronze Basins"
+      },
+      {
+        "beforeVerse": 40,
+        "heading": "Completion of the Bronze Works"
+      },
+      {
+        "beforeVerse": 48,
+        "heading": "Completion of the Gold Furnishings"
+      }
+    ],
+    "8": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Ark Enters the Temple"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "Solomon Blesses the LORD"
+      },
+      {
+        "beforeVerse": 22,
+        "heading": "Solomon’s Prayer of Dedication"
+      },
+      {
+        "beforeVerse": 54,
+        "heading": "Solomon’s Benediction"
+      },
+      {
+        "beforeVerse": 62,
+        "heading": "Sacrifices of Dedication"
+      }
+    ],
+    "9": [
+      {
+        "beforeVerse": 1,
+        "heading": "The LORD’s Response to Solomon"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "Solomon’s Additional Achievements"
+      }
+    ],
+    "10": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Queen of Sheba"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "Solomon’s Wealth and Splendor"
+      }
+    ],
+    "11": [
+      {
+        "beforeVerse": 1,
+        "heading": "Solomon’s Foreign Wives"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "God’s Anger against Solomon"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "Hadad’s Return"
+      },
+      {
+        "beforeVerse": 23,
+        "heading": "Rezon’s Hostility"
+      },
+      {
+        "beforeVerse": 26,
+        "heading": "Jeroboam’s Rebellion"
+      },
+      {
+        "beforeVerse": 41,
+        "heading": "The Death of Solomon"
+      }
+    ],
+    "12": [
+      {
+        "beforeVerse": 1,
+        "heading": "Rebellion against Rehoboam"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "The Kingdom Divided"
+      },
+      {
+        "beforeVerse": 20,
+        "heading": "Shemaiah’s Prophecy"
+      },
+      {
+        "beforeVerse": 25,
+        "heading": "Jeroboam’s Idolatry"
+      }
+    ],
+    "13": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jeroboam’s Hand Withers"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "The Old Prophet and the Man of God"
+      }
+    ],
+    "14": [
+      {
+        "beforeVerse": 1,
+        "heading": "Ahijah’s Prophecy against Jeroboam"
+      },
+      {
+        "beforeVerse": 19,
+        "heading": "Nadab Succeeds Jeroboam"
+      },
+      {
+        "beforeVerse": 21,
+        "heading": "Rehoboam Reigns in Judah"
+      },
+      {
+        "beforeVerse": 25,
+        "heading": "Shishak Raids Jerusalem"
+      }
+    ],
+    "15": [
+      {
+        "beforeVerse": 1,
+        "heading": "Abijam Reigns in Judah"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "Asa Reigns in Judah"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "War between Asa and Baasha"
+      },
+      {
+        "beforeVerse": 23,
+        "heading": "Jehoshaphat Succeeds Asa"
+      },
+      {
+        "beforeVerse": 25,
+        "heading": "Nadab Reigns in Israel"
+      },
+      {
+        "beforeVerse": 33,
+        "heading": "Baasha Reigns in Israel"
+      }
+    ],
+    "16": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jehu’s Prophecy against Baasha"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "Elah Reigns in Israel"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "Zimri Reigns in Israel"
+      },
+      {
+        "beforeVerse": 21,
+        "heading": "Omri Reigns in Israel"
+      },
+      {
+        "beforeVerse": 29,
+        "heading": "Ahab Reigns in Israel, Marries Jezebel"
+      }
+    ],
+    "17": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Ravens Feed Elijah"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "The Widow of Zarephath"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "Elijah Raises the Widow’s Son"
+      }
+    ],
+    "18": [
+      {
+        "beforeVerse": 1,
+        "heading": "Elijah’s Message to Ahab"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "Elijah on Mount Carmel"
+      },
+      {
+        "beforeVerse": 36,
+        "heading": "Elijah’s Prayer"
+      },
+      {
+        "beforeVerse": 41,
+        "heading": "The LORD Sends Rain"
+      }
+    ],
+    "19": [
+      {
+        "beforeVerse": 1,
+        "heading": "Elijah Flees from Jezebel"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "The LORD Speaks to Elijah at Horeb"
+      },
+      {
+        "beforeVerse": 19,
+        "heading": "The Call of Elisha"
+      }
+    ],
+    "20": [
+      {
+        "beforeVerse": 1,
+        "heading": "Ben-hadad Attacks Samaria"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "Ahab Defeats Ben-hadad"
+      },
+      {
+        "beforeVerse": 26,
+        "heading": "Another War with Ben-hadad"
+      },
+      {
+        "beforeVerse": 31,
+        "heading": "Ahab Spares Ben-hadad"
+      },
+      {
+        "beforeVerse": 35,
+        "heading": "A Prophet Reproves Ahab"
+      }
+    ],
+    "21": [
+      {
+        "beforeVerse": 1,
+        "heading": "Naboth’s Vineyard"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "Jezebel’s Plot"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "Elijah Denounces Ahab and Jezebel"
+      },
+      {
+        "beforeVerse": 25,
+        "heading": "Ahab’s Repentance"
+      }
+    ],
+    "22": [
+      {
+        "beforeVerse": 1,
+        "heading": "Ahab and the False Prophets"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "Micaiah Prophesies against Ahab"
+      },
+      {
+        "beforeVerse": 29,
+        "heading": "Ahab’s Defeat and Death"
+      },
+      {
+        "beforeVerse": 41,
+        "heading": "Jehoshaphat Reigns in Judah"
+      },
+      {
+        "beforeVerse": 51,
+        "heading": "Ahaziah Reigns in Israel"
+      }
+    ]
+  }
+}

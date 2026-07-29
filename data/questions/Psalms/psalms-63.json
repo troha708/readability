@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 63,
+  "questions": [
+    {
+      "id": "psalms-63-q1",
+      "type": "multiple_choice",
+      "question": "Where was David when he wrote Psalm 63?",
+      "options": [
+        "In the courts of the temple",
+        "In the city of Jerusalem",
+        "In the caves near the Dead Sea",
+        "In the wilderness of Judah"
+      ],
+      "answer": "In the wilderness of Judah",
+      "verse_reference": "Psalm 63:title"
+    },
+    {
+      "id": "psalms-63-q2",
+      "type": "multiple_choice",
+      "question": "How does David describe his desire for God?",
+      "options": [
+        "His mouth sings and his lips rejoice in the LORD",
+        "His soul thirsts and his flesh faints for God as in a dry land",
+        "His eyes weep and his hands tremble before God",
+        "His heart trembles and his very bones ache with fear of the LORD"
+      ],
+      "answer": "His soul thirsts and his flesh faints for God as in a dry land",
+      "verse_reference": "Psalm 63:1"
+    },
+    {
+      "id": "psalms-63-q3",
+      "type": "true_false",
+      "question": "David says God's steadfast love is better than life.",
+      "answer": "true",
+      "verse_reference": "Psalm 63:3"
+    },
+    {
+      "id": "psalms-63-q4",
+      "type": "fill_blank",
+      "question": "O God, you are my God; earnestly I _____ you.",
+      "answer": "seek",
+      "verse_reference": "Psalm 63:1"
+    },
+    {
+      "id": "psalms-63-q5",
+      "type": "fill_blank",
+      "question": "My soul will be satisfied as with fat and rich food, and my mouth will praise you with joyful _____.",
+      "answer": "lips",
+      "verse_reference": "Psalm 63:5"
+    }
+  ]
+}

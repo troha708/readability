@@ -1,0 +1,38 @@
+{
+  "book": "Jonah",
+  "source": "Berean Standard Bible (CC0 Public Domain)",
+  "chapters": {
+    "1": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jonah Flees from the LORD"
+      },
+      {
+        "beforeVerse": 4,
+        "heading": "The Great Storm"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "Jonah Cast into the Sea"
+      }
+    ],
+    "2": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jonah’s Prayer"
+      }
+    ],
+    "3": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Ninevites Repent"
+      }
+    ],
+    "4": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jonah’s Anger at the LORD’s Compassion"
+      }
+    ]
+  }
+}

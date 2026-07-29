@@ -1,0 +1,58 @@
+{
+  "book": "1 Thessalonians",
+  "chapter": 5,
+  "questions": [
+    {
+      "id": "1thess_5_1",
+      "type": "multiple_choice",
+      "question": "Paul says the day of the Lord will come like what?",
+      "options": [
+        "A judge at the gate",
+        "A shepherd at noon",
+        "A thief in the night",
+        "A bridegroom at dawn"
+      ],
+      "correct": "A thief in the night",
+      "verse_ref": "1 Thessalonians 5:2",
+      "feedback": "The day of the Lord will come unexpectedly, like a thief in the night."
+    },
+    {
+      "id": "1thess_5_2",
+      "type": "multiple_choice",
+      "question": "What does Paul tell the Thessalonians to put on as a breastplate?",
+      "options": [
+        "Truth",
+        "Salvation",
+        "Faith and love",
+        "True righteousness"
+      ],
+      "correct": "Faith and love",
+      "verse_ref": "1 Thessalonians 5:8",
+      "feedback": "Paul instructs them to put on faith and love as a breastplate and the hope of salvation as a helmet."
+    },
+    {
+      "id": "1thess_5_3",
+      "type": "true_false",
+      "question": "Paul tells the Thessalonians to quench the Spirit.",
+      "correct": false,
+      "verse_ref": "1 Thessalonians 5:19",
+      "feedback": "Paul tells them not to quench the Spirit."
+    },
+    {
+      "id": "1thess_5_4",
+      "type": "fill_in_the_blank",
+      "question": "Paul says to rejoice always, pray without ceasing, and give _____ in all circumstances.",
+      "correct": "thanks",
+      "verse_ref": "1 Thessalonians 5:16-18",
+      "feedback": "Rejoice always, pray without ceasing, give thanks in all circumstances."
+    },
+    {
+      "id": "1thess_5_5",
+      "type": "fill_in_the_blank",
+      "question": "Paul says believers are children of _____ and children of the day, not of darkness.",
+      "correct": "light",
+      "verse_ref": "1 Thessalonians 5:5",
+      "feedback": "Believers are children of light and of the day."
+    }
+  ]
+}

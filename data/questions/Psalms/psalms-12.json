@@ -1,0 +1,56 @@
+{
+  "book": "Psalms",
+  "chapter": 12,
+  "questions": [
+    {
+      "id": "psalms-12-q1",
+      "type": "multiple_choice",
+      "question": "What does David lament has vanished in Psalm 12?",
+      "options": [
+        "The godly and the faithful among the children of man",
+        "The poor and the needy who cry out aloud for help",
+        "The priests who faithfully serve in the holy temple courts",
+        "The exiles who are scattered among all the nations"
+      ],
+      "answer": "The godly and the faithful among the children of man",
+      "verse_reference": "Psalm 12:1"
+    },
+    {
+      "id": "psalms-12-q2",
+      "type": "multiple_choice",
+      "question": "To what are the words of the LORD compared?",
+      "options": [
+        "Honey that is far sweeter than the dripping honeycomb",
+        "Silver refined in a furnace, purified seven times",
+        "A shining lamp that lights the path in the dark",
+        "A flowing spring of fresh and clear living water"
+      ],
+      "answer": "Silver refined in a furnace, purified seven times",
+      "verse_reference": "Psalm 12:6"
+    },
+    {
+      "id": "psalms-12-q3",
+      "type": "true_false",
+      "question": "David says people speak lies and flattery with a double heart.",
+      "answer": "true",
+      "verse_reference": "Psalm 12:2"
+    },
+    {
+      "id": "psalms-12-q4",
+      "type": "fill_blank",
+      "question": "The words of the LORD are _____ words.",
+      "answer": "flawless",
+      "accept": [
+        "pure"
+      ],
+      "verse_reference": "Psalm 12:6"
+    },
+    {
+      "id": "psalms-12-q5",
+      "type": "fill_blank",
+      "question": "David prays the LORD will guard and keep them from this _____.",
+      "answer": "generation",
+      "verse_reference": "Psalm 12:7"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Genesis",
+  "chapter": 31,
+  "questions": [
+    {
+      "id": "genesis-31-q1",
+      "type": "multiple_choice",
+      "question": "What did Rachel secretly take from her father Laban?",
+      "options": [
+        "His finest tent",
+        "His best flocks",
+        "His household gods",
+        "His silver and gold"
+      ],
+      "answer": "His household gods",
+      "verse_reference": "Genesis 31:19"
+    },
+    {
+      "id": "genesis-31-q2",
+      "type": "multiple_choice",
+      "question": "How did Rachel hide the stolen idols during Laban's search?",
+      "options": [
+        "She buried them deep beneath the tent floor",
+        "She sat on them in the camel's saddle",
+        "She handed them over to Jacob",
+        "She threw them down into a well"
+      ],
+      "answer": "She sat on them in the camel's saddle",
+      "verse_reference": "Genesis 31:34"
+    },
+    {
+      "id": "genesis-31-q3",
+      "type": "true_false",
+      "question": "God warned Laban in a dream not to say anything good or bad to Jacob.",
+      "answer": "true",
+      "verse_reference": "Genesis 31:24"
+    },
+    {
+      "id": "genesis-31-q4",
+      "type": "fill_blank",
+      "question": "Jacob and Laban set up a heap of stones to serve as a _____ between them.",
+      "answer": "witness",
+      "verse_reference": "Genesis 31:48"
+    },
+    {
+      "id": "genesis-31-q5",
+      "type": "fill_blank",
+      "question": "Jacob said he had served Laban a total of _____ years.",
+      "answer": "twenty",
+      "verse_reference": "Genesis 31:41"
+    }
+  ]
+}

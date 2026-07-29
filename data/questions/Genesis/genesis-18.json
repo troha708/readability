@@ -1,0 +1,57 @@
+{
+  "book": "Genesis",
+  "chapter": 18,
+  "questions": [
+    {
+      "id": "genesis-18-q1",
+      "type": "multiple_choice",
+      "question": "How did Sarah react when she heard she would bear a son?",
+      "options": [
+        "She wept and was afraid",
+        "She laughed",
+        "She fled away in fear",
+        "She sang"
+      ],
+      "answer": "She laughed",
+      "verse_reference": "Genesis 18:12"
+    },
+    {
+      "id": "genesis-18-q2",
+      "type": "multiple_choice",
+      "question": "For how few righteous people did Abraham finally ask God to spare Sodom?",
+      "options": [
+        "Twenty",
+        "Five",
+        "Ten",
+        "Fifty"
+      ],
+      "answer": "Ten",
+      "verse_reference": "Genesis 18:32"
+    },
+    {
+      "id": "genesis-18-q3",
+      "type": "true_false",
+      "question": "Abraham showed lavish hospitality to three visitors near the oaks of Mamre.",
+      "answer": "true",
+      "verse_reference": "Genesis 18:1-8"
+    },
+    {
+      "id": "genesis-18-q4",
+      "type": "fill_blank",
+      "question": "The LORD asked, 'Is anything too _____ for the LORD?'",
+      "answer": "difficult",
+      "accept": [
+        "hard",
+        "wonderful"
+      ],
+      "verse_reference": "Genesis 18:14"
+    },
+    {
+      "id": "genesis-18-q5",
+      "type": "fill_blank",
+      "question": "Abraham asked, \"Won't the _____ of all the earth do right?\"",
+      "answer": "Judge",
+      "verse_reference": "Genesis 18:25"
+    }
+  ]
+}

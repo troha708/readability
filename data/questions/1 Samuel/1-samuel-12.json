@@ -1,0 +1,56 @@
+{
+  "book": "1 Samuel",
+  "chapter": 12,
+  "questions": [
+    {
+      "id": "1-samuel-12-q1",
+      "type": "multiple_choice",
+      "question": "What did Samuel do in his farewell speech?",
+      "options": [
+        "Crowned Saul as the king a second time over Israel",
+        "Declared open war on all of the surrounding nations",
+        "Resigned from his office in bitter and open anger",
+        "Called Israel to fear and serve the LORD faithfully"
+      ],
+      "answer": "Called Israel to fear and serve the LORD faithfully",
+      "verse_reference": "1 Samuel 12:14-24"
+    },
+    {
+      "id": "1-samuel-12-q2",
+      "type": "multiple_choice",
+      "question": "What sign confirmed their sin in asking for a king while Samuel spoke?",
+      "options": [
+        "Thunder and rain during the wheat harvest",
+        "An earthquake that shook the whole camp",
+        "A darkness that covered the whole land at noon",
+        "Fire that fell from heaven on the altar"
+      ],
+      "answer": "Thunder and rain during the wheat harvest",
+      "verse_reference": "1 Samuel 12:17-18"
+    },
+    {
+      "id": "1-samuel-12-q3",
+      "type": "true_false",
+      "question": "Samuel promised to keep praying for Israel.",
+      "answer": "true",
+      "verse_reference": "1 Samuel 12:23"
+    },
+    {
+      "id": "1-samuel-12-q4",
+      "type": "fill_blank",
+      "question": "Samuel said it would be a sin for him to stop _____ for the people.",
+      "answer": "praying",
+      "accept": [
+        "pray"
+      ],
+      "verse_reference": "1 Samuel 12:23"
+    },
+    {
+      "id": "1-samuel-12-q5",
+      "type": "fill_blank",
+      "question": "God sent _____ and rain during the wheat harvest as a sign.",
+      "answer": "thunder",
+      "verse_reference": "1 Samuel 12:17-18"
+    }
+  ]
+}

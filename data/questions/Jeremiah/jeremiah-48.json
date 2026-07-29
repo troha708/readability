@@ -1,0 +1,56 @@
+{
+  "book": "Jeremiah",
+  "chapter": 48,
+  "questions": [
+    {
+      "id": "jeremiah-48-q1",
+      "type": "multiple_choice",
+      "question": "Against which nation is the long oracle of Jeremiah 48?",
+      "options": [
+        "Babylon",
+        "Edom",
+        "Moab",
+        "Egypt"
+      ],
+      "answer": "Moab",
+      "verse_reference": "Jeremiah 48:1"
+    },
+    {
+      "id": "jeremiah-48-q2",
+      "type": "multiple_choice",
+      "question": "What does Jeremiah 48 say Moab had been at ease in?",
+      "options": [
+        "Its strong walls that no army on earth could ever once breach",
+        "The favor of the many gods that it had so long served",
+        "Complacency, like wine settled on its dregs, never poured out",
+        "Its great wealth that it had gathered in from many nations"
+      ],
+      "answer": "Complacency, like wine settled on its dregs, never poured out",
+      "verse_reference": "Jeremiah 48:11"
+    },
+    {
+      "id": "jeremiah-48-q3",
+      "type": "true_false",
+      "question": "Despite judgment, God promises to restore the fortunes of Moab in the latter days.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 48:47"
+    },
+    {
+      "id": "jeremiah-48-q4",
+      "type": "fill_blank",
+      "question": "The oracle concerning _____. Woe to Nebo, for it is laid waste!",
+      "answer": "Moab",
+      "verse_reference": "Jeremiah 48:1"
+    },
+    {
+      "id": "jeremiah-48-q5",
+      "type": "fill_blank",
+      "question": "Moab has been at _____ from his youth and has settled on his dregs.",
+      "answer": "ease",
+      "accept": [
+        "rest"
+      ],
+      "verse_reference": "Jeremiah 48:11"
+    }
+  ]
+}

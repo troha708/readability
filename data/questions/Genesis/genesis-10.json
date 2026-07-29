@@ -1,0 +1,56 @@
+{
+  "book": "Genesis",
+  "chapter": 10,
+  "questions": [
+    {
+      "id": "genesis-10-q1",
+      "type": "multiple_choice",
+      "question": "Genesis 10 is commonly known by what name?",
+      "options": [
+        "The Table of Nations",
+        "The Book of Kings",
+        "The Song of Noah",
+        "The Scroll of Cities"
+      ],
+      "answer": "The Table of Nations",
+      "verse_reference": "Genesis 10:1"
+    },
+    {
+      "id": "genesis-10-q2",
+      "type": "multiple_choice",
+      "question": "Who is described as \"a mighty hunter before the LORD\"?",
+      "options": [
+        "Canaan",
+        "Nimrod",
+        "Cush",
+        "Peleg"
+      ],
+      "answer": "Nimrod",
+      "verse_reference": "Genesis 10:9"
+    },
+    {
+      "id": "genesis-10-q3",
+      "type": "true_false",
+      "question": "The nations of the earth are traced back to Noah's three sons: Shem, Ham, and Japheth.",
+      "answer": "true",
+      "verse_reference": "Genesis 10:32"
+    },
+    {
+      "id": "genesis-10-q4",
+      "type": "fill_blank",
+      "question": "The beginning of Nimrod's kingdom was _____, in the land of Shinar.",
+      "answer": "Babylon",
+      "accept": [
+        "Babel"
+      ],
+      "verse_reference": "Genesis 10:10"
+    },
+    {
+      "id": "genesis-10-q5",
+      "type": "fill_blank",
+      "question": "From these the nations spread out over the earth after the _____.",
+      "answer": "flood",
+      "verse_reference": "Genesis 10:32"
+    }
+  ]
+}

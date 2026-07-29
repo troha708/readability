@@ -1,0 +1,58 @@
+{
+  "book": "Revelation",
+  "chapter": 5,
+  "questions": [
+    {
+      "id": "rev_5_1",
+      "type": "multiple_choice",
+      "question": "Who is worthy to open the scroll with seven seals?",
+      "options": [
+        "Michael the archangel, the great prince",
+        "The Lion of the tribe of Judah (the Lamb)",
+        "One of the twenty-four elders robed in white",
+        "One of the four living creatures by the throne"
+      ],
+      "correct": "The Lion of the tribe of Judah (the Lamb)",
+      "verse_ref": "Revelation 5:5",
+      "feedback": "The Lion of Judah, the Root of David, has triumphed and can open the scroll."
+    },
+    {
+      "id": "rev_5_2",
+      "type": "multiple_choice",
+      "question": "The Lamb appeared as if it had been what?",
+      "options": [
+        "Burning",
+        "Sleeping",
+        "Slain",
+        "Crowned"
+      ],
+      "correct": "Slain",
+      "verse_ref": "Revelation 5:6",
+      "feedback": "A Lamb looking as if it had been slain stood at the center of the throne."
+    },
+    {
+      "id": "rev_5_3",
+      "type": "true_false",
+      "question": "John wept because no one was found worthy to open the scroll.",
+      "correct": true,
+      "verse_ref": "Revelation 5:4",
+      "feedback": "John wept and wept because no one was found worthy to open the scroll."
+    },
+    {
+      "id": "rev_5_4",
+      "type": "fill_in_the_blank",
+      "question": "The Lamb had seven horns and seven _____, which are the seven spirits of God.",
+      "correct": "eyes",
+      "verse_ref": "Revelation 5:6",
+      "feedback": "Seven eyes are the seven spirits of God sent out into all the earth."
+    },
+    {
+      "id": "rev_5_5",
+      "type": "fill_in_the_blank",
+      "question": "With your blood you purchased for God persons from every tribe and language and people and _____.",
+      "correct": "nation",
+      "verse_ref": "Revelation 5:9",
+      "feedback": "The Lamb purchased people from every tribe, language, people, and nation."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "book": "Psalms",
+  "chapter": 106,
+  "questions": [
+    {
+      "id": "psalms-106-q1",
+      "type": "multiple_choice",
+      "question": "What does Psalm 106 mainly recount, in contrast to Psalm 105?",
+      "options": [
+        "Israel's repeated rebellion and God's mercy",
+        "Israel's faithful obedience and God's blessing",
+        "Israel's prosperity under the reign of David",
+        "Israel's mighty victories over the nations"
+      ],
+      "answer": "Israel's repeated rebellion and God's mercy",
+      "verse_reference": "Psalm 106:6-7"
+    },
+    {
+      "id": "psalms-106-q2",
+      "type": "multiple_choice",
+      "question": "What golden idol did the people make at Horeb?",
+      "options": [
+        "A serpent",
+        "A golden calf",
+        "A bull of Baal",
+        "A throne"
+      ],
+      "answer": "A golden calf",
+      "verse_reference": "Psalm 106:19"
+    },
+    {
+      "id": "psalms-106-q3",
+      "type": "true_false",
+      "question": "The psalm says many times God delivered them, but they were rebellious in their purposes.",
+      "answer": "true",
+      "verse_reference": "Psalm 106:43"
+    },
+    {
+      "id": "psalms-106-q4",
+      "type": "fill_blank",
+      "question": "Give thanks to the LORD, for He is good; His loving _____ endures forever.",
+      "answer": "devotion",
+      "accept": [
+        "love",
+        "mercy",
+        "kindness"
+      ],
+      "verse_reference": "Psalm 106:1"
+    },
+    {
+      "id": "psalms-106-q5",
+      "type": "fill_blank",
+      "question": "They made a calf in Horeb and worshiped a metal _____.",
+      "answer": "image",
+      "verse_reference": "Psalm 106:19"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Exodus",
+  "chapter": 7,
+  "questions": [
+    {
+      "id": "exodus-7-q1",
+      "type": "multiple_choice",
+      "question": "What was the first plague God sent on Egypt?",
+      "options": [
+        "Locusts devoured every green crop",
+        "Darkness fell over all of Egypt",
+        "The Nile turned to blood",
+        "Swarms of frogs covered the land"
+      ],
+      "answer": "The Nile turned to blood",
+      "verse_reference": "Exodus 7:20"
+    },
+    {
+      "id": "exodus-7-q2",
+      "type": "multiple_choice",
+      "question": "What happened when Aaron threw down his staff before Pharaoh?",
+      "options": [
+        "It bloomed with ripe almonds as a sign",
+        "It became a serpent and swallowed the magicians' staffs",
+        "It withered and crumbled into dust before all",
+        "It turned the whole palace floor into a sheet of red blood"
+      ],
+      "answer": "It became a serpent and swallowed the magicians' staffs",
+      "verse_reference": "Exodus 7:10-12"
+    },
+    {
+      "id": "exodus-7-q3",
+      "type": "true_false",
+      "question": "Pharaoh's heart was hardened and he would not listen to Moses and Aaron.",
+      "answer": "true",
+      "verse_reference": "Exodus 7:13"
+    },
+    {
+      "id": "exodus-7-q4",
+      "type": "fill_blank",
+      "question": "Aaron stretched out his hand, and the water of the Nile turned to _____.",
+      "answer": "blood",
+      "verse_reference": "Exodus 7:20"
+    },
+    {
+      "id": "exodus-7-q5",
+      "type": "fill_blank",
+      "question": "God said he had made Moses like _____ to Pharaoh, with Aaron as his prophet.",
+      "answer": "God",
+      "verse_reference": "Exodus 7:1"
+    }
+  ]
+}

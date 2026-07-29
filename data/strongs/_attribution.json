@@ -1,0 +1,6 @@
+{
+  "source": "STEPBible Translators Amalgamated Hebrew OT & Greek NT (TAHOT/TAGNT), Tyndale House Cambridge",
+  "license": "CC BY 4.0",
+  "url": "https://github.com/STEPBible/STEPBible-Data",
+  "notes": "Word-level tagging of the original text; English glosses based on the Berean Study Bible. Reformatted per BSB verse as [gloss, strongs, surface form, transliteration] tuples, every translated word in text order; NA-text words preferred with Traditional-text fallback (NT), Leningrad text (OT); Psalm superscriptions (verse 0) omitted."
+}

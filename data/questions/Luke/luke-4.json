@@ -1,0 +1,53 @@
+{
+  "book": "Luke",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "luke-4-q1",
+      "type": "multiple_choice",
+      "question": "Where did Jesus read from the scroll of Isaiah?",
+      "options": [
+        "The synagogue in Capernaum",
+        "The synagogue in Nazareth",
+        "The bank of the Jordan",
+        "The temple in Jerusalem"
+      ],
+      "answer": "The synagogue in Nazareth",
+      "verse_reference": "Luke 4:16-17"
+    },
+    {
+      "id": "luke-4-q2",
+      "type": "multiple_choice",
+      "question": "How did the people of Nazareth respond when Jesus said no prophet is accepted in his hometown?",
+      "options": [
+        "They angrily asked for a sign",
+        "They followed him",
+        "They praised him",
+        "They were filled with wrath"
+      ],
+      "answer": "They were filled with wrath",
+      "verse_reference": "Luke 4:28-29"
+    },
+    {
+      "id": "luke-4-q3",
+      "type": "true_false",
+      "question": "Jesus was tempted by the devil for forty days in the wilderness.",
+      "answer": "true",
+      "verse_reference": "Luke 4:1-2"
+    },
+    {
+      "id": "luke-4-q4",
+      "type": "fill_blank",
+      "question": "The Spirit of the Lord is on me, because he has anointed me to preach good news to the _____.",
+      "answer": "poor",
+      "verse_reference": "Luke 4:18"
+    },
+    {
+      "id": "luke-4-q5",
+      "type": "fill_blank",
+      "question": "Man shall not live by _____ alone, but by every word of God.",
+      "answer": "bread",
+      "verse_reference": "Luke 4:4"
+    }
+  ]
+}

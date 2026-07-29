@@ -1,0 +1,53 @@
+{
+  "book": "Genesis",
+  "chapter": 36,
+  "questions": [
+    {
+      "id": "genesis-36-q1",
+      "type": "multiple_choice",
+      "question": "Genesis 36 records the descendants of whom?",
+      "options": [
+        "Jacob",
+        "Esau",
+        "Joseph",
+        "Isaac"
+      ],
+      "answer": "Esau",
+      "verse_reference": "Genesis 36:1"
+    },
+    {
+      "id": "genesis-36-q2",
+      "type": "multiple_choice",
+      "question": "By what other name is Esau known?",
+      "options": [
+        "Seir",
+        "Edom",
+        "Ammon",
+        "Israel"
+      ],
+      "answer": "Edom",
+      "verse_reference": "Genesis 36:8"
+    },
+    {
+      "id": "genesis-36-q3",
+      "type": "true_false",
+      "question": "Esau settled in the hill country of Seir, apart from Jacob.",
+      "answer": "true",
+      "verse_reference": "Genesis 36:8"
+    },
+    {
+      "id": "genesis-36-q4",
+      "type": "fill_blank",
+      "question": "Genesis says Esau is the father of the _____.",
+      "answer": "Edomites",
+      "verse_reference": "Genesis 36:43"
+    },
+    {
+      "id": "genesis-36-q5",
+      "type": "fill_blank",
+      "question": "Esau moved away from Jacob because their _____ were too great for the land to support them both.",
+      "answer": "possessions",
+      "verse_reference": "Genesis 36:7"
+    }
+  ]
+}

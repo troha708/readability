@@ -1,0 +1,59 @@
+{
+  "book": "Psalms",
+  "chapter": 128,
+  "questions": [
+    {
+      "id": "psalms-128-q1",
+      "type": "multiple_choice",
+      "question": "Whom does Psalm 128 call blessed?",
+      "options": [
+        "Everyone who is rich and gives to the poor",
+        "Everyone who is mighty and wins in battle",
+        "Everyone who is wise and counsels the king",
+        "Everyone who fears the LORD and walks in his ways"
+      ],
+      "answer": "Everyone who fears the LORD and walks in his ways",
+      "verse_reference": "Psalm 128:1"
+    },
+    {
+      "id": "psalms-128-q2",
+      "type": "multiple_choice",
+      "question": "To what is the man's wife compared?",
+      "options": [
+        "A fountain flowing in the courtyard",
+        "A wall standing firm around the home",
+        "A lamp burning bright through the night",
+        "A vine yielding fruit within the house"
+      ],
+      "answer": "A vine yielding fruit within the house",
+      "verse_reference": "Psalm 128:3"
+    },
+    {
+      "id": "psalms-128-q3",
+      "type": "true_false",
+      "question": "The psalm pictures children like olive shoots around the table.",
+      "answer": "true",
+      "verse_reference": "Psalm 128:3"
+    },
+    {
+      "id": "psalms-128-q4",
+      "type": "fill_blank",
+      "question": "Blessed is everyone who _____ the LORD, who walks in his ways!",
+      "answer": "fears",
+      "accept": [
+        "fear"
+      ],
+      "verse_reference": "Psalm 128:1"
+    },
+    {
+      "id": "psalms-128-q5",
+      "type": "fill_blank",
+      "question": "You shall eat the fruit of your _____; you shall be blessed.",
+      "answer": "labor",
+      "accept": [
+        "hands"
+      ],
+      "verse_reference": "Psalm 128:2"
+    }
+  ]
+}

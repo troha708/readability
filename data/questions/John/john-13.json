@@ -1,0 +1,56 @@
+{
+  "book": "John",
+  "chapter": 13,
+  "questions": [
+    {
+      "id": "john-13-q1",
+      "type": "multiple_choice",
+      "question": "What did Jesus do for his disciples at the Last Supper to demonstrate servant leadership?",
+      "options": [
+        "Broke bread for them",
+        "Washed their feet",
+        "Prayed over them",
+        "Gave them new robes"
+      ],
+      "answer": "Washed their feet",
+      "verse_reference": "John 13:5"
+    },
+    {
+      "id": "john-13-q2",
+      "type": "multiple_choice",
+      "question": "How did Jesus identify his betrayer at the supper?",
+      "options": [
+        "He gave him a piece of bread dipped in the dish",
+        "He pointed him out before all the disciples",
+        "He leaned over and whispered it to Peter",
+        "He spoke the man's name aloud at the supper table"
+      ],
+      "answer": "He gave him a piece of bread dipped in the dish",
+      "verse_reference": "John 13:26"
+    },
+    {
+      "id": "john-13-q3",
+      "type": "true_false",
+      "question": "Peter eagerly agreed when Jesus offered to wash his feet.",
+      "answer": "false",
+      "verse_reference": "John 13:8"
+    },
+    {
+      "id": "john-13-q4",
+      "type": "fill_blank",
+      "question": "A new commandment I give to you, that you _____ one another. Just as I have loved you, you also love one another.",
+      "answer": "love",
+      "verse_reference": "John 13:34"
+    },
+    {
+      "id": "john-13-q5",
+      "type": "fill_blank",
+      "question": "Jesus answered Peter, 'The _____ will not crow until you have denied me three times.'",
+      "answer": "rooster",
+      "accept": [
+        "cock"
+      ],
+      "verse_reference": "John 13:38"
+    }
+  ]
+}

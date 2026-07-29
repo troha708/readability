@@ -1,0 +1,59 @@
+{
+  "book": "Hebrews",
+  "chapter": 10,
+  "questions": [
+    {
+      "id": "heb_10_1",
+      "type": "multiple_choice",
+      "question": "The author says it is impossible for the blood of what animals to take away sins?",
+      "options": [
+        "Bulls and goats",
+        "Lambs and doves",
+        "Sheep and oxen",
+        "Calves and rams"
+      ],
+      "correct": "Bulls and goats",
+      "verse_ref": "Hebrews 10:4",
+      "feedback": "It is impossible for the blood of bulls and goats to take away sins."
+    },
+    {
+      "id": "heb_10_2",
+      "type": "multiple_choice",
+      "question": "After offering one sacrifice for sins, Christ did what?",
+      "options": [
+        "Sat down at the right hand of God",
+        "Returned to earth",
+        "Entered the earthly temple",
+        "Sent the apostles"
+      ],
+      "correct": "Sat down at the right hand of God",
+      "verse_ref": "Hebrews 10:12",
+      "feedback": "After one sacrifice for sins forever, Christ sat down at the right hand of God."
+    },
+    {
+      "id": "heb_10_3",
+      "type": "true_false",
+      "question": "The author encourages believers to keep meeting together.",
+      "correct": true,
+      "verse_ref": "Hebrews 10:25",
+      "feedback": "Do not give up meeting together, as some are in the habit of doing."
+    },
+    {
+      "id": "heb_10_4",
+      "type": "fill_in_the_blank",
+      "question": "Let us hold unswervingly to the _____ we profess, for he who promised is faithful.",
+      "correct": "hope",
+      "accept": ["faith"],
+      "verse_ref": "Hebrews 10:23",
+      "feedback": "Hold unswervingly to the hope we profess."
+    },
+    {
+      "id": "heb_10_5",
+      "type": "fill_in_the_blank",
+      "question": "It is a fearful thing to fall into the hands of the _____ God.",
+      "correct": "living",
+      "verse_ref": "Hebrews 10:31",
+      "feedback": "It is a fearful thing to fall into the hands of the living God."
+    }
+  ]
+}

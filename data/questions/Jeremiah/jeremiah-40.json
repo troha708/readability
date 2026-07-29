@@ -1,0 +1,53 @@
+{
+  "book": "Jeremiah",
+  "chapter": 40,
+  "questions": [
+    {
+      "id": "jeremiah-40-q1",
+      "type": "multiple_choice",
+      "question": "Whom did the king of Babylon appoint as governor over Judah in chapter 40?",
+      "options": [
+        "Gedaliah son of Ahikam",
+        "Baruch son of Neriah",
+        "Ishmael son of Nethaniah",
+        "Johanan son of Kareah"
+      ],
+      "answer": "Gedaliah son of Ahikam",
+      "verse_reference": "Jeremiah 40:5, 7"
+    },
+    {
+      "id": "jeremiah-40-q2",
+      "type": "multiple_choice",
+      "question": "What advice did Gedaliah give the people?",
+      "options": [
+        "To take up the sword at once and drive the Babylonians from the land",
+        "To flee away in haste across the river into the distant land of Egypt",
+        "To scatter abroad and seek what shelter they could among the nations",
+        "To serve the king of Babylon, dwell in the land, and it would go well"
+      ],
+      "answer": "To serve the king of Babylon, dwell in the land, and it would go well",
+      "verse_reference": "Jeremiah 40:9"
+    },
+    {
+      "id": "jeremiah-40-q3",
+      "type": "true_false",
+      "question": "Gedaliah was warned of a plot against his life but did not believe it.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 40:13-16"
+    },
+    {
+      "id": "jeremiah-40-q4",
+      "type": "fill_blank",
+      "question": "Jeremiah was set free and chose to stay in the land with _____ the governor.",
+      "answer": "Gedaliah",
+      "verse_reference": "Jeremiah 40:5-6"
+    },
+    {
+      "id": "jeremiah-40-q5",
+      "type": "fill_blank",
+      "question": "Gedaliah was warned that _____ son of Nethaniah was coming to take his life.",
+      "answer": "Ishmael",
+      "verse_reference": "Jeremiah 40:14"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "book": "2 Samuel",
+  "chapter": 8,
+  "questions": [
+    {
+      "id": "2-samuel-8-q1",
+      "type": "multiple_choice",
+      "question": "What does chapter 8 record?",
+      "options": [
+        "A great census of all of the fighting men of Israel",
+        "The building of the temple of the LORD in Jerusalem",
+        "A severe famine that lasted for seven long years",
+        "David's military victories over surrounding nations"
+      ],
+      "answer": "David's military victories over surrounding nations",
+      "verse_reference": "2 Samuel 8:1-14"
+    },
+    {
+      "id": "2-samuel-8-q2",
+      "type": "multiple_choice",
+      "question": "What did the LORD do for David wherever he went?",
+      "options": [
+        "Made him rich only",
+        "Tested him",
+        "Nothing",
+        "Gave him victory"
+      ],
+      "answer": "Gave him victory",
+      "verse_reference": "2 Samuel 8:6-14"
+    },
+    {
+      "id": "2-samuel-8-q3",
+      "type": "true_false",
+      "question": "David dedicated the spoils of war to the LORD.",
+      "answer": "true",
+      "verse_reference": "2 Samuel 8:11"
+    },
+    {
+      "id": "2-samuel-8-q4",
+      "type": "fill_blank",
+      "question": "The LORD gave David _____ wherever he went.",
+      "answer": "victory",
+      "accept": [
+        "victorious"
+      ],
+      "verse_reference": "2 Samuel 8:6-14"
+    },
+    {
+      "id": "2-samuel-8-q5",
+      "type": "fill_blank",
+      "question": "David reigned over all Israel, administering justice and _____ for all his people.",
+      "answer": "righteousness",
+      "verse_reference": "2 Samuel 8:15"
+    }
+  ]
+}

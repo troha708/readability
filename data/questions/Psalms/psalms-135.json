@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 135,
+  "questions": [
+    {
+      "id": "psalms-135-q1",
+      "type": "multiple_choice",
+      "question": "What does Psalm 135 contrast with the living God?",
+      "options": [
+        "The mighty kings of the earth, gathered in their pride",
+        "The proud rulers of Egypt, who oppressed the people",
+        "The false prophets of Israel, speaking their own dreams",
+        "The lifeless idols of the nations, made by human hands"
+      ],
+      "answer": "The lifeless idols of the nations, made by human hands",
+      "verse_reference": "Psalm 135:15"
+    },
+    {
+      "id": "psalms-135-q2",
+      "type": "multiple_choice",
+      "question": "What does the psalm say the LORD does in heaven and earth?",
+      "options": [
+        "Nothing at all",
+        "Only what is asked",
+        "Whatever he pleases",
+        "All that men command"
+      ],
+      "answer": "Whatever he pleases",
+      "verse_reference": "Psalm 135:6"
+    },
+    {
+      "id": "psalms-135-q3",
+      "type": "true_false",
+      "question": "The psalm calls the house of Israel, Aaron, and Levi to bless the LORD.",
+      "answer": "true",
+      "verse_reference": "Psalm 135:19-20"
+    },
+    {
+      "id": "psalms-135-q4",
+      "type": "fill_blank",
+      "question": "Praise the LORD, for the LORD is _____; sing to his name, for it is pleasant!",
+      "answer": "good",
+      "verse_reference": "Psalm 135:3"
+    },
+    {
+      "id": "psalms-135-q5",
+      "type": "fill_blank",
+      "question": "Whatever the LORD pleases, he _____, in heaven and on earth.",
+      "answer": "does",
+      "verse_reference": "Psalm 135:6"
+    }
+  ]
+}

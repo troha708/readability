@@ -1,0 +1,61 @@
+{
+  "book": "Job",
+  "chapter": 19,
+  "questions": [
+    {
+      "id": "job-19-q1",
+      "type": "multiple_choice",
+      "question": "What famous declaration of hope did Job make in this chapter?",
+      "options": [
+        "I will die in despair",
+        "I know that my Redeemer lives",
+        "God has forsaken me forever",
+        "There is no resurrection"
+      ],
+      "answer": "I know that my Redeemer lives",
+      "verse_reference": "Job 19:25"
+    },
+    {
+      "id": "job-19-q2",
+      "type": "multiple_choice",
+      "question": "How did Job describe his treatment by family and friends?",
+      "options": [
+        "They healed and gently comforted him",
+        "They abandoned and rejected him",
+        "They envied his former wealth",
+        "They honored him in his grief"
+      ],
+      "answer": "They abandoned and rejected him",
+      "verse_reference": "Job 19:13-19"
+    },
+    {
+      "id": "job-19-q3",
+      "type": "true_false",
+      "question": "Job said that in his flesh he would see God.",
+      "answer": "true",
+      "verse_reference": "Job 19:26"
+    },
+    {
+      "id": "job-19-q4",
+      "type": "fill_blank",
+      "question": "Job pleaded with his friends, 'Have pity on me, for the hand of God has _____ me.'",
+      "answer": "struck",
+      "accept": [
+        "touched",
+        "stricken"
+      ],
+      "verse_reference": "Job 19:21"
+    },
+    {
+      "id": "job-19-q5",
+      "type": "fill_blank",
+      "question": "Job wished his words were inscribed in stone with an iron _____ forever.",
+      "answer": "stylus",
+      "accept": [
+        "pen",
+        "style"
+      ],
+      "verse_reference": "Job 19:23-24"
+    }
+  ]
+}

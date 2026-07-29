@@ -1,0 +1,53 @@
+{
+  "book": "Exodus",
+  "chapter": 8,
+  "questions": [
+    {
+      "id": "exodus-8-q1",
+      "type": "multiple_choice",
+      "question": "Which plagues came upon Egypt in this chapter?",
+      "options": [
+        "Blood and death",
+        "Frogs, gnats, and flies",
+        "Locusts and hail",
+        "Boils and darkness"
+      ],
+      "answer": "Frogs, gnats, and flies",
+      "verse_reference": "Exodus 8:6-24"
+    },
+    {
+      "id": "exodus-8-q2",
+      "type": "multiple_choice",
+      "question": "What was different about Goshen, where the Israelites lived, during the plague of flies?",
+      "options": [
+        "No flies were there",
+        "It was dark",
+        "It flooded",
+        "It was struck first"
+      ],
+      "answer": "No flies were there",
+      "verse_reference": "Exodus 8:22"
+    },
+    {
+      "id": "exodus-8-q3",
+      "type": "true_false",
+      "question": "Pharaoh promised to let Israel go but broke his word once the frogs were gone.",
+      "answer": "true",
+      "verse_reference": "Exodus 8:8-15"
+    },
+    {
+      "id": "exodus-8-q4",
+      "type": "fill_blank",
+      "question": "Unable to reproduce the gnats, the magicians told Pharaoh, \"This is the _____ of God.\"",
+      "answer": "finger",
+      "verse_reference": "Exodus 8:19"
+    },
+    {
+      "id": "exodus-8-q5",
+      "type": "fill_blank",
+      "question": "The second plague filled Egypt with _____ that even entered Pharaoh's palace.",
+      "answer": "frogs",
+      "verse_reference": "Exodus 8:3-6"
+    }
+  ]
+}

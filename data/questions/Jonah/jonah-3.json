@@ -1,0 +1,56 @@
+{
+  "book": "Jonah",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "jonah-3-q1",
+      "type": "multiple_choice",
+      "question": "What message did Jonah finally proclaim in Nineveh?",
+      "options": [
+        "'Build an altar, and offer your sacrifices to God'",
+        "'The LORD is gracious and full of compassion'",
+        "'Yet forty days, and Nineveh shall be overthrown!'",
+        "'Turn now, and the city shall be saved from ruin'"
+      ],
+      "answer": "'Yet forty days, and Nineveh shall be overthrown!'",
+      "verse_reference": "Jonah 3:4"
+    },
+    {
+      "id": "jonah-3-q2",
+      "type": "multiple_choice",
+      "question": "How did the people of Nineveh respond?",
+      "options": [
+        "They mocked Jonah openly and drove him out of the city",
+        "They armed themselves at once and prepared for a great long war",
+        "They ignored the warning entirely and feasted on as before",
+        "They believed God, called a fast, and repented in sackcloth"
+      ],
+      "answer": "They believed God, called a fast, and repented in sackcloth",
+      "verse_reference": "Jonah 3:5"
+    },
+    {
+      "id": "jonah-3-q3",
+      "type": "true_false",
+      "question": "Even the king of Nineveh repented and called the people to turn from violence.",
+      "answer": "true",
+      "verse_reference": "Jonah 3:6-8"
+    },
+    {
+      "id": "jonah-3-q4",
+      "type": "fill_blank",
+      "question": "The people of Nineveh _____ God; they called for a fast and put on sackcloth.",
+      "answer": "believed",
+      "verse_reference": "Jonah 3:5"
+    },
+    {
+      "id": "jonah-3-q5",
+      "type": "fill_blank",
+      "question": "When God saw that they turned from their evil way, he _____ of the disaster.",
+      "answer": "relented",
+      "accept": [
+        "repented"
+      ],
+      "verse_reference": "Jonah 3:10"
+    }
+  ]
+}

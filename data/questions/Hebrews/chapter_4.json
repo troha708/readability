@@ -1,0 +1,59 @@
+{
+  "book": "Hebrews",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "heb_4_1",
+      "type": "multiple_choice",
+      "question": "What does the author say the word of God is sharper than?",
+      "options": [
+        "A barber's sharp razor",
+        "Any double-edged sword",
+        "A well-thrown spear",
+        "A bolt of lightning"
+      ],
+      "correct": "Any double-edged sword",
+      "verse_ref": "Hebrews 4:12",
+      "feedback": "The word of God is living and active, sharper than any double-edged sword."
+    },
+    {
+      "id": "heb_4_2",
+      "type": "multiple_choice",
+      "question": "What kind of rest does the author say remains for the people of God?",
+      "options": [
+        "A Sabbath rest",
+        "A promised land",
+        "A heavenly temple",
+        "A new Jerusalem"
+      ],
+      "correct": "A Sabbath rest",
+      "verse_ref": "Hebrews 4:9",
+      "feedback": "There remains a Sabbath rest for the people of God."
+    },
+    {
+      "id": "heb_4_3",
+      "type": "true_false",
+      "question": "The author says our high priest is unable to sympathize with our weaknesses.",
+      "correct": false,
+      "verse_ref": "Hebrews 4:15",
+      "feedback": "Our high priest can sympathize with our weaknesses — he was tempted in every way yet without sin."
+    },
+    {
+      "id": "heb_4_4",
+      "type": "fill_in_the_blank",
+      "question": "The word of God judges the thoughts and _____ of the heart.",
+      "correct": "intentions",
+      "accept": ["intents"],
+      "verse_ref": "Hebrews 4:12",
+      "feedback": "The word of God judges the thoughts and intentions of the heart."
+    },
+    {
+      "id": "heb_4_5",
+      "type": "fill_in_the_blank",
+      "question": "We are told to approach the throne of _____ with confidence to receive mercy.",
+      "correct": "grace",
+      "verse_ref": "Hebrews 4:16",
+      "feedback": "Approach the throne of grace with confidence to receive mercy and find grace."
+    }
+  ]
+}

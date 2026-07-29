@@ -1,0 +1,53 @@
+{
+  "book": "1 Kings",
+  "chapter": 15,
+  "questions": [
+    {
+      "id": "1-kings-15-q1",
+      "type": "multiple_choice",
+      "question": "What does chapter 15 mostly record?",
+      "options": [
+        "A great and prolonged war against the Philistines",
+        "The reigns of several kings of Judah and Israel",
+        "The building of the temple of the LORD in Jerusalem",
+        "A severe famine that struck both of the kingdoms"
+      ],
+      "answer": "The reigns of several kings of Judah and Israel",
+      "verse_reference": "1 Kings 15:1"
+    },
+    {
+      "id": "1-kings-15-q2",
+      "type": "multiple_choice",
+      "question": "Which king of Judah did right and removed idols, like his ancestor David?",
+      "options": [
+        "Abijam",
+        "Asa",
+        "Nadab",
+        "Baasha"
+      ],
+      "answer": "Asa",
+      "verse_reference": "1 Kings 15:11"
+    },
+    {
+      "id": "1-kings-15-q3",
+      "type": "true_false",
+      "question": "Asa removed his grandmother from being queen mother because of her idol.",
+      "answer": "true",
+      "verse_reference": "1 Kings 15:13"
+    },
+    {
+      "id": "1-kings-15-q4",
+      "type": "fill_blank",
+      "question": "King _____ of Judah did what was right and removed the idols his fathers had made.",
+      "answer": "Asa",
+      "verse_reference": "1 Kings 15:11-12"
+    },
+    {
+      "id": "1-kings-15-q5",
+      "type": "fill_blank",
+      "question": "There was continual _____ between Asa and Baasha king of Israel.",
+      "answer": "war",
+      "verse_reference": "1 Kings 15:16"
+    }
+  ]
+}

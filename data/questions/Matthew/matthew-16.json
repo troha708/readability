@@ -1,0 +1,56 @@
+{
+  "book": "Matthew",
+  "chapter": 16,
+  "questions": [
+    {
+      "id": "matthew-16-q1",
+      "type": "multiple_choice",
+      "question": "Who did Peter say Jesus was?",
+      "options": [
+        "A great prophet like Elijah of old",
+        "A teacher sent from God with signs",
+        "The son of David, the rightful king",
+        "The Christ, the Son of the living God"
+      ],
+      "answer": "The Christ, the Son of the living God",
+      "verse_reference": "Matthew 16:16"
+    },
+    {
+      "id": "matthew-16-q2",
+      "type": "multiple_choice",
+      "question": "What did Jesus say he would build on the rock of Peter's confession?",
+      "options": [
+        "A temple",
+        "A great kingdom",
+        "An altar",
+        "His church"
+      ],
+      "answer": "His church",
+      "verse_reference": "Matthew 16:18"
+    },
+    {
+      "id": "matthew-16-q3",
+      "type": "true_false",
+      "question": "Peter rebuked Jesus after he predicted his own death and resurrection.",
+      "answer": "true",
+      "verse_reference": "Matthew 16:22"
+    },
+    {
+      "id": "matthew-16-q4",
+      "type": "fill_blank",
+      "question": "For what will it profit a man if he gains the whole world, yet forfeits his _____?",
+      "answer": "soul",
+      "accept": [
+        "life"
+      ],
+      "verse_reference": "Matthew 16:26"
+    },
+    {
+      "id": "matthew-16-q5",
+      "type": "fill_blank",
+      "question": "If anyone desires to come after me, let him deny himself, take up his _____, and follow me.",
+      "answer": "cross",
+      "verse_reference": "Matthew 16:24"
+    }
+  ]
+}

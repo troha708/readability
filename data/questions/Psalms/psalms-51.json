@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 51,
+  "questions": [
+    {
+      "id": "psalms-51-q1",
+      "type": "multiple_choice",
+      "question": "What occasion lies behind Psalm 51?",
+      "options": [
+        "When Nathan confronted David after he had gone in to Bathsheba",
+        "When David spared the life of Saul as he slept in the dark cave",
+        "When David fled away from the face of Absalom his rebellious son",
+        "When David brought the ark of the covenant up into Jerusalem"
+      ],
+      "answer": "When Nathan confronted David after he had gone in to Bathsheba",
+      "verse_reference": "Psalm 51:title"
+    },
+    {
+      "id": "psalms-51-q2",
+      "type": "multiple_choice",
+      "question": "What does David ask God to create in him?",
+      "options": [
+        "Victory over all his enemies",
+        "A throne established forever",
+        "A clean heart and a right spirit",
+        "A long life and very many children"
+      ],
+      "answer": "A clean heart and a right spirit",
+      "verse_reference": "Psalm 51:10"
+    },
+    {
+      "id": "psalms-51-q3",
+      "type": "true_false",
+      "question": "David says God will not despise a broken and contrite heart.",
+      "answer": "true",
+      "verse_reference": "Psalm 51:17"
+    },
+    {
+      "id": "psalms-51-q4",
+      "type": "fill_blank",
+      "question": "Create in me a clean _____, O God.",
+      "answer": "heart",
+      "verse_reference": "Psalm 51:10"
+    },
+    {
+      "id": "psalms-51-q5",
+      "type": "fill_blank",
+      "question": "Wash me, and I shall be whiter than _____.",
+      "answer": "snow",
+      "verse_reference": "Psalm 51:7"
+    }
+  ]
+}

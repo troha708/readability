@@ -1,0 +1,53 @@
+{
+  "book": "Leviticus",
+  "chapter": 27,
+  "questions": [
+    {
+      "id": "leviticus-27-q1",
+      "type": "multiple_choice",
+      "question": "What does the final chapter of Leviticus discuss?",
+      "options": [
+        "The duties of the high priest",
+        "Vows, dedications, and tithes",
+        "The yearly sacred festivals",
+        "The cleansing of skin disease"
+      ],
+      "answer": "Vows, dedications, and tithes",
+      "verse_reference": "Leviticus 27:1-30"
+    },
+    {
+      "id": "leviticus-27-q2",
+      "type": "multiple_choice",
+      "question": "What portion of the land's produce belonged to the LORD as holy?",
+      "options": [
+        "A tenth (the tithe)",
+        "The first and best portion",
+        "Half of all the increase",
+        "A fifth of the harvest"
+      ],
+      "answer": "A tenth (the tithe)",
+      "verse_reference": "Leviticus 27:30"
+    },
+    {
+      "id": "leviticus-27-q3",
+      "type": "true_false",
+      "question": "A tithe (a tenth) of the land's seed and fruit was holy to the LORD.",
+      "answer": "true",
+      "verse_reference": "Leviticus 27:30"
+    },
+    {
+      "id": "leviticus-27-q4",
+      "type": "fill_blank",
+      "question": "\"All the _____ of the land... is the LORD's. It is holy to the LORD.\"",
+      "answer": "tithe",
+      "verse_reference": "Leviticus 27:30"
+    },
+    {
+      "id": "leviticus-27-q5",
+      "type": "fill_blank",
+      "question": "Of the herd or flock, every _____ animal that passed under the rod was holy to the LORD.",
+      "answer": "tenth",
+      "verse_reference": "Leviticus 27:32"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Exodus",
+  "chapter": 36,
+  "questions": [
+    {
+      "id": "exodus-36-q1",
+      "type": "multiple_choice",
+      "question": "What unusual problem did the craftsmen report to Moses?",
+      "options": [
+        "The skilled workers had abandoned the task",
+        "The gold and silver had run completely out",
+        "The tabernacle plans were lost in the camp",
+        "The people brought more than was needed"
+      ],
+      "answer": "The people brought more than was needed",
+      "verse_reference": "Exodus 36:5-7"
+    },
+    {
+      "id": "exodus-36-q2",
+      "type": "multiple_choice",
+      "question": "Who led the skilled workers in building the tabernacle?",
+      "options": [
+        "Joshua and Caleb the spies",
+        "Nadab and Abihu",
+        "Aaron and Hur",
+        "Bezalel and Oholiab"
+      ],
+      "answer": "Bezalel and Oholiab",
+      "verse_reference": "Exodus 36:1-2"
+    },
+    {
+      "id": "exodus-36-q3",
+      "type": "true_false",
+      "question": "Moses had to command the people to stop bringing offerings.",
+      "answer": "true",
+      "verse_reference": "Exodus 36:6"
+    },
+    {
+      "id": "exodus-36-q4",
+      "type": "fill_blank",
+      "question": "The people brought _____ than enough for the work, so Moses restrained them.",
+      "answer": "more",
+      "verse_reference": "Exodus 36:5"
+    },
+    {
+      "id": "exodus-36-q5",
+      "type": "fill_blank",
+      "question": "The craftsmen built the _____, the portable tent where God would dwell.",
+      "answer": "tabernacle",
+      "verse_reference": "Exodus 36:8"
+    }
+  ]
+}

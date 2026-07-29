@@ -1,0 +1,56 @@
+{
+  "book": "Isaiah",
+  "chapter": 52,
+  "questions": [
+    {
+      "id": "isaiah-52-q1",
+      "type": "multiple_choice",
+      "question": "What does Isaiah 52 call beautiful upon the mountains?",
+      "options": [
+        "The crown of the king, all set about with precious jewels",
+        "The wide gates of the holy temple, thrown open very wide",
+        "The high walls of the great city, all rebuilt in their glory",
+        "The feet of him who brings good news, who publishes peace"
+      ],
+      "answer": "The feet of him who brings good news, who publishes peace",
+      "verse_reference": "Isaiah 52:7"
+    },
+    {
+      "id": "isaiah-52-q2",
+      "type": "multiple_choice",
+      "question": "What does Isaiah 52 begin to say about the servant at its end?",
+      "options": [
+        "He will conquer all of the nations with the edge of the sword",
+        "He will reign in great splendor over a golden and glorious city",
+        "He will be high and lifted up, yet his appearance was marred",
+        "He will be hidden far away and shall never once be seen again"
+      ],
+      "answer": "He will be high and lifted up, yet his appearance was marred",
+      "verse_reference": "Isaiah 52:13-14"
+    },
+    {
+      "id": "isaiah-52-q3",
+      "type": "true_false",
+      "question": "Isaiah 52 calls Jerusalem to awake, put on strength, and shake off the dust.",
+      "answer": "true",
+      "verse_reference": "Isaiah 52:1-2"
+    },
+    {
+      "id": "isaiah-52-q4",
+      "type": "fill_blank",
+      "question": "How beautiful upon the mountains are the feet of him who brings good _____.",
+      "answer": "news",
+      "accept": [
+        "tidings"
+      ],
+      "verse_reference": "Isaiah 52:7"
+    },
+    {
+      "id": "isaiah-52-q5",
+      "type": "fill_blank",
+      "question": "Behold, My Servant will prosper; He will be raised and lifted up and _____ exalted.",
+      "answer": "highly",
+      "verse_reference": "Isaiah 52:13"
+    }
+  ]
+}

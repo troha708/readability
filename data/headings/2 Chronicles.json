@@ -1,0 +1,502 @@
+{
+  "book": "2 Chronicles",
+  "source": "Berean Standard Bible (CC0 Public Domain)",
+  "chapters": {
+    "1": [
+      {
+        "beforeVerse": 1,
+        "heading": "Solomon’s Prayer for Wisdom"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "Solomon’s Riches"
+      }
+    ],
+    "2": [
+      {
+        "beforeVerse": 1,
+        "heading": "Preparations for the Temple"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "Hiram’s Reply to Solomon"
+      }
+    ],
+    "3": [
+      {
+        "beforeVerse": 1,
+        "heading": "Temple Construction Begins"
+      },
+      {
+        "beforeVerse": 5,
+        "heading": "The Temple’s Interior"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "The Cherubim"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "The Veil and Pillars"
+      }
+    ],
+    "4": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Bronze Altar and Molten Sea"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "The Ten Basins, Lampstands, and Tables"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "The Courts"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "Completion of the Bronze Works"
+      },
+      {
+        "beforeVerse": 19,
+        "heading": "Completion of the Gold Furnishings"
+      }
+    ],
+    "5": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Ark Enters the Temple"
+      }
+    ],
+    "6": [
+      {
+        "beforeVerse": 1,
+        "heading": "Solomon Blesses the LORD"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "Solomon’s Prayer of Dedication"
+      }
+    ],
+    "7": [
+      {
+        "beforeVerse": 1,
+        "heading": "Fire from Heaven"
+      },
+      {
+        "beforeVerse": 4,
+        "heading": "Sacrifices of Dedication"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "The LORD’s Response to Solomon"
+      }
+    ],
+    "8": [
+      {
+        "beforeVerse": 1,
+        "heading": "Solomon’s Additional Achievements"
+      }
+    ],
+    "9": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Queen of Sheba"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "Solomon’s Wealth and Splendor"
+      },
+      {
+        "beforeVerse": 29,
+        "heading": "The Death of Solomon"
+      }
+    ],
+    "10": [
+      {
+        "beforeVerse": 1,
+        "heading": "Rebellion against Rehoboam"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "The Kingdom Divided"
+      }
+    ],
+    "11": [
+      {
+        "beforeVerse": 1,
+        "heading": "Shemaiah’s Prophecy"
+      },
+      {
+        "beforeVerse": 5,
+        "heading": "Rehoboam Fortifies Judah"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "Jeroboam Forsakes the Priests and Levites"
+      },
+      {
+        "beforeVerse": 18,
+        "heading": "Rehoboam’s Family"
+      }
+    ],
+    "12": [
+      {
+        "beforeVerse": 1,
+        "heading": "Shishak Raids Jerusalem"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "Rehoboam’s Reign and Death"
+      }
+    ],
+    "13": [
+      {
+        "beforeVerse": 1,
+        "heading": "Abijah Reigns in Judah"
+      },
+      {
+        "beforeVerse": 4,
+        "heading": "Civil War against Jeroboam"
+      }
+    ],
+    "14": [
+      {
+        "beforeVerse": 1,
+        "heading": "Asa Reigns in Judah"
+      }
+    ],
+    "15": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Prophecy of Azariah"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "Asa’s Reforms"
+      }
+    ],
+    "16": [
+      {
+        "beforeVerse": 1,
+        "heading": "War between Asa and Baasha"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "Hanani’s Message to Asa"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "The Death and Burial of Asa"
+      }
+    ],
+    "17": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jehoshaphat Reigns in Judah"
+      }
+    ],
+    "18": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jehoshaphat Allies with Ahab"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "Micaiah Prophesies against Ahab"
+      },
+      {
+        "beforeVerse": 28,
+        "heading": "Ahab’s Defeat and Death"
+      }
+    ],
+    "19": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jehoshaphat Reproved by Jehu"
+      },
+      {
+        "beforeVerse": 4,
+        "heading": "Jehoshaphat’s Reforms"
+      }
+    ],
+    "20": [
+      {
+        "beforeVerse": 1,
+        "heading": "War against Jehoshaphat"
+      },
+      {
+        "beforeVerse": 5,
+        "heading": "Jehoshaphat’s Prayer"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "The Prophecy of Jahaziel"
+      },
+      {
+        "beforeVerse": 20,
+        "heading": "The Enemies Destroy Themselves"
+      },
+      {
+        "beforeVerse": 26,
+        "heading": "The Joyful Return"
+      },
+      {
+        "beforeVerse": 31,
+        "heading": "Summary of Jehoshaphat’s Reign"
+      },
+      {
+        "beforeVerse": 35,
+        "heading": "Jehoshaphat’s Fleet Is Wrecked"
+      }
+    ],
+    "21": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jehoram Reigns in Judah"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "Edom and Libnah Rebel"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "Elijah’s Letter to Jehoram"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "Jehoram’s Disease and Death"
+      }
+    ],
+    "22": [
+      {
+        "beforeVerse": 1,
+        "heading": "Ahaziah Reigns in Judah"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "Jehu Kills the Princes of Judah"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "Athaliah and Joash"
+      }
+    ],
+    "23": [
+      {
+        "beforeVerse": 1,
+        "heading": "Joash Anointed King of Judah"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "The Death of Athaliah"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "Jehoiada Restores the Worship of the LORD"
+      }
+    ],
+    "24": [
+      {
+        "beforeVerse": 1,
+        "heading": "Joash Repairs the Temple"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "Jehoiada’s Death and Burial"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "The Wickedness of Joash"
+      },
+      {
+        "beforeVerse": 23,
+        "heading": "The Death of Joash"
+      }
+    ],
+    "25": [
+      {
+        "beforeVerse": 1,
+        "heading": "Amaziah Reigns in Judah"
+      },
+      {
+        "beforeVerse": 5,
+        "heading": "Amaziah’s Victories"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "Amaziah Rebuked for Idolatry"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "Jehoash Defeats Amaziah"
+      },
+      {
+        "beforeVerse": 25,
+        "heading": "The Death of Amaziah"
+      }
+    ],
+    "26": [
+      {
+        "beforeVerse": 1,
+        "heading": "Uzziah Reigns in Judah"
+      }
+    ],
+    "27": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jotham Reigns in Judah"
+      }
+    ],
+    "28": [
+      {
+        "beforeVerse": 1,
+        "heading": "Ahaz Reigns in Judah"
+      },
+      {
+        "beforeVerse": 5,
+        "heading": "Aram Defeats Judah"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "The Idolatry of Ahaz"
+      }
+    ],
+    "29": [
+      {
+        "beforeVerse": 1,
+        "heading": "Hezekiah Cleanses the Temple"
+      },
+      {
+        "beforeVerse": 20,
+        "heading": "Hezekiah Restores Temple Worship"
+      }
+    ],
+    "30": [
+      {
+        "beforeVerse": 1,
+        "heading": "Hezekiah Proclaims a Passover"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "Hezekiah Celebrates the Passover"
+      }
+    ],
+    "31": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Destruction of Idols"
+      },
+      {
+        "beforeVerse": 3,
+        "heading": "Contributions for Worship"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "Hezekiah Organizes the Priests"
+      }
+    ],
+    "32": [
+      {
+        "beforeVerse": 1,
+        "heading": "Sennacherib Invades Judah"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "Sennacherib Threatens Jerusalem"
+      },
+      {
+        "beforeVerse": 20,
+        "heading": "Jerusalem Delivered from the Assyrians"
+      },
+      {
+        "beforeVerse": 24,
+        "heading": "Hezekiah’s Illness and Recovery"
+      },
+      {
+        "beforeVerse": 32,
+        "heading": "Hezekiah’s Death"
+      }
+    ],
+    "33": [
+      {
+        "beforeVerse": 1,
+        "heading": "Manasseh Reigns in Judah"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "Manasseh’s Repentance and Restoration"
+      },
+      {
+        "beforeVerse": 21,
+        "heading": "Amon Reigns in Judah"
+      }
+    ],
+    "34": [
+      {
+        "beforeVerse": 1,
+        "heading": "Josiah Reigns in Judah"
+      },
+      {
+        "beforeVerse": 3,
+        "heading": "Josiah Destroys Idolatry"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "Josiah Repairs the Temple"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "Hilkiah Finds the Book of the Law"
+      },
+      {
+        "beforeVerse": 22,
+        "heading": "Huldah’s Prophecy"
+      },
+      {
+        "beforeVerse": 29,
+        "heading": "Josiah Renews the Covenant"
+      }
+    ],
+    "35": [
+      {
+        "beforeVerse": 1,
+        "heading": "Josiah Restores the Passover"
+      },
+      {
+        "beforeVerse": 20,
+        "heading": "The Death of Josiah"
+      },
+      {
+        "beforeVerse": 25,
+        "heading": "Laments over Josiah"
+      }
+    ],
+    "36": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jehoahaz Succeeds Josiah"
+      },
+      {
+        "beforeVerse": 5,
+        "heading": "Jehoiakim Reigns in Judah"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "Jehoiachin Reigns in Judah"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "Zedekiah Reigns in Judah"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "The Fall of Jerusalem"
+      },
+      {
+        "beforeVerse": 22,
+        "heading": "The Proclamation of Cyrus"
+      }
+    ]
+  }
+}

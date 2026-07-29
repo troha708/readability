@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 144,
+  "questions": [
+    {
+      "id": "psalms-144-q1",
+      "type": "multiple_choice",
+      "question": "How does David describe the LORD at the start of Psalm 144?",
+      "options": [
+        "My rock, who trains my hands for war",
+        "My light, who scatters the darkness of night",
+        "My portion, who fills my cup with joy",
+        "My shepherd, who leads me beside still waters"
+      ],
+      "answer": "My rock, who trains my hands for war",
+      "verse_reference": "Psalm 144:1"
+    },
+    {
+      "id": "psalms-144-q2",
+      "type": "multiple_choice",
+      "question": "What does David ask about man, marveling at God's care?",
+      "options": [
+        "Who is able to number all the many days of a single man?",
+        "What is man that you regard him, since he is like a breath?",
+        "Why is man made to be so strong and mighty above the beasts?",
+        "Where does the spirit of a man go away to when at last he dies?"
+      ],
+      "answer": "What is man that you regard him, since he is like a breath?",
+      "verse_reference": "Psalm 144:3-4"
+    },
+    {
+      "id": "psalms-144-q3",
+      "type": "true_false",
+      "question": "David says blessed is the people whose God is the LORD.",
+      "answer": "true",
+      "verse_reference": "Psalm 144:15"
+    },
+    {
+      "id": "psalms-144-q4",
+      "type": "fill_blank",
+      "question": "Blessed be the LORD, my _____, who trains my hands for war.",
+      "answer": "rock",
+      "verse_reference": "Psalm 144:1"
+    },
+    {
+      "id": "psalms-144-q5",
+      "type": "fill_blank",
+      "question": "I will sing a new _____ to you, O God; upon a ten-stringed harp I will play to you.",
+      "answer": "song",
+      "verse_reference": "Psalm 144:9"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 35,
+  "questions": [
+    {
+      "id": "2-chronicles-35-q1",
+      "type": "multiple_choice",
+      "question": "What great celebration did Josiah hold?",
+      "options": [
+        "A royal wedding feast",
+        "A grand coronation ceremony",
+        "A great military triumph",
+        "A Passover to the LORD"
+      ],
+      "answer": "A Passover to the LORD",
+      "verse_reference": "2 Chronicles 35:1"
+    },
+    {
+      "id": "2-chronicles-35-q2",
+      "type": "multiple_choice",
+      "question": "How did Josiah die?",
+      "options": [
+        "Of a long and wasting illness",
+        "Peacefully in his old age",
+        "Assassinated by servants in his home",
+        "Wounded in battle against Neco at Megiddo"
+      ],
+      "answer": "Wounded in battle against Neco at Megiddo",
+      "verse_reference": "2 Chronicles 35:22-24"
+    },
+    {
+      "id": "2-chronicles-35-q3",
+      "type": "true_false",
+      "question": "No Passover like Josiah's had been kept in Israel since the days of Samuel the prophet.",
+      "answer": "true",
+      "verse_reference": "2 Chronicles 35:18"
+    },
+    {
+      "id": "2-chronicles-35-q4",
+      "type": "fill_blank",
+      "question": "Josiah disguised himself to fight Neco and was struck by _____.",
+      "answer": "archers",
+      "accept": [
+        "shooters"
+      ],
+      "verse_reference": "2 Chronicles 35:23"
+    },
+    {
+      "id": "2-chronicles-35-q5",
+      "type": "fill_blank",
+      "question": "_____ the prophet uttered a lament for Josiah.",
+      "answer": "Jeremiah",
+      "verse_reference": "2 Chronicles 35:25"
+    }
+  ]
+}

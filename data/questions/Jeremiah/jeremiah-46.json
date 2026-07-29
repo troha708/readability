@@ -1,0 +1,56 @@
+{
+  "book": "Jeremiah",
+  "chapter": 46,
+  "questions": [
+    {
+      "id": "jeremiah-46-q1",
+      "type": "multiple_choice",
+      "question": "Against which nation is the oracle in Jeremiah 46?",
+      "options": [
+        "Egypt",
+        "Moab",
+        "Edom",
+        "Babylon"
+      ],
+      "answer": "Egypt",
+      "verse_reference": "Jeremiah 46:2"
+    },
+    {
+      "id": "jeremiah-46-q2",
+      "type": "multiple_choice",
+      "question": "What reassurance does God give Jacob (Israel) at the end of Jeremiah 46?",
+      "options": [
+        "Fear greatly, for I will utterly destroy you in my wrath",
+        "Fear not, for I am with you; I will not make a full end of you",
+        "Flee and wander for ever among the distant nations",
+        "You are forgotten and cast off from before my face"
+      ],
+      "answer": "Fear not, for I am with you; I will not make a full end of you",
+      "verse_reference": "Jeremiah 46:27-28"
+    },
+    {
+      "id": "jeremiah-46-q3",
+      "type": "true_false",
+      "question": "Jeremiah 46 foretells that Babylon under Nebuchadnezzar would strike Egypt.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 46:13"
+    },
+    {
+      "id": "jeremiah-46-q4",
+      "type": "fill_blank",
+      "question": "Fear not, O Jacob my servant, declares the LORD, for I am with _____.",
+      "answer": "you",
+      "accept": [
+        "thee"
+      ],
+      "verse_reference": "Jeremiah 46:28"
+    },
+    {
+      "id": "jeremiah-46-q5",
+      "type": "fill_blank",
+      "question": "The oracle concerning _____, about the army of Pharaoh Neco at Carchemish.",
+      "answer": "Egypt",
+      "verse_reference": "Jeremiah 46:2"
+    }
+  ]
+}

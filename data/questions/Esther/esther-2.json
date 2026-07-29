@@ -1,0 +1,53 @@
+{
+  "book": "Esther",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "esther-2-q1",
+      "type": "multiple_choice",
+      "question": "Who raised Esther, his cousin, as his own daughter?",
+      "options": [
+        "Haman",
+        "Mordecai",
+        "Hegai",
+        "Memucan the noble"
+      ],
+      "answer": "Mordecai",
+      "verse_reference": "Esther 2:7"
+    },
+    {
+      "id": "esther-2-q2",
+      "type": "multiple_choice",
+      "question": "What did Esther become after pleasing the king?",
+      "options": [
+        "A servant in the palace",
+        "Queen in place of Vashti",
+        "A captive in the harem",
+        "A trusted royal advisor"
+      ],
+      "answer": "Queen in place of Vashti",
+      "verse_reference": "Esther 2:17"
+    },
+    {
+      "id": "esther-2-q3",
+      "type": "true_false",
+      "question": "Mordecai uncovered a plot by two eunuchs to assassinate the king.",
+      "answer": "true",
+      "verse_reference": "Esther 2:21-22"
+    },
+    {
+      "id": "esther-2-q4",
+      "type": "fill_blank",
+      "question": "On Mordecai's advice, Esther did not reveal her _____ or kindred.",
+      "answer": "people",
+      "verse_reference": "Esther 2:10"
+    },
+    {
+      "id": "esther-2-q5",
+      "type": "fill_blank",
+      "question": "The plot was recorded in the book of the _____ in the king's presence.",
+      "answer": "chronicles",
+      "verse_reference": "Esther 2:23"
+    }
+  ]
+}

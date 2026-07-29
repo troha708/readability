@@ -1,0 +1,58 @@
+{
+  "book": "Revelation",
+  "chapter": 20,
+  "questions": [
+    {
+      "id": "rev_20_1",
+      "type": "multiple_choice",
+      "question": "For how long is Satan bound in the abyss?",
+      "options": [
+        "A thousand years",
+        "Seven years",
+        "Forty days",
+        "Forever"
+      ],
+      "correct": "A thousand years",
+      "verse_ref": "Revelation 20:2-3",
+      "feedback": "Satan is bound for a thousand years and locked in the abyss."
+    },
+    {
+      "id": "rev_20_2",
+      "type": "multiple_choice",
+      "question": "What happens at the great white throne judgment?",
+      "options": [
+        "The whole earth is made new and freed from its curse",
+        "Satan is loosed for a little while from his prison",
+        "The seven trumpets sound out across the earth again",
+        "The dead are judged according to what they had done"
+      ],
+      "correct": "The dead are judged according to what they had done",
+      "verse_ref": "Revelation 20:12",
+      "feedback": "The dead were judged according to what they had done as recorded in the books."
+    },
+    {
+      "id": "rev_20_3",
+      "type": "true_false",
+      "question": "Death and Hades are thrown into the lake of fire.",
+      "correct": true,
+      "verse_ref": "Revelation 20:14",
+      "feedback": "Death and Hades were thrown into the lake of fire — the second death."
+    },
+    {
+      "id": "rev_20_4",
+      "type": "fill_in_the_blank",
+      "question": "Anyone whose name was not found in the book of _____ was thrown into the lake of fire.",
+      "correct": "life",
+      "verse_ref": "Revelation 20:15",
+      "feedback": "Anyone not found in the book of life was thrown into the lake of fire."
+    },
+    {
+      "id": "rev_20_5",
+      "type": "fill_in_the_blank",
+      "question": "The second death has no power over those who share in the first _____.",
+      "correct": "resurrection",
+      "verse_ref": "Revelation 20:6",
+      "feedback": "The second death has no power over those in the first resurrection."
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "source": "OpenBible.info Bible Geocoding data (representative points)",
+  "license": "CC BY 4.0",
+  "url": "https://www.openbible.info/geo/",
+  "notes": "Top-ranked identification per ancient place; uncertainty flagged from the dataset's source votes. OSM-derived precise geometries (ODbL) are not used."
+}

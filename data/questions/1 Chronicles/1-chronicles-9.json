@@ -1,0 +1,56 @@
+{
+  "book": "1 Chronicles",
+  "chapter": 9,
+  "questions": [
+    {
+      "id": "1-chronicles-9-q1",
+      "type": "multiple_choice",
+      "question": "Who were the first to resettle in their towns after returning from exile?",
+      "options": [
+        "Foreigners who were brought in from other distant lands",
+        "Only the kings and the members of their households",
+        "Only the soldiers who guarded the gates of the city",
+        "Israel, the priests, Levites, and temple servants"
+      ],
+      "answer": "Israel, the priests, Levites, and temple servants",
+      "verse_reference": "1 Chronicles 9:2"
+    },
+    {
+      "id": "1-chronicles-9-q2",
+      "type": "multiple_choice",
+      "question": "Why were Judah and Jerusalem carried away to Babylon?",
+      "options": [
+        "A flood that swept through Judah",
+        "Their breaking faith with God",
+        "A famine that emptied the cities",
+        "A great earthquake that struck the land"
+      ],
+      "answer": "Their breaking faith with God",
+      "verse_reference": "1 Chronicles 9:1"
+    },
+    {
+      "id": "1-chronicles-9-q3",
+      "type": "true_false",
+      "question": "The gatekeepers were stationed on the four sides of the house of the LORD.",
+      "answer": "true",
+      "verse_reference": "1 Chronicles 9:24"
+    },
+    {
+      "id": "1-chronicles-9-q4",
+      "type": "fill_blank",
+      "question": "Some Levites were in charge of the rooms and the _____ of the house of God.",
+      "answer": "treasuries",
+      "accept": [
+        "treasures"
+      ],
+      "verse_reference": "1 Chronicles 9:26"
+    },
+    {
+      "id": "1-chronicles-9-q5",
+      "type": "fill_blank",
+      "question": "The records were written in the Book of the Kings of Israel and _____.",
+      "answer": "Judah",
+      "verse_reference": "1 Chronicles 9:1"
+    }
+  ]
+}

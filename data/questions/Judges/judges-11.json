@@ -1,0 +1,56 @@
+{
+  "book": "Judges",
+  "chapter": 11,
+  "questions": [
+    {
+      "id": "judges-11-q1",
+      "type": "multiple_choice",
+      "question": "Who was Jephthah, chosen to deliver Israel from the Ammonites?",
+      "options": [
+        "A king who ruled over the eastern tribes of Israel",
+        "A prophet who spoke the word of the LORD to the people",
+        "A mighty warrior who had been driven out by his brothers",
+        "A priest who served at the tabernacle of the LORD"
+      ],
+      "answer": "A mighty warrior who had been driven out by his brothers",
+      "verse_reference": "Judges 11:1-2"
+    },
+    {
+      "id": "judges-11-q2",
+      "type": "multiple_choice",
+      "question": "What rash vow did Jephthah make?",
+      "options": [
+        "To give the LORD a full tenth of all the spoil he took",
+        "To build an altar on every single high hill in the land of Gilead",
+        "To sacrifice whatever first came out of his house to meet him",
+        "To never again set foot in the land of the Ammonites"
+      ],
+      "answer": "To sacrifice whatever first came out of his house to meet him",
+      "verse_reference": "Judges 11:30-31"
+    },
+    {
+      "id": "judges-11-q3",
+      "type": "true_false",
+      "question": "Jephthah's own daughter was the first to come out to meet him.",
+      "answer": "true",
+      "verse_reference": "Judges 11:34"
+    },
+    {
+      "id": "judges-11-q4",
+      "type": "fill_blank",
+      "question": "Jephthah vowed to offer whatever first came out of his _____ to meet him.",
+      "answer": "house",
+      "verse_reference": "Judges 11:31"
+    },
+    {
+      "id": "judges-11-q5",
+      "type": "fill_blank",
+      "question": "Jephthah delivered Israel from the people of _____.",
+      "answer": "Ammon",
+      "accept": [
+        "Ammonites"
+      ],
+      "verse_reference": "Judges 11:32-33"
+    }
+  ]
+}

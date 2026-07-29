@@ -1,0 +1,53 @@
+{
+  "book": "Philippians",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "phil-3-q1",
+      "type": "multiple_choice",
+      "question": "Paul says he considers everything a loss compared to knowing whom?",
+      "options": [
+        "Christ Jesus his Lord",
+        "The prophets",
+        "God the heavenly Father",
+        "The apostles"
+      ],
+      "answer": "Christ Jesus his Lord",
+      "verse_reference": "Philippians 3:8"
+    },
+    {
+      "id": "phil-3-q2",
+      "type": "multiple_choice",
+      "question": "Paul says believers' citizenship is where?",
+      "options": [
+        "In heaven",
+        "On earth",
+        "In Rome",
+        "In Jerusalem"
+      ],
+      "answer": "In heaven",
+      "verse_reference": "Philippians 3:20"
+    },
+    {
+      "id": "phil-3-q3",
+      "type": "true_false",
+      "question": "Paul says he has already reached perfection and has no more to strive for.",
+      "answer": "false",
+      "verse_reference": "Philippians 3:12"
+    },
+    {
+      "id": "phil-3-q4",
+      "type": "fill_blank",
+      "question": "I press on toward the goal for the _____ of the upward call of God in Christ Jesus.",
+      "answer": "prize",
+      "verse_reference": "Philippians 3:14"
+    },
+    {
+      "id": "phil-3-q5",
+      "type": "fill_blank",
+      "question": "Whatever gain I had, I counted as _____ for the sake of Christ.",
+      "answer": "loss",
+      "verse_reference": "Philippians 3:7"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "book": "Genesis",
+  "chapter": 35,
+  "questions": [
+    {
+      "id": "genesis-35-q1",
+      "type": "multiple_choice",
+      "question": "What did Jacob tell his household to get rid of before going to Bethel?",
+      "options": [
+        "Their foreign gods",
+        "Their weapons",
+        "Their tents",
+        "Their flocks"
+      ],
+      "answer": "Their foreign gods",
+      "verse_reference": "Genesis 35:2"
+    },
+    {
+      "id": "genesis-35-q2",
+      "type": "multiple_choice",
+      "question": "Who died while giving birth to Benjamin?",
+      "options": [
+        "Hagar",
+        "Leah",
+        "Dinah",
+        "Rachel"
+      ],
+      "answer": "Rachel",
+      "verse_reference": "Genesis 35:18-19"
+    },
+    {
+      "id": "genesis-35-q3",
+      "type": "true_false",
+      "question": "God confirmed Jacob's new name, Israel, when he appeared to him at Bethel.",
+      "answer": "true",
+      "verse_reference": "Genesis 35:10"
+    },
+    {
+      "id": "genesis-35-q4",
+      "type": "fill_blank",
+      "question": "Rachel named her dying son Ben-Oni, but his father renamed him _____.",
+      "answer": "Benjamin",
+      "accept": [
+        "Beniamin"
+      ],
+      "verse_reference": "Genesis 35:18"
+    },
+    {
+      "id": "genesis-35-q5",
+      "type": "fill_blank",
+      "question": "Jacob set up a stone _____ at Bethel and poured oil on it.",
+      "answer": "pillar",
+      "verse_reference": "Genesis 35:14"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Ezekiel",
+  "chapter": 36,
+  "questions": [
+    {
+      "id": "ezekiel-36-q1",
+      "type": "multiple_choice",
+      "question": "To whom does Ezekiel 36 prophesy restoration?",
+      "options": [
+        "All of the nations surrounding the whole holy land",
+        "The priests and the Levites who serve in the temple",
+        "The great city of Babylon and all of its captives",
+        "The mountains of Israel and the house of Israel"
+      ],
+      "answer": "The mountains of Israel and the house of Israel",
+      "verse_reference": "Ezekiel 36:1, 8"
+    },
+    {
+      "id": "ezekiel-36-q2",
+      "type": "multiple_choice",
+      "question": "What new gift does God promise in Ezekiel 36?",
+      "options": [
+        "Broad new lands stretching out far beyond all the old borders",
+        "A righteous king to sit upon the throne of David",
+        "A grand new temple to replace the one laid waste",
+        "A new heart and a new spirit, removing the heart of stone"
+      ],
+      "answer": "A new heart and a new spirit, removing the heart of stone",
+      "verse_reference": "Ezekiel 36:26"
+    },
+    {
+      "id": "ezekiel-36-q3",
+      "type": "true_false",
+      "question": "God says he acts for the sake of his holy name, which Israel had profaned among the nations.",
+      "answer": "true",
+      "verse_reference": "Ezekiel 36:22"
+    },
+    {
+      "id": "ezekiel-36-q4",
+      "type": "fill_blank",
+      "question": "I will give you a new heart, and a new _____ I will put within you.",
+      "answer": "spirit",
+      "verse_reference": "Ezekiel 36:26"
+    },
+    {
+      "id": "ezekiel-36-q5",
+      "type": "fill_blank",
+      "question": "I will sprinkle clean _____ on you, and you shall be clean from all your uncleannesses.",
+      "answer": "water",
+      "verse_reference": "Ezekiel 36:25"
+    }
+  ]
+}

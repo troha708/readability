@@ -1,0 +1,53 @@
+{
+  "book": "Exodus",
+  "chapter": 32,
+  "questions": [
+    {
+      "id": "exodus-32-q1",
+      "type": "multiple_choice",
+      "question": "What did the people make while Moses was up on the mountain?",
+      "options": [
+        "A golden calf",
+        "A throne of pure gold",
+        "An ark",
+        "A tent"
+      ],
+      "answer": "A golden calf",
+      "verse_reference": "Exodus 32:4"
+    },
+    {
+      "id": "exodus-32-q2",
+      "type": "multiple_choice",
+      "question": "Who made the golden calf for the people?",
+      "options": [
+        "Moses",
+        "Aaron",
+        "Joshua",
+        "Hur"
+      ],
+      "answer": "Aaron",
+      "verse_reference": "Exodus 32:4"
+    },
+    {
+      "id": "exodus-32-q3",
+      "type": "true_false",
+      "question": "Moses broke the stone tablets when he saw the calf and the people dancing.",
+      "answer": "true",
+      "verse_reference": "Exodus 32:19"
+    },
+    {
+      "id": "exodus-32-q4",
+      "type": "fill_blank",
+      "question": "The people said of the calf, \"These are your _____, Israel, who brought you up out of Egypt.\"",
+      "answer": "gods",
+      "verse_reference": "Exodus 32:4"
+    },
+    {
+      "id": "exodus-32-q5",
+      "type": "fill_blank",
+      "question": "Moses burned the calf, ground it to _____, and made the people drink it.",
+      "answer": "powder",
+      "verse_reference": "Exodus 32:20"
+    }
+  ]
+}

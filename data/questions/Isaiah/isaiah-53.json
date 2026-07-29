@@ -1,0 +1,53 @@
+{
+  "book": "Isaiah",
+  "chapter": 53,
+  "questions": [
+    {
+      "id": "isaiah-53-q1",
+      "type": "multiple_choice",
+      "question": "How is the suffering servant described in Isaiah 53?",
+      "options": [
+        "Wealthy and greatly honored, served by very many nations",
+        "Mighty and greatly feared, a warrior crowned about with glory",
+        "Wise and much admired, sought out continually by many kings",
+        "Despised and rejected, a man of sorrows acquainted with grief"
+      ],
+      "answer": "Despised and rejected, a man of sorrows acquainted with grief",
+      "verse_reference": "Isaiah 53:3"
+    },
+    {
+      "id": "isaiah-53-q2",
+      "type": "multiple_choice",
+      "question": "Why was the servant pierced and crushed, according to Isaiah 53?",
+      "options": [
+        "For our transgressions and iniquities",
+        "For his own secret sins and pride",
+        "By a tragic and senseless accident",
+        "For the sake of his own very great glory"
+      ],
+      "answer": "For our transgressions and iniquities",
+      "verse_reference": "Isaiah 53:5"
+    },
+    {
+      "id": "isaiah-53-q3",
+      "type": "true_false",
+      "question": "Isaiah 53 says like a lamb led to the slaughter, he opened not his mouth.",
+      "answer": "true",
+      "verse_reference": "Isaiah 53:7"
+    },
+    {
+      "id": "isaiah-53-q4",
+      "type": "fill_blank",
+      "question": "He was pierced for our transgressions; he was crushed for our _____.",
+      "answer": "iniquities",
+      "verse_reference": "Isaiah 53:5"
+    },
+    {
+      "id": "isaiah-53-q5",
+      "type": "fill_blank",
+      "question": "All we like _____ have gone astray; we have turned every one to his own way.",
+      "answer": "sheep",
+      "verse_reference": "Isaiah 53:6"
+    }
+  ]
+}

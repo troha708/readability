@@ -1,0 +1,56 @@
+{
+  "book": "Genesis",
+  "chapter": 42,
+  "questions": [
+    {
+      "id": "genesis-42-q1",
+      "type": "multiple_choice",
+      "question": "Why did Joseph's brothers travel to Egypt?",
+      "options": [
+        "To trade for gold",
+        "To buy grain",
+        "To flee the famine permanently",
+        "To search for Joseph"
+      ],
+      "answer": "To buy grain",
+      "verse_reference": "Genesis 42:2-3"
+    },
+    {
+      "id": "genesis-42-q2",
+      "type": "multiple_choice",
+      "question": "Which brother did Joseph keep behind as a hostage?",
+      "options": [
+        "Levi",
+        "Judah",
+        "Simeon",
+        "Reuben"
+      ],
+      "answer": "Simeon",
+      "verse_reference": "Genesis 42:24"
+    },
+    {
+      "id": "genesis-42-q3",
+      "type": "true_false",
+      "question": "Joseph recognized his brothers, but they did not recognize him.",
+      "answer": "true",
+      "verse_reference": "Genesis 42:8"
+    },
+    {
+      "id": "genesis-42-q4",
+      "type": "fill_blank",
+      "question": "Joseph accused his brothers of being _____.",
+      "answer": "spies",
+      "verse_reference": "Genesis 42:9"
+    },
+    {
+      "id": "genesis-42-q5",
+      "type": "fill_blank",
+      "question": "Jacob refused to send his youngest son, _____, to Egypt.",
+      "answer": "Benjamin",
+      "accept": [
+        "Beniamin"
+      ],
+      "verse_reference": "Genesis 42:38"
+    }
+  ]
+}

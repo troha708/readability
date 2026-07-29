@@ -1,0 +1,53 @@
+{
+  "book": "Isaiah",
+  "chapter": 63,
+  "questions": [
+    {
+      "id": "isaiah-63-q1",
+      "type": "multiple_choice",
+      "question": "Who is pictured coming from Edom with crimson garments in Isaiah 63?",
+      "options": [
+        "A prophet who was sent to warn all of the proud and lofty nations",
+        "A shining angel bearing in his hand a great scroll of fierce judgment",
+        "A victorious king returning home from a great victory in battle",
+        "The LORD, mighty to save, having trodden the winepress of wrath"
+      ],
+      "answer": "The LORD, mighty to save, having trodden the winepress of wrath",
+      "verse_reference": "Isaiah 63:1-3"
+    },
+    {
+      "id": "isaiah-63-q2",
+      "type": "multiple_choice",
+      "question": "What does Isaiah 63 recall about God's past dealings with Israel?",
+      "options": [
+        "His many judgments poured out on all the nations round about",
+        "His steadfast love and how he carried them in days of old",
+        "His sure and certain promise to send a coming Messiah",
+        "His everlasting covenant first made with Abraham of old"
+      ],
+      "answer": "His steadfast love and how he carried them in days of old",
+      "verse_reference": "Isaiah 63:7-9"
+    },
+    {
+      "id": "isaiah-63-q3",
+      "type": "true_false",
+      "question": "Isaiah 63 addresses God as 'our Father,' even if Abraham does not know us.",
+      "answer": "true",
+      "verse_reference": "Isaiah 63:16"
+    },
+    {
+      "id": "isaiah-63-q4",
+      "type": "fill_blank",
+      "question": "I have trodden the winepress alone, and from the peoples no one was with _____.",
+      "answer": "me",
+      "verse_reference": "Isaiah 63:3"
+    },
+    {
+      "id": "isaiah-63-q5",
+      "type": "fill_blank",
+      "question": "You, O LORD, are our _____; our Redeemer from of old is your name.",
+      "answer": "Father",
+      "verse_reference": "Isaiah 63:16"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "book": "Psalms",
+  "chapter": 104,
+  "questions": [
+    {
+      "id": "psalms-104-q1",
+      "type": "multiple_choice",
+      "question": "What is the main subject of Psalm 104?",
+      "options": [
+        "The judgment of God upon all the nations",
+        "The deliverance of Israel from Egypt",
+        "The greatness of God seen in creation",
+        "The faithfulness of God toward David"
+      ],
+      "answer": "The greatness of God seen in creation",
+      "verse_reference": "Psalm 104:1-2"
+    },
+    {
+      "id": "psalms-104-q2",
+      "type": "multiple_choice",
+      "question": "What does the psalmist exclaim about God's works?",
+      "options": [
+        "O LORD, who is it that shall dwell upon your holy hill forever?",
+        "O LORD, what is feeble man that you are ever mindful of him?",
+        "O LORD, how long will you go on hiding your face away from me?",
+        "O LORD, how manifold are your works! In wisdom you have made them all"
+      ],
+      "answer": "O LORD, how manifold are your works! In wisdom you have made them all",
+      "verse_reference": "Psalm 104:24"
+    },
+    {
+      "id": "psalms-104-q3",
+      "type": "true_false",
+      "question": "The psalm says God covers himself with light as with a garment.",
+      "answer": "true",
+      "verse_reference": "Psalm 104:2"
+    },
+    {
+      "id": "psalms-104-q4",
+      "type": "fill_blank",
+      "question": "O LORD, how _____ are your works! In wisdom have you made them all.",
+      "answer": "many",
+      "accept": [
+        "manifold"
+      ],
+      "verse_reference": "Psalm 104:24"
+    },
+    {
+      "id": "psalms-104-q5",
+      "type": "fill_blank",
+      "question": "Bless the LORD, O my _____! Praise the LORD!",
+      "answer": "soul",
+      "verse_reference": "Psalm 104:35"
+    }
+  ]
+}

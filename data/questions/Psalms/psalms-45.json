@@ -1,0 +1,62 @@
+{
+  "book": "Psalms",
+  "chapter": 45,
+  "questions": [
+    {
+      "id": "psalms-45-q1",
+      "type": "multiple_choice",
+      "question": "What kind of psalm is Psalm 45?",
+      "options": [
+        "A harvest psalm",
+        "A royal wedding song",
+        "A lament",
+        "A deep penitential psalm"
+      ],
+      "answer": "A royal wedding song",
+      "verse_reference": "Psalm 45:title"
+    },
+    {
+      "id": "psalms-45-q2",
+      "type": "multiple_choice",
+      "question": "How is the king addressed in a striking verse?",
+      "options": [
+        "'Give the king your justice, O God'",
+        "'The LORD reigns; let the earth rejoice'",
+        "'Your throne, O God, is forever and ever'",
+        "'Blessed is the king who comes in the name of the LORD'"
+      ],
+      "answer": "'Your throne, O God, is forever and ever'",
+      "verse_reference": "Psalm 45:6"
+    },
+    {
+      "id": "psalms-45-q3",
+      "type": "true_false",
+      "question": "The psalmist calls his tongue the pen of a ready scribe.",
+      "answer": "true",
+      "verse_reference": "Psalm 45:1"
+    },
+    {
+      "id": "psalms-45-q4",
+      "type": "fill_blank",
+      "question": "You are the most _____ of the sons of men; grace is poured upon your lips.",
+      "answer": "handsome",
+      "accept": [
+        "excellent",
+        "fairer",
+        "fair"
+      ],
+      "verse_reference": "Psalm 45:2"
+    },
+    {
+      "id": "psalms-45-q5",
+      "type": "fill_blank",
+      "question": "In colorful _____ she is led to the king; her companions follow her.",
+      "answer": "garments",
+      "accept": [
+        "robes",
+        "raiment"
+      ],
+      "verse_reference": "Psalm 45:11-14"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "book": "Ruth",
+  "source": "Berean Standard Bible (CC0 Public Domain)",
+  "chapters": {
+    "1": [
+      {
+        "beforeVerse": 1,
+        "heading": "Naomi Becomes a Widow"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "Ruth’s Loyalty to Naomi"
+      },
+      {
+        "beforeVerse": 19,
+        "heading": "The Return to Bethlehem"
+      }
+    ],
+    "2": [
+      {
+        "beforeVerse": 1,
+        "heading": "Boaz Meets Ruth"
+      }
+    ],
+    "3": [
+      {
+        "beforeVerse": 1,
+        "heading": "Ruth’s Redemption Assured"
+      }
+    ],
+    "4": [
+      {
+        "beforeVerse": 1,
+        "heading": "Boaz Redeems Ruth"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "Boaz Marries Ruth"
+      },
+      {
+        "beforeVerse": 18,
+        "heading": "The Line of David"
+      }
+    ]
+  }
+}

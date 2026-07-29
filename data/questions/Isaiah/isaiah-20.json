@@ -1,0 +1,61 @@
+{
+  "book": "Isaiah",
+  "chapter": 20,
+  "questions": [
+    {
+      "id": "isaiah-20-q1",
+      "type": "multiple_choice",
+      "question": "What sign did Isaiah perform against Egypt and Cush?",
+      "options": [
+        "Lay on his side for many days bound with cords",
+        "Walked naked and barefoot for three years",
+        "Broke a clay jar before the city elders",
+        "Buried a linen belt until it rotted away"
+      ],
+      "answer": "Walked naked and barefoot for three years",
+      "verse_reference": "Isaiah 20:2-3"
+    },
+    {
+      "id": "isaiah-20-q2",
+      "type": "multiple_choice",
+      "question": "What did this sign mean?",
+      "options": [
+        "Egypt would rise up to rule over all of the nations",
+        "Judah would make a lasting peace with Egypt",
+        "Assyria would lead Egypt and Cush away as captives",
+        "A famine would strike the land of the Nile"
+      ],
+      "answer": "Assyria would lead Egypt and Cush away as captives",
+      "verse_reference": "Isaiah 20:4"
+    },
+    {
+      "id": "isaiah-20-q3",
+      "type": "true_false",
+      "question": "The sign warned against trusting in Egypt and Cush for deliverance.",
+      "answer": "true",
+      "verse_reference": "Isaiah 20:5-6"
+    },
+    {
+      "id": "isaiah-20-q4",
+      "type": "fill_blank",
+      "question": "Isaiah walked naked and barefoot for three years as a sign against Egypt and _____.",
+      "answer": "Cush",
+      "accept": [
+        "Ethiopia"
+      ],
+      "verse_reference": "Isaiah 20:3"
+    },
+    {
+      "id": "isaiah-20-q5",
+      "type": "fill_blank",
+      "question": "Behold, this is what has happened to our source of _____, those to whom we fled for help.",
+      "answer": "hope",
+      "accept": [
+        "expectation",
+        "trust",
+        "confidence"
+      ],
+      "verse_reference": "Isaiah 20:6"
+    }
+  ]
+}

@@ -1,0 +1,348 @@
+{
+  "book": "1 Samuel",
+  "source": "Berean Standard Bible (CC0 Public Domain)",
+  "chapters": {
+    "1": [
+      {
+        "beforeVerse": 1,
+        "heading": "Elkanah and His Wives"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "Hannah Prays for a Son"
+      },
+      {
+        "beforeVerse": 19,
+        "heading": "The Birth of Samuel"
+      }
+    ],
+    "2": [
+      {
+        "beforeVerse": 1,
+        "heading": "Hannah’s Prayer of Thanksgiving"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "Eli’s Wicked Sons"
+      },
+      {
+        "beforeVerse": 27,
+        "heading": "A Prophecy against the House of Eli"
+      }
+    ],
+    "3": [
+      {
+        "beforeVerse": 1,
+        "heading": "The LORD Calls Samuel"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "Samuel Shares the Vision"
+      }
+    ],
+    "4": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Philistines Capture the Ark"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "The Death of Eli"
+      }
+    ],
+    "5": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Ark Afflicts the Philistines"
+      }
+    ],
+    "6": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Ark Returned to Israel"
+      }
+    ],
+    "7": [
+      {
+        "beforeVerse": 1,
+        "heading": "Samuel Subdues the Philistines"
+      }
+    ],
+    "8": [
+      {
+        "beforeVerse": 1,
+        "heading": "Israel Demands a King"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "Samuel’s Warning"
+      },
+      {
+        "beforeVerse": 19,
+        "heading": "God Grants the Request"
+      }
+    ],
+    "9": [
+      {
+        "beforeVerse": 1,
+        "heading": "Saul Chosen as King"
+      }
+    ],
+    "10": [
+      {
+        "beforeVerse": 1,
+        "heading": "Samuel Anoints Saul"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "Samuel’s Signs Fulfilled"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "Saul Proclaimed King"
+      }
+    ],
+    "11": [
+      {
+        "beforeVerse": 1,
+        "heading": "Saul Defeats the Ammonites"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "Saul Confirmed as King"
+      }
+    ],
+    "12": [
+      {
+        "beforeVerse": 1,
+        "heading": "Samuel’s Farewell Address"
+      }
+    ],
+    "13": [
+      {
+        "beforeVerse": 1,
+        "heading": "War with the Philistines"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "Saul’s Unlawful Sacrifice"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "Israel without Weapons"
+      }
+    ],
+    "14": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jonathan’s Victory over the Philistines"
+      },
+      {
+        "beforeVerse": 24,
+        "heading": "Jonathan Eats the Honey"
+      },
+      {
+        "beforeVerse": 37,
+        "heading": "The People Save Jonathan"
+      },
+      {
+        "beforeVerse": 47,
+        "heading": "Saul’s Victories"
+      }
+    ],
+    "15": [
+      {
+        "beforeVerse": 1,
+        "heading": "Saul’s Disobedience"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "Samuel Denounces Saul"
+      },
+      {
+        "beforeVerse": 24,
+        "heading": "Saul’s Confession"
+      }
+    ],
+    "16": [
+      {
+        "beforeVerse": 1,
+        "heading": "Samuel Anoints David"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "David Serves Saul"
+      }
+    ],
+    "17": [
+      {
+        "beforeVerse": 1,
+        "heading": "Goliath’s Challenge"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "David Accepts the Challenge"
+      },
+      {
+        "beforeVerse": 38,
+        "heading": "David Slays Goliath"
+      }
+    ],
+    "18": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jonathan Befriends David"
+      },
+      {
+        "beforeVerse": 5,
+        "heading": "Saul Envies David"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "David Marries Michal"
+      }
+    ],
+    "19": [
+      {
+        "beforeVerse": 1,
+        "heading": "Saul Tries to Kill David"
+      }
+    ],
+    "20": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jonathan Helps David"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "Jonathan and David Renew Their Covenant"
+      },
+      {
+        "beforeVerse": 30,
+        "heading": "Saul Seeks to Kill Jonathan"
+      }
+    ],
+    "21": [
+      {
+        "beforeVerse": 1,
+        "heading": "David Takes the Consecrated Bread"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "David Flees to Gath"
+      }
+    ],
+    "22": [
+      {
+        "beforeVerse": 1,
+        "heading": "David Flees to Adullam and Mizpeh"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "Saul Slays the Priests of Nob"
+      }
+    ],
+    "23": [
+      {
+        "beforeVerse": 1,
+        "heading": "David Delivers Keilah"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "Saul Pursues David"
+      }
+    ],
+    "24": [
+      {
+        "beforeVerse": 1,
+        "heading": "David Spares Saul"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "David’s Oath to Saul"
+      }
+    ],
+    "25": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Death of Samuel"
+      },
+      {
+        "beforeVerse": 2,
+        "heading": "David, Nabal, and Abigail"
+      },
+      {
+        "beforeVerse": 18,
+        "heading": "Abigail Intercedes for Nabal"
+      },
+      {
+        "beforeVerse": 39,
+        "heading": "David Marries Abigail"
+      }
+    ],
+    "26": [
+      {
+        "beforeVerse": 1,
+        "heading": "David Again Spares Saul"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "David Reproves Abner"
+      },
+      {
+        "beforeVerse": 21,
+        "heading": "Saul Acknowledges His Sin"
+      }
+    ],
+    "27": [
+      {
+        "beforeVerse": 1,
+        "heading": "David and the Philistines"
+      }
+    ],
+    "28": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Philistines Gather against Israel"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "Saul and the Medium of Endor"
+      }
+    ],
+    "29": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Philistines Reject David"
+      }
+    ],
+    "30": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Amalekites Raid Ziklag"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "David Destroys the Amalekites"
+      },
+      {
+        "beforeVerse": 21,
+        "heading": "The Spoils Are Divided"
+      }
+    ],
+    "31": [
+      {
+        "beforeVerse": 1,
+        "heading": "Saul’s Overthrow and Death"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "The Philistines Possess the Towns"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "Jabesh-gilead’s Tribute to Saul"
+      }
+    ]
+  }
+}

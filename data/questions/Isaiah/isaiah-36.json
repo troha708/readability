@@ -1,0 +1,53 @@
+{
+  "book": "Isaiah",
+  "chapter": 36,
+  "questions": [
+    {
+      "id": "isaiah-36-q1",
+      "type": "multiple_choice",
+      "question": "Which Assyrian king invaded Judah in Isaiah 36?",
+      "options": [
+        "Tiglath-pileser",
+        "Sennacherib",
+        "Sargon",
+        "Shalmaneser"
+      ],
+      "answer": "Sennacherib",
+      "verse_reference": "Isaiah 36:1"
+    },
+    {
+      "id": "isaiah-36-q2",
+      "type": "multiple_choice",
+      "question": "What did the Rabshakeh urge the people of Jerusalem to do?",
+      "options": [
+        "Not let Hezekiah deceive them or trust the LORD; surrender",
+        "Flee away from the city by night before the siege begins",
+        "Tear down all of their idols and turn back to the LORD their God",
+        "Take up their arms at once and bravely defend the city walls"
+      ],
+      "answer": "Not let Hezekiah deceive them or trust the LORD; surrender",
+      "verse_reference": "Isaiah 36:14-16"
+    },
+    {
+      "id": "isaiah-36-q3",
+      "type": "true_false",
+      "question": "The people kept silent and did not answer the Rabshakeh, as the king had commanded.",
+      "answer": "true",
+      "verse_reference": "Isaiah 36:21"
+    },
+    {
+      "id": "isaiah-36-q4",
+      "type": "fill_blank",
+      "question": "On what do you rest this trust of yours? said the Rabshakeh to the people of _____.",
+      "answer": "Jerusalem",
+      "verse_reference": "Isaiah 36:4"
+    },
+    {
+      "id": "isaiah-36-q5",
+      "type": "fill_blank",
+      "question": "Hezekiah's officials came to him with their clothes _____, reporting the Rabshakeh's words.",
+      "answer": "torn",
+      "verse_reference": "Isaiah 36:22"
+    }
+  ]
+}

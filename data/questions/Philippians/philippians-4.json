@@ -1,0 +1,61 @@
+{
+  "book": "Philippians",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "phil-4-q1",
+      "type": "multiple_choice",
+      "question": "Paul says he can do all things through whom?",
+      "options": [
+        "His own great strength",
+        "The other apostles",
+        "The mighty Holy Spirit's power",
+        "Christ who strengthens him"
+      ],
+      "answer": "Christ who strengthens him",
+      "verse_reference": "Philippians 4:13"
+    },
+    {
+      "id": "phil-4-q2",
+      "type": "multiple_choice",
+      "question": "Paul tells the Philippians to think about things that are what?",
+      "options": [
+        "Profitable, and strategic, and useful, and wise",
+        "True, noble, right, pure, lovely, admirable",
+        "Complex, and difficult, and very challenging",
+        "Popular, and current, and culturally relevant"
+      ],
+      "answer": "True, noble, right, pure, lovely, admirable",
+      "verse_reference": "Philippians 4:8"
+    },
+    {
+      "id": "phil-4-q3",
+      "type": "true_false",
+      "question": "Paul says he has learned to be content in every situation.",
+      "answer": "true",
+      "verse_reference": "Philippians 4:11-12"
+    },
+    {
+      "id": "phil-4-q4",
+      "type": "fill_blank",
+      "question": "I can do all things through Christ who gives me _____.",
+      "answer": "strength",
+      "accept": [
+        "strengthens",
+        "strengtheneth",
+        "power"
+      ],
+      "verse_reference": "Philippians 4:13"
+    },
+    {
+      "id": "phil-4-q5",
+      "type": "fill_blank",
+      "question": "The peace of God, which surpasses all understanding, will guard your hearts and your _____ in Christ Jesus.",
+      "answer": "minds",
+      "accept": [
+        "thoughts"
+      ],
+      "verse_reference": "Philippians 4:7"
+    }
+  ]
+}

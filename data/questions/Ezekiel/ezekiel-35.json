@@ -1,0 +1,61 @@
+{
+  "book": "Ezekiel",
+  "chapter": 35,
+  "questions": [
+    {
+      "id": "ezekiel-35-q1",
+      "type": "multiple_choice",
+      "question": "Against what is the oracle in Ezekiel 35?",
+      "options": [
+        "Mount Sinai",
+        "Mount Seir (Edom)",
+        "Mount Carmel",
+        "Mount Zion"
+      ],
+      "answer": "Mount Seir (Edom)",
+      "verse_reference": "Ezekiel 35:2-3"
+    },
+    {
+      "id": "ezekiel-35-q2",
+      "type": "multiple_choice",
+      "question": "Why is Mount Seir (Edom) judged?",
+      "options": [
+        "For seizing for itself all of the temple's gold and its silver",
+        "For stubbornly refusing to pay any tribute at all to Babylon",
+        "For perpetual enmity and gloating over Israel's downfall",
+        "For bowing down to worship all of the many idols of the nations"
+      ],
+      "answer": "For perpetual enmity and gloating over Israel's downfall",
+      "verse_reference": "Ezekiel 35:5"
+    },
+    {
+      "id": "ezekiel-35-q3",
+      "type": "true_false",
+      "question": "God said he would make Mount Seir a desolation because of its hatred toward Israel.",
+      "answer": "true",
+      "verse_reference": "Ezekiel 35:15"
+    },
+    {
+      "id": "ezekiel-35-q4",
+      "type": "fill_blank",
+      "question": "Because you harbored an ancient _____, I will give you over to bloodshed.",
+      "answer": "hatred",
+      "accept": [
+        "enmity",
+        "hostility"
+      ],
+      "verse_reference": "Ezekiel 35:5-6"
+    },
+    {
+      "id": "ezekiel-35-q5",
+      "type": "fill_blank",
+      "question": "Then you will know that I am the _____.",
+      "answer": "LORD",
+      "accept": [
+        "Jehovah",
+        "Yahweh"
+      ],
+      "verse_reference": "Ezekiel 35:15"
+    }
+  ]
+}

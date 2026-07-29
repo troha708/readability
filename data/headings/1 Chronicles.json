@@ -1,0 +1,400 @@
+{
+  "book": "1 Chronicles",
+  "source": "Berean Standard Bible (CC0 Public Domain)",
+  "chapters": {
+    "1": [
+      {
+        "beforeVerse": 1,
+        "heading": "From Adam to Abraham"
+      },
+      {
+        "beforeVerse": 28,
+        "heading": "The Descendants of Abraham"
+      },
+      {
+        "beforeVerse": 35,
+        "heading": "The Descendants of Esau"
+      },
+      {
+        "beforeVerse": 38,
+        "heading": "The Descendants of Seir"
+      },
+      {
+        "beforeVerse": 43,
+        "heading": "The Kings of Edom"
+      }
+    ],
+    "2": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Sons of Israel"
+      }
+    ],
+    "3": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Descendants of David"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "The Descendants of Solomon"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "The Royal Line After the Exile"
+      }
+    ],
+    "4": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Descendants of Judah"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "The Prayer of Jabez"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "More Descendants of Judah"
+      },
+      {
+        "beforeVerse": 24,
+        "heading": "The Descendants of Simeon"
+      }
+    ],
+    "5": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Descendants of Reuben"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "The Descendants of Gad"
+      },
+      {
+        "beforeVerse": 23,
+        "heading": "The Half-Tribe of Manasseh"
+      }
+    ],
+    "6": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Descendants of Levi"
+      },
+      {
+        "beforeVerse": 31,
+        "heading": "The Temple Musicians"
+      },
+      {
+        "beforeVerse": 48,
+        "heading": "The Descendants of Aaron"
+      },
+      {
+        "beforeVerse": 54,
+        "heading": "Territories for the Levites"
+      }
+    ],
+    "7": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Descendants of Issachar"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "The Descendants of Benjamin"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "The Descendants of Naphtali"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "The Descendants of Manasseh"
+      },
+      {
+        "beforeVerse": 20,
+        "heading": "The Descendants of Ephraim"
+      },
+      {
+        "beforeVerse": 30,
+        "heading": "The Descendants of Asher"
+      }
+    ],
+    "8": [
+      {
+        "beforeVerse": 1,
+        "heading": "Genealogy from Benjamin to Saul"
+      },
+      {
+        "beforeVerse": 33,
+        "heading": "The Family of Saul"
+      }
+    ],
+    "9": [
+      {
+        "beforeVerse": 1,
+        "heading": "The People of Jerusalem"
+      },
+      {
+        "beforeVerse": 35,
+        "heading": "The Descendants of Saul"
+      }
+    ],
+    "10": [
+      {
+        "beforeVerse": 1,
+        "heading": "Saul’s Overthrow and Death"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "The Philistines Possess the Towns"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "Jabesh-gilead’s Tribute to Saul"
+      }
+    ],
+    "11": [
+      {
+        "beforeVerse": 1,
+        "heading": "David Anointed King of All Israel"
+      },
+      {
+        "beforeVerse": 4,
+        "heading": "David Conquers Jerusalem"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "David’s Mighty Men"
+      }
+    ],
+    "12": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Mighty Men Join David at Ziklag"
+      },
+      {
+        "beforeVerse": 23,
+        "heading": "David’s Army Grows at Hebron"
+      }
+    ],
+    "13": [
+      {
+        "beforeVerse": 1,
+        "heading": "David Fetches the Ark"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "Uzzah Touches the Ark"
+      }
+    ],
+    "14": [
+      {
+        "beforeVerse": 1,
+        "heading": "David’s Family Grows"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "Two Victories over the Philistines"
+      }
+    ],
+    "15": [
+      {
+        "beforeVerse": 1,
+        "heading": "Preparing to Move the Ark"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "The Priests and Levites Carry the Ark"
+      },
+      {
+        "beforeVerse": 25,
+        "heading": "Moving the Ark to Jerusalem"
+      },
+      {
+        "beforeVerse": 29,
+        "heading": "Michal’s Contempt for David"
+      }
+    ],
+    "16": [
+      {
+        "beforeVerse": 1,
+        "heading": "A Tent for the Ark"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "David’s Psalm of Thanksgiving"
+      },
+      {
+        "beforeVerse": 23,
+        "heading": "Sing to the LORD, All the Earth"
+      },
+      {
+        "beforeVerse": 37,
+        "heading": "Worship before the Ark"
+      }
+    ],
+    "17": [
+      {
+        "beforeVerse": 1,
+        "heading": "God’s Covenant with David"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "David’s Prayer of Thanksgiving"
+      }
+    ],
+    "18": [
+      {
+        "beforeVerse": 1,
+        "heading": "David’s Triumphs"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "David’s Officers"
+      }
+    ],
+    "19": [
+      {
+        "beforeVerse": 1,
+        "heading": "David’s Messengers Disgraced"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "David Defeats Ammon and Aram"
+      }
+    ],
+    "20": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Capture of Rabbah"
+      },
+      {
+        "beforeVerse": 4,
+        "heading": "Battles against the Philistines"
+      }
+    ],
+    "21": [
+      {
+        "beforeVerse": 1,
+        "heading": "David’s Military Census"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "Judgment for David’s Sin"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "A Plague on Israel"
+      },
+      {
+        "beforeVerse": 18,
+        "heading": "David Builds an Altar"
+      }
+    ],
+    "22": [
+      {
+        "beforeVerse": 1,
+        "heading": "Preparations for the Temple"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "Solomon Anointed to Build the Temple"
+      }
+    ],
+    "23": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Divisions of the Levites"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "The Gershonites"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "The Kohathites"
+      },
+      {
+        "beforeVerse": 21,
+        "heading": "The Merarites"
+      },
+      {
+        "beforeVerse": 24,
+        "heading": "Levite Duties Revised"
+      }
+    ],
+    "24": [
+      {
+        "beforeVerse": 1,
+        "heading": "Twenty-Four Divisions of Priests"
+      },
+      {
+        "beforeVerse": 20,
+        "heading": "The Rest of the Levites"
+      }
+    ],
+    "25": [
+      {
+        "beforeVerse": 1,
+        "heading": "Twenty-Four Divisions of Musicians"
+      }
+    ],
+    "26": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Divisions of the Gatekeepers"
+      },
+      {
+        "beforeVerse": 20,
+        "heading": "The Treasurers, Officers, and Judges"
+      }
+    ],
+    "27": [
+      {
+        "beforeVerse": 1,
+        "heading": "Twelve Captains for Twelve Months"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "The Leaders of the Twelve Tribes"
+      },
+      {
+        "beforeVerse": 25,
+        "heading": "David’s Various Overseers"
+      },
+      {
+        "beforeVerse": 32,
+        "heading": "The Counselors"
+      }
+    ],
+    "28": [
+      {
+        "beforeVerse": 1,
+        "heading": "David Commissions Solomon"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "The Plans for the Temple"
+      }
+    ],
+    "29": [
+      {
+        "beforeVerse": 1,
+        "heading": "Offerings for the Temple"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "David’s Prayer of Blessing"
+      },
+      {
+        "beforeVerse": 21,
+        "heading": "Solomon Anointed King"
+      },
+      {
+        "beforeVerse": 26,
+        "heading": "David’s Reign and Death"
+      }
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "book": "Proverbs",
+  "chapter": 7,
+  "questions": [
+    {
+      "id": "proverbs-7-q1",
+      "type": "multiple_choice",
+      "question": "Whom does Proverbs 7 warn against in detail?",
+      "options": [
+        "The drunkard who wastes his days",
+        "The crafty and cunning thief",
+        "The seductive adulterous woman",
+        "The loud and lazy sluggard"
+      ],
+      "answer": "The seductive adulterous woman",
+      "verse_reference": "Proverbs 7:5"
+    },
+    {
+      "id": "proverbs-7-q2",
+      "type": "multiple_choice",
+      "question": "How is the young man who follows her described?",
+      "options": [
+        "Like a soldier made strong for battle",
+        "Like a sage full of wisdom",
+        "Like an ox going to the slaughter",
+        "Like a man blessed by the LORD"
+      ],
+      "answer": "Like an ox going to the slaughter",
+      "verse_reference": "Proverbs 7:22"
+    },
+    {
+      "id": "proverbs-7-q3",
+      "type": "true_false",
+      "question": "Proverbs 7 urges keeping the commandments and binding them on your fingers.",
+      "answer": "true",
+      "verse_reference": "Proverbs 7:1-3"
+    },
+    {
+      "id": "proverbs-7-q4",
+      "type": "fill_blank",
+      "question": "Keep my commandments and _____, keep my teaching as the apple of your eye.",
+      "answer": "live",
+      "verse_reference": "Proverbs 7:2"
+    },
+    {
+      "id": "proverbs-7-q5",
+      "type": "fill_blank",
+      "question": "Her house is the way to _____, going down to the chambers of death.",
+      "answer": "Sheol",
+      "accept": [
+        "hell",
+        "grave"
+      ],
+      "verse_reference": "Proverbs 7:27"
+    }
+  ]
+}

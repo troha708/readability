@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 55,
+  "questions": [
+    {
+      "id": "psalms-55-q1",
+      "type": "multiple_choice",
+      "question": "What does David wish for to escape his distress?",
+      "options": [
+        "Speed like a deer, to escape his pursuers",
+        "Walls like a city, to shut out the enemy",
+        "Wings like a dove, to fly away and be at rest",
+        "Strength like a lion, to face down his foes"
+      ],
+      "answer": "Wings like a dove, to fly away and be at rest",
+      "verse_reference": "Psalm 55:6"
+    },
+    {
+      "id": "psalms-55-q2",
+      "type": "multiple_choice",
+      "question": "What hurt David most about his betrayer?",
+      "options": [
+        "It was a foreigner from a distant nation",
+        "It was a powerful king of the land",
+        "It was his familiar friend and companion",
+        "It was a stranger he had never known"
+      ],
+      "answer": "It was his familiar friend and companion",
+      "verse_reference": "Psalm 55:12-14"
+    },
+    {
+      "id": "psalms-55-q3",
+      "type": "true_false",
+      "question": "David exhorts to cast your burden on the LORD, and he will sustain you.",
+      "answer": "true",
+      "verse_reference": "Psalm 55:22"
+    },
+    {
+      "id": "psalms-55-q4",
+      "type": "fill_blank",
+      "question": "Cast your _____ on the LORD, and he will sustain you.",
+      "answer": "burden",
+      "verse_reference": "Psalm 55:22"
+    },
+    {
+      "id": "psalms-55-q5",
+      "type": "fill_blank",
+      "question": "Evening and morning and at noon I utter my complaint and moan, and he hears my _____.",
+      "answer": "voice",
+      "verse_reference": "Psalm 55:17"
+    }
+  ]
+}

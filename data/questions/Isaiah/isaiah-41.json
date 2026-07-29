@@ -1,0 +1,53 @@
+{
+  "book": "Isaiah",
+  "chapter": 41,
+  "questions": [
+    {
+      "id": "isaiah-41-q1",
+      "type": "multiple_choice",
+      "question": "What encouragement does God repeatedly give Israel in Isaiah 41?",
+      "options": [
+        "Rejoice, for your wealth will increase",
+        "Fear not, for I am with you; I will help you",
+        "Repent, for the great day of judgment is near",
+        "Flee, for the enemy is at the gates"
+      ],
+      "answer": "Fear not, for I am with you; I will help you",
+      "verse_reference": "Isaiah 41:10"
+    },
+    {
+      "id": "isaiah-41-q2",
+      "type": "multiple_choice",
+      "question": "How does Isaiah 41 challenge the idols?",
+      "options": [
+        "To send down the rain upon the parched and the thirsty ground",
+        "To declare what is to come, proving they are nothing",
+        "To raise up the dead and bring them out from their graves",
+        "To lead all of the people safely through the midst of the sea"
+      ],
+      "answer": "To declare what is to come, proving they are nothing",
+      "verse_reference": "Isaiah 41:22-24"
+    },
+    {
+      "id": "isaiah-41-q3",
+      "type": "true_false",
+      "question": "God calls Israel the offspring of Abraham, his friend, whom he chose.",
+      "answer": "true",
+      "verse_reference": "Isaiah 41:8"
+    },
+    {
+      "id": "isaiah-41-q4",
+      "type": "fill_blank",
+      "question": "Fear not, for I am with you; be not dismayed, for I am your God; I will strengthen you, I will help you, I will uphold you with my righteous right _____.",
+      "answer": "hand",
+      "verse_reference": "Isaiah 41:10"
+    },
+    {
+      "id": "isaiah-41-q5",
+      "type": "fill_blank",
+      "question": "I am the LORD your God, who takes hold of your right hand and says: Do not fear, I will _____ you.",
+      "answer": "help",
+      "verse_reference": "Isaiah 41:13"
+    }
+  ]
+}

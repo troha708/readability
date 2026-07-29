@@ -1,0 +1,58 @@
+{
+  "book": "1 Thessalonians",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "1thess_3_1",
+      "type": "multiple_choice",
+      "question": "Who did Paul send to the Thessalonians to strengthen their faith?",
+      "options": [
+        "Titus",
+        "Timothy",
+        "Barnabas",
+        "Silas"
+      ],
+      "correct": "Timothy",
+      "verse_ref": "1 Thessalonians 3:2",
+      "feedback": "Paul sent Timothy, his brother and co-worker, to strengthen and encourage them."
+    },
+    {
+      "id": "1thess_3_2",
+      "type": "multiple_choice",
+      "question": "What news did Timothy bring back to Paul about the Thessalonians?",
+      "options": [
+        "A request for Paul to return",
+        "News of their persecution",
+        "Good news of their faith and love",
+        "Reports of false teaching"
+      ],
+      "correct": "Good news of their faith and love",
+      "verse_ref": "1 Thessalonians 3:6",
+      "feedback": "Timothy brought the good news of their faith and love back to Paul."
+    },
+    {
+      "id": "1thess_3_3",
+      "type": "true_false",
+      "question": "Paul said that Christians are destined to experience afflictions.",
+      "correct": true,
+      "verse_ref": "1 Thessalonians 3:3",
+      "feedback": "Paul warned that believers are appointed to endure afflictions."
+    },
+    {
+      "id": "1thess_3_4",
+      "type": "fill_in_the_blank",
+      "question": "Paul said he was afraid that the _____ had tempted the Thessalonians and his labor would be in vain.",
+      "correct": "tempter",
+      "verse_ref": "1 Thessalonians 3:5",
+      "feedback": "Paul feared that the tempter had tempted them and their work would be useless."
+    },
+    {
+      "id": "1thess_3_5",
+      "type": "fill_in_the_blank",
+      "question": "Paul prayed night and day to see them face to face and to complete what was _____ in their faith.",
+      "correct": "lacking",
+      "verse_ref": "1 Thessalonians 3:10",
+      "feedback": "Paul prayed earnestly to supply what was lacking in their faith."
+    }
+  ]
+}

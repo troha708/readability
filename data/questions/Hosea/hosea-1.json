@@ -1,0 +1,53 @@
+{
+  "book": "Hosea",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "hosea-1-q1",
+      "type": "multiple_choice",
+      "question": "What did God tell Hosea to do as a sign of Israel's unfaithfulness?",
+      "options": [
+        "Fast for forty days and nights",
+        "Marry a wife of whoredom",
+        "Build an altar on the high places",
+        "Flee from the land of Israel"
+      ],
+      "answer": "Marry a wife of whoredom",
+      "verse_reference": "Hosea 1:2"
+    },
+    {
+      "id": "hosea-1-q2",
+      "type": "multiple_choice",
+      "question": "What did the names of Hosea's children signify?",
+      "options": [
+        "Hope: sweet Comfort, abundant Mercy, and a sure and lasting Restoration",
+        "Blessing: the Beloved, the Faithful one, and My own People",
+        "Judgment: Jezreel, No Mercy (Lo-ruhamah), and Not My People (Lo-ammi)",
+        "Warning: coming Famine, the Sword of war, and bitter Exile"
+      ],
+      "answer": "Judgment: Jezreel, No Mercy (Lo-ruhamah), and Not My People (Lo-ammi)",
+      "verse_reference": "Hosea 1:4-9"
+    },
+    {
+      "id": "hosea-1-q3",
+      "type": "true_false",
+      "question": "Hosea's marriage to Gomer was a living picture of God's relationship with unfaithful Israel.",
+      "answer": "true",
+      "verse_reference": "Hosea 1:2"
+    },
+    {
+      "id": "hosea-1-q4",
+      "type": "fill_blank",
+      "question": "Hosea took _____ the daughter of Diblaim as his wife.",
+      "answer": "Gomer",
+      "verse_reference": "Hosea 1:3"
+    },
+    {
+      "id": "hosea-1-q5",
+      "type": "fill_blank",
+      "question": "The third child was named Lo-ammi, for 'you are not my _____.'",
+      "answer": "people",
+      "verse_reference": "Hosea 1:9"
+    }
+  ]
+}

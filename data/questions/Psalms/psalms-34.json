@@ -1,0 +1,56 @@
+{
+  "book": "Psalms",
+  "chapter": 34,
+  "questions": [
+    {
+      "id": "psalms-34-q1",
+      "type": "multiple_choice",
+      "question": "What occasion is connected to Psalm 34?",
+      "options": [
+        "When David feigned madness before Abimelech",
+        "When David numbered the people and sinned",
+        "When David hid from Saul in the wilderness",
+        "When David fled from Absalom across the Jordan"
+      ],
+      "answer": "When David feigned madness before Abimelech",
+      "verse_reference": "Psalm 34:title"
+    },
+    {
+      "id": "psalms-34-q2",
+      "type": "multiple_choice",
+      "question": "What does David invite the reader to do?",
+      "options": [
+        "Taste and see that the LORD is good",
+        "Trust in the LORD with all your heart",
+        "Wait for the LORD; be strong and take courage",
+        "Be still, and know that I am God"
+      ],
+      "answer": "Taste and see that the LORD is good",
+      "verse_reference": "Psalm 34:8"
+    },
+    {
+      "id": "psalms-34-q3",
+      "type": "true_false",
+      "question": "David says the LORD is near to the brokenhearted and saves the crushed in spirit.",
+      "answer": "true",
+      "verse_reference": "Psalm 34:18"
+    },
+    {
+      "id": "psalms-34-q4",
+      "type": "fill_blank",
+      "question": "I will bless the LORD at all times; His praise will always be on my _____.",
+      "answer": "lips",
+      "accept": [
+        "mouth"
+      ],
+      "verse_reference": "Psalm 34:1"
+    },
+    {
+      "id": "psalms-34-q5",
+      "type": "fill_blank",
+      "question": "The eyes of the LORD are toward the _____, and his ears toward their cry.",
+      "answer": "righteous",
+      "verse_reference": "Psalm 34:15"
+    }
+  ]
+}

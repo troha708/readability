@@ -1,0 +1,56 @@
+{
+  "book": "Isaiah",
+  "chapter": 40,
+  "questions": [
+    {
+      "id": "isaiah-40-q1",
+      "type": "multiple_choice",
+      "question": "How does Isaiah 40 open?",
+      "options": [
+        "'How long, O LORD, will you forget me?'",
+        "'Hear, O heavens above, and give ear, O earth'",
+        "'Woe, woe to the sinful nation'",
+        "'Comfort, comfort my people, says your God'"
+      ],
+      "answer": "'Comfort, comfort my people, says your God'",
+      "verse_reference": "Isaiah 40:1"
+    },
+    {
+      "id": "isaiah-40-q2",
+      "type": "multiple_choice",
+      "question": "What famous promise about waiting on the LORD appears in Isaiah 40?",
+      "options": [
+        "They shall renew their strength and mount up with wings like eagles",
+        "They shall shine like the stars of heaven for ever and ever",
+        "They shall lie down in green pastures and find rest for their souls",
+        "They shall be gathered like sheaves into the great storehouse of God"
+      ],
+      "answer": "They shall renew their strength and mount up with wings like eagles",
+      "verse_reference": "Isaiah 40:31"
+    },
+    {
+      "id": "isaiah-40-q3",
+      "type": "true_false",
+      "question": "Isaiah 40 says the grass withers and the flower fades, but the word of our God stands forever.",
+      "answer": "true",
+      "verse_reference": "Isaiah 40:8"
+    },
+    {
+      "id": "isaiah-40-q4",
+      "type": "fill_blank",
+      "question": "A voice cries: 'In the wilderness prepare the way of the LORD; make straight in the desert a _____ for our God.'",
+      "answer": "highway",
+      "accept": [
+        "path"
+      ],
+      "verse_reference": "Isaiah 40:3"
+    },
+    {
+      "id": "isaiah-40-q5",
+      "type": "fill_blank",
+      "question": "They who wait for the LORD shall renew their strength; they shall mount up with wings like _____.",
+      "answer": "eagles",
+      "verse_reference": "Isaiah 40:31"
+    }
+  ]
+}

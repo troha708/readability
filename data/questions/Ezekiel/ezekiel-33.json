@@ -1,0 +1,56 @@
+{
+  "book": "Ezekiel",
+  "chapter": 33,
+  "questions": [
+    {
+      "id": "ezekiel-33-q1",
+      "type": "multiple_choice",
+      "question": "What role of Ezekiel is renewed in chapter 33?",
+      "options": [
+        "King over the returning exiles",
+        "Judge of the surrounding nations",
+        "Watchman for the house of Israel",
+        "High priest of the new temple"
+      ],
+      "answer": "Watchman for the house of Israel",
+      "verse_reference": "Ezekiel 33:7"
+    },
+    {
+      "id": "ezekiel-33-q2",
+      "type": "multiple_choice",
+      "question": "What news reached Ezekiel in chapter 33?",
+      "options": [
+        "An angel from heaven announced that the long exile would soon end",
+        "A prophet of the LORD declared that mighty Babylon had at last fallen",
+        "A weary messenger brought word of a great and coming famine",
+        "A fugitive reported that the city (Jerusalem) had fallen"
+      ],
+      "answer": "A fugitive reported that the city (Jerusalem) had fallen",
+      "verse_reference": "Ezekiel 33:21"
+    },
+    {
+      "id": "ezekiel-33-q3",
+      "type": "true_false",
+      "question": "God says he has no pleasure in the death of the wicked, but that the wicked turn from his way and live.",
+      "answer": "true",
+      "verse_reference": "Ezekiel 33:11"
+    },
+    {
+      "id": "ezekiel-33-q4",
+      "type": "fill_blank",
+      "question": "If the watchman sees the sword coming and fails to blow the _____, the blood is on the watchman.",
+      "answer": "horn",
+      "accept": [
+        "trumpet"
+      ],
+      "verse_reference": "Ezekiel 33:6"
+    },
+    {
+      "id": "ezekiel-33-q5",
+      "type": "fill_blank",
+      "question": "As I live, declares the Lord GOD, I have no pleasure in the death of the _____.",
+      "answer": "wicked",
+      "verse_reference": "Ezekiel 33:11"
+    }
+  ]
+}

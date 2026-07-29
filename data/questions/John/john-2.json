@@ -1,0 +1,56 @@
+{
+  "book": "John",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "john-2-q1",
+      "type": "multiple_choice",
+      "question": "Where did Jesus perform his first miracle?",
+      "options": [
+        "The great city of Jerusalem",
+        "Bethlehem",
+        "Cana of Galilee",
+        "Capernaum"
+      ],
+      "answer": "Cana of Galilee",
+      "verse_reference": "John 2:1,11"
+    },
+    {
+      "id": "john-2-q2",
+      "type": "multiple_choice",
+      "question": "What did Jesus tell the servants to fill with water?",
+      "options": [
+        "Stone water jars",
+        "Clay pots",
+        "Barrels",
+        "Large round clay pots"
+      ],
+      "answer": "Stone water jars",
+      "verse_reference": "John 2:6-7"
+    },
+    {
+      "id": "john-2-q3",
+      "type": "true_false",
+      "question": "When Jesus cleansed the temple, he drove out those who sold oxen, sheep, and doves.",
+      "answer": "true",
+      "verse_reference": "John 2:14-15"
+    },
+    {
+      "id": "john-2-q4",
+      "type": "fill_blank",
+      "question": "Jesus answered them, 'Destroy this _____, and in three days I will raise it up.'",
+      "answer": "temple",
+      "accept": [
+        "sanctuary"
+      ],
+      "verse_reference": "John 2:19"
+    },
+    {
+      "id": "john-2-q5",
+      "type": "fill_blank",
+      "question": "His mother said to the servants, 'Whatever he says to you, _____ it.'",
+      "answer": "do",
+      "verse_reference": "John 2:5"
+    }
+  ]
+}

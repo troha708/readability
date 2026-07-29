@@ -1,0 +1,53 @@
+{
+  "book": "Romans",
+  "chapter": 6,
+  "questions": [
+    {
+      "id": "romans-6-q1",
+      "type": "multiple_choice",
+      "question": "Paul asks whether we should continue in sin so that what may increase?",
+      "options": [
+        "Faith",
+        "Knowledge",
+        "Grace",
+        "Mercy"
+      ],
+      "answer": "Grace",
+      "verse_reference": "Romans 6:1"
+    },
+    {
+      "id": "romans-6-q2",
+      "type": "multiple_choice",
+      "question": "What does Paul say is the wages of sin?",
+      "options": [
+        "Death",
+        "Slavery",
+        "Suffering",
+        "Separation"
+      ],
+      "answer": "Death",
+      "verse_reference": "Romans 6:23"
+    },
+    {
+      "id": "romans-6-q3",
+      "type": "true_false",
+      "question": "Paul says believers have been buried with Christ through baptism into death.",
+      "answer": "true",
+      "verse_reference": "Romans 6:4"
+    },
+    {
+      "id": "romans-6-q4",
+      "type": "fill_blank",
+      "question": "For the wages of sin is death, but the free _____ of God is eternal life in Christ Jesus our Lord.",
+      "answer": "gift",
+      "verse_reference": "Romans 6:23"
+    },
+    {
+      "id": "romans-6-q5",
+      "type": "fill_blank",
+      "question": "Even so consider yourselves to be dead to sin, but _____ to God in Christ Jesus our Lord.",
+      "answer": "alive",
+      "verse_reference": "Romans 6:11"
+    }
+  ]
+}

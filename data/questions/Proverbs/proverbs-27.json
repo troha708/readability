@@ -1,0 +1,53 @@
+{
+  "book": "Proverbs",
+  "chapter": 27,
+  "questions": [
+    {
+      "id": "proverbs-27-q1",
+      "type": "multiple_choice",
+      "question": "What does Proverbs 27 warn against boasting about?",
+      "options": [
+        "Tomorrow, for you do not know what a day may bring",
+        "Your wealth, for it cannot possibly last forever",
+        "Your strength, for it surely fades with the passing years",
+        "Yesterday, for all of its glory is already long gone"
+      ],
+      "answer": "Tomorrow, for you do not know what a day may bring",
+      "verse_reference": "Proverbs 27:1"
+    },
+    {
+      "id": "proverbs-27-q2",
+      "type": "multiple_choice",
+      "question": "How does Proverbs 27 say iron sharpens?",
+      "options": [
+        "Iron dulls iron, and one man wears down another",
+        "Iron rusts in time, as a man grows idle",
+        "Iron sharpens stone, as the strong shape the weak",
+        "Iron sharpens iron, and one man sharpens another"
+      ],
+      "answer": "Iron sharpens iron, and one man sharpens another",
+      "verse_reference": "Proverbs 27:17"
+    },
+    {
+      "id": "proverbs-27-q3",
+      "type": "true_false",
+      "question": "Proverbs 27 says faithful are the wounds of a friend, but the kisses of an enemy are deceitful.",
+      "answer": "true",
+      "verse_reference": "Proverbs 27:6"
+    },
+    {
+      "id": "proverbs-27-q4",
+      "type": "fill_blank",
+      "question": "Do not boast about _____, for you do not know what a day may bring.",
+      "answer": "tomorrow",
+      "verse_reference": "Proverbs 27:1"
+    },
+    {
+      "id": "proverbs-27-q5",
+      "type": "fill_blank",
+      "question": "Iron sharpens iron, and one man sharpens _____.",
+      "answer": "another",
+      "verse_reference": "Proverbs 27:17"
+    }
+  ]
+}

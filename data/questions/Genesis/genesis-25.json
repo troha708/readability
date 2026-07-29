@@ -1,0 +1,53 @@
+{
+  "book": "Genesis",
+  "chapter": 25,
+  "questions": [
+    {
+      "id": "genesis-25-q1",
+      "type": "multiple_choice",
+      "question": "What did Esau sell to Jacob?",
+      "options": [
+        "His tent",
+        "His flocks",
+        "His father's blessing",
+        "His birthright"
+      ],
+      "answer": "His birthright",
+      "verse_reference": "Genesis 25:33"
+    },
+    {
+      "id": "genesis-25-q2",
+      "type": "multiple_choice",
+      "question": "For what did Esau sell his birthright?",
+      "options": [
+        "A jug of water",
+        "A plot of land",
+        "A bowl of stew",
+        "A bag of gold"
+      ],
+      "answer": "A bowl of stew",
+      "verse_reference": "Genesis 25:34"
+    },
+    {
+      "id": "genesis-25-q3",
+      "type": "true_false",
+      "question": "Rebekah gave birth to twins, Esau and Jacob.",
+      "answer": "true",
+      "verse_reference": "Genesis 25:24-26"
+    },
+    {
+      "id": "genesis-25-q4",
+      "type": "fill_blank",
+      "question": "God told Rebekah that the older would serve the _____.",
+      "answer": "younger",
+      "verse_reference": "Genesis 25:23"
+    },
+    {
+      "id": "genesis-25-q5",
+      "type": "fill_blank",
+      "question": "Jacob was born grasping his brother Esau's _____.",
+      "answer": "heel",
+      "verse_reference": "Genesis 25:26"
+    }
+  ]
+}

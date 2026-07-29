@@ -1,0 +1,57 @@
+{
+  "book": "Psalms",
+  "chapter": 26,
+  "questions": [
+    {
+      "id": "psalms-26-q1",
+      "type": "multiple_choice",
+      "question": "What does David ask God to do in Psalm 26?",
+      "options": [
+        "Forgive and cleanse him, for he has sinned",
+        "Strengthen and arm him, for the great battle draws near",
+        "Enrich and honor him, for he has served well",
+        "Vindicate and examine him, for he walks in integrity"
+      ],
+      "answer": "Vindicate and examine him, for he walks in integrity",
+      "verse_reference": "Psalm 26:1-2"
+    },
+    {
+      "id": "psalms-26-q2",
+      "type": "multiple_choice",
+      "question": "What does David say he loves?",
+      "options": [
+        "The gates of the city, where justice is done",
+        "The courts of the great king, where the mighty all gather",
+        "The fields of his fathers, where he was born",
+        "The habitation of God's house, where his glory dwells"
+      ],
+      "answer": "The habitation of God's house, where his glory dwells",
+      "verse_reference": "Psalm 26:8"
+    },
+    {
+      "id": "psalms-26-q3",
+      "type": "true_false",
+      "question": "David washes his hands in innocence and goes around God's altar.",
+      "answer": "true",
+      "verse_reference": "Psalm 26:6"
+    },
+    {
+      "id": "psalms-26-q4",
+      "type": "fill_blank",
+      "question": "My foot stands on level ground; in the great assembly I will bless the _____.",
+      "answer": "LORD",
+      "accept": [
+        "Jehovah",
+        "Yahweh"
+      ],
+      "verse_reference": "Psalm 26:12"
+    },
+    {
+      "id": "psalms-26-q5",
+      "type": "fill_blank",
+      "question": "Examine me, O LORD, and try me; test my heart and my _____.",
+      "answer": "mind",
+      "verse_reference": "Psalm 26:2"
+    }
+  ]
+}

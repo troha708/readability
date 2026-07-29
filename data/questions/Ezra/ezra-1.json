@@ -1,0 +1,53 @@
+{
+  "book": "Ezra",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "ezra-1-q1",
+      "type": "multiple_choice",
+      "question": "Which king issued a decree allowing the Jews to return and rebuild the temple?",
+      "options": [
+        "King Nebuchadnezzar of Babylon",
+        "Artaxerxes",
+        "Cyrus king of Persia",
+        "Darius"
+      ],
+      "answer": "Cyrus king of Persia",
+      "verse_reference": "Ezra 1:1-2"
+    },
+    {
+      "id": "ezra-1-q2",
+      "type": "multiple_choice",
+      "question": "What did Cyrus return to the exiles for the temple?",
+      "options": [
+        "Fine cedar timber brought down from the great forests of Lebanon",
+        "An armed escort made up of many well-armed Persian soldiers",
+        "The vessels of the house of the LORD taken by Nebuchadnezzar",
+        "A whole treasury of gold coins to help fund the work"
+      ],
+      "answer": "The vessels of the house of the LORD taken by Nebuchadnezzar",
+      "verse_reference": "Ezra 1:7"
+    },
+    {
+      "id": "ezra-1-q3",
+      "type": "true_false",
+      "question": "The LORD stirred up the spirit of Cyrus to fulfill the word spoken by Jeremiah.",
+      "answer": "true",
+      "verse_reference": "Ezra 1:1"
+    },
+    {
+      "id": "ezra-1-q4",
+      "type": "fill_blank",
+      "question": "Cyrus said the LORD had charged him to build him a house in _____.",
+      "answer": "Jerusalem",
+      "verse_reference": "Ezra 1:2"
+    },
+    {
+      "id": "ezra-1-q5",
+      "type": "fill_blank",
+      "question": "The treasurer Mithredath counted out the vessels to _____ the prince of Judah.",
+      "answer": "Sheshbazzar",
+      "verse_reference": "Ezra 1:8"
+    }
+  ]
+}

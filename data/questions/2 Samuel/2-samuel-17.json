@@ -1,0 +1,56 @@
+{
+  "book": "2 Samuel",
+  "chapter": 17,
+  "questions": [
+    {
+      "id": "2-samuel-17-q1",
+      "type": "multiple_choice",
+      "question": "Whose counsel did God use to thwart Ahithophel's advice?",
+      "options": [
+        "Nathan's",
+        "Ziba's",
+        "Joab's",
+        "Hushai's"
+      ],
+      "answer": "Hushai's",
+      "verse_reference": "2 Samuel 17:14"
+    },
+    {
+      "id": "2-samuel-17-q2",
+      "type": "multiple_choice",
+      "question": "What did Ahithophel do when his advice was rejected?",
+      "options": [
+        "Fled",
+        "Hanged himself",
+        "Joined David",
+        "Attacked Absalom"
+      ],
+      "answer": "Hanged himself",
+      "verse_reference": "2 Samuel 17:23"
+    },
+    {
+      "id": "2-samuel-17-q3",
+      "type": "true_false",
+      "question": "Hushai secretly worked for David inside Absalom's camp.",
+      "answer": "true",
+      "verse_reference": "2 Samuel 17:5-16"
+    },
+    {
+      "id": "2-samuel-17-q4",
+      "type": "fill_blank",
+      "question": "God thwarted the good counsel of Ahithophel through _____.",
+      "answer": "Hushai",
+      "verse_reference": "2 Samuel 17:14"
+    },
+    {
+      "id": "2-samuel-17-q5",
+      "type": "fill_blank",
+      "question": "When his advice was not followed, Ahithophel went home and _____ himself.",
+      "answer": "hanged",
+      "accept": [
+        "strangled"
+      ],
+      "verse_reference": "2 Samuel 17:23"
+    }
+  ]
+}

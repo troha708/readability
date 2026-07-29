@@ -1,0 +1,53 @@
+{
+  "book": "Romans",
+  "chapter": 5,
+  "questions": [
+    {
+      "id": "romans-5-q1",
+      "type": "multiple_choice",
+      "question": "Through whom did sin enter the world, according to Paul?",
+      "options": [
+        "Satan the deceiver",
+        "Eve, the first woman",
+        "Cain, the firstborn",
+        "One man (Adam)"
+      ],
+      "answer": "One man (Adam)",
+      "verse_reference": "Romans 5:12"
+    },
+    {
+      "id": "romans-5-q2",
+      "type": "multiple_choice",
+      "question": "Paul says God demonstrates his own love for us in that while we were still what, Christ died for us?",
+      "options": [
+        "Lost",
+        "Enemies",
+        "Ignorant",
+        "Sinners"
+      ],
+      "answer": "Sinners",
+      "verse_reference": "Romans 5:8"
+    },
+    {
+      "id": "romans-5-q3",
+      "type": "true_false",
+      "question": "Paul says that suffering produces perseverance, character, and hope.",
+      "answer": "true",
+      "verse_reference": "Romans 5:3-4"
+    },
+    {
+      "id": "romans-5-q4",
+      "type": "fill_blank",
+      "question": "Being therefore justified by faith, we have _____ with God through our Lord Jesus Christ.",
+      "answer": "peace",
+      "verse_reference": "Romans 5:1"
+    },
+    {
+      "id": "romans-5-q5",
+      "type": "fill_blank",
+      "question": "Where sin abounded, _____ abounded more exceedingly.",
+      "answer": "grace",
+      "verse_reference": "Romans 5:20"
+    }
+  ]
+}

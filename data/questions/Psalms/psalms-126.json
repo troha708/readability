@@ -1,0 +1,57 @@
+{
+  "book": "Psalms",
+  "chapter": 126,
+  "questions": [
+    {
+      "id": "psalms-126-q1",
+      "type": "multiple_choice",
+      "question": "What event does Psalm 126 celebrate?",
+      "options": [
+        "When the LORD struck down the firstborn of Egypt",
+        "When the LORD sent fire upon the altar",
+        "When the LORD gave David victory in battle",
+        "When the LORD restored the fortunes of Zion"
+      ],
+      "answer": "When the LORD restored the fortunes of Zion",
+      "verse_reference": "Psalm 126:1"
+    },
+    {
+      "id": "psalms-126-q2",
+      "type": "multiple_choice",
+      "question": "What promise does the psalm give about sowing in tears?",
+      "options": [
+        "Those who sow in tears shall reap with shouts of joy",
+        "Those who sow in sorrow gather only thorns",
+        "Those who mourn will be left with empty hands",
+        "Those who weep now will only weep all the more in the end"
+      ],
+      "answer": "Those who sow in tears shall reap with shouts of joy",
+      "verse_reference": "Psalm 126:5"
+    },
+    {
+      "id": "psalms-126-q3",
+      "type": "true_false",
+      "question": "When God restored Zion, their mouths were filled with laughter and their tongues with shouts of joy.",
+      "answer": "true",
+      "verse_reference": "Psalm 126:2"
+    },
+    {
+      "id": "psalms-126-q4",
+      "type": "fill_blank",
+      "question": "Those who sow in _____ shall reap with shouts of joy!",
+      "answer": "tears",
+      "verse_reference": "Psalm 126:5"
+    },
+    {
+      "id": "psalms-126-q5",
+      "type": "fill_blank",
+      "question": "The LORD has done great things for us; we are filled with _____.",
+      "answer": "joy",
+      "accept": [
+        "glad",
+        "gladness"
+      ],
+      "verse_reference": "Psalm 126:3"
+    }
+  ]
+}

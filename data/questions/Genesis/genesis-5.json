@@ -1,0 +1,53 @@
+{
+  "book": "Genesis",
+  "chapter": 5,
+  "questions": [
+    {
+      "id": "genesis-5-q1",
+      "type": "multiple_choice",
+      "question": "Who \"walked with God, and he was not, for God took him\"?",
+      "options": [
+        "Adam",
+        "Enoch",
+        "Methuselah",
+        "Lamech"
+      ],
+      "answer": "Enoch",
+      "verse_reference": "Genesis 5:24"
+    },
+    {
+      "id": "genesis-5-q2",
+      "type": "multiple_choice",
+      "question": "Who lived 969 years, the longest lifespan recorded in the Bible?",
+      "options": [
+        "Adam",
+        "Noah the ark-builder",
+        "Methuselah",
+        "Jared"
+      ],
+      "answer": "Methuselah",
+      "verse_reference": "Genesis 5:27"
+    },
+    {
+      "id": "genesis-5-q3",
+      "type": "true_false",
+      "question": "Adam lived a total of 930 years, and then he died.",
+      "answer": "true",
+      "verse_reference": "Genesis 5:5"
+    },
+    {
+      "id": "genesis-5-q4",
+      "type": "fill_blank",
+      "question": "Chapter 5 opens, \"This is the book of the _____ of Adam.\"",
+      "answer": "generations",
+      "verse_reference": "Genesis 5:1"
+    },
+    {
+      "id": "genesis-5-q5",
+      "type": "fill_blank",
+      "question": "Lamech named his son _____, hoping he would bring comfort.",
+      "answer": "Noah",
+      "verse_reference": "Genesis 5:29"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "book": "Job",
+  "chapter": 41,
+  "questions": [
+    {
+      "id": "job-41-q1",
+      "type": "multiple_choice",
+      "question": "Which fearsome creature does God describe in chapter 41?",
+      "options": [
+        "Behemoth",
+        "Leviathan",
+        "The dragon of the desert",
+        "The great fish"
+      ],
+      "answer": "Leviathan",
+      "verse_reference": "Job 41:1"
+    },
+    {
+      "id": "job-41-q2",
+      "type": "multiple_choice",
+      "question": "What is the point of God's description of Leviathan?",
+      "options": [
+        "To teach the lesson that even the very strongest of the wild beasts can be tamed",
+        "To show that if no one can stand before this creature, none can stand before God",
+        "To reveal to Job at last the deep secret of how the wide seas were first made",
+        "To warn Job of a terrible and deadly monster lurking down in the deep dark waters"
+      ],
+      "answer": "To show that if no one can stand before this creature, none can stand before God",
+      "verse_reference": "Job 41:10-11"
+    },
+    {
+      "id": "job-41-q3",
+      "type": "true_false",
+      "question": "God said no one is fierce enough to rouse Leviathan, so who can stand before God?",
+      "answer": "true",
+      "verse_reference": "Job 41:10"
+    },
+    {
+      "id": "job-41-q4",
+      "type": "fill_blank",
+      "question": "God asked if Job could pull in Leviathan with a _____.",
+      "answer": "hook",
+      "accept": [
+        "fishhook",
+        "fish hook"
+      ],
+      "verse_reference": "Job 41:1"
+    },
+    {
+      "id": "job-41-q5",
+      "type": "fill_blank",
+      "question": "God said Leviathan is king over all the _____.",
+      "answer": "proud",
+      "accept": [
+        "pride"
+      ],
+      "verse_reference": "Job 41:34"
+    }
+  ]
+}

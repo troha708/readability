@@ -1,0 +1,502 @@
+{
+  "book": "Acts",
+  "source": "Berean Standard Bible (CC0 Public Domain)",
+  "chapters": {
+    "1": [
+      {
+        "beforeVerse": 1,
+        "heading": "Prologue"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "The Ascension"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "Matthias Replaces Judas"
+      }
+    ],
+    "2": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Holy Spirit at Pentecost"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "Peter Addresses the Crowd"
+      },
+      {
+        "beforeVerse": 37,
+        "heading": "Three Thousand Believe"
+      },
+      {
+        "beforeVerse": 42,
+        "heading": "The Fellowship of Believers"
+      }
+    ],
+    "3": [
+      {
+        "beforeVerse": 1,
+        "heading": "A Lame Man Walks"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "Peter Speaks in Solomon’s Colonnade"
+      }
+    ],
+    "4": [
+      {
+        "beforeVerse": 1,
+        "heading": "Peter and John before the Sanhedrin"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "The Name Forbidden"
+      },
+      {
+        "beforeVerse": 23,
+        "heading": "The Believers’ Prayer"
+      },
+      {
+        "beforeVerse": 32,
+        "heading": "Sharing among Believers"
+      }
+    ],
+    "5": [
+      {
+        "beforeVerse": 1,
+        "heading": "Ananias and Sapphira"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "The Apostles Heal Many"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "The Apostles Arrested and Freed"
+      },
+      {
+        "beforeVerse": 24,
+        "heading": "The Apostles before the Sanhedrin"
+      },
+      {
+        "beforeVerse": 33,
+        "heading": "Gamaliel’s Advice"
+      }
+    ],
+    "6": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Choosing of the Seven"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "The Arrest of Stephen"
+      }
+    ],
+    "7": [
+      {
+        "beforeVerse": 1,
+        "heading": "Stephen’s Address: The Call of Abraham"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "Joseph Sold into Egypt"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "Israel Oppressed in Egypt"
+      },
+      {
+        "beforeVerse": 20,
+        "heading": "The Birth and Adoption of Moses"
+      },
+      {
+        "beforeVerse": 23,
+        "heading": "The Rejection and Flight of Moses"
+      },
+      {
+        "beforeVerse": 30,
+        "heading": "The Call of Moses"
+      },
+      {
+        "beforeVerse": 39,
+        "heading": "The Rebellion of Israel"
+      },
+      {
+        "beforeVerse": 44,
+        "heading": "The Tabernacle of the Testimony"
+      },
+      {
+        "beforeVerse": 54,
+        "heading": "The Stoning of Stephen"
+      }
+    ],
+    "8": [
+      {
+        "beforeVerse": 1,
+        "heading": "Saul Persecutes the Church"
+      },
+      {
+        "beforeVerse": 4,
+        "heading": "Philip in Samaria"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "Simon the Sorcerer"
+      },
+      {
+        "beforeVerse": 26,
+        "heading": "Philip and the Ethiopian"
+      }
+    ],
+    "9": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Road to Damascus"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "Ananias Baptizes Saul"
+      },
+      {
+        "beforeVerse": 20,
+        "heading": "Saul Preaches at Damascus"
+      },
+      {
+        "beforeVerse": 23,
+        "heading": "The Escape from Damascus"
+      },
+      {
+        "beforeVerse": 26,
+        "heading": "Saul in Jerusalem"
+      },
+      {
+        "beforeVerse": 31,
+        "heading": "The Healing of Aeneas"
+      },
+      {
+        "beforeVerse": 36,
+        "heading": "The Raising of Tabitha"
+      }
+    ],
+    "10": [
+      {
+        "beforeVerse": 1,
+        "heading": "Cornelius Sends for Peter"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "Peter’s Vision"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "Peter Called to Caesarea"
+      },
+      {
+        "beforeVerse": 24,
+        "heading": "Peter Visits Cornelius"
+      },
+      {
+        "beforeVerse": 34,
+        "heading": "Good News for the Gentiles"
+      },
+      {
+        "beforeVerse": 44,
+        "heading": "The Gentiles Receive the Holy Spirit"
+      }
+    ],
+    "11": [
+      {
+        "beforeVerse": 1,
+        "heading": "Peter’s Report at Jerusalem"
+      },
+      {
+        "beforeVerse": 19,
+        "heading": "The Church at Antioch"
+      }
+    ],
+    "12": [
+      {
+        "beforeVerse": 1,
+        "heading": "James Killed, Peter Imprisoned"
+      },
+      {
+        "beforeVerse": 5,
+        "heading": "The Rescue of Peter"
+      },
+      {
+        "beforeVerse": 20,
+        "heading": "The Death of Herod"
+      }
+    ],
+    "13": [
+      {
+        "beforeVerse": 1,
+        "heading": "Paul’s First Missionary Journey Begins"
+      },
+      {
+        "beforeVerse": 4,
+        "heading": "On Cyprus"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "In Pisidian Antioch"
+      },
+      {
+        "beforeVerse": 42,
+        "heading": "A Light for the Gentiles"
+      }
+    ],
+    "14": [
+      {
+        "beforeVerse": 1,
+        "heading": "Paul and Barnabas at Iconium"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "The Visit to Lystra and Derbe"
+      },
+      {
+        "beforeVerse": 21,
+        "heading": "Strengthening the Disciples"
+      }
+    ],
+    "15": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Dispute over Circumcision"
+      },
+      {
+        "beforeVerse": 5,
+        "heading": "The Council at Jerusalem"
+      },
+      {
+        "beforeVerse": 22,
+        "heading": "The Letter to the Gentile Believers"
+      },
+      {
+        "beforeVerse": 30,
+        "heading": "The Believers at Antioch Rejoice"
+      },
+      {
+        "beforeVerse": 36,
+        "heading": "Paul’s Second Missionary Journey Begins"
+      }
+    ],
+    "16": [
+      {
+        "beforeVerse": 1,
+        "heading": "Timothy Joins Paul and Silas"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "Paul’s Vision of the Macedonian"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "Lydia’s Conversion in Philippi"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "Paul and Silas Imprisoned"
+      },
+      {
+        "beforeVerse": 25,
+        "heading": "The Conversion of the Jailer"
+      },
+      {
+        "beforeVerse": 35,
+        "heading": "An Official Apology"
+      }
+    ],
+    "17": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Uproar in Thessalonica"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "The Character of the Bereans"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "Paul in Athens"
+      },
+      {
+        "beforeVerse": 22,
+        "heading": "Paul’s Address in the Areopagus"
+      }
+    ],
+    "18": [
+      {
+        "beforeVerse": 1,
+        "heading": "Paul Ministers in Corinth"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "Paul before Gallio"
+      },
+      {
+        "beforeVerse": 18,
+        "heading": "Paul Returns to Antioch"
+      },
+      {
+        "beforeVerse": 23,
+        "heading": "Paul’s Third Missionary Journey Begins"
+      }
+    ],
+    "19": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Holy Spirit Received at Ephesus"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "Paul Ministers in Ephesus"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "Seven Sons of Sceva"
+      },
+      {
+        "beforeVerse": 21,
+        "heading": "The Riot in Ephesus"
+      }
+    ],
+    "20": [
+      {
+        "beforeVerse": 1,
+        "heading": "Paul in Macedonia and Greece"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "Eutychus Revived at Troas"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "From Troas to Miletus"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "Paul’s Farewell to the Ephesians"
+      }
+    ],
+    "21": [
+      {
+        "beforeVerse": 1,
+        "heading": "Paul’s Journey to Jerusalem"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "Paul Visits Philip the Evangelist"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "Paul’s Arrival at Jerusalem"
+      },
+      {
+        "beforeVerse": 27,
+        "heading": "Paul Seized at the Temple"
+      },
+      {
+        "beforeVerse": 37,
+        "heading": "Paul Addresses the Crowd"
+      }
+    ],
+    "22": [
+      {
+        "beforeVerse": 1,
+        "heading": "Paul’s Defense to the Crowd"
+      },
+      {
+        "beforeVerse": 22,
+        "heading": "Paul the Roman Citizen"
+      }
+    ],
+    "23": [
+      {
+        "beforeVerse": 1,
+        "heading": "Paul before the Sanhedrin"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "The Plot to Kill Paul"
+      },
+      {
+        "beforeVerse": 23,
+        "heading": "Paul Sent to Felix"
+      }
+    ],
+    "24": [
+      {
+        "beforeVerse": 1,
+        "heading": "Tertullus Prosecutes Paul"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "Paul’s Defense to Felix"
+      },
+      {
+        "beforeVerse": 22,
+        "heading": "The Verdict Postponed"
+      }
+    ],
+    "25": [
+      {
+        "beforeVerse": 1,
+        "heading": "Paul’s Trial before Festus"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "Paul Appeals to Caesar"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "Festus Consults Agrippa"
+      },
+      {
+        "beforeVerse": 23,
+        "heading": "Paul before Agrippa and Bernice"
+      }
+    ],
+    "26": [
+      {
+        "beforeVerse": 1,
+        "heading": "Paul’s Testimony to Agrippa"
+      },
+      {
+        "beforeVerse": 24,
+        "heading": "Festus Interrupts Paul’s Defense"
+      }
+    ],
+    "27": [
+      {
+        "beforeVerse": 1,
+        "heading": "Paul Sails for Rome"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "The Storm at Sea"
+      },
+      {
+        "beforeVerse": 27,
+        "heading": "The Shipwreck"
+      }
+    ],
+    "28": [
+      {
+        "beforeVerse": 1,
+        "heading": "Ashore on Malta"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "Paul Arrives in Italy"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "Paul Preaches at Rome"
+      }
+    ]
+  }
+}

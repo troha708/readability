@@ -1,0 +1,53 @@
+{
+  "book": "John",
+  "chapter": 19,
+  "questions": [
+    {
+      "id": "john-19-q1",
+      "type": "multiple_choice",
+      "question": "What was written on the sign placed on Jesus' cross?",
+      "options": [
+        "King of the Jews",
+        "The promised Messiah",
+        "Son of God",
+        "The Prophet"
+      ],
+      "answer": "King of the Jews",
+      "verse_reference": "John 19:19"
+    },
+    {
+      "id": "john-19-q2",
+      "type": "multiple_choice",
+      "question": "Who asked Pilate for permission to take Jesus' body after the crucifixion?",
+      "options": [
+        "Nicodemus the Pharisee",
+        "Simon Peter the fisherman",
+        "Lazarus of Bethany",
+        "Joseph of Arimathea"
+      ],
+      "answer": "Joseph of Arimathea",
+      "verse_reference": "John 19:38"
+    },
+    {
+      "id": "john-19-q3",
+      "type": "true_false",
+      "question": "The soldiers broke Jesus' legs to hasten his death.",
+      "answer": "false",
+      "verse_reference": "John 19:33"
+    },
+    {
+      "id": "john-19-q4",
+      "type": "fill_blank",
+      "question": "When Jesus had received the vinegar, he said, 'It is _____!' Then he bowed his head and gave up his spirit.",
+      "answer": "finished",
+      "verse_reference": "John 19:30"
+    },
+    {
+      "id": "john-19-q5",
+      "type": "fill_blank",
+      "question": "One of the soldiers pierced his side with a spear, and immediately _____ and water came out.",
+      "answer": "blood",
+      "verse_reference": "John 19:34"
+    }
+  ]
+}

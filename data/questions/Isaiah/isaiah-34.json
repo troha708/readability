@@ -1,0 +1,53 @@
+{
+  "book": "Isaiah",
+  "chapter": 34,
+  "questions": [
+    {
+      "id": "isaiah-34-q1",
+      "type": "multiple_choice",
+      "question": "Against which nation is judgment especially focused in Isaiah 34?",
+      "options": [
+        "Egypt",
+        "Edom",
+        "Babylon",
+        "Tyre"
+      ],
+      "answer": "Edom",
+      "verse_reference": "Isaiah 34:5-6"
+    },
+    {
+      "id": "isaiah-34-q2",
+      "type": "multiple_choice",
+      "question": "What is the scope of the judgment in Isaiah 34?",
+      "options": [
+        "The single city of Babylon alone",
+        "The land of Edom and nothing more",
+        "All the nations and the host of heaven",
+        "The tribes of Israel who had sinned"
+      ],
+      "answer": "All the nations and the host of heaven",
+      "verse_reference": "Isaiah 34:2"
+    },
+    {
+      "id": "isaiah-34-q3",
+      "type": "true_false",
+      "question": "Isaiah 34 says the land of Edom will become desolate, inhabited by wild creatures.",
+      "answer": "true",
+      "verse_reference": "Isaiah 34:11-15"
+    },
+    {
+      "id": "isaiah-34-q4",
+      "type": "fill_blank",
+      "question": "The LORD is enraged against all the _____, and furious against all their host.",
+      "answer": "nations",
+      "verse_reference": "Isaiah 34:2"
+    },
+    {
+      "id": "isaiah-34-q5",
+      "type": "fill_blank",
+      "question": "For the LORD has a day of vengeance, a year of recompense for the cause of _____.",
+      "answer": "Zion",
+      "verse_reference": "Isaiah 34:8"
+    }
+  ]
+}

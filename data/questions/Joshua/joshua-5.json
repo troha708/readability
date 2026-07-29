@@ -1,0 +1,57 @@
+{
+  "book": "Joshua",
+  "chapter": 5,
+  "questions": [
+    {
+      "id": "joshua-5-q1",
+      "type": "multiple_choice",
+      "question": "What did Israel do at Gilgal before taking the land?",
+      "options": [
+        "Were circumcised and kept the Passover",
+        "Offered sacrifices and chose new judges",
+        "Fought a battle and divided the spoil",
+        "Built a temple and crowned a king"
+      ],
+      "answer": "Were circumcised and kept the Passover",
+      "verse_reference": "Joshua 5:2-10"
+    },
+    {
+      "id": "joshua-5-q2",
+      "type": "multiple_choice",
+      "question": "What happened to the manna in this chapter?",
+      "options": [
+        "It increased to feed the whole army each day",
+        "It stopped after they ate the produce of the land",
+        "It turned bitter and could no longer be eaten at all",
+        "It continued falling just as it had before"
+      ],
+      "answer": "It stopped after they ate the produce of the land",
+      "verse_reference": "Joshua 5:12"
+    },
+    {
+      "id": "joshua-5-q3",
+      "type": "true_false",
+      "question": "Joshua met the commander of the LORD's army, who told him to remove his sandals.",
+      "answer": "true",
+      "verse_reference": "Joshua 5:14-15"
+    },
+    {
+      "id": "joshua-5-q4",
+      "type": "fill_blank",
+      "question": "The _____ stopped the day after they ate the produce of Canaan.",
+      "answer": "manna",
+      "verse_reference": "Joshua 5:12"
+    },
+    {
+      "id": "joshua-5-q5",
+      "type": "fill_blank",
+      "question": "The commander of the LORD's army told Joshua to take off his _____, for the ground was holy.",
+      "answer": "sandals",
+      "accept": [
+        "shoes",
+        "shoe"
+      ],
+      "verse_reference": "Joshua 5:15"
+    }
+  ]
+}

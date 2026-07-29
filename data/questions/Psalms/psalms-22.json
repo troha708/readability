@@ -1,0 +1,57 @@
+{
+  "book": "Psalms",
+  "chapter": 22,
+  "questions": [
+    {
+      "id": "psalms-22-q1",
+      "type": "multiple_choice",
+      "question": "How does Psalm 22 begin?",
+      "options": [
+        "'Out of the depths I cry to you, O LORD'",
+        "'The LORD is my shepherd; I shall not want'",
+        "'Have mercy on me, O God, according to your love'",
+        "'My God, my God, why have you forsaken me?'"
+      ],
+      "answer": "'My God, my God, why have you forsaken me?'",
+      "verse_reference": "Psalm 22:1"
+    },
+    {
+      "id": "psalms-22-q2",
+      "type": "multiple_choice",
+      "question": "What do David's enemies do to his clothing?",
+      "options": [
+        "Divide his garments and cast lots for his clothing",
+        "Pierce both his hands and his feet through with nails",
+        "Mock him aloud and wag their heads at him in scorn",
+        "Offer him only sour wine to drink in his great thirst"
+      ],
+      "answer": "Divide his garments and cast lots for his clothing",
+      "verse_reference": "Psalm 22:18"
+    },
+    {
+      "id": "psalms-22-q3",
+      "type": "true_false",
+      "question": "The psalm describes pierced hands and feet and bones out of joint.",
+      "answer": "true",
+      "verse_reference": "Psalm 22:16-17"
+    },
+    {
+      "id": "psalms-22-q4",
+      "type": "fill_blank",
+      "question": "They have pierced my hands and my _____.",
+      "answer": "feet",
+      "verse_reference": "Psalm 22:16"
+    },
+    {
+      "id": "psalms-22-q5",
+      "type": "fill_blank",
+      "question": "All the ends of the earth shall remember and turn to the _____.",
+      "answer": "LORD",
+      "accept": [
+        "Jehovah",
+        "Yahweh"
+      ],
+      "verse_reference": "Psalm 22:27"
+    }
+  ]
+}

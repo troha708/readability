@@ -1,0 +1,17 @@
+<!-- Supabase Auth > Email Templates > Magic Link. Suggested subject:
+     Your Readability sign-in code
+     Paste the body below as the template's Message body (source view).
+     {{ .Token }} is the six-digit code the login form asks for;
+     {{ .ConfirmationURL }} is the fallback link (same-device only). -->
+<div style="margin: 0 auto; max-width: 420px; padding: 32px 24px; font-family: Georgia, 'Times New Roman', serif; color: #202121;">
+  <p style="margin: 0 0 24px; font-size: 18px; font-weight: bold; color: #9c8343;">Readability</p>
+  <p style="margin: 0 0 8px; font-size: 15px;">Your sign-in code:</p>
+  <p style="margin: 0 0 24px; font-size: 32px; font-weight: bold; letter-spacing: 0.2em; font-family: Consolas, Menlo, monospace;">{{ .Token }}</p>
+  <p style="margin: 0 0 24px; font-size: 14px; color: #5e6266;">
+    Enter it in the app to finish signing in. On this device you can also
+    <a href="{{ .ConfirmationURL }}" style="color: #9c8343;">sign in with this link</a>.
+  </p>
+  <p style="margin: 0; font-size: 13px; color: #5e6266;">
+    If you didn't request this, you can ignore this email — nobody can sign in without the code.
+  </p>
+</div>

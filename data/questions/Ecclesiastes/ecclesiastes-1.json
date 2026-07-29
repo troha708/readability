@@ -1,0 +1,57 @@
+{
+  "book": "Ecclesiastes",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "ecclesiastes-1-q1",
+      "type": "multiple_choice",
+      "question": "What refrain opens Ecclesiastes?",
+      "options": [
+        "Blessed is the man who walks not in wicked counsel",
+        "Give thanks to the LORD, for he is good",
+        "Vanity of vanities! All is vanity",
+        "The fear of the LORD is the beginning of wisdom"
+      ],
+      "answer": "Vanity of vanities! All is vanity",
+      "verse_reference": "Ecclesiastes 1:2"
+    },
+    {
+      "id": "ecclesiastes-1-q2",
+      "type": "multiple_choice",
+      "question": "What does the Preacher say about new things under the sun?",
+      "options": [
+        "Each generation invents what those before it never knew",
+        "Whatever is new soon grows old and is forgotten",
+        "There is nothing new under the sun",
+        "Only the wise can bring forth something truly new"
+      ],
+      "answer": "There is nothing new under the sun",
+      "verse_reference": "Ecclesiastes 1:9"
+    },
+    {
+      "id": "ecclesiastes-1-q3",
+      "type": "true_false",
+      "question": "The Preacher (Qoheleth) identifies himself as a son of David, king in Jerusalem.",
+      "answer": "true",
+      "verse_reference": "Ecclesiastes 1:1"
+    },
+    {
+      "id": "ecclesiastes-1-q4",
+      "type": "fill_blank",
+      "question": "Futility of futilities, says the Teacher; everything is _____.",
+      "answer": "futile",
+      "accept": [
+        "vanity",
+        "meaningless"
+      ],
+      "verse_reference": "Ecclesiastes 1:2"
+    },
+    {
+      "id": "ecclesiastes-1-q5",
+      "type": "fill_blank",
+      "question": "What has been is what will be, and there is nothing new under the _____.",
+      "answer": "sun",
+      "verse_reference": "Ecclesiastes 1:9"
+    }
+  ]
+}

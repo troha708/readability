@@ -1,0 +1,57 @@
+{
+  "book": "Proverbs",
+  "chapter": 9,
+  "questions": [
+    {
+      "id": "proverbs-9-q1",
+      "type": "multiple_choice",
+      "question": "What two figures host feasts in Proverbs 9?",
+      "options": [
+        "A king and a priest",
+        "Wisdom and Folly",
+        "A father and son",
+        "Two prophets"
+      ],
+      "answer": "Wisdom and Folly",
+      "verse_reference": "Proverbs 9:1, 13"
+    },
+    {
+      "id": "proverbs-9-q2",
+      "type": "multiple_choice",
+      "question": "What does Proverbs 9 again call the beginning of wisdom?",
+      "options": [
+        "A life of constant hard work",
+        "A journey to distant lands",
+        "The fear of the LORD",
+        "The gaining of great wealth"
+      ],
+      "answer": "The fear of the LORD",
+      "verse_reference": "Proverbs 9:10"
+    },
+    {
+      "id": "proverbs-9-q3",
+      "type": "true_false",
+      "question": "Proverbs 9 says that stolen water is sweet, the call of Folly to the simple.",
+      "answer": "true",
+      "verse_reference": "Proverbs 9:17"
+    },
+    {
+      "id": "proverbs-9-q4",
+      "type": "fill_blank",
+      "question": "The fear of the LORD is the beginning of wisdom, and knowledge of the Holy One is _____.",
+      "answer": "understanding",
+      "accept": [
+        "insight",
+        "intelligence"
+      ],
+      "verse_reference": "Proverbs 9:10"
+    },
+    {
+      "id": "proverbs-9-q5",
+      "type": "fill_blank",
+      "question": "Wisdom has built her house; she has hewn her seven _____.",
+      "answer": "pillars",
+      "verse_reference": "Proverbs 9:1"
+    }
+  ]
+}

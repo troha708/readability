@@ -1,0 +1,53 @@
+{
+  "book": "Haggai",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "haggai-1-q1",
+      "type": "multiple_choice",
+      "question": "What did Haggai rebuke the people for neglecting?",
+      "options": [
+        "Keeping all of the feasts while wholly neglecting the poor among them",
+        "Offering up many sacrifices while secretly worshiping their idols",
+        "Rebuilding the house of the LORD while living in paneled houses",
+        "Trusting in the strength of Egypt instead of in the LORD their God"
+      ],
+      "answer": "Rebuilding the house of the LORD while living in paneled houses",
+      "verse_reference": "Haggai 1:4"
+    },
+    {
+      "id": "haggai-1-q2",
+      "type": "multiple_choice",
+      "question": "What phrase does Haggai repeat, calling the people to reflect?",
+      "options": [
+        "'Rejoice always now'",
+        "'Be still and wait'",
+        "'Consider your ways'",
+        "'Do not be afraid'"
+      ],
+      "answer": "'Consider your ways'",
+      "verse_reference": "Haggai 1:5, 7"
+    },
+    {
+      "id": "haggai-1-q3",
+      "type": "true_false",
+      "question": "Haggai says they have sown much and harvested little because they neglected God's house.",
+      "answer": "true",
+      "verse_reference": "Haggai 1:6"
+    },
+    {
+      "id": "haggai-1-q4",
+      "type": "fill_blank",
+      "question": "Consider your _____: you have sown much, and harvested little.",
+      "answer": "ways",
+      "verse_reference": "Haggai 1:7, 6"
+    },
+    {
+      "id": "haggai-1-q5",
+      "type": "fill_blank",
+      "question": "Go up to the hills and bring wood and build the _____, that I may take pleasure in it.",
+      "answer": "house",
+      "verse_reference": "Haggai 1:8"
+    }
+  ]
+}

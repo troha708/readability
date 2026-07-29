@@ -1,0 +1,57 @@
+{
+  "book": "Ezekiel",
+  "chapter": 45,
+  "questions": [
+    {
+      "id": "ezekiel-45-q1",
+      "type": "multiple_choice",
+      "question": "What does Ezekiel 45 set apart as a holy portion of the land?",
+      "options": [
+        "A pasture for the flocks of the prince",
+        "A holy district for the sanctuary and the priests",
+        "A great marketplace for the trade of all the nations",
+        "A fortress to guard the eastern border"
+      ],
+      "answer": "A holy district for the sanctuary and the priests",
+      "verse_reference": "Ezekiel 45:1-4"
+    },
+    {
+      "id": "ezekiel-45-q2",
+      "type": "multiple_choice",
+      "question": "What does God command the princes of Israel to do in Ezekiel 45?",
+      "options": [
+        "Collect far heavier tribute from the people",
+        "Build a grander palace than the temple",
+        "Put away violence and use honest weights",
+        "Gather a great army to defend the land"
+      ],
+      "answer": "Put away violence and use honest weights",
+      "verse_reference": "Ezekiel 45:9-10"
+    },
+    {
+      "id": "ezekiel-45-q3",
+      "type": "true_false",
+      "question": "Ezekiel 45 prescribes just measures: an honest ephah and an honest bath.",
+      "answer": "true",
+      "verse_reference": "Ezekiel 45:10"
+    },
+    {
+      "id": "ezekiel-45-q4",
+      "type": "fill_blank",
+      "question": "Put away violence and oppression, O princes of Israel, and do what is just and _____.",
+      "answer": "right",
+      "accept": [
+        "righteousness",
+        "justice"
+      ],
+      "verse_reference": "Ezekiel 45:9"
+    },
+    {
+      "id": "ezekiel-45-q5",
+      "type": "fill_blank",
+      "question": "You shall have just balances, a just _____, and a just bath.",
+      "answer": "ephah",
+      "verse_reference": "Ezekiel 45:10"
+    }
+  ]
+}

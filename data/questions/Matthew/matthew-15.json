@@ -1,0 +1,53 @@
+{
+  "book": "Matthew",
+  "chapter": 15,
+  "questions": [
+    {
+      "id": "matthew-15-q1",
+      "type": "multiple_choice",
+      "question": "Jesus said that what defiles a person comes from where?",
+      "options": [
+        "Their food",
+        "Their hands",
+        "Their surroundings",
+        "Their mouth"
+      ],
+      "answer": "Their mouth",
+      "verse_reference": "Matthew 15:11"
+    },
+    {
+      "id": "matthew-15-q2",
+      "type": "multiple_choice",
+      "question": "How many men were fed in the second feeding miracle in this chapter?",
+      "options": [
+        "Five thousand",
+        "Seven thousand",
+        "Three thousand",
+        "Four thousand"
+      ],
+      "answer": "Four thousand",
+      "verse_reference": "Matthew 15:38"
+    },
+    {
+      "id": "matthew-15-q3",
+      "type": "true_false",
+      "question": "Jesus initially ignored the Canaanite woman's request for help.",
+      "answer": "true",
+      "verse_reference": "Matthew 15:23"
+    },
+    {
+      "id": "matthew-15-q4",
+      "type": "fill_blank",
+      "question": "Jesus answered the Canaanite woman, 'Woman, great is your _____! Be it done to you even as you desire.'",
+      "answer": "faith",
+      "verse_reference": "Matthew 15:28"
+    },
+    {
+      "id": "matthew-15-q5",
+      "type": "fill_blank",
+      "question": "But the things which proceed out of the mouth come out of the _____, and they defile the man.",
+      "answer": "heart",
+      "verse_reference": "Matthew 15:18"
+    }
+  ]
+}

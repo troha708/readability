@@ -1,0 +1,57 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 16,
+  "questions": [
+    {
+      "id": "2-chronicles-16-q1",
+      "type": "multiple_choice",
+      "question": "What did Asa do when Baasha of Israel threatened Judah?",
+      "options": [
+        "Made a treaty with Ben-hadad of Syria using temple treasures",
+        "Trusted in God fully and waited quietly for his deliverance",
+        "Fled away with his entire household up into the distant hills",
+        "Surrendered the whole city to the enemy without a fight"
+      ],
+      "answer": "Made a treaty with Ben-hadad of Syria using temple treasures",
+      "verse_reference": "2 Chronicles 16:2-3"
+    },
+    {
+      "id": "2-chronicles-16-q2",
+      "type": "multiple_choice",
+      "question": "Who rebuked Asa for relying on Syria instead of the LORD?",
+      "options": [
+        "Azariah the priest",
+        "Jehu the prophet",
+        "Nathan the seer",
+        "Hanani the seer"
+      ],
+      "answer": "Hanani the seer",
+      "verse_reference": "2 Chronicles 16:7"
+    },
+    {
+      "id": "2-chronicles-16-q3",
+      "type": "true_false",
+      "question": "In his old age Asa was diseased in his feet but sought physicians rather than the LORD.",
+      "answer": "true",
+      "verse_reference": "2 Chronicles 16:12"
+    },
+    {
+      "id": "2-chronicles-16-q4",
+      "type": "fill_blank",
+      "question": "Hanani said the eyes of the LORD roam to and fro to support those whose hearts are fully _____ to Him.",
+      "answer": "devoted",
+      "accept": [
+        "blameless",
+        "perfect"
+      ],
+      "verse_reference": "2 Chronicles 16:9"
+    },
+    {
+      "id": "2-chronicles-16-q5",
+      "type": "fill_blank",
+      "question": "Asa was angry and put Hanani in the _____ (stocks).",
+      "answer": "prison",
+      "verse_reference": "2 Chronicles 16:10"
+    }
+  ]
+}

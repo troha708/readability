@@ -1,0 +1,53 @@
+{
+  "book": "John",
+  "chapter": 11,
+  "questions": [
+    {
+      "id": "john-11-q1",
+      "type": "multiple_choice",
+      "question": "Who did Jesus raise from the dead in this chapter?",
+      "options": [
+        "Simon",
+        "Lazarus",
+        "Nicodemus",
+        "Bartimaeus"
+      ],
+      "answer": "Lazarus",
+      "verse_reference": "John 11:43-44"
+    },
+    {
+      "id": "john-11-q2",
+      "type": "multiple_choice",
+      "question": "How long had Lazarus been in the tomb before Jesus arrived?",
+      "options": [
+        "Four days",
+        "Two days",
+        "One day",
+        "Three days"
+      ],
+      "answer": "Four days",
+      "verse_reference": "John 11:17"
+    },
+    {
+      "id": "john-11-q3",
+      "type": "true_false",
+      "question": "Martha told Jesus she believed he was the Christ, the Son of God.",
+      "answer": "true",
+      "verse_reference": "John 11:27"
+    },
+    {
+      "id": "john-11-q4",
+      "type": "fill_blank",
+      "question": "Jesus said to her, 'I am the resurrection and the _____. He who believes in me will still live, even if he dies.'",
+      "answer": "life",
+      "verse_reference": "John 11:25"
+    },
+    {
+      "id": "john-11-q5",
+      "type": "fill_blank",
+      "question": "Jesus _____.",
+      "answer": "wept",
+      "verse_reference": "John 11:35"
+    }
+  ]
+}

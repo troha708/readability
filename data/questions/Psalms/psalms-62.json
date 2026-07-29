@@ -1,0 +1,59 @@
+{
+  "book": "Psalms",
+  "chapter": 62,
+  "questions": [
+    {
+      "id": "psalms-62-q1",
+      "type": "multiple_choice",
+      "question": "What is the repeated theme of Psalm 62?",
+      "options": [
+        "To God alone my voice cries out aloud",
+        "For God alone my soul waits in silence",
+        "Toward God alone my hands are lifted up",
+        "On God alone my eyes are fixed in hope"
+      ],
+      "answer": "For God alone my soul waits in silence",
+      "verse_reference": "Psalm 62:1"
+    },
+    {
+      "id": "psalms-62-q2",
+      "type": "multiple_choice",
+      "question": "What does David warn about riches?",
+      "options": [
+        "If they multiply, give thanks to the LORD",
+        "If they vanish, do not grieve their loss",
+        "If they are stolen, seek them no longer",
+        "If they increase, set not your heart on them"
+      ],
+      "answer": "If they increase, set not your heart on them",
+      "verse_reference": "Psalm 62:10"
+    },
+    {
+      "id": "psalms-62-q3",
+      "type": "true_false",
+      "question": "David calls God his rock, salvation, and fortress, so he shall not be greatly shaken.",
+      "answer": "true",
+      "verse_reference": "Psalm 62:2"
+    },
+    {
+      "id": "psalms-62-q4",
+      "type": "fill_blank",
+      "question": "For God alone, O my soul, wait in silence, for my _____ is from him.",
+      "answer": "hope",
+      "accept": [
+        "expectation"
+      ],
+      "verse_reference": "Psalm 62:5"
+    },
+    {
+      "id": "psalms-62-q5",
+      "type": "fill_blank",
+      "question": "Trust in him at all times, O people; pour out your heart before him; God is a _____ for us.",
+      "answer": "refuge",
+      "accept": [
+        "hope"
+      ],
+      "verse_reference": "Psalm 62:8"
+    }
+  ]
+}

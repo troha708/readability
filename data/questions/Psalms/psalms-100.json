@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 100,
+  "questions": [
+    {
+      "id": "psalms-100-q1",
+      "type": "multiple_choice",
+      "question": "What does Psalm 100 call all the earth to do?",
+      "options": [
+        "Bow down low before the LORD and humbly confess all your sins",
+        "Wait patiently upon the LORD and so renew your failing strength",
+        "Make a joyful noise to the LORD and serve him with gladness",
+        "Cry out aloud to the LORD and pour out before him your complaint"
+      ],
+      "answer": "Make a joyful noise to the LORD and serve him with gladness",
+      "verse_reference": "Psalm 100:1-2"
+    },
+    {
+      "id": "psalms-100-q2",
+      "type": "multiple_choice",
+      "question": "With what are worshipers told to enter God's gates and courts?",
+      "options": [
+        "Gifts of fine gold",
+        "Trembling and silence",
+        "Thanksgiving and praise",
+        "Solemn fasting and ashes"
+      ],
+      "answer": "Thanksgiving and praise",
+      "verse_reference": "Psalm 100:4"
+    },
+    {
+      "id": "psalms-100-q3",
+      "type": "true_false",
+      "question": "The psalm declares the LORD is good and his steadfast love endures forever.",
+      "answer": "true",
+      "verse_reference": "Psalm 100:5"
+    },
+    {
+      "id": "psalms-100-q4",
+      "type": "fill_blank",
+      "question": "Enter his gates with thanksgiving, and his courts with _____!",
+      "answer": "praise",
+      "verse_reference": "Psalm 100:4"
+    },
+    {
+      "id": "psalms-100-q5",
+      "type": "fill_blank",
+      "question": "Know that the LORD, he is God! It is he who made us, and we are his; we are his people and the sheep of his _____.",
+      "answer": "pasture",
+      "verse_reference": "Psalm 100:3"
+    }
+  ]
+}

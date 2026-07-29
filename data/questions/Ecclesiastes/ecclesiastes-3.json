@@ -1,0 +1,60 @@
+{
+  "book": "Ecclesiastes",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "ecclesiastes-3-q1",
+      "type": "multiple_choice",
+      "question": "What famous poem opens Ecclesiastes 3?",
+      "options": [
+        "Remember your Creator in the days of your youth",
+        "For everything there is a season, and a time for every matter",
+        "Better is the end of a thing than its beginning",
+        "Cast your bread upon the waters, and find it after many days"
+      ],
+      "answer": "For everything there is a season, and a time for every matter",
+      "verse_reference": "Ecclesiastes 3:1"
+    },
+    {
+      "id": "ecclesiastes-3-q2",
+      "type": "multiple_choice",
+      "question": "What has God made everything, according to Ecclesiastes 3?",
+      "options": [
+        "Beautiful in its time, and put eternity into man's heart",
+        "Subject to chance, beyond all human understanding",
+        "Plain and lowly, so that man would not boast",
+        "Fleeting like a shadow, with no purpose under heaven"
+      ],
+      "answer": "Beautiful in its time, and put eternity into man's heart",
+      "verse_reference": "Ecclesiastes 3:11"
+    },
+    {
+      "id": "ecclesiastes-3-q3",
+      "type": "true_false",
+      "question": "Ecclesiastes 3 says there is a time to be born and a time to die, a time to weep and a time to laugh.",
+      "answer": "true",
+      "verse_reference": "Ecclesiastes 3:2, 4"
+    },
+    {
+      "id": "ecclesiastes-3-q4",
+      "type": "fill_blank",
+      "question": "For everything there is a season, and a time for every _____ under heaven.",
+      "answer": "purpose",
+      "accept": [
+        "matter",
+        "delight"
+      ],
+      "verse_reference": "Ecclesiastes 3:1"
+    },
+    {
+      "id": "ecclesiastes-3-q5",
+      "type": "fill_blank",
+      "question": "He has made everything beautiful in its _____.",
+      "answer": "time",
+      "accept": [
+        "season"
+      ],
+      "verse_reference": "Ecclesiastes 3:11"
+    }
+  ]
+}

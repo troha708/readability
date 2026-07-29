@@ -1,0 +1,56 @@
+{
+  "book": "Matthew",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "matthew-1-q1",
+      "type": "multiple_choice",
+      "question": "Matthew's genealogy traces Jesus' lineage through which king of Israel?",
+      "options": [
+        "Saul",
+        "David",
+        "Ahab",
+        "Jeroboam"
+      ],
+      "answer": "David",
+      "verse_reference": "Matthew 1:1"
+    },
+    {
+      "id": "matthew-1-q2",
+      "type": "multiple_choice",
+      "question": "How did Joseph initially plan to handle Mary's pregnancy?",
+      "options": [
+        "Send her away quietly",
+        "Marry her immediately",
+        "Publicly accuse her",
+        "Consult the priests"
+      ],
+      "answer": "Send her away quietly",
+      "verse_reference": "Matthew 1:19"
+    },
+    {
+      "id": "matthew-1-q3",
+      "type": "true_false",
+      "question": "An angel appeared to Joseph in a dream to tell him about Mary's child.",
+      "answer": "true",
+      "verse_reference": "Matthew 1:20"
+    },
+    {
+      "id": "matthew-1-q4",
+      "type": "fill_blank",
+      "question": "She shall give birth to a son. You shall name him _____, for it is he who shall save his people from their sins.",
+      "answer": "Jesus",
+      "verse_reference": "Matthew 1:21"
+    },
+    {
+      "id": "matthew-1-q5",
+      "type": "fill_blank",
+      "question": "They shall call his name _____, which being interpreted, is 'God with us.'",
+      "answer": "Immanuel",
+      "accept": [
+        "Emmanuel"
+      ],
+      "verse_reference": "Matthew 1:23"
+    }
+  ]
+}

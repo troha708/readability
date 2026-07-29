@@ -1,0 +1,53 @@
+{
+  "book": "1 Chronicles",
+  "chapter": 21,
+  "questions": [
+    {
+      "id": "1-chronicles-21-q1",
+      "type": "multiple_choice",
+      "question": "Who incited David to number Israel?",
+      "options": [
+        "The LORD",
+        "Nathan",
+        "Satan",
+        "Joab"
+      ],
+      "answer": "Satan",
+      "verse_reference": "1 Chronicles 21:1"
+    },
+    {
+      "id": "1-chronicles-21-q2",
+      "type": "multiple_choice",
+      "question": "Which punishment did David choose, falling into the hand of the LORD?",
+      "options": [
+        "Three years of famine",
+        "Three days of plague",
+        "Seven years of war",
+        "Three months of fleeing enemies"
+      ],
+      "answer": "Three days of plague",
+      "verse_reference": "1 Chronicles 21:12-13"
+    },
+    {
+      "id": "1-chronicles-21-q3",
+      "type": "true_false",
+      "question": "Joab advised David against taking the census.",
+      "answer": "true",
+      "verse_reference": "1 Chronicles 21:3"
+    },
+    {
+      "id": "1-chronicles-21-q4",
+      "type": "fill_blank",
+      "question": "David bought the threshing floor of _____ to build an altar.",
+      "answer": "Ornan",
+      "verse_reference": "1 Chronicles 21:18-25"
+    },
+    {
+      "id": "1-chronicles-21-q5",
+      "type": "fill_blank",
+      "question": "David refused to offer to the LORD that which cost him _____.",
+      "answer": "nothing",
+      "verse_reference": "1 Chronicles 21:24"
+    }
+  ]
+}

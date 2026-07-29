@@ -1,0 +1,56 @@
+{
+  "book": "Isaiah",
+  "chapter": 30,
+  "questions": [
+    {
+      "id": "isaiah-30-q1",
+      "type": "multiple_choice",
+      "question": "Whom does Isaiah 30 rebuke the people for relying on?",
+      "options": [
+        "Babylon, for its great wealth",
+        "Assyria, for its mighty army",
+        "Egypt, for help and shade",
+        "Their idols, for protection in battle"
+      ],
+      "answer": "Egypt, for help and shade",
+      "verse_reference": "Isaiah 30:2"
+    },
+    {
+      "id": "isaiah-30-q2",
+      "type": "multiple_choice",
+      "question": "In what did Isaiah 30 say their strength and salvation would be found?",
+      "options": [
+        "In great armies and chariots of iron",
+        "In high walls and well-stocked storehouses",
+        "In strong alliances with foreign kings",
+        "In returning and rest, in quietness and trust"
+      ],
+      "answer": "In returning and rest, in quietness and trust",
+      "verse_reference": "Isaiah 30:15"
+    },
+    {
+      "id": "isaiah-30-q3",
+      "type": "true_false",
+      "question": "Isaiah 30 promises that the LORD waits to be gracious and is a God of justice; blessed are those who wait for him.",
+      "answer": "true",
+      "verse_reference": "Isaiah 30:18"
+    },
+    {
+      "id": "isaiah-30-q4",
+      "type": "fill_blank",
+      "question": "In returning and rest you shall be saved; in quietness and in trust shall be your _____.",
+      "answer": "strength",
+      "accept": [
+        "might"
+      ],
+      "verse_reference": "Isaiah 30:15"
+    },
+    {
+      "id": "isaiah-30-q5",
+      "type": "fill_blank",
+      "question": "Your ears shall hear a word behind you, saying, 'This is the way, walk in _____.'",
+      "answer": "it",
+      "verse_reference": "Isaiah 30:21"
+    }
+  ]
+}

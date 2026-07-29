@@ -1,0 +1,56 @@
+{
+  "book": "1 Corinthians",
+  "chapter": 12,
+  "questions": [
+    {
+      "id": "1cor-12-q1",
+      "type": "multiple_choice",
+      "question": "What metaphor does Paul use to describe the church and its members?",
+      "options": [
+        "A body with many parts",
+        "A vine with many branches",
+        "A field with much grain",
+        "A house with many rooms"
+      ],
+      "answer": "A body with many parts",
+      "verse_reference": "1 Corinthians 12:12"
+    },
+    {
+      "id": "1cor-12-q2",
+      "type": "multiple_choice",
+      "question": "Who distributes spiritual gifts, according to Paul?",
+      "options": [
+        "The apostles",
+        "Church leaders",
+        "The Holy Spirit",
+        "Each person chooses their own"
+      ],
+      "answer": "The Holy Spirit",
+      "verse_reference": "1 Corinthians 12:11"
+    },
+    {
+      "id": "1cor-12-q3",
+      "type": "true_false",
+      "question": "Paul says all members of the body have the same function.",
+      "answer": "false",
+      "verse_reference": "1 Corinthians 12:17-20"
+    },
+    {
+      "id": "1cor-12-q4",
+      "type": "fill_blank",
+      "question": "Now you are the body of Christ, and each one of you is a _____ of it.",
+      "answer": "member",
+      "verse_reference": "1 Corinthians 12:27"
+    },
+    {
+      "id": "1cor-12-q5",
+      "type": "fill_blank",
+      "question": "If one part suffers, every part _____ with it.",
+      "answer": "suffers",
+      "accept": [
+        "suffer"
+      ],
+      "verse_reference": "1 Corinthians 12:26"
+    }
+  ]
+}

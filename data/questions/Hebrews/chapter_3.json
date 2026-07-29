@@ -1,0 +1,58 @@
+{
+  "book": "Hebrews",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "heb_3_1",
+      "type": "multiple_choice",
+      "question": "The author says Jesus is worthy of more glory than whom?",
+      "options": [
+        "Abraham",
+        "David",
+        "Moses",
+        "Aaron"
+      ],
+      "correct": "Moses",
+      "verse_ref": "Hebrews 3:3",
+      "feedback": "Jesus has been counted worthy of more glory than Moses."
+    },
+    {
+      "id": "heb_3_2",
+      "type": "multiple_choice",
+      "question": "The author warns against having what kind of heart that turns away from God?",
+      "options": [
+        "A cold heart",
+        "A proud heart",
+        "A weak and fearful heart",
+        "An unbelieving heart"
+      ],
+      "correct": "An unbelieving heart",
+      "verse_ref": "Hebrews 3:12",
+      "feedback": "Take care that none of you has a sinful, unbelieving heart that turns away from God."
+    },
+    {
+      "id": "heb_3_3",
+      "type": "true_false",
+      "question": "Moses was faithful as a servant in God's house.",
+      "correct": true,
+      "verse_ref": "Hebrews 3:5",
+      "feedback": "Moses was faithful as a servant in all God's house."
+    },
+    {
+      "id": "heb_3_4",
+      "type": "fill_in_the_blank",
+      "question": "The Israelites in the wilderness could not enter God's rest because of their _____.",
+      "correct": "unbelief",
+      "verse_ref": "Hebrews 3:19",
+      "feedback": "They were unable to enter because of unbelief."
+    },
+    {
+      "id": "heb_3_5",
+      "type": "fill_in_the_blank",
+      "question": "The author says to encourage one another daily so none of you may be hardened by sin's _____.",
+      "correct": "deceitfulness",
+      "verse_ref": "Hebrews 3:13",
+      "feedback": "Encourage one another so that none is hardened by the deceitfulness of sin."
+    }
+  ]
+}

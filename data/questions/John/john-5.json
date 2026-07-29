@@ -1,0 +1,60 @@
+{
+  "book": "John",
+  "chapter": 5,
+  "questions": [
+    {
+      "id": "john-5-q1",
+      "type": "multiple_choice",
+      "question": "How long had the man at the pool of Bethesda been ill?",
+      "options": [
+        "30 years",
+        "38 years",
+        "12 years",
+        "18 years"
+      ],
+      "answer": "38 years",
+      "verse_reference": "John 5:5"
+    },
+    {
+      "id": "john-5-q2",
+      "type": "multiple_choice",
+      "question": "Why were the Jewish leaders upset with the healed man?",
+      "options": [
+        "He simply left the area of the pool",
+        "He was loudly shouting in the temple",
+        "He thanked Jesus openly and publicly",
+        "He was carrying his mat on the Sabbath"
+      ],
+      "answer": "He was carrying his mat on the Sabbath",
+      "verse_reference": "John 5:10"
+    },
+    {
+      "id": "john-5-q3",
+      "type": "true_false",
+      "question": "Jesus said that the Son can do nothing by himself; he can only do what he sees his Father doing.",
+      "answer": "true",
+      "verse_reference": "John 5:19"
+    },
+    {
+      "id": "john-5-q4",
+      "type": "fill_blank",
+      "question": "Jesus said to him, 'Get up, take up your _____, and walk.'",
+      "answer": "mat",
+      "accept": [
+        "bed",
+        "couch"
+      ],
+      "verse_reference": "John 5:8"
+    },
+    {
+      "id": "john-5-q5",
+      "type": "fill_blank",
+      "question": "You search the _____, because you think that in them you have eternal life; and these are they which testify about me.",
+      "answer": "Scriptures",
+      "accept": [
+        "Writings"
+      ],
+      "verse_reference": "John 5:39"
+    }
+  ]
+}

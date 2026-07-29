@@ -1,0 +1,53 @@
+{
+  "book": "John",
+  "chapter": 17,
+  "questions": [
+    {
+      "id": "john-17-q1",
+      "type": "multiple_choice",
+      "question": "In his prayer, what did Jesus say eternal life is?",
+      "options": [
+        "Living forever in the bright and shining courts of heaven",
+        "Knowing the only true God and Jesus Christ whom he sent",
+        "Being washed and baptized in the pure and living water",
+        "Keeping every single one of the commandments perfectly"
+      ],
+      "answer": "Knowing the only true God and Jesus Christ whom he sent",
+      "verse_reference": "John 17:3"
+    },
+    {
+      "id": "john-17-q2",
+      "type": "multiple_choice",
+      "question": "Who did Jesus say he was NOT praying for in this prayer?",
+      "options": [
+        "The disciples",
+        "Future believers",
+        "The world",
+        "His mother"
+      ],
+      "answer": "The world",
+      "verse_reference": "John 17:9"
+    },
+    {
+      "id": "john-17-q3",
+      "type": "true_false",
+      "question": "Jesus prayed that his followers would be taken out of the world.",
+      "answer": "false",
+      "verse_reference": "John 17:15"
+    },
+    {
+      "id": "john-17-q4",
+      "type": "fill_blank",
+      "question": "Sanctify them in your truth. Your _____ is truth.",
+      "answer": "word",
+      "verse_reference": "John 17:17"
+    },
+    {
+      "id": "john-17-q5",
+      "type": "fill_blank",
+      "question": "That they may all be _____; even as you, Father, are in me, and I in you.",
+      "answer": "one",
+      "verse_reference": "John 17:21"
+    }
+  ]
+}

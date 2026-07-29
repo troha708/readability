@@ -1,0 +1,53 @@
+{
+  "book": "Daniel",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "daniel-2-q1",
+      "type": "multiple_choice",
+      "question": "What did Nebuchadnezzar demand of his wise men in chapter 2?",
+      "options": [
+        "To pay a very great tribute into the royal treasury",
+        "To leave Babylon and return to their own lands",
+        "To tell him both his dream and its interpretation",
+        "To set up a golden statue in the plain of Dura"
+      ],
+      "answer": "To tell him both his dream and its interpretation",
+      "verse_reference": "Daniel 2:5-9"
+    },
+    {
+      "id": "daniel-2-q2",
+      "type": "multiple_choice",
+      "question": "What was the dream that Daniel revealed and interpreted?",
+      "options": [
+        "Four great beasts rising out of the sea",
+        "A towering tree reaching up to the heavens",
+        "A great statue of metals struck by a stone",
+        "A river of fire flowing from a throne"
+      ],
+      "answer": "A great statue of metals struck by a stone",
+      "verse_reference": "Daniel 2:31-35"
+    },
+    {
+      "id": "daniel-2-q3",
+      "type": "true_false",
+      "question": "Daniel said the God of heaven would set up a kingdom that shall never be destroyed.",
+      "answer": "true",
+      "verse_reference": "Daniel 2:44"
+    },
+    {
+      "id": "daniel-2-q4",
+      "type": "fill_blank",
+      "question": "A _____ was cut out by no human hand and struck the image on its feet.",
+      "answer": "stone",
+      "verse_reference": "Daniel 2:34"
+    },
+    {
+      "id": "daniel-2-q5",
+      "type": "fill_blank",
+      "question": "The God of heaven will set up a kingdom that shall never be _____.",
+      "answer": "destroyed",
+      "verse_reference": "Daniel 2:44"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Judges",
+  "chapter": 17,
+  "questions": [
+    {
+      "id": "judges-17-q1",
+      "type": "multiple_choice",
+      "question": "What does chapter 17 describe?",
+      "options": [
+        "A great and decisive battle against the Philistines",
+        "Micah's household idols and a hired Levite priest",
+        "The anointing and crowning of Israel's first king",
+        "A severe famine that drove a family away to Moab"
+      ],
+      "answer": "Micah's household idols and a hired Levite priest",
+      "verse_reference": "Judges 17:4-5"
+    },
+    {
+      "id": "judges-17-q2",
+      "type": "multiple_choice",
+      "question": "What refrain explains the disorder of these chapters?",
+      "options": [
+        "\"The people forgot the LORD their God and served all the Baals of the land\"",
+        "\"There was no king in Israel; everyone did what was right in his own eyes\"",
+        "\"The land had rest for forty years under the hand of the judge\"",
+        "\"In those days a great famine spread across the whole of the land\""
+      ],
+      "answer": "\"There was no king in Israel; everyone did what was right in his own eyes\"",
+      "verse_reference": "Judges 17:6"
+    },
+    {
+      "id": "judges-17-q3",
+      "type": "true_false",
+      "question": "Micah hired a wandering Levite to be his personal priest.",
+      "answer": "true",
+      "verse_reference": "Judges 17:10-12"
+    },
+    {
+      "id": "judges-17-q4",
+      "type": "fill_blank",
+      "question": "In those days there was no _____ in Israel; everyone did what was right in his own eyes.",
+      "answer": "king",
+      "verse_reference": "Judges 17:6"
+    },
+    {
+      "id": "judges-17-q5",
+      "type": "fill_blank",
+      "question": "Micah made an idol and a shrine and installed a _____ as his priest.",
+      "answer": "Levite",
+      "verse_reference": "Judges 17:12"
+    }
+  ]
+}

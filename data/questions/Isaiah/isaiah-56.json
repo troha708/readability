@@ -1,0 +1,53 @@
+{
+  "book": "Isaiah",
+  "chapter": 56,
+  "questions": [
+    {
+      "id": "isaiah-56-q1",
+      "type": "multiple_choice",
+      "question": "What does God promise to foreigners and eunuchs who keep his covenant in Isaiah 56?",
+      "options": [
+        "A full and complete freedom from all of the laws of the covenant",
+        "A name and a place in his house, better than sons and daughters",
+        "Very great riches and broad lands among the tribes of Israel",
+        "A high and glorious throne from which to rule over the nations"
+      ],
+      "answer": "A name and a place in his house, better than sons and daughters",
+      "verse_reference": "Isaiah 56:5"
+    },
+    {
+      "id": "isaiah-56-q2",
+      "type": "multiple_choice",
+      "question": "What will God's house be called, according to Isaiah 56?",
+      "options": [
+        "A fortress against the surrounding nations",
+        "A house of prayer for all peoples",
+        "A treasury for the wealth of kings",
+        "A court for judging the tribes of Israel"
+      ],
+      "answer": "A house of prayer for all peoples",
+      "verse_reference": "Isaiah 56:7"
+    },
+    {
+      "id": "isaiah-56-q3",
+      "type": "true_false",
+      "question": "Isaiah 56 condemns Israel's blind watchmen as silent dogs who cannot bark and love to sleep.",
+      "answer": "true",
+      "verse_reference": "Isaiah 56:10"
+    },
+    {
+      "id": "isaiah-56-q4",
+      "type": "fill_blank",
+      "question": "My house shall be called a house of _____ for all peoples.",
+      "answer": "prayer",
+      "verse_reference": "Isaiah 56:7"
+    },
+    {
+      "id": "isaiah-56-q5",
+      "type": "fill_blank",
+      "question": "Keep justice, and do righteousness, for soon my salvation will come and my righteousness be _____.",
+      "answer": "revealed",
+      "verse_reference": "Isaiah 56:1"
+    }
+  ]
+}

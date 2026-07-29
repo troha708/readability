@@ -1,0 +1,57 @@
+{
+  "book": "1 Chronicles",
+  "chapter": 25,
+  "questions": [
+    {
+      "id": "1-chronicles-25-q1",
+      "type": "multiple_choice",
+      "question": "For what service were the sons of Asaph, Heman, and Jeduthun set apart?",
+      "options": [
+        "Offering the daily sacrifices at the altar of the LORD",
+        "Guarding the many gates of the sanctuary day and night",
+        "Keeping and managing the treasuries of the temple",
+        "Music and prophesying with lyres, harps, and cymbals"
+      ],
+      "answer": "Music and prophesying with lyres, harps, and cymbals",
+      "verse_reference": "1 Chronicles 25:1"
+    },
+    {
+      "id": "1-chronicles-25-q2",
+      "type": "multiple_choice",
+      "question": "How were the musicians' duties assigned?",
+      "options": [
+        "By the king",
+        "By skill ranking",
+        "By lot",
+        "By age"
+      ],
+      "answer": "By lot",
+      "verse_reference": "1 Chronicles 25:8"
+    },
+    {
+      "id": "1-chronicles-25-q3",
+      "type": "true_false",
+      "question": "Both small and great, teacher and pupil, cast lots alike for their duties.",
+      "answer": "true",
+      "verse_reference": "1 Chronicles 25:8"
+    },
+    {
+      "id": "1-chronicles-25-q4",
+      "type": "fill_blank",
+      "question": "Heman was the king's _____ in the words of God.",
+      "answer": "seer",
+      "verse_reference": "1 Chronicles 25:5"
+    },
+    {
+      "id": "1-chronicles-25-q5",
+      "type": "fill_blank",
+      "question": "There were 288 skilled musicians trained in _____ for the LORD.",
+      "answer": "songs",
+      "accept": [
+        "song",
+        "singing"
+      ],
+      "verse_reference": "1 Chronicles 25:7"
+    }
+  ]
+}

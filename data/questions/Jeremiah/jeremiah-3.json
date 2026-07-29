@@ -1,0 +1,57 @@
+{
+  "book": "Jeremiah",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "jeremiah-3-q1",
+      "type": "multiple_choice",
+      "question": "What does God repeatedly call faithless Israel to do in Jeremiah 3?",
+      "options": [
+        "Offer more sacrifices at the altar",
+        "Go to war against their enemies",
+        "Return to him, for he is merciful",
+        "Build a new temple in his honor"
+      ],
+      "answer": "Return to him, for he is merciful",
+      "verse_reference": "Jeremiah 3:12"
+    },
+    {
+      "id": "jeremiah-3-q2",
+      "type": "multiple_choice",
+      "question": "What does God promise to give the people if they return?",
+      "options": [
+        "Very great wealth and broad lands among all of the nations",
+        "Kings as mighty and as powerful as those of the whole land of Egypt",
+        "A great and mighty army to crush all of their many enemies",
+        "Shepherds after his own heart who will feed them with knowledge"
+      ],
+      "answer": "Shepherds after his own heart who will feed them with knowledge",
+      "verse_reference": "Jeremiah 3:15"
+    },
+    {
+      "id": "jeremiah-3-q3",
+      "type": "true_false",
+      "question": "Jeremiah 3 compares Judah's faithlessness to spiritual adultery.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 3:8-9"
+    },
+    {
+      "id": "jeremiah-3-q4",
+      "type": "fill_blank",
+      "question": "Return, O faithless children, declares the LORD; for I am your _____.",
+      "answer": "master",
+      "accept": [
+        "husband",
+        "Lord"
+      ],
+      "verse_reference": "Jeremiah 3:14"
+    },
+    {
+      "id": "jeremiah-3-q5",
+      "type": "fill_blank",
+      "question": "I will give you shepherds after my own _____, who will feed you with knowledge.",
+      "answer": "heart",
+      "verse_reference": "Jeremiah 3:15"
+    }
+  ]
+}

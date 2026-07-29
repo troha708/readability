@@ -1,0 +1,57 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 11,
+  "questions": [
+    {
+      "id": "2-chronicles-11-q1",
+      "type": "multiple_choice",
+      "question": "What did a prophet, the man of God Shemaiah, tell Rehoboam not to do?",
+      "options": [
+        "Make alliances with foreign kings",
+        "Build a second temple in Judah",
+        "Go to war against the northern tribes",
+        "Lay heavy taxes on the people"
+      ],
+      "answer": "Go to war against the northern tribes",
+      "verse_reference": "2 Chronicles 11:4"
+    },
+    {
+      "id": "2-chronicles-11-q2",
+      "type": "multiple_choice",
+      "question": "Who came over to Rehoboam from all Israel because Jeroboam cast them out?",
+      "options": [
+        "The merchants and traders",
+        "The judges of the land",
+        "The soldiers of the army",
+        "The priests and Levites"
+      ],
+      "answer": "The priests and Levites",
+      "verse_reference": "2 Chronicles 11:13-14"
+    },
+    {
+      "id": "2-chronicles-11-q3",
+      "type": "true_false",
+      "question": "Rehoboam fortified cities for defense in Judah.",
+      "answer": "true",
+      "verse_reference": "2 Chronicles 11:5"
+    },
+    {
+      "id": "2-chronicles-11-q4",
+      "type": "fill_blank",
+      "question": "Rehoboam loved _____, daughter of Absalom, above all his wives.",
+      "answer": "Maacah",
+      "accept": [
+        "Maachah",
+        "Maakah"
+      ],
+      "verse_reference": "2 Chronicles 11:21"
+    },
+    {
+      "id": "2-chronicles-11-q5",
+      "type": "fill_blank",
+      "question": "For three years they walked in the way of David and _____.",
+      "answer": "Solomon",
+      "verse_reference": "2 Chronicles 11:17"
+    }
+  ]
+}

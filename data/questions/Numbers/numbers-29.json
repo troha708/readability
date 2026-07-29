@@ -1,0 +1,53 @@
+{
+  "book": "Numbers",
+  "chapter": 29,
+  "questions": [
+    {
+      "id": "numbers-29-q1",
+      "type": "multiple_choice",
+      "question": "Which feast, marked by trumpet blasts, is commanded in the seventh month?",
+      "options": [
+        "The Feast of Trumpets",
+        "The great Day of Atonement",
+        "The Passover meal",
+        "The Feast of Booths"
+      ],
+      "answer": "The Feast of Trumpets",
+      "verse_reference": "Numbers 29:1"
+    },
+    {
+      "id": "numbers-29-q2",
+      "type": "multiple_choice",
+      "question": "What solemn day of atonement falls in the seventh month?",
+      "options": [
+        "The New Moon feast",
+        "The day of Pentecost",
+        "The Passover meal",
+        "The Day of Atonement"
+      ],
+      "answer": "The Day of Atonement",
+      "verse_reference": "Numbers 29:7"
+    },
+    {
+      "id": "numbers-29-q3",
+      "type": "true_false",
+      "question": "The Feast of Booths (Tabernacles) involved offerings over seven days.",
+      "answer": "true",
+      "verse_reference": "Numbers 29:12-34"
+    },
+    {
+      "id": "numbers-29-q4",
+      "type": "fill_blank",
+      "question": "On the first day of the seventh month there was a holy gathering with the blowing of _____.",
+      "answer": "trumpets",
+      "verse_reference": "Numbers 29:1"
+    },
+    {
+      "id": "numbers-29-q5",
+      "type": "fill_blank",
+      "question": "On the tenth day the people kept the Day of _____.",
+      "answer": "Atonement",
+      "verse_reference": "Numbers 29:7"
+    }
+  ]
+}

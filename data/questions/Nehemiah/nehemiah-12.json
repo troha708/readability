@@ -1,0 +1,53 @@
+{
+  "book": "Nehemiah",
+  "chapter": 12,
+  "questions": [
+    {
+      "id": "nehemiah-12-q1",
+      "type": "multiple_choice",
+      "question": "What major celebration is described in chapter 12?",
+      "options": [
+        "A great harvest feast in the autumn",
+        "The crowning of a governor as king",
+        "The royal wedding of a young Judean prince",
+        "The dedication of the wall of Jerusalem"
+      ],
+      "answer": "The dedication of the wall of Jerusalem",
+      "verse_reference": "Nehemiah 12:27"
+    },
+    {
+      "id": "nehemiah-12-q2",
+      "type": "multiple_choice",
+      "question": "How did they dedicate the wall?",
+      "options": [
+        "With the careful reading of the whole of the law from morning to noon",
+        "With two great choirs giving thanks, with music and rejoicing",
+        "With a great sacrifice offered silently before the LORD",
+        "With a solemn fast and a day of mourning for past sins"
+      ],
+      "answer": "With two great choirs giving thanks, with music and rejoicing",
+      "verse_reference": "Nehemiah 12:31-40"
+    },
+    {
+      "id": "nehemiah-12-q3",
+      "type": "true_false",
+      "question": "The joy of Jerusalem was heard far away that day.",
+      "answer": "true",
+      "verse_reference": "Nehemiah 12:43"
+    },
+    {
+      "id": "nehemiah-12-q4",
+      "type": "fill_blank",
+      "question": "The two great companies marched in opposite directions on the _____.",
+      "answer": "wall",
+      "verse_reference": "Nehemiah 12:31"
+    },
+    {
+      "id": "nehemiah-12-q5",
+      "type": "fill_blank",
+      "question": "Chapter 12 lists the _____ and Levites who returned with Zerubbabel.",
+      "answer": "priests",
+      "verse_reference": "Nehemiah 12:1"
+    }
+  ]
+}

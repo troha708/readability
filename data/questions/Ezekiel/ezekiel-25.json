@@ -1,0 +1,53 @@
+{
+  "book": "Ezekiel",
+  "chapter": 25,
+  "questions": [
+    {
+      "id": "ezekiel-25-q1",
+      "type": "multiple_choice",
+      "question": "Which nations does Ezekiel 25 pronounce judgment against?",
+      "options": [
+        "Israel, Judah, and Samaria",
+        "Tyre, Sidon, and Damascus",
+        "Egypt, Assyria, and Babylon",
+        "Ammon, Moab, Edom, and Philistia"
+      ],
+      "answer": "Ammon, Moab, Edom, and Philistia",
+      "verse_reference": "Ezekiel 25:1-16"
+    },
+    {
+      "id": "ezekiel-25-q2",
+      "type": "multiple_choice",
+      "question": "Why was Ammon judged?",
+      "options": [
+        "For gloating when the sanctuary was profaned",
+        "For making a treaty with the great king of Egypt",
+        "For refusing to send aid during the famine",
+        "For worshiping idols of wood and stone"
+      ],
+      "answer": "For gloating when the sanctuary was profaned",
+      "verse_reference": "Ezekiel 25:3"
+    },
+    {
+      "id": "ezekiel-25-q3",
+      "type": "true_false",
+      "question": "The repeated purpose was that these nations would know that he is the LORD.",
+      "answer": "true",
+      "verse_reference": "Ezekiel 25:7, 11, 17"
+    },
+    {
+      "id": "ezekiel-25-q4",
+      "type": "fill_blank",
+      "question": "Because you said, 'Aha!' over my sanctuary when it was profaned, I am handing you over to the people of the _____.",
+      "answer": "East",
+      "verse_reference": "Ezekiel 25:3-4"
+    },
+    {
+      "id": "ezekiel-25-q5",
+      "type": "fill_blank",
+      "question": "I will take my vengeance on _____ by the hand of my people Israel.",
+      "answer": "Edom",
+      "verse_reference": "Ezekiel 25:14"
+    }
+  ]
+}

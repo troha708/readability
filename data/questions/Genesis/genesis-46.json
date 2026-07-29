@@ -1,0 +1,56 @@
+{
+  "book": "Genesis",
+  "chapter": 46,
+  "questions": [
+    {
+      "id": "genesis-46-q1",
+      "type": "multiple_choice",
+      "question": "Where did God speak to Jacob, telling him not to fear going to Egypt?",
+      "options": [
+        "Beersheba",
+        "Hebron",
+        "Bethel",
+        "Shechem"
+      ],
+      "answer": "Beersheba",
+      "verse_reference": "Genesis 46:1-3"
+    },
+    {
+      "id": "genesis-46-q2",
+      "type": "multiple_choice",
+      "question": "How many of Jacob's household are said to have gone to Egypt?",
+      "options": [
+        "Seventy",
+        "A hundred",
+        "Twelve in all",
+        "About forty"
+      ],
+      "answer": "Seventy",
+      "verse_reference": "Genesis 46:27"
+    },
+    {
+      "id": "genesis-46-q3",
+      "type": "true_false",
+      "question": "God promised to make Jacob into a great nation in Egypt.",
+      "answer": "true",
+      "verse_reference": "Genesis 46:3"
+    },
+    {
+      "id": "genesis-46-q4",
+      "type": "fill_blank",
+      "question": "God said, 'I will go down with you into Egypt, and I will surely bring you _____.'",
+      "answer": "back",
+      "accept": [
+        "up"
+      ],
+      "verse_reference": "Genesis 46:4"
+    },
+    {
+      "id": "genesis-46-q5",
+      "type": "fill_blank",
+      "question": "Joseph rode in his _____ to meet his father in Goshen.",
+      "answer": "chariot",
+      "verse_reference": "Genesis 46:29"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "book": "Psalms",
+  "chapter": 59,
+  "questions": [
+    {
+      "id": "psalms-59-q1",
+      "type": "multiple_choice",
+      "question": "What is the occasion of Psalm 59?",
+      "options": [
+        "When the Philistines seized hold of David in the city of Gath",
+        "When Saul sent men to watch David's house in order to kill him",
+        "When the Ziphites betrayed David into the hand of Saul",
+        "When Absalom rose up against his father to take the throne"
+      ],
+      "answer": "When Saul sent men to watch David's house in order to kill him",
+      "verse_reference": "Psalm 59:title"
+    },
+    {
+      "id": "psalms-59-q2",
+      "type": "multiple_choice",
+      "question": "What does David call God in this psalm?",
+      "options": [
+        "My banner, my shield, and the gracious lifter up of my low bowed head",
+        "My fortress, my strength, and the God who shows me steadfast love",
+        "My portion, my cup, and the very joy and gladness of my heart",
+        "My shepherd, my guide, and the faithful keeper of my soul"
+      ],
+      "answer": "My fortress, my strength, and the God who shows me steadfast love",
+      "verse_reference": "Psalm 59:9-10"
+    },
+    {
+      "id": "psalms-59-q3",
+      "type": "true_false",
+      "question": "David resolves to sing of God's strength and steadfast love in the morning.",
+      "answer": "true",
+      "verse_reference": "Psalm 59:16"
+    },
+    {
+      "id": "psalms-59-q4",
+      "type": "fill_blank",
+      "question": "O my Strength, I will sing praises to you, for you, O God, are my _____.",
+      "answer": "fortress",
+      "accept": [
+        "tower",
+        "defence"
+      ],
+      "verse_reference": "Psalm 59:17"
+    },
+    {
+      "id": "psalms-59-q5",
+      "type": "fill_blank",
+      "question": "Each evening they come back, howling like _____ and prowling about the city.",
+      "answer": "dogs",
+      "accept": [
+        "dog"
+      ],
+      "verse_reference": "Psalm 59:6"
+    }
+  ]
+}

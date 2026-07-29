@@ -1,0 +1,53 @@
+{
+  "book": "Nehemiah",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "nehemiah-3-q1",
+      "type": "multiple_choice",
+      "question": "What does chapter 3 mainly describe?",
+      "options": [
+        "A long prayer confessing all the many sins of the nation",
+        "A great battle fought against the enemies outside the city",
+        "A census listing each of the families who had returned",
+        "The various builders repairing sections of the wall and its gates"
+      ],
+      "answer": "The various builders repairing sections of the wall and its gates",
+      "verse_reference": "Nehemiah 3:1"
+    },
+    {
+      "id": "nehemiah-3-q2",
+      "type": "multiple_choice",
+      "question": "Who built the Sheep Gate at the start of the chapter?",
+      "options": [
+        "Nehemiah together with his own personal servants",
+        "Eliashib the high priest and his fellow priests",
+        "The Levites who carried the ark of the covenant",
+        "Sanballat and the men from the region of Samaria"
+      ],
+      "answer": "Eliashib the high priest and his fellow priests",
+      "verse_reference": "Nehemiah 3:1"
+    },
+    {
+      "id": "nehemiah-3-q3",
+      "type": "true_false",
+      "question": "People repaired the wall each near their own house or section.",
+      "answer": "true",
+      "verse_reference": "Nehemiah 3:10"
+    },
+    {
+      "id": "nehemiah-3-q4",
+      "type": "fill_blank",
+      "question": "The nobles of the _____ would not stoop to serve in the work.",
+      "answer": "Tekoites",
+      "verse_reference": "Nehemiah 3:5"
+    },
+    {
+      "id": "nehemiah-3-q5",
+      "type": "fill_blank",
+      "question": "Many gates were rebuilt, including the Fish Gate and the _____ Gate.",
+      "answer": "Valley",
+      "verse_reference": "Nehemiah 3:13"
+    }
+  ]
+}

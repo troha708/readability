@@ -1,0 +1,56 @@
+{
+  "book": "Ezekiel",
+  "chapter": 34,
+  "questions": [
+    {
+      "id": "ezekiel-34-q1",
+      "type": "multiple_choice",
+      "question": "Whom does Ezekiel 34 condemn?",
+      "options": [
+        "The false prophets who spoke aloud only their own foolish dreams",
+        "The corrupt priests who had defiled the holy temple of the LORD",
+        "The cruel foreign kings who oppressed and crushed the people",
+        "The shepherds of Israel who fed themselves and not the flock"
+      ],
+      "answer": "The shepherds of Israel who fed themselves and not the flock",
+      "verse_reference": "Ezekiel 34:2-3"
+    },
+    {
+      "id": "ezekiel-34-q2",
+      "type": "multiple_choice",
+      "question": "Who promises to become the true shepherd of the flock?",
+      "options": [
+        "The priests who would return to the temple",
+        "A foreign king raised up to deliver them",
+        "God himself, who will seek out his sheep",
+        "A council of elders chosen from the tribes"
+      ],
+      "answer": "God himself, who will seek out his sheep",
+      "verse_reference": "Ezekiel 34:11-12"
+    },
+    {
+      "id": "ezekiel-34-q3",
+      "type": "true_false",
+      "question": "Ezekiel 34 promises to set up one shepherd, my servant David, over them.",
+      "answer": "true",
+      "verse_reference": "Ezekiel 34:23"
+    },
+    {
+      "id": "ezekiel-34-q4",
+      "type": "fill_blank",
+      "question": "Woe to the shepherds of Israel who have been feeding _____!",
+      "answer": "themselves",
+      "verse_reference": "Ezekiel 34:2"
+    },
+    {
+      "id": "ezekiel-34-q5",
+      "type": "fill_blank",
+      "question": "I myself will tend My _____ and make them lie down, declares the Lord GOD.",
+      "answer": "flock",
+      "accept": [
+        "sheep"
+      ],
+      "verse_reference": "Ezekiel 34:15"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "book": "Genesis",
+  "chapter": 34,
+  "questions": [
+    {
+      "id": "genesis-34-q1",
+      "type": "multiple_choice",
+      "question": "Whose violation led her brothers to take violent revenge?",
+      "options": [
+        "Rachel",
+        "Rebekah",
+        "Leah",
+        "Dinah"
+      ],
+      "answer": "Dinah",
+      "verse_reference": "Genesis 34:1-2"
+    },
+    {
+      "id": "genesis-34-q2",
+      "type": "multiple_choice",
+      "question": "Which two of Jacob's sons attacked the city of Shechem?",
+      "options": [
+        "Reuben and Judah",
+        "Simeon and Levi",
+        "Dan and Gad",
+        "Joseph and Benjamin"
+      ],
+      "answer": "Simeon and Levi",
+      "verse_reference": "Genesis 34:25"
+    },
+    {
+      "id": "genesis-34-q3",
+      "type": "true_false",
+      "question": "The men of Shechem were deceived into being circumcised before the attack.",
+      "answer": "true",
+      "verse_reference": "Genesis 34:13-25"
+    },
+    {
+      "id": "genesis-34-q4",
+      "type": "fill_blank",
+      "question": "Dinah was the daughter of Jacob and his wife _____.",
+      "answer": "Leah",
+      "verse_reference": "Genesis 34:1"
+    },
+    {
+      "id": "genesis-34-q5",
+      "type": "fill_blank",
+      "question": "Simeon and Levi asked, \"Should he treat our sister like a _____?\"",
+      "answer": "prostitute",
+      "accept": [
+        "harlot",
+        "whore"
+      ],
+      "verse_reference": "Genesis 34:31"
+    }
+  ]
+}

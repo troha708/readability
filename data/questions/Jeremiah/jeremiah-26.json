@@ -1,0 +1,60 @@
+{
+  "book": "Jeremiah",
+  "chapter": 26,
+  "questions": [
+    {
+      "id": "jeremiah-26-q1",
+      "type": "multiple_choice",
+      "question": "What happened to Jeremiah after his temple sermon in chapter 26?",
+      "options": [
+        "He fled away to the land of Egypt to escape from his enemies",
+        "The people made him a great leader over the whole of the city",
+        "The priests and prophets seized him, saying he deserved death",
+        "The king rewarded him richly with much gold and with great honor"
+      ],
+      "answer": "The priests and prophets seized him, saying he deserved death",
+      "verse_reference": "Jeremiah 26:8"
+    },
+    {
+      "id": "jeremiah-26-q2",
+      "type": "multiple_choice",
+      "question": "Which other prophet, who prophesied like Jeremiah, was killed by King Jehoiakim?",
+      "options": [
+        "Micaiah son of Imlah",
+        "Hananiah the false prophet",
+        "Baruch the faithful scribe",
+        "Uriah son of Shemaiah"
+      ],
+      "answer": "Uriah son of Shemaiah",
+      "verse_reference": "Jeremiah 26:20-23"
+    },
+    {
+      "id": "jeremiah-26-q3",
+      "type": "true_false",
+      "question": "Ahikam son of Shaphan protected Jeremiah so he was not handed over to be put to death.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 26:24"
+    },
+    {
+      "id": "jeremiah-26-q4",
+      "type": "fill_blank",
+      "question": "Some elders recalled that _____ the Morasthite (Micah) had prophesied in Hezekiah's day and was not killed.",
+      "answer": "Micah",
+      "accept": [
+        "Michah"
+      ],
+      "verse_reference": "Jeremiah 26:18"
+    },
+    {
+      "id": "jeremiah-26-q5",
+      "type": "fill_blank",
+      "question": "Mend your ways and your deeds, and obey the voice of the LORD your God, and the LORD will relent of the _____.",
+      "answer": "disaster",
+      "accept": [
+        "evil",
+        "plague"
+      ],
+      "verse_reference": "Jeremiah 26:13"
+    }
+  ]
+}

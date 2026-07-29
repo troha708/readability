@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 90,
+  "questions": [
+    {
+      "id": "psalms-90-q1",
+      "type": "multiple_choice",
+      "question": "Who is named as the author of Psalm 90?",
+      "options": [
+        "Solomon, the wise ruler",
+        "David, the shepherd king",
+        "Asaph, the temple singer",
+        "Moses, the man of God"
+      ],
+      "answer": "Moses, the man of God",
+      "verse_reference": "Psalm 90:title"
+    },
+    {
+      "id": "psalms-90-q2",
+      "type": "multiple_choice",
+      "question": "How long does the psalm say a thousand years are in God's sight?",
+      "options": [
+        "Like a mighty rushing river that never once runs dry",
+        "Like yesterday when it is past, or a watch in the night",
+        "Like the very deep sea that has no bottom to be found",
+        "Like the eternal hills that never once move from their place"
+      ],
+      "answer": "Like yesterday when it is past, or a watch in the night",
+      "verse_reference": "Psalm 90:4"
+    },
+    {
+      "id": "psalms-90-q3",
+      "type": "true_false",
+      "question": "The psalm asks God to teach us to number our days that we may get a heart of wisdom.",
+      "answer": "true",
+      "verse_reference": "Psalm 90:12"
+    },
+    {
+      "id": "psalms-90-q4",
+      "type": "fill_blank",
+      "question": "Lord, you have been our _____ place in all generations.",
+      "answer": "dwelling",
+      "verse_reference": "Psalm 90:1"
+    },
+    {
+      "id": "psalms-90-q5",
+      "type": "fill_blank",
+      "question": "Teach us to number our days that we may get a heart of _____.",
+      "answer": "wisdom",
+      "verse_reference": "Psalm 90:12"
+    }
+  ]
+}

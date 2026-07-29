@@ -1,0 +1,61 @@
+{
+  "book": "Job",
+  "chapter": 5,
+  "questions": [
+    {
+      "id": "job-5-q1",
+      "type": "multiple_choice",
+      "question": "What did Eliphaz say about the one whom God reproves?",
+      "options": [
+        "He is cursed",
+        "He is forgotten",
+        "He is utterly destroyed",
+        "He is blessed/happy"
+      ],
+      "answer": "He is blessed/happy",
+      "verse_reference": "Job 5:17"
+    },
+    {
+      "id": "job-5-q2",
+      "type": "multiple_choice",
+      "question": "What did Eliphaz urge Job to do?",
+      "options": [
+        "Flee far from his home and friends",
+        "Curse God and be done with life",
+        "Seek God and commit his cause to him",
+        "Give up and wait quietly for death"
+      ],
+      "answer": "Seek God and commit his cause to him",
+      "verse_reference": "Job 5:8"
+    },
+    {
+      "id": "job-5-q3",
+      "type": "true_false",
+      "question": "Eliphaz said God wounds, but his hands also heal.",
+      "answer": "true",
+      "verse_reference": "Job 5:18"
+    },
+    {
+      "id": "job-5-q4",
+      "type": "fill_blank",
+      "question": "Eliphaz said God catches the wise in their own _____.",
+      "answer": "craftiness",
+      "accept": [
+        "subtlety",
+        "subtilty"
+      ],
+      "verse_reference": "Job 5:13"
+    },
+    {
+      "id": "job-5-q5",
+      "type": "fill_blank",
+      "question": "Eliphaz said man is born to _____ as the sparks fly upward.",
+      "answer": "trouble",
+      "accept": [
+        "misery",
+        "travail"
+      ],
+      "verse_reference": "Job 5:7"
+    }
+  ]
+}

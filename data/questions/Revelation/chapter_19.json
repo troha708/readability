@@ -1,0 +1,58 @@
+{
+  "book": "Revelation",
+  "chapter": 19,
+  "questions": [
+    {
+      "id": "rev_19_1",
+      "type": "multiple_choice",
+      "question": "What event is announced in heaven with great rejoicing?",
+      "options": [
+        "The making of a new heaven",
+        "The wedding supper of the Lamb",
+        "The final fall of Satan",
+        "The sounding of the last trumpet"
+      ],
+      "correct": "The wedding supper of the Lamb",
+      "verse_ref": "Revelation 19:7-9",
+      "feedback": "The wedding of the Lamb has come, and his bride has made herself ready."
+    },
+    {
+      "id": "rev_19_2",
+      "type": "multiple_choice",
+      "question": "What name is written on the rider of the white horse?",
+      "options": [
+        "The only begotten Son of God",
+        "King of Kings and Lord of Lords",
+        "The Alpha and the Omega, the First",
+        "The Almighty, who was and is"
+      ],
+      "correct": "King of Kings and Lord of Lords",
+      "verse_ref": "Revelation 19:16",
+      "feedback": "On his robe and thigh: KING OF KINGS AND LORD OF LORDS."
+    },
+    {
+      "id": "rev_19_3",
+      "type": "true_false",
+      "question": "The beast and the false prophet were thrown into the lake of fire.",
+      "correct": true,
+      "verse_ref": "Revelation 19:20",
+      "feedback": "The beast and the false prophet were thrown alive into the fiery lake of burning sulfur."
+    },
+    {
+      "id": "rev_19_4",
+      "type": "fill_in_the_blank",
+      "question": "The rider's name is the _____ of God.",
+      "correct": "Word",
+      "verse_ref": "Revelation 19:13",
+      "feedback": "His name is the Word of God."
+    },
+    {
+      "id": "rev_19_5",
+      "type": "fill_in_the_blank",
+      "question": "The fine linen the bride wears represents the righteous _____ of God's holy people.",
+      "correct": "acts",
+      "verse_ref": "Revelation 19:8",
+      "feedback": "Fine linen stands for the righteous acts of God's holy people."
+    }
+  ]
+}

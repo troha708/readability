@@ -1,0 +1,53 @@
+{
+  "book": "1 Kings",
+  "chapter": 16,
+  "questions": [
+    {
+      "id": "1-kings-16-q1",
+      "type": "multiple_choice",
+      "question": "Which king \"did more evil than all before him\" and married Jezebel?",
+      "options": [
+        "Omri",
+        "Ahab",
+        "Zimri",
+        "Baasha"
+      ],
+      "answer": "Ahab",
+      "verse_reference": "1 Kings 16:30-31"
+    },
+    {
+      "id": "1-kings-16-q2",
+      "type": "multiple_choice",
+      "question": "What happened to Zimri after he seized the throne for seven days?",
+      "options": [
+        "He was crowned king over all Israel",
+        "He reigned in peace for many years",
+        "He burned the palace over himself and died",
+        "He fled away into the wilderness and escaped"
+      ],
+      "answer": "He burned the palace over himself and died",
+      "verse_reference": "1 Kings 16:18"
+    },
+    {
+      "id": "1-kings-16-q3",
+      "type": "true_false",
+      "question": "Ahab set up an altar for Baal in Samaria.",
+      "answer": "true",
+      "verse_reference": "1 Kings 16:32"
+    },
+    {
+      "id": "1-kings-16-q4",
+      "type": "fill_blank",
+      "question": "_____ did more evil in God's sight than all the kings before him.",
+      "answer": "Ahab",
+      "verse_reference": "1 Kings 16:30"
+    },
+    {
+      "id": "1-kings-16-q5",
+      "type": "fill_blank",
+      "question": "Ahab married _____, who promoted the worship of Baal.",
+      "answer": "Jezebel",
+      "verse_reference": "1 Kings 16:31"
+    }
+  ]
+}

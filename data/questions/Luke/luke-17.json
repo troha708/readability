@@ -1,0 +1,53 @@
+{
+  "book": "Luke",
+  "chapter": 17,
+  "questions": [
+    {
+      "id": "luke-17-q1",
+      "type": "multiple_choice",
+      "question": "How many lepers did Jesus heal on his way to Jerusalem?",
+      "options": [
+        "One",
+        "Twelve",
+        "Five",
+        "Ten"
+      ],
+      "answer": "Ten",
+      "verse_reference": "Luke 17:12-14"
+    },
+    {
+      "id": "luke-17-q2",
+      "type": "multiple_choice",
+      "question": "How many of the healed lepers came back to thank Jesus?",
+      "options": [
+        "All ten",
+        "None",
+        "Five",
+        "One"
+      ],
+      "answer": "One",
+      "verse_reference": "Luke 17:15-16"
+    },
+    {
+      "id": "luke-17-q3",
+      "type": "true_false",
+      "question": "The one leper who returned to thank Jesus was a Samaritan.",
+      "answer": "true",
+      "verse_reference": "Luke 17:16"
+    },
+    {
+      "id": "luke-17-q4",
+      "type": "fill_blank",
+      "question": "God's Kingdom is within _____.",
+      "answer": "you",
+      "verse_reference": "Luke 17:21"
+    },
+    {
+      "id": "luke-17-q5",
+      "type": "fill_blank",
+      "question": "If you had faith like a grain of mustard seed, you would tell this sycamore tree, 'Be uprooted and be planted in the sea,' and it would _____ you.",
+      "answer": "obey",
+      "verse_reference": "Luke 17:6"
+    }
+  ]
+}

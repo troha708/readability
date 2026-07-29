@@ -1,0 +1,53 @@
+{
+  "book": "Leviticus",
+  "chapter": 26,
+  "questions": [
+    {
+      "id": "leviticus-26-q1",
+      "type": "multiple_choice",
+      "question": "What does chapter 26 set before Israel?",
+      "options": [
+        "Penalties for many forbidden sexual relations",
+        "Blessings for obedience and curses for sin",
+        "Duties assigned to the serving priests",
+        "New offerings for the sacred festivals"
+      ],
+      "answer": "Blessings for obedience and curses for sin",
+      "verse_reference": "Leviticus 26:3-14"
+    },
+    {
+      "id": "leviticus-26-q2",
+      "type": "multiple_choice",
+      "question": "What did God promise if Israel obeyed him?",
+      "options": [
+        "Gold, silver, and great wealth",
+        "Rain, fruitful land, and peace",
+        "A temple of stone in Jerusalem",
+        "A king to rule over the nations"
+      ],
+      "answer": "Rain, fruitful land, and peace",
+      "verse_reference": "Leviticus 26:4-6"
+    },
+    {
+      "id": "leviticus-26-q3",
+      "type": "true_false",
+      "question": "God promised to walk among them and be their God if they kept his covenant.",
+      "answer": "true",
+      "verse_reference": "Leviticus 26:12"
+    },
+    {
+      "id": "leviticus-26-q4",
+      "type": "fill_blank",
+      "question": "God said, \"I will walk among you and be your God, and you shall be my _____.\"",
+      "answer": "people",
+      "verse_reference": "Leviticus 26:12"
+    },
+    {
+      "id": "leviticus-26-q5",
+      "type": "fill_blank",
+      "question": "Even in judgment, God promised to remember his _____ with Jacob, Isaac, and Abraham.",
+      "answer": "covenant",
+      "verse_reference": "Leviticus 26:42"
+    }
+  ]
+}

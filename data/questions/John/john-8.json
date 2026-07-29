@@ -1,0 +1,53 @@
+{
+  "book": "John",
+  "chapter": 8,
+  "questions": [
+    {
+      "id": "john-8-q1",
+      "type": "multiple_choice",
+      "question": "When the scribes and Pharisees brought the woman caught in adultery, what did Jesus do?",
+      "options": [
+        "He at once condemned the woman",
+        "He sent her away to the priests",
+        "He called over all his disciples",
+        "He wrote on the ground with his finger"
+      ],
+      "answer": "He wrote on the ground with his finger",
+      "verse_reference": "John 8:6"
+    },
+    {
+      "id": "john-8-q2",
+      "type": "multiple_choice",
+      "question": "Jesus said 'Before Abraham was born, _____.' How did he finish this statement?",
+      "options": [
+        "I AM",
+        "I was chosen",
+        "I existed",
+        "I was sent"
+      ],
+      "answer": "I AM",
+      "verse_reference": "John 8:58"
+    },
+    {
+      "id": "john-8-q3",
+      "type": "true_false",
+      "question": "Jesus told the woman caught in adultery to go and sin no more.",
+      "answer": "true",
+      "verse_reference": "John 8:11"
+    },
+    {
+      "id": "john-8-q4",
+      "type": "fill_blank",
+      "question": "Jesus said, 'I am the _____ of the world. He who follows me will not walk in the darkness, but will have the light of life.'",
+      "answer": "light",
+      "verse_reference": "John 8:12"
+    },
+    {
+      "id": "john-8-q5",
+      "type": "fill_blank",
+      "question": "You will know the truth, and the _____ will make you free.",
+      "answer": "truth",
+      "verse_reference": "John 8:32"
+    }
+  ]
+}

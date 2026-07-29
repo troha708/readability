@@ -1,0 +1,56 @@
+{
+  "book": "Isaiah",
+  "chapter": 23,
+  "questions": [
+    {
+      "id": "isaiah-23-q1",
+      "type": "multiple_choice",
+      "question": "Against which wealthy trading city is the oracle in Isaiah 23?",
+      "options": [
+        "Babylon",
+        "Damascus",
+        "Nineveh",
+        "Tyre"
+      ],
+      "answer": "Tyre",
+      "verse_reference": "Isaiah 23:1"
+    },
+    {
+      "id": "isaiah-23-q2",
+      "type": "multiple_choice",
+      "question": "How is Tyre described before its fall?",
+      "options": [
+        "A bestower of crowns whose merchants were princes",
+        "A holy city wholly set apart for the worship of God",
+        "A fortress of cut stone that no army could ever breach",
+        "A poor little village quite forgotten by all the nations"
+      ],
+      "answer": "A bestower of crowns whose merchants were princes",
+      "verse_reference": "Isaiah 23:8"
+    },
+    {
+      "id": "isaiah-23-q3",
+      "type": "true_false",
+      "question": "Isaiah 23 says Tyre will be forgotten for seventy years.",
+      "answer": "true",
+      "verse_reference": "Isaiah 23:15"
+    },
+    {
+      "id": "isaiah-23-q4",
+      "type": "fill_blank",
+      "question": "The oracle concerning _____. Wail, O ships of Tarshish!",
+      "answer": "Tyre",
+      "verse_reference": "Isaiah 23:1"
+    },
+    {
+      "id": "isaiah-23-q5",
+      "type": "fill_blank",
+      "question": "Tyre will be forgotten for seventy years, like the days of one _____.",
+      "answer": "king",
+      "accept": [
+        "king's"
+      ],
+      "verse_reference": "Isaiah 23:15"
+    }
+  ]
+}

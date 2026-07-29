@@ -1,0 +1,53 @@
+{
+  "book": "Deuteronomy",
+  "chapter": 9,
+  "questions": [
+    {
+      "id": "deuteronomy-9-q1",
+      "type": "multiple_choice",
+      "question": "Why did God give Israel the land?",
+      "options": [
+        "Because of their own righteousness and their faithful obedience",
+        "Because of their strength and their victories in battle",
+        "Not their righteousness, but the nations' sin and his promise",
+        "Because of their great wealth and their many offerings"
+      ],
+      "answer": "Not their righteousness, but the nations' sin and his promise",
+      "verse_reference": "Deuteronomy 9:4-6"
+    },
+    {
+      "id": "deuteronomy-9-q2",
+      "type": "multiple_choice",
+      "question": "What past sin does Moses recall in detail?",
+      "options": [
+        "The golden calf at Horeb",
+        "The spies",
+        "The rebellion of Korah and his men",
+        "The sin at Peor"
+      ],
+      "answer": "The golden calf at Horeb",
+      "verse_reference": "Deuteronomy 9:16"
+    },
+    {
+      "id": "deuteronomy-9-q3",
+      "type": "true_false",
+      "question": "Moses fasted forty days and nights interceding for Israel after the golden calf.",
+      "answer": "true",
+      "verse_reference": "Deuteronomy 9:18-25"
+    },
+    {
+      "id": "deuteronomy-9-q4",
+      "type": "fill_blank",
+      "question": "Moses told Israel it was not for their _____ that God was giving them the land.",
+      "answer": "righteousness",
+      "verse_reference": "Deuteronomy 9:6"
+    },
+    {
+      "id": "deuteronomy-9-q5",
+      "type": "fill_blank",
+      "question": "Moses reminded them they had made a molten _____ at Horeb.",
+      "answer": "calf",
+      "verse_reference": "Deuteronomy 9:16"
+    }
+  ]
+}

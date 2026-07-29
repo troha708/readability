@@ -1,0 +1,59 @@
+{
+  "book": "1 Thessalonians",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "1thess_2_1",
+      "type": "multiple_choice",
+      "question": "Where had Paul and his companions suffered before coming to Thessalonica?",
+      "options": [
+        "Athens",
+        "Philippi",
+        "Old Corinth",
+        "Berea"
+      ],
+      "correct": "Philippi",
+      "verse_ref": "1 Thessalonians 2:2",
+      "feedback": "Paul mentions having previously suffered and been mistreated at Philippi."
+    },
+    {
+      "id": "1thess_2_2",
+      "type": "multiple_choice",
+      "question": "Paul compared his care for the Thessalonians to what?",
+      "options": [
+        "A nursing mother caring for her children",
+        "A patient teacher instructing his students",
+        "A great king ruling over his people",
+        "A faithful shepherd tending his sheep"
+      ],
+      "correct": "A nursing mother caring for her children",
+      "verse_ref": "1 Thessalonians 2:7",
+      "feedback": "Paul said he was gentle among them, like a nursing mother caring for her own children."
+    },
+    {
+      "id": "1thess_2_3",
+      "type": "true_false",
+      "question": "Paul says he worked night and day so as not to be a burden to the Thessalonians.",
+      "correct": true,
+      "verse_ref": "1 Thessalonians 2:9",
+      "feedback": "Paul reminded them that he labored night and day to not burden any of them while preaching."
+    },
+    {
+      "id": "1thess_2_4",
+      "type": "fill_in_the_blank",
+      "question": "Paul says he did not seek _____ from the Thessalonians or from anyone else, though as apostles of Christ they could have made demands.",
+      "correct": "praise",
+      "accept": ["glory"],
+      "verse_ref": "1 Thessalonians 2:6",
+      "feedback": "Paul did not seek praise from the Thessalonians or anyone else, though as apostles of Christ they could have made demands."
+    },
+    {
+      "id": "1thess_2_5",
+      "type": "fill_in_the_blank",
+      "question": "Paul called the Thessalonians his glory and _____.",
+      "correct": "joy",
+      "verse_ref": "1 Thessalonians 2:20",
+      "feedback": "Paul says the Thessalonians are his glory and joy."
+    }
+  ]
+}

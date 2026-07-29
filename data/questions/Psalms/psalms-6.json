@@ -1,0 +1,56 @@
+{
+  "book": "Psalms",
+  "chapter": 6,
+  "questions": [
+    {
+      "id": "psalms-6-q1",
+      "type": "multiple_choice",
+      "question": "What is the mood of Psalm 6?",
+      "options": [
+        "A song of triumph after victory",
+        "A meditation on the law of God",
+        "A plea for mercy in distress",
+        "A hymn of praise for creation"
+      ],
+      "answer": "A plea for mercy in distress",
+      "verse_reference": "Psalm 6:2"
+    },
+    {
+      "id": "psalms-6-q2",
+      "type": "multiple_choice",
+      "question": "How does David describe his weariness?",
+      "options": [
+        "He floods his bed with tears every night",
+        "He keeps silent and hides his grief",
+        "He fasts in sackcloth for many days",
+        "He cries aloud in the city streets at noon"
+      ],
+      "answer": "He floods his bed with tears every night",
+      "verse_reference": "Psalm 6:6"
+    },
+    {
+      "id": "psalms-6-q3",
+      "type": "true_false",
+      "question": "David is confident the LORD has heard his plea and accepts his prayer.",
+      "answer": "true",
+      "verse_reference": "Psalm 6:9"
+    },
+    {
+      "id": "psalms-6-q4",
+      "type": "fill_blank",
+      "question": "O LORD, heal me, for my _____ are troubled.",
+      "answer": "bones",
+      "verse_reference": "Psalm 6:2"
+    },
+    {
+      "id": "psalms-6-q5",
+      "type": "fill_blank",
+      "question": "In death there is no remembrance of you; in Sheol who will give you _____?",
+      "answer": "praise",
+      "accept": [
+        "thanks"
+      ],
+      "verse_reference": "Psalm 6:5"
+    }
+  ]
+}

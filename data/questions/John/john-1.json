@@ -1,0 +1,56 @@
+{
+  "book": "John",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "john-1-q1",
+      "type": "multiple_choice",
+      "question": "According to the opening of John's Gospel, what was 'in the beginning'?",
+      "options": [
+        "The Word",
+        "The Law",
+        "The Light",
+        "The Spirit"
+      ],
+      "answer": "The Word",
+      "verse_reference": "John 1:1"
+    },
+    {
+      "id": "john-1-q2",
+      "type": "multiple_choice",
+      "question": "What was the name of the man sent from God to testify about the Light?",
+      "options": [
+        "Simon",
+        "John",
+        "Philip",
+        "Andrew"
+      ],
+      "answer": "John",
+      "verse_reference": "John 1:6-7"
+    },
+    {
+      "id": "john-1-q3",
+      "type": "true_false",
+      "question": "John the Baptist said he was the Christ when the priests and Levites asked him.",
+      "answer": "false",
+      "verse_reference": "John 1:20"
+    },
+    {
+      "id": "john-1-q4",
+      "type": "fill_blank",
+      "question": "The next day, he saw Jesus coming to him, and said, 'Behold, the _____ of God, who takes away the sin of the world!'",
+      "answer": "Lamb",
+      "verse_reference": "John 1:29"
+    },
+    {
+      "id": "john-1-q5",
+      "type": "fill_blank",
+      "question": "He first found his own brother, Simon, and said to him, 'We have found the _____!'",
+      "answer": "Messiah",
+      "accept": [
+        "Messias"
+      ],
+      "verse_reference": "John 1:41"
+    }
+  ]
+}

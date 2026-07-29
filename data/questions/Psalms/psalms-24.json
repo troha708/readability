@@ -1,0 +1,56 @@
+{
+  "book": "Psalms",
+  "chapter": 24,
+  "questions": [
+    {
+      "id": "psalms-24-q1",
+      "type": "multiple_choice",
+      "question": "To whom does the earth and its fullness belong?",
+      "options": [
+        "Kings",
+        "The LORD",
+        "The nations",
+        "Mankind"
+      ],
+      "answer": "The LORD",
+      "verse_reference": "Psalm 24:1"
+    },
+    {
+      "id": "psalms-24-q2",
+      "type": "multiple_choice",
+      "question": "Who may ascend the hill of the LORD?",
+      "options": [
+        "He who brings the very richest of offerings",
+        "He who is wealthy and honored by men",
+        "He who is mighty and strong in war",
+        "He who has clean hands and a pure heart"
+      ],
+      "answer": "He who has clean hands and a pure heart",
+      "verse_reference": "Psalm 24:4"
+    },
+    {
+      "id": "psalms-24-q3",
+      "type": "true_false",
+      "question": "The psalm calls the gates to lift up their heads that the King of glory may come in.",
+      "answer": "true",
+      "verse_reference": "Psalm 24:7"
+    },
+    {
+      "id": "psalms-24-q4",
+      "type": "fill_blank",
+      "question": "Who is this King of glory? The LORD, strong and _____.",
+      "answer": "mighty",
+      "verse_reference": "Psalm 24:8"
+    },
+    {
+      "id": "psalms-24-q5",
+      "type": "fill_blank",
+      "question": "The earth is the LORD's and the _____ thereof.",
+      "answer": "fullness",
+      "accept": [
+        "fulness"
+      ],
+      "verse_reference": "Psalm 24:1"
+    }
+  ]
+}

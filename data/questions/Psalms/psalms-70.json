@@ -1,0 +1,60 @@
+{
+  "book": "Psalms",
+  "chapter": 70,
+  "questions": [
+    {
+      "id": "psalms-70-q1",
+      "type": "multiple_choice",
+      "question": "What is the urgent plea of Psalm 70?",
+      "options": [
+        "Bless the LORD, O my soul, and forget not!",
+        "Have mercy on me, O God, for I have sinned!",
+        "Make haste, O God, to deliver me!",
+        "Sing to the LORD a new song of praise!"
+      ],
+      "answer": "Make haste, O God, to deliver me!",
+      "verse_reference": "Psalm 70:1"
+    },
+    {
+      "id": "psalms-70-q2",
+      "type": "multiple_choice",
+      "question": "What does David ask for those who seek God?",
+      "options": [
+        "That they remain silent before him",
+        "That they scatter and flee far away",
+        "That they rejoice and be glad in God",
+        "That they be put to shame and turn back"
+      ],
+      "answer": "That they rejoice and be glad in God",
+      "verse_reference": "Psalm 70:4"
+    },
+    {
+      "id": "psalms-70-q3",
+      "type": "true_false",
+      "question": "David calls himself poor and needy and asks God to hasten to him.",
+      "answer": "true",
+      "verse_reference": "Psalm 70:5"
+    },
+    {
+      "id": "psalms-70-q4",
+      "type": "fill_blank",
+      "question": "Make haste to help me, O LORD! ... O LORD, do not _____!",
+      "answer": "delay",
+      "accept": [
+        "tarry"
+      ],
+      "verse_reference": "Psalm 70:1, 5"
+    },
+    {
+      "id": "psalms-70-q5",
+      "type": "fill_blank",
+      "question": "May those who love your salvation always say, 'Let God be _____!'",
+      "answer": "magnified",
+      "accept": [
+        "exalted",
+        "praised"
+      ],
+      "verse_reference": "Psalm 70:4"
+    }
+  ]
+}

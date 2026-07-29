@@ -1,0 +1,56 @@
+{
+  "book": "Galatians",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "gal-3-q1",
+      "type": "multiple_choice",
+      "question": "Paul asks the Galatians if they received the Spirit by works of the law or by what?",
+      "options": [
+        "Circumcision",
+        "Hearing with faith",
+        "Temple sacrifices",
+        "Baptism"
+      ],
+      "answer": "Hearing with faith",
+      "verse_reference": "Galatians 3:2"
+    },
+    {
+      "id": "gal-3-q2",
+      "type": "multiple_choice",
+      "question": "Paul says the law served as what until Christ came?",
+      "options": [
+        "A reigning king",
+        "A truly righteous judge",
+        "A serving priest",
+        "A guardian or tutor"
+      ],
+      "answer": "A guardian or tutor",
+      "verse_reference": "Galatians 3:24"
+    },
+    {
+      "id": "gal-3-q3",
+      "type": "true_false",
+      "question": "Paul says there is neither Jew nor Gentile, slave nor free, male nor female — all are one in Christ Jesus.",
+      "answer": "true",
+      "verse_reference": "Galatians 3:28"
+    },
+    {
+      "id": "gal-3-q4",
+      "type": "fill_blank",
+      "question": "Christ redeemed us from the _____ of the law by becoming a curse for us.",
+      "answer": "curse",
+      "verse_reference": "Galatians 3:13"
+    },
+    {
+      "id": "gal-3-q5",
+      "type": "fill_blank",
+      "question": "If you belong to Christ, then you are Abraham's _____, and heirs according to the promise.",
+      "answer": "seed",
+      "accept": [
+        "offspring"
+      ],
+      "verse_reference": "Galatians 3:29"
+    }
+  ]
+}

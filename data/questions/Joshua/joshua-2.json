@@ -1,0 +1,53 @@
+{
+  "book": "Joshua",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "joshua-2-q1",
+      "type": "multiple_choice",
+      "question": "Who hid the two Israelite spies in Jericho?",
+      "options": [
+        "The king",
+        "A soldier",
+        "A priest",
+        "Rahab"
+      ],
+      "answer": "Rahab",
+      "verse_reference": "Joshua 2:1-4"
+    },
+    {
+      "id": "joshua-2-q2",
+      "type": "multiple_choice",
+      "question": "What did Rahab tie in her window as a sign so she would be spared?",
+      "options": [
+        "A fine linen cloth",
+        "A scarlet cord",
+        "A white flag",
+        "A lamp"
+      ],
+      "answer": "A scarlet cord",
+      "verse_reference": "Joshua 2:18-21"
+    },
+    {
+      "id": "joshua-2-q3",
+      "type": "true_false",
+      "question": "Rahab told the spies that fear of Israel had fallen on the people of Jericho.",
+      "answer": "true",
+      "verse_reference": "Joshua 2:9-11"
+    },
+    {
+      "id": "joshua-2-q4",
+      "type": "fill_blank",
+      "question": "_____ hid the spies on her roof under stalks of flax.",
+      "answer": "Rahab",
+      "verse_reference": "Joshua 2:6"
+    },
+    {
+      "id": "joshua-2-q5",
+      "type": "fill_blank",
+      "question": "Rahab tied a _____ cord in her window so she and her family would be spared.",
+      "answer": "scarlet",
+      "verse_reference": "Joshua 2:18"
+    }
+  ]
+}

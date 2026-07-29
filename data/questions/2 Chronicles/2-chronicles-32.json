@@ -1,0 +1,56 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 32,
+  "questions": [
+    {
+      "id": "2-chronicles-32-q1",
+      "type": "multiple_choice",
+      "question": "Which king of Assyria invaded Judah in Hezekiah's days?",
+      "options": [
+        "Tiglath-pileser",
+        "Sennacherib",
+        "Shalmaneser",
+        "Sargon"
+      ],
+      "answer": "Sennacherib",
+      "verse_reference": "2 Chronicles 32:1"
+    },
+    {
+      "id": "2-chronicles-32-q2",
+      "type": "multiple_choice",
+      "question": "How was the Assyrian army defeated?",
+      "options": [
+        "The LORD sent an angel who destroyed the army",
+        "A long and grinding siege slowly wore the army down",
+        "A sudden and violent flood swept the whole camp away",
+        "A severe famine starved the entire invading force"
+      ],
+      "answer": "The LORD sent an angel who destroyed the army",
+      "verse_reference": "2 Chronicles 32:21"
+    },
+    {
+      "id": "2-chronicles-32-q3",
+      "type": "true_false",
+      "question": "Hezekiah and the prophet Isaiah prayed and cried out to heaven over the threat.",
+      "answer": "true",
+      "verse_reference": "2 Chronicles 32:20"
+    },
+    {
+      "id": "2-chronicles-32-q4",
+      "type": "fill_blank",
+      "question": "Hezekiah told the people, 'With us is the LORD our God, to help us and to fight our _____.'",
+      "answer": "battles",
+      "verse_reference": "2 Chronicles 32:8"
+    },
+    {
+      "id": "2-chronicles-32-q5",
+      "type": "fill_blank",
+      "question": "When Hezekiah was sick to death, he prayed and the LORD gave him a _____.",
+      "answer": "sign",
+      "accept": [
+        "wonder"
+      ],
+      "verse_reference": "2 Chronicles 32:24"
+    }
+  ]
+}

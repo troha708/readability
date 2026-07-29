@@ -1,0 +1,53 @@
+{
+  "book": "Ruth",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "ruth-4-q1",
+      "type": "multiple_choice",
+      "question": "What did Boaz do at the city gate?",
+      "options": [
+        "Held a public trial against the nearer kinsman",
+        "Arranged to redeem Naomi's land and marry Ruth",
+        "Was chosen by the elders to rule the town",
+        "Bought a house in the center of Bethlehem"
+      ],
+      "answer": "Arranged to redeem Naomi's land and marry Ruth",
+      "verse_reference": "Ruth 4:9-10"
+    },
+    {
+      "id": "ruth-4-q2",
+      "type": "multiple_choice",
+      "question": "Whose grandfather did Ruth's son Obed become?",
+      "options": [
+        "Saul",
+        "David",
+        "Solomon",
+        "Samuel"
+      ],
+      "answer": "David",
+      "verse_reference": "Ruth 4:17-22"
+    },
+    {
+      "id": "ruth-4-q3",
+      "type": "true_false",
+      "question": "Ruth, a Moabite, became an ancestor of King David.",
+      "answer": "true",
+      "verse_reference": "Ruth 4:17"
+    },
+    {
+      "id": "ruth-4-q4",
+      "type": "fill_blank",
+      "question": "Ruth and Boaz had a son named _____, the grandfather of David.",
+      "answer": "Obed",
+      "verse_reference": "Ruth 4:17"
+    },
+    {
+      "id": "ruth-4-q5",
+      "type": "fill_blank",
+      "question": "Obed was the father of Jesse, the father of _____.",
+      "answer": "David",
+      "verse_reference": "Ruth 4:17-22"
+    }
+  ]
+}

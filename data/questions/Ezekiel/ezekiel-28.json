@@ -1,0 +1,62 @@
+{
+  "book": "Ezekiel",
+  "chapter": 28,
+  "questions": [
+    {
+      "id": "ezekiel-28-q1",
+      "type": "multiple_choice",
+      "question": "What sin is the prince of Tyre condemned for in Ezekiel 28?",
+      "options": [
+        "Greed: hoarding up to himself the great wealth of many lands",
+        "Idolatry: bowing down to worship all of the gods of the sea",
+        "Pride: claiming to be a god, though he is but a man",
+        "Cruelty: harshly enslaving all of the people of Judah"
+      ],
+      "answer": "Pride: claiming to be a god, though he is but a man",
+      "verse_reference": "Ezekiel 28:2"
+    },
+    {
+      "id": "ezekiel-28-q2",
+      "type": "multiple_choice",
+      "question": "How is the king of Tyre described before his fall in the lament?",
+      "options": [
+        "Full of wisdom and beauty, in Eden, until unrighteousness was found in him",
+        "A wise and very patient judge who ruled all of the people with great justice",
+        "Poor and lowly, but raised up from nothing to rule over the wealthy city",
+        "A mighty warrior who had never even once lost a single battle in the field"
+      ],
+      "answer": "Full of wisdom and beauty, in Eden, until unrighteousness was found in him",
+      "verse_reference": "Ezekiel 28:12-15"
+    },
+    {
+      "id": "ezekiel-28-q3",
+      "type": "true_false",
+      "question": "Ezekiel 28 also pronounces judgment on Sidon.",
+      "answer": "true",
+      "verse_reference": "Ezekiel 28:21-22"
+    },
+    {
+      "id": "ezekiel-28-q4",
+      "type": "fill_blank",
+      "question": "Your heart is _____, and you have said, 'I am a god,' yet you are but a man.",
+      "answer": "proud",
+      "accept": [
+        "exalted",
+        "high"
+      ],
+      "verse_reference": "Ezekiel 28:2"
+    },
+    {
+      "id": "ezekiel-28-q5",
+      "type": "fill_blank",
+      "question": "You were blameless in your ways from the day you were created, until _____ was found in you.",
+      "answer": "wickedness",
+      "accept": [
+        "unrighteousness",
+        "iniquity",
+        "perversity"
+      ],
+      "verse_reference": "Ezekiel 28:15"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "book": "Numbers",
+  "chapter": 18,
+  "questions": [
+    {
+      "id": "numbers-18-q1",
+      "type": "multiple_choice",
+      "question": "Who was responsible for the priesthood and the sanctuary?",
+      "options": [
+        "The whole of the nation",
+        "Aaron and his sons",
+        "The kings",
+        "The elders"
+      ],
+      "answer": "Aaron and his sons",
+      "verse_reference": "Numbers 18:1-7"
+    },
+    {
+      "id": "numbers-18-q2",
+      "type": "multiple_choice",
+      "question": "How were the Levites supported, since they had no land inheritance?",
+      "options": [
+        "By gifts from the king's treasury",
+        "By farming their own fields",
+        "By the tithes of Israel",
+        "By trading in the city gates"
+      ],
+      "answer": "By the tithes of Israel",
+      "verse_reference": "Numbers 18:21"
+    },
+    {
+      "id": "numbers-18-q3",
+      "type": "true_false",
+      "question": "The LORD himself was said to be the inheritance of the priests.",
+      "answer": "true",
+      "verse_reference": "Numbers 18:20"
+    },
+    {
+      "id": "numbers-18-q4",
+      "type": "fill_blank",
+      "question": "The Levites received the _____ of Israel as their inheritance for their service.",
+      "answer": "tithes",
+      "accept": ["tithe", "tenth"],
+      "verse_reference": "Numbers 18:21"
+    },
+    {
+      "id": "numbers-18-q5",
+      "type": "fill_blank",
+      "question": "The LORD told Aaron, \"I am your portion and your _____,\" among the Israelites.",
+      "answer": "inheritance",
+      "verse_reference": "Numbers 18:20"
+    }
+  ]
+}

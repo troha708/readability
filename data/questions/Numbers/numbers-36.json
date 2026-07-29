@@ -1,0 +1,53 @@
+{
+  "book": "Numbers",
+  "chapter": 36,
+  "questions": [
+    {
+      "id": "numbers-36-q1",
+      "type": "multiple_choice",
+      "question": "What was the concern about the daughters of Zelophehad marrying?",
+      "options": [
+        "That their inheritance might pass to another tribe",
+        "That they were still too young to marry",
+        "That they had wholly abandoned the ancient faith of Israel",
+        "That their wealth would make them proud"
+      ],
+      "answer": "That their inheritance might pass to another tribe",
+      "verse_reference": "Numbers 36:3-4"
+    },
+    {
+      "id": "numbers-36-q2",
+      "type": "multiple_choice",
+      "question": "What was the solution given?",
+      "options": [
+        "They were forbidden to marry at all",
+        "They forfeited their share of the land",
+        "They were to marry within their own tribe",
+        "They had to move to another region"
+      ],
+      "answer": "They were to marry within their own tribe",
+      "verse_reference": "Numbers 36:6"
+    },
+    {
+      "id": "numbers-36-q3",
+      "type": "true_false",
+      "question": "The daughters of Zelophehad obeyed and married within their father's tribe.",
+      "answer": "true",
+      "verse_reference": "Numbers 36:10-11"
+    },
+    {
+      "id": "numbers-36-q4",
+      "type": "fill_blank",
+      "question": "The daughters were to marry within their own _____ so the inheritance stayed in it.",
+      "answer": "tribe",
+      "verse_reference": "Numbers 36:6"
+    },
+    {
+      "id": "numbers-36-q5",
+      "type": "fill_blank",
+      "question": "This ruling kept each tribe's _____ from passing to another tribe.",
+      "answer": "inheritance",
+      "verse_reference": "Numbers 36:7"
+    }
+  ]
+}

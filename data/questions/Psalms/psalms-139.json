@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 139,
+  "questions": [
+    {
+      "id": "psalms-139-q1",
+      "type": "multiple_choice",
+      "question": "What is the theme of Psalm 139?",
+      "options": [
+        "God's covenant promises that were made to David and his line",
+        "God's mighty acts in delivering the people of Israel from Egypt",
+        "God's righteous judgments poured out upon the wicked nations",
+        "God's complete knowledge of and presence with the psalmist"
+      ],
+      "answer": "God's complete knowledge of and presence with the psalmist",
+      "verse_reference": "Psalm 139:1-4"
+    },
+    {
+      "id": "psalms-139-q2",
+      "type": "multiple_choice",
+      "question": "How does David describe how he was made?",
+      "options": [
+        "Fearfully and wonderfully made",
+        "Hastily and without great care",
+        "Common as the dust of earth",
+        "By the chance of blind nature"
+      ],
+      "answer": "Fearfully and wonderfully made",
+      "verse_reference": "Psalm 139:14"
+    },
+    {
+      "id": "psalms-139-q3",
+      "type": "true_false",
+      "question": "David asks God to search him and know his heart, and lead him in the way everlasting.",
+      "answer": "true",
+      "verse_reference": "Psalm 139:23-24"
+    },
+    {
+      "id": "psalms-139-q4",
+      "type": "fill_blank",
+      "question": "O LORD, you have _____ me and known me!",
+      "answer": "searched",
+      "verse_reference": "Psalm 139:1"
+    },
+    {
+      "id": "psalms-139-q5",
+      "type": "fill_blank",
+      "question": "I praise you, for I am fearfully and _____ made.",
+      "answer": "wonderfully",
+      "verse_reference": "Psalm 139:14"
+    }
+  ]
+}

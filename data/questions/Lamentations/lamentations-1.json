@@ -1,0 +1,56 @@
+{
+  "book": "Lamentations",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "lamentations-1-q1",
+      "type": "multiple_choice",
+      "question": "How does the book of Lamentations begin?",
+      "options": [
+        "'Arise, shine, for your light has come!'",
+        "'Praise the LORD, O Jerusalem, the great joyful city!'",
+        "'How lonely sits the city that was full of people!'",
+        "'Sing aloud, O daughter of Zion!'"
+      ],
+      "answer": "'How lonely sits the city that was full of people!'",
+      "verse_reference": "Lamentations 1:1"
+    },
+    {
+      "id": "lamentations-1-q2",
+      "type": "multiple_choice",
+      "question": "To what is the once-great city of Jerusalem compared in chapter 1?",
+      "options": [
+        "A mother, rejoicing over her many children",
+        "A queen, seated in royal splendor",
+        "A widow, weeping bitterly in the night",
+        "A bride, adorned for her wedding day"
+      ],
+      "answer": "A widow, weeping bitterly in the night",
+      "verse_reference": "Lamentations 1:1-2"
+    },
+    {
+      "id": "lamentations-1-q3",
+      "type": "true_false",
+      "question": "Lamentations 1 acknowledges that Jerusalem suffered because of the multitude of her transgressions.",
+      "answer": "true",
+      "verse_reference": "Lamentations 1:5"
+    },
+    {
+      "id": "lamentations-1-q4",
+      "type": "fill_blank",
+      "question": "How lonely sits the _____ that was full of people!",
+      "answer": "city",
+      "verse_reference": "Lamentations 1:1"
+    },
+    {
+      "id": "lamentations-1-q5",
+      "type": "fill_blank",
+      "question": "Is it nothing to you, all you who pass by? Look and see if there is any _____ like my sorrow.",
+      "answer": "sorrow",
+      "accept": [
+        "pain"
+      ],
+      "verse_reference": "Lamentations 1:12"
+    }
+  ]
+}

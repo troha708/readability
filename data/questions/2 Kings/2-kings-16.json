@@ -1,0 +1,53 @@
+{
+  "book": "2 Kings",
+  "chapter": 16,
+  "questions": [
+    {
+      "id": "2-kings-16-q1",
+      "type": "multiple_choice",
+      "question": "What did wicked King Ahaz of Judah do?",
+      "options": [
+        "Made a lasting peace with Assyria",
+        "Repaired the temple and restored its true worship",
+        "Removed the idols from the high places",
+        "Sacrificed to other gods and even his own son"
+      ],
+      "answer": "Sacrificed to other gods and even his own son",
+      "verse_reference": "2 Kings 16:3-4"
+    },
+    {
+      "id": "2-kings-16-q2",
+      "type": "multiple_choice",
+      "question": "To whom did Ahaz appeal for help, becoming his vassal?",
+      "options": [
+        "The king of Egypt",
+        "The king of Aram",
+        "The king of Babylon",
+        "The king of Assyria"
+      ],
+      "answer": "The king of Assyria",
+      "verse_reference": "2 Kings 16:7"
+    },
+    {
+      "id": "2-kings-16-q3",
+      "type": "true_false",
+      "question": "Ahaz put up a pagan-style altar in place of the bronze altar at the temple.",
+      "answer": "true",
+      "verse_reference": "2 Kings 16:10-16"
+    },
+    {
+      "id": "2-kings-16-q4",
+      "type": "fill_blank",
+      "question": "King _____ of Judah even sacrificed his own son in the fire.",
+      "answer": "Ahaz",
+      "verse_reference": "2 Kings 16:3"
+    },
+    {
+      "id": "2-kings-16-q5",
+      "type": "fill_blank",
+      "question": "Ahaz sent tribute and asked the king of _____ to rescue him.",
+      "answer": "Assyria",
+      "verse_reference": "2 Kings 16:7-8"
+    }
+  ]
+}

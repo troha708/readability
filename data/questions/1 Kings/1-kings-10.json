@@ -1,0 +1,53 @@
+{
+  "book": "1 Kings",
+  "chapter": 10,
+  "questions": [
+    {
+      "id": "1-kings-10-q1",
+      "type": "multiple_choice",
+      "question": "Who came to test Solomon with hard questions?",
+      "options": [
+        "Bathsheba",
+        "Jezebel",
+        "The Queen of Sheba",
+        "Pharaoh's daughter"
+      ],
+      "answer": "The Queen of Sheba",
+      "verse_reference": "1 Kings 10:1"
+    },
+    {
+      "id": "1-kings-10-q2",
+      "type": "multiple_choice",
+      "question": "How did the Queen of Sheba react to Solomon's wisdom and wealth?",
+      "options": [
+        "She was overwhelmed (breathless)",
+        "She returned home without a word",
+        "She accused him of deceiving her",
+        "She bowed and offered him tribute"
+      ],
+      "answer": "She was overwhelmed (breathless)",
+      "verse_reference": "1 Kings 10:4-5"
+    },
+    {
+      "id": "1-kings-10-q3",
+      "type": "true_false",
+      "question": "The Queen of Sheba brought Solomon great gifts of gold and spices.",
+      "answer": "true",
+      "verse_reference": "1 Kings 10:10"
+    },
+    {
+      "id": "1-kings-10-q4",
+      "type": "fill_blank",
+      "question": "The Queen of _____ came to test Solomon with hard questions.",
+      "answer": "Sheba",
+      "verse_reference": "1 Kings 10:1"
+    },
+    {
+      "id": "1-kings-10-q5",
+      "type": "fill_blank",
+      "question": "Solomon exceeded all the kings of the earth in riches and _____.",
+      "answer": "wisdom",
+      "verse_reference": "1 Kings 10:23"
+    }
+  ]
+}

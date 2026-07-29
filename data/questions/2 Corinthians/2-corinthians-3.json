@@ -1,0 +1,56 @@
+{
+  "book": "2 Corinthians",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "2cor-3-q1",
+      "type": "multiple_choice",
+      "question": "Paul says the Corinthians themselves are a letter written not with ink but with what?",
+      "options": [
+        "The blood of the covenant",
+        "The fire of the altar",
+        "The hand of the prophet Moses",
+        "The Spirit of the living God"
+      ],
+      "answer": "The Spirit of the living God",
+      "verse_reference": "2 Corinthians 3:3"
+    },
+    {
+      "id": "2cor-3-q2",
+      "type": "multiple_choice",
+      "question": "What covered Moses' face after he spoke with God?",
+      "options": [
+        "His hands",
+        "A mask",
+        "A veil",
+        "A cloth"
+      ],
+      "answer": "A veil",
+      "verse_reference": "2 Corinthians 3:13"
+    },
+    {
+      "id": "2cor-3-q3",
+      "type": "true_false",
+      "question": "Paul says the letter of the law gives life.",
+      "answer": "false",
+      "verse_reference": "2 Corinthians 3:6"
+    },
+    {
+      "id": "2cor-3-q4",
+      "type": "fill_blank",
+      "question": "The letter kills, but the Spirit gives _____.",
+      "answer": "life",
+      "verse_reference": "2 Corinthians 3:6"
+    },
+    {
+      "id": "2cor-3-q5",
+      "type": "fill_blank",
+      "question": "Where the Spirit of the Lord is, there is _____.",
+      "answer": "freedom",
+      "accept": [
+        "liberty"
+      ],
+      "verse_reference": "2 Corinthians 3:17"
+    }
+  ]
+}

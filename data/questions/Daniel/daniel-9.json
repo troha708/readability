@@ -1,0 +1,53 @@
+{
+  "book": "Daniel",
+  "chapter": 9,
+  "questions": [
+    {
+      "id": "daniel-9-q1",
+      "type": "multiple_choice",
+      "question": "What did Daniel do after reading Jeremiah's prophecy of seventy years?",
+      "options": [
+        "Marched straight out to war against the gathered Persians",
+        "Rebuilt the broken-down and ruined walls of Jerusalem",
+        "Prayed and confessed the sins of his people with fasting",
+        "Crowned for the exiles a brand new king over them all"
+      ],
+      "answer": "Prayed and confessed the sins of his people with fasting",
+      "verse_reference": "Daniel 9:3-5"
+    },
+    {
+      "id": "daniel-9-q2",
+      "type": "multiple_choice",
+      "question": "What revelation did Gabriel bring Daniel in chapter 9?",
+      "options": [
+        "The dream of the great metal statue",
+        "The prophecy of seventy weeks (sevens)",
+        "The writing on the wall at the feast",
+        "The vision of the four great beasts"
+      ],
+      "answer": "The prophecy of seventy weeks (sevens)",
+      "verse_reference": "Daniel 9:24"
+    },
+    {
+      "id": "daniel-9-q3",
+      "type": "true_false",
+      "question": "Daniel's prayer acknowledges that to the Lord belong mercy and forgiveness, though they had rebelled.",
+      "answer": "true",
+      "verse_reference": "Daniel 9:9"
+    },
+    {
+      "id": "daniel-9-q4",
+      "type": "fill_blank",
+      "question": "Seventy _____ are decreed about your people and your holy city.",
+      "answer": "weeks",
+      "verse_reference": "Daniel 9:24"
+    },
+    {
+      "id": "daniel-9-q5",
+      "type": "fill_blank",
+      "question": "O Lord, hear; O Lord, forgive; O Lord, pay attention and act; delay not, for your own _____.",
+      "answer": "sake",
+      "verse_reference": "Daniel 9:19"
+    }
+  ]
+}

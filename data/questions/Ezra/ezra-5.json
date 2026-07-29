@@ -1,0 +1,59 @@
+{
+  "book": "Ezra",
+  "chapter": 5,
+  "questions": [
+    {
+      "id": "ezra-5-q1",
+      "type": "multiple_choice",
+      "question": "Which prophets encouraged the rebuilding of the temple?",
+      "options": [
+        "Isaiah and Jeremiah both",
+        "Haggai and Zechariah",
+        "Elijah and Elisha",
+        "Joel and Amos"
+      ],
+      "answer": "Haggai and Zechariah",
+      "verse_reference": "Ezra 5:1"
+    },
+    {
+      "id": "ezra-5-q2",
+      "type": "multiple_choice",
+      "question": "What did the governor Tattenai ask the builders?",
+      "options": [
+        "Who authorized them to build this house",
+        "How long the work would take them to finish",
+        "Where they had gotten so much silver",
+        "Why they had abandoned the old altar"
+      ],
+      "answer": "Who authorized them to build this house",
+      "verse_reference": "Ezra 5:3"
+    },
+    {
+      "id": "ezra-5-q3",
+      "type": "true_false",
+      "question": "The eye of God was on the elders so the work was not stopped while a letter went to Darius.",
+      "answer": "true",
+      "verse_reference": "Ezra 5:5"
+    },
+    {
+      "id": "ezra-5-q4",
+      "type": "fill_blank",
+      "question": "The Jews answered that they were rebuilding the house that a great king of Israel had _____.",
+      "answer": "built",
+      "accept": [
+        "builded"
+      ],
+      "verse_reference": "Ezra 5:11"
+    },
+    {
+      "id": "ezra-5-q5",
+      "type": "fill_blank",
+      "question": "They asked that a search be made in the royal archives of _____ for Cyrus's decree.",
+      "answer": "Babylon",
+      "accept": [
+        "Babel"
+      ],
+      "verse_reference": "Ezra 5:17"
+    }
+  ]
+}

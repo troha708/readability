@@ -1,0 +1,56 @@
+{
+  "book": "Acts",
+  "chapter": 27,
+  "questions": [
+    {
+      "id": "acts-27-q1",
+      "type": "multiple_choice",
+      "question": "What happened to the ship carrying Paul to Rome?",
+      "options": [
+        "It was captured by pirates",
+        "It was wrecked in a storm near Malta",
+        "It sank in deep water",
+        "It was suddenly turned back toward Caesarea"
+      ],
+      "answer": "It was wrecked in a storm near Malta",
+      "verse_reference": "Acts 27:41,44"
+    },
+    {
+      "id": "acts-27-q2",
+      "type": "multiple_choice",
+      "question": "How many people were on the ship with Paul?",
+      "options": [
+        "76",
+        "276",
+        "376",
+        "176"
+      ],
+      "answer": "276",
+      "verse_reference": "Acts 27:37"
+    },
+    {
+      "id": "acts-27-q3",
+      "type": "true_false",
+      "question": "Some of the people on the ship died in the shipwreck.",
+      "answer": "false",
+      "verse_reference": "Acts 27:44"
+    },
+    {
+      "id": "acts-27-q4",
+      "type": "fill_blank",
+      "question": "Paul told them, 'I urge you to take _____, for there will be no loss of life among you, but only of the ship.'",
+      "answer": "courage",
+      "accept": [
+        "cheer"
+      ],
+      "verse_reference": "Acts 27:22"
+    },
+    {
+      "id": "acts-27-q5",
+      "type": "fill_blank",
+      "question": "An angel of God stood by Paul and said, 'Don't be afraid, Paul. You must stand before _____.'",
+      "answer": "Caesar",
+      "verse_reference": "Acts 27:24"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "book": "Psalms",
+  "chapter": 64,
+  "questions": [
+    {
+      "id": "psalms-64-q1",
+      "type": "multiple_choice",
+      "question": "What does David ask God to hide him from?",
+      "options": [
+        "The false words of the prophets",
+        "The open wars of the nations",
+        "The secret plots of the wicked",
+        "The proud boasts of the kings"
+      ],
+      "answer": "The secret plots of the wicked",
+      "verse_reference": "Psalm 64:2"
+    },
+    {
+      "id": "psalms-64-q2",
+      "type": "multiple_choice",
+      "question": "What do the wicked use as their weapon in this psalm?",
+      "options": [
+        "Sharp swords, drawing them in secret",
+        "Bitter words, aiming them like arrows",
+        "Heavy stones, gathering them by night",
+        "Deep pits, digging them for the just"
+      ],
+      "answer": "Bitter words, aiming them like arrows",
+      "verse_reference": "Psalm 64:3"
+    },
+    {
+      "id": "psalms-64-q3",
+      "type": "true_false",
+      "question": "The psalm says God will shoot his arrow at the wicked, and they will be wounded.",
+      "answer": "true",
+      "verse_reference": "Psalm 64:7"
+    },
+    {
+      "id": "psalms-64-q4",
+      "type": "fill_blank",
+      "question": "Let the righteous one rejoice in the LORD and take refuge in him! Let all the upright in heart _____!",
+      "answer": "exult",
+      "accept": [
+        "glory",
+        "rejoice",
+        "praise",
+        "boast"
+      ],
+      "verse_reference": "Psalm 64:10"
+    },
+    {
+      "id": "psalms-64-q5",
+      "type": "fill_blank",
+      "question": "Then all mankind fears; they tell what God has brought about and ponder what he has _____.",
+      "answer": "done",
+      "accept": [
+        "wrought"
+      ],
+      "verse_reference": "Psalm 64:9"
+    }
+  ]
+}

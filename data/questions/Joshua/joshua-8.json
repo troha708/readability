@@ -1,0 +1,53 @@
+{
+  "book": "Joshua",
+  "chapter": 8,
+  "questions": [
+    {
+      "id": "joshua-8-q1",
+      "type": "multiple_choice",
+      "question": "How did Israel finally capture Ai?",
+      "options": [
+        "A flood that breached the walls",
+        "A direct assault on the gate",
+        "A siege that starved the city",
+        "An ambush behind the city"
+      ],
+      "answer": "An ambush behind the city",
+      "verse_reference": "Joshua 8:2-19"
+    },
+    {
+      "id": "joshua-8-q2",
+      "type": "multiple_choice",
+      "question": "What did Joshua do after the victory, at Mount Ebal?",
+      "options": [
+        "Held a great feast to mark the victory",
+        "Built an altar and read the law to the people",
+        "Rested the whole army and divided up all the plunder",
+        "Crowned a king to rule over the land"
+      ],
+      "answer": "Built an altar and read the law to the people",
+      "verse_reference": "Joshua 8:30-35"
+    },
+    {
+      "id": "joshua-8-q3",
+      "type": "true_false",
+      "question": "Joshua read all the words of the law, the blessings and the curses, to the people.",
+      "answer": "true",
+      "verse_reference": "Joshua 8:34-35"
+    },
+    {
+      "id": "joshua-8-q4",
+      "type": "fill_blank",
+      "question": "Israel took Ai by setting an _____ behind the city.",
+      "answer": "ambush",
+      "verse_reference": "Joshua 8:2"
+    },
+    {
+      "id": "joshua-8-q5",
+      "type": "fill_blank",
+      "question": "Joshua built an altar to the LORD on Mount _____.",
+      "answer": "Ebal",
+      "verse_reference": "Joshua 8:30"
+    }
+  ]
+}

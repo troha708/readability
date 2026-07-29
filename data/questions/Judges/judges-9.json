@@ -1,0 +1,53 @@
+{
+  "book": "Judges",
+  "chapter": 9,
+  "questions": [
+    {
+      "id": "judges-9-q1",
+      "type": "multiple_choice",
+      "question": "Who killed his seventy brothers and made himself king?",
+      "options": [
+        "Gideon",
+        "Young Jotham",
+        "Tola",
+        "Abimelech"
+      ],
+      "answer": "Abimelech",
+      "verse_reference": "Judges 9:5-6"
+    },
+    {
+      "id": "judges-9-q2",
+      "type": "multiple_choice",
+      "question": "How did Abimelech die?",
+      "options": [
+        "He was trampled by his fleeing soldiers",
+        "A woman dropped a millstone on his head",
+        "His own armor-bearer turned and killed him",
+        "He was struck down by an archer's arrow"
+      ],
+      "answer": "A woman dropped a millstone on his head",
+      "verse_reference": "Judges 9:53"
+    },
+    {
+      "id": "judges-9-q3",
+      "type": "true_false",
+      "question": "Jotham told a parable of the trees seeking a king to warn against Abimelech.",
+      "answer": "true",
+      "verse_reference": "Judges 9:8-15"
+    },
+    {
+      "id": "judges-9-q4",
+      "type": "fill_blank",
+      "question": "_____ killed his seventy brothers to seize power.",
+      "answer": "Abimelech",
+      "verse_reference": "Judges 9:5"
+    },
+    {
+      "id": "judges-9-q5",
+      "type": "fill_blank",
+      "question": "A woman dropped an upper _____ on Abimelech's head, crushing his skull.",
+      "answer": "millstone",
+      "verse_reference": "Judges 9:53"
+    }
+  ]
+}

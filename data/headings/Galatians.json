@@ -1,0 +1,82 @@
+{
+  "book": "Galatians",
+  "source": "Berean Standard Bible (CC0 Public Domain)",
+  "chapters": {
+    "1": [
+      {
+        "beforeVerse": 1,
+        "heading": "Paul’s Greeting to the Galatians"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "No Other Gospel"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "Paul Preaches the Gospel"
+      }
+    ],
+    "2": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Council at Jerusalem"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "Paul Confronts Cephas"
+      }
+    ],
+    "3": [
+      {
+        "beforeVerse": 1,
+        "heading": "Faith and Belief"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "Christ Has Redeemed Us"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "The Purpose of the Law"
+      },
+      {
+        "beforeVerse": 26,
+        "heading": "Sons through Faith in Christ"
+      }
+    ],
+    "4": [
+      {
+        "beforeVerse": 1,
+        "heading": "Sons and Heirs"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "Paul’s Concern for the Galatians"
+      },
+      {
+        "beforeVerse": 21,
+        "heading": "Hagar and Sarah"
+      }
+    ],
+    "5": [
+      {
+        "beforeVerse": 1,
+        "heading": "Freedom in Christ"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "Walking by the Spirit"
+      }
+    ],
+    "6": [
+      {
+        "beforeVerse": 1,
+        "heading": "Carry One Another’s Burdens"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "Final Warnings and Blessings"
+      }
+    ]
+  }
+}

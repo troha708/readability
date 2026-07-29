@@ -1,0 +1,53 @@
+{
+  "book": "Luke",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "luke-2-q1",
+      "type": "multiple_choice",
+      "question": "Where was Jesus born?",
+      "options": [
+        "Jerusalem",
+        "Nazareth",
+        "Capernaum",
+        "Bethlehem"
+      ],
+      "answer": "Bethlehem",
+      "verse_reference": "Luke 2:4-7"
+    },
+    {
+      "id": "luke-2-q2",
+      "type": "multiple_choice",
+      "question": "Who were the first people told about Jesus' birth by the angels?",
+      "options": [
+        "King Herod",
+        "The Pharisees",
+        "The wise men",
+        "Shepherds"
+      ],
+      "answer": "Shepherds",
+      "verse_reference": "Luke 2:8-12"
+    },
+    {
+      "id": "luke-2-q3",
+      "type": "true_false",
+      "question": "Mary laid baby Jesus in a manger because there was no room for them in the inn.",
+      "answer": "true",
+      "verse_reference": "Luke 2:7"
+    },
+    {
+      "id": "luke-2-q4",
+      "type": "fill_blank",
+      "question": "Glory to God in the highest, on earth peace, good will toward _____.",
+      "answer": "men",
+      "verse_reference": "Luke 2:14"
+    },
+    {
+      "id": "luke-2-q5",
+      "type": "fill_blank",
+      "question": "Jesus increased in _____ and stature, and in favor with God and men.",
+      "answer": "wisdom",
+      "verse_reference": "Luke 2:52"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "book": "Psalms",
+  "chapter": 73,
+  "questions": [
+    {
+      "id": "psalms-73-q1",
+      "type": "multiple_choice",
+      "question": "What did Asaph confess he had nearly done?",
+      "options": [
+        "His heart had grown bitterly cold, for he forgot all the kindness that the LORD had so often shown him",
+        "His feet had almost stumbled, for he envied the arrogant when he saw the prosperity of the wicked",
+        "His hands had grown weak and weary, for the long labor of the righteous seemed to him entirely in vain",
+        "His eyes had grown faint and dim, for he could no longer see the straight path that God had set before him"
+      ],
+      "answer": "His feet had almost stumbled, for he envied the arrogant when he saw the prosperity of the wicked",
+      "verse_reference": "Psalm 73:2-3"
+    },
+    {
+      "id": "psalms-73-q2",
+      "type": "multiple_choice",
+      "question": "Where did Asaph finally understand the end of the wicked?",
+      "options": [
+        "When he went into the sanctuary of God",
+        "When he cried out to God in the night",
+        "When he heard the words of the prophet",
+        "When he remembered the deeds of old"
+      ],
+      "answer": "When he went into the sanctuary of God",
+      "verse_reference": "Psalm 73:17"
+    },
+    {
+      "id": "psalms-73-q3",
+      "type": "true_false",
+      "question": "Asaph concludes that it is good to be near God, his refuge.",
+      "answer": "true",
+      "verse_reference": "Psalm 73:28"
+    },
+    {
+      "id": "psalms-73-q4",
+      "type": "fill_blank",
+      "question": "Whom have I in heaven but you? And there is nothing on earth that I desire besides _____.",
+      "answer": "you",
+      "accept": [
+        "thee"
+      ],
+      "verse_reference": "Psalm 73:25"
+    },
+    {
+      "id": "psalms-73-q5",
+      "type": "fill_blank",
+      "question": "God is the strength of my heart and my _____ forever.",
+      "answer": "portion",
+      "verse_reference": "Psalm 73:26"
+    }
+  ]
+}

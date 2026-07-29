@@ -1,0 +1,56 @@
+{
+  "book": "Isaiah",
+  "chapter": 45,
+  "questions": [
+    {
+      "id": "isaiah-45-q1",
+      "type": "multiple_choice",
+      "question": "Whom does God call his anointed in Isaiah 45, even though he does not know God?",
+      "options": [
+        "Hezekiah",
+        "Cyrus",
+        "Darius",
+        "Nebuchadnezzar"
+      ],
+      "answer": "Cyrus",
+      "verse_reference": "Isaiah 45:1"
+    },
+    {
+      "id": "isaiah-45-q2",
+      "type": "multiple_choice",
+      "question": "What does God repeatedly declare about himself in Isaiah 45?",
+      "options": [
+        "I am one among the gods of the earth",
+        "I am hidden, and none can find me",
+        "My work is finished, and I now rest",
+        "I am the LORD, and there is no other"
+      ],
+      "answer": "I am the LORD, and there is no other",
+      "verse_reference": "Isaiah 45:5"
+    },
+    {
+      "id": "isaiah-45-q3",
+      "type": "true_false",
+      "question": "Isaiah 45 says to God, 'Truly, you are a God who hides himself,' and calls every knee to bow.",
+      "answer": "true",
+      "verse_reference": "Isaiah 45:15, 23"
+    },
+    {
+      "id": "isaiah-45-q4",
+      "type": "fill_blank",
+      "question": "I am the LORD, and there is no _____; besides me there is no God.",
+      "answer": "other",
+      "accept": [
+        "else"
+      ],
+      "verse_reference": "Isaiah 45:5"
+    },
+    {
+      "id": "isaiah-45-q5",
+      "type": "fill_blank",
+      "question": "Turn to me and be saved, all the ends of the _____! For I am God, and there is no other.",
+      "answer": "earth",
+      "verse_reference": "Isaiah 45:22"
+    }
+  ]
+}

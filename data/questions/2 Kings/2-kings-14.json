@@ -1,0 +1,53 @@
+{
+  "book": "2 Kings",
+  "chapter": 14,
+  "questions": [
+    {
+      "id": "2-kings-14-q1",
+      "type": "multiple_choice",
+      "question": "Which king of Judah is described in the first part of chapter 14?",
+      "options": [
+        "Uzziah",
+        "Hezekiah",
+        "Ahaz",
+        "Amaziah"
+      ],
+      "answer": "Amaziah",
+      "verse_reference": "2 Kings 14:1"
+    },
+    {
+      "id": "2-kings-14-q2",
+      "type": "multiple_choice",
+      "question": "What foolish thing did Amaziah do after defeating Edom?",
+      "options": [
+        "Built a great temple for the worship of false gods",
+        "Challenged Israel to battle and was defeated",
+        "Fled away from his throne out into the desert",
+        "Made a binding treaty with the king of Egypt"
+      ],
+      "answer": "Challenged Israel to battle and was defeated",
+      "verse_reference": "2 Kings 14:8-12"
+    },
+    {
+      "id": "2-kings-14-q3",
+      "type": "true_false",
+      "question": "Jeroboam II of Israel restored the borders of Israel.",
+      "answer": "true",
+      "verse_reference": "2 Kings 14:25"
+    },
+    {
+      "id": "2-kings-14-q4",
+      "type": "fill_blank",
+      "question": "King _____ of Judah challenged Israel to battle and was defeated.",
+      "answer": "Amaziah",
+      "verse_reference": "2 Kings 14:8-12"
+    },
+    {
+      "id": "2-kings-14-q5",
+      "type": "fill_blank",
+      "question": "_____ II, king of Israel, restored Israel's borders during his reign.",
+      "answer": "Jeroboam",
+      "verse_reference": "2 Kings 14:23-25"
+    }
+  ]
+}

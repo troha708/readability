@@ -1,0 +1,53 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 24,
+  "questions": [
+    {
+      "id": "2-chronicles-24-q1",
+      "type": "multiple_choice",
+      "question": "What good thing did Joash do early in his reign?",
+      "options": [
+        "Conquered the land of Edom",
+        "Repaired the house of the LORD",
+        "Wrote many psalms of praise",
+        "Built a great royal palace"
+      ],
+      "answer": "Repaired the house of the LORD",
+      "verse_reference": "2 Chronicles 24:4"
+    },
+    {
+      "id": "2-chronicles-24-q2",
+      "type": "multiple_choice",
+      "question": "What did Joash do after Jehoiada the priest died?",
+      "options": [
+        "Set free all the slaves of Judah",
+        "Built a second temple to the LORD",
+        "Abandoned the LORD and served idols",
+        "Continued all the reforms he had begun"
+      ],
+      "answer": "Abandoned the LORD and served idols",
+      "verse_reference": "2 Chronicles 24:17-18"
+    },
+    {
+      "id": "2-chronicles-24-q3",
+      "type": "true_false",
+      "question": "Joash had Zechariah the son of Jehoiada stoned to death for rebuking the people.",
+      "answer": "true",
+      "verse_reference": "2 Chronicles 24:20-22"
+    },
+    {
+      "id": "2-chronicles-24-q4",
+      "type": "fill_blank",
+      "question": "Money was collected for temple repairs in a _____ at the gate.",
+      "answer": "chest",
+      "verse_reference": "2 Chronicles 24:8"
+    },
+    {
+      "id": "2-chronicles-24-q5",
+      "type": "fill_blank",
+      "question": "Joash was killed by his own _____ on his bed.",
+      "answer": "servants",
+      "verse_reference": "2 Chronicles 24:25"
+    }
+  ]
+}

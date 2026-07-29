@@ -1,0 +1,53 @@
+{
+  "book": "Joshua",
+  "chapter": 20,
+  "questions": [
+    {
+      "id": "joshua-20-q1",
+      "type": "multiple_choice",
+      "question": "What does chapter 20 establish?",
+      "options": [
+        "Kings",
+        "Cities of refuge",
+        "The yearly festivals",
+        "Tithes"
+      ],
+      "answer": "Cities of refuge",
+      "verse_reference": "Joshua 20:2"
+    },
+    {
+      "id": "joshua-20-q2",
+      "type": "multiple_choice",
+      "question": "Who could flee to a city of refuge?",
+      "options": [
+        "One who owed a debt he could not pay",
+        "Any criminal fleeing from justice",
+        "One who killed a person accidentally",
+        "Any foreigner living in the land"
+      ],
+      "answer": "One who killed a person accidentally",
+      "verse_reference": "Joshua 20:3"
+    },
+    {
+      "id": "joshua-20-q3",
+      "type": "true_false",
+      "question": "The cities of refuge protected someone from the avenger of blood until a trial.",
+      "answer": "true",
+      "verse_reference": "Joshua 20:6"
+    },
+    {
+      "id": "joshua-20-q4",
+      "type": "fill_blank",
+      "question": "Cities of _____ were appointed so the accidental killer could flee the avenger of blood.",
+      "answer": "refuge",
+      "verse_reference": "Joshua 20:2"
+    },
+    {
+      "id": "joshua-20-q5",
+      "type": "fill_blank",
+      "question": "The slayer was to stay in the city until the death of the high _____.",
+      "answer": "priest",
+      "verse_reference": "Joshua 20:6"
+    }
+  ]
+}

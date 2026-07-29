@@ -1,0 +1,53 @@
+{
+  "book": "Ecclesiastes",
+  "chapter": 12,
+  "questions": [
+    {
+      "id": "ecclesiastes-12-q1",
+      "type": "multiple_choice",
+      "question": "What does Ecclesiastes 12 urge the young to do?",
+      "options": [
+        "Honor your father and mother all of your days",
+        "Seek wisdom before pleasure while you are strong",
+        "Number your days, that you may gain a heart of wisdom",
+        "Remember your Creator in the days of your youth"
+      ],
+      "answer": "Remember your Creator in the days of your youth",
+      "verse_reference": "Ecclesiastes 12:1"
+    },
+    {
+      "id": "ecclesiastes-12-q2",
+      "type": "multiple_choice",
+      "question": "What is the conclusion of the whole matter in Ecclesiastes?",
+      "options": [
+        "Eat, drink, and enjoy your toil, for this is your portion in life",
+        "Love the LORD your God with all your heart and soul",
+        "Get wisdom, and with all your getting, get understanding",
+        "Fear God and keep his commandments, for this is the whole duty of man"
+      ],
+      "answer": "Fear God and keep his commandments, for this is the whole duty of man",
+      "verse_reference": "Ecclesiastes 12:13"
+    },
+    {
+      "id": "ecclesiastes-12-q3",
+      "type": "true_false",
+      "question": "Ecclesiastes 12 says God will bring every deed into judgment, including every secret thing.",
+      "answer": "true",
+      "verse_reference": "Ecclesiastes 12:14"
+    },
+    {
+      "id": "ecclesiastes-12-q4",
+      "type": "fill_blank",
+      "question": "Remember your _____ in the days of your youth.",
+      "answer": "Creator",
+      "verse_reference": "Ecclesiastes 12:1"
+    },
+    {
+      "id": "ecclesiastes-12-q5",
+      "type": "fill_blank",
+      "question": "Fear God and keep his commandments, for this is the whole _____ of man.",
+      "answer": "duty",
+      "verse_reference": "Ecclesiastes 12:13"
+    }
+  ]
+}

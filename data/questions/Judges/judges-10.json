@@ -1,0 +1,53 @@
+{
+  "book": "Judges",
+  "chapter": 10,
+  "questions": [
+    {
+      "id": "judges-10-q1",
+      "type": "multiple_choice",
+      "question": "What does chapter 10 record between the major judges?",
+      "options": [
+        "A great and decisive battle against the Philistines",
+        "Minor judges (Tola and Jair) and renewed oppression",
+        "The anointing and crowning of Israel's first king",
+        "A widespread famine that struck the whole land"
+      ],
+      "answer": "Minor judges (Tola and Jair) and renewed oppression",
+      "verse_reference": "Judges 10:1-9"
+    },
+    {
+      "id": "judges-10-q2",
+      "type": "multiple_choice",
+      "question": "What did Israel do that angered the LORD again?",
+      "options": [
+        "Built golden idols in the tabernacle",
+        "Served the gods of the surrounding nations",
+        "Refused to march out at all against the enemy",
+        "Made a treaty with the kings of Moab"
+      ],
+      "answer": "Served the gods of the surrounding nations",
+      "verse_reference": "Judges 10:6"
+    },
+    {
+      "id": "judges-10-q3",
+      "type": "true_false",
+      "question": "Israel cried out to the LORD, confessing that they had sinned.",
+      "answer": "true",
+      "verse_reference": "Judges 10:10-15"
+    },
+    {
+      "id": "judges-10-q4",
+      "type": "fill_blank",
+      "question": "When Israel put away their foreign _____, the LORD could bear their misery no longer.",
+      "answer": "gods",
+      "verse_reference": "Judges 10:16"
+    },
+    {
+      "id": "judges-10-q5",
+      "type": "fill_blank",
+      "question": "The minor judges _____ and Jair judged Israel in this chapter.",
+      "answer": "Tola",
+      "verse_reference": "Judges 10:1"
+    }
+  ]
+}

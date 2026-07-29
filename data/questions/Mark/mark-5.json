@@ -1,0 +1,53 @@
+{
+  "book": "Mark",
+  "chapter": 5,
+  "questions": [
+    {
+      "id": "mark-5-q1",
+      "type": "multiple_choice",
+      "question": "What was the name the demon-possessed man gave when Jesus asked?",
+      "options": [
+        "Beelzebub",
+        "Legion",
+        "Satan",
+        "Abaddon"
+      ],
+      "answer": "Legion",
+      "verse_reference": "Mark 5:9"
+    },
+    {
+      "id": "mark-5-q2",
+      "type": "multiple_choice",
+      "question": "What happened to the pigs after the unclean spirits entered them?",
+      "options": [
+        "They fell asleep",
+        "They ran into the city",
+        "They scattered far across the distant hills",
+        "They rushed into the sea and drowned"
+      ],
+      "answer": "They rushed into the sea and drowned",
+      "verse_reference": "Mark 5:13"
+    },
+    {
+      "id": "mark-5-q3",
+      "type": "true_false",
+      "question": "Jairus was a ruler of the synagogue who asked Jesus to heal his daughter.",
+      "answer": "true",
+      "verse_reference": "Mark 5:22-23"
+    },
+    {
+      "id": "mark-5-q4",
+      "type": "fill_blank",
+      "question": "Don't be afraid, only _____.",
+      "answer": "believe",
+      "verse_reference": "Mark 5:36"
+    },
+    {
+      "id": "mark-5-q5",
+      "type": "fill_blank",
+      "question": "Daughter, your _____ has made you well. Go in peace, and be cured of your disease.",
+      "answer": "faith",
+      "verse_reference": "Mark 5:34"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "1 Kings",
+  "chapter": 20,
+  "questions": [
+    {
+      "id": "1-kings-20-q1",
+      "type": "multiple_choice",
+      "question": "Which king of Aram (Syria) besieged Samaria?",
+      "options": [
+        "Tiglath-Pileser",
+        "Ben-Hadad",
+        "Hazael",
+        "Rezin"
+      ],
+      "answer": "Ben-Hadad",
+      "verse_reference": "1 Kings 20:1"
+    },
+    {
+      "id": "1-kings-20-q2",
+      "type": "multiple_choice",
+      "question": "What did God do for Ahab against the Arameans?",
+      "options": [
+        "Struck their king with fear",
+        "Sent a plague on the camp",
+        "Gave Israel victory twice",
+        "Delivered them by a storm"
+      ],
+      "answer": "Gave Israel victory twice",
+      "verse_reference": "1 Kings 20:13-29"
+    },
+    {
+      "id": "1-kings-20-q3",
+      "type": "true_false",
+      "question": "A prophet rebuked Ahab for sparing Ben-Hadad, whom God had devoted to destruction.",
+      "answer": "true",
+      "verse_reference": "1 Kings 20:42"
+    },
+    {
+      "id": "1-kings-20-q4",
+      "type": "fill_blank",
+      "question": "God gave Ahab _____ over the Arameans, so they would know he is the LORD.",
+      "answer": "victory",
+      "verse_reference": "1 Kings 20:13-28"
+    },
+    {
+      "id": "1-kings-20-q5",
+      "type": "fill_blank",
+      "question": "The Arameans thought the LORD was a god of the _____ but not of the valleys.",
+      "answer": "hills",
+      "verse_reference": "1 Kings 20:23-28"
+    }
+  ]
+}

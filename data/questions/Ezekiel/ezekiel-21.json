@@ -1,0 +1,53 @@
+{
+  "book": "Ezekiel",
+  "chapter": 21,
+  "questions": [
+    {
+      "id": "ezekiel-21-q1",
+      "type": "multiple_choice",
+      "question": "What is the central image of Ezekiel 21?",
+      "options": [
+        "The cup of wrath poured on the nations",
+        "The fire consuming the whole forest of the south",
+        "The flood rising against the city walls",
+        "The sword of the LORD, drawn against Jerusalem"
+      ],
+      "answer": "The sword of the LORD, drawn against Jerusalem",
+      "verse_reference": "Ezekiel 21:3-5"
+    },
+    {
+      "id": "ezekiel-21-q2",
+      "type": "multiple_choice",
+      "question": "What did the king of Babylon do at the parting of the ways, in Ezekiel 21?",
+      "options": [
+        "Offered up many sacrifices to all of his gods in hope of a victory",
+        "Used divination to decide whether to attack Jerusalem or Rabbah",
+        "Sent out his envoys to demand the immediate surrender of the city",
+        "Built up great siege ramps all the way around the city's walls"
+      ],
+      "answer": "Used divination to decide whether to attack Jerusalem or Rabbah",
+      "verse_reference": "Ezekiel 21:21"
+    },
+    {
+      "id": "ezekiel-21-q3",
+      "type": "true_false",
+      "question": "Ezekiel 21 is sometimes called the 'song of the sword.'",
+      "answer": "true",
+      "verse_reference": "Ezekiel 21:9-10"
+    },
+    {
+      "id": "ezekiel-21-q4",
+      "type": "fill_blank",
+      "question": "A _____, a sword is sharpened and also polished, says the LORD.",
+      "answer": "sword",
+      "verse_reference": "Ezekiel 21:9"
+    },
+    {
+      "id": "ezekiel-21-q5",
+      "type": "fill_blank",
+      "question": "The king of Babylon used divination by shaking the arrows and looking at the _____.",
+      "answer": "liver",
+      "verse_reference": "Ezekiel 21:21"
+    }
+  ]
+}

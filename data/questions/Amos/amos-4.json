@@ -1,0 +1,54 @@
+{
+  "book": "Amos",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "amos-4-q1",
+      "type": "multiple_choice",
+      "question": "What solemn warning is repeated in Amos 4?",
+      "options": [
+        "'Flee to the mountains, O Israel'",
+        "'Prepare to meet your God, O Israel'",
+        "'Return to your tents, O Israel'",
+        "'Rejoice in your wealth, O Israel'"
+      ],
+      "answer": "'Prepare to meet your God, O Israel'",
+      "verse_reference": "Amos 4:12"
+    },
+    {
+      "id": "amos-4-q2",
+      "type": "multiple_choice",
+      "question": "Despite many disasters God sent, what did Israel fail to do?",
+      "options": [
+        "Seek him (repeated refrain: 'yet you did not find me')",
+        "Rejoice in him (repeated refrain: 'yet you still did not praise me')",
+        "Return to him (repeated refrain: 'yet you did not return to me')",
+        "Fear him (repeated refrain: 'yet you did not tremble')"
+      ],
+      "answer": "Return to him (repeated refrain: 'yet you did not return to me')",
+      "verse_reference": "Amos 4:6-11"
+    },
+    {
+      "id": "amos-4-q3",
+      "type": "true_false",
+      "question": "Amos 4 condemns the wealthy women of Samaria, calling them 'cows of Bashan.'",
+      "answer": "true",
+      "verse_reference": "Amos 4:1"
+    },
+    {
+      "id": "amos-4-q4",
+      "type": "fill_blank",
+      "question": "Prepare to meet your _____, O Israel!",
+      "answer": "God",
+      "verse_reference": "Amos 4:12"
+    },
+    {
+      "id": "amos-4-q5",
+      "type": "fill_blank",
+      "question": "Yet you did not return to me, declares the _____.",
+      "answer": "LORD",
+      "accept": ["Jehovah", "Yahweh"],
+      "verse_reference": "Amos 4:6"
+    }
+  ]
+}

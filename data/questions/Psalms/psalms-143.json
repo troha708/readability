@@ -1,0 +1,58 @@
+{
+  "book": "Psalms",
+  "chapter": 143,
+  "questions": [
+    {
+      "id": "psalms-143-q1",
+      "type": "multiple_choice",
+      "question": "What does David acknowledge about being righteous before God?",
+      "options": [
+        "No one hiding can escape the eyes of God",
+        "No one living is righteous before God",
+        "No one trusting will be put to shame by God",
+        "No one seeking is turned away by God"
+      ],
+      "answer": "No one living is righteous before God",
+      "verse_reference": "Psalm 143:2"
+    },
+    {
+      "id": "psalms-143-q2",
+      "type": "multiple_choice",
+      "question": "What does David ask God to teach him?",
+      "options": [
+        "To rule the nations, for God is his king",
+        "To gain great wealth, for God is his portion",
+        "To do God's will, for God is his God",
+        "To win the battle, for God is his strength"
+      ],
+      "answer": "To do God's will, for God is his God",
+      "verse_reference": "Psalm 143:10"
+    },
+    {
+      "id": "psalms-143-q3",
+      "type": "true_false",
+      "question": "David asks to hear of God's steadfast love in the morning, for in God he trusts.",
+      "answer": "true",
+      "verse_reference": "Psalm 143:8"
+    },
+    {
+      "id": "psalms-143-q4",
+      "type": "fill_blank",
+      "question": "Teach me to do your _____, for you are my God!",
+      "answer": "will",
+      "verse_reference": "Psalm 143:10"
+    },
+    {
+      "id": "psalms-143-q5",
+      "type": "fill_blank",
+      "question": "Let me hear Your loving _____ in the morning, for in you I trust.",
+      "answer": "devotion",
+      "accept": [
+        "love",
+        "mercy",
+        "kindness"
+      ],
+      "verse_reference": "Psalm 143:8"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "2 Samuel",
+  "chapter": 5,
+  "questions": [
+    {
+      "id": "2-samuel-5-q1",
+      "type": "multiple_choice",
+      "question": "After Ish-bosheth's death, what happened to David?",
+      "options": [
+        "He fled from Jerusalem in fear",
+        "He was anointed king over all Israel",
+        "He fell sick and nearly died",
+        "He was imprisoned by Abner and his men"
+      ],
+      "answer": "He was anointed king over all Israel",
+      "verse_reference": "2 Samuel 5:3"
+    },
+    {
+      "id": "2-samuel-5-q2",
+      "type": "multiple_choice",
+      "question": "What city did David capture and make his capital?",
+      "options": [
+        "Jerusalem",
+        "Hebron",
+        "Shiloh",
+        "Bethlehem"
+      ],
+      "answer": "Jerusalem",
+      "verse_reference": "2 Samuel 5:6-9"
+    },
+    {
+      "id": "2-samuel-5-q3",
+      "type": "true_false",
+      "question": "David was thirty years old when he became king and reigned forty years.",
+      "answer": "true",
+      "verse_reference": "2 Samuel 5:4"
+    },
+    {
+      "id": "2-samuel-5-q4",
+      "type": "fill_blank",
+      "question": "David captured the stronghold of Zion and made _____ his capital city.",
+      "answer": "Jerusalem",
+      "verse_reference": "2 Samuel 5:7-9"
+    },
+    {
+      "id": "2-samuel-5-q5",
+      "type": "fill_blank",
+      "question": "All the tribes of Israel came to David and anointed him _____ over Israel.",
+      "answer": "king",
+      "verse_reference": "2 Samuel 5:3"
+    }
+  ]
+}

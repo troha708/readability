@@ -1,0 +1,53 @@
+{
+  "book": "Matthew",
+  "chapter": 7,
+  "questions": [
+    {
+      "id": "matthew-7-q1",
+      "type": "multiple_choice",
+      "question": "Jesus compared someone who hears his words and does them to a man who built his house on what?",
+      "options": [
+        "Sand",
+        "A hill",
+        "A rock",
+        "Solid ground"
+      ],
+      "answer": "A rock",
+      "verse_reference": "Matthew 7:24"
+    },
+    {
+      "id": "matthew-7-q2",
+      "type": "multiple_choice",
+      "question": "Jesus said the gate that leads to life is what?",
+      "options": [
+        "Wide",
+        "Hidden",
+        "Golden",
+        "Narrow"
+      ],
+      "answer": "Narrow",
+      "verse_reference": "Matthew 7:14"
+    },
+    {
+      "id": "matthew-7-q3",
+      "type": "true_false",
+      "question": "Jesus said you will know false prophets by their fruits.",
+      "answer": "true",
+      "verse_reference": "Matthew 7:16"
+    },
+    {
+      "id": "matthew-7-q4",
+      "type": "fill_blank",
+      "question": "Don't judge, so that you won't be _____.",
+      "answer": "judged",
+      "verse_reference": "Matthew 7:1"
+    },
+    {
+      "id": "matthew-7-q5",
+      "type": "fill_blank",
+      "question": "Ask, and it will be given you. Seek, and you will find. Knock, and it will be _____ for you.",
+      "answer": "opened",
+      "verse_reference": "Matthew 7:7"
+    }
+  ]
+}

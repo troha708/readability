@@ -1,0 +1,53 @@
+{
+  "book": "Proverbs",
+  "chapter": 30,
+  "questions": [
+    {
+      "id": "proverbs-30-q1",
+      "type": "multiple_choice",
+      "question": "Whose words are recorded in Proverbs 30?",
+      "options": [
+        "Solomon the king",
+        "Lemuel the king",
+        "David the psalmist",
+        "Agur son of Jakeh"
+      ],
+      "answer": "Agur son of Jakeh",
+      "verse_reference": "Proverbs 30:1"
+    },
+    {
+      "id": "proverbs-30-q2",
+      "type": "multiple_choice",
+      "question": "What does Agur ask God for regarding wealth?",
+      "options": [
+        "Great power and rule over a very wide and well-peopled land",
+        "Riches far greater than those of all his neighbors round about",
+        "Neither poverty nor riches, but only the food needful for him",
+        "Endless heaps of gold and silver to last him all of his days"
+      ],
+      "answer": "Neither poverty nor riches, but only the food needful for him",
+      "verse_reference": "Proverbs 30:8"
+    },
+    {
+      "id": "proverbs-30-q3",
+      "type": "true_false",
+      "question": "Proverbs 30 lists four things that are small but exceedingly wise, including the ant.",
+      "answer": "true",
+      "verse_reference": "Proverbs 30:24-25"
+    },
+    {
+      "id": "proverbs-30-q4",
+      "type": "fill_blank",
+      "question": "Give me neither poverty nor _____, but feed me with the food that is needful for me.",
+      "answer": "riches",
+      "verse_reference": "Proverbs 30:8"
+    },
+    {
+      "id": "proverbs-30-q5",
+      "type": "fill_blank",
+      "question": "Every word of God proves true; he is a _____ to those who take refuge in him.",
+      "answer": "shield",
+      "verse_reference": "Proverbs 30:5"
+    }
+  ]
+}

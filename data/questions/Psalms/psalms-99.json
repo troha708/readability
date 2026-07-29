@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 99,
+  "questions": [
+    {
+      "id": "psalms-99-q1",
+      "type": "multiple_choice",
+      "question": "What is repeatedly affirmed about the LORD in Psalm 99?",
+      "options": [
+        "He is asleep",
+        "He is far",
+        "He is silent",
+        "He is holy"
+      ],
+      "answer": "He is holy",
+      "verse_reference": "Psalm 99:3, 5, 9"
+    },
+    {
+      "id": "psalms-99-q2",
+      "type": "multiple_choice",
+      "question": "Which leaders who called on the LORD are named in Psalm 99?",
+      "options": [
+        "Abraham and Isaac",
+        "Moses, Aaron, and Samuel",
+        "David and Solomon",
+        "Elijah and Elisha"
+      ],
+      "answer": "Moses, Aaron, and Samuel",
+      "verse_reference": "Psalm 99:6"
+    },
+    {
+      "id": "psalms-99-q3",
+      "type": "true_false",
+      "question": "The psalm says the LORD is enthroned upon the cherubim; let the earth quake.",
+      "answer": "true",
+      "verse_reference": "Psalm 99:1"
+    },
+    {
+      "id": "psalms-99-q4",
+      "type": "fill_blank",
+      "question": "Exalt the LORD our God, and worship at his footstool! _____ is he!",
+      "answer": "Holy",
+      "verse_reference": "Psalm 99:5"
+    },
+    {
+      "id": "psalms-99-q5",
+      "type": "fill_blank",
+      "question": "The LORD reigns; let the peoples _____!",
+      "answer": "tremble",
+      "verse_reference": "Psalm 99:1"
+    }
+  ]
+}

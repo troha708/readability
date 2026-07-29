@@ -1,0 +1,56 @@
+{
+  "book": "Proverbs",
+  "chapter": 26,
+  "questions": [
+    {
+      "id": "proverbs-26-q1",
+      "type": "multiple_choice",
+      "question": "To what does Proverbs 26 compare a fool who repeats his folly?",
+      "options": [
+        "An ox that strays from the herd",
+        "A lion that hunts in the night",
+        "A bird that flies from its nest",
+        "A dog that returns to its vomit"
+      ],
+      "answer": "A dog that returns to its vomit",
+      "verse_reference": "Proverbs 26:11"
+    },
+    {
+      "id": "proverbs-26-q2",
+      "type": "multiple_choice",
+      "question": "What happens to fire without wood, according to Proverbs 26?",
+      "options": [
+        "It spreads quickly, and so strife consumes the whole house",
+        "It goes out, and where there is no whisperer, quarreling ceases",
+        "It grows larger, and gossip only spreads it further and further",
+        "It is fed and tended, and the whisperer keeps it alive and burning"
+      ],
+      "answer": "It goes out, and where there is no whisperer, quarreling ceases",
+      "verse_reference": "Proverbs 26:20"
+    },
+    {
+      "id": "proverbs-26-q3",
+      "type": "true_false",
+      "question": "Proverbs 26 says whoever digs a pit will fall into it.",
+      "answer": "true",
+      "verse_reference": "Proverbs 26:27"
+    },
+    {
+      "id": "proverbs-26-q4",
+      "type": "fill_blank",
+      "question": "Like a dog that returns to his vomit is a fool who repeats his _____.",
+      "answer": "folly",
+      "accept": [
+        "foolishness"
+      ],
+      "verse_reference": "Proverbs 26:11"
+    },
+    {
+      "id": "proverbs-26-q5",
+      "type": "fill_blank",
+      "question": "For lack of wood the fire goes out, and where there is no whisperer, quarreling _____.",
+      "answer": "ceases",
+      "verse_reference": "Proverbs 26:20"
+    }
+  ]
+}

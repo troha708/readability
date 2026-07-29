@@ -1,0 +1,40 @@
+{
+  "book": "2 Thessalonians",
+  "source": "Berean Standard Bible (CC0 Public Domain)",
+  "chapters": {
+    "1": [
+      {
+        "beforeVerse": 1,
+        "heading": "Greetings to the Thessalonians"
+      },
+      {
+        "beforeVerse": 5,
+        "heading": "Christ’s Coming"
+      }
+    ],
+    "2": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Man of Lawlessness"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "Stand Firm"
+      }
+    ],
+    "3": [
+      {
+        "beforeVerse": 1,
+        "heading": "Request for Prayer"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "A Warning against Idleness"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "Signature and Final Greetings"
+      }
+    ]
+  }
+}

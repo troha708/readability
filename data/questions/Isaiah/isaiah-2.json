@@ -1,0 +1,57 @@
+{
+  "book": "Isaiah",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "isaiah-2-q1",
+      "type": "multiple_choice",
+      "question": "What will happen to the mountain of the house of the LORD in the latter days?",
+      "options": [
+        "It shall be utterly torn down and left in ruins for the wild beasts to roam",
+        "It shall be wholly forgotten by all of the many peoples of the wide earth",
+        "It shall be hidden far away from the searching eyes of all the proud",
+        "It shall be established as the highest, and all nations shall flow to it"
+      ],
+      "answer": "It shall be established as the highest, and all nations shall flow to it",
+      "verse_reference": "Isaiah 2:2"
+    },
+    {
+      "id": "isaiah-2-q2",
+      "type": "multiple_choice",
+      "question": "What famous image of peace appears in Isaiah 2?",
+      "options": [
+        "Building up very high walls and great gates made all of bronze",
+        "Beating swords into plowshares and spears into pruning hooks",
+        "Forging the plowshares back into sharp swords for the coming war",
+        "Raising up great and mighty armies among all of the nations"
+      ],
+      "answer": "Beating swords into plowshares and spears into pruning hooks",
+      "verse_reference": "Isaiah 2:4"
+    },
+    {
+      "id": "isaiah-2-q3",
+      "type": "true_false",
+      "question": "Isaiah 2 says the proud and lofty will be humbled, and the LORD alone exalted.",
+      "answer": "true",
+      "verse_reference": "Isaiah 2:11-17"
+    },
+    {
+      "id": "isaiah-2-q4",
+      "type": "fill_blank",
+      "question": "They shall beat their swords into _____, and their spears into pruning hooks.",
+      "answer": "plowshares",
+      "accept": [
+        "ploughshares",
+        "mattocks"
+      ],
+      "verse_reference": "Isaiah 2:4"
+    },
+    {
+      "id": "isaiah-2-q5",
+      "type": "fill_blank",
+      "question": "Come, let us walk in the _____ of the LORD.",
+      "answer": "light",
+      "verse_reference": "Isaiah 2:5"
+    }
+  ]
+}

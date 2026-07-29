@@ -1,0 +1,56 @@
+{
+  "book": "Acts",
+  "chapter": 17,
+  "questions": [
+    {
+      "id": "acts-17-q1",
+      "type": "multiple_choice",
+      "question": "In which city did Paul speak at the Areopagus (Mars Hill)?",
+      "options": [
+        "Athens",
+        "Corinth",
+        "Thessalonica",
+        "Rome"
+      ],
+      "answer": "Athens",
+      "verse_reference": "Acts 17:22"
+    },
+    {
+      "id": "acts-17-q2",
+      "type": "multiple_choice",
+      "question": "What inscription on an altar in Athens did Paul reference in his speech?",
+      "options": [
+        "To the Greatest God",
+        "To an Unknown God",
+        "To All the Gods",
+        "To the God of Israel"
+      ],
+      "answer": "To an Unknown God",
+      "verse_reference": "Acts 17:23"
+    },
+    {
+      "id": "acts-17-q3",
+      "type": "true_false",
+      "question": "The Bereans were praised because they examined the Scriptures daily to verify what Paul taught.",
+      "answer": "true",
+      "verse_reference": "Acts 17:11"
+    },
+    {
+      "id": "acts-17-q4",
+      "type": "fill_blank",
+      "question": "For in him we live, and _____, and have our being.",
+      "answer": "move",
+      "verse_reference": "Acts 17:28"
+    },
+    {
+      "id": "acts-17-q5",
+      "type": "fill_blank",
+      "question": "The Bereans were more _____ than the Thessalonians, for they received the message with great eagerness.",
+      "answer": "noble-minded",
+      "accept": [
+        "noble"
+      ],
+      "verse_reference": "Acts 17:11"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Numbers",
+  "chapter": 25,
+  "questions": [
+    {
+      "id": "numbers-25-q1",
+      "type": "multiple_choice",
+      "question": "What sin did Israel commit at Peor?",
+      "options": [
+        "Worshiping Baal and immorality with Moab",
+        "Murdering one of the chief tribal leaders",
+        "Lying about the report of the spies",
+        "Stealing gold dedicated to the LORD"
+      ],
+      "answer": "Worshiping Baal and immorality with Moab",
+      "verse_reference": "Numbers 25:1-3"
+    },
+    {
+      "id": "numbers-25-q2",
+      "type": "multiple_choice",
+      "question": "Who stopped the plague by his zealous action?",
+      "options": [
+        "Moses",
+        "Aaron",
+        "Phinehas",
+        "Eleazar the priest"
+      ],
+      "answer": "Phinehas",
+      "verse_reference": "Numbers 25:7-11"
+    },
+    {
+      "id": "numbers-25-q3",
+      "type": "true_false",
+      "question": "A plague struck Israel because of their sin at Peor.",
+      "answer": "true",
+      "verse_reference": "Numbers 25:9"
+    },
+    {
+      "id": "numbers-25-q4",
+      "type": "fill_blank",
+      "question": "Israel joined themselves to _____ of Peor, and the LORD's anger burned.",
+      "answer": "Baal",
+      "verse_reference": "Numbers 25:3"
+    },
+    {
+      "id": "numbers-25-q5",
+      "type": "fill_blank",
+      "question": "_____, son of Eleazar, turned away God's wrath by his zeal.",
+      "answer": "Phinehas",
+      "verse_reference": "Numbers 25:11"
+    }
+  ]
+}

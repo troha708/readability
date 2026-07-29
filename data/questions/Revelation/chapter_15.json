@@ -1,0 +1,58 @@
+{
+  "book": "Revelation",
+  "chapter": 15,
+  "questions": [
+    {
+      "id": "rev_15_1",
+      "type": "multiple_choice",
+      "question": "What do the seven angels carry that represent the last plagues?",
+      "options": [
+        "Seven swords",
+        "Seven loud trumpets",
+        "Seven golden bowls",
+        "Seven scrolls"
+      ],
+      "correct": "Seven golden bowls",
+      "verse_ref": "Revelation 15:7",
+      "feedback": "The seven angels were given seven golden bowls filled with God's wrath."
+    },
+    {
+      "id": "rev_15_2",
+      "type": "multiple_choice",
+      "question": "Those who conquered the beast sing the song of whom?",
+      "options": [
+        "The twenty-four elders",
+        "Solomon the wise",
+        "David the shepherd-king",
+        "Moses and the Lamb"
+      ],
+      "correct": "Moses and the Lamb",
+      "verse_ref": "Revelation 15:3",
+      "feedback": "They sang the song of God's servant Moses and of the Lamb."
+    },
+    {
+      "id": "rev_15_3",
+      "type": "true_false",
+      "question": "The temple in heaven was filled with smoke from God's glory so no one could enter it.",
+      "correct": true,
+      "verse_ref": "Revelation 15:8",
+      "feedback": "The temple was filled with smoke from God's glory and power."
+    },
+    {
+      "id": "rev_15_4",
+      "type": "fill_in_the_blank",
+      "question": "Great and marvelous are your deeds, Lord God _____.",
+      "correct": "Almighty",
+      "verse_ref": "Revelation 15:3",
+      "feedback": "Great and marvelous are your deeds, Lord God Almighty."
+    },
+    {
+      "id": "rev_15_5",
+      "type": "fill_in_the_blank",
+      "question": "The victors stood beside what looked like a sea of _____ mixed with fire.",
+      "correct": "glass",
+      "verse_ref": "Revelation 15:2",
+      "feedback": "They stood beside a sea of glass mixed with fire."
+    }
+  ]
+}

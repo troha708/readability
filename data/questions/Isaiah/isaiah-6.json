@@ -1,0 +1,53 @@
+{
+  "book": "Isaiah",
+  "chapter": 6,
+  "questions": [
+    {
+      "id": "isaiah-6-q1",
+      "type": "multiple_choice",
+      "question": "What did Isaiah see in his vision in chapter 6?",
+      "options": [
+        "A wide valley filled with very dry and scattered dead bones",
+        "The Lord sitting on a throne, high and lifted up, with seraphim",
+        "A great and towering statue of gold and of silver and of bronze and clay",
+        "A long scroll written all over on both the front and the back"
+      ],
+      "answer": "The Lord sitting on a throne, high and lifted up, with seraphim",
+      "verse_reference": "Isaiah 6:1"
+    },
+    {
+      "id": "isaiah-6-q2",
+      "type": "multiple_choice",
+      "question": "What did the seraphim call out?",
+      "options": [
+        "'Glory to God in the highest heaven'",
+        "'Worthy is the Lamb who was slain'",
+        "'Holy, holy, holy is the LORD of hosts'",
+        "'The LORD reigns forever and ever'"
+      ],
+      "answer": "'Holy, holy, holy is the LORD of hosts'",
+      "verse_reference": "Isaiah 6:3"
+    },
+    {
+      "id": "isaiah-6-q3",
+      "type": "true_false",
+      "question": "Isaiah responded to God's call by saying, 'Here I am! Send me.'",
+      "answer": "true",
+      "verse_reference": "Isaiah 6:8"
+    },
+    {
+      "id": "isaiah-6-q4",
+      "type": "fill_blank",
+      "question": "Woe is me! For I am lost; for I am a man of unclean _____.",
+      "answer": "lips",
+      "verse_reference": "Isaiah 6:5"
+    },
+    {
+      "id": "isaiah-6-q5",
+      "type": "fill_blank",
+      "question": "Whom shall I send, and who will go for us? Then I said, 'Here am I! _____ me.'",
+      "answer": "Send",
+      "verse_reference": "Isaiah 6:8"
+    }
+  ]
+}

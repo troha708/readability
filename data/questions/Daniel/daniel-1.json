@@ -1,0 +1,59 @@
+{
+  "book": "Daniel",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "daniel-1-q1",
+      "type": "multiple_choice",
+      "question": "Why did Daniel refuse the king's food and wine?",
+      "options": [
+        "He feared the food had been poisoned",
+        "He was fasting for the coming festival",
+        "He resolved not to defile himself with it",
+        "He had no appetite after the long journey"
+      ],
+      "answer": "He resolved not to defile himself with it",
+      "verse_reference": "Daniel 1:8"
+    },
+    {
+      "id": "daniel-1-q2",
+      "type": "multiple_choice",
+      "question": "What did Daniel and his friends eat instead, and with what result?",
+      "options": [
+        "Vegetables and water; they appeared healthier than the others",
+        "Only the king's own rich portion, and yet they fell ill at once",
+        "Bread alone, and they grew faint and weary by the day",
+        "Meat and rich wine, yet they wasted away to nothing"
+      ],
+      "answer": "Vegetables and water; they appeared healthier than the others",
+      "verse_reference": "Daniel 1:12-15"
+    },
+    {
+      "id": "daniel-1-q3",
+      "type": "true_false",
+      "question": "God gave Daniel and his three friends learning, skill, and wisdom, and Daniel understanding in visions and dreams.",
+      "answer": "true",
+      "verse_reference": "Daniel 1:17"
+    },
+    {
+      "id": "daniel-1-q4",
+      "type": "fill_blank",
+      "question": "Daniel resolved not to _____ himself with the king's food.",
+      "answer": "defile",
+      "accept": [
+        "pollute"
+      ],
+      "verse_reference": "Daniel 1:8"
+    },
+    {
+      "id": "daniel-1-q5",
+      "type": "fill_blank",
+      "question": "The three friends were renamed Shadrach, Meshach, and _____.",
+      "answer": "Abednego",
+      "accept": [
+        "Abed-nego"
+      ],
+      "verse_reference": "Daniel 1:7"
+    }
+  ]
+}

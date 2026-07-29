@@ -1,0 +1,53 @@
+{
+  "book": "Amos",
+  "chapter": 6,
+  "questions": [
+    {
+      "id": "amos-6-q1",
+      "type": "multiple_choice",
+      "question": "Whom does Amos 6 pronounce woe upon?",
+      "options": [
+        "Those who mourn in sackcloth and ashes",
+        "Those who are at ease in Zion and feel secure",
+        "Those who flee before the coming army",
+        "Those who labor hard in the wide fields from dawn"
+      ],
+      "answer": "Those who are at ease in Zion and feel secure",
+      "verse_reference": "Amos 6:1"
+    },
+    {
+      "id": "amos-6-q2",
+      "type": "multiple_choice",
+      "question": "What were the complacent doing while not grieved over the ruin of Joseph?",
+      "options": [
+        "Fasting in rough sackcloth and weeping aloud in their deep grief",
+        "Lying on beds of ivory, feasting, and drinking wine in bowls",
+        "Toiling away in the fields under the hot and blazing sun",
+        "Standing guard up on the high walls of the threatened city"
+      ],
+      "answer": "Lying on beds of ivory, feasting, and drinking wine in bowls",
+      "verse_reference": "Amos 6:4-6"
+    },
+    {
+      "id": "amos-6-q3",
+      "type": "true_false",
+      "question": "Amos 6 warns that the complacent will be the first to go into exile.",
+      "answer": "true",
+      "verse_reference": "Amos 6:7"
+    },
+    {
+      "id": "amos-6-q4",
+      "type": "fill_blank",
+      "question": "Woe to those who are at _____ in Zion.",
+      "answer": "ease",
+      "verse_reference": "Amos 6:1"
+    },
+    {
+      "id": "amos-6-q5",
+      "type": "fill_blank",
+      "question": "They are not grieved over the ruin of _____.",
+      "answer": "Joseph",
+      "verse_reference": "Amos 6:6"
+    }
+  ]
+}

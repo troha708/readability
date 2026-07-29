@@ -1,0 +1,53 @@
+{
+  "book": "Exodus",
+  "chapter": 28,
+  "questions": [
+    {
+      "id": "exodus-28-q1",
+      "type": "multiple_choice",
+      "question": "For whom were the special holy garments to be made?",
+      "options": [
+        "Aaron and his sons, the priests",
+        "The Levites who carried the ark",
+        "Moses and the seventy elders",
+        "The leaders of the twelve tribes"
+      ],
+      "answer": "Aaron and his sons, the priests",
+      "verse_reference": "Exodus 28:1-4"
+    },
+    {
+      "id": "exodus-28-q2",
+      "type": "multiple_choice",
+      "question": "What did the high priest wear on his chest, set with twelve stones for the tribes?",
+      "options": [
+        "The embroidered turban",
+        "The sash",
+        "The ephod",
+        "The breastpiece"
+      ],
+      "answer": "The breastpiece",
+      "verse_reference": "Exodus 28:15-21"
+    },
+    {
+      "id": "exodus-28-q3",
+      "type": "true_false",
+      "question": "The names of the twelve tribes of Israel were engraved on stones the priest wore.",
+      "answer": "true",
+      "verse_reference": "Exodus 28:9-21"
+    },
+    {
+      "id": "exodus-28-q4",
+      "type": "fill_blank",
+      "question": "In the breastpiece were placed the _____ and Thummim for seeking God's decisions.",
+      "answer": "Urim",
+      "verse_reference": "Exodus 28:30"
+    },
+    {
+      "id": "exodus-28-q5",
+      "type": "fill_blank",
+      "question": "Aaron and his sons were set apart to serve God as _____.",
+      "answer": "priests",
+      "verse_reference": "Exodus 28:1"
+    }
+  ]
+}

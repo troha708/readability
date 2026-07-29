@@ -1,0 +1,56 @@
+{
+  "book": "Exodus",
+  "chapter": 39,
+  "questions": [
+    {
+      "id": "exodus-39-q1",
+      "type": "multiple_choice",
+      "question": "What was made in this chapter?",
+      "options": [
+        "The ark",
+        "The priestly garments",
+        "The golden calf",
+        "The Passover meal and lamb"
+      ],
+      "answer": "The priestly garments",
+      "verse_reference": "Exodus 39:1"
+    },
+    {
+      "id": "exodus-39-q2",
+      "type": "multiple_choice",
+      "question": "What words were engraved on the gold plate of the high priest's turban?",
+      "options": [
+        "His name",
+        "\"Holy to the LORD\"",
+        "The Ten Commandments",
+        "The twelve tribes"
+      ],
+      "answer": "\"Holy to the LORD\"",
+      "verse_reference": "Exodus 39:30"
+    },
+    {
+      "id": "exodus-39-q3",
+      "type": "true_false",
+      "question": "The work was done just as the LORD had commanded Moses.",
+      "answer": "true",
+      "verse_reference": "Exodus 39:42-43"
+    },
+    {
+      "id": "exodus-39-q4",
+      "type": "fill_blank",
+      "question": "On the front of the turban was a plate inscribed, \"_____ to the LORD.\"",
+      "answer": "Holy",
+      "accept": [
+        "Holiness"
+      ],
+      "verse_reference": "Exodus 39:30"
+    },
+    {
+      "id": "exodus-39-q5",
+      "type": "fill_blank",
+      "question": "They made the holy garments for _____ and his sons to minister as priests.",
+      "answer": "Aaron",
+      "verse_reference": "Exodus 39:1"
+    }
+  ]
+}

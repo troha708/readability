@@ -1,0 +1,54 @@
+{
+  "book": "Numbers",
+  "chapter": 20,
+  "questions": [
+    {
+      "id": "numbers-20-q1",
+      "type": "multiple_choice",
+      "question": "What did Moses do wrong at the waters of Meribah?",
+      "options": [
+        "He offered strange fire before the LORD",
+        "He struck the rock instead of speaking to it",
+        "He doubted God openly before the elders",
+        "He stubbornly refused to gather all the people together"
+      ],
+      "answer": "He struck the rock instead of speaking to it",
+      "verse_reference": "Numbers 20:8-11"
+    },
+    {
+      "id": "numbers-20-q2",
+      "type": "multiple_choice",
+      "question": "What was the consequence for Moses and Aaron?",
+      "options": [
+        "They would not bring Israel into the promised land",
+        "They would lose their honored place among the holy priests",
+        "They would be replaced by younger leaders",
+        "They would be sent back to live in Egypt"
+      ],
+      "answer": "They would not bring Israel into the promised land",
+      "verse_reference": "Numbers 20:12"
+    },
+    {
+      "id": "numbers-20-q3",
+      "type": "true_false",
+      "question": "Both Miriam and Aaron died in this chapter.",
+      "answer": "true",
+      "verse_reference": "Numbers 20:1-28"
+    },
+    {
+      "id": "numbers-20-q4",
+      "type": "fill_blank",
+      "question": "God told Moses to speak to the rock, but instead he _____ it twice.",
+      "answer": "struck",
+      "accept": ["smote"],
+      "verse_reference": "Numbers 20:11"
+    },
+    {
+      "id": "numbers-20-q5",
+      "type": "fill_blank",
+      "question": "_____ died on Mount Hor, and his garments were given to his son Eleazar.",
+      "answer": "Aaron",
+      "verse_reference": "Numbers 20:28"
+    }
+  ]
+}

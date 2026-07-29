@@ -1,0 +1,56 @@
+{
+  "book": "Galatians",
+  "chapter": 6,
+  "questions": [
+    {
+      "id": "gal-6-q1",
+      "type": "multiple_choice",
+      "question": "Paul says a person will reap what they do what?",
+      "options": [
+        "Believe",
+        "Pray for",
+        "Sow",
+        "Think"
+      ],
+      "answer": "Sow",
+      "verse_reference": "Galatians 6:7"
+    },
+    {
+      "id": "gal-6-q2",
+      "type": "multiple_choice",
+      "question": "What does Paul boast about at the end of this letter?",
+      "options": [
+        "The law given through Moses",
+        "The cross of our Lord Jesus Christ",
+        "The wisdom of the Greek world",
+        "The temple built by Solomon"
+      ],
+      "answer": "The cross of our Lord Jesus Christ",
+      "verse_reference": "Galatians 6:14"
+    },
+    {
+      "id": "gal-6-q3",
+      "type": "true_false",
+      "question": "Paul says believers should carry each other's burdens.",
+      "answer": "true",
+      "verse_reference": "Galatians 6:2"
+    },
+    {
+      "id": "gal-6-q4",
+      "type": "fill_blank",
+      "question": "Do not be deceived. God is not mocked. For whatever a man sows, that he will also _____.",
+      "answer": "reap",
+      "verse_reference": "Galatians 6:7"
+    },
+    {
+      "id": "gal-6-q5",
+      "type": "fill_blank",
+      "question": "Neither circumcision nor uncircumcision means anything; what counts is a new _____.",
+      "answer": "creation",
+      "accept": [
+        "creature"
+      ],
+      "verse_reference": "Galatians 6:15"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "book": "Job",
+  "chapter": 22,
+  "questions": [
+    {
+      "id": "job-22-q1",
+      "type": "multiple_choice",
+      "question": "Who speaks in the third cycle, chapter 22?",
+      "options": [
+        "Zophar the Naamathite",
+        "Eliphaz the Temanite",
+        "Bildad the Shuhite",
+        "Elihu the Buzite"
+      ],
+      "answer": "Eliphaz the Temanite",
+      "verse_reference": "Job 22:1"
+    },
+    {
+      "id": "job-22-q2",
+      "type": "multiple_choice",
+      "question": "What did Eliphaz now accuse Job of?",
+      "options": [
+        "Mere laziness and the neglect of all his duties",
+        "No real sin he could actually name",
+        "Nothing worse than excessive pride",
+        "Great wickedness, wronging the poor and needy"
+      ],
+      "answer": "Great wickedness, wronging the poor and needy",
+      "verse_reference": "Job 22:5-9"
+    },
+    {
+      "id": "job-22-q3",
+      "type": "true_false",
+      "question": "Eliphaz urged Job to agree with God and be at peace, and good would come to him.",
+      "answer": "true",
+      "verse_reference": "Job 22:21"
+    },
+    {
+      "id": "job-22-q4",
+      "type": "fill_blank",
+      "question": "Eliphaz told Job to return to the Almighty and he would be _____.",
+      "answer": "restored",
+      "accept": [
+        "built up"
+      ],
+      "verse_reference": "Job 22:23"
+    },
+    {
+      "id": "job-22-q5",
+      "type": "fill_blank",
+      "question": "Eliphaz said if Job laid up gold and treated the Almighty as his gold, he would delight in the _____.",
+      "answer": "Almighty",
+      "verse_reference": "Job 22:24-26"
+    }
+  ]
+}

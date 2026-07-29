@@ -1,0 +1,53 @@
+{
+  "book": "John",
+  "chapter": 9,
+  "questions": [
+    {
+      "id": "john-9-q1",
+      "type": "multiple_choice",
+      "question": "What was wrong with the man Jesus healed in this chapter?",
+      "options": [
+        "He was blind from birth",
+        "He was deaf and could not speak",
+        "He was sick with a long fever",
+        "He was lame from his youth"
+      ],
+      "answer": "He was blind from birth",
+      "verse_reference": "John 9:1"
+    },
+    {
+      "id": "john-9-q2",
+      "type": "multiple_choice",
+      "question": "What did Jesus tell the blind man to do after putting mud on his eyes?",
+      "options": [
+        "Pray in the temple",
+        "Wait for three days",
+        "Wash in the pool of Siloam",
+        "Go show himself to the priests"
+      ],
+      "answer": "Wash in the pool of Siloam",
+      "verse_reference": "John 9:7"
+    },
+    {
+      "id": "john-9-q3",
+      "type": "true_false",
+      "question": "The Pharisees accepted that Jesus was from God because he healed the blind man.",
+      "answer": "false",
+      "verse_reference": "John 9:16"
+    },
+    {
+      "id": "john-9-q4",
+      "type": "fill_blank",
+      "question": "He answered, 'Whether he is a sinner, I don't know. One thing I do know: that though I was _____, now I see.'",
+      "answer": "blind",
+      "verse_reference": "John 9:25"
+    },
+    {
+      "id": "john-9-q5",
+      "type": "fill_blank",
+      "question": "Jesus said, 'For _____ I came into this world, that those who don't see may see; and that those who see may become blind.'",
+      "answer": "judgment",
+      "verse_reference": "John 9:39"
+    }
+  ]
+}

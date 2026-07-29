@@ -1,0 +1,56 @@
+{
+  "book": "Jonah",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "jonah-4-q1",
+      "type": "multiple_choice",
+      "question": "How did Jonah feel when God spared Nineveh?",
+      "options": [
+        "Angry, even wishing to die",
+        "Fearful, fleeing the city",
+        "Joyful, praising God aloud",
+        "Indifferent, returning home at once"
+      ],
+      "answer": "Angry, even wishing to die",
+      "verse_reference": "Jonah 4:1-3"
+    },
+    {
+      "id": "jonah-4-q2",
+      "type": "multiple_choice",
+      "question": "What object lesson did God use with Jonah at the end?",
+      "options": [
+        "A storm that rose and then calmed at once",
+        "A spring that flowed and then dried up",
+        "A fire that fell and consumed the city",
+        "A plant that grew and then withered, and a worm"
+      ],
+      "answer": "A plant that grew and then withered, and a worm",
+      "verse_reference": "Jonah 4:6-7"
+    },
+    {
+      "id": "jonah-4-q3",
+      "type": "true_false",
+      "question": "God's closing point was his compassion for the great city of Nineveh and its many people.",
+      "answer": "true",
+      "verse_reference": "Jonah 4:11"
+    },
+    {
+      "id": "jonah-4-q4",
+      "type": "fill_blank",
+      "question": "Jonah knew God to be gracious and compassionate, slow to anger and abounding in loving _____.",
+      "answer": "devotion",
+      "accept": [
+        "kindness"
+      ],
+      "verse_reference": "Jonah 4:2"
+    },
+    {
+      "id": "jonah-4-q5",
+      "type": "fill_blank",
+      "question": "God appointed a _____ that attacked the plant so that it withered.",
+      "answer": "worm",
+      "verse_reference": "Jonah 4:7"
+    }
+  ]
+}

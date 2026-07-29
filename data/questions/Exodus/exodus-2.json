@@ -1,0 +1,53 @@
+{
+  "book": "Exodus",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "exodus-2-q1",
+      "type": "multiple_choice",
+      "question": "Where did Moses' mother hide him as a baby?",
+      "options": [
+        "In a hidden storeroom of Pharaoh's great palace",
+        "In a basket among the reeds of the Nile",
+        "In a cave in the eastern hills",
+        "In a grain field outside the city"
+      ],
+      "answer": "In a basket among the reeds of the Nile",
+      "verse_reference": "Exodus 2:3"
+    },
+    {
+      "id": "exodus-2-q2",
+      "type": "multiple_choice",
+      "question": "Who found baby Moses and raised him?",
+      "options": [
+        "Pharaoh's daughter",
+        "A shepherd",
+        "A priest",
+        "A kindly Hebrew family"
+      ],
+      "answer": "Pharaoh's daughter",
+      "verse_reference": "Exodus 2:5-10"
+    },
+    {
+      "id": "exodus-2-q3",
+      "type": "true_false",
+      "question": "Moses fled to Midian after killing an Egyptian who was beating a Hebrew.",
+      "answer": "true",
+      "verse_reference": "Exodus 2:11-15"
+    },
+    {
+      "id": "exodus-2-q4",
+      "type": "fill_blank",
+      "question": "Moses was named because he had been drawn out of the _____.",
+      "answer": "water",
+      "verse_reference": "Exodus 2:10"
+    },
+    {
+      "id": "exodus-2-q5",
+      "type": "fill_blank",
+      "question": "Moses helped the daughters of the priest of _____ at a well, and later married one of them.",
+      "answer": "Midian",
+      "verse_reference": "Exodus 2:16"
+    }
+  ]
+}

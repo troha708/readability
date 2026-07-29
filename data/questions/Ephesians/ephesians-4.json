@@ -1,0 +1,53 @@
+{
+  "book": "Ephesians",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "eph-4-q1",
+      "type": "multiple_choice",
+      "question": "Paul urges believers to maintain the unity of the Spirit in what?",
+      "options": [
+        "The bond of truth",
+        "The bond of peace",
+        "The bond of love",
+        "The bond of faith"
+      ],
+      "answer": "The bond of peace",
+      "verse_reference": "Ephesians 4:3"
+    },
+    {
+      "id": "eph-4-q2",
+      "type": "multiple_choice",
+      "question": "Paul says Christ gave gifts to the church including apostles, prophets, evangelists, and what?",
+      "options": [
+        "Priests and humble deacons",
+        "Pastors and teachers",
+        "Kings and rulers",
+        "Judges and elders"
+      ],
+      "answer": "Pastors and teachers",
+      "verse_reference": "Ephesians 4:11"
+    },
+    {
+      "id": "eph-4-q3",
+      "type": "true_false",
+      "question": "Paul tells believers to be angry but not to sin, and not to let the sun go down on their anger.",
+      "answer": "true",
+      "verse_reference": "Ephesians 4:26"
+    },
+    {
+      "id": "eph-4-q4",
+      "type": "fill_blank",
+      "question": "There is one body, one Spirit, one hope, one Lord, one faith, one baptism, one God and _____ of all.",
+      "answer": "Father",
+      "verse_reference": "Ephesians 4:4-6"
+    },
+    {
+      "id": "eph-4-q5",
+      "type": "fill_blank",
+      "question": "Be kind to one another, tenderhearted, _____ each other, just as God also in Christ forgave you.",
+      "answer": "forgiving",
+      "verse_reference": "Ephesians 4:32"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Job",
+  "chapter": 28,
+  "questions": [
+    {
+      "id": "job-28-q1",
+      "type": "multiple_choice",
+      "question": "What is the central question of chapter 28?",
+      "options": [
+        "Where is the gold mined and found?",
+        "Where can wisdom be found?",
+        "Where is God?",
+        "Who is righteous?"
+      ],
+      "answer": "Where can wisdom be found?",
+      "verse_reference": "Job 28:12"
+    },
+    {
+      "id": "job-28-q2",
+      "type": "multiple_choice",
+      "question": "Where did Job conclude wisdom is found for man?",
+      "options": [
+        "In the deep and hidden places of the earth",
+        "In the very deepest mines of the purest gold",
+        "In the fear of the Lord and turning from evil",
+        "In the far and distant reaches of the wide sea"
+      ],
+      "answer": "In the fear of the Lord and turning from evil",
+      "verse_reference": "Job 28:28"
+    },
+    {
+      "id": "job-28-q3",
+      "type": "true_false",
+      "question": "Job said wisdom cannot be bought with gold or precious stones.",
+      "answer": "true",
+      "verse_reference": "Job 28:15-19"
+    },
+    {
+      "id": "job-28-q4",
+      "type": "fill_blank",
+      "question": "'The fear of the Lord, that is _____.'",
+      "answer": "wisdom",
+      "verse_reference": "Job 28:28"
+    },
+    {
+      "id": "job-28-q5",
+      "type": "fill_blank",
+      "question": "Job said man knows how to mine silver and gold but not the place of _____.",
+      "answer": "wisdom",
+      "verse_reference": "Job 28:1, 12"
+    }
+  ]
+}

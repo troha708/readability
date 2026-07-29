@@ -1,0 +1,57 @@
+{
+  "book": "Luke",
+  "chapter": 8,
+  "questions": [
+    {
+      "id": "luke-8-q1",
+      "type": "multiple_choice",
+      "question": "In the Parable of the Sower, what does the seed represent?",
+      "options": [
+        "The word of God",
+        "Good deeds",
+        "Faith",
+        "Hope"
+      ],
+      "answer": "The word of God",
+      "verse_reference": "Luke 8:11"
+    },
+    {
+      "id": "luke-8-q2",
+      "type": "multiple_choice",
+      "question": "What was the name of the demon-possessed man from the country of the Gadarenes?",
+      "options": [
+        "Beelzebub",
+        "Simon",
+        "He had no name",
+        "Legion"
+      ],
+      "answer": "Legion",
+      "verse_reference": "Luke 8:30"
+    },
+    {
+      "id": "luke-8-q3",
+      "type": "true_false",
+      "question": "Jesus told the woman who touched his garment that her faith had made her well.",
+      "answer": "true",
+      "verse_reference": "Luke 8:48"
+    },
+    {
+      "id": "luke-8-q4",
+      "type": "fill_blank",
+      "question": "Don't be afraid. Only _____, and she will be healed.",
+      "answer": "believe",
+      "verse_reference": "Luke 8:50"
+    },
+    {
+      "id": "luke-8-q5",
+      "type": "fill_blank",
+      "question": "For nothing is _____ that will not be revealed, nor anything secret that will not be known and come to light.",
+      "answer": "hidden",
+      "accept": [
+        "hid",
+        "secret"
+      ],
+      "verse_reference": "Luke 8:17"
+    }
+  ]
+}

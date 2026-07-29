@@ -1,0 +1,53 @@
+{
+  "book": "Jeremiah",
+  "chapter": 18,
+  "questions": [
+    {
+      "id": "jeremiah-18-q1",
+      "type": "multiple_choice",
+      "question": "Where did God send Jeremiah to learn a lesson in chapter 18?",
+      "options": [
+        "The temple",
+        "The busy marketplace",
+        "The palace",
+        "The potter's house"
+      ],
+      "answer": "The potter's house",
+      "verse_reference": "Jeremiah 18:2"
+    },
+    {
+      "id": "jeremiah-18-q2",
+      "type": "multiple_choice",
+      "question": "What did the potter and clay illustrate?",
+      "options": [
+        "That the people are wholly hardened and can never once be changed at all",
+        "That God can shape and reshape nations like clay in a potter's hand",
+        "That the kingdom of Judah would never once be broken or be cast down",
+        "That the prophets would mold and shape the people with all of their words"
+      ],
+      "answer": "That God can shape and reshape nations like clay in a potter's hand",
+      "verse_reference": "Jeremiah 18:6"
+    },
+    {
+      "id": "jeremiah-18-q3",
+      "type": "true_false",
+      "question": "The people responded by plotting against Jeremiah, saying, 'Let us strike him with the tongue.'",
+      "answer": "true",
+      "verse_reference": "Jeremiah 18:18"
+    },
+    {
+      "id": "jeremiah-18-q4",
+      "type": "fill_blank",
+      "question": "Like the clay in the potter's hand, so are you in my hand, O house of _____.",
+      "answer": "Israel",
+      "verse_reference": "Jeremiah 18:6"
+    },
+    {
+      "id": "jeremiah-18-q5",
+      "type": "fill_blank",
+      "question": "The vessel he was making of clay was spoiled, so he reworked it into another _____.",
+      "answer": "vessel",
+      "verse_reference": "Jeremiah 18:4"
+    }
+  ]
+}

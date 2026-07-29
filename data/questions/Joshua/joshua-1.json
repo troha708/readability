@@ -1,0 +1,53 @@
+{
+  "book": "Joshua",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "joshua-1-q1",
+      "type": "multiple_choice",
+      "question": "After whose death did God commission Joshua to lead Israel?",
+      "options": [
+        "Moses",
+        "Aaron",
+        "Eleazar",
+        "Caleb"
+      ],
+      "answer": "Moses",
+      "verse_reference": "Joshua 1:1-2"
+    },
+    {
+      "id": "joshua-1-q2",
+      "type": "multiple_choice",
+      "question": "What did God repeatedly tell Joshua to be?",
+      "options": [
+        "Humble and patient",
+        "Strong and courageous",
+        "Faithful and watchful",
+        "Wise and discerning"
+      ],
+      "answer": "Strong and courageous",
+      "verse_reference": "Joshua 1:6-9"
+    },
+    {
+      "id": "joshua-1-q3",
+      "type": "true_false",
+      "question": "God promised to be with Joshua as he had been with Moses.",
+      "answer": "true",
+      "verse_reference": "Joshua 1:5"
+    },
+    {
+      "id": "joshua-1-q4",
+      "type": "fill_blank",
+      "question": "God told Joshua to meditate on the Book of the _____ day and night.",
+      "answer": "Law",
+      "verse_reference": "Joshua 1:8"
+    },
+    {
+      "id": "joshua-1-q5",
+      "type": "fill_blank",
+      "question": "\"Be strong and _____,\" God commanded Joshua.",
+      "answer": "courageous",
+      "verse_reference": "Joshua 1:6"
+    }
+  ]
+}

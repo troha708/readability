@@ -1,0 +1,56 @@
+{
+  "book": "Job",
+  "chapter": 20,
+  "questions": [
+    {
+      "id": "job-20-q1",
+      "type": "multiple_choice",
+      "question": "Which friend speaks in chapter 20?",
+      "options": [
+        "Elihu the Buzite",
+        "Bildad the Shuhite",
+        "Old Eliphaz the Temanite",
+        "Zophar the Naamathite"
+      ],
+      "answer": "Zophar the Naamathite",
+      "verse_reference": "Job 20:1"
+    },
+    {
+      "id": "job-20-q2",
+      "type": "multiple_choice",
+      "question": "What did Zophar say about the joy of the wicked?",
+      "options": [
+        "It lasts forever without end",
+        "It is brief, only for a moment",
+        "It is fully deserved and just",
+        "It never fades through all his days"
+      ],
+      "answer": "It is brief, only for a moment",
+      "verse_reference": "Job 20:5"
+    },
+    {
+      "id": "job-20-q3",
+      "type": "true_false",
+      "question": "Zophar said the wicked would vomit up the riches they swallowed.",
+      "answer": "true",
+      "verse_reference": "Job 20:15"
+    },
+    {
+      "id": "job-20-q4",
+      "type": "fill_blank",
+      "question": "Zophar said the wicked man's prosperity, though sweet in his mouth, turns to the venom of _____.",
+      "answer": "cobras",
+      "accept": [
+        "asps"
+      ],
+      "verse_reference": "Job 20:14"
+    },
+    {
+      "id": "job-20-q5",
+      "type": "fill_blank",
+      "question": "Zophar called this the portion of a wicked man from _____.",
+      "answer": "God",
+      "verse_reference": "Job 20:29"
+    }
+  ]
+}

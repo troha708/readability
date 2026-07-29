@@ -1,0 +1,59 @@
+{
+  "book": "Ezekiel",
+  "chapter": 47,
+  "questions": [
+    {
+      "id": "ezekiel-47-q1",
+      "type": "multiple_choice",
+      "question": "What did Ezekiel see flowing from the temple in chapter 47?",
+      "options": [
+        "A host of bright angels, ascending from the gate",
+        "A cloud of glory, filling the inner court",
+        "A pillar of fire, rising above the altar",
+        "A river of water, flowing from the threshold"
+      ],
+      "answer": "A river of water, flowing from the threshold",
+      "verse_reference": "Ezekiel 47:1"
+    },
+    {
+      "id": "ezekiel-47-q2",
+      "type": "multiple_choice",
+      "question": "What happened to the water as it flowed, and what did it bring?",
+      "options": [
+        "It turned bitter and could not be drunk",
+        "It dried up quickly under the burning sun",
+        "It flooded the land and swept away the city",
+        "It grew deeper and brought life and healing"
+      ],
+      "answer": "It grew deeper and brought life and healing",
+      "verse_reference": "Ezekiel 47:5-9"
+    },
+    {
+      "id": "ezekiel-47-q3",
+      "type": "true_false",
+      "question": "On the banks of the river grew trees whose leaves were for healing and which bore fruit monthly.",
+      "answer": "true",
+      "verse_reference": "Ezekiel 47:12"
+    },
+    {
+      "id": "ezekiel-47-q4",
+      "type": "fill_blank",
+      "question": "Water was issuing from below the threshold of the temple toward the _____.",
+      "answer": "east",
+      "accept": [
+        "eastward"
+      ],
+      "verse_reference": "Ezekiel 47:1"
+    },
+    {
+      "id": "ezekiel-47-q5",
+      "type": "fill_blank",
+      "question": "Wherever the river flows, everything will _____.",
+      "answer": "flourish",
+      "accept": [
+        "live"
+      ],
+      "verse_reference": "Ezekiel 47:9"
+    }
+  ]
+}

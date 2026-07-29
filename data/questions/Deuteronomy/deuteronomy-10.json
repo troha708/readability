@@ -1,0 +1,57 @@
+{
+  "book": "Deuteronomy",
+  "chapter": 10,
+  "questions": [
+    {
+      "id": "deuteronomy-10-q1",
+      "type": "multiple_choice",
+      "question": "What does God require of Israel, according to Moses?",
+      "options": [
+        "To fear him, walk in his ways, and love and serve him",
+        "To conquer all the nations and take their land",
+        "To offer many sacrifices at the altar every day",
+        "To gather up great wealth and store it all up"
+      ],
+      "answer": "To fear him, walk in his ways, and love and serve him",
+      "verse_reference": "Deuteronomy 10:12"
+    },
+    {
+      "id": "deuteronomy-10-q2",
+      "type": "multiple_choice",
+      "question": "What did God command about the foreigner, orphan, and widow?",
+      "options": [
+        "To give them refuge only within the gates of the cities",
+        "To love the foreigner and do justice for orphan and widow",
+        "To set apart a tithe every third year to meet their needs",
+        "To leave gleanings in the fields for them at each harvest"
+      ],
+      "answer": "To love the foreigner and do justice for orphan and widow",
+      "verse_reference": "Deuteronomy 10:18-19"
+    },
+    {
+      "id": "deuteronomy-10-q3",
+      "type": "true_false",
+      "question": "Moses placed the new tablets in the ark.",
+      "answer": "true",
+      "verse_reference": "Deuteronomy 10:5"
+    },
+    {
+      "id": "deuteronomy-10-q4",
+      "type": "fill_blank",
+      "question": "God asks Israel to fear him, walk in his ways, love him, and _____ the LORD with all the heart.",
+      "answer": "serve",
+      "verse_reference": "Deuteronomy 10:12"
+    },
+    {
+      "id": "deuteronomy-10-q5",
+      "type": "fill_blank",
+      "question": "God loves the foreigner; so Israel too was to love the _____.",
+      "answer": "foreigner",
+      "accept": [
+        "stranger",
+        "sojourner"
+      ],
+      "verse_reference": "Deuteronomy 10:19"
+    }
+  ]
+}

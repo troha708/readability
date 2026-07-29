@@ -1,0 +1,60 @@
+{
+  "book": "Proverbs",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "proverbs-4-q1",
+      "type": "multiple_choice",
+      "question": "What does Proverbs 4 urge above all to guard?",
+      "options": [
+        "Your reputation, for it lives on long after you are gone",
+        "Your heart, for from it flow the springs of life",
+        "Your wealth, for it alone secures your future days",
+        "Your home, for it shelters and protects your family"
+      ],
+      "answer": "Your heart, for from it flow the springs of life",
+      "verse_reference": "Proverbs 4:23"
+    },
+    {
+      "id": "proverbs-4-q2",
+      "type": "multiple_choice",
+      "question": "To what is the path of the righteous compared?",
+      "options": [
+        "A dark and starless night with neither moon nor stars",
+        "A sudden and violent storm that passes very quickly",
+        "The light of dawn, shining brighter until full day",
+        "A still and quiet pond left wholly untouched by the wind"
+      ],
+      "answer": "The light of dawn, shining brighter until full day",
+      "verse_reference": "Proverbs 4:18"
+    },
+    {
+      "id": "proverbs-4-q3",
+      "type": "true_false",
+      "question": "Proverbs 4 says, 'Get wisdom; get insight,' and to prize her highly.",
+      "answer": "true",
+      "verse_reference": "Proverbs 4:5-8"
+    },
+    {
+      "id": "proverbs-4-q4",
+      "type": "fill_blank",
+      "question": "Guard your heart with all _____, for from it flow the springs of life.",
+      "answer": "diligence",
+      "accept": [
+        "vigilance"
+      ],
+      "verse_reference": "Proverbs 4:23"
+    },
+    {
+      "id": "proverbs-4-q5",
+      "type": "fill_blank",
+      "question": "Wisdom is supreme; so acquire wisdom. And whatever you may acquire, gain _____.",
+      "answer": "understanding",
+      "accept": [
+        "insight",
+        "intelligence"
+      ],
+      "verse_reference": "Proverbs 4:7"
+    }
+  ]
+}

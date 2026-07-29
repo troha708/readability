@@ -1,0 +1,56 @@
+{
+  "book": "Ecclesiastes",
+  "chapter": 11,
+  "questions": [
+    {
+      "id": "ecclesiastes-11-q1",
+      "type": "multiple_choice",
+      "question": "What instruction about generosity/risk does Ecclesiastes 11 give?",
+      "options": [
+        "Keep all of your bread for yourself alone, for the times are evil",
+        "Give only to those people who are well able to repay you in kind",
+        "Cast your bread upon the waters, for you will find it after many days",
+        "Store up all of your grain in barns against the coming time of famine"
+      ],
+      "answer": "Cast your bread upon the waters, for you will find it after many days",
+      "verse_reference": "Ecclesiastes 11:1"
+    },
+    {
+      "id": "ecclesiastes-11-q2",
+      "type": "multiple_choice",
+      "question": "What does Ecclesiastes 11 tell the young man to do?",
+      "options": [
+        "Deny himself every pleasure entirely until he reaches a great old age",
+        "Rejoice in his youth, but know that God will bring him into judgment",
+        "Store up all his wisdom now and put off every joy until much later",
+        "Follow his own heart freely, for there is no coming judgment to fear"
+      ],
+      "answer": "Rejoice in his youth, but know that God will bring him into judgment",
+      "verse_reference": "Ecclesiastes 11:9"
+    },
+    {
+      "id": "ecclesiastes-11-q3",
+      "type": "true_false",
+      "question": "Ecclesiastes 11 advises diversifying: give a portion to seven, or even to eight, for you know not what disaster may happen.",
+      "answer": "true",
+      "verse_reference": "Ecclesiastes 11:2"
+    },
+    {
+      "id": "ecclesiastes-11-q4",
+      "type": "fill_blank",
+      "question": "Cast your _____ upon the waters, for you will find it after many days.",
+      "answer": "bread",
+      "verse_reference": "Ecclesiastes 11:1"
+    },
+    {
+      "id": "ecclesiastes-11-q5",
+      "type": "fill_blank",
+      "question": "Rejoice, O young man, in your _____.",
+      "answer": "youth",
+      "accept": [
+        "childhood"
+      ],
+      "verse_reference": "Ecclesiastes 11:9"
+    }
+  ]
+}

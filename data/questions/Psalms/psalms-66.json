@@ -1,0 +1,60 @@
+{
+  "book": "Psalms",
+  "chapter": 66,
+  "questions": [
+    {
+      "id": "psalms-66-q1",
+      "type": "multiple_choice",
+      "question": "What does Psalm 66 call all the earth to do?",
+      "options": [
+        "Weep aloud and mourn over the many sins of the land",
+        "Shout for joy to God and sing the glory of his name",
+        "Bow down in deep silence and wait upon the LORD",
+        "Bring forward your offerings and faithfully pay your vows"
+      ],
+      "answer": "Shout for joy to God and sing the glory of his name",
+      "verse_reference": "Psalm 66:1-2"
+    },
+    {
+      "id": "psalms-66-q2",
+      "type": "multiple_choice",
+      "question": "What past deed does the psalm recall?",
+      "options": [
+        "Bringing fresh water out from the hard rock in the dry desert",
+        "Turning the sea into dry land so they passed through on foot",
+        "Casting down to the ground the walls of the great city",
+        "Sending down manna from heaven to feed the hungry people"
+      ],
+      "answer": "Turning the sea into dry land so they passed through on foot",
+      "verse_reference": "Psalm 66:6"
+    },
+    {
+      "id": "psalms-66-q3",
+      "type": "true_false",
+      "question": "The psalmist says if he had cherished iniquity in his heart, the Lord would not have listened.",
+      "answer": "true",
+      "verse_reference": "Psalm 66:18"
+    },
+    {
+      "id": "psalms-66-q4",
+      "type": "fill_blank",
+      "question": "Come and see the works of God; how awesome are His deeds toward _____.",
+      "answer": "mankind",
+      "accept": [
+        "men"
+      ],
+      "verse_reference": "Psalm 66:5"
+    },
+    {
+      "id": "psalms-66-q5",
+      "type": "fill_blank",
+      "question": "Blessed be God, who has not rejected my prayer or withheld from me His loving _____!",
+      "answer": "devotion",
+      "accept": [
+        "kindness",
+        "mercy"
+      ],
+      "verse_reference": "Psalm 66:20"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "book": "Hosea",
+  "chapter": 8,
+  "questions": [
+    {
+      "id": "hosea-8-q1",
+      "type": "multiple_choice",
+      "question": "What proverb of consequences appears in Hosea 8?",
+      "options": [
+        "They sow the wind and reap the whirlwind",
+        "A house built on sand will not stand",
+        "Pride goes before the coming fall",
+        "As a man sows, so shall he also reap"
+      ],
+      "answer": "They sow the wind and reap the whirlwind",
+      "verse_reference": "Hosea 8:7"
+    },
+    {
+      "id": "hosea-8-q2",
+      "type": "multiple_choice",
+      "question": "What had Israel made that God rejected?",
+      "options": [
+        "Treaties with Egypt and Assyria",
+        "Idols, including a calf in Samaria",
+        "Walls and gates around their cities",
+        "A temple to rival the one in Jerusalem"
+      ],
+      "answer": "Idols, including a calf in Samaria",
+      "verse_reference": "Hosea 8:4-5"
+    },
+    {
+      "id": "hosea-8-q3",
+      "type": "true_false",
+      "question": "Hosea 8 says Israel has forgotten his Maker and built palaces.",
+      "answer": "true",
+      "verse_reference": "Hosea 8:14"
+    },
+    {
+      "id": "hosea-8-q4",
+      "type": "fill_blank",
+      "question": "They sow the wind, and they shall reap the _____.",
+      "answer": "whirlwind",
+      "accept": [
+        "hurricane"
+      ],
+      "verse_reference": "Hosea 8:7"
+    },
+    {
+      "id": "hosea-8-q5",
+      "type": "fill_blank",
+      "question": "I have spurned your _____, O Samaria, says the LORD.",
+      "answer": "calf",
+      "verse_reference": "Hosea 8:5"
+    }
+  ]
+}

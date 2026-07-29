@@ -1,0 +1,56 @@
+{
+  "book": "Jeremiah",
+  "chapter": 27,
+  "questions": [
+    {
+      "id": "jeremiah-27-q1",
+      "type": "multiple_choice",
+      "question": "What did Jeremiah wear as a sign in chapter 27?",
+      "options": [
+        "Sackcloth and ashes on his head",
+        "A linen belt around his waist",
+        "A crown of thorns upon his brow",
+        "Yoke-bars and straps on his neck"
+      ],
+      "answer": "Yoke-bars and straps on his neck",
+      "verse_reference": "Jeremiah 27:2"
+    },
+    {
+      "id": "jeremiah-27-q2",
+      "type": "multiple_choice",
+      "question": "What was God's message to the nations through this sign?",
+      "options": [
+        "Submit and serve the king of Babylon and live",
+        "Rise up and throw off the Babylonian yoke",
+        "Make an alliance with all the surrounding kings",
+        "Flee to Egypt before the army arrives"
+      ],
+      "answer": "Submit and serve the king of Babylon and live",
+      "verse_reference": "Jeremiah 27:11-12"
+    },
+    {
+      "id": "jeremiah-27-q3",
+      "type": "true_false",
+      "question": "Jeremiah warned the people not to listen to prophets who said they would not serve Babylon.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 27:14"
+    },
+    {
+      "id": "jeremiah-27-q4",
+      "type": "fill_blank",
+      "question": "Bring your necks under the _____ of the king of Babylon, and serve him and his people, and live.",
+      "answer": "yoke",
+      "verse_reference": "Jeremiah 27:12"
+    },
+    {
+      "id": "jeremiah-27-q5",
+      "type": "fill_blank",
+      "question": "The prophets who say you will not serve the king of Babylon are prophesying a _____ to you.",
+      "answer": "lie",
+      "accept": [
+        "falsehood"
+      ],
+      "verse_reference": "Jeremiah 27:14"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "book": "Revelation",
+  "chapter": 18,
+  "questions": [
+    {
+      "id": "rev_18_1",
+      "type": "multiple_choice",
+      "question": "What happens to Babylon the Great in this chapter?",
+      "options": [
+        "It rises and grows stronger",
+        "It is rebuilt in greater glory",
+        "It is spared and made holy",
+        "It falls and is destroyed"
+      ],
+      "correct": "It falls and is destroyed",
+      "verse_ref": "Revelation 18:2",
+      "feedback": "Fallen! Fallen is Babylon the Great! It has become a dwelling for demons."
+    },
+    {
+      "id": "rev_18_2",
+      "type": "multiple_choice",
+      "question": "Who weeps over Babylon's destruction?",
+      "options": [
+        "The angels and elders of heaven",
+        "The armies and the beasts of the abyss",
+        "The merchants and kings of the earth",
+        "The prophets and saints of God"
+      ],
+      "correct": "The merchants and kings of the earth",
+      "verse_ref": "Revelation 18:9-11",
+      "feedback": "The kings and merchants of the earth weep over Babylon's destruction."
+    },
+    {
+      "id": "rev_18_3",
+      "type": "true_false",
+      "question": "God's people are told to come out of Babylon so they won't share in her sins.",
+      "correct": true,
+      "verse_ref": "Revelation 18:4",
+      "feedback": "Come out of her, my people, so you will not share in her sins."
+    },
+    {
+      "id": "rev_18_4",
+      "type": "fill_in_the_blank",
+      "question": "In one _____ such great wealth has been brought to ruin.",
+      "correct": "hour",
+      "verse_ref": "Revelation 18:17",
+      "feedback": "In one hour such great wealth has been brought to ruin."
+    },
+    {
+      "id": "rev_18_5",
+      "type": "fill_in_the_blank",
+      "question": "A mighty angel threw a stone like a great _____ into the sea, saying Babylon will be thrown down.",
+      "correct": "millstone",
+      "verse_ref": "Revelation 18:21",
+      "feedback": "A mighty angel threw a boulder like a great millstone into the sea."
+    }
+  ]
+}

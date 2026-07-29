@@ -1,0 +1,53 @@
+{
+  "book": "Numbers",
+  "chapter": 27,
+  "questions": [
+    {
+      "id": "numbers-27-q1",
+      "type": "multiple_choice",
+      "question": "What did the daughters of Zelophehad request?",
+      "options": [
+        "To be released from an arranged marriage",
+        "To inherit their father's property",
+        "To receive silver from the tribal leaders",
+        "To be freed from service in the camp"
+      ],
+      "answer": "To inherit their father's property",
+      "verse_reference": "Numbers 27:1-4"
+    },
+    {
+      "id": "numbers-27-q2",
+      "type": "multiple_choice",
+      "question": "Whom did God appoint to succeed Moses?",
+      "options": [
+        "Eleazar",
+        "Caleb",
+        "Joshua",
+        "Aaron"
+      ],
+      "answer": "Joshua",
+      "verse_reference": "Numbers 27:18-23"
+    },
+    {
+      "id": "numbers-27-q3",
+      "type": "true_false",
+      "question": "God granted the daughters of Zelophehad the right to inherit.",
+      "answer": "true",
+      "verse_reference": "Numbers 27:7"
+    },
+    {
+      "id": "numbers-27-q4",
+      "type": "fill_blank",
+      "question": "God chose _____, son of Nun, a man in whom is the Spirit, to lead after Moses.",
+      "answer": "Joshua",
+      "verse_reference": "Numbers 27:18"
+    },
+    {
+      "id": "numbers-27-q5",
+      "type": "fill_blank",
+      "question": "The daughters of _____ asked for a share of their father's inheritance.",
+      "answer": "Zelophehad",
+      "verse_reference": "Numbers 27:1"
+    }
+  ]
+}

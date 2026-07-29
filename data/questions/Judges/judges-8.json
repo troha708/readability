@@ -1,0 +1,57 @@
+{
+  "book": "Judges",
+  "chapter": 8,
+  "questions": [
+    {
+      "id": "judges-8-q1",
+      "type": "multiple_choice",
+      "question": "What did Gideon refuse when the people wanted to make him ruler?",
+      "options": [
+        "To keep the gold that they offered him",
+        "To accept land as a reward for victory",
+        "To rule over them, saying the LORD would rule",
+        "To take for himself a wife from among their daughters"
+      ],
+      "answer": "To rule over them, saying the LORD would rule",
+      "verse_reference": "Judges 8:22-23"
+    },
+    {
+      "id": "judges-8-q2",
+      "type": "multiple_choice",
+      "question": "What did Gideon make from the gold that became a snare to Israel?",
+      "options": [
+        "A golden calf",
+        "A crown",
+        "A sword",
+        "An ephod"
+      ],
+      "answer": "An ephod",
+      "verse_reference": "Judges 8:27"
+    },
+    {
+      "id": "judges-8-q3",
+      "type": "true_false",
+      "question": "Israel had rest (peace) for forty years in the days of Gideon.",
+      "answer": "true",
+      "verse_reference": "Judges 8:28"
+    },
+    {
+      "id": "judges-8-q4",
+      "type": "fill_blank",
+      "question": "Gideon said, \"I will not rule over you... the _____ will rule over you.\"",
+      "answer": "LORD",
+      "accept": [
+        "Jehovah",
+        "Yahweh"
+      ],
+      "verse_reference": "Judges 8:23"
+    },
+    {
+      "id": "judges-8-q5",
+      "type": "fill_blank",
+      "question": "Gideon made an _____ of gold that became a snare to his household.",
+      "answer": "ephod",
+      "verse_reference": "Judges 8:27"
+    }
+  ]
+}

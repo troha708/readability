@@ -1,0 +1,56 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 30,
+  "questions": [
+    {
+      "id": "2-chronicles-30-q1",
+      "type": "multiple_choice",
+      "question": "What feast did Hezekiah invite all Israel and Judah to keep?",
+      "options": [
+        "The Passover",
+        "The Feast of Booths",
+        "The Day of Atonement",
+        "Pentecost"
+      ],
+      "answer": "The Passover",
+      "verse_reference": "2 Chronicles 30:1"
+    },
+    {
+      "id": "2-chronicles-30-q2",
+      "type": "multiple_choice",
+      "question": "How did many from the northern tribes respond to the couriers' invitation?",
+      "options": [
+        "Some mocked, but some humbled themselves and came",
+        "They all gladly answered the king's invitation",
+        "They drove the couriers out of their towns",
+        "They sent gifts but refused to come down"
+      ],
+      "answer": "Some mocked, but some humbled themselves and came",
+      "verse_reference": "2 Chronicles 30:10-11"
+    },
+    {
+      "id": "2-chronicles-30-q3",
+      "type": "true_false",
+      "question": "Hezekiah prayed that the good LORD would pardon those not ritually clean who sought God.",
+      "answer": "true",
+      "verse_reference": "2 Chronicles 30:18-20"
+    },
+    {
+      "id": "2-chronicles-30-q4",
+      "type": "fill_blank",
+      "question": "They kept the Feast of Unleavened Bread with great _____ for seven days.",
+      "answer": "joy",
+      "accept": [
+        "gladness"
+      ],
+      "verse_reference": "2 Chronicles 30:21"
+    },
+    {
+      "id": "2-chronicles-30-q5",
+      "type": "fill_blank",
+      "question": "There was great joy in Jerusalem, for since the time of _____ there had been nothing like this.",
+      "answer": "Solomon",
+      "verse_reference": "2 Chronicles 30:26"
+    }
+  ]
+}

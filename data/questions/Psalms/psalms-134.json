@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 134,
+  "questions": [
+    {
+      "id": "psalms-134-q1",
+      "type": "multiple_choice",
+      "question": "Whom does Psalm 134 address?",
+      "options": [
+        "The mighty angels of heaven who continually surround the throne",
+        "The kings of all the earth who gather themselves together for war",
+        "The elders of the great city who sit in judgment at the gate",
+        "The servants of the LORD who stand by night in the house of the LORD"
+      ],
+      "answer": "The servants of the LORD who stand by night in the house of the LORD",
+      "verse_reference": "Psalm 134:1"
+    },
+    {
+      "id": "psalms-134-q2",
+      "type": "multiple_choice",
+      "question": "What are they told to do?",
+      "options": [
+        "Bring their offerings to the altar and pay their vows",
+        "Bow their faces to the ground and confess their sins",
+        "Raise their voices in the streets and proclaim his deeds",
+        "Lift up their hands to the holy place and bless the LORD"
+      ],
+      "answer": "Lift up their hands to the holy place and bless the LORD",
+      "verse_reference": "Psalm 134:2"
+    },
+    {
+      "id": "psalms-134-q3",
+      "type": "true_false",
+      "question": "The psalm ends with a blessing: May the LORD bless you from Zion, he who made heaven and earth.",
+      "answer": "true",
+      "verse_reference": "Psalm 134:3"
+    },
+    {
+      "id": "psalms-134-q4",
+      "type": "fill_blank",
+      "question": "Come, _____ the LORD, all you servants of the LORD!",
+      "answer": "bless",
+      "verse_reference": "Psalm 134:1"
+    },
+    {
+      "id": "psalms-134-q5",
+      "type": "fill_blank",
+      "question": "May the LORD bless you from _____, he who made heaven and earth!",
+      "answer": "Zion",
+      "verse_reference": "Psalm 134:3"
+    }
+  ]
+}

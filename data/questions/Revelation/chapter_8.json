@@ -1,0 +1,58 @@
+{
+  "book": "Revelation",
+  "chapter": 8,
+  "questions": [
+    {
+      "id": "rev_8_1",
+      "type": "multiple_choice",
+      "question": "When the seventh seal was opened, what happened in heaven?",
+      "options": [
+        "Loud thunder and lightning",
+        "A great choir of angels sang",
+        "Silence for about half an hour",
+        "A great and violent earthquake"
+      ],
+      "correct": "Silence for about half an hour",
+      "verse_ref": "Revelation 8:1",
+      "feedback": "When the seventh seal was opened, there was silence in heaven for about half an hour."
+    },
+    {
+      "id": "rev_8_2",
+      "type": "multiple_choice",
+      "question": "How many angels were given trumpets?",
+      "options": [
+        "Three",
+        "Four",
+        "Seven",
+        "Twelve"
+      ],
+      "correct": "Seven",
+      "verse_ref": "Revelation 8:2",
+      "feedback": "Seven angels who stand before God were given seven trumpets."
+    },
+    {
+      "id": "rev_8_3",
+      "type": "true_false",
+      "question": "At the first trumpet, hail and fire mixed with blood were hurled to earth.",
+      "correct": true,
+      "verse_ref": "Revelation 8:7",
+      "feedback": "Hail and fire mixed with blood were hurled to earth, burning a third of the earth."
+    },
+    {
+      "id": "rev_8_4",
+      "type": "fill_in_the_blank",
+      "question": "A third of the sea turned into _____.",
+      "correct": "blood",
+      "verse_ref": "Revelation 8:8",
+      "feedback": "A third of the sea turned into blood when something like a mountain was thrown into it."
+    },
+    {
+      "id": "rev_8_5",
+      "type": "fill_in_the_blank",
+      "question": "A great star fell from the sky, blazing like a torch, and its name was _____.",
+      "correct": "Wormwood",
+      "verse_ref": "Revelation 8:10-11",
+      "feedback": "The star was called Wormwood, and it made a third of the waters bitter."
+    }
+  ]
+}

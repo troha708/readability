@@ -1,0 +1,53 @@
+{
+  "book": "Romans",
+  "chapter": 14,
+  "questions": [
+    {
+      "id": "romans-14-q1",
+      "type": "multiple_choice",
+      "question": "What is the main issue Paul addresses in this chapter?",
+      "options": [
+        "Refusing entirely to submit to the governing authorities above",
+        "Judging others over disputable matters like food and special days",
+        "Neglecting altogether to gather together for worship as one",
+        "Failing to give generously and freely to the poor among them"
+      ],
+      "answer": "Judging others over disputable matters like food and special days",
+      "verse_reference": "Romans 14:1-6"
+    },
+    {
+      "id": "romans-14-q2",
+      "type": "multiple_choice",
+      "question": "Paul says the kingdom of God is not eating and drinking but what?",
+      "options": [
+        "Righteousness, peace, and joy in the Holy Spirit",
+        "Sacrifice, and fasting, and very many long prayers",
+        "Eating, drinking, and the keeping of all the feasts",
+        "Great wealth, high honor, and a very long life"
+      ],
+      "answer": "Righteousness, peace, and joy in the Holy Spirit",
+      "verse_reference": "Romans 14:17"
+    },
+    {
+      "id": "romans-14-q3",
+      "type": "true_false",
+      "question": "Paul says it is wrong to eat meat that has been offered to idols.",
+      "answer": "false",
+      "verse_reference": "Romans 14:14"
+    },
+    {
+      "id": "romans-14-q4",
+      "type": "fill_blank",
+      "question": "For none of us lives to himself, and none dies to _____.",
+      "answer": "himself",
+      "verse_reference": "Romans 14:7"
+    },
+    {
+      "id": "romans-14-q5",
+      "type": "fill_blank",
+      "question": "So then each one of us will give an _____ of himself to God.",
+      "answer": "account",
+      "verse_reference": "Romans 14:12"
+    }
+  ]
+}

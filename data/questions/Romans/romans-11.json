@@ -1,0 +1,53 @@
+{
+  "book": "Romans",
+  "chapter": 11,
+  "questions": [
+    {
+      "id": "romans-11-q1",
+      "type": "multiple_choice",
+      "question": "What metaphor does Paul use to describe Gentile believers being included with Israel?",
+      "options": [
+        "A new stone added to the building of God's house",
+        "A fresh young vine planted beside an older and fruitful vine",
+        "A field of wheat sown among the standing grain",
+        "A wild olive branch grafted into a cultivated olive tree"
+      ],
+      "answer": "A wild olive branch grafted into a cultivated olive tree",
+      "verse_reference": "Romans 11:17"
+    },
+    {
+      "id": "romans-11-q2",
+      "type": "multiple_choice",
+      "question": "Has God rejected his people Israel, according to Paul?",
+      "options": [
+        "Yes, completely",
+        "Only partially",
+        "Yes, temporarily",
+        "No, by no means"
+      ],
+      "answer": "No, by no means",
+      "verse_reference": "Romans 11:1"
+    },
+    {
+      "id": "romans-11-q3",
+      "type": "true_false",
+      "question": "Paul warns Gentile believers not to be arrogant toward the natural branches (Israel).",
+      "answer": "true",
+      "verse_reference": "Romans 11:18,20"
+    },
+    {
+      "id": "romans-11-q4",
+      "type": "fill_blank",
+      "question": "Oh the depth of the riches both of the _____ and knowledge of God!",
+      "answer": "wisdom",
+      "verse_reference": "Romans 11:33"
+    },
+    {
+      "id": "romans-11-q5",
+      "type": "fill_blank",
+      "question": "For of him, and through him, and to him are all things. To him be the _____ forever!",
+      "answer": "glory",
+      "verse_reference": "Romans 11:36"
+    }
+  ]
+}

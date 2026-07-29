@@ -1,0 +1,59 @@
+{
+  "book": "Mark",
+  "chapter": 12,
+  "questions": [
+    {
+      "id": "mark-12-q1",
+      "type": "multiple_choice",
+      "question": "What is the greatest commandment according to Jesus?",
+      "options": [
+        "Keep the Sabbath day and keep it holy",
+        "Honor your father and your mother always",
+        "Love the Lord your God with all your heart",
+        "Do not bear false witness against your neighbor"
+      ],
+      "answer": "Love the Lord your God with all your heart",
+      "verse_reference": "Mark 12:29-30"
+    },
+    {
+      "id": "mark-12-q2",
+      "type": "multiple_choice",
+      "question": "Whose offering did Jesus praise at the temple treasury?",
+      "options": [
+        "A Roman centurion",
+        "A rich Pharisee",
+        "A poor widow",
+        "A Levite priest"
+      ],
+      "answer": "A poor widow",
+      "verse_reference": "Mark 12:42-44"
+    },
+    {
+      "id": "mark-12-q3",
+      "type": "true_false",
+      "question": "Jesus said to render to Caesar the things that are Caesar's, and to God the things that are God's.",
+      "answer": "true",
+      "verse_reference": "Mark 12:17"
+    },
+    {
+      "id": "mark-12-q4",
+      "type": "fill_blank",
+      "question": "The second is like this: 'You shall love your _____ as yourself.'",
+      "answer": "neighbor",
+      "accept": [
+        "neighbour"
+      ],
+      "verse_reference": "Mark 12:31"
+    },
+    {
+      "id": "mark-12-q5",
+      "type": "fill_blank",
+      "question": "She, out of her poverty, has _____ in all she had to live on.",
+      "answer": "put",
+      "accept": [
+        "cast"
+      ],
+      "verse_reference": "Mark 12:44"
+    }
+  ]
+}

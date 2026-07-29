@@ -1,0 +1,56 @@
+{
+  "book": "Genesis",
+  "chapter": 14,
+  "questions": [
+    {
+      "id": "genesis-14-q1",
+      "type": "multiple_choice",
+      "question": "Whom did Abram rescue from the four kings?",
+      "options": [
+        "Sarai",
+        "Isaac",
+        "Pharaoh",
+        "Lot"
+      ],
+      "answer": "Lot",
+      "verse_reference": "Genesis 14:14-16"
+    },
+    {
+      "id": "genesis-14-q2",
+      "type": "multiple_choice",
+      "question": "Who was the king of Salem and priest of God Most High who blessed Abram?",
+      "options": [
+        "Melchizedek",
+        "Abimelech",
+        "Kedorlaomer",
+        "Bera"
+      ],
+      "answer": "Melchizedek",
+      "verse_reference": "Genesis 14:18"
+    },
+    {
+      "id": "genesis-14-q3",
+      "type": "true_false",
+      "question": "Abram gave Melchizedek a tenth of everything.",
+      "answer": "true",
+      "verse_reference": "Genesis 14:20"
+    },
+    {
+      "id": "genesis-14-q4",
+      "type": "fill_blank",
+      "question": "Melchizedek brought out _____ and wine to Abram.",
+      "answer": "bread",
+      "verse_reference": "Genesis 14:18"
+    },
+    {
+      "id": "genesis-14-q5",
+      "type": "fill_blank",
+      "question": "In this chapter Abram is called, for the first time, \"Abram the _____.\"",
+      "answer": "Hebrew",
+      "accept": [
+        "Ebrew"
+      ],
+      "verse_reference": "Genesis 14:13"
+    }
+  ]
+}

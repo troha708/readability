@@ -1,0 +1,56 @@
+{
+  "book": "Ezekiel",
+  "chapter": 9,
+  "questions": [
+    {
+      "id": "ezekiel-9-q1",
+      "type": "multiple_choice",
+      "question": "What did the man clothed in linen do in chapter 9?",
+      "options": [
+        "Put a mark on those who grieved over the sin",
+        "Anointed a new high priest for the holy temple",
+        "Read the law aloud to all the people",
+        "Sealed the temple gates against the enemy"
+      ],
+      "answer": "Put a mark on those who grieved over the sin",
+      "verse_reference": "Ezekiel 9:4"
+    },
+    {
+      "id": "ezekiel-9-q2",
+      "type": "multiple_choice",
+      "question": "Who were spared in the slaughter that followed?",
+      "options": [
+        "Those who paid tribute to the king",
+        "Those who were priests serving in the temple",
+        "Those with the mark on their foreheads",
+        "Those who fled the city before the siege"
+      ],
+      "answer": "Those with the mark on their foreheads",
+      "verse_reference": "Ezekiel 9:6"
+    },
+    {
+      "id": "ezekiel-9-q3",
+      "type": "true_false",
+      "question": "The executioners were told to begin at God's sanctuary, with the elders.",
+      "answer": "true",
+      "verse_reference": "Ezekiel 9:6"
+    },
+    {
+      "id": "ezekiel-9-q4",
+      "type": "fill_blank",
+      "question": "Put a _____ on the foreheads of the men who sigh and groan over all the abominations.",
+      "answer": "mark",
+      "verse_reference": "Ezekiel 9:4"
+    },
+    {
+      "id": "ezekiel-9-q5",
+      "type": "fill_blank",
+      "question": "Ezekiel fell on his face and cried, 'Ah, Lord GOD! Will you destroy all the _____ of Israel?'",
+      "answer": "remnant",
+      "accept": [
+        "residue"
+      ],
+      "verse_reference": "Ezekiel 9:8"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "2 Samuel",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "2-samuel-2-q1",
+      "type": "multiple_choice",
+      "question": "Over which tribe was David first anointed king?",
+      "options": [
+        "Ephraim",
+        "Judah",
+        "All Israel",
+        "Benjamin"
+      ],
+      "answer": "Judah",
+      "verse_reference": "2 Samuel 2:4"
+    },
+    {
+      "id": "2-samuel-2-q2",
+      "type": "multiple_choice",
+      "question": "In which city did David begin to reign?",
+      "options": [
+        "Bethlehem",
+        "Gibeon",
+        "Jerusalem",
+        "Hebron"
+      ],
+      "answer": "Hebron",
+      "verse_reference": "2 Samuel 2:11"
+    },
+    {
+      "id": "2-samuel-2-q3",
+      "type": "true_false",
+      "question": "Saul's son Ish-bosheth was made king over the rest of Israel.",
+      "answer": "true",
+      "verse_reference": "2 Samuel 2:8-9"
+    },
+    {
+      "id": "2-samuel-2-q4",
+      "type": "fill_blank",
+      "question": "David was anointed king over the house of _____ at Hebron.",
+      "answer": "Judah",
+      "verse_reference": "2 Samuel 2:4"
+    },
+    {
+      "id": "2-samuel-2-q5",
+      "type": "fill_blank",
+      "question": "David reigned over Judah from the city of _____ for seven years.",
+      "answer": "Hebron",
+      "verse_reference": "2 Samuel 2:11"
+    }
+  ]
+}

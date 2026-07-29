@@ -1,0 +1,53 @@
+{
+  "book": "Luke",
+  "chapter": 7,
+  "questions": [
+    {
+      "id": "luke-7-q1",
+      "type": "multiple_choice",
+      "question": "What did the centurion say that amazed Jesus?",
+      "options": [
+        "That he himself had built them a synagogue to worship in",
+        "That he was not worthy for Jesus to come under his roof",
+        "That he firmly believed in only one true and living God",
+        "That he had carefully kept every one of the commandments"
+      ],
+      "answer": "That he was not worthy for Jesus to come under his roof",
+      "verse_reference": "Luke 7:6-9"
+    },
+    {
+      "id": "luke-7-q2",
+      "type": "multiple_choice",
+      "question": "In the city of Nain, whose son did Jesus raise from the dead?",
+      "options": [
+        "A priest's son",
+        "A soldier's son",
+        "A ruler's son",
+        "A widow's son"
+      ],
+      "answer": "A widow's son",
+      "verse_reference": "Luke 7:12-15"
+    },
+    {
+      "id": "luke-7-q3",
+      "type": "true_false",
+      "question": "A sinful woman washed Jesus' feet with her tears and wiped them with her hair.",
+      "answer": "true",
+      "verse_reference": "Luke 7:37-38"
+    },
+    {
+      "id": "luke-7-q4",
+      "type": "fill_blank",
+      "question": "Your _____ has saved you. Go in peace.",
+      "answer": "faith",
+      "verse_reference": "Luke 7:50"
+    },
+    {
+      "id": "luke-7-q5",
+      "type": "fill_blank",
+      "question": "I tell you, I have not found such great _____, no, not in Israel.",
+      "answer": "faith",
+      "verse_reference": "Luke 7:9"
+    }
+  ]
+}

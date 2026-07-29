@@ -1,0 +1,53 @@
+{
+  "book": "2 Kings",
+  "chapter": 23,
+  "questions": [
+    {
+      "id": "2-kings-23-q1",
+      "type": "multiple_choice",
+      "question": "What did Josiah do after the Book of the Law was found?",
+      "options": [
+        "Fled the city before the Babylonians arrived",
+        "Raised heavy taxes in order to rebuild his palace",
+        "Did nothing at all and ignored the dire warning",
+        "Led sweeping reforms, destroying idols and altars"
+      ],
+      "answer": "Led sweeping reforms, destroying idols and altars",
+      "verse_reference": "2 Kings 23:4-20"
+    },
+    {
+      "id": "2-kings-23-q2",
+      "type": "multiple_choice",
+      "question": "What major feast did Josiah restore for Judah?",
+      "options": [
+        "Tabernacles (Booths)",
+        "Pentecost",
+        "Atonement",
+        "The Passover"
+      ],
+      "answer": "The Passover",
+      "verse_reference": "2 Kings 23:21-23"
+    },
+    {
+      "id": "2-kings-23-q3",
+      "type": "true_false",
+      "question": "No king before or after Josiah turned to the LORD as wholeheartedly.",
+      "answer": "true",
+      "verse_reference": "2 Kings 23:25"
+    },
+    {
+      "id": "2-kings-23-q4",
+      "type": "fill_blank",
+      "question": "King _____ destroyed the high places and idols throughout the land.",
+      "answer": "Josiah",
+      "verse_reference": "2 Kings 23:4-20"
+    },
+    {
+      "id": "2-kings-23-q5",
+      "type": "fill_blank",
+      "question": "Josiah commanded the people to keep the _____ to the LORD as it was written.",
+      "answer": "Passover",
+      "verse_reference": "2 Kings 23:21"
+    }
+  ]
+}

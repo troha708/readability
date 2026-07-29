@@ -1,0 +1,61 @@
+{
+  "book": "Psalms",
+  "chapter": 13,
+  "questions": [
+    {
+      "id": "psalms-13-q1",
+      "type": "multiple_choice",
+      "question": "What question does David repeat in Psalm 13?",
+      "options": [
+        "Where can I flee from your presence?",
+        "What is man that you are mindful of him?",
+        "How long, O LORD? Will you forget me forever?",
+        "Why do all the nations rage against your people?"
+      ],
+      "answer": "How long, O LORD? Will you forget me forever?",
+      "verse_reference": "Psalm 13:1"
+    },
+    {
+      "id": "psalms-13-q2",
+      "type": "multiple_choice",
+      "question": "How does the psalm end despite its lament?",
+      "options": [
+        "Trusting in God's steadfast love and rejoicing in salvation",
+        "Marveling in wonder at the glories of all creation",
+        "Calling down fierce judgment upon all of his enemies",
+        "Confessing his own deep sin and seeking God's full forgiveness"
+      ],
+      "answer": "Trusting in God's steadfast love and rejoicing in salvation",
+      "verse_reference": "Psalm 13:5"
+    },
+    {
+      "id": "psalms-13-q3",
+      "type": "true_false",
+      "question": "David asks God to light up his eyes lest he sleep the sleep of death.",
+      "answer": "true",
+      "verse_reference": "Psalm 13:3"
+    },
+    {
+      "id": "psalms-13-q4",
+      "type": "fill_blank",
+      "question": "But I have trusted in Your loving _____.",
+      "answer": "devotion",
+      "accept": [
+        "love",
+        "mercy",
+        "kindness"
+      ],
+      "verse_reference": "Psalm 13:5"
+    },
+    {
+      "id": "psalms-13-q5",
+      "type": "fill_blank",
+      "question": "I will sing to the LORD, for He has been _____ to me.",
+      "answer": "good",
+      "accept": [
+        "bountifully"
+      ],
+      "verse_reference": "Psalm 13:6"
+    }
+  ]
+}

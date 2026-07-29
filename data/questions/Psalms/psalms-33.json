@@ -1,0 +1,57 @@
+{
+  "book": "Psalms",
+  "chapter": 33,
+  "questions": [
+    {
+      "id": "psalms-33-q1",
+      "type": "multiple_choice",
+      "question": "How are the righteous told to praise the LORD in Psalm 33?",
+      "options": [
+        "With silence and stillness and quiet and patient waiting",
+        "With the lyre, harp, and a new song, playing skillfully",
+        "With sackcloth and ashes and a loud and mournful cry",
+        "With incense and sacrifice and solemn, sacred feasts"
+      ],
+      "answer": "With the lyre, harp, and a new song, playing skillfully",
+      "verse_reference": "Psalm 33:2-3"
+    },
+    {
+      "id": "psalms-33-q2",
+      "type": "multiple_choice",
+      "question": "How were the heavens made, according to Psalm 33?",
+      "options": [
+        "By the wisdom of the ages",
+        "By the labor of many days",
+        "By the hand of an angel",
+        "By the word of the LORD"
+      ],
+      "answer": "By the word of the LORD",
+      "verse_reference": "Psalm 33:6"
+    },
+    {
+      "id": "psalms-33-q3",
+      "type": "true_false",
+      "question": "The psalm says a king is not saved by his great army, nor a warrior by his great strength.",
+      "answer": "true",
+      "verse_reference": "Psalm 33:16"
+    },
+    {
+      "id": "psalms-33-q4",
+      "type": "fill_blank",
+      "question": "Blessed is the nation whose God is the _____.",
+      "answer": "LORD",
+      "accept": [
+        "Jehovah",
+        "Yahweh"
+      ],
+      "verse_reference": "Psalm 33:12"
+    },
+    {
+      "id": "psalms-33-q5",
+      "type": "fill_blank",
+      "question": "Our soul waits for the LORD; he is our help and our _____.",
+      "answer": "shield",
+      "verse_reference": "Psalm 33:20"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "1 Chronicles",
+  "chapter": 7,
+  "questions": [
+    {
+      "id": "1-chronicles-7-q1",
+      "type": "multiple_choice",
+      "question": "This chapter lists genealogies of Issachar and which other tribe?",
+      "options": [
+        "Benjamin",
+        "Levi",
+        "Judah",
+        "Reuben and Gad"
+      ],
+      "answer": "Benjamin",
+      "verse_reference": "1 Chronicles 7:6"
+    },
+    {
+      "id": "1-chronicles-7-q2",
+      "type": "multiple_choice",
+      "question": "Which famous leader is listed as a descendant of Ephraim?",
+      "options": [
+        "Gideon the judge",
+        "Samson the Nazirite",
+        "Caleb son of Jephunneh",
+        "Joshua son of Nun"
+      ],
+      "answer": "Joshua son of Nun",
+      "verse_reference": "1 Chronicles 7:27"
+    },
+    {
+      "id": "1-chronicles-7-q3",
+      "type": "true_false",
+      "question": "The men of Issachar are described as mighty men of valor.",
+      "answer": "true",
+      "verse_reference": "1 Chronicles 7:5"
+    },
+    {
+      "id": "1-chronicles-7-q4",
+      "type": "fill_blank",
+      "question": "Ephraim mourned because his sons were killed raiding the cattle of _____.",
+      "answer": "Gath",
+      "verse_reference": "1 Chronicles 7:21"
+    },
+    {
+      "id": "1-chronicles-7-q5",
+      "type": "fill_blank",
+      "question": "The genealogy of _____ closes the chapter with its brave warriors.",
+      "answer": "Asher",
+      "verse_reference": "1 Chronicles 7:40"
+    }
+  ]
+}

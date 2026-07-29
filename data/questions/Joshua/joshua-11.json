@@ -1,0 +1,53 @@
+{
+  "book": "Joshua",
+  "chapter": 11,
+  "questions": [
+    {
+      "id": "joshua-11-q1",
+      "type": "multiple_choice",
+      "question": "What does chapter 11 describe?",
+      "options": [
+        "Joshua's conquest of the northern kings",
+        "The crossing of the Jordan River on dry ground",
+        "Achan's hidden sin and its punishment",
+        "The fall of Jericho's encircling walls"
+      ],
+      "answer": "Joshua's conquest of the northern kings",
+      "verse_reference": "Joshua 11:1-5"
+    },
+    {
+      "id": "joshua-11-q2",
+      "type": "multiple_choice",
+      "question": "Who led the northern coalition against Israel?",
+      "options": [
+        "Og, the king of Bashan",
+        "Jabin, king of Hazor",
+        "Sihon, king of the Amorites",
+        "Adoni-Zedek of Jerusalem"
+      ],
+      "answer": "Jabin, king of Hazor",
+      "verse_reference": "Joshua 11:1"
+    },
+    {
+      "id": "joshua-11-q3",
+      "type": "true_false",
+      "question": "Joshua took the whole land, as the LORD had commanded Moses.",
+      "answer": "true",
+      "verse_reference": "Joshua 11:23"
+    },
+    {
+      "id": "joshua-11-q4",
+      "type": "fill_blank",
+      "question": "Joshua captured and burned _____, the head of the northern kingdoms.",
+      "answer": "Hazor",
+      "verse_reference": "Joshua 11:10-11"
+    },
+    {
+      "id": "joshua-11-q5",
+      "type": "fill_blank",
+      "question": "So Joshua took the whole _____ and gave it as an inheritance to Israel.",
+      "answer": "land",
+      "verse_reference": "Joshua 11:23"
+    }
+  ]
+}

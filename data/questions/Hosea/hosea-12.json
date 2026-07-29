@@ -1,0 +1,56 @@
+{
+  "book": "Hosea",
+  "chapter": 12,
+  "questions": [
+    {
+      "id": "hosea-12-q1",
+      "type": "multiple_choice",
+      "question": "Which patriarch does Hosea 12 recall to call Israel back to God?",
+      "options": [
+        "David, who ruled all Israel",
+        "Jacob, who strove with God",
+        "Abraham, who left his homeland",
+        "Moses, who led them out of Egypt"
+      ],
+      "answer": "Jacob, who strove with God",
+      "verse_reference": "Hosea 12:3-4"
+    },
+    {
+      "id": "hosea-12-q2",
+      "type": "multiple_choice",
+      "question": "What does Hosea 12 urge Israel to do?",
+      "options": [
+        "Offer up still more sacrifices on the many high places throughout the land",
+        "Gather to themselves great riches and trade freely with the surrounding nations",
+        "Build up strong and high walls and raise a great and mighty army for defense",
+        "Return to God, hold fast to love and justice, and wait continually for him"
+      ],
+      "answer": "Return to God, hold fast to love and justice, and wait continually for him",
+      "verse_reference": "Hosea 12:6"
+    },
+    {
+      "id": "hosea-12-q3",
+      "type": "true_false",
+      "question": "Hosea 12 condemns Israel for dishonest scales and loving to oppress.",
+      "answer": "true",
+      "verse_reference": "Hosea 12:7"
+    },
+    {
+      "id": "hosea-12-q4",
+      "type": "fill_blank",
+      "question": "Hold fast to love and justice, and wait continually for your _____.",
+      "answer": "God",
+      "verse_reference": "Hosea 12:6"
+    },
+    {
+      "id": "hosea-12-q5",
+      "type": "fill_blank",
+      "question": "Jacob strove with the _____ and prevailed.",
+      "answer": "angel",
+      "accept": [
+        "Messenger"
+      ],
+      "verse_reference": "Hosea 12:4"
+    }
+  ]
+}

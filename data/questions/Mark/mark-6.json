@@ -1,0 +1,58 @@
+{
+  "book": "Mark",
+  "chapter": 6,
+  "questions": [
+    {
+      "id": "mark-6-q1",
+      "type": "multiple_choice",
+      "question": "How many loaves of bread did Jesus use to feed the five thousand?",
+      "options": [
+        "Twelve",
+        "Seven",
+        "Five",
+        "Three"
+      ],
+      "answer": "Five",
+      "verse_reference": "Mark 6:41"
+    },
+    {
+      "id": "mark-6-q2",
+      "type": "multiple_choice",
+      "question": "Who had John the Baptizer put to death?",
+      "options": [
+        "Herod",
+        "Caesar",
+        "Pilate",
+        "The Pharisees"
+      ],
+      "answer": "Herod",
+      "verse_reference": "Mark 6:27"
+    },
+    {
+      "id": "mark-6-q3",
+      "type": "true_false",
+      "question": "Jesus was able to do many mighty works in his hometown because of the people's great faith.",
+      "answer": "false",
+      "verse_reference": "Mark 6:5-6"
+    },
+    {
+      "id": "mark-6-q4",
+      "type": "fill_blank",
+      "question": "A prophet is not without honor, except in his own country, and among his own _____, and in his own house.",
+      "answer": "relatives",
+      "accept": [
+        "kin",
+        "kindred",
+        "kinsmen"
+      ],
+      "verse_reference": "Mark 6:4"
+    },
+    {
+      "id": "mark-6-q5",
+      "type": "fill_blank",
+      "question": "They all saw him and were troubled. But he immediately spoke with them and said to them, 'Cheer up! It is I! Don't be _____.'",
+      "answer": "afraid",
+      "verse_reference": "Mark 6:50"
+    }
+  ]
+}

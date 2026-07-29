@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 114,
+  "questions": [
+    {
+      "id": "psalms-114-q1",
+      "type": "multiple_choice",
+      "question": "What event does Psalm 114 celebrate?",
+      "options": [
+        "The building of the temple",
+        "Israel's exodus from Egypt",
+        "The crowning of King David",
+        "The return from Babylon"
+      ],
+      "answer": "Israel's exodus from Egypt",
+      "verse_reference": "Psalm 114:1"
+    },
+    {
+      "id": "psalms-114-q2",
+      "type": "multiple_choice",
+      "question": "What does the psalm poetically say the sea and Jordan did?",
+      "options": [
+        "The sea fled and the Jordan turned back",
+        "The rock split open and water gushed out",
+        "The sun stood still and the moon halted",
+        "The heavens opened and manna rained down"
+      ],
+      "answer": "The sea fled and the Jordan turned back",
+      "verse_reference": "Psalm 114:3"
+    },
+    {
+      "id": "psalms-114-q3",
+      "type": "true_false",
+      "question": "The psalm pictures the mountains skipping like rams and the hills like lambs.",
+      "answer": "true",
+      "verse_reference": "Psalm 114:4"
+    },
+    {
+      "id": "psalms-114-q4",
+      "type": "fill_blank",
+      "question": "When _____ went out from Egypt, Judah became his sanctuary.",
+      "answer": "Israel",
+      "verse_reference": "Psalm 114:1-2"
+    },
+    {
+      "id": "psalms-114-q5",
+      "type": "fill_blank",
+      "question": "He turns the rock into a pool of water, the flint into a spring of _____.",
+      "answer": "water",
+      "verse_reference": "Psalm 114:8"
+    }
+  ]
+}

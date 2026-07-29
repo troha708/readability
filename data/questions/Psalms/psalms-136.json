@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 136,
+  "questions": [
+    {
+      "id": "psalms-136-q1",
+      "type": "multiple_choice",
+      "question": "What phrase is repeated in every verse of Psalm 136?",
+      "options": [
+        "For his steadfast love endures forever",
+        "For his judgments are righteous and true",
+        "For his temple stands in glory on Zion",
+        "For his name is great among the nations"
+      ],
+      "answer": "For his steadfast love endures forever",
+      "verse_reference": "Psalm 136:1"
+    },
+    {
+      "id": "psalms-136-q2",
+      "type": "multiple_choice",
+      "question": "What acts of God does Psalm 136 recount with the refrain?",
+      "options": [
+        "The law, the tabernacle, and the building of the temple",
+        "The exile, the return, and the rebuilding of the walls",
+        "The flood, the tower, and the call of Abraham",
+        "Creation, the exodus, and the giving of the land"
+      ],
+      "answer": "Creation, the exodus, and the giving of the land",
+      "verse_reference": "Psalm 136:4-22"
+    },
+    {
+      "id": "psalms-136-q3",
+      "type": "true_false",
+      "question": "The psalm credits God with dividing the Red Sea in two.",
+      "answer": "true",
+      "verse_reference": "Psalm 136:13"
+    },
+    {
+      "id": "psalms-136-q4",
+      "type": "fill_blank",
+      "question": "Give thanks to the LORD, for he is good, for his steadfast love endures _____.",
+      "answer": "forever",
+      "verse_reference": "Psalm 136:1"
+    },
+    {
+      "id": "psalms-136-q5",
+      "type": "fill_blank",
+      "question": "To him who alone does great _____, for his steadfast love endures forever.",
+      "answer": "wonders",
+      "verse_reference": "Psalm 136:4"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Lamentations",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "lamentations-2-q1",
+      "type": "multiple_choice",
+      "question": "What is the focus of Lamentations 2?",
+      "options": [
+        "The wealth of the nations brought to Zion",
+        "The Lord's steadfast love restored to Zion",
+        "The Lord's fierce anger poured out on Zion",
+        "The joyful return of the exiles to Zion"
+      ],
+      "answer": "The Lord's fierce anger poured out on Zion",
+      "verse_reference": "Lamentations 2:1-2"
+    },
+    {
+      "id": "lamentations-2-q2",
+      "type": "multiple_choice",
+      "question": "What does the poet say the prophets of Jerusalem had seen?",
+      "options": [
+        "Glowing promises of a very swift return back home from the exile",
+        "Sweet songs of comfort sung aloud in all of the city streets",
+        "False and deceptive visions, not exposing the people's iniquity",
+        "True and solemn warnings that the people utterly refused to hear"
+      ],
+      "answer": "False and deceptive visions, not exposing the people's iniquity",
+      "verse_reference": "Lamentations 2:14"
+    },
+    {
+      "id": "lamentations-2-q3",
+      "type": "true_false",
+      "question": "Lamentations 2 describes children fainting from hunger in the streets of the city.",
+      "answer": "true",
+      "verse_reference": "Lamentations 2:11-12"
+    },
+    {
+      "id": "lamentations-2-q4",
+      "type": "fill_blank",
+      "question": "The Lord has become like an _____; he has swallowed up Israel.",
+      "answer": "enemy",
+      "verse_reference": "Lamentations 2:5"
+    },
+    {
+      "id": "lamentations-2-q5",
+      "type": "fill_blank",
+      "question": "Cry aloud to the Lord... pour out your heart like water before the presence of the _____!",
+      "answer": "Lord",
+      "verse_reference": "Lamentations 2:18-19"
+    }
+  ]
+}

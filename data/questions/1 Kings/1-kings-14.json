@@ -1,0 +1,53 @@
+{
+  "book": "1 Kings",
+  "chapter": 14,
+  "questions": [
+    {
+      "id": "1-kings-14-q1",
+      "type": "multiple_choice",
+      "question": "What did the prophet Ahijah foretell about Jeroboam's house?",
+      "options": [
+        "It would be cut off",
+        "Nothing",
+        "It would rule forever",
+        "It would prosper"
+      ],
+      "answer": "It would be cut off",
+      "verse_reference": "1 Kings 14:10-11"
+    },
+    {
+      "id": "1-kings-14-q2",
+      "type": "multiple_choice",
+      "question": "Who attacked Jerusalem and carried off temple treasures in Rehoboam's reign?",
+      "options": [
+        "Pharaoh Shishak of Egypt",
+        "Hazael of Damascus",
+        "King Sennacherib of Assyria",
+        "Ben-Hadad of Aram"
+      ],
+      "answer": "Pharaoh Shishak of Egypt",
+      "verse_reference": "1 Kings 14:25-26"
+    },
+    {
+      "id": "1-kings-14-q3",
+      "type": "true_false",
+      "question": "Both the northern and southern kingdoms fell into idolatry.",
+      "answer": "true",
+      "verse_reference": "1 Kings 14:9-23"
+    },
+    {
+      "id": "1-kings-14-q4",
+      "type": "fill_blank",
+      "question": "The prophet _____ prophesied disaster on Jeroboam's house.",
+      "answer": "Ahijah",
+      "verse_reference": "1 Kings 14:6-11"
+    },
+    {
+      "id": "1-kings-14-q5",
+      "type": "fill_blank",
+      "question": "King _____ of Egypt plundered the temple treasures from Jerusalem.",
+      "answer": "Shishak",
+      "verse_reference": "1 Kings 14:25-26"
+    }
+  ]
+}

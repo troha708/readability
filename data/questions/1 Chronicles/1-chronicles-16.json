@@ -1,0 +1,57 @@
+{
+  "book": "1 Chronicles",
+  "chapter": 16,
+  "questions": [
+    {
+      "id": "1-chronicles-16-q1",
+      "type": "multiple_choice",
+      "question": "Where did David place the ark when it arrived in Jerusalem?",
+      "options": [
+        "Within the newly built temple",
+        "Inside his own royal house",
+        "In a tent he had pitched for it",
+        "On the great altar of burnt offering"
+      ],
+      "answer": "In a tent he had pitched for it",
+      "verse_reference": "1 Chronicles 16:1"
+    },
+    {
+      "id": "1-chronicles-16-q2",
+      "type": "multiple_choice",
+      "question": "Whom did David appoint as chief to minister and give thanks before the ark?",
+      "options": [
+        "Jeduthun",
+        "Heman",
+        "Asaph",
+        "Obed-edom"
+      ],
+      "answer": "Asaph",
+      "verse_reference": "1 Chronicles 16:5"
+    },
+    {
+      "id": "1-chronicles-16-q3",
+      "type": "true_false",
+      "question": "David gave a psalm of thanksgiving on that day.",
+      "answer": "true",
+      "verse_reference": "1 Chronicles 16:7"
+    },
+    {
+      "id": "1-chronicles-16-q4",
+      "type": "fill_blank",
+      "question": "Give thanks to the LORD; call upon His name; make known His deeds among the _____!",
+      "answer": "nations",
+      "accept": [
+        "peoples",
+        "people"
+      ],
+      "verse_reference": "1 Chronicles 16:8"
+    },
+    {
+      "id": "1-chronicles-16-q5",
+      "type": "fill_blank",
+      "question": "'Ascribe to the LORD the glory due his _____.'",
+      "answer": "name",
+      "verse_reference": "1 Chronicles 16:29"
+    }
+  ]
+}

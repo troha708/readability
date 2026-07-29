@@ -1,0 +1,57 @@
+{
+  "book": "Deuteronomy",
+  "chapter": 21,
+  "questions": [
+    {
+      "id": "deuteronomy-21-q1",
+      "type": "multiple_choice",
+      "question": "What kinds of laws does chapter 21 contain?",
+      "options": [
+        "Instructions for keeping the three great yearly pilgrim festivals",
+        "Social laws: unsolved murder, captives, inheritance, a rebellious son",
+        "Rules for waging war and for dividing the spoil taken from enemies",
+        "Laws for offering the daily sacrifices and the grain gifts at the altar"
+      ],
+      "answer": "Social laws: unsolved murder, captives, inheritance, a rebellious son",
+      "verse_reference": "Deuteronomy 21:1-21"
+    },
+    {
+      "id": "deuteronomy-21-q2",
+      "type": "multiple_choice",
+      "question": "What did the law say about a body hanged on a tree?",
+      "options": [
+        "Display it at the gate as a warning",
+        "Burn it outside the camp with fire",
+        "Leave it hanging until the next sunrise",
+        "Bury it the same day, for it is cursed by God"
+      ],
+      "answer": "Bury it the same day, for it is cursed by God",
+      "verse_reference": "Deuteronomy 21:22-23"
+    },
+    {
+      "id": "deuteronomy-21-q3",
+      "type": "true_false",
+      "question": "The firstborn son's right to a double portion was protected, even if his father preferred another wife's son.",
+      "answer": "true",
+      "verse_reference": "Deuteronomy 21:15-17"
+    },
+    {
+      "id": "deuteronomy-21-q4",
+      "type": "fill_blank",
+      "question": "A man hanged on a tree was not to remain overnight, for he is under God's _____.",
+      "answer": "curse",
+      "accept": [
+        "cursed",
+        "accursed"
+      ],
+      "verse_reference": "Deuteronomy 21:23"
+    },
+    {
+      "id": "deuteronomy-21-q5",
+      "type": "fill_blank",
+      "question": "The firstborn was to receive a _____ portion of the inheritance.",
+      "answer": "double",
+      "verse_reference": "Deuteronomy 21:17"
+    }
+  ]
+}

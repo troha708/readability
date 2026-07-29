@@ -1,0 +1,61 @@
+{
+  "book": "Titus",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "titus_3_1",
+      "type": "multiple_choice",
+      "question": "Paul says God saved us not because of works done by us but according to what?",
+      "options": [
+        "His own mercy",
+        "Our faith",
+        "Our prayers",
+        "Our obedience"
+      ],
+      "correct": "His own mercy",
+      "verse_ref": "Titus 3:5",
+      "feedback": "God saved us not because of our works but according to his own mercy."
+    },
+    {
+      "id": "titus_3_2",
+      "type": "multiple_choice",
+      "question": "What does Paul tell Titus to avoid?",
+      "options": [
+        "Foolish controversies and genealogies",
+        "The courts and the judges of Rome",
+        "All dealings with the Gentiles",
+        "Speaking before the large gathered crowd"
+      ],
+      "correct": "Foolish controversies and genealogies",
+      "verse_ref": "Titus 3:9",
+      "feedback": "Avoid foolish controversies, genealogies, dissensions, and quarrels about the law."
+    },
+    {
+      "id": "titus_3_3",
+      "type": "true_false",
+      "question": "Paul says believers should be ready for every good work.",
+      "correct": true,
+      "verse_ref": "Titus 3:1",
+      "feedback": "Paul reminds Titus that believers should be submissive, obedient, and ready for every good work."
+    },
+    {
+      "id": "titus_3_4",
+      "type": "fill_in_the_blank",
+      "question": "God saved us through the washing of regeneration and renewal of the Holy _____.",
+      "correct": "Spirit",
+      "accept": [
+        "Ghost"
+      ],
+      "verse_ref": "Titus 3:5",
+      "feedback": "God saved us by the washing of regeneration and renewal of the Holy Spirit."
+    },
+    {
+      "id": "titus_3_5",
+      "type": "fill_in_the_blank",
+      "question": "Paul says to warn a divisive person once, then twice, and after that have nothing more to do with _____.",
+      "correct": "him",
+      "verse_ref": "Titus 3:10",
+      "feedback": "Warn a divisive person once, then twice, then avoid him."
+    }
+  ]
+}

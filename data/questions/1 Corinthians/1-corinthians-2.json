@@ -1,0 +1,53 @@
+{
+  "book": "1 Corinthians",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "1cor-2-q1",
+      "type": "multiple_choice",
+      "question": "How did Paul say he came to the Corinthians?",
+      "options": [
+        "With great eloquence and human wisdom",
+        "In weakness, fear, and trembling",
+        "With many signs and wonders",
+        "With great authority and power"
+      ],
+      "answer": "In weakness, fear, and trembling",
+      "verse_reference": "1 Corinthians 2:3"
+    },
+    {
+      "id": "1cor-2-q2",
+      "type": "multiple_choice",
+      "question": "Who reveals the deep things of God, according to Paul?",
+      "options": [
+        "The Spirit",
+        "The apostles",
+        "The Scriptures",
+        "The prophets"
+      ],
+      "answer": "The Spirit",
+      "verse_reference": "1 Corinthians 2:10"
+    },
+    {
+      "id": "1cor-2-q3",
+      "type": "true_false",
+      "question": "Paul says the natural person accepts the things of the Spirit of God.",
+      "answer": "false",
+      "verse_reference": "1 Corinthians 2:14"
+    },
+    {
+      "id": "1cor-2-q4",
+      "type": "fill_blank",
+      "question": "Eye has not seen, nor ear heard, nor have entered into the heart of man, the things which God has _____ for those who love him.",
+      "answer": "prepared",
+      "verse_reference": "1 Corinthians 2:9"
+    },
+    {
+      "id": "1cor-2-q5",
+      "type": "fill_blank",
+      "question": "But we have the _____ of Christ.",
+      "answer": "mind",
+      "verse_reference": "1 Corinthians 2:16"
+    }
+  ]
+}

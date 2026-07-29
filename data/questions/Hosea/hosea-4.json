@@ -1,0 +1,53 @@
+{
+  "book": "Hosea",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "hosea-4-q1",
+      "type": "multiple_choice",
+      "question": "What does God say his people are destroyed for in Hosea 4?",
+      "options": [
+        "Lack of food",
+        "Lack of knowledge",
+        "Lack of soldiers",
+        "Lack of water"
+      ],
+      "answer": "Lack of knowledge",
+      "verse_reference": "Hosea 4:6"
+    },
+    {
+      "id": "hosea-4-q2",
+      "type": "multiple_choice",
+      "question": "What does God have against the land in Hosea 4?",
+      "options": [
+        "There is no faithfulness, steadfast love, or knowledge of God",
+        "There is much worship but far too few sacrifices being offered",
+        "There is a kind of peace but no true justice anywhere in the land",
+        "There is very great wealth but very little wisdom among the people"
+      ],
+      "answer": "There is no faithfulness, steadfast love, or knowledge of God",
+      "verse_reference": "Hosea 4:1"
+    },
+    {
+      "id": "hosea-4-q3",
+      "type": "true_false",
+      "question": "Hosea 4 says the priests had rejected knowledge and forgotten God's law.",
+      "answer": "true",
+      "verse_reference": "Hosea 4:6"
+    },
+    {
+      "id": "hosea-4-q4",
+      "type": "fill_blank",
+      "question": "My people are destroyed for lack of _____.",
+      "answer": "knowledge",
+      "verse_reference": "Hosea 4:6"
+    },
+    {
+      "id": "hosea-4-q5",
+      "type": "fill_blank",
+      "question": "There is no faithfulness or steadfast love, and no knowledge of God in the _____.",
+      "answer": "land",
+      "verse_reference": "Hosea 4:1"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 14,
+  "questions": [
+    {
+      "id": "2-chronicles-14-q1",
+      "type": "multiple_choice",
+      "question": "What reform did Asa carry out in Judah?",
+      "options": [
+        "Built many new idols throughout the whole of the land",
+        "Removed foreign altars, high places, pillars, and Asherim",
+        "Stopped all worship at the temple of the LORD in Jerusalem",
+        "Made a binding alliance with the king of Egypt"
+      ],
+      "answer": "Removed foreign altars, high places, pillars, and Asherim",
+      "verse_reference": "2 Chronicles 14:3"
+    },
+    {
+      "id": "2-chronicles-14-q2",
+      "type": "multiple_choice",
+      "question": "Whom did Asa defeat when a vast army came against Judah?",
+      "options": [
+        "Sennacherib of Assyria",
+        "Zerah the Ethiopian (Cushite)",
+        "Shishak, the king of Egypt",
+        "Ben-hadad, the mighty king of Aram"
+      ],
+      "answer": "Zerah the Ethiopian (Cushite)",
+      "verse_reference": "2 Chronicles 14:9"
+    },
+    {
+      "id": "2-chronicles-14-q3",
+      "type": "true_false",
+      "question": "Asa cried to the LORD, saying it is nothing for God to help against the mighty.",
+      "answer": "true",
+      "verse_reference": "2 Chronicles 14:11"
+    },
+    {
+      "id": "2-chronicles-14-q4",
+      "type": "fill_blank",
+      "question": "Asa told Judah to seek the LORD while the land had _____.",
+      "answer": "rest",
+      "accept": [
+        "peace",
+        "quiet"
+      ],
+      "verse_reference": "2 Chronicles 14:6-7"
+    },
+    {
+      "id": "2-chronicles-14-q5",
+      "type": "fill_blank",
+      "question": "Zerah came against Asa with an army of a million men and three hundred _____.",
+      "answer": "chariots",
+      "verse_reference": "2 Chronicles 14:9"
+    }
+  ]
+}

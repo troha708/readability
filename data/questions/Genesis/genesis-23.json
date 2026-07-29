@@ -1,0 +1,53 @@
+{
+  "book": "Genesis",
+  "chapter": 23,
+  "questions": [
+    {
+      "id": "genesis-23-q1",
+      "type": "multiple_choice",
+      "question": "What did Abraham buy from the Hittites?",
+      "options": [
+        "A large house in the city of Hebron",
+        "A large flock of sheep and many goats",
+        "The field and cave of Machpelah",
+        "A well and all the land around it"
+      ],
+      "answer": "The field and cave of Machpelah",
+      "verse_reference": "Genesis 23:17"
+    },
+    {
+      "id": "genesis-23-q2",
+      "type": "multiple_choice",
+      "question": "For what purpose did Abraham purchase the cave?",
+      "options": [
+        "A place of worship",
+        "A home",
+        "A storehouse",
+        "A burial site for Sarah"
+      ],
+      "answer": "A burial site for Sarah",
+      "verse_reference": "Genesis 23:4"
+    },
+    {
+      "id": "genesis-23-q3",
+      "type": "true_false",
+      "question": "Sarah died at the age of 127.",
+      "answer": "true",
+      "verse_reference": "Genesis 23:1"
+    },
+    {
+      "id": "genesis-23-q4",
+      "type": "fill_blank",
+      "question": "Sarah died at Kiriath Arba, that is, _____, in Canaan.",
+      "answer": "Hebron",
+      "verse_reference": "Genesis 23:2"
+    },
+    {
+      "id": "genesis-23-q5",
+      "type": "fill_blank",
+      "question": "Abraham bought the cave from _____ the Hittite.",
+      "answer": "Ephron",
+      "verse_reference": "Genesis 23:8"
+    }
+  ]
+}

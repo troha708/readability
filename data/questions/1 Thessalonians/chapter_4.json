@@ -1,0 +1,58 @@
+{
+  "book": "1 Thessalonians",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "1thess_4_1",
+      "type": "multiple_choice",
+      "question": "What does Paul say is God's will for the Thessalonians?",
+      "options": [
+        "Their missionary work",
+        "Their fasting",
+        "Their sanctification",
+        "Their prosperity"
+      ],
+      "correct": "Their sanctification",
+      "verse_ref": "1 Thessalonians 4:3",
+      "feedback": "Paul states that God's will is their sanctification — that they abstain from sexual immorality."
+    },
+    {
+      "id": "1thess_4_2",
+      "type": "multiple_choice",
+      "question": "Paul says the Lord will descend from heaven with what?",
+      "options": [
+        "A great loud peal of thunder and bright flashes of lightning",
+        "A blazing chariot of fire drawn by horses of pure flame",
+        "A mighty host of angels gathered all around his throne",
+        "A shout, the voice of an archangel, and the trumpet of God"
+      ],
+      "correct": "A shout, the voice of an archangel, and the trumpet of God",
+      "verse_ref": "1 Thessalonians 4:16",
+      "feedback": "The Lord will descend with a shout, the archangel's voice, and God's trumpet."
+    },
+    {
+      "id": "1thess_4_3",
+      "type": "true_false",
+      "question": "Paul says those who have died in Christ will rise before those who are still alive.",
+      "correct": true,
+      "verse_ref": "1 Thessalonians 4:16-17",
+      "feedback": "The dead in Christ will rise first, then those alive will be caught up together with them."
+    },
+    {
+      "id": "1thess_4_4",
+      "type": "fill_in_the_blank",
+      "question": "Paul urges the Thessalonians to live quietly, mind their own affairs, and work with their _____.",
+      "correct": "hands",
+      "verse_ref": "1 Thessalonians 4:11",
+      "feedback": "Paul told them to aspire to live quietly and work with their hands."
+    },
+    {
+      "id": "1thess_4_5",
+      "type": "fill_in_the_blank",
+      "question": "Paul says believers should not grieve like those who have no _____.",
+      "correct": "hope",
+      "verse_ref": "1 Thessalonians 4:13",
+      "feedback": "Paul tells them not to grieve as others who have no hope for the resurrection."
+    }
+  ]
+}

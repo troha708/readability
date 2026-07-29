@@ -1,0 +1,53 @@
+{
+  "book": "1 Samuel",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "1-samuel-2-q1",
+      "type": "multiple_choice",
+      "question": "What did Hannah do after giving Samuel to the LORD?",
+      "options": [
+        "Prayed and sang a song of praise",
+        "Fled from the tabernacle in fear",
+        "Wept bitterly and would not be comforted",
+        "Stayed silent and returned home alone"
+      ],
+      "answer": "Prayed and sang a song of praise",
+      "verse_reference": "1 Samuel 2:1"
+    },
+    {
+      "id": "1-samuel-2-q2",
+      "type": "multiple_choice",
+      "question": "What was wrong with Eli's sons, Hophni and Phinehas?",
+      "options": [
+        "They worshiped all the idols of the Philistines",
+        "They were wicked, abusing their priestly role",
+        "They fled and abandoned the house of God",
+        "They were too young to serve as priests"
+      ],
+      "answer": "They were wicked, abusing their priestly role",
+      "verse_reference": "1 Samuel 2:12-17"
+    },
+    {
+      "id": "1-samuel-2-q3",
+      "type": "true_false",
+      "question": "A man of God prophesied judgment against the house of Eli.",
+      "answer": "true",
+      "verse_reference": "1 Samuel 2:27-34"
+    },
+    {
+      "id": "1-samuel-2-q4",
+      "type": "fill_blank",
+      "question": "Eli's sons, Hophni and _____, were corrupt and did not know the LORD.",
+      "answer": "Phinehas",
+      "verse_reference": "1 Samuel 2:12"
+    },
+    {
+      "id": "1-samuel-2-q5",
+      "type": "fill_blank",
+      "question": "The boy _____ grew in favor with the LORD and with men.",
+      "answer": "Samuel",
+      "verse_reference": "1 Samuel 2:26"
+    }
+  ]
+}

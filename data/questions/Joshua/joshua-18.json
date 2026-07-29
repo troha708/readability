@@ -1,0 +1,53 @@
+{
+  "book": "Joshua",
+  "chapter": 18,
+  "questions": [
+    {
+      "id": "joshua-18-q1",
+      "type": "multiple_choice",
+      "question": "Where did Israel set up the tent of meeting and divide the rest of the land?",
+      "options": [
+        "Gilgal",
+        "Shiloh",
+        "Hebron",
+        "Shechem"
+      ],
+      "answer": "Shiloh",
+      "verse_reference": "Joshua 18:1"
+    },
+    {
+      "id": "joshua-18-q2",
+      "type": "multiple_choice",
+      "question": "How did Joshua divide the remaining land among the seven tribes?",
+      "options": [
+        "By which tribe had fought best in war",
+        "By the age of the tribal leaders",
+        "By casting lots before the LORD",
+        "By the size of each tribe's army"
+      ],
+      "answer": "By casting lots before the LORD",
+      "verse_reference": "Joshua 18:6-10"
+    },
+    {
+      "id": "joshua-18-q3",
+      "type": "true_false",
+      "question": "Joshua sent men to survey the land and describe it before dividing it.",
+      "answer": "true",
+      "verse_reference": "Joshua 18:4-9"
+    },
+    {
+      "id": "joshua-18-q4",
+      "type": "fill_blank",
+      "question": "The tent of meeting was set up at _____, where the land was divided.",
+      "answer": "Shiloh",
+      "verse_reference": "Joshua 18:1"
+    },
+    {
+      "id": "joshua-18-q5",
+      "type": "fill_blank",
+      "question": "Joshua cast _____ for the tribes before the LORD to assign their land.",
+      "answer": "lots",
+      "verse_reference": "Joshua 18:10"
+    }
+  ]
+}

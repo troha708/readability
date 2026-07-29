@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 105,
+  "questions": [
+    {
+      "id": "psalms-105-q1",
+      "type": "multiple_choice",
+      "question": "What history does Psalm 105 recount?",
+      "options": [
+        "God's creation of the whole wide world in the very beginning of all the days",
+        "God's faithfulness to his covenant from Abraham through the exodus and the land",
+        "God's coming judgment upon all of the nations at the very end of the present age",
+        "God's gracious choosing of David from the sheepfold to be king over all Israel"
+      ],
+      "answer": "God's faithfulness to his covenant from Abraham through the exodus and the land",
+      "verse_reference": "Psalm 105:8-11"
+    },
+    {
+      "id": "psalms-105-q2",
+      "type": "multiple_choice",
+      "question": "Whom did God send ahead of Israel into Egypt?",
+      "options": [
+        "Joshua, who took the land",
+        "Joseph, sold as a slave",
+        "Moses, raised in the palace",
+        "Aaron, made the high priest"
+      ],
+      "answer": "Joseph, sold as a slave",
+      "verse_reference": "Psalm 105:17"
+    },
+    {
+      "id": "psalms-105-q3",
+      "type": "true_false",
+      "question": "The psalm calls people to remember the wondrous works that God has done.",
+      "answer": "true",
+      "verse_reference": "Psalm 105:5"
+    },
+    {
+      "id": "psalms-105-q4",
+      "type": "fill_blank",
+      "question": "Oh give thanks to the LORD; call upon his _____; make known his deeds!",
+      "answer": "name",
+      "verse_reference": "Psalm 105:1"
+    },
+    {
+      "id": "psalms-105-q5",
+      "type": "fill_blank",
+      "question": "He remembers his _____ forever, the word that he commanded for a thousand generations.",
+      "answer": "covenant",
+      "verse_reference": "Psalm 105:8"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "book": "Psalms",
+  "chapter": 60,
+  "questions": [
+    {
+      "id": "psalms-60-q1",
+      "type": "multiple_choice",
+      "question": "What is the mood of much of Psalm 60?",
+      "options": [
+        "A glad hymn of thanksgiving after a great victory",
+        "A lament after a military defeat, pleading for help",
+        "A song of ascent sung for the long, hard pilgrim journey",
+        "A solemn meditation on the great brevity of life"
+      ],
+      "answer": "A lament after a military defeat, pleading for help",
+      "verse_reference": "Psalm 60:1-3"
+    },
+    {
+      "id": "psalms-60-q2",
+      "type": "multiple_choice",
+      "question": "What does the psalm conclude about salvation by man?",
+      "options": [
+        "Better is a little with the fear of the LORD",
+        "Sweet is the sleep of the weary laborer who fully trusts the LORD",
+        "Precious is the death of the saints in his sight",
+        "Vain is the salvation of man; with God we shall do valiantly"
+      ],
+      "answer": "Vain is the salvation of man; with God we shall do valiantly",
+      "verse_reference": "Psalm 60:11-12"
+    },
+    {
+      "id": "psalms-60-q3",
+      "type": "true_false",
+      "question": "The psalm says God has given a banner to those who fear him.",
+      "answer": "true",
+      "verse_reference": "Psalm 60:4"
+    },
+    {
+      "id": "psalms-60-q4",
+      "type": "fill_blank",
+      "question": "With God we will do valiantly; it is He who will trample our _____.",
+      "answer": "enemies",
+      "accept": [
+        "adversaries"
+      ],
+      "verse_reference": "Psalm 60:12"
+    },
+    {
+      "id": "psalms-60-q5",
+      "type": "fill_blank",
+      "question": "Give us aid against the enemy, for the _____ of man is worthless.",
+      "answer": "help",
+      "accept": [
+        "deliverance"
+      ],
+      "verse_reference": "Psalm 60:11"
+    }
+  ]
+}

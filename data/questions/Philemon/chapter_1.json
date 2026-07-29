@@ -1,0 +1,62 @@
+{
+  "book": "Philemon",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "phm_1_1",
+      "type": "multiple_choice",
+      "question": "Who is the runaway slave Paul is sending back to Philemon?",
+      "options": [
+        "Onesimus",
+        "Epaphras",
+        "Timothy",
+        "Tychicus"
+      ],
+      "correct": "Onesimus",
+      "verse_ref": "Philemon 1:10",
+      "feedback": "Paul appeals on behalf of Onesimus, whom he converted while in prison."
+    },
+    {
+      "id": "phm_1_2",
+      "type": "multiple_choice",
+      "question": "Paul says he is sending Onesimus back as what?",
+      "options": [
+        "A hired worker bound to him for wages",
+        "No longer a slave but a beloved brother",
+        "A messenger sent to carry words of peace",
+        "A humble servant in the work of the church"
+      ],
+      "correct": "No longer a slave but a beloved brother",
+      "verse_ref": "Philemon 1:16",
+      "feedback": "Paul asks Philemon to receive Onesimus no longer as a slave but as a beloved brother."
+    },
+    {
+      "id": "phm_1_3",
+      "type": "true_false",
+      "question": "Paul commands Philemon to accept Onesimus back.",
+      "correct": false,
+      "verse_ref": "Philemon 1:8-9",
+      "feedback": "Though Paul could command it, he appeals instead on the basis of love."
+    },
+    {
+      "id": "phm_1_4",
+      "type": "fill_in_the_blank",
+      "question": "Paul says if Onesimus owes Philemon anything, to charge it to _____.",
+      "correct": "Paul",
+      "verse_ref": "Philemon 1:18",
+      "feedback": "Paul tells Philemon to charge any debt to his own account."
+    },
+    {
+      "id": "phm_1_5",
+      "type": "fill_in_the_blank",
+      "question": "The name Onesimus means _____.",
+      "correct": "useful",
+      "accept": [
+        "profitable",
+        "serviceable"
+      ],
+      "verse_ref": "Philemon 1:11",
+      "feedback": "Paul makes a wordplay: Onesimus (meaning useful) was formerly useless but is now useful."
+    }
+  ]
+}

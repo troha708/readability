@@ -1,0 +1,58 @@
+{
+  "book": "Genesis",
+  "chapter": 15,
+  "questions": [
+    {
+      "id": "genesis-15-q1",
+      "type": "multiple_choice",
+      "question": "God told Abram his offspring would be as numerous as what?",
+      "options": [
+        "The fish",
+        "The stars",
+        "The mountains",
+        "The trees"
+      ],
+      "answer": "The stars",
+      "verse_reference": "Genesis 15:5"
+    },
+    {
+      "id": "genesis-15-q2",
+      "type": "multiple_choice",
+      "question": "How long did God say Abram's descendants would be afflicted in a foreign land?",
+      "options": [
+        "70 years",
+        "400 years",
+        "100 years",
+        "40 years"
+      ],
+      "answer": "400 years",
+      "verse_reference": "Genesis 15:13"
+    },
+    {
+      "id": "genesis-15-q3",
+      "type": "true_false",
+      "question": "Abram believed the LORD, and it was credited to him as righteousness.",
+      "answer": "true",
+      "verse_reference": "Genesis 15:6"
+    },
+    {
+      "id": "genesis-15-q4",
+      "type": "fill_blank",
+      "question": "God told Abram, \"I am your shield, your very great _____.\"",
+      "answer": "reward",
+      "verse_reference": "Genesis 15:1"
+    },
+    {
+      "id": "genesis-15-q5",
+      "type": "fill_blank",
+      "question": "A smoking firepot with a blazing _____ passed between the pieces of the animals.",
+      "answer": "torch",
+      "accept": [
+        "lamp",
+        "firebrand",
+        "flame"
+      ],
+      "verse_reference": "Genesis 15:17"
+    }
+  ]
+}

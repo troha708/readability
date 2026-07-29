@@ -1,0 +1,56 @@
+{
+  "book": "Numbers",
+  "chapter": 22,
+  "questions": [
+    {
+      "id": "numbers-22-q1",
+      "type": "multiple_choice",
+      "question": "Who hired Balaam to curse Israel?",
+      "options": [
+        "Sihon, king of Heshbon",
+        "Eglon, king of Edom",
+        "Og, king of Bashan",
+        "Balak, king of Moab"
+      ],
+      "answer": "Balak, king of Moab",
+      "verse_reference": "Numbers 22:5-6"
+    },
+    {
+      "id": "numbers-22-q2",
+      "type": "multiple_choice",
+      "question": "What spoke to Balaam on the road?",
+      "options": [
+        "A bush",
+        "A stone",
+        "An angel",
+        "His donkey"
+      ],
+      "answer": "His donkey",
+      "verse_reference": "Numbers 22:28"
+    },
+    {
+      "id": "numbers-22-q3",
+      "type": "true_false",
+      "question": "Balaam's donkey saw the angel of the LORD before Balaam did.",
+      "answer": "true",
+      "verse_reference": "Numbers 22:23"
+    },
+    {
+      "id": "numbers-22-q4",
+      "type": "fill_blank",
+      "question": "Balak, king of _____, sent for Balaam to curse Israel.",
+      "answer": "Moab",
+      "verse_reference": "Numbers 22:4-5"
+    },
+    {
+      "id": "numbers-22-q5",
+      "type": "fill_blank",
+      "question": "The LORD opened the mouth of the _____, and it spoke to Balaam.",
+      "answer": "donkey",
+      "accept": [
+        "ass"
+      ],
+      "verse_reference": "Numbers 22:28"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Song Of Solomon",
+  "chapter": 5,
+  "questions": [
+    {
+      "id": "song-of-solomon-5-q1",
+      "type": "multiple_choice",
+      "question": "What happens when the bride hesitates to open to her beloved in chapter 5?",
+      "options": [
+        "He is gone when she opens, and she searches for him",
+        "He leaves her forever and never once returns again",
+        "He waits very patiently outside the door until dawn",
+        "He falls fast asleep at the door until the morning"
+      ],
+      "answer": "He is gone when she opens, and she searches for him",
+      "verse_reference": "Song of Solomon 5:6"
+    },
+    {
+      "id": "song-of-solomon-5-q2",
+      "type": "multiple_choice",
+      "question": "What does the bride do in chapter 5 when asked about her beloved?",
+      "options": [
+        "Forgets all about him and turns her thoughts entirely away",
+        "Describes his beauty in detail to the daughters of Jerusalem",
+        "Mocks him openly before all of the daughters of the city",
+        "Ignores the women around her and says nothing at all to them"
+      ],
+      "answer": "Describes his beauty in detail to the daughters of Jerusalem",
+      "verse_reference": "Song of Solomon 5:10-16"
+    },
+    {
+      "id": "song-of-solomon-5-q3",
+      "type": "true_false",
+      "question": "In chapter 5 the bride calls her beloved 'altogether lovely.'",
+      "answer": "true",
+      "verse_reference": "Song of Solomon 5:16"
+    },
+    {
+      "id": "song-of-solomon-5-q4",
+      "type": "fill_blank",
+      "question": "I opened to my beloved, but my beloved had turned and _____.",
+      "answer": "gone",
+      "verse_reference": "Song of Solomon 5:6"
+    },
+    {
+      "id": "song-of-solomon-5-q5",
+      "type": "fill_blank",
+      "question": "My beloved is radiant and _____, distinguished among ten thousand.",
+      "answer": "ruddy",
+      "verse_reference": "Song of Solomon 5:10"
+    }
+  ]
+}

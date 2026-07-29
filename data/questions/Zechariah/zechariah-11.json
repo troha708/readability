@@ -1,0 +1,57 @@
+{
+  "book": "Zechariah",
+  "chapter": 11,
+  "questions": [
+    {
+      "id": "zechariah-11-q1",
+      "type": "multiple_choice",
+      "question": "What did the worthless shepherd in Zechariah 11 fail to do?",
+      "options": [
+        "Gather in all of the wealth and the treasures of the many nations",
+        "Build a brand new temple upon the holy mountain of the LORD God",
+        "Lead the whole great army out to battle against the gathered great enemy",
+        "Care for the lost, the young, the maimed, or the healthy of the flock"
+      ],
+      "answer": "Care for the lost, the young, the maimed, or the healthy of the flock",
+      "verse_reference": "Zechariah 11:16"
+    },
+    {
+      "id": "zechariah-11-q2",
+      "type": "multiple_choice",
+      "question": "How much was the shepherd's wages weighed out in Zechariah 11?",
+      "options": [
+        "Ten talents of gold",
+        "A hundred shekels",
+        "Five denarii",
+        "Thirty pieces of silver"
+      ],
+      "answer": "Thirty pieces of silver",
+      "verse_reference": "Zechariah 11:12"
+    },
+    {
+      "id": "zechariah-11-q3",
+      "type": "true_false",
+      "question": "Zechariah broke two staffs named Favor and Union, signifying broken covenant and brotherhood.",
+      "answer": "true",
+      "verse_reference": "Zechariah 11:10, 14"
+    },
+    {
+      "id": "zechariah-11-q4",
+      "type": "fill_blank",
+      "question": "They weighed out as my wages thirty pieces of _____.",
+      "answer": "silver",
+      "verse_reference": "Zechariah 11:12"
+    },
+    {
+      "id": "zechariah-11-q5",
+      "type": "fill_blank",
+      "question": "Zechariah took two staffs, one named _____ and the other Union.",
+      "answer": "Favor",
+      "accept": [
+        "Beauty",
+        "Pleasantness"
+      ],
+      "verse_reference": "Zechariah 11:7"
+    }
+  ]
+}

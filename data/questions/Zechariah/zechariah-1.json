@@ -1,0 +1,57 @@
+{
+  "book": "Zechariah",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "zechariah-1-q1",
+      "type": "multiple_choice",
+      "question": "What is God's opening call in Zechariah 1?",
+      "options": [
+        "'Rejoice, for your wealth will increase'",
+        "'Return to me, and I will return to you'",
+        "'Flee the city, for it cannot be saved'",
+        "'Fear not, for the enemy has been destroyed'"
+      ],
+      "answer": "'Return to me, and I will return to you'",
+      "verse_reference": "Zechariah 1:3"
+    },
+    {
+      "id": "zechariah-1-q2",
+      "type": "multiple_choice",
+      "question": "What did Zechariah see in his first night vision?",
+      "options": [
+        "A wide valley filled with very dry and scattered dead bones",
+        "A great and towering statue of gold and of silver and of clay",
+        "A man riding a red horse among the myrtle trees, with other horses",
+        "Four great and terrible beasts rising up out of the great raging sea"
+      ],
+      "answer": "A man riding a red horse among the myrtle trees, with other horses",
+      "verse_reference": "Zechariah 1:8"
+    },
+    {
+      "id": "zechariah-1-q3",
+      "type": "true_false",
+      "question": "Zechariah 1 says the LORD is exceedingly jealous for Jerusalem and Zion.",
+      "answer": "true",
+      "verse_reference": "Zechariah 1:14"
+    },
+    {
+      "id": "zechariah-1-q4",
+      "type": "fill_blank",
+      "question": "Return to me, says the LORD of hosts, and I will _____ to you.",
+      "answer": "return",
+      "accept": [
+        "turn",
+        "turn back"
+      ],
+      "verse_reference": "Zechariah 1:3"
+    },
+    {
+      "id": "zechariah-1-q5",
+      "type": "fill_blank",
+      "question": "Zechariah saw a man riding on a red horse standing among the _____ trees.",
+      "answer": "myrtle",
+      "verse_reference": "Zechariah 1:8"
+    }
+  ]
+}

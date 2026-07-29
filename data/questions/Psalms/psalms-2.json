@@ -1,0 +1,59 @@
+{
+  "book": "Psalms",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "psalms-2-q1",
+      "type": "multiple_choice",
+      "question": "What do the nations and peoples do in Psalm 2?",
+      "options": [
+        "Bow down low and worship the one and only true God",
+        "Rage and plot in vain against the LORD and his Anointed",
+        "Bring tribute and costly gifts to the city of Jerusalem",
+        "Flee away in terror from the coming day of judgment"
+      ],
+      "answer": "Rage and plot in vain against the LORD and his Anointed",
+      "verse_reference": "Psalm 2:1-2"
+    },
+    {
+      "id": "psalms-2-q2",
+      "type": "multiple_choice",
+      "question": "What does the LORD declare about the king on Zion?",
+      "options": [
+        "'You are my Son; today I have begotten you'",
+        "'Before the mountains were born, you are God'",
+        "'The LORD is my shepherd; I shall not want'",
+        "'I will praise you, O LORD, with my whole heart'"
+      ],
+      "answer": "'You are my Son; today I have begotten you'",
+      "verse_reference": "Psalm 2:7"
+    },
+    {
+      "id": "psalms-2-q3",
+      "type": "true_false",
+      "question": "The psalm warns the kings to serve the LORD with fear and to 'kiss the Son.'",
+      "answer": "true",
+      "verse_reference": "Psalm 2:11-12"
+    },
+    {
+      "id": "psalms-2-q4",
+      "type": "fill_blank",
+      "question": "He who sits in the heavens _____ at their plotting.",
+      "answer": "laughs",
+      "accept": [
+        "laugh"
+      ],
+      "verse_reference": "Psalm 2:4"
+    },
+    {
+      "id": "psalms-2-q5",
+      "type": "fill_blank",
+      "question": "Blessed are all who take _____ in him.",
+      "answer": "refuge",
+      "accept": [
+        "trust"
+      ],
+      "verse_reference": "Psalm 2:12"
+    }
+  ]
+}

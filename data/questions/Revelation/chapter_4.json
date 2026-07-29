@@ -1,0 +1,59 @@
+{
+  "book": "Revelation",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "rev_4_1",
+      "type": "multiple_choice",
+      "question": "How many elders surround the throne in heaven?",
+      "options": [
+        "Twenty-four",
+        "Twelve",
+        "Seven",
+        "Seventy"
+      ],
+      "correct": "Twenty-four",
+      "verse_ref": "Revelation 4:4",
+      "feedback": "Twenty-four elders sit on thrones surrounding the central throne."
+    },
+    {
+      "id": "rev_4_2",
+      "type": "multiple_choice",
+      "question": "How many living creatures surround the throne?",
+      "options": [
+        "Twelve",
+        "Two",
+        "Four",
+        "Seven"
+      ],
+      "correct": "Four",
+      "verse_ref": "Revelation 4:6",
+      "feedback": "Four living creatures, each covered with eyes, surround the throne."
+    },
+    {
+      "id": "rev_4_3",
+      "type": "true_false",
+      "question": "The living creatures never stop saying Holy, holy, holy.",
+      "correct": true,
+      "verse_ref": "Revelation 4:8",
+      "feedback": "Day and night they never stop saying: Holy, holy, holy is the Lord God Almighty."
+    },
+    {
+      "id": "rev_4_4",
+      "type": "fill_in_the_blank",
+      "question": "The elders cast their _____ before the throne.",
+      "correct": "crowns",
+      "verse_ref": "Revelation 4:10",
+      "feedback": "The twenty-four elders lay their crowns before the throne."
+    },
+    {
+      "id": "rev_4_5",
+      "type": "fill_in_the_blank",
+      "question": "From the throne came flashes of lightning, rumblings, and peals of _____.",
+      "correct": "thunder",
+      "accept": ["thunders", "thunderings"],
+      "verse_ref": "Revelation 4:5",
+      "feedback": "From the throne came lightning, rumblings, and thunder."
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "book": "Romans",
+  "chapter": 13,
+  "questions": [
+    {
+      "id": "romans-13-q1",
+      "type": "multiple_choice",
+      "question": "What does Paul say about governing authorities?",
+      "options": [
+        "They are irrelevant to believers",
+        "They are established by God",
+        "They should be overthrown",
+        "They are always corrupt"
+      ],
+      "answer": "They are established by God",
+      "verse_reference": "Romans 13:1"
+    },
+    {
+      "id": "romans-13-q2",
+      "type": "multiple_choice",
+      "question": "According to Paul, what is the fulfillment of the law?",
+      "options": [
+        "Obedience",
+        "Love",
+        "Sacrifice",
+        "Faith"
+      ],
+      "answer": "Love",
+      "verse_reference": "Romans 13:10"
+    },
+    {
+      "id": "romans-13-q3",
+      "type": "true_false",
+      "question": "Paul says believers should put on the armor of light and behave properly as in the daytime.",
+      "answer": "true",
+      "verse_reference": "Romans 13:12-13"
+    },
+    {
+      "id": "romans-13-q4",
+      "type": "fill_blank",
+      "question": "Owe no one anything, except to _____ one another.",
+      "answer": "love",
+      "verse_reference": "Romans 13:8"
+    },
+    {
+      "id": "romans-13-q5",
+      "type": "fill_blank",
+      "question": "Clothe yourselves with the Lord Jesus Christ, and make no provision for the _____ of the flesh.",
+      "answer": "desires",
+      "accept": [
+        "lusts"
+      ],
+      "verse_reference": "Romans 13:14"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "book": "Ezekiel",
+  "chapter": 40,
+  "questions": [
+    {
+      "id": "ezekiel-40-q1",
+      "type": "multiple_choice",
+      "question": "What does the long vision beginning in Ezekiel 40 describe?",
+      "options": [
+        "A great and shining city descending down out of heaven above",
+        "A new temple, measured by a man with a measuring reed",
+        "A wide valley full of very dry bones all coming back to life",
+        "A wide river of fire flowing out from the foot of the throne"
+      ],
+      "answer": "A new temple, measured by a man with a measuring reed",
+      "verse_reference": "Ezekiel 40:2-3"
+    },
+    {
+      "id": "ezekiel-40-q2",
+      "type": "multiple_choice",
+      "question": "What did the man with the appearance of bronze use to measure?",
+      "options": [
+        "A plumb line and a heavy stone",
+        "A scroll and a writer's full inkhorn",
+        "A linen cord and a measuring reed",
+        "A golden rod and a silver chain"
+      ],
+      "answer": "A linen cord and a measuring reed",
+      "verse_reference": "Ezekiel 40:3"
+    },
+    {
+      "id": "ezekiel-40-q3",
+      "type": "true_false",
+      "question": "Ezekiel was told to declare all he saw to the house of Israel.",
+      "answer": "true",
+      "verse_reference": "Ezekiel 40:4"
+    },
+    {
+      "id": "ezekiel-40-q4",
+      "type": "fill_blank",
+      "question": "He brought me to the land of Israel and set me on a very high _____.",
+      "answer": "mountain",
+      "verse_reference": "Ezekiel 40:2"
+    },
+    {
+      "id": "ezekiel-40-q5",
+      "type": "fill_blank",
+      "question": "The man measured the various _____ and chambers of the temple in detail.",
+      "answer": "gates",
+      "accept": [
+        "gate"
+      ],
+      "verse_reference": "Ezekiel 40:6-16"
+    }
+  ]
+}

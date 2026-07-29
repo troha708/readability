@@ -1,0 +1,57 @@
+{
+  "book": "1 Samuel",
+  "chapter": 21,
+  "questions": [
+    {
+      "id": "1-samuel-21-q1",
+      "type": "multiple_choice",
+      "question": "What did David eat at Nob, given by the priest?",
+      "options": [
+        "The consecrated bread (showbread)",
+        "Bread baked fresh that very morning",
+        "A portion of the priests' grain offering",
+        "Roasted meat left from the sacrifice"
+      ],
+      "answer": "The consecrated bread (showbread)",
+      "verse_reference": "1 Samuel 21:6"
+    },
+    {
+      "id": "1-samuel-21-q2",
+      "type": "multiple_choice",
+      "question": "How did David escape danger in Gath?",
+      "options": [
+        "He fought his way out by force",
+        "He hid in a cave",
+        "He pretended to be insane",
+        "He paid a bribe"
+      ],
+      "answer": "He pretended to be insane",
+      "verse_reference": "1 Samuel 21:13"
+    },
+    {
+      "id": "1-samuel-21-q3",
+      "type": "true_false",
+      "question": "David took Goliath's sword, which was kept at Nob.",
+      "answer": "true",
+      "verse_reference": "1 Samuel 21:9"
+    },
+    {
+      "id": "1-samuel-21-q4",
+      "type": "fill_blank",
+      "question": "The priest gave David the consecrated _____ to eat, since no common bread was there.",
+      "answer": "bread",
+      "verse_reference": "1 Samuel 21:6"
+    },
+    {
+      "id": "1-samuel-21-q5",
+      "type": "fill_blank",
+      "question": "In Gath, David pretended to be _____ to escape King Achish.",
+      "answer": "mad",
+      "accept": [
+        "madness",
+        "insane"
+      ],
+      "verse_reference": "1 Samuel 21:13"
+    }
+  ]
+}

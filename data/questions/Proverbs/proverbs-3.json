@@ -1,0 +1,53 @@
+{
+  "book": "Proverbs",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "proverbs-3-q1",
+      "type": "multiple_choice",
+      "question": "What famous instruction about trust does Proverbs 3 give?",
+      "options": [
+        "Trust in the LORD with all your heart and do not lean on your own understanding",
+        "Trust in the counsel of the older and wiser elders above every other voice",
+        "Trust your own judgment in all things, for a truly wise heart is never wrong",
+        "Trust in your own great wealth and it will surely keep you safe in the hard times"
+      ],
+      "answer": "Trust in the LORD with all your heart and do not lean on your own understanding",
+      "verse_reference": "Proverbs 3:5"
+    },
+    {
+      "id": "proverbs-3-q2",
+      "type": "multiple_choice",
+      "question": "With what should you honor the LORD, according to Proverbs 3?",
+      "options": [
+        "Your own time given freely in service and in prayer",
+        "Your sacrifices offered at the holy altar and nowhere else",
+        "Your words of glad praise and your thanksgiving only",
+        "Your wealth and the firstfruits of all your produce"
+      ],
+      "answer": "Your wealth and the firstfruits of all your produce",
+      "verse_reference": "Proverbs 3:9"
+    },
+    {
+      "id": "proverbs-3-q3",
+      "type": "true_false",
+      "question": "Proverbs 3 says the LORD disciplines the one he loves, as a father the son he delights in.",
+      "answer": "true",
+      "verse_reference": "Proverbs 3:12"
+    },
+    {
+      "id": "proverbs-3-q4",
+      "type": "fill_blank",
+      "question": "Trust in the LORD with all your _____, and do not lean on your own understanding.",
+      "answer": "heart",
+      "verse_reference": "Proverbs 3:5"
+    },
+    {
+      "id": "proverbs-3-q5",
+      "type": "fill_blank",
+      "question": "In all your ways acknowledge him, and he will make straight your _____.",
+      "answer": "paths",
+      "verse_reference": "Proverbs 3:6"
+    }
+  ]
+}

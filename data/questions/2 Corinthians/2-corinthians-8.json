@@ -1,0 +1,53 @@
+{
+  "book": "2 Corinthians",
+  "chapter": 8,
+  "questions": [
+    {
+      "id": "2cor-8-q1",
+      "type": "multiple_choice",
+      "question": "Which churches does Paul hold up as an example of generous giving despite their poverty?",
+      "options": [
+        "The churches in Rome",
+        "The Macedonian churches",
+        "The churches in Ephesus",
+        "The churches in Galatia"
+      ],
+      "answer": "The Macedonian churches",
+      "verse_reference": "2 Corinthians 8:1-2"
+    },
+    {
+      "id": "2cor-8-q2",
+      "type": "multiple_choice",
+      "question": "Paul says Jesus became poor so that through his poverty believers might become what?",
+      "options": [
+        "Wise",
+        "Humble",
+        "Rich",
+        "Holy"
+      ],
+      "answer": "Rich",
+      "verse_reference": "2 Corinthians 8:9"
+    },
+    {
+      "id": "2cor-8-q3",
+      "type": "true_false",
+      "question": "Paul commands the Corinthians to give a specific amount.",
+      "answer": "false",
+      "verse_reference": "2 Corinthians 8:8"
+    },
+    {
+      "id": "2cor-8-q4",
+      "type": "fill_blank",
+      "question": "For you know the grace of our Lord Jesus Christ, that though he was _____, yet for your sakes he became poor.",
+      "answer": "rich",
+      "verse_reference": "2 Corinthians 8:9"
+    },
+    {
+      "id": "2cor-8-q5",
+      "type": "fill_blank",
+      "question": "The goal is _____ — at the present time your surplus supplies their need.",
+      "answer": "equality",
+      "verse_reference": "2 Corinthians 8:13-14"
+    }
+  ]
+}

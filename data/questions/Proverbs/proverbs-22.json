@@ -1,0 +1,56 @@
+{
+  "book": "Proverbs",
+  "chapter": 22,
+  "questions": [
+    {
+      "id": "proverbs-22-q1",
+      "type": "multiple_choice",
+      "question": "What does Proverbs 22 say is to be chosen rather than great riches?",
+      "options": [
+        "Power",
+        "A good name",
+        "Comfort",
+        "Fame"
+      ],
+      "answer": "A good name",
+      "verse_reference": "Proverbs 22:1"
+    },
+    {
+      "id": "proverbs-22-q2",
+      "type": "multiple_choice",
+      "question": "What famous instruction about children does Proverbs 22 give?",
+      "options": [
+        "A child who is raised up in great plenty will never once know any want or sorrow",
+        "Leave a child entirely to his own choices and wisdom will surely come to him at last",
+        "Train up a child in the way he should go, and when he is old he will not depart from it",
+        "Spare the child from every hardship and trouble and surely he will only love you all the more"
+      ],
+      "answer": "Train up a child in the way he should go, and when he is old he will not depart from it",
+      "verse_reference": "Proverbs 22:6"
+    },
+    {
+      "id": "proverbs-22-q3",
+      "type": "true_false",
+      "question": "Proverbs 22 says the rich rules over the poor, and the borrower is the slave of the lender.",
+      "answer": "true",
+      "verse_reference": "Proverbs 22:7"
+    },
+    {
+      "id": "proverbs-22-q4",
+      "type": "fill_blank",
+      "question": "A good _____ is to be chosen rather than great riches.",
+      "answer": "name",
+      "verse_reference": "Proverbs 22:1"
+    },
+    {
+      "id": "proverbs-22-q5",
+      "type": "fill_blank",
+      "question": "Train up a child in the way he should go; even when he is old he will not _____ from it.",
+      "answer": "depart",
+      "accept": [
+        "turn"
+      ],
+      "verse_reference": "Proverbs 22:6"
+    }
+  ]
+}

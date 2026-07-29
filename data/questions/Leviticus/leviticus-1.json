@@ -1,0 +1,54 @@
+{
+  "book": "Leviticus",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "leviticus-1-q1",
+      "type": "multiple_choice",
+      "question": "What is the main subject of Leviticus 1?",
+      "options": [
+        "Festivals",
+        "The burnt offering",
+        "The priestly garments",
+        "The Sabbath"
+      ],
+      "answer": "The burnt offering",
+      "verse_reference": "Leviticus 1:3"
+    },
+    {
+      "id": "leviticus-1-q2",
+      "type": "multiple_choice",
+      "question": "An animal for a burnt offering had to be what?",
+      "options": [
+        "Without defect (unblemished)",
+        "Caught from the wild herds",
+        "Young and newly weaned from milk",
+        "A firstborn of the flock"
+      ],
+      "answer": "Without defect (unblemished)",
+      "verse_reference": "Leviticus 1:3"
+    },
+    {
+      "id": "leviticus-1-q3",
+      "type": "true_false",
+      "question": "The whole burnt offering was entirely consumed on the altar.",
+      "answer": "true",
+      "verse_reference": "Leviticus 1:9"
+    },
+    {
+      "id": "leviticus-1-q4",
+      "type": "fill_blank",
+      "question": "The worshiper laid his _____ on the head of the burnt offering.",
+      "answer": "hand",
+      "verse_reference": "Leviticus 1:4"
+    },
+    {
+      "id": "leviticus-1-q5",
+      "type": "fill_blank",
+      "question": "The burnt offering is described as a pleasing _____ to the LORD.",
+      "answer": "aroma",
+      "accept": ["savour", "savor", "fragrance", "odour"],
+      "verse_reference": "Leviticus 1:9"
+    }
+  ]
+}

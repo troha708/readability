@@ -1,0 +1,56 @@
+{
+  "book": "Psalms",
+  "chapter": 43,
+  "questions": [
+    {
+      "id": "psalms-43-q1",
+      "type": "multiple_choice",
+      "question": "What does the psalmist ask God to send out?",
+      "options": [
+        "His rod and his staff",
+        "His shield and his sword",
+        "His cloud and his fire",
+        "His light and his truth"
+      ],
+      "answer": "His light and his truth",
+      "verse_reference": "Psalm 43:3"
+    },
+    {
+      "id": "psalms-43-q2",
+      "type": "multiple_choice",
+      "question": "Where does the psalmist long to go?",
+      "options": [
+        "To the throne of the king, his certain hope",
+        "To the field of his fathers, his lasting home",
+        "To the altar of God, his exceeding joy",
+        "To the gate of the city, his place of refuge"
+      ],
+      "answer": "To the altar of God, his exceeding joy",
+      "verse_reference": "Psalm 43:4"
+    },
+    {
+      "id": "psalms-43-q3",
+      "type": "true_false",
+      "question": "Like Psalm 42, this psalm repeats, 'Why are you cast down, O my soul?'",
+      "answer": "true",
+      "verse_reference": "Psalm 43:5"
+    },
+    {
+      "id": "psalms-43-q4",
+      "type": "fill_blank",
+      "question": "Vindicate me, O God, and plead my _____ against an ungodly nation.",
+      "answer": "case",
+      "accept": [
+        "cause"
+      ],
+      "verse_reference": "Psalm 43:1"
+    },
+    {
+      "id": "psalms-43-q5",
+      "type": "fill_blank",
+      "question": "Send out your light and your _____; let them lead me.",
+      "answer": "truth",
+      "verse_reference": "Psalm 43:3"
+    }
+  ]
+}

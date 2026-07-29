@@ -1,0 +1,54 @@
+{
+  "book": "Numbers",
+  "chapter": 8,
+  "questions": [
+    {
+      "id": "numbers-8-q1",
+      "type": "multiple_choice",
+      "question": "What were the Levites set apart to do?",
+      "options": [
+        "To lead Israel's warriors into battle",
+        "To teach the law in every village",
+        "To do the work of the tent of meeting",
+        "To rule over the eleven other tribes"
+      ],
+      "answer": "To do the work of the tent of meeting",
+      "verse_reference": "Numbers 8:11-15"
+    },
+    {
+      "id": "numbers-8-q2",
+      "type": "multiple_choice",
+      "question": "What did Aaron set up to give light in the tabernacle?",
+      "options": [
+        "An open fire",
+        "High windows",
+        "Burning torches",
+        "The seven lamps"
+      ],
+      "answer": "The seven lamps",
+      "verse_reference": "Numbers 8:2"
+    },
+    {
+      "id": "numbers-8-q3",
+      "type": "true_false",
+      "question": "The Levites were cleansed and presented to the LORD as a wave offering.",
+      "answer": "true",
+      "verse_reference": "Numbers 8:11"
+    },
+    {
+      "id": "numbers-8-q4",
+      "type": "fill_blank",
+      "question": "Aaron lit the seven _____ to give light in front of the lampstand.",
+      "answer": "lamps",
+      "accept": ["lights"],
+      "verse_reference": "Numbers 8:2"
+    },
+    {
+      "id": "numbers-8-q5",
+      "type": "fill_blank",
+      "question": "The Levites were given to serve at the tent and to make _____ for the Israelites.",
+      "answer": "atonement",
+      "verse_reference": "Numbers 8:19"
+    }
+  ]
+}

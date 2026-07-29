@@ -1,0 +1,56 @@
+{
+  "book": "Micah",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "micah-3-q1",
+      "type": "multiple_choice",
+      "question": "Whom does Micah 3 rebuke for hating good and loving evil?",
+      "options": [
+        "The rulers and heads of Israel",
+        "The foreign kings of the nations",
+        "The merchants and traders of Samaria",
+        "The farmers and shepherds of Judah"
+      ],
+      "answer": "The rulers and heads of Israel",
+      "verse_reference": "Micah 3:1-2"
+    },
+    {
+      "id": "micah-3-q2",
+      "type": "multiple_choice",
+      "question": "What does Micah 3 say will happen to Zion and Jerusalem because of corrupt leaders?",
+      "options": [
+        "Zion shall flourish and her gates shall never again be shut",
+        "Zion shall be spared and her walls shall stand for ever",
+        "Zion shall be raised on high and honored among all the nations",
+        "Zion shall be plowed as a field, and Jerusalem become a heap of ruins"
+      ],
+      "answer": "Zion shall be plowed as a field, and Jerusalem become a heap of ruins",
+      "verse_reference": "Micah 3:12"
+    },
+    {
+      "id": "micah-3-q3",
+      "type": "true_false",
+      "question": "Micah contrasts the false prophets with himself, filled with power by the Spirit of the LORD to declare sin.",
+      "answer": "true",
+      "verse_reference": "Micah 3:8"
+    },
+    {
+      "id": "micah-3-q4",
+      "type": "fill_blank",
+      "question": "Zion shall be plowed as a _____, Jerusalem shall become a heap of ruins.",
+      "answer": "field",
+      "verse_reference": "Micah 3:12"
+    },
+    {
+      "id": "micah-3-q5",
+      "type": "fill_blank",
+      "question": "I am filled with power, with the Spirit of the LORD, to declare to Jacob his _____.",
+      "answer": "transgression",
+      "accept": [
+        "disobedience"
+      ],
+      "verse_reference": "Micah 3:8"
+    }
+  ]
+}

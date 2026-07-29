@@ -1,0 +1,53 @@
+{
+  "book": "1 Kings",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "1-kings-3-q1",
+      "type": "multiple_choice",
+      "question": "What did Solomon ask God for in a dream?",
+      "options": [
+        "Wisdom (an understanding heart)",
+        "Great riches and much honor",
+        "Victory over all his enemies",
+        "A long and peaceful reign"
+      ],
+      "answer": "Wisdom (an understanding heart)",
+      "verse_reference": "1 Kings 3:9"
+    },
+    {
+      "id": "1-kings-3-q2",
+      "type": "multiple_choice",
+      "question": "How did Solomon famously judge between two women claiming one baby?",
+      "options": [
+        "He cast lots to decide the matter",
+        "He gave the child to the elder woman",
+        "He offered to cut the baby in two",
+        "He summoned witnesses to testify"
+      ],
+      "answer": "He offered to cut the baby in two",
+      "verse_reference": "1 Kings 3:24-27"
+    },
+    {
+      "id": "1-kings-3-q3",
+      "type": "true_false",
+      "question": "God was pleased that Solomon asked for wisdom, and gave him riches too.",
+      "answer": "true",
+      "verse_reference": "1 Kings 3:10-13"
+    },
+    {
+      "id": "1-kings-3-q4",
+      "type": "fill_blank",
+      "question": "Solomon asked God for an understanding _____ to judge the people.",
+      "answer": "heart",
+      "verse_reference": "1 Kings 3:9"
+    },
+    {
+      "id": "1-kings-3-q5",
+      "type": "fill_blank",
+      "question": "Solomon proposed dividing the living _____ in two to reveal the true mother.",
+      "answer": "child",
+      "verse_reference": "1 Kings 3:25"
+    }
+  ]
+}

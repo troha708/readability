@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 124,
+  "questions": [
+    {
+      "id": "psalms-124-q1",
+      "type": "multiple_choice",
+      "question": "What does Psalm 124 repeatedly say?",
+      "options": [
+        "The LORD is my shepherd, I shall not want",
+        "Unless the LORD builds the house, they labor in vain",
+        "If it had not been the LORD who was on our side...",
+        "Out of the depths I cry to you, O LORD"
+      ],
+      "answer": "If it had not been the LORD who was on our side...",
+      "verse_reference": "Psalm 124:1-2"
+    },
+    {
+      "id": "psalms-124-q2",
+      "type": "multiple_choice",
+      "question": "To what does the psalm compare their escape?",
+      "options": [
+        "A bird escaped from the snare of the fowlers",
+        "A fish slipped free from the tightly tangled net",
+        "A lamb snatched out of the lion's jaws",
+        "A ship that survived the raging storm"
+      ],
+      "answer": "A bird escaped from the snare of the fowlers",
+      "verse_reference": "Psalm 124:7"
+    },
+    {
+      "id": "psalms-124-q3",
+      "type": "true_false",
+      "question": "The psalm concludes that their help is in the name of the LORD, who made heaven and earth.",
+      "answer": "true",
+      "verse_reference": "Psalm 124:8"
+    },
+    {
+      "id": "psalms-124-q4",
+      "type": "fill_blank",
+      "question": "If it had not been the LORD who was on our _____, the flood would have swept us away.",
+      "answer": "side",
+      "verse_reference": "Psalm 124:1-4"
+    },
+    {
+      "id": "psalms-124-q5",
+      "type": "fill_blank",
+      "question": "Our help is in the name of the LORD, who made heaven and _____.",
+      "answer": "earth",
+      "verse_reference": "Psalm 124:8"
+    }
+  ]
+}

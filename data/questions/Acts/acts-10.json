@@ -1,0 +1,56 @@
+{
+  "book": "Acts",
+  "chapter": 10,
+  "questions": [
+    {
+      "id": "acts-10-q1",
+      "type": "multiple_choice",
+      "question": "Who was the Roman centurion who sent for Peter?",
+      "options": [
+        "Julius",
+        "Cornelius",
+        "Old Claudius",
+        "Marcus"
+      ],
+      "answer": "Cornelius",
+      "verse_reference": "Acts 10:1-3"
+    },
+    {
+      "id": "acts-10-q2",
+      "type": "multiple_choice",
+      "question": "What did Peter see in his vision on the rooftop?",
+      "options": [
+        "A great sheet with animals lowered from heaven",
+        "A burning bush that was not consumed by fire",
+        "A bright shining ladder reaching from earth to heaven",
+        "A sealed scroll written on the front and back"
+      ],
+      "answer": "A great sheet with animals lowered from heaven",
+      "verse_reference": "Acts 10:11-12"
+    },
+    {
+      "id": "acts-10-q3",
+      "type": "true_false",
+      "question": "Peter initially refused to eat the animals in his vision because they were unclean.",
+      "answer": "true",
+      "verse_reference": "Acts 10:14"
+    },
+    {
+      "id": "acts-10-q4",
+      "type": "fill_blank",
+      "question": "God has shown me that I should not call any _____ impure or unclean.",
+      "answer": "man",
+      "verse_reference": "Acts 10:28"
+    },
+    {
+      "id": "acts-10-q5",
+      "type": "fill_blank",
+      "question": "While Peter was still speaking, the Holy Spirit fell upon all who heard his _____.",
+      "answer": "message",
+      "accept": [
+        "word"
+      ],
+      "verse_reference": "Acts 10:44"
+    }
+  ]
+}

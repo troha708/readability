@@ -1,0 +1,54 @@
+{
+  "book": "Leviticus",
+  "chapter": 17,
+  "questions": [
+    {
+      "id": "leviticus-17-q1",
+      "type": "multiple_choice",
+      "question": "Why were the Israelites forbidden to eat blood?",
+      "options": [
+        "Because the life of the flesh is in the blood",
+        "Because it spoils quickly in the heat",
+        "Because it is wasteful to pour it out",
+        "Because it tastes bitter to the tongue"
+      ],
+      "answer": "Because the life of the flesh is in the blood",
+      "verse_reference": "Leviticus 17:11"
+    },
+    {
+      "id": "leviticus-17-q2",
+      "type": "multiple_choice",
+      "question": "Where were the Israelites to bring their sacrifices?",
+      "options": [
+        "To the entrance of the tent of meeting",
+        "To any high place they happened to choose",
+        "To the private altars of each household",
+        "To the tops of the surrounding mountains"
+      ],
+      "answer": "To the entrance of the tent of meeting",
+      "verse_reference": "Leviticus 17:3-5"
+    },
+    {
+      "id": "leviticus-17-q3",
+      "type": "true_false",
+      "question": "God said that the blood makes atonement for the life (soul).",
+      "answer": "true",
+      "verse_reference": "Leviticus 17:11"
+    },
+    {
+      "id": "leviticus-17-q4",
+      "type": "fill_blank",
+      "question": "\"For the _____ of the flesh is in the blood.\"",
+      "answer": "life",
+      "accept": ["soul"],
+      "verse_reference": "Leviticus 17:11"
+    },
+    {
+      "id": "leviticus-17-q5",
+      "type": "fill_blank",
+      "question": "It is the _____ that makes atonement by reason of the life.",
+      "answer": "blood",
+      "verse_reference": "Leviticus 17:11"
+    }
+  ]
+}

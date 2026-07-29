@@ -1,0 +1,24 @@
+{
+  "book": "2 John",
+  "source": "Berean Standard Bible (CC0 Public Domain)",
+  "chapters": {
+    "1": [
+      {
+        "beforeVerse": 1,
+        "heading": "A Greeting from the Elder"
+      },
+      {
+        "beforeVerse": 4,
+        "heading": "Walking in the Truth"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "Beware of Deceivers"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "Conclusion"
+      }
+    ]
+  }
+}

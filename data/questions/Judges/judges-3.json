@@ -1,0 +1,56 @@
+{
+  "book": "Judges",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "judges-3-q1",
+      "type": "multiple_choice",
+      "question": "Who was the first judge to deliver Israel?",
+      "options": [
+        "Othniel",
+        "Ehud",
+        "Strong Samson",
+        "Gideon"
+      ],
+      "answer": "Othniel",
+      "verse_reference": "Judges 3:9-10"
+    },
+    {
+      "id": "judges-3-q2",
+      "type": "multiple_choice",
+      "question": "How did the left-handed judge Ehud kill the Moabite king Eglon?",
+      "options": [
+        "With a hidden dagger",
+        "With a bow",
+        "By poison",
+        "In fierce open battle"
+      ],
+      "answer": "With a hidden dagger",
+      "verse_reference": "Judges 3:21"
+    },
+    {
+      "id": "judges-3-q3",
+      "type": "true_false",
+      "question": "Shamgar struck down six hundred Philistines with an ox goad.",
+      "answer": "true",
+      "verse_reference": "Judges 3:31"
+    },
+    {
+      "id": "judges-3-q4",
+      "type": "fill_blank",
+      "question": "_____, the left-handed judge, killed Eglon, the very fat king of Moab.",
+      "answer": "Ehud",
+      "verse_reference": "Judges 3:15-21"
+    },
+    {
+      "id": "judges-3-q5",
+      "type": "fill_blank",
+      "question": "Othniel, the first judge, was a younger relative of _____.",
+      "answer": "Caleb",
+      "accept": [
+        "Caleb's"
+      ],
+      "verse_reference": "Judges 3:9"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Hosea",
+  "chapter": 11,
+  "questions": [
+    {
+      "id": "hosea-11-q1",
+      "type": "multiple_choice",
+      "question": "How does Hosea 11 describe God's love for Israel?",
+      "options": [
+        "As a stranger who passed by and showed no concern at all",
+        "As a stern king who demanded much service from all his lowly slaves",
+        "As an enemy who sought to destroy them in his anger",
+        "As a father who loved his child and called his son out of Egypt"
+      ],
+      "answer": "As a father who loved his child and called his son out of Egypt",
+      "verse_reference": "Hosea 11:1"
+    },
+    {
+      "id": "hosea-11-q2",
+      "type": "multiple_choice",
+      "question": "What does God say about his compassion in Hosea 11?",
+      "options": [
+        "His heart recoils; his compassion grows warm; he will not destroy Ephraim",
+        "His anger burns hot against them; he will cast them all off forever",
+        "He waits in patient silence until they at last repent of all their sins",
+        "He turns himself away from them and hides his face entirely from them"
+      ],
+      "answer": "His heart recoils; his compassion grows warm; he will not destroy Ephraim",
+      "verse_reference": "Hosea 11:8"
+    },
+    {
+      "id": "hosea-11-q3",
+      "type": "true_false",
+      "question": "Hosea 11 pictures God teaching Ephraim to walk, taking them up by their arms.",
+      "answer": "true",
+      "verse_reference": "Hosea 11:3"
+    },
+    {
+      "id": "hosea-11-q4",
+      "type": "fill_blank",
+      "question": "When Israel was a child, I loved him, and out of Egypt I called my _____.",
+      "answer": "son",
+      "verse_reference": "Hosea 11:1"
+    },
+    {
+      "id": "hosea-11-q5",
+      "type": "fill_blank",
+      "question": "How can I give you up, O _____? My heart recoils within me.",
+      "answer": "Ephraim",
+      "verse_reference": "Hosea 11:8"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "1 Kings",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "1-kings-4-q1",
+      "type": "multiple_choice",
+      "question": "What does chapter 4 describe about Solomon's reign?",
+      "options": [
+        "The building of the temple of the LORD",
+        "His officials and the prosperity of his kingdom",
+        "A long war against all of the surrounding nations",
+        "A famine that struck during his reign"
+      ],
+      "answer": "His officials and the prosperity of his kingdom",
+      "verse_reference": "1 Kings 4:1-7"
+    },
+    {
+      "id": "1-kings-4-q2",
+      "type": "multiple_choice",
+      "question": "How great was Solomon's wisdom said to be?",
+      "options": [
+        "Equal to that of the neighboring kings",
+        "Modest, like that of the kings before him",
+        "Hidden, known only to his closest advisers",
+        "Greater than all the people of the East and Egypt"
+      ],
+      "answer": "Greater than all the people of the East and Egypt",
+      "verse_reference": "1 Kings 4:30"
+    },
+    {
+      "id": "1-kings-4-q3",
+      "type": "true_false",
+      "question": "During Solomon's reign, Judah and Israel lived in safety, each under his own vine and fig tree.",
+      "answer": "true",
+      "verse_reference": "1 Kings 4:25"
+    },
+    {
+      "id": "1-kings-4-q4",
+      "type": "fill_blank",
+      "question": "Solomon's _____ surpassed that of all the wise men of the East.",
+      "answer": "wisdom",
+      "verse_reference": "1 Kings 4:30"
+    },
+    {
+      "id": "1-kings-4-q5",
+      "type": "fill_blank",
+      "question": "Judah and Israel were as numerous as the _____ by the sea, eating, drinking, and happy.",
+      "answer": "sand",
+      "verse_reference": "1 Kings 4:20"
+    }
+  ]
+}

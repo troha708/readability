@@ -1,0 +1,53 @@
+{
+  "book": "1 Samuel",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "1-samuel-4-q1",
+      "type": "multiple_choice",
+      "question": "What happened to the ark of the covenant in battle with the Philistines?",
+      "options": [
+        "It was carried safely back to Shiloh",
+        "It was burned along with the camp",
+        "It was hidden away in the hill country",
+        "It was captured by the Philistines"
+      ],
+      "answer": "It was captured by the Philistines",
+      "verse_reference": "1 Samuel 4:11"
+    },
+    {
+      "id": "1-samuel-4-q2",
+      "type": "multiple_choice",
+      "question": "What happened to Eli when he heard the ark was taken?",
+      "options": [
+        "He rejoiced and gave thanks",
+        "He prayed all night for its return",
+        "He fled from the city in terror",
+        "He fell backward and died"
+      ],
+      "answer": "He fell backward and died",
+      "verse_reference": "1 Samuel 4:18"
+    },
+    {
+      "id": "1-samuel-4-q3",
+      "type": "true_false",
+      "question": "Eli's sons Hophni and Phinehas died on the same day the ark was captured.",
+      "answer": "true",
+      "verse_reference": "1 Samuel 4:11-17"
+    },
+    {
+      "id": "1-samuel-4-q4",
+      "type": "fill_blank",
+      "question": "The Philistines captured the _____ of God in the battle.",
+      "answer": "ark",
+      "verse_reference": "1 Samuel 4:11"
+    },
+    {
+      "id": "1-samuel-4-q5",
+      "type": "fill_blank",
+      "question": "Phinehas's dying wife named her son Ichabod, saying the _____ had departed from Israel.",
+      "answer": "glory",
+      "verse_reference": "1 Samuel 4:21-22"
+    }
+  ]
+}

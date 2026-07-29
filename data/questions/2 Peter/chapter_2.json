@@ -1,0 +1,61 @@
+{
+  "book": "2 Peter",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "2pet_2_1",
+      "type": "multiple_choice",
+      "question": "Peter warns about the rise of what in the church?",
+      "options": [
+        "False teachers",
+        "Roman soldiers",
+        "Pharisees",
+        "Tax collectors"
+      ],
+      "correct": "False teachers",
+      "verse_ref": "2 Peter 2:1",
+      "feedback": "There will be false teachers among you who will secretly introduce destructive heresies."
+    },
+    {
+      "id": "2pet_2_2",
+      "type": "multiple_choice",
+      "question": "Peter uses the example of which city being destroyed as a warning?",
+      "options": [
+        "Babylon the great",
+        "Nineveh of Assyria",
+        "Jericho by the Jordan",
+        "Sodom and Gomorrah"
+      ],
+      "correct": "Sodom and Gomorrah",
+      "verse_ref": "2 Peter 2:6",
+      "feedback": "God condemned Sodom and Gomorrah as an example of what will happen to the ungodly."
+    },
+    {
+      "id": "2pet_2_3",
+      "type": "true_false",
+      "question": "God spared the angels when they sinned.",
+      "correct": false,
+      "verse_ref": "2 Peter 2:4",
+      "feedback": "God did not spare the angels when they sinned but sent them to hell."
+    },
+    {
+      "id": "2pet_2_4",
+      "type": "fill_in_the_blank",
+      "question": "A dog returns to its _____, and a sow that is washed returns to her wallowing in the mud.",
+      "correct": "vomit",
+      "verse_ref": "2 Peter 2:22",
+      "feedback": "A dog returns to its vomit — a proverb about those who return to sin."
+    },
+    {
+      "id": "2pet_2_5",
+      "type": "fill_in_the_blank",
+      "question": "These false teachers promise _____ while they themselves are slaves of depravity.",
+      "correct": "freedom",
+      "accept": [
+        "liberty"
+      ],
+      "verse_ref": "2 Peter 2:19",
+      "feedback": "They promise freedom while being slaves of depravity."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "book": "Acts",
+  "chapter": 18,
+  "questions": [
+    {
+      "id": "acts-18-q1",
+      "type": "multiple_choice",
+      "question": "Which married couple did Paul stay and work with as tentmakers in Corinth?",
+      "options": [
+        "Andronicus and Junia",
+        "Philemon and Apphia",
+        "Ananias and Sapphira",
+        "Aquila and Priscilla"
+      ],
+      "answer": "Aquila and Priscilla",
+      "verse_reference": "Acts 18:2-3"
+    },
+    {
+      "id": "acts-18-q2",
+      "type": "multiple_choice",
+      "question": "Who was the ruler of the synagogue in Corinth who believed in the Lord?",
+      "options": [
+        "Jason",
+        "Justus",
+        "Sosthenes",
+        "Crispus"
+      ],
+      "answer": "Crispus",
+      "verse_reference": "Acts 18:8"
+    },
+    {
+      "id": "acts-18-q3",
+      "type": "true_false",
+      "question": "The Roman proconsul Gallio refused to judge the Jews' complaints against Paul about religious matters.",
+      "answer": "true",
+      "verse_reference": "Acts 18:14-16"
+    },
+    {
+      "id": "acts-18-q4",
+      "type": "fill_blank",
+      "question": "The Lord said to Paul in a vision, 'Don't be afraid, but speak and don't be _____.'",
+      "answer": "silent",
+      "verse_reference": "Acts 18:9"
+    },
+    {
+      "id": "acts-18-q5",
+      "type": "fill_blank",
+      "question": "Aquila and Priscilla took Apollos aside and explained the way of God more _____.",
+      "answer": "accurately",
+      "accept": [
+        "perfectly",
+        "exactly"
+      ],
+      "verse_reference": "Acts 18:26"
+    }
+  ]
+}

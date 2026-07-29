@@ -1,0 +1,310 @@
+{
+  "book": "2 Samuel",
+  "source": "Berean Standard Bible (CC0 Public Domain)",
+  "chapters": {
+    "1": [
+      {
+        "beforeVerse": 1,
+        "heading": "Saul’s Death Reported to David"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "David’s Song for Saul and Jonathan"
+      }
+    ],
+    "2": [
+      {
+        "beforeVerse": 1,
+        "heading": "David Anointed King of Judah"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "Ish-bosheth Made King of Israel"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "The Battle of Gibeon"
+      }
+    ],
+    "3": [
+      {
+        "beforeVerse": 1,
+        "heading": "The House of David Strengthened"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "Abner Joins David"
+      },
+      {
+        "beforeVerse": 22,
+        "heading": "Joab Murders Abner"
+      },
+      {
+        "beforeVerse": 31,
+        "heading": "David Mourns for Abner"
+      }
+    ],
+    "4": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Murder of Ish-bosheth"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "The Execution of Rechab and Baanah"
+      }
+    ],
+    "5": [
+      {
+        "beforeVerse": 1,
+        "heading": "David Anointed King of All Israel"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "David Conquers Jerusalem"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "David’s Family Grows"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "Two Victories over the Philistines"
+      }
+    ],
+    "6": [
+      {
+        "beforeVerse": 1,
+        "heading": "David Fetches the Ark"
+      },
+      {
+        "beforeVerse": 5,
+        "heading": "Uzzah Touches the Ark"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "The Ark Brought to Jerusalem"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "Michal’s Contempt for David"
+      }
+    ],
+    "7": [
+      {
+        "beforeVerse": 1,
+        "heading": "God’s Covenant with David"
+      },
+      {
+        "beforeVerse": 18,
+        "heading": "David’s Prayer of Thanksgiving"
+      }
+    ],
+    "8": [
+      {
+        "beforeVerse": 1,
+        "heading": "David’s Triumphs"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "David’s Officers"
+      }
+    ],
+    "9": [
+      {
+        "beforeVerse": 1,
+        "heading": "David and Mephibosheth"
+      }
+    ],
+    "10": [
+      {
+        "beforeVerse": 1,
+        "heading": "David’s Messengers Disgraced"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "David Defeats Ammon and Aram"
+      }
+    ],
+    "11": [
+      {
+        "beforeVerse": 1,
+        "heading": "David and Bathsheba"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "David Arranges Uriah’s Death"
+      },
+      {
+        "beforeVerse": 26,
+        "heading": "David Marries Bathsheba"
+      }
+    ],
+    "12": [
+      {
+        "beforeVerse": 1,
+        "heading": "Nathan Rebukes David"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "David’s Loss and Repentance"
+      },
+      {
+        "beforeVerse": 24,
+        "heading": "Solomon’s Birth"
+      },
+      {
+        "beforeVerse": 26,
+        "heading": "The Capture of Rabbah"
+      }
+    ],
+    "13": [
+      {
+        "beforeVerse": 1,
+        "heading": "Amnon and Tamar"
+      },
+      {
+        "beforeVerse": 23,
+        "heading": "Absalom’s Revenge on Amnon"
+      },
+      {
+        "beforeVerse": 34,
+        "heading": "Absalom Flees to Geshur"
+      }
+    ],
+    "14": [
+      {
+        "beforeVerse": 1,
+        "heading": "Absalom’s Return to Jerusalem"
+      },
+      {
+        "beforeVerse": 28,
+        "heading": "Absalom Reconciled to David"
+      }
+    ],
+    "15": [
+      {
+        "beforeVerse": 1,
+        "heading": "Absalom’s Conspiracy"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "David Flees Jerusalem"
+      },
+      {
+        "beforeVerse": 30,
+        "heading": "David Weeps at the Mount of Olives"
+      }
+    ],
+    "16": [
+      {
+        "beforeVerse": 1,
+        "heading": "David and Ziba"
+      },
+      {
+        "beforeVerse": 5,
+        "heading": "Shimei Curses David"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "The Counsel of Ahithophel and Hushai"
+      }
+    ],
+    "17": [
+      {
+        "beforeVerse": 1,
+        "heading": "Hushai Counters Ahithophel’s Advice"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "Hushai’s Warning Saves David"
+      }
+    ],
+    "18": [
+      {
+        "beforeVerse": 1,
+        "heading": "Absalom Killed"
+      },
+      {
+        "beforeVerse": 19,
+        "heading": "David Mourns for Absalom"
+      }
+    ],
+    "19": [
+      {
+        "beforeVerse": 1,
+        "heading": "Joab Reproves David"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "David Restored as King"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "Shimei Pardoned"
+      },
+      {
+        "beforeVerse": 24,
+        "heading": "Mephibosheth Excused"
+      },
+      {
+        "beforeVerse": 31,
+        "heading": "David’s Kindness to Barzillai"
+      },
+      {
+        "beforeVerse": 41,
+        "heading": "Contention over the King"
+      }
+    ],
+    "20": [
+      {
+        "beforeVerse": 1,
+        "heading": "Sheba’s Rebellion"
+      }
+    ],
+    "21": [
+      {
+        "beforeVerse": 1,
+        "heading": "David Avenges the Gibeonites"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "Four Battles against the Philistines"
+      }
+    ],
+    "22": [
+      {
+        "beforeVerse": 1,
+        "heading": "David’s Song of Deliverance"
+      }
+    ],
+    "23": [
+      {
+        "beforeVerse": 1,
+        "heading": "David’s Last Song"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "David’s Mighty Men"
+      }
+    ],
+    "24": [
+      {
+        "beforeVerse": 1,
+        "heading": "David’s Military Census"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "Judgment for David’s Sin"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "A Plague on Israel"
+      },
+      {
+        "beforeVerse": 18,
+        "heading": "David Builds an Altar"
+      }
+    ]
+  }
+}

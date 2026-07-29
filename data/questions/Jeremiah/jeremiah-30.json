@@ -1,0 +1,53 @@
+{
+  "book": "Jeremiah",
+  "chapter": 30,
+  "questions": [
+    {
+      "id": "jeremiah-30-q1",
+      "type": "multiple_choice",
+      "question": "What is the theme of Jeremiah 30?",
+      "options": [
+        "A long list of all of the kings who had ruled over Judah",
+        "The promise to restore the fortunes of Israel and Judah",
+        "The final and complete judgment upon the city of Babylon",
+        "An urgent call to march out together against the enemy"
+      ],
+      "answer": "The promise to restore the fortunes of Israel and Judah",
+      "verse_reference": "Jeremiah 30:3"
+    },
+    {
+      "id": "jeremiah-30-q2",
+      "type": "multiple_choice",
+      "question": "What did God command Jeremiah to do with the words of restoration?",
+      "options": [
+        "Write them in a book",
+        "Sing them aloud in the temple courts",
+        "Seal them away until the exile ended",
+        "Speak them only to the king"
+      ],
+      "answer": "Write them in a book",
+      "verse_reference": "Jeremiah 30:2"
+    },
+    {
+      "id": "jeremiah-30-q3",
+      "type": "true_false",
+      "question": "Jeremiah 30 promises that though the people's wound seems incurable, God will restore health and heal them.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 30:12-17"
+    },
+    {
+      "id": "jeremiah-30-q4",
+      "type": "fill_blank",
+      "question": "The days are coming when I will restore My people Israel and Judah from _____.",
+      "answer": "captivity",
+      "verse_reference": "Jeremiah 30:3"
+    },
+    {
+      "id": "jeremiah-30-q5",
+      "type": "fill_blank",
+      "question": "You shall be my people, and I will be your _____.",
+      "answer": "God",
+      "verse_reference": "Jeremiah 30:22"
+    }
+  ]
+}

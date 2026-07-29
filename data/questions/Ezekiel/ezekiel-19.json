@@ -1,0 +1,56 @@
+{
+  "book": "Ezekiel",
+  "chapter": 19,
+  "questions": [
+    {
+      "id": "ezekiel-19-q1",
+      "type": "multiple_choice",
+      "question": "What literary form is Ezekiel 19?",
+      "options": [
+        "A proverb about the way of the wise",
+        "A psalm of praise for God's deliverance",
+        "A lamentation for the princes of Israel",
+        "A genealogy of the kings of Judah"
+      ],
+      "answer": "A lamentation for the princes of Israel",
+      "verse_reference": "Ezekiel 19:1"
+    },
+    {
+      "id": "ezekiel-19-q2",
+      "type": "multiple_choice",
+      "question": "What two images does the lament use?",
+      "options": [
+        "A soaring eagle and a tall cedar tree",
+        "A lioness with her cubs and a fruitful vine",
+        "A flowing river and a fig tree in bloom",
+        "A faithful shepherd and his scattered sheep"
+      ],
+      "answer": "A lioness with her cubs and a fruitful vine",
+      "verse_reference": "Ezekiel 19:2, 10"
+    },
+    {
+      "id": "ezekiel-19-q3",
+      "type": "true_false",
+      "question": "The lament describes the vine being plucked up in fury and planted in a dry land.",
+      "answer": "true",
+      "verse_reference": "Ezekiel 19:12-13"
+    },
+    {
+      "id": "ezekiel-19-q4",
+      "type": "fill_blank",
+      "question": "What was your mother? A _____ among lions!",
+      "answer": "lioness",
+      "verse_reference": "Ezekiel 19:2"
+    },
+    {
+      "id": "ezekiel-19-q5",
+      "type": "fill_blank",
+      "question": "This is a lament and shall be used as a _____.",
+      "answer": "lament",
+      "accept": [
+        "lamentation"
+      ],
+      "verse_reference": "Ezekiel 19:14"
+    }
+  ]
+}

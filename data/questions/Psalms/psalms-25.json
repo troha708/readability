@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 25,
+  "questions": [
+    {
+      "id": "psalms-25-q1",
+      "type": "multiple_choice",
+      "question": "What does David lift up to the LORD in Psalm 25?",
+      "options": [
+        "His hands",
+        "His soul",
+        "His eyes",
+        "His voice only"
+      ],
+      "answer": "His soul",
+      "verse_reference": "Psalm 25:1"
+    },
+    {
+      "id": "psalms-25-q2",
+      "type": "multiple_choice",
+      "question": "Whom does the LORD instruct in his way?",
+      "options": [
+        "The wealthy and those who give freely",
+        "The mighty and those who rule nations",
+        "The wise and those who study the law",
+        "The humble and those who fear him"
+      ],
+      "answer": "The humble and those who fear him",
+      "verse_reference": "Psalm 25:9"
+    },
+    {
+      "id": "psalms-25-q3",
+      "type": "true_false",
+      "question": "David asks God to remember his mercy but not the sins of his youth.",
+      "answer": "true",
+      "verse_reference": "Psalm 25:7"
+    },
+    {
+      "id": "psalms-25-q4",
+      "type": "fill_blank",
+      "question": "Make me to know your ways, O LORD; teach me your _____.",
+      "answer": "paths",
+      "verse_reference": "Psalm 25:4"
+    },
+    {
+      "id": "psalms-25-q5",
+      "type": "fill_blank",
+      "question": "The friendship of the LORD is for those who _____ him.",
+      "answer": "fear",
+      "verse_reference": "Psalm 25:14"
+    }
+  ]
+}

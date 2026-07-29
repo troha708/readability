@@ -1,0 +1,53 @@
+{
+  "book": "2 Samuel",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "2-samuel-4-q1",
+      "type": "multiple_choice",
+      "question": "What happened to Ish-bosheth, Saul's son?",
+      "options": [
+        "He died of grief after Abner's murder",
+        "He was murdered by two of his own men",
+        "He fell in battle against the Philistines",
+        "He fled across the Jordan and was lost"
+      ],
+      "answer": "He was murdered by two of his own men",
+      "verse_reference": "2 Samuel 4:5-7"
+    },
+    {
+      "id": "2-samuel-4-q2",
+      "type": "multiple_choice",
+      "question": "What did David do to the men who killed Ish-bosheth?",
+      "options": [
+        "Richly rewarded them",
+        "Had them executed",
+        "Freed them",
+        "Ignored them"
+      ],
+      "answer": "Had them executed",
+      "verse_reference": "2 Samuel 4:12"
+    },
+    {
+      "id": "2-samuel-4-q3",
+      "type": "true_false",
+      "question": "David condemned the murder of Ish-bosheth.",
+      "answer": "true",
+      "verse_reference": "2 Samuel 4:9-11"
+    },
+    {
+      "id": "2-samuel-4-q4",
+      "type": "fill_blank",
+      "question": "David had the murderers of Saul's son put to _____.",
+      "answer": "death",
+      "verse_reference": "2 Samuel 4:12"
+    },
+    {
+      "id": "2-samuel-4-q5",
+      "type": "fill_blank",
+      "question": "Jonathan's son Mephibosheth was lame in his _____, having been dropped as a child.",
+      "answer": "feet",
+      "verse_reference": "2 Samuel 4:4"
+    }
+  ]
+}

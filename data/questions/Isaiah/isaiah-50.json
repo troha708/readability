@@ -1,0 +1,56 @@
+{
+  "book": "Isaiah",
+  "chapter": 50,
+  "questions": [
+    {
+      "id": "isaiah-50-q1",
+      "type": "multiple_choice",
+      "question": "How does the servant in Isaiah 50 respond to those who strike and mock him?",
+      "options": [
+        "He summons up a very great and mighty army to rise up and defend his honor and his name",
+        "He gives his back to those who strike and does not hide from disgrace and spitting",
+        "He flees away in great haste from the city to escape out of their cruel hands",
+        "He calls down fire from heaven above to consume all of his enemies at once"
+      ],
+      "answer": "He gives his back to those who strike and does not hide from disgrace and spitting",
+      "verse_reference": "Isaiah 50:6"
+    },
+    {
+      "id": "isaiah-50-q2",
+      "type": "multiple_choice",
+      "question": "What helps the servant endure, according to Isaiah 50?",
+      "options": [
+        "His own very great strength carries him through every single trial that comes",
+        "The Lord GOD helps him, so he sets his face like a flint and is not disgraced",
+        "His very many faithful followers all stand and fight bravely beside him",
+        "His abundant wealth easily buys for him the favor of all the powerful"
+      ],
+      "answer": "The Lord GOD helps him, so he sets his face like a flint and is not disgraced",
+      "verse_reference": "Isaiah 50:7"
+    },
+    {
+      "id": "isaiah-50-q3",
+      "type": "true_false",
+      "question": "Isaiah 50 says the servant has the tongue of those who are taught, to sustain the weary with a word.",
+      "answer": "true",
+      "verse_reference": "Isaiah 50:4"
+    },
+    {
+      "id": "isaiah-50-q4",
+      "type": "fill_blank",
+      "question": "I gave my back to those who strike, and my cheeks to those who pull out the _____.",
+      "answer": "beard",
+      "accept": [
+        "hair"
+      ],
+      "verse_reference": "Isaiah 50:6"
+    },
+    {
+      "id": "isaiah-50-q5",
+      "type": "fill_blank",
+      "question": "The Lord GOD helps me; therefore I have set my face like a _____.",
+      "answer": "flint",
+      "verse_reference": "Isaiah 50:7"
+    }
+  ]
+}

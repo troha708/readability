@@ -1,0 +1,53 @@
+{
+  "book": "1 Kings",
+  "chapter": 18,
+  "questions": [
+    {
+      "id": "1-kings-18-q1",
+      "type": "multiple_choice",
+      "question": "Whom did Elijah confront on Mount Carmel?",
+      "options": [
+        "The prophets of Baal",
+        "Jezebel",
+        "The priests of Judah",
+        "Ahab's army"
+      ],
+      "answer": "The prophets of Baal",
+      "verse_reference": "1 Kings 18:19-22"
+    },
+    {
+      "id": "1-kings-18-q2",
+      "type": "multiple_choice",
+      "question": "How did God show he was the true God on Carmel?",
+      "options": [
+        "Rain poured down and drowned the false prophets",
+        "A great wind scattered the prophets of Baal",
+        "A sudden earthquake shook the altar of Baal",
+        "Fire fell from heaven and consumed Elijah's sacrifice"
+      ],
+      "answer": "Fire fell from heaven and consumed Elijah's sacrifice",
+      "verse_reference": "1 Kings 18:38"
+    },
+    {
+      "id": "1-kings-18-q3",
+      "type": "true_false",
+      "question": "After the contest, the drought ended with a heavy rain.",
+      "answer": "true",
+      "verse_reference": "1 Kings 18:45"
+    },
+    {
+      "id": "1-kings-18-q4",
+      "type": "fill_blank",
+      "question": "_____ called down fire from heaven, defeating the prophets of Baal.",
+      "answer": "Elijah",
+      "verse_reference": "1 Kings 18:36-38"
+    },
+    {
+      "id": "1-kings-18-q5",
+      "type": "fill_blank",
+      "question": "The _____ of the LORD fell and consumed the sacrifice, the wood, and the stones.",
+      "answer": "fire",
+      "verse_reference": "1 Kings 18:38"
+    }
+  ]
+}

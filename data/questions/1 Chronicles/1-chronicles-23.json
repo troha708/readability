@@ -1,0 +1,53 @@
+{
+  "book": "1 Chronicles",
+  "chapter": 23,
+  "questions": [
+    {
+      "id": "1-chronicles-23-q1",
+      "type": "multiple_choice",
+      "question": "Whom did David make king over Israel when he was old?",
+      "options": [
+        "Joab",
+        "Solomon",
+        "Absalom",
+        "Adonijah"
+      ],
+      "answer": "Solomon",
+      "verse_reference": "1 Chronicles 23:1"
+    },
+    {
+      "id": "1-chronicles-23-q2",
+      "type": "multiple_choice",
+      "question": "This chapter organizes which group for temple service?",
+      "options": [
+        "The priests of Aaron",
+        "The Levites",
+        "The gatekeepers only",
+        "The army"
+      ],
+      "answer": "The Levites",
+      "verse_reference": "1 Chronicles 23:2-3"
+    },
+    {
+      "id": "1-chronicles-23-q3",
+      "type": "true_false",
+      "question": "The Levites no longer needed to carry the tabernacle, since the LORD gave rest and a dwelling in Jerusalem.",
+      "answer": "true",
+      "verse_reference": "1 Chronicles 23:25-26"
+    },
+    {
+      "id": "1-chronicles-23-q4",
+      "type": "fill_blank",
+      "question": "The Levites were counted from _____ years old and upward for the work of the house of the LORD.",
+      "answer": "twenty",
+      "verse_reference": "1 Chronicles 23:24"
+    },
+    {
+      "id": "1-chronicles-23-q5",
+      "type": "fill_blank",
+      "question": "The Levites were to thank and praise the LORD every _____ and evening.",
+      "answer": "morning",
+      "verse_reference": "1 Chronicles 23:30"
+    }
+  ]
+}

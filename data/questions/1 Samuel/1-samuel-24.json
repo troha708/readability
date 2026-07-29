@@ -1,0 +1,53 @@
+{
+  "book": "1 Samuel",
+  "chapter": 24,
+  "questions": [
+    {
+      "id": "1-samuel-24-q1",
+      "type": "multiple_choice",
+      "question": "What did David do when he had the chance to kill Saul in the cave?",
+      "options": [
+        "Seized hold of him and held him fast as a captive",
+        "Cut off a corner of his robe but spared him",
+        "Struck him down with his own spear",
+        "Slipped away quietly without a word"
+      ],
+      "answer": "Cut off a corner of his robe but spared him",
+      "verse_reference": "1 Samuel 24:4-7"
+    },
+    {
+      "id": "1-samuel-24-q2",
+      "type": "multiple_choice",
+      "question": "Why did David refuse to kill Saul?",
+      "options": [
+        "He was badly outnumbered by Saul's men",
+        "He was afraid of Saul's revenge",
+        "He pitied Saul in his weakness",
+        "Saul was the LORD's anointed"
+      ],
+      "answer": "Saul was the LORD's anointed",
+      "verse_reference": "1 Samuel 24:6"
+    },
+    {
+      "id": "1-samuel-24-q3",
+      "type": "true_false",
+      "question": "Saul wept and acknowledged that David was more righteous than he.",
+      "answer": "true",
+      "verse_reference": "1 Samuel 24:16-17"
+    },
+    {
+      "id": "1-samuel-24-q4",
+      "type": "fill_blank",
+      "question": "David cut off a corner of Saul's _____ but would not harm him.",
+      "answer": "robe",
+      "verse_reference": "1 Samuel 24:4"
+    },
+    {
+      "id": "1-samuel-24-q5",
+      "type": "fill_blank",
+      "question": "David would not lift his hand against Saul, the LORD's _____.",
+      "answer": "anointed",
+      "verse_reference": "1 Samuel 24:6"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "book": "Psalms",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "psalms-4-q1",
+      "type": "multiple_choice",
+      "question": "What does David ask God to do at the start of Psalm 4?",
+      "options": [
+        "Lead him out to battle",
+        "Grant him great wealth and honor",
+        "Strike down all his enemies",
+        "Answer him when he calls"
+      ],
+      "answer": "Answer him when he calls",
+      "verse_reference": "Psalm 4:1"
+    },
+    {
+      "id": "psalms-4-q2",
+      "type": "multiple_choice",
+      "question": "What does David say the LORD has put in his heart?",
+      "options": [
+        "Longer life than the patriarchs of old",
+        "More joy than abundant grain and wine",
+        "Greater wealth than the kings of the earth",
+        "Wider fame than the nations around"
+      ],
+      "answer": "More joy than abundant grain and wine",
+      "verse_reference": "Psalm 4:7"
+    },
+    {
+      "id": "psalms-4-q3",
+      "type": "true_false",
+      "question": "David said, 'In peace I will both lie down and sleep,' for the LORD makes him dwell in safety.",
+      "answer": "true",
+      "verse_reference": "Psalm 4:8"
+    },
+    {
+      "id": "psalms-4-q4",
+      "type": "fill_blank",
+      "question": "Be angry, and do not _____.",
+      "answer": "sin",
+      "verse_reference": "Psalm 4:4"
+    },
+    {
+      "id": "psalms-4-q5",
+      "type": "fill_blank",
+      "question": "The LORD has set apart the _____ for himself.",
+      "answer": "godly",
+      "accept": [
+        "pious",
+        "saintly"
+      ],
+      "verse_reference": "Psalm 4:3"
+    }
+  ]
+}

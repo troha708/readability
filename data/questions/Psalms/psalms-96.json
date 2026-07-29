@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 96,
+  "questions": [
+    {
+      "id": "psalms-96-q1",
+      "type": "multiple_choice",
+      "question": "What new thing does Psalm 96 call for?",
+      "options": [
+        "Bow before the LORD in fear",
+        "Wait upon the LORD in silence",
+        "Cry out to the LORD in distress",
+        "Sing to the LORD a new song"
+      ],
+      "answer": "Sing to the LORD a new song",
+      "verse_reference": "Psalm 96:1"
+    },
+    {
+      "id": "psalms-96-q2",
+      "type": "multiple_choice",
+      "question": "How is the LORD contrasted with other gods?",
+      "options": [
+        "All the gods of the peoples are idols, but the LORD made the heavens",
+        "He stands first and foremost in rank high above all of the other gods",
+        "He is the greatest among the many gods worshiped by the nations",
+        "He is but one god among many others, yet he is unknown to most"
+      ],
+      "answer": "All the gods of the peoples are idols, but the LORD made the heavens",
+      "verse_reference": "Psalm 96:5"
+    },
+    {
+      "id": "psalms-96-q3",
+      "type": "true_false",
+      "question": "The psalm says the LORD comes to judge the earth in righteousness.",
+      "answer": "true",
+      "verse_reference": "Psalm 96:13"
+    },
+    {
+      "id": "psalms-96-q4",
+      "type": "fill_blank",
+      "question": "Sing to the LORD a new _____; sing to the LORD, all the earth!",
+      "answer": "song",
+      "verse_reference": "Psalm 96:1"
+    },
+    {
+      "id": "psalms-96-q5",
+      "type": "fill_blank",
+      "question": "Ascribe to the LORD the glory due his name; bring an offering, and come into his _____!",
+      "answer": "courts",
+      "verse_reference": "Psalm 96:8"
+    }
+  ]
+}

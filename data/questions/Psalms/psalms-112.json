@@ -1,0 +1,57 @@
+{
+  "book": "Psalms",
+  "chapter": 112,
+  "questions": [
+    {
+      "id": "psalms-112-q1",
+      "type": "multiple_choice",
+      "question": "Whom does Psalm 112 call blessed?",
+      "options": [
+        "The man who fears the LORD and greatly delights in his commandments",
+        "The man who is wise in his counsel and is admired by everyone",
+        "The man who is mighty in battle and rules over many nations",
+        "The man who is rich in this present world and gives to the poor"
+      ],
+      "answer": "The man who fears the LORD and greatly delights in his commandments",
+      "verse_reference": "Psalm 112:1"
+    },
+    {
+      "id": "psalms-112-q2",
+      "type": "multiple_choice",
+      "question": "What is said about the righteous man's heart in trouble?",
+      "options": [
+        "It is proud, boasting in its great wealth and great strength",
+        "It is faint, longing for rest from its many labors",
+        "It is firm, trusting in the LORD, not afraid of bad news",
+        "It is troubled, fearing the day of disaster to come"
+      ],
+      "answer": "It is firm, trusting in the LORD, not afraid of bad news",
+      "verse_reference": "Psalm 112:7"
+    },
+    {
+      "id": "psalms-112-q3",
+      "type": "true_false",
+      "question": "The righteous in this psalm is generous and gives to the poor.",
+      "answer": "true",
+      "verse_reference": "Psalm 112:9"
+    },
+    {
+      "id": "psalms-112-q4",
+      "type": "fill_blank",
+      "question": "Blessed is the man who _____ the LORD, who greatly delights in his commandments!",
+      "answer": "fears",
+      "verse_reference": "Psalm 112:1"
+    },
+    {
+      "id": "psalms-112-q5",
+      "type": "fill_blank",
+      "question": "He is not afraid of bad news; his heart is firm, trusting in the _____.",
+      "answer": "LORD",
+      "accept": [
+        "Jehovah",
+        "Yahweh"
+      ],
+      "verse_reference": "Psalm 112:7"
+    }
+  ]
+}

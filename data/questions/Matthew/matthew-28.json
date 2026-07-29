@@ -1,0 +1,59 @@
+{
+  "book": "Matthew",
+  "chapter": 28,
+  "questions": [
+    {
+      "id": "matthew-28-q1",
+      "type": "multiple_choice",
+      "question": "Who was the first to arrive at Jesus' tomb on the first day of the week?",
+      "options": [
+        "Peter and John, the two disciples",
+        "Mary Magdalene and the other Mary",
+        "The mother of Jesus and Salome",
+        "Joseph of Arimathea and Nicodemus"
+      ],
+      "answer": "Mary Magdalene and the other Mary",
+      "verse_reference": "Matthew 28:1"
+    },
+    {
+      "id": "matthew-28-q2",
+      "type": "multiple_choice",
+      "question": "What did the chief priests pay the soldiers to say about the empty tomb?",
+      "options": [
+        "That Jesus had risen from the dead",
+        "That his disciples stole his body",
+        "That the tomb was never used",
+        "That they saw nothing"
+      ],
+      "answer": "That his disciples stole his body",
+      "verse_reference": "Matthew 28:12-13"
+    },
+    {
+      "id": "matthew-28-q3",
+      "type": "true_false",
+      "question": "The angel at the tomb told the women not to be afraid.",
+      "answer": "true",
+      "verse_reference": "Matthew 28:5"
+    },
+    {
+      "id": "matthew-28-q4",
+      "type": "fill_blank",
+      "question": "Go and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy _____.",
+      "answer": "Spirit",
+      "accept": [
+        "Ghost"
+      ],
+      "verse_reference": "Matthew 28:19"
+    },
+    {
+      "id": "matthew-28-q5",
+      "type": "fill_blank",
+      "question": "Behold, I am with you always, even to the _____ of the age.",
+      "answer": "end",
+      "accept": [
+        "completion"
+      ],
+      "verse_reference": "Matthew 28:20"
+    }
+  ]
+}

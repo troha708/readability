@@ -1,0 +1,57 @@
+{
+  "book": "Exodus",
+  "chapter": 38,
+  "questions": [
+    {
+      "id": "exodus-38-q1",
+      "type": "multiple_choice",
+      "question": "What was the bronze basin made from?",
+      "options": [
+        "The weapons melted down after battle",
+        "The bronze purchased from passing traders",
+        "The mirrors of the women who served",
+        "The coins collected from the people"
+      ],
+      "answer": "The mirrors of the women who served",
+      "verse_reference": "Exodus 38:8"
+    },
+    {
+      "id": "exodus-38-q2",
+      "type": "multiple_choice",
+      "question": "Besides the altar, what part of the tabernacle does this chapter describe building?",
+      "options": [
+        "The lampstand",
+        "The ark",
+        "The courtyard",
+        "The roof"
+      ],
+      "answer": "The courtyard",
+      "verse_reference": "Exodus 38:9"
+    },
+    {
+      "id": "exodus-38-q3",
+      "type": "true_false",
+      "question": "This chapter includes an inventory of the gold, silver, and bronze that was used.",
+      "answer": "true",
+      "verse_reference": "Exodus 38:21-31"
+    },
+    {
+      "id": "exodus-38-q4",
+      "type": "fill_blank",
+      "question": "The bronze basin was made from the bronze _____ of the serving women.",
+      "answer": "mirrors",
+      "verse_reference": "Exodus 38:8"
+    },
+    {
+      "id": "exodus-38-q5",
+      "type": "fill_blank",
+      "question": "The altar of burnt offering was made of acacia wood overlaid with _____.",
+      "answer": "bronze",
+      "accept": [
+        "brass",
+        "copper"
+      ],
+      "verse_reference": "Exodus 38:1-2"
+    }
+  ]
+}

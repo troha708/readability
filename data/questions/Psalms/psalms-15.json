@@ -1,0 +1,59 @@
+{
+  "book": "Psalms",
+  "chapter": 15,
+  "questions": [
+    {
+      "id": "psalms-15-q1",
+      "type": "multiple_choice",
+      "question": "What question does Psalm 15 ask?",
+      "options": [
+        "O LORD, what is man that you care for him?",
+        "O LORD, how long will you hide your face?",
+        "O LORD, who shall dwell on your holy hill?",
+        "O LORD, who can stand when you appear?"
+      ],
+      "answer": "O LORD, who shall dwell on your holy hill?",
+      "verse_reference": "Psalm 15:1"
+    },
+    {
+      "id": "psalms-15-q2",
+      "type": "multiple_choice",
+      "question": "What kind of person may dwell with God?",
+      "options": [
+        "The one who brings to him the very costliest of sacrifices",
+        "The one who is exceedingly rich and gives freely to the poor",
+        "The one who walks blamelessly and speaks truth in his heart",
+        "The one who is strong and mighty and skilled in battle"
+      ],
+      "answer": "The one who walks blamelessly and speaks truth in his heart",
+      "verse_reference": "Psalm 15:2"
+    },
+    {
+      "id": "psalms-15-q3",
+      "type": "true_false",
+      "question": "The blameless person swears to his own hurt and does not change.",
+      "answer": "true",
+      "verse_reference": "Psalm 15:4"
+    },
+    {
+      "id": "psalms-15-q4",
+      "type": "fill_blank",
+      "question": "He who does these things will never be _____.",
+      "answer": "shaken",
+      "accept": [
+        "moved"
+      ],
+      "verse_reference": "Psalm 15:5"
+    },
+    {
+      "id": "psalms-15-q5",
+      "type": "fill_blank",
+      "question": "He does not put out his money at _____ or take a bribe.",
+      "answer": "interest",
+      "accept": [
+        "usury"
+      ],
+      "verse_reference": "Psalm 15:5"
+    }
+  ]
+}

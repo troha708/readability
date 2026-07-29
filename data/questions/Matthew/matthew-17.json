@@ -1,0 +1,60 @@
+{
+  "book": "Matthew",
+  "chapter": 17,
+  "questions": [
+    {
+      "id": "matthew-17-q1",
+      "type": "multiple_choice",
+      "question": "Which three disciples did Jesus take with him to the mountain where he was transfigured?",
+      "options": [
+        "Matthew, Thomas, and Andrew",
+        "Peter, James, and John",
+        "Philip, Bartholomew, and Simon",
+        "Peter, Andrew, and James"
+      ],
+      "answer": "Peter, James, and John",
+      "verse_reference": "Matthew 17:1"
+    },
+    {
+      "id": "matthew-17-q2",
+      "type": "multiple_choice",
+      "question": "Who appeared and talked with Jesus during the transfiguration?",
+      "options": [
+        "Abraham and Isaac",
+        "Moses and Elijah",
+        "David and Solomon",
+        "Noah and Daniel"
+      ],
+      "answer": "Moses and Elijah",
+      "verse_reference": "Matthew 17:3"
+    },
+    {
+      "id": "matthew-17-q3",
+      "type": "true_false",
+      "question": "The disciples were able to cast out a demon from a boy before Jesus intervened.",
+      "answer": "false",
+      "verse_reference": "Matthew 17:16"
+    },
+    {
+      "id": "matthew-17-q4",
+      "type": "fill_blank",
+      "question": "If you have faith as a grain of mustard seed, you will tell this mountain, 'Move from here to there,' and it will _____.",
+      "answer": "move",
+      "accept": [
+        "remove",
+        "transport"
+      ],
+      "verse_reference": "Matthew 17:20"
+    },
+    {
+      "id": "matthew-17-q5",
+      "type": "fill_blank",
+      "question": "A voice came out of the cloud, saying, 'This is my beloved Son, in whom I am well pleased. _____ to him.'",
+      "answer": "Listen",
+      "accept": [
+        "Hear"
+      ],
+      "verse_reference": "Matthew 17:5"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Matthew",
+  "chapter": 6,
+  "questions": [
+    {
+      "id": "matthew-6-q1",
+      "type": "multiple_choice",
+      "question": "Jesus said that when you pray, where should you go?",
+      "options": [
+        "To the temple",
+        "Up to the high mountaintop",
+        "To the synagogue",
+        "Into your inner room"
+      ],
+      "answer": "Into your inner room",
+      "verse_reference": "Matthew 6:6"
+    },
+    {
+      "id": "matthew-6-q2",
+      "type": "multiple_choice",
+      "question": "Jesus said you cannot serve both God and what?",
+      "options": [
+        "Caesar",
+        "Yourself",
+        "Money",
+        "The world"
+      ],
+      "answer": "Money",
+      "verse_reference": "Matthew 6:24"
+    },
+    {
+      "id": "matthew-6-q3",
+      "type": "true_false",
+      "question": "Jesus said that when you fast, you should make it obvious so others can see.",
+      "answer": "false",
+      "verse_reference": "Matthew 6:16-18"
+    },
+    {
+      "id": "matthew-6-q4",
+      "type": "fill_blank",
+      "question": "But seek first God's Kingdom and his _____, and all these things will be given to you as well.",
+      "answer": "righteousness",
+      "verse_reference": "Matthew 6:33"
+    },
+    {
+      "id": "matthew-6-q5",
+      "type": "fill_blank",
+      "question": "For where your treasure is, there your _____ will be also.",
+      "answer": "heart",
+      "verse_reference": "Matthew 6:21"
+    }
+  ]
+}

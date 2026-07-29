@@ -1,0 +1,56 @@
+{
+  "book": "Proverbs",
+  "chapter": 11,
+  "questions": [
+    {
+      "id": "proverbs-11-q1",
+      "type": "multiple_choice",
+      "question": "What does the LORD consider an abomination in Proverbs 11?",
+      "options": [
+        "A poor man begging at the gate",
+        "A false balance (dishonest scales)",
+        "A stranger passing through the land",
+        "A loud and boastful voice"
+      ],
+      "answer": "A false balance (dishonest scales)",
+      "verse_reference": "Proverbs 11:1"
+    },
+    {
+      "id": "proverbs-11-q2",
+      "type": "multiple_choice",
+      "question": "What does Proverbs 11 say comes before destruction?",
+      "options": [
+        "Joy",
+        "Wealth",
+        "Pride",
+        "Wisdom"
+      ],
+      "answer": "Pride",
+      "verse_reference": "Proverbs 11:2"
+    },
+    {
+      "id": "proverbs-11-q3",
+      "type": "true_false",
+      "question": "Proverbs 11 says whoever brings blessing will be enriched, and one who waters will himself be watered.",
+      "answer": "true",
+      "verse_reference": "Proverbs 11:25"
+    },
+    {
+      "id": "proverbs-11-q4",
+      "type": "fill_blank",
+      "question": "A false balance is an abomination to the LORD, but a just weight is his _____.",
+      "answer": "delight",
+      "verse_reference": "Proverbs 11:1"
+    },
+    {
+      "id": "proverbs-11-q5",
+      "type": "fill_blank",
+      "question": "A generous soul will prosper, and he who _____ others will himself be refreshed.",
+      "answer": "refreshes",
+      "accept": [
+        "waters"
+      ],
+      "verse_reference": "Proverbs 11:25"
+    }
+  ]
+}

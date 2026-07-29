@@ -1,0 +1,53 @@
+{
+  "book": "Ezekiel",
+  "chapter": 13,
+  "questions": [
+    {
+      "id": "ezekiel-13-q1",
+      "type": "multiple_choice",
+      "question": "Whom does Ezekiel 13 denounce?",
+      "options": [
+        "The false prophets who prophesy from their own hearts",
+        "The foreign nations who scornfully mocked all of Israel",
+        "The corrupt priests who had defiled the holy temple",
+        "The proud princes who oppressed and crushed the poor"
+      ],
+      "answer": "The false prophets who prophesy from their own hearts",
+      "verse_reference": "Ezekiel 13:2-3"
+    },
+    {
+      "id": "ezekiel-13-q2",
+      "type": "multiple_choice",
+      "question": "What image describes the false prophets' work?",
+      "options": [
+        "Building a great house upon the shifting sand",
+        "Whitewashing a flimsy wall that will fall",
+        "Sewing patches onto a worn-out garment",
+        "Pouring new wine into old wineskins"
+      ],
+      "answer": "Whitewashing a flimsy wall that will fall",
+      "verse_reference": "Ezekiel 13:10-11"
+    },
+    {
+      "id": "ezekiel-13-q3",
+      "type": "true_false",
+      "question": "Ezekiel 13 says the false prophets cried 'Peace' when there was no peace.",
+      "answer": "true",
+      "verse_reference": "Ezekiel 13:10"
+    },
+    {
+      "id": "ezekiel-13-q4",
+      "type": "fill_blank",
+      "question": "Woe to the foolish prophets who follow their own _____ and have seen nothing!",
+      "answer": "spirit",
+      "verse_reference": "Ezekiel 13:3"
+    },
+    {
+      "id": "ezekiel-13-q5",
+      "type": "fill_blank",
+      "question": "They have misled my people, saying, 'Peace,' when there is no _____.",
+      "answer": "peace",
+      "verse_reference": "Ezekiel 13:10"
+    }
+  ]
+}

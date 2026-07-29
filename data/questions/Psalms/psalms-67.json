@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 67,
+  "questions": [
+    {
+      "id": "psalms-67-q1",
+      "type": "multiple_choice",
+      "question": "What is the prayer at the start of Psalm 67?",
+      "options": [
+        "That God would be gracious and make his face shine on us",
+        "That God would send down the refreshing rain upon the land",
+        "That God would firmly establish the throne of the king",
+        "That God would scatter the proud and the mighty of the earth"
+      ],
+      "answer": "That God would be gracious and make his face shine on us",
+      "verse_reference": "Psalm 67:1"
+    },
+    {
+      "id": "psalms-67-q2",
+      "type": "multiple_choice",
+      "question": "What does the psalm desire for the nations?",
+      "options": [
+        "That all peoples praise God and the nations be glad",
+        "That the harvest be rich and the barns be full",
+        "That the king reign in peace for many years",
+        "That Israel alone be honored above the nations"
+      ],
+      "answer": "That all peoples praise God and the nations be glad",
+      "verse_reference": "Psalm 67:3-4"
+    },
+    {
+      "id": "psalms-67-q3",
+      "type": "true_false",
+      "question": "The psalm says the earth has yielded its increase, and God shall bless us.",
+      "answer": "true",
+      "verse_reference": "Psalm 67:6"
+    },
+    {
+      "id": "psalms-67-q4",
+      "type": "fill_blank",
+      "question": "Let the peoples _____ you, O God; let all the peoples praise you!",
+      "answer": "praise",
+      "verse_reference": "Psalm 67:3"
+    },
+    {
+      "id": "psalms-67-q5",
+      "type": "fill_blank",
+      "question": "God shall bless us; let all the ends of the _____ fear him!",
+      "answer": "earth",
+      "verse_reference": "Psalm 67:7"
+    }
+  ]
+}

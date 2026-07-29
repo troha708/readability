@@ -1,0 +1,53 @@
+{
+  "book": "Matthew",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "matthew-4-q1",
+      "type": "multiple_choice",
+      "question": "How long did Jesus fast in the wilderness before being tempted?",
+      "options": [
+        "A single day and a single night",
+        "Seven days and seven nights",
+        "Forty days and forty nights",
+        "Three days and three nights"
+      ],
+      "answer": "Forty days and forty nights",
+      "verse_reference": "Matthew 4:2"
+    },
+    {
+      "id": "matthew-4-q2",
+      "type": "multiple_choice",
+      "question": "Who were the first two disciples Jesus called?",
+      "options": [
+        "James and John",
+        "Simon and Andrew",
+        "Matthew and Thomas",
+        "Philip and Nathanael"
+      ],
+      "answer": "Simon and Andrew",
+      "verse_reference": "Matthew 4:18-19"
+    },
+    {
+      "id": "matthew-4-q3",
+      "type": "true_false",
+      "question": "The devil tempted Jesus to turn stones into bread.",
+      "answer": "true",
+      "verse_reference": "Matthew 4:3"
+    },
+    {
+      "id": "matthew-4-q4",
+      "type": "fill_blank",
+      "question": "Man shall not live by bread alone, but by every word that proceeds out of _____'s mouth.",
+      "answer": "God",
+      "verse_reference": "Matthew 4:4"
+    },
+    {
+      "id": "matthew-4-q5",
+      "type": "fill_blank",
+      "question": "Come after me, and I will make you fishers for _____.",
+      "answer": "men",
+      "verse_reference": "Matthew 4:19"
+    }
+  ]
+}

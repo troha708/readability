@@ -1,0 +1,54 @@
+{
+  "book": "Joel",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "joel-3-q1",
+      "type": "multiple_choice",
+      "question": "What does God announce concerning the nations in Joel 3?",
+      "options": [
+        "He will gather and judge them in the Valley of Jehoshaphat",
+        "He will leave them all wholly untouched and at perfect ease",
+        "He will make a lasting and enduring peace with all of them",
+        "He will scatter Israel abroad among them all forever and ever"
+      ],
+      "answer": "He will gather and judge them in the Valley of Jehoshaphat",
+      "verse_reference": "Joel 3:2"
+    },
+    {
+      "id": "joel-3-q2",
+      "type": "multiple_choice",
+      "question": "How is the imagery of peace reversed in Joel 3 as the nations prepare for war?",
+      "options": [
+        "Flee away from the coming battle and go and hide in the high hills",
+        "Lay down all of your weapons and turn back to till your own fields",
+        "Beat your swords into plowshares and your spears into pruning hooks",
+        "Beat your plowshares into swords and your pruning hooks into spears"
+      ],
+      "answer": "Beat your plowshares into swords and your pruning hooks into spears",
+      "verse_reference": "Joel 3:10"
+    },
+    {
+      "id": "joel-3-q3",
+      "type": "true_false",
+      "question": "Joel 3 calls the place of judgment the 'valley of decision.'",
+      "answer": "true",
+      "verse_reference": "Joel 3:14"
+    },
+    {
+      "id": "joel-3-q4",
+      "type": "fill_blank",
+      "question": "Multitudes, multitudes, in the valley of _____!",
+      "answer": "decision",
+      "accept": ["threshing"],
+      "verse_reference": "Joel 3:14"
+    },
+    {
+      "id": "joel-3-q5",
+      "type": "fill_blank",
+      "question": "The LORD is a refuge to his people and a stronghold to the people of _____.",
+      "answer": "Israel",
+      "verse_reference": "Joel 3:16"
+    }
+  ]
+}

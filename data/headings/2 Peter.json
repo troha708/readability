@@ -1,0 +1,40 @@
+{
+  "book": "2 Peter",
+  "source": "Berean Standard Bible (CC0 Public Domain)",
+  "chapters": {
+    "1": [
+      {
+        "beforeVerse": 1,
+        "heading": "A Greeting from Peter"
+      },
+      {
+        "beforeVerse": 3,
+        "heading": "Partakers of the Divine Nature"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "Eyewitnesses of His Majesty"
+      }
+    ],
+    "2": [
+      {
+        "beforeVerse": 1,
+        "heading": "Deliverance from False Prophets"
+      }
+    ],
+    "3": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Coming Judgment"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "The Day of the Lord"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "Final Exhortations"
+      }
+    ]
+  }
+}

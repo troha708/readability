@@ -1,0 +1,56 @@
+{
+  "book": "Deuteronomy",
+  "chapter": 29,
+  "questions": [
+    {
+      "id": "deuteronomy-29-q1",
+      "type": "multiple_choice",
+      "question": "Where was this covenant made, besides the one at Horeb?",
+      "options": [
+        "In the land of Egypt",
+        "Inside the land of Canaan",
+        "At Mount Sinai again",
+        "In the land of Moab"
+      ],
+      "answer": "In the land of Moab",
+      "verse_reference": "Deuteronomy 29:1"
+    },
+    {
+      "id": "deuteronomy-29-q2",
+      "type": "multiple_choice",
+      "question": "What did Moses say about \"the secret things\"?",
+      "options": [
+        "They will be uncovered on the day of the LORD",
+        "They are made known only to the priests and Levites",
+        "They are written in a sealed and hidden book",
+        "They belong to God; revealed things belong to Israel"
+      ],
+      "answer": "They belong to God; revealed things belong to Israel",
+      "verse_reference": "Deuteronomy 29:29"
+    },
+    {
+      "id": "deuteronomy-29-q3",
+      "type": "true_false",
+      "question": "The covenant was made not only with those present but with future generations.",
+      "answer": "true",
+      "verse_reference": "Deuteronomy 29:14-15"
+    },
+    {
+      "id": "deuteronomy-29-q4",
+      "type": "fill_blank",
+      "question": "\"The _____ things belong to the LORD our God,\" but the revealed things belong to us.",
+      "answer": "secret",
+      "accept": [
+        "hidden"
+      ],
+      "verse_reference": "Deuteronomy 29:29"
+    },
+    {
+      "id": "deuteronomy-29-q5",
+      "type": "fill_blank",
+      "question": "This covenant was made in the land of _____, besides the covenant at Horeb.",
+      "answer": "Moab",
+      "verse_reference": "Deuteronomy 29:1"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 119,
+  "questions": [
+    {
+      "id": "psalms-119-q1",
+      "type": "multiple_choice",
+      "question": "What is the subject of Psalm 119, the longest chapter in the Bible?",
+      "options": [
+        "God's covenant, throne, and kingdom",
+        "God's word, law, and commandments",
+        "God's power, wonders, and creation",
+        "God's mercy, grace, and forgiveness"
+      ],
+      "answer": "God's word, law, and commandments",
+      "verse_reference": "Psalm 119:1"
+    },
+    {
+      "id": "psalms-119-q2",
+      "type": "multiple_choice",
+      "question": "How does the psalmist say a young man can keep his way pure?",
+      "options": [
+        "By heeding the counsel of his elders",
+        "By keeping company with the wise",
+        "By the strength of his own strong right hand",
+        "By guarding it according to God's word"
+      ],
+      "answer": "By guarding it according to God's word",
+      "verse_reference": "Psalm 119:9"
+    },
+    {
+      "id": "psalms-119-q3",
+      "type": "true_false",
+      "question": "Psalm 119 says, 'Your word is a lamp to my feet and a light to my path.'",
+      "answer": "true",
+      "verse_reference": "Psalm 119:105"
+    },
+    {
+      "id": "psalms-119-q4",
+      "type": "fill_blank",
+      "question": "Your word is a lamp to my feet and a _____ to my path.",
+      "answer": "light",
+      "verse_reference": "Psalm 119:105"
+    },
+    {
+      "id": "psalms-119-q5",
+      "type": "fill_blank",
+      "question": "I have stored up your word in my _____, that I might not sin against you.",
+      "answer": "heart",
+      "verse_reference": "Psalm 119:11"
+    }
+  ]
+}

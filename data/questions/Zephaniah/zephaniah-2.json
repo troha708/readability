@@ -1,0 +1,60 @@
+{
+  "book": "Zephaniah",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "zephaniah-2-q1",
+      "type": "multiple_choice",
+      "question": "What does Zephaniah 2 call the people to do before the day of the LORD?",
+      "options": [
+        "Take up their arms and fight against the coming foe",
+        "Build up very high walls all around the whole city",
+        "Flee away to Egypt and find what safety they can there",
+        "Gather together and seek the LORD and humility"
+      ],
+      "answer": "Gather together and seek the LORD and humility",
+      "verse_reference": "Zephaniah 2:1-3"
+    },
+    {
+      "id": "zephaniah-2-q2",
+      "type": "multiple_choice",
+      "question": "Which nations does Zephaniah 2 pronounce judgment against?",
+      "options": [
+        "Egypt, Babylon, Persia, Greece, and old Media",
+        "Israel, Judah, Samaria, and Galilee",
+        "Philistia, Moab, Ammon, Cush, and Assyria",
+        "Edom, Tyre, Sidon, and Damascus"
+      ],
+      "answer": "Philistia, Moab, Ammon, Cush, and Assyria",
+      "verse_reference": "Zephaniah 2:4-13"
+    },
+    {
+      "id": "zephaniah-2-q3",
+      "type": "true_false",
+      "question": "Zephaniah 2 declares that Nineveh, the exultant city, will become a desolation.",
+      "answer": "true",
+      "verse_reference": "Zephaniah 2:13-15"
+    },
+    {
+      "id": "zephaniah-2-q4",
+      "type": "fill_blank",
+      "question": "Seek the LORD, all you humble of the land; seek righteousness, seek _____.",
+      "answer": "humility",
+      "accept": [
+        "meekness",
+        "lowliness"
+      ],
+      "verse_reference": "Zephaniah 2:3"
+    },
+    {
+      "id": "zephaniah-2-q5",
+      "type": "fill_blank",
+      "question": "This is the exultant city that lived securely, that said in her heart, 'I am, and there is no one _____ me.'",
+      "answer": "besides",
+      "accept": [
+        "beside"
+      ],
+      "verse_reference": "Zephaniah 2:15"
+    }
+  ]
+}

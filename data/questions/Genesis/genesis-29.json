@@ -1,0 +1,53 @@
+{
+  "book": "Genesis",
+  "chapter": 29,
+  "questions": [
+    {
+      "id": "genesis-29-q1",
+      "type": "multiple_choice",
+      "question": "Which of Laban's daughters did Jacob love and want to marry?",
+      "options": [
+        "Leah",
+        "Rachel",
+        "Bilhah",
+        "Dinah"
+      ],
+      "answer": "Rachel",
+      "verse_reference": "Genesis 29:18"
+    },
+    {
+      "id": "genesis-29-q2",
+      "type": "multiple_choice",
+      "question": "How did Laban deceive Jacob on his wedding night?",
+      "options": [
+        "He hid Rachel far away from the feast",
+        "He drove off Jacob's best flocks",
+        "He kept on changing the agreed wages",
+        "He gave him Leah instead of Rachel"
+      ],
+      "answer": "He gave him Leah instead of Rachel",
+      "verse_reference": "Genesis 29:23-25"
+    },
+    {
+      "id": "genesis-29-q3",
+      "type": "true_false",
+      "question": "Jacob's seven years of work for Rachel seemed like only a few days because of his love for her.",
+      "answer": "true",
+      "verse_reference": "Genesis 29:20"
+    },
+    {
+      "id": "genesis-29-q4",
+      "type": "fill_blank",
+      "question": "Leah's firstborn son was named _____.",
+      "answer": "Reuben",
+      "verse_reference": "Genesis 29:32"
+    },
+    {
+      "id": "genesis-29-q5",
+      "type": "fill_blank",
+      "question": "Leah named her fourth son _____, saying, \"This time I will praise the LORD.\"",
+      "answer": "Judah",
+      "verse_reference": "Genesis 29:35"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "book": "Deuteronomy",
+  "chapter": 17,
+  "questions": [
+    {
+      "id": "deuteronomy-17-q1",
+      "type": "multiple_choice",
+      "question": "What does chapter 17 anticipate Israel will one day want?",
+      "options": [
+        "A temple",
+        "A king",
+        "A prophet",
+        "An army"
+      ],
+      "answer": "A king",
+      "verse_reference": "Deuteronomy 17:14-15"
+    },
+    {
+      "id": "deuteronomy-17-q2",
+      "type": "multiple_choice",
+      "question": "What was the future king commanded not to do?",
+      "options": [
+        "Multiply horses, wives, and gold for himself",
+        "Pray and offer sacrifices each morning",
+        "Read the law aloud to all the people",
+        "Lead all of the people out to battle by his own hand"
+      ],
+      "answer": "Multiply horses, wives, and gold for himself",
+      "verse_reference": "Deuteronomy 17:16-17"
+    },
+    {
+      "id": "deuteronomy-17-q3",
+      "type": "true_false",
+      "question": "The king was to write for himself a copy of the law and read it all his life.",
+      "answer": "true",
+      "verse_reference": "Deuteronomy 17:18-19"
+    },
+    {
+      "id": "deuteronomy-17-q4",
+      "type": "fill_blank",
+      "question": "Israel could set a king over them, but only one whom the LORD would _____.",
+      "answer": "choose",
+      "verse_reference": "Deuteronomy 17:15"
+    },
+    {
+      "id": "deuteronomy-17-q5",
+      "type": "fill_blank",
+      "question": "The king was to write a copy of this _____ and read it all his days.",
+      "answer": "instruction",
+      "accept": [
+        "law"
+      ],
+      "verse_reference": "Deuteronomy 17:18-19"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Job",
+  "chapter": 35,
+  "questions": [
+    {
+      "id": "job-35-q1",
+      "type": "multiple_choice",
+      "question": "What did Elihu say about a person's righteousness or sin?",
+      "options": [
+        "It changes how God deals with the whole world",
+        "It affects other people, not God himself",
+        "It means nothing in the end to anyone",
+        "It earns a swift reward or punishment"
+      ],
+      "answer": "It affects other people, not God himself",
+      "verse_reference": "Job 35:6-8"
+    },
+    {
+      "id": "job-35-q2",
+      "type": "multiple_choice",
+      "question": "Why did Elihu say God sometimes does not answer cries?",
+      "options": [
+        "Because of the pride and emptiness of those crying out",
+        "Because he is far too busy to attend to them",
+        "Because he is altogether deaf to every one of their cries",
+        "Because he is asleep and simply does not hear"
+      ],
+      "answer": "Because of the pride and emptiness of those crying out",
+      "verse_reference": "Job 35:12-13"
+    },
+    {
+      "id": "job-35-q3",
+      "type": "true_false",
+      "question": "Elihu said your wickedness concerns a man like yourself, and your righteousness a son of man.",
+      "answer": "true",
+      "verse_reference": "Job 35:8"
+    },
+    {
+      "id": "job-35-q4",
+      "type": "fill_blank",
+      "question": "Elihu asked, 'If you are righteous, what do you give to _____?'",
+      "answer": "him",
+      "verse_reference": "Job 35:7"
+    },
+    {
+      "id": "job-35-q5",
+      "type": "fill_blank",
+      "question": "Elihu said God does not hear an _____ cry.",
+      "answer": "empty",
+      "verse_reference": "Job 35:13"
+    }
+  ]
+}

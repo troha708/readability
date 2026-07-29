@@ -1,0 +1,56 @@
+{
+  "book": "Luke",
+  "chapter": 18,
+  "questions": [
+    {
+      "id": "luke-18-q1",
+      "type": "multiple_choice",
+      "question": "In the Parable of the Pharisee and the Tax Collector, who went home justified?",
+      "options": [
+        "The Pharisee",
+        "The tax collector",
+        "Both of them",
+        "Neither one of them"
+      ],
+      "answer": "The tax collector",
+      "verse_reference": "Luke 18:14"
+    },
+    {
+      "id": "luke-18-q2",
+      "type": "multiple_choice",
+      "question": "What did the blind man near Jericho ask Jesus for?",
+      "options": [
+        "Money to live on",
+        "Bread to eat each day",
+        "A safe place to sleep",
+        "That he may see again"
+      ],
+      "answer": "That he may see again",
+      "verse_reference": "Luke 18:41"
+    },
+    {
+      "id": "luke-18-q3",
+      "type": "true_false",
+      "question": "Jesus said it is easier for a camel to go through the eye of a needle than for a rich man to enter God's Kingdom.",
+      "answer": "true",
+      "verse_reference": "Luke 18:25"
+    },
+    {
+      "id": "luke-18-q4",
+      "type": "fill_blank",
+      "question": "God, be merciful to me, a _____!",
+      "answer": "sinner",
+      "verse_reference": "Luke 18:13"
+    },
+    {
+      "id": "luke-18-q5",
+      "type": "fill_blank",
+      "question": "Allow the little _____ to come to me, and don't hinder them, for God's Kingdom belongs to such as these.",
+      "answer": "children",
+      "accept": [
+        "babes"
+      ],
+      "verse_reference": "Luke 18:16"
+    }
+  ]
+}

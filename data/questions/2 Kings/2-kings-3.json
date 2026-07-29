@@ -1,0 +1,53 @@
+{
+  "book": "2 Kings",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "2-kings-3-q1",
+      "type": "multiple_choice",
+      "question": "Which prophet did the kings consult before fighting Moab?",
+      "options": [
+        "Elisha",
+        "Nathan",
+        "Micaiah",
+        "Elijah"
+      ],
+      "answer": "Elisha",
+      "verse_reference": "2 Kings 3:11-12"
+    },
+    {
+      "id": "2-kings-3-q2",
+      "type": "multiple_choice",
+      "question": "What miracle provided water for the armies?",
+      "options": [
+        "A sudden and heavy rainstorm over the desert",
+        "Ditches that filled with water without wind or rain",
+        "A new spring that burst out from the solid rock",
+        "A river diverted to flow into the dry camp"
+      ],
+      "answer": "Ditches that filled with water without wind or rain",
+      "verse_reference": "2 Kings 3:16-20"
+    },
+    {
+      "id": "2-kings-3-q3",
+      "type": "true_false",
+      "question": "The kings of Israel, Judah, and Edom allied against Moab.",
+      "answer": "true",
+      "verse_reference": "2 Kings 3:9"
+    },
+    {
+      "id": "2-kings-3-q4",
+      "type": "fill_blank",
+      "question": "The prophet _____ told the kings to dig ditches that God would fill with water.",
+      "answer": "Elisha",
+      "verse_reference": "2 Kings 3:16"
+    },
+    {
+      "id": "2-kings-3-q5",
+      "type": "fill_blank",
+      "question": "The valley filled with _____ without wind or rain, by God's power.",
+      "answer": "water",
+      "verse_reference": "2 Kings 3:17-20"
+    }
+  ]
+}

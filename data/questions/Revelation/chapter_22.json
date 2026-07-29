@@ -1,0 +1,59 @@
+{
+  "book": "Revelation",
+  "chapter": 22,
+  "questions": [
+    {
+      "id": "rev_22_1",
+      "type": "multiple_choice",
+      "question": "The river of the water of life flows from where?",
+      "options": [
+        "The ancient garden of Eden in the east",
+        "The throne of God and of the Lamb",
+        "The inner sanctuary of the temple",
+        "The high and holy mountain of Zion"
+      ],
+      "correct": "The throne of God and of the Lamb",
+      "verse_ref": "Revelation 22:1",
+      "feedback": "The river of the water of life flows from the throne of God and of the Lamb."
+    },
+    {
+      "id": "rev_22_2",
+      "type": "multiple_choice",
+      "question": "The tree of life bears fruit how often?",
+      "options": [
+        "Every month, yielding twelve crops",
+        "Only in spring, when the rains come",
+        "Once a year, at the harvest feast",
+        "Never again, for the curse remains"
+      ],
+      "correct": "Every month, yielding twelve crops",
+      "verse_ref": "Revelation 22:2",
+      "feedback": "The tree of life bears twelve crops of fruit, yielding its fruit every month."
+    },
+    {
+      "id": "rev_22_3",
+      "type": "true_false",
+      "question": "Jesus says he is coming soon.",
+      "correct": true,
+      "verse_ref": "Revelation 22:20",
+      "feedback": "He who testifies to these things says: Yes, I am coming soon."
+    },
+    {
+      "id": "rev_22_4",
+      "type": "fill_in_the_blank",
+      "question": "The leaves of the tree of life are for the _____ of the nations.",
+      "correct": "healing",
+      "accept": ["service"],
+      "verse_ref": "Revelation 22:2",
+      "feedback": "The leaves of the tree are for the healing of the nations."
+    },
+    {
+      "id": "rev_22_5",
+      "type": "fill_in_the_blank",
+      "question": "The Spirit and the bride say, '_____!' Let the one who hears say it too.",
+      "correct": "Come",
+      "verse_ref": "Revelation 22:17",
+      "feedback": "The Spirit and the bride say Come! Let the one who is thirsty come."
+    }
+  ]
+}

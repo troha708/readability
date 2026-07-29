@@ -1,0 +1,59 @@
+{
+  "book": "Micah",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "micah-1-q1",
+      "type": "multiple_choice",
+      "question": "Against which two capital cities does Micah 1 prophesy?",
+      "options": [
+        "Damascus and Gaza",
+        "Great Babylon and Nineveh",
+        "Samaria and Jerusalem",
+        "Tyre and Sidon"
+      ],
+      "answer": "Samaria and Jerusalem",
+      "verse_reference": "Micah 1:1, 5"
+    },
+    {
+      "id": "micah-1-q2",
+      "type": "multiple_choice",
+      "question": "What does Micah say will happen to Samaria?",
+      "options": [
+        "It will prosper and grow exceedingly rich from its trade with many far nations",
+        "It will be rebuilt in far greater glory than it had ever once known before",
+        "It will become a heap in the open country, its stones poured into the valley",
+        "It will be raised up and greatly honored above all of the cities of the land"
+      ],
+      "answer": "It will become a heap in the open country, its stones poured into the valley",
+      "verse_reference": "Micah 1:6"
+    },
+    {
+      "id": "micah-1-q3",
+      "type": "true_false",
+      "question": "Micah laments the transgression of Jacob and the sins of the house of Israel.",
+      "answer": "true",
+      "verse_reference": "Micah 1:5"
+    },
+    {
+      "id": "micah-1-q4",
+      "type": "fill_blank",
+      "question": "Micah the _____ prophesied concerning Samaria and Jerusalem.",
+      "answer": "Moreshite",
+      "accept": [
+        "Morasthite",
+        "Morasheth",
+        "Morashtite",
+        "Morashite"
+      ],
+      "verse_reference": "Micah 1:1"
+    },
+    {
+      "id": "micah-1-q5",
+      "type": "fill_blank",
+      "question": "What is the transgression of Jacob? Is it not _____?",
+      "answer": "Samaria",
+      "verse_reference": "Micah 1:5"
+    }
+  ]
+}

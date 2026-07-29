@@ -1,0 +1,57 @@
+{
+  "book": "1 Samuel",
+  "chapter": 10,
+  "questions": [
+    {
+      "id": "1-samuel-10-q1",
+      "type": "multiple_choice",
+      "question": "What did Samuel do to Saul, marking him as king?",
+      "options": [
+        "Crowned him",
+        "Anointed him with oil",
+        "Gave him a sword",
+        "Built him a golden throne"
+      ],
+      "answer": "Anointed him with oil",
+      "verse_reference": "1 Samuel 10:1"
+    },
+    {
+      "id": "1-samuel-10-q2",
+      "type": "multiple_choice",
+      "question": "When Saul was to be presented as king, where was he found hiding?",
+      "options": [
+        "Hidden away in a cave",
+        "Among the baggage",
+        "In a field",
+        "At home"
+      ],
+      "answer": "Among the baggage",
+      "verse_reference": "1 Samuel 10:22"
+    },
+    {
+      "id": "1-samuel-10-q3",
+      "type": "true_false",
+      "question": "The Spirit of God came on Saul and he prophesied with the prophets.",
+      "answer": "true",
+      "verse_reference": "1 Samuel 10:10"
+    },
+    {
+      "id": "1-samuel-10-q4",
+      "type": "fill_blank",
+      "question": "Samuel poured a flask of _____ on Saul's head and anointed him king.",
+      "answer": "oil",
+      "verse_reference": "1 Samuel 10:1"
+    },
+    {
+      "id": "1-samuel-10-q5",
+      "type": "fill_blank",
+      "question": "When chosen, Saul had hidden himself among the _____.",
+      "answer": "baggage",
+      "accept": [
+        "stuff",
+        "vessels"
+      ],
+      "verse_reference": "1 Samuel 10:22"
+    }
+  ]
+}

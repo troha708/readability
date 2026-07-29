@@ -1,0 +1,56 @@
+{
+  "book": "Haggai",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "haggai-2-q1",
+      "type": "multiple_choice",
+      "question": "What did God promise about the latter glory of this temple?",
+      "options": [
+        "The latter glory would be greater than the former, and he would give peace",
+        "The latter glory would be far less than the glory of the first house",
+        "Nothing more would be added to it in all the days to come",
+        "The house would be thrown down once again by the very hands of all its enemies"
+      ],
+      "answer": "The latter glory would be greater than the former, and he would give peace",
+      "verse_reference": "Haggai 2:9"
+    },
+    {
+      "id": "haggai-2-q2",
+      "type": "multiple_choice",
+      "question": "Whom did God call his chosen 'signet ring' at the end of Haggai?",
+      "options": [
+        "Zerubbabel",
+        "Darius",
+        "Haggai",
+        "Joshua the priest"
+      ],
+      "answer": "Zerubbabel",
+      "verse_reference": "Haggai 2:23"
+    },
+    {
+      "id": "haggai-2-q3",
+      "type": "true_false",
+      "question": "Haggai 2 says the silver and the gold belong to the LORD of hosts.",
+      "answer": "true",
+      "verse_reference": "Haggai 2:8"
+    },
+    {
+      "id": "haggai-2-q4",
+      "type": "fill_blank",
+      "question": "The latter glory of this house shall be greater than the former, and in this place I will give _____.",
+      "answer": "peace",
+      "verse_reference": "Haggai 2:9"
+    },
+    {
+      "id": "haggai-2-q5",
+      "type": "fill_blank",
+      "question": "I will take you, O Zerubbabel, my servant, and make you like a _____, for I have chosen you.",
+      "answer": "signet",
+      "accept": [
+        "signet ring"
+      ],
+      "verse_reference": "Haggai 2:23"
+    }
+  ]
+}

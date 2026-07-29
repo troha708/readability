@@ -1,0 +1,56 @@
+{
+  "book": "Deuteronomy",
+  "chapter": 25,
+  "questions": [
+    {
+      "id": "deuteronomy-25-q1",
+      "type": "multiple_choice",
+      "question": "What limit was placed on flogging a guilty person?",
+      "options": [
+        "No more than forty lashes",
+        "No fewer than a hundred lashes",
+        "No fixed limit at all",
+        "No more than ten lashes"
+      ],
+      "answer": "No more than forty lashes",
+      "verse_reference": "Deuteronomy 25:3"
+    },
+    {
+      "id": "deuteronomy-25-q2",
+      "type": "multiple_choice",
+      "question": "Whose memory were the Israelites to blot out?",
+      "options": [
+        "The Edomites",
+        "Moab",
+        "Amalek",
+        "Egypt"
+      ],
+      "answer": "Amalek",
+      "verse_reference": "Deuteronomy 25:17-19"
+    },
+    {
+      "id": "deuteronomy-25-q3",
+      "type": "true_false",
+      "question": "They were to use honest weights and measures.",
+      "answer": "true",
+      "verse_reference": "Deuteronomy 25:13-15"
+    },
+    {
+      "id": "deuteronomy-25-q4",
+      "type": "fill_blank",
+      "question": "A guilty man could be beaten, but with no more than _____ stripes.",
+      "answer": "forty",
+      "verse_reference": "Deuteronomy 25:3"
+    },
+    {
+      "id": "deuteronomy-25-q5",
+      "type": "fill_blank",
+      "question": "They were to remember what _____ did to them and blot out its memory.",
+      "answer": "Amalek",
+      "accept": [
+        "Amalekites"
+      ],
+      "verse_reference": "Deuteronomy 25:17"
+    }
+  ]
+}

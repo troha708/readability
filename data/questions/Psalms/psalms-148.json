@@ -1,0 +1,56 @@
+{
+  "book": "Psalms",
+  "chapter": 148,
+  "questions": [
+    {
+      "id": "psalms-148-q1",
+      "type": "multiple_choice",
+      "question": "Who and what are called to praise the LORD in Psalm 148?",
+      "options": [
+        "Only the priests and the Levites, who minister continually at the altar",
+        "All creation, from the heavens, angels, sun and moon, to earth and its creatures",
+        "Only the kings of the whole earth, bowing down low before the great throne",
+        "Only the people of Israel, who are gathered together before the temple"
+      ],
+      "answer": "All creation, from the heavens, angels, sun and moon, to earth and its creatures",
+      "verse_reference": "Psalm 148:1-12"
+    },
+    {
+      "id": "psalms-148-q2",
+      "type": "multiple_choice",
+      "question": "Why should they praise the LORD, according to the psalm?",
+      "options": [
+        "Because he commanded and they were created; his name alone is exalted",
+        "Because he gave them the law and they obey it; his statutes are righteous",
+        "Because he chose Zion and dwells there; his glory fills the temple",
+        "Because he led them from Egypt; his right hand worked salvation"
+      ],
+      "answer": "Because he commanded and they were created; his name alone is exalted",
+      "verse_reference": "Psalm 148:5, 13"
+    },
+    {
+      "id": "psalms-148-q3",
+      "type": "true_false",
+      "question": "The psalm calls sun, moon, and shining stars to praise the LORD.",
+      "answer": "true",
+      "verse_reference": "Psalm 148:3"
+    },
+    {
+      "id": "psalms-148-q4",
+      "type": "fill_blank",
+      "question": "Praise the LORD from the heavens; praise him in the _____ places!",
+      "answer": "highest",
+      "accept": [
+        "heights"
+      ],
+      "verse_reference": "Psalm 148:1"
+    },
+    {
+      "id": "psalms-148-q5",
+      "type": "fill_blank",
+      "question": "Let them praise the name of the LORD! For he commanded and they were _____.",
+      "answer": "created",
+      "verse_reference": "Psalm 148:5"
+    }
+  ]
+}

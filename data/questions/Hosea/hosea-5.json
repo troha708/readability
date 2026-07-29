@@ -1,0 +1,59 @@
+{
+  "book": "Hosea",
+  "chapter": 5,
+  "questions": [
+    {
+      "id": "hosea-5-q1",
+      "type": "multiple_choice",
+      "question": "Against whom is the judgment in Hosea 5 directed?",
+      "options": [
+        "The merchants, the soldiers, and all of the working farmers",
+        "The prophets, the elders, and all of the learned scribes",
+        "The priests, the house of Israel, and the king's house",
+        "The poor, the foreigners, and the orphans of the land"
+      ],
+      "answer": "The priests, the house of Israel, and the king's house",
+      "verse_reference": "Hosea 5:1"
+    },
+    {
+      "id": "hosea-5-q2",
+      "type": "multiple_choice",
+      "question": "To what does God compare himself in dealing with Israel's sin in Hosea 5?",
+      "options": [
+        "A moth and dry rot, and like a lion",
+        "A gentle shepherd and a healing balm",
+        "A strong tower and a sheltering rock",
+        "A refreshing rain and a flowing stream"
+      ],
+      "answer": "A moth and dry rot, and like a lion",
+      "verse_reference": "Hosea 5:12, 14"
+    },
+    {
+      "id": "hosea-5-q3",
+      "type": "true_false",
+      "question": "Hosea 5 says God will withdraw until they acknowledge their guilt and seek his face.",
+      "answer": "true",
+      "verse_reference": "Hosea 5:15"
+    },
+    {
+      "id": "hosea-5-q4",
+      "type": "fill_blank",
+      "question": "I am like a _____ to Ephraim, and like dry rot to the house of Judah.",
+      "answer": "moth",
+      "verse_reference": "Hosea 5:12"
+    },
+    {
+      "id": "hosea-5-q5",
+      "type": "fill_blank",
+      "question": "I will return to my place, until they acknowledge their _____ and seek my face.",
+      "answer": "guilt",
+      "accept": [
+        "offense",
+        "offence",
+        "fault",
+        "trespass"
+      ],
+      "verse_reference": "Hosea 5:15"
+    }
+  ]
+}

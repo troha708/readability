@@ -1,0 +1,56 @@
+{
+  "book": "Isaiah",
+  "chapter": 25,
+  "questions": [
+    {
+      "id": "isaiah-25-q1",
+      "type": "multiple_choice",
+      "question": "What feast does the LORD prepare in Isaiah 25?",
+      "options": [
+        "A great sacrifice of many bulls and goats on the altar",
+        "A banquet for the kings of the nations only",
+        "A fast of mourning for the fallen city",
+        "A feast of rich food and aged wine for all peoples"
+      ],
+      "answer": "A feast of rich food and aged wine for all peoples",
+      "verse_reference": "Isaiah 25:6"
+    },
+    {
+      "id": "isaiah-25-q2",
+      "type": "multiple_choice",
+      "question": "What will the LORD swallow up forever in Isaiah 25?",
+      "options": [
+        "Death, and he will wipe away tears from all faces",
+        "The mountains, and the valleys will be raised",
+        "The seas, and dry land will appear again",
+        "The wicked, and the righteous will rejoice"
+      ],
+      "answer": "Death, and he will wipe away tears from all faces",
+      "verse_reference": "Isaiah 25:8"
+    },
+    {
+      "id": "isaiah-25-q3",
+      "type": "true_false",
+      "question": "Isaiah 25 says the LORD has been a stronghold to the poor and needy in their distress.",
+      "answer": "true",
+      "verse_reference": "Isaiah 25:4"
+    },
+    {
+      "id": "isaiah-25-q4",
+      "type": "fill_blank",
+      "question": "He will swallow up _____ forever; and the Lord GOD will wipe away tears from all faces.",
+      "answer": "death",
+      "verse_reference": "Isaiah 25:8"
+    },
+    {
+      "id": "isaiah-25-q5",
+      "type": "fill_blank",
+      "question": "For You have worked _____ — plans formed long ago — in perfect faithfulness.",
+      "answer": "wonders",
+      "accept": [
+        "things"
+      ],
+      "verse_reference": "Isaiah 25:1"
+    }
+  ]
+}

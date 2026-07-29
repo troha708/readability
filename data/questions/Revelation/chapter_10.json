@@ -1,0 +1,59 @@
+{
+  "book": "Revelation",
+  "chapter": 10,
+  "questions": [
+    {
+      "id": "rev_10_1",
+      "type": "multiple_choice",
+      "question": "What did the mighty angel hold in his hand?",
+      "options": [
+        "A measuring rod of pure gold",
+        "A little scroll that was open",
+        "A sealed book with seven seals",
+        "A golden lampstand burning bright"
+      ],
+      "correct": "A little scroll that was open",
+      "verse_ref": "Revelation 10:2",
+      "feedback": "The angel held a little scroll that lay open in his hand."
+    },
+    {
+      "id": "rev_10_2",
+      "type": "multiple_choice",
+      "question": "What happened when John ate the little scroll?",
+      "options": [
+        "He at once began to prophesy to the nations",
+        "It was sweet in his mouth but sour in his stomach",
+        "He fell into a deep and dreamless sleep",
+        "He was struck and could not utter a word"
+      ],
+      "correct": "It was sweet in his mouth but sour in his stomach",
+      "verse_ref": "Revelation 10:10",
+      "feedback": "The scroll tasted sweet as honey but turned sour in his stomach."
+    },
+    {
+      "id": "rev_10_3",
+      "type": "true_false",
+      "question": "Seven thunders spoke, and John was told to seal up what they said.",
+      "correct": true,
+      "verse_ref": "Revelation 10:4",
+      "feedback": "John was told to seal up what the seven thunders said and not write it down."
+    },
+    {
+      "id": "rev_10_4",
+      "type": "fill_in_the_blank",
+      "question": "The angel swore that there would be no more _____.",
+      "correct": "delay",
+      "accept": ["time"],
+      "verse_ref": "Revelation 10:6",
+      "feedback": "The angel swore there would be no more delay in God's mystery being accomplished."
+    },
+    {
+      "id": "rev_10_5",
+      "type": "fill_in_the_blank",
+      "question": "John was told he must _____ again about many peoples, nations, languages, and kings.",
+      "correct": "prophesy",
+      "verse_ref": "Revelation 10:11",
+      "feedback": "John was told to prophesy again about many peoples and nations."
+    }
+  ]
+}

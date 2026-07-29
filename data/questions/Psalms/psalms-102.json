@@ -1,0 +1,56 @@
+{
+  "book": "Psalms",
+  "chapter": 102,
+  "questions": [
+    {
+      "id": "psalms-102-q1",
+      "type": "multiple_choice",
+      "question": "How does the afflicted psalmist describe his days in Psalm 102?",
+      "options": [
+        "They flow on like a river",
+        "They pass away like smoke",
+        "They stand firm like the hills",
+        "They shine forth like the sun"
+      ],
+      "answer": "They pass away like smoke",
+      "verse_reference": "Psalm 102:3"
+    },
+    {
+      "id": "psalms-102-q2",
+      "type": "multiple_choice",
+      "question": "What contrast does the psalm make about God?",
+      "options": [
+        "The raging nations will rise up, but God only laughs from his throne in heaven",
+        "The heavens will perish, but God remains the same and his years have no end",
+        "The righteous ones will suffer awhile, but God will surely reward them at last",
+        "The wicked may prosper for a time, but God will certainly judge them in the end"
+      ],
+      "answer": "The heavens will perish, but God remains the same and his years have no end",
+      "verse_reference": "Psalm 102:25-27"
+    },
+    {
+      "id": "psalms-102-q3",
+      "type": "true_false",
+      "question": "The psalm is titled a prayer of one afflicted, pouring out his complaint before the LORD.",
+      "answer": "true",
+      "verse_reference": "Psalm 102:title"
+    },
+    {
+      "id": "psalms-102-q4",
+      "type": "fill_blank",
+      "question": "But you, O LORD, are enthroned forever; you are remembered throughout all _____.",
+      "answer": "generations",
+      "verse_reference": "Psalm 102:12"
+    },
+    {
+      "id": "psalms-102-q5",
+      "type": "fill_blank",
+      "question": "He will regard the prayer of the _____ and will not despise their prayer.",
+      "answer": "destitute",
+      "accept": [
+        "desolate"
+      ],
+      "verse_reference": "Psalm 102:17"
+    }
+  ]
+}

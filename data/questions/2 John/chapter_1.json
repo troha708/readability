@@ -1,0 +1,61 @@
+{
+  "book": "2 John",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "2jn_1_1",
+      "type": "multiple_choice",
+      "question": "John writes to whom?",
+      "options": [
+        "The church gathered at Rome",
+        "His dear son in the faith, Timothy",
+        "The seven churches of Asia",
+        "The elect lady and her children"
+      ],
+      "correct": "The elect lady and her children",
+      "verse_ref": "2 John 1:1",
+      "feedback": "John writes to the elect lady and her children."
+    },
+    {
+      "id": "2jn_1_2",
+      "type": "multiple_choice",
+      "question": "John warns against receiving into your house anyone who does what?",
+      "options": [
+        "Does not keep the whole law of Moses at all",
+        "Does not honor the apostles",
+        "Does not bring the teaching of Christ",
+        "Does not pay the temple tax"
+      ],
+      "correct": "Does not bring the teaching of Christ",
+      "verse_ref": "2 John 1:10",
+      "feedback": "Do not receive anyone who does not bring the teaching of Christ."
+    },
+    {
+      "id": "2jn_1_3",
+      "type": "true_false",
+      "question": "John says many deceivers have gone out into the world.",
+      "correct": true,
+      "verse_ref": "2 John 1:7",
+      "feedback": "Many deceivers have gone out into the world who do not acknowledge Jesus Christ."
+    },
+    {
+      "id": "2jn_1_4",
+      "type": "fill_in_the_blank",
+      "question": "John's command is that we _____ one another, which has been from the beginning.",
+      "correct": "love",
+      "verse_ref": "2 John 1:5",
+      "feedback": "The command from the beginning is that we love one another."
+    },
+    {
+      "id": "2jn_1_5",
+      "type": "fill_in_the_blank",
+      "question": "Watch out that you do not lose what we have worked for, but that you may be rewarded _____.",
+      "correct": "fully",
+      "accept": [
+        "full"
+      ],
+      "verse_ref": "2 John 1:8",
+      "feedback": "Watch out so you do not lose what you have worked for but may be fully rewarded."
+    }
+  ]
+}

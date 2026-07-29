@@ -1,0 +1,58 @@
+{
+  "book": "John",
+  "chapter": 7,
+  "questions": [
+    {
+      "id": "john-7-q1",
+      "type": "multiple_choice",
+      "question": "Which feast was taking place when Jesus went up to Jerusalem in this chapter?",
+      "options": [
+        "The Feast of Dedication",
+        "Pentecost",
+        "Passover",
+        "Feast of Tabernacles"
+      ],
+      "answer": "Feast of Tabernacles",
+      "verse_reference": "John 7:2"
+    },
+    {
+      "id": "john-7-q2",
+      "type": "multiple_choice",
+      "question": "What did some of the people say when they heard Jesus' words about rivers of living water?",
+      "options": [
+        "He is a liar",
+        "This is truly the Prophet",
+        "He is surely demon-possessed",
+        "He speaks blasphemy"
+      ],
+      "answer": "This is truly the Prophet",
+      "verse_reference": "John 7:40"
+    },
+    {
+      "id": "john-7-q3",
+      "type": "true_false",
+      "question": "Jesus' own brothers believed in him and encouraged him to go to Judea.",
+      "answer": "false",
+      "verse_reference": "John 7:5"
+    },
+    {
+      "id": "john-7-q4",
+      "type": "fill_blank",
+      "question": "Jesus stood and cried out, 'If anyone is _____, let him come to me and drink!'",
+      "answer": "thirsty",
+      "verse_reference": "John 7:37"
+    },
+    {
+      "id": "john-7-q5",
+      "type": "fill_blank",
+      "question": "Nicodemus said to them, 'Does our law judge a man unless it first hears from him and knows what he _____?'",
+      "answer": "does",
+      "accept": [
+        "done",
+        "doeth",
+        "doth"
+      ],
+      "verse_reference": "John 7:51"
+    }
+  ]
+}

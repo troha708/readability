@@ -1,0 +1,56 @@
+{
+  "book": "Psalms",
+  "chapter": 71,
+  "questions": [
+    {
+      "id": "psalms-71-q1",
+      "type": "multiple_choice",
+      "question": "From what stage of life does the psalmist especially pray in Psalm 71?",
+      "options": [
+        "Old age and gray hairs",
+        "Wealth and many lands",
+        "Power and high office",
+        "Youth and early strength"
+      ],
+      "answer": "Old age and gray hairs",
+      "verse_reference": "Psalm 71:9, 18"
+    },
+    {
+      "id": "psalms-71-q2",
+      "type": "multiple_choice",
+      "question": "What has the psalmist leaned on from his birth?",
+      "options": [
+        "God, who took him from his mother's womb",
+        "God, who set him up securely on the throne",
+        "God, who led him safely out of Egypt",
+        "God, who gave to him the holy law"
+      ],
+      "answer": "God, who took him from his mother's womb",
+      "verse_reference": "Psalm 71:6"
+    },
+    {
+      "id": "psalms-71-q3",
+      "type": "true_false",
+      "question": "The psalmist asks God not to forsake him when his strength is spent.",
+      "answer": "true",
+      "verse_reference": "Psalm 71:9"
+    },
+    {
+      "id": "psalms-71-q4",
+      "type": "fill_blank",
+      "question": "In you, O LORD, do I take _____; let me never be put to shame!",
+      "answer": "refuge",
+      "verse_reference": "Psalm 71:1"
+    },
+    {
+      "id": "psalms-71-q5",
+      "type": "fill_blank",
+      "question": "O God, from my youth you have taught me, and I still proclaim your wondrous _____.",
+      "answer": "deeds",
+      "accept": [
+        "works"
+      ],
+      "verse_reference": "Psalm 71:17"
+    }
+  ]
+}

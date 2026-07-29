@@ -1,0 +1,53 @@
+{
+  "book": "Isaiah",
+  "chapter": 14,
+  "questions": [
+    {
+      "id": "isaiah-14-q1",
+      "type": "multiple_choice",
+      "question": "Whose downfall is taunted in Isaiah 14?",
+      "options": [
+        "The king of Assyria only",
+        "Edom",
+        "Pharaoh",
+        "The king of Babylon"
+      ],
+      "answer": "The king of Babylon",
+      "verse_reference": "Isaiah 14:4"
+    },
+    {
+      "id": "isaiah-14-q2",
+      "type": "multiple_choice",
+      "question": "What proud boast is quoted and condemned in Isaiah 14?",
+      "options": [
+        "'I will rule over the raging sea and command all of the howling winds'",
+        "'I will live on forever and ever and shall never once taste of death'",
+        "'I will gather to myself the riches of all the kingdoms of the earth'",
+        "'I will ascend to heaven; I will make myself like the Most High'"
+      ],
+      "answer": "'I will ascend to heaven; I will make myself like the Most High'",
+      "verse_reference": "Isaiah 14:13-14"
+    },
+    {
+      "id": "isaiah-14-q3",
+      "type": "true_false",
+      "question": "Isaiah 14 includes the line, 'How you are fallen from heaven, O Day Star, son of Dawn!'",
+      "answer": "true",
+      "verse_reference": "Isaiah 14:12"
+    },
+    {
+      "id": "isaiah-14-q4",
+      "type": "fill_blank",
+      "question": "How you are fallen from heaven, O Day _____, son of Dawn!",
+      "answer": "Star",
+      "verse_reference": "Isaiah 14:12"
+    },
+    {
+      "id": "isaiah-14-q5",
+      "type": "fill_blank",
+      "question": "The LORD has founded Zion, and in her the afflicted of his people find _____.",
+      "answer": "refuge",
+      "verse_reference": "Isaiah 14:32"
+    }
+  ]
+}

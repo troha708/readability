@@ -1,0 +1,53 @@
+{
+  "book": "Genesis",
+  "chapter": 13,
+  "questions": [
+    {
+      "id": "genesis-13-q1",
+      "type": "multiple_choice",
+      "question": "Why did Abram and Lot decide to separate?",
+      "options": [
+        "Lot wished to return to live in Egypt",
+        "Abram was commanded by God to send him away",
+        "The land could not support them both",
+        "Famine had struck the whole region of Canaan"
+      ],
+      "answer": "The land could not support them both",
+      "verse_reference": "Genesis 13:6"
+    },
+    {
+      "id": "genesis-13-q2",
+      "type": "multiple_choice",
+      "question": "Which land did Lot choose for himself?",
+      "options": [
+        "The hill country of Bethel",
+        "The plain of the Jordan",
+        "The green fields of Egypt",
+        "The dry land of the Negev"
+      ],
+      "answer": "The plain of the Jordan",
+      "verse_reference": "Genesis 13:11"
+    },
+    {
+      "id": "genesis-13-q3",
+      "type": "true_false",
+      "question": "Abram generously gave Lot the first choice of land.",
+      "answer": "true",
+      "verse_reference": "Genesis 13:9"
+    },
+    {
+      "id": "genesis-13-q4",
+      "type": "fill_blank",
+      "question": "Lot moved his tents as far as _____, a wicked city.",
+      "answer": "Sodom",
+      "verse_reference": "Genesis 13:12"
+    },
+    {
+      "id": "genesis-13-q5",
+      "type": "fill_blank",
+      "question": "God promised to make Abram's offspring as numerous as the _____ of the earth.",
+      "answer": "dust",
+      "verse_reference": "Genesis 13:16"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Deuteronomy",
+  "chapter": 11,
+  "questions": [
+    {
+      "id": "deuteronomy-11-q1",
+      "type": "multiple_choice",
+      "question": "What did Moses set before Israel in chapter 11?",
+      "options": [
+        "War and peace",
+        "A king and a high priest",
+        "Two lands",
+        "A blessing and a curse"
+      ],
+      "answer": "A blessing and a curse",
+      "verse_reference": "Deuteronomy 11:26"
+    },
+    {
+      "id": "deuteronomy-11-q2",
+      "type": "multiple_choice",
+      "question": "On what did the rain and fruitfulness of the land depend?",
+      "options": [
+        "Their skill at farming",
+        "The turn of the seasons",
+        "The will of the king",
+        "Their obedience to God"
+      ],
+      "answer": "Their obedience to God",
+      "verse_reference": "Deuteronomy 11:13-17"
+    },
+    {
+      "id": "deuteronomy-11-q3",
+      "type": "true_false",
+      "question": "Israel was to teach these words to their children and bind them as signs.",
+      "answer": "true",
+      "verse_reference": "Deuteronomy 11:18-19"
+    },
+    {
+      "id": "deuteronomy-11-q4",
+      "type": "fill_blank",
+      "question": "\"I set before you today a blessing and a _____.\"",
+      "answer": "curse",
+      "verse_reference": "Deuteronomy 11:26"
+    },
+    {
+      "id": "deuteronomy-11-q5",
+      "type": "fill_blank",
+      "question": "If they obeyed, God would give the rain for their land in its _____.",
+      "answer": "season",
+      "verse_reference": "Deuteronomy 11:14"
+    }
+  ]
+}

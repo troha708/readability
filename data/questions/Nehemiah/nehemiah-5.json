@@ -1,0 +1,57 @@
+{
+  "book": "Nehemiah",
+  "chapter": 5,
+  "questions": [
+    {
+      "id": "nehemiah-5-q1",
+      "type": "multiple_choice",
+      "question": "What problem did Nehemiah confront among the people?",
+      "options": [
+        "The rich were charging interest and enslaving their poor brothers",
+        "The workers had all grown completely lazy and entirely idle",
+        "The people had turned away from God to the worship of idols",
+        "Thieves were stealing the building materials gathered for the work"
+      ],
+      "answer": "The rich were charging interest and enslaving their poor brothers",
+      "verse_reference": "Nehemiah 5:1-5"
+    },
+    {
+      "id": "nehemiah-5-q2",
+      "type": "multiple_choice",
+      "question": "What did Nehemiah require the nobles to do?",
+      "options": [
+        "Pay a far heavier tax to the king",
+        "Return the fields and stop charging interest",
+        "Leave the city until the wall was done",
+        "Finish rebuilding the broken wall more quickly"
+      ],
+      "answer": "Return the fields and stop charging interest",
+      "verse_reference": "Nehemiah 5:11"
+    },
+    {
+      "id": "nehemiah-5-q3",
+      "type": "true_false",
+      "question": "As governor, Nehemiah refused to take the food allowance owed to him.",
+      "answer": "true",
+      "verse_reference": "Nehemiah 5:14-15"
+    },
+    {
+      "id": "nehemiah-5-q4",
+      "type": "fill_blank",
+      "question": "Nehemiah said what they were doing was not good; they ought to walk in the _____ of God.",
+      "answer": "fear",
+      "verse_reference": "Nehemiah 5:9"
+    },
+    {
+      "id": "nehemiah-5-q5",
+      "type": "fill_blank",
+      "question": "Nehemiah shook out the folds of his _____ as a symbol against those who broke the promise.",
+      "answer": "robe",
+      "accept": [
+        "garment",
+        "lap"
+      ],
+      "verse_reference": "Nehemiah 5:13"
+    }
+  ]
+}

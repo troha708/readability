@@ -1,0 +1,57 @@
+{
+  "book": "1 Kings",
+  "chapter": 22,
+  "questions": [
+    {
+      "id": "1-kings-22-q1",
+      "type": "multiple_choice",
+      "question": "Which prophet told Ahab the truth that he would die in battle?",
+      "options": [
+        "Elisha",
+        "Micaiah",
+        "Nathan",
+        "Elijah"
+      ],
+      "answer": "Micaiah",
+      "verse_reference": "1 Kings 22:17-23"
+    },
+    {
+      "id": "1-kings-22-q2",
+      "type": "multiple_choice",
+      "question": "How did Ahab die?",
+      "options": [
+        "Wounded by his own commander in the camp",
+        "Cut down by Aramean soldiers at the gate",
+        "Thrown down from his chariot during the retreat",
+        "Struck by an arrow shot \"at random\" in battle"
+      ],
+      "answer": "Struck by an arrow shot \"at random\" in battle",
+      "verse_reference": "1 Kings 22:34-37"
+    },
+    {
+      "id": "1-kings-22-q3",
+      "type": "true_false",
+      "question": "Ahab disguised himself in battle, but was killed anyway.",
+      "answer": "true",
+      "verse_reference": "1 Kings 22:30-34"
+    },
+    {
+      "id": "1-kings-22-q4",
+      "type": "fill_blank",
+      "question": "The prophet _____ alone prophesied disaster, while the false prophets promised victory.",
+      "answer": "Micaiah",
+      "verse_reference": "1 Kings 22:8-17"
+    },
+    {
+      "id": "1-kings-22-q5",
+      "type": "fill_blank",
+      "question": "A man drew his bow at random and struck Ahab between the joints of his _____.",
+      "answer": "armor",
+      "accept": [
+        "harness",
+        "brigandine"
+      ],
+      "verse_reference": "1 Kings 22:34"
+    }
+  ]
+}

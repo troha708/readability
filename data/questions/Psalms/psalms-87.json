@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 87,
+  "questions": [
+    {
+      "id": "psalms-87-q1",
+      "type": "multiple_choice",
+      "question": "What city does Psalm 87 glorify?",
+      "options": [
+        "Sinai, the mountain of the law",
+        "Zion, the city of God",
+        "Bethel, the house of God",
+        "Hebron, the city of David"
+      ],
+      "answer": "Zion, the city of God",
+      "verse_reference": "Psalm 87:2-3"
+    },
+    {
+      "id": "psalms-87-q2",
+      "type": "multiple_choice",
+      "question": "What is said about those born in Zion?",
+      "options": [
+        "A curse rests on all who are numbered among them",
+        "They will all be scattered and quite forgotten among the nations",
+        "Glorious things are spoken, and the Most High establishes her",
+        "They are doomed to be carried away into exile"
+      ],
+      "answer": "Glorious things are spoken, and the Most High establishes her",
+      "verse_reference": "Psalm 87:3, 5"
+    },
+    {
+      "id": "psalms-87-q3",
+      "type": "true_false",
+      "question": "The psalm pictures various nations being counted as born in Zion.",
+      "answer": "true",
+      "verse_reference": "Psalm 87:4-6"
+    },
+    {
+      "id": "psalms-87-q4",
+      "type": "fill_blank",
+      "question": "Glorious things of you are spoken, O city of _____.",
+      "answer": "God",
+      "verse_reference": "Psalm 87:3"
+    },
+    {
+      "id": "psalms-87-q5",
+      "type": "fill_blank",
+      "question": "The LORD loves the gates of _____ more than all the dwelling places of Jacob.",
+      "answer": "Zion",
+      "verse_reference": "Psalm 87:2"
+    }
+  ]
+}

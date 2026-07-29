@@ -1,0 +1,53 @@
+{
+  "book": "1 Samuel",
+  "chapter": 19,
+  "questions": [
+    {
+      "id": "1-samuel-19-q1",
+      "type": "multiple_choice",
+      "question": "Who helped David escape Saul through a window?",
+      "options": [
+        "Samuel the prophet",
+        "Jonathan, Saul's son",
+        "Abigail of Carmel",
+        "Michal, his wife"
+      ],
+      "answer": "Michal, his wife",
+      "verse_reference": "1 Samuel 19:11-12"
+    },
+    {
+      "id": "1-samuel-19-q2",
+      "type": "multiple_choice",
+      "question": "Where did David flee to be with the prophet?",
+      "options": [
+        "To the land of Moab",
+        "To a cave at Adullam",
+        "To Egypt's border",
+        "To Samuel at Ramah"
+      ],
+      "answer": "To Samuel at Ramah",
+      "verse_reference": "1 Samuel 19:18"
+    },
+    {
+      "id": "1-samuel-19-q3",
+      "type": "true_false",
+      "question": "Jonathan spoke up for David, and Saul swore not to kill him (for a time).",
+      "answer": "true",
+      "verse_reference": "1 Samuel 19:4-6"
+    },
+    {
+      "id": "1-samuel-19-q4",
+      "type": "fill_blank",
+      "question": "_____, David's wife and Saul's daughter, let David down through a window to escape.",
+      "answer": "Michal",
+      "verse_reference": "1 Samuel 19:12"
+    },
+    {
+      "id": "1-samuel-19-q5",
+      "type": "fill_blank",
+      "question": "David fled to _____ the prophet at Ramah.",
+      "answer": "Samuel",
+      "verse_reference": "1 Samuel 19:18"
+    }
+  ]
+}

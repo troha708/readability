@@ -1,0 +1,53 @@
+{
+  "book": "Acts",
+  "chapter": 8,
+  "questions": [
+    {
+      "id": "acts-8-q1",
+      "type": "multiple_choice",
+      "question": "Who preached the gospel in Samaria after the persecution scattered the believers?",
+      "options": [
+        "Peter",
+        "John",
+        "Barnabas",
+        "Philip"
+      ],
+      "answer": "Philip",
+      "verse_reference": "Acts 8:5"
+    },
+    {
+      "id": "acts-8-q2",
+      "type": "multiple_choice",
+      "question": "What did Simon the sorcerer offer the apostles money for?",
+      "options": [
+        "The power to speak freely in many unknown tongues at his own will",
+        "The power to heal all of the sick and the lame with a single word",
+        "The gift of prophecy and of clearly seeing the things yet to come",
+        "The ability to give the Holy Spirit through laying on of hands"
+      ],
+      "answer": "The ability to give the Holy Spirit through laying on of hands",
+      "verse_reference": "Acts 8:18-19"
+    },
+    {
+      "id": "acts-8-q3",
+      "type": "true_false",
+      "question": "The Ethiopian eunuch was reading from the book of Psalms when Philip met him.",
+      "answer": "false",
+      "verse_reference": "Acts 8:28,30"
+    },
+    {
+      "id": "acts-8-q4",
+      "type": "fill_blank",
+      "question": "The Spirit said to Philip, 'Go near and join yourself to this _____.'",
+      "answer": "chariot",
+      "verse_reference": "Acts 8:29"
+    },
+    {
+      "id": "acts-8-q5",
+      "type": "fill_blank",
+      "question": "After Philip baptized the Ethiopian eunuch, the _____ of the Lord caught Philip away and the eunuch saw him no more.",
+      "answer": "Spirit",
+      "verse_reference": "Acts 8:39"
+    }
+  ]
+}

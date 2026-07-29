@@ -1,0 +1,56 @@
+{
+  "book": "Job",
+  "chapter": 30,
+  "questions": [
+    {
+      "id": "job-30-q1",
+      "type": "multiple_choice",
+      "question": "How did Job describe his present condition compared to before?",
+      "options": [
+        "Better off now than he had ever been in his life",
+        "Quite unchanged from the days of his former great wealth",
+        "Honored above all of the men of the whole east",
+        "Mocked by those younger than him and in deep affliction"
+      ],
+      "answer": "Mocked by those younger than him and in deep affliction",
+      "verse_reference": "Job 30:1"
+    },
+    {
+      "id": "job-30-q2",
+      "type": "multiple_choice",
+      "question": "What did Job say happened when he cried to God?",
+      "options": [
+        "God laughed at his distress",
+        "God rebuked him from the storm",
+        "God answered him at once",
+        "God did not answer him"
+      ],
+      "answer": "God did not answer him",
+      "verse_reference": "Job 30:20"
+    },
+    {
+      "id": "job-30-q3",
+      "type": "true_false",
+      "question": "Job said his harp was turned to mourning and his pipe to the voice of weeping.",
+      "answer": "true",
+      "verse_reference": "Job 30:31"
+    },
+    {
+      "id": "job-30-q4",
+      "type": "fill_blank",
+      "question": "Job said he was a brother of jackals and a companion of _____.",
+      "answer": "ostriches",
+      "accept": [
+        "owls"
+      ],
+      "verse_reference": "Job 30:29"
+    },
+    {
+      "id": "job-30-q5",
+      "type": "fill_blank",
+      "question": "Job said that now his soul was poured out within him; days of _____ had seized him.",
+      "answer": "affliction",
+      "verse_reference": "Job 30:16"
+    }
+  ]
+}

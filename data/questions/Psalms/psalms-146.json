@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 146,
+  "questions": [
+    {
+      "id": "psalms-146-q1",
+      "type": "multiple_choice",
+      "question": "Whom does Psalm 146 warn not to put trust in?",
+      "options": [
+        "Armies, in horses and chariots, which cannot save the king",
+        "Idols, in graven images, which have mouths but cannot speak",
+        "Riches, in great wealth, which take wings and fly away",
+        "Princes, in a son of man, in whom there is no salvation"
+      ],
+      "answer": "Princes, in a son of man, in whom there is no salvation",
+      "verse_reference": "Psalm 146:3"
+    },
+    {
+      "id": "psalms-146-q2",
+      "type": "multiple_choice",
+      "question": "What does the LORD do for the oppressed and hungry, according to Psalm 146?",
+      "options": [
+        "Reveals his law and his statutes",
+        "Subdues the nations and the kings",
+        "Sends the rain and the sunshine",
+        "Executes justice and gives food"
+      ],
+      "answer": "Executes justice and gives food",
+      "verse_reference": "Psalm 146:7"
+    },
+    {
+      "id": "psalms-146-q3",
+      "type": "true_false",
+      "question": "The psalm says the LORD lifts up those who are bowed down and loves the righteous.",
+      "answer": "true",
+      "verse_reference": "Psalm 146:8"
+    },
+    {
+      "id": "psalms-146-q4",
+      "type": "fill_blank",
+      "question": "Put not your trust in _____, in a son of man, in whom there is no salvation.",
+      "answer": "princes",
+      "verse_reference": "Psalm 146:3"
+    },
+    {
+      "id": "psalms-146-q5",
+      "type": "fill_blank",
+      "question": "The LORD opens the eyes of the _____; the LORD lifts up those who are bowed down.",
+      "answer": "blind",
+      "verse_reference": "Psalm 146:8"
+    }
+  ]
+}

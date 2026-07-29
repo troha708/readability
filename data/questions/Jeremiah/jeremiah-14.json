@@ -1,0 +1,56 @@
+{
+  "book": "Jeremiah",
+  "chapter": 14,
+  "questions": [
+    {
+      "id": "jeremiah-14-q1",
+      "type": "multiple_choice",
+      "question": "What disaster forms the backdrop of Jeremiah 14?",
+      "options": [
+        "A flood",
+        "A severe drought",
+        "A great earthquake",
+        "A plague"
+      ],
+      "answer": "A severe drought",
+      "verse_reference": "Jeremiah 14:1-6"
+    },
+    {
+      "id": "jeremiah-14-q2",
+      "type": "multiple_choice",
+      "question": "What does God say about the false prophets in Jeremiah 14?",
+      "options": [
+        "They alone remain truly faithful among all of the people",
+        "They warn the people truly but no one at all will listen",
+        "They have all been carried far away into the exile",
+        "They prophesy lies in his name; he did not send them"
+      ],
+      "answer": "They prophesy lies in his name; he did not send them",
+      "verse_reference": "Jeremiah 14:14"
+    },
+    {
+      "id": "jeremiah-14-q3",
+      "type": "true_false",
+      "question": "Jeremiah confesses the people's sins and pleads with God not to abandon them for his name's sake.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 14:20-21"
+    },
+    {
+      "id": "jeremiah-14-q4",
+      "type": "fill_blank",
+      "question": "The prophets are prophesying _____ in my name. I did not send them, declares the LORD.",
+      "answer": "lies",
+      "accept": [
+        "falsehood"
+      ],
+      "verse_reference": "Jeremiah 14:14"
+    },
+    {
+      "id": "jeremiah-14-q5",
+      "type": "fill_blank",
+      "question": "We acknowledge our wickedness, O LORD, and the iniquity of our fathers, for we have _____ against you.",
+      "answer": "sinned",
+      "verse_reference": "Jeremiah 14:20"
+    }
+  ]
+}

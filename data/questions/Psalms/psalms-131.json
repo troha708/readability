@@ -1,0 +1,57 @@
+{
+  "book": "Psalms",
+  "chapter": 131,
+  "questions": [
+    {
+      "id": "psalms-131-q1",
+      "type": "multiple_choice",
+      "question": "How does the psalmist describe his attitude in Psalm 131?",
+      "options": [
+        "His heart is not lifted up; he has calmed and quieted his soul",
+        "His mouth is never once silent; he sings aloud the LORD's praise",
+        "His eyes are not ever closed; he watches and waits for the morning",
+        "His hands are never once idle; he labors hard from dawn to dusk"
+      ],
+      "answer": "His heart is not lifted up; he has calmed and quieted his soul",
+      "verse_reference": "Psalm 131:1-2"
+    },
+    {
+      "id": "psalms-131-q2",
+      "type": "multiple_choice",
+      "question": "To what does the psalmist compare his quieted soul?",
+      "options": [
+        "A traveler asleep in the shade",
+        "A bird at rest in its nest",
+        "A weaned child with its mother",
+        "A young lamb beside the shepherd"
+      ],
+      "answer": "A weaned child with its mother",
+      "verse_reference": "Psalm 131:2"
+    },
+    {
+      "id": "psalms-131-q3",
+      "type": "true_false",
+      "question": "The psalm ends urging Israel to hope in the LORD from this time forth and forevermore.",
+      "answer": "true",
+      "verse_reference": "Psalm 131:3"
+    },
+    {
+      "id": "psalms-131-q4",
+      "type": "fill_blank",
+      "question": "O LORD, my heart is not proud; my eyes are not _____.",
+      "answer": "haughty",
+      "accept": [
+        "lofty",
+        "raised too high"
+      ],
+      "verse_reference": "Psalm 131:1"
+    },
+    {
+      "id": "psalms-131-q5",
+      "type": "fill_blank",
+      "question": "I have calmed and quieted my soul, like a weaned child with its _____.",
+      "answer": "mother",
+      "verse_reference": "Psalm 131:2"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "book": "Joshua",
+  "chapter": 9,
+  "questions": [
+    {
+      "id": "joshua-9-q1",
+      "type": "multiple_choice",
+      "question": "How did the Gibeonites trick Israel into a treaty?",
+      "options": [
+        "By threatening open war if refused a treaty",
+        "By pretending to come from a far country",
+        "By bringing lavish gifts to Joshua",
+        "By offering bribes of silver and gold"
+      ],
+      "answer": "By pretending to come from a far country",
+      "verse_reference": "Joshua 9:4-6"
+    },
+    {
+      "id": "joshua-9-q2",
+      "type": "multiple_choice",
+      "question": "What did Israel fail to do before making the treaty?",
+      "options": [
+        "Pray for rain in the drought",
+        "Ask counsel of the LORD",
+        "Defeat them first in battle",
+        "Count how many they were"
+      ],
+      "answer": "Ask counsel of the LORD",
+      "verse_reference": "Joshua 9:14"
+    },
+    {
+      "id": "joshua-9-q3",
+      "type": "true_false",
+      "question": "When the deception was discovered, Israel kept their oath but made the Gibeonites woodcutters and water carriers.",
+      "answer": "true",
+      "verse_reference": "Joshua 9:21-27"
+    },
+    {
+      "id": "joshua-9-q4",
+      "type": "fill_blank",
+      "question": "The Gibeonites came with worn-out clothes and moldy _____ to seem like distant travelers.",
+      "answer": "bread",
+      "verse_reference": "Joshua 9:5-12"
+    },
+    {
+      "id": "joshua-9-q5",
+      "type": "fill_blank",
+      "question": "Israel made peace with them without asking counsel from the _____.",
+      "answer": "LORD",
+      "accept": [
+        "Jehovah"
+      ],
+      "verse_reference": "Joshua 9:14"
+    }
+  ]
+}

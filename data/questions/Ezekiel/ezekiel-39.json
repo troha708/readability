@@ -1,0 +1,60 @@
+{
+  "book": "Ezekiel",
+  "chapter": 39,
+  "questions": [
+    {
+      "id": "ezekiel-39-q1",
+      "type": "multiple_choice",
+      "question": "What happens to Gog's forces in Ezekiel 39?",
+      "options": [
+        "They fall on the mountains of Israel and are utterly defeated",
+        "They make a binding treaty and then withdraw away in full peace",
+        "They lay siege to the great city for very many long years",
+        "They conquer the whole land and scatter all of the people"
+      ],
+      "answer": "They fall on the mountains of Israel and are utterly defeated",
+      "verse_reference": "Ezekiel 39:4-5"
+    },
+    {
+      "id": "ezekiel-39-q2",
+      "type": "multiple_choice",
+      "question": "How long would it take to bury the dead of Gog's army?",
+      "options": [
+        "Three days",
+        "One day",
+        "One year",
+        "Seven months"
+      ],
+      "answer": "Seven months",
+      "verse_reference": "Ezekiel 39:12"
+    },
+    {
+      "id": "ezekiel-39-q3",
+      "type": "true_false",
+      "question": "After Gog's defeat, God promises to restore the fortunes of Jacob and pour out his Spirit on Israel.",
+      "answer": "true",
+      "verse_reference": "Ezekiel 39:25-29"
+    },
+    {
+      "id": "ezekiel-39-q4",
+      "type": "fill_blank",
+      "question": "I will send fire on Magog and on those who dwell securely in the _____.",
+      "answer": "coastlands",
+      "accept": [
+        "isles",
+        "islands"
+      ],
+      "verse_reference": "Ezekiel 39:6"
+    },
+    {
+      "id": "ezekiel-39-q5",
+      "type": "fill_blank",
+      "question": "The house of Israel shall know that I am the LORD their God, from that day _____.",
+      "answer": "forward",
+      "accept": [
+        "henceforth"
+      ],
+      "verse_reference": "Ezekiel 39:22"
+    }
+  ]
+}

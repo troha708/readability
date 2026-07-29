@@ -1,0 +1,58 @@
+{
+  "book": "Acts",
+  "chapter": 14,
+  "questions": [
+    {
+      "id": "acts-14-q1",
+      "type": "multiple_choice",
+      "question": "In Lystra, what did the crowd try to do after Paul healed a man crippled from birth?",
+      "options": [
+        "Arrest them",
+        "Worship them as gods",
+        "Drive them out",
+        "Make them their own kings"
+      ],
+      "answer": "Worship them as gods",
+      "verse_reference": "Acts 14:11-13"
+    },
+    {
+      "id": "acts-14-q2",
+      "type": "multiple_choice",
+      "question": "What names did the people of Lystra call Barnabas and Paul?",
+      "options": [
+        "Apollo and Hermes",
+        "Zeus and Hermes",
+        "Zeus and Apollo",
+        "Mars and Mercury"
+      ],
+      "answer": "Zeus and Hermes",
+      "verse_reference": "Acts 14:12"
+    },
+    {
+      "id": "acts-14-q3",
+      "type": "true_false",
+      "question": "Paul was stoned in Lystra and left for dead, but got up and went back into the city.",
+      "answer": "true",
+      "verse_reference": "Acts 14:19-20"
+    },
+    {
+      "id": "acts-14-q4",
+      "type": "fill_blank",
+      "question": "We must endure many _____ to enter the kingdom of God.",
+      "answer": "hardships",
+      "accept": [
+        "tribulations",
+        "afflictions",
+        "tribulation"
+      ],
+      "verse_reference": "Acts 14:22"
+    },
+    {
+      "id": "acts-14-q5",
+      "type": "fill_blank",
+      "question": "They appointed _____ for them in every church, and with prayer and fasting commended them to the Lord.",
+      "answer": "elders",
+      "verse_reference": "Acts 14:23"
+    }
+  ]
+}

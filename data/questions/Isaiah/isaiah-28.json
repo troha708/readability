@@ -1,0 +1,57 @@
+{
+  "book": "Isaiah",
+  "chapter": 28,
+  "questions": [
+    {
+      "id": "isaiah-28-q1",
+      "type": "multiple_choice",
+      "question": "Against whose drunkards is the woe in Isaiah 28?",
+      "options": [
+        "Judah only",
+        "Egypt",
+        "Ephraim",
+        "Edom"
+      ],
+      "answer": "Ephraim",
+      "verse_reference": "Isaiah 28:1"
+    },
+    {
+      "id": "isaiah-28-q2",
+      "type": "multiple_choice",
+      "question": "What precious stone does the LORD lay in Zion in Isaiah 28?",
+      "options": [
+        "A pillar of fire to lead the way",
+        "A high tower overlooking the city",
+        "A great wall of bronze around the temple",
+        "A tested cornerstone, a sure foundation"
+      ],
+      "answer": "A tested cornerstone, a sure foundation",
+      "verse_reference": "Isaiah 28:16"
+    },
+    {
+      "id": "isaiah-28-q3",
+      "type": "true_false",
+      "question": "Isaiah 28 says, 'Whoever believes will not be in haste.'",
+      "answer": "true",
+      "verse_reference": "Isaiah 28:16"
+    },
+    {
+      "id": "isaiah-28-q4",
+      "type": "fill_blank",
+      "question": "Behold, I am the one who has laid as a foundation in Zion, a stone, a tested stone, a precious _____, a sure foundation.",
+      "answer": "cornerstone",
+      "accept": [
+        "corner stone",
+        "corner-stone"
+      ],
+      "verse_reference": "Isaiah 28:16"
+    },
+    {
+      "id": "isaiah-28-q5",
+      "type": "fill_blank",
+      "question": "For it is precept upon precept, line upon _____, here a little, there a little.",
+      "answer": "line",
+      "verse_reference": "Isaiah 28:10"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "book": "Isaiah",
+  "chapter": 12,
+  "questions": [
+    {
+      "id": "isaiah-12-q1",
+      "type": "multiple_choice",
+      "question": "What is Isaiah 12?",
+      "options": [
+        "A list of judgments on the nations",
+        "A vision of a coming battle",
+        "A lament over a fallen city",
+        "A song of thanksgiving and praise"
+      ],
+      "answer": "A song of thanksgiving and praise",
+      "verse_reference": "Isaiah 12:1"
+    },
+    {
+      "id": "isaiah-12-q2",
+      "type": "multiple_choice",
+      "question": "What does the singer say God has become?",
+      "options": [
+        "My faithful shepherd who leads me beside the still and quiet waters",
+        "My righteous judge who weighs the hearts of every one of us",
+        "My strength and my song, and he has become my salvation",
+        "My strong fortress and my shield against every one of my enemies"
+      ],
+      "answer": "My strength and my song, and he has become my salvation",
+      "verse_reference": "Isaiah 12:2"
+    },
+    {
+      "id": "isaiah-12-q3",
+      "type": "true_false",
+      "question": "Isaiah 12 says, 'With joy you will draw water from the wells of salvation.'",
+      "answer": "true",
+      "verse_reference": "Isaiah 12:3"
+    },
+    {
+      "id": "isaiah-12-q4",
+      "type": "fill_blank",
+      "question": "Behold, God is my salvation; I will trust, and will not be _____.",
+      "answer": "afraid",
+      "accept": [
+        "fear"
+      ],
+      "verse_reference": "Isaiah 12:2"
+    },
+    {
+      "id": "isaiah-12-q5",
+      "type": "fill_blank",
+      "question": "With joy you will draw water from the wells of _____.",
+      "answer": "salvation",
+      "verse_reference": "Isaiah 12:3"
+    }
+  ]
+}

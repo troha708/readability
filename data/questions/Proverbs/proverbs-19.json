@@ -1,0 +1,59 @@
+{
+  "book": "Proverbs",
+  "chapter": 19,
+  "questions": [
+    {
+      "id": "proverbs-19-q1",
+      "type": "multiple_choice",
+      "question": "What does Proverbs 19 say is better than riches?",
+      "options": [
+        "A poor person who walks in his integrity",
+        "A position of great power and rule",
+        "A famous name known to all",
+        "A long life filled with many years"
+      ],
+      "answer": "A poor person who walks in his integrity",
+      "verse_reference": "Proverbs 19:1"
+    },
+    {
+      "id": "proverbs-19-q2",
+      "type": "multiple_choice",
+      "question": "What does Proverbs 19 say a man's folly does?",
+      "options": [
+        "Wins for him a great host of loyal and ever faithful friends",
+        "Makes him the envy of all of his far wiser neighbors round about",
+        "Quietly prospers him in every single thing he sets out to do",
+        "Brings his way to ruin, yet his heart rages against the LORD"
+      ],
+      "answer": "Brings his way to ruin, yet his heart rages against the LORD",
+      "verse_reference": "Proverbs 19:3"
+    },
+    {
+      "id": "proverbs-19-q3",
+      "type": "true_false",
+      "question": "Proverbs 19 says whoever is generous to the poor lends to the LORD.",
+      "answer": "true",
+      "verse_reference": "Proverbs 19:17"
+    },
+    {
+      "id": "proverbs-19-q4",
+      "type": "fill_blank",
+      "question": "Whoever is generous to the poor lends to the _____.",
+      "answer": "LORD",
+      "accept": [
+        "Jehovah"
+      ],
+      "verse_reference": "Proverbs 19:17"
+    },
+    {
+      "id": "proverbs-19-q5",
+      "type": "fill_blank",
+      "question": "Many are the plans in the mind of a man, but it is the _____ of the LORD that will stand.",
+      "answer": "purpose",
+      "accept": [
+        "counsel"
+      ],
+      "verse_reference": "Proverbs 19:21"
+    }
+  ]
+}

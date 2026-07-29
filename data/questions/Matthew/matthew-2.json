@@ -1,0 +1,60 @@
+{
+  "book": "Matthew",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "matthew-2-q1",
+      "type": "multiple_choice",
+      "question": "Who came from the east to Jerusalem looking for the newborn king?",
+      "options": [
+        "Shepherds",
+        "Priests",
+        "Wise men",
+        "Roman soldiers"
+      ],
+      "answer": "Wise men",
+      "verse_reference": "Matthew 2:1"
+    },
+    {
+      "id": "matthew-2-q2",
+      "type": "multiple_choice",
+      "question": "Where did Joseph take Mary and Jesus to escape Herod?",
+      "options": [
+        "Damascus",
+        "Bethlehem",
+        "Nazareth",
+        "Egypt"
+      ],
+      "answer": "Egypt",
+      "verse_reference": "Matthew 2:14"
+    },
+    {
+      "id": "matthew-2-q3",
+      "type": "true_false",
+      "question": "King Herod was glad to hear about the birth of a new king.",
+      "answer": "false",
+      "verse_reference": "Matthew 2:3"
+    },
+    {
+      "id": "matthew-2-q4",
+      "type": "fill_blank",
+      "question": "They came into the house and saw the young child with Mary, his mother, and they fell down and _____ him.",
+      "answer": "worshiped",
+      "accept": [
+        "worshipped",
+        "bowed"
+      ],
+      "verse_reference": "Matthew 2:11"
+    },
+    {
+      "id": "matthew-2-q5",
+      "type": "fill_blank",
+      "question": "Warned in a dream not to return to Herod, they withdrew to their own country by another _____.",
+      "answer": "route",
+      "accept": [
+        "way"
+      ],
+      "verse_reference": "Matthew 2:12"
+    }
+  ]
+}

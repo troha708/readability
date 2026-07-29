@@ -1,0 +1,53 @@
+{
+  "book": "Genesis",
+  "chapter": 12,
+  "questions": [
+    {
+      "id": "genesis-12-q1",
+      "type": "multiple_choice",
+      "question": "What did God tell Abram to leave behind?",
+      "options": [
+        "His country, his people, and his father's house",
+        "His flocks, his herds, and all his servants",
+        "His wealth, his honor, and his good name",
+        "His idols, his customs, and his old gods"
+      ],
+      "answer": "His country, his people, and his father's house",
+      "verse_reference": "Genesis 12:1"
+    },
+    {
+      "id": "genesis-12-q2",
+      "type": "multiple_choice",
+      "question": "Where did Abram go when a famine struck the land?",
+      "options": [
+        "Egypt",
+        "Babylon",
+        "Assyria",
+        "Haran"
+      ],
+      "answer": "Egypt",
+      "verse_reference": "Genesis 12:10"
+    },
+    {
+      "id": "genesis-12-q3",
+      "type": "true_false",
+      "question": "God promised that all peoples on earth would be blessed through Abram.",
+      "answer": "true",
+      "verse_reference": "Genesis 12:3"
+    },
+    {
+      "id": "genesis-12-q4",
+      "type": "fill_blank",
+      "question": "God promised, \"I will make of you a great _____.\"",
+      "answer": "nation",
+      "verse_reference": "Genesis 12:2"
+    },
+    {
+      "id": "genesis-12-q5",
+      "type": "fill_blank",
+      "question": "In Egypt, Abram told the Egyptians that Sarai was his _____.",
+      "answer": "sister",
+      "verse_reference": "Genesis 12:13"
+    }
+  ]
+}

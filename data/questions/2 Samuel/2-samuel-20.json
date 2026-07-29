@@ -1,0 +1,53 @@
+{
+  "book": "2 Samuel",
+  "chapter": 20,
+  "questions": [
+    {
+      "id": "2-samuel-20-q1",
+      "type": "multiple_choice",
+      "question": "Who led a revolt against David after Absalom's death?",
+      "options": [
+        "Shimei",
+        "Sheba",
+        "Adonijah",
+        "Joab"
+      ],
+      "answer": "Sheba",
+      "verse_reference": "2 Samuel 20:1-2"
+    },
+    {
+      "id": "2-samuel-20-q2",
+      "type": "multiple_choice",
+      "question": "How was Sheba's revolt ended?",
+      "options": [
+        "Joab's men battered down the city wall and stormed inside",
+        "The townspeople threw open the gates and fled in great fear",
+        "He surrendered himself up to David's army at the break of dawn",
+        "A wise woman arranged for his head to be thrown over the wall"
+      ],
+      "answer": "A wise woman arranged for his head to be thrown over the wall",
+      "verse_reference": "2 Samuel 20:16-22"
+    },
+    {
+      "id": "2-samuel-20-q3",
+      "type": "true_false",
+      "question": "Joab killed Amasa during this conflict.",
+      "answer": "true",
+      "verse_reference": "2 Samuel 20:9-10"
+    },
+    {
+      "id": "2-samuel-20-q4",
+      "type": "fill_blank",
+      "question": "_____ led the men of Israel away from David in revolt.",
+      "answer": "Sheba",
+      "verse_reference": "2 Samuel 20:1-2"
+    },
+    {
+      "id": "2-samuel-20-q5",
+      "type": "fill_blank",
+      "question": "A wise woman of Abel had Sheba's _____ thrown over the wall to end the siege.",
+      "answer": "head",
+      "verse_reference": "2 Samuel 20:21-22"
+    }
+  ]
+}

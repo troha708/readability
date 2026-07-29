@@ -1,0 +1,56 @@
+{
+  "book": "Isaiah",
+  "chapter": 43,
+  "questions": [
+    {
+      "id": "isaiah-43-q1",
+      "type": "multiple_choice",
+      "question": "What comfort does God give in Isaiah 43?",
+      "options": [
+        "Fear not, I have redeemed you and called you by name",
+        "Bring offerings, that I may forgive your sins",
+        "Depart from me, for you have forsaken me",
+        "Prepare yourselves for war, for your enemies draw near"
+      ],
+      "answer": "Fear not, I have redeemed you and called you by name",
+      "verse_reference": "Isaiah 43:1"
+    },
+    {
+      "id": "isaiah-43-q2",
+      "type": "multiple_choice",
+      "question": "What does God promise about passing through waters and fire?",
+      "options": [
+        "You will sink down beneath the deep waters and the fire will consume you whole",
+        "Keep yourself far away from them both, lest the flood and the flame destroy you",
+        "They will rise up against you and will surely sweep you all away in their great fury",
+        "When you pass through them, I will be with you; they shall not overwhelm you"
+      ],
+      "answer": "When you pass through them, I will be with you; they shall not overwhelm you",
+      "verse_reference": "Isaiah 43:2"
+    },
+    {
+      "id": "isaiah-43-q3",
+      "type": "true_false",
+      "question": "God says, 'I, I am the LORD, and besides me there is no savior.'",
+      "answer": "true",
+      "verse_reference": "Isaiah 43:11"
+    },
+    {
+      "id": "isaiah-43-q4",
+      "type": "fill_blank",
+      "question": "I have called you by name, you are _____.",
+      "answer": "mine",
+      "verse_reference": "Isaiah 43:1"
+    },
+    {
+      "id": "isaiah-43-q5",
+      "type": "fill_blank",
+      "question": "Behold, I am doing a new thing; now it springs forth... I will make a way in the _____.",
+      "answer": "wilderness",
+      "accept": [
+        "desert"
+      ],
+      "verse_reference": "Isaiah 43:19"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "book": "2 Peter",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "2pet_3_1",
+      "type": "multiple_choice",
+      "question": "Peter says with the Lord a day is like how long?",
+      "options": [
+        "A full hundred years",
+        "A hundred years",
+        "An hour",
+        "A thousand years"
+      ],
+      "correct": "A thousand years",
+      "verse_ref": "2 Peter 3:8",
+      "feedback": "With the Lord a day is like a thousand years, and a thousand years like a day."
+    },
+    {
+      "id": "2pet_3_2",
+      "type": "multiple_choice",
+      "question": "Why does Peter say the Lord is patient about his promise?",
+      "options": [
+        "He is busy gathering all the angels",
+        "He is waiting for the temple to rise",
+        "He wants everyone to come to repentance",
+        "He is carefully testing their faith"
+      ],
+      "correct": "He wants everyone to come to repentance",
+      "verse_ref": "2 Peter 3:9",
+      "feedback": "The Lord is patient, not wanting anyone to perish but everyone to come to repentance."
+    },
+    {
+      "id": "2pet_3_3",
+      "type": "true_false",
+      "question": "Peter says scoffers will come in the last days questioning Christ's return.",
+      "correct": true,
+      "verse_ref": "2 Peter 3:3-4",
+      "feedback": "In the last days scoffers will come asking where is the promise of his coming."
+    },
+    {
+      "id": "2pet_3_4",
+      "type": "fill_in_the_blank",
+      "question": "The day of the Lord will come like a _____ — the heavens will disappear with a roar.",
+      "correct": "thief",
+      "verse_ref": "2 Peter 3:10",
+      "feedback": "The day of the Lord will come like a thief."
+    },
+    {
+      "id": "2pet_3_5",
+      "type": "fill_in_the_blank",
+      "question": "We are looking forward to a new heaven and a new _____ where righteousness dwells.",
+      "correct": "earth",
+      "verse_ref": "2 Peter 3:13",
+      "feedback": "We look forward to a new heaven and a new earth where righteousness dwells."
+    }
+  ]
+}

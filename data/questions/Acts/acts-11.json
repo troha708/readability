@@ -1,0 +1,56 @@
+{
+  "book": "Acts",
+  "chapter": 11,
+  "questions": [
+    {
+      "id": "acts-11-q1",
+      "type": "multiple_choice",
+      "question": "Where were the followers of Jesus first called Christians?",
+      "options": [
+        "Antioch",
+        "Jerusalem",
+        "Damascus",
+        "Rome"
+      ],
+      "answer": "Antioch",
+      "verse_reference": "Acts 11:26"
+    },
+    {
+      "id": "acts-11-q2",
+      "type": "multiple_choice",
+      "question": "Who did the Jerusalem church send to Antioch when they heard Gentiles were believing?",
+      "options": [
+        "Peter",
+        "Barnabas",
+        "Philip",
+        "Paul"
+      ],
+      "answer": "Barnabas",
+      "verse_reference": "Acts 11:22"
+    },
+    {
+      "id": "acts-11-q3",
+      "type": "true_false",
+      "question": "The Jewish believers in Jerusalem criticized Peter for eating with uncircumcised Gentiles.",
+      "answer": "true",
+      "verse_reference": "Acts 11:2-3"
+    },
+    {
+      "id": "acts-11-q4",
+      "type": "fill_blank",
+      "question": "The disciples in Antioch decided to send _____ to the brothers living in Judea during the predicted famine.",
+      "answer": "relief",
+      "accept": [
+        "succour"
+      ],
+      "verse_reference": "Acts 11:29"
+    },
+    {
+      "id": "acts-11-q5",
+      "type": "fill_blank",
+      "question": "Barnabas went to _____ to look for Saul and brought him to Antioch.",
+      "answer": "Tarsus",
+      "verse_reference": "Acts 11:25"
+    }
+  ]
+}

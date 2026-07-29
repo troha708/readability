@@ -1,0 +1,60 @@
+{
+  "book": "Psalms",
+  "chapter": 84,
+  "questions": [
+    {
+      "id": "psalms-84-q1",
+      "type": "multiple_choice",
+      "question": "How does Psalm 84 describe God's dwelling place?",
+      "options": [
+        "Fearful; the psalmist trembles before the great holiness of God",
+        "Crowded; the psalmist marvels at the throngs of pilgrims",
+        "Lovely; the psalmist's soul longs for the courts of the LORD",
+        "Distant; the psalmist mourns far from the house of God"
+      ],
+      "answer": "Lovely; the psalmist's soul longs for the courts of the LORD",
+      "verse_reference": "Psalm 84:1-2"
+    },
+    {
+      "id": "psalms-84-q2",
+      "type": "multiple_choice",
+      "question": "How does the psalm compare a day in God's courts?",
+      "options": [
+        "Sweeter than the honeycomb",
+        "Better than a thousand elsewhere",
+        "Too short to satisfy the soul",
+        "Worth more than the finest gold"
+      ],
+      "answer": "Better than a thousand elsewhere",
+      "verse_reference": "Psalm 84:10"
+    },
+    {
+      "id": "psalms-84-q3",
+      "type": "true_false",
+      "question": "The psalm says even the sparrow finds a home and the swallow a nest near God's altars.",
+      "answer": "true",
+      "verse_reference": "Psalm 84:3"
+    },
+    {
+      "id": "psalms-84-q4",
+      "type": "fill_blank",
+      "question": "How lovely is your dwelling place, O LORD of _____!",
+      "answer": "hosts",
+      "accept": [
+        "Armies"
+      ],
+      "verse_reference": "Psalm 84:1"
+    },
+    {
+      "id": "psalms-84-q5",
+      "type": "fill_blank",
+      "question": "Blessed are those whose strength is in you, whose hearts are set on _____.",
+      "answer": "pilgrimage",
+      "accept": [
+        "highways",
+        "ways"
+      ],
+      "verse_reference": "Psalm 84:5"
+    }
+  ]
+}

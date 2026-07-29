@@ -1,0 +1,53 @@
+{
+  "book": "1 Samuel",
+  "chapter": 13,
+  "questions": [
+    {
+      "id": "1-samuel-13-q1",
+      "type": "multiple_choice",
+      "question": "What did Saul do wrong while waiting for Samuel?",
+      "options": [
+        "He fled from the camp when the army scattered",
+        "He attacked the Philistines well before they were truly ready",
+        "He offered the burnt offering himself instead of waiting",
+        "He counted the fighting men against God's command"
+      ],
+      "answer": "He offered the burnt offering himself instead of waiting",
+      "verse_reference": "1 Samuel 13:9-12"
+    },
+    {
+      "id": "1-samuel-13-q2",
+      "type": "multiple_choice",
+      "question": "What did Samuel tell Saul because of his disobedience?",
+      "options": [
+        "His sins were fully forgiven",
+        "His kingdom would not endure",
+        "His power would be greatly increased",
+        "His reign would go on unchanged"
+      ],
+      "answer": "His kingdom would not endure",
+      "verse_reference": "1 Samuel 13:13-14"
+    },
+    {
+      "id": "1-samuel-13-q3",
+      "type": "true_false",
+      "question": "Samuel said God had sought a man after his own heart to be king.",
+      "answer": "true",
+      "verse_reference": "1 Samuel 13:14"
+    },
+    {
+      "id": "1-samuel-13-q4",
+      "type": "fill_blank",
+      "question": "Saul disobeyed by offering the _____ offering himself instead of waiting for Samuel.",
+      "answer": "burnt",
+      "verse_reference": "1 Samuel 13:9-12"
+    },
+    {
+      "id": "1-samuel-13-q5",
+      "type": "fill_blank",
+      "question": "Samuel said the LORD had sought a man after his own _____.",
+      "answer": "heart",
+      "verse_reference": "1 Samuel 13:14"
+    }
+  ]
+}

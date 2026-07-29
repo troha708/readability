@@ -1,0 +1,62 @@
+{
+  "book": "Jeremiah",
+  "chapter": 5,
+  "questions": [
+    {
+      "id": "jeremiah-5-q1",
+      "type": "multiple_choice",
+      "question": "What challenge does God give about Jerusalem in Jeremiah 5?",
+      "options": [
+        "Tear down each and every single idol, and he will surely spare the whole wide land",
+        "Bring a full thousand bulls to the altar, and he will at last relent",
+        "Find one person who does justice and seeks truth, and he will pardon the city",
+        "Send all of the false prophets away, and he will yet show them mercy"
+      ],
+      "answer": "Find one person who does justice and seeks truth, and he will pardon the city",
+      "verse_reference": "Jeremiah 5:1"
+    },
+    {
+      "id": "jeremiah-5-q2",
+      "type": "multiple_choice",
+      "question": "How does Jeremiah 5 describe the prophets and priests?",
+      "options": [
+        "The prophets prophesy falsely and the priests rule at their direction",
+        "The prophets warn the people truly but the people simply will not hear",
+        "The prophets and the priests alike have all fled away from the city",
+        "The prophets are faithful and true but the priests are utterly corrupt"
+      ],
+      "answer": "The prophets prophesy falsely and the priests rule at their direction",
+      "verse_reference": "Jeremiah 5:31"
+    },
+    {
+      "id": "jeremiah-5-q3",
+      "type": "true_false",
+      "question": "Jeremiah 5 says the people have a stubborn and rebellious heart and do not fear the LORD.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 5:23-24"
+    },
+    {
+      "id": "jeremiah-5-q4",
+      "type": "fill_blank",
+      "question": "See if you can find a single person, anyone who acts _____ and seeks the truth.",
+      "answer": "justly",
+      "accept": [
+        "justice",
+        "judgment",
+        "judgement"
+      ],
+      "verse_reference": "Jeremiah 5:1"
+    },
+    {
+      "id": "jeremiah-5-q5",
+      "type": "fill_blank",
+      "question": "An appalling and horrible thing has happened: the prophets prophesy _____.",
+      "answer": "falsely",
+      "accept": [
+        "lies",
+        "falsehood"
+      ],
+      "verse_reference": "Jeremiah 5:30-31"
+    }
+  ]
+}

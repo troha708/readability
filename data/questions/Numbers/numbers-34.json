@@ -1,0 +1,53 @@
+{
+  "book": "Numbers",
+  "chapter": 34,
+  "questions": [
+    {
+      "id": "numbers-34-q1",
+      "type": "multiple_choice",
+      "question": "What does chapter 34 define?",
+      "options": [
+        "The borders of the promised land",
+        "The plans for the war against Canaan",
+        "The rules for making and keeping vows",
+        "The offerings for the yearly feasts"
+      ],
+      "answer": "The borders of the promised land",
+      "verse_reference": "Numbers 34:2"
+    },
+    {
+      "id": "numbers-34-q2",
+      "type": "multiple_choice",
+      "question": "Who were appointed to help divide the land?",
+      "options": [
+        "Eleazar the priest and Joshua",
+        "Moses and Aaron the high priest",
+        "The heads of the twelve tribes",
+        "Caleb and the twelve spies"
+      ],
+      "answer": "Eleazar the priest and Joshua",
+      "verse_reference": "Numbers 34:17"
+    },
+    {
+      "id": "numbers-34-q3",
+      "type": "true_false",
+      "question": "A leader from each tribe was chosen to help distribute the land.",
+      "answer": "true",
+      "verse_reference": "Numbers 34:18"
+    },
+    {
+      "id": "numbers-34-q4",
+      "type": "fill_blank",
+      "question": "The land of Canaan was to be divided among the tribes as an _____.",
+      "answer": "inheritance",
+      "verse_reference": "Numbers 34:2"
+    },
+    {
+      "id": "numbers-34-q5",
+      "type": "fill_blank",
+      "question": "_____ the priest and Joshua were to oversee dividing the land.",
+      "answer": "Eleazar",
+      "verse_reference": "Numbers 34:17"
+    }
+  ]
+}

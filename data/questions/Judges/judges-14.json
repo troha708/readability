@@ -1,0 +1,53 @@
+{
+  "book": "Judges",
+  "chapter": 14,
+  "questions": [
+    {
+      "id": "judges-14-q1",
+      "type": "multiple_choice",
+      "question": "What did Samson kill with his bare hands on the way to Timnah?",
+      "options": [
+        "A wild boar",
+        "A young lion",
+        "A bear",
+        "A wolf"
+      ],
+      "answer": "A young lion",
+      "verse_reference": "Judges 14:5-6"
+    },
+    {
+      "id": "judges-14-q2",
+      "type": "multiple_choice",
+      "question": "What did Samson find in the lion's carcass, leading to his riddle?",
+      "options": [
+        "A spring of fresh water",
+        "A hidden cache of gold",
+        "A swarm of bees and honey",
+        "A coiled snake in the grass"
+      ],
+      "answer": "A swarm of bees and honey",
+      "verse_reference": "Judges 14:8"
+    },
+    {
+      "id": "judges-14-q3",
+      "type": "true_false",
+      "question": "Samson's wife coaxed the answer to his riddle from him and told his companions.",
+      "answer": "true",
+      "verse_reference": "Judges 14:17"
+    },
+    {
+      "id": "judges-14-q4",
+      "type": "fill_blank",
+      "question": "Samson tore apart a young _____ with his bare hands.",
+      "answer": "lion",
+      "verse_reference": "Judges 14:6"
+    },
+    {
+      "id": "judges-14-q5",
+      "type": "fill_blank",
+      "question": "Samson posed a _____ at his wedding feast about the lion and the honey.",
+      "answer": "riddle",
+      "verse_reference": "Judges 14:12-14"
+    }
+  ]
+}

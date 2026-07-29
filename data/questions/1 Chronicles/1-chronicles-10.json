@@ -1,0 +1,53 @@
+{
+  "book": "1 Chronicles",
+  "chapter": 10,
+  "questions": [
+    {
+      "id": "1-chronicles-10-q1",
+      "type": "multiple_choice",
+      "question": "How did Saul die?",
+      "options": [
+        "He was struck down in his sleep",
+        "He fell on his own sword",
+        "He died of a long illness",
+        "He was killed by a bolt of lightning"
+      ],
+      "answer": "He fell on his own sword",
+      "verse_reference": "1 Chronicles 10:4"
+    },
+    {
+      "id": "1-chronicles-10-q2",
+      "type": "multiple_choice",
+      "question": "On which mountain did Saul and his sons fall in battle?",
+      "options": [
+        "Mount Carmel",
+        "Mount Gilboa",
+        "Mount Tabor",
+        "Mount Hermon"
+      ],
+      "answer": "Mount Gilboa",
+      "verse_reference": "1 Chronicles 10:8"
+    },
+    {
+      "id": "1-chronicles-10-q3",
+      "type": "true_false",
+      "question": "Saul died for his unfaithfulness to the LORD, including consulting a medium.",
+      "answer": "true",
+      "verse_reference": "1 Chronicles 10:13"
+    },
+    {
+      "id": "1-chronicles-10-q4",
+      "type": "fill_blank",
+      "question": "The Philistines fastened Saul's head in the temple of _____.",
+      "answer": "Dagon",
+      "verse_reference": "1 Chronicles 10:10"
+    },
+    {
+      "id": "1-chronicles-10-q5",
+      "type": "fill_blank",
+      "question": "The LORD turned the kingdom over to _____ the son of Jesse.",
+      "answer": "David",
+      "verse_reference": "1 Chronicles 10:14"
+    }
+  ]
+}

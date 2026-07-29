@@ -1,0 +1,53 @@
+{
+  "book": "1 Samuel",
+  "chapter": 25,
+  "questions": [
+    {
+      "id": "1-samuel-25-q1",
+      "type": "multiple_choice",
+      "question": "Who was the foolish, harsh man who refused to help David?",
+      "options": [
+        "Nabal",
+        "Boaz",
+        "Achish",
+        "Doeg"
+      ],
+      "answer": "Nabal",
+      "verse_reference": "1 Samuel 25:3-11"
+    },
+    {
+      "id": "1-samuel-25-q2",
+      "type": "multiple_choice",
+      "question": "Who wisely brought provisions to David, preventing bloodshed?",
+      "options": [
+        "Michal",
+        "Abigail",
+        "Hannah",
+        "Ruth"
+      ],
+      "answer": "Abigail",
+      "verse_reference": "1 Samuel 25:18-23"
+    },
+    {
+      "id": "1-samuel-25-q3",
+      "type": "true_false",
+      "question": "After Nabal died, David married Abigail.",
+      "answer": "true",
+      "verse_reference": "1 Samuel 25:39-42"
+    },
+    {
+      "id": "1-samuel-25-q4",
+      "type": "fill_blank",
+      "question": "_____, Nabal's wise wife, brought food to David and calmed his anger.",
+      "answer": "Abigail",
+      "verse_reference": "1 Samuel 25:18-23"
+    },
+    {
+      "id": "1-samuel-25-q5",
+      "type": "fill_blank",
+      "question": "_____ acted foolishly and refused David's men, but later died.",
+      "answer": "Nabal",
+      "verse_reference": "1 Samuel 25:25-38"
+    }
+  ]
+}

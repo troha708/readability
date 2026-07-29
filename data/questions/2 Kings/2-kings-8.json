@@ -1,0 +1,53 @@
+{
+  "book": "2 Kings",
+  "chapter": 8,
+  "questions": [
+    {
+      "id": "2-kings-8-q1",
+      "type": "multiple_choice",
+      "question": "Whom did Elisha foretell would become king of Aram and do evil to Israel?",
+      "options": [
+        "Ben-Hadad",
+        "Hazael",
+        "Naaman",
+        "Jehu"
+      ],
+      "answer": "Hazael",
+      "verse_reference": "2 Kings 8:13"
+    },
+    {
+      "id": "2-kings-8-q2",
+      "type": "multiple_choice",
+      "question": "What did the Shunammite woman recover after returning from a famine?",
+      "options": [
+        "Her only son",
+        "Her former good health",
+        "A chest of gold",
+        "Her house and land"
+      ],
+      "answer": "Her house and land",
+      "verse_reference": "2 Kings 8:1-6"
+    },
+    {
+      "id": "2-kings-8-q3",
+      "type": "true_false",
+      "question": "Hazael murdered Ben-Hadad and became king of Aram.",
+      "answer": "true",
+      "verse_reference": "2 Kings 8:15"
+    },
+    {
+      "id": "2-kings-8-q4",
+      "type": "fill_blank",
+      "question": "Elisha wept, foreseeing the evil _____ would do to Israel as king of Aram.",
+      "answer": "Hazael",
+      "verse_reference": "2 Kings 8:12-13"
+    },
+    {
+      "id": "2-kings-8-q5",
+      "type": "fill_blank",
+      "question": "The Shunammite woman's _____ and land were restored to her by the king.",
+      "answer": "house",
+      "verse_reference": "2 Kings 8:6"
+    }
+  ]
+}

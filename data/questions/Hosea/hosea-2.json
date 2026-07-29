@@ -1,0 +1,56 @@
+{
+  "book": "Hosea",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "hosea-2-q1",
+      "type": "multiple_choice",
+      "question": "How does God portray Israel in Hosea 2?",
+      "options": [
+        "An unfaithful wife who chased other lovers",
+        "A widow mourning in the streets",
+        "A queen ruling over many nations",
+        "A faithful bride wholly devoted to her husband"
+      ],
+      "answer": "An unfaithful wife who chased other lovers",
+      "verse_reference": "Hosea 2:2, 5"
+    },
+    {
+      "id": "hosea-2-q2",
+      "type": "multiple_choice",
+      "question": "What does God promise to do despite Israel's unfaithfulness in Hosea 2?",
+      "options": [
+        "Cast her off entirely and send her away into exile",
+        "Wait patiently until she had earned back all his favor",
+        "Allure her and betroth her to himself forever",
+        "Hand her over completely to all of her many lovers"
+      ],
+      "answer": "Allure her and betroth her to himself forever",
+      "verse_reference": "Hosea 2:14, 19"
+    },
+    {
+      "id": "hosea-2-q3",
+      "type": "true_false",
+      "question": "God promises to betroth Israel to himself in righteousness, justice, steadfast love, and mercy.",
+      "answer": "true",
+      "verse_reference": "Hosea 2:19"
+    },
+    {
+      "id": "hosea-2-q4",
+      "type": "fill_blank",
+      "question": "I will _____ her, and bring her into the wilderness, and speak tenderly to her.",
+      "answer": "allure",
+      "accept": [
+        "entice"
+      ],
+      "verse_reference": "Hosea 2:14"
+    },
+    {
+      "id": "hosea-2-q5",
+      "type": "fill_blank",
+      "question": "I will say to Not My People, 'You are my people'; and he shall say, 'You are my _____.'",
+      "answer": "God",
+      "verse_reference": "Hosea 2:23"
+    }
+  ]
+}

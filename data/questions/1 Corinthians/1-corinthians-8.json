@@ -1,0 +1,56 @@
+{
+  "book": "1 Corinthians",
+  "chapter": 8,
+  "questions": [
+    {
+      "id": "1cor-8-q1",
+      "type": "multiple_choice",
+      "question": "What issue does Paul address regarding food in this chapter?",
+      "options": [
+        "Keeping the Jewish festivals",
+        "Speaking in unknown tongues",
+        "Marrying an unbelieving spouse",
+        "Eating food offered to idols"
+      ],
+      "answer": "Eating food offered to idols",
+      "verse_reference": "1 Corinthians 8:1"
+    },
+    {
+      "id": "1cor-8-q2",
+      "type": "multiple_choice",
+      "question": "Paul says knowledge puffs up, but what builds up?",
+      "options": [
+        "Faith",
+        "Hope",
+        "Love",
+        "Wisdom"
+      ],
+      "answer": "Love",
+      "verse_reference": "1 Corinthians 8:1"
+    },
+    {
+      "id": "1cor-8-q3",
+      "type": "true_false",
+      "question": "Paul says an idol is nothing at all in the world and there is no God but one.",
+      "answer": "true",
+      "verse_reference": "1 Corinthians 8:4"
+    },
+    {
+      "id": "1cor-8-q4",
+      "type": "fill_blank",
+      "question": "When you sin against your brothers and wound their weak _____, you sin against Christ.",
+      "answer": "conscience",
+      "verse_reference": "1 Corinthians 8:12"
+    },
+    {
+      "id": "1cor-8-q5",
+      "type": "fill_blank",
+      "question": "If food causes my brother to stumble, I will never eat _____ again.",
+      "answer": "meat",
+      "accept": [
+        "flesh"
+      ],
+      "verse_reference": "1 Corinthians 8:13"
+    }
+  ]
+}

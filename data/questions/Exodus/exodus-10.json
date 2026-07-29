@@ -1,0 +1,59 @@
+{
+  "book": "Exodus",
+  "chapter": 10,
+  "questions": [
+    {
+      "id": "exodus-10-q1",
+      "type": "multiple_choice",
+      "question": "What did the eighth plague, the locusts, do?",
+      "options": [
+        "Ate everything green that the hail had left",
+        "Covered the whole land in darkness for days",
+        "Brought festering boils on people and animals",
+        "Stripped the trees and were swept into the sea"
+      ],
+      "answer": "Ate everything green that the hail had left",
+      "verse_reference": "Exodus 10:15"
+    },
+    {
+      "id": "exodus-10-q2",
+      "type": "multiple_choice",
+      "question": "How long did the ninth plague of darkness last over Egypt?",
+      "options": [
+        "Seven days",
+        "One day",
+        "Three days",
+        "Forty days"
+      ],
+      "answer": "Three days",
+      "verse_reference": "Exodus 10:22"
+    },
+    {
+      "id": "exodus-10-q3",
+      "type": "true_false",
+      "question": "During the plague of darkness, the Israelites still had light where they lived.",
+      "answer": "true",
+      "verse_reference": "Exodus 10:23"
+    },
+    {
+      "id": "exodus-10-q4",
+      "type": "fill_blank",
+      "question": "An east wind brought the _____ that covered the whole land of Egypt.",
+      "answer": "locusts",
+      "accept": [
+        "grasshoppers"
+      ],
+      "verse_reference": "Exodus 10:13"
+    },
+    {
+      "id": "exodus-10-q5",
+      "type": "fill_blank",
+      "question": "The darkness over Egypt was so thick it was _____.",
+      "answer": "palpable",
+      "accept": [
+        "felt"
+      ],
+      "verse_reference": "Exodus 10:21"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "book": "Revelation",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "rev_2_1",
+      "type": "multiple_choice",
+      "question": "What does Jesus say the church in Ephesus has forsaken?",
+      "options": [
+        "Their wealth",
+        "Their first love",
+        "The law",
+        "Their faithful leaders"
+      ],
+      "correct": "Their first love",
+      "verse_ref": "Revelation 2:4",
+      "feedback": "Jesus says the Ephesians have forsaken the love they had at first."
+    },
+    {
+      "id": "rev_2_2",
+      "type": "multiple_choice",
+      "question": "Which church does Jesus say is about to suffer persecution and be tested for ten days?",
+      "options": [
+        "Thyatira",
+        "Ephesus",
+        "Smyrna",
+        "Pergamum"
+      ],
+      "correct": "Smyrna",
+      "verse_ref": "Revelation 2:10",
+      "feedback": "Jesus warns Smyrna of ten days of persecution."
+    },
+    {
+      "id": "rev_2_3",
+      "type": "true_false",
+      "question": "Jesus praises the church in Pergamum for living where Satan has his throne.",
+      "correct": true,
+      "verse_ref": "Revelation 2:13",
+      "feedback": "Jesus acknowledges they live where Satan has his throne yet remain faithful."
+    },
+    {
+      "id": "rev_2_4",
+      "type": "fill_in_the_blank",
+      "question": "To the one who is victorious Jesus will give the right to eat from the tree of _____.",
+      "correct": "life",
+      "verse_ref": "Revelation 2:7",
+      "feedback": "The victorious will eat from the tree of life in the paradise of God."
+    },
+    {
+      "id": "rev_2_5",
+      "type": "fill_in_the_blank",
+      "question": "Be faithful even to the point of death, and I will give you the _____ of life.",
+      "correct": "crown",
+      "verse_ref": "Revelation 2:10",
+      "feedback": "Be faithful unto death and receive the crown of life."
+    }
+  ]
+}

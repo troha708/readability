@@ -1,0 +1,56 @@
+{
+  "book": "Isaiah",
+  "chapter": 42,
+  "questions": [
+    {
+      "id": "isaiah-42-q1",
+      "type": "multiple_choice",
+      "question": "Whom does God present in Isaiah 42, the first 'Servant Song'?",
+      "options": [
+        "My king, who rules with an iron rod",
+        "My servant, my chosen, in whom I delight",
+        "My enemy, whom I will surely destroy",
+        "My prophet, sent to warn all of the nations"
+      ],
+      "answer": "My servant, my chosen, in whom I delight",
+      "verse_reference": "Isaiah 42:1"
+    },
+    {
+      "id": "isaiah-42-q2",
+      "type": "multiple_choice",
+      "question": "How gentle is this servant described as being?",
+      "options": [
+        "A mighty and dreadful warrior who tramples all of his foes beneath his feet",
+        "A great consuming fire that utterly devours all of the wicked of the earth",
+        "A bruised reed he will not break, and a faintly burning wick he will not quench",
+        "A loud and ceaseless voice that cries out aloud in all of the city streets"
+      ],
+      "answer": "A bruised reed he will not break, and a faintly burning wick he will not quench",
+      "verse_reference": "Isaiah 42:3"
+    },
+    {
+      "id": "isaiah-42-q3",
+      "type": "true_false",
+      "question": "God says he gives the servant as a covenant for the people, a light for the nations.",
+      "answer": "true",
+      "verse_reference": "Isaiah 42:6"
+    },
+    {
+      "id": "isaiah-42-q4",
+      "type": "fill_blank",
+      "question": "A bruised _____ he will not break, and a faintly burning wick he will not quench.",
+      "answer": "reed",
+      "verse_reference": "Isaiah 42:3"
+    },
+    {
+      "id": "isaiah-42-q5",
+      "type": "fill_blank",
+      "question": "I will give you as a light for the _____, to open the eyes that are blind.",
+      "answer": "nations",
+      "accept": [
+        "Gentiles"
+      ],
+      "verse_reference": "Isaiah 42:6-7"
+    }
+  ]
+}

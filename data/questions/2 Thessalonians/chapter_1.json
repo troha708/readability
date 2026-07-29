@@ -1,0 +1,59 @@
+{
+  "book": "2 Thessalonians",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "2thess_1_1",
+      "type": "multiple_choice",
+      "question": "What does Paul say God will repay to those who trouble the Thessalonians?",
+      "options": [
+        "Affliction",
+        "Mercy",
+        "Forgiveness",
+        "Patience"
+      ],
+      "correct": "Affliction",
+      "verse_ref": "2 Thessalonians 1:6",
+      "feedback": "God considers it just to repay with affliction those who afflict the believers."
+    },
+    {
+      "id": "2thess_1_2",
+      "type": "multiple_choice",
+      "question": "Paul says the Lord Jesus will be revealed from heaven with what?",
+      "options": [
+        "His holy people clothed in white",
+        "His mighty angels in flaming fire",
+        "His faithful prophets with loud voices",
+        "His chosen apostles bearing the gospel"
+      ],
+      "correct": "His mighty angels in flaming fire",
+      "verse_ref": "2 Thessalonians 1:7",
+      "feedback": "The Lord Jesus will be revealed from heaven with his mighty angels in flaming fire."
+    },
+    {
+      "id": "2thess_1_3",
+      "type": "true_false",
+      "question": "Paul says the Thessalonians' faith is growing abundantly.",
+      "correct": true,
+      "verse_ref": "2 Thessalonians 1:3",
+      "feedback": "Paul gives thanks because their faith is growing abundantly."
+    },
+    {
+      "id": "2thess_1_4",
+      "type": "fill_in_the_blank",
+      "question": "Paul boasts about the Thessalonians' steadfastness and _____ in their persecutions.",
+      "correct": "faith",
+      "verse_ref": "2 Thessalonians 1:4",
+      "feedback": "Paul boasts of their steadfastness and faith during persecutions."
+    },
+    {
+      "id": "2thess_1_5",
+      "type": "fill_in_the_blank",
+      "question": "Those who do not obey the gospel will suffer the punishment of eternal _____ from the presence of the Lord.",
+      "correct": "destruction",
+      "accept": ["perdition"],
+      "verse_ref": "2 Thessalonians 1:9",
+      "feedback": "They will suffer eternal destruction, away from the Lord's presence."
+    }
+  ]
+}

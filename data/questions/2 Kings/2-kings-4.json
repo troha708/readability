@@ -1,0 +1,53 @@
+{
+  "book": "2 Kings",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "2-kings-4-q1",
+      "type": "multiple_choice",
+      "question": "How did Elisha help the widow with only a jar of oil?",
+      "options": [
+        "He sold it for a great price in town",
+        "An angel filled her empty storehouse",
+        "He turned the oil into pure silver",
+        "The oil multiplied to fill many jars"
+      ],
+      "answer": "The oil multiplied to fill many jars",
+      "verse_reference": "2 Kings 4:1-7"
+    },
+    {
+      "id": "2-kings-4-q2",
+      "type": "multiple_choice",
+      "question": "What did Elisha do for the Shunammite woman's son?",
+      "options": [
+        "Taught him the law of Moses",
+        "Gave him a fortune in gold",
+        "Healed him of a burning fever",
+        "Raised him from the dead"
+      ],
+      "answer": "Raised him from the dead",
+      "verse_reference": "2 Kings 4:32-35"
+    },
+    {
+      "id": "2-kings-4-q3",
+      "type": "true_false",
+      "question": "Elisha made a poisonous pot of stew safe to eat.",
+      "answer": "true",
+      "verse_reference": "2 Kings 4:38-41"
+    },
+    {
+      "id": "2-kings-4-q4",
+      "type": "fill_blank",
+      "question": "Elisha multiplied the widow's _____ to fill all the jars she could borrow.",
+      "answer": "oil",
+      "verse_reference": "2 Kings 4:2-6"
+    },
+    {
+      "id": "2-kings-4-q5",
+      "type": "fill_blank",
+      "question": "Elisha raised the _____ woman's son back to life.",
+      "answer": "Shunammite",
+      "verse_reference": "2 Kings 4:32-37"
+    }
+  ]
+}

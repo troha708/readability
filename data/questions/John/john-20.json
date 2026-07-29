@@ -1,0 +1,53 @@
+{
+  "book": "John",
+  "chapter": 20,
+  "questions": [
+    {
+      "id": "john-20-q1",
+      "type": "multiple_choice",
+      "question": "Who was the first person to see the risen Jesus?",
+      "options": [
+        "Simon Peter himself",
+        "John",
+        "Mary Magdalene",
+        "Thomas"
+      ],
+      "answer": "Mary Magdalene",
+      "verse_reference": "John 20:14-16"
+    },
+    {
+      "id": "john-20-q2",
+      "type": "multiple_choice",
+      "question": "What did Thomas say he needed to see before he would believe Jesus had risen?",
+      "options": [
+        "The empty tomb for himself",
+        "The nail marks in Jesus' hands",
+        "An angel to confirm the news",
+        "The face of the risen Lord"
+      ],
+      "answer": "The nail marks in Jesus' hands",
+      "verse_reference": "John 20:25"
+    },
+    {
+      "id": "john-20-q3",
+      "type": "true_false",
+      "question": "When Thomas saw the risen Jesus, he said 'My Lord and my God!'",
+      "answer": "true",
+      "verse_reference": "John 20:28"
+    },
+    {
+      "id": "john-20-q4",
+      "type": "fill_blank",
+      "question": "Jesus said to her, 'Don't hold me, for I haven't yet ascended to my _____.'",
+      "answer": "Father",
+      "verse_reference": "John 20:17"
+    },
+    {
+      "id": "john-20-q5",
+      "type": "fill_blank",
+      "question": "Blessed are those who have not _____, and have believed.",
+      "answer": "seen",
+      "verse_reference": "John 20:29"
+    }
+  ]
+}

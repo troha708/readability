@@ -1,0 +1,53 @@
+{
+  "book": "Song Of Solomon",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "song-of-solomon-2-q1",
+      "type": "multiple_choice",
+      "question": "How does the woman describe herself in chapter 2?",
+      "options": [
+        "A thorn among the bushes of the open field",
+        "A rose of Sharon, a lily of the valleys",
+        "A vine climbing the garden wall",
+        "A cedar of the heights of Lebanon"
+      ],
+      "answer": "A rose of Sharon, a lily of the valleys",
+      "verse_reference": "Song of Solomon 2:1"
+    },
+    {
+      "id": "song-of-solomon-2-q2",
+      "type": "multiple_choice",
+      "question": "What banner does the beloved raise over the bride?",
+      "options": [
+        "Honor",
+        "War",
+        "Wealth",
+        "Love"
+      ],
+      "answer": "Love",
+      "verse_reference": "Song of Solomon 2:4"
+    },
+    {
+      "id": "song-of-solomon-2-q3",
+      "type": "true_false",
+      "question": "Chapter 2 contains the line, 'My beloved is mine, and I am his.'",
+      "answer": "true",
+      "verse_reference": "Song of Solomon 2:16"
+    },
+    {
+      "id": "song-of-solomon-2-q4",
+      "type": "fill_blank",
+      "question": "He brought me to the banqueting house, and his banner over me was _____.",
+      "answer": "love",
+      "verse_reference": "Song of Solomon 2:4"
+    },
+    {
+      "id": "song-of-solomon-2-q5",
+      "type": "fill_blank",
+      "question": "My beloved is mine, and I am _____.",
+      "answer": "his",
+      "verse_reference": "Song of Solomon 2:16"
+    }
+  ]
+}

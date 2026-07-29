@@ -1,0 +1,53 @@
+{
+  "book": "Matthew",
+  "chapter": 24,
+  "questions": [
+    {
+      "id": "matthew-24-q1",
+      "type": "multiple_choice",
+      "question": "What did Jesus say would happen to the temple buildings?",
+      "options": [
+        "They would stand forever",
+        "Not one stone would be left on another",
+        "They would be turned into a royal palace",
+        "They would be rebuilt"
+      ],
+      "answer": "Not one stone would be left on another",
+      "verse_reference": "Matthew 24:2"
+    },
+    {
+      "id": "matthew-24-q2",
+      "type": "multiple_choice",
+      "question": "Jesus compared the coming of the Son of Man to the days of which Old Testament figure?",
+      "options": [
+        "Abraham",
+        "Moses",
+        "Noah",
+        "Elijah"
+      ],
+      "answer": "Noah",
+      "verse_reference": "Matthew 24:37"
+    },
+    {
+      "id": "matthew-24-q3",
+      "type": "true_false",
+      "question": "Jesus said that even he did not know the day and hour of his return — only the Father knows.",
+      "answer": "true",
+      "verse_reference": "Matthew 24:36"
+    },
+    {
+      "id": "matthew-24-q4",
+      "type": "fill_blank",
+      "question": "Heaven and earth will pass away, but my _____ will not pass away.",
+      "answer": "words",
+      "verse_reference": "Matthew 24:35"
+    },
+    {
+      "id": "matthew-24-q5",
+      "type": "fill_blank",
+      "question": "Therefore also be ready, for in an hour that you don't expect, the Son of Man will _____.",
+      "answer": "come",
+      "verse_reference": "Matthew 24:44"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Genesis",
+  "chapter": 21,
+  "questions": [
+    {
+      "id": "genesis-21-q1",
+      "type": "multiple_choice",
+      "question": "What does the name Isaac mean?",
+      "options": [
+        "The LORD hears him",
+        "He laughs",
+        "Supplanter",
+        "Comfort"
+      ],
+      "answer": "He laughs",
+      "verse_reference": "Genesis 21:6"
+    },
+    {
+      "id": "genesis-21-q2",
+      "type": "multiple_choice",
+      "question": "Whom did Abraham send away into the wilderness with her son?",
+      "options": [
+        "Keturah",
+        "Hagar",
+        "Sarah",
+        "Rebekah"
+      ],
+      "answer": "Hagar",
+      "verse_reference": "Genesis 21:14"
+    },
+    {
+      "id": "genesis-21-q3",
+      "type": "true_false",
+      "question": "Abraham was a hundred years old when Isaac was born.",
+      "answer": "true",
+      "verse_reference": "Genesis 21:5"
+    },
+    {
+      "id": "genesis-21-q4",
+      "type": "fill_blank",
+      "question": "In the wilderness, God opened Hagar's eyes and she saw a _____ of water.",
+      "answer": "well",
+      "verse_reference": "Genesis 21:19"
+    },
+    {
+      "id": "genesis-21-q5",
+      "type": "fill_blank",
+      "question": "Abraham and Abimelech swore an oath and made a treaty at _____.",
+      "answer": "Beersheba",
+      "verse_reference": "Genesis 21:31"
+    }
+  ]
+}

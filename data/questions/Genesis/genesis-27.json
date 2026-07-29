@@ -1,0 +1,53 @@
+{
+  "book": "Genesis",
+  "chapter": 27,
+  "questions": [
+    {
+      "id": "genesis-27-q1",
+      "type": "multiple_choice",
+      "question": "How did Jacob deceive his blind father Isaac?",
+      "options": [
+        "He bribed a servant",
+        "He forged a letter",
+        "He wore Esau's clothes and skins",
+        "He disguised only his voice"
+      ],
+      "answer": "He wore Esau's clothes and skins",
+      "verse_reference": "Genesis 27:15-16"
+    },
+    {
+      "id": "genesis-27-q2",
+      "type": "multiple_choice",
+      "question": "What did Esau resolve to do after Jacob took the blessing?",
+      "options": [
+        "Forgive Jacob",
+        "Kill Jacob",
+        "Leave home",
+        "Appeal to Isaac"
+      ],
+      "answer": "Kill Jacob",
+      "verse_reference": "Genesis 27:41"
+    },
+    {
+      "id": "genesis-27-q3",
+      "type": "true_false",
+      "question": "Once Isaac had given the blessing to Jacob, he could not take it back.",
+      "answer": "true",
+      "verse_reference": "Genesis 27:33"
+    },
+    {
+      "id": "genesis-27-q4",
+      "type": "fill_blank",
+      "question": "Isaac said, \"The voice is Jacob's voice, but the hands are the hands of _____.\"",
+      "answer": "Esau",
+      "verse_reference": "Genesis 27:22"
+    },
+    {
+      "id": "genesis-27-q5",
+      "type": "fill_blank",
+      "question": "Rebekah told Jacob to flee to her brother _____ in Haran.",
+      "answer": "Laban",
+      "verse_reference": "Genesis 27:43"
+    }
+  ]
+}

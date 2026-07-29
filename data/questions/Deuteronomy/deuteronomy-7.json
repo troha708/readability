@@ -1,0 +1,53 @@
+{
+  "book": "Deuteronomy",
+  "chapter": 7,
+  "questions": [
+    {
+      "id": "deuteronomy-7-q1",
+      "type": "multiple_choice",
+      "question": "What were the Israelites not to do with the nations of Canaan?",
+      "options": [
+        "Trade goods or share their food with them",
+        "Greet them or speak with them",
+        "Collect taxes or tribute from them",
+        "Make covenants or intermarry with them"
+      ],
+      "answer": "Make covenants or intermarry with them",
+      "verse_reference": "Deuteronomy 7:2-3"
+    },
+    {
+      "id": "deuteronomy-7-q2",
+      "type": "multiple_choice",
+      "question": "Why did God choose Israel?",
+      "options": [
+        "Not their size, but he loved them and kept his oath",
+        "Because of their great wealth and their many large flocks",
+        "Because of their strength and their great skill in battle",
+        "Because they were the most numerous of all the peoples"
+      ],
+      "answer": "Not their size, but he loved them and kept his oath",
+      "verse_reference": "Deuteronomy 7:7-8"
+    },
+    {
+      "id": "deuteronomy-7-q3",
+      "type": "true_false",
+      "question": "God called Israel a holy people, treasured out of all the peoples.",
+      "answer": "true",
+      "verse_reference": "Deuteronomy 7:6"
+    },
+    {
+      "id": "deuteronomy-7-q4",
+      "type": "fill_blank",
+      "question": "God chose Israel not because they were many, for they were the fewest, but because he _____ them.",
+      "answer": "loved",
+      "verse_reference": "Deuteronomy 7:7-8"
+    },
+    {
+      "id": "deuteronomy-7-q5",
+      "type": "fill_blank",
+      "question": "Israel was a _____ people to the LORD, his treasured possession.",
+      "answer": "holy",
+      "verse_reference": "Deuteronomy 7:6"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Isaiah",
+  "chapter": 7,
+  "questions": [
+    {
+      "id": "isaiah-7-q1",
+      "type": "multiple_choice",
+      "question": "What sign did Isaiah give to King Ahaz?",
+      "options": [
+        "A prophet much like Moses shall one day come up from your own people",
+        "A green branch shall grow up out of the dry stump of Jesse the father",
+        "A virgin shall conceive and bear a son, and call his name Immanuel",
+        "A bright star shall rise up out of Jacob to rule over all the nations"
+      ],
+      "answer": "A virgin shall conceive and bear a son, and call his name Immanuel",
+      "verse_reference": "Isaiah 7:14"
+    },
+    {
+      "id": "isaiah-7-q2",
+      "type": "multiple_choice",
+      "question": "What did Isaiah urge Ahaz to do in the face of the threat from Syria and Israel?",
+      "options": [
+        "Flee away from the city and go hide himself up in the hills",
+        "Be careful, be quiet, and not fear; stand firm in faith",
+        "Gather together the whole army and march out to battle",
+        "Make a binding treaty with Assyria in return for protection"
+      ],
+      "answer": "Be careful, be quiet, and not fear; stand firm in faith",
+      "verse_reference": "Isaiah 7:4, 9"
+    },
+    {
+      "id": "isaiah-7-q3",
+      "type": "true_false",
+      "question": "The name Immanuel means 'God with us.'",
+      "answer": "true",
+      "verse_reference": "Isaiah 7:14"
+    },
+    {
+      "id": "isaiah-7-q4",
+      "type": "fill_blank",
+      "question": "Behold, the virgin shall conceive and bear a son, and shall call his name _____.",
+      "answer": "Immanuel",
+      "verse_reference": "Isaiah 7:14"
+    },
+    {
+      "id": "isaiah-7-q5",
+      "type": "fill_blank",
+      "question": "If you are not firm in faith, you will not be firm at _____.",
+      "answer": "all",
+      "verse_reference": "Isaiah 7:9"
+    }
+  ]
+}

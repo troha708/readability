@@ -1,0 +1,58 @@
+{
+  "book": "1 Peter",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "1pet_3_1",
+      "type": "multiple_choice",
+      "question": "Peter says inner beauty is more valuable than what?",
+      "options": [
+        "Plain and simple clothing and a fully covered bowed head",
+        "Quiet words and a truly gentle and humble spirit",
+        "Outward adornment like braided hair and gold jewelry",
+        "Daily set prayers and many acts of secret charity"
+      ],
+      "correct": "Outward adornment like braided hair and gold jewelry",
+      "verse_ref": "1 Peter 3:3-4",
+      "feedback": "Beauty should not come from outward adornment but from the inner self."
+    },
+    {
+      "id": "1pet_3_2",
+      "type": "multiple_choice",
+      "question": "Peter says believers should always be prepared to give an answer for what?",
+      "options": [
+        "The law they have kept",
+        "The hope that they have",
+        "The signs they have seen",
+        "The wealth they have gained"
+      ],
+      "correct": "The hope that they have",
+      "verse_ref": "1 Peter 3:15",
+      "feedback": "Always be prepared to give an answer for the hope that you have."
+    },
+    {
+      "id": "1pet_3_3",
+      "type": "true_false",
+      "question": "Peter says it is better to suffer for doing good than for doing evil.",
+      "correct": true,
+      "verse_ref": "1 Peter 3:17",
+      "feedback": "It is better to suffer for doing good, if that is God's will, than for doing evil."
+    },
+    {
+      "id": "1pet_3_4",
+      "type": "fill_in_the_blank",
+      "question": "In your hearts revere Christ as _____.",
+      "correct": "Lord",
+      "verse_ref": "1 Peter 3:15",
+      "feedback": "In your hearts revere Christ as Lord."
+    },
+    {
+      "id": "1pet_3_5",
+      "type": "fill_in_the_blank",
+      "question": "Do not repay evil with evil or insult with insult, but with a _____.",
+      "correct": "blessing",
+      "verse_ref": "1 Peter 3:9",
+      "feedback": "Do not repay evil with evil or insult with insult, but with blessing."
+    }
+  ]
+}

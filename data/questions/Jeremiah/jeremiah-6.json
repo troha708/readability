@@ -1,0 +1,53 @@
+{
+  "book": "Jeremiah",
+  "chapter": 6,
+  "questions": [
+    {
+      "id": "jeremiah-6-q1",
+      "type": "multiple_choice",
+      "question": "What false assurance do the prophets and priests give, in Jeremiah 6?",
+      "options": [
+        "'Repent, repent,' though none would listen",
+        "'Peace, peace,' when there is no peace",
+        "'Flee, flee,' before the enemy comes",
+        "'War, war,' to stir up the people"
+      ],
+      "answer": "'Peace, peace,' when there is no peace",
+      "verse_reference": "Jeremiah 6:14"
+    },
+    {
+      "id": "jeremiah-6-q2",
+      "type": "multiple_choice",
+      "question": "What does God urge the people to ask for in Jeremiah 6?",
+      "options": [
+        "A brand new king, to lead them out together to the battle",
+        "The ancient paths, the good way, to find rest for their souls",
+        "Very great riches, to buy off the great invading army",
+        "The help of Egypt, to find some safety from the fierce enemy foe"
+      ],
+      "answer": "The ancient paths, the good way, to find rest for their souls",
+      "verse_reference": "Jeremiah 6:16"
+    },
+    {
+      "id": "jeremiah-6-q3",
+      "type": "true_false",
+      "question": "Jeremiah 6 says the people refused to walk in the good way and were not ashamed of their sin.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 6:15-16"
+    },
+    {
+      "id": "jeremiah-6-q4",
+      "type": "fill_blank",
+      "question": "They have healed the wound of my people lightly, saying, 'Peace, peace,' when there is no _____.",
+      "answer": "peace",
+      "verse_reference": "Jeremiah 6:14"
+    },
+    {
+      "id": "jeremiah-6-q5",
+      "type": "fill_blank",
+      "question": "Ask for the ancient _____, where the good way is, and walk in it.",
+      "answer": "paths",
+      "verse_reference": "Jeremiah 6:16"
+    }
+  ]
+}

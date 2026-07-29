@@ -1,0 +1,258 @@
+{
+  "book": "Joshua",
+  "source": "Berean Standard Bible (CC0 Public Domain)",
+  "chapters": {
+    "1": [
+      {
+        "beforeVerse": 1,
+        "heading": "God Instructs Joshua"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "Joshua Takes Charge"
+      }
+    ],
+    "2": [
+      {
+        "beforeVerse": 1,
+        "heading": "Rahab Welcomes the Spies"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "The Promise to Rahab"
+      }
+    ],
+    "3": [
+      {
+        "beforeVerse": 1,
+        "heading": "Crossing the Jordan"
+      }
+    ],
+    "4": [
+      {
+        "beforeVerse": 1,
+        "heading": "Twelve Stones from the Jordan"
+      },
+      {
+        "beforeVerse": 19,
+        "heading": "The Camp at Gilgal"
+      }
+    ],
+    "5": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Circumcision and Passover at Gilgal"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "The Commander of the LORD’s Army"
+      }
+    ],
+    "6": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Walls of Jericho"
+      }
+    ],
+    "7": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Defeat at Ai"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "The Sin of Achan"
+      }
+    ],
+    "8": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Conquest of Ai"
+      },
+      {
+        "beforeVerse": 30,
+        "heading": "Joshua Renews the Covenant"
+      }
+    ],
+    "9": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Deceit of the Gibeonites"
+      }
+    ],
+    "10": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Day the Sun Stood Still"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "The Victory at Makkedah"
+      },
+      {
+        "beforeVerse": 29,
+        "heading": "Conquest of the Southern Cities"
+      }
+    ],
+    "11": [
+      {
+        "beforeVerse": 1,
+        "heading": "Conquest of the Northern Cities"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "Joshua Takes the Whole Land"
+      }
+    ],
+    "12": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Kings Defeated East of the Jordan"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "The Kings Defeated West of the Jordan"
+      }
+    ],
+    "13": [
+      {
+        "beforeVerse": 1,
+        "heading": "Lands Yet Unconquered"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "The Inheritance East of the Jordan"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "Reuben’s Inheritance"
+      },
+      {
+        "beforeVerse": 24,
+        "heading": "Gad’s Inheritance"
+      },
+      {
+        "beforeVerse": 29,
+        "heading": "Manasseh’s Eastern Inheritance"
+      }
+    ],
+    "14": [
+      {
+        "beforeVerse": 1,
+        "heading": "Land Division West of the Jordan"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "Caleb Requests Hebron"
+      }
+    ],
+    "15": [
+      {
+        "beforeVerse": 1,
+        "heading": "Judah’s Inheritance"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "Caleb’s Portion and Conquest"
+      },
+      {
+        "beforeVerse": 20,
+        "heading": "The Cities of Judah"
+      }
+    ],
+    "16": [
+      {
+        "beforeVerse": 1,
+        "heading": "Ephraim’s Inheritance"
+      }
+    ],
+    "17": [
+      {
+        "beforeVerse": 1,
+        "heading": "Manasseh’s Western Inheritance"
+      }
+    ],
+    "18": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Remainder Divided"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "Benjamin’s Inheritance"
+      }
+    ],
+    "19": [
+      {
+        "beforeVerse": 1,
+        "heading": "Simeon’s Inheritance"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "Zebulun’s Inheritance"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "Issachar’s Inheritance"
+      },
+      {
+        "beforeVerse": 24,
+        "heading": "Asher’s Inheritance"
+      },
+      {
+        "beforeVerse": 32,
+        "heading": "Naphtali’s Inheritance"
+      },
+      {
+        "beforeVerse": 40,
+        "heading": "Dan’s Inheritance"
+      },
+      {
+        "beforeVerse": 49,
+        "heading": "Joshua’s Inheritance"
+      }
+    ],
+    "20": [
+      {
+        "beforeVerse": 1,
+        "heading": "Six Cities of Refuge"
+      }
+    ],
+    "21": [
+      {
+        "beforeVerse": 1,
+        "heading": "Forty-Eight Cities for the Levites"
+      }
+    ],
+    "22": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Eastern Tribes Return Home"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "The Altar of Witness"
+      }
+    ],
+    "23": [
+      {
+        "beforeVerse": 1,
+        "heading": "Joshua’s Charge to Leaders"
+      }
+    ],
+    "24": [
+      {
+        "beforeVerse": 1,
+        "heading": "Joshua Reviews Israel’s History"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "Choose Whom You Will Serve"
+      },
+      {
+        "beforeVerse": 29,
+        "heading": "Joshua’s Death and Burial"
+      }
+    ]
+  }
+}

@@ -1,0 +1,530 @@
+{
+  "book": "Numbers",
+  "source": "Berean Standard Bible (CC0 Public Domain)",
+  "chapters": {
+    "1": [
+      {
+        "beforeVerse": 1,
+        "heading": "The First Census of Israel"
+      },
+      {
+        "beforeVerse": 5,
+        "heading": "The Leaders of the Tribes"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "The Number of Every Tribe"
+      },
+      {
+        "beforeVerse": 47,
+        "heading": "The Exemption of the Levites"
+      }
+    ],
+    "2": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Order of the Camps"
+      }
+    ],
+    "3": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Sons of Aaron"
+      },
+      {
+        "beforeVerse": 5,
+        "heading": "The Duties of the Levites"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "The Numbering of the Levites"
+      },
+      {
+        "beforeVerse": 21,
+        "heading": "The Gershonites"
+      },
+      {
+        "beforeVerse": 27,
+        "heading": "The Kohathites"
+      },
+      {
+        "beforeVerse": 33,
+        "heading": "The Merarites"
+      },
+      {
+        "beforeVerse": 38,
+        "heading": "Moses and Aaron"
+      },
+      {
+        "beforeVerse": 40,
+        "heading": "The Redemption of the Firstborn"
+      }
+    ],
+    "4": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Duties of the Kohathites"
+      },
+      {
+        "beforeVerse": 21,
+        "heading": "The Duties of the Gershonites"
+      },
+      {
+        "beforeVerse": 29,
+        "heading": "The Duties of the Merarites"
+      },
+      {
+        "beforeVerse": 34,
+        "heading": "The Numbering of the Levite Clans"
+      }
+    ],
+    "5": [
+      {
+        "beforeVerse": 1,
+        "heading": "Cleansing the Camps"
+      },
+      {
+        "beforeVerse": 5,
+        "heading": "Confession and Restitution"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "The Adultery Test"
+      }
+    ],
+    "6": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Nazirite Vow"
+      },
+      {
+        "beforeVerse": 22,
+        "heading": "Aaron’s Blessing"
+      }
+    ],
+    "7": [
+      {
+        "beforeVerse": 1,
+        "heading": "Offerings of Dedication"
+      }
+    ],
+    "8": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Lampstand"
+      },
+      {
+        "beforeVerse": 5,
+        "heading": "Cleansing the Levites"
+      },
+      {
+        "beforeVerse": 23,
+        "heading": "Retirement for Levites"
+      }
+    ],
+    "9": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Second Passover"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "The Cloud above the Tabernacle"
+      }
+    ],
+    "10": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Two Silver Trumpets"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "From Sinai to Paran"
+      }
+    ],
+    "11": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Complaints of the People"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "The Complaint of Moses"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "Seventy Elders Anointed"
+      },
+      {
+        "beforeVerse": 31,
+        "heading": "The Quail and the Plague"
+      }
+    ],
+    "12": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Complaint of Miriam and Aaron"
+      }
+    ],
+    "13": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Spies Explore Canaan"
+      },
+      {
+        "beforeVerse": 25,
+        "heading": "The Reports of the Spies"
+      }
+    ],
+    "14": [
+      {
+        "beforeVerse": 1,
+        "heading": "Israel’s Rebellion"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "Moses Intercedes for Israel"
+      },
+      {
+        "beforeVerse": 20,
+        "heading": "God’s Forgiveness and Judgment"
+      },
+      {
+        "beforeVerse": 36,
+        "heading": "The Plague on the Ten Spies"
+      },
+      {
+        "beforeVerse": 40,
+        "heading": "The Defeat at Hormah"
+      }
+    ],
+    "15": [
+      {
+        "beforeVerse": 1,
+        "heading": "Laws about Offerings"
+      },
+      {
+        "beforeVerse": 22,
+        "heading": "Offerings for Unintentional Sins"
+      },
+      {
+        "beforeVerse": 32,
+        "heading": "A Sabbath-Breaker Stoned"
+      },
+      {
+        "beforeVerse": 37,
+        "heading": "The Law of Tassels"
+      }
+    ],
+    "16": [
+      {
+        "beforeVerse": 1,
+        "heading": "Korah’s Rebellion"
+      },
+      {
+        "beforeVerse": 23,
+        "heading": "Moses Separates the People"
+      },
+      {
+        "beforeVerse": 28,
+        "heading": "The Earth Swallows Korah"
+      },
+      {
+        "beforeVerse": 36,
+        "heading": "The Censers Reserved for Holy Use"
+      },
+      {
+        "beforeVerse": 41,
+        "heading": "Murmuring and Plague"
+      }
+    ],
+    "17": [
+      {
+        "beforeVerse": 1,
+        "heading": "Aaron’s Staff Buds"
+      }
+    ],
+    "18": [
+      {
+        "beforeVerse": 1,
+        "heading": "Duties of Priests and Levites"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "Offerings for Priests and Levites"
+      }
+    ],
+    "19": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Red Heifer"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "Purification of the Unclean"
+      }
+    ],
+    "20": [
+      {
+        "beforeVerse": 1,
+        "heading": "Water from the Rock"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "Edom Refuses Passage"
+      },
+      {
+        "beforeVerse": 22,
+        "heading": "The Death of Aaron"
+      }
+    ],
+    "21": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Defeat of Arad"
+      },
+      {
+        "beforeVerse": 4,
+        "heading": "The Bronze Serpent"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "The Journey to Moab"
+      },
+      {
+        "beforeVerse": 21,
+        "heading": "The Defeat of Sihon"
+      },
+      {
+        "beforeVerse": 31,
+        "heading": "The Defeat of Og"
+      }
+    ],
+    "22": [
+      {
+        "beforeVerse": 1,
+        "heading": "Balak Summons Balaam"
+      },
+      {
+        "beforeVerse": 22,
+        "heading": "The Angel and Balaam’s Donkey"
+      }
+    ],
+    "23": [
+      {
+        "beforeVerse": 1,
+        "heading": "Balaam’s First Oracle"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "Balaam’s Second Oracle"
+      }
+    ],
+    "24": [
+      {
+        "beforeVerse": 1,
+        "heading": "Balaam’s Third Oracle"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "Balak Dismisses Balaam"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "Balaam’s Fourth Oracle"
+      },
+      {
+        "beforeVerse": 20,
+        "heading": "Balaam’s Final Three Oracles"
+      }
+    ],
+    "25": [
+      {
+        "beforeVerse": 1,
+        "heading": "Moab Seduces Israel"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "The Zeal of Phinehas"
+      }
+    ],
+    "26": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Second Census of Israel"
+      },
+      {
+        "beforeVerse": 5,
+        "heading": "The Tribe of Reuben"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "The Tribe of Simeon"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "The Tribe of Gad"
+      },
+      {
+        "beforeVerse": 19,
+        "heading": "The Tribe of Judah"
+      },
+      {
+        "beforeVerse": 23,
+        "heading": "The Tribe of Issachar"
+      },
+      {
+        "beforeVerse": 26,
+        "heading": "The Tribe of Zebulun"
+      },
+      {
+        "beforeVerse": 28,
+        "heading": "The Tribe of Manasseh"
+      },
+      {
+        "beforeVerse": 35,
+        "heading": "The Tribe of Ephraim"
+      },
+      {
+        "beforeVerse": 38,
+        "heading": "The Tribe of Benjamin"
+      },
+      {
+        "beforeVerse": 42,
+        "heading": "The Tribe of Dan"
+      },
+      {
+        "beforeVerse": 44,
+        "heading": "The Tribe of Asher"
+      },
+      {
+        "beforeVerse": 48,
+        "heading": "The Tribe of Naphtali"
+      },
+      {
+        "beforeVerse": 52,
+        "heading": "Inheritance by Lot"
+      },
+      {
+        "beforeVerse": 57,
+        "heading": "The Levites Numbered"
+      },
+      {
+        "beforeVerse": 63,
+        "heading": "Only Caleb and Joshua Remain"
+      }
+    ],
+    "27": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Daughters of Zelophehad"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "Moses Requests a Successor"
+      },
+      {
+        "beforeVerse": 18,
+        "heading": "Joshua to Succeed Moses"
+      }
+    ],
+    "28": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Daily Offerings"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "The Sabbath Offerings"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "The Monthly Offerings"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "Passover and the Feast of Unleavened Bread"
+      },
+      {
+        "beforeVerse": 26,
+        "heading": "The Feast of Weeks"
+      }
+    ],
+    "29": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Feast of Trumpets"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "The Day of Atonement"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "The Feast of Tabernacles"
+      }
+    ],
+    "30": [
+      {
+        "beforeVerse": 1,
+        "heading": "Laws about Vows"
+      }
+    ],
+    "31": [
+      {
+        "beforeVerse": 1,
+        "heading": "Vengeance on Midian"
+      },
+      {
+        "beforeVerse": 25,
+        "heading": "Division of the Spoils"
+      },
+      {
+        "beforeVerse": 48,
+        "heading": "The Voluntary Offering"
+      }
+    ],
+    "32": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Tribes East of the Jordan"
+      }
+    ],
+    "33": [
+      {
+        "beforeVerse": 1,
+        "heading": "Forty-Two Journeys of the Israelites"
+      },
+      {
+        "beforeVerse": 50,
+        "heading": "Instructions for Occupying Canaan"
+      }
+    ],
+    "34": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Boundaries of Canaan"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "Leaders to Divide the Land"
+      }
+    ],
+    "35": [
+      {
+        "beforeVerse": 1,
+        "heading": "Forty-Eight Cities for the Levites"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "Six Cities of Refuge"
+      }
+    ],
+    "36": [
+      {
+        "beforeVerse": 1,
+        "heading": "Zelophehad’s Daughters Marry"
+      }
+    ]
+  }
+}

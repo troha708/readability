@@ -1,0 +1,58 @@
+{
+  "book": "2 Timothy",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "2tim_1_1",
+      "type": "multiple_choice",
+      "question": "Paul says God gave believers a spirit not of fear but of what?",
+      "options": [
+        "Joy and peace",
+        "Patience and kindness",
+        "Deep wisdom and full understanding",
+        "Power, love, and self-control"
+      ],
+      "correct": "Power, love, and self-control",
+      "verse_ref": "2 Timothy 1:7",
+      "feedback": "God gave us a spirit of power, love, and self-control — not fear."
+    },
+    {
+      "id": "2tim_1_2",
+      "type": "multiple_choice",
+      "question": "Whose sincere faith does Paul mention as having lived first in Timothy's grandmother and mother?",
+      "options": [
+        "Paul's",
+        "Timothy's",
+        "Silas's",
+        "Barnabas's"
+      ],
+      "correct": "Timothy's",
+      "verse_ref": "2 Timothy 1:5",
+      "feedback": "Paul recalls Timothy's sincere faith that lived first in his grandmother Lois and mother Eunice."
+    },
+    {
+      "id": "2tim_1_3",
+      "type": "true_false",
+      "question": "Paul says he is ashamed of the gospel.",
+      "correct": false,
+      "verse_ref": "2 Timothy 1:8,12",
+      "feedback": "Paul is not ashamed and urges Timothy not to be ashamed of the testimony of the Lord."
+    },
+    {
+      "id": "2tim_1_4",
+      "type": "fill_in_the_blank",
+      "question": "Paul reminds Timothy to fan into flame the _____ of God that is in him through the laying on of Paul's hands.",
+      "correct": "gift",
+      "verse_ref": "2 Timothy 1:6",
+      "feedback": "Fan into flame the gift of God received through the laying on of hands."
+    },
+    {
+      "id": "2tim_1_5",
+      "type": "fill_in_the_blank",
+      "question": "Timothy's grandmother was named Lois and his mother was named _____.",
+      "correct": "Eunice",
+      "verse_ref": "2 Timothy 1:5",
+      "feedback": "Timothy's faith first lived in his grandmother Lois and his mother Eunice."
+    }
+  ]
+}

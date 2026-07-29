@@ -1,0 +1,60 @@
+{
+  "book": "Ephesians",
+  "chapter": 6,
+  "questions": [
+    {
+      "id": "eph-6-q1",
+      "type": "multiple_choice",
+      "question": "Paul describes the 'armor of God.' Which of these is NOT one of the pieces he mentions?",
+      "options": [
+        "Belt of truth",
+        "Shield of faith",
+        "Helmet of salvation",
+        "Gloves of righteousness"
+      ],
+      "answer": "Gloves of righteousness",
+      "verse_reference": "Ephesians 6:14-17"
+    },
+    {
+      "id": "eph-6-q2",
+      "type": "multiple_choice",
+      "question": "Paul says believers' struggle is not against flesh and blood but against what?",
+      "options": [
+        "Human governments",
+        "Many cunning false teachers",
+        "Spiritual forces of evil",
+        "Natural disasters"
+      ],
+      "answer": "Spiritual forces of evil",
+      "verse_reference": "Ephesians 6:12"
+    },
+    {
+      "id": "eph-6-q3",
+      "type": "true_false",
+      "question": "Paul says children should obey their parents in the Lord, for this is right.",
+      "answer": "true",
+      "verse_reference": "Ephesians 6:1"
+    },
+    {
+      "id": "eph-6-q4",
+      "type": "fill_blank",
+      "question": "Put on the whole _____ of God, that you may be able to stand against the schemes of the devil.",
+      "answer": "armor",
+      "accept": [
+        "armour",
+        "panoply"
+      ],
+      "verse_reference": "Ephesians 6:11"
+    },
+    {
+      "id": "eph-6-q5",
+      "type": "fill_blank",
+      "question": "Take the sword of the Spirit, which is the _____ of God.",
+      "answer": "word",
+      "accept": [
+        "saying"
+      ],
+      "verse_reference": "Ephesians 6:17"
+    }
+  ]
+}

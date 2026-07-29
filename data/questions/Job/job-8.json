@@ -1,0 +1,57 @@
+{
+  "book": "Job",
+  "chapter": 8,
+  "questions": [
+    {
+      "id": "job-8-q1",
+      "type": "multiple_choice",
+      "question": "Which friend speaks in chapter 8?",
+      "options": [
+        "Bildad the Shuhite",
+        "Eliphaz the Temanite",
+        "Elihu the Buzite",
+        "Zophar the Naamathite"
+      ],
+      "answer": "Bildad the Shuhite",
+      "verse_reference": "Job 8:1"
+    },
+    {
+      "id": "job-8-q2",
+      "type": "multiple_choice",
+      "question": "What did Bildad insist about God?",
+      "options": [
+        "God is cruel to the innocent",
+        "God is unjust to the upright",
+        "God does not pervert justice",
+        "God is distant and uncaring"
+      ],
+      "answer": "God does not pervert justice",
+      "verse_reference": "Job 8:3"
+    },
+    {
+      "id": "job-8-q3",
+      "type": "true_false",
+      "question": "Bildad suggested Job's children may have died because of their own sin.",
+      "answer": "true",
+      "verse_reference": "Job 8:4"
+    },
+    {
+      "id": "job-8-q4",
+      "type": "fill_blank",
+      "question": "Bildad said the hope of the godless will _____.",
+      "answer": "perish",
+      "verse_reference": "Job 8:13"
+    },
+    {
+      "id": "job-8-q5",
+      "type": "fill_blank",
+      "question": "Bildad appealed to the wisdom of former _____.",
+      "answer": "generations",
+      "accept": [
+        "generation",
+        "age"
+      ],
+      "verse_reference": "Job 8:8"
+    }
+  ]
+}

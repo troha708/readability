@@ -1,0 +1,64 @@
+{
+  "book": "Jude",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "jude_1_1",
+      "type": "multiple_choice",
+      "question": "Jude urges believers to contend for what?",
+      "options": [
+        "The law once given through Moses",
+        "The great temple once built in Jerusalem",
+        "The faith once delivered to the saints",
+        "The kingdom once promised to David"
+      ],
+      "correct": "The faith once delivered to the saints",
+      "verse_ref": "Jude 1:3",
+      "feedback": "Contend for the faith that was once for all delivered to the saints."
+    },
+    {
+      "id": "jude_1_2",
+      "type": "multiple_choice",
+      "question": "Jude mentions a dispute between the archangel Michael and the devil over what?",
+      "options": [
+        "The body of Moses",
+        "The ark of the covenant",
+        "The throne of heaven",
+        "The souls of the dead"
+      ],
+      "correct": "The body of Moses",
+      "verse_ref": "Jude 1:9",
+      "feedback": "Michael the archangel disputed with the devil about the body of Moses."
+    },
+    {
+      "id": "jude_1_3",
+      "type": "true_false",
+      "question": "Jude says certain ungodly people have secretly slipped in among believers.",
+      "correct": true,
+      "verse_ref": "Jude 1:4",
+      "feedback": "Certain ungodly people have secretly slipped in among you."
+    },
+    {
+      "id": "jude_1_4",
+      "type": "fill_in_the_blank",
+      "question": "To him who is able to keep you from _____ and to present you before his glorious presence without fault.",
+      "correct": "stumbling",
+      "accept": [
+        "falling"
+      ],
+      "verse_ref": "Jude 1:24",
+      "feedback": "To him who is able to keep you from stumbling and present you faultless."
+    },
+    {
+      "id": "jude_1_5",
+      "type": "fill_in_the_blank",
+      "question": "Build yourselves up in your most holy faith and pray in the Holy _____.",
+      "correct": "Spirit",
+      "accept": [
+        "Ghost"
+      ],
+      "verse_ref": "Jude 1:20",
+      "feedback": "Build yourselves up in your most holy faith, praying in the Holy Spirit."
+    }
+  ]
+}

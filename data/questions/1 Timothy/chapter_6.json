@@ -1,0 +1,59 @@
+{
+  "book": "1 Timothy",
+  "chapter": 6,
+  "questions": [
+    {
+      "id": "1tim_6_1",
+      "type": "multiple_choice",
+      "question": "Paul says the love of money is the root of what?",
+      "options": [
+        "Idolatry of the heart",
+        "Greed and envy",
+        "All kinds of evil",
+        "Every form of sin"
+      ],
+      "correct": "All kinds of evil",
+      "verse_ref": "1 Timothy 6:10",
+      "feedback": "The love of money is a root of all kinds of evil."
+    },
+    {
+      "id": "1tim_6_2",
+      "type": "multiple_choice",
+      "question": "What does Paul say is great gain when combined with contentment?",
+      "options": [
+        "Knowledge",
+        "Power",
+        "Godliness",
+        "Wealth"
+      ],
+      "correct": "Godliness",
+      "verse_ref": "1 Timothy 6:6",
+      "feedback": "Godliness with contentment is great gain."
+    },
+    {
+      "id": "1tim_6_3",
+      "type": "true_false",
+      "question": "Paul says we brought nothing into the world and we can take nothing out of it.",
+      "correct": true,
+      "verse_ref": "1 Timothy 6:7",
+      "feedback": "We brought nothing into the world and cannot take anything out of it."
+    },
+    {
+      "id": "1tim_6_4",
+      "type": "fill_in_the_blank",
+      "question": "Paul tells Timothy to fight the good fight of _____.",
+      "correct": "faith",
+      "verse_ref": "1 Timothy 6:12",
+      "feedback": "Fight the good fight of faith and take hold of eternal life."
+    },
+    {
+      "id": "1tim_6_5",
+      "type": "fill_in_the_blank",
+      "question": "Paul tells the rich not to set their hopes on the uncertainty of _____ but on God.",
+      "correct": "wealth",
+      "accept": ["riches"],
+      "verse_ref": "1 Timothy 6:17",
+      "feedback": "The rich should not set their hope on the uncertainty of wealth but on God, who richly provides."
+    }
+  ]
+}

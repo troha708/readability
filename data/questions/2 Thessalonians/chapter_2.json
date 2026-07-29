@@ -1,0 +1,60 @@
+{
+  "book": "2 Thessalonians",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "2thess_2_1",
+      "type": "multiple_choice",
+      "question": "What must happen before the day of the Lord comes?",
+      "options": [
+        "A great famine must spread across all the earth",
+        "The temple in Jerusalem must first be rebuilt",
+        "The gospel must first be preached to each and every single nation",
+        "The rebellion and the man of lawlessness must be revealed"
+      ],
+      "correct": "The rebellion and the man of lawlessness must be revealed",
+      "verse_ref": "2 Thessalonians 2:3",
+      "feedback": "The day will not come unless the rebellion comes first and the man of lawlessness is revealed."
+    },
+    {
+      "id": "2thess_2_2",
+      "type": "multiple_choice",
+      "question": "Where does the man of lawlessness take his seat?",
+      "options": [
+        "On a mountaintop",
+        "In the city of Rome",
+        "On a high throne of gold",
+        "In the temple of God"
+      ],
+      "correct": "In the temple of God",
+      "verse_ref": "2 Thessalonians 2:4",
+      "feedback": "He takes his seat in the temple of God, proclaiming himself to be God."
+    },
+    {
+      "id": "2thess_2_3",
+      "type": "true_false",
+      "question": "Paul says the mystery of lawlessness is already at work.",
+      "correct": true,
+      "verse_ref": "2 Thessalonians 2:7",
+      "feedback": "The mystery of lawlessness is already at work, though restrained for now."
+    },
+    {
+      "id": "2thess_2_4",
+      "type": "fill_in_the_blank",
+      "question": "God sends a strong _____ so that those who refused the truth will believe what is false.",
+      "correct": "delusion",
+      "accept": ["error"],
+      "verse_ref": "2 Thessalonians 2:11",
+      "feedback": "God sends them a strong delusion so they believe what is false."
+    },
+    {
+      "id": "2thess_2_5",
+      "type": "fill_in_the_blank",
+      "question": "Paul tells the Thessalonians to stand firm and hold to the _____ they were taught.",
+      "correct": "traditions",
+      "accept": ["instructions", "deliverances"],
+      "verse_ref": "2 Thessalonians 2:15",
+      "feedback": "Stand firm and hold to the traditions taught by Paul."
+    }
+  ]
+}

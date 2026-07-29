@@ -1,0 +1,53 @@
+{
+  "book": "Jeremiah",
+  "chapter": 52,
+  "questions": [
+    {
+      "id": "jeremiah-52-q1",
+      "type": "multiple_choice",
+      "question": "What event does Jeremiah 52 describe in detail?",
+      "options": [
+        "The return of the exiles to the land",
+        "The rebuilding of the temple after exile",
+        "The reign of the last king of Judah",
+        "The fall of Jerusalem and the exile to Babylon"
+      ],
+      "answer": "The fall of Jerusalem and the exile to Babylon",
+      "verse_reference": "Jeremiah 52:4-15"
+    },
+    {
+      "id": "jeremiah-52-q2",
+      "type": "multiple_choice",
+      "question": "What happened to Zedekiah in chapter 52?",
+      "options": [
+        "He fell in the heat of battle defending the whole city",
+        "He was captured, his sons killed, and he was blinded",
+        "He was freely pardoned and kept on upon his royal throne",
+        "He escaped away to Egypt and lived out his days in exile"
+      ],
+      "answer": "He was captured, his sons killed, and he was blinded",
+      "verse_reference": "Jeremiah 52:9-11"
+    },
+    {
+      "id": "jeremiah-52-q3",
+      "type": "true_false",
+      "question": "The book ends with King Jehoiachin released from prison and given a seat of honor in Babylon.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 52:31-32"
+    },
+    {
+      "id": "jeremiah-52-q4",
+      "type": "fill_blank",
+      "question": "Nebuzaradan burned the house of the LORD and the king's house and all the houses of _____.",
+      "answer": "Jerusalem",
+      "verse_reference": "Jeremiah 52:13"
+    },
+    {
+      "id": "jeremiah-52-q5",
+      "type": "fill_blank",
+      "question": "Evil-merodach king of Babylon graciously freed Jehoiachin from _____.",
+      "answer": "prison",
+      "verse_reference": "Jeremiah 52:31"
+    }
+  ]
+}

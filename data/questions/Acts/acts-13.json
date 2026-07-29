@@ -1,0 +1,56 @@
+{
+  "book": "Acts",
+  "chapter": 13,
+  "questions": [
+    {
+      "id": "acts-13-q1",
+      "type": "multiple_choice",
+      "question": "Who were the two people the Holy Spirit said to set apart for missionary work?",
+      "options": [
+        "Barnabas and Saul",
+        "Peter and John",
+        "James and Andrew",
+        "Philip and Stephen"
+      ],
+      "answer": "Barnabas and Saul",
+      "verse_reference": "Acts 13:2"
+    },
+    {
+      "id": "acts-13-q2",
+      "type": "multiple_choice",
+      "question": "What happened to the sorcerer Bar-Jesus when he tried to oppose Paul's teaching?",
+      "options": [
+        "He was struck wholly deaf",
+        "He was struck blind",
+        "He fell down dead",
+        "He fled"
+      ],
+      "answer": "He was struck blind",
+      "verse_reference": "Acts 13:11"
+    },
+    {
+      "id": "acts-13-q3",
+      "type": "true_false",
+      "question": "In Antioch of Pisidia, the Gentiles were glad to hear Paul's message and many believed.",
+      "answer": "true",
+      "verse_reference": "Acts 13:48"
+    },
+    {
+      "id": "acts-13-q4",
+      "type": "fill_blank",
+      "question": "Through this man is proclaimed to you _____ of sins.",
+      "answer": "forgiveness",
+      "accept": [
+        "remission"
+      ],
+      "verse_reference": "Acts 13:38"
+    },
+    {
+      "id": "acts-13-q5",
+      "type": "fill_blank",
+      "question": "God raised up _____ to be their king, a man after God's own heart.",
+      "answer": "David",
+      "verse_reference": "Acts 13:22"
+    }
+  ]
+}

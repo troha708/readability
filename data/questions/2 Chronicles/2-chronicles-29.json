@@ -1,0 +1,56 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 29,
+  "questions": [
+    {
+      "id": "2-chronicles-29-q1",
+      "type": "multiple_choice",
+      "question": "What was Hezekiah's first major act as king?",
+      "options": [
+        "Reopening and cleansing the LORD's temple",
+        "Raising heavy taxes across the kingdom",
+        "Building a new palace of cedar wood",
+        "Marching out to war against Assyria"
+      ],
+      "answer": "Reopening and cleansing the LORD's temple",
+      "verse_reference": "2 Chronicles 29:3"
+    },
+    {
+      "id": "2-chronicles-29-q2",
+      "type": "multiple_choice",
+      "question": "Whom did Hezekiah command to consecrate themselves and cleanse the temple?",
+      "options": [
+        "The princes of Judah",
+        "The temple guards",
+        "The judges and the elders",
+        "The priests and Levites"
+      ],
+      "answer": "The priests and Levites",
+      "verse_reference": "2 Chronicles 29:4-5"
+    },
+    {
+      "id": "2-chronicles-29-q3",
+      "type": "true_false",
+      "question": "Hezekiah restored the worship and singing in the house of the LORD with gladness.",
+      "answer": "true",
+      "verse_reference": "2 Chronicles 29:30, 36"
+    },
+    {
+      "id": "2-chronicles-29-q4",
+      "type": "fill_blank",
+      "question": "Hezekiah said their fathers had been unfaithful and turned their _____ from the LORD's dwelling.",
+      "answer": "faces",
+      "verse_reference": "2 Chronicles 29:6"
+    },
+    {
+      "id": "2-chronicles-29-q5",
+      "type": "fill_blank",
+      "question": "The service of the house of the LORD was restored, because everything had been accomplished so _____.",
+      "answer": "quickly",
+      "accept": [
+        "suddenly"
+      ],
+      "verse_reference": "2 Chronicles 29:36"
+    }
+  ]
+}

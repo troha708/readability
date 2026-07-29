@@ -1,0 +1,60 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 19,
+  "questions": [
+    {
+      "id": "2-chronicles-19-q1",
+      "type": "multiple_choice",
+      "question": "Who rebuked Jehoshaphat for helping the wicked Ahab?",
+      "options": [
+        "Micaiah son of Imlah",
+        "Hanani the prophet of Asa",
+        "Jehu son of Hanani the seer",
+        "Elijah the Tishbite"
+      ],
+      "answer": "Jehu son of Hanani the seer",
+      "verse_reference": "2 Chronicles 19:2"
+    },
+    {
+      "id": "2-chronicles-19-q2",
+      "type": "multiple_choice",
+      "question": "What did Jehoshaphat appoint throughout the land?",
+      "options": [
+        "Priests only",
+        "Soldiers",
+        "Tax collectors",
+        "Judges"
+      ],
+      "answer": "Judges",
+      "verse_reference": "2 Chronicles 19:5"
+    },
+    {
+      "id": "2-chronicles-19-q3",
+      "type": "true_false",
+      "question": "Jehoshaphat told the judges they judged not for man but for the LORD.",
+      "answer": "true",
+      "verse_reference": "2 Chronicles 19:6"
+    },
+    {
+      "id": "2-chronicles-19-q4",
+      "type": "fill_blank",
+      "question": "Jehoshaphat told the judges that with the LORD there is no injustice or partiality or _____.",
+      "answer": "bribery",
+      "accept": [
+        "bribes",
+        "gifts",
+        "bribe",
+        "reward",
+        "presents"
+      ],
+      "verse_reference": "2 Chronicles 19:7"
+    },
+    {
+      "id": "2-chronicles-19-q5",
+      "type": "fill_blank",
+      "question": "Jehoshaphat went out again among the people and brought them back to the LORD, the God of their _____.",
+      "answer": "fathers",
+      "verse_reference": "2 Chronicles 19:4"
+    }
+  ]
+}

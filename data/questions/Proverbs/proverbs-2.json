@@ -1,0 +1,56 @@
+{
+  "book": "Proverbs",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "proverbs-2-q1",
+      "type": "multiple_choice",
+      "question": "How does Proverbs 2 say wisdom should be sought?",
+      "options": [
+        "Casually, as time allows",
+        "Like silver and hidden treasures",
+        "Quickly and without much effort",
+        "By chance, when it happens to come"
+      ],
+      "answer": "Like silver and hidden treasures",
+      "verse_reference": "Proverbs 2:4"
+    },
+    {
+      "id": "proverbs-2-q2",
+      "type": "multiple_choice",
+      "question": "Who gives wisdom, according to Proverbs 2?",
+      "options": [
+        "Teachers",
+        "The LORD",
+        "Kings",
+        "Elders"
+      ],
+      "answer": "The LORD",
+      "verse_reference": "Proverbs 2:6"
+    },
+    {
+      "id": "proverbs-2-q3",
+      "type": "true_false",
+      "question": "Proverbs 2 says wisdom will deliver you from the way of evil and from the forbidden woman.",
+      "answer": "true",
+      "verse_reference": "Proverbs 2:12-16"
+    },
+    {
+      "id": "proverbs-2-q4",
+      "type": "fill_blank",
+      "question": "For the LORD gives wisdom; from his mouth come knowledge and _____.",
+      "answer": "understanding",
+      "verse_reference": "Proverbs 2:6"
+    },
+    {
+      "id": "proverbs-2-q5",
+      "type": "fill_blank",
+      "question": "Then you will understand righteousness and justice and _____.",
+      "answer": "equity",
+      "accept": [
+        "uprightness"
+      ],
+      "verse_reference": "Proverbs 2:9"
+    }
+  ]
+}

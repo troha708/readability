@@ -1,0 +1,56 @@
+{
+  "book": "Genesis",
+  "chapter": 9,
+  "questions": [
+    {
+      "id": "genesis-9-q1",
+      "type": "multiple_choice",
+      "question": "What did God set in the clouds as the sign of his covenant?",
+      "options": [
+        "A star",
+        "A pillar of cloud",
+        "A dove",
+        "A rainbow"
+      ],
+      "answer": "A rainbow",
+      "verse_reference": "Genesis 9:13"
+    },
+    {
+      "id": "genesis-9-q2",
+      "type": "multiple_choice",
+      "question": "What did Noah plant after the flood?",
+      "options": [
+        "A wheat field",
+        "An olive grove",
+        "A garden of herbs",
+        "A vineyard"
+      ],
+      "answer": "A vineyard",
+      "verse_reference": "Genesis 9:20"
+    },
+    {
+      "id": "genesis-9-q3",
+      "type": "true_false",
+      "question": "After the flood, God permitted humans to eat meat for the first time.",
+      "answer": "true",
+      "verse_reference": "Genesis 9:3"
+    },
+    {
+      "id": "genesis-9-q4",
+      "type": "fill_blank",
+      "question": "God promised never again to destroy all life with a _____.",
+      "answer": "flood",
+      "accept": [
+        "deluge"
+      ],
+      "verse_reference": "Genesis 9:11"
+    },
+    {
+      "id": "genesis-9-q5",
+      "type": "fill_blank",
+      "question": "Because of Ham's offense, Noah pronounced a curse on _____, Ham's son.",
+      "answer": "Canaan",
+      "verse_reference": "Genesis 9:25"
+    }
+  ]
+}

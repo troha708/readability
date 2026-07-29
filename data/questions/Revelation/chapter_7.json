@@ -1,0 +1,59 @@
+{
+  "book": "Revelation",
+  "chapter": 7,
+  "questions": [
+    {
+      "id": "rev_7_1",
+      "type": "multiple_choice",
+      "question": "How many from the tribes of Israel were sealed?",
+      "options": [
+        "144,000",
+        "12,000 men",
+        "1,000",
+        "70,000"
+      ],
+      "correct": "144,000",
+      "verse_ref": "Revelation 7:4",
+      "feedback": "144,000 from all the tribes of Israel were sealed."
+    },
+    {
+      "id": "rev_7_2",
+      "type": "multiple_choice",
+      "question": "The great multitude that no one could count was wearing what?",
+      "options": [
+        "Armor",
+        "White robes",
+        "Purple robes",
+        "Sackcloth"
+      ],
+      "correct": "White robes",
+      "verse_ref": "Revelation 7:9",
+      "feedback": "A great multitude stood before the throne wearing white robes."
+    },
+    {
+      "id": "rev_7_3",
+      "type": "true_false",
+      "question": "The great multitude came out of the great tribulation.",
+      "correct": true,
+      "verse_ref": "Revelation 7:14",
+      "feedback": "These are they who have come out of the great tribulation."
+    },
+    {
+      "id": "rev_7_4",
+      "type": "fill_in_the_blank",
+      "question": "God will wipe away every _____ from their eyes.",
+      "correct": "tear",
+      "accept": ["tears"],
+      "verse_ref": "Revelation 7:17",
+      "feedback": "God will wipe away every tear from their eyes."
+    },
+    {
+      "id": "rev_7_5",
+      "type": "fill_in_the_blank",
+      "question": "They have washed their robes and made them white in the _____ of the Lamb.",
+      "correct": "blood",
+      "verse_ref": "Revelation 7:14",
+      "feedback": "They washed their robes white in the blood of the Lamb."
+    }
+  ]
+}

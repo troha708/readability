@@ -1,0 +1,53 @@
+{
+  "book": "John",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "john-4-q1",
+      "type": "multiple_choice",
+      "question": "At whose well did Jesus meet the Samaritan woman?",
+      "options": [
+        "David's well",
+        "Moses' well",
+        "Abraham's well",
+        "Jacob's well"
+      ],
+      "answer": "Jacob's well",
+      "verse_reference": "John 4:6"
+    },
+    {
+      "id": "john-4-q2",
+      "type": "multiple_choice",
+      "question": "What did Jesus say he could give the woman that would become a spring of water welling up to eternal life?",
+      "options": [
+        "New wine",
+        "Bread of life",
+        "Living water",
+        "Holy Spirit"
+      ],
+      "answer": "Living water",
+      "verse_reference": "John 4:10,14"
+    },
+    {
+      "id": "john-4-q3",
+      "type": "true_false",
+      "question": "The Samaritan woman had been married three times.",
+      "answer": "false",
+      "verse_reference": "John 4:18"
+    },
+    {
+      "id": "john-4-q4",
+      "type": "fill_blank",
+      "question": "God is _____, and those who worship him must worship in spirit and truth.",
+      "answer": "spirit",
+      "verse_reference": "John 4:24"
+    },
+    {
+      "id": "john-4-q5",
+      "type": "fill_blank",
+      "question": "Jesus said to them, 'My food is to do the _____ of him who sent me and to accomplish his work.'",
+      "answer": "will",
+      "verse_reference": "John 4:34"
+    }
+  ]
+}

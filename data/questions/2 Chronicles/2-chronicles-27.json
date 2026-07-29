@@ -1,0 +1,57 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 27,
+  "questions": [
+    {
+      "id": "2-chronicles-27-q1",
+      "type": "multiple_choice",
+      "question": "How is King Jotham described?",
+      "options": [
+        "He became mighty because he ordered his ways before the LORD",
+        "He was lazy and left the whole of the kingdom to fall to ruin",
+        "He was wicked and led all of Judah into terrible sin",
+        "He was defeated and lost a great deal of his land"
+      ],
+      "answer": "He became mighty because he ordered his ways before the LORD",
+      "verse_reference": "2 Chronicles 27:6"
+    },
+    {
+      "id": "2-chronicles-27-q2",
+      "type": "multiple_choice",
+      "question": "Whom did Jotham fight and prevail over?",
+      "options": [
+        "The Edomites",
+        "The Ammonites",
+        "The Philistines",
+        "The Syrians"
+      ],
+      "answer": "The Ammonites",
+      "verse_reference": "2 Chronicles 27:5"
+    },
+    {
+      "id": "2-chronicles-27-q3",
+      "type": "true_false",
+      "question": "Jotham did what was right, though the people still followed corrupt practices.",
+      "answer": "true",
+      "verse_reference": "2 Chronicles 27:2"
+    },
+    {
+      "id": "2-chronicles-27-q4",
+      "type": "fill_blank",
+      "question": "Jotham built the upper gate of the house of the _____.",
+      "answer": "LORD",
+      "accept": [
+        "Jehovah",
+        "Yahweh"
+      ],
+      "verse_reference": "2 Chronicles 27:3"
+    },
+    {
+      "id": "2-chronicles-27-q5",
+      "type": "fill_blank",
+      "question": "Jotham did not enter the temple of the LORD, unlike his father _____.",
+      "answer": "Uzziah",
+      "verse_reference": "2 Chronicles 27:2"
+    }
+  ]
+}

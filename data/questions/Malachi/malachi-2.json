@@ -1,0 +1,62 @@
+{
+  "book": "Malachi",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "malachi-2-q1",
+      "type": "multiple_choice",
+      "question": "Whom does Malachi 2 especially rebuke for corrupting the covenant?",
+      "options": [
+        "The kings, who had led all of the people into a great and costly war",
+        "The priests, who had turned aside and caused many to stumble",
+        "The merchants, who had cheated everyone with their false scales",
+        "The prophets, who had spoken only their own dreams to the people"
+      ],
+      "answer": "The priests, who had turned aside and caused many to stumble",
+      "verse_reference": "Malachi 2:7-8"
+    },
+    {
+      "id": "malachi-2-q2",
+      "type": "multiple_choice",
+      "question": "What does Malachi 2 say God hates regarding marriage?",
+      "options": [
+        "Breaking and profaning the holy rest of the Sabbath day",
+        "Idolatry committed openly on the high places of the hills",
+        "Divorce (faithlessness against the wife of one's youth)",
+        "Robbery of the silver and gold of the temple treasury"
+      ],
+      "answer": "Divorce (faithlessness against the wife of one's youth)",
+      "verse_reference": "Malachi 2:16"
+    },
+    {
+      "id": "malachi-2-q3",
+      "type": "true_false",
+      "question": "Malachi 2 says the lips of a priest should guard knowledge, and people should seek instruction from him.",
+      "answer": "true",
+      "verse_reference": "Malachi 2:7"
+    },
+    {
+      "id": "malachi-2-q4",
+      "type": "fill_blank",
+      "question": "'For I hate _____,' says the LORD, the God of Israel.",
+      "answer": "divorce",
+      "accept": [
+        "putting away",
+        "sending away"
+      ],
+      "verse_reference": "Malachi 2:16"
+    },
+    {
+      "id": "malachi-2-q5",
+      "type": "fill_blank",
+      "question": "Do we not all have one Father? Did not one God _____ us?",
+      "answer": "create",
+      "accept": [
+        "created",
+        "made",
+        "prepared"
+      ],
+      "verse_reference": "Malachi 2:10"
+    }
+  ]
+}

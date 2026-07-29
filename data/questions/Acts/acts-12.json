@@ -1,0 +1,56 @@
+{
+  "book": "Acts",
+  "chapter": 12,
+  "questions": [
+    {
+      "id": "acts-12-q1",
+      "type": "multiple_choice",
+      "question": "Which apostle did King Herod kill with a sword?",
+      "options": [
+        "Peter",
+        "James",
+        "Andrew",
+        "John"
+      ],
+      "answer": "James",
+      "verse_reference": "Acts 12:2"
+    },
+    {
+      "id": "acts-12-q2",
+      "type": "multiple_choice",
+      "question": "Who came to the door when Peter knocked after escaping prison, but was too overjoyed to open it?",
+      "options": [
+        "Mary",
+        "Lydia",
+        "Martha",
+        "Rhoda"
+      ],
+      "answer": "Rhoda",
+      "verse_reference": "Acts 12:13-14"
+    },
+    {
+      "id": "acts-12-q3",
+      "type": "true_false",
+      "question": "Peter was rescued from prison by an earthquake that opened the doors.",
+      "answer": "false",
+      "verse_reference": "Acts 12:7-10"
+    },
+    {
+      "id": "acts-12-q4",
+      "type": "fill_blank",
+      "question": "An _____ of the Lord struck Herod because he didn't give God the glory, and he was eaten by worms and died.",
+      "answer": "angel",
+      "accept": [
+        "messenger"
+      ],
+      "verse_reference": "Acts 12:23"
+    },
+    {
+      "id": "acts-12-q5",
+      "type": "fill_blank",
+      "question": "Peter was sleeping between two _____, bound with two chains, when the angel appeared.",
+      "answer": "soldiers",
+      "verse_reference": "Acts 12:6"
+    }
+  ]
+}

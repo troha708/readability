@@ -1,0 +1,53 @@
+{
+  "book": "2 Samuel",
+  "chapter": 19,
+  "questions": [
+    {
+      "id": "2-samuel-19-q1",
+      "type": "multiple_choice",
+      "question": "Who rebuked David for mourning Absalom so much that he shamed his soldiers?",
+      "options": [
+        "Shimei",
+        "Abishai",
+        "Joab",
+        "Nathan"
+      ],
+      "answer": "Joab",
+      "verse_reference": "2 Samuel 19:5-7"
+    },
+    {
+      "id": "2-samuel-19-q2",
+      "type": "multiple_choice",
+      "question": "What did David do upon returning to Jerusalem?",
+      "options": [
+        "Fled again across the Jordan River",
+        "Pardoned Shimei and restored order",
+        "Punished everyone who had stayed home",
+        "Resigned the throne to his son"
+      ],
+      "answer": "Pardoned Shimei and restored order",
+      "verse_reference": "2 Samuel 19:16-23"
+    },
+    {
+      "id": "2-samuel-19-q3",
+      "type": "true_false",
+      "question": "The tribes argued over who should bring the king back.",
+      "answer": "true",
+      "verse_reference": "2 Samuel 19:41-43"
+    },
+    {
+      "id": "2-samuel-19-q4",
+      "type": "fill_blank",
+      "question": "_____ warned David that his mourning was discouraging his loyal troops.",
+      "answer": "Joab",
+      "verse_reference": "2 Samuel 19:5-7"
+    },
+    {
+      "id": "2-samuel-19-q5",
+      "type": "fill_blank",
+      "question": "David pardoned _____, who had cursed him, when he returned.",
+      "answer": "Shimei",
+      "verse_reference": "2 Samuel 19:16-23"
+    }
+  ]
+}

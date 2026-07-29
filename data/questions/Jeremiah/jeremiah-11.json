@@ -1,0 +1,53 @@
+{
+  "book": "Jeremiah",
+  "chapter": 11,
+  "questions": [
+    {
+      "id": "jeremiah-11-q1",
+      "type": "multiple_choice",
+      "question": "What does God remind the people of in Jeremiah 11?",
+      "options": [
+        "The great temple that he commanded Solomon the king to build for him there",
+        "The covenant he made with their fathers when he brought them out of Egypt",
+        "The everlasting promise of land that he first made to Abraham of old",
+        "The royal throne that he established forever for the house of David"
+      ],
+      "answer": "The covenant he made with their fathers when he brought them out of Egypt",
+      "verse_reference": "Jeremiah 11:3-4"
+    },
+    {
+      "id": "jeremiah-11-q2",
+      "type": "multiple_choice",
+      "question": "What did the men of Anathoth plot in Jeremiah 11?",
+      "options": [
+        "To bribe Jeremiah into silence",
+        "To drive the prophet out of the land",
+        "To make Jeremiah their king instead",
+        "To kill Jeremiah and stop his prophesying"
+      ],
+      "answer": "To kill Jeremiah and stop his prophesying",
+      "verse_reference": "Jeremiah 11:21"
+    },
+    {
+      "id": "jeremiah-11-q3",
+      "type": "true_false",
+      "question": "Jeremiah compared himself to a gentle lamb led to the slaughter, unaware of the plots against him.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 11:19"
+    },
+    {
+      "id": "jeremiah-11-q4",
+      "type": "fill_blank",
+      "question": "Cursed be the man who does not hear the words of this _____.",
+      "answer": "covenant",
+      "verse_reference": "Jeremiah 11:3"
+    },
+    {
+      "id": "jeremiah-11-q5",
+      "type": "fill_blank",
+      "question": "I was like a gentle _____ led to the slaughter.",
+      "answer": "lamb",
+      "verse_reference": "Jeremiah 11:19"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "book": "Psalms",
+  "chapter": 101,
+  "questions": [
+    {
+      "id": "psalms-101-q1",
+      "type": "multiple_choice",
+      "question": "What does David resolve in Psalm 101?",
+      "options": [
+        "To build a great house for the name of the LORD",
+        "To drive out all his foes from the land",
+        "To walk with integrity of heart in his house",
+        "To gather great riches for his royal line"
+      ],
+      "answer": "To walk with integrity of heart in his house",
+      "verse_reference": "Psalm 101:2"
+    },
+    {
+      "id": "psalms-101-q2",
+      "type": "multiple_choice",
+      "question": "What kind of person will David not endure?",
+      "options": [
+        "One who slanders his neighbor secretly and has a proud heart",
+        "One who reverently fears the LORD and keeps all his commandments",
+        "One who is wise in his counsel and faithful in all his service",
+        "One who is poor and humble and walks always in his integrity"
+      ],
+      "answer": "One who slanders his neighbor secretly and has a proud heart",
+      "verse_reference": "Psalm 101:5"
+    },
+    {
+      "id": "psalms-101-q3",
+      "type": "true_false",
+      "question": "David says he will look with favor on the faithful in the land, that they may dwell with him.",
+      "answer": "true",
+      "verse_reference": "Psalm 101:6"
+    },
+    {
+      "id": "psalms-101-q4",
+      "type": "fill_blank",
+      "question": "I will sing of steadfast love and _____; to you, O LORD, I will make music.",
+      "answer": "justice",
+      "accept": [
+        "judgment"
+      ],
+      "verse_reference": "Psalm 101:1"
+    },
+    {
+      "id": "psalms-101-q5",
+      "type": "fill_blank",
+      "question": "I will set no worthless thing before my _____.",
+      "answer": "eyes",
+      "verse_reference": "Psalm 101:3"
+    }
+  ]
+}

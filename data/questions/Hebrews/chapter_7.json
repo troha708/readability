@@ -1,0 +1,59 @@
+{
+  "book": "Hebrews",
+  "chapter": 7,
+  "questions": [
+    {
+      "id": "heb_7_1",
+      "type": "multiple_choice",
+      "question": "Who is Melchizedek described as in this chapter?",
+      "options": [
+        "A great prophet sent to the people of Israel",
+        "A righteous judge over all the surrounding nations",
+        "The angel of the LORD who appeared to Abraham",
+        "King of Salem and priest of God Most High"
+      ],
+      "correct": "King of Salem and priest of God Most High",
+      "verse_ref": "Hebrews 7:1",
+      "feedback": "Melchizedek was king of Salem and priest of God Most High."
+    },
+    {
+      "id": "heb_7_2",
+      "type": "multiple_choice",
+      "question": "The author argues that the priesthood changed from Levitical to what order?",
+      "options": [
+        "The order of Melchizedek",
+        "The order of Aaron",
+        "The order of Moses",
+        "The order of father Abraham"
+      ],
+      "correct": "The order of Melchizedek",
+      "verse_ref": "Hebrews 7:11",
+      "feedback": "A change from the Levitical priesthood to the order of Melchizedek was necessary."
+    },
+    {
+      "id": "heb_7_3",
+      "type": "true_false",
+      "question": "Abraham gave a tenth of everything to Melchizedek.",
+      "correct": true,
+      "verse_ref": "Hebrews 7:2",
+      "feedback": "Abraham gave Melchizedek a tenth of everything."
+    },
+    {
+      "id": "heb_7_4",
+      "type": "fill_in_the_blank",
+      "question": "Jesus holds his priesthood permanently because he continues _____.",
+      "correct": "forever",
+      "accept": ["ever"],
+      "verse_ref": "Hebrews 7:24",
+      "feedback": "Jesus holds his priesthood permanently because he continues forever."
+    },
+    {
+      "id": "heb_7_5",
+      "type": "fill_in_the_blank",
+      "question": "Jesus is able to save completely those who come to God through him because he always lives to _____ for them.",
+      "correct": "intercede",
+      "verse_ref": "Hebrews 7:25",
+      "feedback": "Jesus always lives to intercede for those who come to God through him."
+    }
+  ]
+}

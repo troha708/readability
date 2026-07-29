@@ -1,0 +1,56 @@
+{
+  "book": "Numbers",
+  "chapter": 32,
+  "questions": [
+    {
+      "id": "numbers-32-q1",
+      "type": "multiple_choice",
+      "question": "Which tribes asked to settle east of the Jordan?",
+      "options": [
+        "Reuben and Gad (and half of Manasseh)",
+        "Dan and Asher (and half of Naphtali)",
+        "Ephraim and Benjamin (and half of Dan)",
+        "Judah and Levi (and half of Simeon)"
+      ],
+      "answer": "Reuben and Gad (and half of Manasseh)",
+      "verse_reference": "Numbers 32:1-5"
+    },
+    {
+      "id": "numbers-32-q2",
+      "type": "multiple_choice",
+      "question": "What condition did Moses set for them to keep that land?",
+      "options": [
+        "Their fighting men must first help conquer Canaan",
+        "They must pay a yearly tax to the priests",
+        "They must build a great city for the tribe of Levi",
+        "They must send their firstborn to serve God"
+      ],
+      "answer": "Their fighting men must first help conquer Canaan",
+      "verse_reference": "Numbers 32:20-22"
+    },
+    {
+      "id": "numbers-32-q3",
+      "type": "true_false",
+      "question": "Reuben and Gad wanted the land because it was good for their large herds.",
+      "answer": "true",
+      "verse_reference": "Numbers 32:1-4"
+    },
+    {
+      "id": "numbers-32-q4",
+      "type": "fill_blank",
+      "question": "The tribes of Reuben and _____ had very large herds and wanted the land east of the Jordan.",
+      "answer": "Gad",
+      "accept": [
+        "Gadites"
+      ],
+      "verse_reference": "Numbers 32:1-2"
+    },
+    {
+      "id": "numbers-32-q5",
+      "type": "fill_blank",
+      "question": "Moses warned, \"Be sure your _____ will find you out,\" if they failed to keep their word.",
+      "answer": "sin",
+      "verse_reference": "Numbers 32:23"
+    }
+  ]
+}

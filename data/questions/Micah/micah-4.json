@@ -1,0 +1,57 @@
+{
+  "book": "Micah",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "micah-4-q1",
+      "type": "multiple_choice",
+      "question": "What does Micah 4 say about the mountain of the LORD's house?",
+      "options": [
+        "It shall be utterly torn down and left in ruins forever and ever more",
+        "It shall be wholly forgotten by all of the nations of the earth",
+        "It shall be established as the highest, and peoples shall flow to it",
+        "It shall be hidden far away from the searching eyes of the proud"
+      ],
+      "answer": "It shall be established as the highest, and peoples shall flow to it",
+      "verse_reference": "Micah 4:1"
+    },
+    {
+      "id": "micah-4-q2",
+      "type": "multiple_choice",
+      "question": "What image of peace does Micah 4 share (like Isaiah 2)?",
+      "options": [
+        "Building up very high walls and great gates made all of bronze",
+        "Forging the plowshares back into sharp swords for the coming war",
+        "Beating swords into plowshares and spears into pruning hooks",
+        "Raising up great and mighty armies among all of the nations"
+      ],
+      "answer": "Beating swords into plowshares and spears into pruning hooks",
+      "verse_reference": "Micah 4:3"
+    },
+    {
+      "id": "micah-4-q3",
+      "type": "true_false",
+      "question": "Micah 4 says each one shall sit under his vine and fig tree, and none shall make them afraid.",
+      "answer": "true",
+      "verse_reference": "Micah 4:4"
+    },
+    {
+      "id": "micah-4-q4",
+      "type": "fill_blank",
+      "question": "They shall beat their swords into _____, and their spears into pruning hooks.",
+      "answer": "plowshares",
+      "accept": [
+        "ploughshares",
+        "mattocks"
+      ],
+      "verse_reference": "Micah 4:3"
+    },
+    {
+      "id": "micah-4-q5",
+      "type": "fill_blank",
+      "question": "They shall sit every man under his vine and under his fig _____.",
+      "answer": "tree",
+      "verse_reference": "Micah 4:4"
+    }
+  ]
+}

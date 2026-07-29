@@ -1,0 +1,57 @@
+{
+  "book": "Job",
+  "chapter": 29,
+  "questions": [
+    {
+      "id": "job-29-q1",
+      "type": "multiple_choice",
+      "question": "What did Job remember in chapter 29?",
+      "options": [
+        "The hidden sins of his youth",
+        "The counsel his friends had given",
+        "His former days of blessing and honor",
+        "The days yet to come after death"
+      ],
+      "answer": "His former days of blessing and honor",
+      "verse_reference": "Job 29:2-4"
+    },
+    {
+      "id": "job-29-q2",
+      "type": "multiple_choice",
+      "question": "How did Job describe his former treatment of the needy?",
+      "options": [
+        "He taxed the poor far beyond their slender means",
+        "He oppressed the weak and all the helpless among them",
+        "He ignored all of the needy who sat at his gate",
+        "He delivered the poor, the fatherless, and the widow"
+      ],
+      "answer": "He delivered the poor, the fatherless, and the widow",
+      "verse_reference": "Job 29:12-13"
+    },
+    {
+      "id": "job-29-q3",
+      "type": "true_false",
+      "question": "Job recalled that young men withdrew and the aged rose in respect when he appeared.",
+      "answer": "true",
+      "verse_reference": "Job 29:8"
+    },
+    {
+      "id": "job-29-q4",
+      "type": "fill_blank",
+      "question": "Job said he put on righteousness, and justice was his robe and _____.",
+      "answer": "turban",
+      "accept": [
+        "diadem",
+        "crown"
+      ],
+      "verse_reference": "Job 29:14"
+    },
+    {
+      "id": "job-29-q5",
+      "type": "fill_blank",
+      "question": "Job said he was eyes to the blind and feet to the _____.",
+      "answer": "lame",
+      "verse_reference": "Job 29:15"
+    }
+  ]
+}

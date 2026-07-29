@@ -1,0 +1,53 @@
+{
+  "book": "Numbers",
+  "chapter": 13,
+  "questions": [
+    {
+      "id": "numbers-13-q1",
+      "type": "multiple_choice",
+      "question": "How many spies did Moses send to explore Canaan?",
+      "options": [
+        "Two",
+        "Seventy",
+        "Twelve",
+        "Forty"
+      ],
+      "answer": "Twelve",
+      "verse_reference": "Numbers 13:2-16"
+    },
+    {
+      "id": "numbers-13-q2",
+      "type": "multiple_choice",
+      "question": "What did most of the spies report about the land?",
+      "options": [
+        "It was small and not worth the fight",
+        "It was good but full of giants",
+        "It was barren, with no food or water",
+        "It was empty and free for the taking"
+      ],
+      "answer": "It was good but full of giants",
+      "verse_reference": "Numbers 13:28-33"
+    },
+    {
+      "id": "numbers-13-q3",
+      "type": "true_false",
+      "question": "Caleb urged the people to go up and take the land, trusting God.",
+      "answer": "true",
+      "verse_reference": "Numbers 13:30"
+    },
+    {
+      "id": "numbers-13-q4",
+      "type": "fill_blank",
+      "question": "The spies brought back a single cluster of _____ carried on a pole between two men.",
+      "answer": "grapes",
+      "verse_reference": "Numbers 13:23"
+    },
+    {
+      "id": "numbers-13-q5",
+      "type": "fill_blank",
+      "question": "Ten spies gave a bad report, but Caleb and _____ trusted God.",
+      "answer": "Joshua",
+      "verse_reference": "Numbers 13:8"
+    }
+  ]
+}

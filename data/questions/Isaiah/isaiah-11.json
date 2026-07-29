@@ -1,0 +1,56 @@
+{
+  "book": "Isaiah",
+  "chapter": 11,
+  "questions": [
+    {
+      "id": "isaiah-11-q1",
+      "type": "multiple_choice",
+      "question": "From what will a shoot come forth in Isaiah 11?",
+      "options": [
+        "A cedar of Lebanon",
+        "The Nile",
+        "The stump of Jesse",
+        "Mount Sinai"
+      ],
+      "answer": "The stump of Jesse",
+      "verse_reference": "Isaiah 11:1"
+    },
+    {
+      "id": "isaiah-11-q2",
+      "type": "multiple_choice",
+      "question": "What peaceful image describes the coming kingdom in Isaiah 11?",
+      "options": [
+        "The wolf shall dwell with the lamb, and a little child shall lead them",
+        "The mighty eagle shall soar high above the holy mountains of Zion",
+        "The lion shall devour the helpless lamb, and not one shall be spared",
+        "The frightened deer shall flee away from the hunter through the field"
+      ],
+      "answer": "The wolf shall dwell with the lamb, and a little child shall lead them",
+      "verse_reference": "Isaiah 11:6"
+    },
+    {
+      "id": "isaiah-11-q3",
+      "type": "true_false",
+      "question": "Isaiah 11 says the earth shall be full of the knowledge of the LORD as the waters cover the sea.",
+      "answer": "true",
+      "verse_reference": "Isaiah 11:9"
+    },
+    {
+      "id": "isaiah-11-q4",
+      "type": "fill_blank",
+      "question": "There shall come forth a shoot from the stump of _____.",
+      "answer": "Jesse",
+      "accept": [
+        "Ishai"
+      ],
+      "verse_reference": "Isaiah 11:1"
+    },
+    {
+      "id": "isaiah-11-q5",
+      "type": "fill_blank",
+      "question": "The _____ shall dwell with the lamb, and the leopard shall lie down with the young goat.",
+      "answer": "wolf",
+      "verse_reference": "Isaiah 11:6"
+    }
+  ]
+}

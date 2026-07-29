@@ -1,0 +1,57 @@
+{
+  "book": "Psalms",
+  "chapter": 68,
+  "questions": [
+    {
+      "id": "psalms-68-q1",
+      "type": "multiple_choice",
+      "question": "How does Psalm 68 begin?",
+      "options": [
+        "'Out of the depths I cry to you, O LORD'",
+        "'How lovely is your dwelling place, O LORD of hosts'",
+        "'The LORD is my shepherd; I shall not want'",
+        "'God shall arise, his enemies shall be scattered'"
+      ],
+      "answer": "'God shall arise, his enemies shall be scattered'",
+      "verse_reference": "Psalm 68:1"
+    },
+    {
+      "id": "psalms-68-q2",
+      "type": "multiple_choice",
+      "question": "How is God described as caring for the vulnerable?",
+      "options": [
+        "A shepherd to the whole flock and keeper of the gate",
+        "A teacher to the simple and guide to the lost",
+        "A judge to the nations and ruler of kings",
+        "A father to the fatherless and protector of widows"
+      ],
+      "answer": "A father to the fatherless and protector of widows",
+      "verse_reference": "Psalm 68:5"
+    },
+    {
+      "id": "psalms-68-q3",
+      "type": "true_false",
+      "question": "The psalm says God daily bears us up; he is our salvation.",
+      "answer": "true",
+      "verse_reference": "Psalm 68:19"
+    },
+    {
+      "id": "psalms-68-q4",
+      "type": "fill_blank",
+      "question": "Father of the _____ and protector of widows is God in his holy habitation.",
+      "answer": "fatherless",
+      "verse_reference": "Psalm 68:5"
+    },
+    {
+      "id": "psalms-68-q5",
+      "type": "fill_blank",
+      "question": "Sing to God, sing praises to His name; lift up a song to Him who rides on the _____.",
+      "answer": "clouds",
+      "accept": [
+        "deserts",
+        "heavens"
+      ],
+      "verse_reference": "Psalm 68:4"
+    }
+  ]
+}

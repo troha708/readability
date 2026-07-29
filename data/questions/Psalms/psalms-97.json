@@ -1,0 +1,56 @@
+{
+  "book": "Psalms",
+  "chapter": 97,
+  "questions": [
+    {
+      "id": "psalms-97-q1",
+      "type": "multiple_choice",
+      "question": "How does Psalm 97 begin?",
+      "options": [
+        "How long, O LORD, will you forget me?",
+        "O God, why have you cast us off forever?",
+        "A bitter cry rises up from the land",
+        "The LORD reigns, let the earth rejoice"
+      ],
+      "answer": "The LORD reigns, let the earth rejoice",
+      "verse_reference": "Psalm 97:1"
+    },
+    {
+      "id": "psalms-97-q2",
+      "type": "multiple_choice",
+      "question": "What surrounds the LORD in this psalm?",
+      "options": [
+        "Fire and rolling thunder, and wrath and terror are his fearsome weapons",
+        "Light and shining glory, and mercy and grace are the crown upon his head",
+        "Wind and a gentle stillness, and peace and quiet are his place of rest",
+        "Clouds and thick darkness; righteousness and justice are his foundation"
+      ],
+      "answer": "Clouds and thick darkness; righteousness and justice are his foundation",
+      "verse_reference": "Psalm 97:2"
+    },
+    {
+      "id": "psalms-97-q3",
+      "type": "true_false",
+      "question": "The psalm urges those who love the LORD to hate evil.",
+      "answer": "true",
+      "verse_reference": "Psalm 97:10"
+    },
+    {
+      "id": "psalms-97-q4",
+      "type": "fill_blank",
+      "question": "The LORD _____, let the earth rejoice; let the many coastlands be glad!",
+      "answer": "reigns",
+      "accept": [
+        "reigneth"
+      ],
+      "verse_reference": "Psalm 97:1"
+    },
+    {
+      "id": "psalms-97-q5",
+      "type": "fill_blank",
+      "question": "Light is sown for the righteous, and joy for the upright in _____.",
+      "answer": "heart",
+      "verse_reference": "Psalm 97:11"
+    }
+  ]
+}

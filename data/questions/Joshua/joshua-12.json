@@ -1,0 +1,57 @@
+{
+  "book": "Joshua",
+  "chapter": 12,
+  "questions": [
+    {
+      "id": "joshua-12-q1",
+      "type": "multiple_choice",
+      "question": "What does chapter 12 record?",
+      "options": [
+        "A record of the priestly families",
+        "A song of victory after the conquest",
+        "A list of the kings Israel defeated",
+        "A census of the fighting men"
+      ],
+      "answer": "A list of the kings Israel defeated",
+      "verse_reference": "Joshua 12:1-7"
+    },
+    {
+      "id": "joshua-12-q2",
+      "type": "multiple_choice",
+      "question": "How many kings west of the Jordan did Joshua defeat, according to the summary?",
+      "options": [
+        "Twenty-one",
+        "Twelve",
+        "Forty",
+        "Thirty-one"
+      ],
+      "answer": "Thirty-one",
+      "verse_reference": "Joshua 12:24"
+    },
+    {
+      "id": "joshua-12-q3",
+      "type": "true_false",
+      "question": "The chapter summarizes victories on both sides of the Jordan.",
+      "answer": "true",
+      "verse_reference": "Joshua 12:1-7"
+    },
+    {
+      "id": "joshua-12-q4",
+      "type": "fill_blank",
+      "question": "In all, _____ kings were defeated west of the Jordan.",
+      "answer": "thirty-one",
+      "accept": [
+        "31",
+        "thirty and one"
+      ],
+      "verse_reference": "Joshua 12:24"
+    },
+    {
+      "id": "joshua-12-q5",
+      "type": "fill_blank",
+      "question": "Moses had defeated Sihon and Og on the east side of the _____.",
+      "answer": "Jordan",
+      "verse_reference": "Joshua 12:1"
+    }
+  ]
+}

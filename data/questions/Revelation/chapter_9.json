@@ -1,0 +1,58 @@
+{
+  "book": "Revelation",
+  "chapter": 9,
+  "questions": [
+    {
+      "id": "rev_9_1",
+      "type": "multiple_choice",
+      "question": "The locusts from the abyss were told not to harm what?",
+      "options": [
+        "The grass or any plant or tree, only people without God's seal",
+        "The beasts and the birds of the wide air, only the creeping things",
+        "The seas and the rivers and springs, only the dry land itself",
+        "The sun and the moon above, only the bright stars of heaven"
+      ],
+      "correct": "The grass or any plant or tree, only people without God's seal",
+      "verse_ref": "Revelation 9:4",
+      "feedback": "The locusts could only harm people who did not have the seal of God."
+    },
+    {
+      "id": "rev_9_2",
+      "type": "multiple_choice",
+      "question": "The king over the locusts from the abyss is named Abaddon in Hebrew. What is his Greek name?",
+      "options": [
+        "Legion",
+        "Lucifer",
+        "Beelzebub",
+        "Apollyon"
+      ],
+      "correct": "Apollyon",
+      "verse_ref": "Revelation 9:11",
+      "feedback": "The king of the abyss is Abaddon in Hebrew, Apollyon in Greek — meaning Destroyer."
+    },
+    {
+      "id": "rev_9_3",
+      "type": "true_false",
+      "question": "The rest of mankind who survived these plagues repented of their sins.",
+      "correct": false,
+      "verse_ref": "Revelation 9:20-21",
+      "feedback": "The rest of mankind still did not repent of their idolatry, murders, or sorcery."
+    },
+    {
+      "id": "rev_9_4",
+      "type": "fill_in_the_blank",
+      "question": "The locusts were given power like the power of _____ of the earth.",
+      "correct": "scorpions",
+      "verse_ref": "Revelation 9:3",
+      "feedback": "The locusts were given power like scorpions of the earth."
+    },
+    {
+      "id": "rev_9_5",
+      "type": "fill_in_the_blank",
+      "question": "The four angels bound at the great river _____ were released to kill a third of mankind.",
+      "correct": "Euphrates",
+      "verse_ref": "Revelation 9:14",
+      "feedback": "The four angels at the Euphrates were released."
+    }
+  ]
+}

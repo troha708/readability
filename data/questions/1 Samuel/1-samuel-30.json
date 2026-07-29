@@ -1,0 +1,53 @@
+{
+  "book": "1 Samuel",
+  "chapter": 30,
+  "questions": [
+    {
+      "id": "1-samuel-30-q1",
+      "type": "multiple_choice",
+      "question": "What happened to Ziklag while David was away?",
+      "options": [
+        "A great fire spread through it during a fierce storm",
+        "Saul's army surrounded it and carried off the spoil",
+        "The Philistines seized it and made it their own stronghold",
+        "The Amalekites raided and burned it, taking the families captive"
+      ],
+      "answer": "The Amalekites raided and burned it, taking the families captive",
+      "verse_reference": "1 Samuel 30:1-2"
+    },
+    {
+      "id": "1-samuel-30-q2",
+      "type": "multiple_choice",
+      "question": "What did David do after inquiring of the LORD?",
+      "options": [
+        "Gave up the chase and quietly turned for home",
+        "Pursued and recovered everyone and everything",
+        "Fled away with the few men who remained loyal",
+        "Sat down and mourned long without taking action"
+      ],
+      "answer": "Pursued and recovered everyone and everything",
+      "verse_reference": "1 Samuel 30:8-19"
+    },
+    {
+      "id": "1-samuel-30-q3",
+      "type": "true_false",
+      "question": "David ruled that those who stayed with the supplies shared the plunder equally.",
+      "answer": "true",
+      "verse_reference": "1 Samuel 30:24"
+    },
+    {
+      "id": "1-samuel-30-q4",
+      "type": "fill_blank",
+      "question": "The _____ had raided Ziklag and carried off the women and children.",
+      "answer": "Amalekites",
+      "verse_reference": "1 Samuel 30:1-2"
+    },
+    {
+      "id": "1-samuel-30-q5",
+      "type": "fill_blank",
+      "question": "David _____ all that the Amalekites had taken; nothing was missing.",
+      "answer": "recovered",
+      "verse_reference": "1 Samuel 30:18-19"
+    }
+  ]
+}

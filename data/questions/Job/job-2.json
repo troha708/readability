@@ -1,0 +1,56 @@
+{
+  "book": "Job",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "job-2-q1",
+      "type": "multiple_choice",
+      "question": "What did Satan afflict Job with the second time?",
+      "options": [
+        "A burning and never-ending high fever",
+        "Sudden blindness in both eyes",
+        "Crushing poverty and hunger",
+        "Loathsome sores from head to foot"
+      ],
+      "answer": "Loathsome sores from head to foot",
+      "verse_reference": "Job 2:7"
+    },
+    {
+      "id": "job-2-q2",
+      "type": "multiple_choice",
+      "question": "What did Job's wife tell him to do?",
+      "options": [
+        "Offer sacrifice",
+        "Pray",
+        "Flee",
+        "Curse God and die"
+      ],
+      "answer": "Curse God and die",
+      "verse_reference": "Job 2:9"
+    },
+    {
+      "id": "job-2-q3",
+      "type": "true_false",
+      "question": "Three of Job's friends came to sympathize with and comfort him.",
+      "answer": "true",
+      "verse_reference": "Job 2:11"
+    },
+    {
+      "id": "job-2-q4",
+      "type": "fill_blank",
+      "question": "Job scraped himself with a piece of broken _____.",
+      "answer": "pottery",
+      "accept": [
+        "potsherd"
+      ],
+      "verse_reference": "Job 2:8"
+    },
+    {
+      "id": "job-2-q5",
+      "type": "fill_blank",
+      "question": "Job's friends sat with him seven days and nights and said not a _____, seeing his suffering.",
+      "answer": "word",
+      "verse_reference": "Job 2:13"
+    }
+  ]
+}

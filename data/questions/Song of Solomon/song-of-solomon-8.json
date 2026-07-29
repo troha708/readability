@@ -1,0 +1,56 @@
+{
+  "book": "Song Of Solomon",
+  "chapter": 8,
+  "questions": [
+    {
+      "id": "song-of-solomon-8-q1",
+      "type": "multiple_choice",
+      "question": "What famous statement about love appears in chapter 8?",
+      "options": [
+        "Many waters cannot quench the longing of the heart",
+        "Love is patient and kind, bearing all things in quiet hope",
+        "Love is strong as death; jealousy is fierce as the grave",
+        "Love covers a multitude of faults and never fails"
+      ],
+      "answer": "Love is strong as death; jealousy is fierce as the grave",
+      "verse_reference": "Song of Solomon 8:6"
+    },
+    {
+      "id": "song-of-solomon-8-q2",
+      "type": "multiple_choice",
+      "question": "What does chapter 8 say many waters cannot do?",
+      "options": [
+        "Quench love, neither can floods drown it",
+        "Refresh love, nor can rivers renew it",
+        "Reach love, nor can the sea touch it",
+        "Bless love, nor can springs sustain it"
+      ],
+      "answer": "Quench love, neither can floods drown it",
+      "verse_reference": "Song of Solomon 8:7"
+    },
+    {
+      "id": "song-of-solomon-8-q3",
+      "type": "true_false",
+      "question": "Chapter 8 says, 'Set me as a seal upon your heart.'",
+      "answer": "true",
+      "verse_reference": "Song of Solomon 8:6"
+    },
+    {
+      "id": "song-of-solomon-8-q4",
+      "type": "fill_blank",
+      "question": "Set me as a seal upon your heart... for love is strong as _____.",
+      "answer": "death",
+      "verse_reference": "Song of Solomon 8:6"
+    },
+    {
+      "id": "song-of-solomon-8-q5",
+      "type": "fill_blank",
+      "question": "Mighty waters cannot quench love; rivers cannot _____ it away.",
+      "answer": "sweep",
+      "accept": [
+        "drown"
+      ],
+      "verse_reference": "Song of Solomon 8:7"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "book": "Psalms",
+  "chapter": 133,
+  "questions": [
+    {
+      "id": "psalms-133-q1",
+      "type": "multiple_choice",
+      "question": "What does Psalm 133 celebrate?",
+      "options": [
+        "How lovely indeed is your dwelling place, O LORD of hosts",
+        "How long, O LORD, will you forget me forever?",
+        "How good and pleasant it is when brothers dwell in unity",
+        "How majestic is your name in all the earth"
+      ],
+      "answer": "How good and pleasant it is when brothers dwell in unity",
+      "verse_reference": "Psalm 133:1"
+    },
+    {
+      "id": "psalms-133-q2",
+      "type": "multiple_choice",
+      "question": "To what is unity compared?",
+      "options": [
+        "Fresh dew on the grass, glistening in the dawn",
+        "Sweet honey from the comb, dripping from the rock",
+        "Precious oil on the head, running down the beard",
+        "Fine wine in the cup, gladdening the heart"
+      ],
+      "answer": "Precious oil on the head, running down the beard",
+      "verse_reference": "Psalm 133:2"
+    },
+    {
+      "id": "psalms-133-q3",
+      "type": "true_false",
+      "question": "The psalm says that there the LORD has commanded the blessing, life forevermore.",
+      "answer": "true",
+      "verse_reference": "Psalm 133:3"
+    },
+    {
+      "id": "psalms-133-q4",
+      "type": "fill_blank",
+      "question": "Behold, how good and pleasant it is when brothers live together in _____!",
+      "answer": "harmony",
+      "accept": [
+        "unity"
+      ],
+      "verse_reference": "Psalm 133:1"
+    },
+    {
+      "id": "psalms-133-q5",
+      "type": "fill_blank",
+      "question": "It is like the dew of Hermon, which falls on the mountains of _____.",
+      "answer": "Zion",
+      "verse_reference": "Psalm 133:3"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "book": "1 Chronicles",
+  "chapter": 18,
+  "questions": [
+    {
+      "id": "1-chronicles-18-q1",
+      "type": "multiple_choice",
+      "question": "Which king's forces did David defeat to extend his power toward the Euphrates?",
+      "options": [
+        "Pharaoh of Egypt",
+        "Hadadezer of Zobah",
+        "Hiram of Tyre",
+        "Nahash of Ammon"
+      ],
+      "answer": "Hadadezer of Zobah",
+      "verse_reference": "1 Chronicles 18:3"
+    },
+    {
+      "id": "1-chronicles-18-q2",
+      "type": "multiple_choice",
+      "question": "What did David do with the gold, silver, and bronze he took?",
+      "options": [
+        "Kept all of it for himself",
+        "Dedicated it to the LORD",
+        "Gave it to Tyre",
+        "Buried it"
+      ],
+      "answer": "Dedicated it to the LORD",
+      "verse_reference": "1 Chronicles 18:11"
+    },
+    {
+      "id": "1-chronicles-18-q3",
+      "type": "true_false",
+      "question": "The LORD gave victory to David wherever he went.",
+      "answer": "true",
+      "verse_reference": "1 Chronicles 18:6"
+    },
+    {
+      "id": "1-chronicles-18-q4",
+      "type": "fill_blank",
+      "question": "Joab was over the _____, and Jehoshaphat was recorder.",
+      "answer": "army",
+      "accept": [
+        "host"
+      ],
+      "verse_reference": "1 Chronicles 18:15"
+    },
+    {
+      "id": "1-chronicles-18-q5",
+      "type": "fill_blank",
+      "question": "David reigned over all Israel and administered justice and _____ for all his people.",
+      "answer": "righteousness",
+      "accept": [
+        "judgment"
+      ],
+      "verse_reference": "1 Chronicles 18:14"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "book": "Exodus",
+  "chapter": 25,
+  "questions": [
+    {
+      "id": "exodus-25-q1",
+      "type": "multiple_choice",
+      "question": "What sacred chest were the Israelites told to build to hold the covenant?",
+      "options": [
+        "The seven-branched lampstand",
+        "The golden table of bread",
+        "The bronze altar of incense",
+        "The ark of the covenant"
+      ],
+      "answer": "The ark of the covenant",
+      "verse_reference": "Exodus 25:10"
+    },
+    {
+      "id": "exodus-25-q2",
+      "type": "multiple_choice",
+      "question": "What did God ask the people to bring for building the sanctuary?",
+      "options": [
+        "The spoils taken from Egypt's drowned army",
+        "A tenth of all their grain and livestock",
+        "A yearly tax of one silver shekel each",
+        "Freewill offerings of gold, silver, and linen"
+      ],
+      "answer": "Freewill offerings of gold, silver, and linen",
+      "verse_reference": "Exodus 25:3-7"
+    },
+    {
+      "id": "exodus-25-q3",
+      "type": "true_false",
+      "question": "God said to make him a sanctuary so that he might dwell among the people.",
+      "answer": "true",
+      "verse_reference": "Exodus 25:8"
+    },
+    {
+      "id": "exodus-25-q4",
+      "type": "fill_blank",
+      "question": "Two _____ of gold were to face each other on the cover of the ark.",
+      "answer": "cherubim",
+      "accept": [
+        "cherubims"
+      ],
+      "verse_reference": "Exodus 25:18"
+    },
+    {
+      "id": "exodus-25-q5",
+      "type": "fill_blank",
+      "question": "God asked the people to bring an _____ from everyone whose heart moved them.",
+      "answer": "offering",
+      "verse_reference": "Exodus 25:2"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "book": "2 Kings",
+  "chapter": 6,
+  "questions": [
+    {
+      "id": "2-kings-6-q1",
+      "type": "multiple_choice",
+      "question": "What miracle did Elisha perform with a borrowed axe?",
+      "options": [
+        "Hid it beneath the riverbank",
+        "Replaced it with a new one",
+        "Made the iron axe head float",
+        "Sharpened it until it gleamed"
+      ],
+      "answer": "Made the iron axe head float",
+      "verse_reference": "2 Kings 6:6"
+    },
+    {
+      "id": "2-kings-6-q2",
+      "type": "multiple_choice",
+      "question": "What did Elisha pray for regarding the Aramean army?",
+      "options": [
+        "That they be utterly destroyed",
+        "That they be struck blind",
+        "That they flee",
+        "That they drown"
+      ],
+      "answer": "That they be struck blind",
+      "verse_reference": "2 Kings 6:18"
+    },
+    {
+      "id": "2-kings-6-q3",
+      "type": "true_false",
+      "question": "Elisha's servant saw the hills full of horses and chariots of fire protecting them.",
+      "answer": "true",
+      "verse_reference": "2 Kings 6:17"
+    },
+    {
+      "id": "2-kings-6-q4",
+      "type": "fill_blank",
+      "question": "Elisha made the iron _____ head float on the water.",
+      "answer": "axe",
+      "accept": [
+        "ax"
+      ],
+      "verse_reference": "2 Kings 6:6"
+    },
+    {
+      "id": "2-kings-6-q5",
+      "type": "fill_blank",
+      "question": "Elisha asked God to open the servant's eyes to see the chariots of _____.",
+      "answer": "fire",
+      "verse_reference": "2 Kings 6:17"
+    }
+  ]
+}

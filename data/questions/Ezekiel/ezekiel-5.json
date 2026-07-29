@@ -1,0 +1,53 @@
+{
+  "book": "Ezekiel",
+  "chapter": 5,
+  "questions": [
+    {
+      "id": "ezekiel-5-q1",
+      "type": "multiple_choice",
+      "question": "What did Ezekiel do with his hair as a sign in chapter 5?",
+      "options": [
+        "Buried it down by the river until at last it rotted",
+        "Shaved it, then burned, struck, and scattered it",
+        "Offered it all up as a sacrifice upon the altar",
+        "Wove it into a belt and wore it daily about him"
+      ],
+      "answer": "Shaved it, then burned, struck, and scattered it",
+      "verse_reference": "Ezekiel 5:1-2"
+    },
+    {
+      "id": "ezekiel-5-q2",
+      "type": "multiple_choice",
+      "question": "What did the divided hair represent?",
+      "options": [
+        "The number of years remaining until the long exile would end",
+        "The three great kingdoms that would one day conquer Judah",
+        "The small number of the righteous still left within the city",
+        "The fate of Jerusalem's people: plague, sword, and scattering"
+      ],
+      "answer": "The fate of Jerusalem's people: plague, sword, and scattering",
+      "verse_reference": "Ezekiel 5:12"
+    },
+    {
+      "id": "ezekiel-5-q3",
+      "type": "true_false",
+      "question": "God said he set Jerusalem in the center of the nations, but she rebelled more than they.",
+      "answer": "true",
+      "verse_reference": "Ezekiel 5:5-6"
+    },
+    {
+      "id": "ezekiel-5-q4",
+      "type": "fill_blank",
+      "question": "Ezekiel used a sharp sword as a barber's _____ to shave his head and beard.",
+      "answer": "razor",
+      "verse_reference": "Ezekiel 5:1"
+    },
+    {
+      "id": "ezekiel-5-q5",
+      "type": "fill_blank",
+      "question": "A third part of the hair he scattered to the _____, drawing a sword after them.",
+      "answer": "wind",
+      "verse_reference": "Ezekiel 5:2"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "book": "1 Timothy",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "1tim_4_1",
+      "type": "multiple_choice",
+      "question": "Paul warns that in later times some will depart from the faith to follow what?",
+      "options": [
+        "Faithful elders and their good sound teaching",
+        "Deceitful spirits and teachings of demons",
+        "Wise prophets and true visions",
+        "Holy angels and heavenly signs"
+      ],
+      "correct": "Deceitful spirits and teachings of demons",
+      "verse_ref": "1 Timothy 4:1",
+      "feedback": "Some will depart from the faith, following deceitful spirits and teachings of demons."
+    },
+    {
+      "id": "1tim_4_2",
+      "type": "multiple_choice",
+      "question": "What does Paul tell Timothy not to let anyone look down on?",
+      "options": [
+        "His family",
+        "His poverty",
+        "His youth",
+        "His education"
+      ],
+      "correct": "His youth",
+      "verse_ref": "1 Timothy 4:12",
+      "feedback": "Let no one despise you for your youth — set an example in speech and conduct."
+    },
+    {
+      "id": "1tim_4_3",
+      "type": "true_false",
+      "question": "Paul says that physical training has some value.",
+      "correct": true,
+      "verse_ref": "1 Timothy 4:8",
+      "feedback": "Physical training has some value, but godliness has value for all things."
+    },
+    {
+      "id": "1tim_4_4",
+      "type": "fill_in_the_blank",
+      "question": "Everything created by God is good and nothing is to be _____ if received with thanksgiving.",
+      "correct": "rejected",
+      "accept": ["refused"],
+      "verse_ref": "1 Timothy 4:4",
+      "feedback": "Everything God created is good and should not be rejected if received with thanksgiving."
+    },
+    {
+      "id": "1tim_4_5",
+      "type": "fill_in_the_blank",
+      "question": "Paul tells Timothy to devote himself to the public reading of Scripture, to _____, and to teaching.",
+      "correct": "exhortation",
+      "verse_ref": "1 Timothy 4:13",
+      "feedback": "Devote yourself to the public reading of Scripture, exhortation, and teaching."
+    }
+  ]
+}

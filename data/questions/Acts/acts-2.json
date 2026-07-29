@@ -1,0 +1,56 @@
+{
+  "book": "Acts",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "acts-2-q1",
+      "type": "multiple_choice",
+      "question": "On the day of Pentecost, what appeared and rested on each of the believers?",
+      "options": [
+        "White doves",
+        "Bright golden crowns",
+        "Rays of light",
+        "Tongues of fire"
+      ],
+      "answer": "Tongues of fire",
+      "verse_reference": "Acts 2:3"
+    },
+    {
+      "id": "acts-2-q2",
+      "type": "multiple_choice",
+      "question": "Approximately how many people were added to the believers after Peter's sermon at Pentecost?",
+      "options": [
+        "5,000",
+        "3,000",
+        "1,000",
+        "500"
+      ],
+      "answer": "3,000",
+      "verse_reference": "Acts 2:41"
+    },
+    {
+      "id": "acts-2-q3",
+      "type": "true_false",
+      "question": "Some people in the crowd accused the disciples of being drunk when they heard them speaking in other languages.",
+      "answer": "true",
+      "verse_reference": "Acts 2:13"
+    },
+    {
+      "id": "acts-2-q4",
+      "type": "fill_blank",
+      "question": "They continued steadfastly in the apostles' teaching and _____, in the breaking of bread, and prayer.",
+      "answer": "fellowship",
+      "verse_reference": "Acts 2:42"
+    },
+    {
+      "id": "acts-2-q5",
+      "type": "fill_blank",
+      "question": "Peter said to them, '_____ and be baptized, every one of you, in the name of Jesus Christ for the forgiveness of sins.'",
+      "answer": "Repent",
+      "accept": [
+        "Reform"
+      ],
+      "verse_reference": "Acts 2:38"
+    }
+  ]
+}

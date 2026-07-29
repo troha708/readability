@@ -1,0 +1,57 @@
+{
+  "book": "1 Samuel",
+  "chapter": 6,
+  "questions": [
+    {
+      "id": "1-samuel-6-q1",
+      "type": "multiple_choice",
+      "question": "How did the Philistines send the ark back to Israel?",
+      "options": [
+        "Floated down the river on a raft",
+        "Loaded onto the backs of donkeys",
+        "Carried on the shoulders of priests",
+        "On a new cart pulled by two cows"
+      ],
+      "answer": "On a new cart pulled by two cows",
+      "verse_reference": "1 Samuel 6:7-8"
+    },
+    {
+      "id": "1-samuel-6-q2",
+      "type": "multiple_choice",
+      "question": "What did they send with the ark as a guilt offering?",
+      "options": [
+        "Silver coins from the city treasury",
+        "Live cattle from their own herds",
+        "Baskets of grain and fresh fruit",
+        "Gold models of tumors and mice"
+      ],
+      "answer": "Gold models of tumors and mice",
+      "verse_reference": "1 Samuel 6:4-5"
+    },
+    {
+      "id": "1-samuel-6-q3",
+      "type": "true_false",
+      "question": "The cows pulled the cart straight to Israel without turning, showing God's hand.",
+      "answer": "true",
+      "verse_reference": "1 Samuel 6:12"
+    },
+    {
+      "id": "1-samuel-6-q4",
+      "type": "fill_blank",
+      "question": "The Philistines sent the ark back on a new _____ pulled by two cows.",
+      "answer": "cart",
+      "verse_reference": "1 Samuel 6:7"
+    },
+    {
+      "id": "1-samuel-6-q5",
+      "type": "fill_blank",
+      "question": "With the ark they sent golden models of _____ and mice as a guilt offering.",
+      "answer": "tumors",
+      "accept": [
+        "emerods",
+        "hemorrhoids"
+      ],
+      "verse_reference": "1 Samuel 6:4-5"
+    }
+  ]
+}

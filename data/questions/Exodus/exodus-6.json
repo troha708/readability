@@ -1,0 +1,53 @@
+{
+  "book": "Exodus",
+  "chapter": 6,
+  "questions": [
+    {
+      "id": "exodus-6-q1",
+      "type": "multiple_choice",
+      "question": "God said he appeared to the patriarchs as God Almighty, but by what name was he not fully known to them?",
+      "options": [
+        "Elohim",
+        "Adonai",
+        "El Shaddai, God Almighty",
+        "The LORD (Yahweh)"
+      ],
+      "answer": "The LORD (Yahweh)",
+      "verse_reference": "Exodus 6:3"
+    },
+    {
+      "id": "exodus-6-q2",
+      "type": "multiple_choice",
+      "question": "What did God promise to do for Israel?",
+      "options": [
+        "Bring them out of Egypt and be their God",
+        "Make their name greater than Pharaoh's own",
+        "Build them a great temple in the desert",
+        "Give them victory over the kings of Canaan"
+      ],
+      "answer": "Bring them out of Egypt and be their God",
+      "verse_reference": "Exodus 6:6-7"
+    },
+    {
+      "id": "exodus-6-q3",
+      "type": "true_false",
+      "question": "The Israelites listened eagerly to Moses despite their hard slavery.",
+      "answer": "false",
+      "verse_reference": "Exodus 6:9"
+    },
+    {
+      "id": "exodus-6-q4",
+      "type": "fill_blank",
+      "question": "God said, \"I will take you to me for a people, and I will be to you a _____.\"",
+      "answer": "God",
+      "verse_reference": "Exodus 6:7"
+    },
+    {
+      "id": "exodus-6-q5",
+      "type": "fill_blank",
+      "question": "God said he had remembered his _____ with Abraham, Isaac, and Jacob.",
+      "answer": "covenant",
+      "verse_reference": "Exodus 6:5"
+    }
+  ]
+}

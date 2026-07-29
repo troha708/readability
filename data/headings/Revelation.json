@@ -1,0 +1,294 @@
+{
+  "book": "Revelation",
+  "source": "Berean Standard Bible (CC0 Public Domain)",
+  "chapters": {
+    "1": [
+      {
+        "beforeVerse": 1,
+        "heading": "Prologue"
+      },
+      {
+        "beforeVerse": 4,
+        "heading": "John Greets the Seven Churches"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "John’s Vision on Patmos"
+      }
+    ],
+    "2": [
+      {
+        "beforeVerse": 1,
+        "heading": "To the Church in Ephesus"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "To the Church in Smyrna"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "To the Church in Pergamum"
+      },
+      {
+        "beforeVerse": 18,
+        "heading": "To the Church in Thyatira"
+      }
+    ],
+    "3": [
+      {
+        "beforeVerse": 1,
+        "heading": "To the Church in Sardis"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "To the Church in Philadelphia"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "To the Church in Laodicea"
+      }
+    ],
+    "4": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Throne in Heaven"
+      },
+      {
+        "beforeVerse": 5,
+        "heading": "Worship of the Creator"
+      }
+    ],
+    "5": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Lamb Takes the Scroll"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "The Lamb Exalted"
+      }
+    ],
+    "6": [
+      {
+        "beforeVerse": 1,
+        "heading": "The First Seal: The White Horse"
+      },
+      {
+        "beforeVerse": 3,
+        "heading": "The Second Seal: War"
+      },
+      {
+        "beforeVerse": 5,
+        "heading": "The Third Seal: Famine"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "The Fourth Seal: Death"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "The Fifth Seal: The Martyrs"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "The Sixth Seal: Terror"
+      }
+    ],
+    "7": [
+      {
+        "beforeVerse": 1,
+        "heading": "144,000 Sealed"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "Praise from the Great Multitude"
+      }
+    ],
+    "8": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Seventh Seal"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "The First Four Trumpets"
+      }
+    ],
+    "9": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Fifth Trumpet"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "The Sixth Trumpet"
+      }
+    ],
+    "10": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Angel and the Small Scroll"
+      }
+    ],
+    "11": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Two Witnesses"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "The Witnesses Killed and Raised"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "The Seventh Trumpet"
+      }
+    ],
+    "12": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Woman and the Dragon"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "The War in Heaven"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "The Woman Persecuted"
+      }
+    ],
+    "13": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Beast from the Sea"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "The Beast from the Earth"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "The Mark of the Beast"
+      }
+    ],
+    "14": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Lamb and the 144,000"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "The Three Angels and Babylon’s Fall"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "The Harvest of the Earth"
+      }
+    ],
+    "15": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Song of Moses and the Lamb"
+      },
+      {
+        "beforeVerse": 5,
+        "heading": "Preparation for Judgment"
+      }
+    ],
+    "16": [
+      {
+        "beforeVerse": 1,
+        "heading": "The First Six Bowls of Wrath"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "The Seventh Bowl of Wrath"
+      }
+    ],
+    "17": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Woman on the Beast"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "The Mystery Explained"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "The Victory of the Lamb"
+      }
+    ],
+    "18": [
+      {
+        "beforeVerse": 1,
+        "heading": "Babylon Is Fallen"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "Lament over Babylon"
+      },
+      {
+        "beforeVerse": 21,
+        "heading": "The Doom of Babylon"
+      }
+    ],
+    "19": [
+      {
+        "beforeVerse": 1,
+        "heading": "Rejoicing in Heaven"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "The Marriage of the Lamb"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "The Rider on the White Horse"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "Defeat of the Beast and False Prophet"
+      }
+    ],
+    "20": [
+      {
+        "beforeVerse": 1,
+        "heading": "Satan Bound"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "Satan Cast into the Lake of Fire"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "Judgment before the Great White Throne"
+      }
+    ],
+    "21": [
+      {
+        "beforeVerse": 1,
+        "heading": "A New Heaven and a New Earth"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "The New Jerusalem"
+      }
+    ],
+    "22": [
+      {
+        "beforeVerse": 1,
+        "heading": "The River of Life"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "Jesus Is Coming"
+      },
+      {
+        "beforeVerse": 18,
+        "heading": "Nothing May Be Added or Removed"
+      }
+    ]
+  }
+}

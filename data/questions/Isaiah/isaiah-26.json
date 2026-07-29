@@ -1,0 +1,56 @@
+{
+  "book": "Isaiah",
+  "chapter": 26,
+  "questions": [
+    {
+      "id": "isaiah-26-q1",
+      "type": "multiple_choice",
+      "question": "What does Isaiah 26 say God keeps in perfect peace?",
+      "options": [
+        "The one who is exceedingly wealthy and gives freely to the poor",
+        "The one who is very strong and mighty and skilled in battle",
+        "The one whose mind is stayed on him, because he trusts in him",
+        "The one who offers up very many sacrifices upon the altar"
+      ],
+      "answer": "The one whose mind is stayed on him, because he trusts in him",
+      "verse_reference": "Isaiah 26:3"
+    },
+    {
+      "id": "isaiah-26-q2",
+      "type": "multiple_choice",
+      "question": "In whom does Isaiah 26 urge trust forever?",
+      "options": [
+        "The army, for it guards the city walls",
+        "The king, for he leads all of the people to victory",
+        "The LORD, for the LORD GOD is an everlasting rock",
+        "The wise, for their counsel will not fail"
+      ],
+      "answer": "The LORD, for the LORD GOD is an everlasting rock",
+      "verse_reference": "Isaiah 26:4"
+    },
+    {
+      "id": "isaiah-26-q3",
+      "type": "true_false",
+      "question": "Isaiah 26 expresses hope that the dead shall live and the dwellers in the dust awake.",
+      "answer": "true",
+      "verse_reference": "Isaiah 26:19"
+    },
+    {
+      "id": "isaiah-26-q4",
+      "type": "fill_blank",
+      "question": "You keep him in perfect _____ whose mind is stayed on you, because he trusts in you.",
+      "answer": "peace",
+      "verse_reference": "Isaiah 26:3"
+    },
+    {
+      "id": "isaiah-26-q5",
+      "type": "fill_blank",
+      "question": "Trust in the LORD forever, for the LORD GOD is an everlasting _____.",
+      "answer": "rock",
+      "accept": [
+        "strength"
+      ],
+      "verse_reference": "Isaiah 26:4"
+    }
+  ]
+}

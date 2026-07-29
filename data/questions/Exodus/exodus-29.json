@@ -1,0 +1,53 @@
+{
+  "book": "Exodus",
+  "chapter": 29,
+  "questions": [
+    {
+      "id": "exodus-29-q1",
+      "type": "multiple_choice",
+      "question": "What is the ceremony of chapter 29 about?",
+      "options": [
+        "Ordaining Aaron and his sons as priests",
+        "Celebrating the first Passover in the desert",
+        "Crowning the first king over Israel",
+        "Dedicating the ark inside the tabernacle"
+      ],
+      "answer": "Ordaining Aaron and his sons as priests",
+      "verse_reference": "Exodus 29:1"
+    },
+    {
+      "id": "exodus-29-q2",
+      "type": "multiple_choice",
+      "question": "Whose blood was put on the priest's right ear, thumb, and big toe?",
+      "options": [
+        "A lamb's",
+        "A goat's",
+        "A ram's",
+        "A bull's"
+      ],
+      "answer": "A ram's",
+      "verse_reference": "Exodus 29:20"
+    },
+    {
+      "id": "exodus-29-q3",
+      "type": "true_false",
+      "question": "The consecration of the priests was to last seven days.",
+      "answer": "true",
+      "verse_reference": "Exodus 29:35"
+    },
+    {
+      "id": "exodus-29-q4",
+      "type": "fill_blank",
+      "question": "God promised to dwell among the Israelites and be their _____.",
+      "answer": "God",
+      "verse_reference": "Exodus 29:45"
+    },
+    {
+      "id": "exodus-29-q5",
+      "type": "fill_blank",
+      "question": "Aaron and his sons were ordained over a period of _____ days.",
+      "answer": "seven",
+      "verse_reference": "Exodus 29:35"
+    }
+  ]
+}

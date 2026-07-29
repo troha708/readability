@@ -1,0 +1,53 @@
+{
+  "book": "John",
+  "chapter": 6,
+  "questions": [
+    {
+      "id": "john-6-q1",
+      "type": "multiple_choice",
+      "question": "How many people did Jesus feed with the five barley loaves and two fish?",
+      "options": [
+        "3,000",
+        "4,000",
+        "5,000",
+        "7,000"
+      ],
+      "answer": "5,000",
+      "verse_reference": "John 6:10"
+    },
+    {
+      "id": "john-6-q2",
+      "type": "multiple_choice",
+      "question": "What did Jesus do when the crowd wanted to make him king by force?",
+      "options": [
+        "He sailed to Capernaum",
+        "He withdrew to the mountain alone",
+        "He rebuked them",
+        "He sent the disciples to stop them"
+      ],
+      "answer": "He withdrew to the mountain alone",
+      "verse_reference": "John 6:15"
+    },
+    {
+      "id": "john-6-q3",
+      "type": "true_false",
+      "question": "After Jesus' teaching about being the bread of life, all of his disciples stayed with him.",
+      "answer": "false",
+      "verse_reference": "John 6:66"
+    },
+    {
+      "id": "john-6-q4",
+      "type": "fill_blank",
+      "question": "Jesus said to them, 'I am the _____ of life. Whoever comes to me will not be hungry, and whoever believes in me will never be thirsty.'",
+      "answer": "bread",
+      "verse_reference": "John 6:35"
+    },
+    {
+      "id": "john-6-q5",
+      "type": "fill_blank",
+      "question": "Simon Peter answered him, 'Lord, to whom would we go? You have the words of eternal _____.'",
+      "answer": "life",
+      "verse_reference": "John 6:68"
+    }
+  ]
+}

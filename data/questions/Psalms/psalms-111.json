@@ -1,0 +1,57 @@
+{
+  "book": "Psalms",
+  "chapter": 111,
+  "questions": [
+    {
+      "id": "psalms-111-q1",
+      "type": "multiple_choice",
+      "question": "What is the climactic statement of Psalm 111?",
+      "options": [
+        "The law of the LORD is perfect, reviving the soul",
+        "The fear of the LORD is the beginning of wisdom",
+        "The steadfast love of the LORD endures forever",
+        "The works of the LORD are great and marvelous"
+      ],
+      "answer": "The fear of the LORD is the beginning of wisdom",
+      "verse_reference": "Psalm 111:10"
+    },
+    {
+      "id": "psalms-111-q2",
+      "type": "multiple_choice",
+      "question": "How does the psalmist describe God's works?",
+      "options": [
+        "Few and hidden from the wise; made known only to the lowly and humble",
+        "Brief, passing quickly like the dew; gone away with the very early morning",
+        "Harsh, greatly feared by the nations; dreaded by all of the proud",
+        "Great, studied by all who delight in them; full of splendor and majesty"
+      ],
+      "answer": "Great, studied by all who delight in them; full of splendor and majesty",
+      "verse_reference": "Psalm 111:2-3"
+    },
+    {
+      "id": "psalms-111-q3",
+      "type": "true_false",
+      "question": "The psalm says the LORD is gracious and merciful and provides food for those who fear him.",
+      "answer": "true",
+      "verse_reference": "Psalm 111:4-5"
+    },
+    {
+      "id": "psalms-111-q4",
+      "type": "fill_blank",
+      "question": "The fear of the LORD is the beginning of _____.",
+      "answer": "wisdom",
+      "verse_reference": "Psalm 111:10"
+    },
+    {
+      "id": "psalms-111-q5",
+      "type": "fill_blank",
+      "question": "The works of his hands are faithful and just; all his _____ are trustworthy.",
+      "answer": "precepts",
+      "accept": [
+        "commandments",
+        "statutes"
+      ],
+      "verse_reference": "Psalm 111:7"
+    }
+  ]
+}

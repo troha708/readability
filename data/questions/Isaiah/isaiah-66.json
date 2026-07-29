@@ -1,0 +1,53 @@
+{
+  "book": "Isaiah",
+  "chapter": 66,
+  "questions": [
+    {
+      "id": "isaiah-66-q1",
+      "type": "multiple_choice",
+      "question": "What does God say about a house humans might build for him in Isaiah 66?",
+      "options": [
+        "He greatly delights to dwell within the courts of the temple that they have raised up",
+        "He turns himself away and wholly rejects all the worship of those who draw near to him",
+        "Heaven is his throne and the earth his footstool; what house will you build for me?",
+        "He has great need of the house, so that all of his people may bring to him their gifts"
+      ],
+      "answer": "Heaven is his throne and the earth his footstool; what house will you build for me?",
+      "verse_reference": "Isaiah 66:1"
+    },
+    {
+      "id": "isaiah-66-q2",
+      "type": "multiple_choice",
+      "question": "Whom does God say he will look to in Isaiah 66?",
+      "options": [
+        "The humble and contrite in spirit, who trembles at his word",
+        "The mighty and the proud who build up very great altars",
+        "The wise who fully understand each and every one of his ways",
+        "The wealthy who bring to him the very finest of all offerings"
+      ],
+      "answer": "The humble and contrite in spirit, who trembles at his word",
+      "verse_reference": "Isaiah 66:2"
+    },
+    {
+      "id": "isaiah-66-q3",
+      "type": "true_false",
+      "question": "Isaiah 66 says God will comfort his people as one whom his mother comforts.",
+      "answer": "true",
+      "verse_reference": "Isaiah 66:13"
+    },
+    {
+      "id": "isaiah-66-q4",
+      "type": "fill_blank",
+      "question": "Heaven is my _____, and the earth is my footstool.",
+      "answer": "throne",
+      "verse_reference": "Isaiah 66:1"
+    },
+    {
+      "id": "isaiah-66-q5",
+      "type": "fill_blank",
+      "question": "As one whom his mother comforts, so I will _____ you, says the LORD.",
+      "answer": "comfort",
+      "verse_reference": "Isaiah 66:13"
+    }
+  ]
+}

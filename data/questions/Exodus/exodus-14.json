@@ -1,0 +1,53 @@
+{
+  "book": "Exodus",
+  "chapter": 14,
+  "questions": [
+    {
+      "id": "exodus-14-q1",
+      "type": "multiple_choice",
+      "question": "What did God do so Israel could escape across the Red Sea?",
+      "options": [
+        "Divided the sea so they crossed on dry ground",
+        "Raised a bridge of stone across the water",
+        "Calmed a great storm so they could sail",
+        "Sent many boats to carry them all to the far shore"
+      ],
+      "answer": "Divided the sea so they crossed on dry ground",
+      "verse_reference": "Exodus 14:21-22"
+    },
+    {
+      "id": "exodus-14-q2",
+      "type": "multiple_choice",
+      "question": "What happened to Pharaoh's army that pursued Israel into the sea?",
+      "options": [
+        "The waters returned and drowned them",
+        "Fire from heaven consumed their chariots",
+        "They turned back and fled to Egypt",
+        "They surrendered and were taken captive"
+      ],
+      "answer": "The waters returned and drowned them",
+      "verse_reference": "Exodus 14:28"
+    },
+    {
+      "id": "exodus-14-q3",
+      "type": "true_false",
+      "question": "The pillar of cloud moved between Israel and the Egyptians, keeping them apart.",
+      "answer": "true",
+      "verse_reference": "Exodus 14:19-20"
+    },
+    {
+      "id": "exodus-14-q4",
+      "type": "fill_blank",
+      "question": "Moses stretched out his hand, and the LORD drove the sea back with a strong east _____.",
+      "answer": "wind",
+      "verse_reference": "Exodus 14:21"
+    },
+    {
+      "id": "exodus-14-q5",
+      "type": "fill_blank",
+      "question": "The Israelites walked through the midst of the sea on dry _____.",
+      "answer": "ground",
+      "verse_reference": "Exodus 14:22"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "book": "1 Corinthians",
+  "chapter": 11,
+  "questions": [
+    {
+      "id": "1cor-11-q1",
+      "type": "multiple_choice",
+      "question": "What practice during the Lord's Supper does Paul criticize?",
+      "options": [
+        "Some meeting on the wrong day of the week",
+        "Some eating and drinking while others go hungry",
+        "Some bringing the wrong kind of bread to the table",
+        "Some singing far too loudly during the meal"
+      ],
+      "answer": "Some eating and drinking while others go hungry",
+      "verse_reference": "1 Corinthians 11:21"
+    },
+    {
+      "id": "1cor-11-q2",
+      "type": "multiple_choice",
+      "question": "Paul says whoever eats the bread or drinks the cup unworthily will be guilty of what?",
+      "options": [
+        "The body and blood of the Lord",
+        "The covenant made at Mount Sinai",
+        "The bread of the Passover feast",
+        "The law and the prophets of old"
+      ],
+      "answer": "The body and blood of the Lord",
+      "verse_reference": "1 Corinthians 11:27"
+    },
+    {
+      "id": "1cor-11-q3",
+      "type": "true_false",
+      "question": "Paul received the instructions about the Lord's Supper directly from the Lord.",
+      "answer": "true",
+      "verse_reference": "1 Corinthians 11:23"
+    },
+    {
+      "id": "1cor-11-q4",
+      "type": "fill_blank",
+      "question": "This cup is the new covenant in my _____. Do this, as often as you drink it, in remembrance of me.",
+      "answer": "blood",
+      "verse_reference": "1 Corinthians 11:25"
+    },
+    {
+      "id": "1cor-11-q5",
+      "type": "fill_blank",
+      "question": "Let a man _____ himself, and so let him eat of the bread and drink of the cup.",
+      "answer": "examine",
+      "accept": [
+        "prove"
+      ],
+      "verse_reference": "1 Corinthians 11:28"
+    }
+  ]
+}

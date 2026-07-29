@@ -1,0 +1,578 @@
+{
+  "book": "Exodus",
+  "source": "Berean Standard Bible (CC0 Public Domain)",
+  "chapters": {
+    "1": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Israelites Multiply in Egypt"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "Oppression by a New King"
+      }
+    ],
+    "2": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Birth and Adoption of Moses"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "The Rejection and Flight of Moses"
+      },
+      {
+        "beforeVerse": 23,
+        "heading": "God Hears the Cry of the Israelites"
+      }
+    ],
+    "3": [
+      {
+        "beforeVerse": 1,
+        "heading": "Moses at the Burning Bush"
+      }
+    ],
+    "4": [
+      {
+        "beforeVerse": 1,
+        "heading": "Moses’ Staff"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "Moses’ Hand"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "The Appointment of Aaron"
+      },
+      {
+        "beforeVerse": 18,
+        "heading": "Moses Leaves for Egypt"
+      },
+      {
+        "beforeVerse": 27,
+        "heading": "The People Believe Moses and Aaron"
+      }
+    ],
+    "5": [
+      {
+        "beforeVerse": 1,
+        "heading": "Pharaoh’s First Refusal"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "Bricks and Straw"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "The Cry of the Israelites"
+      }
+    ],
+    "6": [
+      {
+        "beforeVerse": 1,
+        "heading": "God Promises Deliverance"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "Genealogies of Moses and Aaron"
+      }
+    ],
+    "7": [
+      {
+        "beforeVerse": 1,
+        "heading": "God Commands Moses and Aaron"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "Aaron’s Staff"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "The First Plague: Blood"
+      }
+    ],
+    "8": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Second Plague: Frogs"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "The Third Plague: Gnats"
+      },
+      {
+        "beforeVerse": 20,
+        "heading": "The Fourth Plague: Flies"
+      }
+    ],
+    "9": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Fifth Plague: Livestock"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "The Sixth Plague: Boils"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "The Seventh Plague: Hail"
+      }
+    ],
+    "10": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Eighth Plague: Locusts"
+      },
+      {
+        "beforeVerse": 21,
+        "heading": "The Ninth Plague: Darkness"
+      }
+    ],
+    "11": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Plague on the Firstborn Foretold"
+      }
+    ],
+    "12": [
+      {
+        "beforeVerse": 1,
+        "heading": "The First Passover"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "The Feast of Unleavened Bread"
+      },
+      {
+        "beforeVerse": 29,
+        "heading": "The Tenth Plague: Death of the Firstborn"
+      },
+      {
+        "beforeVerse": 31,
+        "heading": "The Exodus Begins"
+      },
+      {
+        "beforeVerse": 43,
+        "heading": "Instructions for the Passover"
+      }
+    ],
+    "13": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Dedication of the Firstborn"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "The Pillars of Cloud and Fire"
+      }
+    ],
+    "14": [
+      {
+        "beforeVerse": 1,
+        "heading": "Pharaoh Pursues the Israelites"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "Parting the Red Sea"
+      }
+    ],
+    "15": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Song at the Sea"
+      },
+      {
+        "beforeVerse": 22,
+        "heading": "The Waters of Marah"
+      }
+    ],
+    "16": [
+      {
+        "beforeVerse": 1,
+        "heading": "Manna and Quail from Heaven"
+      },
+      {
+        "beforeVerse": 22,
+        "heading": "The Sabbath Observed"
+      },
+      {
+        "beforeVerse": 31,
+        "heading": "The Jar of Manna"
+      }
+    ],
+    "17": [
+      {
+        "beforeVerse": 1,
+        "heading": "Water from the Rock"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "The Defeat of the Amalekites"
+      }
+    ],
+    "18": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Visit of Jethro"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "Jethro Advises Moses"
+      }
+    ],
+    "19": [
+      {
+        "beforeVerse": 1,
+        "heading": "Israel at Mount Sinai"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "The LORD Visits Sinai"
+      }
+    ],
+    "20": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Ten Commandments"
+      },
+      {
+        "beforeVerse": 18,
+        "heading": "Moses Comforts the People"
+      },
+      {
+        "beforeVerse": 22,
+        "heading": "Idolatry Forbidden"
+      }
+    ],
+    "21": [
+      {
+        "beforeVerse": 1,
+        "heading": "Hebrew Servants"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "Personal Injury Laws"
+      }
+    ],
+    "22": [
+      {
+        "beforeVerse": 1,
+        "heading": "Property Laws"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "Laws of Social Responsibility"
+      }
+    ],
+    "23": [
+      {
+        "beforeVerse": 1,
+        "heading": "Justice and Mercy"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "Sabbath Laws"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "The Three Feasts of Pilgrimage"
+      },
+      {
+        "beforeVerse": 20,
+        "heading": "God’s Angel to Lead"
+      }
+    ],
+    "24": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Covenant Sealed"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "Moses on the Mountain"
+      }
+    ],
+    "25": [
+      {
+        "beforeVerse": 1,
+        "heading": "Offerings for the Tabernacle"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "The Ark of the Covenant"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "The Mercy Seat"
+      },
+      {
+        "beforeVerse": 23,
+        "heading": "The Table of Showbread"
+      },
+      {
+        "beforeVerse": 31,
+        "heading": "The Lampstand"
+      }
+    ],
+    "26": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Ten Curtains for the Tabernacle"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "The Eleven Curtains of Goat Hair"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "The Frames and Bases"
+      },
+      {
+        "beforeVerse": 31,
+        "heading": "The Veil"
+      },
+      {
+        "beforeVerse": 36,
+        "heading": "The Curtain for the Entrance"
+      }
+    ],
+    "27": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Bronze Altar"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "The Courtyard"
+      },
+      {
+        "beforeVerse": 20,
+        "heading": "The Oil for the Lamps"
+      }
+    ],
+    "28": [
+      {
+        "beforeVerse": 1,
+        "heading": "Garments for the Priests"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "The Ephod"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "The Breastpiece"
+      },
+      {
+        "beforeVerse": 31,
+        "heading": "Additional Priestly Garments"
+      }
+    ],
+    "29": [
+      {
+        "beforeVerse": 1,
+        "heading": "Consecration of the Priests"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "The Order of the Sacrifices"
+      },
+      {
+        "beforeVerse": 31,
+        "heading": "Food for the Priests"
+      },
+      {
+        "beforeVerse": 38,
+        "heading": "The Daily Offerings"
+      },
+      {
+        "beforeVerse": 45,
+        "heading": "God Will Dwell among the People"
+      }
+    ],
+    "30": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Altar of Incense"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "The Census Offering"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "The Bronze Basin"
+      },
+      {
+        "beforeVerse": 22,
+        "heading": "The Anointing Oil"
+      },
+      {
+        "beforeVerse": 34,
+        "heading": "The Incense"
+      }
+    ],
+    "31": [
+      {
+        "beforeVerse": 1,
+        "heading": "Bezalel and Oholiab"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "The Sign of the Sabbath"
+      },
+      {
+        "beforeVerse": 18,
+        "heading": "Moses Receives the Tablets"
+      }
+    ],
+    "32": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Golden Calf"
+      }
+    ],
+    "33": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Command to Leave Sinai"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "The Tent of Meeting"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "The Promise of God’s Presence"
+      }
+    ],
+    "34": [
+      {
+        "beforeVerse": 1,
+        "heading": "New Stone Tablets"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "The LORD Renews the Covenant"
+      }
+    ],
+    "35": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Sabbath"
+      },
+      {
+        "beforeVerse": 4,
+        "heading": "Offerings for the Tabernacle"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "The Skilled Craftsmen"
+      },
+      {
+        "beforeVerse": 20,
+        "heading": "The People Offer Gifts"
+      },
+      {
+        "beforeVerse": 30,
+        "heading": "Bezalel and Oholiab"
+      }
+    ],
+    "36": [
+      {
+        "beforeVerse": 1,
+        "heading": "The People Bring More than Enough"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "The Ten Curtains for the Tabernacle"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "The Eleven Curtains of Goat Hair"
+      },
+      {
+        "beforeVerse": 20,
+        "heading": "The Frames and Bases"
+      },
+      {
+        "beforeVerse": 35,
+        "heading": "The Veil"
+      },
+      {
+        "beforeVerse": 37,
+        "heading": "The Curtain for the Entrance"
+      }
+    ],
+    "37": [
+      {
+        "beforeVerse": 1,
+        "heading": "Constructing the Ark"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "The Mercy Seat"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "The Table of Showbread"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "The Lampstand"
+      },
+      {
+        "beforeVerse": 25,
+        "heading": "The Altar of Incense"
+      }
+    ],
+    "38": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Bronze Altar"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "The Bronze Basin"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "The Courtyard"
+      },
+      {
+        "beforeVerse": 21,
+        "heading": "An Inventory of Materials"
+      }
+    ],
+    "39": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Ephod"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "The Breastpiece"
+      },
+      {
+        "beforeVerse": 22,
+        "heading": "Additional Priestly Garments"
+      },
+      {
+        "beforeVerse": 32,
+        "heading": "Moses Approves the Work"
+      }
+    ],
+    "40": [
+      {
+        "beforeVerse": 1,
+        "heading": "Setting Up the Tabernacle"
+      },
+      {
+        "beforeVerse": 34,
+        "heading": "The Cloud and the Glory"
+      }
+    ]
+  }
+}

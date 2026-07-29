@@ -1,0 +1,58 @@
+{
+  "book": "2 Timothy",
+  "source": "Berean Standard Bible (CC0 Public Domain)",
+  "chapters": {
+    "1": [
+      {
+        "beforeVerse": 1,
+        "heading": "Paul’s Greeting to Timothy"
+      },
+      {
+        "beforeVerse": 3,
+        "heading": "Faithfulness under Persecution"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "Holding to Sound Teaching"
+      }
+    ],
+    "2": [
+      {
+        "beforeVerse": 1,
+        "heading": "Grace and Perseverance"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "The Lord’s Approved Workman"
+      }
+    ],
+    "3": [
+      {
+        "beforeVerse": 1,
+        "heading": "Evil in the Last Days"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "All Scripture Is God-Breathed"
+      }
+    ],
+    "4": [
+      {
+        "beforeVerse": 1,
+        "heading": "Preach the Word"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "Personal Concerns"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "The Lord Remains Faithful"
+      },
+      {
+        "beforeVerse": 19,
+        "heading": "Final Greetings"
+      }
+    ]
+  }
+}

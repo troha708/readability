@@ -1,0 +1,56 @@
+{
+  "book": "Mark",
+  "chapter": 10,
+  "questions": [
+    {
+      "id": "mark-10-q1",
+      "type": "multiple_choice",
+      "question": "What did Jesus tell the rich man to do?",
+      "options": [
+        "Fast and pray for forty long days",
+        "Build a house for the poor of the city",
+        "Sell all he had and give to the poor",
+        "Make a pilgrimage to Jerusalem"
+      ],
+      "answer": "Sell all he had and give to the poor",
+      "verse_reference": "Mark 10:21"
+    },
+    {
+      "id": "mark-10-q2",
+      "type": "multiple_choice",
+      "question": "Who asked to sit at Jesus' right and left hand in glory?",
+      "options": [
+        "Thomas and Matthew",
+        "Peter and Andrew",
+        "Philip and Bartholomew",
+        "James and John"
+      ],
+      "answer": "James and John",
+      "verse_reference": "Mark 10:35-37"
+    },
+    {
+      "id": "mark-10-q3",
+      "type": "true_false",
+      "question": "Jesus said it was easy for a rich man to enter the Kingdom of God.",
+      "answer": "false",
+      "verse_reference": "Mark 10:23-25"
+    },
+    {
+      "id": "mark-10-q4",
+      "type": "fill_blank",
+      "question": "With men it is impossible, but not with God, for all things are _____ with God.",
+      "answer": "possible",
+      "verse_reference": "Mark 10:27"
+    },
+    {
+      "id": "mark-10-q5",
+      "type": "fill_blank",
+      "question": "For the Son of Man also came not to be served but to _____, and to give his life as a ransom for many.",
+      "answer": "serve",
+      "accept": [
+        "minister"
+      ],
+      "verse_reference": "Mark 10:45"
+    }
+  ]
+}

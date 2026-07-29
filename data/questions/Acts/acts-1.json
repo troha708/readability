@@ -1,0 +1,56 @@
+{
+  "book": "Acts",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "acts-1-q1",
+      "type": "multiple_choice",
+      "question": "After his resurrection, how many days did Jesus appear to the apostles before being taken up?",
+      "options": [
+        "7 days",
+        "30 days",
+        "40 days",
+        "50 days"
+      ],
+      "answer": "40 days",
+      "verse_reference": "Acts 1:3"
+    },
+    {
+      "id": "acts-1-q2",
+      "type": "multiple_choice",
+      "question": "Who was chosen to replace Judas as one of the twelve apostles?",
+      "options": [
+        "Barnabas",
+        "Matthias",
+        "Joseph",
+        "Paul"
+      ],
+      "answer": "Matthias",
+      "verse_reference": "Acts 1:26"
+    },
+    {
+      "id": "acts-1-q3",
+      "type": "true_false",
+      "question": "Jesus told the disciples they would know the exact times and dates the Father has set for restoring the kingdom.",
+      "answer": "false",
+      "verse_reference": "Acts 1:7"
+    },
+    {
+      "id": "acts-1-q4",
+      "type": "fill_blank",
+      "question": "But you will receive power when the Holy _____ has come upon you. You will be witnesses to me in Jerusalem, in all Judea and Samaria, and to the uttermost parts of the earth.",
+      "answer": "Spirit",
+      "accept": [
+        "Ghost"
+      ],
+      "verse_reference": "Acts 1:8"
+    },
+    {
+      "id": "acts-1-q5",
+      "type": "fill_blank",
+      "question": "Suddenly two men dressed in _____ stood beside them.",
+      "answer": "white",
+      "verse_reference": "Acts 1:10"
+    }
+  ]
+}

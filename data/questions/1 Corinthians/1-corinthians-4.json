@@ -1,0 +1,53 @@
+{
+  "book": "1 Corinthians",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "1cor-4-q1",
+      "type": "multiple_choice",
+      "question": "How does Paul say apostles should be regarded?",
+      "options": [
+        "As prophets of old and teachers of the law",
+        "As rulers of the church and judges of the world",
+        "As servants of Christ and stewards of God's mysteries",
+        "As masters over the whole flock and lords of the faith"
+      ],
+      "answer": "As servants of Christ and stewards of God's mysteries",
+      "verse_reference": "1 Corinthians 4:1"
+    },
+    {
+      "id": "1cor-4-q2",
+      "type": "multiple_choice",
+      "question": "Who did Paul send to Corinth to remind them of his ways in Christ?",
+      "options": [
+        "Titus",
+        "Timothy",
+        "Barnabas",
+        "Apollos"
+      ],
+      "answer": "Timothy",
+      "verse_reference": "1 Corinthians 4:17"
+    },
+    {
+      "id": "1cor-4-q3",
+      "type": "true_false",
+      "question": "Paul sarcastically tells the Corinthians they have already become rich and are reigning as kings.",
+      "answer": "true",
+      "verse_reference": "1 Corinthians 4:8"
+    },
+    {
+      "id": "1cor-4-q4",
+      "type": "fill_blank",
+      "question": "For the Kingdom of God is not in word, but in _____.",
+      "answer": "power",
+      "verse_reference": "1 Corinthians 4:20"
+    },
+    {
+      "id": "1cor-4-q5",
+      "type": "fill_blank",
+      "question": "What is required of stewards is that they be found _____.",
+      "answer": "faithful",
+      "verse_reference": "1 Corinthians 4:2"
+    }
+  ]
+}

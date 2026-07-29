@@ -1,0 +1,56 @@
+{
+  "book": "Psalms",
+  "chapter": 92,
+  "questions": [
+    {
+      "id": "psalms-92-q1",
+      "type": "multiple_choice",
+      "question": "For what occasion is Psalm 92 titled a song?",
+      "options": [
+        "A coronation",
+        "A harvest",
+        "The Sabbath",
+        "A wedding"
+      ],
+      "answer": "The Sabbath",
+      "verse_reference": "Psalm 92:title"
+    },
+    {
+      "id": "psalms-92-q2",
+      "type": "multiple_choice",
+      "question": "To what is the righteous compared in Psalm 92?",
+      "options": [
+        "A mighty fortress that no army can ever take",
+        "A flowing spring of water that never once runs dry",
+        "A bright morning star that shines just before the dawn",
+        "A palm tree and a cedar in Lebanon, flourishing"
+      ],
+      "answer": "A palm tree and a cedar in Lebanon, flourishing",
+      "verse_reference": "Psalm 92:12"
+    },
+    {
+      "id": "psalms-92-q3",
+      "type": "true_false",
+      "question": "The psalm says it is good to give thanks to the LORD and declare his love in the morning.",
+      "answer": "true",
+      "verse_reference": "Psalm 92:1-2"
+    },
+    {
+      "id": "psalms-92-q4",
+      "type": "fill_blank",
+      "question": "It is good to _____ the LORD and to sing praises to Your name.",
+      "answer": "praise",
+      "accept": [
+        "give thanks"
+      ],
+      "verse_reference": "Psalm 92:1"
+    },
+    {
+      "id": "psalms-92-q5",
+      "type": "fill_blank",
+      "question": "The righteous flourish like the _____ tree.",
+      "answer": "palm",
+      "verse_reference": "Psalm 92:12"
+    }
+  ]
+}

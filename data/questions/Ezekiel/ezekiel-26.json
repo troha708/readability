@@ -1,0 +1,56 @@
+{
+  "book": "Ezekiel",
+  "chapter": 26,
+  "questions": [
+    {
+      "id": "ezekiel-26-q1",
+      "type": "multiple_choice",
+      "question": "Against which wealthy coastal city is the oracle in Ezekiel 26?",
+      "options": [
+        "Sidon",
+        "Tyre",
+        "Joppa",
+        "Gaza"
+      ],
+      "answer": "Tyre",
+      "verse_reference": "Ezekiel 26:2-3"
+    },
+    {
+      "id": "ezekiel-26-q2",
+      "type": "multiple_choice",
+      "question": "What did God say would be left of Tyre?",
+      "options": [
+        "A holy city devoted to the LORD",
+        "A bare rock, a place for spreading nets",
+        "A fortress stronger than ever before",
+        "A garden full of fruit and flowing streams"
+      ],
+      "answer": "A bare rock, a place for spreading nets",
+      "verse_reference": "Ezekiel 26:4-5, 14"
+    },
+    {
+      "id": "ezekiel-26-q3",
+      "type": "true_false",
+      "question": "Ezekiel 26 says many nations would come up against Tyre like the sea casting up its waves.",
+      "answer": "true",
+      "verse_reference": "Ezekiel 26:3"
+    },
+    {
+      "id": "ezekiel-26-q4",
+      "type": "fill_blank",
+      "question": "I will make you a bare _____, a place for the spreading of nets.",
+      "answer": "rock",
+      "verse_reference": "Ezekiel 26:14"
+    },
+    {
+      "id": "ezekiel-26-q5",
+      "type": "fill_blank",
+      "question": "Nebuchadnezzar king of Babylon would come against _____ from the north.",
+      "answer": "Tyre",
+      "accept": [
+        "Tyrus"
+      ],
+      "verse_reference": "Ezekiel 26:7"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "book": "Titus",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "titus_1_1",
+      "type": "multiple_choice",
+      "question": "Where did Paul leave Titus to put things in order?",
+      "options": [
+        "Crete",
+        "Corinth",
+        "Ephesus",
+        "Rome"
+      ],
+      "correct": "Crete",
+      "verse_ref": "Titus 1:5",
+      "feedback": "Paul left Titus in Crete to put what remained in order and appoint elders."
+    },
+    {
+      "id": "titus_1_2",
+      "type": "multiple_choice",
+      "question": "Paul quotes a Cretan prophet who said Cretans are always what?",
+      "options": [
+        "Wise teachers, faithful elders, and humble servants",
+        "Farmers, fishermen, and shepherds",
+        "Liars, evil beasts, and lazy gluttons",
+        "Soldiers, merchants, and rulers"
+      ],
+      "correct": "Liars, evil beasts, and lazy gluttons",
+      "verse_ref": "Titus 1:12",
+      "feedback": "Paul quotes a Cretan prophet describing them as liars, evil beasts, and lazy gluttons."
+    },
+    {
+      "id": "titus_1_3",
+      "type": "true_false",
+      "question": "Paul says an elder must not be arrogant or quick-tempered.",
+      "correct": true,
+      "verse_ref": "Titus 1:7",
+      "feedback": "An overseer must not be arrogant, quick-tempered, a drunkard, violent, or greedy."
+    },
+    {
+      "id": "titus_1_4",
+      "type": "fill_in_the_blank",
+      "question": "Paul calls Titus his true _____ in a common faith.",
+      "correct": "child",
+      "accept": [
+        "son"
+      ],
+      "verse_ref": "Titus 1:4",
+      "feedback": "Paul addresses Titus as his true child in their common faith."
+    },
+    {
+      "id": "titus_1_5",
+      "type": "fill_in_the_blank",
+      "question": "To the pure all things are pure, but to the defiled and _____ nothing is pure.",
+      "correct": "unbelieving",
+      "accept": [
+        "unstedfast"
+      ],
+      "verse_ref": "Titus 1:15",
+      "feedback": "To the pure all things are pure, but to the defiled and unbelieving nothing is pure."
+    }
+  ]
+}

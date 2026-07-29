@@ -1,0 +1,60 @@
+{
+  "book": "Psalms",
+  "chapter": 27,
+  "questions": [
+    {
+      "id": "psalms-27-q1",
+      "type": "multiple_choice",
+      "question": "How does David describe the LORD in Psalm 27?",
+      "options": [
+        "My light and my salvation; the stronghold of my life",
+        "My portion and my cup; the joy of my heart",
+        "My shepherd and my guide; the keeper of my soul",
+        "My rock and my refuge; the shield of my hope"
+      ],
+      "answer": "My light and my salvation; the stronghold of my life",
+      "verse_reference": "Psalm 27:1"
+    },
+    {
+      "id": "psalms-27-q2",
+      "type": "multiple_choice",
+      "question": "What is the one thing David asks of the LORD?",
+      "options": [
+        "To dwell in the house of the LORD all his days",
+        "To defeat all his enemies in battle",
+        "To rule over the nations from Zion",
+        "To gather to himself great wealth and many children"
+      ],
+      "answer": "To dwell in the house of the LORD all his days",
+      "verse_reference": "Psalm 27:4"
+    },
+    {
+      "id": "psalms-27-q3",
+      "type": "true_false",
+      "question": "David says, 'Whom shall I fear?' since the LORD is his salvation.",
+      "answer": "true",
+      "verse_reference": "Psalm 27:1"
+    },
+    {
+      "id": "psalms-27-q4",
+      "type": "fill_blank",
+      "question": "Wait patiently for the LORD; be strong and _____.",
+      "answer": "courageous",
+      "accept": [
+        "courage"
+      ],
+      "verse_reference": "Psalm 27:14"
+    },
+    {
+      "id": "psalms-27-q5",
+      "type": "fill_blank",
+      "question": "The LORD is the stronghold of my life — whom shall I _____?",
+      "answer": "dread",
+      "accept": [
+        "afraid",
+        "fear"
+      ],
+      "verse_reference": "Psalm 27:1"
+    }
+  ]
+}

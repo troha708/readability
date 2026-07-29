@@ -1,0 +1,53 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "2-chronicles-2-q1",
+      "type": "multiple_choice",
+      "question": "What did Solomon resolve to build?",
+      "options": [
+        "A great palace of cedar and fine gold",
+        "A fleet of ships for trade",
+        "A wall around the holy city",
+        "A house for the name of the LORD"
+      ],
+      "answer": "A house for the name of the LORD",
+      "verse_reference": "2 Chronicles 2:1"
+    },
+    {
+      "id": "2-chronicles-2-q2",
+      "type": "multiple_choice",
+      "question": "From which king did Solomon request skilled workers and cedar?",
+      "options": [
+        "Hiram (Huram) of Tyre",
+        "Hazael, king of Aram",
+        "Pharaoh, king of Egypt",
+        "Cyrus, king of Persia"
+      ],
+      "answer": "Hiram (Huram) of Tyre",
+      "verse_reference": "2 Chronicles 2:3"
+    },
+    {
+      "id": "2-chronicles-2-q3",
+      "type": "true_false",
+      "question": "Solomon conscripted laborers to carry burdens and quarry stone for the temple.",
+      "answer": "true",
+      "verse_reference": "2 Chronicles 2:2"
+    },
+    {
+      "id": "2-chronicles-2-q4",
+      "type": "fill_blank",
+      "question": "Solomon said the house must be great because our God is greater than all _____.",
+      "answer": "gods",
+      "verse_reference": "2 Chronicles 2:5"
+    },
+    {
+      "id": "2-chronicles-2-q5",
+      "type": "fill_blank",
+      "question": "Hiram sent a skilled craftsman named Huram-_____ to work in gold, bronze, and fabrics.",
+      "answer": "abi",
+      "verse_reference": "2 Chronicles 2:13"
+    }
+  ]
+}

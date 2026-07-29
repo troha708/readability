@@ -1,0 +1,53 @@
+{
+  "book": "Mark",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "mark-2-q1",
+      "type": "multiple_choice",
+      "question": "How did the paralyzed man's friends get him to Jesus?",
+      "options": [
+        "They uncovered the roof",
+        "Through the door",
+        "Through the window",
+        "They quietly waited outside"
+      ],
+      "answer": "They uncovered the roof",
+      "verse_reference": "Mark 2:4"
+    },
+    {
+      "id": "mark-2-q2",
+      "type": "multiple_choice",
+      "question": "What was Levi's occupation before Jesus called him?",
+      "options": [
+        "Tax collector",
+        "A skilled carpenter",
+        "Fisherman",
+        "Shepherd"
+      ],
+      "answer": "Tax collector",
+      "verse_reference": "Mark 2:14"
+    },
+    {
+      "id": "mark-2-q3",
+      "type": "true_false",
+      "question": "The Pharisees criticized Jesus for eating with tax collectors and sinners.",
+      "answer": "true",
+      "verse_reference": "Mark 2:16"
+    },
+    {
+      "id": "mark-2-q4",
+      "type": "fill_blank",
+      "question": "Those who are healthy have no need for a physician, but those who are _____.",
+      "answer": "sick",
+      "verse_reference": "Mark 2:17"
+    },
+    {
+      "id": "mark-2-q5",
+      "type": "fill_blank",
+      "question": "The _____ was made for man, not man for the Sabbath.",
+      "answer": "Sabbath",
+      "verse_reference": "Mark 2:27"
+    }
+  ]
+}

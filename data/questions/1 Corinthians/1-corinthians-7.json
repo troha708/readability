@@ -1,0 +1,57 @@
+{
+  "book": "1 Corinthians",
+  "chapter": 7,
+  "questions": [
+    {
+      "id": "1cor-7-q1",
+      "type": "multiple_choice",
+      "question": "What is the main topic Paul addresses in this chapter?",
+      "options": [
+        "The resurrection",
+        "Marriage and singleness",
+        "Church leadership and order",
+        "Spiritual gifts"
+      ],
+      "answer": "Marriage and singleness",
+      "verse_reference": "1 Corinthians 7:1"
+    },
+    {
+      "id": "1cor-7-q2",
+      "type": "multiple_choice",
+      "question": "What does Paul say about his own preference regarding marriage?",
+      "options": [
+        "That everyone really ought to marry",
+        "He wishes all were single as he is",
+        "That marriage is wholly required",
+        "That only the leaders should marry"
+      ],
+      "answer": "He wishes all were single as he is",
+      "verse_reference": "1 Corinthians 7:7"
+    },
+    {
+      "id": "1cor-7-q3",
+      "type": "true_false",
+      "question": "Paul commands that a believing spouse must leave an unbelieving partner.",
+      "answer": "false",
+      "verse_reference": "1 Corinthians 7:12-13"
+    },
+    {
+      "id": "1cor-7-q4",
+      "type": "fill_blank",
+      "question": "Each one should remain in the _____ he was in when he was called.",
+      "answer": "situation",
+      "accept": [
+        "calling",
+        "vocation"
+      ],
+      "verse_reference": "1 Corinthians 7:20"
+    },
+    {
+      "id": "1cor-7-q5",
+      "type": "fill_blank",
+      "question": "The time is short. From now on, those who have wives should live as though they had _____.",
+      "answer": "none",
+      "verse_reference": "1 Corinthians 7:29"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Deuteronomy",
+  "chapter": 18,
+  "questions": [
+    {
+      "id": "deuteronomy-18-q1",
+      "type": "multiple_choice",
+      "question": "What did Moses promise God would raise up like himself?",
+      "options": [
+        "A priest",
+        "A prophet",
+        "A judge",
+        "A king"
+      ],
+      "answer": "A prophet",
+      "verse_reference": "Deuteronomy 18:15"
+    },
+    {
+      "id": "deuteronomy-18-q2",
+      "type": "multiple_choice",
+      "question": "What practices were forbidden as detestable to the LORD?",
+      "options": [
+        "Divination, sorcery, and consulting the dead",
+        "Farming, trading, and traveling abroad",
+        "Fasting, mourning, and the shaving of the head",
+        "Building altars and offering incense"
+      ],
+      "answer": "Divination, sorcery, and consulting the dead",
+      "verse_reference": "Deuteronomy 18:9-12"
+    },
+    {
+      "id": "deuteronomy-18-q3",
+      "type": "true_false",
+      "question": "A prophet whose words did not come true was not speaking from the LORD.",
+      "answer": "true",
+      "verse_reference": "Deuteronomy 18:22"
+    },
+    {
+      "id": "deuteronomy-18-q4",
+      "type": "fill_blank",
+      "question": "\"The LORD your God will raise up for you a _____ like me,\" Moses said.",
+      "answer": "prophet",
+      "verse_reference": "Deuteronomy 18:15"
+    },
+    {
+      "id": "deuteronomy-18-q5",
+      "type": "fill_blank",
+      "question": "Israel was not to practice divination or consult the _____ (mediums of the dead).",
+      "answer": "dead",
+      "verse_reference": "Deuteronomy 18:11"
+    }
+  ]
+}

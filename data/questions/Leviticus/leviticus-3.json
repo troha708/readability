@@ -1,0 +1,53 @@
+{
+  "book": "Leviticus",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "leviticus-3-q1",
+      "type": "multiple_choice",
+      "question": "What offering is described in chapter 3?",
+      "options": [
+        "The burnt offering",
+        "The peace offering",
+        "The grain offering",
+        "The guilt offering"
+      ],
+      "answer": "The peace offering",
+      "verse_reference": "Leviticus 3:1"
+    },
+    {
+      "id": "leviticus-3-q2",
+      "type": "multiple_choice",
+      "question": "What part of the animal belonged to the LORD and was burned on the altar?",
+      "options": [
+        "The legs",
+        "The head",
+        "The hide",
+        "The fat"
+      ],
+      "answer": "The fat",
+      "verse_reference": "Leviticus 3:16"
+    },
+    {
+      "id": "leviticus-3-q3",
+      "type": "true_false",
+      "question": "The Israelites were commanded never to eat fat or blood.",
+      "answer": "true",
+      "verse_reference": "Leviticus 3:17"
+    },
+    {
+      "id": "leviticus-3-q4",
+      "type": "fill_blank",
+      "question": "\"All the _____ is the LORD's.\"",
+      "answer": "fat",
+      "verse_reference": "Leviticus 3:16"
+    },
+    {
+      "id": "leviticus-3-q5",
+      "type": "fill_blank",
+      "question": "The people were to eat neither fat nor _____.",
+      "answer": "blood",
+      "verse_reference": "Leviticus 3:17"
+    }
+  ]
+}

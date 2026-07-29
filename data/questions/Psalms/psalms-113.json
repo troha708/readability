@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 113,
+  "questions": [
+    {
+      "id": "psalms-113-q1",
+      "type": "multiple_choice",
+      "question": "Whom is the LORD praised for lifting up in Psalm 113?",
+      "options": [
+        "The wandering from the desert and the lost from the sea",
+        "The poor from the dust and the needy from the ash heap",
+        "The righteous from the grave and the faithful from death",
+        "The exiles from Babylon and the captives from afar"
+      ],
+      "answer": "The poor from the dust and the needy from the ash heap",
+      "verse_reference": "Psalm 113:7"
+    },
+    {
+      "id": "psalms-113-q2",
+      "type": "multiple_choice",
+      "question": "From where to where is the name of the LORD to be praised?",
+      "options": [
+        "Within the gates of Zion alone",
+        "From the rising of the sun to its setting",
+        "From the early morning until the late evening",
+        "Only in the courts of the temple"
+      ],
+      "answer": "From the rising of the sun to its setting",
+      "verse_reference": "Psalm 113:3"
+    },
+    {
+      "id": "psalms-113-q3",
+      "type": "true_false",
+      "question": "The psalm says God gives the barren woman a home, making her the joyous mother of children.",
+      "answer": "true",
+      "verse_reference": "Psalm 113:9"
+    },
+    {
+      "id": "psalms-113-q4",
+      "type": "fill_blank",
+      "question": "Blessed be the name of the LORD from this time forth and _____!",
+      "answer": "forevermore",
+      "verse_reference": "Psalm 113:2"
+    },
+    {
+      "id": "psalms-113-q5",
+      "type": "fill_blank",
+      "question": "He raises the poor from the _____ and lifts the needy from the ash heap.",
+      "answer": "dust",
+      "verse_reference": "Psalm 113:7"
+    }
+  ]
+}

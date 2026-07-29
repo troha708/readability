@@ -1,0 +1,53 @@
+{
+  "book": "Genesis",
+  "chapter": 49,
+  "questions": [
+    {
+      "id": "genesis-49-q1",
+      "type": "multiple_choice",
+      "question": "Which son did Jacob compare to a lion and give the most prominent blessing?",
+      "options": [
+        "Reuben",
+        "Judah",
+        "Joseph",
+        "Benjamin"
+      ],
+      "answer": "Judah",
+      "verse_reference": "Genesis 49:9"
+    },
+    {
+      "id": "genesis-49-q2",
+      "type": "multiple_choice",
+      "question": "Why did Reuben lose his standing as firstborn?",
+      "options": [
+        "He worshiped the gods of Canaan",
+        "He shed his brother's blood in anger",
+        "He plotted to seize the inheritance",
+        "He defiled his father's bed"
+      ],
+      "answer": "He defiled his father's bed",
+      "verse_reference": "Genesis 49:4"
+    },
+    {
+      "id": "genesis-49-q3",
+      "type": "true_false",
+      "question": "Jacob's final words to his sons included prophecies about each tribe's future.",
+      "answer": "true",
+      "verse_reference": "Genesis 49:1"
+    },
+    {
+      "id": "genesis-49-q4",
+      "type": "fill_blank",
+      "question": "Jacob declared that the scepter would not depart from _____.",
+      "answer": "Judah",
+      "verse_reference": "Genesis 49:10"
+    },
+    {
+      "id": "genesis-49-q5",
+      "type": "fill_blank",
+      "question": "Jacob asked to be buried with his fathers in the cave in the field of _____.",
+      "answer": "Machpelah",
+      "verse_reference": "Genesis 49:30"
+    }
+  ]
+}

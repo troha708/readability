@@ -1,0 +1,57 @@
+{
+  "book": "2 Samuel",
+  "chapter": 24,
+  "questions": [
+    {
+      "id": "2-samuel-24-q1",
+      "type": "multiple_choice",
+      "question": "What did David do that brought judgment, against God's will?",
+      "options": [
+        "Married many foreign wives",
+        "Took a census of the fighting men",
+        "Made a treaty with a pagan nation",
+        "Built an altar on a forbidden hill"
+      ],
+      "answer": "Took a census of the fighting men",
+      "verse_reference": "2 Samuel 24:1-10"
+    },
+    {
+      "id": "2-samuel-24-q2",
+      "type": "multiple_choice",
+      "question": "How did the plague that followed come to an end?",
+      "options": [
+        "The prophet Gad offered sacrifices on Mount Zion",
+        "David numbered the people a second time in sorrow",
+        "David gave half his treasure to the temple priests",
+        "David built an altar at the threshing floor of Araunah"
+      ],
+      "answer": "David built an altar at the threshing floor of Araunah",
+      "verse_reference": "2 Samuel 24:18-25"
+    },
+    {
+      "id": "2-samuel-24-q3",
+      "type": "true_false",
+      "question": "David chose to fall into the hands of the LORD rather than his enemies.",
+      "answer": "true",
+      "verse_reference": "2 Samuel 24:14"
+    },
+    {
+      "id": "2-samuel-24-q4",
+      "type": "fill_blank",
+      "question": "David sinned by numbering (taking a _____ of) the people of Israel.",
+      "answer": "census",
+      "accept": [
+        "number",
+        "registering"
+      ],
+      "verse_reference": "2 Samuel 24:2-10"
+    },
+    {
+      "id": "2-samuel-24-q5",
+      "type": "fill_blank",
+      "question": "David built an altar at the threshing floor of _____ to stop the plague.",
+      "answer": "Araunah",
+      "verse_reference": "2 Samuel 24:18-25"
+    }
+  ]
+}

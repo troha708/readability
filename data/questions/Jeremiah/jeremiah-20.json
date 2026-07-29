@@ -1,0 +1,57 @@
+{
+  "book": "Jeremiah",
+  "chapter": 20,
+  "questions": [
+    {
+      "id": "jeremiah-20-q1",
+      "type": "multiple_choice",
+      "question": "Who beat Jeremiah and put him in the stocks in chapter 20?",
+      "options": [
+        "Pashhur the priest",
+        "King Jehoiakim himself",
+        "Hananiah",
+        "Baruch"
+      ],
+      "answer": "Pashhur the priest",
+      "verse_reference": "Jeremiah 20:1-2"
+    },
+    {
+      "id": "jeremiah-20-q2",
+      "type": "multiple_choice",
+      "question": "How did Jeremiah describe God's word within him when he tried to stop speaking?",
+      "options": [
+        "Like a very heavy stone that he longed at last to set down",
+        "Like a fading dream that had faded away by the early morning",
+        "Like a fire shut up in his bones that he could not hold in",
+        "Like a sweet song within him that he could not ever stop singing"
+      ],
+      "answer": "Like a fire shut up in his bones that he could not hold in",
+      "verse_reference": "Jeremiah 20:9"
+    },
+    {
+      "id": "jeremiah-20-q3",
+      "type": "true_false",
+      "question": "Jeremiah laments his birth in this chapter, cursing the day he was born.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 20:14"
+    },
+    {
+      "id": "jeremiah-20-q4",
+      "type": "fill_blank",
+      "question": "There is in my heart as it were a burning _____ shut up in my bones.",
+      "answer": "fire",
+      "verse_reference": "Jeremiah 20:9"
+    },
+    {
+      "id": "jeremiah-20-q5",
+      "type": "fill_blank",
+      "question": "O LORD, you have _____ me, and I was deceived.",
+      "answer": "deceived",
+      "accept": [
+        "persuaded",
+        "enticed"
+      ],
+      "verse_reference": "Jeremiah 20:7"
+    }
+  ]
+}

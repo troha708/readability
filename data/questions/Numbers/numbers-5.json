@@ -1,0 +1,54 @@
+{
+  "book": "Numbers",
+  "chapter": 5,
+  "questions": [
+    {
+      "id": "numbers-5-q1",
+      "type": "multiple_choice",
+      "question": "What were people with certain uncleanness told to do?",
+      "options": [
+        "Stay inside the camp",
+        "Be put to death without delay",
+        "Pay a fine of silver",
+        "Be sent outside the camp"
+      ],
+      "answer": "Be sent outside the camp",
+      "verse_reference": "Numbers 5:2-3"
+    },
+    {
+      "id": "numbers-5-q2",
+      "type": "multiple_choice",
+      "question": "What did chapter 5 establish for a husband who suspected his wife?",
+      "options": [
+        "An automatic divorce",
+        "A test of jealousy",
+        "A fine",
+        "Nothing"
+      ],
+      "answer": "A test of jealousy",
+      "verse_reference": "Numbers 5:11-31"
+    },
+    {
+      "id": "numbers-5-q3",
+      "type": "true_false",
+      "question": "A person who wronged another was to make restitution and add a fifth.",
+      "answer": "true",
+      "verse_reference": "Numbers 5:7"
+    },
+    {
+      "id": "numbers-5-q4",
+      "type": "fill_blank",
+      "question": "Those who were unclean were to be put _____ the camp.",
+      "answer": "outside",
+      "accept": ["without"],
+      "verse_reference": "Numbers 5:3"
+    },
+    {
+      "id": "numbers-5-q5",
+      "type": "fill_blank",
+      "question": "Whoever wronged another was to make full restitution and add a _____ part.",
+      "answer": "fifth",
+      "verse_reference": "Numbers 5:7"
+    }
+  ]
+}

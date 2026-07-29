@@ -1,0 +1,53 @@
+{
+  "book": "Deuteronomy",
+  "chapter": 15,
+  "questions": [
+    {
+      "id": "deuteronomy-15-q1",
+      "type": "multiple_choice",
+      "question": "What happened every seventh year regarding debts?",
+      "options": [
+        "They were doubled as a penalty",
+        "They passed to the firstborn son",
+        "They had to be repaid in full",
+        "They were canceled (released)"
+      ],
+      "answer": "They were canceled (released)",
+      "verse_reference": "Deuteronomy 15:1-2"
+    },
+    {
+      "id": "deuteronomy-15-q2",
+      "type": "multiple_choice",
+      "question": "How were they to treat the poor?",
+      "options": [
+        "Be openhanded and generous, lending freely",
+        "Turn them away and lend them nothing at all",
+        "Charge them interest on every loan made",
+        "Keep your distance and avoid them always"
+      ],
+      "answer": "Be openhanded and generous, lending freely",
+      "verse_reference": "Deuteronomy 15:7-11"
+    },
+    {
+      "id": "deuteronomy-15-q3",
+      "type": "true_false",
+      "question": "A Hebrew servant freed in the seventh year was not to be sent away empty-handed.",
+      "answer": "true",
+      "verse_reference": "Deuteronomy 15:12-14"
+    },
+    {
+      "id": "deuteronomy-15-q4",
+      "type": "fill_blank",
+      "question": "At the end of every _____ years, creditors were to cancel debts.",
+      "answer": "seven",
+      "verse_reference": "Deuteronomy 15:1"
+    },
+    {
+      "id": "deuteronomy-15-q5",
+      "type": "fill_blank",
+      "question": "\"You shall open wide your _____ to your poor brother,\" Moses said.",
+      "answer": "hand",
+      "verse_reference": "Deuteronomy 15:11"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Ecclesiastes",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "ecclesiastes-2-q1",
+      "type": "multiple_choice",
+      "question": "What did the Preacher test by pursuing pleasure, building, and wealth?",
+      "options": [
+        "Whether it brought lasting meaning, but found it all vanity",
+        "Whether hard work could earn him favor with God",
+        "Whether wealth could secure his good name for all generations",
+        "Whether a king was permitted to enjoy such pleasures"
+      ],
+      "answer": "Whether it brought lasting meaning, but found it all vanity",
+      "verse_reference": "Ecclesiastes 2:1, 11"
+    },
+    {
+      "id": "ecclesiastes-2-q2",
+      "type": "multiple_choice",
+      "question": "What troubled the Preacher about his labor?",
+      "options": [
+        "Other greedy men were always stealing away the profit of his hard work",
+        "He must leave it to one who comes after him, who may be a fool",
+        "God himself had wholly forbidden him to enjoy any of its good fruit",
+        "It had earned him no real wealth and no lasting reputation at all"
+      ],
+      "answer": "He must leave it to one who comes after him, who may be a fool",
+      "verse_reference": "Ecclesiastes 2:18-19"
+    },
+    {
+      "id": "ecclesiastes-2-q3",
+      "type": "true_false",
+      "question": "The Preacher concludes there is nothing better than to eat, drink, and find enjoyment in toil, which is from the hand of God.",
+      "answer": "true",
+      "verse_reference": "Ecclesiastes 2:24"
+    },
+    {
+      "id": "ecclesiastes-2-q4",
+      "type": "fill_blank",
+      "question": "I made great works; I built houses and planted _____ for myself.",
+      "answer": "vineyards",
+      "verse_reference": "Ecclesiastes 2:4"
+    },
+    {
+      "id": "ecclesiastes-2-q5",
+      "type": "fill_blank",
+      "question": "Then I considered all that my hands had done, and behold, all was vanity and a striving after _____.",
+      "answer": "wind",
+      "verse_reference": "Ecclesiastes 2:11"
+    }
+  ]
+}

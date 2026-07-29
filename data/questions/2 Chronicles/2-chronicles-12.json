@@ -1,0 +1,53 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 12,
+  "questions": [
+    {
+      "id": "2-chronicles-12-q1",
+      "type": "multiple_choice",
+      "question": "Why did Shishak king of Egypt come up against Jerusalem?",
+      "options": [
+        "By chance, while merely passing through the land",
+        "Because Rehoboam and Judah forsook God's law",
+        "To take revenge for an old and bitter insult",
+        "To seize the gold stored in the temple treasury"
+      ],
+      "answer": "Because Rehoboam and Judah forsook God's law",
+      "verse_reference": "2 Chronicles 12:1-2"
+    },
+    {
+      "id": "2-chronicles-12-q2",
+      "type": "multiple_choice",
+      "question": "What did Rehoboam and the princes do when the prophet warned them?",
+      "options": [
+        "Attacked all of Egypt",
+        "Fled",
+        "Humbled themselves",
+        "Ignored him"
+      ],
+      "answer": "Humbled themselves",
+      "verse_reference": "2 Chronicles 12:6"
+    },
+    {
+      "id": "2-chronicles-12-q3",
+      "type": "true_false",
+      "question": "Shishak took away the treasures of the temple and the king's house.",
+      "answer": "true",
+      "verse_reference": "2 Chronicles 12:9"
+    },
+    {
+      "id": "2-chronicles-12-q4",
+      "type": "fill_blank",
+      "question": "Because they humbled themselves, the LORD's wrath turned and he granted them some _____.",
+      "answer": "deliverance",
+      "verse_reference": "2 Chronicles 12:7"
+    },
+    {
+      "id": "2-chronicles-12-q5",
+      "type": "fill_blank",
+      "question": "Rehoboam made bronze shields to replace the _____ shields Shishak took.",
+      "answer": "gold",
+      "verse_reference": "2 Chronicles 12:9-10"
+    }
+  ]
+}

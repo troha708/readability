@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 52,
+  "questions": [
+    {
+      "id": "psalms-52-q1",
+      "type": "multiple_choice",
+      "question": "What does Psalm 52 confront?",
+      "options": [
+        "A boastful, deceitful man trusting in his riches",
+        "A faithful priest serving God in the holy temple",
+        "A humble servant patiently waiting on the LORD",
+        "A wise king ruling over the nations with justice"
+      ],
+      "answer": "A boastful, deceitful man trusting in his riches",
+      "verse_reference": "Psalm 52:1-7"
+    },
+    {
+      "id": "psalms-52-q2",
+      "type": "multiple_choice",
+      "question": "To what does David compare himself in contrast?",
+      "options": [
+        "A palm tree standing tall in the courts",
+        "A fruitful vine spreading over the wall",
+        "A mighty cedar on the heights of Lebanon",
+        "A green olive tree in the house of God"
+      ],
+      "answer": "A green olive tree in the house of God",
+      "verse_reference": "Psalm 52:8"
+    },
+    {
+      "id": "psalms-52-q3",
+      "type": "true_false",
+      "question": "David trusts in the steadfast love of God forever and ever.",
+      "answer": "true",
+      "verse_reference": "Psalm 52:8"
+    },
+    {
+      "id": "psalms-52-q4",
+      "type": "fill_blank",
+      "question": "Why do you _____ of evil, O mighty man?",
+      "answer": "boast",
+      "verse_reference": "Psalm 52:1"
+    },
+    {
+      "id": "psalms-52-q5",
+      "type": "fill_blank",
+      "question": "I will thank you forever, because you have _____ it.",
+      "answer": "done",
+      "verse_reference": "Psalm 52:9"
+    }
+  ]
+}

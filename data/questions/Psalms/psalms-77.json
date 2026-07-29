@@ -1,0 +1,57 @@
+{
+  "book": "Psalms",
+  "chapter": 77,
+  "questions": [
+    {
+      "id": "psalms-77-q1",
+      "type": "multiple_choice",
+      "question": "What does Asaph do in his day of trouble in Psalm 77?",
+      "options": [
+        "Cries aloud to God and seeks the Lord, his hand stretched out",
+        "Bows down very low and offers up his sacrifice to God",
+        "Sings aloud to God and gives him thanks with a truly glad heart",
+        "Waits in deep silence and lifts up his eyes to the hills"
+      ],
+      "answer": "Cries aloud to God and seeks the Lord, his hand stretched out",
+      "verse_reference": "Psalm 77:1-2"
+    },
+    {
+      "id": "psalms-77-q2",
+      "type": "multiple_choice",
+      "question": "What anguished questions does he ask?",
+      "options": [
+        "Have my sins shut me out from His presence? Will He count my guilt against me forever?",
+        "Has God forgotten to be gracious? Has he in anger shut up his compassion?",
+        "Why do the nations rage so fiercely? Why do the peoples plot in vain?",
+        "How long, O LORD, will this go on? Will you hide your face from me forever?"
+      ],
+      "answer": "Has God forgotten to be gracious? Has he in anger shut up his compassion?",
+      "verse_reference": "Psalm 77:9"
+    },
+    {
+      "id": "psalms-77-q3",
+      "type": "true_false",
+      "question": "Asaph resolves to remember the deeds of the LORD and ponder his work.",
+      "answer": "true",
+      "verse_reference": "Psalm 77:11-12"
+    },
+    {
+      "id": "psalms-77-q4",
+      "type": "fill_blank",
+      "question": "Your way, O God, is holy. What god is great like our _____?",
+      "answer": "God",
+      "verse_reference": "Psalm 77:13"
+    },
+    {
+      "id": "psalms-77-q5",
+      "type": "fill_blank",
+      "question": "Your way was through the sea, your path through the great waters; yet your _____ were unseen.",
+      "answer": "footprints",
+      "accept": [
+        "footsteps",
+        "tracks"
+      ],
+      "verse_reference": "Psalm 77:19"
+    }
+  ]
+}

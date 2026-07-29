@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 57,
+  "questions": [
+    {
+      "id": "psalms-57-q1",
+      "type": "multiple_choice",
+      "question": "Where did David take refuge during Psalm 57's occasion?",
+      "options": [
+        "In a cave, fleeing from Saul",
+        "In exile, fleeing from Absalom",
+        "In Gath, seized by the Philistines",
+        "In the palace, confronted by Nathan"
+      ],
+      "answer": "In a cave, fleeing from Saul",
+      "verse_reference": "Psalm 57:title"
+    },
+    {
+      "id": "psalms-57-q2",
+      "type": "multiple_choice",
+      "question": "What does David say about his heart toward God?",
+      "options": [
+        "It is proud; he must humble it before God",
+        "It is faint; he longs for God as for a dry land",
+        "It is steadfast; he will sing and make melody",
+        "It is troubled; he cries out in the night"
+      ],
+      "answer": "It is steadfast; he will sing and make melody",
+      "verse_reference": "Psalm 57:7"
+    },
+    {
+      "id": "psalms-57-q3",
+      "type": "true_false",
+      "question": "David takes refuge in the shadow of God's wings until the storms of destruction pass by.",
+      "answer": "true",
+      "verse_reference": "Psalm 57:1"
+    },
+    {
+      "id": "psalms-57-q4",
+      "type": "fill_blank",
+      "question": "Be exalted, O God, above the heavens! Let your glory be over all the _____!",
+      "answer": "earth",
+      "verse_reference": "Psalm 57:5"
+    },
+    {
+      "id": "psalms-57-q5",
+      "type": "fill_blank",
+      "question": "My heart is steadfast, O God, my heart is steadfast! I will _____ and make melody.",
+      "answer": "sing",
+      "verse_reference": "Psalm 57:7"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Judges",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "judges-4-q1",
+      "type": "multiple_choice",
+      "question": "Who was the prophetess and judge who led Israel with Barak?",
+      "options": [
+        "Miriam",
+        "Deborah",
+        "Jael",
+        "Hannah"
+      ],
+      "answer": "Deborah",
+      "verse_reference": "Judges 4:4"
+    },
+    {
+      "id": "judges-4-q2",
+      "type": "multiple_choice",
+      "question": "Who killed the enemy commander Sisera with a tent peg?",
+      "options": [
+        "Ehud",
+        "Jael",
+        "Barak",
+        "Deborah"
+      ],
+      "answer": "Jael",
+      "verse_reference": "Judges 4:21"
+    },
+    {
+      "id": "judges-4-q3",
+      "type": "true_false",
+      "question": "Barak refused to go to battle unless Deborah went with him.",
+      "answer": "true",
+      "verse_reference": "Judges 4:8"
+    },
+    {
+      "id": "judges-4-q4",
+      "type": "fill_blank",
+      "question": "_____, a prophetess, was judging Israel at that time.",
+      "answer": "Deborah",
+      "verse_reference": "Judges 4:4"
+    },
+    {
+      "id": "judges-4-q5",
+      "type": "fill_blank",
+      "question": "_____ drove a tent peg through the temple of Sisera as he slept.",
+      "answer": "Jael",
+      "verse_reference": "Judges 4:21"
+    }
+  ]
+}

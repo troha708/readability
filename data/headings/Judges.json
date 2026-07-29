@@ -1,0 +1,256 @@
+{
+  "book": "Judges",
+  "source": "Berean Standard Bible (CC0 Public Domain)",
+  "chapters": {
+    "1": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Conquest of Canaan Proceeds"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "The Capture of Jerusalem and Hebron"
+      },
+      {
+        "beforeVerse": 27,
+        "heading": "The Failure to Complete the Conquest"
+      }
+    ],
+    "2": [
+      {
+        "beforeVerse": 1,
+        "heading": "Israel Rebuked at Bochim"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "Joshua’s Death and Burial"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "Israel’s Unfaithfulness"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "Judges Raised Up"
+      }
+    ],
+    "3": [
+      {
+        "beforeVerse": 1,
+        "heading": "Nations Left to Test Israel"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "Othniel"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "Ehud"
+      },
+      {
+        "beforeVerse": 31,
+        "heading": "Shamgar"
+      }
+    ],
+    "4": [
+      {
+        "beforeVerse": 1,
+        "heading": "Deborah and Barak"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "Jael Kills Sisera"
+      }
+    ],
+    "5": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Song of Deborah and Barak"
+      }
+    ],
+    "6": [
+      {
+        "beforeVerse": 1,
+        "heading": "Midian Oppresses Israel"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "The Call of Gideon"
+      },
+      {
+        "beforeVerse": 25,
+        "heading": "Gideon Destroys Baal’s Altar"
+      },
+      {
+        "beforeVerse": 33,
+        "heading": "The Sign of the Fleece"
+      }
+    ],
+    "7": [
+      {
+        "beforeVerse": 1,
+        "heading": "Gideon’s Army of Three Hundred"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "The Sword of Gideon"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "Gideon Defeats Midian"
+      }
+    ],
+    "8": [
+      {
+        "beforeVerse": 1,
+        "heading": "Gideon Defeats Zebah and Zalmunna"
+      },
+      {
+        "beforeVerse": 22,
+        "heading": "Gideon’s Ephod"
+      },
+      {
+        "beforeVerse": 28,
+        "heading": "Forty Years of Peace"
+      },
+      {
+        "beforeVerse": 32,
+        "heading": "Gideon’s Death"
+      }
+    ],
+    "9": [
+      {
+        "beforeVerse": 1,
+        "heading": "Abimelech’s Conspiracy"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "Jotham’s Parable"
+      },
+      {
+        "beforeVerse": 22,
+        "heading": "Gaal Conspires with the Shechemites"
+      },
+      {
+        "beforeVerse": 30,
+        "heading": "The Fall of Shechem"
+      },
+      {
+        "beforeVerse": 50,
+        "heading": "Abimelech’s Punishment"
+      }
+    ],
+    "10": [
+      {
+        "beforeVerse": 1,
+        "heading": "Tola"
+      },
+      {
+        "beforeVerse": 3,
+        "heading": "Jair"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "Oppression by the Philistines and Ammonites"
+      }
+    ],
+    "11": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jephthah Delivers Israel"
+      },
+      {
+        "beforeVerse": 29,
+        "heading": "Jephthah’s Tragic Vow"
+      }
+    ],
+    "12": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jephthah Defeats Ephraim"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "Ibzan, Elon, and Abdon"
+      }
+    ],
+    "13": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Birth of Samson"
+      }
+    ],
+    "14": [
+      {
+        "beforeVerse": 1,
+        "heading": "Samson’s Marriage"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "Samson’s Riddle"
+      }
+    ],
+    "15": [
+      {
+        "beforeVerse": 1,
+        "heading": "Samson’s Revenge"
+      }
+    ],
+    "16": [
+      {
+        "beforeVerse": 1,
+        "heading": "Samson Escapes Gaza"
+      },
+      {
+        "beforeVerse": 4,
+        "heading": "Samson and Delilah"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "Delilah Learns the Secret"
+      },
+      {
+        "beforeVerse": 23,
+        "heading": "Samson’s Vengeance and Death"
+      }
+    ],
+    "17": [
+      {
+        "beforeVerse": 1,
+        "heading": "Micah’s Idolatry"
+      }
+    ],
+    "18": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Danites Settle in Laish"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "The Danites Take Micah’s Idols"
+      }
+    ],
+    "19": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Crime of the Benjamites"
+      }
+    ],
+    "20": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Decree of the Assembly"
+      },
+      {
+        "beforeVerse": 18,
+        "heading": "Civil War against Benjamin"
+      }
+    ],
+    "21": [
+      {
+        "beforeVerse": 1,
+        "heading": "Wives for the Benjamites"
+      }
+    ]
+  }
+}

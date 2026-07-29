@@ -1,0 +1,53 @@
+{
+  "book": "Ecclesiastes",
+  "chapter": 5,
+  "questions": [
+    {
+      "id": "ecclesiastes-5-q1",
+      "type": "multiple_choice",
+      "question": "What does Ecclesiastes 5 advise when going to the house of God?",
+      "options": [
+        "Guard your steps; be quick to listen rather than offer the sacrifice of fools",
+        "Bring along your very finest offering and pay all of your vows generously",
+        "Pour out all your heart before him with very many words and with long prayers",
+        "Approach him boldly and freely, for God greatly delights in the bold of heart"
+      ],
+      "answer": "Guard your steps; be quick to listen rather than offer the sacrifice of fools",
+      "verse_reference": "Ecclesiastes 5:1"
+    },
+    {
+      "id": "ecclesiastes-5-q2",
+      "type": "multiple_choice",
+      "question": "What does Ecclesiastes 5 say about the lover of money?",
+      "options": [
+        "He will sleep sweetly, whether he eats little or much",
+        "He will be honored above the poor and the wise",
+        "He will gain rest and security for his old age",
+        "He will never be satisfied with money or income"
+      ],
+      "answer": "He will never be satisfied with money or income",
+      "verse_reference": "Ecclesiastes 5:10"
+    },
+    {
+      "id": "ecclesiastes-5-q3",
+      "type": "true_false",
+      "question": "Ecclesiastes 5 advises being quick to make vows to God.",
+      "answer": "false",
+      "verse_reference": "Ecclesiastes 5:2, 5"
+    },
+    {
+      "id": "ecclesiastes-5-q4",
+      "type": "fill_blank",
+      "question": "He who loves money will not be _____ with money.",
+      "answer": "satisfied",
+      "verse_reference": "Ecclesiastes 5:10"
+    },
+    {
+      "id": "ecclesiastes-5-q5",
+      "type": "fill_blank",
+      "question": "When you vow a vow to God, do not delay paying it, for he has no pleasure in _____.",
+      "answer": "fools",
+      "verse_reference": "Ecclesiastes 5:4"
+    }
+  ]
+}

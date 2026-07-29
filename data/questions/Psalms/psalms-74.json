@@ -1,0 +1,56 @@
+{
+  "book": "Psalms",
+  "chapter": 74,
+  "questions": [
+    {
+      "id": "psalms-74-q1",
+      "type": "multiple_choice",
+      "question": "What is the subject of Asaph's lament in Psalm 74?",
+      "options": [
+        "The enemy's destruction of God's sanctuary",
+        "The exodus of Israel out of Egypt",
+        "The king's victory over the nations",
+        "The wonders of God seen in creation"
+      ],
+      "answer": "The enemy's destruction of God's sanctuary",
+      "verse_reference": "Psalm 74:3-7"
+    },
+    {
+      "id": "psalms-74-q2",
+      "type": "multiple_choice",
+      "question": "What does Asaph remind God of, to plead his cause?",
+      "options": [
+        "That God will surely send a great deliverer from the line of David",
+        "That God is king and has worked salvation in the earth from of old",
+        "That God still remembers his ancient covenant made with Abraham",
+        "That God will gather his scattered exiles home from lands afar"
+      ],
+      "answer": "That God is king and has worked salvation in the earth from of old",
+      "verse_reference": "Psalm 74:12"
+    },
+    {
+      "id": "psalms-74-q3",
+      "type": "true_false",
+      "question": "The psalm asks God to remember the congregation he purchased of old.",
+      "answer": "true",
+      "verse_reference": "Psalm 74:2"
+    },
+    {
+      "id": "psalms-74-q4",
+      "type": "fill_blank",
+      "question": "Yet God my King is from of old, working salvation in the midst of the _____.",
+      "answer": "earth",
+      "verse_reference": "Psalm 74:12"
+    },
+    {
+      "id": "psalms-74-q5",
+      "type": "fill_blank",
+      "question": "Remember how the enemy has _____ You, O LORD.",
+      "answer": "mocked",
+      "accept": [
+        "reproached"
+      ],
+      "verse_reference": "Psalm 74:18"
+    }
+  ]
+}

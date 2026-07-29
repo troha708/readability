@@ -1,0 +1,344 @@
+{
+  "book": "Proverbs",
+  "source": "Berean Standard Bible (CC0 Public Domain)",
+  "chapters": {
+    "1": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Beginning of Knowledge"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "The Enticement of Sin"
+      },
+      {
+        "beforeVerse": 20,
+        "heading": "Wisdom Calls Aloud"
+      }
+    ],
+    "2": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Benefits of Wisdom"
+      }
+    ],
+    "3": [
+      {
+        "beforeVerse": 1,
+        "heading": "Trust in the LORD with All Your Heart"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "The Blessings of Wisdom"
+      }
+    ],
+    "4": [
+      {
+        "beforeVerse": 1,
+        "heading": "A Father’s Instruction"
+      }
+    ],
+    "5": [
+      {
+        "beforeVerse": 1,
+        "heading": "Avoiding Immorality"
+      }
+    ],
+    "6": [
+      {
+        "beforeVerse": 1,
+        "heading": "Warnings against Foolishness"
+      },
+      {
+        "beforeVerse": 20,
+        "heading": "Warnings against Adultery"
+      }
+    ],
+    "7": [
+      {
+        "beforeVerse": 1,
+        "heading": "Warnings about the Adulteress"
+      }
+    ],
+    "8": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Excellence of Wisdom"
+      }
+    ],
+    "9": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Way of Wisdom"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "The Way of Folly"
+      }
+    ],
+    "10": [
+      {
+        "beforeVerse": 1,
+        "heading": "Solomon’s Proverbs: The Wise Son"
+      }
+    ],
+    "11": [
+      {
+        "beforeVerse": 1,
+        "heading": "Dishonest Scales"
+      }
+    ],
+    "12": [
+      {
+        "beforeVerse": 1,
+        "heading": "Loving Discipline and Knowledge"
+      }
+    ],
+    "13": [
+      {
+        "beforeVerse": 1,
+        "heading": "A Father’s Discipline"
+      }
+    ],
+    "14": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Wise Woman"
+      }
+    ],
+    "15": [
+      {
+        "beforeVerse": 1,
+        "heading": "A Gentle Answer Turns Away Wrath"
+      }
+    ],
+    "16": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Reply of the Tongue Is from the LORD"
+      }
+    ],
+    "17": [
+      {
+        "beforeVerse": 1,
+        "heading": "Better a Dry Morsel in Quietness"
+      }
+    ],
+    "18": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Selfishness of the Unfriendly"
+      }
+    ],
+    "19": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Man of Integrity"
+      }
+    ],
+    "20": [
+      {
+        "beforeVerse": 1,
+        "heading": "Wine Is a Mocker"
+      }
+    ],
+    "21": [
+      {
+        "beforeVerse": 1,
+        "heading": "The King’s Heart"
+      }
+    ],
+    "22": [
+      {
+        "beforeVerse": 1,
+        "heading": "A Good Name"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "Thirty Sayings of the Wise"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "Saying 1"
+      },
+      {
+        "beforeVerse": 22,
+        "heading": "Saying 2"
+      },
+      {
+        "beforeVerse": 24,
+        "heading": "Saying 3"
+      },
+      {
+        "beforeVerse": 26,
+        "heading": "Saying 4"
+      },
+      {
+        "beforeVerse": 28,
+        "heading": "Saying 5"
+      },
+      {
+        "beforeVerse": 29,
+        "heading": "Saying 6"
+      }
+    ],
+    "23": [
+      {
+        "beforeVerse": 1,
+        "heading": "True Riches"
+      },
+      {
+        "beforeVerse": 1,
+        "heading": "Saying 7"
+      },
+      {
+        "beforeVerse": 4,
+        "heading": "Saying 8"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "Saying 9"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "Saying 10"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "Saying 11"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "Saying 12"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "Saying 13"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "Saying 14"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "Saying 15"
+      },
+      {
+        "beforeVerse": 19,
+        "heading": "Saying 16"
+      },
+      {
+        "beforeVerse": 22,
+        "heading": "Saying 17"
+      },
+      {
+        "beforeVerse": 26,
+        "heading": "Saying 18"
+      },
+      {
+        "beforeVerse": 29,
+        "heading": "Saying 19"
+      }
+    ],
+    "24": [
+      {
+        "beforeVerse": 1,
+        "heading": "Do Not Envy"
+      },
+      {
+        "beforeVerse": 1,
+        "heading": "Saying 20"
+      },
+      {
+        "beforeVerse": 3,
+        "heading": "Saying 21"
+      },
+      {
+        "beforeVerse": 5,
+        "heading": "Saying 22"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "Saying 23"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "Saying 24"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "Saying 25"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "Saying 26"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "Saying 27"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "Saying 28"
+      },
+      {
+        "beforeVerse": 19,
+        "heading": "Saying 29"
+      },
+      {
+        "beforeVerse": 21,
+        "heading": "Saying 30"
+      },
+      {
+        "beforeVerse": 23,
+        "heading": "Further Sayings of the Wise"
+      }
+    ],
+    "25": [
+      {
+        "beforeVerse": 1,
+        "heading": "More Proverbs of Solomon"
+      }
+    ],
+    "26": [
+      {
+        "beforeVerse": 1,
+        "heading": "Similitudes and Instructions"
+      }
+    ],
+    "27": [
+      {
+        "beforeVerse": 1,
+        "heading": "Do Not Boast about Tomorrow"
+      }
+    ],
+    "28": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Boldness of the Righteous"
+      }
+    ],
+    "29": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Flourishing of the Righteous"
+      }
+    ],
+    "30": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Words of Agur"
+      }
+    ],
+    "31": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Sayings for King Lemuel"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "The Virtues of a Noble Woman"
+      }
+    ]
+  }
+}

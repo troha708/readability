@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 46,
+  "questions": [
+    {
+      "id": "psalms-46-q1",
+      "type": "multiple_choice",
+      "question": "How is God described at the start of Psalm 46?",
+      "options": [
+        "Our rock and redeemer, the lifter of our heads",
+        "Our shepherd and our guide, leading us beside still waters",
+        "Our portion and reward, the joy of our salvation",
+        "Our refuge and strength, a very present help in trouble"
+      ],
+      "answer": "Our refuge and strength, a very present help in trouble",
+      "verse_reference": "Psalm 46:1"
+    },
+    {
+      "id": "psalms-46-q2",
+      "type": "multiple_choice",
+      "question": "What famous command does God give in this psalm?",
+      "options": [
+        "Wait for the LORD and take courage",
+        "Trust in the LORD and do good",
+        "Be still, and know that I am God",
+        "Delight yourself in the LORD always"
+      ],
+      "answer": "Be still, and know that I am God",
+      "verse_reference": "Psalm 46:10"
+    },
+    {
+      "id": "psalms-46-q3",
+      "type": "true_false",
+      "question": "The psalm says the LORD of hosts is with us; the God of Jacob is our fortress.",
+      "answer": "true",
+      "verse_reference": "Psalm 46:7"
+    },
+    {
+      "id": "psalms-46-q4",
+      "type": "fill_blank",
+      "question": "Be still, and know that I am _____.",
+      "answer": "God",
+      "verse_reference": "Psalm 46:10"
+    },
+    {
+      "id": "psalms-46-q5",
+      "type": "fill_blank",
+      "question": "There is a river whose streams make glad the city of _____.",
+      "answer": "God",
+      "verse_reference": "Psalm 46:4"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "book": "1 Samuel",
+  "chapter": 14,
+  "questions": [
+    {
+      "id": "1-samuel-14-q1",
+      "type": "multiple_choice",
+      "question": "Who attacked the Philistine garrison with only his armor-bearer?",
+      "options": [
+        "Saul",
+        "David",
+        "Samuel",
+        "Jonathan"
+      ],
+      "answer": "Jonathan",
+      "verse_reference": "1 Samuel 14:1-6"
+    },
+    {
+      "id": "1-samuel-14-q2",
+      "type": "multiple_choice",
+      "question": "What rash oath did Saul make that almost cost Jonathan his life?",
+      "options": [
+        "That anyone who ate before evening would be cursed",
+        "That no one would speak until the battle ended",
+        "That the first man to flee from the fight would be put to death",
+        "That the army would fast for seven full days"
+      ],
+      "answer": "That anyone who ate before evening would be cursed",
+      "verse_reference": "1 Samuel 14:24"
+    },
+    {
+      "id": "1-samuel-14-q3",
+      "type": "true_false",
+      "question": "Jonathan ate honey, not knowing about Saul's oath.",
+      "answer": "true",
+      "verse_reference": "1 Samuel 14:27"
+    },
+    {
+      "id": "1-samuel-14-q4",
+      "type": "fill_blank",
+      "question": "_____ and his armor-bearer attacked the Philistines, trusting the LORD to save by many or few.",
+      "answer": "Jonathan",
+      "verse_reference": "1 Samuel 14:6"
+    },
+    {
+      "id": "1-samuel-14-q5",
+      "type": "fill_blank",
+      "question": "Jonathan ate some _____ from the forest, unaware of his father's oath.",
+      "answer": "honey",
+      "accept": [
+        "honeycomb"
+      ],
+      "verse_reference": "1 Samuel 14:27"
+    }
+  ]
+}

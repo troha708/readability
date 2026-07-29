@@ -1,0 +1,53 @@
+{
+  "book": "Proverbs",
+  "chapter": 5,
+  "questions": [
+    {
+      "id": "proverbs-5-q1",
+      "type": "multiple_choice",
+      "question": "What is the main warning of Proverbs 5?",
+      "options": [
+        "Against the sin of a proud heart",
+        "Against the snare of strong drink",
+        "Against the deep love of money and gain",
+        "Against the forbidden/adulterous woman"
+      ],
+      "answer": "Against the forbidden/adulterous woman",
+      "verse_reference": "Proverbs 5:3"
+    },
+    {
+      "id": "proverbs-5-q2",
+      "type": "multiple_choice",
+      "question": "What positive instruction does Proverbs 5 give about marriage?",
+      "options": [
+        "Choose yourself a wife only for her wealth and the great honor of her house",
+        "Guard your own freedom carefully and do not bind yourself to any one woman",
+        "Take to yourself many wives so that your household may grow great and large",
+        "Rejoice in the wife of your youth and drink water from your own cistern"
+      ],
+      "answer": "Rejoice in the wife of your youth and drink water from your own cistern",
+      "verse_reference": "Proverbs 5:15, 18"
+    },
+    {
+      "id": "proverbs-5-q3",
+      "type": "true_false",
+      "question": "Proverbs 5 says the lips of a forbidden woman drip honey, but in the end she is bitter as wormwood.",
+      "answer": "true",
+      "verse_reference": "Proverbs 5:3-4"
+    },
+    {
+      "id": "proverbs-5-q4",
+      "type": "fill_blank",
+      "question": "Drink water from your own _____, flowing water from your own well.",
+      "answer": "cistern",
+      "verse_reference": "Proverbs 5:15"
+    },
+    {
+      "id": "proverbs-5-q5",
+      "type": "fill_blank",
+      "question": "Rejoice in the wife of your _____.",
+      "answer": "youth",
+      "verse_reference": "Proverbs 5:18"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "book": "John",
+  "chapter": 10,
+  "questions": [
+    {
+      "id": "john-10-q1",
+      "type": "multiple_choice",
+      "question": "In his teaching about the sheep, what did Jesus call himself?",
+      "options": [
+        "The good shepherd",
+        "The great chief priest",
+        "The gatekeeper",
+        "The true vine"
+      ],
+      "answer": "The good shepherd",
+      "verse_reference": "John 10:11"
+    },
+    {
+      "id": "john-10-q2",
+      "type": "multiple_choice",
+      "question": "What does the good shepherd do for the sheep, according to Jesus?",
+      "options": [
+        "Lays down his life for them",
+        "Feeds them daily",
+        "Builds them a pen",
+        "Leads them to green pastures"
+      ],
+      "answer": "Lays down his life for them",
+      "verse_reference": "John 10:11"
+    },
+    {
+      "id": "john-10-q3",
+      "type": "true_false",
+      "question": "Jesus said that his sheep hear his voice, and he knows them, and they follow him.",
+      "answer": "true",
+      "verse_reference": "John 10:27"
+    },
+    {
+      "id": "john-10-q4",
+      "type": "fill_blank",
+      "question": "I am the _____. If anyone enters through Me, he will be saved.",
+      "answer": "gate",
+      "accept": [
+        "door"
+      ],
+      "verse_reference": "John 10:9"
+    },
+    {
+      "id": "john-10-q5",
+      "type": "fill_blank",
+      "question": "I and the _____ are one.",
+      "answer": "Father",
+      "verse_reference": "John 10:30"
+    }
+  ]
+}

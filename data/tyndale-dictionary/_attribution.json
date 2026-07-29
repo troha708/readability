@@ -1,0 +1,7 @@
+{
+  "source": "Tyndale Open Bible Dictionary, Tyndale House Publishers",
+  "license": "CC BY-SA 4.0",
+  "url": "https://tyndaleopenresources.com/",
+  "attribution": "Adapted from Tyndale Open Bible Dictionary. The original work by Tyndale House Publishers is available for free at http://www.tyndaleopenresources.com.",
+  "notes": "Reformatted from Articles/*.xml to per-letter JSON by scripts/build-tyndale-dictionary.mjs; scripture links flattened to full references, cross-references kept as internal id links, images/maps/charts dropped. This adapted dataset remains CC BY-SA 4.0."
+}

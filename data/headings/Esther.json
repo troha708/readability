@@ -1,0 +1,106 @@
+{
+  "book": "Esther",
+  "source": "Berean Standard Bible (CC0 Public Domain)",
+  "chapters": {
+    "1": [
+      {
+        "beforeVerse": 1,
+        "heading": "Xerxes’ Royal Feast"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "Queen Vashti’s Refusal"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "Queen Vashti Deposed"
+      }
+    ],
+    "2": [
+      {
+        "beforeVerse": 1,
+        "heading": "Seeking Vashti’s Successor"
+      },
+      {
+        "beforeVerse": 5,
+        "heading": "Esther Finds Favor"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "Esther Becomes Queen"
+      },
+      {
+        "beforeVerse": 21,
+        "heading": "Mordecai Uncovers a Conspiracy"
+      }
+    ],
+    "3": [
+      {
+        "beforeVerse": 1,
+        "heading": "Haman’s Plot against the Jews"
+      }
+    ],
+    "4": [
+      {
+        "beforeVerse": 1,
+        "heading": "Mordecai Appeals to Esther"
+      }
+    ],
+    "5": [
+      {
+        "beforeVerse": 1,
+        "heading": "Esther Approaches the King"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "Haman’s Plot against Mordecai"
+      }
+    ],
+    "6": [
+      {
+        "beforeVerse": 1,
+        "heading": "Mordecai Is Honored"
+      }
+    ],
+    "7": [
+      {
+        "beforeVerse": 1,
+        "heading": "Esther Pleads for Her People"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "The Hanging of Haman"
+      }
+    ],
+    "8": [
+      {
+        "beforeVerse": 1,
+        "heading": "Esther Appeals for the Jews"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "The Decree of Xerxes"
+      }
+    ],
+    "9": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Jews Destroy Their Enemies"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "Haman’s Sons Hanged"
+      },
+      {
+        "beforeVerse": 18,
+        "heading": "The Feast of Purim Instituted"
+      }
+    ],
+    "10": [
+      {
+        "beforeVerse": 1,
+        "heading": "Tribute to Xerxes and Mordecai"
+      }
+    ]
+  }
+}

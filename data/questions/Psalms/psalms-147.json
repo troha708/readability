@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 147,
+  "questions": [
+    {
+      "id": "psalms-147-q1",
+      "type": "multiple_choice",
+      "question": "Whom does the LORD heal and care for in Psalm 147?",
+      "options": [
+        "The wealthy rulers, increasing their riches",
+        "The brokenhearted, binding up their wounds",
+        "The proud nations, gathering them to Zion",
+        "The mighty warriors, arming them for battle"
+      ],
+      "answer": "The brokenhearted, binding up their wounds",
+      "verse_reference": "Psalm 147:3"
+    },
+    {
+      "id": "psalms-147-q2",
+      "type": "multiple_choice",
+      "question": "What shows God's vast understanding in Psalm 147?",
+      "options": [
+        "He measures the waters in the palm of his hand",
+        "He numbers the grains of sand on the shore",
+        "He weighs the mountains in a great balance",
+        "He counts the stars and calls them by name"
+      ],
+      "answer": "He counts the stars and calls them by name",
+      "verse_reference": "Psalm 147:4"
+    },
+    {
+      "id": "psalms-147-q3",
+      "type": "true_false",
+      "question": "The psalm says the LORD takes pleasure in those who fear him and hope in his steadfast love.",
+      "answer": "true",
+      "verse_reference": "Psalm 147:11"
+    },
+    {
+      "id": "psalms-147-q4",
+      "type": "fill_blank",
+      "question": "He heals the brokenhearted and binds up their _____.",
+      "answer": "wounds",
+      "verse_reference": "Psalm 147:3"
+    },
+    {
+      "id": "psalms-147-q5",
+      "type": "fill_blank",
+      "question": "He determines the number of the _____; he gives to all of them their names.",
+      "answer": "stars",
+      "verse_reference": "Psalm 147:4"
+    }
+  ]
+}

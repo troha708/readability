@@ -1,0 +1,7 @@
+{
+  "source": "Tyndale Open Study Notes (theme articles), Tyndale House Publishers",
+  "license": "CC BY-SA 4.0",
+  "url": "https://tyndaleopenresources.com/",
+  "attribution": "Adapted from Tyndale Open Study Notes. The original work by Tyndale House Publishers is available for free at http://www.tyndaleopenresources.com.",
+  "notes": "Theme articles reformatted from ThemeNotes.xml to JSON by scripts/build-tyndale-themes.mjs; scripture links flattened to full references, cross-references kept as internal id links. This adapted dataset remains CC BY-SA 4.0."
+}

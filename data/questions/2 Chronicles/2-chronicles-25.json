@@ -1,0 +1,57 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 25,
+  "questions": [
+    {
+      "id": "2-chronicles-25-q1",
+      "type": "multiple_choice",
+      "question": "What did Amaziah do that the LORD disapproved of after defeating Edom?",
+      "options": [
+        "Set free the prisoners taken in war",
+        "Married a princess from a distant foreign land",
+        "Burned the temple of the LORD",
+        "Brought back and worshiped the gods of Edom"
+      ],
+      "answer": "Brought back and worshiped the gods of Edom",
+      "verse_reference": "2 Chronicles 25:14"
+    },
+    {
+      "id": "2-chronicles-25-q2",
+      "type": "multiple_choice",
+      "question": "What was the outcome of Amaziah challenging Joash king of Israel?",
+      "options": [
+        "Nothing at all came of the rash and bold challenge",
+        "Judah won the battle and took away much plunder",
+        "The two kings made a lasting peace between them",
+        "Judah was defeated and Jerusalem's wall broken down"
+      ],
+      "answer": "Judah was defeated and Jerusalem's wall broken down",
+      "verse_reference": "2 Chronicles 25:21-23"
+    },
+    {
+      "id": "2-chronicles-25-q3",
+      "type": "true_false",
+      "question": "Amaziah did what was right, but not with a whole heart.",
+      "answer": "true",
+      "verse_reference": "2 Chronicles 25:2"
+    },
+    {
+      "id": "2-chronicles-25-q4",
+      "type": "fill_blank",
+      "question": "Amaziah hired soldiers from Israel but sent them back at the word of a _____ of God.",
+      "answer": "man",
+      "verse_reference": "2 Chronicles 25:7-10"
+    },
+    {
+      "id": "2-chronicles-25-q5",
+      "type": "fill_blank",
+      "question": "Joash king of Israel compared Amaziah to a _____ challenging a cedar.",
+      "answer": "thistle",
+      "accept": [
+        "thorn",
+        "thorn-bush"
+      ],
+      "verse_reference": "2 Chronicles 25:18"
+    }
+  ]
+}

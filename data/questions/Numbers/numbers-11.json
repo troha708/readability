@@ -1,0 +1,55 @@
+{
+  "book": "Numbers",
+  "chapter": 11,
+  "questions": [
+    {
+      "id": "numbers-11-q1",
+      "type": "multiple_choice",
+      "question": "What did the people complain they missed from Egypt?",
+      "options": [
+        "The freedom to come and go",
+        "Meat, fish, cucumbers, and melons",
+        "The houses they had left behind",
+        "Gold and silver from the Egyptians"
+      ],
+      "answer": "Meat, fish, cucumbers, and melons",
+      "verse_reference": "Numbers 11:4-5"
+    },
+    {
+      "id": "numbers-11-q2",
+      "type": "multiple_choice",
+      "question": "How did God provide meat for the people?",
+      "options": [
+        "Quail brought by a wind",
+        "Cattle driven from Egypt",
+        "Wild game from the hills",
+        "Fish gathered from a stream"
+      ],
+      "answer": "Quail brought by a wind",
+      "verse_reference": "Numbers 11:31"
+    },
+    {
+      "id": "numbers-11-q3",
+      "type": "true_false",
+      "question": "God put his Spirit on seventy elders to help Moses bear the people's burden.",
+      "answer": "true",
+      "verse_reference": "Numbers 11:16-25"
+    },
+    {
+      "id": "numbers-11-q4",
+      "type": "fill_blank",
+      "question": "The people wept and craved _____, remembering what they ate in Egypt.",
+      "answer": "meat",
+      "accept": ["flesh"],
+      "verse_reference": "Numbers 11:4"
+    },
+    {
+      "id": "numbers-11-q5",
+      "type": "fill_blank",
+      "question": "God brought _____ from the sea by a wind to feed the people.",
+      "answer": "quail",
+      "accept": ["quails"],
+      "verse_reference": "Numbers 11:31"
+    }
+  ]
+}

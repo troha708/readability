@@ -1,0 +1,53 @@
+{
+  "book": "Job",
+  "chapter": 24,
+  "questions": [
+    {
+      "id": "job-24-q1",
+      "type": "multiple_choice",
+      "question": "What did Job complain about in chapter 24?",
+      "options": [
+        "That his closest friends had all abandoned him",
+        "That the harsh weather had wholly ruined all of his crops",
+        "That God does not seem to set times to judge the wicked",
+        "That his failing health would never again recover"
+      ],
+      "answer": "That God does not seem to set times to judge the wicked",
+      "verse_reference": "Job 24:1"
+    },
+    {
+      "id": "job-24-q2",
+      "type": "multiple_choice",
+      "question": "What wicked deeds did Job describe?",
+      "options": [
+        "Speaking many lies in the courtroom and bribing all of the judges",
+        "Bowing down to idols and offering their children in fire",
+        "Waging unjust wars and plundering far-off distant cities",
+        "Moving boundary stones, oppressing the poor, murder, and theft"
+      ],
+      "answer": "Moving boundary stones, oppressing the poor, murder, and theft",
+      "verse_reference": "Job 24:2-14"
+    },
+    {
+      "id": "job-24-q3",
+      "type": "true_false",
+      "question": "Job observed that the wicked seem to go unpunished for a time.",
+      "answer": "true",
+      "verse_reference": "Job 24:22-23"
+    },
+    {
+      "id": "job-24-q4",
+      "type": "fill_blank",
+      "question": "Job said the murderer rises in the dark to kill the poor and _____.",
+      "answer": "needy",
+      "verse_reference": "Job 24:14"
+    },
+    {
+      "id": "job-24-q5",
+      "type": "fill_blank",
+      "question": "Job said the adulterer waits for the _____, disguising his face.",
+      "answer": "twilight",
+      "verse_reference": "Job 24:15"
+    }
+  ]
+}

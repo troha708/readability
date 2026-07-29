@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 14,
+  "questions": [
+    {
+      "id": "psalms-14-q1",
+      "type": "multiple_choice",
+      "question": "What does the fool say in his heart?",
+      "options": [
+        "I am rich",
+        "There is no God",
+        "I am wise",
+        "Life is good"
+      ],
+      "answer": "There is no God",
+      "verse_reference": "Psalm 14:1"
+    },
+    {
+      "id": "psalms-14-q2",
+      "type": "multiple_choice",
+      "question": "What did the LORD see when he looked down on mankind?",
+      "options": [
+        "Many who seek the LORD with their whole heart",
+        "None who does good, no, not one",
+        "Wise rulers who govern the nations",
+        "A faithful remnant kept for himself"
+      ],
+      "answer": "None who does good, no, not one",
+      "verse_reference": "Psalm 14:3"
+    },
+    {
+      "id": "psalms-14-q3",
+      "type": "true_false",
+      "question": "The psalm longs for salvation for Israel to come out of Zion.",
+      "answer": "true",
+      "verse_reference": "Psalm 14:7"
+    },
+    {
+      "id": "psalms-14-q4",
+      "type": "fill_blank",
+      "question": "The fool says in his heart, 'There is no _____.'",
+      "answer": "God",
+      "verse_reference": "Psalm 14:1"
+    },
+    {
+      "id": "psalms-14-q5",
+      "type": "fill_blank",
+      "question": "God is with the generation of the _____.",
+      "answer": "righteous",
+      "verse_reference": "Psalm 14:5"
+    }
+  ]
+}

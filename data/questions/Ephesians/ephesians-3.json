@@ -1,0 +1,56 @@
+{
+  "book": "Ephesians",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "eph-3-q1",
+      "type": "multiple_choice",
+      "question": "What is the mystery Paul says was revealed to him?",
+      "options": [
+        "The exact timing of Christ's return",
+        "That Gentiles are fellow heirs in Christ",
+        "The true identity of the antichrist",
+        "The hidden location of the lost tribes"
+      ],
+      "answer": "That Gentiles are fellow heirs in Christ",
+      "verse_reference": "Ephesians 3:6"
+    },
+    {
+      "id": "eph-3-q2",
+      "type": "multiple_choice",
+      "question": "Paul prays that believers would be rooted and grounded in what?",
+      "options": [
+        "Knowledge",
+        "Faith",
+        "Truth",
+        "Love"
+      ],
+      "answer": "Love",
+      "verse_reference": "Ephesians 3:17"
+    },
+    {
+      "id": "eph-3-q3",
+      "type": "true_false",
+      "question": "Paul says God is able to do immeasurably more than all we ask or imagine.",
+      "answer": "true",
+      "verse_reference": "Ephesians 3:20"
+    },
+    {
+      "id": "eph-3-q4",
+      "type": "fill_blank",
+      "question": "Now to Him who is able to do immeasurably more than all we ask or _____, according to His power at work within us.",
+      "answer": "imagine",
+      "accept": [
+        "think"
+      ],
+      "verse_reference": "Ephesians 3:20"
+    },
+    {
+      "id": "eph-3-q5",
+      "type": "fill_blank",
+      "question": "To know the love of Christ which surpasses _____, that you may be filled with all the fullness of God.",
+      "answer": "knowledge",
+      "verse_reference": "Ephesians 3:19"
+    }
+  ]
+}

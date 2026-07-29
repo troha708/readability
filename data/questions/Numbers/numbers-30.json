@@ -1,0 +1,53 @@
+{
+  "book": "Numbers",
+  "chapter": 30,
+  "questions": [
+    {
+      "id": "numbers-30-q1",
+      "type": "multiple_choice",
+      "question": "What is the subject of chapter 30?",
+      "options": [
+        "Vows and promises",
+        "Offerings",
+        "War",
+        "The second great census"
+      ],
+      "answer": "Vows and promises",
+      "verse_reference": "Numbers 30:2"
+    },
+    {
+      "id": "numbers-30-q2",
+      "type": "multiple_choice",
+      "question": "What did God say about a vow a man makes to the LORD?",
+      "options": [
+        "He may break it if a priest grants release",
+        "A vow may be undone by paying a small fine",
+        "Only vows made at the temple are binding",
+        "He must not break his word; he must keep it"
+      ],
+      "answer": "He must not break his word; he must keep it",
+      "verse_reference": "Numbers 30:2"
+    },
+    {
+      "id": "numbers-30-q3",
+      "type": "true_false",
+      "question": "A man who makes a vow to the LORD must not break his word.",
+      "answer": "true",
+      "verse_reference": "Numbers 30:2"
+    },
+    {
+      "id": "numbers-30-q4",
+      "type": "fill_blank",
+      "question": "When a man makes a vow to the LORD, he must not break his _____.",
+      "answer": "word",
+      "verse_reference": "Numbers 30:2"
+    },
+    {
+      "id": "numbers-30-q5",
+      "type": "fill_blank",
+      "question": "A man must not break his word; he must do everything he has _____.",
+      "answer": "promised",
+      "verse_reference": "Numbers 30:2"
+    }
+  ]
+}

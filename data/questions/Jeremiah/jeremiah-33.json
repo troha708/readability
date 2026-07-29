@@ -1,0 +1,56 @@
+{
+  "book": "Jeremiah",
+  "chapter": 33,
+  "questions": [
+    {
+      "id": "jeremiah-33-q1",
+      "type": "multiple_choice",
+      "question": "What invitation does God give Jeremiah in chapter 33?",
+      "options": [
+        "Gather all of the people and read to them the holy law",
+        "Flee at once from the city, for it cannot now be saved",
+        "Call to me and I will answer and show you great things",
+        "Go up to the high mountain and wait there for my voice"
+      ],
+      "answer": "Call to me and I will answer and show you great things",
+      "verse_reference": "Jeremiah 33:3"
+    },
+    {
+      "id": "jeremiah-33-q2",
+      "type": "multiple_choice",
+      "question": "What does God again promise concerning David in Jeremiah 33?",
+      "options": [
+        "His royal line would come to a final end",
+        "A foreign king would sit upon his throne",
+        "His city would be left quite empty and forgotten",
+        "A righteous Branch will spring up for David"
+      ],
+      "answer": "A righteous Branch will spring up for David",
+      "verse_reference": "Jeremiah 33:15"
+    },
+    {
+      "id": "jeremiah-33-q3",
+      "type": "true_false",
+      "question": "Jeremiah 33 promises healing and restoration, with the sound of joy and gladness returning.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 33:10-11"
+    },
+    {
+      "id": "jeremiah-33-q4",
+      "type": "fill_blank",
+      "question": "Call to me and I will _____ you, and will tell you great and hidden things that you have not known.",
+      "answer": "answer",
+      "verse_reference": "Jeremiah 33:3"
+    },
+    {
+      "id": "jeremiah-33-q5",
+      "type": "fill_blank",
+      "question": "In those days I will cause a righteous _____ to spring up for David.",
+      "answer": "Branch",
+      "accept": [
+        "shoot"
+      ],
+      "verse_reference": "Jeremiah 33:15"
+    }
+  ]
+}

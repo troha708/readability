@@ -1,0 +1,53 @@
+{
+  "book": "Jeremiah",
+  "chapter": 29,
+  "questions": [
+    {
+      "id": "jeremiah-29-q1",
+      "type": "multiple_choice",
+      "question": "To whom did Jeremiah send a letter in chapter 29?",
+      "options": [
+        "The king of Egypt",
+        "The Philistines",
+        "The exiles in Babylon",
+        "Those who remained in Jerusalem"
+      ],
+      "answer": "The exiles in Babylon",
+      "verse_reference": "Jeremiah 29:1"
+    },
+    {
+      "id": "jeremiah-29-q2",
+      "type": "multiple_choice",
+      "question": "What did God tell the exiles to do in Babylon?",
+      "options": [
+        "Rise up at once in open revolt against all of their captors",
+        "Refuse to do any work at all until they were finally set free",
+        "Build houses, plant gardens, and seek the welfare of the city",
+        "Wait there idly, for the long exile would very soon come to an end"
+      ],
+      "answer": "Build houses, plant gardens, and seek the welfare of the city",
+      "verse_reference": "Jeremiah 29:5-7"
+    },
+    {
+      "id": "jeremiah-29-q3",
+      "type": "true_false",
+      "question": "Jeremiah 29:11 says God has plans for welfare and not for evil, to give a future and a hope.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 29:11"
+    },
+    {
+      "id": "jeremiah-29-q4",
+      "type": "fill_blank",
+      "question": "Seek the welfare of the city where I have sent you into exile, and pray to the LORD on its _____.",
+      "answer": "behalf",
+      "verse_reference": "Jeremiah 29:7"
+    },
+    {
+      "id": "jeremiah-29-q5",
+      "type": "fill_blank",
+      "question": "For I know the plans I have for you, declares the LORD, plans for welfare and not for evil, to give you a future and a _____.",
+      "answer": "hope",
+      "verse_reference": "Jeremiah 29:11"
+    }
+  ]
+}

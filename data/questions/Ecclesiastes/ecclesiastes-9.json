@@ -1,0 +1,56 @@
+{
+  "book": "Ecclesiastes",
+  "chapter": 9,
+  "questions": [
+    {
+      "id": "ecclesiastes-9-q1",
+      "type": "multiple_choice",
+      "question": "What does Ecclesiastes 9 observe about death?",
+      "options": [
+        "The wise can escape it through their understanding",
+        "The same event happens to all, the righteous and the wicked",
+        "Only the wicked face it, while the righteous are spared",
+        "It comes only to those who have lived out long lives"
+      ],
+      "answer": "The same event happens to all, the righteous and the wicked",
+      "verse_reference": "Ecclesiastes 9:2-3"
+    },
+    {
+      "id": "ecclesiastes-9-q2",
+      "type": "multiple_choice",
+      "question": "What does Ecclesiastes 9 urge about whatever your hand finds to do?",
+      "options": [
+        "Leave it for a wiser man to finish after you",
+        "Do only what is easy, since all toil is vanity",
+        "Do it with your might, for there is no work in Sheol",
+        "Set it aside and rest, for all striving profits nothing"
+      ],
+      "answer": "Do it with your might, for there is no work in Sheol",
+      "verse_reference": "Ecclesiastes 9:10"
+    },
+    {
+      "id": "ecclesiastes-9-q3",
+      "type": "true_false",
+      "question": "Ecclesiastes 9 says a living dog is better than a dead lion.",
+      "answer": "true",
+      "verse_reference": "Ecclesiastes 9:4"
+    },
+    {
+      "id": "ecclesiastes-9-q4",
+      "type": "fill_blank",
+      "question": "Whatever your hand finds to do, do it with your _____.",
+      "answer": "might",
+      "accept": [
+        "power"
+      ],
+      "verse_reference": "Ecclesiastes 9:10"
+    },
+    {
+      "id": "ecclesiastes-9-q5",
+      "type": "fill_blank",
+      "question": "A living _____ is better than a dead lion.",
+      "answer": "dog",
+      "verse_reference": "Ecclesiastes 9:4"
+    }
+  ]
+}

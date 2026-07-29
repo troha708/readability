@@ -1,0 +1,53 @@
+{
+  "book": "1 Chronicles",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "1-chronicles-3-q1",
+      "type": "multiple_choice",
+      "question": "Where were David's first sons born?",
+      "options": [
+        "Hebron",
+        "Jerusalem",
+        "Ziklag",
+        "Bethlehem"
+      ],
+      "answer": "Hebron",
+      "verse_reference": "1 Chronicles 3:1"
+    },
+    {
+      "id": "1-chronicles-3-q2",
+      "type": "multiple_choice",
+      "question": "Which son was born to David and Bathsheba and became king?",
+      "options": [
+        "Absalom",
+        "Adonijah",
+        "Solomon",
+        "Amnon"
+      ],
+      "answer": "Solomon",
+      "verse_reference": "1 Chronicles 3:5"
+    },
+    {
+      "id": "1-chronicles-3-q3",
+      "type": "true_false",
+      "question": "This chapter lists the descendants of David through the kings of Judah.",
+      "answer": "true",
+      "verse_reference": "1 Chronicles 3:10-16"
+    },
+    {
+      "id": "1-chronicles-3-q4",
+      "type": "fill_blank",
+      "question": "David reigned in Hebron and then thirty-three years in _____.",
+      "answer": "Jerusalem",
+      "verse_reference": "1 Chronicles 3:4"
+    },
+    {
+      "id": "1-chronicles-3-q5",
+      "type": "fill_blank",
+      "question": "Solomon's son and successor was _____.",
+      "answer": "Rehoboam",
+      "verse_reference": "1 Chronicles 3:10"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Exodus",
+  "chapter": 40,
+  "questions": [
+    {
+      "id": "exodus-40-q1",
+      "type": "multiple_choice",
+      "question": "What happened when the tabernacle was finished and set up?",
+      "options": [
+        "The glory of the LORD filled it",
+        "It stood empty and silent for days",
+        "A sudden fire broke out within it",
+        "The pillar of cloud passed it by"
+      ],
+      "answer": "The glory of the LORD filled it",
+      "verse_reference": "Exodus 40:34"
+    },
+    {
+      "id": "exodus-40-q2",
+      "type": "multiple_choice",
+      "question": "How did Israel know when to travel and when to stay?",
+      "options": [
+        "By the loud blast of the silver war trumpets",
+        "By the word of Moses each morning",
+        "By the cloud lifting from the tabernacle",
+        "By the changing of the desert seasons"
+      ],
+      "answer": "By the cloud lifting from the tabernacle",
+      "verse_reference": "Exodus 40:36-37"
+    },
+    {
+      "id": "exodus-40-q3",
+      "type": "true_false",
+      "question": "A cloud covered the tent by day, and fire was in it by night.",
+      "answer": "true",
+      "verse_reference": "Exodus 40:38"
+    },
+    {
+      "id": "exodus-40-q4",
+      "type": "fill_blank",
+      "question": "The _____ of the LORD filled the tabernacle when the work was completed.",
+      "answer": "glory",
+      "verse_reference": "Exodus 40:34"
+    },
+    {
+      "id": "exodus-40-q5",
+      "type": "fill_blank",
+      "question": "Whenever the _____ lifted from the tabernacle, the Israelites would set out.",
+      "answer": "cloud",
+      "verse_reference": "Exodus 40:36"
+    }
+  ]
+}

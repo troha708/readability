@@ -1,0 +1,54 @@
+{
+  "book": "Leviticus",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "leviticus-4-q1",
+      "type": "multiple_choice",
+      "question": "What does the sin offering deal with?",
+      "options": [
+        "Unintentional sin",
+        "Festival worship rites",
+        "Thanksgiving",
+        "Vows"
+      ],
+      "answer": "Unintentional sin",
+      "verse_reference": "Leviticus 4:2"
+    },
+    {
+      "id": "leviticus-4-q2",
+      "type": "multiple_choice",
+      "question": "Whose unintentional sin required one of the most serious offerings?",
+      "options": [
+        "A young child or an unmarried woman",
+        "A poor laborer or a homeless beggar",
+        "The anointed priest or the whole congregation",
+        "A wandering foreigner or a hired servant"
+      ],
+      "answer": "The anointed priest or the whole congregation",
+      "verse_reference": "Leviticus 4:3"
+    },
+    {
+      "id": "leviticus-4-q3",
+      "type": "true_false",
+      "question": "The sin offering provided atonement so that the person would be forgiven.",
+      "answer": "true",
+      "verse_reference": "Leviticus 4:20"
+    },
+    {
+      "id": "leviticus-4-q4",
+      "type": "fill_blank",
+      "question": "The blood of the sin offering was sprinkled before the _____ in the sanctuary.",
+      "answer": "veil",
+      "accept": ["vail"],
+      "verse_reference": "Leviticus 4:6"
+    },
+    {
+      "id": "leviticus-4-q5",
+      "type": "fill_blank",
+      "question": "When atonement was made for the sin, the person would be _____.",
+      "answer": "forgiven",
+      "verse_reference": "Leviticus 4:20"
+    }
+  ]
+}

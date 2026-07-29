@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 82,
+  "questions": [
+    {
+      "id": "psalms-82-q1",
+      "type": "multiple_choice",
+      "question": "Where does God take his stand in Psalm 82?",
+      "options": [
+        "On the battlefield, among the kings",
+        "In the divine council, among the gods/judges",
+        "In the holy temple courts, among all the priests",
+        "In the city gate, among the elders"
+      ],
+      "answer": "In the divine council, among the gods/judges",
+      "verse_reference": "Psalm 82:1"
+    },
+    {
+      "id": "psalms-82-q2",
+      "type": "multiple_choice",
+      "question": "What does God command the rulers/judges to do?",
+      "options": [
+        "Bring offerings up to the holy temple, both in the morning and the evening",
+        "Give justice to the weak, the fatherless, the afflicted, and the destitute",
+        "Faithfully keep all the feasts and the festivals appointed by the law",
+        "Subdue all of the nations and gather in tribute from their many kings"
+      ],
+      "answer": "Give justice to the weak, the fatherless, the afflicted, and the destitute",
+      "verse_reference": "Psalm 82:3"
+    },
+    {
+      "id": "psalms-82-q3",
+      "type": "true_false",
+      "question": "The psalm ends with a plea, 'Arise, O God, judge the earth; for you shall inherit all the nations!'",
+      "answer": "true",
+      "verse_reference": "Psalm 82:8"
+    },
+    {
+      "id": "psalms-82-q4",
+      "type": "fill_blank",
+      "question": "Give justice to the weak and the _____.",
+      "answer": "fatherless",
+      "verse_reference": "Psalm 82:3"
+    },
+    {
+      "id": "psalms-82-q5",
+      "type": "fill_blank",
+      "question": "Arise, O God, _____ the earth; for you shall inherit all the nations!",
+      "answer": "judge",
+      "verse_reference": "Psalm 82:8"
+    }
+  ]
+}

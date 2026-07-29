@@ -1,0 +1,56 @@
+{
+  "book": "Jeremiah",
+  "chapter": 36,
+  "questions": [
+    {
+      "id": "jeremiah-36-q1",
+      "type": "multiple_choice",
+      "question": "What did Baruch do at Jeremiah's dictation in chapter 36?",
+      "options": [
+        "Built a great altar where all of the people could come to repent",
+        "Carried Jeremiah's solemn message far away to the king of Babylon",
+        "Hid Jeremiah away in secret from the soldiers who eagerly sought him",
+        "Wrote Jeremiah's words on a scroll and read it in the temple"
+      ],
+      "answer": "Wrote Jeremiah's words on a scroll and read it in the temple",
+      "verse_reference": "Jeremiah 36:4, 8"
+    },
+    {
+      "id": "jeremiah-36-q2",
+      "type": "multiple_choice",
+      "question": "What did King Jehoiakim do with the scroll?",
+      "options": [
+        "Sealed it away in the temple treasury",
+        "Cut it with a knife and burned it in the fire",
+        "Read it aloud and tore his royal robes in grief",
+        "Sent it back to Jeremiah with a warning"
+      ],
+      "answer": "Cut it with a knife and burned it in the fire",
+      "verse_reference": "Jeremiah 36:23"
+    },
+    {
+      "id": "jeremiah-36-q3",
+      "type": "true_false",
+      "question": "Jeremiah dictated the words again, and more were added to the new scroll.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 36:32"
+    },
+    {
+      "id": "jeremiah-36-q4",
+      "type": "fill_blank",
+      "question": "As the king heard a few columns, he would cut them off and throw them into the _____.",
+      "answer": "firepot",
+      "accept": [
+        "fire"
+      ],
+      "verse_reference": "Jeremiah 36:23"
+    },
+    {
+      "id": "jeremiah-36-q5",
+      "type": "fill_blank",
+      "question": "Then Jeremiah took another scroll and gave it to _____ the scribe.",
+      "answer": "Baruch",
+      "verse_reference": "Jeremiah 36:32"
+    }
+  ]
+}

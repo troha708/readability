@@ -1,0 +1,53 @@
+{
+  "book": "Joshua",
+  "chapter": 13,
+  "questions": [
+    {
+      "id": "joshua-13-q1",
+      "type": "multiple_choice",
+      "question": "What did God tell the aging Joshua?",
+      "options": [
+        "That he should appoint a king over Israel",
+        "That a famine was coming upon the land",
+        "That much land still remained to be possessed",
+        "That his work was finished and he could rest"
+      ],
+      "answer": "That much land still remained to be possessed",
+      "verse_reference": "Joshua 13:1"
+    },
+    {
+      "id": "joshua-13-q2",
+      "type": "multiple_choice",
+      "question": "Which tribe received no land inheritance, having the LORD as their inheritance?",
+      "options": [
+        "Gad",
+        "Judah",
+        "Reuben",
+        "Levi"
+      ],
+      "answer": "Levi",
+      "verse_reference": "Joshua 13:14-33"
+    },
+    {
+      "id": "joshua-13-q3",
+      "type": "true_false",
+      "question": "The tribes of Reuben, Gad, and half of Manasseh received land east of the Jordan.",
+      "answer": "true",
+      "verse_reference": "Joshua 13:8"
+    },
+    {
+      "id": "joshua-13-q4",
+      "type": "fill_blank",
+      "question": "Joshua was old, and the LORD said very much _____ remained to be possessed.",
+      "answer": "land",
+      "verse_reference": "Joshua 13:1"
+    },
+    {
+      "id": "joshua-13-q5",
+      "type": "fill_blank",
+      "question": "The tribe of _____ received no land, for the LORD was their inheritance.",
+      "answer": "Levi",
+      "verse_reference": "Joshua 13:33"
+    }
+  ]
+}

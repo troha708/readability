@@ -1,0 +1,56 @@
+{
+  "book": "Psalms",
+  "chapter": 20,
+  "questions": [
+    {
+      "id": "psalms-20-q1",
+      "type": "multiple_choice",
+      "question": "What does Psalm 20 ask the LORD to do?",
+      "options": [
+        "Lead the king out to certain victory",
+        "Answer the king in the day of trouble",
+        "Crown the king with glory and honor",
+        "Grant the king a long and peaceful reign"
+      ],
+      "answer": "Answer the king in the day of trouble",
+      "verse_reference": "Psalm 20:1"
+    },
+    {
+      "id": "psalms-20-q2",
+      "type": "multiple_choice",
+      "question": "What does the psalm contrast with trusting in the LORD?",
+      "options": [
+        "Some trust in chariots and horses",
+        "Trusting in great earthly wealth",
+        "Trusting in vast armies of men",
+        "Trusting in idols of wood and stone"
+      ],
+      "answer": "Some trust in chariots and horses",
+      "verse_reference": "Psalm 20:7"
+    },
+    {
+      "id": "psalms-20-q3",
+      "type": "true_false",
+      "question": "The psalm says we trust in the name of the LORD our God.",
+      "answer": "true",
+      "verse_reference": "Psalm 20:7"
+    },
+    {
+      "id": "psalms-20-q4",
+      "type": "fill_blank",
+      "question": "Some trust in chariots and some in horses, but we trust in the _____ of the LORD our God.",
+      "answer": "name",
+      "verse_reference": "Psalm 20:7"
+    },
+    {
+      "id": "psalms-20-q5",
+      "type": "fill_blank",
+      "question": "May He give you the _____ of your heart and make all your plans succeed.",
+      "answer": "desires",
+      "accept": [
+        "desire"
+      ],
+      "verse_reference": "Psalm 20:4"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Romans",
+  "chapter": 7,
+  "questions": [
+    {
+      "id": "romans-7-q1",
+      "type": "multiple_choice",
+      "question": "What inner conflict does Paul describe in this chapter?",
+      "options": [
+        "Wanting to follow Jewish customs vs Gentile customs",
+        "Wanting to do good but doing evil instead",
+        "Wanting to preach but being afraid",
+        "Wanting to go to Rome but being prevented"
+      ],
+      "answer": "Wanting to do good but doing evil instead",
+      "verse_reference": "Romans 7:19"
+    },
+    {
+      "id": "romans-7-q2",
+      "type": "multiple_choice",
+      "question": "Paul says the Law itself is what?",
+      "options": [
+        "No longer at all relevant today",
+        "Only for Jews",
+        "Evil and harmful",
+        "Holy, righteous, and good"
+      ],
+      "answer": "Holy, righteous, and good",
+      "verse_reference": "Romans 7:12"
+    },
+    {
+      "id": "romans-7-q3",
+      "type": "true_false",
+      "question": "Paul claims he always successfully does the good that he wants to do.",
+      "answer": "false",
+      "verse_reference": "Romans 7:15,19"
+    },
+    {
+      "id": "romans-7-q4",
+      "type": "fill_blank",
+      "question": "For what I want to do, I don't do; but what I _____, that I practice.",
+      "answer": "hate",
+      "verse_reference": "Romans 7:15"
+    },
+    {
+      "id": "romans-7-q5",
+      "type": "fill_blank",
+      "question": "Wretched man that I am! Who will deliver me out of the body of this _____?",
+      "answer": "death",
+      "verse_reference": "Romans 7:24"
+    }
+  ]
+}

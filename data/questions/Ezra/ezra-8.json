@@ -1,0 +1,56 @@
+{
+  "book": "Ezra",
+  "chapter": 8,
+  "questions": [
+    {
+      "id": "ezra-8-q1",
+      "type": "multiple_choice",
+      "question": "What did Ezra proclaim at the river Ahava before the journey?",
+      "options": [
+        "A great feast before setting out",
+        "A census of all who would travel",
+        "A call to arms against the road's dangers",
+        "A fast, to seek a safe journey from God"
+      ],
+      "answer": "A fast, to seek a safe journey from God",
+      "verse_reference": "Ezra 8:21"
+    },
+    {
+      "id": "ezra-8-q2",
+      "type": "multiple_choice",
+      "question": "Why was Ezra ashamed to ask the king for soldiers and horsemen?",
+      "options": [
+        "He had told the king God's hand is on all who seek him",
+        "He feared the long journey through the desert",
+        "He had already spent all the silver given him",
+        "The king had forbidden any escort to go with him"
+      ],
+      "answer": "He had told the king God's hand is on all who seek him",
+      "verse_reference": "Ezra 8:22"
+    },
+    {
+      "id": "ezra-8-q3",
+      "type": "true_false",
+      "question": "Ezra entrusted the silver, gold, and vessels to the priests for the journey.",
+      "answer": "true",
+      "verse_reference": "Ezra 8:24-30"
+    },
+    {
+      "id": "ezra-8-q4",
+      "type": "fill_blank",
+      "question": "Ezra set apart twelve leading _____ to be in charge of the temple offerings.",
+      "answer": "priests",
+      "verse_reference": "Ezra 8:24"
+    },
+    {
+      "id": "ezra-8-q5",
+      "type": "fill_blank",
+      "question": "The hand of their God was on them to protect them from the _____ along the way.",
+      "answer": "enemies",
+      "accept": [
+        "enemy"
+      ],
+      "verse_reference": "Ezra 8:31"
+    }
+  ]
+}

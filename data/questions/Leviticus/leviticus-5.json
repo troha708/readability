@@ -1,0 +1,53 @@
+{
+  "book": "Leviticus",
+  "chapter": 5,
+  "questions": [
+    {
+      "id": "leviticus-5-q1",
+      "type": "multiple_choice",
+      "question": "What did the law provide for someone too poor to bring a lamb?",
+      "options": [
+        "Two birds, or fine flour, instead",
+        "A pledge to repay the priest later",
+        "A delay until the next harvest",
+        "An exemption from any offering"
+      ],
+      "answer": "Two birds, or fine flour, instead",
+      "verse_reference": "Leviticus 5:7-11"
+    },
+    {
+      "id": "leviticus-5-q2",
+      "type": "multiple_choice",
+      "question": "What offering for trespass and wrongdoing is introduced here?",
+      "options": [
+        "The burnt offering",
+        "The guilt offering",
+        "The wave offering",
+        "The grain offering"
+      ],
+      "answer": "The guilt offering",
+      "verse_reference": "Leviticus 5:15"
+    },
+    {
+      "id": "leviticus-5-q3",
+      "type": "true_false",
+      "question": "God allowed a less costly offering for those who could not afford a lamb.",
+      "answer": "true",
+      "verse_reference": "Leviticus 5:7"
+    },
+    {
+      "id": "leviticus-5-q4",
+      "type": "fill_blank",
+      "question": "A person who had sinned was to _____ how they had sinned and bring an offering.",
+      "answer": "confess",
+      "verse_reference": "Leviticus 5:5"
+    },
+    {
+      "id": "leviticus-5-q5",
+      "type": "fill_blank",
+      "question": "The guilt offering made _____ for the wrong that was committed.",
+      "answer": "atonement",
+      "verse_reference": "Leviticus 5:16"
+    }
+  ]
+}

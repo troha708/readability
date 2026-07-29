@@ -1,0 +1,53 @@
+{
+  "book": "Acts",
+  "chapter": 7,
+  "questions": [
+    {
+      "id": "acts-7-q1",
+      "type": "multiple_choice",
+      "question": "What happened to Stephen at the end of his speech to the Sanhedrin?",
+      "options": [
+        "He was driven out of the city",
+        "He was beaten and then released",
+        "He was thrown into prison",
+        "He was stoned to death"
+      ],
+      "answer": "He was stoned to death",
+      "verse_reference": "Acts 7:58-59"
+    },
+    {
+      "id": "acts-7-q2",
+      "type": "multiple_choice",
+      "question": "Who was the young man watching over the coats of those who stoned Stephen?",
+      "options": [
+        "Barnabas",
+        "Timothy",
+        "Saul",
+        "Silas"
+      ],
+      "answer": "Saul",
+      "verse_reference": "Acts 7:58"
+    },
+    {
+      "id": "acts-7-q3",
+      "type": "true_false",
+      "question": "In his speech, Stephen recounted the history of Israel from Abraham through Moses to Solomon.",
+      "answer": "true",
+      "verse_reference": "Acts 7:2-50"
+    },
+    {
+      "id": "acts-7-q4",
+      "type": "fill_blank",
+      "question": "Stephen said, 'Look, I see the heavens opened and the Son of Man standing at the right hand of _____!'",
+      "answer": "God",
+      "verse_reference": "Acts 7:56"
+    },
+    {
+      "id": "acts-7-q5",
+      "type": "fill_blank",
+      "question": "Stephen's last words were, 'Lord, don't hold this _____ against them.'",
+      "answer": "sin",
+      "verse_reference": "Acts 7:60"
+    }
+  ]
+}

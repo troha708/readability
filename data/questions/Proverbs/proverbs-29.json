@@ -1,0 +1,56 @@
+{
+  "book": "Proverbs",
+  "chapter": 29,
+  "questions": [
+    {
+      "id": "proverbs-29-q1",
+      "type": "multiple_choice",
+      "question": "What does Proverbs 29 say happens where there is no prophetic vision?",
+      "options": [
+        "The people prosper and grow rich",
+        "Kings rise to rule the land",
+        "The people cast off restraint",
+        "Wisdom grows among the young"
+      ],
+      "answer": "The people cast off restraint",
+      "verse_reference": "Proverbs 29:18"
+    },
+    {
+      "id": "proverbs-29-q2",
+      "type": "multiple_choice",
+      "question": "What does Proverbs 29 say the fear of man brings?",
+      "options": [
+        "A wisdom far beyond even that of the elders",
+        "A great and lasting honor among one's neighbors",
+        "A snare, but whoever trusts in the LORD is safe",
+        "A sure and lasting safety from every kind of danger"
+      ],
+      "answer": "A snare, but whoever trusts in the LORD is safe",
+      "verse_reference": "Proverbs 29:25"
+    },
+    {
+      "id": "proverbs-29-q3",
+      "type": "true_false",
+      "question": "Proverbs 29 says the rod and reproof give wisdom, but a child left to himself brings shame to his mother.",
+      "answer": "true",
+      "verse_reference": "Proverbs 29:15"
+    },
+    {
+      "id": "proverbs-29-q4",
+      "type": "fill_blank",
+      "question": "Where there is no prophetic vision the people cast off _____.",
+      "answer": "restraint",
+      "verse_reference": "Proverbs 29:18"
+    },
+    {
+      "id": "proverbs-29-q5",
+      "type": "fill_blank",
+      "question": "The fear of man is a snare, but whoever trusts in the LORD is set securely on _____.",
+      "answer": "high",
+      "accept": [
+        "safe"
+      ],
+      "verse_reference": "Proverbs 29:25"
+    }
+  ]
+}

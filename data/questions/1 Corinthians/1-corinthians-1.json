@@ -1,0 +1,53 @@
+{
+  "book": "1 Corinthians",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "1cor-1-q1",
+      "type": "multiple_choice",
+      "question": "What problem in the Corinthian church does Paul address first?",
+      "options": [
+        "Divisions and quarreling",
+        "False teaching",
+        "Idol worship",
+        "Open sexual immorality among them"
+      ],
+      "answer": "Divisions and quarreling",
+      "verse_reference": "1 Corinthians 1:10-11"
+    },
+    {
+      "id": "1cor-1-q2",
+      "type": "multiple_choice",
+      "question": "Paul says God chose the foolish things of the world to do what?",
+      "options": [
+        "Reward the humble",
+        "Punish the proud",
+        "Shame the wise",
+        "Test the faithful"
+      ],
+      "answer": "Shame the wise",
+      "verse_reference": "1 Corinthians 1:27"
+    },
+    {
+      "id": "1cor-1-q3",
+      "type": "true_false",
+      "question": "Paul was glad that he had baptized many of the Corinthians personally.",
+      "answer": "false",
+      "verse_reference": "1 Corinthians 1:14-16"
+    },
+    {
+      "id": "1cor-1-q4",
+      "type": "fill_blank",
+      "question": "For the message of the cross is _____ to those who are perishing, but to us who are being saved it is the power of God.",
+      "answer": "foolishness",
+      "verse_reference": "1 Corinthians 1:18"
+    },
+    {
+      "id": "1cor-1-q5",
+      "type": "fill_blank",
+      "question": "Is Christ _____? Was Paul crucified for you?",
+      "answer": "divided",
+      "verse_reference": "1 Corinthians 1:13"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "book": "Daniel",
+  "chapter": 11,
+  "questions": [
+    {
+      "id": "daniel-11-q1",
+      "type": "multiple_choice",
+      "question": "What does Daniel 11 describe in detail?",
+      "options": [
+        "The conflicts of the kings of the North and the South",
+        "The long reign of the kings of the royal house of David",
+        "The full rebuilding of the holy temple in Jerusalem",
+        "The return of all the exiles from the land of Babylon"
+      ],
+      "answer": "The conflicts of the kings of the North and the South",
+      "verse_reference": "Daniel 11:5-6"
+    },
+    {
+      "id": "daniel-11-q2",
+      "type": "multiple_choice",
+      "question": "How are those who know their God described in Daniel 11?",
+      "options": [
+        "They shall be carried away into exile",
+        "They shall flee and abandon the faith",
+        "They shall grow rich and powerful",
+        "They shall stand firm and take action"
+      ],
+      "answer": "They shall stand firm and take action",
+      "verse_reference": "Daniel 11:32"
+    },
+    {
+      "id": "daniel-11-q3",
+      "type": "true_false",
+      "question": "Daniel 11 foretells a contemptible king who exalts himself and a time of great conflict.",
+      "answer": "true",
+      "verse_reference": "Daniel 11:21, 36"
+    },
+    {
+      "id": "daniel-11-q4",
+      "type": "fill_blank",
+      "question": "The people who know their God will firmly _____ him.",
+      "answer": "resist",
+      "accept": [
+        "action"
+      ],
+      "verse_reference": "Daniel 11:32"
+    },
+    {
+      "id": "daniel-11-q5",
+      "type": "fill_blank",
+      "question": "Those with insight will _____ many, though for a time they fall.",
+      "answer": "instruct",
+      "accept": [
+        "understand"
+      ],
+      "verse_reference": "Daniel 11:33"
+    }
+  ]
+}

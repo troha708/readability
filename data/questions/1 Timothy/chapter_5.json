@@ -1,0 +1,58 @@
+{
+  "book": "1 Timothy",
+  "chapter": 5,
+  "questions": [
+    {
+      "id": "1tim_5_1",
+      "type": "multiple_choice",
+      "question": "Paul says a true widow is one who has set her hope on what?",
+      "options": [
+        "Her inheritance",
+        "The church",
+        "Her children",
+        "God"
+      ],
+      "correct": "God",
+      "verse_ref": "1 Timothy 5:5",
+      "feedback": "A true widow is one left all alone who has set her hope on God and continues in prayer."
+    },
+    {
+      "id": "1tim_5_2",
+      "type": "multiple_choice",
+      "question": "What minimum age does Paul give for a widow to be enrolled for church support?",
+      "options": [
+        "Sixty years old",
+        "Fifty years old",
+        "Forty years old",
+        "Seventy years old"
+      ],
+      "correct": "Sixty years old",
+      "verse_ref": "1 Timothy 5:9",
+      "feedback": "A widow enrolled must be at least sixty years old."
+    },
+    {
+      "id": "1tim_5_3",
+      "type": "true_false",
+      "question": "Paul says elders who rule well should be considered worthy of double honor.",
+      "correct": true,
+      "verse_ref": "1 Timothy 5:17",
+      "feedback": "Elders who rule well are worthy of double honor, especially those who labor in preaching and teaching."
+    },
+    {
+      "id": "1tim_5_4",
+      "type": "fill_in_the_blank",
+      "question": "Paul says anyone who does not provide for relatives has denied the _____ and is worse than an unbeliever.",
+      "correct": "faith",
+      "verse_ref": "1 Timothy 5:8",
+      "feedback": "Failing to provide for relatives is denying the faith."
+    },
+    {
+      "id": "1tim_5_5",
+      "type": "fill_in_the_blank",
+      "question": "Paul advises Timothy to use a little _____ for his stomach and frequent ailments.",
+      "correct": "wine",
+      "verse_ref": "1 Timothy 5:23",
+      "feedback": "Paul advises a little wine for Timothy's stomach problems."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "book": "Lamentations",
+  "source": "Berean Standard Bible (CC0 Public Domain)",
+  "chapters": {
+    "1": [
+      {
+        "beforeVerse": 1,
+        "heading": "How Lonely Lies the City!"
+      }
+    ],
+    "2": [
+      {
+        "beforeVerse": 1,
+        "heading": "God’s Anger over Jerusalem"
+      }
+    ],
+    "3": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Prophet’s Afflictions"
+      },
+      {
+        "beforeVerse": 19,
+        "heading": "The Prophet’s Hope"
+      },
+      {
+        "beforeVerse": 37,
+        "heading": "God’s Justice"
+      }
+    ],
+    "4": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Distress of Zion"
+      }
+    ],
+    "5": [
+      {
+        "beforeVerse": 1,
+        "heading": "A Prayer for Restoration"
+      }
+    ]
+  }
+}

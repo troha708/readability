@@ -1,0 +1,60 @@
+{
+  "book": "Psalms",
+  "chapter": 11,
+  "questions": [
+    {
+      "id": "psalms-11-q1",
+      "type": "multiple_choice",
+      "question": "Where does David say he takes refuge?",
+      "options": [
+        "In the mountains",
+        "In the LORD",
+        "In an army",
+        "In a fortress"
+      ],
+      "answer": "In the LORD",
+      "verse_reference": "Psalm 11:1"
+    },
+    {
+      "id": "psalms-11-q2",
+      "type": "multiple_choice",
+      "question": "Where is the LORD's throne, according to Psalm 11?",
+      "options": [
+        "On earth",
+        "In heaven",
+        "In the temple only",
+        "In Zion only"
+      ],
+      "answer": "In heaven",
+      "verse_reference": "Psalm 11:4"
+    },
+    {
+      "id": "psalms-11-q3",
+      "type": "true_false",
+      "question": "The LORD tests the righteous, but his soul hates the wicked and the one who loves violence.",
+      "answer": "true",
+      "verse_reference": "Psalm 11:5"
+    },
+    {
+      "id": "psalms-11-q4",
+      "type": "fill_blank",
+      "question": "The LORD is righteous; He loves _____.",
+      "answer": "justice",
+      "accept": [
+        "righteousness"
+      ],
+      "verse_reference": "Psalm 11:7"
+    },
+    {
+      "id": "psalms-11-q5",
+      "type": "fill_blank",
+      "question": "The LORD's eyes are watching closely; they _____ the sons of men.",
+      "answer": "examine",
+      "accept": [
+        "test",
+        "try"
+      ],
+      "verse_reference": "Psalm 11:4"
+    }
+  ]
+}

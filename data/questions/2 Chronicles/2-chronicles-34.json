@@ -1,0 +1,56 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 34,
+  "questions": [
+    {
+      "id": "2-chronicles-34-q1",
+      "type": "multiple_choice",
+      "question": "What was found during the repair of the temple under Josiah?",
+      "options": [
+        "A sealed treaty made with the kings of old",
+        "The Book of the Law of the LORD given through Moses",
+        "A great store of gold hidden away deep beneath the altar",
+        "An ancient scroll of the psalms of David"
+      ],
+      "answer": "The Book of the Law of the LORD given through Moses",
+      "verse_reference": "2 Chronicles 34:14"
+    },
+    {
+      "id": "2-chronicles-34-q2",
+      "type": "multiple_choice",
+      "question": "Whom did Josiah send to inquire of the LORD about the book?",
+      "options": [
+        "Nathan the prophet",
+        "Jeremiah the great prophet",
+        "Huldah the prophetess",
+        "Isaiah the prophet"
+      ],
+      "answer": "Huldah the prophetess",
+      "verse_reference": "2 Chronicles 34:22"
+    },
+    {
+      "id": "2-chronicles-34-q3",
+      "type": "true_false",
+      "question": "Josiah was young when he began to seek the God of David his father.",
+      "answer": "true",
+      "verse_reference": "2 Chronicles 34:3"
+    },
+    {
+      "id": "2-chronicles-34-q4",
+      "type": "fill_blank",
+      "question": "When Josiah heard the words of the Law, he tore his _____.",
+      "answer": "clothes",
+      "accept": [
+        "garments"
+      ],
+      "verse_reference": "2 Chronicles 34:19"
+    },
+    {
+      "id": "2-chronicles-34-q5",
+      "type": "fill_blank",
+      "question": "Josiah made a covenant to keep the LORD's commandments with all his heart and _____.",
+      "answer": "soul",
+      "verse_reference": "2 Chronicles 34:31"
+    }
+  ]
+}

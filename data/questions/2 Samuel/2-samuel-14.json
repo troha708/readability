@@ -1,0 +1,53 @@
+{
+  "book": "2 Samuel",
+  "chapter": 14,
+  "questions": [
+    {
+      "id": "2-samuel-14-q1",
+      "type": "multiple_choice",
+      "question": "Who arranged for Absalom to return to Jerusalem?",
+      "options": [
+        "Samuel",
+        "Joab",
+        "Ziba",
+        "Nathan"
+      ],
+      "answer": "Joab",
+      "verse_reference": "2 Samuel 14:1-23"
+    },
+    {
+      "id": "2-samuel-14-q2",
+      "type": "multiple_choice",
+      "question": "What was notable about Absalom's appearance?",
+      "options": [
+        "His scars",
+        "His armor",
+        "His unusually great height",
+        "His thick, heavy hair"
+      ],
+      "answer": "His thick, heavy hair",
+      "verse_reference": "2 Samuel 14:25-26"
+    },
+    {
+      "id": "2-samuel-14-q3",
+      "type": "true_false",
+      "question": "David at first refused to see Absalom's face after his return.",
+      "answer": "true",
+      "verse_reference": "2 Samuel 14:24"
+    },
+    {
+      "id": "2-samuel-14-q4",
+      "type": "fill_blank",
+      "question": "_____ used a wise woman of Tekoa to persuade David to bring Absalom back.",
+      "answer": "Joab",
+      "verse_reference": "2 Samuel 14:2-3"
+    },
+    {
+      "id": "2-samuel-14-q5",
+      "type": "fill_blank",
+      "question": "Absalom was admired for his heavy _____, which he cut only once a year.",
+      "answer": "hair",
+      "verse_reference": "2 Samuel 14:25-26"
+    }
+  ]
+}

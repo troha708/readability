@@ -1,0 +1,60 @@
+{
+  "book": "Psalms",
+  "chapter": 108,
+  "questions": [
+    {
+      "id": "psalms-108-q1",
+      "type": "multiple_choice",
+      "question": "What does David declare about his heart in Psalm 108?",
+      "options": [
+        "It is faint; he longs for God in a parched dry land",
+        "It is troubled; he cries out in the night",
+        "It is steadfast; he will sing and make melody",
+        "It is proud; he must humble it before God"
+      ],
+      "answer": "It is steadfast; he will sing and make melody",
+      "verse_reference": "Psalm 108:1"
+    },
+    {
+      "id": "psalms-108-q2",
+      "type": "multiple_choice",
+      "question": "What does the psalm conclude about human help?",
+      "options": [
+        "Sweet is the quiet sleep of the one who fully trusts the LORD",
+        "Vain is the salvation of man; with God we shall do valiantly",
+        "Precious is the death of all the saints in the sight of the LORD",
+        "Better is a little possession together with the fear of the LORD"
+      ],
+      "answer": "Vain is the salvation of man; with God we shall do valiantly",
+      "verse_reference": "Psalm 108:12-13"
+    },
+    {
+      "id": "psalms-108-q3",
+      "type": "true_false",
+      "question": "David says he will give thanks to the LORD among the peoples and sing praises among the nations.",
+      "answer": "true",
+      "verse_reference": "Psalm 108:3"
+    },
+    {
+      "id": "psalms-108-q4",
+      "type": "fill_blank",
+      "question": "My heart is _____, O God! I will sing and make melody with all my being!",
+      "answer": "steadfast",
+      "accept": [
+        "fixed",
+        "prepared"
+      ],
+      "verse_reference": "Psalm 108:1"
+    },
+    {
+      "id": "psalms-108-q5",
+      "type": "fill_blank",
+      "question": "With God we will perform with _____; it is He who will trample our foes.",
+      "answer": "valor",
+      "accept": [
+        "valiantly"
+      ],
+      "verse_reference": "Psalm 108:13"
+    }
+  ]
+}

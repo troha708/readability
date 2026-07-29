@@ -1,0 +1,56 @@
+{
+  "book": "Proverbs",
+  "chapter": 25,
+  "questions": [
+    {
+      "id": "proverbs-25-q1",
+      "type": "multiple_choice",
+      "question": "Whose men copied the proverbs in Proverbs 25?",
+      "options": [
+        "David",
+        "Hezekiah king of Judah",
+        "Solomon's royal scribes",
+        "The priests"
+      ],
+      "answer": "Hezekiah king of Judah",
+      "verse_reference": "Proverbs 25:1"
+    },
+    {
+      "id": "proverbs-25-q2",
+      "type": "multiple_choice",
+      "question": "What does Proverbs 25 say to do if your enemy is hungry?",
+      "options": [
+        "Flee far away from him while you still can",
+        "Ignore him entirely and simply pass him by",
+        "Mock him openly and loudly in his hunger",
+        "Give him bread to eat, and water to drink"
+      ],
+      "answer": "Give him bread to eat, and water to drink",
+      "verse_reference": "Proverbs 25:21"
+    },
+    {
+      "id": "proverbs-25-q3",
+      "type": "true_false",
+      "question": "Proverbs 25 compares a word fitly spoken to apples of gold in a setting of silver.",
+      "answer": "true",
+      "verse_reference": "Proverbs 25:11"
+    },
+    {
+      "id": "proverbs-25-q4",
+      "type": "fill_blank",
+      "question": "A word fitly spoken is like apples of _____ in a setting of silver.",
+      "answer": "gold",
+      "verse_reference": "Proverbs 25:11"
+    },
+    {
+      "id": "proverbs-25-q5",
+      "type": "fill_blank",
+      "question": "If your enemy is hungry, give him _____ to eat.",
+      "answer": "food",
+      "accept": [
+        "bread"
+      ],
+      "verse_reference": "Proverbs 25:21"
+    }
+  ]
+}

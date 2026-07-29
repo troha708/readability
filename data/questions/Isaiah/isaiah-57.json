@@ -1,0 +1,53 @@
+{
+  "book": "Isaiah",
+  "chapter": 57,
+  "questions": [
+    {
+      "id": "isaiah-57-q1",
+      "type": "multiple_choice",
+      "question": "What does Isaiah 57 condemn the people for?",
+      "options": [
+        "Idolatry and spiritual adultery",
+        "Neglect of the poor and the weak",
+        "Pride and the love of money",
+        "Greed and dishonest trade"
+      ],
+      "answer": "Idolatry and spiritual adultery",
+      "verse_reference": "Isaiah 57:5-8"
+    },
+    {
+      "id": "isaiah-57-q2",
+      "type": "multiple_choice",
+      "question": "With whom does the high and holy One who inhabits eternity dwell, according to Isaiah 57?",
+      "options": [
+        "The mighty and proud, to exalt them further",
+        "The wealthy and powerful, to bless their work",
+        "The contrite and lowly in spirit, to revive them",
+        "The wise and learned, to increase their knowledge"
+      ],
+      "answer": "The contrite and lowly in spirit, to revive them",
+      "verse_reference": "Isaiah 57:15"
+    },
+    {
+      "id": "isaiah-57-q3",
+      "type": "true_false",
+      "question": "Isaiah 57 says there is no peace for the wicked.",
+      "answer": "true",
+      "verse_reference": "Isaiah 57:21"
+    },
+    {
+      "id": "isaiah-57-q4",
+      "type": "fill_blank",
+      "question": "I dwell in the high and holy place, and also with him who is of a contrite and lowly _____.",
+      "answer": "spirit",
+      "verse_reference": "Isaiah 57:15"
+    },
+    {
+      "id": "isaiah-57-q5",
+      "type": "fill_blank",
+      "question": "Peace, peace, to the far and to the _____, says the LORD.",
+      "answer": "near",
+      "verse_reference": "Isaiah 57:19"
+    }
+  ]
+}

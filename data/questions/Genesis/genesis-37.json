@@ -1,0 +1,53 @@
+{
+  "book": "Genesis",
+  "chapter": 37,
+  "questions": [
+    {
+      "id": "genesis-37-q1",
+      "type": "multiple_choice",
+      "question": "What did Jacob give Joseph that made his brothers jealous?",
+      "options": [
+        "A heavy bag of gold",
+        "A large flock",
+        "A special robe",
+        "A field"
+      ],
+      "answer": "A special robe",
+      "verse_reference": "Genesis 37:3"
+    },
+    {
+      "id": "genesis-37-q2",
+      "type": "multiple_choice",
+      "question": "What did Joseph's brothers ultimately do to him?",
+      "options": [
+        "Banished him from home",
+        "Forgave him and wept",
+        "Killed him in the field",
+        "Sold him into slavery"
+      ],
+      "answer": "Sold him into slavery",
+      "verse_reference": "Genesis 37:28"
+    },
+    {
+      "id": "genesis-37-q3",
+      "type": "true_false",
+      "question": "Joseph dreamed that the sun, moon, and eleven stars bowed down to him.",
+      "answer": "true",
+      "verse_reference": "Genesis 37:9"
+    },
+    {
+      "id": "genesis-37-q4",
+      "type": "fill_blank",
+      "question": "Joseph's brothers sold him to the traders for _____ pieces of silver.",
+      "answer": "twenty",
+      "verse_reference": "Genesis 37:28"
+    },
+    {
+      "id": "genesis-37-q5",
+      "type": "fill_blank",
+      "question": "The brothers dipped Joseph's robe in the blood of a _____ to deceive their father.",
+      "answer": "goat",
+      "verse_reference": "Genesis 37:31"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "book": "3 John",
+  "source": "Berean Standard Bible (CC0 Public Domain)",
+  "chapters": {
+    "1": [
+      {
+        "beforeVerse": 1,
+        "heading": "A Greeting from the Elder"
+      },
+      {
+        "beforeVerse": 5,
+        "heading": "Gaius Commended for Hospitality"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "Diotrephes and Demetrius"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "Conclusion"
+      }
+    ]
+  }
+}

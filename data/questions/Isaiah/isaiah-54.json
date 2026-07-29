@@ -1,0 +1,53 @@
+{
+  "book": "Isaiah",
+  "chapter": 54,
+  "questions": [
+    {
+      "id": "isaiah-54-q1",
+      "type": "multiple_choice",
+      "question": "Whom does Isaiah 54 call to sing?",
+      "options": [
+        "The proud and lofty city that once ruled over all of the nations",
+        "The barren one who did not bear, for her children will be many",
+        "The rich and powerful merchant whose many ships filled the sea",
+        "The mighty and conquering king who won very great victories"
+      ],
+      "answer": "The barren one who did not bear, for her children will be many",
+      "verse_reference": "Isaiah 54:1"
+    },
+    {
+      "id": "isaiah-54-q2",
+      "type": "multiple_choice",
+      "question": "What covenant does God promise in Isaiah 54?",
+      "options": [
+        "A covenant of war against the nations",
+        "My covenant of peace shall not be removed",
+        "A new law to replace the one of old",
+        "An oath sworn between the kings of earth"
+      ],
+      "answer": "My covenant of peace shall not be removed",
+      "verse_reference": "Isaiah 54:10"
+    },
+    {
+      "id": "isaiah-54-q3",
+      "type": "true_false",
+      "question": "Isaiah 54 says no weapon formed against you shall prosper.",
+      "answer": "true",
+      "verse_reference": "Isaiah 54:17"
+    },
+    {
+      "id": "isaiah-54-q4",
+      "type": "fill_blank",
+      "question": "My steadfast love shall not depart from you, and my covenant of _____ shall not be removed.",
+      "answer": "peace",
+      "verse_reference": "Isaiah 54:10"
+    },
+    {
+      "id": "isaiah-54-q5",
+      "type": "fill_blank",
+      "question": "No _____ that is fashioned against you shall succeed.",
+      "answer": "weapon",
+      "verse_reference": "Isaiah 54:17"
+    }
+  ]
+}

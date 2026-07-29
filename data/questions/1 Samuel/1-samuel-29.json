@@ -1,0 +1,56 @@
+{
+  "book": "1 Samuel",
+  "chapter": 29,
+  "questions": [
+    {
+      "id": "1-samuel-29-q1",
+      "type": "multiple_choice",
+      "question": "Why did the Philistine commanders send David away before the battle?",
+      "options": [
+        "They needed him to guard the supply camp",
+        "They feared he would turn against them in battle",
+        "They suspected that he was secretly spying for King Saul",
+        "They thought him too weak to fight well"
+      ],
+      "answer": "They feared he would turn against them in battle",
+      "verse_reference": "1 Samuel 29:4"
+    },
+    {
+      "id": "1-samuel-29-q2",
+      "type": "multiple_choice",
+      "question": "How did Achish regard David?",
+      "options": [
+        "As blameless, like an angel of God",
+        "As a spy sent to betray the army",
+        "As a fool unfit for the battle",
+        "As a dangerous enemy to be watched"
+      ],
+      "answer": "As blameless, like an angel of God",
+      "verse_reference": "1 Samuel 29:9"
+    },
+    {
+      "id": "1-samuel-29-q3",
+      "type": "true_false",
+      "question": "David was spared from having to fight against Israel.",
+      "answer": "true",
+      "verse_reference": "1 Samuel 29:11"
+    },
+    {
+      "id": "1-samuel-29-q4",
+      "type": "fill_blank",
+      "question": "The Philistine _____ did not trust David and sent him back.",
+      "answer": "commanders",
+      "accept": [
+        "princes"
+      ],
+      "verse_reference": "1 Samuel 29:4"
+    },
+    {
+      "id": "1-samuel-29-q5",
+      "type": "fill_blank",
+      "question": "Achish said David was as blameless as an _____ of God.",
+      "answer": "angel",
+      "verse_reference": "1 Samuel 29:9"
+    }
+  ]
+}

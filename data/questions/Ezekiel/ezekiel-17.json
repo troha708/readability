@@ -1,0 +1,57 @@
+{
+  "book": "Ezekiel",
+  "chapter": 17,
+  "questions": [
+    {
+      "id": "ezekiel-17-q1",
+      "type": "multiple_choice",
+      "question": "What parable does Ezekiel 17 tell?",
+      "options": [
+        "Two great eagles and a vine",
+        "Two baskets of figs, good and bad",
+        "A boiling pot tipped from the north",
+        "A potter shaping clay on his wheel"
+      ],
+      "answer": "Two great eagles and a vine",
+      "verse_reference": "Ezekiel 17:2-10"
+    },
+    {
+      "id": "ezekiel-17-q2",
+      "type": "multiple_choice",
+      "question": "What did the parable signify?",
+      "options": [
+        "The long-awaited return of the exiles from their captivity",
+        "Zedekiah's rebellion against Babylon by turning to Egypt",
+        "The coming of a righteous king from the line of David",
+        "The fall of mighty Assyria before the rising Babylonians"
+      ],
+      "answer": "Zedekiah's rebellion against Babylon by turning to Egypt",
+      "verse_reference": "Ezekiel 17:15"
+    },
+    {
+      "id": "ezekiel-17-q3",
+      "type": "true_false",
+      "question": "At the end of chapter 17 God promises to plant a tender sprig that becomes a noble cedar.",
+      "answer": "true",
+      "verse_reference": "Ezekiel 17:22-23"
+    },
+    {
+      "id": "ezekiel-17-q4",
+      "type": "fill_blank",
+      "question": "Ezekiel was told to propound a riddle and speak a _____ to the house of Israel.",
+      "answer": "parable",
+      "accept": [
+        "proverb",
+        "simile"
+      ],
+      "verse_reference": "Ezekiel 17:2"
+    },
+    {
+      "id": "ezekiel-17-q5",
+      "type": "fill_blank",
+      "question": "God would take a sprig from the lofty top of the _____ and plant it on a high mountain.",
+      "answer": "cedar",
+      "verse_reference": "Ezekiel 17:22"
+    }
+  ]
+}

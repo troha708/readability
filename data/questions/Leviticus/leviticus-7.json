@@ -1,0 +1,53 @@
+{
+  "book": "Leviticus",
+  "chapter": 7,
+  "questions": [
+    {
+      "id": "leviticus-7-q1",
+      "type": "multiple_choice",
+      "question": "Chapter 7 gives the laws of which offerings?",
+      "options": [
+        "The guilt and peace offerings",
+        "The yearly feasts and festivals",
+        "The priestly garments and robes",
+        "The laws of clean and unclean"
+      ],
+      "answer": "The guilt and peace offerings",
+      "verse_reference": "Leviticus 7:1-11"
+    },
+    {
+      "id": "leviticus-7-q2",
+      "type": "multiple_choice",
+      "question": "What were the Israelites forbidden to eat?",
+      "options": [
+        "Leavened bread",
+        "Fish from the sea",
+        "Forbidden fruit",
+        "Fat and blood"
+      ],
+      "answer": "Fat and blood",
+      "verse_reference": "Leviticus 7:23-26"
+    },
+    {
+      "id": "leviticus-7-q3",
+      "type": "true_false",
+      "question": "Eating the fat or blood of an animal could cause a person to be cut off from his people.",
+      "answer": "true",
+      "verse_reference": "Leviticus 7:25-27"
+    },
+    {
+      "id": "leviticus-7-q4",
+      "type": "fill_blank",
+      "question": "A peace offering brought in _____ was to be eaten the same day.",
+      "answer": "thanksgiving",
+      "verse_reference": "Leviticus 7:15"
+    },
+    {
+      "id": "leviticus-7-q5",
+      "type": "fill_blank",
+      "question": "Anyone who ate _____ was to be cut off from his people.",
+      "answer": "blood",
+      "verse_reference": "Leviticus 7:27"
+    }
+  ]
+}

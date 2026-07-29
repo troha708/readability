@@ -1,0 +1,53 @@
+{
+  "book": "Galatians",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "gal-1-q1",
+      "type": "multiple_choice",
+      "question": "Paul is astonished that the Galatians are so quickly turning to what?",
+      "options": [
+        "The whole Law of Moses",
+        "A different gospel",
+        "False prophets",
+        "Idol worship"
+      ],
+      "answer": "A different gospel",
+      "verse_reference": "Galatians 1:6"
+    },
+    {
+      "id": "gal-1-q2",
+      "type": "multiple_choice",
+      "question": "Where did Paul go after his conversion before meeting with the other apostles?",
+      "options": [
+        "Egypt",
+        "Rome",
+        "Athens",
+        "Arabia"
+      ],
+      "answer": "Arabia",
+      "verse_reference": "Galatians 1:17"
+    },
+    {
+      "id": "gal-1-q3",
+      "type": "true_false",
+      "question": "Paul says he received his gospel from the other apostles in Jerusalem.",
+      "answer": "false",
+      "verse_reference": "Galatians 1:11-12"
+    },
+    {
+      "id": "gal-1-q4",
+      "type": "fill_blank",
+      "question": "Even if we or an angel from heaven should preach a gospel other than what we preached to you, let them be under God's _____.",
+      "answer": "curse",
+      "verse_reference": "Galatians 1:8"
+    },
+    {
+      "id": "gal-1-q5",
+      "type": "fill_blank",
+      "question": "For am I now seeking the approval of men, or of God? If I were still trying to please _____, I would not be a servant of Christ.",
+      "answer": "men",
+      "verse_reference": "Galatians 1:10"
+    }
+  ]
+}

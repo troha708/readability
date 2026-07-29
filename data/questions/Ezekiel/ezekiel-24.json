@@ -1,0 +1,57 @@
+{
+  "book": "Ezekiel",
+  "chapter": 24,
+  "questions": [
+    {
+      "id": "ezekiel-24-q1",
+      "type": "multiple_choice",
+      "question": "What parable does Ezekiel give on the day Babylon besieged Jerusalem in chapter 24?",
+      "options": [
+        "The valley of the dry bones",
+        "The boiling pot (cauldron) with rust",
+        "The two dry sticks joined together into one",
+        "The scroll sweet as honey"
+      ],
+      "answer": "The boiling pot (cauldron) with rust",
+      "verse_reference": "Ezekiel 24:3-6"
+    },
+    {
+      "id": "ezekiel-24-q2",
+      "type": "multiple_choice",
+      "question": "What deeply personal sign did Ezekiel experience in chapter 24?",
+      "options": [
+        "His wife died, and he was told not to mourn, as a sign",
+        "He went suddenly deaf and could hear nothing at all",
+        "He was struck blind for the whole long length of the siege",
+        "His house was burned with everything that he owned"
+      ],
+      "answer": "His wife died, and he was told not to mourn, as a sign",
+      "verse_reference": "Ezekiel 24:16-18"
+    },
+    {
+      "id": "ezekiel-24-q3",
+      "type": "true_false",
+      "question": "Ezekiel's not mourning was a sign that the people would not mourn openly when the temple fell.",
+      "answer": "true",
+      "verse_reference": "Ezekiel 24:21-24"
+    },
+    {
+      "id": "ezekiel-24-q4",
+      "type": "fill_blank",
+      "question": "Behold, I am about to take the delight of your eyes away from you at a stroke; yet you shall not _____.",
+      "answer": "mourn",
+      "verse_reference": "Ezekiel 24:16"
+    },
+    {
+      "id": "ezekiel-24-q5",
+      "type": "fill_blank",
+      "question": "Set on the _____, set it on; pour in water also, said the LORD of the boiling pot.",
+      "answer": "pot",
+      "accept": [
+        "cauldron",
+        "caldron"
+      ],
+      "verse_reference": "Ezekiel 24:3"
+    }
+  ]
+}

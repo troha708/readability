@@ -1,0 +1,53 @@
+{
+  "book": "Acts",
+  "chapter": 24,
+  "questions": [
+    {
+      "id": "acts-24-q1",
+      "type": "multiple_choice",
+      "question": "Who was the lawyer hired to present the case against Paul before Felix?",
+      "options": [
+        "Gamaliel",
+        "Tertullus",
+        "Alexander",
+        "Demetrius"
+      ],
+      "answer": "Tertullus",
+      "verse_reference": "Acts 24:1-2"
+    },
+    {
+      "id": "acts-24-q2",
+      "type": "multiple_choice",
+      "question": "Why did Felix keep Paul in prison for two years?",
+      "options": [
+        "He forgot about him",
+        "He was waiting for evidence",
+        "He wanted a bribe from Paul",
+        "Rome ordered it"
+      ],
+      "answer": "He wanted a bribe from Paul",
+      "verse_reference": "Acts 24:26-27"
+    },
+    {
+      "id": "acts-24-q3",
+      "type": "true_false",
+      "question": "Felix was alarmed when Paul spoke about righteousness, self-control, and the coming judgment.",
+      "answer": "true",
+      "verse_reference": "Acts 24:25"
+    },
+    {
+      "id": "acts-24-q4",
+      "type": "fill_blank",
+      "question": "Paul said he worshiped the God of his ancestors as a follower of the _____, which they call a sect.",
+      "answer": "Way",
+      "verse_reference": "Acts 24:14"
+    },
+    {
+      "id": "acts-24-q5",
+      "type": "fill_blank",
+      "question": "Felix was succeeded as governor by Porcius _____.",
+      "answer": "Festus",
+      "verse_reference": "Acts 24:27"
+    }
+  ]
+}

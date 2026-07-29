@@ -1,0 +1,53 @@
+{
+  "book": "Ezekiel",
+  "chapter": 38,
+  "questions": [
+    {
+      "id": "ezekiel-38-q1",
+      "type": "multiple_choice",
+      "question": "Who is the leader from the land of Magog in Ezekiel 38?",
+      "options": [
+        "Gog",
+        "Cyrus",
+        "Nebuchadnezzar",
+        "Pharaoh"
+      ],
+      "answer": "Gog",
+      "verse_reference": "Ezekiel 38:2"
+    },
+    {
+      "id": "ezekiel-38-q2",
+      "type": "multiple_choice",
+      "question": "What does God say Gog will do in the latter years?",
+      "options": [
+        "Lead all of the exiles safely back again to their own homeland",
+        "Rebuild all of the ruined and broken cities of the far north",
+        "Make a lasting and firm peace with all of the people of God",
+        "Come against the restored land of Israel like a storm"
+      ],
+      "answer": "Come against the restored land of Israel like a storm",
+      "verse_reference": "Ezekiel 38:8-9"
+    },
+    {
+      "id": "ezekiel-38-q3",
+      "type": "true_false",
+      "question": "God declares that he will display his greatness and holiness before the nations through Gog's defeat.",
+      "answer": "true",
+      "verse_reference": "Ezekiel 38:23"
+    },
+    {
+      "id": "ezekiel-38-q4",
+      "type": "fill_blank",
+      "question": "Son of man, set your face toward _____, of the land of Magog.",
+      "answer": "Gog",
+      "verse_reference": "Ezekiel 38:2"
+    },
+    {
+      "id": "ezekiel-38-q5",
+      "type": "fill_blank",
+      "question": "You will come up against my people Israel like a _____ covering the land.",
+      "answer": "cloud",
+      "verse_reference": "Ezekiel 38:16"
+    }
+  ]
+}

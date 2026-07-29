@@ -1,0 +1,53 @@
+{
+  "book": "Isaiah",
+  "chapter": 48,
+  "questions": [
+    {
+      "id": "isaiah-48-q1",
+      "type": "multiple_choice",
+      "question": "Why does God say he refines and acts for his people in Isaiah 48?",
+      "options": [
+        "For his own name's sake, that it not be profaned",
+        "In return for their many sacrifices",
+        "Because of their strength in battle",
+        "Because of their righteousness and obedience"
+      ],
+      "answer": "For his own name's sake, that it not be profaned",
+      "verse_reference": "Isaiah 48:9, 11"
+    },
+    {
+      "id": "isaiah-48-q2",
+      "type": "multiple_choice",
+      "question": "What does God lament his people did not do in Isaiah 48?",
+      "options": [
+        "Send word to the king of Egypt for the help that they so badly needed",
+        "Pay attention to his commandments, or peace would have been like a river",
+        "Build back up the broken-down walls of the city before the enemy returned",
+        "Offer up enough sacrifices and keep enough feasts at the temple of the LORD"
+      ],
+      "answer": "Pay attention to his commandments, or peace would have been like a river",
+      "verse_reference": "Isaiah 48:18"
+    },
+    {
+      "id": "isaiah-48-q3",
+      "type": "true_false",
+      "question": "Isaiah 48 ends saying there is no peace for the wicked.",
+      "answer": "true",
+      "verse_reference": "Isaiah 48:22"
+    },
+    {
+      "id": "isaiah-48-q4",
+      "type": "fill_blank",
+      "question": "Oh that you had paid attention to my commandments! Then your peace would have been like a _____.",
+      "answer": "river",
+      "verse_reference": "Isaiah 48:18"
+    },
+    {
+      "id": "isaiah-48-q5",
+      "type": "fill_blank",
+      "question": "Go out from Babylon, flee from Chaldea... say, 'The LORD has redeemed his servant _____!'",
+      "answer": "Jacob",
+      "verse_reference": "Isaiah 48:20"
+    }
+  ]
+}

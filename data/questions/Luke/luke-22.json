@@ -1,0 +1,57 @@
+{
+  "book": "Luke",
+  "chapter": 22,
+  "questions": [
+    {
+      "id": "luke-22-q1",
+      "type": "multiple_choice",
+      "question": "Who betrayed Jesus to the chief priests?",
+      "options": [
+        "Peter",
+        "Thomas",
+        "Judas",
+        "Andrew"
+      ],
+      "answer": "Judas",
+      "verse_reference": "Luke 22:3-4"
+    },
+    {
+      "id": "luke-22-q2",
+      "type": "multiple_choice",
+      "question": "What did Jesus say the bread represented at the Last Supper?",
+      "options": [
+        "The covenant",
+        "The manna from heaven",
+        "The Word of God",
+        "His body"
+      ],
+      "answer": "His body",
+      "verse_reference": "Luke 22:19"
+    },
+    {
+      "id": "luke-22-q3",
+      "type": "true_false",
+      "question": "Jesus healed the ear of the servant that one of his disciples cut off during his arrest.",
+      "answer": "true",
+      "verse_reference": "Luke 22:50-51"
+    },
+    {
+      "id": "luke-22-q4",
+      "type": "fill_blank",
+      "question": "Father, if you are willing, remove this _____ from me. Nevertheless, not my will, but yours, be done.",
+      "answer": "cup",
+      "verse_reference": "Luke 22:42"
+    },
+    {
+      "id": "luke-22-q5",
+      "type": "fill_blank",
+      "question": "The greatest among you should be like the _____, and the one who leads like the one who serves.",
+      "answer": "youngest",
+      "accept": [
+        "younger",
+        "least"
+      ],
+      "verse_reference": "Luke 22:26"
+    }
+  ]
+}

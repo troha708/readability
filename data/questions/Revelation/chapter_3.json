@@ -1,0 +1,58 @@
+{
+  "book": "Revelation",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "rev_3_1",
+      "type": "multiple_choice",
+      "question": "Which church does Jesus say is neither hot nor cold?",
+      "options": [
+        "Sardis",
+        "Laodicea",
+        "Smyrna",
+        "Philadelphia"
+      ],
+      "correct": "Laodicea",
+      "verse_ref": "Revelation 3:15-16",
+      "feedback": "Laodicea is lukewarm — neither hot nor cold."
+    },
+    {
+      "id": "rev_3_2",
+      "type": "multiple_choice",
+      "question": "Which church does Jesus say has an open door that no one can shut?",
+      "options": [
+        "Sardis",
+        "Distant Thyatira",
+        "Philadelphia",
+        "Ephesus"
+      ],
+      "correct": "Philadelphia",
+      "verse_ref": "Revelation 3:8",
+      "feedback": "Jesus has placed before Philadelphia an open door that no one can shut."
+    },
+    {
+      "id": "rev_3_3",
+      "type": "true_false",
+      "question": "Jesus says the church in Sardis has a reputation for being alive but is actually dead.",
+      "correct": true,
+      "verse_ref": "Revelation 3:1",
+      "feedback": "Sardis has a reputation for being alive but is dead."
+    },
+    {
+      "id": "rev_3_4",
+      "type": "fill_in_the_blank",
+      "question": "Here I am! I stand at the _____ and knock.",
+      "correct": "door",
+      "verse_ref": "Revelation 3:20",
+      "feedback": "Jesus stands at the door and knocks — if anyone hears and opens, he will come in."
+    },
+    {
+      "id": "rev_3_5",
+      "type": "fill_in_the_blank",
+      "question": "Jesus counsels the Laodiceans to buy from him gold refined in the _____.",
+      "correct": "fire",
+      "verse_ref": "Revelation 3:18",
+      "feedback": "Buy gold refined in the fire so you can become rich."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "2 Samuel",
+  "chapter": 11,
+  "questions": [
+    {
+      "id": "2-samuel-11-q1",
+      "type": "multiple_choice",
+      "question": "With whom did David commit adultery?",
+      "options": [
+        "Bathsheba",
+        "Michal",
+        "Abigail his wife",
+        "Tamar"
+      ],
+      "answer": "Bathsheba",
+      "verse_reference": "2 Samuel 11:2-4"
+    },
+    {
+      "id": "2-samuel-11-q2",
+      "type": "multiple_choice",
+      "question": "What did David do to Bathsheba's husband, Uriah?",
+      "options": [
+        "Sent him into exile far from Israel",
+        "Rewarded him with land and silver",
+        "Arranged for him to be killed in battle",
+        "Promoted him to command the army"
+      ],
+      "answer": "Arranged for him to be killed in battle",
+      "verse_reference": "2 Samuel 11:14-17"
+    },
+    {
+      "id": "2-samuel-11-q3",
+      "type": "true_false",
+      "question": "Uriah the Hittite was one of David's loyal soldiers.",
+      "answer": "true",
+      "verse_reference": "2 Samuel 11:3-11"
+    },
+    {
+      "id": "2-samuel-11-q4",
+      "type": "fill_blank",
+      "question": "David committed adultery with _____, the wife of Uriah.",
+      "answer": "Bathsheba",
+      "verse_reference": "2 Samuel 11:3-4"
+    },
+    {
+      "id": "2-samuel-11-q5",
+      "type": "fill_blank",
+      "question": "David arranged for _____ the Hittite to be killed in battle.",
+      "answer": "Uriah",
+      "verse_reference": "2 Samuel 11:15-17"
+    }
+  ]
+}

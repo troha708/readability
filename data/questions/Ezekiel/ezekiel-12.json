@@ -1,0 +1,60 @@
+{
+  "book": "Ezekiel",
+  "chapter": 12,
+  "questions": [
+    {
+      "id": "ezekiel-12-q1",
+      "type": "multiple_choice",
+      "question": "What sign did Ezekiel perform with baggage in chapter 12?",
+      "options": [
+        "Built a small model of the whole temple out of river clay and gathered stones",
+        "Prepared an exile's baggage and dug through the wall, as a sign of coming exile",
+        "Burned up all of his belongings before the watching people gathered in the square",
+        "Wore a very heavy wooden yoke through the crowded streets of the whole city"
+      ],
+      "answer": "Prepared an exile's baggage and dug through the wall, as a sign of coming exile",
+      "verse_reference": "Ezekiel 12:3-7"
+    },
+    {
+      "id": "ezekiel-12-q2",
+      "type": "multiple_choice",
+      "question": "What did this sign represent?",
+      "options": [
+        "The prince and people of Jerusalem going into exile",
+        "The coming of a deliverer to free the people",
+        "The rebuilding of the ruined city walls",
+        "The return of the exiles after seventy years"
+      ],
+      "answer": "The prince and people of Jerusalem going into exile",
+      "verse_reference": "Ezekiel 12:10-11"
+    },
+    {
+      "id": "ezekiel-12-q3",
+      "type": "true_false",
+      "question": "God said no longer would the people say the proverb that visions come to nothing, for the words would be fulfilled.",
+      "answer": "true",
+      "verse_reference": "Ezekiel 12:22-25"
+    },
+    {
+      "id": "ezekiel-12-q4",
+      "type": "fill_blank",
+      "question": "I am a _____ for you; as I have done, so shall it be done to them.",
+      "answer": "sign",
+      "accept": [
+        "type"
+      ],
+      "verse_reference": "Ezekiel 12:11"
+    },
+    {
+      "id": "ezekiel-12-q5",
+      "type": "fill_blank",
+      "question": "None of My words will be delayed any longer; the message I speak will be _____.",
+      "answer": "fulfilled",
+      "accept": [
+        "performed",
+        "done"
+      ],
+      "verse_reference": "Ezekiel 12:28"
+    }
+  ]
+}

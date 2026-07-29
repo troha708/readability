@@ -1,0 +1,60 @@
+{
+  "book": "Psalms",
+  "chapter": 39,
+  "questions": [
+    {
+      "id": "psalms-39-q1",
+      "type": "multiple_choice",
+      "question": "What did David resolve about his words?",
+      "options": [
+        "To gather all his wealth and store it away safely",
+        "To guard his ways and keep a muzzle on his mouth",
+        "To raise up an army and defend his native land",
+        "To seek out true wisdom and learn the law of God"
+      ],
+      "answer": "To guard his ways and keep a muzzle on his mouth",
+      "verse_reference": "Psalm 39:1"
+    },
+    {
+      "id": "psalms-39-q2",
+      "type": "multiple_choice",
+      "question": "How does David describe the span of human life?",
+      "options": [
+        "A thousand years; man endures like the hills",
+        "A few handbreadths; man is a mere breath",
+        "An evening flower; man fades by night",
+        "A passing shadow; man returns to dust"
+      ],
+      "answer": "A few handbreadths; man is a mere breath",
+      "verse_reference": "Psalm 39:5"
+    },
+    {
+      "id": "psalms-39-q3",
+      "type": "true_false",
+      "question": "David asks the LORD to make him know his end and the measure of his days.",
+      "answer": "true",
+      "verse_reference": "Psalm 39:4"
+    },
+    {
+      "id": "psalms-39-q4",
+      "type": "fill_blank",
+      "question": "And now, O Lord, for what do I wait? My hope is in _____.",
+      "answer": "you",
+      "accept": [
+        "thee"
+      ],
+      "verse_reference": "Psalm 39:7"
+    },
+    {
+      "id": "psalms-39-q5",
+      "type": "fill_blank",
+      "question": "Surely each man is but a _____!",
+      "answer": "vapor",
+      "accept": [
+        "breath",
+        "vanity"
+      ],
+      "verse_reference": "Psalm 39:11"
+    }
+  ]
+}

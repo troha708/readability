@@ -1,0 +1,53 @@
+{
+  "book": "Romans",
+  "chapter": 9,
+  "questions": [
+    {
+      "id": "romans-9-q1",
+      "type": "multiple_choice",
+      "question": "Paul uses the example of a potter and clay to illustrate what?",
+      "options": [
+        "The value of patient and honest labor",
+        "The frailty and shortness of human life",
+        "The skill and creativity of human hands",
+        "God's sovereign right over his creation"
+      ],
+      "answer": "God's sovereign right over his creation",
+      "verse_reference": "Romans 9:20-21"
+    },
+    {
+      "id": "romans-9-q2",
+      "type": "multiple_choice",
+      "question": "Which two brothers does Paul reference to show God's sovereign choice?",
+      "options": [
+        "Moses and Aaron",
+        "Cain and Abel",
+        "Jacob and Esau",
+        "Isaac and Ishmael"
+      ],
+      "answer": "Jacob and Esau",
+      "verse_reference": "Romans 9:10-13"
+    },
+    {
+      "id": "romans-9-q3",
+      "type": "true_false",
+      "question": "Paul says he would be willing to be cut off from Christ for the sake of his fellow Israelites.",
+      "answer": "true",
+      "verse_reference": "Romans 9:3"
+    },
+    {
+      "id": "romans-9-q4",
+      "type": "fill_blank",
+      "question": "I will have _____ on whom I have mercy, and I will have compassion on whom I have compassion.",
+      "answer": "mercy",
+      "verse_reference": "Romans 9:15"
+    },
+    {
+      "id": "romans-9-q5",
+      "type": "fill_blank",
+      "question": "It is not of him who wills, nor of him who runs, but of God who has _____.",
+      "answer": "mercy",
+      "verse_reference": "Romans 9:16"
+    }
+  ]
+}

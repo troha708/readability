@@ -1,0 +1,56 @@
+{
+  "book": "Genesis",
+  "chapter": 39,
+  "questions": [
+    {
+      "id": "genesis-39-q1",
+      "type": "multiple_choice",
+      "question": "Who bought Joseph as a slave in Egypt?",
+      "options": [
+        "Pharaoh",
+        "Potiphar",
+        "The cupbearer",
+        "The baker"
+      ],
+      "answer": "Potiphar",
+      "verse_reference": "Genesis 39:1"
+    },
+    {
+      "id": "genesis-39-q2",
+      "type": "multiple_choice",
+      "question": "Why was Joseph thrown into prison?",
+      "options": [
+        "He was caught stealing from Potiphar",
+        "He was found trying to flee from Egypt",
+        "Potiphar's wife falsely accused him",
+        "He lied to Pharaoh about a strange dream"
+      ],
+      "answer": "Potiphar's wife falsely accused him",
+      "verse_reference": "Genesis 39:17-20"
+    },
+    {
+      "id": "genesis-39-q3",
+      "type": "true_false",
+      "question": "The phrase \"the LORD was with Joseph\" appears repeatedly in this chapter.",
+      "answer": "true",
+      "verse_reference": "Genesis 39:2"
+    },
+    {
+      "id": "genesis-39-q4",
+      "type": "fill_blank",
+      "question": "Joseph refused, asking, \"How then can I do this great wickedness, and sin against _____?\"",
+      "answer": "God",
+      "verse_reference": "Genesis 39:9"
+    },
+    {
+      "id": "genesis-39-q5",
+      "type": "fill_blank",
+      "question": "Joseph ran from Potiphar's wife, leaving his _____ in her hand.",
+      "answer": "cloak",
+      "accept": [
+        "garment"
+      ],
+      "verse_reference": "Genesis 39:12"
+    }
+  ]
+}

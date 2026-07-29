@@ -1,0 +1,53 @@
+{
+  "book": "Micah",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "micah-2-q1",
+      "type": "multiple_choice",
+      "question": "Whom does Micah 2 pronounce woe on?",
+      "options": [
+        "Those who plot evil and seize fields and houses",
+        "Those who mourn in sackcloth and ashes",
+        "Those who keep the holy Sabbath and all the feasts",
+        "Those who flee before the coming army"
+      ],
+      "answer": "Those who plot evil and seize fields and houses",
+      "verse_reference": "Micah 2:1-2"
+    },
+    {
+      "id": "micah-2-q2",
+      "type": "multiple_choice",
+      "question": "What does Micah 2 say the false prophets prefer to preach about?",
+      "options": [
+        "Justice and mercy",
+        "Repentance and fasting",
+        "Coming judgment",
+        "Wine and strong drink"
+      ],
+      "answer": "Wine and strong drink",
+      "verse_reference": "Micah 2:11"
+    },
+    {
+      "id": "micah-2-q3",
+      "type": "true_false",
+      "question": "Micah 2 ends with a promise that God will gather the remnant of Israel like sheep in a fold.",
+      "answer": "true",
+      "verse_reference": "Micah 2:12"
+    },
+    {
+      "id": "micah-2-q4",
+      "type": "fill_blank",
+      "question": "Woe to those who devise _____ and plot evil on their beds!",
+      "answer": "iniquity",
+      "verse_reference": "Micah 2:1"
+    },
+    {
+      "id": "micah-2-q5",
+      "type": "fill_blank",
+      "question": "I will surely assemble all of you, O Jacob; I will gather the _____ of Israel.",
+      "answer": "remnant",
+      "verse_reference": "Micah 2:12"
+    }
+  ]
+}

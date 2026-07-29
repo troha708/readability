@@ -1,0 +1,57 @@
+{
+  "book": "Daniel",
+  "chapter": 5,
+  "questions": [
+    {
+      "id": "daniel-5-q1",
+      "type": "multiple_choice",
+      "question": "What appeared during Belshazzar's feast in chapter 5?",
+      "options": [
+        "A statue toppling from its base",
+        "A scroll unrolling in the air",
+        "A lampstand going dark at once",
+        "A hand writing on the wall"
+      ],
+      "answer": "A hand writing on the wall",
+      "verse_reference": "Daniel 5:5"
+    },
+    {
+      "id": "daniel-5-q2",
+      "type": "multiple_choice",
+      "question": "What did the writing 'MENE, MENE, TEKEL, PARSIN' mean?",
+      "options": [
+        "God had numbered the kingdom's days, weighed the king and found him wanting, and divided the kingdom",
+        "God would very soon deliver the whole of the city from the great Persian army gathered outside the gates",
+        "God would raise up a brand new and far greater temple built up entirely in the king's own great honor",
+        "God would restore the king again to his royal throne once more after seven long years of raving madness"
+      ],
+      "answer": "God had numbered the kingdom's days, weighed the king and found him wanting, and divided the kingdom",
+      "verse_reference": "Daniel 5:25-28"
+    },
+    {
+      "id": "daniel-5-q3",
+      "type": "true_false",
+      "question": "That very night Belshazzar was killed and Darius the Mede received the kingdom.",
+      "answer": "true",
+      "verse_reference": "Daniel 5:30-31"
+    },
+    {
+      "id": "daniel-5-q4",
+      "type": "fill_blank",
+      "question": "Belshazzar used the gold vessels from the _____ in Jerusalem to drink wine.",
+      "answer": "temple",
+      "verse_reference": "Daniel 5:2-3"
+    },
+    {
+      "id": "daniel-5-q5",
+      "type": "fill_blank",
+      "question": "You have been weighed on the scales and found _____.",
+      "answer": "deficient",
+      "accept": [
+        "wanting",
+        "lacking"
+      ],
+      "verse_reference": "Daniel 5:27"
+    }
+  ]
+}

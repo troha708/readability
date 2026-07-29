@@ -1,0 +1,56 @@
+{
+  "book": "2 Corinthians",
+  "chapter": 5,
+  "questions": [
+    {
+      "id": "2cor-5-q1",
+      "type": "multiple_choice",
+      "question": "Paul says if anyone is in Christ, they are what?",
+      "options": [
+        "Wholly forgiven",
+        "A new creation",
+        "Set free",
+        "Redeemed"
+      ],
+      "answer": "A new creation",
+      "verse_reference": "2 Corinthians 5:17"
+    },
+    {
+      "id": "2cor-5-q2",
+      "type": "multiple_choice",
+      "question": "What ministry has God given to believers, according to Paul?",
+      "options": [
+        "The ministry of final harsh judgment",
+        "The ministry of reconciliation",
+        "The ministry of law",
+        "The ministry of prophecy"
+      ],
+      "answer": "The ministry of reconciliation",
+      "verse_reference": "2 Corinthians 5:18"
+    },
+    {
+      "id": "2cor-5-q3",
+      "type": "true_false",
+      "question": "Paul says we must all appear before the judgment seat of Christ.",
+      "answer": "true",
+      "verse_reference": "2 Corinthians 5:10"
+    },
+    {
+      "id": "2cor-5-q4",
+      "type": "fill_blank",
+      "question": "If anyone is in Christ, he is a new _____. The old things have passed away. Behold, all things have become new.",
+      "answer": "creation",
+      "accept": [
+        "creature"
+      ],
+      "verse_reference": "2 Corinthians 5:17"
+    },
+    {
+      "id": "2cor-5-q5",
+      "type": "fill_blank",
+      "question": "We are therefore Christ's _____, as though God were making his appeal through us.",
+      "answer": "ambassadors",
+      "verse_reference": "2 Corinthians 5:20"
+    }
+  ]
+}

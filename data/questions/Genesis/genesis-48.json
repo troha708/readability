@@ -1,0 +1,53 @@
+{
+  "book": "Genesis",
+  "chapter": 48,
+  "questions": [
+    {
+      "id": "genesis-48-q1",
+      "type": "multiple_choice",
+      "question": "Whose two sons did Jacob bless and claim as his own?",
+      "options": [
+        "Reuben's",
+        "Joseph's",
+        "Judah's",
+        "Benjamin's"
+      ],
+      "answer": "Joseph's",
+      "verse_reference": "Genesis 48:5"
+    },
+    {
+      "id": "genesis-48-q2",
+      "type": "multiple_choice",
+      "question": "On which grandson did Jacob place his right hand, giving the greater blessing?",
+      "options": [
+        "Ephraim, the younger",
+        "Neither",
+        "Both of them equally blessed",
+        "Manasseh, the firstborn son"
+      ],
+      "answer": "Ephraim, the younger",
+      "verse_reference": "Genesis 48:14"
+    },
+    {
+      "id": "genesis-48-q3",
+      "type": "true_false",
+      "question": "Joseph thought his father had made a mistake, but Jacob crossed his hands on purpose.",
+      "answer": "true",
+      "verse_reference": "Genesis 48:17-19"
+    },
+    {
+      "id": "genesis-48-q4",
+      "type": "fill_blank",
+      "question": "Jacob crossed his arms to give the greater blessing to the younger son, _____.",
+      "answer": "Ephraim",
+      "verse_reference": "Genesis 48:14"
+    },
+    {
+      "id": "genesis-48-q5",
+      "type": "fill_blank",
+      "question": "Jacob recalled that _____ had died beside him on the way in Canaan.",
+      "answer": "Rachel",
+      "verse_reference": "Genesis 48:7"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Joshua",
+  "chapter": 19,
+  "questions": [
+    {
+      "id": "joshua-19-q1",
+      "type": "multiple_choice",
+      "question": "What does chapter 19 record?",
+      "options": [
+        "The list of the cities of refuge",
+        "The land allotments for the remaining tribes",
+        "A great and fierce battle against the Canaanites",
+        "A song of thanks for the conquest"
+      ],
+      "answer": "The land allotments for the remaining tribes",
+      "verse_reference": "Joshua 19:1"
+    },
+    {
+      "id": "joshua-19-q2",
+      "type": "multiple_choice",
+      "question": "Within whose territory did the tribe of Simeon receive its inheritance?",
+      "options": [
+        "Judah",
+        "Ephraim",
+        "Benjamin",
+        "Dan"
+      ],
+      "answer": "Judah",
+      "verse_reference": "Joshua 19:1-9"
+    },
+    {
+      "id": "joshua-19-q3",
+      "type": "true_false",
+      "question": "Joshua himself was given a city to inherit after all the tribes received theirs.",
+      "answer": "true",
+      "verse_reference": "Joshua 19:49-50"
+    },
+    {
+      "id": "joshua-19-q4",
+      "type": "fill_blank",
+      "question": "The inheritances were divided among the tribes by lot at _____.",
+      "answer": "Shiloh",
+      "verse_reference": "Joshua 19:51"
+    },
+    {
+      "id": "joshua-19-q5",
+      "type": "fill_blank",
+      "question": "The tribe of _____ received its inheritance within Judah's territory.",
+      "answer": "Simeon",
+      "verse_reference": "Joshua 19:1"
+    }
+  ]
+}

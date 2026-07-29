@@ -1,0 +1,64 @@
+{
+  "book": "Titus",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "titus_2_1",
+      "type": "multiple_choice",
+      "question": "Paul says the grace of God has appeared bringing what to all people?",
+      "options": [
+        "Salvation",
+        "Judgment",
+        "Wisdom",
+        "Prosperity"
+      ],
+      "correct": "Salvation",
+      "verse_ref": "Titus 2:11",
+      "feedback": "The grace of God has appeared, bringing salvation for all people."
+    },
+    {
+      "id": "titus_2_2",
+      "type": "multiple_choice",
+      "question": "What does grace train believers to renounce?",
+      "options": [
+        "All ambition for high office",
+        "Ungodliness and worldly passions",
+        "The ties of family and kindred",
+        "Every kind of earthly possession"
+      ],
+      "correct": "Ungodliness and worldly passions",
+      "verse_ref": "Titus 2:12",
+      "feedback": "Grace trains us to renounce ungodliness and worldly passions and live self-controlled lives."
+    },
+    {
+      "id": "titus_2_3",
+      "type": "true_false",
+      "question": "Paul says older women should be reverent in behavior and teach what is good.",
+      "correct": true,
+      "verse_ref": "Titus 2:3",
+      "feedback": "Older women should be reverent in behavior and teach what is good to younger women."
+    },
+    {
+      "id": "titus_2_4",
+      "type": "fill_in_the_blank",
+      "question": "Paul says we are waiting for the blessed hope — the appearing of the glory of our great God and _____.",
+      "correct": "Savior",
+      "accept": [
+        "Saviour"
+      ],
+      "verse_ref": "Titus 2:13",
+      "feedback": "We await the blessed hope: the appearing of the glory of our great God and Savior Jesus Christ."
+    },
+    {
+      "id": "titus_2_5",
+      "type": "fill_in_the_blank",
+      "question": "Christ gave himself for us to redeem us from all _____ and purify for himself a people.",
+      "correct": "lawlessness",
+      "accept": [
+        "iniquity"
+      ],
+      "verse_ref": "Titus 2:14",
+      "feedback": "Christ gave himself to redeem us from all lawlessness and purify a people for his own possession."
+    }
+  ]
+}

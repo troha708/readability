@@ -1,0 +1,53 @@
+{
+  "book": "Numbers",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "numbers-3-q1",
+      "type": "multiple_choice",
+      "question": "What was the special role of the tribe of Levi?",
+      "options": [
+        "To serve Aaron and care for the tabernacle",
+        "To farm the land and provide grain",
+        "To lead Israel's armies into battle",
+        "To rule over and judge the other eleven tribes"
+      ],
+      "answer": "To serve Aaron and care for the tabernacle",
+      "verse_reference": "Numbers 3:6-8"
+    },
+    {
+      "id": "numbers-3-q2",
+      "type": "multiple_choice",
+      "question": "Whom did the Levites substitute for, belonging to the LORD?",
+      "options": [
+        "The firstborn of Israel",
+        "The captains of the army",
+        "The elders of each tribe",
+        "The priests of Aaron's line"
+      ],
+      "answer": "The firstborn of Israel",
+      "verse_reference": "Numbers 3:12-13"
+    },
+    {
+      "id": "numbers-3-q3",
+      "type": "true_false",
+      "question": "Aaron's sons Nadab and Abihu had died before the LORD.",
+      "answer": "true",
+      "verse_reference": "Numbers 3:4"
+    },
+    {
+      "id": "numbers-3-q4",
+      "type": "fill_blank",
+      "question": "The Levites were given to _____ and his sons to do the service of the tabernacle.",
+      "answer": "Aaron",
+      "verse_reference": "Numbers 3:9"
+    },
+    {
+      "id": "numbers-3-q5",
+      "type": "fill_blank",
+      "question": "The Levites were taken by the LORD instead of all the _____ of Israel.",
+      "answer": "firstborn",
+      "verse_reference": "Numbers 3:12"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Ezekiel",
+  "chapter": 8,
+  "questions": [
+    {
+      "id": "ezekiel-8-q1",
+      "type": "multiple_choice",
+      "question": "Where was Ezekiel taken in a vision in chapter 8?",
+      "options": [
+        "To Babylon, to see all of the captives in their exile",
+        "To a very high mountain, to look out over the whole land",
+        "To the deep valley, to see the dry and scattered bones",
+        "To Jerusalem, to see the abominations in the temple"
+      ],
+      "answer": "To Jerusalem, to see the abominations in the temple",
+      "verse_reference": "Ezekiel 8:3"
+    },
+    {
+      "id": "ezekiel-8-q2",
+      "type": "multiple_choice",
+      "question": "What abomination did Ezekiel see being committed in the temple?",
+      "options": [
+        "Foreign armies all encamped within the walls of the holy temple courts",
+        "Idolatry, including elders worshiping images and men bowing to the sun",
+        "Murder committed openly in the broad and full daylight of the temple courts",
+        "The bold theft of the gold and the silver vessels of the holy sanctuary"
+      ],
+      "answer": "Idolatry, including elders worshiping images and men bowing to the sun",
+      "verse_reference": "Ezekiel 8:10-16"
+    },
+    {
+      "id": "ezekiel-8-q3",
+      "type": "true_false",
+      "question": "God showed Ezekiel 'greater abominations' progressively in the temple vision.",
+      "answer": "true",
+      "verse_reference": "Ezekiel 8:6, 13, 15"
+    },
+    {
+      "id": "ezekiel-8-q4",
+      "type": "fill_blank",
+      "question": "He brought me to the entrance of the court, and I saw a hole in the _____.",
+      "answer": "wall",
+      "verse_reference": "Ezekiel 8:7"
+    },
+    {
+      "id": "ezekiel-8-q5",
+      "type": "fill_blank",
+      "question": "About twenty-five men were bowing down to the _____ toward the east.",
+      "answer": "sun",
+      "verse_reference": "Ezekiel 8:16"
+    }
+  ]
+}

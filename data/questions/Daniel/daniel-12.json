@@ -1,0 +1,53 @@
+{
+  "book": "Daniel",
+  "chapter": 12,
+  "questions": [
+    {
+      "id": "daniel-12-q1",
+      "type": "multiple_choice",
+      "question": "Who is the great prince who arises to defend Daniel's people in chapter 12?",
+      "options": [
+        "Gabriel",
+        "Michael",
+        "Cyrus",
+        "Darius"
+      ],
+      "answer": "Michael",
+      "verse_reference": "Daniel 12:1"
+    },
+    {
+      "id": "daniel-12-q2",
+      "type": "multiple_choice",
+      "question": "What does Daniel 12 say about those who sleep in the dust of the earth?",
+      "options": [
+        "Many shall awake, some to everlasting life and some to shame",
+        "The dead shall all remain forever and ever in the dust",
+        "All alike shall be gathered together at last to one peaceful rest",
+        "Only the kings of old shall rise again to rule once more"
+      ],
+      "answer": "Many shall awake, some to everlasting life and some to shame",
+      "verse_reference": "Daniel 12:2"
+    },
+    {
+      "id": "daniel-12-q3",
+      "type": "true_false",
+      "question": "Daniel 12 says those who are wise shall shine like the brightness of the sky.",
+      "answer": "true",
+      "verse_reference": "Daniel 12:3"
+    },
+    {
+      "id": "daniel-12-q4",
+      "type": "fill_blank",
+      "question": "Many of those who sleep in the dust of the earth shall _____, some to everlasting life.",
+      "answer": "awake",
+      "verse_reference": "Daniel 12:2"
+    },
+    {
+      "id": "daniel-12-q5",
+      "type": "fill_blank",
+      "question": "Those who are wise shall shine like the brightness of the sky, and those who turn many to _____, like the stars.",
+      "answer": "righteousness",
+      "verse_reference": "Daniel 12:3"
+    }
+  ]
+}

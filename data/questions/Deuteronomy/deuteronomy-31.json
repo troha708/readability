@@ -1,0 +1,56 @@
+{
+  "book": "Deuteronomy",
+  "chapter": 31,
+  "questions": [
+    {
+      "id": "deuteronomy-31-q1",
+      "type": "multiple_choice",
+      "question": "Whom did Moses publicly commission to lead Israel?",
+      "options": [
+        "Joshua",
+        "Aaron",
+        "Eleazar",
+        "Caleb"
+      ],
+      "answer": "Joshua",
+      "verse_reference": "Deuteronomy 31:7-23"
+    },
+    {
+      "id": "deuteronomy-31-q2",
+      "type": "multiple_choice",
+      "question": "What did Moses do with the written law?",
+      "options": [
+        "Gave it to the priests and Levites to keep by the ark",
+        "Burned it after reading it aloud to the people",
+        "Hid it in a cave for a later generation to find",
+        "Kept it secret from all but the chief elders"
+      ],
+      "answer": "Gave it to the priests and Levites to keep by the ark",
+      "verse_reference": "Deuteronomy 31:9-26"
+    },
+    {
+      "id": "deuteronomy-31-q3",
+      "type": "true_false",
+      "question": "Moses told Israel to read the law publicly every seven years at the Feast of Booths.",
+      "answer": "true",
+      "verse_reference": "Deuteronomy 31:10-11"
+    },
+    {
+      "id": "deuteronomy-31-q4",
+      "type": "fill_blank",
+      "question": "Moses encouraged Joshua, \"Be strong and _____; do not fear.\"",
+      "answer": "courageous",
+      "accept": [
+        "courage"
+      ],
+      "verse_reference": "Deuteronomy 31:6-7"
+    },
+    {
+      "id": "deuteronomy-31-q5",
+      "type": "fill_blank",
+      "question": "Moses wrote this _____ and gave it to the priests to place beside the ark.",
+      "answer": "law",
+      "verse_reference": "Deuteronomy 31:24-26"
+    }
+  ]
+}

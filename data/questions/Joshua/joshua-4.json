@@ -1,0 +1,53 @@
+{
+  "book": "Joshua",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "joshua-4-q1",
+      "type": "multiple_choice",
+      "question": "What did Israel set up to remember crossing the Jordan?",
+      "options": [
+        "A tent",
+        "A pillar",
+        "Twelve stones",
+        "An altar"
+      ],
+      "answer": "Twelve stones",
+      "verse_reference": "Joshua 4:3-8"
+    },
+    {
+      "id": "joshua-4-q2",
+      "type": "multiple_choice",
+      "question": "Why were the twelve stones set up?",
+      "options": [
+        "As a memorial and sign for future generations",
+        "As a boundary marker set between all the tribes",
+        "As the foundation of a future city",
+        "As a decoration for the new altar"
+      ],
+      "answer": "As a memorial and sign for future generations",
+      "verse_reference": "Joshua 4:6-7"
+    },
+    {
+      "id": "joshua-4-q3",
+      "type": "true_false",
+      "question": "One man from each of the twelve tribes took a stone from the Jordan.",
+      "answer": "true",
+      "verse_reference": "Joshua 4:2-4"
+    },
+    {
+      "id": "joshua-4-q4",
+      "type": "fill_blank",
+      "question": "Twelve _____ were taken from the middle of the Jordan as a memorial.",
+      "answer": "stones",
+      "verse_reference": "Joshua 4:8"
+    },
+    {
+      "id": "joshua-4-q5",
+      "type": "fill_blank",
+      "question": "The stones were a sign so children would ask about the _____ crossing.",
+      "answer": "Jordan",
+      "verse_reference": "Joshua 4:6-7"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "2 Samuel",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "2-samuel-3-q1",
+      "type": "multiple_choice",
+      "question": "Who was Saul's army commander who decided to support David?",
+      "options": [
+        "Abishai",
+        "Amasa",
+        "Abner",
+        "Joab"
+      ],
+      "answer": "Abner",
+      "verse_reference": "2 Samuel 3:9-12"
+    },
+    {
+      "id": "2-samuel-3-q2",
+      "type": "multiple_choice",
+      "question": "Who killed Abner out of revenge?",
+      "options": [
+        "David",
+        "Joab",
+        "Ish-bosheth",
+        "Abishai"
+      ],
+      "answer": "Joab",
+      "verse_reference": "2 Samuel 3:27"
+    },
+    {
+      "id": "2-samuel-3-q3",
+      "type": "true_false",
+      "question": "David mourned Abner and did not approve of his murder.",
+      "answer": "true",
+      "verse_reference": "2 Samuel 3:31-37"
+    },
+    {
+      "id": "2-samuel-3-q4",
+      "type": "fill_blank",
+      "question": "_____, Saul's former commander, turned to support David as king.",
+      "answer": "Abner",
+      "verse_reference": "2 Samuel 3:12"
+    },
+    {
+      "id": "2-samuel-3-q5",
+      "type": "fill_blank",
+      "question": "_____ killed Abner to avenge his brother Asahel.",
+      "answer": "Joab",
+      "verse_reference": "2 Samuel 3:27"
+    }
+  ]
+}

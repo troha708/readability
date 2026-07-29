@@ -1,0 +1,56 @@
+{
+  "book": "Job",
+  "chapter": 17,
+  "questions": [
+    {
+      "id": "job-17-q1",
+      "type": "multiple_choice",
+      "question": "What was Job's outlook in chapter 17?",
+      "options": [
+        "Calm trust in coming relief",
+        "Despair, expecting the grave",
+        "Bitter rage against his friends",
+        "Quiet hope of being restored"
+      ],
+      "answer": "Despair, expecting the grave",
+      "verse_reference": "Job 17:1"
+    },
+    {
+      "id": "job-17-q2",
+      "type": "multiple_choice",
+      "question": "What did Job say to the grave (Sheol)?",
+      "options": [
+        "Heal me and raise me up to life again",
+        "I fear you and turn away from you in great dread",
+        "You are my house; I make my bed in darkness",
+        "Depart from me, for I will surely not die"
+      ],
+      "answer": "You are my house; I make my bed in darkness",
+      "verse_reference": "Job 17:13"
+    },
+    {
+      "id": "job-17-q3",
+      "type": "true_false",
+      "question": "Job said his spirit was broken and his days were extinct.",
+      "answer": "true",
+      "verse_reference": "Job 17:1"
+    },
+    {
+      "id": "job-17-q4",
+      "type": "fill_blank",
+      "question": "Job said he had become a _____ of the peoples.",
+      "answer": "byword",
+      "accept": [
+        "proverb"
+      ],
+      "verse_reference": "Job 17:6"
+    },
+    {
+      "id": "job-17-q5",
+      "type": "fill_blank",
+      "question": "Job asked, 'Where then is my _____?'",
+      "answer": "hope",
+      "verse_reference": "Job 17:15"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "book": "Nahum",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "nahum-1-q1",
+      "type": "multiple_choice",
+      "question": "Against which city is the book of Nahum a prophecy?",
+      "options": [
+        "Tyre",
+        "Nineveh",
+        "Jerusalem",
+        "Babylon"
+      ],
+      "answer": "Nineveh",
+      "verse_reference": "Nahum 1:1"
+    },
+    {
+      "id": "nahum-1-q2",
+      "type": "multiple_choice",
+      "question": "How is the LORD described in Nahum 1?",
+      "options": [
+        "Harsh and unjust toward all, punishing even the wholly innocent",
+        "Slow to anger and great in power, yet he will not clear the guilty",
+        "Quick to forgive every wrong and gentle with all of the people",
+        "Distant and ever silent, very far removed from all of human affairs"
+      ],
+      "answer": "Slow to anger and great in power, yet he will not clear the guilty",
+      "verse_reference": "Nahum 1:3"
+    },
+    {
+      "id": "nahum-1-q3",
+      "type": "true_false",
+      "question": "Nahum 1 says the LORD is good, a stronghold in the day of trouble, and he knows those who take refuge in him.",
+      "answer": "true",
+      "verse_reference": "Nahum 1:7"
+    },
+    {
+      "id": "nahum-1-q4",
+      "type": "fill_blank",
+      "question": "The LORD is _____ to anger and great in power.",
+      "answer": "slow",
+      "verse_reference": "Nahum 1:3"
+    },
+    {
+      "id": "nahum-1-q5",
+      "type": "fill_blank",
+      "question": "The LORD is good, a stronghold in the day of _____.",
+      "answer": "distress",
+      "accept": [
+        "trouble"
+      ],
+      "verse_reference": "Nahum 1:7"
+    }
+  ]
+}

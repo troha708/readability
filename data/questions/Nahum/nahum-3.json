@@ -1,0 +1,57 @@
+{
+  "book": "Nahum",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "nahum-3-q1",
+      "type": "multiple_choice",
+      "question": "What does Nahum 3 call Nineveh?",
+      "options": [
+        "The golden city of merchants and kings",
+        "The holy city, where the LORD dwells",
+        "The peaceful city of refuge and rest",
+        "The bloody city, full of lies and plunder"
+      ],
+      "answer": "The bloody city, full of lies and plunder",
+      "verse_reference": "Nahum 3:1"
+    },
+    {
+      "id": "nahum-3-q2",
+      "type": "multiple_choice",
+      "question": "How will people react to Nineveh's fall, according to Nahum 3?",
+      "options": [
+        "All who pass by her will mourn and weep aloud over her very sudden downfall",
+        "All who hear will clap their hands, for who has not felt her endless evil?",
+        "The many peoples will fall wholly silent, in fear of the very same fate themselves",
+        "The surrounding nations will hasten to rebuild her broken-down walls and gates"
+      ],
+      "answer": "All who hear will clap their hands, for who has not felt her endless evil?",
+      "verse_reference": "Nahum 3:19"
+    },
+    {
+      "id": "nahum-3-q3",
+      "type": "true_false",
+      "question": "Nahum 3 compares Nineveh's downfall to that of Thebes (No-amon), which also fell.",
+      "answer": "true",
+      "verse_reference": "Nahum 3:8-10"
+    },
+    {
+      "id": "nahum-3-q4",
+      "type": "fill_blank",
+      "question": "Woe to the bloody _____, all full of lies and plunder!",
+      "answer": "city",
+      "verse_reference": "Nahum 3:1"
+    },
+    {
+      "id": "nahum-3-q5",
+      "type": "fill_blank",
+      "question": "There is no healing for your injury; your wound is _____.",
+      "answer": "severe",
+      "accept": [
+        "grievous",
+        "fatal"
+      ],
+      "verse_reference": "Nahum 3:19"
+    }
+  ]
+}

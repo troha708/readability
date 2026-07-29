@@ -1,0 +1,56 @@
+{
+  "book": "Psalms",
+  "chapter": 89,
+  "questions": [
+    {
+      "id": "psalms-89-q1",
+      "type": "multiple_choice",
+      "question": "What covenant does Psalm 89 celebrate and then lament?",
+      "options": [
+        "God's creation of the heavens and earth",
+        "God's deliverance of Israel from Egypt",
+        "God's law given on Mount Sinai",
+        "God's covenant with David and his throne"
+      ],
+      "answer": "God's covenant with David and his throne",
+      "verse_reference": "Psalm 89:3-4"
+    },
+    {
+      "id": "psalms-89-q2",
+      "type": "multiple_choice",
+      "question": "How does the psalm begin?",
+      "options": [
+        "'The LORD is my shepherd; I shall not want'",
+        "'Out of the depths I cry to you, O LORD'",
+        "'How long, O LORD? Will you hide yourself away forever?'",
+        "'I will sing of the steadfast love of the LORD forever'"
+      ],
+      "answer": "'I will sing of the steadfast love of the LORD forever'",
+      "verse_reference": "Psalm 89:1"
+    },
+    {
+      "id": "psalms-89-q3",
+      "type": "true_false",
+      "question": "God swore that David's offspring would endure forever and his throne as the days of the heavens.",
+      "answer": "true",
+      "verse_reference": "Psalm 89:29"
+    },
+    {
+      "id": "psalms-89-q4",
+      "type": "fill_blank",
+      "question": "I will sing of the loving _____ of the LORD forever.",
+      "answer": "devotion",
+      "accept": [
+        "kindness"
+      ],
+      "verse_reference": "Psalm 89:1"
+    },
+    {
+      "id": "psalms-89-q5",
+      "type": "fill_blank",
+      "question": "Righteousness and justice are the foundation of your _____.",
+      "answer": "throne",
+      "verse_reference": "Psalm 89:14"
+    }
+  ]
+}

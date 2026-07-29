@@ -1,0 +1,56 @@
+{
+  "book": "Colossians",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "col-1-q1",
+      "type": "multiple_choice",
+      "question": "Paul says Christ is the image of whom?",
+      "options": [
+        "Moses",
+        "The invisible God",
+        "The mighty heavenly angels",
+        "Adam"
+      ],
+      "answer": "The invisible God",
+      "verse_reference": "Colossians 1:15"
+    },
+    {
+      "id": "col-1-q2",
+      "type": "multiple_choice",
+      "question": "Paul says all things were created by Christ and for whom?",
+      "options": [
+        "For the church",
+        "For humanity",
+        "For him",
+        "For the angels"
+      ],
+      "answer": "For him",
+      "verse_reference": "Colossians 1:16"
+    },
+    {
+      "id": "col-1-q3",
+      "type": "true_false",
+      "question": "Paul says Christ is the head of the body, the church.",
+      "answer": "true",
+      "verse_reference": "Colossians 1:18"
+    },
+    {
+      "id": "col-1-q4",
+      "type": "fill_blank",
+      "question": "He is before all things, and in him all things hold _____.",
+      "answer": "together",
+      "verse_reference": "Colossians 1:17"
+    },
+    {
+      "id": "col-1-q5",
+      "type": "fill_blank",
+      "question": "For it was the Father's good pleasure for all the _____ to dwell in him.",
+      "answer": "fullness",
+      "accept": [
+        "fulness"
+      ],
+      "verse_reference": "Colossians 1:19"
+    }
+  ]
+}

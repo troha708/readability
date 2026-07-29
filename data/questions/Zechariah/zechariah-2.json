@@ -1,0 +1,57 @@
+{
+  "book": "Zechariah",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "zechariah-2-q1",
+      "type": "multiple_choice",
+      "question": "What did the man with a measuring line set out to do in Zechariah 2?",
+      "options": [
+        "Dig a well",
+        "Count all the people",
+        "Build a wall",
+        "Measure Jerusalem"
+      ],
+      "answer": "Measure Jerusalem",
+      "verse_reference": "Zechariah 2:2"
+    },
+    {
+      "id": "zechariah-2-q2",
+      "type": "multiple_choice",
+      "question": "How does God describe his protection of Jerusalem in Zechariah 2?",
+      "options": [
+        "A wall of fire all around, and the glory in her midst",
+        "A great army of mounted horsemen camped at all her gates",
+        "A very high wall of stone far too strong for any foe",
+        "A locked iron gate that no enemy at all could ever break"
+      ],
+      "answer": "A wall of fire all around, and the glory in her midst",
+      "verse_reference": "Zechariah 2:5"
+    },
+    {
+      "id": "zechariah-2-q3",
+      "type": "true_false",
+      "question": "Zechariah 2 calls whoever touches God's people as touching the apple of his eye.",
+      "answer": "true",
+      "verse_reference": "Zechariah 2:8"
+    },
+    {
+      "id": "zechariah-2-q4",
+      "type": "fill_blank",
+      "question": "Jerusalem shall be inhabited as villages without walls, because of the multitude of people and _____ in it.",
+      "answer": "livestock",
+      "accept": [
+        "cattle",
+        "beast"
+      ],
+      "verse_reference": "Zechariah 2:4"
+    },
+    {
+      "id": "zechariah-2-q5",
+      "type": "fill_blank",
+      "question": "I will be to her a wall of _____ all around, declares the LORD.",
+      "answer": "fire",
+      "verse_reference": "Zechariah 2:5"
+    }
+  ]
+}

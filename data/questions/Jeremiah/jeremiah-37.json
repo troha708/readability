@@ -1,0 +1,59 @@
+{
+  "book": "Jeremiah",
+  "chapter": 37,
+  "questions": [
+    {
+      "id": "jeremiah-37-q1",
+      "type": "multiple_choice",
+      "question": "What happened to Jeremiah in chapter 37 when he tried to leave the city?",
+      "options": [
+        "He escaped safely away to the far-off land of Egypt at last",
+        "He was accused of deserting to the Babylonians and imprisoned",
+        "He was welcomed back as a great hero by all of the people",
+        "He was made a chief adviser to the king in the royal court"
+      ],
+      "answer": "He was accused of deserting to the Babylonians and imprisoned",
+      "verse_reference": "Jeremiah 37:13-15"
+    },
+    {
+      "id": "jeremiah-37-q2",
+      "type": "multiple_choice",
+      "question": "What did Zedekiah secretly ask Jeremiah?",
+      "options": [
+        "'Is there any word from the LORD?'",
+        "'Will you lead my army into battle?'",
+        "'Who has betrayed the city to the enemy?'",
+        "'How can I make peace with Babylon?'"
+      ],
+      "answer": "'Is there any word from the LORD?'",
+      "verse_reference": "Jeremiah 37:17"
+    },
+    {
+      "id": "jeremiah-37-q3",
+      "type": "true_false",
+      "question": "Jeremiah told Zedekiah he would be delivered into the hand of the king of Babylon.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 37:17"
+    },
+    {
+      "id": "jeremiah-37-q4",
+      "type": "fill_blank",
+      "question": "Jeremiah was put in the house of _____ the scribe, which had been made a prison.",
+      "answer": "Jonathan",
+      "accept": [
+        "Jehonathan"
+      ],
+      "verse_reference": "Jeremiah 37:15"
+    },
+    {
+      "id": "jeremiah-37-q5",
+      "type": "fill_blank",
+      "question": "Zedekiah committed Jeremiah to the court of the _____ and gave him bread daily.",
+      "answer": "guard",
+      "accept": [
+        "prison"
+      ],
+      "verse_reference": "Jeremiah 37:21"
+    }
+  ]
+}

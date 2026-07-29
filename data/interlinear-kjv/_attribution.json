@@ -1,0 +1,6 @@
+{
+  "source": "KJV text from data/KJV (the shipped reading text); per-word Strong's tags from the kaiserlik/kjv dataset",
+  "license": "Public domain (KJV text and Strong's numbers)",
+  "url": "https://github.com/kaiserlik/kjv",
+  "notes": "The KJV line of the verse-sheet interlinear. kaiserlik's text is used only to tag the shipped KJV words with Strong's numbers, never as the displayed line; each tagged word links by Strong's number to its original-language word in data/interlinear."
+}

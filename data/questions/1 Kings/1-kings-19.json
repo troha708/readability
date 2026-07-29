@@ -1,0 +1,53 @@
+{
+  "book": "1 Kings",
+  "chapter": 19,
+  "questions": [
+    {
+      "id": "1-kings-19-q1",
+      "type": "multiple_choice",
+      "question": "Who threatened to kill Elijah, causing him to flee?",
+      "options": [
+        "Ahab",
+        "Hazael",
+        "Jezebel",
+        "Ben-Hadad"
+      ],
+      "answer": "Jezebel",
+      "verse_reference": "1 Kings 19:2"
+    },
+    {
+      "id": "1-kings-19-q2",
+      "type": "multiple_choice",
+      "question": "How did God reveal himself to Elijah at Horeb?",
+      "options": [
+        "In an earthquake that shook the cave",
+        "In a fire that swept across the whole mountain",
+        "In a still small voice (a gentle whisper)",
+        "In a roaring wind that split the rocks"
+      ],
+      "answer": "In a still small voice (a gentle whisper)",
+      "verse_reference": "1 Kings 19:11-12"
+    },
+    {
+      "id": "1-kings-19-q3",
+      "type": "true_false",
+      "question": "God told Elijah to anoint Elisha as prophet in his place.",
+      "answer": "true",
+      "verse_reference": "1 Kings 19:16"
+    },
+    {
+      "id": "1-kings-19-q4",
+      "type": "fill_blank",
+      "question": "Queen _____ threatened Elijah's life, and he fled in fear.",
+      "answer": "Jezebel",
+      "verse_reference": "1 Kings 19:2"
+    },
+    {
+      "id": "1-kings-19-q5",
+      "type": "fill_blank",
+      "question": "God spoke to Elijah not in the wind or fire, but in a still small _____.",
+      "answer": "voice",
+      "verse_reference": "1 Kings 19:12"
+    }
+  ]
+}

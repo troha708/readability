@@ -1,0 +1,58 @@
+{
+  "book": "Revelation",
+  "chapter": 17,
+  "questions": [
+    {
+      "id": "rev_17_1",
+      "type": "multiple_choice",
+      "question": "The great prostitute is seated on what?",
+      "options": [
+        "Many waters",
+        "A golden throne",
+        "A mountain",
+        "A cloud"
+      ],
+      "correct": "Many waters",
+      "verse_ref": "Revelation 17:1",
+      "feedback": "The great prostitute sits on many waters, which represent peoples and nations."
+    },
+    {
+      "id": "rev_17_2",
+      "type": "multiple_choice",
+      "question": "What name was written on the woman's forehead?",
+      "options": [
+        "Jezebel",
+        "Mother of Nations",
+        "Babylon the Great",
+        "Queen of Heaven"
+      ],
+      "correct": "Babylon the Great",
+      "verse_ref": "Revelation 17:5",
+      "feedback": "On her forehead: Babylon the Great, the Mother of Prostitutes."
+    },
+    {
+      "id": "rev_17_3",
+      "type": "true_false",
+      "question": "The scarlet beast the woman sits on has seven heads and ten horns.",
+      "correct": true,
+      "verse_ref": "Revelation 17:3",
+      "feedback": "The beast was scarlet and had seven heads and ten horns."
+    },
+    {
+      "id": "rev_17_4",
+      "type": "fill_in_the_blank",
+      "question": "The seven heads represent seven _____ on which the woman sits.",
+      "correct": "mountains",
+      "verse_ref": "Revelation 17:9",
+      "feedback": "The seven heads are seven mountains on which the woman sits."
+    },
+    {
+      "id": "rev_17_5",
+      "type": "fill_in_the_blank",
+      "question": "The Lamb will triumph over the kings because he is Lord of lords and _____ of kings.",
+      "correct": "King",
+      "verse_ref": "Revelation 17:14",
+      "feedback": "The Lamb will triumph because he is Lord of lords and King of kings."
+    }
+  ]
+}

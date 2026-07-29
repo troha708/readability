@@ -1,0 +1,53 @@
+{
+  "book": "Joshua",
+  "chapter": 7,
+  "questions": [
+    {
+      "id": "joshua-7-q1",
+      "type": "multiple_choice",
+      "question": "Why did Israel lose the first battle at Ai?",
+      "options": [
+        "A sudden storm scattered their forces in the hills",
+        "Their army was far too small and weak to win",
+        "Their weapons were old and very poorly made",
+        "Achan had taken devoted things (forbidden plunder)"
+      ],
+      "answer": "Achan had taken devoted things (forbidden plunder)",
+      "verse_reference": "Joshua 7:1-12"
+    },
+    {
+      "id": "joshua-7-q2",
+      "type": "multiple_choice",
+      "question": "What happened to Achan and his family?",
+      "options": [
+        "They were pardoned after they confessed",
+        "They were stoned and burned",
+        "They were sent away into exile",
+        "They fled and were never found"
+      ],
+      "answer": "They were stoned and burned",
+      "verse_reference": "Joshua 7:24-25"
+    },
+    {
+      "id": "joshua-7-q3",
+      "type": "true_false",
+      "question": "God told Joshua that Israel had sinned and taken what was devoted to destruction.",
+      "answer": "true",
+      "verse_reference": "Joshua 7:11"
+    },
+    {
+      "id": "joshua-7-q4",
+      "type": "fill_blank",
+      "question": "_____ took a robe, silver, and gold that had been devoted to destruction.",
+      "answer": "Achan",
+      "verse_reference": "Joshua 7:20-21"
+    },
+    {
+      "id": "joshua-7-q5",
+      "type": "fill_blank",
+      "question": "Because of the hidden sin, Israel was defeated at _____.",
+      "answer": "Ai",
+      "verse_reference": "Joshua 7:4-5"
+    }
+  ]
+}

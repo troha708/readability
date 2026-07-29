@@ -1,0 +1,76 @@
+{
+  "book": "1 Peter",
+  "source": "Berean Standard Bible (CC0 Public Domain)",
+  "chapters": {
+    "1": [
+      {
+        "beforeVerse": 1,
+        "heading": "A Greeting from Peter"
+      },
+      {
+        "beforeVerse": 3,
+        "heading": "A Living Hope"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "A Call to Holiness"
+      },
+      {
+        "beforeVerse": 22,
+        "heading": "The Enduring Word"
+      }
+    ],
+    "2": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Living Stone and Chosen People"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "Submission to Authorities"
+      },
+      {
+        "beforeVerse": 21,
+        "heading": "Christ’s Example of Suffering"
+      }
+    ],
+    "3": [
+      {
+        "beforeVerse": 1,
+        "heading": "Wives and Husbands"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "Turning from Evil"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "Suffering for Righteousness"
+      }
+    ],
+    "4": [
+      {
+        "beforeVerse": 1,
+        "heading": "Living for God’s Glory"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "Suffering as Christians"
+      }
+    ],
+    "5": [
+      {
+        "beforeVerse": 1,
+        "heading": "Instructions to Elders"
+      },
+      {
+        "beforeVerse": 5,
+        "heading": "Cast Your Cares on Him"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "Benediction and Farewell"
+      }
+    ]
+  }
+}

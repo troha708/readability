@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 110,
+  "questions": [
+    {
+      "id": "psalms-110-q1",
+      "type": "multiple_choice",
+      "question": "How does Psalm 110, a royal psalm, begin?",
+      "options": [
+        "'Blessed is the man who walks not in wicked counsel'",
+        "'The LORD says to my Lord: Sit at my right hand'",
+        "'Out of the depths I cry to you, O LORD'",
+        "'The LORD is my shepherd; I shall not want'"
+      ],
+      "answer": "'The LORD says to my Lord: Sit at my right hand'",
+      "verse_reference": "Psalm 110:1"
+    },
+    {
+      "id": "psalms-110-q2",
+      "type": "multiple_choice",
+      "question": "What priestly order is the Lord declared to be a priest forever after?",
+      "options": [
+        "Aaron the priest",
+        "Melchizedek",
+        "Levi",
+        "Zadok"
+      ],
+      "answer": "Melchizedek",
+      "verse_reference": "Psalm 110:4"
+    },
+    {
+      "id": "psalms-110-q3",
+      "type": "true_false",
+      "question": "The psalm says the LORD will make the king's enemies a footstool for his feet.",
+      "answer": "true",
+      "verse_reference": "Psalm 110:1"
+    },
+    {
+      "id": "psalms-110-q4",
+      "type": "fill_blank",
+      "question": "Sit at my right hand, until I make your enemies your _____.",
+      "answer": "footstool",
+      "verse_reference": "Psalm 110:1"
+    },
+    {
+      "id": "psalms-110-q5",
+      "type": "fill_blank",
+      "question": "You are a priest forever after the order of _____.",
+      "answer": "Melchizedek",
+      "verse_reference": "Psalm 110:4"
+    }
+  ]
+}

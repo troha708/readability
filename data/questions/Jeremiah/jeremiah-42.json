@@ -1,0 +1,57 @@
+{
+  "book": "Jeremiah",
+  "chapter": 42,
+  "questions": [
+    {
+      "id": "jeremiah-42-q1",
+      "type": "multiple_choice",
+      "question": "What did the remnant ask Jeremiah to do in chapter 42?",
+      "options": [
+        "Pray and seek God's guidance on whether to stay or flee",
+        "Crown for them a brand new king over the whole remnant",
+        "Lead them out to battle against the great Babylonian army",
+        "Carry their bitter complaint before the king of Egypt"
+      ],
+      "answer": "Pray and seek God's guidance on whether to stay or flee",
+      "verse_reference": "Jeremiah 42:2-3"
+    },
+    {
+      "id": "jeremiah-42-q2",
+      "type": "multiple_choice",
+      "question": "What did God tell them through Jeremiah?",
+      "options": [
+        "Take up their arms and rise in open revolt against all the Babylonians",
+        "Flee away at once to Egypt, where they would surely find safety",
+        "Stay in the land and do not go to Egypt; if they did, they would die",
+        "Scatter abroad and seek what refuge they could among the nations"
+      ],
+      "answer": "Stay in the land and do not go to Egypt; if they did, they would die",
+      "verse_reference": "Jeremiah 42:10-16"
+    },
+    {
+      "id": "jeremiah-42-q3",
+      "type": "true_false",
+      "question": "The people promised to obey whatever the LORD said, whether good or bad, before they heard the answer.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 42:5-6"
+    },
+    {
+      "id": "jeremiah-42-q4",
+      "type": "fill_blank",
+      "question": "If you remain in this land, I will build you up and not pull you down, for I _____ over the disaster.",
+      "answer": "relent",
+      "accept": [
+        "repent",
+        "grieve"
+      ],
+      "verse_reference": "Jeremiah 42:10"
+    },
+    {
+      "id": "jeremiah-42-q5",
+      "type": "fill_blank",
+      "question": "Do not be afraid of the king of Babylon, for I am with you to save you and _____ you.",
+      "answer": "deliver",
+      "verse_reference": "Jeremiah 42:11"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "book": "1 Timothy",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "1tim_2_1",
+      "type": "multiple_choice",
+      "question": "Paul urges that prayers be made for whom?",
+      "options": [
+        "Only those who share the same true faith",
+        "All people, including kings and those in authority",
+        "The priests and the elders who lead the whole assembly",
+        "The poor and the sick among the believers"
+      ],
+      "correct": "All people, including kings and those in authority",
+      "verse_ref": "1 Timothy 2:1-2",
+      "feedback": "Paul urges prayers for all people, including kings and those in high positions."
+    },
+    {
+      "id": "1tim_2_2",
+      "type": "multiple_choice",
+      "question": "How many mediators does Paul say there are between God and man?",
+      "options": [
+        "One",
+        "Three",
+        "Seven",
+        "Two"
+      ],
+      "correct": "One",
+      "verse_ref": "1 Timothy 2:5",
+      "feedback": "There is one mediator between God and man — the man Christ Jesus."
+    },
+    {
+      "id": "1tim_2_3",
+      "type": "true_false",
+      "question": "Paul says God desires all people to be saved and come to knowledge of the truth.",
+      "correct": true,
+      "verse_ref": "1 Timothy 2:4",
+      "feedback": "God desires all people to be saved and come to the knowledge of the truth."
+    },
+    {
+      "id": "1tim_2_4",
+      "type": "fill_in_the_blank",
+      "question": "Paul wants men to pray in every place, lifting holy _____ without anger or quarreling.",
+      "correct": "hands",
+      "verse_ref": "1 Timothy 2:8",
+      "feedback": "Paul desires men to pray lifting holy hands without anger or quarreling."
+    },
+    {
+      "id": "1tim_2_5",
+      "type": "fill_in_the_blank",
+      "question": "Christ Jesus gave himself as a _____ for all.",
+      "correct": "ransom",
+      "verse_ref": "1 Timothy 2:6",
+      "feedback": "Christ Jesus gave himself as a ransom for all people."
+    }
+  ]
+}

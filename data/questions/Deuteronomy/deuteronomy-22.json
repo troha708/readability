@@ -1,0 +1,56 @@
+{
+  "book": "Deuteronomy",
+  "chapter": 22,
+  "questions": [
+    {
+      "id": "deuteronomy-22-q1",
+      "type": "multiple_choice",
+      "question": "What general principle appears in chapter 22?",
+      "options": [
+        "Returning lost property, and various purity laws",
+        "Rules for collecting and storing the yearly tithe",
+        "Instructions for worship at the one central altar",
+        "The calendar of feasts and the sacred holy days"
+      ],
+      "answer": "Returning lost property, and various purity laws",
+      "verse_reference": "Deuteronomy 22:1-4"
+    },
+    {
+      "id": "deuteronomy-22-q2",
+      "type": "multiple_choice",
+      "question": "What were they to do if they found a neighbor's lost ox or sheep?",
+      "options": [
+        "Return it to the owner",
+        "Keep it for themselves",
+        "Sell it at the city gate",
+        "Slaughter it for a feast"
+      ],
+      "answer": "Return it to the owner",
+      "verse_reference": "Deuteronomy 22:1-2"
+    },
+    {
+      "id": "deuteronomy-22-q3",
+      "type": "true_false",
+      "question": "They were commanded to build a railing on a new roof to prevent deaths.",
+      "answer": "true",
+      "verse_reference": "Deuteronomy 22:8"
+    },
+    {
+      "id": "deuteronomy-22-q4",
+      "type": "fill_blank",
+      "question": "If you saw your brother's ox or sheep going astray, you were to _____ it to him.",
+      "answer": "return",
+      "verse_reference": "Deuteronomy 22:1-2"
+    },
+    {
+      "id": "deuteronomy-22-q5",
+      "type": "fill_blank",
+      "question": "If you see your brother's donkey fallen on the road, you must not _____ it.",
+      "answer": "ignore",
+      "accept": [
+        "hide"
+      ],
+      "verse_reference": "Deuteronomy 22:4"
+    }
+  ]
+}

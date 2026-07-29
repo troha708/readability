@@ -1,0 +1,53 @@
+{
+  "book": "Ezekiel",
+  "chapter": 44,
+  "questions": [
+    {
+      "id": "ezekiel-44-q1",
+      "type": "multiple_choice",
+      "question": "Why was the east gate of the sanctuary to remain shut, in Ezekiel 44?",
+      "options": [
+        "Because it led directly to the inner chambers of the priests",
+        "Because the great enemy might come and attack from that side",
+        "Because only the high priest alone was permitted to use it",
+        "Because the LORD, the God of Israel, had entered by it"
+      ],
+      "answer": "Because the LORD, the God of Israel, had entered by it",
+      "verse_reference": "Ezekiel 44:2"
+    },
+    {
+      "id": "ezekiel-44-q2",
+      "type": "multiple_choice",
+      "question": "Which priests are given charge of the sanctuary in Ezekiel 44?",
+      "options": [
+        "The sons of Aaron, the first high priest",
+        "The Levites who carried the ark",
+        "The elders chosen from all the tribes",
+        "The sons of Zadok, who were faithful"
+      ],
+      "answer": "The sons of Zadok, who were faithful",
+      "verse_reference": "Ezekiel 44:15"
+    },
+    {
+      "id": "ezekiel-44-q3",
+      "type": "true_false",
+      "question": "Ezekiel 44 forbids the uncircumcised in heart and flesh from entering the sanctuary.",
+      "answer": "true",
+      "verse_reference": "Ezekiel 44:9"
+    },
+    {
+      "id": "ezekiel-44-q4",
+      "type": "fill_blank",
+      "question": "This gate shall remain _____, because the LORD has entered by it.",
+      "answer": "shut",
+      "verse_reference": "Ezekiel 44:2"
+    },
+    {
+      "id": "ezekiel-44-q5",
+      "type": "fill_blank",
+      "question": "The Levitical priests, the sons of _____, who kept charge of my sanctuary, shall come near to me.",
+      "answer": "Zadok",
+      "verse_reference": "Ezekiel 44:15"
+    }
+  ]
+}

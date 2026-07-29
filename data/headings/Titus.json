@@ -1,0 +1,44 @@
+{
+  "book": "Titus",
+  "source": "Berean Standard Bible (CC0 Public Domain)",
+  "chapters": {
+    "1": [
+      {
+        "beforeVerse": 1,
+        "heading": "Paul’s Greeting to Titus"
+      },
+      {
+        "beforeVerse": 5,
+        "heading": "Appointing Elders on Crete"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "Correcting False Teachers"
+      }
+    ],
+    "2": [
+      {
+        "beforeVerse": 1,
+        "heading": "Teaching Sound Doctrine"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "God’s Grace Brings Salvation"
+      }
+    ],
+    "3": [
+      {
+        "beforeVerse": 1,
+        "heading": "Heirs of Grace"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "Avoid Divisions"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "Final Remarks and Greetings"
+      }
+    ]
+  }
+}

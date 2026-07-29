@@ -1,0 +1,56 @@
+{
+  "book": "Psalms",
+  "chapter": 80,
+  "questions": [
+    {
+      "id": "psalms-80-q1",
+      "type": "multiple_choice",
+      "question": "By what title is God addressed at the start of Psalm 80?",
+      "options": [
+        "Mighty King of all glory, the Lord strong in battle",
+        "Judge of the nations, who weighs every deed",
+        "Maker of heaven and earth, the Lord of hosts",
+        "Shepherd of Israel, who leads Joseph like a flock"
+      ],
+      "answer": "Shepherd of Israel, who leads Joseph like a flock",
+      "verse_reference": "Psalm 80:1"
+    },
+    {
+      "id": "psalms-80-q2",
+      "type": "multiple_choice",
+      "question": "To what does the psalm compare Israel?",
+      "options": [
+        "A city built upon the hill",
+        "A flock led through the wilderness",
+        "A vine brought out of Egypt",
+        "A cedar planted in Lebanon"
+      ],
+      "answer": "A vine brought out of Egypt",
+      "verse_reference": "Psalm 80:8"
+    },
+    {
+      "id": "psalms-80-q3",
+      "type": "true_false",
+      "question": "The repeated refrain is, 'Restore us, O God; let your face shine, that we may be saved!'",
+      "answer": "true",
+      "verse_reference": "Psalm 80:3, 7, 19"
+    },
+    {
+      "id": "psalms-80-q4",
+      "type": "fill_blank",
+      "question": "_____ us, O God; let your face shine, that we may be saved!",
+      "answer": "Restore",
+      "accept": [
+        "Turn"
+      ],
+      "verse_reference": "Psalm 80:3"
+    },
+    {
+      "id": "psalms-80-q5",
+      "type": "fill_blank",
+      "question": "You brought a vine out of _____; you drove out the nations and planted it.",
+      "answer": "Egypt",
+      "verse_reference": "Psalm 80:8"
+    }
+  ]
+}

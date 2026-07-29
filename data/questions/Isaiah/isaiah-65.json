@@ -1,0 +1,53 @@
+{
+  "book": "Isaiah",
+  "chapter": 65,
+  "questions": [
+    {
+      "id": "isaiah-65-q1",
+      "type": "multiple_choice",
+      "question": "What new thing does God promise to create in Isaiah 65?",
+      "options": [
+        "A new temple in Jerusalem",
+        "New heavens and a new earth",
+        "A new covenant written on hearts",
+        "A new king from the line of David"
+      ],
+      "answer": "New heavens and a new earth",
+      "verse_reference": "Isaiah 65:17"
+    },
+    {
+      "id": "isaiah-65-q2",
+      "type": "multiple_choice",
+      "question": "What does God promise about answering his people in Isaiah 65?",
+      "options": [
+        "I will hide away my face from them until they at last turn back to me again",
+        "Before they call, I will answer; while they are yet speaking, I will hear",
+        "I will not answer at all the proud who have wholly forsaken my holy ways",
+        "Though they cry out to me both day and night, I will delay for very many years"
+      ],
+      "answer": "Before they call, I will answer; while they are yet speaking, I will hear",
+      "verse_reference": "Isaiah 65:24"
+    },
+    {
+      "id": "isaiah-65-q3",
+      "type": "true_false",
+      "question": "Isaiah 65 says the wolf and the lamb shall graze together in the new creation.",
+      "answer": "true",
+      "verse_reference": "Isaiah 65:25"
+    },
+    {
+      "id": "isaiah-65-q4",
+      "type": "fill_blank",
+      "question": "Behold, I create new heavens and a new _____.",
+      "answer": "earth",
+      "verse_reference": "Isaiah 65:17"
+    },
+    {
+      "id": "isaiah-65-q5",
+      "type": "fill_blank",
+      "question": "Before they call I will _____, while they are yet speaking I will hear.",
+      "answer": "answer",
+      "verse_reference": "Isaiah 65:24"
+    }
+  ]
+}

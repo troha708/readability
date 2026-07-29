@@ -1,0 +1,56 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "2-chronicles-1-q1",
+      "type": "multiple_choice",
+      "question": "When God offered Solomon anything at Gibeon, what did Solomon ask for?",
+      "options": [
+        "Long life",
+        "Wisdom and knowledge",
+        "Riches",
+        "Victory over enemies"
+      ],
+      "answer": "Wisdom and knowledge",
+      "verse_reference": "2 Chronicles 1:10"
+    },
+    {
+      "id": "2-chronicles-1-q2",
+      "type": "multiple_choice",
+      "question": "Because Solomon asked for wisdom, what else did God give him?",
+      "options": [
+        "Many sons to follow him",
+        "Riches, possessions, and honor",
+        "Victory over every single enemy king",
+        "A reign of unbroken peace"
+      ],
+      "answer": "Riches, possessions, and honor",
+      "verse_reference": "2 Chronicles 1:11-12"
+    },
+    {
+      "id": "2-chronicles-1-q3",
+      "type": "true_false",
+      "question": "Solomon went up to the tent of meeting at Gibeon at the start of his reign.",
+      "answer": "true",
+      "verse_reference": "2 Chronicles 1:3"
+    },
+    {
+      "id": "2-chronicles-1-q4",
+      "type": "fill_blank",
+      "question": "Solomon accumulated chariots and _____.",
+      "answer": "horses",
+      "accept": [
+        "horsemen"
+      ],
+      "verse_reference": "2 Chronicles 1:14"
+    },
+    {
+      "id": "2-chronicles-1-q5",
+      "type": "fill_blank",
+      "question": "In Jerusalem the king made silver and gold as common as _____.",
+      "answer": "stones",
+      "verse_reference": "2 Chronicles 1:15"
+    }
+  ]
+}

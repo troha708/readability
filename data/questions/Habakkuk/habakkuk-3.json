@@ -1,0 +1,57 @@
+{
+  "book": "Habakkuk",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "habakkuk-3-q1",
+      "type": "multiple_choice",
+      "question": "What is Habakkuk 3?",
+      "options": [
+        "A list of woes against Babylon",
+        "A prayer/psalm of Habakkuk",
+        "A complaint against the wicked",
+        "A genealogy of the prophets"
+      ],
+      "answer": "A prayer/psalm of Habakkuk",
+      "verse_reference": "Habakkuk 3:1"
+    },
+    {
+      "id": "habakkuk-3-q2",
+      "type": "multiple_choice",
+      "question": "How does Habakkuk resolve to respond even if the crops fail and the flocks are gone?",
+      "options": [
+        "Yet I will rejoice in the LORD; I will take joy in the God of my salvation",
+        "Yet I will flee away to the high mountains in search of a sure refuge",
+        "Yet I will turn entirely away and trust only in my own strength",
+        "Yet I will mourn deeply in sackcloth and weep aloud in my great grief"
+      ],
+      "answer": "Yet I will rejoice in the LORD; I will take joy in the God of my salvation",
+      "verse_reference": "Habakkuk 3:17-18"
+    },
+    {
+      "id": "habakkuk-3-q3",
+      "type": "true_false",
+      "question": "Habakkuk says God is his strength, who makes his feet like the deer's and lets him tread on the heights.",
+      "answer": "true",
+      "verse_reference": "Habakkuk 3:19"
+    },
+    {
+      "id": "habakkuk-3-q4",
+      "type": "fill_blank",
+      "question": "Though the fig tree should not blossom... yet I will rejoice in the _____.",
+      "answer": "LORD",
+      "accept": [
+        "Jehovah",
+        "Yahweh"
+      ],
+      "verse_reference": "Habakkuk 3:17-18"
+    },
+    {
+      "id": "habakkuk-3-q5",
+      "type": "fill_blank",
+      "question": "O LORD, I have heard the report of You; I stand in _____ of Your deeds.",
+      "answer": "awe",
+      "verse_reference": "Habakkuk 3:2"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Leviticus",
+  "chapter": 12,
+  "questions": [
+    {
+      "id": "leviticus-12-q1",
+      "type": "multiple_choice",
+      "question": "What does chapter 12 address?",
+      "options": [
+        "Purification of a woman after childbirth",
+        "Treatment of an infectious and spreading skin disease",
+        "Procedures for the grain offerings",
+        "Observance of the sacred festivals"
+      ],
+      "answer": "Purification of a woman after childbirth",
+      "verse_reference": "Leviticus 12:2"
+    },
+    {
+      "id": "leviticus-12-q2",
+      "type": "multiple_choice",
+      "question": "What could a poor woman bring if she could not afford a lamb?",
+      "options": [
+        "A measure of fine flour",
+        "A young goat from the flock",
+        "Two birds (doves or pigeons)",
+        "A silver coin for the priest"
+      ],
+      "answer": "Two birds (doves or pigeons)",
+      "verse_reference": "Leviticus 12:8"
+    },
+    {
+      "id": "leviticus-12-q3",
+      "type": "true_false",
+      "question": "A woman was to bring an offering after the days of her purification.",
+      "answer": "true",
+      "verse_reference": "Leviticus 12:6"
+    },
+    {
+      "id": "leviticus-12-q4",
+      "type": "fill_blank",
+      "question": "She brought a lamb for a burnt offering and a bird for a _____ offering.",
+      "answer": "sin",
+      "verse_reference": "Leviticus 12:6"
+    },
+    {
+      "id": "leviticus-12-q5",
+      "type": "fill_blank",
+      "question": "On the eighth day a baby boy was to be _____, the sign of the covenant.",
+      "answer": "circumcised",
+      "verse_reference": "Leviticus 12:3"
+    }
+  ]
+}

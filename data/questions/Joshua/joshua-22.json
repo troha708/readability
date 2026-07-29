@@ -1,0 +1,56 @@
+{
+  "book": "Joshua",
+  "chapter": 22,
+  "questions": [
+    {
+      "id": "joshua-22-q1",
+      "type": "multiple_choice",
+      "question": "What did the eastern tribes (Reuben, Gad, Manasseh) build that alarmed the others?",
+      "options": [
+        "A walled city near the border",
+        "A large altar by the Jordan",
+        "A temple to rival the tabernacle",
+        "A wall across the river crossing"
+      ],
+      "answer": "A large altar by the Jordan",
+      "verse_reference": "Joshua 22:10-11"
+    },
+    {
+      "id": "joshua-22-q2",
+      "type": "multiple_choice",
+      "question": "Why had they really built the altar?",
+      "options": [
+        "As a witness that they shared in the LORD, not for sacrifice",
+        "To rebel against Joshua and all the other tribes of Israel",
+        "To offer up their own sacrifices apart from the rest of Israel",
+        "To worship the idols of the surrounding pagan nations"
+      ],
+      "answer": "As a witness that they shared in the LORD, not for sacrifice",
+      "verse_reference": "Joshua 22:26-28"
+    },
+    {
+      "id": "joshua-22-q3",
+      "type": "true_false",
+      "question": "A civil war was avoided when the eastern tribes explained the altar was a witness.",
+      "answer": "true",
+      "verse_reference": "Joshua 22:30-34"
+    },
+    {
+      "id": "joshua-22-q4",
+      "type": "fill_blank",
+      "question": "The eastern tribes built the altar as a _____ between them and the rest of Israel.",
+      "answer": "witness",
+      "verse_reference": "Joshua 22:27"
+    },
+    {
+      "id": "joshua-22-q5",
+      "type": "fill_blank",
+      "question": "At first the other tribes feared the altar meant the east had turned from the _____.",
+      "answer": "LORD",
+      "accept": [
+        "Jehovah"
+      ],
+      "verse_reference": "Joshua 22:16-18"
+    }
+  ]
+}

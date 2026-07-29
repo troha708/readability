@@ -1,0 +1,53 @@
+{
+  "book": "2 Samuel",
+  "chapter": 16,
+  "questions": [
+    {
+      "id": "2-samuel-16-q1",
+      "type": "multiple_choice",
+      "question": "Who cursed and threw stones at David as he fled?",
+      "options": [
+        "Hushai",
+        "Shimei",
+        "Ziba",
+        "Ahithophel"
+      ],
+      "answer": "Shimei",
+      "verse_reference": "2 Samuel 16:5-13"
+    },
+    {
+      "id": "2-samuel-16-q2",
+      "type": "multiple_choice",
+      "question": "Whose advice did Absalom follow, a former counselor of David?",
+      "options": [
+        "Ahithophel",
+        "Hushai",
+        "Nathan",
+        "Joab"
+      ],
+      "answer": "Ahithophel",
+      "verse_reference": "2 Samuel 16:20-23"
+    },
+    {
+      "id": "2-samuel-16-q3",
+      "type": "true_false",
+      "question": "David refused to let his men kill Shimei for cursing him.",
+      "answer": "true",
+      "verse_reference": "2 Samuel 16:9-11"
+    },
+    {
+      "id": "2-samuel-16-q4",
+      "type": "fill_blank",
+      "question": "_____ cursed David and threw stones at him as he fled.",
+      "answer": "Shimei",
+      "verse_reference": "2 Samuel 16:5-7"
+    },
+    {
+      "id": "2-samuel-16-q5",
+      "type": "fill_blank",
+      "question": "Absalom followed the counsel of _____, who had been David's advisor.",
+      "answer": "Ahithophel",
+      "verse_reference": "2 Samuel 16:23"
+    }
+  ]
+}

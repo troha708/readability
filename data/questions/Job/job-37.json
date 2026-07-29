@@ -1,0 +1,56 @@
+{
+  "book": "Job",
+  "chapter": 37,
+  "questions": [
+    {
+      "id": "job-37-q1",
+      "type": "multiple_choice",
+      "question": "What aspect of nature did Elihu describe to show God's majesty?",
+      "options": [
+        "Thunder, lightning, snow, and storms",
+        "The sea and its waves alone",
+        "The mountains and their high peaks",
+        "The vast deserts and their burning sands"
+      ],
+      "answer": "Thunder, lightning, snow, and storms",
+      "verse_reference": "Job 37:2-6"
+    },
+    {
+      "id": "job-37-q2",
+      "type": "multiple_choice",
+      "question": "What did Elihu conclude about understanding God?",
+      "options": [
+        "The Almighty is beyond our finding out, great in power and justice",
+        "Only the priests are able to know the secret ways of God",
+        "The wonders of all of nature surely prove that God does not even exist",
+        "God can be fully grasped by a wise and very patient mind"
+      ],
+      "answer": "The Almighty is beyond our finding out, great in power and justice",
+      "verse_reference": "Job 37:23"
+    },
+    {
+      "id": "job-37-q3",
+      "type": "true_false",
+      "question": "Elihu said God says to the snow, 'Fall on the earth.'",
+      "answer": "true",
+      "verse_reference": "Job 37:6"
+    },
+    {
+      "id": "job-37-q4",
+      "type": "fill_blank",
+      "question": "Elihu said at God's breath the _____ is given (frozen).",
+      "answer": "ice",
+      "accept": [
+        "frost"
+      ],
+      "verse_reference": "Job 37:10"
+    },
+    {
+      "id": "job-37-q5",
+      "type": "fill_blank",
+      "question": "Elihu urged Job to stop and consider the wondrous works of _____.",
+      "answer": "God",
+      "verse_reference": "Job 37:14"
+    }
+  ]
+}

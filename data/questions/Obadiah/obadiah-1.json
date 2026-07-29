@@ -1,0 +1,56 @@
+{
+  "book": "Obadiah",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "obadiah-1-q1",
+      "type": "multiple_choice",
+      "question": "Against which nation is the entire book of Obadiah directed?",
+      "options": [
+        "Egypt",
+        "Edom",
+        "Babylon",
+        "Moab"
+      ],
+      "answer": "Edom",
+      "verse_reference": "Obadiah 1:1"
+    },
+    {
+      "id": "obadiah-1-q2",
+      "type": "multiple_choice",
+      "question": "What was the root of Edom's downfall, according to Obadiah?",
+      "options": [
+        "The wealth of its merchants",
+        "The strength of its army",
+        "The pride of its heart",
+        "The height of its walls"
+      ],
+      "answer": "The pride of its heart",
+      "verse_reference": "Obadiah 1:3"
+    },
+    {
+      "id": "obadiah-1-q3",
+      "type": "true_false",
+      "question": "Obadiah condemns Edom for gloating over and joining in the disaster of Judah (his brother Jacob).",
+      "answer": "true",
+      "verse_reference": "Obadiah 1:10-12"
+    },
+    {
+      "id": "obadiah-1-q4",
+      "type": "fill_blank",
+      "question": "The pride of your heart has _____ you, you who live in the clefts of the rock.",
+      "answer": "deceived",
+      "accept": [
+        "lifted"
+      ],
+      "verse_reference": "Obadiah 1:3"
+    },
+    {
+      "id": "obadiah-1-q5",
+      "type": "fill_blank",
+      "question": "Though you soar aloft like the _____, I will bring you down, declares the LORD.",
+      "answer": "eagle",
+      "verse_reference": "Obadiah 1:4"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "2 Kings",
+  "chapter": 22,
+  "questions": [
+    {
+      "id": "2-kings-22-q1",
+      "type": "multiple_choice",
+      "question": "What was found in the temple during Josiah's reign?",
+      "options": [
+        "The Book of the Law",
+        "The long-lost ark of the covenant",
+        "A hoard of temple treasure",
+        "Idols hidden by past kings"
+      ],
+      "answer": "The Book of the Law",
+      "verse_reference": "2 Kings 22:8"
+    },
+    {
+      "id": "2-kings-22-q2",
+      "type": "multiple_choice",
+      "question": "How did young King Josiah respond to hearing the Law?",
+      "options": [
+        "He hid it again",
+        "He tore his clothes and repented",
+        "He grew very angry at all the priests",
+        "He ignored it"
+      ],
+      "answer": "He tore his clothes and repented",
+      "verse_reference": "2 Kings 22:11"
+    },
+    {
+      "id": "2-kings-22-q3",
+      "type": "true_false",
+      "question": "The prophetess Huldah confirmed that judgment was coming, but not in Josiah's days.",
+      "answer": "true",
+      "verse_reference": "2 Kings 22:14-20"
+    },
+    {
+      "id": "2-kings-22-q4",
+      "type": "fill_blank",
+      "question": "Hilkiah the priest found the Book of the _____ in the temple.",
+      "answer": "Law",
+      "verse_reference": "2 Kings 22:8"
+    },
+    {
+      "id": "2-kings-22-q5",
+      "type": "fill_blank",
+      "question": "King _____ tore his clothes when he heard the words of the Law.",
+      "answer": "Josiah",
+      "verse_reference": "2 Kings 22:11"
+    }
+  ]
+}

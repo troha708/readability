@@ -1,0 +1,57 @@
+{
+  "book": "Isaiah",
+  "chapter": 38,
+  "questions": [
+    {
+      "id": "isaiah-38-q1",
+      "type": "multiple_choice",
+      "question": "What news did Isaiah bring King Hezekiah in chapter 38?",
+      "options": [
+        "His own sons would soon be carried off as captives to Babylon",
+        "He was sick and would die; set his house in order",
+        "His many enemies would very soon lay siege to the whole city",
+        "A great and terrible famine would soon strike the whole land"
+      ],
+      "answer": "He was sick and would die; set his house in order",
+      "verse_reference": "Isaiah 38:1"
+    },
+    {
+      "id": "isaiah-38-q2",
+      "type": "multiple_choice",
+      "question": "How many years did the LORD add to Hezekiah's life after he prayed?",
+      "options": [
+        "A full twenty",
+        "Five",
+        "Ten",
+        "Fifteen"
+      ],
+      "answer": "Fifteen",
+      "verse_reference": "Isaiah 38:5"
+    },
+    {
+      "id": "isaiah-38-q3",
+      "type": "true_false",
+      "question": "As a sign, the shadow on the sundial of Ahaz went back ten steps.",
+      "answer": "true",
+      "verse_reference": "Isaiah 38:8"
+    },
+    {
+      "id": "isaiah-38-q4",
+      "type": "fill_blank",
+      "question": "Hezekiah turned his face to the wall and prayed to the _____.",
+      "answer": "LORD",
+      "accept": [
+        "Jehovah",
+        "Yahweh"
+      ],
+      "verse_reference": "Isaiah 38:2"
+    },
+    {
+      "id": "isaiah-38-q5",
+      "type": "fill_blank",
+      "question": "Behold, I will add _____ years to your life, said the LORD.",
+      "answer": "fifteen",
+      "verse_reference": "Isaiah 38:5"
+    }
+  ]
+}

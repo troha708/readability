@@ -1,0 +1,57 @@
+{
+  "book": "Nehemiah",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "nehemiah-4-q1",
+      "type": "multiple_choice",
+      "question": "How did Sanballat and Tobiah respond to the building?",
+      "options": [
+        "Mocked, then plotted to attack Jerusalem",
+        "Ignored it and left them alone",
+        "Sent gifts to support the builders",
+        "Helped, sending many workers to speed it along"
+      ],
+      "answer": "Mocked, then plotted to attack Jerusalem",
+      "verse_reference": "Nehemiah 4:1-8"
+    },
+    {
+      "id": "nehemiah-4-q2",
+      "type": "multiple_choice",
+      "question": "How did the builders protect themselves while working?",
+      "options": [
+        "They built only under cover of darkness at night",
+        "They stopped the work until the threat passed",
+        "They hired foreign soldiers to defend the wall",
+        "Half worked while half stood guard with weapons"
+      ],
+      "answer": "Half worked while half stood guard with weapons",
+      "verse_reference": "Nehemiah 4:16"
+    },
+    {
+      "id": "nehemiah-4-q3",
+      "type": "true_false",
+      "question": "The workers carried a load with one hand and held a weapon with the other.",
+      "answer": "true",
+      "verse_reference": "Nehemiah 4:17"
+    },
+    {
+      "id": "nehemiah-4-q4",
+      "type": "fill_blank",
+      "question": "Tobiah mocked that if a fox went up on the wall it would break down their stone _____.",
+      "answer": "wall",
+      "verse_reference": "Nehemiah 4:3"
+    },
+    {
+      "id": "nehemiah-4-q5",
+      "type": "fill_blank",
+      "question": "Nehemiah told them not to be afraid but to remember the Lord, who is great and _____.",
+      "answer": "awesome",
+      "accept": [
+        "terrible",
+        "fearful"
+      ],
+      "verse_reference": "Nehemiah 4:14"
+    }
+  ]
+}

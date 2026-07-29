@@ -1,0 +1,56 @@
+{
+  "book": "Genesis",
+  "chapter": 28,
+  "questions": [
+    {
+      "id": "genesis-28-q1",
+      "type": "multiple_choice",
+      "question": "What did Jacob see in his dream at Bethel?",
+      "options": [
+        "A great throne wreathed in fire",
+        "A great flood covering the land",
+        "A stairway reaching to heaven",
+        "A bush that burned but was unconsumed"
+      ],
+      "answer": "A stairway reaching to heaven",
+      "verse_reference": "Genesis 28:12"
+    },
+    {
+      "id": "genesis-28-q2",
+      "type": "multiple_choice",
+      "question": "What did Jacob name the place where he had the dream?",
+      "options": [
+        "Peniel",
+        "Bethel",
+        "Mahanaim",
+        "Shechem"
+      ],
+      "answer": "Bethel",
+      "verse_reference": "Genesis 28:19"
+    },
+    {
+      "id": "genesis-28-q3",
+      "type": "true_false",
+      "question": "God repeated the covenant promises of Abraham to Jacob in the dream.",
+      "answer": "true",
+      "verse_reference": "Genesis 28:13-14"
+    },
+    {
+      "id": "genesis-28-q4",
+      "type": "fill_blank",
+      "question": "Jacob took a _____ and put it under his head as he slept.",
+      "answer": "stone",
+      "accept": [
+        "stones"
+      ],
+      "verse_reference": "Genesis 28:11"
+    },
+    {
+      "id": "genesis-28-q5",
+      "type": "fill_blank",
+      "question": "Jacob said the place was the house of _____ and the gate of heaven.",
+      "answer": "God",
+      "verse_reference": "Genesis 28:17"
+    }
+  ]
+}

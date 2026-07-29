@@ -1,0 +1,54 @@
+{
+  "book": "Numbers",
+  "chapter": 7,
+  "questions": [
+    {
+      "id": "numbers-7-q1",
+      "type": "multiple_choice",
+      "question": "What did the leaders of the tribes bring at the dedication of the altar?",
+      "options": [
+        "Weapons and armor for the army",
+        "Crowns of gold for the high priest",
+        "Many servants and slaves to serve the Levites",
+        "Offerings of carts, oxen, silver, and gold"
+      ],
+      "answer": "Offerings of carts, oxen, silver, and gold",
+      "verse_reference": "Numbers 7:2-3"
+    },
+    {
+      "id": "numbers-7-q2",
+      "type": "multiple_choice",
+      "question": "How did the twelve leaders present their offerings?",
+      "options": [
+        "In total secret",
+        "All chosen by lottery",
+        "All on one day",
+        "One leader each day"
+      ],
+      "answer": "One leader each day",
+      "verse_reference": "Numbers 7:11"
+    },
+    {
+      "id": "numbers-7-q3",
+      "type": "true_false",
+      "question": "God spoke to Moses from above the mercy seat, between the two cherubim.",
+      "answer": "true",
+      "verse_reference": "Numbers 7:89"
+    },
+    {
+      "id": "numbers-7-q4",
+      "type": "fill_blank",
+      "question": "The leaders of Israel brought their _____ for the dedication of the altar.",
+      "answer": "offerings",
+      "verse_reference": "Numbers 7:10"
+    },
+    {
+      "id": "numbers-7-q5",
+      "type": "fill_blank",
+      "question": "Moses heard God's voice speaking from between the two _____ above the ark.",
+      "answer": "cherubim",
+      "accept": ["cherubims"],
+      "verse_reference": "Numbers 7:89"
+    }
+  ]
+}

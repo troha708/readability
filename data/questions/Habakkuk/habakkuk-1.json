@@ -1,0 +1,56 @@
+{
+  "book": "Habakkuk",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "habakkuk-1-q1",
+      "type": "multiple_choice",
+      "question": "What does Habakkuk complain about at the start of the book?",
+      "options": [
+        "That the king has gone and made a binding treaty with the whole of Egypt",
+        "That the holy temple has been left in ruins and forgotten",
+        "That the people stubbornly refuse to keep any of the feasts",
+        "That God seems to tolerate violence and injustice without acting"
+      ],
+      "answer": "That God seems to tolerate violence and injustice without acting",
+      "verse_reference": "Habakkuk 1:2-4"
+    },
+    {
+      "id": "habakkuk-1-q2",
+      "type": "multiple_choice",
+      "question": "Whom does God say he is raising up, which troubles Habakkuk further?",
+      "options": [
+        "The Assyrians of Nineveh",
+        "The Egyptians of the great Nile",
+        "The Edomites of the south",
+        "The Chaldeans (Babylonians)"
+      ],
+      "answer": "The Chaldeans (Babylonians)",
+      "verse_reference": "Habakkuk 1:6"
+    },
+    {
+      "id": "habakkuk-1-q3",
+      "type": "true_false",
+      "question": "Habakkuk is troubled that God would use a more wicked nation to judge Judah.",
+      "answer": "true",
+      "verse_reference": "Habakkuk 1:13"
+    },
+    {
+      "id": "habakkuk-1-q4",
+      "type": "fill_blank",
+      "question": "O LORD, how long shall I cry for help, and you will not _____?",
+      "answer": "hear",
+      "verse_reference": "Habakkuk 1:2"
+    },
+    {
+      "id": "habakkuk-1-q5",
+      "type": "fill_blank",
+      "question": "God is raising up the _____, that bitter and hasty nation.",
+      "answer": "Chaldeans",
+      "accept": [
+        "Caldeans"
+      ],
+      "verse_reference": "Habakkuk 1:6"
+    }
+  ]
+}

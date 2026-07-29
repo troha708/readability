@@ -1,0 +1,56 @@
+{
+  "book": "Psalms",
+  "chapter": 78,
+  "questions": [
+    {
+      "id": "psalms-78-q1",
+      "type": "multiple_choice",
+      "question": "What is the purpose of Psalm 78 (a maskil of Asaph)?",
+      "options": [
+        "To joyfully celebrate the wedding of the king and his radiant young bride",
+        "To teach the next generation God's deeds and law so they set their hope in God",
+        "To record and preserve the names of all the kings who ruled over Judah",
+        "To pour out a long and very bitter complaint against the cruel and unjust enemy"
+      ],
+      "answer": "To teach the next generation God's deeds and law so they set their hope in God",
+      "verse_reference": "Psalm 78:4-7"
+    },
+    {
+      "id": "psalms-78-q2",
+      "type": "multiple_choice",
+      "question": "What did the people repeatedly do despite God's miracles?",
+      "options": [
+        "Trusted, obeyed, and kept his law",
+        "Sinned, rebelled, and forgot his works",
+        "Feared, served, and sought his face",
+        "Praised, blessed, and told his deeds"
+      ],
+      "answer": "Sinned, rebelled, and forgot his works",
+      "verse_reference": "Psalm 78:17, 32"
+    },
+    {
+      "id": "psalms-78-q3",
+      "type": "true_false",
+      "question": "The psalm recalls how God brought water from the rock and gave manna in the wilderness.",
+      "answer": "true",
+      "verse_reference": "Psalm 78:15-24"
+    },
+    {
+      "id": "psalms-78-q4",
+      "type": "fill_blank",
+      "question": "He chose David his servant and took him from the sheepfolds to shepherd Jacob his _____.",
+      "answer": "people",
+      "verse_reference": "Psalm 78:70-71"
+    },
+    {
+      "id": "psalms-78-q5",
+      "type": "fill_blank",
+      "question": "He split the sea and let them pass through, and set the waters upright like a _____.",
+      "answer": "wall",
+      "accept": [
+        "heap"
+      ],
+      "verse_reference": "Psalm 78:13"
+    }
+  ]
+}

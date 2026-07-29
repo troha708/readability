@@ -1,0 +1,56 @@
+{
+  "book": "Job",
+  "chapter": 36,
+  "questions": [
+    {
+      "id": "job-36-q1",
+      "type": "multiple_choice",
+      "question": "What did Elihu say God does to the afflicted?",
+      "options": [
+        "Opens their ears through adversity to instruct them",
+        "Ignores them entirely and turns away his face",
+        "Destroys them suddenly without any kind of prior warning",
+        "Forgets all about them in their hour of need"
+      ],
+      "answer": "Opens their ears through adversity to instruct them",
+      "verse_reference": "Job 36:15"
+    },
+    {
+      "id": "job-36-q2",
+      "type": "multiple_choice",
+      "question": "How did Elihu describe God?",
+      "options": [
+        "Weak and unable to save the just",
+        "Mighty, and great in power and understanding",
+        "Distant and removed from human affairs",
+        "Unjust toward the innocent and upright"
+      ],
+      "answer": "Mighty, and great in power and understanding",
+      "verse_reference": "Job 36:5"
+    },
+    {
+      "id": "job-36-q3",
+      "type": "true_false",
+      "question": "Elihu said God does not keep the wicked alive but gives the afflicted their right.",
+      "answer": "true",
+      "verse_reference": "Job 36:6"
+    },
+    {
+      "id": "job-36-q4",
+      "type": "fill_blank",
+      "question": "Elihu said, 'Behold, God is great — beyond our _____.'",
+      "answer": "knowledge",
+      "accept": [
+        "know"
+      ],
+      "verse_reference": "Job 36:26"
+    },
+    {
+      "id": "job-36-q5",
+      "type": "fill_blank",
+      "question": "Elihu began to describe the wonder of the clouds and the _____.",
+      "answer": "rain",
+      "verse_reference": "Job 36:27-28"
+    }
+  ]
+}

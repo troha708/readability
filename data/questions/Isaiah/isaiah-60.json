@@ -1,0 +1,56 @@
+{
+  "book": "Isaiah",
+  "chapter": 60,
+  "questions": [
+    {
+      "id": "isaiah-60-q1",
+      "type": "multiple_choice",
+      "question": "How does Isaiah 60 begin?",
+      "options": [
+        "'Weep and mourn, for the day is dark'",
+        "'Return to me, and I will return to you'",
+        "'Be still, and know that I am God'",
+        "'Arise, shine, for your light has come'"
+      ],
+      "answer": "'Arise, shine, for your light has come'",
+      "verse_reference": "Isaiah 60:1"
+    },
+    {
+      "id": "isaiah-60-q2",
+      "type": "multiple_choice",
+      "question": "What will the nations and kings come to in Isaiah 60?",
+      "options": [
+        "Zion's light and the brightness of her rising",
+        "The throne of David, restored in glory",
+        "The walls of the city, rebuilt with stone",
+        "The wealth of Egypt and the gold of Sheba"
+      ],
+      "answer": "Zion's light and the brightness of her rising",
+      "verse_reference": "Isaiah 60:3"
+    },
+    {
+      "id": "isaiah-60-q3",
+      "type": "true_false",
+      "question": "Isaiah 60 says the LORD will be Zion's everlasting light, and her days of mourning shall be ended.",
+      "answer": "true",
+      "verse_reference": "Isaiah 60:19-20"
+    },
+    {
+      "id": "isaiah-60-q4",
+      "type": "fill_blank",
+      "question": "Arise, _____, for your light has come, and the glory of the LORD has risen upon you.",
+      "answer": "shine",
+      "accept": [
+        "bright"
+      ],
+      "verse_reference": "Isaiah 60:1"
+    },
+    {
+      "id": "isaiah-60-q5",
+      "type": "fill_blank",
+      "question": "The LORD will be your everlasting _____, and your God will be your glory.",
+      "answer": "light",
+      "verse_reference": "Isaiah 60:19"
+    }
+  ]
+}

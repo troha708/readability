@@ -1,0 +1,56 @@
+{
+  "book": "Genesis",
+  "chapter": 40,
+  "questions": [
+    {
+      "id": "genesis-40-q1",
+      "type": "multiple_choice",
+      "question": "Whose dreams did Joseph interpret while in prison?",
+      "options": [
+        "The steward's and the gatekeeper's",
+        "Two fellow prisoners' from Canaan",
+        "Pharaoh's and his chief guard's",
+        "The cupbearer's and the baker's"
+      ],
+      "answer": "The cupbearer's and the baker's",
+      "verse_reference": "Genesis 40:5"
+    },
+    {
+      "id": "genesis-40-q2",
+      "type": "multiple_choice",
+      "question": "What did the three branches and three baskets in the dreams represent?",
+      "options": [
+        "Three months",
+        "Three years",
+        "Three days",
+        "Three guards"
+      ],
+      "answer": "Three days",
+      "verse_reference": "Genesis 40:12"
+    },
+    {
+      "id": "genesis-40-q3",
+      "type": "true_false",
+      "question": "Joseph correctly predicted that the chief baker would be restored to his position.",
+      "answer": "false",
+      "verse_reference": "Genesis 40:18-22"
+    },
+    {
+      "id": "genesis-40-q4",
+      "type": "fill_blank",
+      "question": "Joseph said, \"Don't interpretations belong to _____?\"",
+      "answer": "God",
+      "verse_reference": "Genesis 40:8"
+    },
+    {
+      "id": "genesis-40-q5",
+      "type": "fill_blank",
+      "question": "After being restored, the chief _____ forgot Joseph.",
+      "answer": "cupbearer",
+      "accept": [
+        "butler"
+      ],
+      "verse_reference": "Genesis 40:23"
+    }
+  ]
+}

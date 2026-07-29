@@ -1,0 +1,53 @@
+{
+  "book": "Ecclesiastes",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "ecclesiastes-4-q1",
+      "type": "multiple_choice",
+      "question": "What does Ecclesiastes 4 say about two compared to one?",
+      "options": [
+        "Two are better than one, for they have a good reward for their toil",
+        "One is far better than two, for company together only breeds strife",
+        "The strong man stands at his very best when he stands entirely alone",
+        "Two may well begin a work together, but each one must end it all alone"
+      ],
+      "answer": "Two are better than one, for they have a good reward for their toil",
+      "verse_reference": "Ecclesiastes 4:9"
+    },
+    {
+      "id": "ecclesiastes-4-q2",
+      "type": "multiple_choice",
+      "question": "What does the Preacher observe with sorrow in Ecclesiastes 4?",
+      "options": [
+        "The tears of the oppressed who had no comforter",
+        "The laughter of fools, like thorns crackling under a pot",
+        "The rich man whose abundance permits him no sleep",
+        "The wise man who dies and is forgotten like the fool"
+      ],
+      "answer": "The tears of the oppressed who had no comforter",
+      "verse_reference": "Ecclesiastes 4:1"
+    },
+    {
+      "id": "ecclesiastes-4-q3",
+      "type": "true_false",
+      "question": "Ecclesiastes 4 says a threefold cord is not quickly broken.",
+      "answer": "true",
+      "verse_reference": "Ecclesiastes 4:12"
+    },
+    {
+      "id": "ecclesiastes-4-q4",
+      "type": "fill_blank",
+      "question": "Two are better than _____, because they have a good reward for their toil.",
+      "answer": "one",
+      "verse_reference": "Ecclesiastes 4:9"
+    },
+    {
+      "id": "ecclesiastes-4-q5",
+      "type": "fill_blank",
+      "question": "A threefold cord is not quickly _____.",
+      "answer": "broken",
+      "verse_reference": "Ecclesiastes 4:12"
+    }
+  ]
+}

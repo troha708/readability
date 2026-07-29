@@ -1,0 +1,56 @@
+{
+  "book": "Luke",
+  "chapter": 16,
+  "questions": [
+    {
+      "id": "luke-16-q1",
+      "type": "multiple_choice",
+      "question": "In the story of the rich man and Lazarus, where did Lazarus go after he died?",
+      "options": [
+        "Back to earth",
+        "Into the wilderness",
+        "To Hades",
+        "To Abraham's bosom"
+      ],
+      "answer": "To Abraham's bosom",
+      "verse_reference": "Luke 16:22"
+    },
+    {
+      "id": "luke-16-q2",
+      "type": "multiple_choice",
+      "question": "What separated the rich man in torment from Abraham and Lazarus?",
+      "options": [
+        "A river of fire",
+        "A great gulf",
+        "A wall",
+        "A mountain"
+      ],
+      "answer": "A great gulf",
+      "verse_reference": "Luke 16:26"
+    },
+    {
+      "id": "luke-16-q3",
+      "type": "true_false",
+      "question": "Jesus said you cannot serve both God and mammon.",
+      "answer": "true",
+      "verse_reference": "Luke 16:13"
+    },
+    {
+      "id": "luke-16-q4",
+      "type": "fill_blank",
+      "question": "He who is faithful in a very little is faithful also in _____.",
+      "answer": "much",
+      "verse_reference": "Luke 16:10"
+    },
+    {
+      "id": "luke-16-q5",
+      "type": "fill_blank",
+      "question": "No servant can serve two _____.",
+      "answer": "masters",
+      "accept": [
+        "lords"
+      ],
+      "verse_reference": "Luke 16:13"
+    }
+  ]
+}

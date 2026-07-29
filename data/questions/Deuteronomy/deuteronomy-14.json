@@ -1,0 +1,53 @@
+{
+  "book": "Deuteronomy",
+  "chapter": 14,
+  "questions": [
+    {
+      "id": "deuteronomy-14-q1",
+      "type": "multiple_choice",
+      "question": "What does chapter 14 review?",
+      "options": [
+        "The yearly feasts and sacred days",
+        "Clean and unclean foods, and tithing",
+        "The rules for going out to war",
+        "The choosing and duties of a king"
+      ],
+      "answer": "Clean and unclean foods, and tithing",
+      "verse_reference": "Deuteronomy 14:3-22"
+    },
+    {
+      "id": "deuteronomy-14-q2",
+      "type": "multiple_choice",
+      "question": "What were the Israelites to set apart each year?",
+      "options": [
+        "A portion of their silver and gold",
+        "The firstborn of all their flocks",
+        "The best part of their vineyards",
+        "A tenth (tithe) of their produce"
+      ],
+      "answer": "A tenth (tithe) of their produce",
+      "verse_reference": "Deuteronomy 14:22"
+    },
+    {
+      "id": "deuteronomy-14-q3",
+      "type": "true_false",
+      "question": "Israel was called a holy people to the LORD.",
+      "answer": "true",
+      "verse_reference": "Deuteronomy 14:2"
+    },
+    {
+      "id": "deuteronomy-14-q4",
+      "type": "fill_blank",
+      "question": "They were to tithe a _____ of all the yield of their seed each year.",
+      "answer": "tenth",
+      "verse_reference": "Deuteronomy 14:22"
+    },
+    {
+      "id": "deuteronomy-14-q5",
+      "type": "fill_blank",
+      "question": "A clean animal had to part the hoof and chew the _____.",
+      "answer": "cud",
+      "verse_reference": "Deuteronomy 14:6"
+    }
+  ]
+}

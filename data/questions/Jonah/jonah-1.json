@@ -1,0 +1,53 @@
+{
+  "book": "Jonah",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "jonah-1-q1",
+      "type": "multiple_choice",
+      "question": "Where did God tell Jonah to go, and where did he flee instead?",
+      "options": [
+        "To Edom; instead he went to Jerusalem",
+        "To Tyre; he went to Egypt",
+        "To Babylon; he stayed home",
+        "To Nineveh; he fled toward Tarshish"
+      ],
+      "answer": "To Nineveh; he fled toward Tarshish",
+      "verse_reference": "Jonah 1:2-3"
+    },
+    {
+      "id": "jonah-1-q2",
+      "type": "multiple_choice",
+      "question": "What happened after Jonah was thrown into the sea?",
+      "options": [
+        "He drowned in the storm",
+        "He swam safely to shore",
+        "A passing boat rescued him",
+        "A great fish swallowed him"
+      ],
+      "answer": "A great fish swallowed him",
+      "verse_reference": "Jonah 1:17"
+    },
+    {
+      "id": "jonah-1-q3",
+      "type": "true_false",
+      "question": "The sailors cast lots, which fell on Jonah, identifying him as the cause of the storm.",
+      "answer": "true",
+      "verse_reference": "Jonah 1:7"
+    },
+    {
+      "id": "jonah-1-q4",
+      "type": "fill_blank",
+      "question": "Jonah went down to Joppa and found a ship going to _____.",
+      "answer": "Tarshish",
+      "verse_reference": "Jonah 1:3"
+    },
+    {
+      "id": "jonah-1-q5",
+      "type": "fill_blank",
+      "question": "The LORD appointed a great _____ to swallow up Jonah.",
+      "answer": "fish",
+      "verse_reference": "Jonah 1:17"
+    }
+  ]
+}

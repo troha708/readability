@@ -1,0 +1,60 @@
+{
+  "book": "Nehemiah",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "nehemiah-1-q1",
+      "type": "multiple_choice",
+      "question": "What news distressed Nehemiah?",
+      "options": [
+        "Jerusalem's wall was broken down and its gates burned",
+        "A famine had spread through the land of Judah",
+        "The temple of the LORD had been wholly torn to the ground",
+        "The king of Persia had ordered the work stopped"
+      ],
+      "answer": "Jerusalem's wall was broken down and its gates burned",
+      "verse_reference": "Nehemiah 1:3"
+    },
+    {
+      "id": "nehemiah-1-q2",
+      "type": "multiple_choice",
+      "question": "What was Nehemiah's role in the Persian court?",
+      "options": [
+        "Captain of the guard",
+        "Scribe of the law",
+        "Cupbearer to the king",
+        "Keeper of the treasury"
+      ],
+      "answer": "Cupbearer to the king",
+      "verse_reference": "Nehemiah 1:11"
+    },
+    {
+      "id": "nehemiah-1-q3",
+      "type": "true_false",
+      "question": "Nehemiah wept, fasted, and prayed for days when he heard the news.",
+      "answer": "true",
+      "verse_reference": "Nehemiah 1:4"
+    },
+    {
+      "id": "nehemiah-1-q4",
+      "type": "fill_blank",
+      "question": "Nehemiah confessed the sins of the people of _____, including his own family.",
+      "answer": "Israel",
+      "accept": [
+        "Israelites"
+      ],
+      "verse_reference": "Nehemiah 1:6"
+    },
+    {
+      "id": "nehemiah-1-q5",
+      "type": "fill_blank",
+      "question": "Nehemiah reminded God of His promise to gather the exiles even from the farthest _____.",
+      "answer": "horizon",
+      "accept": [
+        "heaven",
+        "heavens"
+      ],
+      "verse_reference": "Nehemiah 1:9"
+    }
+  ]
+}

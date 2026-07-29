@@ -1,0 +1,57 @@
+{
+  "book": "Ezekiel",
+  "chapter": 32,
+  "questions": [
+    {
+      "id": "ezekiel-32-q1",
+      "type": "multiple_choice",
+      "question": "What does Ezekiel 32 contain?",
+      "options": [
+        "A song of victory over Babylon",
+        "A vision of the restored temple",
+        "A lamentation over Pharaoh and Egypt",
+        "A list of all the nations to be judged"
+      ],
+      "answer": "A lamentation over Pharaoh and Egypt",
+      "verse_reference": "Ezekiel 32:2"
+    },
+    {
+      "id": "ezekiel-32-q2",
+      "type": "multiple_choice",
+      "question": "How is Pharaoh described at the start of the lament?",
+      "options": [
+        "Like a peaceful king of peace who never once raised up his sword",
+        "Like a lion of the nations, yet really a dragon in the seas",
+        "Like a gentle shepherd who softly leads his flock to the water",
+        "Like a wise and careful judge who weighs each matter with care"
+      ],
+      "answer": "Like a lion of the nations, yet really a dragon in the seas",
+      "verse_reference": "Ezekiel 32:2"
+    },
+    {
+      "id": "ezekiel-32-q3",
+      "type": "true_false",
+      "question": "Ezekiel 32 pictures Egypt going down to the pit to join other fallen nations.",
+      "answer": "true",
+      "verse_reference": "Ezekiel 32:18-21"
+    },
+    {
+      "id": "ezekiel-32-q4",
+      "type": "fill_blank",
+      "question": "You consider yourself a lion of the nations, but you are like a _____ in the seas.",
+      "answer": "monster",
+      "accept": [
+        "dragon",
+        "whale"
+      ],
+      "verse_reference": "Ezekiel 32:2"
+    },
+    {
+      "id": "ezekiel-32-q5",
+      "type": "fill_blank",
+      "question": "I will cover the heavens and make their stars dark; I will cover the sun with a _____.",
+      "answer": "cloud",
+      "verse_reference": "Ezekiel 32:7"
+    }
+  ]
+}

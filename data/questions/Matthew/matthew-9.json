@@ -1,0 +1,62 @@
+{
+  "book": "Matthew",
+  "chapter": 9,
+  "questions": [
+    {
+      "id": "matthew-9-q1",
+      "type": "multiple_choice",
+      "question": "Before healing the paralytic, what did Jesus first say to him?",
+      "options": [
+        "Go and sin no more",
+        "Stand up and walk",
+        "Do you believe I can heal you?",
+        "Your sins are forgiven"
+      ],
+      "answer": "Your sins are forgiven",
+      "verse_reference": "Matthew 9:2"
+    },
+    {
+      "id": "matthew-9-q2",
+      "type": "multiple_choice",
+      "question": "What was Matthew's occupation before Jesus called him?",
+      "options": [
+        "Carpenter",
+        "Shepherd",
+        "A net fisherman",
+        "Tax collector"
+      ],
+      "answer": "Tax collector",
+      "verse_reference": "Matthew 9:9"
+    },
+    {
+      "id": "matthew-9-q3",
+      "type": "true_false",
+      "question": "Jesus said that those who are healthy have need of a physician.",
+      "answer": "false",
+      "verse_reference": "Matthew 9:12"
+    },
+    {
+      "id": "matthew-9-q4",
+      "type": "fill_blank",
+      "question": "The harvest is plentiful, but the _____ are few.",
+      "answer": "workers",
+      "accept": [
+        "laborers",
+        "labourers",
+        "workmen"
+      ],
+      "verse_reference": "Matthew 9:37"
+    },
+    {
+      "id": "matthew-9-q5",
+      "type": "fill_blank",
+      "question": "Neither do people put new wine into old wine _____.",
+      "answer": "skins",
+      "accept": [
+        "bottles",
+        "vessels"
+      ],
+      "verse_reference": "Matthew 9:17"
+    }
+  ]
+}

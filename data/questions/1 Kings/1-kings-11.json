@@ -1,0 +1,53 @@
+{
+  "book": "1 Kings",
+  "chapter": 11,
+  "questions": [
+    {
+      "id": "1-kings-11-q1",
+      "type": "multiple_choice",
+      "question": "What led Solomon's heart away from the LORD?",
+      "options": [
+        "His vast wealth and love of luxury",
+        "His many foreign wives and their gods",
+        "His endless wars with distant nations",
+        "His pride in his own great wisdom"
+      ],
+      "answer": "His many foreign wives and their gods",
+      "verse_reference": "1 Kings 11:1-4"
+    },
+    {
+      "id": "1-kings-11-q2",
+      "type": "multiple_choice",
+      "question": "What did God say would happen to the kingdom because of Solomon's sin?",
+      "options": [
+        "It would be torn apart, but not in his lifetime",
+        "It would be carried into exile in Babylon",
+        "It would remain whole under his wise son",
+        "It would fall to Egypt within a single short year"
+      ],
+      "answer": "It would be torn apart, but not in his lifetime",
+      "verse_reference": "1 Kings 11:11-13"
+    },
+    {
+      "id": "1-kings-11-q3",
+      "type": "true_false",
+      "question": "Solomon built high places for the gods of his foreign wives.",
+      "answer": "true",
+      "verse_reference": "1 Kings 11:7-8"
+    },
+    {
+      "id": "1-kings-11-q4",
+      "type": "fill_blank",
+      "question": "Solomon's many foreign _____ turned his heart after other gods.",
+      "answer": "wives",
+      "verse_reference": "1 Kings 11:3-4"
+    },
+    {
+      "id": "1-kings-11-q5",
+      "type": "fill_blank",
+      "question": "God told Solomon he would tear the _____ from his son, leaving one tribe for David's sake.",
+      "answer": "kingdom",
+      "verse_reference": "1 Kings 11:11-13"
+    }
+  ]
+}

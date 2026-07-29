@@ -1,0 +1,56 @@
+{
+  "book": "Isaiah",
+  "chapter": 47,
+  "questions": [
+    {
+      "id": "isaiah-47-q1",
+      "type": "multiple_choice",
+      "question": "Whose downfall is described in Isaiah 47?",
+      "options": [
+        "The virgin daughter of Babylon",
+        "The mountain stronghold of Edom",
+        "The proud city of Nineveh",
+        "The merchant city of Tyre"
+      ],
+      "answer": "The virgin daughter of Babylon",
+      "verse_reference": "Isaiah 47:1"
+    },
+    {
+      "id": "isaiah-47-q2",
+      "type": "multiple_choice",
+      "question": "On what did Babylon falsely rely, according to Isaiah 47?",
+      "options": [
+        "Its sorceries, enchantments, and astrologers",
+        "Its vast army and many chariots",
+        "Its great walls and bronze gates",
+        "Its gold and all of the wealth of its merchants"
+      ],
+      "answer": "Its sorceries, enchantments, and astrologers",
+      "verse_reference": "Isaiah 47:12-13"
+    },
+    {
+      "id": "isaiah-47-q3",
+      "type": "true_false",
+      "question": "Isaiah 47 says Babylon felt secure, saying in her heart, 'I am, and there is no one besides me.'",
+      "answer": "true",
+      "verse_reference": "Isaiah 47:8"
+    },
+    {
+      "id": "isaiah-47-q4",
+      "type": "fill_blank",
+      "question": "Come down and sit in the dust, O virgin daughter of _____.",
+      "answer": "Babylon",
+      "accept": [
+        "Babel"
+      ],
+      "verse_reference": "Isaiah 47:1"
+    },
+    {
+      "id": "isaiah-47-q5",
+      "type": "fill_blank",
+      "question": "You felt secure in your wickedness; you said, 'No one sees _____.'",
+      "answer": "me",
+      "verse_reference": "Isaiah 47:10"
+    }
+  ]
+}

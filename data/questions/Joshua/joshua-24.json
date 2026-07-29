@@ -1,0 +1,53 @@
+{
+  "book": "Joshua",
+  "chapter": 24,
+  "questions": [
+    {
+      "id": "joshua-24-q1",
+      "type": "multiple_choice",
+      "question": "Where did Joshua gather Israel for the final covenant?",
+      "options": [
+        "Shechem",
+        "Shiloh",
+        "Hebron",
+        "Gilgal"
+      ],
+      "answer": "Shechem",
+      "verse_reference": "Joshua 24:1"
+    },
+    {
+      "id": "joshua-24-q2",
+      "type": "multiple_choice",
+      "question": "What famous declaration did Joshua make?",
+      "options": [
+        "\"The LORD your God is God in the heaven high above\"",
+        "\"Choose this day whom you will serve\"",
+        "\"Be strong and very courageous, my people\"",
+        "\"As for me and my house, we will serve the LORD\""
+      ],
+      "answer": "\"As for me and my house, we will serve the LORD\"",
+      "verse_reference": "Joshua 24:15"
+    },
+    {
+      "id": "joshua-24-q3",
+      "type": "true_false",
+      "question": "The people promised to serve the LORD, and Joshua set up a stone as a witness.",
+      "answer": "true",
+      "verse_reference": "Joshua 24:24-27"
+    },
+    {
+      "id": "joshua-24-q4",
+      "type": "fill_blank",
+      "question": "\"As for me and my _____, we will serve the LORD,\" Joshua declared.",
+      "answer": "house",
+      "verse_reference": "Joshua 24:15"
+    },
+    {
+      "id": "joshua-24-q5",
+      "type": "fill_blank",
+      "question": "Joshua challenged the people, \"_____ this day whom you will serve.\"",
+      "answer": "Choose",
+      "verse_reference": "Joshua 24:15"
+    }
+  ]
+}

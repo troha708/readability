@@ -1,0 +1,53 @@
+{
+  "book": "Romans",
+  "chapter": 16,
+  "questions": [
+    {
+      "id": "romans-16-q1",
+      "type": "multiple_choice",
+      "question": "Who is the first person Paul greets and commends as a servant of the church?",
+      "options": [
+        "Priscilla",
+        "Phoebe",
+        "Mary",
+        "Junia"
+      ],
+      "answer": "Phoebe",
+      "verse_reference": "Romans 16:1"
+    },
+    {
+      "id": "romans-16-q2",
+      "type": "multiple_choice",
+      "question": "Paul warns the Romans to watch out for people who cause what?",
+      "options": [
+        "Famines and hardships across the land",
+        "False signs and wonders from the nations",
+        "Divisions and obstacles contrary to the teaching",
+        "Persecutions and trials from far outside the church"
+      ],
+      "answer": "Divisions and obstacles contrary to the teaching",
+      "verse_reference": "Romans 16:17"
+    },
+    {
+      "id": "romans-16-q3",
+      "type": "true_false",
+      "question": "Paul personally wrote every word of this letter in his own hand.",
+      "answer": "false",
+      "verse_reference": "Romans 16:22"
+    },
+    {
+      "id": "romans-16-q4",
+      "type": "fill_blank",
+      "question": "The God of peace will soon crush _____ under your feet.",
+      "answer": "Satan",
+      "verse_reference": "Romans 16:20"
+    },
+    {
+      "id": "romans-16-q5",
+      "type": "fill_blank",
+      "question": "I, _____, the one writing this letter, greet you in the Lord.",
+      "answer": "Tertius",
+      "verse_reference": "Romans 16:22"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "book": "Leviticus",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "leviticus-2-q1",
+      "type": "multiple_choice",
+      "question": "What kind of offering does chapter 2 describe?",
+      "options": [
+        "The burnt offering",
+        "The grain offering",
+        "The sin offering",
+        "The peace offering"
+      ],
+      "answer": "The grain offering",
+      "verse_reference": "Leviticus 2:1"
+    },
+    {
+      "id": "leviticus-2-q2",
+      "type": "multiple_choice",
+      "question": "What were grain offerings not to contain?",
+      "options": [
+        "Yeast (leaven) and honey",
+        "Any fruit of the vine",
+        "Oil and pure frankincense",
+        "Salt or any seasoning"
+      ],
+      "answer": "Yeast (leaven) and honey",
+      "verse_reference": "Leviticus 2:11"
+    },
+    {
+      "id": "leviticus-2-q3",
+      "type": "true_false",
+      "question": "Every grain offering was to be seasoned with salt.",
+      "answer": "true",
+      "verse_reference": "Leviticus 2:13"
+    },
+    {
+      "id": "leviticus-2-q4",
+      "type": "fill_blank",
+      "question": "The grain offering was made of fine _____, with oil and frankincense.",
+      "answer": "flour",
+      "verse_reference": "Leviticus 2:1"
+    },
+    {
+      "id": "leviticus-2-q5",
+      "type": "fill_blank",
+      "question": "No grain offering was to be made with _____.",
+      "answer": "leaven",
+      "accept": [
+        "yeast"
+      ],
+      "verse_reference": "Leviticus 2:11"
+    }
+  ]
+}

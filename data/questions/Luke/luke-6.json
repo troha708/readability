@@ -1,0 +1,53 @@
+{
+  "book": "Luke",
+  "chapter": 6,
+  "questions": [
+    {
+      "id": "luke-6-q1",
+      "type": "multiple_choice",
+      "question": "In Luke's version of the Beatitudes, who does Jesus say is blessed?",
+      "options": [
+        "The rich",
+        "The well-fed",
+        "The poor",
+        "The powerful"
+      ],
+      "answer": "The poor",
+      "verse_reference": "Luke 6:20"
+    },
+    {
+      "id": "luke-6-q2",
+      "type": "multiple_choice",
+      "question": "What illustration did Jesus use about a blind man leading another?",
+      "options": [
+        "They will stumble but soon recover",
+        "They will see the light",
+        "They will both fall into a pit",
+        "They will find the way"
+      ],
+      "answer": "They will both fall into a pit",
+      "verse_reference": "Luke 6:39"
+    },
+    {
+      "id": "luke-6-q3",
+      "type": "true_false",
+      "question": "Jesus taught to love your enemies and do good to those who hate you.",
+      "answer": "true",
+      "verse_reference": "Luke 6:27"
+    },
+    {
+      "id": "luke-6-q4",
+      "type": "fill_blank",
+      "question": "Do not condemn, and you will not be condemned. _____, and you will be forgiven.",
+      "answer": "Forgive",
+      "verse_reference": "Luke 6:37"
+    },
+    {
+      "id": "luke-6-q5",
+      "type": "fill_blank",
+      "question": "Give, and it will be _____ to you.",
+      "answer": "given",
+      "verse_reference": "Luke 6:38"
+    }
+  ]
+}

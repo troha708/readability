@@ -1,0 +1,53 @@
+{
+  "book": "Proverbs",
+  "chapter": 13,
+  "questions": [
+    {
+      "id": "proverbs-13-q1",
+      "type": "multiple_choice",
+      "question": "What does Proverbs 13 say a wise son does?",
+      "options": [
+        "Mocks the counsel of the wise",
+        "Listens to his father's instruction",
+        "Flees from his father's house",
+        "Ignores all of the advice he is given"
+      ],
+      "answer": "Listens to his father's instruction",
+      "verse_reference": "Proverbs 13:1"
+    },
+    {
+      "id": "proverbs-13-q2",
+      "type": "multiple_choice",
+      "question": "What happens to hope deferred, according to Proverbs 13?",
+      "options": [
+        "It is suddenly fulfilled",
+        "It is quickly forgotten",
+        "It grows stronger with time",
+        "It makes the heart sick"
+      ],
+      "answer": "It makes the heart sick",
+      "verse_reference": "Proverbs 13:12"
+    },
+    {
+      "id": "proverbs-13-q3",
+      "type": "true_false",
+      "question": "Proverbs 13 says whoever walks with the wise becomes wise, but the companion of fools suffers harm.",
+      "answer": "true",
+      "verse_reference": "Proverbs 13:20"
+    },
+    {
+      "id": "proverbs-13-q4",
+      "type": "fill_blank",
+      "question": "Hope deferred makes the heart sick, but a desire fulfilled is a tree of _____.",
+      "answer": "life",
+      "verse_reference": "Proverbs 13:12"
+    },
+    {
+      "id": "proverbs-13-q5",
+      "type": "fill_blank",
+      "question": "Whoever walks with the wise becomes _____.",
+      "answer": "wise",
+      "verse_reference": "Proverbs 13:20"
+    }
+  ]
+}

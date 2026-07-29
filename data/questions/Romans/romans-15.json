@@ -1,0 +1,56 @@
+{
+  "book": "Romans",
+  "chapter": 15,
+  "questions": [
+    {
+      "id": "romans-15-q1",
+      "type": "multiple_choice",
+      "question": "Where did Paul plan to go after visiting Rome?",
+      "options": [
+        "Greece",
+        "Jerusalem",
+        "Spain",
+        "Egypt"
+      ],
+      "answer": "Spain",
+      "verse_reference": "Romans 15:24"
+    },
+    {
+      "id": "romans-15-q2",
+      "type": "multiple_choice",
+      "question": "Paul says it was his ambition to preach the gospel where?",
+      "options": [
+        "Where Christ was not yet named",
+        "Where the apostles had gone before",
+        "Where the temple had been built",
+        "Where the law was already known"
+      ],
+      "answer": "Where Christ was not yet named",
+      "verse_reference": "Romans 15:20"
+    },
+    {
+      "id": "romans-15-q3",
+      "type": "true_false",
+      "question": "Paul says the strong should bear with the failings of the weak and not just please themselves.",
+      "answer": "true",
+      "verse_reference": "Romans 15:1"
+    },
+    {
+      "id": "romans-15-q4",
+      "type": "fill_blank",
+      "question": "Now the God of hope fill you with all joy and _____ in believing.",
+      "answer": "peace",
+      "verse_reference": "Romans 15:13"
+    },
+    {
+      "id": "romans-15-q5",
+      "type": "fill_blank",
+      "question": "Everything that was written in the past was written for our _____, so that through endurance and encouragement we might have hope.",
+      "answer": "instruction",
+      "accept": [
+        "learning"
+      ],
+      "verse_reference": "Romans 15:4"
+    }
+  ]
+}

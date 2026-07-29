@@ -1,0 +1,53 @@
+{
+  "book": "1 Kings",
+  "chapter": 21,
+  "questions": [
+    {
+      "id": "1-kings-21-q1",
+      "type": "multiple_choice",
+      "question": "Whose vineyard did Ahab covet and Jezebel seize by murder?",
+      "options": [
+        "Naboth's",
+        "Hiram's",
+        "Obadiah's",
+        "Elijah's"
+      ],
+      "answer": "Naboth's",
+      "verse_reference": "1 Kings 21:1-16"
+    },
+    {
+      "id": "1-kings-21-q2",
+      "type": "multiple_choice",
+      "question": "Who pronounced judgment on Ahab for Naboth's murder?",
+      "options": [
+        "Nathan",
+        "Elijah",
+        "Elisha",
+        "Micaiah"
+      ],
+      "answer": "Elijah",
+      "verse_reference": "1 Kings 21:17-19"
+    },
+    {
+      "id": "1-kings-21-q3",
+      "type": "true_false",
+      "question": "Jezebel had Naboth falsely accused and stoned to death.",
+      "answer": "true",
+      "verse_reference": "1 Kings 21:8-13"
+    },
+    {
+      "id": "1-kings-21-q4",
+      "type": "fill_blank",
+      "question": "Ahab coveted the _____ of Naboth, who refused to sell his inheritance.",
+      "answer": "vineyard",
+      "verse_reference": "1 Kings 21:1-4"
+    },
+    {
+      "id": "1-kings-21-q5",
+      "type": "fill_blank",
+      "question": "Jezebel had _____ falsely accused and stoned so Ahab could take his land.",
+      "answer": "Naboth",
+      "verse_reference": "1 Kings 21:13"
+    }
+  ]
+}

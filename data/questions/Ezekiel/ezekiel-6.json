@@ -1,0 +1,57 @@
+{
+  "book": "Ezekiel",
+  "chapter": 6,
+  "questions": [
+    {
+      "id": "ezekiel-6-q1",
+      "type": "multiple_choice",
+      "question": "Against what does Ezekiel prophesy in chapter 6?",
+      "options": [
+        "The great rivers of Babylon and all of their many cities",
+        "The mountains of Israel and their high places of idolatry",
+        "The false prophets who had so long misled all of the people",
+        "The temple priests who had grown utterly corrupt over time"
+      ],
+      "answer": "The mountains of Israel and their high places of idolatry",
+      "verse_reference": "Ezekiel 6:2-3"
+    },
+    {
+      "id": "ezekiel-6-q2",
+      "type": "multiple_choice",
+      "question": "What recurring purpose statement appears in Ezekiel 6?",
+      "options": [
+        "'Then you will rebuild what was thrown down'",
+        "'Then you shall know that I am the LORD'",
+        "'Then you shall rule over many nations'",
+        "'Then your land will prosper once again'"
+      ],
+      "answer": "'Then you shall know that I am the LORD'",
+      "verse_reference": "Ezekiel 6:7"
+    },
+    {
+      "id": "ezekiel-6-q3",
+      "type": "true_false",
+      "question": "God promised to leave a remnant who would remember him among the nations.",
+      "answer": "true",
+      "verse_reference": "Ezekiel 6:8-9"
+    },
+    {
+      "id": "ezekiel-6-q4",
+      "type": "fill_blank",
+      "question": "I will lay the dead bodies before their idols and scatter your bones around your _____.",
+      "answer": "altars",
+      "verse_reference": "Ezekiel 6:5"
+    },
+    {
+      "id": "ezekiel-6-q5",
+      "type": "fill_blank",
+      "question": "Then you shall know that I am the _____.",
+      "answer": "LORD",
+      "accept": [
+        "Jehovah",
+        "Yahweh"
+      ],
+      "verse_reference": "Ezekiel 6:7"
+    }
+  ]
+}

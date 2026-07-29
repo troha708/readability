@@ -1,0 +1,57 @@
+{
+  "book": "1 Corinthians",
+  "chapter": 6,
+  "questions": [
+    {
+      "id": "1cor-6-q1",
+      "type": "multiple_choice",
+      "question": "Paul criticizes the Corinthians for taking disputes before whom?",
+      "options": [
+        "The Roman governor",
+        "Unbelieving judges",
+        "The apostles",
+        "The elders"
+      ],
+      "answer": "Unbelieving judges",
+      "verse_reference": "1 Corinthians 6:1"
+    },
+    {
+      "id": "1cor-6-q2",
+      "type": "multiple_choice",
+      "question": "Paul says the body is not for sexual immorality but for whom?",
+      "options": [
+        "The Lord",
+        "The church",
+        "Society",
+        "The spouse"
+      ],
+      "answer": "The Lord",
+      "verse_reference": "1 Corinthians 6:13"
+    },
+    {
+      "id": "1cor-6-q3",
+      "type": "true_false",
+      "question": "Paul says believers' bodies are temples of the Holy Spirit.",
+      "answer": "true",
+      "verse_reference": "1 Corinthians 6:19"
+    },
+    {
+      "id": "1cor-6-q4",
+      "type": "fill_blank",
+      "question": "You were bought with a _____. Therefore glorify God in your body.",
+      "answer": "price",
+      "verse_reference": "1 Corinthians 6:20"
+    },
+    {
+      "id": "1cor-6-q5",
+      "type": "fill_blank",
+      "question": "All things are lawful for me, but not all things are _____.",
+      "answer": "beneficial",
+      "accept": [
+        "expedient",
+        "profitable"
+      ],
+      "verse_reference": "1 Corinthians 6:12"
+    }
+  ]
+}

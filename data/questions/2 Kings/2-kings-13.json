@@ -1,0 +1,53 @@
+{
+  "book": "2 Kings",
+  "chapter": 13,
+  "questions": [
+    {
+      "id": "2-kings-13-q1",
+      "type": "multiple_choice",
+      "question": "What happened when a dead man's body touched Elisha's bones?",
+      "options": [
+        "Nothing",
+        "The man came back to life",
+        "The bones all turned to dust",
+        "A light shone"
+      ],
+      "answer": "The man came back to life",
+      "verse_reference": "2 Kings 13:21"
+    },
+    {
+      "id": "2-kings-13-q2",
+      "type": "multiple_choice",
+      "question": "What did the dying Elisha tell King Jehoash to do with arrows?",
+      "options": [
+        "Break them",
+        "Strike the ground",
+        "Give them away",
+        "Burn them"
+      ],
+      "answer": "Strike the ground",
+      "verse_reference": "2 Kings 13:18"
+    },
+    {
+      "id": "2-kings-13-q3",
+      "type": "true_false",
+      "question": "Elisha continued to prophesy even on his deathbed.",
+      "answer": "true",
+      "verse_reference": "2 Kings 13:14-19"
+    },
+    {
+      "id": "2-kings-13-q4",
+      "type": "fill_blank",
+      "question": "A dead man revived when his body touched the _____ of Elisha.",
+      "answer": "bones",
+      "verse_reference": "2 Kings 13:21"
+    },
+    {
+      "id": "2-kings-13-q5",
+      "type": "fill_blank",
+      "question": "Elisha rebuked the king for striking the ground with the _____ only three times.",
+      "answer": "arrows",
+      "verse_reference": "2 Kings 13:18-19"
+    }
+  ]
+}

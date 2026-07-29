@@ -1,0 +1,56 @@
+{
+  "book": "Colossians",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "col-2-q1",
+      "type": "multiple_choice",
+      "question": "Paul warns the Colossians not to be taken captive by what?",
+      "options": [
+        "The traditions of the elders",
+        "Smooth-talking false prophets",
+        "The harsh laws of imperial Rome",
+        "Hollow and deceptive philosophy"
+      ],
+      "answer": "Hollow and deceptive philosophy",
+      "verse_reference": "Colossians 2:8"
+    },
+    {
+      "id": "col-2-q2",
+      "type": "multiple_choice",
+      "question": "Paul says the written code with its regulations was nailed to what?",
+      "options": [
+        "The cross",
+        "The ground",
+        "The temple door",
+        "The ark"
+      ],
+      "answer": "The cross",
+      "verse_reference": "Colossians 2:14"
+    },
+    {
+      "id": "col-2-q3",
+      "type": "true_false",
+      "question": "Paul says no one should judge believers regarding food, drink, or Sabbath days.",
+      "answer": "true",
+      "verse_reference": "Colossians 2:16"
+    },
+    {
+      "id": "col-2-q4",
+      "type": "fill_blank",
+      "question": "For in Christ all the fullness of the _____ lives in bodily form.",
+      "answer": "Deity",
+      "accept": [
+        "Godhead"
+      ],
+      "verse_reference": "Colossians 2:9"
+    },
+    {
+      "id": "col-2-q5",
+      "type": "fill_blank",
+      "question": "These are a shadow of the things to come, but the _____ belongs to Christ.",
+      "answer": "body",
+      "verse_reference": "Colossians 2:17"
+    }
+  ]
+}

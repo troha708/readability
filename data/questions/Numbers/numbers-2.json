@@ -1,0 +1,53 @@
+{
+  "book": "Numbers",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "numbers-2-q1",
+      "type": "multiple_choice",
+      "question": "How were the tribes arranged in the camp?",
+      "options": [
+        "By wealth, with the richest tribes set up in front",
+        "By age, with the elders at the center",
+        "In a single long line behind Moses",
+        "In order around the tent of meeting, by tribe"
+      ],
+      "answer": "In order around the tent of meeting, by tribe",
+      "verse_reference": "Numbers 2:2"
+    },
+    {
+      "id": "numbers-2-q2",
+      "type": "multiple_choice",
+      "question": "Which tribe camped on the east and set out first?",
+      "options": [
+        "Judah",
+        "Reuben",
+        "Dan",
+        "Ephraim"
+      ],
+      "answer": "Judah",
+      "verse_reference": "Numbers 2:3-9"
+    },
+    {
+      "id": "numbers-2-q3",
+      "type": "true_false",
+      "question": "Each tribe camped under its own standard (banner).",
+      "answer": "true",
+      "verse_reference": "Numbers 2:2"
+    },
+    {
+      "id": "numbers-2-q4",
+      "type": "fill_blank",
+      "question": "The tribes camped around the _____ of meeting, each by his own standard.",
+      "answer": "tent",
+      "verse_reference": "Numbers 2:2"
+    },
+    {
+      "id": "numbers-2-q5",
+      "type": "fill_blank",
+      "question": "The tribe of _____ led the camp and set out first.",
+      "answer": "Judah",
+      "verse_reference": "Numbers 2:9"
+    }
+  ]
+}

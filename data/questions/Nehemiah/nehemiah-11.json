@@ -1,0 +1,53 @@
+{
+  "book": "Nehemiah",
+  "chapter": 11,
+  "questions": [
+    {
+      "id": "nehemiah-11-q1",
+      "type": "multiple_choice",
+      "question": "How were people chosen to live in Jerusalem?",
+      "options": [
+        "By wealth, the richest taking the best homes",
+        "By age, the oldest families settling first",
+        "By lot, one out of ten, with others volunteering",
+        "By tribe, each clan keeping to its own quarter"
+      ],
+      "answer": "By lot, one out of ten, with others volunteering",
+      "verse_reference": "Nehemiah 11:1"
+    },
+    {
+      "id": "nehemiah-11-q2",
+      "type": "multiple_choice",
+      "question": "How did the people regard those who volunteered to live in Jerusalem?",
+      "options": [
+        "With suspicion",
+        "They blessed them",
+        "With envy",
+        "They ignored them"
+      ],
+      "answer": "They blessed them",
+      "verse_reference": "Nehemiah 11:2"
+    },
+    {
+      "id": "nehemiah-11-q3",
+      "type": "true_false",
+      "question": "The rest of the people lived in their own towns throughout Judah and Benjamin.",
+      "answer": "true",
+      "verse_reference": "Nehemiah 11:3-20"
+    },
+    {
+      "id": "nehemiah-11-q4",
+      "type": "fill_blank",
+      "question": "Jerusalem is called the holy _____ in this chapter.",
+      "answer": "city",
+      "verse_reference": "Nehemiah 11:1"
+    },
+    {
+      "id": "nehemiah-11-q5",
+      "type": "fill_blank",
+      "question": "Chapter 11 lists the leaders and people who settled in _____.",
+      "answer": "Jerusalem",
+      "verse_reference": "Nehemiah 11:1"
+    }
+  ]
+}

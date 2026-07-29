@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 130,
+  "questions": [
+    {
+      "id": "psalms-130-q1",
+      "type": "multiple_choice",
+      "question": "From where does the psalmist cry to the LORD in Psalm 130?",
+      "options": [
+        "A palace",
+        "A garden",
+        "The far high mountains",
+        "Out of the depths"
+      ],
+      "answer": "Out of the depths",
+      "verse_reference": "Psalm 130:1"
+    },
+    {
+      "id": "psalms-130-q2",
+      "type": "multiple_choice",
+      "question": "What would happen if God marked iniquities, according to the psalm?",
+      "options": [
+        "No one could stand, but with him there is forgiveness",
+        "Only the righteous would be left standing before him",
+        "He himself would greatly rejoice over their downfall",
+        "Every single soul would surely be saved in the end"
+      ],
+      "answer": "No one could stand, but with him there is forgiveness",
+      "verse_reference": "Psalm 130:3-4"
+    },
+    {
+      "id": "psalms-130-q3",
+      "type": "true_false",
+      "question": "The psalmist waits for the Lord more than watchmen for the morning.",
+      "answer": "true",
+      "verse_reference": "Psalm 130:6"
+    },
+    {
+      "id": "psalms-130-q4",
+      "type": "fill_blank",
+      "question": "Out of the _____ I cry to you, O LORD!",
+      "answer": "depths",
+      "verse_reference": "Psalm 130:1"
+    },
+    {
+      "id": "psalms-130-q5",
+      "type": "fill_blank",
+      "question": "With the LORD there is steadfast love, and with him is plentiful _____.",
+      "answer": "redemption",
+      "verse_reference": "Psalm 130:7"
+    }
+  ]
+}

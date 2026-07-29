@@ -1,0 +1,56 @@
+{
+  "book": "Psalms",
+  "chapter": 83,
+  "questions": [
+    {
+      "id": "psalms-83-q1",
+      "type": "multiple_choice",
+      "question": "What does Asaph ask God not to do in Psalm 83?",
+      "options": [
+        "Hide his face while the wicked prosper in the land",
+        "Keep silence while enemies conspire against his people",
+        "Delay his coming while the righteous wait in hope",
+        "Withhold the rain while the harvest withers away"
+      ],
+      "answer": "Keep silence while enemies conspire against his people",
+      "verse_reference": "Psalm 83:1-2"
+    },
+    {
+      "id": "psalms-83-q2",
+      "type": "multiple_choice",
+      "question": "What is the ultimate goal of the psalm's prayer against enemies?",
+      "options": [
+        "That the king may reign on in lasting peace for very many years",
+        "That the holy temple may at long last be rebuilt in all its former glory",
+        "That they may know that the LORD alone is Most High over all the earth",
+        "That Israel may dwell safely and securely within the promised land"
+      ],
+      "answer": "That they may know that the LORD alone is Most High over all the earth",
+      "verse_reference": "Psalm 83:18"
+    },
+    {
+      "id": "psalms-83-q3",
+      "type": "true_false",
+      "question": "The enemies plot to wipe out the nation of Israel so its name is remembered no more.",
+      "answer": "true",
+      "verse_reference": "Psalm 83:4"
+    },
+    {
+      "id": "psalms-83-q4",
+      "type": "fill_blank",
+      "question": "O God, be not _____; do not hold your peace.",
+      "answer": "silent",
+      "accept": [
+        "silence"
+      ],
+      "verse_reference": "Psalm 83:1"
+    },
+    {
+      "id": "psalms-83-q5",
+      "type": "fill_blank",
+      "question": "Let them know that you alone, whose name is the LORD, are the Most _____ over all the earth.",
+      "answer": "High",
+      "verse_reference": "Psalm 83:18"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "book": "Amos",
+  "chapter": 9,
+  "questions": [
+    {
+      "id": "amos-9-q1",
+      "type": "multiple_choice",
+      "question": "Where did Amos see the Lord standing in chapter 9?",
+      "options": [
+        "On a mountain",
+        "Beside the altar",
+        "By a river",
+        "In a field"
+      ],
+      "answer": "Beside the altar",
+      "verse_reference": "Amos 9:1"
+    },
+    {
+      "id": "amos-9-q2",
+      "type": "multiple_choice",
+      "question": "How does the book of Amos end?",
+      "options": [
+        "With a list of the foreign nations still left to be judged",
+        "With a final word of complete destruction of the land",
+        "With a promise to restore the fallen booth (tent) of David and the fortunes of his people",
+        "With a vision of swarming locusts devouring all the land"
+      ],
+      "answer": "With a promise to restore the fallen booth (tent) of David and the fortunes of his people",
+      "verse_reference": "Amos 9:11-15"
+    },
+    {
+      "id": "amos-9-q3",
+      "type": "true_false",
+      "question": "Amos 9 promises that God will plant Israel on their land, never again to be uprooted.",
+      "answer": "true",
+      "verse_reference": "Amos 9:15"
+    },
+    {
+      "id": "amos-9-q4",
+      "type": "fill_blank",
+      "question": "In that day I will raise up the booth of _____ that is fallen.",
+      "answer": "David",
+      "verse_reference": "Amos 9:11"
+    },
+    {
+      "id": "amos-9-q5",
+      "type": "fill_blank",
+      "question": "I will restore the fortunes of my people Israel... and they shall never again be _____ out of the land.",
+      "answer": "uprooted",
+      "accept": ["plucked up", "pulled up"],
+      "verse_reference": "Amos 9:15"
+    }
+  ]
+}

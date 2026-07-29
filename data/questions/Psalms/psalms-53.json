@@ -1,0 +1,56 @@
+{
+  "book": "Psalms",
+  "chapter": 53,
+  "questions": [
+    {
+      "id": "psalms-53-q1",
+      "type": "multiple_choice",
+      "question": "Like Psalm 14, what does the fool say in his heart?",
+      "options": [
+        "I am wise",
+        "I am rich",
+        "There is no God",
+        "All is truly well"
+      ],
+      "answer": "There is no God",
+      "verse_reference": "Psalm 53:1"
+    },
+    {
+      "id": "psalms-53-q2",
+      "type": "multiple_choice",
+      "question": "What did God look down from heaven to see?",
+      "options": [
+        "Whether the scattered exiles would return back to the land",
+        "Whether the harvest of the fields would be great that year",
+        "Whether there were any who understood and sought God",
+        "Whether the king would win the great battle that was coming"
+      ],
+      "answer": "Whether there were any who understood and sought God",
+      "verse_reference": "Psalm 53:2"
+    },
+    {
+      "id": "psalms-53-q3",
+      "type": "true_false",
+      "question": "The psalm longs that salvation for Israel would come out of Zion.",
+      "answer": "true",
+      "verse_reference": "Psalm 53:6"
+    },
+    {
+      "id": "psalms-53-q4",
+      "type": "fill_blank",
+      "question": "The fool says in his heart, 'There is no _____.'",
+      "answer": "God",
+      "verse_reference": "Psalm 53:1"
+    },
+    {
+      "id": "psalms-53-q5",
+      "type": "fill_blank",
+      "question": "They have all fallen away; together they have become _____.",
+      "answer": "corrupt",
+      "accept": [
+        "filthy"
+      ],
+      "verse_reference": "Psalm 53:3"
+    }
+  ]
+}

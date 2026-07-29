@@ -1,0 +1,56 @@
+{
+  "book": "Malachi",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "malachi-1-q1",
+      "type": "multiple_choice",
+      "question": "How does the book of Malachi open?",
+      "options": [
+        "With God saying, 'I have loved you,' though the people question it",
+        "With an urgent call to rebuild the broken-down and ruined temple",
+        "With God pronouncing utter and complete destruction upon all Judah",
+        "With a great vision of the four mighty and terrible beasts of the sea"
+      ],
+      "answer": "With God saying, 'I have loved you,' though the people question it",
+      "verse_reference": "Malachi 1:2"
+    },
+    {
+      "id": "malachi-1-q2",
+      "type": "multiple_choice",
+      "question": "What did God rebuke the priests for offering on the altar?",
+      "options": [
+        "The firstfruits of the harvest",
+        "Blind, lame, and sick animals",
+        "Pure gold and fine silver",
+        "Unblemished lambs and bulls"
+      ],
+      "answer": "Blind, lame, and sick animals",
+      "verse_reference": "Malachi 1:8"
+    },
+    {
+      "id": "malachi-1-q3",
+      "type": "true_false",
+      "question": "Malachi 1 says God's name will be great among the nations, from the rising of the sun to its setting.",
+      "answer": "true",
+      "verse_reference": "Malachi 1:11"
+    },
+    {
+      "id": "malachi-1-q4",
+      "type": "fill_blank",
+      "question": "'I have _____ you,' says the LORD. But you say, 'How have you loved us?'",
+      "answer": "loved",
+      "verse_reference": "Malachi 1:2"
+    },
+    {
+      "id": "malachi-1-q5",
+      "type": "fill_blank",
+      "question": "When you offer blind animals in sacrifice, is that not _____? says the LORD.",
+      "answer": "wrong",
+      "accept": [
+        "evil"
+      ],
+      "verse_reference": "Malachi 1:8"
+    }
+  ]
+}

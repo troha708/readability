@@ -1,0 +1,53 @@
+{
+  "book": "Genesis",
+  "chapter": 41,
+  "questions": [
+    {
+      "id": "genesis-41-q1",
+      "type": "multiple_choice",
+      "question": "What did the seven thin cows and seven thin heads of grain represent?",
+      "options": [
+        "Seven plagues",
+        "Seven years of famine",
+        "Seven kings",
+        "Seven years of war"
+      ],
+      "answer": "Seven years of famine",
+      "verse_reference": "Genesis 41:27"
+    },
+    {
+      "id": "genesis-41-q2",
+      "type": "multiple_choice",
+      "question": "To what position did Pharaoh raise Joseph?",
+      "options": [
+        "Chief baker of the royal court",
+        "Second-in-command over all Egypt",
+        "High priest of the temple",
+        "Commander of Pharaoh's army"
+      ],
+      "answer": "Second-in-command over all Egypt",
+      "verse_reference": "Genesis 41:40-43"
+    },
+    {
+      "id": "genesis-41-q3",
+      "type": "true_false",
+      "question": "Joseph stored up grain during the seven years of plenty.",
+      "answer": "true",
+      "verse_reference": "Genesis 41:48-49"
+    },
+    {
+      "id": "genesis-41-q4",
+      "type": "fill_blank",
+      "question": "There would be seven years of plenty, followed by seven years of _____.",
+      "answer": "famine",
+      "verse_reference": "Genesis 41:30"
+    },
+    {
+      "id": "genesis-41-q5",
+      "type": "fill_blank",
+      "question": "Joseph was _____ years old when he entered Pharaoh's service.",
+      "answer": "thirty",
+      "verse_reference": "Genesis 41:46"
+    }
+  ]
+}

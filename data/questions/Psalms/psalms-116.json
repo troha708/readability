@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 116,
+  "questions": [
+    {
+      "id": "psalms-116-q1",
+      "type": "multiple_choice",
+      "question": "Why does the psalmist say he loves the LORD in Psalm 116?",
+      "options": [
+        "Because the LORD subdued all of the nations before him",
+        "Because the LORD heard his voice and pleas for mercy",
+        "Because the LORD revealed his law and statutes",
+        "Because the LORD gave him wealth and honor"
+      ],
+      "answer": "Because the LORD heard his voice and pleas for mercy",
+      "verse_reference": "Psalm 116:1"
+    },
+    {
+      "id": "psalms-116-q2",
+      "type": "multiple_choice",
+      "question": "What does the psalmist ask, having received so much?",
+      "options": [
+        "Who is able to stand before so great and so holy a God?",
+        "What shall I render to the LORD for all his benefits to me?",
+        "Where can I possibly flee away from the presence of the LORD?",
+        "How long, O LORD, will you go on forgetting me forever?"
+      ],
+      "answer": "What shall I render to the LORD for all his benefits to me?",
+      "verse_reference": "Psalm 116:12"
+    },
+    {
+      "id": "psalms-116-q3",
+      "type": "true_false",
+      "question": "The psalmist says precious in the sight of the LORD is the death of his saints.",
+      "answer": "true",
+      "verse_reference": "Psalm 116:15"
+    },
+    {
+      "id": "psalms-116-q4",
+      "type": "fill_blank",
+      "question": "I love the LORD, because he has heard my voice and my pleas for _____.",
+      "answer": "mercy",
+      "verse_reference": "Psalm 116:1"
+    },
+    {
+      "id": "psalms-116-q5",
+      "type": "fill_blank",
+      "question": "I will lift up the cup of _____ and call on the name of the LORD.",
+      "answer": "salvation",
+      "verse_reference": "Psalm 116:13"
+    }
+  ]
+}

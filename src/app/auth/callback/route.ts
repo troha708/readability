@@ -1,0 +1,25 @@
+import { createClient } from "@/lib/supabase/server";
+import { NextResponse } from "next/server";
+
+export async function GET(request: Request) {
+  const { searchParams, origin } = new URL(request.url);
+  const code = searchParams.get("code");
+  // Same-site paths only: "@evil.com" would parse as userinfo@host and
+  // "//evil.com" as protocol-relative, both redirecting off-site.
+  const nextParam = searchParams.get("next") ?? "";
+  const next =
+    nextParam.startsWith("/") && !nextParam.startsWith("//")
+      ? nextParam
+      : "/try/bible/start";
+
+  if (code) {
+    const supabase = await createClient();
+    const { error } = await supabase.auth.exchangeCodeForSession(code);
+    if (!error) {
+      return NextResponse.redirect(`${origin}${next}`);
+    }
+  }
+
+  // Auth error - redirect to login with error
+  return NextResponse.redirect(`${origin}/login?error=auth`);
+}

@@ -1,0 +1,56 @@
+{
+  "book": "Ezra",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "ezra-3-q1",
+      "type": "multiple_choice",
+      "question": "What did the returned exiles build first?",
+      "options": [
+        "The altar of the God of Israel",
+        "Houses for the returning families",
+        "The walls around the city",
+        "The roof of the ruined temple"
+      ],
+      "answer": "The altar of the God of Israel",
+      "verse_reference": "Ezra 3:2-3"
+    },
+    {
+      "id": "ezra-3-q2",
+      "type": "multiple_choice",
+      "question": "How did the people react when the temple foundation was laid?",
+      "options": [
+        "They fled the city in sudden fear",
+        "They rose up in anger against the leaders",
+        "They stood in complete and uneasy silence",
+        "Some shouted for joy while old men wept"
+      ],
+      "answer": "Some shouted for joy while old men wept",
+      "verse_reference": "Ezra 3:11-13"
+    },
+    {
+      "id": "ezra-3-q3",
+      "type": "true_false",
+      "question": "They kept the Feast of Booths and offered burnt offerings even before the temple was built.",
+      "answer": "true",
+      "verse_reference": "Ezra 3:4-6"
+    },
+    {
+      "id": "ezra-3-q4",
+      "type": "fill_blank",
+      "question": "They gave money to masons and carpenters and food and drink to the people of _____ for cedar.",
+      "answer": "Sidon",
+      "accept": [
+        "Zidon"
+      ],
+      "verse_reference": "Ezra 3:7"
+    },
+    {
+      "id": "ezra-3-q5",
+      "type": "fill_blank",
+      "question": "The shout of joy could not be distinguished from the sound of _____.",
+      "answer": "weeping",
+      "verse_reference": "Ezra 3:13"
+    }
+  ]
+}

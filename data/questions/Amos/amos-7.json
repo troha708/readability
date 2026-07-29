@@ -1,0 +1,53 @@
+{
+  "book": "Amos",
+  "chapter": 7,
+  "questions": [
+    {
+      "id": "amos-7-q1",
+      "type": "multiple_choice",
+      "question": "What three visions did Amos see in chapter 7?",
+      "options": [
+        "Locusts, fire, and a plumb line",
+        "The sun, the moon, and the stars",
+        "A vine, a tree, and a flowing river",
+        "Dry bones, wheels, and wild beasts"
+      ],
+      "answer": "Locusts, fire, and a plumb line",
+      "verse_reference": "Amos 7:1-8"
+    },
+    {
+      "id": "amos-7-q2",
+      "type": "multiple_choice",
+      "question": "Who opposed Amos and told him to flee to Judah?",
+      "options": [
+        "Amaziah the priest of Bethel",
+        "Jeroboam the king of Israel",
+        "Uzziah the king of Judah",
+        "Hosea the prophet of Samaria"
+      ],
+      "answer": "Amaziah the priest of Bethel",
+      "verse_reference": "Amos 7:10-12"
+    },
+    {
+      "id": "amos-7-q3",
+      "type": "true_false",
+      "question": "Amos said he was no prophet by trade but a herdsman and dresser of sycamore figs whom the LORD called.",
+      "answer": "true",
+      "verse_reference": "Amos 7:14-15"
+    },
+    {
+      "id": "amos-7-q4",
+      "type": "fill_blank",
+      "question": "The Lord was standing beside a wall, with a _____ line in his hand.",
+      "answer": "plumb",
+      "verse_reference": "Amos 7:7"
+    },
+    {
+      "id": "amos-7-q5",
+      "type": "fill_blank",
+      "question": "Amaziah told Amos, 'O seer, go, flee away to the land of _____.'",
+      "answer": "Judah",
+      "verse_reference": "Amos 7:12"
+    }
+  ]
+}

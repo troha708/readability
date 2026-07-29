@@ -1,0 +1,58 @@
+{
+  "book": "Psalms",
+  "chapter": 109,
+  "questions": [
+    {
+      "id": "psalms-109-q1",
+      "type": "multiple_choice",
+      "question": "What is the nature of much of Psalm 109?",
+      "options": [
+        "A glad hymn praising the wonders and the glories of God's creation",
+        "A thanksgiving offered for a great and entirely unexpected deliverance",
+        "A solemn meditation upon the shortness and frailty of human life",
+        "An appeal against false accusers and a curse upon a wicked adversary"
+      ],
+      "answer": "An appeal against false accusers and a curse upon a wicked adversary",
+      "verse_reference": "Psalm 109:1-5"
+    },
+    {
+      "id": "psalms-109-q2",
+      "type": "multiple_choice",
+      "question": "How does David respond to those who accuse him?",
+      "options": [
+        "He curses them silently",
+        "He gives himself to prayer",
+        "He flees",
+        "He bribes them"
+      ],
+      "answer": "He gives himself to prayer",
+      "verse_reference": "Psalm 109:4"
+    },
+    {
+      "id": "psalms-109-q3",
+      "type": "true_false",
+      "question": "David asks God to help him because he is poor and needy and his heart is stricken.",
+      "answer": "true",
+      "verse_reference": "Psalm 109:22"
+    },
+    {
+      "id": "psalms-109-q4",
+      "type": "fill_blank",
+      "question": "In return for my love they accuse me, but I give myself to _____.",
+      "answer": "prayer",
+      "verse_reference": "Psalm 109:4"
+    },
+    {
+      "id": "psalms-109-q5",
+      "type": "fill_blank",
+      "question": "Help me, O LORD my God; save me according to Your loving _____.",
+      "answer": "devotion",
+      "accept": [
+        "love",
+        "mercy",
+        "kindness"
+      ],
+      "verse_reference": "Psalm 109:26"
+    }
+  ]
+}

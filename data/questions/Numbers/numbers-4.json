@@ -1,0 +1,53 @@
+{
+  "book": "Numbers",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "numbers-4-q1",
+      "type": "multiple_choice",
+      "question": "What were the Kohathites responsible for carrying?",
+      "options": [
+        "The outer curtains",
+        "The bread and food",
+        "The wooden frames",
+        "The most holy things"
+      ],
+      "answer": "The most holy things",
+      "verse_reference": "Numbers 4:4-15"
+    },
+    {
+      "id": "numbers-4-q2",
+      "type": "multiple_choice",
+      "question": "Between what ages did the Levites serve in the tent of meeting?",
+      "options": [
+        "20 to 40",
+        "25 to 50",
+        "30 to 50",
+        "40 to 60"
+      ],
+      "answer": "30 to 50",
+      "verse_reference": "Numbers 4:3"
+    },
+    {
+      "id": "numbers-4-q3",
+      "type": "true_false",
+      "question": "The holy things had to be covered before the Kohathites could carry them, so they would not die.",
+      "answer": "true",
+      "verse_reference": "Numbers 4:15"
+    },
+    {
+      "id": "numbers-4-q4",
+      "type": "fill_blank",
+      "question": "The Kohathites were not to touch the holy things directly, or they would _____.",
+      "answer": "die",
+      "verse_reference": "Numbers 4:15"
+    },
+    {
+      "id": "numbers-4-q5",
+      "type": "fill_blank",
+      "question": "The sons of _____ carried the most holy things of the sanctuary.",
+      "answer": "Kohath",
+      "verse_reference": "Numbers 4:4"
+    }
+  ]
+}

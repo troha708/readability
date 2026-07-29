@@ -1,0 +1,56 @@
+{
+  "book": "Mark",
+  "chapter": 8,
+  "questions": [
+    {
+      "id": "mark-8-q1",
+      "type": "multiple_choice",
+      "question": "How many loaves did Jesus use to feed the four thousand?",
+      "options": [
+        "Seven",
+        "Five",
+        "Twelve",
+        "Three"
+      ],
+      "answer": "Seven",
+      "verse_reference": "Mark 8:5-6"
+    },
+    {
+      "id": "mark-8-q2",
+      "type": "multiple_choice",
+      "question": "When Jesus asked the disciples who they said he was, what did Peter answer?",
+      "options": [
+        "Elijah",
+        "A great prophet",
+        "The Christ",
+        "John the Baptizer"
+      ],
+      "answer": "The Christ",
+      "verse_reference": "Mark 8:29"
+    },
+    {
+      "id": "mark-8-q3",
+      "type": "true_false",
+      "question": "Jesus rebuked Peter and said, 'Get behind me, Satan!'",
+      "answer": "true",
+      "verse_reference": "Mark 8:33"
+    },
+    {
+      "id": "mark-8-q4",
+      "type": "fill_blank",
+      "question": "For whoever wants to save his life will lose it; and whoever will lose his life for my sake and the sake of the Good News will _____ it.",
+      "answer": "save",
+      "verse_reference": "Mark 8:35"
+    },
+    {
+      "id": "mark-8-q5",
+      "type": "fill_blank",
+      "question": "For what does it profit a man to gain the whole world and _____ his life?",
+      "answer": "forfeit",
+      "accept": [
+        "lose"
+      ],
+      "verse_reference": "Mark 8:36"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Matthew",
+  "chapter": 10,
+  "questions": [
+    {
+      "id": "matthew-10-q1",
+      "type": "multiple_choice",
+      "question": "How many apostles did Jesus send out in this chapter?",
+      "options": [
+        "Ten",
+        "Seventy",
+        "Twelve",
+        "Seven"
+      ],
+      "answer": "Twelve",
+      "verse_reference": "Matthew 10:1-2"
+    },
+    {
+      "id": "matthew-10-q2",
+      "type": "multiple_choice",
+      "question": "Jesus told the disciples he was sending them out as sheep among what?",
+      "options": [
+        "Wolves",
+        "Serpents",
+        "Lions",
+        "Bears"
+      ],
+      "answer": "Wolves",
+      "verse_reference": "Matthew 10:16"
+    },
+    {
+      "id": "matthew-10-q3",
+      "type": "true_false",
+      "question": "Jesus told his disciples not to worry about what to say when brought before authorities, because it would be given to them.",
+      "answer": "true",
+      "verse_reference": "Matthew 10:19-20"
+    },
+    {
+      "id": "matthew-10-q4",
+      "type": "fill_blank",
+      "question": "Don't be afraid of those who kill the body, but are not able to kill the _____.",
+      "answer": "soul",
+      "verse_reference": "Matthew 10:28"
+    },
+    {
+      "id": "matthew-10-q5",
+      "type": "fill_blank",
+      "question": "Freely you received, so freely _____.",
+      "answer": "give",
+      "verse_reference": "Matthew 10:8"
+    }
+  ]
+}

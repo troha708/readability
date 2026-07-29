@@ -1,0 +1,56 @@
+{
+  "book": "Psalms",
+  "chapter": 103,
+  "questions": [
+    {
+      "id": "psalms-103-q1",
+      "type": "multiple_choice",
+      "question": "How does Psalm 103 begin?",
+      "options": [
+        "'How long, O LORD, will you forget me?'",
+        "'Have mercy on me, O God, for I have sinned'",
+        "'Out of the depths I cry to you, O LORD'",
+        "'Bless the LORD, O my soul'"
+      ],
+      "answer": "'Bless the LORD, O my soul'",
+      "verse_reference": "Psalm 103:1"
+    },
+    {
+      "id": "psalms-103-q2",
+      "type": "multiple_choice",
+      "question": "How far does God remove our transgressions from us?",
+      "options": [
+        "As high as the heavens are above us",
+        "As wide as the desert sands are spread",
+        "As far as the east is from the west",
+        "As deep as the sea is from the shore"
+      ],
+      "answer": "As far as the east is from the west",
+      "verse_reference": "Psalm 103:12"
+    },
+    {
+      "id": "psalms-103-q3",
+      "type": "true_false",
+      "question": "The psalm says the LORD is merciful and gracious, slow to anger and abounding in steadfast love.",
+      "answer": "true",
+      "verse_reference": "Psalm 103:8"
+    },
+    {
+      "id": "psalms-103-q4",
+      "type": "fill_blank",
+      "question": "Bless the LORD, O my soul, and do not forget all His kind _____.",
+      "answer": "deeds",
+      "accept": [
+        "benefits"
+      ],
+      "verse_reference": "Psalm 103:2"
+    },
+    {
+      "id": "psalms-103-q5",
+      "type": "fill_blank",
+      "question": "As a father shows compassion to his children, so the LORD shows compassion to those who _____ him.",
+      "answer": "fear",
+      "verse_reference": "Psalm 103:13"
+    }
+  ]
+}

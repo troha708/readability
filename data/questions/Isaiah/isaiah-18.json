@@ -1,0 +1,53 @@
+{
+  "book": "Isaiah",
+  "chapter": 18,
+  "questions": [
+    {
+      "id": "isaiah-18-q1",
+      "type": "multiple_choice",
+      "question": "Which land of whirring wings is addressed in Isaiah 18?",
+      "options": [
+        "Babylon (between the great rivers)",
+        "Egypt (along the banks of the Nile)",
+        "Assyria (in the land of the north)",
+        "Cush (beyond the rivers of Cush)"
+      ],
+      "answer": "Cush (beyond the rivers of Cush)",
+      "verse_reference": "Isaiah 18:1"
+    },
+    {
+      "id": "isaiah-18-q2",
+      "type": "multiple_choice",
+      "question": "What does the LORD say he will do while watching from his dwelling?",
+      "options": [
+        "Send his angels at once to strike the land",
+        "Raise up a great storm to scatter all the nations",
+        "Wait quietly, like clear heat or a cloud of dew",
+        "Call his people to march out to war"
+      ],
+      "answer": "Wait quietly, like clear heat or a cloud of dew",
+      "verse_reference": "Isaiah 18:4"
+    },
+    {
+      "id": "isaiah-18-q3",
+      "type": "true_false",
+      "question": "Isaiah 18 ends with a tribute being brought to the LORD of hosts at Mount Zion.",
+      "answer": "true",
+      "verse_reference": "Isaiah 18:7"
+    },
+    {
+      "id": "isaiah-18-q4",
+      "type": "fill_blank",
+      "question": "At that time tribute will be brought to the LORD of hosts to Mount _____.",
+      "answer": "Zion",
+      "verse_reference": "Isaiah 18:7"
+    },
+    {
+      "id": "isaiah-18-q5",
+      "type": "fill_blank",
+      "question": "Ah, land of whirring _____, which is beyond the rivers of Cush.",
+      "answer": "wings",
+      "verse_reference": "Isaiah 18:1"
+    }
+  ]
+}

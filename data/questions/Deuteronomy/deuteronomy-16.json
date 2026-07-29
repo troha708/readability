@@ -1,0 +1,53 @@
+{
+  "book": "Deuteronomy",
+  "chapter": 16,
+  "questions": [
+    {
+      "id": "deuteronomy-16-q1",
+      "type": "multiple_choice",
+      "question": "Which three feasts does chapter 16 command Israel to keep?",
+      "options": [
+        "Passover, Weeks, and Booths",
+        "Trumpets, Atonement, and New Moon",
+        "Only Passover",
+        "Only the Sabbath"
+      ],
+      "answer": "Passover, Weeks, and Booths",
+      "verse_reference": "Deuteronomy 16:16"
+    },
+    {
+      "id": "deuteronomy-16-q2",
+      "type": "multiple_choice",
+      "question": "How often were all the males to appear before the LORD?",
+      "options": [
+        "Once every single year",
+        "Three times a year",
+        "Monthly",
+        "Weekly"
+      ],
+      "answer": "Three times a year",
+      "verse_reference": "Deuteronomy 16:16"
+    },
+    {
+      "id": "deuteronomy-16-q3",
+      "type": "true_false",
+      "question": "Just judges and impartial justice were also commanded in this chapter.",
+      "answer": "true",
+      "verse_reference": "Deuteronomy 16:18-20"
+    },
+    {
+      "id": "deuteronomy-16-q4",
+      "type": "fill_blank",
+      "question": "They were to keep the Feast of _____ in the month of Abib, recalling the exodus.",
+      "answer": "Passover",
+      "verse_reference": "Deuteronomy 16:1"
+    },
+    {
+      "id": "deuteronomy-16-q5",
+      "type": "fill_blank",
+      "question": "Three times a year all the men were to appear before the LORD at the place he would _____.",
+      "answer": "choose",
+      "verse_reference": "Deuteronomy 16:16"
+    }
+  ]
+}

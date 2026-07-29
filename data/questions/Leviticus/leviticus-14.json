@@ -1,0 +1,53 @@
+{
+  "book": "Leviticus",
+  "chapter": 14,
+  "questions": [
+    {
+      "id": "leviticus-14-q1",
+      "type": "multiple_choice",
+      "question": "What does chapter 14 describe?",
+      "options": [
+        "Cleansing a person healed of skin disease",
+        "The procedure for dedicating a new altar",
+        "The rules for keeping the weekly Sabbath",
+        "The making of the high priest's garments"
+      ],
+      "answer": "Cleansing a person healed of skin disease",
+      "verse_reference": "Leviticus 14:2"
+    },
+    {
+      "id": "leviticus-14-q2",
+      "type": "multiple_choice",
+      "question": "What else could have a spreading \"leprous\" mold that required the priest's inspection?",
+      "options": [
+        "Animals",
+        "A house",
+        "A king's robe",
+        "Water"
+      ],
+      "answer": "A house",
+      "verse_reference": "Leviticus 14:34-35"
+    },
+    {
+      "id": "leviticus-14-q3",
+      "type": "true_false",
+      "question": "Cleansing a healed person used two birds, one of which was released alive.",
+      "answer": "true",
+      "verse_reference": "Leviticus 14:4-7"
+    },
+    {
+      "id": "leviticus-14-q4",
+      "type": "fill_blank",
+      "question": "The priest went outside the _____ to examine the person to be cleansed.",
+      "answer": "camp",
+      "verse_reference": "Leviticus 14:3"
+    },
+    {
+      "id": "leviticus-14-q5",
+      "type": "fill_blank",
+      "question": "A house with spreading mold could be torn down and its stones carried outside the _____.",
+      "answer": "city",
+      "verse_reference": "Leviticus 14:40-45"
+    }
+  ]
+}

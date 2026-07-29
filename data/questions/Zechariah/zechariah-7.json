@@ -1,0 +1,61 @@
+{
+  "book": "Zechariah",
+  "chapter": 7,
+  "questions": [
+    {
+      "id": "zechariah-7-q1",
+      "type": "multiple_choice",
+      "question": "What question did the people bring to the priests and prophets in Zechariah 7?",
+      "options": [
+        "Whether they should now go to war against all of their enemies",
+        "Whether they should hurry to rebuild all of the broken-down city walls",
+        "Whether they should crown for themselves a brand new king",
+        "Whether they should keep mourning and fasting as they had for years"
+      ],
+      "answer": "Whether they should keep mourning and fasting as they had for years",
+      "verse_reference": "Zechariah 7:3"
+    },
+    {
+      "id": "zechariah-7-q2",
+      "type": "multiple_choice",
+      "question": "What did God say he had truly required, rather than mere fasting?",
+      "options": [
+        "To raise up a temple far grander than the one of Solomon long before",
+        "To keep yet many more days of very solemn fasting all throughout the whole year",
+        "To bring still far more and far richer sacrifices to the altar of God",
+        "To render true judgments, show kindness and mercy, and not oppress the weak"
+      ],
+      "answer": "To render true judgments, show kindness and mercy, and not oppress the weak",
+      "verse_reference": "Zechariah 7:9-10"
+    },
+    {
+      "id": "zechariah-7-q3",
+      "type": "true_false",
+      "question": "Zechariah 7 recalls that the people's fathers refused to listen and made their hearts hard as flint.",
+      "answer": "true",
+      "verse_reference": "Zechariah 7:11-12"
+    },
+    {
+      "id": "zechariah-7-q4",
+      "type": "fill_blank",
+      "question": "Administer true justice; show loving devotion and _____ to one another.",
+      "answer": "compassion",
+      "accept": [
+        "compassions",
+        "mercy",
+        "mercies"
+      ],
+      "verse_reference": "Zechariah 7:9"
+    },
+    {
+      "id": "zechariah-7-q5",
+      "type": "fill_blank",
+      "question": "Do not oppress the widow, the fatherless, the sojourner, or the _____.",
+      "answer": "poor",
+      "accept": [
+        "afflicted"
+      ],
+      "verse_reference": "Zechariah 7:10"
+    }
+  ]
+}

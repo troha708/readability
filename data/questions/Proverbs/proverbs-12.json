@@ -1,0 +1,57 @@
+{
+  "book": "Proverbs",
+  "chapter": 12,
+  "questions": [
+    {
+      "id": "proverbs-12-q1",
+      "type": "multiple_choice",
+      "question": "What does Proverbs 12 say about the one who loves discipline?",
+      "options": [
+        "He is truly foolish",
+        "He is poor",
+        "He suffers",
+        "He loves knowledge"
+      ],
+      "answer": "He loves knowledge",
+      "verse_reference": "Proverbs 12:1"
+    },
+    {
+      "id": "proverbs-12-q2",
+      "type": "multiple_choice",
+      "question": "To what is an excellent wife compared in Proverbs 12?",
+      "options": [
+        "A burden on his shoulders",
+        "A servant in his house",
+        "A storm over his home",
+        "A crown to her husband"
+      ],
+      "answer": "A crown to her husband",
+      "verse_reference": "Proverbs 12:4"
+    },
+    {
+      "id": "proverbs-12-q3",
+      "type": "true_false",
+      "question": "Proverbs 12 says the words of the reckless are like sword thrusts, but the tongue of the wise brings healing.",
+      "answer": "true",
+      "verse_reference": "Proverbs 12:18"
+    },
+    {
+      "id": "proverbs-12-q4",
+      "type": "fill_blank",
+      "question": "An excellent wife is the _____ of her husband.",
+      "answer": "crown",
+      "verse_reference": "Proverbs 12:4"
+    },
+    {
+      "id": "proverbs-12-q5",
+      "type": "fill_blank",
+      "question": "Whoever loves discipline loves knowledge, but he who hates reproof is _____.",
+      "answer": "stupid",
+      "accept": [
+        "brutish",
+        "fool"
+      ],
+      "verse_reference": "Proverbs 12:1"
+    }
+  ]
+}

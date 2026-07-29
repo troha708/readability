@@ -1,0 +1,59 @@
+{
+  "book": "Job",
+  "chapter": 7,
+  "questions": [
+    {
+      "id": "job-7-q1",
+      "type": "multiple_choice",
+      "question": "To what did Job compare human life?",
+      "options": [
+        "Hard service / a hired hand's labor",
+        "A garden full of fruit and shade",
+        "A long and untroubled king's reign",
+        "A joyful and lavish feast"
+      ],
+      "answer": "Hard service / a hired hand's labor",
+      "verse_reference": "Job 7:1-2"
+    },
+    {
+      "id": "job-7-q2",
+      "type": "multiple_choice",
+      "question": "To whom did Job direct his complaint in this chapter?",
+      "options": [
+        "His wife",
+        "God",
+        "Eliphaz",
+        "His children"
+      ],
+      "answer": "God",
+      "verse_reference": "Job 7:11-12"
+    },
+    {
+      "id": "job-7-q3",
+      "type": "true_false",
+      "question": "Job said his life was but a breath and his days swift as a weaver's shuttle.",
+      "answer": "true",
+      "verse_reference": "Job 7:6-7"
+    },
+    {
+      "id": "job-7-q4",
+      "type": "fill_blank",
+      "question": "Job asked God, 'What is man, that you make so much of him?'  and set your _____ on him.",
+      "answer": "heart",
+      "accept": [
+        "mind"
+      ],
+      "verse_reference": "Job 7:17"
+    },
+    {
+      "id": "job-7-q5",
+      "type": "fill_blank",
+      "question": "Job's nights were filled with tossing until the _____.",
+      "answer": "dawn",
+      "accept": [
+        "dawning"
+      ],
+      "verse_reference": "Job 7:4"
+    }
+  ]
+}

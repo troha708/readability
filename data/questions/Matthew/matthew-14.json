@@ -1,0 +1,56 @@
+{
+  "book": "Matthew",
+  "chapter": 14,
+  "questions": [
+    {
+      "id": "matthew-14-q1",
+      "type": "multiple_choice",
+      "question": "Why did Herod have John the Baptist beheaded?",
+      "options": [
+        "Because of an oath he made to the daughter of Herodias",
+        "Because John had spoken openly against the high priest",
+        "Because the people had begun to call John a king",
+        "Because Pilate had ordered the prophet put to death"
+      ],
+      "answer": "Because of an oath he made to the daughter of Herodias",
+      "verse_reference": "Matthew 14:6-10"
+    },
+    {
+      "id": "matthew-14-q2",
+      "type": "multiple_choice",
+      "question": "How many men were fed with five loaves and two fish?",
+      "options": [
+        "Seven thousand",
+        "Five thousand",
+        "Four thousand",
+        "Three thousand"
+      ],
+      "answer": "Five thousand",
+      "verse_reference": "Matthew 14:21"
+    },
+    {
+      "id": "matthew-14-q3",
+      "type": "true_false",
+      "question": "Peter successfully walked on water toward Jesus without any trouble.",
+      "answer": "false",
+      "verse_reference": "Matthew 14:30"
+    },
+    {
+      "id": "matthew-14-q4",
+      "type": "fill_blank",
+      "question": "Jesus said to Peter, 'You of little _____, why did you doubt?'",
+      "answer": "faith",
+      "verse_reference": "Matthew 14:31"
+    },
+    {
+      "id": "matthew-14-q5",
+      "type": "fill_blank",
+      "question": "The disciples picked up twelve basketfuls of broken _____ that were left over.",
+      "answer": "pieces",
+      "accept": [
+        "fragments"
+      ],
+      "verse_reference": "Matthew 14:20"
+    }
+  ]
+}

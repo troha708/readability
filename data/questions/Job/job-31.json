@@ -1,0 +1,60 @@
+{
+  "book": "Job",
+  "chapter": 31,
+  "questions": [
+    {
+      "id": "job-31-q1",
+      "type": "multiple_choice",
+      "question": "What does Job make in chapter 31?",
+      "options": [
+        "A plea to his friends",
+        "An oath of his innocence",
+        "A song",
+        "A confession of sin"
+      ],
+      "answer": "An oath of his innocence",
+      "verse_reference": "Job 31:1"
+    },
+    {
+      "id": "job-31-q2",
+      "type": "multiple_choice",
+      "question": "What covenant did Job say he had made?",
+      "options": [
+        "With his friends, to keep their trust",
+        "With his eyes, not to look lustfully",
+        "With kings, to serve them faithfully",
+        "With his wealth, to give it all away"
+      ],
+      "answer": "With his eyes, not to look lustfully",
+      "verse_reference": "Job 31:1"
+    },
+    {
+      "id": "job-31-q3",
+      "type": "true_false",
+      "question": "Job invited God to weigh him in a just balance to know his integrity.",
+      "answer": "true",
+      "verse_reference": "Job 31:6"
+    },
+    {
+      "id": "job-31-q4",
+      "type": "fill_blank",
+      "question": "Job denied rejoicing in his _____'s ruin or exulting when evil befell him.",
+      "answer": "enemy",
+      "accept": [
+        "hated"
+      ],
+      "verse_reference": "Job 31:29"
+    },
+    {
+      "id": "job-31-q5",
+      "type": "fill_blank",
+      "question": "Job said if his land cried out against him, let _____ grow instead of wheat.",
+      "answer": "briers",
+      "accept": [
+        "thorns",
+        "thistles"
+      ],
+      "verse_reference": "Job 31:38-40"
+    }
+  ]
+}

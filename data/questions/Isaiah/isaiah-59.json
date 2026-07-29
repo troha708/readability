@@ -1,0 +1,59 @@
+{
+  "book": "Isaiah",
+  "chapter": 59,
+  "questions": [
+    {
+      "id": "isaiah-59-q1",
+      "type": "multiple_choice",
+      "question": "What does Isaiah 59 say has separated the people from God?",
+      "options": [
+        "The great distance between them",
+        "The might of foreign nations",
+        "The ruin of the holy temple",
+        "Their iniquities and sins"
+      ],
+      "answer": "Their iniquities and sins",
+      "verse_reference": "Isaiah 59:2"
+    },
+    {
+      "id": "isaiah-59-q2",
+      "type": "multiple_choice",
+      "question": "What does God do when he sees there is no one to intervene, in Isaiah 59?",
+      "options": [
+        "He waits patiently for the people to repent of their sins on their own",
+        "His own arm brings salvation; he puts on righteousness as a breastplate",
+        "He sends out a prophet to call all the people to a great and solemn fast",
+        "He raises up a foreign king from afar to come and deliver his people"
+      ],
+      "answer": "His own arm brings salvation; he puts on righteousness as a breastplate",
+      "verse_reference": "Isaiah 59:16-17"
+    },
+    {
+      "id": "isaiah-59-q3",
+      "type": "true_false",
+      "question": "Isaiah 59 says justice is turned back, and truth has stumbled in the public squares.",
+      "answer": "true",
+      "verse_reference": "Isaiah 59:14"
+    },
+    {
+      "id": "isaiah-59-q4",
+      "type": "fill_blank",
+      "question": "Your iniquities have built _____ between you and your God.",
+      "answer": "barriers",
+      "accept": [
+        "separation"
+      ],
+      "verse_reference": "Isaiah 59:2"
+    },
+    {
+      "id": "isaiah-59-q5",
+      "type": "fill_blank",
+      "question": "The LORD saw it, and it displeased him that there was no _____.",
+      "answer": "justice",
+      "accept": [
+        "judgment"
+      ],
+      "verse_reference": "Isaiah 59:15"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "book": "Joel",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "joel-2-q1",
+      "type": "multiple_choice",
+      "question": "What does God call the people to do in Joel 2?",
+      "options": [
+        "Offer up a full thousand bulls and rams upon the temple altar of the LORD",
+        "Gather a great army together at once to drive out the cruel invading foe",
+        "Flee away to the safety of the far high mountains before the locusts ever once come",
+        "Return to him with all their heart, rending their hearts and not their garments"
+      ],
+      "answer": "Return to him with all their heart, rending their hearts and not their garments",
+      "verse_reference": "Joel 2:12-13"
+    },
+    {
+      "id": "joel-2-q2",
+      "type": "multiple_choice",
+      "question": "What famous promise about the Spirit appears in Joel 2?",
+      "options": [
+        "'I will raise up a king from David's line'",
+        "'I will scatter you among the nations'",
+        "'I will send a famine over all the land'",
+        "'I will pour out my Spirit on all flesh'"
+      ],
+      "answer": "'I will pour out my Spirit on all flesh'",
+      "verse_reference": "Joel 2:28"
+    },
+    {
+      "id": "joel-2-q3",
+      "type": "true_false",
+      "question": "Joel 2 says everyone who calls on the name of the LORD shall be saved.",
+      "answer": "true",
+      "verse_reference": "Joel 2:32"
+    },
+    {
+      "id": "joel-2-q4",
+      "type": "fill_blank",
+      "question": "Rend your _____ and not your garments. Return to the LORD your God.",
+      "answer": "hearts",
+      "accept": ["heart"],
+      "verse_reference": "Joel 2:13"
+    },
+    {
+      "id": "joel-2-q5",
+      "type": "fill_blank",
+      "question": "I will pour out my _____ on all flesh; your sons and daughters shall prophesy.",
+      "answer": "Spirit",
+      "verse_reference": "Joel 2:28"
+    }
+  ]
+}

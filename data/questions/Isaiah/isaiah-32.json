@@ -1,0 +1,56 @@
+{
+  "book": "Isaiah",
+  "chapter": 32,
+  "questions": [
+    {
+      "id": "isaiah-32-q1",
+      "type": "multiple_choice",
+      "question": "How will a king reign, according to Isaiah 32?",
+      "options": [
+        "In great wealth, and all the nations will serve him",
+        "In righteousness, and princes will rule in justice",
+        "In fear, and the people will tremble before him",
+        "In strength, and his armies will never fail"
+      ],
+      "answer": "In righteousness, and princes will rule in justice",
+      "verse_reference": "Isaiah 32:1"
+    },
+    {
+      "id": "isaiah-32-q2",
+      "type": "multiple_choice",
+      "question": "What happens when the Spirit is poured out from on high in Isaiah 32?",
+      "options": [
+        "The bright sun is darkened and all of the stars fall from the sky",
+        "All of the nations gather themselves together to wage war on Zion",
+        "The high mountains shake and tremble and all the valleys are filled",
+        "The wilderness becomes a fruitful field and justice and peace dwell"
+      ],
+      "answer": "The wilderness becomes a fruitful field and justice and peace dwell",
+      "verse_reference": "Isaiah 32:15-17"
+    },
+    {
+      "id": "isaiah-32-q3",
+      "type": "true_false",
+      "question": "Isaiah 32 says the effect of righteousness will be peace, and quietness and trust forever.",
+      "answer": "true",
+      "verse_reference": "Isaiah 32:17"
+    },
+    {
+      "id": "isaiah-32-q4",
+      "type": "fill_blank",
+      "question": "Behold, a king will reign in _____, and princes will rule in justice.",
+      "answer": "righteousness",
+      "accept": [
+        "justice"
+      ],
+      "verse_reference": "Isaiah 32:1"
+    },
+    {
+      "id": "isaiah-32-q5",
+      "type": "fill_blank",
+      "question": "The effect of righteousness will be _____, and the result of righteousness, quietness and trust forever.",
+      "answer": "peace",
+      "verse_reference": "Isaiah 32:17"
+    }
+  ]
+}

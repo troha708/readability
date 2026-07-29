@@ -1,0 +1,53 @@
+{
+  "book": "Judges",
+  "chapter": 12,
+  "questions": [
+    {
+      "id": "judges-12-q1",
+      "type": "multiple_choice",
+      "question": "What word exposed the fleeing Ephraimites at the Jordan?",
+      "options": [
+        "Shibboleth",
+        "Amen",
+        "Selah",
+        "Shalom aleichem"
+      ],
+      "answer": "Shibboleth",
+      "verse_reference": "Judges 12:6"
+    },
+    {
+      "id": "judges-12-q2",
+      "type": "multiple_choice",
+      "question": "Why could the Ephraimites not say the word correctly?",
+      "options": [
+        "They spoke a completely different language",
+        "They stayed silent out of fear",
+        "They deliberately lied about their tribe",
+        "They could not pronounce the \"sh\" sound"
+      ],
+      "answer": "They could not pronounce the \"sh\" sound",
+      "verse_reference": "Judges 12:6"
+    },
+    {
+      "id": "judges-12-q3",
+      "type": "true_false",
+      "question": "The men of Gilead under Jephthah fought against the tribe of Ephraim.",
+      "answer": "true",
+      "verse_reference": "Judges 12:4"
+    },
+    {
+      "id": "judges-12-q4",
+      "type": "fill_blank",
+      "question": "Those who could not pronounce \"_____\" correctly were identified and killed.",
+      "answer": "Shibboleth",
+      "verse_reference": "Judges 12:6"
+    },
+    {
+      "id": "judges-12-q5",
+      "type": "fill_blank",
+      "question": "This chapter also lists minor judges, including Ibzan, Elon, and _____.",
+      "answer": "Abdon",
+      "verse_reference": "Judges 12:13"
+    }
+  ]
+}

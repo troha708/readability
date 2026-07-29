@@ -1,0 +1,53 @@
+{
+  "book": "Jeremiah",
+  "chapter": 9,
+  "questions": [
+    {
+      "id": "jeremiah-9-q1",
+      "type": "multiple_choice",
+      "question": "Why does Jeremiah wish his eyes were a fountain of tears in chapter 9?",
+      "options": [
+        "To lament the great famine spreading across the land",
+        "To grieve deeply over the sudden death of the king",
+        "To mourn the loss of his own family and his kin",
+        "To weep day and night for the slain of his people"
+      ],
+      "answer": "To weep day and night for the slain of his people",
+      "verse_reference": "Jeremiah 9:1"
+    },
+    {
+      "id": "jeremiah-9-q2",
+      "type": "multiple_choice",
+      "question": "In what does God say a person should boast, according to Jeremiah 9?",
+      "options": [
+        "That he is far wiser than all of the counselors and the elders gathered in the whole of the land",
+        "That his great strength and his might far surpass that of every other mighty and seasoned warrior",
+        "That all of his riches and his many treasures are greater than those of any king now alive on earth",
+        "That he understands and knows the LORD, who practices steadfast love, justice, and righteousness"
+      ],
+      "answer": "That he understands and knows the LORD, who practices steadfast love, justice, and righteousness",
+      "verse_reference": "Jeremiah 9:23-24"
+    },
+    {
+      "id": "jeremiah-9-q3",
+      "type": "true_false",
+      "question": "Jeremiah 9 is sometimes called the lament of the 'weeping prophet.'",
+      "answer": "true",
+      "verse_reference": "Jeremiah 9:1"
+    },
+    {
+      "id": "jeremiah-9-q4",
+      "type": "fill_blank",
+      "question": "Let not the wise man boast in his wisdom... but let him who boasts boast in this, that he understands and knows _____.",
+      "answer": "me",
+      "verse_reference": "Jeremiah 9:23-24"
+    },
+    {
+      "id": "jeremiah-9-q5",
+      "type": "fill_blank",
+      "question": "Oh that my head were waters, and my eyes a fountain of _____!",
+      "answer": "tears",
+      "verse_reference": "Jeremiah 9:1"
+    }
+  ]
+}

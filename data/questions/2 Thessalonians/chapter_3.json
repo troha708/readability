@@ -1,0 +1,59 @@
+{
+  "book": "2 Thessalonians",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "2thess_3_1",
+      "type": "multiple_choice",
+      "question": "What does Paul command regarding those who are idle?",
+      "options": [
+        "Appoint them leaders",
+        "Keep away from them",
+        "Give them food",
+        "Pray for them daily"
+      ],
+      "correct": "Keep away from them",
+      "verse_ref": "2 Thessalonians 3:6",
+      "feedback": "Paul commands them to keep away from any brother walking in idleness."
+    },
+    {
+      "id": "2thess_3_2",
+      "type": "multiple_choice",
+      "question": "What rule did Paul give about those who will not work?",
+      "options": [
+        "They shall not eat",
+        "They must leave the church",
+        "They should fast",
+        "They must pray more"
+      ],
+      "correct": "They shall not eat",
+      "verse_ref": "2 Thessalonians 3:10",
+      "feedback": "If anyone is not willing to work, let him not eat."
+    },
+    {
+      "id": "2thess_3_3",
+      "type": "true_false",
+      "question": "Paul says the Lord is faithful and will guard believers against the evil one.",
+      "correct": true,
+      "verse_ref": "2 Thessalonians 3:3",
+      "feedback": "The Lord is faithful and will establish and guard them against the evil one."
+    },
+    {
+      "id": "2thess_3_4",
+      "type": "fill_in_the_blank",
+      "question": "Paul says do not grow _____ in doing good.",
+      "correct": "weary",
+      "accept": ["faint"],
+      "verse_ref": "2 Thessalonians 3:13",
+      "feedback": "Do not grow weary in doing good."
+    },
+    {
+      "id": "2thess_3_5",
+      "type": "fill_in_the_blank",
+      "question": "Paul says if anyone does not obey his instruction, do not regard him as an enemy but warn him as a _____.",
+      "correct": "brother",
+      "verse_ref": "2 Thessalonians 3:15",
+      "feedback": "Warn the disobedient as a brother, not as an enemy."
+    }
+  ]
+}

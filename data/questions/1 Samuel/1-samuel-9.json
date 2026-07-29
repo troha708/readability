@@ -1,0 +1,56 @@
+{
+  "book": "1 Samuel",
+  "chapter": 9,
+  "questions": [
+    {
+      "id": "1-samuel-9-q1",
+      "type": "multiple_choice",
+      "question": "What was Saul searching for when he came to Samuel?",
+      "options": [
+        "A bride from a distant town",
+        "A word from the seer Samuel",
+        "His father's lost donkeys",
+        "Grain for his father's house"
+      ],
+      "answer": "His father's lost donkeys",
+      "verse_reference": "1 Samuel 9:3"
+    },
+    {
+      "id": "1-samuel-9-q2",
+      "type": "multiple_choice",
+      "question": "What was notable about Saul's appearance?",
+      "options": [
+        "He was bent and worn down by his great age",
+        "He was ruddy and had a very handsome face",
+        "He was lame and crippled in both of his feet",
+        "He was tall, head and shoulders above others"
+      ],
+      "answer": "He was tall, head and shoulders above others",
+      "verse_reference": "1 Samuel 9:2"
+    },
+    {
+      "id": "1-samuel-9-q3",
+      "type": "true_false",
+      "question": "God had revealed to Samuel that Saul would be the one to lead Israel.",
+      "answer": "true",
+      "verse_reference": "1 Samuel 9:15-17"
+    },
+    {
+      "id": "1-samuel-9-q4",
+      "type": "fill_blank",
+      "question": "Saul was without equal among the Israelites — a head _____ than any of the people.",
+      "answer": "taller",
+      "accept": [
+        "higher"
+      ],
+      "verse_reference": "1 Samuel 9:2"
+    },
+    {
+      "id": "1-samuel-9-q5",
+      "type": "fill_blank",
+      "question": "Saul was from the tribe of _____, the smallest tribe of Israel.",
+      "answer": "Benjamin",
+      "verse_reference": "1 Samuel 9:21"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "book": "1 Chronicles",
+  "chapter": 27,
+  "questions": [
+    {
+      "id": "1-chronicles-27-q1",
+      "type": "multiple_choice",
+      "question": "How were David's military divisions organized?",
+      "options": [
+        "Twelve divisions serving month by month",
+        "Ranked by the age of each man",
+        "Sorted by the wealth of each family",
+        "Grouped by tribe and nothing more"
+      ],
+      "answer": "Twelve divisions serving month by month",
+      "verse_reference": "1 Chronicles 27:1"
+    },
+    {
+      "id": "1-chronicles-27-q2",
+      "type": "multiple_choice",
+      "question": "Who was in charge of the king's treasuries?",
+      "options": [
+        "Joab",
+        "Asaph",
+        "Azmaveth",
+        "Benaiah son of Jehoiada"
+      ],
+      "answer": "Azmaveth",
+      "verse_reference": "1 Chronicles 27:25"
+    },
+    {
+      "id": "1-chronicles-27-q3",
+      "type": "true_false",
+      "question": "Each monthly military division numbered 24,000 men.",
+      "answer": "true",
+      "verse_reference": "1 Chronicles 27:1"
+    },
+    {
+      "id": "1-chronicles-27-q4",
+      "type": "fill_blank",
+      "question": "Joab was the commander of the king's _____.",
+      "answer": "army",
+      "accept": [
+        "host"
+      ],
+      "verse_reference": "1 Chronicles 27:34"
+    },
+    {
+      "id": "1-chronicles-27-q5",
+      "type": "fill_blank",
+      "question": "This chapter lists the leaders over the _____ of Israel.",
+      "answer": "tribes",
+      "verse_reference": "1 Chronicles 27:16-22"
+    }
+  ]
+}

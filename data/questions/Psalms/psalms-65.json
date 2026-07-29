@@ -1,0 +1,59 @@
+{
+  "book": "Psalms",
+  "chapter": 65,
+  "questions": [
+    {
+      "id": "psalms-65-q1",
+      "type": "multiple_choice",
+      "question": "For what does Psalm 65 especially praise God?",
+      "options": [
+        "His everlasting covenant with David and with his royal house",
+        "His holy law that was given to Israel upon the mountain",
+        "His care for the earth, providing rain and a rich harvest",
+        "His righteous judgment of the nations from his holy throne"
+      ],
+      "answer": "His care for the earth, providing rain and a rich harvest",
+      "verse_reference": "Psalm 65:9-13"
+    },
+    {
+      "id": "psalms-65-q2",
+      "type": "multiple_choice",
+      "question": "What does God do to the year, according to this psalm?",
+      "options": [
+        "Guards it with his angels",
+        "Fills it with his glory",
+        "Crowns it with his bounty",
+        "Waters it with his mercy"
+      ],
+      "answer": "Crowns it with his bounty",
+      "verse_reference": "Psalm 65:11"
+    },
+    {
+      "id": "psalms-65-q3",
+      "type": "true_false",
+      "question": "The psalm says God forgives transgressions and that those he chooses dwell in his courts.",
+      "answer": "true",
+      "verse_reference": "Psalm 65:3-4"
+    },
+    {
+      "id": "psalms-65-q4",
+      "type": "fill_blank",
+      "question": "You crown the year with your _____.",
+      "answer": "bounty",
+      "accept": [
+        "goodness"
+      ],
+      "verse_reference": "Psalm 65:11"
+    },
+    {
+      "id": "psalms-65-q5",
+      "type": "fill_blank",
+      "question": "Praise is due to you, O God, in _____.",
+      "answer": "Zion",
+      "accept": [
+        "Sion"
+      ],
+      "verse_reference": "Psalm 65:1"
+    }
+  ]
+}

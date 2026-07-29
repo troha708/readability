@@ -1,0 +1,53 @@
+{
+  "book": "Leviticus",
+  "chapter": 6,
+  "questions": [
+    {
+      "id": "leviticus-6-q1",
+      "type": "multiple_choice",
+      "question": "What was to be kept burning continually and never go out?",
+      "options": [
+        "The lamp before the curtain",
+        "The incense in the holy place",
+        "The torch at the tent door",
+        "The fire on the altar"
+      ],
+      "answer": "The fire on the altar",
+      "verse_reference": "Leviticus 6:13"
+    },
+    {
+      "id": "leviticus-6-q2",
+      "type": "multiple_choice",
+      "question": "To whom are the instructions of this chapter mainly given?",
+      "options": [
+        "All of the people",
+        "The priests",
+        "The elders",
+        "Foreigners"
+      ],
+      "answer": "The priests",
+      "verse_reference": "Leviticus 6:9"
+    },
+    {
+      "id": "leviticus-6-q3",
+      "type": "true_false",
+      "question": "The fire on the altar was to be kept burning continually and never go out.",
+      "answer": "true",
+      "verse_reference": "Leviticus 6:13"
+    },
+    {
+      "id": "leviticus-6-q4",
+      "type": "fill_blank",
+      "question": "\"The _____ shall be kept burning on the altar continually; it shall not go out.\"",
+      "answer": "fire",
+      "verse_reference": "Leviticus 6:13"
+    },
+    {
+      "id": "leviticus-6-q5",
+      "type": "fill_blank",
+      "question": "Each morning the priest was to remove the _____ from the altar.",
+      "answer": "ashes",
+      "verse_reference": "Leviticus 6:10-11"
+    }
+  ]
+}

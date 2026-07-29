@@ -1,0 +1,53 @@
+{
+  "book": "Zephaniah",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "zephaniah-3-q1",
+      "type": "multiple_choice",
+      "question": "How does Zephaniah 3 end after pronouncing judgment?",
+      "options": [
+        "With a final word of complete destruction",
+        "With a vision of locusts devouring the land",
+        "With a song of joy and God's delight in his people",
+        "With a list of the nations still to be judged"
+      ],
+      "answer": "With a song of joy and God's delight in his people",
+      "verse_reference": "Zephaniah 3:14-17"
+    },
+    {
+      "id": "zephaniah-3-q2",
+      "type": "multiple_choice",
+      "question": "What does Zephaniah 3 say the LORD will do in the midst of his people?",
+      "options": [
+        "Rejoice over them with gladness and exult over them with loud singing",
+        "Turn himself away from them and hide his face in his fierce anger",
+        "Scatter them all abroad like chaff among the far and the distant nations",
+        "Repay them all in full according to every one of their wicked deeds"
+      ],
+      "answer": "Rejoice over them with gladness and exult over them with loud singing",
+      "verse_reference": "Zephaniah 3:17"
+    },
+    {
+      "id": "zephaniah-3-q3",
+      "type": "true_false",
+      "question": "Zephaniah 3 says the LORD your God is in your midst, a mighty one who will save.",
+      "answer": "true",
+      "verse_reference": "Zephaniah 3:17"
+    },
+    {
+      "id": "zephaniah-3-q4",
+      "type": "fill_blank",
+      "question": "The LORD your God is in your midst, a mighty one who will _____.",
+      "answer": "save",
+      "verse_reference": "Zephaniah 3:17"
+    },
+    {
+      "id": "zephaniah-3-q5",
+      "type": "fill_blank",
+      "question": "He will rejoice over you with gladness; he will exult over you with loud _____.",
+      "answer": "singing",
+      "verse_reference": "Zephaniah 3:17"
+    }
+  ]
+}

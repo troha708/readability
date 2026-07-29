@@ -1,0 +1,56 @@
+{
+  "book": "1 Kings",
+  "chapter": 7,
+  "questions": [
+    {
+      "id": "1-kings-7-q1",
+      "type": "multiple_choice",
+      "question": "What else did Solomon build, taking thirteen years?",
+      "options": [
+        "His own palace",
+        "A wall",
+        "A road",
+        "A fleet of ships"
+      ],
+      "answer": "His own palace",
+      "verse_reference": "1 Kings 7:1"
+    },
+    {
+      "id": "1-kings-7-q2",
+      "type": "multiple_choice",
+      "question": "Who was the skilled bronze worker Solomon brought from Tyre?",
+      "options": [
+        "Hiram (Huram)",
+        "Bezalel of Judah",
+        "Oholiab",
+        "Adoniram"
+      ],
+      "answer": "Hiram (Huram)",
+      "verse_reference": "1 Kings 7:13-14"
+    },
+    {
+      "id": "1-kings-7-q3",
+      "type": "true_false",
+      "question": "Two great bronze pillars, named Jachin and Boaz, were set up at the temple.",
+      "answer": "true",
+      "verse_reference": "1 Kings 7:21"
+    },
+    {
+      "id": "1-kings-7-q4",
+      "type": "fill_blank",
+      "question": "Solomon also built his own _____, which took thirteen years.",
+      "answer": "palace",
+      "accept": [
+        "house"
+      ],
+      "verse_reference": "1 Kings 7:1"
+    },
+    {
+      "id": "1-kings-7-q5",
+      "type": "fill_blank",
+      "question": "The two bronze pillars at the temple were named Jachin and _____.",
+      "answer": "Boaz",
+      "verse_reference": "1 Kings 7:21"
+    }
+  ]
+}

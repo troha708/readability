@@ -1,0 +1,53 @@
+{
+  "book": "Leviticus",
+  "chapter": 20,
+  "questions": [
+    {
+      "id": "leviticus-20-q1",
+      "type": "multiple_choice",
+      "question": "What does chapter 20 mostly contain?",
+      "options": [
+        "Penalties for the sins listed earlier",
+        "Garments for the serving priests",
+        "Blessings for the obedient people",
+        "Offerings for the yearly festivals"
+      ],
+      "answer": "Penalties for the sins listed earlier",
+      "verse_reference": "Leviticus 20:1-5"
+    },
+    {
+      "id": "leviticus-20-q2",
+      "type": "multiple_choice",
+      "question": "What practice, giving children to Molech, was strictly forbidden?",
+      "options": [
+        "Child sacrifice",
+        "Tithing",
+        "Ritual circumcision",
+        "Fasting"
+      ],
+      "answer": "Child sacrifice",
+      "verse_reference": "Leviticus 20:2"
+    },
+    {
+      "id": "leviticus-20-q3",
+      "type": "true_false",
+      "question": "God called Israel to be holy and separated from the nations to be his own.",
+      "answer": "true",
+      "verse_reference": "Leviticus 20:26"
+    },
+    {
+      "id": "leviticus-20-q4",
+      "type": "fill_blank",
+      "question": "God said, \"You shall be holy to me, for I the LORD am _____.\"",
+      "answer": "holy",
+      "verse_reference": "Leviticus 20:26"
+    },
+    {
+      "id": "leviticus-20-q5",
+      "type": "fill_blank",
+      "question": "The Israelites were not to give any of their children to _____, a false god.",
+      "answer": "Molech",
+      "verse_reference": "Leviticus 20:2"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Galatians",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "gal-4-q1",
+      "type": "multiple_choice",
+      "question": "Paul uses the story of Abraham's two sons to illustrate what?",
+      "options": [
+        "The temple in Jerusalem versus the rival one built in Samaria",
+        "The kingdom of Judah versus the northern kingdom of Israel",
+        "The old covenant of law versus the new covenant of promise",
+        "The wisdom of the Greeks versus the holy law of Moses"
+      ],
+      "answer": "The old covenant of law versus the new covenant of promise",
+      "verse_reference": "Galatians 4:22-26"
+    },
+    {
+      "id": "gal-4-q2",
+      "type": "multiple_choice",
+      "question": "Because believers are sons, God sent what into their hearts?",
+      "options": [
+        "The law of Moses",
+        "The Spirit of his Son",
+        "An angel from heaven",
+        "A prophet like Elijah"
+      ],
+      "answer": "The Spirit of his Son",
+      "verse_reference": "Galatians 4:6"
+    },
+    {
+      "id": "gal-4-q3",
+      "type": "true_false",
+      "question": "Paul is concerned the Galatians are turning back to weak and worthless elementary principles.",
+      "answer": "true",
+      "verse_reference": "Galatians 4:9"
+    },
+    {
+      "id": "gal-4-q4",
+      "type": "fill_blank",
+      "question": "God sent forth his Son, born of a woman, born under the law, to _____ those who were under the law.",
+      "answer": "redeem",
+      "verse_reference": "Galatians 4:4-5"
+    },
+    {
+      "id": "gal-4-q5",
+      "type": "fill_blank",
+      "question": "The Spirit cries in our hearts, '_____, Father!'",
+      "answer": "Abba",
+      "verse_reference": "Galatians 4:6"
+    }
+  ]
+}

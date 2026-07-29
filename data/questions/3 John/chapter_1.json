@@ -1,0 +1,58 @@
+{
+  "book": "3 John",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "3jn_1_1",
+      "type": "multiple_choice",
+      "question": "Who does John praise for his hospitality to traveling missionaries?",
+      "options": [
+        "Demetrius",
+        "Philemon",
+        "Gaius",
+        "Diotrephes"
+      ],
+      "correct": "Gaius",
+      "verse_ref": "3 John 1:5-6",
+      "feedback": "John praises Gaius for showing hospitality to traveling brothers."
+    },
+    {
+      "id": "3jn_1_2",
+      "type": "multiple_choice",
+      "question": "Who does John criticize for loving to be first and refusing to welcome the brothers?",
+      "options": [
+        "Diotrephes",
+        "Gaius",
+        "Alexander the coppersmith",
+        "Hymenaeus"
+      ],
+      "correct": "Diotrephes",
+      "verse_ref": "3 John 1:9-10",
+      "feedback": "Diotrephes loves to be first and refuses to welcome the brothers."
+    },
+    {
+      "id": "3jn_1_3",
+      "type": "true_false",
+      "question": "John says Demetrius is well spoken of by everyone.",
+      "correct": true,
+      "verse_ref": "3 John 1:12",
+      "feedback": "Demetrius is well spoken of by everyone and by the truth itself."
+    },
+    {
+      "id": "3jn_1_4",
+      "type": "fill_in_the_blank",
+      "question": "John says he has no greater joy than to hear that his children are walking in the _____.",
+      "correct": "truth",
+      "verse_ref": "3 John 1:4",
+      "feedback": "No greater joy than to hear that my children are walking in the truth."
+    },
+    {
+      "id": "3jn_1_5",
+      "type": "fill_in_the_blank",
+      "question": "Dear friend, do not imitate what is evil but what is _____.",
+      "correct": "good",
+      "verse_ref": "3 John 1:11",
+      "feedback": "Do not imitate evil but imitate good."
+    }
+  ]
+}

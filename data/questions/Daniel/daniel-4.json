@@ -1,0 +1,59 @@
+{
+  "book": "Daniel",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "daniel-4-q1",
+      "type": "multiple_choice",
+      "question": "What did Nebuchadnezzar's dream of a great tree foretell?",
+      "options": [
+        "That a great famine would strike the whole land",
+        "That he would be driven out to live like a beast",
+        "That his kingdom would be divided among his sons",
+        "That a foreign army would soon conquer Babylon"
+      ],
+      "answer": "That he would be driven out to live like a beast",
+      "verse_reference": "Daniel 4:24-25"
+    },
+    {
+      "id": "daniel-4-q2",
+      "type": "multiple_choice",
+      "question": "What happened to Nebuchadnezzar as the dream foretold?",
+      "options": [
+        "He was slain by his own scheming officials in the deep dark of the night",
+        "He lost his sanity and ate grass like an ox for seven periods of time",
+        "He was struck completely blind and could not rule for a whole year",
+        "He fled away from the city and lived all alone out in the desert"
+      ],
+      "answer": "He lost his sanity and ate grass like an ox for seven periods of time",
+      "verse_reference": "Daniel 4:33"
+    },
+    {
+      "id": "daniel-4-q3",
+      "type": "true_false",
+      "question": "When Nebuchadnezzar's reason returned, he praised and honored the Most High.",
+      "answer": "true",
+      "verse_reference": "Daniel 4:34"
+    },
+    {
+      "id": "daniel-4-q4",
+      "type": "fill_blank",
+      "question": "The Most High rules the kingdom of men and gives it to whom he _____.",
+      "answer": "wishes",
+      "accept": [
+        "will"
+      ],
+      "verse_reference": "Daniel 4:25"
+    },
+    {
+      "id": "daniel-4-q5",
+      "type": "fill_blank",
+      "question": "Those who walk in pride God is able to _____.",
+      "answer": "humble",
+      "accept": [
+        "abase"
+      ],
+      "verse_reference": "Daniel 4:37"
+    }
+  ]
+}

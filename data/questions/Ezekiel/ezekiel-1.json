@@ -1,0 +1,56 @@
+{
+  "book": "Ezekiel",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "ezekiel-1-q1",
+      "type": "multiple_choice",
+      "question": "What did Ezekiel see by the Chebar canal in his opening vision?",
+      "options": [
+        "A long scroll flying through the air, all covered over in writing",
+        "A great and shining city descending from heaven in bright light",
+        "A wide valley filled with very dry and scattered dead bones",
+        "Four living creatures and wheels, with the glory of the LORD"
+      ],
+      "answer": "Four living creatures and wheels, with the glory of the LORD",
+      "verse_reference": "Ezekiel 1:4-15"
+    },
+    {
+      "id": "ezekiel-1-q2",
+      "type": "multiple_choice",
+      "question": "How many faces did each living creature have?",
+      "options": [
+        "Two (a lion and a lamb)",
+        "Seven (one for each of the spirits)",
+        "Six (one for each wing)",
+        "Four (man, lion, ox, and eagle)"
+      ],
+      "answer": "Four (man, lion, ox, and eagle)",
+      "verse_reference": "Ezekiel 1:10"
+    },
+    {
+      "id": "ezekiel-1-q3",
+      "type": "true_false",
+      "question": "Ezekiel saw the likeness of the glory of the LORD and fell on his face.",
+      "answer": "true",
+      "verse_reference": "Ezekiel 1:28"
+    },
+    {
+      "id": "ezekiel-1-q4",
+      "type": "fill_blank",
+      "question": "Above the expanse was the likeness of a _____, in appearance like sapphire.",
+      "answer": "throne",
+      "verse_reference": "Ezekiel 1:26"
+    },
+    {
+      "id": "ezekiel-1-q5",
+      "type": "fill_blank",
+      "question": "The vision came to Ezekiel among the exiles by the River _____.",
+      "answer": "Kebar",
+      "accept": [
+        "Chebar"
+      ],
+      "verse_reference": "Ezekiel 1:1"
+    }
+  ]
+}

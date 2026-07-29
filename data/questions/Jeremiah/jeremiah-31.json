@@ -1,0 +1,56 @@
+{
+  "book": "Jeremiah",
+  "chapter": 31,
+  "questions": [
+    {
+      "id": "jeremiah-31-q1",
+      "type": "multiple_choice",
+      "question": "What new thing does God promise in Jeremiah 31?",
+      "options": [
+        "A new and glorious temple far greater than Solomon's",
+        "A new covenant, with his law written on their hearts",
+        "A new king who would sit upon the throne of David",
+        "A new and spacious land far beyond the great river"
+      ],
+      "answer": "A new covenant, with his law written on their hearts",
+      "verse_reference": "Jeremiah 31:31-33"
+    },
+    {
+      "id": "jeremiah-31-q2",
+      "type": "multiple_choice",
+      "question": "What does God say he will do with their sin under the new covenant?",
+      "options": [
+        "Hide away his face from them entirely until they repent",
+        "Punish it on to the third and even the fourth generation",
+        "Forgive their iniquity and remember their sin no more",
+        "Demand from them a very great sacrifice in order to cover it"
+      ],
+      "answer": "Forgive their iniquity and remember their sin no more",
+      "verse_reference": "Jeremiah 31:34"
+    },
+    {
+      "id": "jeremiah-31-q3",
+      "type": "true_false",
+      "question": "Jeremiah 31 pictures Rachel weeping for her children and refusing to be comforted.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 31:15"
+    },
+    {
+      "id": "jeremiah-31-q4",
+      "type": "fill_blank",
+      "question": "I will put my law within them, and I will write it on their _____.",
+      "answer": "hearts",
+      "accept": [
+        "heart"
+      ],
+      "verse_reference": "Jeremiah 31:33"
+    },
+    {
+      "id": "jeremiah-31-q5",
+      "type": "fill_blank",
+      "question": "I have loved you with an everlasting _____; therefore I have continued my faithfulness to you.",
+      "answer": "love",
+      "verse_reference": "Jeremiah 31:3"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Hosea",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "hosea-3-q1",
+      "type": "multiple_choice",
+      "question": "What did God tell Hosea to do in chapter 3?",
+      "options": [
+        "Go again and love an adulterous woman, as God loves Israel",
+        "Stop all his prophesying and go serve in the holy temple",
+        "Leave the whole land behind and go dwell in the land of Egypt",
+        "Divorce his own wife at once and go and marry another"
+      ],
+      "answer": "Go again and love an adulterous woman, as God loves Israel",
+      "verse_reference": "Hosea 3:1"
+    },
+    {
+      "id": "hosea-3-q2",
+      "type": "multiple_choice",
+      "question": "What does this act symbolize?",
+      "options": [
+        "The final and complete destruction of the whole northern kingdom",
+        "God's enduring love and Israel's eventual return to seek him",
+        "The great and terrible famine coming across the whole of the land",
+        "The sudden rise of a new and powerful king in the city of Samaria"
+      ],
+      "answer": "God's enduring love and Israel's eventual return to seek him",
+      "verse_reference": "Hosea 3:5"
+    },
+    {
+      "id": "hosea-3-q3",
+      "type": "true_false",
+      "question": "Hosea bought back his wife, just as God redeems his people.",
+      "answer": "true",
+      "verse_reference": "Hosea 3:2"
+    },
+    {
+      "id": "hosea-3-q4",
+      "type": "fill_blank",
+      "question": "Hosea bought her for fifteen shekels of silver and a homer and a half of _____.",
+      "answer": "barley",
+      "verse_reference": "Hosea 3:2"
+    },
+    {
+      "id": "hosea-3-q5",
+      "type": "fill_blank",
+      "question": "Afterward the children of Israel shall return and seek the LORD their God and David their _____.",
+      "answer": "king",
+      "verse_reference": "Hosea 3:5"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "book": "Deuteronomy",
+  "chapter": 5,
+  "questions": [
+    {
+      "id": "deuteronomy-5-q1",
+      "type": "multiple_choice",
+      "question": "What does Moses repeat in chapter 5?",
+      "options": [
+        "The Ten Commandments",
+        "The creation account",
+        "The feasts",
+        "The plagues"
+      ],
+      "answer": "The Ten Commandments",
+      "verse_reference": "Deuteronomy 5:6-21"
+    },
+    {
+      "id": "deuteronomy-5-q2",
+      "type": "multiple_choice",
+      "question": "How did the people respond to hearing God's voice from the fire?",
+      "options": [
+        "They built an idol of gold and bowed down to worship it",
+        "They fled in terror back to their tents in the camp",
+        "They rejoiced and sang songs of praise to the LORD",
+        "They were afraid and asked Moses to be the go-between"
+      ],
+      "answer": "They were afraid and asked Moses to be the go-between",
+      "verse_reference": "Deuteronomy 5:24-27"
+    },
+    {
+      "id": "deuteronomy-5-q3",
+      "type": "true_false",
+      "question": "The fourth commandment is to keep the Sabbath day holy.",
+      "answer": "true",
+      "verse_reference": "Deuteronomy 5:12"
+    },
+    {
+      "id": "deuteronomy-5-q4",
+      "type": "fill_blank",
+      "question": "\"_____ your father and your mother,\" as the LORD commanded you.",
+      "answer": "Honor",
+      "accept": [
+        "Honour"
+      ],
+      "verse_reference": "Deuteronomy 5:16"
+    },
+    {
+      "id": "deuteronomy-5-q5",
+      "type": "fill_blank",
+      "question": "Afraid of God's voice, the people asked _____ to speak to them instead.",
+      "answer": "Moses",
+      "verse_reference": "Deuteronomy 5:27"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "2 Samuel",
+  "chapter": 23,
+  "questions": [
+    {
+      "id": "2-samuel-23-q1",
+      "type": "multiple_choice",
+      "question": "What does chapter 23 record besides David's last words?",
+      "options": [
+        "A census of the twelve tribes",
+        "A calendar of all of the yearly festivals",
+        "A code of laws for the kingdom",
+        "A list of David's mighty men (warriors)"
+      ],
+      "answer": "A list of David's mighty men (warriors)",
+      "verse_reference": "2 Samuel 23:8"
+    },
+    {
+      "id": "2-samuel-23-q2",
+      "type": "multiple_choice",
+      "question": "What daring feat did three of David's mighty men perform?",
+      "options": [
+        "Held a whole field of lentils all alone against the Philistines",
+        "Struck down a lion in a pit on a snowy day",
+        "Defeated four hundred men in a single fierce battle",
+        "Broke through enemy lines to get David water from Bethlehem"
+      ],
+      "answer": "Broke through enemy lines to get David water from Bethlehem",
+      "verse_reference": "2 Samuel 23:15-16"
+    },
+    {
+      "id": "2-samuel-23-q3",
+      "type": "true_false",
+      "question": "David poured out the water from Bethlehem to the LORD rather than drink it.",
+      "answer": "true",
+      "verse_reference": "2 Samuel 23:16-17"
+    },
+    {
+      "id": "2-samuel-23-q4",
+      "type": "fill_blank",
+      "question": "David's elite warriors were known as his _____ men.",
+      "answer": "mighty",
+      "verse_reference": "2 Samuel 23:8"
+    },
+    {
+      "id": "2-samuel-23-q5",
+      "type": "fill_blank",
+      "question": "Three mighty men broke through enemy lines to bring David water from _____.",
+      "answer": "Bethlehem",
+      "verse_reference": "2 Samuel 23:15-16"
+    }
+  ]
+}

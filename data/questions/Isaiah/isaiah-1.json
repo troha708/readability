@@ -1,0 +1,57 @@
+{
+  "book": "Isaiah",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "isaiah-1-q1",
+      "type": "multiple_choice",
+      "question": "How does Isaiah 1 describe the nation of Judah?",
+      "options": [
+        "A small and weak nation, sorely oppressed by its many neighbors",
+        "A wealthy and prosperous nation, secure in its very great riches",
+        "A sinful nation, laden with iniquity, having forsaken the LORD",
+        "A righteous nation, ever faithful to the LORD and his covenant"
+      ],
+      "answer": "A sinful nation, laden with iniquity, having forsaken the LORD",
+      "verse_reference": "Isaiah 1:4"
+    },
+    {
+      "id": "isaiah-1-q2",
+      "type": "multiple_choice",
+      "question": "What does God invite the people to do in Isaiah 1?",
+      "options": [
+        "'Bring me yet more sacrifices and feasts'; only then will I turn aside and hear all your prayers",
+        "'Flee away from the city at once'; for my judgment has already fallen heavily upon this whole place",
+        "'Depart far from me, you sinners'; for your guilt is now far too great for me to ever once pardon",
+        "'Come now, let us reason together'; though sins be like scarlet, they shall be white as snow"
+      ],
+      "answer": "'Come now, let us reason together'; though sins be like scarlet, they shall be white as snow",
+      "verse_reference": "Isaiah 1:18"
+    },
+    {
+      "id": "isaiah-1-q3",
+      "type": "true_false",
+      "question": "God says he is weary of empty sacrifices when the people's hands are full of blood.",
+      "answer": "true",
+      "verse_reference": "Isaiah 1:11-15"
+    },
+    {
+      "id": "isaiah-1-q4",
+      "type": "fill_blank",
+      "question": "Though your sins are like scarlet, they shall be as white as _____.",
+      "answer": "snow",
+      "verse_reference": "Isaiah 1:18"
+    },
+    {
+      "id": "isaiah-1-q5",
+      "type": "fill_blank",
+      "question": "Wash yourselves; make yourselves clean; stop doing evil; learn to do _____.",
+      "answer": "right",
+      "accept": [
+        "well",
+        "good"
+      ],
+      "verse_reference": "Isaiah 1:16-17"
+    }
+  ]
+}

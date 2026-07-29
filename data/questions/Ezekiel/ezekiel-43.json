@@ -1,0 +1,53 @@
+{
+  "book": "Ezekiel",
+  "chapter": 43,
+  "questions": [
+    {
+      "id": "ezekiel-43-q1",
+      "type": "multiple_choice",
+      "question": "What returned to the temple in Ezekiel 43?",
+      "options": [
+        "A great army, marching from the north",
+        "The glory of the LORD, entering by the east gate",
+        "The ark of the covenant, carried in by the priests",
+        "A river of life, flowing from the altar"
+      ],
+      "answer": "The glory of the LORD, entering by the east gate",
+      "verse_reference": "Ezekiel 43:2-4"
+    },
+    {
+      "id": "ezekiel-43-q2",
+      "type": "multiple_choice",
+      "question": "What did God call the temple in Ezekiel 43?",
+      "options": [
+        "A house of prayer where all of the many nations of the whole earth would gather together",
+        "A great memorial built up to honor all of the kings of the royal house of David",
+        "A strong and mighty fortress to stand firm against all the surrounding hostile peoples",
+        "The place of his throne and the place of the soles of his feet, where he will dwell forever"
+      ],
+      "answer": "The place of his throne and the place of the soles of his feet, where he will dwell forever",
+      "verse_reference": "Ezekiel 43:7"
+    },
+    {
+      "id": "ezekiel-43-q3",
+      "type": "true_false",
+      "question": "Ezekiel 43 also gives instructions for the altar and its offerings.",
+      "answer": "true",
+      "verse_reference": "Ezekiel 43:13-27"
+    },
+    {
+      "id": "ezekiel-43-q4",
+      "type": "fill_blank",
+      "question": "The glory of the LORD entered the temple by the gate facing _____.",
+      "answer": "east",
+      "verse_reference": "Ezekiel 43:4"
+    },
+    {
+      "id": "ezekiel-43-q5",
+      "type": "fill_blank",
+      "question": "This is the place of my throne... where I will dwell in the midst of the people of Israel _____.",
+      "answer": "forever",
+      "verse_reference": "Ezekiel 43:7"
+    }
+  ]
+}

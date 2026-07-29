@@ -1,0 +1,56 @@
+{
+  "book": "1 Chronicles",
+  "chapter": 5,
+  "questions": [
+    {
+      "id": "1-chronicles-5-q1",
+      "type": "multiple_choice",
+      "question": "Why did Reuben lose his birthright?",
+      "options": [
+        "He killed his own brother",
+        "He worshiped foreign idols",
+        "He fled away to Egypt",
+        "He defiled his father's bed"
+      ],
+      "answer": "He defiled his father's bed",
+      "verse_reference": "1 Chronicles 5:1"
+    },
+    {
+      "id": "1-chronicles-5-q2",
+      "type": "multiple_choice",
+      "question": "What happened to the eastern tribes because of their unfaithfulness?",
+      "options": [
+        "A famine drove them from their land",
+        "Their flocks and herds were all lost",
+        "They were taken into exile by Assyria",
+        "They were scattered among the Moabites"
+      ],
+      "answer": "They were taken into exile by Assyria",
+      "verse_reference": "1 Chronicles 5:26"
+    },
+    {
+      "id": "1-chronicles-5-q3",
+      "type": "true_false",
+      "question": "The Reubenites and Gadites cried out to God in battle and were helped because they trusted him.",
+      "answer": "true",
+      "verse_reference": "1 Chronicles 5:20"
+    },
+    {
+      "id": "1-chronicles-5-q4",
+      "type": "fill_blank",
+      "question": "The birthright was given to the sons of _____, son of Israel.",
+      "answer": "Joseph",
+      "verse_reference": "1 Chronicles 5:1"
+    },
+    {
+      "id": "1-chronicles-5-q5",
+      "type": "fill_blank",
+      "question": "God stirred up the spirit of Pul (Tiglath-pileser), king of _____.",
+      "answer": "Assyria",
+      "accept": [
+        "Asshur"
+      ],
+      "verse_reference": "1 Chronicles 5:26"
+    }
+  ]
+}

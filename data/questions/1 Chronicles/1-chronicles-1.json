@@ -1,0 +1,53 @@
+{
+  "book": "1 Chronicles",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "1-chronicles-1-q1",
+      "type": "multiple_choice",
+      "question": "With whose name does the genealogy in 1 Chronicles 1 begin?",
+      "options": [
+        "Noah",
+        "Abraham",
+        "Adam",
+        "Seth"
+      ],
+      "answer": "Adam",
+      "verse_reference": "1 Chronicles 1:1"
+    },
+    {
+      "id": "1-chronicles-1-q2",
+      "type": "multiple_choice",
+      "question": "Who is described as the first to be a mighty one on the earth?",
+      "options": [
+        "Nimrod",
+        "Cush",
+        "Peleg his son",
+        "Eber"
+      ],
+      "answer": "Nimrod",
+      "verse_reference": "1 Chronicles 1:10"
+    },
+    {
+      "id": "1-chronicles-1-q3",
+      "type": "true_false",
+      "question": "Esau is also called Edom in this chapter.",
+      "answer": "true",
+      "verse_reference": "1 Chronicles 1:35"
+    },
+    {
+      "id": "1-chronicles-1-q4",
+      "type": "fill_blank",
+      "question": "In the days of _____, the earth was divided.",
+      "answer": "Peleg",
+      "verse_reference": "1 Chronicles 1:19"
+    },
+    {
+      "id": "1-chronicles-1-q5",
+      "type": "fill_blank",
+      "question": "Abram is the same person as _____.",
+      "answer": "Abraham",
+      "verse_reference": "1 Chronicles 1:27"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "book": "Joshua",
+  "chapter": 14,
+  "questions": [
+    {
+      "id": "joshua-14-q1",
+      "type": "multiple_choice",
+      "question": "Who asked for the hill country (Hebron) that had been promised him?",
+      "options": [
+        "Caleb",
+        "Joshua",
+        "Othniel",
+        "Eleazar"
+      ],
+      "answer": "Caleb",
+      "verse_reference": "Joshua 14:6-12"
+    },
+    {
+      "id": "joshua-14-q2",
+      "type": "multiple_choice",
+      "question": "How old was Caleb when he claimed his inheritance, still strong for war?",
+      "options": [
+        "85",
+        "75",
+        "95",
+        "65"
+      ],
+      "answer": "85",
+      "verse_reference": "Joshua 14:10"
+    },
+    {
+      "id": "joshua-14-q3",
+      "type": "true_false",
+      "question": "Caleb had wholly followed the LORD when he was one of the twelve spies.",
+      "answer": "true",
+      "verse_reference": "Joshua 14:8-9"
+    },
+    {
+      "id": "joshua-14-q4",
+      "type": "fill_blank",
+      "question": "_____ asked Joshua for the mountain the LORD had promised him.",
+      "answer": "Caleb",
+      "verse_reference": "Joshua 14:12"
+    },
+    {
+      "id": "joshua-14-q5",
+      "type": "fill_blank",
+      "question": "Caleb was _____ years old but still as strong for war as ever.",
+      "answer": "eighty-five",
+      "accept": [
+        "85",
+        "eighty five",
+        "fourscore and five",
+        "five and eighty"
+      ],
+      "verse_reference": "Joshua 14:10-11"
+    }
+  ]
+}

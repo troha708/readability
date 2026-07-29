@@ -1,0 +1,57 @@
+{
+  "book": "Job",
+  "chapter": 27,
+  "questions": [
+    {
+      "id": "job-27-q1",
+      "type": "multiple_choice",
+      "question": "What did Job vow to hold onto?",
+      "options": [
+        "His complaint against his friends",
+        "His integrity and righteousness",
+        "His hope of returning wealth",
+        "His silence before the Almighty"
+      ],
+      "answer": "His integrity and righteousness",
+      "verse_reference": "Job 27:5-6"
+    },
+    {
+      "id": "job-27-q2",
+      "type": "multiple_choice",
+      "question": "By what did Job swear his oath?",
+      "options": [
+        "The friends who sat beside him",
+        "The wealth he had lost in a day",
+        "The dark grave that silently waited to receive him",
+        "The living God who had taken away his right"
+      ],
+      "answer": "The living God who had taken away his right",
+      "verse_reference": "Job 27:2"
+    },
+    {
+      "id": "job-27-q3",
+      "type": "true_false",
+      "question": "Job said his conscience would not reproach him as long as he lived.",
+      "answer": "true",
+      "verse_reference": "Job 27:6"
+    },
+    {
+      "id": "job-27-q4",
+      "type": "fill_blank",
+      "question": "Job said, 'Till I die I will not put away my _____ from me.'",
+      "answer": "integrity",
+      "accept": [
+        "blamelessness",
+        "innocence"
+      ],
+      "verse_reference": "Job 27:5"
+    },
+    {
+      "id": "job-27-q5",
+      "type": "fill_blank",
+      "question": "Job described the heritage of the wicked oppressor from the _____.",
+      "answer": "Almighty",
+      "verse_reference": "Job 27:13"
+    }
+  ]
+}

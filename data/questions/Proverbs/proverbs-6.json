@@ -1,0 +1,53 @@
+{
+  "book": "Proverbs",
+  "chapter": 6,
+  "questions": [
+    {
+      "id": "proverbs-6-q1",
+      "type": "multiple_choice",
+      "question": "To which creature does Proverbs 6 send the sluggard to learn?",
+      "options": [
+        "The bee",
+        "The ox",
+        "The ant",
+        "The spider"
+      ],
+      "answer": "The ant",
+      "verse_reference": "Proverbs 6:6"
+    },
+    {
+      "id": "proverbs-6-q2",
+      "type": "multiple_choice",
+      "question": "How many things does the LORD hate, according to Proverbs 6?",
+      "options": [
+        "Six, even seven that are an abomination",
+        "Ten, the number of the commandments",
+        "Five, one for each book of the law",
+        "Three, even four that he despises"
+      ],
+      "answer": "Six, even seven that are an abomination",
+      "verse_reference": "Proverbs 6:16"
+    },
+    {
+      "id": "proverbs-6-q3",
+      "type": "true_false",
+      "question": "Proverbs 6 lists a lying tongue and hands that shed innocent blood among the things the LORD hates.",
+      "answer": "true",
+      "verse_reference": "Proverbs 6:17"
+    },
+    {
+      "id": "proverbs-6-q4",
+      "type": "fill_blank",
+      "question": "Go to the ant, O sluggard; consider her ways, and be _____.",
+      "answer": "wise",
+      "verse_reference": "Proverbs 6:6"
+    },
+    {
+      "id": "proverbs-6-q5",
+      "type": "fill_blank",
+      "question": "There are six things that the LORD hates, seven that are an abomination to _____.",
+      "answer": "him",
+      "verse_reference": "Proverbs 6:16"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "book": "Philippians",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "phil-2-q1",
+      "type": "multiple_choice",
+      "question": "Paul describes Jesus as having what attitude that believers should imitate?",
+      "options": [
+        "He withdrew from the world to live apart in silence",
+        "He sought after power and authority over the nations",
+        "He made himself nothing, taking the form of a servant",
+        "He grasped and held tightly to his equal place with God"
+      ],
+      "answer": "He made himself nothing, taking the form of a servant",
+      "verse_reference": "Philippians 2:7"
+    },
+    {
+      "id": "phil-2-q2",
+      "type": "multiple_choice",
+      "question": "Paul says believers should work out their salvation with what?",
+      "options": [
+        "Fear and trembling",
+        "Joy and celebration",
+        "Prayer and fasting",
+        "Knowledge and understanding"
+      ],
+      "answer": "Fear and trembling",
+      "verse_reference": "Philippians 2:12"
+    },
+    {
+      "id": "phil-2-q3",
+      "type": "true_false",
+      "question": "Paul says at the name of Jesus every knee will bow.",
+      "answer": "true",
+      "verse_reference": "Philippians 2:10"
+    },
+    {
+      "id": "phil-2-q4",
+      "type": "fill_blank",
+      "question": "Do nothing out of selfish ambition, but in humility consider others more _____ than yourselves.",
+      "answer": "important",
+      "accept": [
+        "better",
+        "excellent"
+      ],
+      "verse_reference": "Philippians 2:3"
+    },
+    {
+      "id": "phil-2-q5",
+      "type": "fill_blank",
+      "question": "Do all things without grumbling or _____.",
+      "answer": "arguing",
+      "accept": [
+        "disputings",
+        "questionings",
+        "reasonings"
+      ],
+      "verse_reference": "Philippians 2:14"
+    }
+  ]
+}

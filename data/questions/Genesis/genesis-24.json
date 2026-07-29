@@ -1,0 +1,53 @@
+{
+  "book": "Genesis",
+  "chapter": 24,
+  "questions": [
+    {
+      "id": "genesis-24-q1",
+      "type": "multiple_choice",
+      "question": "Where did Abraham send his servant to find a wife for Isaac?",
+      "options": [
+        "The royal court of Egypt",
+        "Abraham's relatives in Mesopotamia",
+        "The Canaanite cities around them",
+        "The city of Sodom near the sea"
+      ],
+      "answer": "Abraham's relatives in Mesopotamia",
+      "verse_reference": "Genesis 24:4"
+    },
+    {
+      "id": "genesis-24-q2",
+      "type": "multiple_choice",
+      "question": "What sign did the servant pray for to identify the right woman?",
+      "options": [
+        "She would water him and his camels",
+        "She would be the most beautiful of all",
+        "She would sing for him",
+        "She would bring gold"
+      ],
+      "answer": "She would water him and his camels",
+      "verse_reference": "Genesis 24:14"
+    },
+    {
+      "id": "genesis-24-q3",
+      "type": "true_false",
+      "question": "Rebekah agreed to leave her family and go with the servant.",
+      "answer": "true",
+      "verse_reference": "Genesis 24:58"
+    },
+    {
+      "id": "genesis-24-q4",
+      "type": "fill_blank",
+      "question": "The servant met _____ at the well, and she watered his camels.",
+      "answer": "Rebekah",
+      "verse_reference": "Genesis 24:15"
+    },
+    {
+      "id": "genesis-24-q5",
+      "type": "fill_blank",
+      "question": "Isaac brought Rebekah into his mother _____'s tent, and she became his wife.",
+      "answer": "Sarah",
+      "verse_reference": "Genesis 24:67"
+    }
+  ]
+}

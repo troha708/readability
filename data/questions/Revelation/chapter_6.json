@@ -1,0 +1,58 @@
+{
+  "book": "Revelation",
+  "chapter": 6,
+  "questions": [
+    {
+      "id": "rev_6_1",
+      "type": "multiple_choice",
+      "question": "What color is the first horse when the first seal is opened?",
+      "options": [
+        "White",
+        "Red",
+        "Black",
+        "Pale"
+      ],
+      "correct": "White",
+      "verse_ref": "Revelation 6:2",
+      "feedback": "The first horse is white, and its rider held a bow and was given a crown."
+    },
+    {
+      "id": "rev_6_2",
+      "type": "multiple_choice",
+      "question": "The rider of the red horse was given power to do what?",
+      "options": [
+        "Pour out blessing on the land",
+        "Take peace from the earth",
+        "Bring healing to the nations",
+        "Gather the saints to heaven"
+      ],
+      "correct": "Take peace from the earth",
+      "verse_ref": "Revelation 6:4",
+      "feedback": "The red horse's rider was given power to take peace from the earth."
+    },
+    {
+      "id": "rev_6_3",
+      "type": "true_false",
+      "question": "When the fifth seal is opened, John sees the souls of martyrs under the altar.",
+      "correct": true,
+      "verse_ref": "Revelation 6:9",
+      "feedback": "Under the altar were the souls of those slain for the word of God."
+    },
+    {
+      "id": "rev_6_4",
+      "type": "fill_in_the_blank",
+      "question": "The fourth horse was pale, and its rider was named _____.",
+      "correct": "Death",
+      "verse_ref": "Revelation 6:8",
+      "feedback": "The pale horse's rider was named Death, and Hades followed close behind."
+    },
+    {
+      "id": "rev_6_5",
+      "type": "fill_in_the_blank",
+      "question": "At the sixth seal, the sun turned black and the moon became like _____.",
+      "correct": "blood",
+      "verse_ref": "Revelation 6:12",
+      "feedback": "The sun turned black and the whole moon turned blood red."
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 10,
+  "questions": [
+    {
+      "id": "2-chronicles-10-q1",
+      "type": "multiple_choice",
+      "question": "What did the people ask Rehoboam to do at Shechem?",
+      "options": [
+        "Lighten the heavy yoke his father placed on them",
+        "Lead them out to war against the whole land of Egypt",
+        "Move the capital city away from Jerusalem",
+        "Build a new temple of the LORD in the north"
+      ],
+      "answer": "Lighten the heavy yoke his father placed on them",
+      "verse_reference": "2 Chronicles 10:4"
+    },
+    {
+      "id": "2-chronicles-10-q2",
+      "type": "multiple_choice",
+      "question": "Whose advice did Rehoboam follow?",
+      "options": [
+        "His mother and the queen's court",
+        "The elders who had advised his father",
+        "The prophets who served the LORD",
+        "The young men he grew up with"
+      ],
+      "answer": "The young men he grew up with",
+      "verse_reference": "2 Chronicles 10:8"
+    },
+    {
+      "id": "2-chronicles-10-q3",
+      "type": "true_false",
+      "question": "As a result, the northern tribes of Israel rebelled against the house of David.",
+      "answer": "true",
+      "verse_reference": "2 Chronicles 10:19"
+    },
+    {
+      "id": "2-chronicles-10-q4",
+      "type": "fill_blank",
+      "question": "Rehoboam said his little finger was thicker than his father's _____.",
+      "answer": "waist",
+      "accept": [
+        "loins"
+      ],
+      "verse_reference": "2 Chronicles 10:10"
+    },
+    {
+      "id": "2-chronicles-10-q5",
+      "type": "fill_blank",
+      "question": "The people cried, 'What portion do we have in _____?' and went to their tents.",
+      "answer": "David",
+      "verse_reference": "2 Chronicles 10:16"
+    }
+  ]
+}

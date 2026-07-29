@@ -1,0 +1,59 @@
+{
+  "book": "Psalms",
+  "chapter": 38,
+  "questions": [
+    {
+      "id": "psalms-38-q1",
+      "type": "multiple_choice",
+      "question": "What is the mood of Psalm 38?",
+      "options": [
+        "Quiet meditation on the works of God",
+        "Joyful praise for a very great deliverance",
+        "Confident trust in the day of battle",
+        "Penitential lament over sin and suffering"
+      ],
+      "answer": "Penitential lament over sin and suffering",
+      "verse_reference": "Psalm 38:3-4"
+    },
+    {
+      "id": "psalms-38-q2",
+      "type": "multiple_choice",
+      "question": "How does David describe his iniquities?",
+      "options": [
+        "Risen up like the sea, threatening at last to drown him",
+        "Gone over his head, like a heavy burden too heavy to bear",
+        "Spread out like a fire, consuming everything that he owns",
+        "Multiplied like the grains of sand upon the wide seashore"
+      ],
+      "answer": "Gone over his head, like a heavy burden too heavy to bear",
+      "verse_reference": "Psalm 38:4"
+    },
+    {
+      "id": "psalms-38-q3",
+      "type": "true_false",
+      "question": "David confesses his iniquity and is sorry for his sin.",
+      "answer": "true",
+      "verse_reference": "Psalm 38:18"
+    },
+    {
+      "id": "psalms-38-q4",
+      "type": "fill_blank",
+      "question": "Do not forsake me, O LORD! Come quickly to help me, O Lord my _____!",
+      "answer": "Savior",
+      "accept": [
+        "salvation"
+      ],
+      "verse_reference": "Psalm 38:21-22"
+    },
+    {
+      "id": "psalms-38-q5",
+      "type": "fill_blank",
+      "question": "For you, O LORD, do I wait; it is you, O Lord my God, who will _____.",
+      "answer": "answer",
+      "accept": [
+        "hear"
+      ],
+      "verse_reference": "Psalm 38:15"
+    }
+  ]
+}

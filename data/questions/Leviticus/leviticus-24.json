@@ -1,0 +1,53 @@
+{
+  "book": "Leviticus",
+  "chapter": 24,
+  "questions": [
+    {
+      "id": "leviticus-24-q1",
+      "type": "multiple_choice",
+      "question": "What was kept burning continually with pure olive oil?",
+      "options": [
+        "The lamps on the lampstand",
+        "The incense on the golden altar",
+        "The coals in the fire pit",
+        "The torches at the tent door"
+      ],
+      "answer": "The lamps on the lampstand",
+      "verse_reference": "Leviticus 24:2-4"
+    },
+    {
+      "id": "leviticus-24-q2",
+      "type": "multiple_choice",
+      "question": "How many loaves of bread were set before the LORD on the table each Sabbath?",
+      "options": [
+        "Ten",
+        "Twelve",
+        "Seventy",
+        "Forty"
+      ],
+      "answer": "Twelve",
+      "verse_reference": "Leviticus 24:5-8"
+    },
+    {
+      "id": "leviticus-24-q3",
+      "type": "true_false",
+      "question": "A man who blasphemed the Name of the LORD was put to death by stoning.",
+      "answer": "true",
+      "verse_reference": "Leviticus 24:14-23"
+    },
+    {
+      "id": "leviticus-24-q4",
+      "type": "fill_blank",
+      "question": "Twelve loaves baked from fine _____ were arranged before the LORD, one for each tribe.",
+      "answer": "flour",
+      "verse_reference": "Leviticus 24:5-6"
+    },
+    {
+      "id": "leviticus-24-q5",
+      "type": "fill_blank",
+      "question": "The law repeated the principle, \"_____ for eye, tooth for tooth.\"",
+      "answer": "eye",
+      "verse_reference": "Leviticus 24:20"
+    }
+  ]
+}

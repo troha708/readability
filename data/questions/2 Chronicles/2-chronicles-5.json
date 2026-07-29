@@ -1,0 +1,63 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 5,
+  "questions": [
+    {
+      "id": "2-chronicles-5-q1",
+      "type": "multiple_choice",
+      "question": "What was brought into the temple and placed in the Most Holy Place?",
+      "options": [
+        "The golden calf of Bethel",
+        "The ark of the covenant",
+        "The bronze altar of sacrifice",
+        "Solomon's golden throne"
+      ],
+      "answer": "The ark of the covenant",
+      "verse_reference": "2 Chronicles 5:7"
+    },
+    {
+      "id": "2-chronicles-5-q2",
+      "type": "multiple_choice",
+      "question": "What filled the house of the LORD when the priests came out?",
+      "options": [
+        "Only the smell of burning incense",
+        "A thick smoke from the sacrifices",
+        "A cloud, the glory of the LORD",
+        "A sudden and total darkness"
+      ],
+      "answer": "A cloud, the glory of the LORD",
+      "verse_reference": "2 Chronicles 5:13-14"
+    },
+    {
+      "id": "2-chronicles-5-q3",
+      "type": "true_false",
+      "question": "The priests could not stand to minister because of the cloud.",
+      "answer": "true",
+      "verse_reference": "2 Chronicles 5:14"
+    },
+    {
+      "id": "2-chronicles-5-q4",
+      "type": "fill_blank",
+      "question": "The singers praised the LORD, saying, 'For He is good; His _____ endures forever.'",
+      "answer": "loving devotion",
+      "accept": [
+        "steadfast love",
+        "mercy",
+        "loving kindness",
+        "lovingkindness",
+        "kindness"
+      ],
+      "verse_reference": "2 Chronicles 5:13"
+    },
+    {
+      "id": "2-chronicles-5-q5",
+      "type": "fill_blank",
+      "question": "In the ark were the two _____ that Moses put there at Horeb.",
+      "answer": "tablets",
+      "accept": [
+        "tables"
+      ],
+      "verse_reference": "2 Chronicles 5:10"
+    }
+  ]
+}

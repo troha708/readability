@@ -1,0 +1,56 @@
+{
+  "book": "Exodus",
+  "chapter": 37,
+  "questions": [
+    {
+      "id": "exodus-37-q1",
+      "type": "multiple_choice",
+      "question": "Who made the ark of the covenant?",
+      "options": [
+        "Moses",
+        "Oholiab",
+        "Bezalel",
+        "Aaron"
+      ],
+      "answer": "Bezalel",
+      "verse_reference": "Exodus 37:1"
+    },
+    {
+      "id": "exodus-37-q2",
+      "type": "multiple_choice",
+      "question": "What was the lampstand (menorah) made of?",
+      "options": [
+        "Bronze",
+        "Pure gold",
+        "Silver",
+        "Wood"
+      ],
+      "answer": "Pure gold",
+      "verse_reference": "Exodus 37:17"
+    },
+    {
+      "id": "exodus-37-q3",
+      "type": "true_false",
+      "question": "The ark was overlaid with pure gold both inside and out.",
+      "answer": "true",
+      "verse_reference": "Exodus 37:2"
+    },
+    {
+      "id": "exodus-37-q4",
+      "type": "fill_blank",
+      "question": "On the ark's cover Bezalel made two _____ of gold facing each other.",
+      "answer": "cherubim",
+      "accept": [
+        "cherubims"
+      ],
+      "verse_reference": "Exodus 37:7"
+    },
+    {
+      "id": "exodus-37-q5",
+      "type": "fill_blank",
+      "question": "The lampstand was hammered out of a single piece of pure _____.",
+      "answer": "gold",
+      "verse_reference": "Exodus 37:22"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "book": "2 Corinthians",
+  "chapter": 13,
+  "questions": [
+    {
+      "id": "2cor-13-q1",
+      "type": "multiple_choice",
+      "question": "Paul tells the Corinthians to do what to see if they are in the faith?",
+      "options": [
+        "Ask the apostles to judge",
+        "Fast and pray for three days",
+        "Wait for a sign from God",
+        "Examine and test themselves"
+      ],
+      "answer": "Examine and test themselves",
+      "verse_reference": "2 Corinthians 13:5"
+    },
+    {
+      "id": "2cor-13-q2",
+      "type": "multiple_choice",
+      "question": "How many times was Paul planning to visit Corinth when he wrote this?",
+      "options": [
+        "First time",
+        "Third time",
+        "Fourth time",
+        "Second time"
+      ],
+      "answer": "Third time",
+      "verse_reference": "2 Corinthians 13:1"
+    },
+    {
+      "id": "2cor-13-q3",
+      "type": "true_false",
+      "question": "Paul closes this letter with a blessing mentioning the grace of Christ, the love of God, and the fellowship of the Holy Spirit.",
+      "answer": "true",
+      "verse_reference": "2 Corinthians 13:14"
+    },
+    {
+      "id": "2cor-13-q4",
+      "type": "fill_blank",
+      "question": "The grace of the Lord Jesus Christ, the love of God, and the fellowship of the Holy _____ be with you all.",
+      "answer": "Spirit",
+      "accept": [
+        "Ghost"
+      ],
+      "verse_reference": "2 Corinthians 13:14"
+    },
+    {
+      "id": "2cor-13-q5",
+      "type": "fill_blank",
+      "question": "_____ yourselves, whether you are in the faith. Test your own selves.",
+      "answer": "Examine",
+      "accept": [
+        "Try",
+        "Prove"
+      ],
+      "verse_reference": "2 Corinthians 13:5"
+    }
+  ]
+}

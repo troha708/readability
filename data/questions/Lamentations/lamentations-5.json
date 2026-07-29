@@ -1,0 +1,59 @@
+{
+  "book": "Lamentations",
+  "chapter": 5,
+  "questions": [
+    {
+      "id": "lamentations-5-q1",
+      "type": "multiple_choice",
+      "question": "What is Lamentations 5?",
+      "options": [
+        "A long list of all the families who returned home from the exile",
+        "A long record of all of the kings who once ruled over Judah",
+        "A closing prayer asking God to remember and restore his people",
+        "A joyful song celebrating the great rebuilding of the city"
+      ],
+      "answer": "A closing prayer asking God to remember and restore his people",
+      "verse_reference": "Lamentations 5:1"
+    },
+    {
+      "id": "lamentations-5-q2",
+      "type": "multiple_choice",
+      "question": "What does the poet ask God to do at the end of the book?",
+      "options": [
+        "Hide away his face from them entirely and forever",
+        "Repay them fully according to all of their many sins",
+        "Scatter them abroad among all of the distant nations",
+        "Restore them to himself, that they may be restored"
+      ],
+      "answer": "Restore them to himself, that they may be restored",
+      "verse_reference": "Lamentations 5:21"
+    },
+    {
+      "id": "lamentations-5-q3",
+      "type": "true_false",
+      "question": "Lamentations 5 affirms that the LORD reigns forever, his throne enduring to all generations.",
+      "answer": "true",
+      "verse_reference": "Lamentations 5:19"
+    },
+    {
+      "id": "lamentations-5-q4",
+      "type": "fill_blank",
+      "question": "Remember, O LORD, what has befallen us; look, and see our _____.",
+      "answer": "disgrace",
+      "accept": [
+        "reproach"
+      ],
+      "verse_reference": "Lamentations 5:1"
+    },
+    {
+      "id": "lamentations-5-q5",
+      "type": "fill_blank",
+      "question": "_____ us to yourself, O LORD, that we may be restored! Renew our days as of old.",
+      "answer": "Restore",
+      "accept": [
+        "Turn"
+      ],
+      "verse_reference": "Lamentations 5:21"
+    }
+  ]
+}

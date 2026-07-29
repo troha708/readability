@@ -1,0 +1,384 @@
+{
+  "book": "John",
+  "source": "Berean Standard Bible (CC0 Public Domain)",
+  "chapters": {
+    "1": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Beginning"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "The Witness of John"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "The Word Became Flesh"
+      },
+      {
+        "beforeVerse": 19,
+        "heading": "The Mission of John the Baptist"
+      },
+      {
+        "beforeVerse": 29,
+        "heading": "Jesus the Lamb of God"
+      },
+      {
+        "beforeVerse": 35,
+        "heading": "The First Disciples"
+      },
+      {
+        "beforeVerse": 43,
+        "heading": "Jesus Calls Philip and Nathanael"
+      }
+    ],
+    "2": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Wedding at Cana"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "Jesus Cleanses the Temple"
+      }
+    ],
+    "3": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jesus and Nicodemus"
+      },
+      {
+        "beforeVerse": 22,
+        "heading": "John’s Testimony about Jesus"
+      }
+    ],
+    "4": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jesus and the Samaritan Woman"
+      },
+      {
+        "beforeVerse": 27,
+        "heading": "The Disciples Return and Marvel"
+      },
+      {
+        "beforeVerse": 39,
+        "heading": "Many Samaritans Believe"
+      },
+      {
+        "beforeVerse": 43,
+        "heading": "Jesus Heals the Official’s Son"
+      }
+    ],
+    "5": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Pool of Bethesda"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "The Father and the Son"
+      },
+      {
+        "beforeVerse": 31,
+        "heading": "Testimonies about Jesus"
+      },
+      {
+        "beforeVerse": 39,
+        "heading": "The Witness of Scripture"
+      }
+    ],
+    "6": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Feeding of the Five Thousand"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "Jesus Walks on Water"
+      },
+      {
+        "beforeVerse": 22,
+        "heading": "Jesus the Bread of Life"
+      },
+      {
+        "beforeVerse": 59,
+        "heading": "Many Disciples Turn Back"
+      },
+      {
+        "beforeVerse": 67,
+        "heading": "Peter’s Confession of Faith"
+      }
+    ],
+    "7": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jesus Teaches at the Feast"
+      },
+      {
+        "beforeVerse": 25,
+        "heading": "Is Jesus the Christ?"
+      },
+      {
+        "beforeVerse": 37,
+        "heading": "Living Water"
+      },
+      {
+        "beforeVerse": 40,
+        "heading": "Division over Jesus"
+      },
+      {
+        "beforeVerse": 45,
+        "heading": "The Unbelief of the Jewish Leaders"
+      }
+    ],
+    "8": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Woman Caught in Adultery"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "Jesus the Light of the World"
+      },
+      {
+        "beforeVerse": 30,
+        "heading": "The Truth Will Set You Free"
+      },
+      {
+        "beforeVerse": 48,
+        "heading": "Before Abraham Was Born, I Am"
+      }
+    ],
+    "9": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jesus Heals the Man Born Blind"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "The Pharisees Investigate the Healing"
+      },
+      {
+        "beforeVerse": 35,
+        "heading": "Spiritual Blindness"
+      }
+    ],
+    "10": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jesus the Good Shepherd"
+      },
+      {
+        "beforeVerse": 22,
+        "heading": "Jesus at the Feast of Dedication"
+      },
+      {
+        "beforeVerse": 40,
+        "heading": "John’s Testimony Confirmed"
+      }
+    ],
+    "11": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Death of Lazarus"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "Jesus Comforts Martha and Mary"
+      },
+      {
+        "beforeVerse": 38,
+        "heading": "Jesus Raises Lazarus"
+      },
+      {
+        "beforeVerse": 45,
+        "heading": "The Plot to Kill Jesus"
+      }
+    ],
+    "12": [
+      {
+        "beforeVerse": 1,
+        "heading": "Mary Anoints Jesus"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "The Plot to Kill Lazarus"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "The Triumphal Entry"
+      },
+      {
+        "beforeVerse": 20,
+        "heading": "Jesus Predicts His Death"
+      },
+      {
+        "beforeVerse": 37,
+        "heading": "Belief and Unbelief"
+      }
+    ],
+    "13": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jesus Washes His Disciples’ Feet"
+      },
+      {
+        "beforeVerse": 18,
+        "heading": "Jesus Predicts His Betrayal"
+      },
+      {
+        "beforeVerse": 31,
+        "heading": "Love One Another"
+      },
+      {
+        "beforeVerse": 36,
+        "heading": "Jesus Predicts Peter’s Denial"
+      }
+    ],
+    "14": [
+      {
+        "beforeVerse": 1,
+        "heading": "In My Father’s House Are Many Rooms"
+      },
+      {
+        "beforeVerse": 5,
+        "heading": "The Way, the Truth, and the Life"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "Jesus Promises the Holy Spirit"
+      },
+      {
+        "beforeVerse": 27,
+        "heading": "Peace I Leave with You"
+      }
+    ],
+    "15": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jesus the True Vine"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "No Greater Love"
+      },
+      {
+        "beforeVerse": 18,
+        "heading": "The Hatred of the World"
+      }
+    ],
+    "16": [
+      {
+        "beforeVerse": 1,
+        "heading": "Persecution Foretold"
+      },
+      {
+        "beforeVerse": 5,
+        "heading": "The Promise of the Holy Spirit"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "Grief Will Turn to Joy"
+      },
+      {
+        "beforeVerse": 23,
+        "heading": "Ask in My Name"
+      }
+    ],
+    "17": [
+      {
+        "beforeVerse": 1,
+        "heading": "Prayer for the Son"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "Prayer for the Disciples"
+      },
+      {
+        "beforeVerse": 20,
+        "heading": "Prayer for All Believers"
+      }
+    ],
+    "18": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Betrayal of Jesus"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "Peter’s First Denial"
+      },
+      {
+        "beforeVerse": 19,
+        "heading": "Jesus before the High Priest"
+      },
+      {
+        "beforeVerse": 25,
+        "heading": "Peter’s Second and Third Denials"
+      },
+      {
+        "beforeVerse": 28,
+        "heading": "Jesus before Pilate"
+      }
+    ],
+    "19": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Soldiers Mock Jesus"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "The Crucifixion"
+      },
+      {
+        "beforeVerse": 28,
+        "heading": "The Death of Jesus"
+      },
+      {
+        "beforeVerse": 31,
+        "heading": "Jesus’ Side Is Pierced"
+      },
+      {
+        "beforeVerse": 38,
+        "heading": "The Burial of Jesus"
+      }
+    ],
+    "20": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Resurrection"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "Jesus Appears to Mary Magdalene"
+      },
+      {
+        "beforeVerse": 19,
+        "heading": "Jesus Appears to the Disciples"
+      },
+      {
+        "beforeVerse": 24,
+        "heading": "Jesus Appears to Thomas"
+      },
+      {
+        "beforeVerse": 30,
+        "heading": "The Purpose of John’s Book"
+      }
+    ],
+    "21": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jesus Appears by the Sea of Tiberias"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "Jesus and Peter"
+      },
+      {
+        "beforeVerse": 20,
+        "heading": "Jesus and the Beloved Disciple"
+      }
+    ]
+  }
+}

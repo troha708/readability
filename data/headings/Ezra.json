@@ -1,0 +1,138 @@
+{
+  "book": "Ezra",
+  "source": "Berean Standard Bible (CC0 Public Domain)",
+  "chapters": {
+    "1": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Proclamation of Cyrus"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "Cyrus Restores the Holy Vessels"
+      }
+    ],
+    "2": [
+      {
+        "beforeVerse": 1,
+        "heading": "The List of Returning Exiles"
+      },
+      {
+        "beforeVerse": 68,
+        "heading": "Offerings by the Exiles"
+      }
+    ],
+    "3": [
+      {
+        "beforeVerse": 1,
+        "heading": "Sacrifices Restored"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "Temple Restoration Begins"
+      }
+    ],
+    "4": [
+      {
+        "beforeVerse": 1,
+        "heading": "Adversaries Hinder the Work"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "Opposition under Xerxes and Artaxerxes"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "The Decree of Artaxerxes"
+      }
+    ],
+    "5": [
+      {
+        "beforeVerse": 1,
+        "heading": "Temple Rebuilding Resumes"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "Tattenai’s Letter to Darius"
+      }
+    ],
+    "6": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Decree of Darius"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "The Temple Completed"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "Dedication of the Temple"
+      },
+      {
+        "beforeVerse": 19,
+        "heading": "The Returned Exiles Keep the Passover"
+      }
+    ],
+    "7": [
+      {
+        "beforeVerse": 1,
+        "heading": "Ezra Arrives in Jerusalem"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "Artaxerxes’ Letter for Ezra"
+      },
+      {
+        "beforeVerse": 27,
+        "heading": "Ezra Blesses God"
+      }
+    ],
+    "8": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Exiles Who Returned with Ezra"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "Ezra Sends for the Levites"
+      },
+      {
+        "beforeVerse": 21,
+        "heading": "Fasting for Protection"
+      },
+      {
+        "beforeVerse": 24,
+        "heading": "Priests to Guard the Offerings"
+      },
+      {
+        "beforeVerse": 32,
+        "heading": "Arrival in Jerusalem"
+      }
+    ],
+    "9": [
+      {
+        "beforeVerse": 1,
+        "heading": "Intermarriage with Neighboring Peoples"
+      },
+      {
+        "beforeVerse": 5,
+        "heading": "Ezra’s Prayer of Confession"
+      }
+    ],
+    "10": [
+      {
+        "beforeVerse": 1,
+        "heading": "Shecaniah’s Encouragement"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "The People’s Confession of Sin"
+      },
+      {
+        "beforeVerse": 18,
+        "heading": "Those Guilty of Intermarriage"
+      }
+    ]
+  }
+}

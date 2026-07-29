@@ -1,0 +1,56 @@
+{
+  "book": "Isaiah",
+  "chapter": 35,
+  "questions": [
+    {
+      "id": "isaiah-35-q1",
+      "type": "multiple_choice",
+      "question": "What will the wilderness and dry land do in Isaiah 35?",
+      "options": [
+        "Dry up and crack under the burning sun",
+        "Be glad and blossom like a rose",
+        "Be filled with thorns and briers",
+        "Tremble and shake at the LORD's coming"
+      ],
+      "answer": "Be glad and blossom like a rose",
+      "verse_reference": "Isaiah 35:1"
+    },
+    {
+      "id": "isaiah-35-q2",
+      "type": "multiple_choice",
+      "question": "What highway is described in Isaiah 35?",
+      "options": [
+        "The long road down to Egypt, freshly paved for all the exiles",
+        "The Way of Holiness, on which the unclean shall not pass",
+        "The hidden path right through the sea, walled on each side with water",
+        "The great King's Highway, built strong for the royal chariots"
+      ],
+      "answer": "The Way of Holiness, on which the unclean shall not pass",
+      "verse_reference": "Isaiah 35:8"
+    },
+    {
+      "id": "isaiah-35-q3",
+      "type": "true_false",
+      "question": "Isaiah 35 says the eyes of the blind shall be opened and the ears of the deaf unstopped.",
+      "answer": "true",
+      "verse_reference": "Isaiah 35:5"
+    },
+    {
+      "id": "isaiah-35-q4",
+      "type": "fill_blank",
+      "question": "The wilderness and the dry land shall be glad; the desert shall rejoice and _____.",
+      "answer": "blossom",
+      "accept": [
+        "flourish"
+      ],
+      "verse_reference": "Isaiah 35:1"
+    },
+    {
+      "id": "isaiah-35-q5",
+      "type": "fill_blank",
+      "question": "The redeemed of the LORD will return and enter Zion with singing, _____ with everlasting joy.",
+      "answer": "crowned",
+      "verse_reference": "Isaiah 35:10"
+    }
+  ]
+}

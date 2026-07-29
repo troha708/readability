@@ -1,0 +1,60 @@
+{
+  "book": "1 Chronicles",
+  "chapter": 28,
+  "questions": [
+    {
+      "id": "1-chronicles-28-q1",
+      "type": "multiple_choice",
+      "question": "What plans did David give to Solomon?",
+      "options": [
+        "Plans for the temple and its courts",
+        "Plans for the walls of the holy city",
+        "Plans for the new army of the kingdom",
+        "Plans for the royal palace and gardens"
+      ],
+      "answer": "Plans for the temple and its courts",
+      "verse_reference": "1 Chronicles 28:11"
+    },
+    {
+      "id": "1-chronicles-28-q2",
+      "type": "multiple_choice",
+      "question": "What did David charge Solomon to do regarding God?",
+      "options": [
+        "Gather a great army for war",
+        "Fear the kings of the nations",
+        "Know and serve God with a whole heart",
+        "Build many great cities across the land"
+      ],
+      "answer": "Know and serve God with a whole heart",
+      "verse_reference": "1 Chronicles 28:9"
+    },
+    {
+      "id": "1-chronicles-28-q3",
+      "type": "true_false",
+      "question": "David said the plan for the temple came to him in writing from the hand of the LORD.",
+      "answer": "true",
+      "verse_reference": "1 Chronicles 28:19"
+    },
+    {
+      "id": "1-chronicles-28-q4",
+      "type": "fill_blank",
+      "question": "David told Solomon, 'Be strong and courageous and do it... for the LORD God, even my God, is with _____.'",
+      "answer": "you",
+      "accept": [
+        "thee"
+      ],
+      "verse_reference": "1 Chronicles 28:20"
+    },
+    {
+      "id": "1-chronicles-28-q5",
+      "type": "fill_blank",
+      "question": "If you seek Him, He will be found by you; but if you forsake Him, He will _____ you forever.",
+      "answer": "reject",
+      "accept": [
+        "cast off",
+        "cut off"
+      ],
+      "verse_reference": "1 Chronicles 28:9"
+    }
+  ]
+}

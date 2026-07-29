@@ -1,0 +1,53 @@
+{
+  "book": "Jeremiah",
+  "chapter": 15,
+  "questions": [
+    {
+      "id": "jeremiah-15-q1",
+      "type": "multiple_choice",
+      "question": "How does God respond to Jeremiah's intercession in chapter 15?",
+      "options": [
+        "He would graciously spare the whole great city for the sake of ten righteous men",
+        "He would at last relent all at once because of Jeremiah's earnest prayer",
+        "Even if Moses and Samuel stood before him, he would not turn toward this people",
+        "He would send down the rain at last to put an end to the long drought"
+      ],
+      "answer": "Even if Moses and Samuel stood before him, he would not turn toward this people",
+      "verse_reference": "Jeremiah 15:1"
+    },
+    {
+      "id": "jeremiah-15-q2",
+      "type": "multiple_choice",
+      "question": "How did Jeremiah describe receiving God's words?",
+      "options": [
+        "He wrote them all down on a scroll and then sealed it away",
+        "He hid them deep within his heart and told no one at all",
+        "He ate them, and they became a joy and delight to his heart",
+        "He spoke them out only to the king himself in deep secret"
+      ],
+      "answer": "He ate them, and they became a joy and delight to his heart",
+      "verse_reference": "Jeremiah 15:16"
+    },
+    {
+      "id": "jeremiah-15-q3",
+      "type": "true_false",
+      "question": "God promises to make Jeremiah a fortified wall of bronze that the people cannot prevail against.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 15:20"
+    },
+    {
+      "id": "jeremiah-15-q4",
+      "type": "fill_blank",
+      "question": "Your words were found, and I ate them, and your words became to me a _____ and the delight of my heart.",
+      "answer": "joy",
+      "verse_reference": "Jeremiah 15:16"
+    },
+    {
+      "id": "jeremiah-15-q5",
+      "type": "fill_blank",
+      "question": "They will fight against you, but they shall not prevail, for I am with you to save and _____ you.",
+      "answer": "deliver",
+      "verse_reference": "Jeremiah 15:20"
+    }
+  ]
+}

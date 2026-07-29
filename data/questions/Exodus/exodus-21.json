@@ -1,0 +1,53 @@
+{
+  "book": "Exodus",
+  "chapter": 21,
+  "questions": [
+    {
+      "id": "exodus-21-q1",
+      "type": "multiple_choice",
+      "question": "What do the laws of this chapter mostly concern?",
+      "options": [
+        "Duties of the priests at the altar",
+        "Which foods are clean and unclean",
+        "Servants, injury, and property (civil laws)",
+        "Festivals, feasts, and the yearly sacred assemblies"
+      ],
+      "answer": "Servants, injury, and property (civil laws)",
+      "verse_reference": "Exodus 21:1"
+    },
+    {
+      "id": "exodus-21-q2",
+      "type": "multiple_choice",
+      "question": "What principle of justice is stated in this chapter?",
+      "options": [
+        "Love your enemy",
+        "Forgive your brother seventy times",
+        "Eye for eye, tooth for tooth",
+        "Turn the other cheek"
+      ],
+      "answer": "Eye for eye, tooth for tooth",
+      "verse_reference": "Exodus 21:24"
+    },
+    {
+      "id": "exodus-21-q3",
+      "type": "true_false",
+      "question": "A Hebrew servant was to serve six years and go free in the seventh.",
+      "answer": "true",
+      "verse_reference": "Exodus 21:2"
+    },
+    {
+      "id": "exodus-21-q4",
+      "type": "fill_blank",
+      "question": "The law of retribution stated, \"_____ for eye, tooth for tooth.\"",
+      "answer": "Eye",
+      "verse_reference": "Exodus 21:24"
+    },
+    {
+      "id": "exodus-21-q5",
+      "type": "fill_blank",
+      "question": "A Hebrew servant was to serve _____ years and then go free.",
+      "answer": "six",
+      "verse_reference": "Exodus 21:2"
+    }
+  ]
+}

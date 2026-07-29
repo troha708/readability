@@ -1,0 +1,58 @@
+{
+  "book": "1 Peter",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "1pet_4_1",
+      "type": "multiple_choice",
+      "question": "Peter says above all, believers should love each other deeply because love covers what?",
+      "options": [
+        "A multitude of sins",
+        "All debts",
+        "Past mistakes",
+        "Family shame"
+      ],
+      "correct": "A multitude of sins",
+      "verse_ref": "1 Peter 4:8",
+      "feedback": "Love each other deeply because love covers a multitude of sins."
+    },
+    {
+      "id": "1pet_4_2",
+      "type": "multiple_choice",
+      "question": "Peter says believers should not be surprised at what?",
+      "options": [
+        "Painful trials",
+        "Success",
+        "Rejection by family",
+        "Natural disasters"
+      ],
+      "correct": "Painful trials",
+      "verse_ref": "1 Peter 4:12",
+      "feedback": "Do not be surprised at the fiery trial as though something strange were happening."
+    },
+    {
+      "id": "1pet_4_3",
+      "type": "true_false",
+      "question": "Peter says judgment begins with the family of God.",
+      "correct": true,
+      "verse_ref": "1 Peter 4:17",
+      "feedback": "It is time for judgment to begin with God's household."
+    },
+    {
+      "id": "1pet_4_4",
+      "type": "fill_in_the_blank",
+      "question": "Each of you should use whatever _____ you have received to serve others.",
+      "correct": "gift",
+      "verse_ref": "1 Peter 4:10",
+      "feedback": "Use whatever gift you have received to serve others as faithful stewards."
+    },
+    {
+      "id": "1pet_4_5",
+      "type": "fill_in_the_blank",
+      "question": "If you suffer as a Christian, do not be ashamed but _____ God that you bear that name.",
+      "correct": "glorify",
+      "verse_ref": "1 Peter 4:16",
+      "feedback": "If you suffer as a Christian, glorify God that you bear that name."
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "book": "2 Corinthians",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "2cor-1-q1",
+      "type": "multiple_choice",
+      "question": "Paul describes God as the Father of mercies and the God of all what?",
+      "options": [
+        "Justice",
+        "Wisdom",
+        "Power",
+        "Comfort"
+      ],
+      "answer": "Comfort",
+      "verse_reference": "2 Corinthians 1:3"
+    },
+    {
+      "id": "2cor-1-q2",
+      "type": "multiple_choice",
+      "question": "Why does Paul say God comforts believers in their troubles?",
+      "options": [
+        "So that they can avoid all suffering",
+        "So they can comfort others in trouble",
+        "So that they can all become leaders",
+        "So that they can forget their own pain"
+      ],
+      "answer": "So they can comfort others in trouble",
+      "verse_reference": "2 Corinthians 1:4"
+    },
+    {
+      "id": "2cor-1-q3",
+      "type": "true_false",
+      "question": "Paul says he and his companions were under such pressure in Asia that they despaired even of life.",
+      "answer": "true",
+      "verse_reference": "2 Corinthians 1:8"
+    },
+    {
+      "id": "2cor-1-q4",
+      "type": "fill_blank",
+      "question": "For no matter how many promises God has made, they are _____ in Christ.",
+      "answer": "Yes",
+      "accept": [
+        "yea"
+      ],
+      "verse_reference": "2 Corinthians 1:20"
+    },
+    {
+      "id": "2cor-1-q5",
+      "type": "fill_blank",
+      "question": "We felt that we had received the sentence of death. But this happened that we might not rely on ourselves but on _____ who raises the dead.",
+      "answer": "God",
+      "verse_reference": "2 Corinthians 1:9"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "book": "Job",
+  "chapter": 32,
+  "questions": [
+    {
+      "id": "job-32-q1",
+      "type": "multiple_choice",
+      "question": "Who is the new, younger speaker introduced in chapter 32?",
+      "options": [
+        "Zophar",
+        "Eliphaz",
+        "Bildad",
+        "Elihu"
+      ],
+      "answer": "Elihu",
+      "verse_reference": "Job 32:2"
+    },
+    {
+      "id": "job-32-q2",
+      "type": "multiple_choice",
+      "question": "Why was Elihu angry?",
+      "options": [
+        "At Job for endlessly boasting of all the great wealth he once had",
+        "At the violent storm that had swept away the whole of the harvest",
+        "At God himself for allowing such a truly righteous man to suffer so terribly",
+        "At Job for justifying himself, and at the friends for finding no answer"
+      ],
+      "answer": "At Job for justifying himself, and at the friends for finding no answer",
+      "verse_reference": "Job 32:2-3"
+    },
+    {
+      "id": "job-32-q3",
+      "type": "true_false",
+      "question": "Elihu had waited to speak because the others were older than he.",
+      "answer": "true",
+      "verse_reference": "Job 32:4"
+    },
+    {
+      "id": "job-32-q4",
+      "type": "fill_blank",
+      "question": "Elihu said it is the _____ in a man, the breath of the Almighty, that gives understanding.",
+      "answer": "spirit",
+      "verse_reference": "Job 32:8"
+    },
+    {
+      "id": "job-32-q5",
+      "type": "fill_blank",
+      "question": "Elihu said he was full of words and the spirit within him constrained him, like new _____ ready to burst.",
+      "answer": "wineskin",
+      "accept": [
+        "wineskins",
+        "bottles",
+        "flasks"
+      ],
+      "verse_reference": "Job 32:18-19"
+    }
+  ]
+}

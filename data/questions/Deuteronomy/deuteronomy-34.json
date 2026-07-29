@@ -1,0 +1,58 @@
+{
+  "book": "Deuteronomy",
+  "chapter": 34,
+  "questions": [
+    {
+      "id": "deuteronomy-34-q1",
+      "type": "multiple_choice",
+      "question": "Where did Moses view the promised land before he died?",
+      "options": [
+        "Mount Sinai",
+        "Mount Nebo",
+        "Mount Carmel",
+        "Mount Zion"
+      ],
+      "answer": "Mount Nebo",
+      "verse_reference": "Deuteronomy 34:1"
+    },
+    {
+      "id": "deuteronomy-34-q2",
+      "type": "multiple_choice",
+      "question": "Who succeeded Moses, full of the spirit of wisdom?",
+      "options": [
+        "Caleb",
+        "Aaron",
+        "Joshua",
+        "Eleazar"
+      ],
+      "answer": "Joshua",
+      "verse_reference": "Deuteronomy 34:9"
+    },
+    {
+      "id": "deuteronomy-34-q3",
+      "type": "true_false",
+      "question": "No prophet has since arisen in Israel like Moses, whom the LORD knew face to face.",
+      "answer": "true",
+      "verse_reference": "Deuteronomy 34:10"
+    },
+    {
+      "id": "deuteronomy-34-q4",
+      "type": "fill_blank",
+      "question": "Moses was _____ years old when he died, yet his eye was not dim.",
+      "answer": "a hundred and twenty",
+      "accept": [
+        "120",
+        "one hundred and twenty",
+        "one hundred twenty"
+      ],
+      "verse_reference": "Deuteronomy 34:7"
+    },
+    {
+      "id": "deuteronomy-34-q5",
+      "type": "fill_blank",
+      "question": "_____ son of Nun was full of the spirit of wisdom and succeeded Moses.",
+      "answer": "Joshua",
+      "verse_reference": "Deuteronomy 34:9"
+    }
+  ]
+}

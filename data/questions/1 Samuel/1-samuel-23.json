@@ -1,0 +1,53 @@
+{
+  "book": "1 Samuel",
+  "chapter": 23,
+  "questions": [
+    {
+      "id": "1-samuel-23-q1",
+      "type": "multiple_choice",
+      "question": "What city did David rescue from the Philistines?",
+      "options": [
+        "Keilah",
+        "Ziph",
+        "Hebron",
+        "Gath"
+      ],
+      "answer": "Keilah",
+      "verse_reference": "1 Samuel 23:1-5"
+    },
+    {
+      "id": "1-samuel-23-q2",
+      "type": "multiple_choice",
+      "question": "Who came to David and strengthened his hand in God while he was hunted?",
+      "options": [
+        "Saul",
+        "Abigail",
+        "Samuel",
+        "Jonathan"
+      ],
+      "answer": "Jonathan",
+      "verse_reference": "1 Samuel 23:16"
+    },
+    {
+      "id": "1-samuel-23-q3",
+      "type": "true_false",
+      "question": "David repeatedly inquired of the LORD before acting.",
+      "answer": "true",
+      "verse_reference": "1 Samuel 23:2-4"
+    },
+    {
+      "id": "1-samuel-23-q4",
+      "type": "fill_blank",
+      "question": "David inquired of the LORD and saved the city of _____ from the Philistines.",
+      "answer": "Keilah",
+      "verse_reference": "1 Samuel 23:4-5"
+    },
+    {
+      "id": "1-samuel-23-q5",
+      "type": "fill_blank",
+      "question": "Jonathan strengthened David's hand in _____ while he was being hunted.",
+      "answer": "God",
+      "verse_reference": "1 Samuel 23:16"
+    }
+  ]
+}

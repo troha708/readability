@@ -1,0 +1,61 @@
+{
+  "book": "Nehemiah",
+  "chapter": 7,
+  "questions": [
+    {
+      "id": "nehemiah-7-q1",
+      "type": "multiple_choice",
+      "question": "Whom did Nehemiah put in charge of Jerusalem because of his faithfulness and fear of God?",
+      "options": [
+        "Hanani and Hananiah",
+        "Ezra and Zerubbabel",
+        "Eliashib and Meshullam",
+        "Tobiah and Sanballat"
+      ],
+      "answer": "Hanani and Hananiah",
+      "verse_reference": "Nehemiah 7:2"
+    },
+    {
+      "id": "nehemiah-7-q2",
+      "type": "multiple_choice",
+      "question": "What did Nehemiah find to register the people?",
+      "options": [
+        "A detailed map of the newly rebuilt city walls",
+        "The old tax records kept by the whole province",
+        "A fresh new census of the people taken house by house",
+        "The book of the genealogy of those who came up first"
+      ],
+      "answer": "The book of the genealogy of those who came up first",
+      "verse_reference": "Nehemiah 7:5"
+    },
+    {
+      "id": "nehemiah-7-q3",
+      "type": "true_false",
+      "question": "Nehemiah commanded that the gates not be opened until the sun was hot, for security.",
+      "answer": "true",
+      "verse_reference": "Nehemiah 7:3"
+    },
+    {
+      "id": "nehemiah-7-q4",
+      "type": "fill_blank",
+      "question": "Some priests were excluded as unclean because their names were not found in the family _____.",
+      "answer": "records",
+      "accept": [
+        "genealogy",
+        "register"
+      ],
+      "verse_reference": "Nehemiah 7:64"
+    },
+    {
+      "id": "nehemiah-7-q5",
+      "type": "fill_blank",
+      "question": "The whole assembly together numbered _____ thousand and more.",
+      "answer": "forty-two",
+      "accept": [
+        "42",
+        "forty two"
+      ],
+      "verse_reference": "Nehemiah 7:66"
+    }
+  ]
+}

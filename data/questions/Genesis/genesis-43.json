@@ -1,0 +1,56 @@
+{
+  "book": "Genesis",
+  "chapter": 43,
+  "questions": [
+    {
+      "id": "genesis-43-q1",
+      "type": "multiple_choice",
+      "question": "Who pledged himself as surety to persuade Jacob to send Benjamin?",
+      "options": [
+        "Simeon",
+        "Levi",
+        "Reuben",
+        "Judah"
+      ],
+      "answer": "Judah",
+      "verse_reference": "Genesis 43:8-9"
+    },
+    {
+      "id": "genesis-43-q2",
+      "type": "multiple_choice",
+      "question": "How did Joseph react when he saw his brother Benjamin?",
+      "options": [
+        "He grew angry and quickly turned away",
+        "He had him seized and thrown into prison",
+        "He was overcome and wept in private",
+        "He ignored him completely and said nothing"
+      ],
+      "answer": "He was overcome and wept in private",
+      "verse_reference": "Genesis 43:30"
+    },
+    {
+      "id": "genesis-43-q3",
+      "type": "true_false",
+      "question": "Joseph seated his brothers in the order of their ages, which amazed them.",
+      "answer": "true",
+      "verse_reference": "Genesis 43:33"
+    },
+    {
+      "id": "genesis-43-q4",
+      "type": "fill_blank",
+      "question": "At the meal, Benjamin was served _____ times as much as the others.",
+      "answer": "five",
+      "verse_reference": "Genesis 43:34"
+    },
+    {
+      "id": "genesis-43-q5",
+      "type": "fill_blank",
+      "question": "Jacob told his sons to take a gift and double the _____ to return what was in their sacks.",
+      "answer": "silver",
+      "accept": [
+        "money"
+      ],
+      "verse_reference": "Genesis 43:12"
+    }
+  ]
+}

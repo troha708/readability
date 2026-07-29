@@ -1,0 +1,58 @@
+{
+  "book": "Hosea",
+  "chapter": 9,
+  "questions": [
+    {
+      "id": "hosea-9-q1",
+      "type": "multiple_choice",
+      "question": "What does Hosea 9 announce about Israel?",
+      "options": [
+        "A great harvest will soon fill the land",
+        "Days of punishment and exile have come",
+        "Days of peace and plenty are near",
+        "A new king will restore the throne"
+      ],
+      "answer": "Days of punishment and exile have come",
+      "verse_reference": "Hosea 9:7"
+    },
+    {
+      "id": "hosea-9-q2",
+      "type": "multiple_choice",
+      "question": "Where does Hosea 9 say Israel would return to in judgment?",
+      "options": [
+        "Jerusalem, where they thought that they would find a sure refuge",
+        "The wilderness, where they would wander about lost once again",
+        "Egypt (figuratively) and they would eat unclean food in Assyria",
+        "Babylon, where they would serve as captives for seventy long years"
+      ],
+      "answer": "Egypt (figuratively) and they would eat unclean food in Assyria",
+      "verse_reference": "Hosea 9:3"
+    },
+    {
+      "id": "hosea-9-q3",
+      "type": "true_false",
+      "question": "Hosea 9 says the prophet is considered a fool by the people because of their great iniquity.",
+      "answer": "true",
+      "verse_reference": "Hosea 9:7"
+    },
+    {
+      "id": "hosea-9-q4",
+      "type": "fill_blank",
+      "question": "The days of punishment have come; the days of _____ have come.",
+      "answer": "retribution",
+      "accept": [
+        "recompense",
+        "recompence",
+        "reckoning"
+      ],
+      "verse_reference": "Hosea 9:7"
+    },
+    {
+      "id": "hosea-9-q5",
+      "type": "fill_blank",
+      "question": "Like grapes in the wilderness, I found _____; like the first fruit on the fig tree.",
+      "answer": "Israel",
+      "verse_reference": "Hosea 9:10"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "book": "Psalms",
+  "chapter": 50,
+  "questions": [
+    {
+      "id": "psalms-50-q1",
+      "type": "multiple_choice",
+      "question": "Who is the author of Psalm 50?",
+      "options": [
+        "David",
+        "Asaph",
+        "Solomon",
+        "Moses"
+      ],
+      "answer": "Asaph",
+      "verse_reference": "Psalm 50:title"
+    },
+    {
+      "id": "psalms-50-q2",
+      "type": "multiple_choice",
+      "question": "What does God say about sacrifices and his needs?",
+      "options": [
+        "The blood of bulls and goats is pleasing to his taste",
+        "He longs for the smoke of the offerings to rise",
+        "He counts each gift and rewards the one who gives most",
+        "If he were hungry he would not tell us, for the world is his"
+      ],
+      "answer": "If he were hungry he would not tell us, for the world is his",
+      "verse_reference": "Psalm 50:12"
+    },
+    {
+      "id": "psalms-50-q3",
+      "type": "true_false",
+      "question": "God says, 'Every beast of the forest is mine, the cattle on a thousand hills.'",
+      "answer": "true",
+      "verse_reference": "Psalm 50:10"
+    },
+    {
+      "id": "psalms-50-q4",
+      "type": "fill_blank",
+      "question": "Sacrifice a thank _____ to God, and fulfill your vows to the Most High.",
+      "answer": "offering",
+      "accept": [
+        "thanksgiving"
+      ],
+      "verse_reference": "Psalm 50:14"
+    },
+    {
+      "id": "psalms-50-q5",
+      "type": "fill_blank",
+      "question": "Call upon Me in the day of trouble; I will deliver you, and you will _____ Me.",
+      "answer": "honor",
+      "accept": [
+        "glorify"
+      ],
+      "verse_reference": "Psalm 50:15"
+    }
+  ]
+}

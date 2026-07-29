@@ -1,0 +1,698 @@
+{
+  "book": "Genesis",
+  "source": "Berean Standard Bible (CC0 Public Domain)",
+  "chapters": {
+    "1": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Creation"
+      },
+      {
+        "beforeVerse": 3,
+        "heading": "The First Day"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "The Second Day"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "The Third Day"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "The Fourth Day"
+      },
+      {
+        "beforeVerse": 20,
+        "heading": "The Fifth Day"
+      },
+      {
+        "beforeVerse": 24,
+        "heading": "The Sixth Day"
+      }
+    ],
+    "2": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Seventh Day"
+      },
+      {
+        "beforeVerse": 4,
+        "heading": "Man and Woman in the Garden"
+      }
+    ],
+    "3": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Serpent’s Deception"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "God Arraigns Adam and Eve"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "The Fate of the Serpent"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "The Punishment of Mankind"
+      },
+      {
+        "beforeVerse": 21,
+        "heading": "The Expulsion from Paradise"
+      }
+    ],
+    "4": [
+      {
+        "beforeVerse": 1,
+        "heading": "Cain and Abel"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "The Descendants of Cain"
+      },
+      {
+        "beforeVerse": 25,
+        "heading": "Seth and Enosh"
+      }
+    ],
+    "5": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Descendants of Adam"
+      },
+      {
+        "beforeVerse": 18,
+        "heading": "God Takes Up Enoch"
+      },
+      {
+        "beforeVerse": 25,
+        "heading": "From Methuselah to Noah"
+      }
+    ],
+    "6": [
+      {
+        "beforeVerse": 1,
+        "heading": "Corruption on the Earth"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "Noah’s Favor with God"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "Preparing the Ark"
+      }
+    ],
+    "7": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Great Flood"
+      }
+    ],
+    "8": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Ark Rests on Ararat"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "Noah Sends a Raven and a Dove"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "Exiting the Ark"
+      },
+      {
+        "beforeVerse": 20,
+        "heading": "Noah Builds an Altar"
+      }
+    ],
+    "9": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Covenant of the Rainbow"
+      },
+      {
+        "beforeVerse": 18,
+        "heading": "Noah’s Shame and Canaan’s Curse"
+      },
+      {
+        "beforeVerse": 26,
+        "heading": "Shem’s Blessing and Noah’s Death"
+      }
+    ],
+    "10": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Table of Nations"
+      },
+      {
+        "beforeVerse": 2,
+        "heading": "The Japhethites"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "The Hamites"
+      },
+      {
+        "beforeVerse": 21,
+        "heading": "The Semites"
+      }
+    ],
+    "11": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Tower of Babel"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "Genealogy from Shem to Abram"
+      },
+      {
+        "beforeVerse": 27,
+        "heading": "Terah’s Descendants"
+      }
+    ],
+    "12": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Call of Abram"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "Abram and Sarai in Egypt"
+      }
+    ],
+    "13": [
+      {
+        "beforeVerse": 1,
+        "heading": "Abram and Lot Part Ways"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "Lot Proceeds toward Sodom"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "God Renews the Promise to Abram"
+      }
+    ],
+    "14": [
+      {
+        "beforeVerse": 1,
+        "heading": "The War of the Kings"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "Abram Rescues Lot"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "Melchizedek Blesses Abram"
+      }
+    ],
+    "15": [
+      {
+        "beforeVerse": 1,
+        "heading": "God’s Covenant with Abram"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "God Confirms His Promise"
+      }
+    ],
+    "16": [
+      {
+        "beforeVerse": 1,
+        "heading": "Hagar and Ishmael"
+      }
+    ],
+    "17": [
+      {
+        "beforeVerse": 1,
+        "heading": "Abraham to Father Many Nations"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "The Covenant of Circumcision"
+      }
+    ],
+    "18": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Three Visitors"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "Sarah Laughs at the Promise"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "Abraham Intercedes for Sodom"
+      }
+    ],
+    "19": [
+      {
+        "beforeVerse": 1,
+        "heading": "Lot Welcomes the Angels"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "Lot Flees to Zoar"
+      },
+      {
+        "beforeVerse": 24,
+        "heading": "The Destruction of Sodom and Gomorrah"
+      },
+      {
+        "beforeVerse": 30,
+        "heading": "Lot and His Daughters"
+      }
+    ],
+    "20": [
+      {
+        "beforeVerse": 1,
+        "heading": "Abraham, Sarah, and Abimelech"
+      }
+    ],
+    "21": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Birth of Isaac"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "Sarah Turns against Hagar"
+      },
+      {
+        "beforeVerse": 22,
+        "heading": "The Covenant at Beersheba"
+      }
+    ],
+    "22": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Offering of Isaac"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "The LORD Provides the Sacrifice"
+      },
+      {
+        "beforeVerse": 20,
+        "heading": "The Sons of Nahor"
+      }
+    ],
+    "23": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Death and Burial of Sarah"
+      }
+    ],
+    "24": [
+      {
+        "beforeVerse": 1,
+        "heading": "A Wife for Isaac"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "Rebekah Is Chosen"
+      },
+      {
+        "beforeVerse": 62,
+        "heading": "Isaac Marries Rebekah"
+      }
+    ],
+    "25": [
+      {
+        "beforeVerse": 1,
+        "heading": "Abraham and Keturah"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "The Death of Abraham"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "The Descendants of Ishmael"
+      },
+      {
+        "beforeVerse": 19,
+        "heading": "Jacob and Esau"
+      },
+      {
+        "beforeVerse": 29,
+        "heading": "Esau Sells His Birthright"
+      }
+    ],
+    "26": [
+      {
+        "beforeVerse": 1,
+        "heading": "God’s Promise to Isaac"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "Isaac Deceives Abimelech"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "Isaac’s Prosperity"
+      },
+      {
+        "beforeVerse": 26,
+        "heading": "Isaac’s Covenant with Abimelech"
+      },
+      {
+        "beforeVerse": 34,
+        "heading": "Esau’s Wives"
+      }
+    ],
+    "27": [
+      {
+        "beforeVerse": 1,
+        "heading": "Isaac Blesses Jacob"
+      },
+      {
+        "beforeVerse": 30,
+        "heading": "Esau’s Lost Hope"
+      }
+    ],
+    "28": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jacob’s Departure"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "Esau Marries Mahalath"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "Jacob’s Ladder"
+      },
+      {
+        "beforeVerse": 18,
+        "heading": "The Stone of Bethel"
+      }
+    ],
+    "29": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jacob Meets Rachel"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "Jacob Marries Leah and Rachel"
+      },
+      {
+        "beforeVerse": 31,
+        "heading": "Reuben, Simeon, Levi, and Judah"
+      }
+    ],
+    "30": [
+      {
+        "beforeVerse": 1,
+        "heading": "Dan and Naphtali"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "Gad and Asher"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "Issachar, Zebulun, and Dinah"
+      },
+      {
+        "beforeVerse": 22,
+        "heading": "Joseph"
+      },
+      {
+        "beforeVerse": 25,
+        "heading": "Jacob Prospers"
+      }
+    ],
+    "31": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jacob Flees from Laban"
+      },
+      {
+        "beforeVerse": 22,
+        "heading": "Laban Pursues Jacob"
+      },
+      {
+        "beforeVerse": 43,
+        "heading": "Jacob’s Covenant with Laban"
+      }
+    ],
+    "32": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jacob Prepares to Meet Esau"
+      },
+      {
+        "beforeVerse": 22,
+        "heading": "Jacob Wrestles with God"
+      }
+    ],
+    "33": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jacob Meets Esau"
+      },
+      {
+        "beforeVerse": 18,
+        "heading": "Jacob Settles in Shechem"
+      }
+    ],
+    "34": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Defiling of Dinah"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "The Revenge of Dinah’s Brothers"
+      }
+    ],
+    "35": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jacob Returns to Bethel"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "Benjamin Born, Rachel Dies"
+      },
+      {
+        "beforeVerse": 21,
+        "heading": "The Sons of Jacob"
+      },
+      {
+        "beforeVerse": 27,
+        "heading": "The Death of Isaac"
+      }
+    ],
+    "36": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Descendants of Esau"
+      },
+      {
+        "beforeVerse": 20,
+        "heading": "The Descendants of Seir"
+      },
+      {
+        "beforeVerse": 31,
+        "heading": "The Kings of Edom"
+      }
+    ],
+    "37": [
+      {
+        "beforeVerse": 1,
+        "heading": "Joseph’s Dreams"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "Joseph Sold into Egypt"
+      },
+      {
+        "beforeVerse": 31,
+        "heading": "Jacob Mourns Joseph"
+      }
+    ],
+    "38": [
+      {
+        "beforeVerse": 1,
+        "heading": "Judah and Tamar"
+      },
+      {
+        "beforeVerse": 27,
+        "heading": "The Birth of Perez and Zerah"
+      }
+    ],
+    "39": [
+      {
+        "beforeVerse": 1,
+        "heading": "Joseph and Potiphar’s Wife"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "Joseph Falsely Imprisoned"
+      }
+    ],
+    "40": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Cupbearer and the Baker"
+      }
+    ],
+    "41": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Dreams of Pharaoh"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "Joseph Interprets Pharaoh’s Dreams"
+      },
+      {
+        "beforeVerse": 37,
+        "heading": "Joseph Given Charge of Egypt"
+      },
+      {
+        "beforeVerse": 46,
+        "heading": "The Seven Years of Plenty"
+      },
+      {
+        "beforeVerse": 53,
+        "heading": "The Famine Begins"
+      }
+    ],
+    "42": [
+      {
+        "beforeVerse": 1,
+        "heading": "Joseph’s Brothers Sent to Egypt"
+      },
+      {
+        "beforeVerse": 25,
+        "heading": "Joseph’s Brothers Return to Canaan"
+      }
+    ],
+    "43": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Return to Egypt with Benjamin"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "Joseph’s Hospitality to His Brothers"
+      }
+    ],
+    "44": [
+      {
+        "beforeVerse": 1,
+        "heading": "Benjamin and the Silver Cup"
+      },
+      {
+        "beforeVerse": 18,
+        "heading": "Judah Pleads for Benjamin"
+      }
+    ],
+    "45": [
+      {
+        "beforeVerse": 1,
+        "heading": "Joseph Reveals His Identity"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "Joseph Sends for His Father"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "Pharaoh Invites Jacob to Egypt"
+      },
+      {
+        "beforeVerse": 25,
+        "heading": "The Revival of Jacob"
+      }
+    ],
+    "46": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jacob’s Journey to Egypt"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "Those Who Went to Egypt"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "The Children of Leah"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "The Children of Zilpah"
+      },
+      {
+        "beforeVerse": 19,
+        "heading": "The Children of Rachel"
+      },
+      {
+        "beforeVerse": 23,
+        "heading": "The Children of Bilhah"
+      },
+      {
+        "beforeVerse": 28,
+        "heading": "Jacob Arrives in Egypt"
+      }
+    ],
+    "47": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jacob Settles in Goshen"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "The Famine Continues"
+      },
+      {
+        "beforeVerse": 27,
+        "heading": "The Israelites Prosper in Goshen"
+      }
+    ],
+    "48": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jacob Blesses Ephraim and Manasseh"
+      }
+    ],
+    "49": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jacob Blesses His Sons"
+      },
+      {
+        "beforeVerse": 29,
+        "heading": "The Death of Jacob"
+      }
+    ],
+    "50": [
+      {
+        "beforeVerse": 1,
+        "heading": "Mourning and Burial for Jacob"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "Joseph Comforts His Brothers"
+      },
+      {
+        "beforeVerse": 22,
+        "heading": "The Death of Joseph"
+      }
+    ]
+  }
+}

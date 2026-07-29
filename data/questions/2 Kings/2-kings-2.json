@@ -1,0 +1,53 @@
+{
+  "book": "2 Kings",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "2-kings-2-q1",
+      "type": "multiple_choice",
+      "question": "How was Elijah taken up to heaven?",
+      "options": [
+        "In a bright cloud that hid him from view",
+        "In a whirlwind, with a chariot of fire",
+        "In a blaze of light upon the mountaintop",
+        "On the wings of a mighty rushing wind"
+      ],
+      "answer": "In a whirlwind, with a chariot of fire",
+      "verse_reference": "2 Kings 2:11"
+    },
+    {
+      "id": "2-kings-2-q2",
+      "type": "multiple_choice",
+      "question": "What did Elisha ask for from Elijah?",
+      "options": [
+        "A double portion of his spirit",
+        "Only his cloak as a keepsake",
+        "A great fortune in silver and gold",
+        "A simple blessing for his journey"
+      ],
+      "answer": "A double portion of his spirit",
+      "verse_reference": "2 Kings 2:9"
+    },
+    {
+      "id": "2-kings-2-q3",
+      "type": "true_false",
+      "question": "Elisha picked up Elijah's cloak and parted the Jordan with it.",
+      "answer": "true",
+      "verse_reference": "2 Kings 2:13-14"
+    },
+    {
+      "id": "2-kings-2-q4",
+      "type": "fill_blank",
+      "question": "Elijah was taken up to heaven in a _____, by a chariot of fire.",
+      "answer": "whirlwind",
+      "verse_reference": "2 Kings 2:11"
+    },
+    {
+      "id": "2-kings-2-q5",
+      "type": "fill_blank",
+      "question": "Elisha asked for a double portion of Elijah's _____.",
+      "answer": "spirit",
+      "verse_reference": "2 Kings 2:9"
+    }
+  ]
+}

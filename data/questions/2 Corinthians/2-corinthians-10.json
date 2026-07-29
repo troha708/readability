@@ -1,0 +1,53 @@
+{
+  "book": "2 Corinthians",
+  "chapter": 10,
+  "questions": [
+    {
+      "id": "2cor-10-q1",
+      "type": "multiple_choice",
+      "question": "Paul says the weapons believers fight with are not worldly but have what kind of power?",
+      "options": [
+        "Many followers to spread the good word",
+        "Great wealth to fund the mission",
+        "Sharp swords to defeat the enemy",
+        "Divine power to demolish strongholds"
+      ],
+      "answer": "Divine power to demolish strongholds",
+      "verse_reference": "2 Corinthians 10:4"
+    },
+    {
+      "id": "2cor-10-q2",
+      "type": "multiple_choice",
+      "question": "Some people in Corinth said Paul's letters were weighty but his presence was what?",
+      "options": [
+        "Weak and his speech contemptible",
+        "Proud and harsh in his letters",
+        "Wise and admired by all the people",
+        "Wealthy and fond of fine words"
+      ],
+      "answer": "Weak and his speech contemptible",
+      "verse_reference": "2 Corinthians 10:10"
+    },
+    {
+      "id": "2cor-10-q3",
+      "type": "true_false",
+      "question": "Paul says believers should take every thought captive to make it obedient to Christ.",
+      "answer": "true",
+      "verse_reference": "2 Corinthians 10:5"
+    },
+    {
+      "id": "2cor-10-q4",
+      "type": "fill_blank",
+      "question": "We demolish arguments and every pretension that sets itself up against the _____ of God.",
+      "answer": "knowledge",
+      "verse_reference": "2 Corinthians 10:5"
+    },
+    {
+      "id": "2cor-10-q5",
+      "type": "fill_blank",
+      "question": "Let the one who boasts, boast in the _____.",
+      "answer": "Lord",
+      "verse_reference": "2 Corinthians 10:17"
+    }
+  ]
+}

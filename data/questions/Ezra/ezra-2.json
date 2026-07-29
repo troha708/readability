@@ -1,0 +1,58 @@
+{
+  "book": "Ezra",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "ezra-2-q1",
+      "type": "multiple_choice",
+      "question": "What does Ezra 2 mostly consist of?",
+      "options": [
+        "An account of a great battle fought in Babylon",
+        "A long prayer of confession and of much joyful praise",
+        "A list of the exiles who returned with Zerubbabel",
+        "A detailed code of laws for the restored nation"
+      ],
+      "answer": "A list of the exiles who returned with Zerubbabel",
+      "verse_reference": "Ezra 2:1-2"
+    },
+    {
+      "id": "ezra-2-q2",
+      "type": "multiple_choice",
+      "question": "What were some priests excluded from until a priest with Urim and Thummim could decide?",
+      "options": [
+        "The priesthood, because their genealogy was not found",
+        "Traveling beyond the city until they registered",
+        "Building the temple until they were approved",
+        "Eating the holy food until they were cleansed"
+      ],
+      "answer": "The priesthood, because their genealogy was not found",
+      "verse_reference": "Ezra 2:62-63"
+    },
+    {
+      "id": "ezra-2-q3",
+      "type": "true_false",
+      "question": "The whole assembly together numbered over 42,000.",
+      "answer": "true",
+      "verse_reference": "Ezra 2:64"
+    },
+    {
+      "id": "ezra-2-q4",
+      "type": "fill_blank",
+      "question": "Some heads of families gave freewill offerings for the house of God to erect it on its _____.",
+      "answer": "site",
+      "accept": [
+        "place",
+        "foundation",
+        "base"
+      ],
+      "verse_reference": "Ezra 2:68"
+    },
+    {
+      "id": "ezra-2-q5",
+      "type": "fill_blank",
+      "question": "The returning leader alongside Jeshua was _____.",
+      "answer": "Zerubbabel",
+      "verse_reference": "Ezra 2:2"
+    }
+  ]
+}

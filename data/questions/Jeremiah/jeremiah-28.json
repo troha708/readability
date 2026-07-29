@@ -1,0 +1,53 @@
+{
+  "book": "Jeremiah",
+  "chapter": 28,
+  "questions": [
+    {
+      "id": "jeremiah-28-q1",
+      "type": "multiple_choice",
+      "question": "What did the prophet Hananiah falsely proclaim in chapter 28?",
+      "options": [
+        "That God would break Babylon's yoke within two years",
+        "That a great famine would soon sweep across all of Judah",
+        "That war would ravage the land for ten long years",
+        "That the exile would last for many generations"
+      ],
+      "answer": "That God would break Babylon's yoke within two years",
+      "verse_reference": "Jeremiah 28:3"
+    },
+    {
+      "id": "jeremiah-28-q2",
+      "type": "multiple_choice",
+      "question": "What happened to Hananiah for his false prophecy?",
+      "options": [
+        "He died that same year, as Jeremiah foretold",
+        "He fled into exile and was never once seen again",
+        "He repented and became a true prophet",
+        "He was made a leader among the prophets"
+      ],
+      "answer": "He died that same year, as Jeremiah foretold",
+      "verse_reference": "Jeremiah 28:17"
+    },
+    {
+      "id": "jeremiah-28-q3",
+      "type": "true_false",
+      "question": "Hananiah took the wooden yoke-bar from Jeremiah's neck and broke it.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 28:10"
+    },
+    {
+      "id": "jeremiah-28-q4",
+      "type": "fill_blank",
+      "question": "Jeremiah said God would replace the wooden yoke with a yoke of _____.",
+      "answer": "iron",
+      "verse_reference": "Jeremiah 28:13"
+    },
+    {
+      "id": "jeremiah-28-q5",
+      "type": "fill_blank",
+      "question": "In that same year, in the seventh month, the prophet _____ died.",
+      "answer": "Hananiah",
+      "verse_reference": "Jeremiah 28:17"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 7,
+  "questions": [
+    {
+      "id": "2-chronicles-7-q1",
+      "type": "multiple_choice",
+      "question": "What came down and consumed the burnt offering when Solomon finished praying?",
+      "options": [
+        "A heavy rain",
+        "A mighty wind",
+        "A storm of hail",
+        "Fire from heaven"
+      ],
+      "answer": "Fire from heaven",
+      "verse_reference": "2 Chronicles 7:1"
+    },
+    {
+      "id": "2-chronicles-7-q2",
+      "type": "multiple_choice",
+      "question": "What did God say his people should do to be forgiven and have their land healed?",
+      "options": [
+        "Build many more temples to the LORD throughout the land",
+        "Humble themselves, pray, seek his face, and turn from wicked ways",
+        "Offer far greater and more frequent numbers of sacrifices",
+        "Make strong military alliances with all of their many neighboring nations"
+      ],
+      "answer": "Humble themselves, pray, seek his face, and turn from wicked ways",
+      "verse_reference": "2 Chronicles 7:14"
+    },
+    {
+      "id": "2-chronicles-7-q3",
+      "type": "true_false",
+      "question": "The glory of the LORD filled the temple so the priests could not enter.",
+      "answer": "true",
+      "verse_reference": "2 Chronicles 7:2"
+    },
+    {
+      "id": "2-chronicles-7-q4",
+      "type": "fill_blank",
+      "question": "God said, 'If my people who are called by my _____ humble themselves...'",
+      "answer": "name",
+      "verse_reference": "2 Chronicles 7:14"
+    },
+    {
+      "id": "2-chronicles-7-q5",
+      "type": "fill_blank",
+      "question": "God appeared to Solomon at _____ and said he had heard his prayer.",
+      "answer": "night",
+      "verse_reference": "2 Chronicles 7:12"
+    }
+  ]
+}

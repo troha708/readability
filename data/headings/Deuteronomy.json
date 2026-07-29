@@ -1,0 +1,438 @@
+{
+  "book": "Deuteronomy",
+  "source": "Berean Standard Bible (CC0 Public Domain)",
+  "chapters": {
+    "1": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Command to Leave Horeb"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "Moses Appoints Leaders"
+      },
+      {
+        "beforeVerse": 19,
+        "heading": "Twelve Spies Sent Out"
+      },
+      {
+        "beforeVerse": 26,
+        "heading": "Israel’s Rebellion"
+      },
+      {
+        "beforeVerse": 34,
+        "heading": "Israel’s Penalty"
+      },
+      {
+        "beforeVerse": 41,
+        "heading": "The Defeat at Hormah"
+      }
+    ],
+    "2": [
+      {
+        "beforeVerse": 1,
+        "heading": "Wanderings in the Wilderness"
+      },
+      {
+        "beforeVerse": 24,
+        "heading": "The Defeat of Sihon"
+      }
+    ],
+    "3": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Defeat of Og"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "Land Division East of the Jordan"
+      },
+      {
+        "beforeVerse": 23,
+        "heading": "Moses Forbidden to Cross the Jordan"
+      }
+    ],
+    "4": [
+      {
+        "beforeVerse": 1,
+        "heading": "An Exhortation to Obedience"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "A Warning against Idolatry"
+      },
+      {
+        "beforeVerse": 32,
+        "heading": "The LORD Alone Is God"
+      },
+      {
+        "beforeVerse": 41,
+        "heading": "Cities of Refuge"
+      },
+      {
+        "beforeVerse": 44,
+        "heading": "Introduction to the Law"
+      }
+    ],
+    "5": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Covenant at Horeb"
+      },
+      {
+        "beforeVerse": 5,
+        "heading": "The Ten Commandments"
+      },
+      {
+        "beforeVerse": 22,
+        "heading": "Moses Intercedes for the People"
+      }
+    ],
+    "6": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Greatest Commandment"
+      },
+      {
+        "beforeVerse": 20,
+        "heading": "Teach Your Children"
+      }
+    ],
+    "7": [
+      {
+        "beforeVerse": 1,
+        "heading": "Drive Out the Nations"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "The Promises of God"
+      }
+    ],
+    "8": [
+      {
+        "beforeVerse": 1,
+        "heading": "Remember the LORD Your God"
+      }
+    ],
+    "9": [
+      {
+        "beforeVerse": 1,
+        "heading": "Assurance of Victory"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "The Golden Calf"
+      }
+    ],
+    "10": [
+      {
+        "beforeVerse": 1,
+        "heading": "New Stone Tablets"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "A Call to Obedience"
+      }
+    ],
+    "11": [
+      {
+        "beforeVerse": 1,
+        "heading": "Obedience and Discipline"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "God’s Great Blessings"
+      },
+      {
+        "beforeVerse": 18,
+        "heading": "Remember God’s Words"
+      },
+      {
+        "beforeVerse": 26,
+        "heading": "A Blessing and a Curse"
+      }
+    ],
+    "12": [
+      {
+        "beforeVerse": 1,
+        "heading": "One Place for Worship"
+      },
+      {
+        "beforeVerse": 29,
+        "heading": "A Warning against Idolatry"
+      }
+    ],
+    "13": [
+      {
+        "beforeVerse": 1,
+        "heading": "Idolaters to Be Put to Death"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "Idolatrous Cities to Be Destroyed"
+      }
+    ],
+    "14": [
+      {
+        "beforeVerse": 1,
+        "heading": "Clean and Unclean Animals"
+      },
+      {
+        "beforeVerse": 22,
+        "heading": "Giving Tithes"
+      }
+    ],
+    "15": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Seventh Year"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "Generosity in Lending and Giving"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "Hebrew Servants"
+      },
+      {
+        "beforeVerse": 19,
+        "heading": "Firstborn Animals"
+      }
+    ],
+    "16": [
+      {
+        "beforeVerse": 1,
+        "heading": "Passover and the Feast of Unleavened Bread"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "The Feast of Weeks"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "The Feast of Tabernacles"
+      },
+      {
+        "beforeVerse": 18,
+        "heading": "Judges and Justice"
+      },
+      {
+        "beforeVerse": 21,
+        "heading": "Forbidden Forms of Worship"
+      }
+    ],
+    "17": [
+      {
+        "beforeVerse": 1,
+        "heading": "Detestable Sacrifices"
+      },
+      {
+        "beforeVerse": 2,
+        "heading": "Purge the Idolater"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "Courts of Law"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "Guidelines for a King"
+      }
+    ],
+    "18": [
+      {
+        "beforeVerse": 1,
+        "heading": "Provision for Priests and Levites"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "Sorcery Forbidden"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "A Prophet Like Moses"
+      }
+    ],
+    "19": [
+      {
+        "beforeVerse": 1,
+        "heading": "Cities of Refuge"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "The Testimony of Two or Three Witnesses"
+      }
+    ],
+    "20": [
+      {
+        "beforeVerse": 1,
+        "heading": "Laws of Warfare"
+      }
+    ],
+    "21": [
+      {
+        "beforeVerse": 1,
+        "heading": "Atonement for an Unsolved Murder"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "Marrying a Captive Woman"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "Inheritance Rights of the Firstborn"
+      },
+      {
+        "beforeVerse": 18,
+        "heading": "A Rebellious Son"
+      },
+      {
+        "beforeVerse": 22,
+        "heading": "Cursed Is Anyone Hung on a Tree"
+      }
+    ],
+    "22": [
+      {
+        "beforeVerse": 1,
+        "heading": "Various Laws"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "Marriage Violations"
+      }
+    ],
+    "23": [
+      {
+        "beforeVerse": 1,
+        "heading": "Exclusion from the Congregation"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "Uncleanness in the Camp"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "Miscellaneous Laws"
+      }
+    ],
+    "24": [
+      {
+        "beforeVerse": 1,
+        "heading": "Marriage and Divorce Laws"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "Additional Laws"
+      }
+    ],
+    "25": [
+      {
+        "beforeVerse": 1,
+        "heading": "Fairness and Mercy"
+      },
+      {
+        "beforeVerse": 5,
+        "heading": "Widowhood and Marriage"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "Standard Weights and Measures"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "Revenge on the Amalekites"
+      }
+    ],
+    "26": [
+      {
+        "beforeVerse": 1,
+        "heading": "Offering Firstfruits and Tithes"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "Obey the LORD’s Commands"
+      }
+    ],
+    "27": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Altar on Mount Ebal"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "Curses Pronounced from Ebal"
+      }
+    ],
+    "28": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Blessings of Obedience"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "The Curses of Disobedience"
+      }
+    ],
+    "29": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Covenant in Moab"
+      }
+    ],
+    "30": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Promise of Restoration"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "The Choice of Life or Death"
+      }
+    ],
+    "31": [
+      {
+        "beforeVerse": 1,
+        "heading": "Joshua to Succeed Moses"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "The Reading of the Law"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "God Commissions Joshua"
+      },
+      {
+        "beforeVerse": 24,
+        "heading": "The Law Placed in the Ark"
+      },
+      {
+        "beforeVerse": 30,
+        "heading": "Moses Begins His Song"
+      }
+    ],
+    "32": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Song of Moses"
+      },
+      {
+        "beforeVerse": 48,
+        "heading": "Moses’ Death Foretold"
+      }
+    ],
+    "33": [
+      {
+        "beforeVerse": 1,
+        "heading": "Moses Blesses the Twelve Tribes"
+      }
+    ],
+    "34": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Death of Moses"
+      }
+    ]
+  }
+}

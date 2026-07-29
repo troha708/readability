@@ -1,0 +1,54 @@
+{
+  "book": "Amos",
+  "chapter": 5,
+  "questions": [
+    {
+      "id": "amos-5-q1",
+      "type": "multiple_choice",
+      "question": "What does Amos 5 urge the people to do that they may live?",
+      "options": [
+        "Make alliances with the nations",
+        "Gather riches and store them up",
+        "Seek the LORD and seek good, not evil",
+        "Offer up very many sacrifices at Bethel"
+      ],
+      "answer": "Seek the LORD and seek good, not evil",
+      "verse_reference": "Amos 5:4, 14"
+    },
+    {
+      "id": "amos-5-q2",
+      "type": "multiple_choice",
+      "question": "What famous call for justice appears in Amos 5?",
+      "options": [
+        "Let your many offerings cover over the whole altar, day after day after day",
+        "Let your sacrifices rise up like sweet incense, both in the morning and evening",
+        "Let your songs fill the whole of the temple, both loud and entirely unceasing",
+        "Let justice roll down like waters, and righteousness like an ever-flowing stream"
+      ],
+      "answer": "Let justice roll down like waters, and righteousness like an ever-flowing stream",
+      "verse_reference": "Amos 5:24"
+    },
+    {
+      "id": "amos-5-q3",
+      "type": "true_false",
+      "question": "Amos 5 says God hates and despises their feasts when they lack justice.",
+      "answer": "true",
+      "verse_reference": "Amos 5:21"
+    },
+    {
+      "id": "amos-5-q4",
+      "type": "fill_blank",
+      "question": "Seek the LORD and _____.",
+      "answer": "live",
+      "verse_reference": "Amos 5:6"
+    },
+    {
+      "id": "amos-5-q5",
+      "type": "fill_blank",
+      "question": "Let justice roll down like waters, and righteousness like an ever-flowing _____.",
+      "answer": "stream",
+      "accept": ["river"],
+      "verse_reference": "Amos 5:24"
+    }
+  ]
+}

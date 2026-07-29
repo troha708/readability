@@ -1,0 +1,62 @@
+{
+  "book": "Luke",
+  "chapter": 10,
+  "questions": [
+    {
+      "id": "luke-10-q1",
+      "type": "multiple_choice",
+      "question": "In the Parable of the Good Samaritan, who passed by the injured man without helping?",
+      "options": [
+        "A soldier and a merchant",
+        "A priest and a Levite",
+        "A Samaritan and a Levite",
+        "Two Pharisees"
+      ],
+      "answer": "A priest and a Levite",
+      "verse_reference": "Luke 10:31-32"
+    },
+    {
+      "id": "luke-10-q2",
+      "type": "multiple_choice",
+      "question": "How many disciples did Jesus send out ahead of him in this chapter?",
+      "options": [
+        "Twelve",
+        "Forty",
+        "Seventy-two",
+        "One hundred"
+      ],
+      "answer": "Seventy-two",
+      "verse_reference": "Luke 10:1"
+    },
+    {
+      "id": "luke-10-q3",
+      "type": "true_false",
+      "question": "Jesus told Martha that Mary had chosen the good part by sitting and listening to him.",
+      "answer": "true",
+      "verse_reference": "Luke 10:41-42"
+    },
+    {
+      "id": "luke-10-q4",
+      "type": "fill_blank",
+      "question": "The harvest is plentiful, but the _____ are few.",
+      "answer": "workers",
+      "accept": [
+        "laborers",
+        "labourers",
+        "workmen"
+      ],
+      "verse_reference": "Luke 10:2"
+    },
+    {
+      "id": "luke-10-q5",
+      "type": "fill_blank",
+      "question": "You shall love the Lord your God with all your heart, with all your soul, with all your strength, and with all your _____.",
+      "answer": "mind",
+      "accept": [
+        "understanding",
+        "thought"
+      ],
+      "verse_reference": "Luke 10:27"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "book": "2 Kings",
+  "chapter": 19,
+  "questions": [
+    {
+      "id": "2-kings-19-q1",
+      "type": "multiple_choice",
+      "question": "To whom did Hezekiah turn when Assyria threatened Jerusalem?",
+      "options": [
+        "The rising power of Babylon",
+        "His own great army and its commanders",
+        "The LORD, and the prophet Isaiah",
+        "The king of Egypt for help"
+      ],
+      "answer": "The LORD, and the prophet Isaiah",
+      "verse_reference": "2 Kings 19:1-6"
+    },
+    {
+      "id": "2-kings-19-q2",
+      "type": "multiple_choice",
+      "question": "How was the Assyrian army defeated outside Jerusalem?",
+      "options": [
+        "A sudden and deadly plague swept through the entire camp",
+        "The angel of the LORD struck down 185,000 in the camp",
+        "A flood from the river drowned all of their soldiers",
+        "The Egyptians attacked them by surprise from the south"
+      ],
+      "answer": "The angel of the LORD struck down 185,000 in the camp",
+      "verse_reference": "2 Kings 19:35"
+    },
+    {
+      "id": "2-kings-19-q3",
+      "type": "true_false",
+      "question": "Sennacherib withdrew and was later killed by his own sons.",
+      "answer": "true",
+      "verse_reference": "2 Kings 19:36-37"
+    },
+    {
+      "id": "2-kings-19-q4",
+      "type": "fill_blank",
+      "question": "The prophet _____ assured Hezekiah that Jerusalem would be spared.",
+      "answer": "Isaiah",
+      "verse_reference": "2 Kings 19:6-20"
+    },
+    {
+      "id": "2-kings-19-q5",
+      "type": "fill_blank",
+      "question": "The angel of the LORD struck down _____ thousand in the Assyrian camp.",
+      "answer": "185",
+      "accept": [
+        "185,000"
+      ],
+      "verse_reference": "2 Kings 19:35"
+    }
+  ]
+}

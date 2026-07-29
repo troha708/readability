@@ -1,0 +1,53 @@
+{
+  "book": "Ezekiel",
+  "chapter": 37,
+  "questions": [
+    {
+      "id": "ezekiel-37-q1",
+      "type": "multiple_choice",
+      "question": "What did Ezekiel see in the valley in chapter 37?",
+      "options": [
+        "A garden in full bloom",
+        "A valley full of dry bones",
+        "A wide and winding river",
+        "A great army drawn up for war"
+      ],
+      "answer": "A valley full of dry bones",
+      "verse_reference": "Ezekiel 37:1-2"
+    },
+    {
+      "id": "ezekiel-37-q2",
+      "type": "multiple_choice",
+      "question": "What happened when Ezekiel prophesied to the bones and the breath?",
+      "options": [
+        "They lay there still and entirely silent, and nothing at all happened to them",
+        "They were wholly consumed by a great fire that swept across the whole valley",
+        "The bones came together, were covered with flesh, and lived as a great army",
+        "They crumbled away into fine dust and were scattered abroad by the wind"
+      ],
+      "answer": "The bones came together, were covered with flesh, and lived as a great army",
+      "verse_reference": "Ezekiel 37:7-10"
+    },
+    {
+      "id": "ezekiel-37-q3",
+      "type": "true_false",
+      "question": "In the same chapter Ezekiel joined two sticks to symbolize Judah and Israel becoming one nation.",
+      "answer": "true",
+      "verse_reference": "Ezekiel 37:16-22"
+    },
+    {
+      "id": "ezekiel-37-q4",
+      "type": "fill_blank",
+      "question": "Son of man, can these _____ live? And I answered, 'O Lord GOD, you know.'",
+      "answer": "bones",
+      "verse_reference": "Ezekiel 37:3"
+    },
+    {
+      "id": "ezekiel-37-q5",
+      "type": "fill_blank",
+      "question": "These bones are the whole house of Israel; behold, they say, 'Our _____ is lost.'",
+      "answer": "hope",
+      "verse_reference": "Ezekiel 37:11"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "book": "Jeremiah",
+  "chapter": 17,
+  "questions": [
+    {
+      "id": "jeremiah-17-q1",
+      "type": "multiple_choice",
+      "question": "How does Jeremiah 17 describe the human heart?",
+      "options": [
+        "Deceitful above all things, and desperately sick",
+        "Easily taught, quick to follow the truth",
+        "Strong and steadfast, firm against all temptation",
+        "Pure and upright, made in the image of God"
+      ],
+      "answer": "Deceitful above all things, and desperately sick",
+      "verse_reference": "Jeremiah 17:9"
+    },
+    {
+      "id": "jeremiah-17-q2",
+      "type": "multiple_choice",
+      "question": "To what is the one who trusts in the LORD compared in Jeremiah 17?",
+      "options": [
+        "Chaff that the wind drives away from the threshing floor",
+        "A lonely shrub in the parched and salty desert",
+        "A reed bending and breaking in the rushing wind",
+        "A tree planted by water that does not fear when heat comes"
+      ],
+      "answer": "A tree planted by water that does not fear when heat comes",
+      "verse_reference": "Jeremiah 17:7-8"
+    },
+    {
+      "id": "jeremiah-17-q3",
+      "type": "true_false",
+      "question": "Jeremiah 17 calls the people to keep the Sabbath holy and not bear burdens on it.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 17:21-22"
+    },
+    {
+      "id": "jeremiah-17-q4",
+      "type": "fill_blank",
+      "question": "The _____ is deceitful above all things, and desperately sick; who can understand it?",
+      "answer": "heart",
+      "verse_reference": "Jeremiah 17:9"
+    },
+    {
+      "id": "jeremiah-17-q5",
+      "type": "fill_blank",
+      "question": "Blessed is the man who trusts in the LORD, whose trust is the _____.",
+      "answer": "LORD",
+      "accept": [
+        "Jehovah",
+        "Yahweh"
+      ],
+      "verse_reference": "Jeremiah 17:7"
+    }
+  ]
+}

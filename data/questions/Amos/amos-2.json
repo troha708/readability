@@ -1,0 +1,54 @@
+{
+  "book": "Amos",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "amos-2-q1",
+      "type": "multiple_choice",
+      "question": "Which of God's own people does Amos 2 finally turn to judge?",
+      "options": [
+        "Old Tyre and great Sidon",
+        "Edom and Moab",
+        "Egypt and Cush",
+        "Judah and Israel"
+      ],
+      "answer": "Judah and Israel",
+      "verse_reference": "Amos 2:4-6"
+    },
+    {
+      "id": "amos-2-q2",
+      "type": "multiple_choice",
+      "question": "What sins of Israel does Amos 2 list?",
+      "options": [
+        "Selling the righteous for silver and the needy for a pair of sandals",
+        "Making secret treaties with the powerful kings of foreign lands",
+        "Refusing year after year to keep the appointed sacred feasts",
+        "Worshiping carved idols on the high places of the hills"
+      ],
+      "answer": "Selling the righteous for silver and the needy for a pair of sandals",
+      "verse_reference": "Amos 2:6"
+    },
+    {
+      "id": "amos-2-q3",
+      "type": "true_false",
+      "question": "Amos 2 recalls that God brought Israel out of Egypt and raised up prophets and Nazirites among them.",
+      "answer": "true",
+      "verse_reference": "Amos 2:10-11"
+    },
+    {
+      "id": "amos-2-q4",
+      "type": "fill_blank",
+      "question": "They sell the righteous for silver, and the needy for a pair of _____.",
+      "answer": "sandals",
+      "accept": ["shoes"],
+      "verse_reference": "Amos 2:6"
+    },
+    {
+      "id": "amos-2-q5",
+      "type": "fill_blank",
+      "question": "I brought you up out of the land of Egypt and led you forty years in the _____.",
+      "answer": "wilderness",
+      "verse_reference": "Amos 2:10"
+    }
+  ]
+}

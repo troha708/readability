@@ -1,0 +1,56 @@
+{
+  "book": "Isaiah",
+  "chapter": 27,
+  "questions": [
+    {
+      "id": "isaiah-27-q1",
+      "type": "multiple_choice",
+      "question": "What creature does the LORD punish in Isaiah 27?",
+      "options": [
+        "The lion that prowls by night",
+        "The eagle that soars on high",
+        "Behemoth, the beast of the field",
+        "Leviathan, the fleeing serpent"
+      ],
+      "answer": "Leviathan, the fleeing serpent",
+      "verse_reference": "Isaiah 27:1"
+    },
+    {
+      "id": "isaiah-27-q2",
+      "type": "multiple_choice",
+      "question": "How is Israel pictured again in Isaiah 27?",
+      "options": [
+        "A scattered flock left wandering upon the high mountains",
+        "A pleasant vineyard that the LORD keeps and waters",
+        "A barren and empty field all overgrown with thorns",
+        "A great city laid utterly waste by all of its enemies"
+      ],
+      "answer": "A pleasant vineyard that the LORD keeps and waters",
+      "verse_reference": "Isaiah 27:2-3"
+    },
+    {
+      "id": "isaiah-27-q3",
+      "type": "true_false",
+      "question": "Isaiah 27 says in days to come Jacob shall take root, and Israel shall blossom and fill the world with fruit.",
+      "answer": "true",
+      "verse_reference": "Isaiah 27:6"
+    },
+    {
+      "id": "isaiah-27-q4",
+      "type": "fill_blank",
+      "question": "In that day, a pleasant _____, sing of it! I, the LORD, am its keeper.",
+      "answer": "vineyard",
+      "verse_reference": "Isaiah 27:2-3"
+    },
+    {
+      "id": "isaiah-27-q5",
+      "type": "fill_blank",
+      "question": "In days to come Jacob shall take root, Israel shall blossom and put forth shoots and fill the whole world with _____.",
+      "answer": "fruit",
+      "accept": [
+        "increase"
+      ],
+      "verse_reference": "Isaiah 27:6"
+    }
+  ]
+}

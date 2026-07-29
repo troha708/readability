@@ -1,0 +1,53 @@
+{
+  "book": "Romans",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "romans-4-q1",
+      "type": "multiple_choice",
+      "question": "Who does Paul use as the key example of being justified by faith?",
+      "options": [
+        "Noah",
+        "Moses",
+        "Abraham",
+        "David"
+      ],
+      "answer": "Abraham",
+      "verse_reference": "Romans 4:3"
+    },
+    {
+      "id": "romans-4-q2",
+      "type": "multiple_choice",
+      "question": "Was Abraham declared righteous before or after he was circumcised?",
+      "options": [
+        "After",
+        "Before",
+        "At the same time",
+        "It is not mentioned"
+      ],
+      "answer": "Before",
+      "verse_reference": "Romans 4:10"
+    },
+    {
+      "id": "romans-4-q3",
+      "type": "true_false",
+      "question": "Paul says that God counts faith as righteousness for those who believe, apart from works.",
+      "answer": "true",
+      "verse_reference": "Romans 4:5-6"
+    },
+    {
+      "id": "romans-4-q4",
+      "type": "fill_blank",
+      "question": "Abraham believed God, and it was counted to him for _____.",
+      "answer": "righteousness",
+      "verse_reference": "Romans 4:3"
+    },
+    {
+      "id": "romans-4-q5",
+      "type": "fill_blank",
+      "question": "Jesus was delivered up for our trespasses, and was raised for our _____.",
+      "answer": "justification",
+      "verse_reference": "Romans 4:25"
+    }
+  ]
+}

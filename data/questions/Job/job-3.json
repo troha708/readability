@@ -1,0 +1,57 @@
+{
+  "book": "Job",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "job-3-q1",
+      "type": "multiple_choice",
+      "question": "What did Job do in chapter 3?",
+      "options": [
+        "Cursed the day of his birth",
+        "Repented of his hidden sins",
+        "Praised God for all his gifts",
+        "Accused his friends of betrayal"
+      ],
+      "answer": "Cursed the day of his birth",
+      "verse_reference": "Job 3:1"
+    },
+    {
+      "id": "job-3-q2",
+      "type": "multiple_choice",
+      "question": "What did Job long for in his suffering?",
+      "options": [
+        "Wealth",
+        "Death and rest",
+        "Revenge",
+        "His friends' praise"
+      ],
+      "answer": "Death and rest",
+      "verse_reference": "Job 3:11-13"
+    },
+    {
+      "id": "job-3-q3",
+      "type": "true_false",
+      "question": "Job said he had no rest, but trouble came.",
+      "answer": "true",
+      "verse_reference": "Job 3:26"
+    },
+    {
+      "id": "job-3-q4",
+      "type": "fill_blank",
+      "question": "Job asked why light is given to the _____, and life to the bitter of soul.",
+      "answer": "miserable",
+      "accept": [
+        "misery",
+        "trouble"
+      ],
+      "verse_reference": "Job 3:20"
+    },
+    {
+      "id": "job-3-q5",
+      "type": "fill_blank",
+      "question": "Job said that what he feared had come upon him, and what he _____ befell him.",
+      "answer": "dreaded",
+      "verse_reference": "Job 3:25"
+    }
+  ]
+}

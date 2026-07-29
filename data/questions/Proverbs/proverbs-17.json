@@ -1,0 +1,56 @@
+{
+  "book": "Proverbs",
+  "chapter": 17,
+  "questions": [
+    {
+      "id": "proverbs-17-q1",
+      "type": "multiple_choice",
+      "question": "What does Proverbs 17 say about a friend?",
+      "options": [
+        "A friend quickly forgets all about you once you are dead and gone",
+        "A friend takes all that he possibly can and gives back nothing at all",
+        "A friend flees away from you at the very first sign of any trouble",
+        "A friend loves at all times, and a brother is born for adversity"
+      ],
+      "answer": "A friend loves at all times, and a brother is born for adversity",
+      "verse_reference": "Proverbs 17:17"
+    },
+    {
+      "id": "proverbs-17-q2",
+      "type": "multiple_choice",
+      "question": "What does Proverbs 17 say a joyful heart is?",
+      "options": [
+        "A weakness",
+        "Good medicine",
+        "A burden",
+        "A distraction"
+      ],
+      "answer": "Good medicine",
+      "verse_reference": "Proverbs 17:22"
+    },
+    {
+      "id": "proverbs-17-q3",
+      "type": "true_false",
+      "question": "Proverbs 17 says better is a dry morsel with quiet than a house full of feasting with strife.",
+      "answer": "true",
+      "verse_reference": "Proverbs 17:1"
+    },
+    {
+      "id": "proverbs-17-q4",
+      "type": "fill_blank",
+      "question": "A friend loves at all _____, and a brother is born for adversity.",
+      "answer": "times",
+      "verse_reference": "Proverbs 17:17"
+    },
+    {
+      "id": "proverbs-17-q5",
+      "type": "fill_blank",
+      "question": "A joyful heart is good _____, but a crushed spirit dries up the bones.",
+      "answer": "medicine",
+      "accept": [
+        "health"
+      ],
+      "verse_reference": "Proverbs 17:22"
+    }
+  ]
+}

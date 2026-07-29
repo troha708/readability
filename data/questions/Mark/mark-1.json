@@ -1,0 +1,56 @@
+{
+  "book": "Mark",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "mark-1-q1",
+      "type": "multiple_choice",
+      "question": "Who baptized Jesus in the Jordan River?",
+      "options": [
+        "Peter",
+        "Andrew",
+        "John",
+        "James"
+      ],
+      "answer": "John",
+      "verse_reference": "Mark 1:9"
+    },
+    {
+      "id": "mark-1-q2",
+      "type": "multiple_choice",
+      "question": "What did Jesus tell Simon and Andrew he would make them?",
+      "options": [
+        "Teachers of the law",
+        "Fishers for men",
+        "Shepherds of nations",
+        "Leaders of Israel"
+      ],
+      "answer": "Fishers for men",
+      "verse_reference": "Mark 1:17"
+    },
+    {
+      "id": "mark-1-q3",
+      "type": "true_false",
+      "question": "After Jesus was baptized, the Spirit drove him into the wilderness.",
+      "answer": "true",
+      "verse_reference": "Mark 1:12"
+    },
+    {
+      "id": "mark-1-q4",
+      "type": "fill_blank",
+      "question": "The time is fulfilled, and God's Kingdom is at hand! _____, and believe in the Good News.",
+      "answer": "Repent",
+      "accept": [
+        "reform"
+      ],
+      "verse_reference": "Mark 1:15"
+    },
+    {
+      "id": "mark-1-q5",
+      "type": "fill_blank",
+      "question": "The beginning of the Good News of Jesus Christ, the _____ of God.",
+      "answer": "Son",
+      "verse_reference": "Mark 1:1"
+    }
+  ]
+}

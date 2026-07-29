@@ -1,0 +1,62 @@
+{
+  "book": "Psalms",
+  "chapter": 98,
+  "questions": [
+    {
+      "id": "psalms-98-q1",
+      "type": "multiple_choice",
+      "question": "Why is the LORD to be praised with a new song in Psalm 98?",
+      "options": [
+        "Because he has made the whole earth, and the very heavens declare his glory",
+        "Because he has done marvelous things; his right hand has worked salvation",
+        "Because he has chosen Zion for himself, and his temple shall stand forever",
+        "Because he has given the holy law, and all of his commandments are righteous"
+      ],
+      "answer": "Because he has done marvelous things; his right hand has worked salvation",
+      "verse_reference": "Psalm 98:1"
+    },
+    {
+      "id": "psalms-98-q2",
+      "type": "multiple_choice",
+      "question": "What are the sea, rivers, and hills told to do?",
+      "options": [
+        "Fast, weep, and mourn before the LORD",
+        "Wait, watch, and listen before the LORD",
+        "Tremble, bow, and keep silent before the LORD",
+        "Roar, clap, and sing for joy before the LORD"
+      ],
+      "answer": "Roar, clap, and sing for joy before the LORD",
+      "verse_reference": "Psalm 98:7-8"
+    },
+    {
+      "id": "psalms-98-q3",
+      "type": "true_false",
+      "question": "The psalm says the LORD will judge the world with righteousness and the peoples with equity.",
+      "answer": "true",
+      "verse_reference": "Psalm 98:9"
+    },
+    {
+      "id": "psalms-98-q4",
+      "type": "fill_blank",
+      "question": "Oh sing to the LORD a new song, for he has done _____!",
+      "answer": "wonders",
+      "accept": [
+        "marvelous",
+        "marvellous",
+        "wondrous"
+      ],
+      "verse_reference": "Psalm 98:1"
+    },
+    {
+      "id": "psalms-98-q5",
+      "type": "fill_blank",
+      "question": "Make a joyful noise to the LORD, all the earth; break forth into joyous song and sing _____!",
+      "answer": "praises",
+      "accept": [
+        "praise",
+        "psalms"
+      ],
+      "verse_reference": "Psalm 98:4"
+    }
+  ]
+}

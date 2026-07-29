@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 86,
+  "questions": [
+    {
+      "id": "psalms-86-q1",
+      "type": "multiple_choice",
+      "question": "How does David describe himself in Psalm 86?",
+      "options": [
+        "Rich and strong",
+        "Poor and needy",
+        "Proud",
+        "Wise"
+      ],
+      "answer": "Poor and needy",
+      "verse_reference": "Psalm 86:1"
+    },
+    {
+      "id": "psalms-86-q2",
+      "type": "multiple_choice",
+      "question": "What does David ask God to teach him?",
+      "options": [
+        "His law, so that he may keep its commands",
+        "His way, so that he may walk in his truth",
+        "His will, so that he may do his pleasure",
+        "His name, so that he may praise it forever"
+      ],
+      "answer": "His way, so that he may walk in his truth",
+      "verse_reference": "Psalm 86:11"
+    },
+    {
+      "id": "psalms-86-q3",
+      "type": "true_false",
+      "question": "David asks God to unite his heart to fear his name.",
+      "answer": "true",
+      "verse_reference": "Psalm 86:11"
+    },
+    {
+      "id": "psalms-86-q4",
+      "type": "fill_blank",
+      "question": "Teach me your way, O LORD, that I may walk in your _____.",
+      "answer": "truth",
+      "verse_reference": "Psalm 86:11"
+    },
+    {
+      "id": "psalms-86-q5",
+      "type": "fill_blank",
+      "question": "You, O Lord, are a God merciful and gracious, slow to _____, abounding in steadfast love.",
+      "answer": "anger",
+      "verse_reference": "Psalm 86:15"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "1 Chronicles",
+  "chapter": 24,
+  "questions": [
+    {
+      "id": "1-chronicles-24-q1",
+      "type": "multiple_choice",
+      "question": "Into how many divisions were the descendants of Aaron organized?",
+      "options": [
+        "Forty",
+        "Seven",
+        "Twelve",
+        "Twenty-four"
+      ],
+      "answer": "Twenty-four",
+      "verse_reference": "1 Chronicles 24:1-18"
+    },
+    {
+      "id": "1-chronicles-24-q2",
+      "type": "multiple_choice",
+      "question": "How were the priestly divisions assigned their order of service?",
+      "options": [
+        "By wealth",
+        "By lot",
+        "By the king's choice",
+        "By age"
+      ],
+      "answer": "By lot",
+      "verse_reference": "1 Chronicles 24:5"
+    },
+    {
+      "id": "1-chronicles-24-q3",
+      "type": "true_false",
+      "question": "Aaron's sons Nadab and Abihu died before their father and had no children.",
+      "answer": "true",
+      "verse_reference": "1 Chronicles 24:2"
+    },
+    {
+      "id": "1-chronicles-24-q4",
+      "type": "fill_blank",
+      "question": "The descendants of Aaron were divided by lot among the sons of Eleazar and _____.",
+      "answer": "Ithamar",
+      "verse_reference": "1 Chronicles 24:4"
+    },
+    {
+      "id": "1-chronicles-24-q5",
+      "type": "fill_blank",
+      "question": "The first lot fell to _____.",
+      "answer": "Jehoiarib",
+      "verse_reference": "1 Chronicles 24:7"
+    }
+  ]
+}

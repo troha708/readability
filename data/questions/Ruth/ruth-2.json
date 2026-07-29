@@ -1,0 +1,56 @@
+{
+  "book": "Ruth",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "ruth-2-q1",
+      "type": "multiple_choice",
+      "question": "Whose field did Ruth glean in?",
+      "options": [
+        "The king's",
+        "Elimelech's",
+        "Boaz's",
+        "Naomi's"
+      ],
+      "answer": "Boaz's",
+      "verse_reference": "Ruth 2:3"
+    },
+    {
+      "id": "ruth-2-q2",
+      "type": "multiple_choice",
+      "question": "How was Boaz related to Naomi's family?",
+      "options": [
+        "A neighbor from Bethlehem",
+        "A merchant passing through",
+        "A former servant of Elimelech",
+        "A close relative (kinsman)"
+      ],
+      "answer": "A close relative (kinsman)",
+      "verse_reference": "Ruth 2:1-20"
+    },
+    {
+      "id": "ruth-2-q3",
+      "type": "true_false",
+      "question": "Boaz showed kindness to Ruth and told his workers to leave extra grain for her.",
+      "answer": "true",
+      "verse_reference": "Ruth 2:15-16"
+    },
+    {
+      "id": "ruth-2-q4",
+      "type": "fill_blank",
+      "question": "Ruth gleaned in the field of _____, a relative of her late husband.",
+      "answer": "Boaz",
+      "verse_reference": "Ruth 2:3"
+    },
+    {
+      "id": "ruth-2-q5",
+      "type": "fill_blank",
+      "question": "Boaz was a close _____ of Naomi's family, one of their kinsman-redeemers.",
+      "answer": "relative",
+      "accept": [
+        "kinsman"
+      ],
+      "verse_reference": "Ruth 2:20"
+    }
+  ]
+}

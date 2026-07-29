@@ -1,0 +1,56 @@
+{
+  "book": "Psalms",
+  "chapter": 95,
+  "questions": [
+    {
+      "id": "psalms-95-q1",
+      "type": "multiple_choice",
+      "question": "What does Psalm 95 invite the people to do?",
+      "options": [
+        "Come, let us sing to the LORD, the rock of our salvation",
+        "Come, let us build a house for the name of the LORD",
+        "Come, let us go up to the mountain of the LORD",
+        "Come, let us reason together and settle the matter"
+      ],
+      "answer": "Come, let us sing to the LORD, the rock of our salvation",
+      "verse_reference": "Psalm 95:1"
+    },
+    {
+      "id": "psalms-95-q2",
+      "type": "multiple_choice",
+      "question": "What warning does the psalm give, recalling the wilderness?",
+      "options": [
+        "Soon, when the trumpet sounds, gather to the feast",
+        "Now, while it is light, labor in the field",
+        "Tomorrow, when the sun rises, go and offer your sacrifice",
+        "Today, if you hear his voice, do not harden your hearts"
+      ],
+      "answer": "Today, if you hear his voice, do not harden your hearts",
+      "verse_reference": "Psalm 95:7-8"
+    },
+    {
+      "id": "psalms-95-q3",
+      "type": "true_false",
+      "question": "The psalm calls people to kneel before the LORD, our Maker.",
+      "answer": "true",
+      "verse_reference": "Psalm 95:6"
+    },
+    {
+      "id": "psalms-95-q4",
+      "type": "fill_blank",
+      "question": "Today, if you hear his voice, do not _____ your hearts.",
+      "answer": "harden",
+      "verse_reference": "Psalm 95:7-8"
+    },
+    {
+      "id": "psalms-95-q5",
+      "type": "fill_blank",
+      "question": "For he is our God, and we are the people of his pasture, and the _____ of his hand.",
+      "answer": "sheep",
+      "accept": [
+        "flock"
+      ],
+      "verse_reference": "Psalm 95:7"
+    }
+  ]
+}

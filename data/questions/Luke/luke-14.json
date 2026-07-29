@@ -1,0 +1,57 @@
+{
+  "book": "Luke",
+  "chapter": 14,
+  "questions": [
+    {
+      "id": "luke-14-q1",
+      "type": "multiple_choice",
+      "question": "In the Parable of the Great Banquet, what did the invited guests do?",
+      "options": [
+        "They came eagerly",
+        "They all made excuses",
+        "They brought gifts",
+        "They sent servants instead"
+      ],
+      "answer": "They all made excuses",
+      "verse_reference": "Luke 14:18-20"
+    },
+    {
+      "id": "luke-14-q2",
+      "type": "multiple_choice",
+      "question": "Jesus said that when you give a feast, you should invite whom?",
+      "options": [
+        "Your friends, your family, and your rich neighbors",
+        "The priests, the scribes, and the rulers of the people",
+        "The strong, the wealthy, and the well-respected",
+        "The poor, the maimed, the lame, and the blind"
+      ],
+      "answer": "The poor, the maimed, the lame, and the blind",
+      "verse_reference": "Luke 14:13"
+    },
+    {
+      "id": "luke-14-q3",
+      "type": "true_false",
+      "question": "Jesus said that whoever does not bear his own cross and come after him cannot be his disciple.",
+      "answer": "true",
+      "verse_reference": "Luke 14:27"
+    },
+    {
+      "id": "luke-14-q4",
+      "type": "fill_blank",
+      "question": "For everyone who exalts himself will be humbled, and whoever humbles himself will be _____.",
+      "answer": "exalted",
+      "verse_reference": "Luke 14:11"
+    },
+    {
+      "id": "luke-14-q5",
+      "type": "fill_blank",
+      "question": "Salt is good, but if it loses its savor, with what will it be _____?",
+      "answer": "seasoned",
+      "accept": [
+        "season",
+        "salted"
+      ],
+      "verse_reference": "Luke 14:34"
+    }
+  ]
+}

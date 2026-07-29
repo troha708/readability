@@ -1,0 +1,53 @@
+{
+  "book": "Acts",
+  "chapter": 5,
+  "questions": [
+    {
+      "id": "acts-5-q1",
+      "type": "multiple_choice",
+      "question": "What happened to Ananias and Sapphira after they lied about the price of their land?",
+      "options": [
+        "They were exiled",
+        "They were imprisoned",
+        "They were forgiven",
+        "They fell down dead"
+      ],
+      "answer": "They fell down dead",
+      "verse_reference": "Acts 5:5,10"
+    },
+    {
+      "id": "acts-5-q2",
+      "type": "multiple_choice",
+      "question": "Who advised the Sanhedrin to leave the apostles alone, saying if their work was from God it could not be stopped?",
+      "options": [
+        "Nicodemus",
+        "Joseph of Arimathea",
+        "Gamaliel",
+        "Caiaphas"
+      ],
+      "answer": "Gamaliel",
+      "verse_reference": "Acts 5:34-39"
+    },
+    {
+      "id": "acts-5-q3",
+      "type": "true_false",
+      "question": "An angel opened the prison doors at night and told the apostles to go stand in the temple and speak.",
+      "answer": "true",
+      "verse_reference": "Acts 5:19-20"
+    },
+    {
+      "id": "acts-5-q4",
+      "type": "fill_blank",
+      "question": "We must obey _____ rather than men.",
+      "answer": "God",
+      "verse_reference": "Acts 5:29"
+    },
+    {
+      "id": "acts-5-q5",
+      "type": "fill_blank",
+      "question": "They departed from the presence of the council, _____ that they were counted worthy to suffer dishonor for the Name.",
+      "answer": "rejoicing",
+      "verse_reference": "Acts 5:41"
+    }
+  ]
+}

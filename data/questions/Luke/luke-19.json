@@ -1,0 +1,53 @@
+{
+  "book": "Luke",
+  "chapter": 19,
+  "questions": [
+    {
+      "id": "luke-19-q1",
+      "type": "multiple_choice",
+      "question": "Why did Zacchaeus climb a sycamore tree?",
+      "options": [
+        "To hide away from Jesus in the leaves",
+        "To pick the ripe fruit from its branches",
+        "To get above the noise of the crowd",
+        "To see Jesus because he was short"
+      ],
+      "answer": "To see Jesus because he was short",
+      "verse_reference": "Luke 19:3-4"
+    },
+    {
+      "id": "luke-19-q2",
+      "type": "multiple_choice",
+      "question": "What was Zacchaeus' occupation?",
+      "options": [
+        "A Roman soldier",
+        "A chief tax collector",
+        "A fisherman",
+        "A Pharisee"
+      ],
+      "answer": "A chief tax collector",
+      "verse_reference": "Luke 19:2"
+    },
+    {
+      "id": "luke-19-q3",
+      "type": "true_false",
+      "question": "Jesus wept over Jerusalem because its people did not recognize the time of their visitation.",
+      "answer": "true",
+      "verse_reference": "Luke 19:41-44"
+    },
+    {
+      "id": "luke-19-q4",
+      "type": "fill_blank",
+      "question": "For the Son of Man came to seek and to _____ that which was lost.",
+      "answer": "save",
+      "verse_reference": "Luke 19:10"
+    },
+    {
+      "id": "luke-19-q5",
+      "type": "fill_blank",
+      "question": "It is written, 'My house is a house of _____,' but you have made it a 'den of robbers'!",
+      "answer": "prayer",
+      "verse_reference": "Luke 19:46"
+    }
+  ]
+}

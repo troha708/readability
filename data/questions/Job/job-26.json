@@ -1,0 +1,53 @@
+{
+  "book": "Job",
+  "chapter": 26,
+  "questions": [
+    {
+      "id": "job-26-q1",
+      "type": "multiple_choice",
+      "question": "What did Job describe in his reply?",
+      "options": [
+        "The vast power of God over creation",
+        "The wisdom of his three friends",
+        "The depth of his own suffering",
+        "The greatness of all his former wealth"
+      ],
+      "answer": "The vast power of God over creation",
+      "verse_reference": "Job 26:7"
+    },
+    {
+      "id": "job-26-q2",
+      "type": "multiple_choice",
+      "question": "How did Job say God hangs the earth?",
+      "options": [
+        "On pillars",
+        "On nothing",
+        "On water",
+        "On mountains"
+      ],
+      "answer": "On nothing",
+      "verse_reference": "Job 26:7"
+    },
+    {
+      "id": "job-26-q3",
+      "type": "true_false",
+      "question": "Job said these wonders are but the outer fringe of God's ways.",
+      "answer": "true",
+      "verse_reference": "Job 26:14"
+    },
+    {
+      "id": "job-26-q4",
+      "type": "fill_blank",
+      "question": "Job said God stretches out the _____ over the empty place.",
+      "answer": "north",
+      "verse_reference": "Job 26:7"
+    },
+    {
+      "id": "job-26-q5",
+      "type": "fill_blank",
+      "question": "Job said by his power God stirred the _____.",
+      "answer": "sea",
+      "verse_reference": "Job 26:12"
+    }
+  ]
+}

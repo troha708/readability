@@ -1,0 +1,56 @@
+{
+  "book": "Isaiah",
+  "chapter": 46,
+  "questions": [
+    {
+      "id": "isaiah-46-q1",
+      "type": "multiple_choice",
+      "question": "Which Babylonian gods are pictured being carried as burdens in Isaiah 46?",
+      "options": [
+        "Bel and Nebo",
+        "Marduk and Ishtar",
+        "Chemosh and Molech",
+        "Dagon and Baal"
+      ],
+      "answer": "Bel and Nebo",
+      "verse_reference": "Isaiah 46:1"
+    },
+    {
+      "id": "isaiah-46-q2",
+      "type": "multiple_choice",
+      "question": "In contrast, what does God say he has done for Israel since birth?",
+      "options": [
+        "Scattered them abroad among all of the far and distant nations",
+        "Carried them, and will carry and save them even to old age",
+        "Hidden away his face entirely from them because of their sin",
+        "Tested and tried them with both famine and with the sword"
+      ],
+      "answer": "Carried them, and will carry and save them even to old age",
+      "verse_reference": "Isaiah 46:3-4"
+    },
+    {
+      "id": "isaiah-46-q3",
+      "type": "true_false",
+      "question": "God declares the end from the beginning, saying his counsel shall stand.",
+      "answer": "true",
+      "verse_reference": "Isaiah 46:10"
+    },
+    {
+      "id": "isaiah-46-q4",
+      "type": "fill_blank",
+      "question": "Even to your old age I am he, and to gray hairs I will _____ you.",
+      "answer": "carry",
+      "accept": [
+        "bear"
+      ],
+      "verse_reference": "Isaiah 46:4"
+    },
+    {
+      "id": "isaiah-46-q5",
+      "type": "fill_blank",
+      "question": "I am God, and there is no other; I am God, and there is none like me, declaring the end from the _____.",
+      "answer": "beginning",
+      "verse_reference": "Isaiah 46:9-10"
+    }
+  ]
+}

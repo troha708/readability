@@ -1,0 +1,56 @@
+{
+  "book": "Psalms",
+  "chapter": 107,
+  "questions": [
+    {
+      "id": "psalms-107-q1",
+      "type": "multiple_choice",
+      "question": "What refrain runs through Psalm 107 about those who cried to the LORD in trouble?",
+      "options": [
+        "He hid his face from their troubles",
+        "He repaid them for their many sins",
+        "He scattered them among all the nations",
+        "He delivered them from their distress"
+      ],
+      "answer": "He delivered them from their distress",
+      "verse_reference": "Psalm 107:6, 13, 19, 28"
+    },
+    {
+      "id": "psalms-107-q2",
+      "type": "multiple_choice",
+      "question": "Which groups of redeemed people does Psalm 107 describe?",
+      "options": [
+        "Wanderers, prisoners, the sick, and sailors in storms",
+        "Farmers, shepherds, fishermen, and merchants",
+        "Mighty kings, high priests, prophets, and judges of Israel",
+        "The proud, the rich, the strong, and the wise"
+      ],
+      "answer": "Wanderers, prisoners, the sick, and sailors in storms",
+      "verse_reference": "Psalm 107:4-30"
+    },
+    {
+      "id": "psalms-107-q3",
+      "type": "true_false",
+      "question": "The psalm repeatedly urges thanks to the LORD for his steadfast love and wondrous works.",
+      "answer": "true",
+      "verse_reference": "Psalm 107:8, 15, 21, 31"
+    },
+    {
+      "id": "psalms-107-q4",
+      "type": "fill_blank",
+      "question": "Oh give thanks to the LORD, for he is good, for his steadfast love endures _____!",
+      "answer": "forever",
+      "verse_reference": "Psalm 107:1"
+    },
+    {
+      "id": "psalms-107-q5",
+      "type": "fill_blank",
+      "question": "He stilled the storm to a whisper, and the waves of the sea were _____.",
+      "answer": "hushed",
+      "accept": [
+        "still"
+      ],
+      "verse_reference": "Psalm 107:29"
+    }
+  ]
+}

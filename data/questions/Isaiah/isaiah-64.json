@@ -1,0 +1,53 @@
+{
+  "book": "Isaiah",
+  "chapter": 64,
+  "questions": [
+    {
+      "id": "isaiah-64-q1",
+      "type": "multiple_choice",
+      "question": "What does Isaiah 64 ask God to do?",
+      "options": [
+        "Send rain upon the thirsty ground",
+        "Forgive the sins of the nations",
+        "Rend the heavens and come down",
+        "Raise up a deliverer for his people"
+      ],
+      "answer": "Rend the heavens and come down",
+      "verse_reference": "Isaiah 64:1"
+    },
+    {
+      "id": "isaiah-64-q2",
+      "type": "multiple_choice",
+      "question": "What humble image does Isaiah 64 use for the people and God?",
+      "options": [
+        "Sheep and shepherd",
+        "Clay and potter",
+        "Soldiers and king",
+        "Servants and master"
+      ],
+      "answer": "Clay and potter",
+      "verse_reference": "Isaiah 64:8"
+    },
+    {
+      "id": "isaiah-64-q3",
+      "type": "true_false",
+      "question": "Isaiah 64 confesses that all our righteous deeds are like a polluted garment.",
+      "answer": "true",
+      "verse_reference": "Isaiah 64:6"
+    },
+    {
+      "id": "isaiah-64-q4",
+      "type": "fill_blank",
+      "question": "We all fade like a _____, and our iniquities, like the wind, take us away.",
+      "answer": "leaf",
+      "verse_reference": "Isaiah 64:6"
+    },
+    {
+      "id": "isaiah-64-q5",
+      "type": "fill_blank",
+      "question": "You are our Father; we are the clay, and you are our _____.",
+      "answer": "potter",
+      "verse_reference": "Isaiah 64:8"
+    }
+  ]
+}

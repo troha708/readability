@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 36,
+  "questions": [
+    {
+      "id": "psalms-36-q1",
+      "type": "multiple_choice",
+      "question": "What does Psalm 36 say about transgression and the wicked?",
+      "options": [
+        "There is no fear of God before his eyes",
+        "There is no truth upon his lying tongue",
+        "There is no end to his greed for gain",
+        "There is no rest in his troubled heart"
+      ],
+      "answer": "There is no fear of God before his eyes",
+      "verse_reference": "Psalm 36:1"
+    },
+    {
+      "id": "psalms-36-q2",
+      "type": "multiple_choice",
+      "question": "How far does David say God's steadfast love extends?",
+      "options": [
+        "To the mountains",
+        "To the heavens",
+        "To the sea",
+        "To the city"
+      ],
+      "answer": "To the heavens",
+      "verse_reference": "Psalm 36:5"
+    },
+    {
+      "id": "psalms-36-q3",
+      "type": "true_false",
+      "question": "David says with God is the fountain of life, and in his light we see light.",
+      "answer": "true",
+      "verse_reference": "Psalm 36:9"
+    },
+    {
+      "id": "psalms-36-q4",
+      "type": "fill_blank",
+      "question": "How precious is your steadfast love, O God! The children of mankind take refuge in the shadow of your _____.",
+      "answer": "wings",
+      "verse_reference": "Psalm 36:7"
+    },
+    {
+      "id": "psalms-36-q5",
+      "type": "fill_blank",
+      "question": "In your light do we see _____.",
+      "answer": "light",
+      "verse_reference": "Psalm 36:9"
+    }
+  ]
+}

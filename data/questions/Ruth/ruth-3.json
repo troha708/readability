@@ -1,0 +1,60 @@
+{
+  "book": "Ruth",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "ruth-3-q1",
+      "type": "multiple_choice",
+      "question": "What did Naomi advise Ruth to do at the threshing floor?",
+      "options": [
+        "Uncover Boaz's feet and lie down, seeking his protection",
+        "Gather up the extra grain quietly while all the workers slept",
+        "Slip away from the floor before anyone else awoke",
+        "Confront Boaz openly and demand that he marry her"
+      ],
+      "answer": "Uncover Boaz's feet and lie down, seeking his protection",
+      "verse_reference": "Ruth 3:4"
+    },
+    {
+      "id": "ruth-3-q2",
+      "type": "multiple_choice",
+      "question": "What did Ruth ask Boaz to do?",
+      "options": [
+        "To take her in as a household servant",
+        "To let her keep gleaning in his field",
+        "To repay the debts owed by Naomi",
+        "To marry her by acting as kinsman-redeemer"
+      ],
+      "answer": "To marry her by acting as kinsman-redeemer",
+      "verse_reference": "Ruth 3:9"
+    },
+    {
+      "id": "ruth-3-q3",
+      "type": "true_false",
+      "question": "Boaz blessed Ruth and promised to act as redeemer if a nearer relative would not.",
+      "answer": "true",
+      "verse_reference": "Ruth 3:10-13"
+    },
+    {
+      "id": "ruth-3-q4",
+      "type": "fill_blank",
+      "question": "Boaz praised Ruth's _____, saying she had not gone after younger men.",
+      "answer": "kindness",
+      "accept": [
+        "goodness"
+      ],
+      "verse_reference": "Ruth 3:10"
+    },
+    {
+      "id": "ruth-3-q5",
+      "type": "fill_blank",
+      "question": "Boaz promised to act as _____ if the nearer relative would not.",
+      "answer": "redeemer",
+      "accept": [
+        "kinsman",
+        "redeem"
+      ],
+      "verse_reference": "Ruth 3:13"
+    }
+  ]
+}

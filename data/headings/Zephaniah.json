@@ -1,0 +1,52 @@
+{
+  "book": "Zephaniah",
+  "source": "Berean Standard Bible (CC0 Public Domain)",
+  "chapters": {
+    "1": [
+      {
+        "beforeVerse": 1,
+        "heading": "Zephaniah Prophesies Judgment on Judah"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "The Day of the LORD"
+      }
+    ],
+    "2": [
+      {
+        "beforeVerse": 1,
+        "heading": "A Call to Repentance"
+      },
+      {
+        "beforeVerse": 4,
+        "heading": "Judgment on the Philistines"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "Judgment on Moab and Ammon"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "Judgment on Cush and Assyria"
+      }
+    ],
+    "3": [
+      {
+        "beforeVerse": 1,
+        "heading": "Judgment on Jerusalem"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "Purification of the Nations"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "A Faithful Remnant"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "Israel’s Restoration"
+      }
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Judges",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "judges-1-q1",
+      "type": "multiple_choice",
+      "question": "After Joshua's death, what did the tribes continue to do?",
+      "options": [
+        "Fight to take their allotted land",
+        "Choose a king to lead them",
+        "Build a great temple for the LORD God",
+        "Rest from all their wars"
+      ],
+      "answer": "Fight to take their allotted land",
+      "verse_reference": "Judges 1:1-2"
+    },
+    {
+      "id": "judges-1-q2",
+      "type": "multiple_choice",
+      "question": "What did many tribes fail to do with the Canaanites?",
+      "options": [
+        "Collect tribute from them",
+        "Drive them out completely",
+        "Number them in a census",
+        "Make a treaty with them"
+      ],
+      "answer": "Drive them out completely",
+      "verse_reference": "Judges 1:21-33"
+    },
+    {
+      "id": "judges-1-q3",
+      "type": "true_false",
+      "question": "The tribe of Judah was told to go up first to fight.",
+      "answer": "true",
+      "verse_reference": "Judges 1:2"
+    },
+    {
+      "id": "judges-1-q4",
+      "type": "fill_blank",
+      "question": "Many tribes did not _____ out the Canaanites, who continued to live among them.",
+      "answer": "drive",
+      "verse_reference": "Judges 1:21-27"
+    },
+    {
+      "id": "judges-1-q5",
+      "type": "fill_blank",
+      "question": "The Canaanites were put to forced _____ but were not fully driven out.",
+      "answer": "labor",
+      "verse_reference": "Judges 1:28"
+    }
+  ]
+}

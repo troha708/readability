@@ -1,0 +1,59 @@
+{
+  "book": "1 Corinthians",
+  "chapter": 5,
+  "questions": [
+    {
+      "id": "1cor-5-q1",
+      "type": "multiple_choice",
+      "question": "What kind of immorality was being tolerated in the Corinthian church?",
+      "options": [
+        "A man living with his father's wife",
+        "A man worshiping idols in secret",
+        "A man denying the resurrection of the dead",
+        "A man cheating his brothers in court"
+      ],
+      "answer": "A man living with his father's wife",
+      "verse_reference": "1 Corinthians 5:1"
+    },
+    {
+      "id": "1cor-5-q2",
+      "type": "multiple_choice",
+      "question": "What does Paul tell them to do with the immoral person?",
+      "options": [
+        "Forgive and forget",
+        "Give him a warning",
+        "Remove him from among them",
+        "Pray for him quietly"
+      ],
+      "answer": "Remove him from among them",
+      "verse_reference": "1 Corinthians 5:2,13"
+    },
+    {
+      "id": "1cor-5-q3",
+      "type": "true_false",
+      "question": "Paul says Christians should not associate with anyone in the world who is immoral.",
+      "answer": "false",
+      "verse_reference": "1 Corinthians 5:9-10"
+    },
+    {
+      "id": "1cor-5-q4",
+      "type": "fill_blank",
+      "question": "A little _____ works through the whole batch of dough.",
+      "answer": "leaven",
+      "accept": [
+        "yeast"
+      ],
+      "verse_reference": "1 Corinthians 5:6"
+    },
+    {
+      "id": "1cor-5-q5",
+      "type": "fill_blank",
+      "question": "For indeed Christ, our _____, has been sacrificed.",
+      "answer": "Passover",
+      "accept": [
+        "Passover lamb"
+      ],
+      "verse_reference": "1 Corinthians 5:7"
+    }
+  ]
+}

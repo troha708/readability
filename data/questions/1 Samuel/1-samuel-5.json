@@ -1,0 +1,57 @@
+{
+  "book": "1 Samuel",
+  "chapter": 5,
+  "questions": [
+    {
+      "id": "1-samuel-5-q1",
+      "type": "multiple_choice",
+      "question": "What happened to the idol Dagon when the ark was placed in its temple?",
+      "options": [
+        "It fell down before the ark and broke",
+        "It shone with a strange and eerie light",
+        "It grew taller and more fearsome",
+        "It stood firm and nothing happened"
+      ],
+      "answer": "It fell down before the ark and broke",
+      "verse_reference": "1 Samuel 5:3-4"
+    },
+    {
+      "id": "1-samuel-5-q2",
+      "type": "multiple_choice",
+      "question": "What affliction came on the Philistine cities holding the ark?",
+      "options": [
+        "Blindness",
+        "Earthquake",
+        "Fire",
+        "Tumors and plague"
+      ],
+      "answer": "Tumors and plague",
+      "verse_reference": "1 Samuel 5:6"
+    },
+    {
+      "id": "1-samuel-5-q3",
+      "type": "true_false",
+      "question": "The Philistines decided to send the ark away because of the suffering it caused.",
+      "answer": "true",
+      "verse_reference": "1 Samuel 5:11"
+    },
+    {
+      "id": "1-samuel-5-q4",
+      "type": "fill_blank",
+      "question": "The idol _____ fell on its face before the ark and broke apart.",
+      "answer": "Dagon",
+      "verse_reference": "1 Samuel 5:3-4"
+    },
+    {
+      "id": "1-samuel-5-q5",
+      "type": "fill_blank",
+      "question": "The LORD struck the people of the Philistine cities with _____.",
+      "answer": "tumors",
+      "accept": [
+        "emerods",
+        "hemorrhoids"
+      ],
+      "verse_reference": "1 Samuel 5:6"
+    }
+  ]
+}

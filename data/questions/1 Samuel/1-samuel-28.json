@@ -1,0 +1,53 @@
+{
+  "book": "1 Samuel",
+  "chapter": 28,
+  "questions": [
+    {
+      "id": "1-samuel-28-q1",
+      "type": "multiple_choice",
+      "question": "What forbidden thing did Saul do the night before battle?",
+      "options": [
+        "Offered a sacrifice without the priest",
+        "Fasted alone in his tent until dawn",
+        "Consulted a medium (witch) at Endor",
+        "Fled in the night from the battlefield"
+      ],
+      "answer": "Consulted a medium (witch) at Endor",
+      "verse_reference": "1 Samuel 28:7-8"
+    },
+    {
+      "id": "1-samuel-28-q2",
+      "type": "multiple_choice",
+      "question": "Whom did the medium bring up, who pronounced doom on Saul?",
+      "options": [
+        "Moses",
+        "Aaron",
+        "David",
+        "Samuel"
+      ],
+      "answer": "Samuel",
+      "verse_reference": "1 Samuel 28:11-19"
+    },
+    {
+      "id": "1-samuel-28-q3",
+      "type": "true_false",
+      "question": "Samuel told Saul that he and his sons would die the next day.",
+      "answer": "true",
+      "verse_reference": "1 Samuel 28:19"
+    },
+    {
+      "id": "1-samuel-28-q4",
+      "type": "fill_blank",
+      "question": "Saul disguised himself and consulted a _____ at Endor.",
+      "answer": "medium",
+      "verse_reference": "1 Samuel 28:7-8"
+    },
+    {
+      "id": "1-samuel-28-q5",
+      "type": "fill_blank",
+      "question": "The spirit of _____ told Saul the kingdom was torn from him.",
+      "answer": "Samuel",
+      "verse_reference": "1 Samuel 28:15-17"
+    }
+  ]
+}

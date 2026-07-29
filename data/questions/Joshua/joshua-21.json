@@ -1,0 +1,61 @@
+{
+  "book": "Joshua",
+  "chapter": 21,
+  "questions": [
+    {
+      "id": "joshua-21-q1",
+      "type": "multiple_choice",
+      "question": "What did the Levites receive, since they had no tribal land?",
+      "options": [
+        "A kingdom of their own to rule",
+        "A share of silver and gold instead",
+        "No portion at all in the land",
+        "Cities to live in, with pasturelands"
+      ],
+      "answer": "Cities to live in, with pasturelands",
+      "verse_reference": "Joshua 21:2-3"
+    },
+    {
+      "id": "joshua-21-q2",
+      "type": "multiple_choice",
+      "question": "How many cities in all were given to the Levites?",
+      "options": [
+        "Sixty",
+        "Twelve",
+        "Forty-eight",
+        "Twenty-four"
+      ],
+      "answer": "Forty-eight",
+      "verse_reference": "Joshua 21:41"
+    },
+    {
+      "id": "joshua-21-q3",
+      "type": "true_false",
+      "question": "Not one of God's good promises to Israel had failed; all came to pass.",
+      "answer": "true",
+      "verse_reference": "Joshua 21:45"
+    },
+    {
+      "id": "joshua-21-q4",
+      "type": "fill_blank",
+      "question": "The Levites were given _____ cities with their pasturelands.",
+      "answer": "forty-eight",
+      "accept": [
+        "48",
+        "forty and eight"
+      ],
+      "verse_reference": "Joshua 21:41"
+    },
+    {
+      "id": "joshua-21-q5",
+      "type": "fill_blank",
+      "question": "Not one word of all the LORD's good _____ to Israel had failed.",
+      "answer": "promises",
+      "accept": [
+        "things",
+        "thing"
+      ],
+      "verse_reference": "Joshua 21:45"
+    }
+  ]
+}

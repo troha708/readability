@@ -1,0 +1,61 @@
+{
+  "book": "Deuteronomy",
+  "chapter": 23,
+  "questions": [
+    {
+      "id": "deuteronomy-23-q1",
+      "type": "multiple_choice",
+      "question": "What does chapter 23 address?",
+      "options": [
+        "Who may enter the assembly; community laws",
+        "How to keep the three great yearly festivals",
+        "How to prepare an army to go out to battle",
+        "How to choose and crown a king over Israel"
+      ],
+      "answer": "Who may enter the assembly; community laws",
+      "verse_reference": "Deuteronomy 23:1-8"
+    },
+    {
+      "id": "deuteronomy-23-q2",
+      "type": "multiple_choice",
+      "question": "What did the law say about charging interest?",
+      "options": [
+        "Do not charge interest to a fellow Israelite",
+        "Cancel every loan made within the city gates",
+        "Lend freely but always demand a pledge first",
+        "Charge interest only on loans of grain"
+      ],
+      "answer": "Do not charge interest to a fellow Israelite",
+      "verse_reference": "Deuteronomy 23:19-20"
+    },
+    {
+      "id": "deuteronomy-23-q3",
+      "type": "true_false",
+      "question": "They were to keep the camp holy because God walked in their midst.",
+      "answer": "true",
+      "verse_reference": "Deuteronomy 23:14"
+    },
+    {
+      "id": "deuteronomy-23-q4",
+      "type": "fill_blank",
+      "question": "They were not to charge _____ on a loan to a fellow Israelite.",
+      "answer": "interest",
+      "accept": [
+        "usury"
+      ],
+      "verse_reference": "Deuteronomy 23:19"
+    },
+    {
+      "id": "deuteronomy-23-q5",
+      "type": "fill_blank",
+      "question": "If a man made a vow to the LORD, he was not to be slow to _____ it.",
+      "answer": "keep",
+      "accept": [
+        "pay",
+        "perform",
+        "complete"
+      ],
+      "verse_reference": "Deuteronomy 23:21"
+    }
+  ]
+}

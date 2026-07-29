@@ -1,0 +1,53 @@
+{
+  "book": "Exodus",
+  "chapter": 31,
+  "questions": [
+    {
+      "id": "exodus-31-q1",
+      "type": "multiple_choice",
+      "question": "Whom did God fill with his Spirit and skill to craft the tabernacle?",
+      "options": [
+        "Bezalel",
+        "Aaron",
+        "Moses",
+        "Joshua"
+      ],
+      "answer": "Bezalel",
+      "verse_reference": "Exodus 31:2-3"
+    },
+    {
+      "id": "exodus-31-q2",
+      "type": "multiple_choice",
+      "question": "What sign of the covenant did God stress at the end of these instructions?",
+      "options": [
+        "The Sabbath",
+        "The Passover",
+        "The rainbow",
+        "Circumcision"
+      ],
+      "answer": "The Sabbath",
+      "verse_reference": "Exodus 31:13"
+    },
+    {
+      "id": "exodus-31-q3",
+      "type": "true_false",
+      "question": "God gave Moses two stone tablets written with the finger of God.",
+      "answer": "true",
+      "verse_reference": "Exodus 31:18"
+    },
+    {
+      "id": "exodus-31-q4",
+      "type": "fill_blank",
+      "question": "The _____ was given as a sign between God and Israel forever.",
+      "answer": "Sabbath",
+      "verse_reference": "Exodus 31:17"
+    },
+    {
+      "id": "exodus-31-q5",
+      "type": "fill_blank",
+      "question": "God wrote on two tablets of _____ with his own finger.",
+      "answer": "stone",
+      "verse_reference": "Exodus 31:18"
+    }
+  ]
+}

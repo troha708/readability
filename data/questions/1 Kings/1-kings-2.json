@@ -1,0 +1,57 @@
+{
+  "book": "1 Kings",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "1-kings-2-q1",
+      "type": "multiple_choice",
+      "question": "What did David charge Solomon to do before he died?",
+      "options": [
+        "Build a great navy on the Red Sea",
+        "Walk in God's ways and keep his commands",
+        "March out and conquer all the land of Egypt",
+        "Make a treaty with the king of Egypt"
+      ],
+      "answer": "Walk in God's ways and keep his commands",
+      "verse_reference": "1 Kings 2:2-4"
+    },
+    {
+      "id": "1-kings-2-q2",
+      "type": "multiple_choice",
+      "question": "What happened to Adonijah, Joab, and Shimei under Solomon?",
+      "options": [
+        "They fled to a foreign land",
+        "They served Solomon loyally",
+        "They were put to death",
+        "They were pardoned and freed"
+      ],
+      "answer": "They were put to death",
+      "verse_reference": "1 Kings 2:25-46"
+    },
+    {
+      "id": "1-kings-2-q3",
+      "type": "true_false",
+      "question": "Solomon's kingdom was firmly established after he dealt with his rivals.",
+      "answer": "true",
+      "verse_reference": "1 Kings 2:46"
+    },
+    {
+      "id": "1-kings-2-q4",
+      "type": "fill_blank",
+      "question": "David told Solomon to be strong and keep the charge of the _____ his God.",
+      "answer": "LORD",
+      "accept": [
+        "Jehovah",
+        "Yahweh"
+      ],
+      "verse_reference": "1 Kings 2:3"
+    },
+    {
+      "id": "1-kings-2-q5",
+      "type": "fill_blank",
+      "question": "Solomon's throne and _____ were firmly established.",
+      "answer": "kingdom",
+      "verse_reference": "1 Kings 2:12"
+    }
+  ]
+}

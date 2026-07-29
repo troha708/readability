@@ -1,0 +1,57 @@
+{
+  "book": "Ecclesiastes",
+  "chapter": 10,
+  "questions": [
+    {
+      "id": "ecclesiastes-10-q1",
+      "type": "multiple_choice",
+      "question": "What does Ecclesiastes 10 say dead flies do to perfumer's ointment?",
+      "options": [
+        "Give it a stench, as a little folly outweighs wisdom and honor",
+        "Spoil only its surface, while all the rest of it remains pure",
+        "Make it far more precious, just as trials refine the truly wise",
+        "Leave it wholly untouched, for folly cannot ever harm true wisdom"
+      ],
+      "answer": "Give it a stench, as a little folly outweighs wisdom and honor",
+      "verse_reference": "Ecclesiastes 10:1"
+    },
+    {
+      "id": "ecclesiastes-10-q2",
+      "type": "multiple_choice",
+      "question": "What does Ecclesiastes 10 say about digging a pit?",
+      "options": [
+        "He who digs a pit may fall into it",
+        "He who digs a pit prepares a snare for his enemy",
+        "He who digs a pit grows weary and gains nothing",
+        "He who digs a pit will strike water and prosper"
+      ],
+      "answer": "He who digs a pit may fall into it",
+      "verse_reference": "Ecclesiastes 10:8"
+    },
+    {
+      "id": "ecclesiastes-10-q3",
+      "type": "true_false",
+      "question": "Ecclesiastes 10 says a wise man's heart inclines him to the right, but a fool's to the left.",
+      "answer": "true",
+      "verse_reference": "Ecclesiastes 10:2"
+    },
+    {
+      "id": "ecclesiastes-10-q4",
+      "type": "fill_blank",
+      "question": "Dead flies make the perfumer's ointment give off a _____.",
+      "answer": "stench",
+      "accept": [
+        "odor",
+        "savour"
+      ],
+      "verse_reference": "Ecclesiastes 10:1"
+    },
+    {
+      "id": "ecclesiastes-10-q5",
+      "type": "fill_blank",
+      "question": "He who digs a _____ will fall into it.",
+      "answer": "pit",
+      "verse_reference": "Ecclesiastes 10:8"
+    }
+  ]
+}

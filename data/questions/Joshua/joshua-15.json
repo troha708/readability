@@ -1,0 +1,53 @@
+{
+  "book": "Joshua",
+  "chapter": 15,
+  "questions": [
+    {
+      "id": "joshua-15-q1",
+      "type": "multiple_choice",
+      "question": "Whose tribal inheritance does chapter 15 describe?",
+      "options": [
+        "Judah",
+        "Benjamin",
+        "Dan",
+        "Ephraim"
+      ],
+      "answer": "Judah",
+      "verse_reference": "Joshua 15:1"
+    },
+    {
+      "id": "joshua-15-q2",
+      "type": "multiple_choice",
+      "question": "Who captured Hebron, driving out the descendants of Anak?",
+      "options": [
+        "Caleb",
+        "Eleazar",
+        "Othniel",
+        "Joshua"
+      ],
+      "answer": "Caleb",
+      "verse_reference": "Joshua 15:13-14"
+    },
+    {
+      "id": "joshua-15-q3",
+      "type": "true_false",
+      "question": "Caleb offered his daughter in marriage to whoever captured Kiriath-sepher (Debir).",
+      "answer": "true",
+      "verse_reference": "Joshua 15:16"
+    },
+    {
+      "id": "joshua-15-q4",
+      "type": "fill_blank",
+      "question": "This chapter describes the boundaries of the tribe of _____.",
+      "answer": "Judah",
+      "verse_reference": "Joshua 15:1"
+    },
+    {
+      "id": "joshua-15-q5",
+      "type": "fill_blank",
+      "question": "_____ captured Debir and was given Caleb's daughter Achsah in marriage.",
+      "answer": "Othniel",
+      "verse_reference": "Joshua 15:17"
+    }
+  ]
+}

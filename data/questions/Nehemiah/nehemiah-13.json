@@ -1,0 +1,60 @@
+{
+  "book": "Nehemiah",
+  "chapter": 13,
+  "questions": [
+    {
+      "id": "nehemiah-13-q1",
+      "type": "multiple_choice",
+      "question": "What abuse did Nehemiah find Tobiah had been given in the temple?",
+      "options": [
+        "An altar set up in the high place just outside the town",
+        "A garden plot laid out beside the wall of the city",
+        "A large chamber in the courts of the house of God",
+        "A throne placed in the great hall of the governor"
+      ],
+      "answer": "A large chamber in the courts of the house of God",
+      "verse_reference": "Nehemiah 13:5-8"
+    },
+    {
+      "id": "nehemiah-13-q2",
+      "type": "multiple_choice",
+      "question": "What did Nehemiah do about Sabbath-breaking in Jerusalem?",
+      "options": [
+        "Allowed the trade to go on as before",
+        "Shut the gates before the Sabbath to stop trade",
+        "Placed a heavy tax on Sabbath sales",
+        "Ignored it and said nothing to the merchants"
+      ],
+      "answer": "Shut the gates before the Sabbath to stop trade",
+      "verse_reference": "Nehemiah 13:19"
+    },
+    {
+      "id": "nehemiah-13-q3",
+      "type": "true_false",
+      "question": "Nehemiah confronted those who had married foreign wives and made them swear an oath.",
+      "answer": "true",
+      "verse_reference": "Nehemiah 13:23-25"
+    },
+    {
+      "id": "nehemiah-13-q4",
+      "type": "fill_blank",
+      "question": "Nehemiah threw all of Tobiah's household goods out of the _____.",
+      "answer": "room",
+      "accept": [
+        "chamber"
+      ],
+      "verse_reference": "Nehemiah 13:8"
+    },
+    {
+      "id": "nehemiah-13-q5",
+      "type": "fill_blank",
+      "question": "Nehemiah repeatedly prayed, 'Remember me, O my God, with _____.'",
+      "answer": "favor",
+      "accept": [
+        "good",
+        "goodness"
+      ],
+      "verse_reference": "Nehemiah 13:31"
+    }
+  ]
+}

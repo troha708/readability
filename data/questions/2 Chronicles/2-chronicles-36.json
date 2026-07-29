@@ -1,0 +1,60 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 36,
+  "questions": [
+    {
+      "id": "2-chronicles-36-q1",
+      "type": "multiple_choice",
+      "question": "What finally happened to Jerusalem and the temple?",
+      "options": [
+        "They were spared by the enemy in return for tribute",
+        "The Babylonians burned the temple and broke down the walls",
+        "They were sold off to a neighboring foreign king",
+        "They were rebuilt far grander and much stronger than ever before"
+      ],
+      "answer": "The Babylonians burned the temple and broke down the walls",
+      "verse_reference": "2 Chronicles 36:19"
+    },
+    {
+      "id": "2-chronicles-36-q2",
+      "type": "multiple_choice",
+      "question": "Whose decree at the end of the book allowed the people to return and rebuild?",
+      "options": [
+        "King Nebuchadnezzar of Babylon",
+        "Darius",
+        "Pharaoh",
+        "Cyrus king of Persia"
+      ],
+      "answer": "Cyrus king of Persia",
+      "verse_reference": "2 Chronicles 36:22-23"
+    },
+    {
+      "id": "2-chronicles-36-q3",
+      "type": "true_false",
+      "question": "The land enjoyed its sabbaths during the seventy years of desolation.",
+      "answer": "true",
+      "verse_reference": "2 Chronicles 36:21"
+    },
+    {
+      "id": "2-chronicles-36-q4",
+      "type": "fill_blank",
+      "question": "The people mocked God's messengers until there was no _____.",
+      "answer": "remedy",
+      "accept": [
+        "healing"
+      ],
+      "verse_reference": "2 Chronicles 36:16"
+    },
+    {
+      "id": "2-chronicles-36-q5",
+      "type": "fill_blank",
+      "question": "The exile lasted to fulfill the word of the LORD by Jeremiah, until _____ years were complete.",
+      "answer": "seventy",
+      "accept": [
+        "70",
+        "threescore and ten"
+      ],
+      "verse_reference": "2 Chronicles 36:21"
+    }
+  ]
+}

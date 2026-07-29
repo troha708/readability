@@ -1,0 +1,56 @@
+{
+  "book": "Zechariah",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "zechariah-3-q1",
+      "type": "multiple_choice",
+      "question": "Whom did Zechariah see standing before the angel in chapter 3?",
+      "options": [
+        "Cyrus the king, releasing the captives",
+        "Ezra the scribe, reading the law aloud",
+        "Zerubbabel the governor, building the temple",
+        "Joshua the high priest, with Satan accusing him"
+      ],
+      "answer": "Joshua the high priest, with Satan accusing him",
+      "verse_reference": "Zechariah 3:1"
+    },
+    {
+      "id": "zechariah-3-q2",
+      "type": "multiple_choice",
+      "question": "What was done with Joshua's filthy garments?",
+      "options": [
+        "They were left on him still as a sign of all of his guilt",
+        "They were removed, and he was clothed in pure vestments",
+        "They were taken and given over to the accuser instead",
+        "They were burned with fire before all of the people"
+      ],
+      "answer": "They were removed, and he was clothed in pure vestments",
+      "verse_reference": "Zechariah 3:4-5"
+    },
+    {
+      "id": "zechariah-3-q3",
+      "type": "true_false",
+      "question": "God promised to bring his servant the Branch in Zechariah 3.",
+      "answer": "true",
+      "verse_reference": "Zechariah 3:8"
+    },
+    {
+      "id": "zechariah-3-q4",
+      "type": "fill_blank",
+      "question": "Is not this a brand plucked from the _____? said the LORD of Joshua.",
+      "answer": "fire",
+      "verse_reference": "Zechariah 3:2"
+    },
+    {
+      "id": "zechariah-3-q5",
+      "type": "fill_blank",
+      "question": "Behold, I will bring my servant the _____.",
+      "answer": "Branch",
+      "accept": [
+        "Shoot"
+      ],
+      "verse_reference": "Zechariah 3:8"
+    }
+  ]
+}

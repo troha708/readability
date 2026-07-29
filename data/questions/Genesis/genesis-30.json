@@ -1,0 +1,53 @@
+{
+  "book": "Genesis",
+  "chapter": 30,
+  "questions": [
+    {
+      "id": "genesis-30-q1",
+      "type": "multiple_choice",
+      "question": "What did Rachel demand of Jacob in her desperation?",
+      "options": [
+        "\"Give me children, or I'll die!\"",
+        "\"Send Leah far away from me!\"",
+        "\"Take me back home to my own homeland!\"",
+        "\"Build me a house of my own!\""
+      ],
+      "answer": "\"Give me children, or I'll die!\"",
+      "verse_reference": "Genesis 30:1"
+    },
+    {
+      "id": "genesis-30-q2",
+      "type": "multiple_choice",
+      "question": "Whose birth finally ended Rachel's barrenness?",
+      "options": [
+        "Levi",
+        "Joseph",
+        "Gad",
+        "Dan"
+      ],
+      "answer": "Joseph",
+      "verse_reference": "Genesis 30:23-24"
+    },
+    {
+      "id": "genesis-30-q3",
+      "type": "true_false",
+      "question": "Jacob grew very prosperous, with large flocks, while working for Laban.",
+      "answer": "true",
+      "verse_reference": "Genesis 30:43"
+    },
+    {
+      "id": "genesis-30-q4",
+      "type": "fill_blank",
+      "question": "Rachel named her son _____, saying, \"May the LORD add to me another son.\"",
+      "answer": "Joseph",
+      "verse_reference": "Genesis 30:24"
+    },
+    {
+      "id": "genesis-30-q5",
+      "type": "fill_blank",
+      "question": "When God remembered Rachel and listened to her, he opened her _____.",
+      "answer": "womb",
+      "verse_reference": "Genesis 30:22"
+    }
+  ]
+}

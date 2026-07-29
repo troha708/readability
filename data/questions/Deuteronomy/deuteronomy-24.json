@@ -1,0 +1,56 @@
+{
+  "book": "Deuteronomy",
+  "chapter": 24,
+  "questions": [
+    {
+      "id": "deuteronomy-24-q1",
+      "type": "multiple_choice",
+      "question": "What does chapter 24 give laws about?",
+      "options": [
+        "Kings, judges, and the tribal leaders",
+        "Warfare, sieges, and the dividing of the spoil",
+        "Feasts, offerings, and the sacred days",
+        "Divorce, loans, and protecting the vulnerable"
+      ],
+      "answer": "Divorce, loans, and protecting the vulnerable",
+      "verse_reference": "Deuteronomy 24:1-22"
+    },
+    {
+      "id": "deuteronomy-24-q2",
+      "type": "multiple_choice",
+      "question": "What were farmers to leave in their fields for the poor and the foreigner?",
+      "options": [
+        "The gleanings and forgotten sheaves",
+        "A tenth of the whole harvest",
+        "The first and best of the crop",
+        "A full half of everything they gathered"
+      ],
+      "answer": "The gleanings and forgotten sheaves",
+      "verse_reference": "Deuteronomy 24:19-21"
+    },
+    {
+      "id": "deuteronomy-24-q3",
+      "type": "true_false",
+      "question": "They were not to take a millstone in pledge, for it is taking a life in pledge.",
+      "answer": "true",
+      "verse_reference": "Deuteronomy 24:6"
+    },
+    {
+      "id": "deuteronomy-24-q4",
+      "type": "fill_blank",
+      "question": "A forgotten _____ in the field was to be left for the foreigner, orphan, and widow.",
+      "answer": "sheaf",
+      "verse_reference": "Deuteronomy 24:19"
+    },
+    {
+      "id": "deuteronomy-24-q5",
+      "type": "fill_blank",
+      "question": "A man was to give his wife a certificate of _____ if he sent her away.",
+      "answer": "divorce",
+      "accept": [
+        "divorcement"
+      ],
+      "verse_reference": "Deuteronomy 24:1"
+    }
+  ]
+}

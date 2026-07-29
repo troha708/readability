@@ -1,0 +1,56 @@
+{
+  "book": "Psalms",
+  "chapter": 17,
+  "questions": [
+    {
+      "id": "psalms-17-q1",
+      "type": "multiple_choice",
+      "question": "What does David ask God to keep him as?",
+      "options": [
+        "The signet of your hand",
+        "The apple of your eye",
+        "The lamb of your fold",
+        "The crown of your head"
+      ],
+      "answer": "The apple of your eye",
+      "verse_reference": "Psalm 17:8"
+    },
+    {
+      "id": "psalms-17-q2",
+      "type": "multiple_choice",
+      "question": "What does David say about his prayer?",
+      "options": [
+        "It does not come from deceitful lips",
+        "It is offered half-heartedly to God",
+        "It rises from a heart full of doubt",
+        "It springs from lips that very often lie"
+      ],
+      "answer": "It does not come from deceitful lips",
+      "verse_reference": "Psalm 17:1"
+    },
+    {
+      "id": "psalms-17-q3",
+      "type": "true_false",
+      "question": "David asks to be hidden in the shadow of God's wings.",
+      "answer": "true",
+      "verse_reference": "Psalm 17:8"
+    },
+    {
+      "id": "psalms-17-q4",
+      "type": "fill_blank",
+      "question": "As for me, I shall behold your face in _____.",
+      "answer": "righteousness",
+      "verse_reference": "Psalm 17:15"
+    },
+    {
+      "id": "psalms-17-q5",
+      "type": "fill_blank",
+      "question": "Wondrously show your steadfast love, O Savior of those who seek _____.",
+      "answer": "refuge",
+      "accept": [
+        "trust"
+      ],
+      "verse_reference": "Psalm 17:7"
+    }
+  ]
+}

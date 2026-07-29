@@ -1,0 +1,53 @@
+{
+  "book": "Exodus",
+  "chapter": 12,
+  "questions": [
+    {
+      "id": "exodus-12-q1",
+      "type": "multiple_choice",
+      "question": "What were the Israelites told to put on their doorframes?",
+      "options": [
+        "The blood of a lamb",
+        "A branch of green hyssop",
+        "A mark of ash and oil",
+        "The sign of the covenant"
+      ],
+      "answer": "The blood of a lamb",
+      "verse_reference": "Exodus 12:7"
+    },
+    {
+      "id": "exodus-12-q2",
+      "type": "multiple_choice",
+      "question": "What is the feast that commemorates this night called?",
+      "options": [
+        "Atonement",
+        "Pentecost",
+        "Tabernacles",
+        "Passover"
+      ],
+      "answer": "Passover",
+      "verse_reference": "Exodus 12:11"
+    },
+    {
+      "id": "exodus-12-q3",
+      "type": "true_false",
+      "question": "The Israelites ate the meal in haste, dressed and ready to leave Egypt.",
+      "answer": "true",
+      "verse_reference": "Exodus 12:11"
+    },
+    {
+      "id": "exodus-12-q4",
+      "type": "fill_blank",
+      "question": "The LORD would pass over the houses marked with _____ and not strike them.",
+      "answer": "blood",
+      "verse_reference": "Exodus 12:13"
+    },
+    {
+      "id": "exodus-12-q5",
+      "type": "fill_blank",
+      "question": "They ate the lamb with bitter herbs and _____ bread.",
+      "answer": "unleavened",
+      "verse_reference": "Exodus 12:8"
+    }
+  ]
+}

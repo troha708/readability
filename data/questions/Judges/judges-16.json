@@ -1,0 +1,53 @@
+{
+  "book": "Judges",
+  "chapter": 16,
+  "questions": [
+    {
+      "id": "judges-16-q1",
+      "type": "multiple_choice",
+      "question": "Who coaxed Samson into revealing the secret of his strength?",
+      "options": [
+        "Delilah",
+        "His mother",
+        "A priest",
+        "His first wife"
+      ],
+      "answer": "Delilah",
+      "verse_reference": "Judges 16:4-17"
+    },
+    {
+      "id": "judges-16-q2",
+      "type": "multiple_choice",
+      "question": "What was the secret of Samson's strength?",
+      "options": [
+        "His uncut hair",
+        "His sword",
+        "A ring",
+        "His shield and armor"
+      ],
+      "answer": "His uncut hair",
+      "verse_reference": "Judges 16:17"
+    },
+    {
+      "id": "judges-16-q3",
+      "type": "true_false",
+      "question": "After his hair was cut, the Philistines captured Samson and blinded him.",
+      "answer": "true",
+      "verse_reference": "Judges 16:21"
+    },
+    {
+      "id": "judges-16-q4",
+      "type": "fill_blank",
+      "question": "_____ pressed Samson daily until he told her the secret of his strength.",
+      "answer": "Delilah",
+      "verse_reference": "Judges 16:16-17"
+    },
+    {
+      "id": "judges-16-q5",
+      "type": "fill_blank",
+      "question": "In his death, Samson pushed down the _____ of the temple, killing more than in his life.",
+      "answer": "pillars",
+      "verse_reference": "Judges 16:29-30"
+    }
+  ]
+}

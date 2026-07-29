@@ -1,0 +1,53 @@
+{
+  "book": "Genesis",
+  "chapter": 22,
+  "questions": [
+    {
+      "id": "genesis-22-q1",
+      "type": "multiple_choice",
+      "question": "What did God ask Abraham to offer as a sacrifice?",
+      "options": [
+        "A spotless young lamb",
+        "His son Isaac",
+        "A ram caught in the thicket",
+        "His finest flocks and herds"
+      ],
+      "answer": "His son Isaac",
+      "verse_reference": "Genesis 22:2"
+    },
+    {
+      "id": "genesis-22-q2",
+      "type": "multiple_choice",
+      "question": "What did God provide as a substitute for Isaac?",
+      "options": [
+        "A ram caught in a thicket",
+        "A goat tangled in the brush",
+        "A lamb from a nearby flock",
+        "A bird snared in the bushes"
+      ],
+      "answer": "A ram caught in a thicket",
+      "verse_reference": "Genesis 22:13"
+    },
+    {
+      "id": "genesis-22-q3",
+      "type": "true_false",
+      "question": "An angel of the LORD stopped Abraham just before he sacrificed Isaac.",
+      "answer": "true",
+      "verse_reference": "Genesis 22:11-12"
+    },
+    {
+      "id": "genesis-22-q4",
+      "type": "fill_blank",
+      "question": "God told Abraham to go to the region of _____ to offer Isaac.",
+      "answer": "Moriah",
+      "verse_reference": "Genesis 22:2"
+    },
+    {
+      "id": "genesis-22-q5",
+      "type": "fill_blank",
+      "question": "Abraham named the place \"The LORD will _____.\"",
+      "answer": "provide",
+      "verse_reference": "Genesis 22:14"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Daniel",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "daniel-3-q1",
+      "type": "multiple_choice",
+      "question": "What did Shadrach, Meshach, and Abednego refuse to do?",
+      "options": [
+        "Eat from the king's own table",
+        "Leave the province of Babylon",
+        "Bow down to the golden image",
+        "Renounce the law of their God"
+      ],
+      "answer": "Bow down to the golden image",
+      "verse_reference": "Daniel 3:12"
+    },
+    {
+      "id": "daniel-3-q2",
+      "type": "multiple_choice",
+      "question": "What did the king see in the fiery furnace?",
+      "options": [
+        "The whole furnace gone suddenly cold and dark within it",
+        "An angel of God carrying them all up and out of the fire",
+        "Four men walking unharmed, the fourth like a son of the gods",
+        "Three men consumed all at once by the raging hot flames"
+      ],
+      "answer": "Four men walking unharmed, the fourth like a son of the gods",
+      "verse_reference": "Daniel 3:25"
+    },
+    {
+      "id": "daniel-3-q3",
+      "type": "true_false",
+      "question": "The three men told the king that even if God did not deliver them, they still would not serve his gods.",
+      "answer": "true",
+      "verse_reference": "Daniel 3:17-18"
+    },
+    {
+      "id": "daniel-3-q4",
+      "type": "fill_blank",
+      "question": "The furnace was heated _____ times more than usual.",
+      "answer": "seven",
+      "verse_reference": "Daniel 3:19"
+    },
+    {
+      "id": "daniel-3-q5",
+      "type": "fill_blank",
+      "question": "Not a hair of their heads was singed, and there was no smell of _____ on them.",
+      "answer": "fire",
+      "verse_reference": "Daniel 3:27"
+    }
+  ]
+}

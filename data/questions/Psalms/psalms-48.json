@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 48,
+  "questions": [
+    {
+      "id": "psalms-48-q1",
+      "type": "multiple_choice",
+      "question": "Which city does Psalm 48 exalt?",
+      "options": [
+        "Mount Sinai, where the law was given",
+        "Mount Zion, the city of our God",
+        "Mount Carmel, where Elijah prayed",
+        "Mount Hermon, where the dew descends"
+      ],
+      "answer": "Mount Zion, the city of our God",
+      "verse_reference": "Psalm 48:1-2"
+    },
+    {
+      "id": "psalms-48-q2",
+      "type": "multiple_choice",
+      "question": "How great is the LORD, according to this psalm?",
+      "options": [
+        "Greatly to be praised in the city of our God",
+        "Greatly to be sought in the day of trouble",
+        "Greatly to be feared in the assembly of the holy",
+        "Greatly to be served in the courts of his house"
+      ],
+      "answer": "Greatly to be praised in the city of our God",
+      "verse_reference": "Psalm 48:1"
+    },
+    {
+      "id": "psalms-48-q3",
+      "type": "true_false",
+      "question": "The psalm invites worshipers to walk about Zion, counting its towers.",
+      "answer": "true",
+      "verse_reference": "Psalm 48:12"
+    },
+    {
+      "id": "psalms-48-q4",
+      "type": "fill_blank",
+      "question": "Great is the LORD and greatly to be _____.",
+      "answer": "praised",
+      "verse_reference": "Psalm 48:1"
+    },
+    {
+      "id": "psalms-48-q5",
+      "type": "fill_blank",
+      "question": "This is God, our God forever and ever. He will be our guide even till _____.",
+      "answer": "death",
+      "verse_reference": "Psalm 48:14"
+    }
+  ]
+}

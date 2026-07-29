@@ -1,0 +1,53 @@
+{
+  "book": "Numbers",
+  "chapter": 14,
+  "questions": [
+    {
+      "id": "numbers-14-q1",
+      "type": "multiple_choice",
+      "question": "How did the people respond to the spies' report?",
+      "options": [
+        "They drove out the unfaithful spies",
+        "They armed themselves at once to take the land",
+        "They wept and wanted to return to Egypt",
+        "They fell down and worshiped the LORD"
+      ],
+      "answer": "They wept and wanted to return to Egypt",
+      "verse_reference": "Numbers 14:1-4"
+    },
+    {
+      "id": "numbers-14-q2",
+      "type": "multiple_choice",
+      "question": "What was God's judgment on that generation?",
+      "options": [
+        "They would be sent back into slavery in Egypt",
+        "They would be scattered among the nations",
+        "They would wander forty years and not enter the land",
+        "They would all die by plague within a year"
+      ],
+      "answer": "They would wander forty years and not enter the land",
+      "verse_reference": "Numbers 14:33-34"
+    },
+    {
+      "id": "numbers-14-q3",
+      "type": "true_false",
+      "question": "Only Caleb and Joshua of that generation would enter the promised land.",
+      "answer": "true",
+      "verse_reference": "Numbers 14:30"
+    },
+    {
+      "id": "numbers-14-q4",
+      "type": "fill_blank",
+      "question": "Israel would wander in the wilderness _____ years, one for each day the spies explored.",
+      "answer": "forty",
+      "verse_reference": "Numbers 14:34"
+    },
+    {
+      "id": "numbers-14-q5",
+      "type": "fill_blank",
+      "question": "Of that generation, only _____ and Joshua would enter the land.",
+      "answer": "Caleb",
+      "verse_reference": "Numbers 14:30"
+    }
+  ]
+}

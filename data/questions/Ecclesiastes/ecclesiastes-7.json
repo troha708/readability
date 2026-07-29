@@ -1,0 +1,60 @@
+{
+  "book": "Ecclesiastes",
+  "chapter": 7,
+  "questions": [
+    {
+      "id": "ecclesiastes-7-q1",
+      "type": "multiple_choice",
+      "question": "What does Ecclesiastes 7 say a good name is better than?",
+      "options": [
+        "Fine gold",
+        "Precious ointment",
+        "Great wisdom",
+        "Many friends"
+      ],
+      "answer": "Precious ointment",
+      "verse_reference": "Ecclesiastes 7:1"
+    },
+    {
+      "id": "ecclesiastes-7-q2",
+      "type": "multiple_choice",
+      "question": "Why does Ecclesiastes 7 say sorrow is better than laughter?",
+      "options": [
+        "Because laughter is a sin that God will judge",
+        "Because by sadness of face the heart is made glad",
+        "Because mourning earns a man the praise of others",
+        "Because the wise have no need of joy or feasting"
+      ],
+      "answer": "Because by sadness of face the heart is made glad",
+      "verse_reference": "Ecclesiastes 7:3"
+    },
+    {
+      "id": "ecclesiastes-7-q3",
+      "type": "true_false",
+      "question": "Ecclesiastes 7 says it is better to go to the house of mourning than to the house of feasting.",
+      "answer": "true",
+      "verse_reference": "Ecclesiastes 7:2"
+    },
+    {
+      "id": "ecclesiastes-7-q4",
+      "type": "fill_blank",
+      "question": "A good name is better than fine _____.",
+      "answer": "perfume",
+      "accept": [
+        "ointment",
+        "oil"
+      ],
+      "verse_reference": "Ecclesiastes 7:1"
+    },
+    {
+      "id": "ecclesiastes-7-q5",
+      "type": "fill_blank",
+      "question": "Consider the work of God: who can straighten what He has _____?",
+      "answer": "bent",
+      "accept": [
+        "crooked"
+      ],
+      "verse_reference": "Ecclesiastes 7:13"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "book": "Acts",
+  "chapter": 21,
+  "questions": [
+    {
+      "id": "acts-21-q1",
+      "type": "multiple_choice",
+      "question": "Which prophet warned Paul about what would happen to him in Jerusalem by binding his own hands and feet?",
+      "options": [
+        "Timothy",
+        "Barnabas",
+        "Agabus",
+        "Silas"
+      ],
+      "answer": "Agabus",
+      "verse_reference": "Acts 21:10-11"
+    },
+    {
+      "id": "acts-21-q2",
+      "type": "multiple_choice",
+      "question": "Why was Paul seized in the temple by the crowd?",
+      "options": [
+        "He was preaching about Jesus",
+        "They thought he defiled the temple",
+        "He refused to make a proper offering",
+        "He argued with the priests"
+      ],
+      "answer": "They thought he defiled the temple",
+      "verse_reference": "Acts 21:28-29"
+    },
+    {
+      "id": "acts-21-q3",
+      "type": "true_false",
+      "question": "Paul agreed to participate in a purification ritual at the temple to show he still respected the Law.",
+      "answer": "true",
+      "verse_reference": "Acts 21:24,26"
+    },
+    {
+      "id": "acts-21-q4",
+      "type": "fill_blank",
+      "question": "Paul said, 'I am ready not only to be bound, but also to _____ at Jerusalem for the name of the Lord Jesus.'",
+      "answer": "die",
+      "verse_reference": "Acts 21:13"
+    },
+    {
+      "id": "acts-21-q5",
+      "type": "fill_blank",
+      "question": "The Roman commander ordered Paul to be brought into the _____ to protect him from the violent crowd.",
+      "answer": "barracks",
+      "accept": [
+        "castle",
+        "fortress"
+      ],
+      "verse_reference": "Acts 21:34"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "1 Chronicles",
+  "chapter": 17,
+  "questions": [
+    {
+      "id": "1-chronicles-17-q1",
+      "type": "multiple_choice",
+      "question": "What did David want to build for the LORD?",
+      "options": [
+        "An altar of incense",
+        "A grand palace",
+        "A city wall",
+        "A house (temple)"
+      ],
+      "answer": "A house (temple)",
+      "verse_reference": "1 Chronicles 17:1"
+    },
+    {
+      "id": "1-chronicles-17-q2",
+      "type": "multiple_choice",
+      "question": "Which prophet brought God's message to David?",
+      "options": [
+        "Gad",
+        "Nathan",
+        "Samuel",
+        "Elijah"
+      ],
+      "answer": "Nathan",
+      "verse_reference": "1 Chronicles 17:3"
+    },
+    {
+      "id": "1-chronicles-17-q3",
+      "type": "true_false",
+      "question": "God told David that his offspring would build the house, not David himself.",
+      "answer": "true",
+      "verse_reference": "1 Chronicles 17:11-12"
+    },
+    {
+      "id": "1-chronicles-17-q4",
+      "type": "fill_blank",
+      "question": "God promised to establish David's _____ forever.",
+      "answer": "throne",
+      "verse_reference": "1 Chronicles 17:12-14"
+    },
+    {
+      "id": "1-chronicles-17-q5",
+      "type": "fill_blank",
+      "question": "David sat before the LORD and said, 'Who am I, O LORD God, and what is my _____?'",
+      "answer": "house",
+      "verse_reference": "1 Chronicles 17:16"
+    }
+  ]
+}

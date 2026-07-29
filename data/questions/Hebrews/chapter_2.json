@@ -1,0 +1,60 @@
+{
+  "book": "Hebrews",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "heb_2_1",
+      "type": "multiple_choice",
+      "question": "Why does the author say Jesus had to be made like his brothers in every way?",
+      "options": [
+        "To establish an earthly kingdom of power",
+        "To receive worship from all of the holy angels",
+        "To fulfill every part of the holy law",
+        "To become a merciful and faithful high priest"
+      ],
+      "correct": "To become a merciful and faithful high priest",
+      "verse_ref": "Hebrews 2:17",
+      "feedback": "Jesus was made like his brothers to become a merciful and faithful high priest."
+    },
+    {
+      "id": "heb_2_2",
+      "type": "multiple_choice",
+      "question": "Through death Jesus destroyed the one who holds the power of death. Who is that?",
+      "options": [
+        "The devil",
+        "Sin",
+        "Death itself",
+        "The law"
+      ],
+      "correct": "The devil",
+      "verse_ref": "Hebrews 2:14",
+      "feedback": "Through death Jesus destroyed the devil who holds the power of death."
+    },
+    {
+      "id": "heb_2_3",
+      "type": "true_false",
+      "question": "The author says Jesus helps angels rather than Abraham's descendants.",
+      "correct": false,
+      "verse_ref": "Hebrews 2:16",
+      "feedback": "Jesus helps the offspring of Abraham, not angels."
+    },
+    {
+      "id": "heb_2_4",
+      "type": "fill_in_the_blank",
+      "question": "The author warns that we must pay more careful _____ to what we have heard so we do not drift away.",
+      "correct": "attention",
+      "accept": ["heed"],
+      "verse_ref": "Hebrews 2:1",
+      "feedback": "Pay careful attention so that we do not drift away from the message."
+    },
+    {
+      "id": "heb_2_5",
+      "type": "fill_in_the_blank",
+      "question": "Jesus is not ashamed to call believers his _____.",
+      "correct": "brothers",
+      "accept": ["brethren"],
+      "verse_ref": "Hebrews 2:11",
+      "feedback": "Jesus is not ashamed to call them brothers."
+    }
+  ]
+}

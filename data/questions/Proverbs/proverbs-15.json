@@ -1,0 +1,61 @@
+{
+  "book": "Proverbs",
+  "chapter": 15,
+  "questions": [
+    {
+      "id": "proverbs-15-q1",
+      "type": "multiple_choice",
+      "question": "What does Proverbs 15 say turns away wrath?",
+      "options": [
+        "A gift",
+        "A very loud voice",
+        "Silence",
+        "A soft answer"
+      ],
+      "answer": "A soft answer",
+      "verse_reference": "Proverbs 15:1"
+    },
+    {
+      "id": "proverbs-15-q2",
+      "type": "multiple_choice",
+      "question": "Where are the eyes of the LORD, according to Proverbs 15?",
+      "options": [
+        "Nowhere at all, far removed from all human affairs",
+        "In heaven only, and never once down upon the earth",
+        "Upon the kings and the great rulers of the earth alone",
+        "In every place, keeping watch on the evil and the good"
+      ],
+      "answer": "In every place, keeping watch on the evil and the good",
+      "verse_reference": "Proverbs 15:3"
+    },
+    {
+      "id": "proverbs-15-q3",
+      "type": "true_false",
+      "question": "Proverbs 15 says a gentle tongue is a tree of life.",
+      "answer": "true",
+      "verse_reference": "Proverbs 15:4"
+    },
+    {
+      "id": "proverbs-15-q4",
+      "type": "fill_blank",
+      "question": "A soft answer turns away _____, but a harsh word stirs up anger.",
+      "answer": "wrath",
+      "accept": [
+        "fury"
+      ],
+      "verse_reference": "Proverbs 15:1"
+    },
+    {
+      "id": "proverbs-15-q5",
+      "type": "fill_blank",
+      "question": "Better is a little with the fear of the LORD than great treasure with _____.",
+      "answer": "turmoil",
+      "accept": [
+        "trouble",
+        "tumult",
+        "disquietude"
+      ],
+      "verse_reference": "Proverbs 15:16"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "book": "Micah",
+  "chapter": 5,
+  "questions": [
+    {
+      "id": "micah-5-q1",
+      "type": "multiple_choice",
+      "question": "Which town does Micah 5 name as the birthplace of the coming ruler?",
+      "options": [
+        "Jerusalem of Judah",
+        "Hebron in the hills",
+        "Nazareth of Galilee",
+        "Bethlehem Ephrathah"
+      ],
+      "answer": "Bethlehem Ephrathah",
+      "verse_reference": "Micah 5:2"
+    },
+    {
+      "id": "micah-5-q2",
+      "type": "multiple_choice",
+      "question": "How is this coming ruler described in Micah 5?",
+      "options": [
+        "One who would be the very greatest of all of the warriors",
+        "One who would gather to himself the great wealth of nations",
+        "One who would rule entirely by his own force and by fear",
+        "One whose coming forth is from of old, from ancient days"
+      ],
+      "answer": "One whose coming forth is from of old, from ancient days",
+      "verse_reference": "Micah 5:2"
+    },
+    {
+      "id": "micah-5-q3",
+      "type": "true_false",
+      "question": "Micah 5 says this ruler shall shepherd his flock and be their peace.",
+      "answer": "true",
+      "verse_reference": "Micah 5:4-5"
+    },
+    {
+      "id": "micah-5-q4",
+      "type": "fill_blank",
+      "question": "But you, O _____ Ephrathah, who are too little to be among the clans of Judah...",
+      "answer": "Bethlehem",
+      "accept": [
+        "Beth-lehem",
+        "Beth-leem"
+      ],
+      "verse_reference": "Micah 5:2"
+    },
+    {
+      "id": "micah-5-q5",
+      "type": "fill_blank",
+      "question": "From you shall come forth for me one who is to be _____ in Israel.",
+      "answer": "ruler",
+      "verse_reference": "Micah 5:2"
+    }
+  ]
+}

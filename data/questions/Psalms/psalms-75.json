@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 75,
+  "questions": [
+    {
+      "id": "psalms-75-q1",
+      "type": "multiple_choice",
+      "question": "What does God declare he will do as judge in Psalm 75?",
+      "options": [
+        "Reward all the righteous and punish the wicked",
+        "Reign over the nations from his holy hill",
+        "Judge with equity at the set time he appoints",
+        "Forgive the sins of all who turn to him"
+      ],
+      "answer": "Judge with equity at the set time he appoints",
+      "verse_reference": "Psalm 75:2"
+    },
+    {
+      "id": "psalms-75-q2",
+      "type": "multiple_choice",
+      "question": "Whom does the psalm say lifts up and puts down?",
+      "options": [
+        "God, who led the people of Israel safely through the wilderness",
+        "God, who chose David from the lowly sheepfolds to shepherd his people",
+        "God, who in the beginning created the heavens and the earth",
+        "God, who executes judgment, putting down one and lifting up another"
+      ],
+      "answer": "God, who executes judgment, putting down one and lifting up another",
+      "verse_reference": "Psalm 75:6-7"
+    },
+    {
+      "id": "psalms-75-q3",
+      "type": "true_false",
+      "question": "The psalm warns the boastful not to lift up their horn.",
+      "answer": "true",
+      "verse_reference": "Psalm 75:4-5"
+    },
+    {
+      "id": "psalms-75-q4",
+      "type": "fill_blank",
+      "question": "We give _____ to you, O God; we give thanks, for your name is near.",
+      "answer": "thanks",
+      "verse_reference": "Psalm 75:1"
+    },
+    {
+      "id": "psalms-75-q5",
+      "type": "fill_blank",
+      "question": "It is God who executes judgment, putting down one and lifting up _____.",
+      "answer": "another",
+      "verse_reference": "Psalm 75:7"
+    }
+  ]
+}

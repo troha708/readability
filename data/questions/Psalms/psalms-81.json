@@ -1,0 +1,57 @@
+{
+  "book": "Psalms",
+  "chapter": 81,
+  "questions": [
+    {
+      "id": "psalms-81-q1",
+      "type": "multiple_choice",
+      "question": "What does Psalm 81 call the people to do?",
+      "options": [
+        "Sing aloud to God with joy and blow the trumpet at the feast",
+        "Weep and fast in rough sackcloth on account of your sins",
+        "Bring forward your offerings and lay them upon the altar",
+        "Bow down in deep silence and wait very patiently upon the LORD"
+      ],
+      "answer": "Sing aloud to God with joy and blow the trumpet at the feast",
+      "verse_reference": "Psalm 81:1-3"
+    },
+    {
+      "id": "psalms-81-q2",
+      "type": "multiple_choice",
+      "question": "What does God promise if his people open their mouths wide?",
+      "options": [
+        "Nothing",
+        "He will rebuke them",
+        "He will be silent",
+        "He will fill it"
+      ],
+      "answer": "He will fill it",
+      "verse_reference": "Psalm 81:10"
+    },
+    {
+      "id": "psalms-81-q3",
+      "type": "true_false",
+      "question": "God laments that his people did not listen, so he gave them over to their stubborn hearts.",
+      "answer": "true",
+      "verse_reference": "Psalm 81:11-12"
+    },
+    {
+      "id": "psalms-81-q4",
+      "type": "fill_blank",
+      "question": "Open your mouth wide, and I will _____ it.",
+      "answer": "fill",
+      "verse_reference": "Psalm 81:10"
+    },
+    {
+      "id": "psalms-81-q5",
+      "type": "fill_blank",
+      "question": "Oh, that my people would _____ to me, that Israel would walk in my ways!",
+      "answer": "listen",
+      "accept": [
+        "hearken",
+        "hearkened"
+      ],
+      "verse_reference": "Psalm 81:13"
+    }
+  ]
+}

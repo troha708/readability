@@ -1,0 +1,53 @@
+{
+  "book": "1 Samuel",
+  "chapter": 17,
+  "questions": [
+    {
+      "id": "1-samuel-17-q1",
+      "type": "multiple_choice",
+      "question": "Who was the Philistine giant that David defeated?",
+      "options": [
+        "Nahash",
+        "Goliath",
+        "Agag",
+        "Saul"
+      ],
+      "answer": "Goliath",
+      "verse_reference": "1 Samuel 17:4"
+    },
+    {
+      "id": "1-samuel-17-q2",
+      "type": "multiple_choice",
+      "question": "What did David use to kill Goliath?",
+      "options": [
+        "A spear and a javelin",
+        "A bow and an arrow",
+        "A sling and a stone",
+        "A sword and a shield"
+      ],
+      "answer": "A sling and a stone",
+      "verse_reference": "1 Samuel 17:49-50"
+    },
+    {
+      "id": "1-samuel-17-q3",
+      "type": "true_false",
+      "question": "David came against Goliath in the name of the LORD of hosts.",
+      "answer": "true",
+      "verse_reference": "1 Samuel 17:45"
+    },
+    {
+      "id": "1-samuel-17-q4",
+      "type": "fill_blank",
+      "question": "David struck down _____ with a sling and a stone.",
+      "answer": "Goliath",
+      "verse_reference": "1 Samuel 17:49-50"
+    },
+    {
+      "id": "1-samuel-17-q5",
+      "type": "fill_blank",
+      "question": "David said he came against the giant in the _____ of the LORD of hosts.",
+      "answer": "name",
+      "verse_reference": "1 Samuel 17:45"
+    }
+  ]
+}

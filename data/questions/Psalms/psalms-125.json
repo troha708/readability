@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 125,
+  "questions": [
+    {
+      "id": "psalms-125-q1",
+      "type": "multiple_choice",
+      "question": "To what are those who trust in the LORD compared in Psalm 125?",
+      "options": [
+        "A spring of water that never runs dry",
+        "A tower of bronze that no army takes",
+        "Mount Zion, which cannot be moved",
+        "A tree of life that bears fruit always"
+      ],
+      "answer": "Mount Zion, which cannot be moved",
+      "verse_reference": "Psalm 125:1"
+    },
+    {
+      "id": "psalms-125-q2",
+      "type": "multiple_choice",
+      "question": "How does the psalm picture God's protection of his people?",
+      "options": [
+        "As the mountains surround Jerusalem, so the LORD surrounds his people",
+        "As the rain waters the earth, so the LORD blesses the faithful",
+        "As the sun rises over the hills, so the LORD shines on the just",
+        "As the rivers flow to the sea, so the nations stream to Zion"
+      ],
+      "answer": "As the mountains surround Jerusalem, so the LORD surrounds his people",
+      "verse_reference": "Psalm 125:2"
+    },
+    {
+      "id": "psalms-125-q3",
+      "type": "true_false",
+      "question": "The psalm prays for peace upon Israel.",
+      "answer": "true",
+      "verse_reference": "Psalm 125:5"
+    },
+    {
+      "id": "psalms-125-q4",
+      "type": "fill_blank",
+      "question": "Those who trust in the LORD are like Mount Zion, which cannot be _____.",
+      "answer": "moved",
+      "verse_reference": "Psalm 125:1"
+    },
+    {
+      "id": "psalms-125-q5",
+      "type": "fill_blank",
+      "question": "As the mountains surround Jerusalem, so the LORD surrounds his _____.",
+      "answer": "people",
+      "verse_reference": "Psalm 125:2"
+    }
+  ]
+}

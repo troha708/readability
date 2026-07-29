@@ -1,0 +1,56 @@
+{
+  "book": "Jeremiah",
+  "chapter": 39,
+  "questions": [
+    {
+      "id": "jeremiah-39-q1",
+      "type": "multiple_choice",
+      "question": "What happened to Jerusalem in chapter 39?",
+      "options": [
+        "It was spared in return for heavy tribute",
+        "It was rebuilt grander than ever before",
+        "It withstood the siege and the enemy withdrew",
+        "It was captured by the Babylonians and burned"
+      ],
+      "answer": "It was captured by the Babylonians and burned",
+      "verse_reference": "Jeremiah 39:2, 8"
+    },
+    {
+      "id": "jeremiah-39-q2",
+      "type": "multiple_choice",
+      "question": "What happened to King Zedekiah?",
+      "options": [
+        "He was crowned again as a vassal of the Babylonian king",
+        "His sons were killed before him, then he was blinded and bound",
+        "He fled by night into Egypt and was never seen again",
+        "He escaped through a breach in the wall and long lived in hiding"
+      ],
+      "answer": "His sons were killed before him, then he was blinded and bound",
+      "verse_reference": "Jeremiah 39:6-7"
+    },
+    {
+      "id": "jeremiah-39-q3",
+      "type": "true_false",
+      "question": "Ebed-melech was promised deliverance because he had put his trust in the LORD.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 39:18"
+    },
+    {
+      "id": "jeremiah-39-q4",
+      "type": "fill_blank",
+      "question": "They put out the eyes of _____ and bound him in chains to take him to Babylon.",
+      "answer": "Zedekiah",
+      "verse_reference": "Jeremiah 39:7"
+    },
+    {
+      "id": "jeremiah-39-q5",
+      "type": "fill_blank",
+      "question": "Nebuchadnezzar gave orders that Jeremiah be looked after and that no _____ come to him.",
+      "answer": "harm",
+      "accept": [
+        "evil"
+      ],
+      "verse_reference": "Jeremiah 39:11-12"
+    }
+  ]
+}

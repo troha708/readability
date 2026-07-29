@@ -1,0 +1,6 @@
+{
+  "source": "STEPBible TIPNR (Translators' Individualised Proper Names with all References), based on work at Tyndale House Cambridge",
+  "license": "CC BY 4.0",
+  "url": "https://github.com/STEPBible/STEPBible-Data",
+  "notes": "Identity, tribe, type, family relationships (parents/siblings/partners/offspring), and the exhaustive reference index are derived from TIPNR by scripts/build-people.mjs. TIPNR's own AI-generated @Brief/@Short/@Article prose is NOT used; prose is provided by linking to the Tyndale Open Bible Dictionary article for each person."
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 54,
+  "questions": [
+    {
+      "id": "psalms-54-q1",
+      "type": "multiple_choice",
+      "question": "By what does David ask God to save him?",
+      "options": [
+        "By the wealth of his treasury",
+        "By God's name and might",
+        "By the strength of his army",
+        "By the wisdom of his counselors"
+      ],
+      "answer": "By God's name and might",
+      "verse_reference": "Psalm 54:1"
+    },
+    {
+      "id": "psalms-54-q2",
+      "type": "multiple_choice",
+      "question": "What is the occasion of Psalm 54?",
+      "options": [
+        "When the Ziphites told Saul David was hiding among them",
+        "When Absalom rose up and drove David out from Jerusalem",
+        "When David fled for refuge to the cave of Adullam",
+        "When the Philistines seized hold of David in the city of Gath"
+      ],
+      "answer": "When the Ziphites told Saul David was hiding among them",
+      "verse_reference": "Psalm 54:title"
+    },
+    {
+      "id": "psalms-54-q3",
+      "type": "true_false",
+      "question": "David says God is his helper and the upholder of his life.",
+      "answer": "true",
+      "verse_reference": "Psalm 54:4"
+    },
+    {
+      "id": "psalms-54-q4",
+      "type": "fill_blank",
+      "question": "Behold, God is my _____.",
+      "answer": "helper",
+      "verse_reference": "Psalm 54:4"
+    },
+    {
+      "id": "psalms-54-q5",
+      "type": "fill_blank",
+      "question": "I will give thanks to your name, O LORD, for it is _____.",
+      "answer": "good",
+      "verse_reference": "Psalm 54:6"
+    }
+  ]
+}

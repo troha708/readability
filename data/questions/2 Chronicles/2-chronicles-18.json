@@ -1,0 +1,56 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 18,
+  "questions": [
+    {
+      "id": "2-chronicles-18-q1",
+      "type": "multiple_choice",
+      "question": "With which king did Jehoshaphat make a marriage alliance and go to war?",
+      "options": [
+        "Pharaoh",
+        "Jeroboam",
+        "Ahab of Israel",
+        "Hazael of Syria"
+      ],
+      "answer": "Ahab of Israel",
+      "verse_reference": "2 Chronicles 18:1-3"
+    },
+    {
+      "id": "2-chronicles-18-q2",
+      "type": "multiple_choice",
+      "question": "Which prophet alone foretold disaster for Ahab?",
+      "options": [
+        "Elijah",
+        "Micaiah",
+        "Elisha",
+        "Zedekiah"
+      ],
+      "answer": "Micaiah",
+      "verse_reference": "2 Chronicles 18:7"
+    },
+    {
+      "id": "2-chronicles-18-q3",
+      "type": "true_false",
+      "question": "Ahab disguised himself in battle but was killed by a randomly shot arrow.",
+      "answer": "true",
+      "verse_reference": "2 Chronicles 18:33-34"
+    },
+    {
+      "id": "2-chronicles-18-q4",
+      "type": "fill_blank",
+      "question": "Micaiah saw all Israel scattered on the mountains like _____ without a shepherd.",
+      "answer": "sheep",
+      "verse_reference": "2 Chronicles 18:16"
+    },
+    {
+      "id": "2-chronicles-18-q5",
+      "type": "fill_blank",
+      "question": "Ahab put Micaiah in prison and fed him only bread and water until he returned _____.",
+      "answer": "safely",
+      "accept": [
+        "peace"
+      ],
+      "verse_reference": "2 Chronicles 18:26"
+    }
+  ]
+}

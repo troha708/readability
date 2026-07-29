@@ -1,0 +1,53 @@
+{
+  "book": "John",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "john-3-q1",
+      "type": "multiple_choice",
+      "question": "Who came to Jesus by night to ask him questions?",
+      "options": [
+        "Nicodemus",
+        "Joseph of Arimathea",
+        "Simon the Pharisee",
+        "Gamaliel"
+      ],
+      "answer": "Nicodemus",
+      "verse_reference": "John 3:1-2"
+    },
+    {
+      "id": "john-3-q2",
+      "type": "multiple_choice",
+      "question": "Jesus told Nicodemus that unless someone is born again, they cannot do what?",
+      "options": [
+        "Receive great riches and honor",
+        "See the kingdom of God",
+        "Enter the city of Jerusalem",
+        "Inherit the land of promise"
+      ],
+      "answer": "See the kingdom of God",
+      "verse_reference": "John 3:3"
+    },
+    {
+      "id": "john-3-q3",
+      "type": "true_false",
+      "question": "John the Baptist said that he must increase and Jesus must decrease.",
+      "answer": "false",
+      "verse_reference": "John 3:30"
+    },
+    {
+      "id": "john-3-q4",
+      "type": "fill_blank",
+      "question": "For God so loved the world, that he gave his only born Son, that whoever believes in him should not perish, but have eternal _____.",
+      "answer": "life",
+      "verse_reference": "John 3:16"
+    },
+    {
+      "id": "john-3-q5",
+      "type": "fill_blank",
+      "question": "The wind blows where it wants to, and you hear its sound, but don't know where it comes from and where it is going. So is everyone who is born of the _____.",
+      "answer": "Spirit",
+      "verse_reference": "John 3:8"
+    }
+  ]
+}

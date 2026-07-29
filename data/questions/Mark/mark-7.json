@@ -1,0 +1,60 @@
+{
+  "book": "Mark",
+  "chapter": 7,
+  "questions": [
+    {
+      "id": "mark-7-q1",
+      "type": "multiple_choice",
+      "question": "What did the Pharisees criticize Jesus' disciples for?",
+      "options": [
+        "Working on the Sabbath",
+        "Eating with unwashed hands",
+        "Not fasting",
+        "Not praying"
+      ],
+      "answer": "Eating with unwashed hands",
+      "verse_reference": "Mark 7:2-5"
+    },
+    {
+      "id": "mark-7-q2",
+      "type": "multiple_choice",
+      "question": "What nationality was the woman who asked Jesus to cast a demon out of her daughter?",
+      "options": [
+        "Egyptian",
+        "A Samaritan woman",
+        "Roman",
+        "Syrophoenician"
+      ],
+      "answer": "Syrophoenician",
+      "verse_reference": "Mark 7:26"
+    },
+    {
+      "id": "mark-7-q3",
+      "type": "true_false",
+      "question": "Jesus said that what defiles a person comes from within, not from outside.",
+      "answer": "true",
+      "verse_reference": "Mark 7:15"
+    },
+    {
+      "id": "mark-7-q4",
+      "type": "fill_blank",
+      "question": "From within the hearts of men come evil thoughts, sexual immorality, _____, murder, and adultery.",
+      "answer": "theft",
+      "accept": [
+        "thefts"
+      ],
+      "verse_reference": "Mark 7:21"
+    },
+    {
+      "id": "mark-7-q5",
+      "type": "fill_blank",
+      "question": "He has done all things well. He makes even the deaf hear and the _____ speak!",
+      "answer": "mute",
+      "accept": [
+        "dumb",
+        "speechless"
+      ],
+      "verse_reference": "Mark 7:37"
+    }
+  ]
+}

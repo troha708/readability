@@ -1,0 +1,62 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 20,
+  "questions": [
+    {
+      "id": "2-chronicles-20-q1",
+      "type": "multiple_choice",
+      "question": "What did Jehoshaphat do when Moab and Ammon came against Judah?",
+      "options": [
+        "Proclaimed a fast and sought the LORD",
+        "Surrendered all of Judah to the invaders",
+        "Hired mercenaries from the north",
+        "Fled the city with his household"
+      ],
+      "answer": "Proclaimed a fast and sought the LORD",
+      "verse_reference": "2 Chronicles 20:3"
+    },
+    {
+      "id": "2-chronicles-20-q2",
+      "type": "multiple_choice",
+      "question": "What did Jahaziel say about the battle?",
+      "options": [
+        "Run away long before the armies meet",
+        "The battle is not yours but God's",
+        "Send envoys to negotiate peace",
+        "Wait a year before going out"
+      ],
+      "answer": "The battle is not yours but God's",
+      "verse_reference": "2 Chronicles 20:15"
+    },
+    {
+      "id": "2-chronicles-20-q3",
+      "type": "true_false",
+      "question": "Judah won by sending singers ahead to praise the LORD, and the enemies destroyed one another.",
+      "answer": "true",
+      "verse_reference": "2 Chronicles 20:21-23"
+    },
+    {
+      "id": "2-chronicles-20-q4",
+      "type": "fill_blank",
+      "question": "Jehoshaphat said, 'Believe in the LORD your God, and you will be _____.'",
+      "answer": "upheld",
+      "accept": [
+        "established",
+        "assured",
+        "steadfast"
+      ],
+      "verse_reference": "2 Chronicles 20:20"
+    },
+    {
+      "id": "2-chronicles-20-q5",
+      "type": "fill_blank",
+      "question": "They gathered the spoil for three days and assembled in the Valley of _____ to bless the LORD.",
+      "answer": "Beracah",
+      "accept": [
+        "Berachah",
+        "Blessing"
+      ],
+      "verse_reference": "2 Chronicles 20:26"
+    }
+  ]
+}

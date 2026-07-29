@@ -1,0 +1,53 @@
+{
+  "book": "Exodus",
+  "chapter": 23,
+  "questions": [
+    {
+      "id": "exodus-23-q1",
+      "type": "multiple_choice",
+      "question": "How many times a year were the Israelites to hold a feast to the LORD?",
+      "options": [
+        "Once",
+        "Twelve times",
+        "Three times",
+        "Seven times"
+      ],
+      "answer": "Three times",
+      "verse_reference": "Exodus 23:14"
+    },
+    {
+      "id": "exodus-23-q2",
+      "type": "multiple_choice",
+      "question": "What did God promise to send ahead of Israel to guard them on the way?",
+      "options": [
+        "A prophet",
+        "An angel",
+        "A pillar of salt",
+        "An army"
+      ],
+      "answer": "An angel",
+      "verse_reference": "Exodus 23:20"
+    },
+    {
+      "id": "exodus-23-q3",
+      "type": "true_false",
+      "question": "God commanded that the land rest and lie fallow every seventh year.",
+      "answer": "true",
+      "verse_reference": "Exodus 23:10-11"
+    },
+    {
+      "id": "exodus-23-q4",
+      "type": "fill_blank",
+      "question": "God told Israel to keep three feasts: Unleavened Bread, Harvest, and _____.",
+      "answer": "Ingathering",
+      "verse_reference": "Exodus 23:16"
+    },
+    {
+      "id": "exodus-23-q5",
+      "type": "fill_blank",
+      "question": "God promised to send an _____ ahead of them to bring them to the place he had prepared.",
+      "answer": "angel",
+      "verse_reference": "Exodus 23:20"
+    }
+  ]
+}

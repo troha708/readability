@@ -1,0 +1,57 @@
+{
+  "book": "Ezekiel",
+  "chapter": 30,
+  "questions": [
+    {
+      "id": "ezekiel-30-q1",
+      "type": "multiple_choice",
+      "question": "What does Ezekiel 30 announce concerning Egypt?",
+      "options": [
+        "A great harvest along the banks of the Nile",
+        "The day of the LORD, a day of doom for Egypt",
+        "The return of Israel's exiles from Egypt",
+        "A day of peace and rest for Egypt"
+      ],
+      "answer": "The day of the LORD, a day of doom for Egypt",
+      "verse_reference": "Ezekiel 30:2-3"
+    },
+    {
+      "id": "ezekiel-30-q2",
+      "type": "multiple_choice",
+      "question": "Whom would God use to bring this judgment on Egypt?",
+      "options": [
+        "Sennacherib king of Assyria",
+        "Cyrus, the great king of Persia",
+        "Nebuchadnezzar king of Babylon",
+        "The king of Tyre and his fleet"
+      ],
+      "answer": "Nebuchadnezzar king of Babylon",
+      "verse_reference": "Ezekiel 30:10"
+    },
+    {
+      "id": "ezekiel-30-q3",
+      "type": "true_false",
+      "question": "God said he would break the arms of Pharaoh.",
+      "answer": "true",
+      "verse_reference": "Ezekiel 30:21-22"
+    },
+    {
+      "id": "ezekiel-30-q4",
+      "type": "fill_blank",
+      "question": "Wail, 'Alas for the day!' For the day is near, the day of the _____.",
+      "answer": "LORD",
+      "accept": [
+        "Jehovah",
+        "Yahweh"
+      ],
+      "verse_reference": "Ezekiel 30:2-3"
+    },
+    {
+      "id": "ezekiel-30-q5",
+      "type": "fill_blank",
+      "question": "I will break the arms of _____ king of Egypt.",
+      "answer": "Pharaoh",
+      "verse_reference": "Ezekiel 30:22"
+    }
+  ]
+}

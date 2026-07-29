@@ -1,0 +1,53 @@
+{
+  "book": "1 Samuel",
+  "chapter": 31,
+  "questions": [
+    {
+      "id": "1-samuel-31-q1",
+      "type": "multiple_choice",
+      "question": "How did Saul die on Mount Gilboa?",
+      "options": [
+        "He was captured alive and led away",
+        "He fell in single combat with a mighty champion",
+        "He died of a sudden sickness in his tent",
+        "He fell on his own sword after being wounded"
+      ],
+      "answer": "He fell on his own sword after being wounded",
+      "verse_reference": "1 Samuel 31:4"
+    },
+    {
+      "id": "1-samuel-31-q2",
+      "type": "multiple_choice",
+      "question": "What happened to Saul's sons in the battle?",
+      "options": [
+        "They surrendered to the Philistine king",
+        "They survived and gathered the army again",
+        "They were killed, including Jonathan",
+        "They fled and escaped across the Jordan"
+      ],
+      "answer": "They were killed, including Jonathan",
+      "verse_reference": "1 Samuel 31:2"
+    },
+    {
+      "id": "1-samuel-31-q3",
+      "type": "true_false",
+      "question": "The men of Jabesh-gilead retrieved the bodies of Saul and his sons.",
+      "answer": "true",
+      "verse_reference": "1 Samuel 31:11-13"
+    },
+    {
+      "id": "1-samuel-31-q4",
+      "type": "fill_blank",
+      "question": "Saul fell on his own _____ rather than be captured by the Philistines.",
+      "answer": "sword",
+      "verse_reference": "1 Samuel 31:4"
+    },
+    {
+      "id": "1-samuel-31-q5",
+      "type": "fill_blank",
+      "question": "Saul's son _____ was killed alongside him in the battle.",
+      "answer": "Jonathan",
+      "verse_reference": "1 Samuel 31:2"
+    }
+  ]
+}

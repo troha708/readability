@@ -1,0 +1,56 @@
+{
+  "book": "Nahum",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "nahum-2-q1",
+      "type": "multiple_choice",
+      "question": "What does Nahum 2 vividly describe?",
+      "options": [
+        "The reign of the kings of Assyria",
+        "The return of the exiles from Babylon",
+        "The rebuilding of the temple in Jerusalem",
+        "The siege and fall of Nineveh"
+      ],
+      "answer": "The siege and fall of Nineveh",
+      "verse_reference": "Nahum 2:1-6"
+    },
+    {
+      "id": "nahum-2-q2",
+      "type": "multiple_choice",
+      "question": "To what had Nineveh been compared, now to be emptied?",
+      "options": [
+        "A strong fortress on a hill, and a shepherd's fold",
+        "A river overflowing, and a wolves' lair",
+        "A garden in full bloom, and an eagle's nest",
+        "A pool of water draining away, and a lions' den"
+      ],
+      "answer": "A pool of water draining away, and a lions' den",
+      "verse_reference": "Nahum 2:8, 11"
+    },
+    {
+      "id": "nahum-2-q3",
+      "type": "true_false",
+      "question": "Nahum 2 declares that the LORD is against Nineveh, the city of the lions.",
+      "answer": "true",
+      "verse_reference": "Nahum 2:13"
+    },
+    {
+      "id": "nahum-2-q4",
+      "type": "fill_blank",
+      "question": "Nineveh is like a _____ whose waters run away.",
+      "answer": "pool",
+      "verse_reference": "Nahum 2:8"
+    },
+    {
+      "id": "nahum-2-q5",
+      "type": "fill_blank",
+      "question": "Behold, I am against you, declares the LORD of _____.",
+      "answer": "hosts",
+      "accept": [
+        "Armies"
+      ],
+      "verse_reference": "Nahum 2:13"
+    }
+  ]
+}

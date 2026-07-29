@@ -1,0 +1,66 @@
+{
+  "book": "Matthew",
+  "chapter": 5,
+  "questions": [
+    {
+      "id": "matthew-5-q1",
+      "type": "multiple_choice",
+      "question": "In the Beatitudes, who does Jesus say will inherit the earth?",
+      "options": [
+        "The meek",
+        "The peacemakers",
+        "The poor in spirit",
+        "Those who mourn"
+      ],
+      "answer": "The meek",
+      "verse_reference": "Matthew 5:5"
+    },
+    {
+      "id": "matthew-5-q2",
+      "type": "multiple_choice",
+      "question": "Jesus said he did not come to destroy the law, but to do what?",
+      "options": [
+        "Replace it",
+        "Fulfill it",
+        "Simplify it",
+        "Ignore it"
+      ],
+      "answer": "Fulfill it",
+      "verse_reference": "Matthew 5:17"
+    },
+    {
+      "id": "matthew-5-q3",
+      "type": "true_false",
+      "question": "Jesus taught that you should love your neighbors but hate your enemies.",
+      "answer": "false",
+      "verse_reference": "Matthew 5:44"
+    },
+    {
+      "id": "matthew-5-q4",
+      "type": "fill_blank",
+      "question": "You are the _____ of the world. A city located on a hill can't be hidden.",
+      "answer": "light",
+      "verse_reference": "Matthew 5:14"
+    },
+    {
+      "id": "matthew-5-q5",
+      "type": "fill_blank",
+      "question": "Blessed are the poor in spirit, for theirs is the Kingdom of _____.",
+      "answer": "Heaven",
+      "verse_reference": "Matthew 5:3"
+    },
+    {
+      "id": "matthew-5-q6",
+      "type": "multiple_choice",
+      "question": "Why does Jesus tell His disciples to let their light shine before men?",
+      "options": [
+        "So that men will know they are wise",
+        "So that men will honor and praise them",
+        "So that men may see their good deeds and glorify their Father in heaven",
+        "So that men will be ashamed of their own darkness"
+      ],
+      "answer": "So that men may see their good deeds and glorify their Father in heaven",
+      "verse_reference": "Matthew 5:16"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Numbers",
+  "chapter": 16,
+  "questions": [
+    {
+      "id": "numbers-16-q1",
+      "type": "multiple_choice",
+      "question": "Who led a rebellion against Moses and Aaron?",
+      "options": [
+        "Nadab, Abihu, and Eleazar",
+        "Korah, Dathan, and Abiram",
+        "Miriam, Aaron, and Hur",
+        "Dathan, Caleb, and Hur"
+      ],
+      "answer": "Korah, Dathan, and Abiram",
+      "verse_reference": "Numbers 16:1-3"
+    },
+    {
+      "id": "numbers-16-q2",
+      "type": "multiple_choice",
+      "question": "What happened to Korah and his followers?",
+      "options": [
+        "The earth opened and swallowed them",
+        "They were banished beyond the camp",
+        "They slipped away and were never found",
+        "They were pardoned after they repented"
+      ],
+      "answer": "The earth opened and swallowed them",
+      "verse_reference": "Numbers 16:31-33"
+    },
+    {
+      "id": "numbers-16-q3",
+      "type": "true_false",
+      "question": "Fire from the LORD also consumed the 250 men who offered incense.",
+      "answer": "true",
+      "verse_reference": "Numbers 16:35"
+    },
+    {
+      "id": "numbers-16-q4",
+      "type": "fill_blank",
+      "question": "The _____ opened its mouth and swallowed Korah and his household.",
+      "answer": "earth",
+      "verse_reference": "Numbers 16:32"
+    },
+    {
+      "id": "numbers-16-q5",
+      "type": "fill_blank",
+      "question": "_____ led the rebellion, claiming the whole congregation was holy.",
+      "answer": "Korah",
+      "verse_reference": "Numbers 16:3"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Numbers",
+  "chapter": 6,
+  "questions": [
+    {
+      "id": "numbers-6-q1",
+      "type": "multiple_choice",
+      "question": "What was a person under the Nazirite vow forbidden to do?",
+      "options": [
+        "Drink wine, cut hair, or touch the dead",
+        "Pray aloud, travel far, or eat meat",
+        "Marry, own land, or enter the camp",
+        "Speak, work, or leave his tent"
+      ],
+      "answer": "Drink wine, cut hair, or touch the dead",
+      "verse_reference": "Numbers 6:3-6"
+    },
+    {
+      "id": "numbers-6-q2",
+      "type": "multiple_choice",
+      "question": "What famous blessing is given in this chapter?",
+      "options": [
+        "The song of Moses and Miriam",
+        "The blessing of the twelve tribes",
+        "The covenant blessing at Sinai",
+        "The priestly (Aaronic) blessing"
+      ],
+      "answer": "The priestly (Aaronic) blessing",
+      "verse_reference": "Numbers 6:24-26"
+    },
+    {
+      "id": "numbers-6-q3",
+      "type": "true_false",
+      "question": "A Nazirite was not to cut his hair during the days of his vow.",
+      "answer": "true",
+      "verse_reference": "Numbers 6:5"
+    },
+    {
+      "id": "numbers-6-q4",
+      "type": "fill_blank",
+      "question": "The priestly blessing begins, \"The LORD bless you and _____ you.\"",
+      "answer": "keep",
+      "verse_reference": "Numbers 6:24"
+    },
+    {
+      "id": "numbers-6-q5",
+      "type": "fill_blank",
+      "question": "A person under the Nazirite vow was not to drink _____ or strong drink.",
+      "answer": "wine",
+      "verse_reference": "Numbers 6:3"
+    }
+  ]
+}

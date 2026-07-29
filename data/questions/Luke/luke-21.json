@@ -1,0 +1,56 @@
+{
+  "book": "Luke",
+  "chapter": 21,
+  "questions": [
+    {
+      "id": "luke-21-q1",
+      "type": "multiple_choice",
+      "question": "Whose offering did Jesus say was greater than all the others at the treasury?",
+      "options": [
+        "A rich ruler",
+        "A Pharisee",
+        "A poor widow",
+        "A Roman officer"
+      ],
+      "answer": "A poor widow",
+      "verse_reference": "Luke 21:1-4"
+    },
+    {
+      "id": "luke-21-q2",
+      "type": "multiple_choice",
+      "question": "What did Jesus say would happen to the temple?",
+      "options": [
+        "It would stand unshaken for all time",
+        "It would be made far greater than before",
+        "Not one stone would be left on another",
+        "It would be rebuilt in three short days"
+      ],
+      "answer": "Not one stone would be left on another",
+      "verse_reference": "Luke 21:6"
+    },
+    {
+      "id": "luke-21-q3",
+      "type": "true_false",
+      "question": "Jesus told his disciples that they would be hated by all for his name's sake.",
+      "answer": "true",
+      "verse_reference": "Luke 21:17"
+    },
+    {
+      "id": "luke-21-q4",
+      "type": "fill_blank",
+      "question": "Heaven and earth will pass away, but my _____ will by no means pass away.",
+      "answer": "words",
+      "verse_reference": "Luke 21:33"
+    },
+    {
+      "id": "luke-21-q5",
+      "type": "fill_blank",
+      "question": "By your _____ you will win your lives.",
+      "answer": "endurance",
+      "accept": [
+        "patience"
+      ],
+      "verse_reference": "Luke 21:19"
+    }
+  ]
+}

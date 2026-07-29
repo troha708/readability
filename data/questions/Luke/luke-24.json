@@ -1,0 +1,56 @@
+{
+  "book": "Luke",
+  "chapter": 24,
+  "questions": [
+    {
+      "id": "luke-24-q1",
+      "type": "multiple_choice",
+      "question": "What did the two men in dazzling clothing tell the women at the empty tomb?",
+      "options": [
+        "Go tell the Romans",
+        "He has gone to Galilee alone",
+        "He is not here, but is risen",
+        "Wait here for him"
+      ],
+      "answer": "He is not here, but is risen",
+      "verse_reference": "Luke 24:5-6"
+    },
+    {
+      "id": "luke-24-q2",
+      "type": "multiple_choice",
+      "question": "On the road to Emmaus, when did the two disciples recognize Jesus?",
+      "options": [
+        "When he showed his hands",
+        "When he broke the bread",
+        "When he spoke to them",
+        "When he prayed"
+      ],
+      "answer": "When he broke the bread",
+      "verse_reference": "Luke 24:30-31"
+    },
+    {
+      "id": "luke-24-q3",
+      "type": "true_false",
+      "question": "Jesus opened the disciples' minds to understand the Scriptures.",
+      "answer": "true",
+      "verse_reference": "Luke 24:45"
+    },
+    {
+      "id": "luke-24-q4",
+      "type": "fill_blank",
+      "question": "Weren't our hearts burning within us while he spoke to us along the way, and while he opened the _____ to us?",
+      "answer": "Scriptures",
+      "accept": [
+        "Writings"
+      ],
+      "verse_reference": "Luke 24:32"
+    },
+    {
+      "id": "luke-24-q5",
+      "type": "fill_blank",
+      "question": "Thus it is written, and thus it was necessary for the Christ to suffer and to rise from the dead the _____ day.",
+      "answer": "third",
+      "verse_reference": "Luke 24:46"
+    }
+  ]
+}

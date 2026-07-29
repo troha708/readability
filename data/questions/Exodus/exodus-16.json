@@ -1,0 +1,56 @@
+{
+  "book": "Exodus",
+  "chapter": 16,
+  "questions": [
+    {
+      "id": "exodus-16-q1",
+      "type": "multiple_choice",
+      "question": "What food did God provide each morning in the wilderness?",
+      "options": [
+        "Bread from heaven (manna)",
+        "Loaves the elders baked overnight",
+        "Quail caught fresh each dawn",
+        "Wild dates and desert honey"
+      ],
+      "answer": "Bread from heaven (manna)",
+      "verse_reference": "Exodus 16:14-15"
+    },
+    {
+      "id": "exodus-16-q2",
+      "type": "multiple_choice",
+      "question": "What did God send in the evening to give the people meat?",
+      "options": [
+        "Fish",
+        "Goats",
+        "Quail",
+        "Lamb"
+      ],
+      "answer": "Quail",
+      "verse_reference": "Exodus 16:13"
+    },
+    {
+      "id": "exodus-16-q3",
+      "type": "true_false",
+      "question": "On the sixth day Israel was to gather a double portion of manna for the Sabbath.",
+      "answer": "true",
+      "verse_reference": "Exodus 16:22-26"
+    },
+    {
+      "id": "exodus-16-q4",
+      "type": "fill_blank",
+      "question": "The bread the LORD rained from heaven was called _____.",
+      "answer": "manna",
+      "verse_reference": "Exodus 16:31"
+    },
+    {
+      "id": "exodus-16-q5",
+      "type": "fill_blank",
+      "question": "Manna kept overnight (except before the Sabbath) bred _____ and began to smell.",
+      "answer": "maggots",
+      "accept": [
+        "worms"
+      ],
+      "verse_reference": "Exodus 16:20"
+    }
+  ]
+}

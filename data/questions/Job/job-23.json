@@ -1,0 +1,56 @@
+{
+  "book": "Job",
+  "chapter": 23,
+  "questions": [
+    {
+      "id": "job-23-q1",
+      "type": "multiple_choice",
+      "question": "What did Job long to do?",
+      "options": [
+        "Find God and present his case before him",
+        "Forget God and all his ways",
+        "Flee far away from the very presence of God",
+        "Die quickly and end his suffering"
+      ],
+      "answer": "Find God and present his case before him",
+      "verse_reference": "Job 23:3-4"
+    },
+    {
+      "id": "job-23-q2",
+      "type": "multiple_choice",
+      "question": "What did Job say would happen when God tested him?",
+      "options": [
+        "He would be destroyed",
+        "He would fail",
+        "He would come out as gold",
+        "He would flee"
+      ],
+      "answer": "He would come out as gold",
+      "verse_reference": "Job 23:10"
+    },
+    {
+      "id": "job-23-q3",
+      "type": "true_false",
+      "question": "Job said he had kept God's way and treasured the words of his mouth.",
+      "answer": "true",
+      "verse_reference": "Job 23:11-12"
+    },
+    {
+      "id": "job-23-q4",
+      "type": "fill_blank",
+      "question": "Job said God knows the way he has _____.",
+      "answer": "taken",
+      "accept": [
+        "takes"
+      ],
+      "verse_reference": "Job 23:10"
+    },
+    {
+      "id": "job-23-q5",
+      "type": "fill_blank",
+      "question": "Job said he had not departed from the commandment of God's _____.",
+      "answer": "lips",
+      "verse_reference": "Job 23:12"
+    }
+  ]
+}

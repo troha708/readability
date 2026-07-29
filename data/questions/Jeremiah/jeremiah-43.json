@@ -1,0 +1,53 @@
+{
+  "book": "Jeremiah",
+  "chapter": 43,
+  "questions": [
+    {
+      "id": "jeremiah-43-q1",
+      "type": "multiple_choice",
+      "question": "How did the people respond to God's word in chapter 43?",
+      "options": [
+        "They crowned for themselves a new king and rebuilt the whole city",
+        "They humbly obeyed the word and remained together in the land",
+        "They accused Jeremiah of lying and went to Egypt anyway",
+        "They put Jeremiah cruelly to death because of all of his words"
+      ],
+      "answer": "They accused Jeremiah of lying and went to Egypt anyway",
+      "verse_reference": "Jeremiah 43:2-7"
+    },
+    {
+      "id": "jeremiah-43-q2",
+      "type": "multiple_choice",
+      "question": "What sign did Jeremiah perform in Egypt in chapter 43?",
+      "options": [
+        "Buried a linen belt away to show forth their coming ruin and shame",
+        "Hid large stones to show Nebuchadnezzar would set his throne there",
+        "Wore a heavy yoke upon him to show their coming servitude",
+        "Broke a clay jar to pieces to show the city's coming destruction"
+      ],
+      "answer": "Hid large stones to show Nebuchadnezzar would set his throne there",
+      "verse_reference": "Jeremiah 43:9-10"
+    },
+    {
+      "id": "jeremiah-43-q3",
+      "type": "true_false",
+      "question": "The people took Jeremiah and Baruch with them to Egypt against God's command.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 43:6-7"
+    },
+    {
+      "id": "jeremiah-43-q4",
+      "type": "fill_blank",
+      "question": "They came to the land of _____ and did not obey the voice of the LORD.",
+      "answer": "Egypt",
+      "verse_reference": "Jeremiah 43:7"
+    },
+    {
+      "id": "jeremiah-43-q5",
+      "type": "fill_blank",
+      "question": "Nebuchadnezzar would come and set his _____ above these hidden stones.",
+      "answer": "throne",
+      "verse_reference": "Jeremiah 43:10"
+    }
+  ]
+}

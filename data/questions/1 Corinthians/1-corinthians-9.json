@@ -1,0 +1,61 @@
+{
+  "book": "1 Corinthians",
+  "chapter": 9,
+  "questions": [
+    {
+      "id": "1cor-9-q1",
+      "type": "multiple_choice",
+      "question": "What right does Paul say he has given up for the sake of the gospel?",
+      "options": [
+        "The right to teach freely wherever he traveled",
+        "The right to take a believing wife along with him",
+        "The right to lead the church at Corinth himself",
+        "The right to financial support from the churches"
+      ],
+      "answer": "The right to financial support from the churches",
+      "verse_reference": "1 Corinthians 9:12,15"
+    },
+    {
+      "id": "1cor-9-q2",
+      "type": "multiple_choice",
+      "question": "Paul compares the Christian life to what kind of competition?",
+      "options": [
+        "A hard wrestling match",
+        "A race in a stadium",
+        "A battle",
+        "A game of chess"
+      ],
+      "answer": "A race in a stadium",
+      "verse_reference": "1 Corinthians 9:24"
+    },
+    {
+      "id": "1cor-9-q3",
+      "type": "true_false",
+      "question": "Paul says he becomes all things to all people so that by all means he might save some.",
+      "answer": "true",
+      "verse_reference": "1 Corinthians 9:22"
+    },
+    {
+      "id": "1cor-9-q4",
+      "type": "fill_blank",
+      "question": "I _____ my body and make it my slave, so that after preaching to others, I myself will not be disqualified.",
+      "answer": "discipline",
+      "accept": [
+        "beat",
+        "buffet",
+        "chastise"
+      ],
+      "verse_reference": "1 Corinthians 9:27"
+    },
+    {
+      "id": "1cor-9-q5",
+      "type": "fill_blank",
+      "question": "Do you not know that those who run in a race all run, but one receives the _____?",
+      "answer": "prize",
+      "accept": [
+        "price"
+      ],
+      "verse_reference": "1 Corinthians 9:24"
+    }
+  ]
+}

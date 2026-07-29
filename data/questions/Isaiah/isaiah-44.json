@@ -1,0 +1,53 @@
+{
+  "book": "Isaiah",
+  "chapter": 44,
+  "questions": [
+    {
+      "id": "isaiah-44-q1",
+      "type": "multiple_choice",
+      "question": "What does Isaiah 44 mock at length?",
+      "options": [
+        "The folly of making idols from wood, then worshiping them",
+        "The great laziness of all those who simply will not work",
+        "The boundless pride of kings who exalt their own selves",
+        "The endless greed of the merchants out in the marketplace"
+      ],
+      "answer": "The folly of making idols from wood, then worshiping them",
+      "verse_reference": "Isaiah 44:13-17"
+    },
+    {
+      "id": "isaiah-44-q2",
+      "type": "multiple_choice",
+      "question": "How does God describe himself in Isaiah 44?",
+      "options": [
+        "One among the many gods worshiped by the nations",
+        "A god far off and hidden, whom none can ever find",
+        "The first and the last; besides me there is no god",
+        "A distant maker who has forgotten the work of his hands"
+      ],
+      "answer": "The first and the last; besides me there is no god",
+      "verse_reference": "Isaiah 44:6"
+    },
+    {
+      "id": "isaiah-44-q3",
+      "type": "true_false",
+      "question": "Isaiah 44 names Cyrus, saying he will say of Jerusalem, 'She shall be built.'",
+      "answer": "true",
+      "verse_reference": "Isaiah 44:28"
+    },
+    {
+      "id": "isaiah-44-q4",
+      "type": "fill_blank",
+      "question": "I am the first and I am the _____; besides me there is no god.",
+      "answer": "last",
+      "verse_reference": "Isaiah 44:6"
+    },
+    {
+      "id": "isaiah-44-q5",
+      "type": "fill_blank",
+      "question": "I have blotted out your transgressions like a cloud; return to me, for I have _____ you.",
+      "answer": "redeemed",
+      "verse_reference": "Isaiah 44:22"
+    }
+  ]
+}

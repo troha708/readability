@@ -1,0 +1,53 @@
+{
+  "book": "Acts",
+  "chapter": 22,
+  "questions": [
+    {
+      "id": "acts-22-q1",
+      "type": "multiple_choice",
+      "question": "In what language did Paul address the crowd from the steps of the barracks?",
+      "options": [
+        "Greek",
+        "Aramaic",
+        "Latin",
+        "Hebrew"
+      ],
+      "answer": "Hebrew",
+      "verse_reference": "Acts 22:2"
+    },
+    {
+      "id": "acts-22-q2",
+      "type": "multiple_choice",
+      "question": "Under which famous teacher had Paul studied the law?",
+      "options": [
+        "Nicodemus",
+        "Caiaphas",
+        "Hillel",
+        "Gamaliel"
+      ],
+      "answer": "Gamaliel",
+      "verse_reference": "Acts 22:3"
+    },
+    {
+      "id": "acts-22-q3",
+      "type": "true_false",
+      "question": "The crowd listened calmly to Paul's entire testimony about his conversion.",
+      "answer": "false",
+      "verse_reference": "Acts 22:22"
+    },
+    {
+      "id": "acts-22-q4",
+      "type": "fill_blank",
+      "question": "Paul stopped the soldiers from flogging him by revealing he was a Roman _____.",
+      "answer": "citizen",
+      "verse_reference": "Acts 22:25-28"
+    },
+    {
+      "id": "acts-22-q5",
+      "type": "fill_blank",
+      "question": "Ananias told Paul, 'Get up, be _____, and wash your sins away, calling on His name.'",
+      "answer": "baptized",
+      "verse_reference": "Acts 22:16"
+    }
+  ]
+}

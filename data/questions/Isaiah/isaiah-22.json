@@ -1,0 +1,53 @@
+{
+  "book": "Isaiah",
+  "chapter": 22,
+  "questions": [
+    {
+      "id": "isaiah-22-q1",
+      "type": "multiple_choice",
+      "question": "Which city is called 'the valley of vision' in Isaiah 22?",
+      "options": [
+        "Jerusalem",
+        "Babylon",
+        "Old Samaria",
+        "Tyre"
+      ],
+      "answer": "Jerusalem",
+      "verse_reference": "Isaiah 22:1"
+    },
+    {
+      "id": "isaiah-22-q2",
+      "type": "multiple_choice",
+      "question": "Which steward is condemned, and who replaces him in Isaiah 22?",
+      "options": [
+        "Joab replaced by Abner",
+        "Shebna replaced by Eliakim",
+        "Hilkiah replaced by Shaphan",
+        "Zadok replaced by Abiathar"
+      ],
+      "answer": "Shebna replaced by Eliakim",
+      "verse_reference": "Isaiah 22:15-21"
+    },
+    {
+      "id": "isaiah-22-q3",
+      "type": "true_false",
+      "question": "Isaiah 22 rebukes the people for feasting and saying, 'Let us eat and drink, for tomorrow we die,' instead of repenting.",
+      "answer": "true",
+      "verse_reference": "Isaiah 22:13"
+    },
+    {
+      "id": "isaiah-22-q4",
+      "type": "fill_blank",
+      "question": "I will place on his shoulder the key of the house of _____; he shall open, and none shall shut.",
+      "answer": "David",
+      "verse_reference": "Isaiah 22:22"
+    },
+    {
+      "id": "isaiah-22-q5",
+      "type": "fill_blank",
+      "question": "In that day the Lord GOD of hosts called for weeping and mourning, for baldness and wearing _____.",
+      "answer": "sackcloth",
+      "verse_reference": "Isaiah 22:12"
+    }
+  ]
+}

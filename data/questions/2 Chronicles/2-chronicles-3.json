@@ -1,0 +1,53 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "2-chronicles-3-q1",
+      "type": "multiple_choice",
+      "question": "On which mountain did Solomon begin to build the temple?",
+      "options": [
+        "Mount Sinai",
+        "Mount Moriah",
+        "Mount Carmel",
+        "Mount Tabor"
+      ],
+      "answer": "Mount Moriah",
+      "verse_reference": "2 Chronicles 3:1"
+    },
+    {
+      "id": "2-chronicles-3-q2",
+      "type": "multiple_choice",
+      "question": "What did Solomon make for the Most Holy Place?",
+      "options": [
+        "A bronze altar for burnt offerings",
+        "Twelve bronze oxen for the great basin",
+        "Two cherubim overlaid with gold",
+        "A golden table for the holy bread of presence"
+      ],
+      "answer": "Two cherubim overlaid with gold",
+      "verse_reference": "2 Chronicles 3:10"
+    },
+    {
+      "id": "2-chronicles-3-q3",
+      "type": "true_false",
+      "question": "The temple was built on the threshing floor of Ornan the Jebusite.",
+      "answer": "true",
+      "verse_reference": "2 Chronicles 3:1"
+    },
+    {
+      "id": "2-chronicles-3-q4",
+      "type": "fill_blank",
+      "question": "Solomon overlaid the inside of the house with pure _____.",
+      "answer": "gold",
+      "verse_reference": "2 Chronicles 3:4-7"
+    },
+    {
+      "id": "2-chronicles-3-q5",
+      "type": "fill_blank",
+      "question": "He set up two pillars before the temple named Jachin and _____.",
+      "answer": "Boaz",
+      "verse_reference": "2 Chronicles 3:17"
+    }
+  ]
+}

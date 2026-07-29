@@ -1,0 +1,53 @@
+{
+  "book": "1 Samuel",
+  "chapter": 18,
+  "questions": [
+    {
+      "id": "1-samuel-18-q1",
+      "type": "multiple_choice",
+      "question": "Why did Saul become jealous of David?",
+      "options": [
+        "David had fled from Saul's army in battle",
+        "David was much older and stood next in line for the throne",
+        "David had grown far richer than the king",
+        "The women sang that David had slain his ten thousands"
+      ],
+      "answer": "The women sang that David had slain his ten thousands",
+      "verse_reference": "1 Samuel 18:7-8"
+    },
+    {
+      "id": "1-samuel-18-q2",
+      "type": "multiple_choice",
+      "question": "Who loved David as his own soul and made a covenant with him?",
+      "options": [
+        "Jonathan",
+        "The prophet Samuel",
+        "Saul",
+        "Eliab"
+      ],
+      "answer": "Jonathan",
+      "verse_reference": "1 Samuel 18:1-3"
+    },
+    {
+      "id": "1-samuel-18-q3",
+      "type": "true_false",
+      "question": "Saul tried to kill David by throwing a spear at him.",
+      "answer": "true",
+      "verse_reference": "1 Samuel 18:11"
+    },
+    {
+      "id": "1-samuel-18-q4",
+      "type": "fill_blank",
+      "question": "The women sang, \"Saul has slain his thousands, and David his ten _____.\"",
+      "answer": "thousands",
+      "verse_reference": "1 Samuel 18:7"
+    },
+    {
+      "id": "1-samuel-18-q5",
+      "type": "fill_blank",
+      "question": "_____, Saul's son, loved David and made a covenant with him.",
+      "answer": "Jonathan",
+      "verse_reference": "1 Samuel 18:1-3"
+    }
+  ]
+}

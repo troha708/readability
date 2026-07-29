@@ -1,0 +1,53 @@
+{
+  "book": "Genesis",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "genesis-2-q1",
+      "type": "multiple_choice",
+      "question": "What did God do on the seventh day?",
+      "options": [
+        "Created the sea and the dry land",
+        "Rested from his work",
+        "Made the beasts and creeping things",
+        "Planted a garden in the east"
+      ],
+      "answer": "Rested from his work",
+      "verse_reference": "Genesis 2:2"
+    },
+    {
+      "id": "genesis-2-q2",
+      "type": "multiple_choice",
+      "question": "What did God form the man out of?",
+      "options": [
+        "The dust of the ground",
+        "The clay of the riverbed",
+        "The stones of the field",
+        "The waters of the deep"
+      ],
+      "answer": "The dust of the ground",
+      "verse_reference": "Genesis 2:7"
+    },
+    {
+      "id": "genesis-2-q3",
+      "type": "true_false",
+      "question": "God said it was not good for the man to be alone.",
+      "answer": "true",
+      "verse_reference": "Genesis 2:18"
+    },
+    {
+      "id": "genesis-2-q4",
+      "type": "fill_blank",
+      "question": "God planted a garden eastward, in _____, and there he put the man.",
+      "answer": "Eden",
+      "verse_reference": "Genesis 2:8"
+    },
+    {
+      "id": "genesis-2-q5",
+      "type": "fill_blank",
+      "question": "God made the woman from a _____ he had taken out of the man.",
+      "answer": "rib",
+      "verse_reference": "Genesis 2:22"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "book": "Leviticus",
+  "chapter": 23,
+  "questions": [
+    {
+      "id": "leviticus-23-q1",
+      "type": "multiple_choice",
+      "question": "What does chapter 23 list?",
+      "options": [
+        "The penalties for breaking the law",
+        "The garments of the high priest",
+        "The laws of clean and unclean food",
+        "The appointed feasts of the LORD"
+      ],
+      "answer": "The appointed feasts of the LORD",
+      "verse_reference": "Leviticus 23:2"
+    },
+    {
+      "id": "leviticus-23-q2",
+      "type": "multiple_choice",
+      "question": "Which weekly day of rest heads the list of appointed times?",
+      "options": [
+        "The Sabbath",
+        "Passover",
+        "The Day of Atonement",
+        "Pentecost"
+      ],
+      "answer": "The Sabbath",
+      "verse_reference": "Leviticus 23:3"
+    },
+    {
+      "id": "leviticus-23-q3",
+      "type": "true_false",
+      "question": "During the Feast of Booths (Tabernacles) the people lived in temporary shelters.",
+      "answer": "true",
+      "verse_reference": "Leviticus 23:42"
+    },
+    {
+      "id": "leviticus-23-q4",
+      "type": "fill_blank",
+      "question": "The first of the appointed times listed is the weekly _____, a day of rest.",
+      "answer": "Sabbath",
+      "verse_reference": "Leviticus 23:3"
+    },
+    {
+      "id": "leviticus-23-q5",
+      "type": "fill_blank",
+      "question": "During the Feast of Booths the people lived in _____ for seven days.",
+      "answer": "booths",
+      "accept": ["temporary shelters"],
+      "verse_reference": "Leviticus 23:42"
+    }
+  ]
+}

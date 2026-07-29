@@ -1,0 +1,57 @@
+{
+  "book": "Exodus",
+  "chapter": 5,
+  "questions": [
+    {
+      "id": "exodus-5-q1",
+      "type": "multiple_choice",
+      "question": "What was Moses and Aaron's first request to Pharaoh?",
+      "options": [
+        "To lighten the heavy burdens laid on the Hebrew people",
+        "To let Israel go and hold a feast in the wilderness",
+        "To grant the Hebrews a portion of land in Goshen",
+        "To free every Hebrew slave throughout Egypt at once"
+      ],
+      "answer": "To let Israel go and hold a feast in the wilderness",
+      "verse_reference": "Exodus 5:1"
+    },
+    {
+      "id": "exodus-5-q2",
+      "type": "multiple_choice",
+      "question": "How did Pharaoh respond to their request?",
+      "options": [
+        "He offered them land if they would stay",
+        "He agreed to let them go after one day",
+        "He made the work harder, bricks without straw",
+        "He had Moses thrown into an Egyptian prison"
+      ],
+      "answer": "He made the work harder, bricks without straw",
+      "verse_reference": "Exodus 5:7-8"
+    },
+    {
+      "id": "exodus-5-q3",
+      "type": "true_false",
+      "question": "Pharaoh said he did not know the LORD and would not let Israel go.",
+      "answer": "true",
+      "verse_reference": "Exodus 5:2"
+    },
+    {
+      "id": "exodus-5-q4",
+      "type": "fill_blank",
+      "question": "Pharaoh ordered that the Israelites make bricks but no longer be given _____.",
+      "answer": "straw",
+      "verse_reference": "Exodus 5:7"
+    },
+    {
+      "id": "exodus-5-q5",
+      "type": "fill_blank",
+      "question": "Pharaoh asked, \"Who is the _____, that I should obey his voice?\"",
+      "answer": "LORD",
+      "accept": [
+        "Jehovah",
+        "Yahweh"
+      ],
+      "verse_reference": "Exodus 5:2"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Deuteronomy",
+  "chapter": 26,
+  "questions": [
+    {
+      "id": "deuteronomy-26-q1",
+      "type": "multiple_choice",
+      "question": "What were the Israelites to bring to the LORD when they entered the land?",
+      "options": [
+        "A portion of silver and gold",
+        "The weapons taken in battle",
+        "The firstfruits of the ground",
+        "The firstborn of their children"
+      ],
+      "answer": "The firstfruits of the ground",
+      "verse_reference": "Deuteronomy 26:2"
+    },
+    {
+      "id": "deuteronomy-26-q2",
+      "type": "multiple_choice",
+      "question": "What declaration did they recite, recalling their origins?",
+      "options": [
+        "\"A wandering Aramean was my father...\"",
+        "\"The LORD our God, the LORD is one...\"",
+        "\"Hear, O heavens, and give ear...\"",
+        "\"I am the LORD who brought you out...\""
+      ],
+      "answer": "\"A wandering Aramean was my father...\"",
+      "verse_reference": "Deuteronomy 26:5"
+    },
+    {
+      "id": "deuteronomy-26-q3",
+      "type": "true_false",
+      "question": "They declared that Israel had become a great nation after being slaves in Egypt.",
+      "answer": "true",
+      "verse_reference": "Deuteronomy 26:5-9"
+    },
+    {
+      "id": "deuteronomy-26-q4",
+      "type": "fill_blank",
+      "question": "They were to bring the _____ of the ground in a basket to the place God chose.",
+      "answer": "firstfruits",
+      "verse_reference": "Deuteronomy 26:2"
+    },
+    {
+      "id": "deuteronomy-26-q5",
+      "type": "fill_blank",
+      "question": "They confessed that the LORD brought them out of Egypt with a mighty _____.",
+      "answer": "hand",
+      "verse_reference": "Deuteronomy 26:8"
+    }
+  ]
+}

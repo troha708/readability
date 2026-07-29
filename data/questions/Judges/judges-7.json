@@ -1,0 +1,59 @@
+{
+  "book": "Judges",
+  "chapter": 7,
+  "questions": [
+    {
+      "id": "judges-7-q1",
+      "type": "multiple_choice",
+      "question": "How many men did God leave Gideon to fight Midian?",
+      "options": [
+        "10,000",
+        "30,000",
+        "600",
+        "300"
+      ],
+      "answer": "300",
+      "verse_reference": "Judges 7:7"
+    },
+    {
+      "id": "judges-7-q2",
+      "type": "multiple_choice",
+      "question": "How did Gideon's men attack the Midianite camp?",
+      "options": [
+        "With arrows, from the surrounding hills",
+        "With trumpets, torches, and jars, shouting",
+        "With swords, fighting hand to hand",
+        "On horseback, charging through the camp"
+      ],
+      "answer": "With trumpets, torches, and jars, shouting",
+      "verse_reference": "Judges 7:16-20"
+    },
+    {
+      "id": "judges-7-q3",
+      "type": "true_false",
+      "question": "God reduced Gideon's army so Israel could not boast that their own strength saved them.",
+      "answer": "true",
+      "verse_reference": "Judges 7:2"
+    },
+    {
+      "id": "judges-7-q4",
+      "type": "fill_blank",
+      "question": "God reduced Gideon's army to just _____ men.",
+      "answer": "300",
+      "accept": [
+        "three hundred"
+      ],
+      "verse_reference": "Judges 7:7"
+    },
+    {
+      "id": "judges-7-q5",
+      "type": "fill_blank",
+      "question": "Gideon's men blew their _____ and broke their jars, and the enemy fled.",
+      "answer": "horns",
+      "accept": [
+        "trumpets"
+      ],
+      "verse_reference": "Judges 7:19-20"
+    }
+  ]
+}

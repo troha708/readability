@@ -1,0 +1,53 @@
+{
+  "book": "Deuteronomy",
+  "chapter": 32,
+  "questions": [
+    {
+      "id": "deuteronomy-32-q1",
+      "type": "multiple_choice",
+      "question": "What is Deuteronomy 32?",
+      "options": [
+        "A long battle account",
+        "A genealogy",
+        "A census",
+        "The Song of Moses"
+      ],
+      "answer": "The Song of Moses",
+      "verse_reference": "Deuteronomy 32:1-43"
+    },
+    {
+      "id": "deuteronomy-32-q2",
+      "type": "multiple_choice",
+      "question": "What image describes God in the song?",
+      "options": [
+        "The Rock",
+        "A fire",
+        "A king",
+        "A flowing river"
+      ],
+      "answer": "The Rock",
+      "verse_reference": "Deuteronomy 32:4"
+    },
+    {
+      "id": "deuteronomy-32-q3",
+      "type": "true_false",
+      "question": "The song warned Israel against forgetting God and turning to other gods.",
+      "answer": "true",
+      "verse_reference": "Deuteronomy 32:15-18"
+    },
+    {
+      "id": "deuteronomy-32-q4",
+      "type": "fill_blank",
+      "question": "\"He is the _____; his work is perfect,\" the song says of God.",
+      "answer": "Rock",
+      "verse_reference": "Deuteronomy 32:4"
+    },
+    {
+      "id": "deuteronomy-32-q5",
+      "type": "fill_blank",
+      "question": "From the top of Mount _____, Moses would view the land before his death.",
+      "answer": "Nebo",
+      "verse_reference": "Deuteronomy 32:49"
+    }
+  ]
+}

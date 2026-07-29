@@ -1,0 +1,56 @@
+{
+  "book": "Zechariah",
+  "chapter": 9,
+  "questions": [
+    {
+      "id": "zechariah-9-q1",
+      "type": "multiple_choice",
+      "question": "What famous prophecy of a coming king appears in Zechariah 9?",
+      "options": [
+        "A great king of Babylon comes at last to subdue all of the many gathered nations",
+        "Your king comes, righteous and having salvation, humble and mounted on a donkey",
+        "A righteous judge comes to weigh out the deeds of all of the many peoples",
+        "A mighty warrior comes, riding upon a swift horse, to go out and make war"
+      ],
+      "answer": "Your king comes, righteous and having salvation, humble and mounted on a donkey",
+      "verse_reference": "Zechariah 9:9"
+    },
+    {
+      "id": "zechariah-9-q2",
+      "type": "multiple_choice",
+      "question": "What does this king proclaim to the nations?",
+      "options": [
+        "Tribute",
+        "Peace",
+        "Famine",
+        "War"
+      ],
+      "answer": "Peace",
+      "verse_reference": "Zechariah 9:10"
+    },
+    {
+      "id": "zechariah-9-q3",
+      "type": "true_false",
+      "question": "Zechariah 9 says God will set the prisoners free from the waterless pit by the blood of his covenant.",
+      "answer": "true",
+      "verse_reference": "Zechariah 9:11"
+    },
+    {
+      "id": "zechariah-9-q4",
+      "type": "fill_blank",
+      "question": "Rejoice greatly, O daughter of Zion! Behold, your _____ is coming to you.",
+      "answer": "king",
+      "verse_reference": "Zechariah 9:9"
+    },
+    {
+      "id": "zechariah-9-q5",
+      "type": "fill_blank",
+      "question": "He is righteous and having salvation, humble and mounted on a _____.",
+      "answer": "donkey",
+      "accept": [
+        "ass"
+      ],
+      "verse_reference": "Zechariah 9:9"
+    }
+  ]
+}

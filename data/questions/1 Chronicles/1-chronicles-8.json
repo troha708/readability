@@ -1,0 +1,53 @@
+{
+  "book": "1 Chronicles",
+  "chapter": 8,
+  "questions": [
+    {
+      "id": "1-chronicles-8-q1",
+      "type": "multiple_choice",
+      "question": "Whose royal line is traced in detail in this chapter?",
+      "options": [
+        "David",
+        "Saul",
+        "Solomon",
+        "Samuel"
+      ],
+      "answer": "Saul",
+      "verse_reference": "1 Chronicles 8:33"
+    },
+    {
+      "id": "1-chronicles-8-q2",
+      "type": "multiple_choice",
+      "question": "Who was the father of Saul?",
+      "options": [
+        "Kish",
+        "Abner",
+        "Jonathan",
+        "Ner"
+      ],
+      "answer": "Kish",
+      "verse_reference": "1 Chronicles 8:33"
+    },
+    {
+      "id": "1-chronicles-8-q3",
+      "type": "true_false",
+      "question": "This chapter records the genealogy of Benjamin.",
+      "answer": "true",
+      "verse_reference": "1 Chronicles 8:1"
+    },
+    {
+      "id": "1-chronicles-8-q4",
+      "type": "fill_blank",
+      "question": "Saul's son who was David's close friend was _____.",
+      "answer": "Jonathan",
+      "verse_reference": "1 Chronicles 8:33"
+    },
+    {
+      "id": "1-chronicles-8-q5",
+      "type": "fill_blank",
+      "question": "Jonathan's son Merib-baal is elsewhere called _____.",
+      "answer": "Mephibosheth",
+      "verse_reference": "1 Chronicles 8:34"
+    }
+  ]
+}

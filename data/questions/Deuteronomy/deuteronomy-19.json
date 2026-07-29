@@ -1,0 +1,53 @@
+{
+  "book": "Deuteronomy",
+  "chapter": 19,
+  "questions": [
+    {
+      "id": "deuteronomy-19-q1",
+      "type": "multiple_choice",
+      "question": "What does chapter 19 establish?",
+      "options": [
+        "Cities of refuge and laws on witnesses",
+        "The choosing and duties of a king",
+        "The calendar of the yearly feasts",
+        "The collection of the yearly temple tithe"
+      ],
+      "answer": "Cities of refuge and laws on witnesses",
+      "verse_reference": "Deuteronomy 19:2-15"
+    },
+    {
+      "id": "deuteronomy-19-q2",
+      "type": "multiple_choice",
+      "question": "How many witnesses were required to convict someone of a crime?",
+      "options": [
+        "At least ten",
+        "Just one alone",
+        "Two or three",
+        "No fewer than five"
+      ],
+      "answer": "Two or three",
+      "verse_reference": "Deuteronomy 19:15"
+    },
+    {
+      "id": "deuteronomy-19-q3",
+      "type": "true_false",
+      "question": "One witness alone was enough to convict a person of a crime.",
+      "answer": "false",
+      "verse_reference": "Deuteronomy 19:15"
+    },
+    {
+      "id": "deuteronomy-19-q4",
+      "type": "fill_blank",
+      "question": "A matter was to be established by the testimony of two or three _____.",
+      "answer": "witnesses",
+      "verse_reference": "Deuteronomy 19:15"
+    },
+    {
+      "id": "deuteronomy-19-q5",
+      "type": "fill_blank",
+      "question": "Cities of _____ were set apart so an accidental killer could flee.",
+      "answer": "refuge",
+      "verse_reference": "Deuteronomy 19:2-3"
+    }
+  ]
+}

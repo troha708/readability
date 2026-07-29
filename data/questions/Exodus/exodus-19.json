@@ -1,0 +1,56 @@
+{
+  "book": "Exodus",
+  "chapter": 19,
+  "questions": [
+    {
+      "id": "exodus-19-q1",
+      "type": "multiple_choice",
+      "question": "Where did Israel camp while God came down to give them his law?",
+      "options": [
+        "Mount Carmel",
+        "Mount Sinai",
+        "Mount Nebo",
+        "Mount Moriah"
+      ],
+      "answer": "Mount Sinai",
+      "verse_reference": "Exodus 19:1-2"
+    },
+    {
+      "id": "exodus-19-q2",
+      "type": "multiple_choice",
+      "question": "How did God appear on the mountain?",
+      "options": [
+        "In a vision given during sleep",
+        "In the form of a traveling man",
+        "In a still and quiet whisper",
+        "In thunder, lightning, and fire"
+      ],
+      "answer": "In thunder, lightning, and fire",
+      "verse_reference": "Exodus 19:16-18"
+    },
+    {
+      "id": "exodus-19-q3",
+      "type": "true_false",
+      "question": "God called Israel to be a kingdom of priests and a holy nation.",
+      "answer": "true",
+      "verse_reference": "Exodus 19:6"
+    },
+    {
+      "id": "exodus-19-q4",
+      "type": "fill_blank",
+      "question": "The LORD descended on Mount Sinai in _____, and the whole mountain trembled.",
+      "answer": "fire",
+      "verse_reference": "Exodus 19:18"
+    },
+    {
+      "id": "exodus-19-q5",
+      "type": "fill_blank",
+      "question": "God told Israel they would be his treasured _____ out of all the peoples.",
+      "answer": "possession",
+      "accept": [
+        "treasure"
+      ],
+      "verse_reference": "Exodus 19:5"
+    }
+  ]
+}

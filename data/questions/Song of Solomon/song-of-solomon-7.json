@@ -1,0 +1,57 @@
+{
+  "book": "Song Of Solomon",
+  "chapter": 7,
+  "questions": [
+    {
+      "id": "song-of-solomon-7-q1",
+      "type": "multiple_choice",
+      "question": "What is the subject of chapter 7?",
+      "options": [
+        "A careful plan for the coming great battle",
+        "The beloved's praise of the bride's beauty",
+        "A long report of the whole season's harvest",
+        "A genealogy of the entire royal house"
+      ],
+      "answer": "The beloved's praise of the bride's beauty",
+      "verse_reference": "Song of Solomon 7:1"
+    },
+    {
+      "id": "song-of-solomon-7-q2",
+      "type": "multiple_choice",
+      "question": "What does the bride say her desire is toward?",
+      "options": [
+        "Her beloved, who desires her",
+        "Her family and her father's house",
+        "Her city and its busy streets",
+        "Her wealth and her many vineyards"
+      ],
+      "answer": "Her beloved, who desires her",
+      "verse_reference": "Song of Solomon 7:10"
+    },
+    {
+      "id": "song-of-solomon-7-q3",
+      "type": "true_false",
+      "question": "In chapter 7 the bride invites the beloved to go out to the vineyards.",
+      "answer": "true",
+      "verse_reference": "Song of Solomon 7:11-12"
+    },
+    {
+      "id": "song-of-solomon-7-q4",
+      "type": "fill_blank",
+      "question": "I am my beloved's, and his _____ is for me.",
+      "answer": "desire",
+      "verse_reference": "Song of Solomon 7:10"
+    },
+    {
+      "id": "song-of-solomon-7-q5",
+      "type": "fill_blank",
+      "question": "Come, my beloved, let us go to the _____.",
+      "answer": "countryside",
+      "accept": [
+        "fields",
+        "field"
+      ],
+      "verse_reference": "Song of Solomon 7:11"
+    }
+  ]
+}

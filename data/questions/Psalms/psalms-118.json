@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 118,
+  "questions": [
+    {
+      "id": "psalms-118-q1",
+      "type": "multiple_choice",
+      "question": "What repeated refrain frames Psalm 118?",
+      "options": [
+        "Praise him in his mighty heavens",
+        "His steadfast love endures forever",
+        "Bless the LORD, O my soul, within me",
+        "The LORD is my light and my song"
+      ],
+      "answer": "His steadfast love endures forever",
+      "verse_reference": "Psalm 118:1-4"
+    },
+    {
+      "id": "psalms-118-q2",
+      "type": "multiple_choice",
+      "question": "What stone imagery does Psalm 118 contain?",
+      "options": [
+        "A cornerstone of pure gold set in the temple wall",
+        "A heavy millstone hung about the neck of the wicked",
+        "The stone the builders rejected has become the cornerstone",
+        "A stone of stumbling laid in the path of the proud"
+      ],
+      "answer": "The stone the builders rejected has become the cornerstone",
+      "verse_reference": "Psalm 118:22"
+    },
+    {
+      "id": "psalms-118-q3",
+      "type": "true_false",
+      "question": "The psalm declares, 'This is the day that the LORD has made; let us rejoice and be glad in it.'",
+      "answer": "true",
+      "verse_reference": "Psalm 118:24"
+    },
+    {
+      "id": "psalms-118-q4",
+      "type": "fill_blank",
+      "question": "The stone that the builders rejected has become the _____.",
+      "answer": "cornerstone",
+      "verse_reference": "Psalm 118:22"
+    },
+    {
+      "id": "psalms-118-q5",
+      "type": "fill_blank",
+      "question": "It is better to take refuge in the LORD than to trust in _____.",
+      "answer": "man",
+      "verse_reference": "Psalm 118:8"
+    }
+  ]
+}

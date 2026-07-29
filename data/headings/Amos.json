@@ -1,0 +1,80 @@
+{
+  "book": "Amos",
+  "source": "Berean Standard Bible (CC0 Public Domain)",
+  "chapters": {
+    "1": [
+      {
+        "beforeVerse": 1,
+        "heading": "Judgment on Israel’s Neighbors"
+      }
+    ],
+    "2": [
+      {
+        "beforeVerse": 1,
+        "heading": "Judgment on Moab, Judah, and Israel"
+      }
+    ],
+    "3": [
+      {
+        "beforeVerse": 1,
+        "heading": "Witnesses against Israel"
+      }
+    ],
+    "4": [
+      {
+        "beforeVerse": 1,
+        "heading": "Punishment Brings No Repentance"
+      }
+    ],
+    "5": [
+      {
+        "beforeVerse": 1,
+        "heading": "A Lamentation against Israel"
+      },
+      {
+        "beforeVerse": 4,
+        "heading": "A Call to Repentance"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "Woe to Rebellious Israel"
+      }
+    ],
+    "6": [
+      {
+        "beforeVerse": 1,
+        "heading": "Woe to Those at Ease in Zion"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "The Pride of Israel"
+      }
+    ],
+    "7": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Locusts, Fire, and Plumb Line"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "Amaziah Accuses Amos"
+      }
+    ],
+    "8": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Basket of Summer Fruit"
+      }
+    ],
+    "9": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Destruction of Israel"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "A Promise of Restoration"
+      }
+    ]
+  }
+}

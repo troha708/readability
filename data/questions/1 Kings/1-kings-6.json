@@ -1,0 +1,53 @@
+{
+  "book": "1 Kings",
+  "chapter": 6,
+  "questions": [
+    {
+      "id": "1-kings-6-q1",
+      "type": "multiple_choice",
+      "question": "What was Solomon building in chapter 6?",
+      "options": [
+        "A palace of cedar wood",
+        "A wall around the city",
+        "The temple of the LORD",
+        "A fleet of trading ships"
+      ],
+      "answer": "The temple of the LORD",
+      "verse_reference": "1 Kings 6:1"
+    },
+    {
+      "id": "1-kings-6-q2",
+      "type": "multiple_choice",
+      "question": "How long did it take to build the temple?",
+      "options": [
+        "3 years",
+        "7 years",
+        "12 years",
+        "20 years"
+      ],
+      "answer": "7 years",
+      "verse_reference": "1 Kings 6:38"
+    },
+    {
+      "id": "1-kings-6-q3",
+      "type": "true_false",
+      "question": "The inside of the temple was overlaid with gold.",
+      "answer": "true",
+      "verse_reference": "1 Kings 6:21-22"
+    },
+    {
+      "id": "1-kings-6-q4",
+      "type": "fill_blank",
+      "question": "The most holy inner room of the temple was prepared to hold the _____ of the covenant.",
+      "answer": "ark",
+      "verse_reference": "1 Kings 6:19"
+    },
+    {
+      "id": "1-kings-6-q5",
+      "type": "fill_blank",
+      "question": "Solomon spent _____ years building the temple.",
+      "answer": "seven",
+      "verse_reference": "1 Kings 6:38"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Joshua",
+  "chapter": 6,
+  "questions": [
+    {
+      "id": "joshua-6-q1",
+      "type": "multiple_choice",
+      "question": "How did Israel capture Jericho?",
+      "options": [
+        "By storming the gates in a frontal assault",
+        "By marching around it for seven days and shouting",
+        "By starving the city through a long siege",
+        "By digging a secret tunnel beneath the wall"
+      ],
+      "answer": "By marching around it for seven days and shouting",
+      "verse_reference": "Joshua 6:3-20"
+    },
+    {
+      "id": "joshua-6-q2",
+      "type": "multiple_choice",
+      "question": "What happened to the walls of Jericho?",
+      "options": [
+        "They were broken with rams",
+        "They fell down flat",
+        "They were climbed",
+        "They were burned first"
+      ],
+      "answer": "They fell down flat",
+      "verse_reference": "Joshua 6:20"
+    },
+    {
+      "id": "joshua-6-q3",
+      "type": "true_false",
+      "question": "Only Rahab and her family were spared in Jericho.",
+      "answer": "true",
+      "verse_reference": "Joshua 6:25"
+    },
+    {
+      "id": "joshua-6-q4",
+      "type": "fill_blank",
+      "question": "On the seventh day they marched around Jericho seven times and gave a great _____.",
+      "answer": "shout",
+      "verse_reference": "Joshua 6:16-20"
+    },
+    {
+      "id": "joshua-6-q5",
+      "type": "fill_blank",
+      "question": "The walls of _____ fell down flat, and Israel took the city.",
+      "answer": "Jericho",
+      "verse_reference": "Joshua 6:20"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Ezekiel",
+  "chapter": 41,
+  "questions": [
+    {
+      "id": "ezekiel-41-q1",
+      "type": "multiple_choice",
+      "question": "What part of the temple does Ezekiel 41 mainly measure?",
+      "options": [
+        "The wide outer courtyard and all of its many gates",
+        "The great bronze altar of the burnt offering outside",
+        "The side chambers where the serving priests ate their bread",
+        "The nave and the Most Holy Place (inner sanctuary)"
+      ],
+      "answer": "The nave and the Most Holy Place (inner sanctuary)",
+      "verse_reference": "Ezekiel 41:1-4"
+    },
+    {
+      "id": "ezekiel-41-q2",
+      "type": "multiple_choice",
+      "question": "What decorations are described on the temple walls?",
+      "options": [
+        "Inscriptions of the law of Moses",
+        "Statues of lions and oxen",
+        "Images of the sun and the moon",
+        "Carved cherubim and palm trees"
+      ],
+      "answer": "Carved cherubim and palm trees",
+      "verse_reference": "Ezekiel 41:18"
+    },
+    {
+      "id": "ezekiel-41-q3",
+      "type": "true_false",
+      "question": "Each cherub carved on the walls had two faces, a man's and a lion's.",
+      "answer": "true",
+      "verse_reference": "Ezekiel 41:18-19"
+    },
+    {
+      "id": "ezekiel-41-q4",
+      "type": "fill_blank",
+      "question": "The inner room he measured he called the Most _____ Place.",
+      "answer": "Holy",
+      "verse_reference": "Ezekiel 41:4"
+    },
+    {
+      "id": "ezekiel-41-q5",
+      "type": "fill_blank",
+      "question": "On the walls were carved cherubim and _____ trees, all around.",
+      "answer": "palm",
+      "verse_reference": "Ezekiel 41:18"
+    }
+  ]
+}

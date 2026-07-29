@@ -1,0 +1,53 @@
+{
+  "book": "Proverbs",
+  "chapter": 18,
+  "questions": [
+    {
+      "id": "proverbs-18-q1",
+      "type": "multiple_choice",
+      "question": "How is the name of the LORD described in Proverbs 18?",
+      "options": [
+        "A deep well from which all of the wise draw their very life",
+        "A heavy yoke that the weak can scarcely bear",
+        "A strong tower; the righteous run into it and are safe",
+        "A walled city that bars the gates to sinners"
+      ],
+      "answer": "A strong tower; the righteous run into it and are safe",
+      "verse_reference": "Proverbs 18:10"
+    },
+    {
+      "id": "proverbs-18-q2",
+      "type": "multiple_choice",
+      "question": "What does Proverbs 18 say is in the power of the tongue?",
+      "options": [
+        "Nothing",
+        "Death and life",
+        "Only wisdom",
+        "Only foolishness"
+      ],
+      "answer": "Death and life",
+      "verse_reference": "Proverbs 18:21"
+    },
+    {
+      "id": "proverbs-18-q3",
+      "type": "true_false",
+      "question": "Proverbs 18 says he who finds a wife finds a good thing and obtains favor from the LORD.",
+      "answer": "true",
+      "verse_reference": "Proverbs 18:22"
+    },
+    {
+      "id": "proverbs-18-q4",
+      "type": "fill_blank",
+      "question": "The name of the LORD is a strong _____; the righteous man runs into it and is safe.",
+      "answer": "tower",
+      "verse_reference": "Proverbs 18:10"
+    },
+    {
+      "id": "proverbs-18-q5",
+      "type": "fill_blank",
+      "question": "Death and life are in the power of the _____.",
+      "answer": "tongue",
+      "verse_reference": "Proverbs 18:21"
+    }
+  ]
+}

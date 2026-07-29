@@ -1,0 +1,53 @@
+{
+  "book": "Deuteronomy",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "deuteronomy-3-q1",
+      "type": "multiple_choice",
+      "question": "Which giant king of Bashan did Israel defeat?",
+      "options": [
+        "Agag",
+        "Balak",
+        "Og",
+        "Sihon"
+      ],
+      "answer": "Og",
+      "verse_reference": "Deuteronomy 3:1-3"
+    },
+    {
+      "id": "deuteronomy-3-q2",
+      "type": "multiple_choice",
+      "question": "Who was allowed to view the promised land from a mountain but not enter it?",
+      "options": [
+        "Joshua",
+        "Aaron",
+        "Moses",
+        "Caleb"
+      ],
+      "answer": "Moses",
+      "verse_reference": "Deuteronomy 3:27"
+    },
+    {
+      "id": "deuteronomy-3-q3",
+      "type": "true_false",
+      "question": "Og king of Bashan was remembered for his huge iron bed.",
+      "answer": "true",
+      "verse_reference": "Deuteronomy 3:11"
+    },
+    {
+      "id": "deuteronomy-3-q4",
+      "type": "fill_blank",
+      "question": "Israel defeated Og, the king of _____.",
+      "answer": "Bashan",
+      "verse_reference": "Deuteronomy 3:1"
+    },
+    {
+      "id": "deuteronomy-3-q5",
+      "type": "fill_blank",
+      "question": "God told Moses to commission _____ to lead Israel into the land.",
+      "answer": "Joshua",
+      "verse_reference": "Deuteronomy 3:28"
+    }
+  ]
+}

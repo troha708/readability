@@ -1,0 +1,598 @@
+{
+  "book": "Jeremiah",
+  "source": "Berean Standard Bible (CC0 Public Domain)",
+  "chapters": {
+    "1": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Call of Jeremiah"
+      }
+    ],
+    "2": [
+      {
+        "beforeVerse": 1,
+        "heading": "Israel Has Forsaken God"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "The Consequence of Israel’s Sin"
+      },
+      {
+        "beforeVerse": 23,
+        "heading": "Israel’s Unfaithfulness"
+      }
+    ],
+    "3": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Wages of the Harlot"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "Judah Follows Israel’s Example"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "A Call to Repentance"
+      }
+    ],
+    "4": [
+      {
+        "beforeVerse": 1,
+        "heading": "A Plea to Return"
+      },
+      {
+        "beforeVerse": 5,
+        "heading": "Disaster from the North"
+      },
+      {
+        "beforeVerse": 19,
+        "heading": "Lamentation for Judah"
+      }
+    ],
+    "5": [
+      {
+        "beforeVerse": 1,
+        "heading": "No One Is Just"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "Judgment Proclaimed"
+      }
+    ],
+    "6": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jerusalem’s Final Warning"
+      },
+      {
+        "beforeVerse": 22,
+        "heading": "An Invasion from the North"
+      }
+    ],
+    "7": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jeremiah’s Message at the Temple Gate"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "Judah’s Idolatry Persists"
+      },
+      {
+        "beforeVerse": 30,
+        "heading": "The Valley of Slaughter"
+      }
+    ],
+    "8": [
+      {
+        "beforeVerse": 1,
+        "heading": "Judah’s Sin and Punishment"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "The People Respond"
+      },
+      {
+        "beforeVerse": 18,
+        "heading": "Jeremiah Weeps for His People"
+      }
+    ],
+    "9": [
+      {
+        "beforeVerse": 1,
+        "heading": "A Lament over Zion"
+      }
+    ],
+    "10": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Sovereignty of God"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "The Coming Captivity of Judah"
+      }
+    ],
+    "11": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Broken Covenant"
+      },
+      {
+        "beforeVerse": 18,
+        "heading": "A Plot against Jeremiah"
+      }
+    ],
+    "12": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Prosperity of the Wicked"
+      },
+      {
+        "beforeVerse": 5,
+        "heading": "God’s Answer to Jeremiah"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "A Message for Israel’s Neighbors"
+      }
+    ],
+    "13": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Linen Loincloth"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "The Wineskins"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "Captivity Threatened"
+      }
+    ],
+    "14": [
+      {
+        "beforeVerse": 1,
+        "heading": "Drought, Famine, Sword, and Plague"
+      },
+      {
+        "beforeVerse": 19,
+        "heading": "A Prayer for Mercy"
+      }
+    ],
+    "15": [
+      {
+        "beforeVerse": 1,
+        "heading": "Judgment to Continue"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "Jeremiah’s Woe"
+      },
+      {
+        "beforeVerse": 19,
+        "heading": "The LORD’s Promise"
+      }
+    ],
+    "16": [
+      {
+        "beforeVerse": 1,
+        "heading": "Disaster Predicted"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "God Will Restore Israel"
+      }
+    ],
+    "17": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Sin and Punishment of Judah"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "Jeremiah’s Prayer for Deliverance"
+      },
+      {
+        "beforeVerse": 19,
+        "heading": "Restoring the Sabbath"
+      }
+    ],
+    "18": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Potter and the Clay"
+      },
+      {
+        "beforeVerse": 18,
+        "heading": "Another Plot against Jeremiah"
+      }
+    ],
+    "19": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Broken Jar"
+      }
+    ],
+    "20": [
+      {
+        "beforeVerse": 1,
+        "heading": "Pashhur Persecutes Jeremiah"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "Jeremiah’s Complaint"
+      }
+    ],
+    "21": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jerusalem Will Fall to Babylon"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "A Message to the House of David"
+      }
+    ],
+    "22": [
+      {
+        "beforeVerse": 1,
+        "heading": "A Warning to Judah’s Kings"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "A Warning about the Palace"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "A Warning about Shallum"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "A Warning about Jehoiakim"
+      },
+      {
+        "beforeVerse": 24,
+        "heading": "A Warning to Coniah"
+      }
+    ],
+    "23": [
+      {
+        "beforeVerse": 1,
+        "heading": "David’s Righteous Branch"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "Lying Prophets"
+      },
+      {
+        "beforeVerse": 33,
+        "heading": "False Prophecies"
+      }
+    ],
+    "24": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Good and Bad Figs"
+      }
+    ],
+    "25": [
+      {
+        "beforeVerse": 1,
+        "heading": "Seventy Years of Captivity"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "The Cup of God’s Wrath"
+      },
+      {
+        "beforeVerse": 34,
+        "heading": "The Cry of the Shepherds"
+      }
+    ],
+    "26": [
+      {
+        "beforeVerse": 1,
+        "heading": "A Warning to the Cities of Judah"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "Jeremiah Threatened with Death"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "Jeremiah Spared from Death"
+      },
+      {
+        "beforeVerse": 20,
+        "heading": "The Prophet Uriah"
+      }
+    ],
+    "27": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Yoke of Nebuchadnezzar"
+      }
+    ],
+    "28": [
+      {
+        "beforeVerse": 1,
+        "heading": "Hananiah’s False Prophecy"
+      }
+    ],
+    "29": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jeremiah’s Letter to the Exiles"
+      },
+      {
+        "beforeVerse": 24,
+        "heading": "The Message to Shemaiah"
+      }
+    ],
+    "30": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Restoration of Israel and Judah"
+      }
+    ],
+    "31": [
+      {
+        "beforeVerse": 1,
+        "heading": "Mourning Turned to Joy"
+      },
+      {
+        "beforeVerse": 26,
+        "heading": "The New Covenant"
+      }
+    ],
+    "32": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jeremiah Buys Hanamel’s Field"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "Jeremiah Prays for Understanding"
+      },
+      {
+        "beforeVerse": 26,
+        "heading": "The LORD Answers Jeremiah"
+      },
+      {
+        "beforeVerse": 36,
+        "heading": "A Promise of Restoration"
+      }
+    ],
+    "33": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Excellence of the Restored Nation"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "The Covenant with David"
+      }
+    ],
+    "34": [
+      {
+        "beforeVerse": 1,
+        "heading": "A Prophecy against Zedekiah"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "Freedom for Hebrew Slaves"
+      }
+    ],
+    "35": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Obedience of the Rechabites"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "Judah Rebuked"
+      }
+    ],
+    "36": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jeremiah’s Scroll Read in the Temple"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "Jeremiah’s Scroll Read in the Palace"
+      },
+      {
+        "beforeVerse": 20,
+        "heading": "Jehoiakim Burns the Scroll"
+      },
+      {
+        "beforeVerse": 27,
+        "heading": "Jeremiah Rewrites the Scroll"
+      }
+    ],
+    "37": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jeremiah Warns Zedekiah"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "Jeremiah Imprisoned"
+      }
+    ],
+    "38": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jeremiah Cast into the Cistern"
+      }
+    ],
+    "39": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Fall of Jerusalem"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "Jeremiah Delivered"
+      }
+    ],
+    "40": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jeremiah Remains in Judah"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "Gedaliah Governs in Judah"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "The Plot against Gedaliah"
+      }
+    ],
+    "41": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Murder of Gedaliah"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "Johanan Rescues the Captives"
+      }
+    ],
+    "42": [
+      {
+        "beforeVerse": 1,
+        "heading": "A Warning against Going to Egypt"
+      }
+    ],
+    "43": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jeremiah Taken to Egypt"
+      }
+    ],
+    "44": [
+      {
+        "beforeVerse": 1,
+        "heading": "Judgment on the Jews in Egypt"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "The Stubbornness of the People"
+      },
+      {
+        "beforeVerse": 20,
+        "heading": "Calamity for the Jews"
+      }
+    ],
+    "45": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jeremiah’s Message to Baruch"
+      }
+    ],
+    "46": [
+      {
+        "beforeVerse": 1,
+        "heading": "Judgment on Egypt"
+      }
+    ],
+    "47": [
+      {
+        "beforeVerse": 1,
+        "heading": "Judgment on the Philistines"
+      }
+    ],
+    "48": [
+      {
+        "beforeVerse": 1,
+        "heading": "Judgment on Moab"
+      }
+    ],
+    "49": [
+      {
+        "beforeVerse": 1,
+        "heading": "Judgment on the Ammonites"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "Judgment on Edom"
+      },
+      {
+        "beforeVerse": 23,
+        "heading": "Judgment on Damascus"
+      },
+      {
+        "beforeVerse": 28,
+        "heading": "Judgment on Kedar and Hazor"
+      },
+      {
+        "beforeVerse": 34,
+        "heading": "Judgment on Elam"
+      }
+    ],
+    "50": [
+      {
+        "beforeVerse": 1,
+        "heading": "A Prophecy against Babylon"
+      },
+      {
+        "beforeVerse": 4,
+        "heading": "Hope for Israel and Judah"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "Babylon’s Fall Is Certain"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "Redemption for God’s People"
+      },
+      {
+        "beforeVerse": 21,
+        "heading": "The Destruction of Babylon"
+      }
+    ],
+    "51": [
+      {
+        "beforeVerse": 1,
+        "heading": "Judgment on Babylon"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "Praise to the God of Jacob"
+      },
+      {
+        "beforeVerse": 20,
+        "heading": "Babylon’s Punishment"
+      },
+      {
+        "beforeVerse": 59,
+        "heading": "Jeremiah’s Message to Seraiah"
+      }
+    ],
+    "52": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Fall of Jerusalem Recounted"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "The Temple Destroyed"
+      },
+      {
+        "beforeVerse": 24,
+        "heading": "Captives Carried to Babylon"
+      },
+      {
+        "beforeVerse": 31,
+        "heading": "Jehoiachin Released from Prison"
+      }
+    ]
+  }
+}

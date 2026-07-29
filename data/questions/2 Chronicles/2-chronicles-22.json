@@ -1,0 +1,56 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 22,
+  "questions": [
+    {
+      "id": "2-chronicles-22-q1",
+      "type": "multiple_choice",
+      "question": "Who counseled Ahaziah to do wickedly?",
+      "options": [
+        "The priests",
+        "The lying false prophets",
+        "His army",
+        "His mother Athaliah"
+      ],
+      "answer": "His mother Athaliah",
+      "verse_reference": "2 Chronicles 22:3"
+    },
+    {
+      "id": "2-chronicles-22-q2",
+      "type": "multiple_choice",
+      "question": "What did Athaliah do when she saw her son was dead?",
+      "options": [
+        "Repented and turned back to God",
+        "Mourned quietly within the palace",
+        "Destroyed all the royal family of Judah",
+        "Fled away from the city in fear for her life"
+      ],
+      "answer": "Destroyed all the royal family of Judah",
+      "verse_reference": "2 Chronicles 22:10"
+    },
+    {
+      "id": "2-chronicles-22-q3",
+      "type": "true_false",
+      "question": "Joash was hidden from Athaliah by Jehoshabeath and survived.",
+      "answer": "true",
+      "verse_reference": "2 Chronicles 22:11"
+    },
+    {
+      "id": "2-chronicles-22-q4",
+      "type": "fill_blank",
+      "question": "Joash was hidden in the house of _____ for six years while Athaliah reigned.",
+      "answer": "God",
+      "verse_reference": "2 Chronicles 22:12"
+    },
+    {
+      "id": "2-chronicles-22-q5",
+      "type": "fill_blank",
+      "question": "Ahaziah's downfall came from going with _____ son of Ahab.",
+      "answer": "Joram",
+      "accept": [
+        "Jehoram"
+      ],
+      "verse_reference": "2 Chronicles 22:5-7"
+    }
+  ]
+}

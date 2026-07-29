@@ -1,0 +1,56 @@
+{
+  "book": "Matthew",
+  "chapter": 26,
+  "questions": [
+    {
+      "id": "matthew-26-q1",
+      "type": "multiple_choice",
+      "question": "How much was Judas paid to betray Jesus?",
+      "options": [
+        "Twenty pieces of silver",
+        "Thirty pieces of silver",
+        "Ten pieces of silver",
+        "Fifty pieces of silver"
+      ],
+      "answer": "Thirty pieces of silver",
+      "verse_reference": "Matthew 26:15"
+    },
+    {
+      "id": "matthew-26-q2",
+      "type": "multiple_choice",
+      "question": "Where did Jesus go to pray before his arrest?",
+      "options": [
+        "The temple",
+        "Bethany",
+        "The Mount of Olives",
+        "Gethsemane"
+      ],
+      "answer": "Gethsemane",
+      "verse_reference": "Matthew 26:36"
+    },
+    {
+      "id": "matthew-26-q3",
+      "type": "true_false",
+      "question": "Peter denied knowing Jesus three times, just as Jesus had predicted.",
+      "answer": "true",
+      "verse_reference": "Matthew 26:69-75"
+    },
+    {
+      "id": "matthew-26-q4",
+      "type": "fill_blank",
+      "question": "Watch and pray so that you will not enter into temptation. The spirit is willing, but the _____ is weak.",
+      "answer": "body",
+      "accept": [
+        "flesh"
+      ],
+      "verse_reference": "Matthew 26:41"
+    },
+    {
+      "id": "matthew-26-q5",
+      "type": "fill_blank",
+      "question": "For all those who take the sword will die by the _____.",
+      "answer": "sword",
+      "verse_reference": "Matthew 26:52"
+    }
+  ]
+}

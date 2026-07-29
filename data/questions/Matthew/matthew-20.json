@@ -1,0 +1,56 @@
+{
+  "book": "Matthew",
+  "chapter": 20,
+  "questions": [
+    {
+      "id": "matthew-20-q1",
+      "type": "multiple_choice",
+      "question": "In the parable of the workers in the vineyard, how much were the last workers hired paid?",
+      "options": [
+        "Two denarii",
+        "Half a denarius",
+        "One denarius",
+        "Nothing"
+      ],
+      "answer": "One denarius",
+      "verse_reference": "Matthew 20:9-10"
+    },
+    {
+      "id": "matthew-20-q2",
+      "type": "multiple_choice",
+      "question": "The mother of James and John asked Jesus for what?",
+      "options": [
+        "That her sons be granted long life and great riches",
+        "That her sons sit at his right and left hand in his kingdom",
+        "That her sons be kept safe from all harm and danger",
+        "That her sons be healed of a sickness that long troubled them"
+      ],
+      "answer": "That her sons sit at his right and left hand in his kingdom",
+      "verse_reference": "Matthew 20:21"
+    },
+    {
+      "id": "matthew-20-q3",
+      "type": "true_false",
+      "question": "The other ten disciples were pleased when they heard James and John's mother's request.",
+      "answer": "false",
+      "verse_reference": "Matthew 20:24"
+    },
+    {
+      "id": "matthew-20-q4",
+      "type": "fill_blank",
+      "question": "The Son of Man came not to be served, but to _____, and to give his life as a ransom for many.",
+      "answer": "serve",
+      "accept": [
+        "minister"
+      ],
+      "verse_reference": "Matthew 20:28"
+    },
+    {
+      "id": "matthew-20-q5",
+      "type": "fill_blank",
+      "question": "So the last will be _____, and the first last.",
+      "answer": "first",
+      "verse_reference": "Matthew 20:16"
+    }
+  ]
+}

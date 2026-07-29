@@ -1,0 +1,53 @@
+{
+  "book": "1 Samuel",
+  "chapter": 7,
+  "questions": [
+    {
+      "id": "1-samuel-7-q1",
+      "type": "multiple_choice",
+      "question": "What did Samuel call Israel to do to defeat the Philistines?",
+      "options": [
+        "Make a treaty with the Philistine lords",
+        "Put away foreign gods and return to the LORD",
+        "Raise a great army from all the tribes",
+        "Flee away into the hills until the danger passed"
+      ],
+      "answer": "Put away foreign gods and return to the LORD",
+      "verse_reference": "1 Samuel 7:3"
+    },
+    {
+      "id": "1-samuel-7-q2",
+      "type": "multiple_choice",
+      "question": "What stone did Samuel set up, naming it Ebenezer (\"stone of help\")?",
+      "options": [
+        "A boundary marker between two tribes",
+        "A memorial of God's help and victory",
+        "A throne for the coming king",
+        "A gate for the city of Mizpah"
+      ],
+      "answer": "A memorial of God's help and victory",
+      "verse_reference": "1 Samuel 7:12"
+    },
+    {
+      "id": "1-samuel-7-q3",
+      "type": "true_false",
+      "question": "The LORD thundered against the Philistines, and Israel defeated them.",
+      "answer": "true",
+      "verse_reference": "1 Samuel 7:10-11"
+    },
+    {
+      "id": "1-samuel-7-q4",
+      "type": "fill_blank",
+      "question": "Samuel set up a stone and called it _____, saying, \"Thus far the LORD has helped us.\"",
+      "answer": "Ebenezer",
+      "verse_reference": "1 Samuel 7:12"
+    },
+    {
+      "id": "1-samuel-7-q5",
+      "type": "fill_blank",
+      "question": "Samuel told Israel to put away their foreign _____ and serve the LORD only.",
+      "answer": "gods",
+      "verse_reference": "1 Samuel 7:3"
+    }
+  ]
+}

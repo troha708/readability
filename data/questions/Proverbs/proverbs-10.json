@@ -1,0 +1,63 @@
+{
+  "book": "Proverbs",
+  "chapter": 10,
+  "questions": [
+    {
+      "id": "proverbs-10-q1",
+      "type": "multiple_choice",
+      "question": "What does Proverbs 10 say a wise son brings?",
+      "options": [
+        "Wealth to his household",
+        "Peace to his city",
+        "Gladness to his father",
+        "Honor to his elders"
+      ],
+      "answer": "Gladness to his father",
+      "verse_reference": "Proverbs 10:1"
+    },
+    {
+      "id": "proverbs-10-q2",
+      "type": "multiple_choice",
+      "question": "What does love do, according to Proverbs 10?",
+      "options": [
+        "Ignores wrong",
+        "Covers all offenses",
+        "Demands payment",
+        "Stirs up strife"
+      ],
+      "answer": "Covers all offenses",
+      "verse_reference": "Proverbs 10:12"
+    },
+    {
+      "id": "proverbs-10-q3",
+      "type": "true_false",
+      "question": "Proverbs 10 says the mouth of the righteous is a fountain of life.",
+      "answer": "true",
+      "verse_reference": "Proverbs 10:11"
+    },
+    {
+      "id": "proverbs-10-q4",
+      "type": "fill_blank",
+      "question": "Hatred stirs up dissension, but love covers all _____.",
+      "answer": "transgressions",
+      "accept": [
+        "offenses",
+        "sins",
+        "wrongs",
+        "trespasses"
+      ],
+      "verse_reference": "Proverbs 10:12"
+    },
+    {
+      "id": "proverbs-10-q5",
+      "type": "fill_blank",
+      "question": "The blessing of the LORD makes rich, and he adds no _____ with it.",
+      "answer": "sorrow",
+      "accept": [
+        "trouble",
+        "grief"
+      ],
+      "verse_reference": "Proverbs 10:22"
+    }
+  ]
+}

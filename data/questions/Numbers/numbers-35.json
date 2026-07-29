@@ -1,0 +1,54 @@
+{
+  "book": "Numbers",
+  "chapter": 35,
+  "questions": [
+    {
+      "id": "numbers-35-q1",
+      "type": "multiple_choice",
+      "question": "What were the cities of refuge for?",
+      "options": [
+        "A storehouse for the tithes and offerings",
+        "A refuge for someone who killed accidentally",
+        "A site for worship far away from the tabernacle",
+        "A center for trade between the tribes"
+      ],
+      "answer": "A refuge for someone who killed accidentally",
+      "verse_reference": "Numbers 35:11-12"
+    },
+    {
+      "id": "numbers-35-q2",
+      "type": "multiple_choice",
+      "question": "How many cities of refuge were there?",
+      "options": [
+        "Three",
+        "Six",
+        "Twelve",
+        "Forty-eight"
+      ],
+      "answer": "Six",
+      "verse_reference": "Numbers 35:13"
+    },
+    {
+      "id": "numbers-35-q3",
+      "type": "true_false",
+      "question": "A deliberate murderer was not protected by the cities of refuge.",
+      "answer": "true",
+      "verse_reference": "Numbers 35:16-25"
+    },
+    {
+      "id": "numbers-35-q4",
+      "type": "fill_blank",
+      "question": "Six cities of _____ were set apart for those who killed someone accidentally.",
+      "answer": "refuge",
+      "verse_reference": "Numbers 35:13"
+    },
+    {
+      "id": "numbers-35-q5",
+      "type": "fill_blank",
+      "question": "The Levites were given _____ cities in all to live in throughout Israel.",
+      "answer": "forty-eight",
+      "accept": ["forty and eight", "48"],
+      "verse_reference": "Numbers 35:7"
+    }
+  ]
+}

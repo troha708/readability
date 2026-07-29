@@ -1,0 +1,59 @@
+{
+  "book": "2 Samuel",
+  "chapter": 15,
+  "questions": [
+    {
+      "id": "2-samuel-15-q1",
+      "type": "multiple_choice",
+      "question": "What did Absalom do to win the hearts of Israel?",
+      "options": [
+        "Led the army to a great victory over the Philistines",
+        "Stood at the gate, flattering people seeking justice",
+        "Built a great and costly temple to honor the LORD",
+        "Gave lavish gifts to all of the leading tribal heads"
+      ],
+      "answer": "Stood at the gate, flattering people seeking justice",
+      "verse_reference": "2 Samuel 15:2-6"
+    },
+    {
+      "id": "2-samuel-15-q2",
+      "type": "multiple_choice",
+      "question": "What did Absalom declare himself in Hebron?",
+      "options": [
+        "King",
+        "A prophet",
+        "A priest",
+        "A judge"
+      ],
+      "answer": "King",
+      "verse_reference": "2 Samuel 15:10"
+    },
+    {
+      "id": "2-samuel-15-q3",
+      "type": "true_false",
+      "question": "David fled Jerusalem when Absalom's conspiracy grew strong.",
+      "answer": "true",
+      "verse_reference": "2 Samuel 15:14"
+    },
+    {
+      "id": "2-samuel-15-q4",
+      "type": "fill_blank",
+      "question": "Absalom stole the _____ of the people of Israel.",
+      "answer": "hearts",
+      "accept": [
+        "heart"
+      ],
+      "verse_reference": "2 Samuel 15:6"
+    },
+    {
+      "id": "2-samuel-15-q5",
+      "type": "fill_blank",
+      "question": "David _____ from Jerusalem to escape his son Absalom.",
+      "answer": "fled",
+      "accept": [
+        "flee"
+      ],
+      "verse_reference": "2 Samuel 15:14"
+    }
+  ]
+}

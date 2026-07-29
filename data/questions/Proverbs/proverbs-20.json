@@ -1,0 +1,53 @@
+{
+  "book": "Proverbs",
+  "chapter": 20,
+  "questions": [
+    {
+      "id": "proverbs-20-q1",
+      "type": "multiple_choice",
+      "question": "How does Proverbs 20 describe wine and strong drink?",
+      "options": [
+        "Wine is a good medicine for the weary",
+        "Wine is altogether harmless to all the wise",
+        "Wine is a rich blessing from the LORD",
+        "Wine is a mocker, strong drink a brawler"
+      ],
+      "answer": "Wine is a mocker, strong drink a brawler",
+      "verse_reference": "Proverbs 20:1"
+    },
+    {
+      "id": "proverbs-20-q2",
+      "type": "multiple_choice",
+      "question": "What does Proverbs 20 say even a child is known by?",
+      "options": [
+        "His family and the good name that he was born to",
+        "His wealth and all the many riches of his great house",
+        "His acts, whether his conduct is pure and upright",
+        "His age and the long years that he has lived on earth"
+      ],
+      "answer": "His acts, whether his conduct is pure and upright",
+      "verse_reference": "Proverbs 20:11"
+    },
+    {
+      "id": "proverbs-20-q3",
+      "type": "true_false",
+      "question": "Proverbs 20 says a false balance is hated, but a just weight is the LORD's delight (the LORD detests unequal weights).",
+      "answer": "true",
+      "verse_reference": "Proverbs 20:10"
+    },
+    {
+      "id": "proverbs-20-q4",
+      "type": "fill_blank",
+      "question": "_____ is a mocker, strong drink a brawler, and whoever is led astray by it is not wise.",
+      "answer": "Wine",
+      "verse_reference": "Proverbs 20:1"
+    },
+    {
+      "id": "proverbs-20-q5",
+      "type": "fill_blank",
+      "question": "Even a child makes himself known by his acts, by whether his conduct is _____ and upright.",
+      "answer": "pure",
+      "verse_reference": "Proverbs 20:11"
+    }
+  ]
+}

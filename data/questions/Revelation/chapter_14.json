@@ -1,0 +1,58 @@
+{
+  "book": "Revelation",
+  "chapter": 14,
+  "questions": [
+    {
+      "id": "rev_14_1",
+      "type": "multiple_choice",
+      "question": "The 144,000 standing on Mount Zion had what written on their foreheads?",
+      "options": [
+        "The Lamb's name and his Father's name",
+        "The names of the twelve tribes",
+        "The seal of the living God alone",
+        "The mark of the beast and its number"
+      ],
+      "correct": "The Lamb's name and his Father's name",
+      "verse_ref": "Revelation 14:1",
+      "feedback": "They had the Lamb's name and his Father's name written on their foreheads."
+    },
+    {
+      "id": "rev_14_2",
+      "type": "multiple_choice",
+      "question": "An angel announces that what great city has fallen?",
+      "options": [
+        "Babylon",
+        "Jerusalem",
+        "Rome",
+        "Nineveh"
+      ],
+      "correct": "Babylon",
+      "verse_ref": "Revelation 14:8",
+      "feedback": "Fallen! Fallen is Babylon the Great."
+    },
+    {
+      "id": "rev_14_3",
+      "type": "true_false",
+      "question": "An angel says blessed are the dead who die in the Lord from now on.",
+      "correct": true,
+      "verse_ref": "Revelation 14:13",
+      "feedback": "Blessed are the dead who die in the Lord — they will rest from their labor."
+    },
+    {
+      "id": "rev_14_4",
+      "type": "fill_in_the_blank",
+      "question": "Fear God and give him glory, because the hour of his _____ has come.",
+      "correct": "judgment",
+      "verse_ref": "Revelation 14:7",
+      "feedback": "Fear God and give him glory — the hour of his judgment has come."
+    },
+    {
+      "id": "rev_14_5",
+      "type": "fill_in_the_blank",
+      "question": "The earth was harvested using a sharp _____.",
+      "correct": "sickle",
+      "verse_ref": "Revelation 14:16",
+      "feedback": "The one seated on the cloud swung his sickle over the earth and harvested it."
+    }
+  ]
+}

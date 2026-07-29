@@ -1,0 +1,61 @@
+{
+  "book": "Esther",
+  "chapter": 10,
+  "questions": [
+    {
+      "id": "esther-10-q1",
+      "type": "multiple_choice",
+      "question": "How is Mordecai described at the end of the book?",
+      "options": [
+        "Forgotten by all very soon after the fall of Haman",
+        "Great among the Jews and second in rank to the king",
+        "Imprisoned by the king's jealous and scheming officials",
+        "Exiled away in deep disgrace to a distant province"
+      ],
+      "answer": "Great among the Jews and second in rank to the king",
+      "verse_reference": "Esther 10:3"
+    },
+    {
+      "id": "esther-10-q2",
+      "type": "multiple_choice",
+      "question": "What did Mordecai seek for his people?",
+      "options": [
+        "Revenge on their foes",
+        "Their welfare and peace",
+        "Power over the nobles",
+        "Great riches and much land"
+      ],
+      "answer": "Their welfare and peace",
+      "verse_reference": "Esther 10:3"
+    },
+    {
+      "id": "esther-10-q3",
+      "type": "true_false",
+      "question": "Mordecai was popular and well regarded by the multitude of his brothers.",
+      "answer": "true",
+      "verse_reference": "Esther 10:3"
+    },
+    {
+      "id": "esther-10-q4",
+      "type": "fill_blank",
+      "question": "King Xerxes imposed tribute throughout the land, even to its farthest _____.",
+      "answer": "shores",
+      "accept": [
+        "sea",
+        "isles"
+      ],
+      "verse_reference": "Esther 10:1"
+    },
+    {
+      "id": "esther-10-q5",
+      "type": "fill_blank",
+      "question": "Mordecai the Jew was second only to King _____.",
+      "answer": "Xerxes",
+      "accept": [
+        "Ahasuerus",
+        "Ahashuerosh"
+      ],
+      "verse_reference": "Esther 10:3"
+    }
+  ]
+}

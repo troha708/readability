@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 141,
+  "questions": [
+    {
+      "id": "psalms-141-q1",
+      "type": "multiple_choice",
+      "question": "To what does David ask his prayer to be compared in Psalm 141?",
+      "options": [
+        "A sweet song to God, and his bowed head as a humble offering",
+        "Incense before God, and his lifted hands as the evening sacrifice",
+        "A silent vow to God, and his folded hands as a quiet prayer",
+        "A loud shout to God, and his clapping hands as a great joyful noise"
+      ],
+      "answer": "Incense before God, and his lifted hands as the evening sacrifice",
+      "verse_reference": "Psalm 141:2"
+    },
+    {
+      "id": "psalms-141-q2",
+      "type": "multiple_choice",
+      "question": "What does David ask God to set over his mouth?",
+      "options": [
+        "A lamp, and to light the path before his feet",
+        "A guard, and to keep watch over the door of his lips",
+        "A shield, and to cover his heart from the enemy",
+        "A wise teacher, and to instruct his mind in the holy law"
+      ],
+      "answer": "A guard, and to keep watch over the door of his lips",
+      "verse_reference": "Psalm 141:3"
+    },
+    {
+      "id": "psalms-141-q3",
+      "type": "true_false",
+      "question": "David says, 'Let a righteous man strike me—it is a kindness.'",
+      "answer": "true",
+      "verse_reference": "Psalm 141:5"
+    },
+    {
+      "id": "psalms-141-q4",
+      "type": "fill_blank",
+      "question": "Let my prayer be counted as _____ before you.",
+      "answer": "incense",
+      "verse_reference": "Psalm 141:2"
+    },
+    {
+      "id": "psalms-141-q5",
+      "type": "fill_blank",
+      "question": "Set a _____, O LORD, over my mouth; keep watch over the door of my lips!",
+      "answer": "guard",
+      "verse_reference": "Psalm 141:3"
+    }
+  ]
+}

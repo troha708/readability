@@ -1,0 +1,56 @@
+{
+  "book": "Jeremiah",
+  "chapter": 50,
+  "questions": [
+    {
+      "id": "jeremiah-50-q1",
+      "type": "multiple_choice",
+      "question": "Against which great power is the oracle of Jeremiah 50?",
+      "options": [
+        "Babylon",
+        "Assyria",
+        "Edom",
+        "Egypt"
+      ],
+      "answer": "Babylon",
+      "verse_reference": "Jeremiah 50:1"
+    },
+    {
+      "id": "jeremiah-50-q2",
+      "type": "multiple_choice",
+      "question": "What does God promise his people Israel in the midst of Babylon's fall?",
+      "options": [
+        "That their guilt will be pardoned and they will return",
+        "That they will serve Babylon for seventy more long years",
+        "That their city will never be rebuilt",
+        "That they will be scattered among all nations"
+      ],
+      "answer": "That their guilt will be pardoned and they will return",
+      "verse_reference": "Jeremiah 50:20"
+    },
+    {
+      "id": "jeremiah-50-q3",
+      "type": "true_false",
+      "question": "Jeremiah 50 calls God's people to flee from the midst of Babylon.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 50:8"
+    },
+    {
+      "id": "jeremiah-50-q4",
+      "type": "fill_blank",
+      "question": "Babylon is taken; _____ is put to shame; her images are put to shame.",
+      "answer": "Bel",
+      "verse_reference": "Jeremiah 50:2"
+    },
+    {
+      "id": "jeremiah-50-q5",
+      "type": "fill_blank",
+      "question": "In those days the guilt of Israel will be sought, but there will be none, for I will _____ the remnant I preserve.",
+      "answer": "forgive",
+      "accept": [
+        "pardon"
+      ],
+      "verse_reference": "Jeremiah 50:20"
+    }
+  ]
+}

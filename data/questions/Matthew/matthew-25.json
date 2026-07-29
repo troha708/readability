@@ -1,0 +1,53 @@
+{
+  "book": "Matthew",
+  "chapter": 25,
+  "questions": [
+    {
+      "id": "matthew-25-q1",
+      "type": "multiple_choice",
+      "question": "In the parable of the ten virgins, why were five of them called foolish?",
+      "options": [
+        "They forgot their lamps entirely",
+        "They fell fast asleep at the door",
+        "They arrived far too late at night",
+        "They took no oil with their lamps"
+      ],
+      "answer": "They took no oil with their lamps",
+      "verse_reference": "Matthew 25:3"
+    },
+    {
+      "id": "matthew-25-q2",
+      "type": "multiple_choice",
+      "question": "In the parable of the talents, what did the master do to the servant who buried his one talent?",
+      "options": [
+        "Cast him into outer darkness",
+        "Generously gave him another chance",
+        "Forgave him",
+        "Reduced his wages"
+      ],
+      "answer": "Cast him into outer darkness",
+      "verse_reference": "Matthew 25:30"
+    },
+    {
+      "id": "matthew-25-q3",
+      "type": "true_false",
+      "question": "In the parable of the sheep and goats, Jesus said that serving the least of his brothers was the same as serving him.",
+      "answer": "true",
+      "verse_reference": "Matthew 25:40"
+    },
+    {
+      "id": "matthew-25-q4",
+      "type": "fill_blank",
+      "question": "For to everyone who has will more be given, and he will have abundance; but from him who doesn't have, even that which he has will be taken _____.",
+      "answer": "away",
+      "verse_reference": "Matthew 25:29"
+    },
+    {
+      "id": "matthew-25-q5",
+      "type": "fill_blank",
+      "question": "Most certainly I tell you, because you did it to one of the least of these my brothers, you did it to _____.",
+      "answer": "me",
+      "verse_reference": "Matthew 25:40"
+    }
+  ]
+}

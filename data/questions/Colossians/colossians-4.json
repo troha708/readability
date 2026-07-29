@@ -1,0 +1,56 @@
+{
+  "book": "Colossians",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "col-4-q1",
+      "type": "multiple_choice",
+      "question": "Paul asks the Colossians to pray that God would open a door for what?",
+      "options": [
+        "Healing",
+        "The message of Christ",
+        "Safe travel",
+        "His release from prison"
+      ],
+      "answer": "The message of Christ",
+      "verse_reference": "Colossians 4:3"
+    },
+    {
+      "id": "col-4-q2",
+      "type": "multiple_choice",
+      "question": "Who does Paul say is a fellow prisoner and sends greetings?",
+      "options": [
+        "Timothy",
+        "Titus",
+        "Aristarchus",
+        "Barnabas"
+      ],
+      "answer": "Aristarchus",
+      "verse_reference": "Colossians 4:10"
+    },
+    {
+      "id": "col-4-q3",
+      "type": "true_false",
+      "question": "Paul tells the Colossians to share this letter with the church in Laodicea.",
+      "answer": "true",
+      "verse_reference": "Colossians 4:16"
+    },
+    {
+      "id": "col-4-q4",
+      "type": "fill_blank",
+      "question": "Let your speech always be _____, seasoned with salt.",
+      "answer": "gracious",
+      "accept": [
+        "grace"
+      ],
+      "verse_reference": "Colossians 4:6"
+    },
+    {
+      "id": "col-4-q5",
+      "type": "fill_blank",
+      "question": "Walk in wisdom toward _____, redeeming the time.",
+      "answer": "outsiders",
+      "verse_reference": "Colossians 4:5"
+    }
+  ]
+}

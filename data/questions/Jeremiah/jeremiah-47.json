@@ -1,0 +1,53 @@
+{
+  "book": "Jeremiah",
+  "chapter": 47,
+  "questions": [
+    {
+      "id": "jeremiah-47-q1",
+      "type": "multiple_choice",
+      "question": "Against which people is the oracle in Jeremiah 47?",
+      "options": [
+        "The Edomites",
+        "The Ammonites",
+        "The Philistines",
+        "The Moabites"
+      ],
+      "answer": "The Philistines",
+      "verse_reference": "Jeremiah 47:1"
+    },
+    {
+      "id": "jeremiah-47-q2",
+      "type": "multiple_choice",
+      "question": "What image describes the coming army in Jeremiah 47?",
+      "options": [
+        "A great swarm of locusts darkening the whole of the sky",
+        "A mighty whirlwind lifting up the dust of all the earth",
+        "Waters rising out of the north, an overflowing torrent",
+        "A raging fire sweeping across all of the dry open fields"
+      ],
+      "answer": "Waters rising out of the north, an overflowing torrent",
+      "verse_reference": "Jeremiah 47:2"
+    },
+    {
+      "id": "jeremiah-47-q3",
+      "type": "true_false",
+      "question": "Jeremiah 47 mentions the cities of Gaza and Ashkelon among the Philistines.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 47:5"
+    },
+    {
+      "id": "jeremiah-47-q4",
+      "type": "fill_blank",
+      "question": "The oracle concerning the _____, before Pharaoh struck down Gaza.",
+      "answer": "Philistines",
+      "verse_reference": "Jeremiah 47:1"
+    },
+    {
+      "id": "jeremiah-47-q5",
+      "type": "fill_blank",
+      "question": "Behold, _____ are rising out of the north and shall become an overflowing torrent.",
+      "answer": "waters",
+      "verse_reference": "Jeremiah 47:2"
+    }
+  ]
+}

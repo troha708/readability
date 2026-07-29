@@ -1,0 +1,56 @@
+{
+  "book": "Acts",
+  "chapter": 20,
+  "questions": [
+    {
+      "id": "acts-20-q1",
+      "type": "multiple_choice",
+      "question": "What happened to the young man Eutychus during Paul's long sermon in Troas?",
+      "options": [
+        "He was healed of the blindness he was born with",
+        "He fell from a window and died, but Paul raised him",
+        "He saw a vision of heaven during the sermon",
+        "He was baptized in the cold river just before the dawn"
+      ],
+      "answer": "He fell from a window and died, but Paul raised him",
+      "verse_reference": "Acts 20:9-10"
+    },
+    {
+      "id": "acts-20-q2",
+      "type": "multiple_choice",
+      "question": "In his farewell speech to the Ephesian elders, what did Paul warn would come after he left?",
+      "options": [
+        "Faithful elders guarding the church",
+        "Gentle shepherds feeding the flock",
+        "Fierce wolves distorting the truth",
+        "Wise teachers explaining the law"
+      ],
+      "answer": "Fierce wolves distorting the truth",
+      "verse_reference": "Acts 20:29-30"
+    },
+    {
+      "id": "acts-20-q3",
+      "type": "true_false",
+      "question": "Paul said he had not hesitated to preach anything that would be helpful to the Ephesians.",
+      "answer": "true",
+      "verse_reference": "Acts 20:20"
+    },
+    {
+      "id": "acts-20-q4",
+      "type": "fill_blank",
+      "question": "It is more _____ to give than to receive.",
+      "answer": "blessed",
+      "verse_reference": "Acts 20:35"
+    },
+    {
+      "id": "acts-20-q5",
+      "type": "fill_blank",
+      "question": "Paul said, 'I don't consider my life of any account as dear to myself, so that I may finish my _____ with joy.'",
+      "answer": "course",
+      "accept": [
+        "race"
+      ],
+      "verse_reference": "Acts 20:24"
+    }
+  ]
+}

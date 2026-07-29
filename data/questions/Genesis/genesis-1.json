@@ -1,0 +1,53 @@
+{
+  "book": "Genesis",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "genesis-1-q1",
+      "type": "multiple_choice",
+      "question": "On which day did God create the sun, moon, and stars?",
+      "options": [
+        "The first day",
+        "The second day",
+        "The fourth day",
+        "The sixth day"
+      ],
+      "answer": "The fourth day",
+      "verse_reference": "Genesis 1:14-19"
+    },
+    {
+      "id": "genesis-1-q2",
+      "type": "multiple_choice",
+      "question": "According to Genesis 1, in whose image did God create mankind?",
+      "options": [
+        "The image of angels",
+        "The image of the animals",
+        "The image of the stars",
+        "His own image"
+      ],
+      "answer": "His own image",
+      "verse_reference": "Genesis 1:27"
+    },
+    {
+      "id": "genesis-1-q3",
+      "type": "true_false",
+      "question": "God saw everything that he had made and declared it \"very good.\"",
+      "answer": "true",
+      "verse_reference": "Genesis 1:31"
+    },
+    {
+      "id": "genesis-1-q4",
+      "type": "fill_blank",
+      "question": "In the beginning, God created the heavens and the _____.",
+      "answer": "earth",
+      "verse_reference": "Genesis 1:1"
+    },
+    {
+      "id": "genesis-1-q5",
+      "type": "fill_blank",
+      "question": "God called the light \"Day,\" and the darkness he called \"_____.\"",
+      "answer": "Night",
+      "verse_reference": "Genesis 1:5"
+    }
+  ]
+}

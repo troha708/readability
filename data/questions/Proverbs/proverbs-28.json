@@ -1,0 +1,53 @@
+{
+  "book": "Proverbs",
+  "chapter": 28,
+  "questions": [
+    {
+      "id": "proverbs-28-q1",
+      "type": "multiple_choice",
+      "question": "How does Proverbs 28 describe the wicked and the righteous regarding fear?",
+      "options": [
+        "Both the wicked and the righteous alike flee away in great fear together",
+        "The wicked flee when no one pursues, but the righteous are bold as a lion",
+        "Both the wicked and the righteous alike are completely fearless before all",
+        "Both the wicked and the righteous alike stand their ground bold and unmoved"
+      ],
+      "answer": "The wicked flee when no one pursues, but the righteous are bold as a lion",
+      "verse_reference": "Proverbs 28:1"
+    },
+    {
+      "id": "proverbs-28-q2",
+      "type": "multiple_choice",
+      "question": "What happens to one who conceals his transgressions, per Proverbs 28?",
+      "options": [
+        "He will be quietly pardoned in the end once enough time has finally passed",
+        "He will not prosper, but whoever confesses and forsakes them obtains mercy",
+        "He will be greatly honored by all the people for guarding his own good name",
+        "He will grow exceedingly rich and so escape every single kind of harm"
+      ],
+      "answer": "He will not prosper, but whoever confesses and forsakes them obtains mercy",
+      "verse_reference": "Proverbs 28:13"
+    },
+    {
+      "id": "proverbs-28-q3",
+      "type": "true_false",
+      "question": "Proverbs 28 says whoever trusts in his own mind is a fool, but he who walks in wisdom will be delivered.",
+      "answer": "true",
+      "verse_reference": "Proverbs 28:26"
+    },
+    {
+      "id": "proverbs-28-q4",
+      "type": "fill_blank",
+      "question": "The wicked flee when no one pursues, but the righteous are bold as a _____.",
+      "answer": "lion",
+      "verse_reference": "Proverbs 28:1"
+    },
+    {
+      "id": "proverbs-28-q5",
+      "type": "fill_blank",
+      "question": "Whoever conceals his transgressions will not prosper, but he who confesses and forsakes them obtains _____.",
+      "answer": "mercy",
+      "verse_reference": "Proverbs 28:13"
+    }
+  ]
+}

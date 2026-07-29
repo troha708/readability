@@ -1,0 +1,56 @@
+{
+  "book": "1 Chronicles",
+  "chapter": 29,
+  "questions": [
+    {
+      "id": "1-chronicles-29-q1",
+      "type": "multiple_choice",
+      "question": "What did David and the leaders offer for building the temple?",
+      "options": [
+        "Animals alone for all the daily sacrifices upon the altar",
+        "Nothing at all, leaving the whole cost to Solomon",
+        "Only their prayers and their heartfelt good wishes",
+        "Freewill offerings of gold, silver, and precious stones"
+      ],
+      "answer": "Freewill offerings of gold, silver, and precious stones",
+      "verse_reference": "1 Chronicles 29:6-8"
+    },
+    {
+      "id": "1-chronicles-29-q2",
+      "type": "multiple_choice",
+      "question": "How does David describe the people's ability to give?",
+      "options": [
+        "They gave from the tribute taken in battle",
+        "Their wealth was won by the strength of their hands",
+        "Everything comes from God, and they give of his own",
+        "Their riches came from the trade of the nations"
+      ],
+      "answer": "Everything comes from God, and they give of his own",
+      "verse_reference": "1 Chronicles 29:14"
+    },
+    {
+      "id": "1-chronicles-29-q3",
+      "type": "true_false",
+      "question": "Solomon was made king and anointed before David's death.",
+      "answer": "true",
+      "verse_reference": "1 Chronicles 29:22"
+    },
+    {
+      "id": "1-chronicles-29-q4",
+      "type": "fill_blank",
+      "question": "David prayed, 'Yours, O LORD, is the greatness and the power and the glory and the splendor and the _____.'",
+      "answer": "majesty",
+      "verse_reference": "1 Chronicles 29:11"
+    },
+    {
+      "id": "1-chronicles-29-q5",
+      "type": "fill_blank",
+      "question": "David died in a good old age, full of days, riches, and _____.",
+      "answer": "honor",
+      "accept": [
+        "honour"
+      ],
+      "verse_reference": "1 Chronicles 29:28"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "book": "Galatians",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "gal-2-q1",
+      "type": "multiple_choice",
+      "question": "Paul opposed Peter to his face in Antioch because Peter did what?",
+      "options": [
+        "Openly denied even knowing Christ before all of the rulers",
+        "Preached the gospel only to the Jews and never once to the Gentiles",
+        "Withdrew from eating with Gentiles when Jewish believers arrived",
+        "Refused entirely to be circumcised before the whole council"
+      ],
+      "answer": "Withdrew from eating with Gentiles when Jewish believers arrived",
+      "verse_reference": "Galatians 2:11-12"
+    },
+    {
+      "id": "gal-2-q2",
+      "type": "multiple_choice",
+      "question": "The Jerusalem leaders recognized Paul's calling to preach to whom?",
+      "options": [
+        "The Jews",
+        "The Gentiles",
+        "The Samaritans",
+        "The Romans"
+      ],
+      "answer": "The Gentiles",
+      "verse_reference": "Galatians 2:7-8"
+    },
+    {
+      "id": "gal-2-q3",
+      "type": "true_false",
+      "question": "Paul says a person is justified by works of the law.",
+      "answer": "false",
+      "verse_reference": "Galatians 2:16"
+    },
+    {
+      "id": "gal-2-q4",
+      "type": "fill_blank",
+      "question": "I have been crucified with Christ. It is no longer I who live, but _____ who lives in me.",
+      "answer": "Christ",
+      "verse_reference": "Galatians 2:20"
+    },
+    {
+      "id": "gal-2-q5",
+      "type": "fill_blank",
+      "question": "If righteousness could be gained through the law, then Christ died for _____.",
+      "answer": "nothing",
+      "accept": [
+        "nought"
+      ],
+      "verse_reference": "Galatians 2:21"
+    }
+  ]
+}

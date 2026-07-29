@@ -1,0 +1,53 @@
+{
+  "book": "Genesis",
+  "chapter": 47,
+  "questions": [
+    {
+      "id": "genesis-47-q1",
+      "type": "multiple_choice",
+      "question": "Where did Joseph settle his family in Egypt?",
+      "options": [
+        "Memphis",
+        "Goshen",
+        "Thebes",
+        "Heliopolis"
+      ],
+      "answer": "Goshen",
+      "verse_reference": "Genesis 47:6"
+    },
+    {
+      "id": "genesis-47-q2",
+      "type": "multiple_choice",
+      "question": "How old was Jacob when he stood before Pharaoh?",
+      "options": [
+        "100",
+        "130",
+        "147",
+        "175"
+      ],
+      "answer": "130",
+      "verse_reference": "Genesis 47:9"
+    },
+    {
+      "id": "genesis-47-q3",
+      "type": "true_false",
+      "question": "Jacob blessed Pharaoh.",
+      "answer": "true",
+      "verse_reference": "Genesis 47:7"
+    },
+    {
+      "id": "genesis-47-q4",
+      "type": "fill_blank",
+      "question": "As the famine worsened, the Egyptians sold even their _____ to Pharaoh for food.",
+      "answer": "land",
+      "verse_reference": "Genesis 47:20"
+    },
+    {
+      "id": "genesis-47-q5",
+      "type": "fill_blank",
+      "question": "Jacob made Joseph swear, \"Don't bury me in _____.\"",
+      "answer": "Egypt",
+      "verse_reference": "Genesis 47:29"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "book": "Isaiah",
+  "chapter": 37,
+  "questions": [
+    {
+      "id": "isaiah-37-q1",
+      "type": "multiple_choice",
+      "question": "What did Hezekiah do with Sennacherib's threatening letter?",
+      "options": [
+        "Hid it away in secret and told absolutely no one at all",
+        "Burned it up at once in the heat of his great anger",
+        "Spread it before the LORD in the temple and prayed",
+        "Sent it straight back to him with a bold and defiant reply"
+      ],
+      "answer": "Spread it before the LORD in the temple and prayed",
+      "verse_reference": "Isaiah 37:14-15"
+    },
+    {
+      "id": "isaiah-37-q2",
+      "type": "multiple_choice",
+      "question": "How was the Assyrian army defeated in Isaiah 37?",
+      "options": [
+        "A great and sudden storm scattered the whole besieging army",
+        "A severe famine forced all of the Assyrians to withdraw at last",
+        "The angel of the LORD struck down 185,000 in the camp",
+        "Hezekiah's own soldiers drove them all off in a great battle"
+      ],
+      "answer": "The angel of the LORD struck down 185,000 in the camp",
+      "verse_reference": "Isaiah 37:36"
+    },
+    {
+      "id": "isaiah-37-q3",
+      "type": "true_false",
+      "question": "Sennacherib returned to Nineveh and was later killed by his own sons.",
+      "answer": "true",
+      "verse_reference": "Isaiah 37:37-38"
+    },
+    {
+      "id": "isaiah-37-q4",
+      "type": "fill_blank",
+      "question": "Isaiah sent word that the LORD would defend this city to save it, for his own sake and for the sake of his servant _____.",
+      "answer": "David",
+      "verse_reference": "Isaiah 37:35"
+    },
+    {
+      "id": "isaiah-37-q5",
+      "type": "fill_blank",
+      "question": "The angel of the LORD struck down _____ thousand in the camp of the Assyrians.",
+      "answer": "185",
+      "accept": [
+        "185,000"
+      ],
+      "verse_reference": "Isaiah 37:36"
+    }
+  ]
+}

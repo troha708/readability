@@ -1,0 +1,53 @@
+{
+  "book": "Proverbs",
+  "chapter": 14,
+  "questions": [
+    {
+      "id": "proverbs-14-q1",
+      "type": "multiple_choice",
+      "question": "What warning does Proverbs 14 give about a way that seems right?",
+      "options": [
+        "It brings safety and rest",
+        "It is the path of the wise",
+        "Its end is the way to death",
+        "It leads to lasting riches"
+      ],
+      "answer": "Its end is the way to death",
+      "verse_reference": "Proverbs 14:12"
+    },
+    {
+      "id": "proverbs-14-q2",
+      "type": "multiple_choice",
+      "question": "What does Proverbs 14 say righteousness does for a nation?",
+      "options": [
+        "Divides it into warring factions",
+        "Exalts it, while sin is a reproach",
+        "Enriches only its kings and nobles",
+        "Weakens it before its enemies"
+      ],
+      "answer": "Exalts it, while sin is a reproach",
+      "verse_reference": "Proverbs 14:34"
+    },
+    {
+      "id": "proverbs-14-q3",
+      "type": "true_false",
+      "question": "Proverbs 14 says even in laughter the heart may ache, and the end of joy may be grief.",
+      "answer": "true",
+      "verse_reference": "Proverbs 14:13"
+    },
+    {
+      "id": "proverbs-14-q4",
+      "type": "fill_blank",
+      "question": "There is a way that seems right to a man, but its end is the way to _____.",
+      "answer": "death",
+      "verse_reference": "Proverbs 14:12"
+    },
+    {
+      "id": "proverbs-14-q5",
+      "type": "fill_blank",
+      "question": "Righteousness exalts a _____, but sin is a reproach to any people.",
+      "answer": "nation",
+      "verse_reference": "Proverbs 14:34"
+    }
+  ]
+}

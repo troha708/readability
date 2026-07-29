@@ -1,0 +1,56 @@
+{
+  "book": "Isaiah",
+  "chapter": 29,
+  "questions": [
+    {
+      "id": "isaiah-29-q1",
+      "type": "multiple_choice",
+      "question": "What name does Isaiah 29 give to Jerusalem?",
+      "options": [
+        "Zoan",
+        "Sodom",
+        "Babel",
+        "Ariel"
+      ],
+      "answer": "Ariel",
+      "verse_reference": "Isaiah 29:1"
+    },
+    {
+      "id": "isaiah-29-q2",
+      "type": "multiple_choice",
+      "question": "What does the LORD say about this people's worship in Isaiah 29?",
+      "options": [
+        "Their offerings are pure and ever pleasing in the sight of the LORD",
+        "They have forsaken the temple and bow to the idols of wood",
+        "They draw near with their mouths but their hearts are far from him",
+        "Their prayers rise like sweet incense before the throne of God"
+      ],
+      "answer": "They draw near with their mouths but their hearts are far from him",
+      "verse_reference": "Isaiah 29:13"
+    },
+    {
+      "id": "isaiah-29-q3",
+      "type": "true_false",
+      "question": "Isaiah 29 compares the people's spiritual blindness to a sealed book that none can read.",
+      "answer": "true",
+      "verse_reference": "Isaiah 29:11"
+    },
+    {
+      "id": "isaiah-29-q4",
+      "type": "fill_blank",
+      "question": "This people draw near with their mouth and honor me with their lips, while their _____ is far from me.",
+      "answer": "heart",
+      "accept": [
+        "hearts"
+      ],
+      "verse_reference": "Isaiah 29:13"
+    },
+    {
+      "id": "isaiah-29-q5",
+      "type": "fill_blank",
+      "question": "In that day the deaf shall hear the words of a book, and out of their gloom the eyes of the _____ shall see.",
+      "answer": "blind",
+      "verse_reference": "Isaiah 29:18"
+    }
+  ]
+}

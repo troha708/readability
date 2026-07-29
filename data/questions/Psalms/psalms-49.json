@@ -1,0 +1,61 @@
+{
+  "book": "Psalms",
+  "chapter": 49,
+  "questions": [
+    {
+      "id": "psalms-49-q1",
+      "type": "multiple_choice",
+      "question": "What kind of psalm is Psalm 49?",
+      "options": [
+        "A wisdom psalm about riches and death",
+        "A royal psalm about the king's victory",
+        "A festival psalm about the autumn harvest",
+        "A penitential psalm about confessed sin"
+      ],
+      "answer": "A wisdom psalm about riches and death",
+      "verse_reference": "Psalm 49:3"
+    },
+    {
+      "id": "psalms-49-q2",
+      "type": "multiple_choice",
+      "question": "What can no amount of riches do?",
+      "options": [
+        "Earn a person a place in the holy courts of the LORD",
+        "Ransom a person's life or pay God the price of life",
+        "Buy back the land that was lost during the long exile",
+        "Purchase the favor of God through many sacrifices"
+      ],
+      "answer": "Ransom a person's life or pay God the price of life",
+      "verse_reference": "Psalm 49:7-8"
+    },
+    {
+      "id": "psalms-49-q3",
+      "type": "true_false",
+      "question": "The psalm warns that the wealthy, like beasts, perish and cannot take their riches with them.",
+      "answer": "true",
+      "verse_reference": "Psalm 49:17"
+    },
+    {
+      "id": "psalms-49-q4",
+      "type": "fill_blank",
+      "question": "A man, despite his wealth, cannot _____; he is like the beasts that perish.",
+      "answer": "endure",
+      "accept": [
+        "remain",
+        "abide",
+        "continue"
+      ],
+      "verse_reference": "Psalm 49:12"
+    },
+    {
+      "id": "psalms-49-q5",
+      "type": "fill_blank",
+      "question": "But God will ransom my soul from the power of _____.",
+      "answer": "Sheol",
+      "accept": [
+        "grave"
+      ],
+      "verse_reference": "Psalm 49:15"
+    }
+  ]
+}

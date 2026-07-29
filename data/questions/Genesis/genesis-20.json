@@ -1,0 +1,53 @@
+{
+  "book": "Genesis",
+  "chapter": 20,
+  "questions": [
+    {
+      "id": "genesis-20-q1",
+      "type": "multiple_choice",
+      "question": "To which king did Abraham again claim that Sarah was his sister?",
+      "options": [
+        "Pharaoh",
+        "Melchizedek",
+        "Kedorlaomer",
+        "Abimelech"
+      ],
+      "answer": "Abimelech",
+      "verse_reference": "Genesis 20:2"
+    },
+    {
+      "id": "genesis-20-q2",
+      "type": "multiple_choice",
+      "question": "How did God warn Abimelech not to touch Sarah?",
+      "options": [
+        "Through a prophet's letter",
+        "In a dream",
+        "Through an angel",
+        "With a plague"
+      ],
+      "answer": "In a dream",
+      "verse_reference": "Genesis 20:3"
+    },
+    {
+      "id": "genesis-20-q3",
+      "type": "true_false",
+      "question": "God called Abraham a prophet who would pray for Abimelech.",
+      "answer": "true",
+      "verse_reference": "Genesis 20:7"
+    },
+    {
+      "id": "genesis-20-q4",
+      "type": "fill_blank",
+      "question": "Abimelech was the king of _____.",
+      "answer": "Gerar",
+      "verse_reference": "Genesis 20:2"
+    },
+    {
+      "id": "genesis-20-q5",
+      "type": "fill_blank",
+      "question": "God told Abimelech that he had kept him from _____ against him.",
+      "answer": "sinning",
+      "verse_reference": "Genesis 20:6"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "book": "Ruth",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "ruth-1-q1",
+      "type": "multiple_choice",
+      "question": "Why did Naomi's family leave Bethlehem for Moab?",
+      "options": [
+        "A war",
+        "A famine",
+        "A king's order",
+        "Persecution"
+      ],
+      "answer": "A famine",
+      "verse_reference": "Ruth 1:1"
+    },
+    {
+      "id": "ruth-1-q2",
+      "type": "multiple_choice",
+      "question": "What did Ruth say when Naomi urged her to return to her own people?",
+      "options": [
+        "\"Let me stay and care for my own mother's house\"",
+        "\"I will return to my people once the famine ends\"",
+        "\"May the LORD watch between you and me while we are apart\"",
+        "\"Where you go I will go; your people will be my people\""
+      ],
+      "answer": "\"Where you go I will go; your people will be my people\"",
+      "verse_reference": "Ruth 1:16"
+    },
+    {
+      "id": "ruth-1-q3",
+      "type": "true_false",
+      "question": "Naomi's husband and both of her sons died in Moab.",
+      "answer": "true",
+      "verse_reference": "Ruth 1:3-5"
+    },
+    {
+      "id": "ruth-1-q4",
+      "type": "fill_blank",
+      "question": "Ruth told Naomi, \"Your people will be my people, and your God my _____.\"",
+      "answer": "God",
+      "verse_reference": "Ruth 1:16"
+    },
+    {
+      "id": "ruth-1-q5",
+      "type": "fill_blank",
+      "question": "Naomi returned to _____ with Ruth at the start of the barley harvest.",
+      "answer": "Bethlehem",
+      "accept": [
+        "Beth-lehem"
+      ],
+      "verse_reference": "Ruth 1:22"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "book": "Isaiah",
+  "chapter": 55,
+  "questions": [
+    {
+      "id": "isaiah-55-q1",
+      "type": "multiple_choice",
+      "question": "Whom does Isaiah 55 invite to come to the waters?",
+      "options": [
+        "Only those who are able to pay the full price in silver",
+        "Only the priests and the Levites who serve in the temple",
+        "Everyone who thirsts, and he who has no money",
+        "Only the kings and the great princes of all the nations"
+      ],
+      "answer": "Everyone who thirsts, and he who has no money",
+      "verse_reference": "Isaiah 55:1"
+    },
+    {
+      "id": "isaiah-55-q2",
+      "type": "multiple_choice",
+      "question": "What does God say about his word in Isaiah 55?",
+      "options": [
+        "It shall be hidden away entirely from the eyes of all men",
+        "It shall return at last to him again with all of their praises",
+        "It shall not return empty but accomplish what he purposes",
+        "It shall pass quickly away, just like the grass of the field"
+      ],
+      "answer": "It shall not return empty but accomplish what he purposes",
+      "verse_reference": "Isaiah 55:11"
+    },
+    {
+      "id": "isaiah-55-q3",
+      "type": "true_false",
+      "question": "Isaiah 55 says God's thoughts and ways are higher than ours, as the heavens are higher than the earth.",
+      "answer": "true",
+      "verse_reference": "Isaiah 55:8-9"
+    },
+    {
+      "id": "isaiah-55-q4",
+      "type": "fill_blank",
+      "question": "Seek the LORD while he may be found; call upon him while he is _____.",
+      "answer": "near",
+      "verse_reference": "Isaiah 55:6"
+    },
+    {
+      "id": "isaiah-55-q5",
+      "type": "fill_blank",
+      "question": "So shall my word be that goes out from my mouth; it shall not return to me _____.",
+      "answer": "empty",
+      "accept": [
+        "void"
+      ],
+      "verse_reference": "Isaiah 55:11"
+    }
+  ]
+}

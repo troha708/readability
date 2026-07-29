@@ -1,0 +1,53 @@
+{
+  "book": "2 Kings",
+  "chapter": 5,
+  "questions": [
+    {
+      "id": "2-kings-5-q1",
+      "type": "multiple_choice",
+      "question": "Who was the Aramean commander healed of leprosy?",
+      "options": [
+        "Hazael",
+        "Gehazi",
+        "Ben-Hadad",
+        "Naaman"
+      ],
+      "answer": "Naaman",
+      "verse_reference": "2 Kings 5:1"
+    },
+    {
+      "id": "2-kings-5-q2",
+      "type": "multiple_choice",
+      "question": "What did Elisha tell Naaman to do to be healed?",
+      "options": [
+        "Pray facing the temple thrice",
+        "Offer a lamb on the altar",
+        "Bathe in the river of Damascus",
+        "Wash seven times in the Jordan"
+      ],
+      "answer": "Wash seven times in the Jordan",
+      "verse_reference": "2 Kings 5:10"
+    },
+    {
+      "id": "2-kings-5-q3",
+      "type": "true_false",
+      "question": "Naaman was angry at first but then obeyed and was healed.",
+      "answer": "true",
+      "verse_reference": "2 Kings 5:11-14"
+    },
+    {
+      "id": "2-kings-5-q4",
+      "type": "fill_blank",
+      "question": "_____, commander of the army of Aram, was healed of his leprosy.",
+      "answer": "Naaman",
+      "verse_reference": "2 Kings 5:1"
+    },
+    {
+      "id": "2-kings-5-q5",
+      "type": "fill_blank",
+      "question": "Naaman dipped _____ times in the Jordan and his skin was restored.",
+      "answer": "seven",
+      "verse_reference": "2 Kings 5:14"
+    }
+  ]
+}

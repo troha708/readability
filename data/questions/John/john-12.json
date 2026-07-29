@@ -1,0 +1,53 @@
+{
+  "book": "John",
+  "chapter": 12,
+  "questions": [
+    {
+      "id": "john-12-q1",
+      "type": "multiple_choice",
+      "question": "Who anointed Jesus' feet with expensive perfume and wiped them with her hair?",
+      "options": [
+        "Martha",
+        "Mary",
+        "Mary Magdalene",
+        "Salome"
+      ],
+      "answer": "Mary",
+      "verse_reference": "John 12:3"
+    },
+    {
+      "id": "john-12-q2",
+      "type": "multiple_choice",
+      "question": "Who objected to the expensive perfume being used on Jesus' feet?",
+      "options": [
+        "Andrew his brother",
+        "Simon Peter",
+        "Thomas the twin",
+        "Judas Iscariot"
+      ],
+      "answer": "Judas Iscariot",
+      "verse_reference": "John 12:4-5"
+    },
+    {
+      "id": "john-12-q3",
+      "type": "true_false",
+      "question": "When Jesus entered Jerusalem, the crowd laid palm branches on the road.",
+      "answer": "false",
+      "verse_reference": "John 12:13"
+    },
+    {
+      "id": "john-12-q4",
+      "type": "fill_blank",
+      "question": "Unless a grain of _____ falls into the earth and dies, it remains by itself alone. But if it dies, it bears much fruit.",
+      "answer": "wheat",
+      "verse_reference": "John 12:24"
+    },
+    {
+      "id": "john-12-q5",
+      "type": "fill_blank",
+      "question": "And I, if I am lifted up from the _____, will draw all people to myself.",
+      "answer": "earth",
+      "verse_reference": "John 12:32"
+    }
+  ]
+}

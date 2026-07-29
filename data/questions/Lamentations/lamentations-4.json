@@ -1,0 +1,53 @@
+{
+  "book": "Lamentations",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "lamentations-4-q1",
+      "type": "multiple_choice",
+      "question": "What horror of the siege does Lamentations 4 describe?",
+      "options": [
+        "A deep and lasting peace that settled over the whole of the land",
+        "A great and abundant feast that filled up every single house",
+        "A rich harvest that wholly overflowed all of the storehouses",
+        "Famine so severe that the people starved and suffered terribly"
+      ],
+      "answer": "Famine so severe that the people starved and suffered terribly",
+      "verse_reference": "Lamentations 4:4-10"
+    },
+    {
+      "id": "lamentations-4-q2",
+      "type": "multiple_choice",
+      "question": "How does Lamentations 4 describe the former nobles compared to now?",
+      "options": [
+        "Once very poor and lowly, but now lifted up high in great honor",
+        "Once purer than snow, now blacker than soot, unrecognized",
+        "Once scattered far abroad, but now gathered back home again",
+        "Once entirely silent in their grief, but now singing aloud for joy"
+      ],
+      "answer": "Once purer than snow, now blacker than soot, unrecognized",
+      "verse_reference": "Lamentations 4:7-8"
+    },
+    {
+      "id": "lamentations-4-q3",
+      "type": "true_false",
+      "question": "Lamentations 4 says the punishment of Zion's iniquity was accomplished.",
+      "answer": "true",
+      "verse_reference": "Lamentations 4:22"
+    },
+    {
+      "id": "lamentations-4-q4",
+      "type": "fill_blank",
+      "question": "The tongue of the nursing infant sticks to the roof of its mouth for _____.",
+      "answer": "thirst",
+      "verse_reference": "Lamentations 4:4"
+    },
+    {
+      "id": "lamentations-4-q5",
+      "type": "fill_blank",
+      "question": "It was for the sins of her _____ and the iniquities of her priests.",
+      "answer": "prophets",
+      "verse_reference": "Lamentations 4:13"
+    }
+  ]
+}

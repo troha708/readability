@@ -1,0 +1,56 @@
+{
+  "book": "Matthew",
+  "chapter": 23,
+  "questions": [
+    {
+      "id": "matthew-23-q1",
+      "type": "multiple_choice",
+      "question": "Jesus repeatedly called the scribes and Pharisees what in this chapter?",
+      "options": [
+        "Vile sinners",
+        "Liars",
+        "Hypocrites",
+        "Fools"
+      ],
+      "answer": "Hypocrites",
+      "verse_reference": "Matthew 23:13"
+    },
+    {
+      "id": "matthew-23-q2",
+      "type": "multiple_choice",
+      "question": "Jesus said the Pharisees tithe mint, dill, and cummin but neglect what?",
+      "options": [
+        "Prayer and worship",
+        "The poor and the sick",
+        "Justice, mercy, and faith",
+        "Love and obedience"
+      ],
+      "answer": "Justice, mercy, and faith",
+      "verse_reference": "Matthew 23:23"
+    },
+    {
+      "id": "matthew-23-q3",
+      "type": "true_false",
+      "question": "Jesus compared the Pharisees to whitewashed tombs — beautiful on the outside but full of dead bones inside.",
+      "answer": "true",
+      "verse_reference": "Matthew 23:27"
+    },
+    {
+      "id": "matthew-23-q4",
+      "type": "fill_blank",
+      "question": "Whoever exalts himself will be humbled, and whoever humbles himself will be _____.",
+      "answer": "exalted",
+      "verse_reference": "Matthew 23:12"
+    },
+    {
+      "id": "matthew-23-q5",
+      "type": "fill_blank",
+      "question": "Jerusalem, Jerusalem, who kills the prophets and stones those who are sent to her! How often I would have gathered your children together, even as a hen gathers her _____ under her wings, and you would not!",
+      "answer": "chicks",
+      "accept": [
+        "chickens"
+      ],
+      "verse_reference": "Matthew 23:37"
+    }
+  ]
+}

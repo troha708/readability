@@ -1,0 +1,58 @@
+{
+  "book": "Revelation",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "rev_1_1",
+      "type": "multiple_choice",
+      "question": "Who received this revelation from God?",
+      "options": [
+        "John",
+        "Peter",
+        "James",
+        "Paul"
+      ],
+      "correct": "John",
+      "verse_ref": "Revelation 1:1",
+      "feedback": "The revelation was given to Jesus Christ's servant John."
+    },
+    {
+      "id": "rev_1_2",
+      "type": "multiple_choice",
+      "question": "How many churches does Jesus address in this book?",
+      "options": [
+        "Twelve",
+        "Ten",
+        "Three",
+        "Seven"
+      ],
+      "correct": "Seven",
+      "verse_ref": "Revelation 1:4",
+      "feedback": "The book is addressed to seven churches in Asia."
+    },
+    {
+      "id": "rev_1_3",
+      "type": "true_false",
+      "question": "John was on the island of Patmos when he received this revelation.",
+      "correct": true,
+      "verse_ref": "Revelation 1:9",
+      "feedback": "John was on the island of Patmos because of the word of God and the testimony of Jesus."
+    },
+    {
+      "id": "rev_1_4",
+      "type": "fill_in_the_blank",
+      "question": "Jesus says I am the Alpha and the _____, the First and the Last.",
+      "correct": "Omega",
+      "verse_ref": "Revelation 1:8",
+      "feedback": "Jesus is the Alpha and the Omega, the beginning and the end."
+    },
+    {
+      "id": "rev_1_5",
+      "type": "fill_in_the_blank",
+      "question": "Blessed is the one who reads aloud the words of this _____, and blessed are those who hear it.",
+      "correct": "prophecy",
+      "verse_ref": "Revelation 1:3",
+      "feedback": "Blessed is the one who reads and those who hear this prophecy."
+    }
+  ]
+}

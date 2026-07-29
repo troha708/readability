@@ -1,0 +1,58 @@
+{
+  "book": "Psalms",
+  "chapter": 47,
+  "questions": [
+    {
+      "id": "psalms-47-q1",
+      "type": "multiple_choice",
+      "question": "What are the peoples told to do in Psalm 47?",
+      "options": [
+        "Bow down in deep silence and wait patiently upon the LORD",
+        "Clap their hands and shout to God with loud songs of joy",
+        "Weep aloud and mourn deeply for the sins of the people",
+        "Bring forward their offerings and faithfully pay their vows"
+      ],
+      "answer": "Clap their hands and shout to God with loud songs of joy",
+      "verse_reference": "Psalm 47:1"
+    },
+    {
+      "id": "psalms-47-q2",
+      "type": "multiple_choice",
+      "question": "What does the psalm declare about God and the nations?",
+      "options": [
+        "God freely forgives the sins of all those who are penitent",
+        "God reigns over the nations; he is king of all the earth",
+        "God hides his face entirely from the wicked and the proud",
+        "God remembers his ancient covenant made with Abraham"
+      ],
+      "answer": "God reigns over the nations; he is king of all the earth",
+      "verse_reference": "Psalm 47:7-8"
+    },
+    {
+      "id": "psalms-47-q3",
+      "type": "true_false",
+      "question": "God has gone up with a shout, the LORD with the sound of a trumpet.",
+      "answer": "true",
+      "verse_reference": "Psalm 47:5"
+    },
+    {
+      "id": "psalms-47-q4",
+      "type": "fill_blank",
+      "question": "How _____ is the LORD Most High, the great King over all the earth!",
+      "answer": "awesome",
+      "accept": [
+        "feared",
+        "terrible",
+        "fearful"
+      ],
+      "verse_reference": "Psalm 47:2"
+    },
+    {
+      "id": "psalms-47-q5",
+      "type": "fill_blank",
+      "question": "Sing praises to God, sing praises! Sing praises to our _____!",
+      "answer": "King",
+      "verse_reference": "Psalm 47:6"
+    }
+  ]
+}

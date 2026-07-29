@@ -1,0 +1,53 @@
+{
+  "book": "Matthew",
+  "chapter": 21,
+  "questions": [
+    {
+      "id": "matthew-21-q1",
+      "type": "multiple_choice",
+      "question": "What animal did Jesus ride into Jerusalem on?",
+      "options": [
+        "A donkey",
+        "A mule",
+        "A horse",
+        "A camel"
+      ],
+      "answer": "A donkey",
+      "verse_reference": "Matthew 21:7"
+    },
+    {
+      "id": "matthew-21-q2",
+      "type": "multiple_choice",
+      "question": "What did Jesus do when he entered the temple?",
+      "options": [
+        "He sat down and taught the Pharisees",
+        "He prayed quietly in a corner alone",
+        "He drove out those who sold and bought",
+        "He healed the blind and the lame there"
+      ],
+      "answer": "He drove out those who sold and bought",
+      "verse_reference": "Matthew 21:12"
+    },
+    {
+      "id": "matthew-21-q3",
+      "type": "true_false",
+      "question": "The fig tree that Jesus cursed withered immediately.",
+      "answer": "true",
+      "verse_reference": "Matthew 21:19"
+    },
+    {
+      "id": "matthew-21-q4",
+      "type": "fill_blank",
+      "question": "The crowds cried out, '_____! Blessed is he who comes in the name of the Lord!'",
+      "answer": "Hosanna",
+      "verse_reference": "Matthew 21:9"
+    },
+    {
+      "id": "matthew-21-q5",
+      "type": "fill_blank",
+      "question": "Jesus said, 'My house shall be called a house of _____,' but you have made it a den of robbers.",
+      "answer": "prayer",
+      "verse_reference": "Matthew 21:13"
+    }
+  ]
+}

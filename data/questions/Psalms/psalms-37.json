@@ -1,0 +1,56 @@
+{
+  "book": "Psalms",
+  "chapter": 37,
+  "questions": [
+    {
+      "id": "psalms-37-q1",
+      "type": "multiple_choice",
+      "question": "What command opens Psalm 37?",
+      "options": [
+        "Hide yourself from the coming wrath",
+        "Fret not yourself because of evildoers",
+        "Cry aloud against the wicked rulers",
+        "Boast not yourself before the mighty"
+      ],
+      "answer": "Fret not yourself because of evildoers",
+      "verse_reference": "Psalm 37:1"
+    },
+    {
+      "id": "psalms-37-q2",
+      "type": "multiple_choice",
+      "question": "What promise is given to those who delight in the LORD?",
+      "options": [
+        "He will repay all of your enemies double",
+        "He will give you the desires of your heart",
+        "He will lift you up high above the nations",
+        "He will fill all of your barns with grain"
+      ],
+      "answer": "He will give you the desires of your heart",
+      "verse_reference": "Psalm 37:4"
+    },
+    {
+      "id": "psalms-37-q3",
+      "type": "true_false",
+      "question": "The psalm says the meek shall inherit the land and delight in abundant peace.",
+      "answer": "true",
+      "verse_reference": "Psalm 37:11"
+    },
+    {
+      "id": "psalms-37-q4",
+      "type": "fill_blank",
+      "question": "Commit your way to the LORD; trust in Him, and He will _____ it.",
+      "answer": "do",
+      "verse_reference": "Psalm 37:5"
+    },
+    {
+      "id": "psalms-37-q5",
+      "type": "fill_blank",
+      "question": "The steps of a man are ordered by the LORD, who takes _____ in his journey.",
+      "answer": "delight",
+      "accept": [
+        "delights"
+      ],
+      "verse_reference": "Psalm 37:23"
+    }
+  ]
+}

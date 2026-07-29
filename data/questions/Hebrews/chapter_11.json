@@ -1,0 +1,58 @@
+{
+  "book": "Hebrews",
+  "chapter": 11,
+  "questions": [
+    {
+      "id": "heb_11_1",
+      "type": "multiple_choice",
+      "question": "How does the author define faith?",
+      "options": [
+        "A steady and very sure trust in all those who lead and teach the church",
+        "A firm belief in all of the signs and wonders that God works",
+        "The substance of things hoped for, the evidence of things not seen",
+        "Full and complete obedience to every command of the holy law"
+      ],
+      "correct": "The substance of things hoped for, the evidence of things not seen",
+      "verse_ref": "Hebrews 11:1",
+      "feedback": "Faith is the substance of things hoped for, the evidence of things not seen."
+    },
+    {
+      "id": "heb_11_2",
+      "type": "multiple_choice",
+      "question": "By faith, who offered a more acceptable sacrifice than his brother?",
+      "options": [
+        "Abel",
+        "Noah",
+        "Abraham",
+        "Isaac"
+      ],
+      "correct": "Abel",
+      "verse_ref": "Hebrews 11:4",
+      "feedback": "By faith Abel offered a more acceptable sacrifice than Cain."
+    },
+    {
+      "id": "heb_11_3",
+      "type": "true_false",
+      "question": "Without faith it is impossible to please God.",
+      "correct": true,
+      "verse_ref": "Hebrews 11:6",
+      "feedback": "Without faith it is impossible to please God."
+    },
+    {
+      "id": "heb_11_4",
+      "type": "fill_in_the_blank",
+      "question": "By faith Abraham obeyed when called to go to a place he would receive as an inheritance, and he went out not knowing where he was _____.",
+      "correct": "going",
+      "verse_ref": "Hebrews 11:8",
+      "feedback": "Abraham went out not knowing where he was going."
+    },
+    {
+      "id": "heb_11_5",
+      "type": "fill_in_the_blank",
+      "question": "Moses chose to be mistreated with God's people rather than enjoy the fleeting pleasures of _____.",
+      "correct": "sin",
+      "verse_ref": "Hebrews 11:25",
+      "feedback": "Moses chose mistreatment over the fleeting pleasures of sin."
+    }
+  ]
+}

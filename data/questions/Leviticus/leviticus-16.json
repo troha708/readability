@@ -1,0 +1,53 @@
+{
+  "book": "Leviticus",
+  "chapter": 16,
+  "questions": [
+    {
+      "id": "leviticus-16-q1",
+      "type": "multiple_choice",
+      "question": "What important annual day does chapter 16 establish?",
+      "options": [
+        "The Passover feast",
+        "The Feast of Tabernacles",
+        "The day of Pentecost",
+        "The Day of Atonement"
+      ],
+      "answer": "The Day of Atonement",
+      "verse_reference": "Leviticus 16:30"
+    },
+    {
+      "id": "leviticus-16-q2",
+      "type": "multiple_choice",
+      "question": "What was done with the live \"scapegoat\"?",
+      "options": [
+        "It was given to the priests to eat before the LORD",
+        "It was set free to roam freely within the camp",
+        "It was sent into the wilderness bearing the people's sins",
+        "It was slaughtered and its blood sprinkled all over the altar"
+      ],
+      "answer": "It was sent into the wilderness bearing the people's sins",
+      "verse_reference": "Leviticus 16:21-22"
+    },
+    {
+      "id": "leviticus-16-q3",
+      "type": "true_false",
+      "question": "On this day the high priest entered the Most Holy Place to make atonement for Israel.",
+      "answer": "true",
+      "verse_reference": "Leviticus 16:2"
+    },
+    {
+      "id": "leviticus-16-q4",
+      "type": "fill_blank",
+      "question": "The high priest sent the live goat into the _____ to carry away the people's sins.",
+      "answer": "wilderness",
+      "verse_reference": "Leviticus 16:22"
+    },
+    {
+      "id": "leviticus-16-q5",
+      "type": "fill_blank",
+      "question": "On this day atonement was made to cleanse the people from all their _____.",
+      "answer": "sins",
+      "verse_reference": "Leviticus 16:30"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "book": "Genesis",
+  "chapter": 7,
+  "questions": [
+    {
+      "id": "genesis-7-q1",
+      "type": "multiple_choice",
+      "question": "How many days and nights did the rain fall?",
+      "options": [
+        "Fifty",
+        "Twenty",
+        "Seven",
+        "Forty"
+      ],
+      "answer": "Forty",
+      "verse_reference": "Genesis 7:12"
+    },
+    {
+      "id": "genesis-7-q2",
+      "type": "multiple_choice",
+      "question": "How many of each clean animal did Noah take into the ark?",
+      "options": [
+        "One pair",
+        "Seven pairs",
+        "Ten",
+        "Twelve"
+      ],
+      "answer": "Seven pairs",
+      "verse_reference": "Genesis 7:2"
+    },
+    {
+      "id": "genesis-7-q3",
+      "type": "true_false",
+      "question": "Only Noah, his family, and the animals on the ark survived the flood.",
+      "answer": "true",
+      "verse_reference": "Genesis 7:23"
+    },
+    {
+      "id": "genesis-7-q4",
+      "type": "fill_blank",
+      "question": "After Noah and the animals entered, the LORD shut him _____.",
+      "answer": "in",
+      "verse_reference": "Genesis 7:16"
+    },
+    {
+      "id": "genesis-7-q5",
+      "type": "fill_blank",
+      "question": "Noah was _____ hundred years old when the floodwaters came.",
+      "answer": "six",
+      "accept": [
+        "6"
+      ],
+      "verse_reference": "Genesis 7:6"
+    }
+  ]
+}

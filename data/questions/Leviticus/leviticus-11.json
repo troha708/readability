@@ -1,0 +1,53 @@
+{
+  "book": "Leviticus",
+  "chapter": 11,
+  "questions": [
+    {
+      "id": "leviticus-11-q1",
+      "type": "multiple_choice",
+      "question": "What is the subject of chapter 11?",
+      "options": [
+        "Clean and unclean animals (dietary laws)",
+        "The yearly feasts and sacred days",
+        "The grain and burnt offerings",
+        "The duties of the high priest"
+      ],
+      "answer": "Clean and unclean animals (dietary laws)",
+      "verse_reference": "Leviticus 11:2"
+    },
+    {
+      "id": "leviticus-11-q2",
+      "type": "multiple_choice",
+      "question": "A land animal was clean if it had a split hoof and did what?",
+      "options": [
+        "Flew",
+        "Chewed the cud",
+        "Swam",
+        "Had sharp claws and paws"
+      ],
+      "answer": "Chewed the cud",
+      "verse_reference": "Leviticus 11:3"
+    },
+    {
+      "id": "leviticus-11-q3",
+      "type": "true_false",
+      "question": "Animals like the pig, which does not chew the cud, were counted unclean.",
+      "answer": "true",
+      "verse_reference": "Leviticus 11:7"
+    },
+    {
+      "id": "leviticus-11-q4",
+      "type": "fill_blank",
+      "question": "God said, \"Be holy, for I am _____.\"",
+      "answer": "holy",
+      "verse_reference": "Leviticus 11:44"
+    },
+    {
+      "id": "leviticus-11-q5",
+      "type": "fill_blank",
+      "question": "Sea creatures were clean only if they had fins and _____.",
+      "answer": "scales",
+      "verse_reference": "Leviticus 11:9"
+    }
+  ]
+}

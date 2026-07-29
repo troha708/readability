@@ -1,0 +1,59 @@
+{
+  "book": "Jeremiah",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "jeremiah-1-q1",
+      "type": "multiple_choice",
+      "question": "What did God say to Jeremiah about before he was born?",
+      "options": [
+        "Before I formed you in the womb I knew you, and appointed you a prophet to the nations",
+        "You would one day sit upon the throne of David and rule over all of the land",
+        "From your earliest youth you would walk faithfully in all the ways of your fathers before you",
+        "You would serve as a priest in the house of the LORD all the days of your life"
+      ],
+      "answer": "Before I formed you in the womb I knew you, and appointed you a prophet to the nations",
+      "verse_reference": "Jeremiah 1:5"
+    },
+    {
+      "id": "jeremiah-1-q2",
+      "type": "multiple_choice",
+      "question": "What two visions did Jeremiah see at his call?",
+      "options": [
+        "A green vine and a basket of ripe summer figs",
+        "A flying scroll and a sharpened sword of judgment",
+        "An almond branch and a boiling pot facing from the north",
+        "A roaring lion and a gentle young lamb lying down together"
+      ],
+      "answer": "An almond branch and a boiling pot facing from the north",
+      "verse_reference": "Jeremiah 1:11-13"
+    },
+    {
+      "id": "jeremiah-1-q3",
+      "type": "true_false",
+      "question": "Jeremiah objected that he was only a youth and did not know how to speak.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 1:6"
+    },
+    {
+      "id": "jeremiah-1-q4",
+      "type": "fill_blank",
+      "question": "Before I formed you in the _____ I knew you.",
+      "answer": "womb",
+      "accept": [
+        "belly"
+      ],
+      "verse_reference": "Jeremiah 1:5"
+    },
+    {
+      "id": "jeremiah-1-q5",
+      "type": "fill_blank",
+      "question": "Do not be afraid of them, for I am with you to _____ you, declares the LORD.",
+      "answer": "deliver",
+      "accept": [
+        "rescue"
+      ],
+      "verse_reference": "Jeremiah 1:8"
+    }
+  ]
+}

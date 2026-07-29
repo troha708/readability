@@ -1,0 +1,56 @@
+{
+  "book": "Mark",
+  "chapter": 16,
+  "questions": [
+    {
+      "id": "mark-16-q1",
+      "type": "multiple_choice",
+      "question": "Who went to Jesus' tomb early on the first day of the week?",
+      "options": [
+        "Peter, and James, and John",
+        "Mary Magdalene, Mary, and Salome",
+        "The eleven gathered close disciples",
+        "Joseph of Arimathaea alone"
+      ],
+      "answer": "Mary Magdalene, Mary, and Salome",
+      "verse_reference": "Mark 16:1"
+    },
+    {
+      "id": "mark-16-q2",
+      "type": "multiple_choice",
+      "question": "Who did the young man in white at the tomb tell the women to go tell?",
+      "options": [
+        "The chief priests and elders",
+        "The waiting crowds in the city",
+        "His disciples and Peter",
+        "Pilate and the Roman guards"
+      ],
+      "answer": "His disciples and Peter",
+      "verse_reference": "Mark 16:7"
+    },
+    {
+      "id": "mark-16-q3",
+      "type": "true_false",
+      "question": "The women found the stone already rolled away when they arrived at the tomb.",
+      "answer": "true",
+      "verse_reference": "Mark 16:4"
+    },
+    {
+      "id": "mark-16-q4",
+      "type": "fill_blank",
+      "question": "He has _____! He is not here.",
+      "answer": "risen",
+      "verse_reference": "Mark 16:6"
+    },
+    {
+      "id": "mark-16-q5",
+      "type": "fill_blank",
+      "question": "Go into all the world and preach the gospel to every _____.",
+      "answer": "creature",
+      "accept": [
+        "creation"
+      ],
+      "verse_reference": "Mark 16:15"
+    }
+  ]
+}

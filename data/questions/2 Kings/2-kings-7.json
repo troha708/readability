@@ -1,0 +1,57 @@
+{
+  "book": "2 Kings",
+  "chapter": 7,
+  "questions": [
+    {
+      "id": "2-kings-7-q1",
+      "type": "multiple_choice",
+      "question": "Who first discovered that the Aramean camp had been abandoned?",
+      "options": [
+        "The soldiers on the city wall",
+        "Four lepers at the city gate",
+        "The king and his advisers",
+        "Elisha the prophet himself"
+      ],
+      "answer": "Four lepers at the city gate",
+      "verse_reference": "2 Kings 7:3-8"
+    },
+    {
+      "id": "2-kings-7-q2",
+      "type": "multiple_choice",
+      "question": "What had the Arameans heard that made them flee?",
+      "options": [
+        "The roar of a sudden storm",
+        "The loud blast of the watchman's trumpet",
+        "The sound of chariots and a great army",
+        "The shaking of a great earthquake"
+      ],
+      "answer": "The sound of chariots and a great army",
+      "verse_reference": "2 Kings 7:6-7"
+    },
+    {
+      "id": "2-kings-7-q3",
+      "type": "true_false",
+      "question": "Elisha had prophesied that food would become cheap and plentiful the next day.",
+      "answer": "true",
+      "verse_reference": "2 Kings 7:1"
+    },
+    {
+      "id": "2-kings-7-q4",
+      "type": "fill_blank",
+      "question": "Four men with _____ found the Aramean camp deserted and full of food.",
+      "answer": "leprosy",
+      "verse_reference": "2 Kings 7:3-8"
+    },
+    {
+      "id": "2-kings-7-q5",
+      "type": "fill_blank",
+      "question": "The LORD had made the Arameans hear the sound of a great _____, so they fled.",
+      "answer": "army",
+      "accept": [
+        "host",
+        "force"
+      ],
+      "verse_reference": "2 Kings 7:6"
+    }
+  ]
+}

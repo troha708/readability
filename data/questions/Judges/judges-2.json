@@ -1,0 +1,56 @@
+{
+  "book": "Judges",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "judges-2-q1",
+      "type": "multiple_choice",
+      "question": "What recurring cycle begins after Joshua's generation died?",
+      "options": [
+        "Israel wars with Egypt and is then carried off into exile",
+        "Israel grows rich and then divides into rival kingdoms",
+        "Israel sins, is oppressed, cries out, and God raises a judge",
+        "Israel enjoys a constant peace under a line of faithful kings"
+      ],
+      "answer": "Israel sins, is oppressed, cries out, and God raises a judge",
+      "verse_reference": "Judges 2:11-19"
+    },
+    {
+      "id": "judges-2-q2",
+      "type": "multiple_choice",
+      "question": "Why did the Israelites turn away from God?",
+      "options": [
+        "A great famine drove them to seek out foreign help",
+        "They served the Baals and other gods of the nations",
+        "A long and bitter war wore down their faith in God",
+        "A severe drought made them doubt the LORD's care"
+      ],
+      "answer": "They served the Baals and other gods of the nations",
+      "verse_reference": "Judges 2:11-13"
+    },
+    {
+      "id": "judges-2-q3",
+      "type": "true_false",
+      "question": "God raised up judges to rescue Israel when they cried out.",
+      "answer": "true",
+      "verse_reference": "Judges 2:16"
+    },
+    {
+      "id": "judges-2-q4",
+      "type": "fill_blank",
+      "question": "The Israelites did evil and served the _____, forsaking the LORD.",
+      "answer": "Baals",
+      "accept": [
+        "Baalim"
+      ],
+      "verse_reference": "Judges 2:11"
+    },
+    {
+      "id": "judges-2-q5",
+      "type": "fill_blank",
+      "question": "When the LORD raised up a _____, he saved Israel from their enemies.",
+      "answer": "judge",
+      "verse_reference": "Judges 2:18"
+    }
+  ]
+}

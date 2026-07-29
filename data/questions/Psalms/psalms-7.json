@@ -1,0 +1,57 @@
+{
+  "book": "Psalms",
+  "chapter": 7,
+  "questions": [
+    {
+      "id": "psalms-7-q1",
+      "type": "multiple_choice",
+      "question": "What does David ask God to do in Psalm 7?",
+      "options": [
+        "Save and deliver him from his pursuers",
+        "Grant him victory over the nations",
+        "Establish his throne forever",
+        "Repay him for all of the good he has done"
+      ],
+      "answer": "Save and deliver him from his pursuers",
+      "verse_reference": "Psalm 7:1"
+    },
+    {
+      "id": "psalms-7-q2",
+      "type": "multiple_choice",
+      "question": "How is God described in this psalm?",
+      "options": [
+        "A distant ruler",
+        "A righteous judge",
+        "A warrior only",
+        "Silent"
+      ],
+      "answer": "A righteous judge",
+      "verse_reference": "Psalm 7:11"
+    },
+    {
+      "id": "psalms-7-q3",
+      "type": "true_false",
+      "question": "David says the wicked who digs a pit falls into the hole he has made.",
+      "answer": "true",
+      "verse_reference": "Psalm 7:15"
+    },
+    {
+      "id": "psalms-7-q4",
+      "type": "fill_blank",
+      "question": "God is a righteous judge, and a God who feels _____ every day.",
+      "answer": "indignation",
+      "accept": [
+        "indignant",
+        "angry"
+      ],
+      "verse_reference": "Psalm 7:11"
+    },
+    {
+      "id": "psalms-7-q5",
+      "type": "fill_blank",
+      "question": "I will give thanks to the LORD due to his _____.",
+      "answer": "righteousness",
+      "verse_reference": "Psalm 7:17"
+    }
+  ]
+}

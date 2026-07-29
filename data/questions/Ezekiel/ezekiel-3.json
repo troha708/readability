@@ -1,0 +1,56 @@
+{
+  "book": "Ezekiel",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "ezekiel-3-q1",
+      "type": "multiple_choice",
+      "question": "What did God tell Ezekiel to do with the scroll?",
+      "options": [
+        "Burn it",
+        "Hide it",
+        "Eat it",
+        "Bury it"
+      ],
+      "answer": "Eat it",
+      "verse_reference": "Ezekiel 3:1"
+    },
+    {
+      "id": "ezekiel-3-q2",
+      "type": "multiple_choice",
+      "question": "How did the scroll taste?",
+      "options": [
+        "Bitter",
+        "As sweet as honey",
+        "Sour",
+        "Like cold gray ashes"
+      ],
+      "answer": "As sweet as honey",
+      "verse_reference": "Ezekiel 3:3"
+    },
+    {
+      "id": "ezekiel-3-q3",
+      "type": "true_false",
+      "question": "God appointed Ezekiel as a watchman for the house of Israel, accountable to warn them.",
+      "answer": "true",
+      "verse_reference": "Ezekiel 3:17"
+    },
+    {
+      "id": "ezekiel-3-q4",
+      "type": "fill_blank",
+      "question": "Son of man, eat this _____ that I give you, and fill your stomach with it.",
+      "answer": "scroll",
+      "accept": [
+        "roll"
+      ],
+      "verse_reference": "Ezekiel 3:3"
+    },
+    {
+      "id": "ezekiel-3-q5",
+      "type": "fill_blank",
+      "question": "I have made you a _____ for the house of Israel.",
+      "answer": "watchman",
+      "verse_reference": "Ezekiel 3:17"
+    }
+  ]
+}

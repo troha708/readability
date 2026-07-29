@@ -1,0 +1,59 @@
+{
+  "book": "Jeremiah",
+  "chapter": 19,
+  "questions": [
+    {
+      "id": "jeremiah-19-q1",
+      "type": "multiple_choice",
+      "question": "What object did God have Jeremiah break in chapter 19, in the Valley of Hinnom?",
+      "options": [
+        "A long scroll all covered over with writing",
+        "A linen belt taken from off his own waist",
+        "A heavy wooden yoke made for the neck",
+        "A clay flask (potter's earthenware jar)"
+      ],
+      "answer": "A clay flask (potter's earthenware jar)",
+      "verse_reference": "Jeremiah 19:1, 10"
+    },
+    {
+      "id": "jeremiah-19-q2",
+      "type": "multiple_choice",
+      "question": "What did breaking the flask symbolize?",
+      "options": [
+        "That the holy temple would at last be rebuilt after the exile ended",
+        "That God would break this people and this city beyond mending",
+        "That the people would be reshaped by him into something wholly new",
+        "That the great army of the enemy would soon be shattered to pieces"
+      ],
+      "answer": "That God would break this people and this city beyond mending",
+      "verse_reference": "Jeremiah 19:11"
+    },
+    {
+      "id": "jeremiah-19-q3",
+      "type": "true_false",
+      "question": "Jeremiah condemned the people for burning their children as offerings at Topheth.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 19:5"
+    },
+    {
+      "id": "jeremiah-19-q4",
+      "type": "fill_blank",
+      "question": "I will shatter this people and this city, like a potter's jar that can never again be _____.",
+      "answer": "repaired",
+      "accept": [
+        "whole"
+      ],
+      "verse_reference": "Jeremiah 19:11"
+    },
+    {
+      "id": "jeremiah-19-q5",
+      "type": "fill_blank",
+      "question": "Jeremiah broke the flask in the Valley of the Son of _____ (Topheth).",
+      "answer": "Hinnom",
+      "accept": [
+        "Ben-hinnom"
+      ],
+      "verse_reference": "Jeremiah 19:2, 10"
+    }
+  ]
+}

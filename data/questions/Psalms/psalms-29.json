@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 29,
+  "questions": [
+    {
+      "id": "psalms-29-q1",
+      "type": "multiple_choice",
+      "question": "What does Psalm 29 repeatedly describe?",
+      "options": [
+        "The voice of the LORD",
+        "The hand of the LORD",
+        "The throne of the LORD",
+        "The face of the LORD"
+      ],
+      "answer": "The voice of the LORD",
+      "verse_reference": "Psalm 29:3"
+    },
+    {
+      "id": "psalms-29-q2",
+      "type": "multiple_choice",
+      "question": "What does the voice of the LORD do to the cedars?",
+      "options": [
+        "Plants them",
+        "Breaks them",
+        "Waters them",
+        "Counts them"
+      ],
+      "answer": "Breaks them",
+      "verse_reference": "Psalm 29:5"
+    },
+    {
+      "id": "psalms-29-q3",
+      "type": "true_false",
+      "question": "The psalm ends with the LORD giving strength to his people and blessing them with peace.",
+      "answer": "true",
+      "verse_reference": "Psalm 29:11"
+    },
+    {
+      "id": "psalms-29-q4",
+      "type": "fill_blank",
+      "question": "Ascribe to the LORD the glory due his _____.",
+      "answer": "name",
+      "verse_reference": "Psalm 29:2"
+    },
+    {
+      "id": "psalms-29-q5",
+      "type": "fill_blank",
+      "question": "The voice of the LORD is over the _____.",
+      "answer": "waters",
+      "verse_reference": "Psalm 29:3"
+    }
+  ]
+}

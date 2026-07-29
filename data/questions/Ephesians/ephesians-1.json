@@ -1,0 +1,56 @@
+{
+  "book": "Ephesians",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "eph-1-q1",
+      "type": "multiple_choice",
+      "question": "According to Paul, when did God choose believers in Christ?",
+      "options": [
+        "At the time of their baptism",
+        "When they first came to truly believe",
+        "Before the foundation of the world",
+        "Back in the days of Moses"
+      ],
+      "answer": "Before the foundation of the world",
+      "verse_reference": "Ephesians 1:4"
+    },
+    {
+      "id": "eph-1-q2",
+      "type": "multiple_choice",
+      "question": "Paul prays that God would give the Ephesians a spirit of what?",
+      "options": [
+        "Power and might",
+        "Wisdom and revelation",
+        "Patience and endurance",
+        "Joy and peace"
+      ],
+      "answer": "Wisdom and revelation",
+      "verse_reference": "Ephesians 1:17"
+    },
+    {
+      "id": "eph-1-q3",
+      "type": "true_false",
+      "question": "Paul says believers were sealed with the Holy Spirit as a guarantee of their inheritance.",
+      "answer": "true",
+      "verse_reference": "Ephesians 1:13-14"
+    },
+    {
+      "id": "eph-1-q4",
+      "type": "fill_blank",
+      "question": "In him we have redemption through his blood, the _____ of our trespasses, according to the riches of his grace.",
+      "answer": "forgiveness",
+      "accept": [
+        "remission"
+      ],
+      "verse_reference": "Ephesians 1:7"
+    },
+    {
+      "id": "eph-1-q5",
+      "type": "fill_blank",
+      "question": "God placed all things under Christ's feet and appointed him to be _____ over everything for the church.",
+      "answer": "head",
+      "verse_reference": "Ephesians 1:22"
+    }
+  ]
+}

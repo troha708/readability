@@ -1,0 +1,53 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 9,
+  "questions": [
+    {
+      "id": "2-chronicles-9-q1",
+      "type": "multiple_choice",
+      "question": "Who came to test Solomon with hard questions?",
+      "options": [
+        "The queen of Egypt",
+        "The queen of Sheba",
+        "Pharaoh's daughter",
+        "The queen of Babylon"
+      ],
+      "answer": "The queen of Sheba",
+      "verse_reference": "2 Chronicles 9:1"
+    },
+    {
+      "id": "2-chronicles-9-q2",
+      "type": "multiple_choice",
+      "question": "How did the queen of Sheba react to Solomon's wisdom and wealth?",
+      "options": [
+        "She was wholly unimpressed by it",
+        "There was no more breath in her",
+        "She demanded tribute from Solomon",
+        "She left the city at once in anger"
+      ],
+      "answer": "There was no more breath in her",
+      "verse_reference": "2 Chronicles 9:4"
+    },
+    {
+      "id": "2-chronicles-9-q3",
+      "type": "true_false",
+      "question": "Solomon surpassed all the kings of the earth in riches and wisdom.",
+      "answer": "true",
+      "verse_reference": "2 Chronicles 9:22"
+    },
+    {
+      "id": "2-chronicles-9-q4",
+      "type": "fill_blank",
+      "question": "The queen said the half of Solomon's wisdom had not been _____ to her.",
+      "answer": "told",
+      "verse_reference": "2 Chronicles 9:6"
+    },
+    {
+      "id": "2-chronicles-9-q5",
+      "type": "fill_blank",
+      "question": "Solomon reigned forty years in Jerusalem, then slept with his fathers, and _____ his son reigned.",
+      "answer": "Rehoboam",
+      "verse_reference": "2 Chronicles 9:30-31"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "book": "Leviticus",
+  "chapter": 19,
+  "questions": [
+    {
+      "id": "leviticus-19-q1",
+      "type": "multiple_choice",
+      "question": "What famous command appears in chapter 19?",
+      "options": [
+        "\"Love your neighbor as yourself\"",
+        "\"An eye for an eye, a tooth for a tooth\"",
+        "\"Be fruitful and multiply and fill the earth\"",
+        "\"You shall have no other gods before me\""
+      ],
+      "answer": "\"Love your neighbor as yourself\"",
+      "verse_reference": "Leviticus 19:18"
+    },
+    {
+      "id": "leviticus-19-q2",
+      "type": "multiple_choice",
+      "question": "How were farmers told to treat the edges of their fields and the leftover gleanings?",
+      "options": [
+        "Leave them for the poor and the foreigner",
+        "Harvest every last bit of the grain",
+        "Burn the leftover stalks out in the open field",
+        "Sell the gleanings at the city gate"
+      ],
+      "answer": "Leave them for the poor and the foreigner",
+      "verse_reference": "Leviticus 19:9-10"
+    },
+    {
+      "id": "leviticus-19-q3",
+      "type": "true_false",
+      "question": "God commanded, \"Be holy, for I the LORD your God am holy.\"",
+      "answer": "true",
+      "verse_reference": "Leviticus 19:2"
+    },
+    {
+      "id": "leviticus-19-q4",
+      "type": "fill_blank",
+      "question": "\"You shall love your _____ as yourself.\"",
+      "answer": "neighbor",
+      "accept": ["neighbour"],
+      "verse_reference": "Leviticus 19:18"
+    },
+    {
+      "id": "leviticus-19-q5",
+      "type": "fill_blank",
+      "question": "You are to rise in the presence of the elderly and honor the _____.",
+      "answer": "aged",
+      "accept": [
+        "old man",
+        "elderly",
+        "old"
+      ],
+      "verse_reference": "Leviticus 19:32"
+    }
+  ]
+}

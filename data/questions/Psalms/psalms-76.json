@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 76,
+  "questions": [
+    {
+      "id": "psalms-76-q1",
+      "type": "multiple_choice",
+      "question": "In what land is God said to be known in Psalm 76?",
+      "options": [
+        "Egypt",
+        "Edom",
+        "Judah",
+        "Babylon"
+      ],
+      "answer": "Judah",
+      "verse_reference": "Psalm 76:1"
+    },
+    {
+      "id": "psalms-76-q2",
+      "type": "multiple_choice",
+      "question": "What does God do to the weapons of war?",
+      "options": [
+        "Stills the raging sea, the waves, the deep, and the rising floods",
+        "Scatters the heavy clouds, the wind, the rain, and the storm",
+        "Tears down the high walls, the gates, the towers, and the bars",
+        "Breaks the flashing arrows, the shield, the sword, and the weapons"
+      ],
+      "answer": "Breaks the flashing arrows, the shield, the sword, and the weapons",
+      "verse_reference": "Psalm 76:3"
+    },
+    {
+      "id": "psalms-76-q3",
+      "type": "true_false",
+      "question": "The psalm says God is to be feared, and that the wrath of man shall praise him.",
+      "answer": "true",
+      "verse_reference": "Psalm 76:10"
+    },
+    {
+      "id": "psalms-76-q4",
+      "type": "fill_blank",
+      "question": "In Judah God is known; his name is great in _____.",
+      "answer": "Israel",
+      "verse_reference": "Psalm 76:1"
+    },
+    {
+      "id": "psalms-76-q5",
+      "type": "fill_blank",
+      "question": "You, you are to be _____! Who can stand before you when once your anger is roused?",
+      "answer": "feared",
+      "verse_reference": "Psalm 76:7"
+    }
+  ]
+}

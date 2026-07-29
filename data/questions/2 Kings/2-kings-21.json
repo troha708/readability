@@ -1,0 +1,53 @@
+{
+  "book": "2 Kings",
+  "chapter": 21,
+  "questions": [
+    {
+      "id": "2-kings-21-q1",
+      "type": "multiple_choice",
+      "question": "What kind of king was Manasseh of Judah?",
+      "options": [
+        "A foreign ruler imposed by Assyria",
+        "Good and faithful, trusting the LORD",
+        "Weak but harmless, doing little at all",
+        "Very wicked, leading Judah into idolatry"
+      ],
+      "answer": "Very wicked, leading Judah into idolatry",
+      "verse_reference": "2 Kings 21:2-6"
+    },
+    {
+      "id": "2-kings-21-q2",
+      "type": "multiple_choice",
+      "question": "What did Manasseh do that was especially evil?",
+      "options": [
+        "Rebuilt the whole temple and all its furnishings",
+        "Shed much innocent blood and practiced sorcery",
+        "Raised very heavy taxes on all of the people",
+        "Waged constant war on the surrounding nations"
+      ],
+      "answer": "Shed much innocent blood and practiced sorcery",
+      "verse_reference": "2 Kings 21:6-16"
+    },
+    {
+      "id": "2-kings-21-q3",
+      "type": "true_false",
+      "question": "Manasseh reigned longer than any other king of Judah (fifty-five years).",
+      "answer": "true",
+      "verse_reference": "2 Kings 21:1"
+    },
+    {
+      "id": "2-kings-21-q4",
+      "type": "fill_blank",
+      "question": "King _____ led Judah into terrible idolatry and shed much innocent blood.",
+      "answer": "Manasseh",
+      "verse_reference": "2 Kings 21:1-6"
+    },
+    {
+      "id": "2-kings-21-q5",
+      "type": "fill_blank",
+      "question": "Manasseh even built _____ for false gods in the temple of the LORD.",
+      "answer": "altars",
+      "verse_reference": "2 Kings 21:4-5"
+    }
+  ]
+}

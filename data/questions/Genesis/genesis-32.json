@@ -1,0 +1,53 @@
+{
+  "book": "Genesis",
+  "chapter": 32,
+  "questions": [
+    {
+      "id": "genesis-32-q1",
+      "type": "multiple_choice",
+      "question": "Whom was Jacob terrified to meet as he returned to Canaan?",
+      "options": [
+        "Laban",
+        "Esau",
+        "Pharaoh",
+        "Abimelech"
+      ],
+      "answer": "Esau",
+      "verse_reference": "Genesis 32:7"
+    },
+    {
+      "id": "genesis-32-q2",
+      "type": "multiple_choice",
+      "question": "With whom did Jacob wrestle through the night?",
+      "options": [
+        "A man (later identified with God)",
+        "An angel sent ahead of Esau",
+        "His estranged brother Esau himself",
+        "A robber who attacked in the night"
+      ],
+      "answer": "A man (later identified with God)",
+      "verse_reference": "Genesis 32:24"
+    },
+    {
+      "id": "genesis-32-q3",
+      "type": "true_false",
+      "question": "Jacob's hip was wrenched during the wrestling, leaving him with a limp.",
+      "answer": "true",
+      "verse_reference": "Genesis 32:25"
+    },
+    {
+      "id": "genesis-32-q4",
+      "type": "fill_blank",
+      "question": "The man told Jacob his name would no longer be Jacob, but _____.",
+      "answer": "Israel",
+      "verse_reference": "Genesis 32:28"
+    },
+    {
+      "id": "genesis-32-q5",
+      "type": "fill_blank",
+      "question": "Jacob named the place _____, saying, \"I have seen God face to face.\"",
+      "answer": "Peniel",
+      "verse_reference": "Genesis 32:30"
+    }
+  ]
+}

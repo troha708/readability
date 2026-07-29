@@ -1,0 +1,56 @@
+{
+  "book": "Esther",
+  "chapter": 6,
+  "questions": [
+    {
+      "id": "esther-6-q1",
+      "type": "multiple_choice",
+      "question": "What kept the king awake, leading to Mordecai's honor?",
+      "options": [
+        "He had the book of records read to him",
+        "He was disturbed by a noise outside",
+        "He rose up to pray in the dead of night",
+        "He was troubled by a strange dream"
+      ],
+      "answer": "He had the book of records read to him",
+      "verse_reference": "Esther 6:1"
+    },
+    {
+      "id": "esther-6-q2",
+      "type": "multiple_choice",
+      "question": "Whom did the king have Haman lead through the city in honor?",
+      "options": [
+        "Haman himself",
+        "Mordecai",
+        "The queen",
+        "A prince"
+      ],
+      "answer": "Mordecai",
+      "verse_reference": "Esther 6:10-11"
+    },
+    {
+      "id": "esther-6-q3",
+      "type": "true_false",
+      "question": "Haman thought the king meant to honor him, but it was Mordecai.",
+      "answer": "true",
+      "verse_reference": "Esther 6:6"
+    },
+    {
+      "id": "esther-6-q4",
+      "type": "fill_blank",
+      "question": "Haman had to dress Mordecai in royal robes and lead him on the king's _____.",
+      "answer": "horse",
+      "verse_reference": "Esther 6:8-11"
+    },
+    {
+      "id": "esther-6-q5",
+      "type": "fill_blank",
+      "question": "Haman's wise men said he would surely fall before Mordecai, who was a _____.",
+      "answer": "Jew",
+      "accept": [
+        "Jewish"
+      ],
+      "verse_reference": "Esther 6:13"
+    }
+  ]
+}

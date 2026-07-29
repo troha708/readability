@@ -1,0 +1,53 @@
+{
+  "book": "1 Kings",
+  "chapter": 12,
+  "questions": [
+    {
+      "id": "1-kings-12-q1",
+      "type": "multiple_choice",
+      "question": "What happened to the kingdom after Solomon's death?",
+      "options": [
+        "It was overrun by the armies of Egypt",
+        "It split into Israel (north) and Judah (south)",
+        "It stayed united under Rehoboam's rule",
+        "It expanded north into the land of Aram"
+      ],
+      "answer": "It split into Israel (north) and Judah (south)",
+      "verse_reference": "1 Kings 12:16-20"
+    },
+    {
+      "id": "1-kings-12-q2",
+      "type": "multiple_choice",
+      "question": "Who led the northern tribes away from Rehoboam?",
+      "options": [
+        "Omri",
+        "Ahab",
+        "Adonijah",
+        "Jeroboam"
+      ],
+      "answer": "Jeroboam",
+      "verse_reference": "1 Kings 12:20"
+    },
+    {
+      "id": "1-kings-12-q3",
+      "type": "true_false",
+      "question": "Rehoboam's harsh answer to the people caused the northern tribes to rebel.",
+      "answer": "true",
+      "verse_reference": "1 Kings 12:13-16"
+    },
+    {
+      "id": "1-kings-12-q4",
+      "type": "fill_blank",
+      "question": "The ten northern tribes made _____ their king, splitting from Judah.",
+      "answer": "Jeroboam",
+      "verse_reference": "1 Kings 12:20"
+    },
+    {
+      "id": "1-kings-12-q5",
+      "type": "fill_blank",
+      "question": "Rehoboam threatened to make the people's burden heavier, not _____.",
+      "answer": "lighter",
+      "verse_reference": "1 Kings 12:14"
+    }
+  ]
+}

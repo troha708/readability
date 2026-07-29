@@ -1,0 +1,53 @@
+{
+  "book": "Hosea",
+  "chapter": 7,
+  "questions": [
+    {
+      "id": "hosea-7-q1",
+      "type": "multiple_choice",
+      "question": "To what does Hosea 7 compare Israel?",
+      "options": [
+        "A faithful servant and a wise and very prudent elder",
+        "A fruitful spreading vine and a sturdy old oak",
+        "A half-baked cake and a silly dove without sense",
+        "A mighty roaring lion and a high-soaring eagle"
+      ],
+      "answer": "A half-baked cake and a silly dove without sense",
+      "verse_reference": "Hosea 7:8, 11"
+    },
+    {
+      "id": "hosea-7-q2",
+      "type": "multiple_choice",
+      "question": "What does Hosea 7 say the people do not do, even in trouble?",
+      "options": [
+        "Gather a great army together to defend the whole land",
+        "Make a binding treaty with the powerful king of Assyria",
+        "Offer all of the proper sacrifices upon the holy altar",
+        "Cry to God from the heart; they do not return to him"
+      ],
+      "answer": "Cry to God from the heart; they do not return to him",
+      "verse_reference": "Hosea 7:14"
+    },
+    {
+      "id": "hosea-7-q3",
+      "type": "true_false",
+      "question": "Hosea 7 says Ephraim mixes himself with the peoples and is a cake not turned.",
+      "answer": "true",
+      "verse_reference": "Hosea 7:8"
+    },
+    {
+      "id": "hosea-7-q4",
+      "type": "fill_blank",
+      "question": "Ephraim is like a _____, silly and without sense, calling to Egypt and Assyria.",
+      "answer": "dove",
+      "verse_reference": "Hosea 7:11"
+    },
+    {
+      "id": "hosea-7-q5",
+      "type": "fill_blank",
+      "question": "They do not cry to me from the heart, but they wail upon their _____.",
+      "answer": "beds",
+      "verse_reference": "Hosea 7:14"
+    }
+  ]
+}

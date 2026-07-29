@@ -1,0 +1,56 @@
+{
+  "book": "Zechariah",
+  "chapter": 13,
+  "questions": [
+    {
+      "id": "zechariah-13-q1",
+      "type": "multiple_choice",
+      "question": "What will be opened in Zechariah 13 to cleanse from sin?",
+      "options": [
+        "A great throne set up for the house of David",
+        "A fountain for the house of David and Jerusalem",
+        "A high wall built all around the house of David",
+        "A great famine sent upon the house of David"
+      ],
+      "answer": "A fountain for the house of David and Jerusalem",
+      "verse_reference": "Zechariah 13:1"
+    },
+    {
+      "id": "zechariah-13-q2",
+      "type": "multiple_choice",
+      "question": "What does God say about striking the shepherd in Zechariah 13?",
+      "options": [
+        "Guard the flock, and the wolves will flee",
+        "Gather the flock, and the shepherd will rejoice",
+        "Feed the whole flock, and the shepherd will grow very rich",
+        "Strike the shepherd, and the sheep will be scattered"
+      ],
+      "answer": "Strike the shepherd, and the sheep will be scattered",
+      "verse_reference": "Zechariah 13:7"
+    },
+    {
+      "id": "zechariah-13-q3",
+      "type": "true_false",
+      "question": "Zechariah 13 speaks of a remnant, a third, being refined like silver and tested like gold.",
+      "answer": "true",
+      "verse_reference": "Zechariah 13:9"
+    },
+    {
+      "id": "zechariah-13-q4",
+      "type": "fill_blank",
+      "question": "On that day there shall be a _____ opened for the house of David to cleanse them from sin.",
+      "answer": "fountain",
+      "verse_reference": "Zechariah 13:1"
+    },
+    {
+      "id": "zechariah-13-q5",
+      "type": "fill_blank",
+      "question": "Strike the shepherd, and the _____ will be scattered.",
+      "answer": "sheep",
+      "accept": [
+        "flock"
+      ],
+      "verse_reference": "Zechariah 13:7"
+    }
+  ]
+}

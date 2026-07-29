@@ -1,0 +1,53 @@
+{
+  "book": "2 Samuel",
+  "chapter": 21,
+  "questions": [
+    {
+      "id": "2-samuel-21-q1",
+      "type": "multiple_choice",
+      "question": "What caused a three-year famine in David's reign?",
+      "options": [
+        "The people's worship of many foreign idols",
+        "A drought that dried up the rivers",
+        "A long war with the Philistine cities",
+        "Saul's bloodguilt against the Gibeonites"
+      ],
+      "answer": "Saul's bloodguilt against the Gibeonites",
+      "verse_reference": "2 Samuel 21:1"
+    },
+    {
+      "id": "2-samuel-21-q2",
+      "type": "multiple_choice",
+      "question": "What does the end of chapter 21 describe?",
+      "options": [
+        "A famine that struck for three years",
+        "A census of all the fighting men",
+        "A feast held for the returning king",
+        "Battles against Philistine giants"
+      ],
+      "answer": "Battles against Philistine giants",
+      "verse_reference": "2 Samuel 21:15-22"
+    },
+    {
+      "id": "2-samuel-21-q3",
+      "type": "true_false",
+      "question": "David's men killed several Philistine giants, relatives of Goliath.",
+      "answer": "true",
+      "verse_reference": "2 Samuel 21:18-22"
+    },
+    {
+      "id": "2-samuel-21-q4",
+      "type": "fill_blank",
+      "question": "A famine came because Saul had put the _____ to death.",
+      "answer": "Gibeonites",
+      "verse_reference": "2 Samuel 21:1"
+    },
+    {
+      "id": "2-samuel-21-q5",
+      "type": "fill_blank",
+      "question": "One Philistine giant had _____ fingers on each hand and six toes on each foot.",
+      "answer": "six",
+      "verse_reference": "2 Samuel 21:20"
+    }
+  ]
+}

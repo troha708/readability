@@ -1,0 +1,59 @@
+{
+  "book": "2 Corinthians",
+  "chapter": 12,
+  "questions": [
+    {
+      "id": "2cor-12-q1",
+      "type": "multiple_choice",
+      "question": "Paul describes a man caught up to which heaven?",
+      "options": [
+        "The seventh heaven",
+        "The third heaven",
+        "The second heaven",
+        "The first heaven"
+      ],
+      "answer": "The third heaven",
+      "verse_reference": "2 Corinthians 12:2"
+    },
+    {
+      "id": "2cor-12-q2",
+      "type": "multiple_choice",
+      "question": "What was given to Paul to keep him from becoming conceited?",
+      "options": [
+        "A staff of olive wood",
+        "A crown of pure gold",
+        "A thorn in the flesh",
+        "A sword of fine iron"
+      ],
+      "answer": "A thorn in the flesh",
+      "verse_reference": "2 Corinthians 12:7"
+    },
+    {
+      "id": "2cor-12-q3",
+      "type": "true_false",
+      "question": "God removed the thorn from Paul after he prayed three times.",
+      "answer": "false",
+      "verse_reference": "2 Corinthians 12:8-9"
+    },
+    {
+      "id": "2cor-12-q4",
+      "type": "fill_blank",
+      "question": "My grace is sufficient for you, for my power is made perfect in _____.",
+      "answer": "weakness",
+      "accept": [
+        "infirmity"
+      ],
+      "verse_reference": "2 Corinthians 12:9"
+    },
+    {
+      "id": "2cor-12-q5",
+      "type": "fill_blank",
+      "question": "When I am weak, then I am _____.",
+      "answer": "strong",
+      "accept": [
+        "powerful"
+      ],
+      "verse_reference": "2 Corinthians 12:10"
+    }
+  ]
+}

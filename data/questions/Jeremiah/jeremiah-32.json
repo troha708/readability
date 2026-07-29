@@ -1,0 +1,61 @@
+{
+  "book": "Jeremiah",
+  "chapter": 32,
+  "questions": [
+    {
+      "id": "jeremiah-32-q1",
+      "type": "multiple_choice",
+      "question": "What did Jeremiah do in chapter 32 as a sign of future restoration?",
+      "options": [
+        "Bought a field at Anathoth while Jerusalem was under siege",
+        "Led all of the people in a solemn fast and in earnest prayer",
+        "Tore down each of the idols set up in the temple courts",
+        "Built an altar of unhewn stones just outside the city walls"
+      ],
+      "answer": "Bought a field at Anathoth while Jerusalem was under siege",
+      "verse_reference": "Jeremiah 32:9"
+    },
+    {
+      "id": "jeremiah-32-q2",
+      "type": "multiple_choice",
+      "question": "What did this purchase signify?",
+      "options": [
+        "That the king would one day richly reward him for his faithfulness",
+        "That the great enemy would never once enter into the city at all",
+        "That houses, fields, and vineyards would again be bought in the land",
+        "That the long siege would surely be lifted within the space of a year"
+      ],
+      "answer": "That houses, fields, and vineyards would again be bought in the land",
+      "verse_reference": "Jeremiah 32:15"
+    },
+    {
+      "id": "jeremiah-32-q3",
+      "type": "true_false",
+      "question": "Jeremiah prayed, 'Ah, Lord GOD! ... Nothing is too hard for you.'",
+      "answer": "true",
+      "verse_reference": "Jeremiah 32:17"
+    },
+    {
+      "id": "jeremiah-32-q4",
+      "type": "fill_blank",
+      "question": "Houses and fields and vineyards shall again be _____ in this land.",
+      "answer": "bought",
+      "accept": [
+        "possessed",
+        "purchased"
+      ],
+      "verse_reference": "Jeremiah 32:15"
+    },
+    {
+      "id": "jeremiah-32-q5",
+      "type": "fill_blank",
+      "question": "Ah, Lord GOD! ... Nothing is too _____ for You.",
+      "answer": "difficult",
+      "accept": [
+        "hard",
+        "wonderful"
+      ],
+      "verse_reference": "Jeremiah 32:17"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Daniel",
+  "chapter": 7,
+  "questions": [
+    {
+      "id": "daniel-7-q1",
+      "type": "multiple_choice",
+      "question": "What did Daniel see in his vision of chapter 7?",
+      "options": [
+        "Four great beasts coming up out of the sea",
+        "A great statue of gold, silver, and iron clay",
+        "A river of fire pouring from a throne",
+        "A lampstand flanked by two olive trees"
+      ],
+      "answer": "Four great beasts coming up out of the sea",
+      "verse_reference": "Daniel 7:3"
+    },
+    {
+      "id": "daniel-7-q2",
+      "type": "multiple_choice",
+      "question": "Who is described as coming with the clouds of heaven and given everlasting dominion?",
+      "options": [
+        "The great Ancient of Days",
+        "One like a son of man",
+        "An angel",
+        "A beast"
+      ],
+      "answer": "One like a son of man",
+      "verse_reference": "Daniel 7:13-14"
+    },
+    {
+      "id": "daniel-7-q3",
+      "type": "true_false",
+      "question": "In the vision the Ancient of Days took his seat and the court sat in judgment.",
+      "answer": "true",
+      "verse_reference": "Daniel 7:9-10"
+    },
+    {
+      "id": "daniel-7-q4",
+      "type": "fill_blank",
+      "question": "Behold, with the clouds of heaven there came one like a son of _____.",
+      "answer": "man",
+      "verse_reference": "Daniel 7:13"
+    },
+    {
+      "id": "daniel-7-q5",
+      "type": "fill_blank",
+      "question": "His dominion is an everlasting dominion, which shall not pass _____.",
+      "answer": "away",
+      "verse_reference": "Daniel 7:14"
+    }
+  ]
+}

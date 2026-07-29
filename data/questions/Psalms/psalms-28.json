@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 28,
+  "questions": [
+    {
+      "id": "psalms-28-q1",
+      "type": "multiple_choice",
+      "question": "What does David call the LORD in Psalm 28?",
+      "options": [
+        "His banner and his rallying point",
+        "His rock and his strength and shield",
+        "His vine and his own pleasant planting",
+        "His lamp and his guiding light"
+      ],
+      "answer": "His rock and his strength and shield",
+      "verse_reference": "Psalm 28:7-8"
+    },
+    {
+      "id": "psalms-28-q2",
+      "type": "multiple_choice",
+      "question": "What does David fear if the LORD is silent toward him?",
+      "options": [
+        "Being forgotten by all who knew him",
+        "Wandering far from the house of God",
+        "Falling into the hands of his enemies",
+        "Becoming like those who go down to the pit"
+      ],
+      "answer": "Becoming like those who go down to the pit",
+      "verse_reference": "Psalm 28:1"
+    },
+    {
+      "id": "psalms-28-q3",
+      "type": "true_false",
+      "question": "David's heart trusts in the LORD and he is helped, so his heart exults.",
+      "answer": "true",
+      "verse_reference": "Psalm 28:7"
+    },
+    {
+      "id": "psalms-28-q4",
+      "type": "fill_blank",
+      "question": "Blessed be the LORD! For he has heard the voice of my pleas for _____.",
+      "answer": "mercy",
+      "verse_reference": "Psalm 28:6"
+    },
+    {
+      "id": "psalms-28-q5",
+      "type": "fill_blank",
+      "question": "The LORD is the strength of his people; he is the saving refuge of his _____.",
+      "answer": "anointed",
+      "verse_reference": "Psalm 28:8"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "book": "2 Timothy",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "2tim_3_1",
+      "type": "multiple_choice",
+      "question": "Paul says in the last days people will be lovers of what instead of lovers of God?",
+      "options": [
+        "Pleasure",
+        "Money only",
+        "War",
+        "Knowledge"
+      ],
+      "correct": "Pleasure",
+      "verse_ref": "2 Timothy 3:4",
+      "feedback": "In the last days people will be lovers of pleasure rather than lovers of God."
+    },
+    {
+      "id": "2tim_3_2",
+      "type": "multiple_choice",
+      "question": "Paul says all Scripture is breathed out by God and profitable for what?",
+      "options": [
+        "Signs, and wonders, and healings, and many other mighty works",
+        "Feasts, and offerings, and sacrifices, and the giving of tithes",
+        "Great wealth, and high honor, and power, and a very long life",
+        "Teaching, reproof, correction, and training in righteousness"
+      ],
+      "correct": "Teaching, reproof, correction, and training in righteousness",
+      "verse_ref": "2 Timothy 3:16",
+      "feedback": "All Scripture is God-breathed and useful for teaching, reproof, correction, and training in righteousness."
+    },
+    {
+      "id": "2tim_3_3",
+      "type": "true_false",
+      "question": "Paul says everyone who wants to live a godly life in Christ Jesus will be persecuted.",
+      "correct": true,
+      "verse_ref": "2 Timothy 3:12",
+      "feedback": "All who desire to live a godly life in Christ Jesus will be persecuted."
+    },
+    {
+      "id": "2tim_3_4",
+      "type": "fill_in_the_blank",
+      "question": "Paul says that from childhood Timothy has known the sacred _____ which are able to make him wise for salvation.",
+      "correct": "Scriptures",
+      "accept": ["writings", "letters"],
+      "verse_ref": "2 Timothy 3:15",
+      "feedback": "Timothy has known the Holy Scriptures since infancy."
+    },
+    {
+      "id": "2tim_3_5",
+      "type": "fill_in_the_blank",
+      "question": "Paul says evil people and impostors will go from bad to _____, deceiving and being deceived.",
+      "correct": "worse",
+      "verse_ref": "2 Timothy 3:13",
+      "feedback": "Evil people and impostors will go from bad to worse."
+    }
+  ]
+}

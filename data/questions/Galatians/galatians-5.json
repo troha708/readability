@@ -1,0 +1,59 @@
+{
+  "book": "Galatians",
+  "chapter": 5,
+  "questions": [
+    {
+      "id": "gal-5-q1",
+      "type": "multiple_choice",
+      "question": "Paul says the entire law is fulfilled in one command. Which one?",
+      "options": [
+        "Love the Lord your God most fully",
+        "Keep the Sabbath day holy",
+        "Love your neighbor as yourself",
+        "Do not ever murder anyone"
+      ],
+      "answer": "Love your neighbor as yourself",
+      "verse_reference": "Galatians 5:14"
+    },
+    {
+      "id": "gal-5-q2",
+      "type": "multiple_choice",
+      "question": "Which of these is NOT listed as a fruit of the Spirit?",
+      "options": [
+        "Self-control",
+        "Love",
+        "Prosperity",
+        "Joy"
+      ],
+      "answer": "Prosperity",
+      "verse_reference": "Galatians 5:22-23"
+    },
+    {
+      "id": "gal-5-q3",
+      "type": "true_false",
+      "question": "Paul says if you are led by the Spirit, you are not under the law.",
+      "answer": "true",
+      "verse_reference": "Galatians 5:18"
+    },
+    {
+      "id": "gal-5-q4",
+      "type": "fill_blank",
+      "question": "For you, brothers, were called to _____. Only don't use it as an opportunity for the flesh.",
+      "answer": "freedom",
+      "accept": [
+        "liberty"
+      ],
+      "verse_reference": "Galatians 5:13"
+    },
+    {
+      "id": "gal-5-q5",
+      "type": "fill_blank",
+      "question": "The fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, and _____.",
+      "answer": "self-control",
+      "accept": [
+        "temperance"
+      ],
+      "verse_reference": "Galatians 5:22-23"
+    }
+  ]
+}

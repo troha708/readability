@@ -1,0 +1,53 @@
+{
+  "book": "Matthew",
+  "chapter": 19,
+  "questions": [
+    {
+      "id": "matthew-19-q1",
+      "type": "multiple_choice",
+      "question": "What did the rich young man do after Jesus told him to sell his possessions?",
+      "options": [
+        "He obeyed immediately",
+        "He went away sad",
+        "He asked for more time",
+        "He followed Jesus"
+      ],
+      "answer": "He went away sad",
+      "verse_reference": "Matthew 19:22"
+    },
+    {
+      "id": "matthew-19-q2",
+      "type": "multiple_choice",
+      "question": "Jesus said it is easier for what to go through the eye of a needle than for a rich man to enter the Kingdom of God?",
+      "options": [
+        "A horse",
+        "A camel",
+        "A rope",
+        "A donkey"
+      ],
+      "answer": "A camel",
+      "verse_reference": "Matthew 19:24"
+    },
+    {
+      "id": "matthew-19-q3",
+      "type": "true_false",
+      "question": "Jesus told his disciples to prevent children from being brought to him.",
+      "answer": "false",
+      "verse_reference": "Matthew 19:14"
+    },
+    {
+      "id": "matthew-19-q4",
+      "type": "fill_blank",
+      "question": "Jesus said, 'Allow the little children, and don't forbid them to come to me; for the Kingdom of Heaven belongs to ones like _____.'",
+      "answer": "these",
+      "verse_reference": "Matthew 19:14"
+    },
+    {
+      "id": "matthew-19-q5",
+      "type": "fill_blank",
+      "question": "With men this is impossible, but with God all things are _____.",
+      "answer": "possible",
+      "verse_reference": "Matthew 19:26"
+    }
+  ]
+}

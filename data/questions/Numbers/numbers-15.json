@@ -1,0 +1,54 @@
+{
+  "book": "Numbers",
+  "chapter": 15,
+  "questions": [
+    {
+      "id": "numbers-15-q1",
+      "type": "multiple_choice",
+      "question": "What were the Israelites told to put on the corners of their garments as a reminder?",
+      "options": [
+        "Tiny silver charms",
+        "Knotted leather cords",
+        "Small bronze bells",
+        "Tassels (fringes)"
+      ],
+      "answer": "Tassels (fringes)",
+      "verse_reference": "Numbers 15:38-39"
+    },
+    {
+      "id": "numbers-15-q2",
+      "type": "multiple_choice",
+      "question": "What happened to the man who gathered wood on the Sabbath?",
+      "options": [
+        "He was put to death by stoning",
+        "He was driven out of the camp",
+        "He was pardoned and sent home",
+        "He was fined a measure of silver"
+      ],
+      "answer": "He was put to death by stoning",
+      "verse_reference": "Numbers 15:32-36"
+    },
+    {
+      "id": "numbers-15-q3",
+      "type": "true_false",
+      "question": "The tassels were meant to remind Israel to obey all the LORD's commandments.",
+      "answer": "true",
+      "verse_reference": "Numbers 15:39"
+    },
+    {
+      "id": "numbers-15-q4",
+      "type": "fill_blank",
+      "question": "The man who gathered _____ on the Sabbath day was put to death.",
+      "answer": "wood",
+      "accept": ["sticks"],
+      "verse_reference": "Numbers 15:32-35"
+    },
+    {
+      "id": "numbers-15-q5",
+      "type": "fill_blank",
+      "question": "The fringes were to remind Israel to obey and not follow their own _____.",
+      "answer": "heart",
+      "verse_reference": "Numbers 15:39"
+    }
+  ]
+}

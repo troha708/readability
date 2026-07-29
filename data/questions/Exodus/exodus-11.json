@@ -1,0 +1,53 @@
+{
+  "book": "Exodus",
+  "chapter": 11,
+  "questions": [
+    {
+      "id": "exodus-11-q1",
+      "type": "multiple_choice",
+      "question": "What was the tenth and final plague God announced?",
+      "options": [
+        "The death of the firstborn",
+        "A plague of hail and fire",
+        "Three days of total darkness",
+        "Swarms of locusts and flies"
+      ],
+      "answer": "The death of the firstborn",
+      "verse_reference": "Exodus 11:5"
+    },
+    {
+      "id": "exodus-11-q2",
+      "type": "multiple_choice",
+      "question": "What did Moses tell the Israelites to ask their Egyptian neighbors for?",
+      "options": [
+        "Articles of silver and gold",
+        "Provisions of bread and water",
+        "Flocks of sheep and goats",
+        "Tools of bronze and iron"
+      ],
+      "answer": "Articles of silver and gold",
+      "verse_reference": "Exodus 11:2"
+    },
+    {
+      "id": "exodus-11-q3",
+      "type": "true_false",
+      "question": "The death of the firstborn would strike from Pharaoh's house to the lowest servant.",
+      "answer": "true",
+      "verse_reference": "Exodus 11:5"
+    },
+    {
+      "id": "exodus-11-q4",
+      "type": "fill_blank",
+      "question": "At midnight every _____ in Egypt would die, from Pharaoh's son to the servant's.",
+      "answer": "firstborn",
+      "verse_reference": "Exodus 11:4-5"
+    },
+    {
+      "id": "exodus-11-q5",
+      "type": "fill_blank",
+      "question": "Among the Israelites not even a _____ would bark, showing the LORD's distinction.",
+      "answer": "dog",
+      "verse_reference": "Exodus 11:7"
+    }
+  ]
+}

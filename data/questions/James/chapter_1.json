@@ -1,0 +1,59 @@
+{
+  "book": "James",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "jas_1_1",
+      "type": "multiple_choice",
+      "question": "James says the testing of faith produces what?",
+      "options": [
+        "Perseverance",
+        "True great wisdom",
+        "Wealth",
+        "Fear"
+      ],
+      "correct": "Perseverance",
+      "verse_ref": "James 1:3",
+      "feedback": "The testing of your faith produces perseverance."
+    },
+    {
+      "id": "jas_1_2",
+      "type": "multiple_choice",
+      "question": "James compares a person who doubts to what?",
+      "options": [
+        "A lamp shining on its stand",
+        "A rock standing firm in the storm",
+        "A wave of the sea driven by the wind",
+        "A tree planted by quiet streams of water"
+      ],
+      "correct": "A wave of the sea driven by the wind",
+      "verse_ref": "James 1:6",
+      "feedback": "The doubter is like a wave of the sea, blown and tossed by the wind."
+    },
+    {
+      "id": "jas_1_3",
+      "type": "true_false",
+      "question": "James says God tempts people with evil.",
+      "correct": false,
+      "verse_ref": "James 1:13",
+      "feedback": "God cannot be tempted by evil, nor does he tempt anyone."
+    },
+    {
+      "id": "jas_1_4",
+      "type": "fill_in_the_blank",
+      "question": "Everyone should be quick to listen, slow to speak, and slow to _____.",
+      "correct": "anger",
+      "accept": ["wrath"],
+      "verse_ref": "James 1:19",
+      "feedback": "Be quick to listen, slow to speak, and slow to anger."
+    },
+    {
+      "id": "jas_1_5",
+      "type": "fill_in_the_blank",
+      "question": "If anyone lacks _____, let him ask God who gives generously to all without reproach.",
+      "correct": "wisdom",
+      "verse_ref": "James 1:5",
+      "feedback": "If anyone lacks wisdom, ask God who gives generously."
+    }
+  ]
+}

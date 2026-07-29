@@ -1,0 +1,53 @@
+{
+  "book": "Deuteronomy",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "deuteronomy-1-q1",
+      "type": "multiple_choice",
+      "question": "Where is Moses speaking in Deuteronomy?",
+      "options": [
+        "Inside Canaan, just after the city of Jericho had fallen",
+        "On the plains of Moab, before Israel enters Canaan",
+        "At the foot of Mount Sinai in the desert",
+        "In the land of Egypt, before the exodus"
+      ],
+      "answer": "On the plains of Moab, before Israel enters Canaan",
+      "verse_reference": "Deuteronomy 1:1-5"
+    },
+    {
+      "id": "deuteronomy-1-q2",
+      "type": "multiple_choice",
+      "question": "What does Moses remind Israel about in chapter 1?",
+      "options": [
+        "Their refusal to enter the land and the spies",
+        "The great flood in the days of Noah and the ark",
+        "The ten plagues that struck the land of Egypt",
+        "The creation of the world in six days and rest"
+      ],
+      "answer": "Their refusal to enter the land and the spies",
+      "verse_reference": "Deuteronomy 1:22-36"
+    },
+    {
+      "id": "deuteronomy-1-q3",
+      "type": "true_false",
+      "question": "Moses recalls appointing leaders to help judge the people.",
+      "answer": "true",
+      "verse_reference": "Deuteronomy 1:9-15"
+    },
+    {
+      "id": "deuteronomy-1-q4",
+      "type": "fill_blank",
+      "question": "Because of unbelief, only Caleb and _____ of that generation would see the good land.",
+      "answer": "Joshua",
+      "verse_reference": "Deuteronomy 1:36-38"
+    },
+    {
+      "id": "deuteronomy-1-q5",
+      "type": "fill_blank",
+      "question": "Moses reminded Israel that the LORD had _____ them like the stars of heaven.",
+      "answer": "multiplied",
+      "verse_reference": "Deuteronomy 1:10"
+    }
+  ]
+}

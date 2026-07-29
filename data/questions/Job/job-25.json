@@ -1,0 +1,56 @@
+{
+  "book": "Job",
+  "chapter": 25,
+  "questions": [
+    {
+      "id": "job-25-q1",
+      "type": "multiple_choice",
+      "question": "Which friend gives the short final speech in chapter 25?",
+      "options": [
+        "Eliphaz the Temanite",
+        "Elihu the Buzite",
+        "Bildad the Shuhite",
+        "Zophar the Naamathite"
+      ],
+      "answer": "Bildad the Shuhite",
+      "verse_reference": "Job 25:1"
+    },
+    {
+      "id": "job-25-q2",
+      "type": "multiple_choice",
+      "question": "What was Bildad's main point?",
+      "options": [
+        "God is unjust to the innocent",
+        "Job is righteous after all",
+        "Man cannot be righteous or pure before God",
+        "The wicked always prosper in the end"
+      ],
+      "answer": "Man cannot be righteous or pure before God",
+      "verse_reference": "Job 25:4"
+    },
+    {
+      "id": "job-25-q3",
+      "type": "true_false",
+      "question": "Bildad said even the moon and stars are not pure in God's eyes.",
+      "answer": "true",
+      "verse_reference": "Job 25:5"
+    },
+    {
+      "id": "job-25-q4",
+      "type": "fill_blank",
+      "question": "Bildad asked how man, who is a maggot, and the son of man, who is a _____, can be pure.",
+      "answer": "worm",
+      "verse_reference": "Job 25:6"
+    },
+    {
+      "id": "job-25-q5",
+      "type": "fill_blank",
+      "question": "Bildad said dominion and awe belong to God, who establishes _____ in the heights of heaven.",
+      "answer": "harmony",
+      "accept": [
+        "peace"
+      ],
+      "verse_reference": "Job 25:2"
+    }
+  ]
+}

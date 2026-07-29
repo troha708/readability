@@ -1,0 +1,53 @@
+{
+  "book": "Proverbs",
+  "chapter": 31,
+  "questions": [
+    {
+      "id": "proverbs-31-q1",
+      "type": "multiple_choice",
+      "question": "Whose sayings, taught by his mother, open Proverbs 31?",
+      "options": [
+        "David",
+        "Agur",
+        "King Lemuel",
+        "King Solomon"
+      ],
+      "answer": "King Lemuel",
+      "verse_reference": "Proverbs 31:1"
+    },
+    {
+      "id": "proverbs-31-q2",
+      "type": "multiple_choice",
+      "question": "What is the famous subject of the second half of Proverbs 31?",
+      "options": [
+        "An excellent (virtuous) wife",
+        "A foolish and idle son",
+        "A mighty and dreaded army",
+        "A very wise and just young king"
+      ],
+      "answer": "An excellent (virtuous) wife",
+      "verse_reference": "Proverbs 31:10"
+    },
+    {
+      "id": "proverbs-31-q3",
+      "type": "true_false",
+      "question": "Proverbs 31 says charm is deceitful and beauty is vain, but a woman who fears the LORD is to be praised.",
+      "answer": "true",
+      "verse_reference": "Proverbs 31:30"
+    },
+    {
+      "id": "proverbs-31-q4",
+      "type": "fill_blank",
+      "question": "An excellent wife who can _____? She is far more precious than jewels.",
+      "answer": "find",
+      "verse_reference": "Proverbs 31:10"
+    },
+    {
+      "id": "proverbs-31-q5",
+      "type": "fill_blank",
+      "question": "Charm is deceitful, and beauty is vain, but a woman who fears the LORD is to be _____.",
+      "answer": "praised",
+      "verse_reference": "Proverbs 31:30"
+    }
+  ]
+}

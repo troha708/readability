@@ -1,0 +1,53 @@
+{
+  "book": "Numbers",
+  "chapter": 9,
+  "questions": [
+    {
+      "id": "numbers-9-q1",
+      "type": "multiple_choice",
+      "question": "What festival did Israel keep in the wilderness in this chapter?",
+      "options": [
+        "Pentecost",
+        "Tabernacles",
+        "The Passover",
+        "Atonement"
+      ],
+      "answer": "The Passover",
+      "verse_reference": "Numbers 9:2-5"
+    },
+    {
+      "id": "numbers-9-q2",
+      "type": "multiple_choice",
+      "question": "How did Israel know when to travel and when to camp?",
+      "options": [
+        "By the cloud over the tabernacle",
+        "By the word of Moses each morning",
+        "By the turning of the seasons",
+        "By the position of the stars"
+      ],
+      "answer": "By the cloud over the tabernacle",
+      "verse_reference": "Numbers 9:17-18"
+    },
+    {
+      "id": "numbers-9-q3",
+      "type": "true_false",
+      "question": "When the cloud lifted, Israel set out; when it settled, they camped.",
+      "answer": "true",
+      "verse_reference": "Numbers 9:17"
+    },
+    {
+      "id": "numbers-9-q4",
+      "type": "fill_blank",
+      "question": "Whenever the _____ was taken up from over the tent, the Israelites journeyed.",
+      "answer": "cloud",
+      "verse_reference": "Numbers 9:17"
+    },
+    {
+      "id": "numbers-9-q5",
+      "type": "fill_blank",
+      "question": "Those unable to keep the Passover at the proper time could keep it in the second _____.",
+      "answer": "month",
+      "verse_reference": "Numbers 9:11"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Ezekiel",
+  "chapter": 46,
+  "questions": [
+    {
+      "id": "ezekiel-46-q1",
+      "type": "multiple_choice",
+      "question": "What does Ezekiel 46 regulate?",
+      "options": [
+        "The boundaries of the land among the tribes",
+        "The duties of the gatekeepers and singers",
+        "The measurements of the temple courts",
+        "The prince's offerings on Sabbaths and feasts"
+      ],
+      "answer": "The prince's offerings on Sabbaths and feasts",
+      "verse_reference": "Ezekiel 46:1-12"
+    },
+    {
+      "id": "ezekiel-46-q2",
+      "type": "multiple_choice",
+      "question": "Through which gate was the prince to enter and worship?",
+      "options": [
+        "The south gate, where all of the people gathered",
+        "The east gate, which was opened on the Sabbath",
+        "The north gate, used only by the priests",
+        "The inner gate, leading to the altar"
+      ],
+      "answer": "The east gate, which was opened on the Sabbath",
+      "verse_reference": "Ezekiel 46:1-2"
+    },
+    {
+      "id": "ezekiel-46-q3",
+      "type": "true_false",
+      "question": "The people were to enter by one gate and leave by the opposite gate during appointed feasts.",
+      "answer": "true",
+      "verse_reference": "Ezekiel 46:9"
+    },
+    {
+      "id": "ezekiel-46-q4",
+      "type": "fill_blank",
+      "question": "The gate of the inner court facing east shall be shut on the six working days, but opened on the _____.",
+      "answer": "Sabbath",
+      "verse_reference": "Ezekiel 46:1"
+    },
+    {
+      "id": "ezekiel-46-q5",
+      "type": "fill_blank",
+      "question": "The _____ shall worship at the threshold of the gate, going in among the people.",
+      "answer": "prince",
+      "verse_reference": "Ezekiel 46:2, 10"
+    }
+  ]
+}

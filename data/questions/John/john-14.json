@@ -1,0 +1,53 @@
+{
+  "book": "John",
+  "chapter": 14,
+  "questions": [
+    {
+      "id": "john-14-q1",
+      "type": "multiple_choice",
+      "question": "Jesus said that in his Father's house are many dwelling places, and that he was going there to do what?",
+      "options": [
+        "Build a new and greater temple",
+        "Establish his royal throne",
+        "Rest from his earthly work",
+        "Prepare a place for his disciples"
+      ],
+      "answer": "Prepare a place for his disciples",
+      "verse_reference": "John 14:2-3"
+    },
+    {
+      "id": "john-14-q2",
+      "type": "multiple_choice",
+      "question": "Which disciple asked Jesus, 'Lord, show us the Father, and that will be enough for us'?",
+      "options": [
+        "Philip",
+        "Andrew",
+        "Thomas",
+        "Peter"
+      ],
+      "answer": "Philip",
+      "verse_reference": "John 14:8"
+    },
+    {
+      "id": "john-14-q3",
+      "type": "true_false",
+      "question": "Jesus promised to send the Holy Spirit as a Counselor to be with the disciples forever.",
+      "answer": "true",
+      "verse_reference": "John 14:16-17"
+    },
+    {
+      "id": "john-14-q4",
+      "type": "fill_blank",
+      "question": "Jesus said, 'I am the way, the _____, and the life. No one comes to the Father, except through me.'",
+      "answer": "truth",
+      "verse_reference": "John 14:6"
+    },
+    {
+      "id": "john-14-q5",
+      "type": "fill_blank",
+      "question": "_____ I leave with you. My peace I give to you. Not as the world gives, I give to you.",
+      "answer": "Peace",
+      "verse_reference": "John 14:27"
+    }
+  ]
+}

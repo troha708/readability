@@ -1,0 +1,56 @@
+{
+  "book": "Genesis",
+  "chapter": 6,
+  "questions": [
+    {
+      "id": "genesis-6-q1",
+      "type": "multiple_choice",
+      "question": "Why did God decide to bring a flood on the earth?",
+      "options": [
+        "To make a new sea",
+        "A long drought",
+        "Humanity's great wickedness",
+        "Endless war among all the nations"
+      ],
+      "answer": "Humanity's great wickedness",
+      "verse_reference": "Genesis 6:5"
+    },
+    {
+      "id": "genesis-6-q2",
+      "type": "multiple_choice",
+      "question": "What did God instruct Noah to build?",
+      "options": [
+        "An ark",
+        "A temple",
+        "A tower",
+        "A city"
+      ],
+      "answer": "An ark",
+      "verse_reference": "Genesis 6:14"
+    },
+    {
+      "id": "genesis-6-q3",
+      "type": "true_false",
+      "question": "Noah found favor (grace) in the eyes of the LORD.",
+      "answer": "true",
+      "verse_reference": "Genesis 6:8"
+    },
+    {
+      "id": "genesis-6-q4",
+      "type": "fill_blank",
+      "question": "Noah was told to make the ark of _____ wood.",
+      "answer": "gopher",
+      "accept": [
+        "pine"
+      ],
+      "verse_reference": "Genesis 6:14"
+    },
+    {
+      "id": "genesis-6-q5",
+      "type": "fill_blank",
+      "question": "Noah was a righteous man, blameless among his contemporaries, and he _____ with God.",
+      "answer": "walked",
+      "verse_reference": "Genesis 6:9"
+    }
+  ]
+}

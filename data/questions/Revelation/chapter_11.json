@@ -1,0 +1,59 @@
+{
+  "book": "Revelation",
+  "chapter": 11,
+  "questions": [
+    {
+      "id": "rev_11_1",
+      "type": "multiple_choice",
+      "question": "How long do the two witnesses prophesy?",
+      "options": [
+        "1,260 days",
+        "A full 40 days",
+        "7 years",
+        "3 days"
+      ],
+      "correct": "1,260 days",
+      "verse_ref": "Revelation 11:3",
+      "feedback": "The two witnesses will prophesy for 1,260 days clothed in sackcloth."
+    },
+    {
+      "id": "rev_11_2",
+      "type": "multiple_choice",
+      "question": "What happens to the two witnesses after they finish their testimony?",
+      "options": [
+        "They are imprisoned",
+        "They flee to the wilderness",
+        "The beast kills them",
+        "They ascend immediately"
+      ],
+      "correct": "The beast kills them",
+      "verse_ref": "Revelation 11:7",
+      "feedback": "The beast from the abyss attacks and kills them."
+    },
+    {
+      "id": "rev_11_3",
+      "type": "true_false",
+      "question": "After three and a half days, God breathes life back into the two witnesses.",
+      "correct": true,
+      "verse_ref": "Revelation 11:11",
+      "feedback": "After three and a half days the breath of life from God entered them and they stood up."
+    },
+    {
+      "id": "rev_11_4",
+      "type": "fill_in_the_blank",
+      "question": "The seventh trumpet announces: The kingdom of the world has become the kingdom of our Lord and of his _____.",
+      "correct": "Christ",
+      "verse_ref": "Revelation 11:15",
+      "feedback": "The kingdom of the world has become the kingdom of our Lord and of his Christ."
+    },
+    {
+      "id": "rev_11_5",
+      "type": "fill_in_the_blank",
+      "question": "The two witnesses are described as two olive trees and two _____.",
+      "correct": "lampstands",
+      "accept": ["candlesticks", "lamps"],
+      "verse_ref": "Revelation 11:4",
+      "feedback": "They are the two olive trees and the two lampstands before the Lord."
+    }
+  ]
+}

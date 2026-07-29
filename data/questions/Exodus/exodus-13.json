@@ -1,0 +1,53 @@
+{
+  "book": "Exodus",
+  "chapter": 13,
+  "questions": [
+    {
+      "id": "exodus-13-q1",
+      "type": "multiple_choice",
+      "question": "How did God lead Israel through the wilderness?",
+      "options": [
+        "By a pillar of cloud by day and fire by night",
+        "By the wooden staff that Moses carried out before them",
+        "By the stars and the rising of the sun",
+        "By scouts sent ahead to mark the way"
+      ],
+      "answer": "By a pillar of cloud by day and fire by night",
+      "verse_reference": "Exodus 13:21"
+    },
+    {
+      "id": "exodus-13-q2",
+      "type": "multiple_choice",
+      "question": "Why did God not lead Israel by the shorter road through Philistine country?",
+      "options": [
+        "Because that road was blocked by flooding",
+        "Lest they face war and turn back to Egypt",
+        "Because Pharaoh's army was guarding the route",
+        "So they could carry off the wealth of Egypt"
+      ],
+      "answer": "Lest they face war and turn back to Egypt",
+      "verse_reference": "Exodus 13:17"
+    },
+    {
+      "id": "exodus-13-q3",
+      "type": "true_false",
+      "question": "God commanded that every firstborn male be consecrated (set apart) to him.",
+      "answer": "true",
+      "verse_reference": "Exodus 13:2"
+    },
+    {
+      "id": "exodus-13-q4",
+      "type": "fill_blank",
+      "question": "Moses carried the bones of _____ out of Egypt, as Israel had sworn to do.",
+      "answer": "Joseph",
+      "verse_reference": "Exodus 13:19"
+    },
+    {
+      "id": "exodus-13-q5",
+      "type": "fill_blank",
+      "question": "God went before the people by a pillar of _____ to lead them by day.",
+      "answer": "cloud",
+      "verse_reference": "Exodus 13:21"
+    }
+  ]
+}

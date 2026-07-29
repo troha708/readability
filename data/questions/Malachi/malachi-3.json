@@ -1,0 +1,56 @@
+{
+  "book": "Malachi",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "malachi-3-q1",
+      "type": "multiple_choice",
+      "question": "Whom does God promise to send to prepare the way in Malachi 3?",
+      "options": [
+        "A great army to drive out the enemies from the land",
+        "A righteous king to sit upon the great throne of David for ever and ever",
+        "My messenger, and the Lord whom you seek will come to his temple",
+        "A stern prophet of doom to warn the people of their sin"
+      ],
+      "answer": "My messenger, and the Lord whom you seek will come to his temple",
+      "verse_reference": "Malachi 3:1"
+    },
+    {
+      "id": "malachi-3-q2",
+      "type": "multiple_choice",
+      "question": "What challenge about tithes does God give in Malachi 3?",
+      "options": [
+        "Bring the full tithe into the storehouse, and test me, says the LORD",
+        "Fast and humble yourselves deeply in sackcloth for very many days",
+        "Offer up a full thousand rams and bulls upon the great altar of God",
+        "Build a temple far grander and more glorious than the very first one"
+      ],
+      "answer": "Bring the full tithe into the storehouse, and test me, says the LORD",
+      "verse_reference": "Malachi 3:10"
+    },
+    {
+      "id": "malachi-3-q3",
+      "type": "true_false",
+      "question": "Malachi 3 mentions a book of remembrance written for those who feared the LORD.",
+      "answer": "true",
+      "verse_reference": "Malachi 3:16"
+    },
+    {
+      "id": "malachi-3-q4",
+      "type": "fill_blank",
+      "question": "Bring the full _____ into the storehouse... and thereby put me to the test, says the LORD.",
+      "answer": "tithe",
+      "accept": [
+        "tithes"
+      ],
+      "verse_reference": "Malachi 3:10"
+    },
+    {
+      "id": "malachi-3-q5",
+      "type": "fill_blank",
+      "question": "He is like a refiner's _____ and like fullers' soap.",
+      "answer": "fire",
+      "verse_reference": "Malachi 3:2"
+    }
+  ]
+}

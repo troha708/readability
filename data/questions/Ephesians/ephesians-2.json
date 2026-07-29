@@ -1,0 +1,56 @@
+{
+  "book": "Ephesians",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "eph-2-q1",
+      "type": "multiple_choice",
+      "question": "Paul says believers are saved by grace through faith, and this is what?",
+      "options": [
+        "A reward for good works",
+        "The gift of God",
+        "The result of following the law",
+        "Earned through suffering"
+      ],
+      "answer": "The gift of God",
+      "verse_reference": "Ephesians 2:8"
+    },
+    {
+      "id": "eph-2-q2",
+      "type": "multiple_choice",
+      "question": "Paul says believers are God's workmanship, created in Christ Jesus for what?",
+      "options": [
+        "Good works",
+        "Worship",
+        "Suffering",
+        "Bold preaching"
+      ],
+      "answer": "Good works",
+      "verse_reference": "Ephesians 2:10"
+    },
+    {
+      "id": "eph-2-q3",
+      "type": "true_false",
+      "question": "Paul says Gentile believers were once far away but have been brought near by the blood of Christ.",
+      "answer": "true",
+      "verse_reference": "Ephesians 2:13"
+    },
+    {
+      "id": "eph-2-q4",
+      "type": "fill_blank",
+      "question": "For by grace you have been saved through _____; and that not of yourselves, it is the gift of God.",
+      "answer": "faith",
+      "verse_reference": "Ephesians 2:8"
+    },
+    {
+      "id": "eph-2-q5",
+      "type": "fill_blank",
+      "question": "For He Himself is our peace, who has made the two one and has torn down the _____ wall of hostility.",
+      "answer": "dividing",
+      "accept": [
+        "middle"
+      ],
+      "verse_reference": "Ephesians 2:14"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 35,
+  "questions": [
+    {
+      "id": "psalms-35-q1",
+      "type": "multiple_choice",
+      "question": "What does David ask the LORD to do in Psalm 35?",
+      "options": [
+        "Bless those who curse his name",
+        "Forgive each one of those who have wronged him",
+        "Ignore those who plot against him",
+        "Contend with those who contend with him"
+      ],
+      "answer": "Contend with those who contend with him",
+      "verse_reference": "Psalm 35:1"
+    },
+    {
+      "id": "psalms-35-q2",
+      "type": "multiple_choice",
+      "question": "How did David treat his enemies when they were sick?",
+      "options": [
+        "He brought charges against them in court",
+        "He wore sackcloth and prayed for them",
+        "He fled far away from their presence",
+        "He repaid them with kindness and gifts"
+      ],
+      "answer": "He wore sackcloth and prayed for them",
+      "verse_reference": "Psalm 35:13"
+    },
+    {
+      "id": "psalms-35-q3",
+      "type": "true_false",
+      "question": "David asks God to take hold of shield and buckler and rise for his help.",
+      "answer": "true",
+      "verse_reference": "Psalm 35:2"
+    },
+    {
+      "id": "psalms-35-q4",
+      "type": "fill_blank",
+      "question": "Say to my soul, 'I am your _____.'",
+      "answer": "salvation",
+      "verse_reference": "Psalm 35:3"
+    },
+    {
+      "id": "psalms-35-q5",
+      "type": "fill_blank",
+      "question": "My tongue shall tell of your righteousness and of your praise all the _____ long.",
+      "answer": "day",
+      "verse_reference": "Psalm 35:28"
+    }
+  ]
+}

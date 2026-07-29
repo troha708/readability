@@ -1,0 +1,53 @@
+{
+  "book": "Romans",
+  "chapter": 10,
+  "questions": [
+    {
+      "id": "romans-10-q1",
+      "type": "multiple_choice",
+      "question": "According to Paul, what must a person do to be saved?",
+      "options": [
+        "Confess Jesus as Lord and believe God raised him from the dead",
+        "Offer sacrifices and keep the appointed feasts faithfully",
+        "Be circumcised and keep the whole law of Moses",
+        "Be baptized in water and receive the laying on of hands"
+      ],
+      "answer": "Confess Jesus as Lord and believe God raised him from the dead",
+      "verse_reference": "Romans 10:9"
+    },
+    {
+      "id": "romans-10-q2",
+      "type": "multiple_choice",
+      "question": "Paul says faith comes from what?",
+      "options": [
+        "Offering the proper sacrifices",
+        "Doing many good works",
+        "Hearing the word of Christ",
+        "Keeping the law of Moses"
+      ],
+      "answer": "Hearing the word of Christ",
+      "verse_reference": "Romans 10:17"
+    },
+    {
+      "id": "romans-10-q3",
+      "type": "true_false",
+      "question": "Paul says there is a difference between Jew and Greek when it comes to calling on the Lord.",
+      "answer": "false",
+      "verse_reference": "Romans 10:12"
+    },
+    {
+      "id": "romans-10-q4",
+      "type": "fill_blank",
+      "question": "How beautiful are the _____ of those who bring good news!",
+      "answer": "feet",
+      "verse_reference": "Romans 10:15"
+    },
+    {
+      "id": "romans-10-q5",
+      "type": "fill_blank",
+      "question": "For whoever will call on the name of the Lord will be _____.",
+      "answer": "saved",
+      "verse_reference": "Romans 10:13"
+    }
+  ]
+}

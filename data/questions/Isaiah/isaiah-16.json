@@ -1,0 +1,60 @@
+{
+  "book": "Isaiah",
+  "chapter": 16,
+  "questions": [
+    {
+      "id": "isaiah-16-q1",
+      "type": "multiple_choice",
+      "question": "What does Isaiah 16 urge regarding the fugitives of Moab?",
+      "options": [
+        "Drive them back across the border",
+        "Give them shelter and shade",
+        "Hand them over to the enemy",
+        "Demand a heavy tribute from them"
+      ],
+      "answer": "Give them shelter and shade",
+      "verse_reference": "Isaiah 16:3-4"
+    },
+    {
+      "id": "isaiah-16-q2",
+      "type": "multiple_choice",
+      "question": "On what basis would a throne be established in steadfast love?",
+      "options": [
+        "One who builds up very high walls and very strong gates of bronze",
+        "One who is greatly feared by all of the surrounding nations",
+        "One who gathers to himself great armies and very great wealth",
+        "One who judges and seeks justice and is swift to do righteousness"
+      ],
+      "answer": "One who judges and seeks justice and is swift to do righteousness",
+      "verse_reference": "Isaiah 16:5"
+    },
+    {
+      "id": "isaiah-16-q3",
+      "type": "true_false",
+      "question": "Isaiah 16 mourns the loss of Moab's vineyards and joyful harvest.",
+      "answer": "true",
+      "verse_reference": "Isaiah 16:9-10"
+    },
+    {
+      "id": "isaiah-16-q4",
+      "type": "fill_blank",
+      "question": "We have heard of Moab's pomposity, his exceeding pride and _____.",
+      "answer": "conceit",
+      "accept": [
+        "insolence"
+      ],
+      "verse_reference": "Isaiah 16:6"
+    },
+    {
+      "id": "isaiah-16-q5",
+      "type": "fill_blank",
+      "question": "A throne will be established in steadfast love, and on it will sit in faithfulness one who _____.",
+      "answer": "judges",
+      "accept": [
+        "judge",
+        "judging"
+      ],
+      "verse_reference": "Isaiah 16:5"
+    }
+  ]
+}

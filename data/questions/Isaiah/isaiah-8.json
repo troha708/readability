@@ -1,0 +1,59 @@
+{
+  "book": "Isaiah",
+  "chapter": 8,
+  "questions": [
+    {
+      "id": "isaiah-8-q1",
+      "type": "multiple_choice",
+      "question": "What was the name of Isaiah's son, a sign of swift judgment?",
+      "options": [
+        "Lo-ruhamah the prophetess",
+        "Maher-shalal-hash-baz",
+        "Shear-jashub the elder",
+        "Immanuel the promised"
+      ],
+      "answer": "Maher-shalal-hash-baz",
+      "verse_reference": "Isaiah 8:3"
+    },
+    {
+      "id": "isaiah-8-q2",
+      "type": "multiple_choice",
+      "question": "Whom should the people honor as holy, making him their fear and dread?",
+      "options": [
+        "The king",
+        "The LORD of hosts",
+        "Assyria",
+        "The holy true prophets"
+      ],
+      "answer": "The LORD of hosts",
+      "verse_reference": "Isaiah 8:13"
+    },
+    {
+      "id": "isaiah-8-q3",
+      "type": "true_false",
+      "question": "Isaiah 8 says the LORD will become a stone of stumbling and a rock of offense to both houses of Israel.",
+      "answer": "true",
+      "verse_reference": "Isaiah 8:14"
+    },
+    {
+      "id": "isaiah-8-q4",
+      "type": "fill_blank",
+      "question": "The LORD of Hosts you shall regard as holy; only He should be feared, only He should be _____.",
+      "answer": "dreaded",
+      "accept": [
+        "dread"
+      ],
+      "verse_reference": "Isaiah 8:13"
+    },
+    {
+      "id": "isaiah-8-q5",
+      "type": "fill_blank",
+      "question": "To the teaching and to the _____! If they will not speak according to this word...",
+      "answer": "testimony",
+      "accept": [
+        "covenant"
+      ],
+      "verse_reference": "Isaiah 8:20"
+    }
+  ]
+}

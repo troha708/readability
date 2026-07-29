@@ -1,0 +1,61 @@
+{
+  "book": "2 Corinthians",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "2cor-2-q1",
+      "type": "multiple_choice",
+      "question": "What does Paul urge the Corinthians to do for the person who caused grief?",
+      "options": [
+        "Punish him more severely",
+        "Forgive and comfort him",
+        "Send him away",
+        "Ignore him"
+      ],
+      "answer": "Forgive and comfort him",
+      "verse_reference": "2 Corinthians 2:7"
+    },
+    {
+      "id": "2cor-2-q2",
+      "type": "multiple_choice",
+      "question": "Paul describes believers as what kind of fragrance to God?",
+      "options": [
+        "The fragrance of roses",
+        "The smell of incense",
+        "The scent of myrrh",
+        "The aroma of Christ"
+      ],
+      "answer": "The aroma of Christ",
+      "verse_reference": "2 Corinthians 2:15"
+    },
+    {
+      "id": "2cor-2-q3",
+      "type": "true_false",
+      "question": "Paul says unforgiveness can be a scheme of Satan to take advantage of believers.",
+      "answer": "true",
+      "verse_reference": "2 Corinthians 2:10-11"
+    },
+    {
+      "id": "2cor-2-q4",
+      "type": "fill_blank",
+      "question": "We are not unaware of Satan's _____.",
+      "answer": "schemes",
+      "accept": [
+        "devices",
+        "enterprises",
+        "thoughts"
+      ],
+      "verse_reference": "2 Corinthians 2:11"
+    },
+    {
+      "id": "2cor-2-q5",
+      "type": "fill_blank",
+      "question": "Thanks be to God, who always leads us _____ as captives in Christ.",
+      "answer": "triumphantly",
+      "accept": [
+        "triumph"
+      ],
+      "verse_reference": "2 Corinthians 2:14"
+    }
+  ]
+}

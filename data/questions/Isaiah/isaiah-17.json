@@ -1,0 +1,53 @@
+{
+  "book": "Isaiah",
+  "chapter": 17,
+  "questions": [
+    {
+      "id": "isaiah-17-q1",
+      "type": "multiple_choice",
+      "question": "Against which city is the oracle in Isaiah 17?",
+      "options": [
+        "Damascus",
+        "Great Babylon",
+        "Memphis",
+        "Tyre"
+      ],
+      "answer": "Damascus",
+      "verse_reference": "Isaiah 17:1"
+    },
+    {
+      "id": "isaiah-17-q2",
+      "type": "multiple_choice",
+      "question": "What will Damascus become, according to Isaiah 17?",
+      "options": [
+        "A heap of ruins, ceasing to be a city",
+        "A place of refuge for the scattered exiles",
+        "A center of trade for many nations",
+        "A fortified stronghold no army can take"
+      ],
+      "answer": "A heap of ruins, ceasing to be a city",
+      "verse_reference": "Isaiah 17:1"
+    },
+    {
+      "id": "isaiah-17-q3",
+      "type": "true_false",
+      "question": "Isaiah 17 says in that day people will look to their Maker rather than to the altars their hands have made.",
+      "answer": "true",
+      "verse_reference": "Isaiah 17:7-8"
+    },
+    {
+      "id": "isaiah-17-q4",
+      "type": "fill_blank",
+      "question": "Behold, _____ will cease to be a city and will become a heap of ruins.",
+      "answer": "Damascus",
+      "verse_reference": "Isaiah 17:1"
+    },
+    {
+      "id": "isaiah-17-q5",
+      "type": "fill_blank",
+      "question": "In that day man will look to his _____, and his eyes will look on the Holy One of Israel.",
+      "answer": "Maker",
+      "verse_reference": "Isaiah 17:7"
+    }
+  ]
+}

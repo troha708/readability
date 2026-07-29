@@ -1,0 +1,61 @@
+{
+  "book": "Psalms",
+  "chapter": 8,
+  "questions": [
+    {
+      "id": "psalms-8-q1",
+      "type": "multiple_choice",
+      "question": "What is the opening and closing refrain of Psalm 8?",
+      "options": [
+        "Give thanks unto the LORD, for his great mercy endures forever",
+        "Bless the LORD, O my soul, and all that is within me",
+        "O LORD, our Lord, how majestic is your name in all the earth",
+        "The LORD is my shepherd, I shall not be in want"
+      ],
+      "answer": "O LORD, our Lord, how majestic is your name in all the earth",
+      "verse_reference": "Psalm 8:1"
+    },
+    {
+      "id": "psalms-8-q2",
+      "type": "multiple_choice",
+      "question": "What does David ask, gazing at the heavens?",
+      "options": [
+        "Where were the heavens before the world?",
+        "What is man that you are mindful of him?",
+        "Who set the stars in their courses on high?",
+        "Why have you made the night so dark?"
+      ],
+      "answer": "What is man that you are mindful of him?",
+      "verse_reference": "Psalm 8:4"
+    },
+    {
+      "id": "psalms-8-q3",
+      "type": "true_false",
+      "question": "God has given man dominion over the works of his hands.",
+      "answer": "true",
+      "verse_reference": "Psalm 8:6"
+    },
+    {
+      "id": "psalms-8-q4",
+      "type": "fill_blank",
+      "question": "From the mouths of children and infants You have ordained _____.",
+      "answer": "praise",
+      "accept": [
+        "strength"
+      ],
+      "verse_reference": "Psalm 8:2"
+    },
+    {
+      "id": "psalms-8-q5",
+      "type": "fill_blank",
+      "question": "You have made him a little lower than the heavenly beings and crowned him with glory and _____.",
+      "answer": "honor",
+      "accept": [
+        "honour",
+        "worship",
+        "splendour"
+      ],
+      "verse_reference": "Psalm 8:5"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "book": "Jeremiah",
+  "chapter": 16,
+  "questions": [
+    {
+      "id": "jeremiah-16-q1",
+      "type": "multiple_choice",
+      "question": "What unusual command did God give Jeremiah in chapter 16?",
+      "options": [
+        "Not to marry or have children in that place, as a sign",
+        "To fast and wear sackcloth for forty long days",
+        "To build a fine house and plant a great garden in the city",
+        "To leave the land and travel among the nations"
+      ],
+      "answer": "Not to marry or have children in that place, as a sign",
+      "verse_reference": "Jeremiah 16:2"
+    },
+    {
+      "id": "jeremiah-16-q2",
+      "type": "multiple_choice",
+      "question": "What future hope does Jeremiah 16 give?",
+      "options": [
+        "A new and greater temple raised on Mount Zion",
+        "A righteous king to reign over all of the nations for ever",
+        "Lasting peace among all the kingdoms of the earth",
+        "A return so great it will eclipse the exodus from Egypt"
+      ],
+      "answer": "A return so great it will eclipse the exodus from Egypt",
+      "verse_reference": "Jeremiah 16:14-15"
+    },
+    {
+      "id": "jeremiah-16-q3",
+      "type": "true_false",
+      "question": "Jeremiah was told not to enter the house of feasting or mourning, as a sign of coming judgment.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 16:5-8"
+    },
+    {
+      "id": "jeremiah-16-q4",
+      "type": "fill_blank",
+      "question": "Behold, I am sending for many _____, declares the LORD, and they will catch them.",
+      "answer": "fishermen",
+      "accept": [
+        "fishers"
+      ],
+      "verse_reference": "Jeremiah 16:16"
+    },
+    {
+      "id": "jeremiah-16-q5",
+      "type": "fill_blank",
+      "question": "Therefore I will make them know my power and my might, and they shall know that my name is the _____.",
+      "answer": "LORD",
+      "accept": [
+        "Jehovah",
+        "Yahweh"
+      ],
+      "verse_reference": "Jeremiah 16:21"
+    }
+  ]
+}

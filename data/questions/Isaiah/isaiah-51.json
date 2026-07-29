@@ -1,0 +1,57 @@
+{
+  "book": "Isaiah",
+  "chapter": 51,
+  "questions": [
+    {
+      "id": "isaiah-51-q1",
+      "type": "multiple_choice",
+      "question": "Whom does Isaiah 51 call to listen?",
+      "options": [
+        "The kings and the rulers of all of the nations",
+        "The wealthy ones who give freely to the poor",
+        "The priests who faithfully serve at the holy altar",
+        "Those who pursue righteousness and seek the LORD"
+      ],
+      "answer": "Those who pursue righteousness and seek the LORD",
+      "verse_reference": "Isaiah 51:1"
+    },
+    {
+      "id": "isaiah-51-q2",
+      "type": "multiple_choice",
+      "question": "To which ancestors does Isaiah 51 point the people?",
+      "options": [
+        "David and Solomon",
+        "Abraham and Sarah",
+        "Moses and Aaron",
+        "Isaac and Jacob"
+      ],
+      "answer": "Abraham and Sarah",
+      "verse_reference": "Isaiah 51:2"
+    },
+    {
+      "id": "isaiah-51-q3",
+      "type": "true_false",
+      "question": "Isaiah 51 says the LORD's righteousness will be forever and his salvation to all generations.",
+      "answer": "true",
+      "verse_reference": "Isaiah 51:8"
+    },
+    {
+      "id": "isaiah-51-q4",
+      "type": "fill_blank",
+      "question": "Listen to me, you who pursue _____, you who seek the LORD.",
+      "answer": "righteousness",
+      "verse_reference": "Isaiah 51:1"
+    },
+    {
+      "id": "isaiah-51-q5",
+      "type": "fill_blank",
+      "question": "My salvation will last forever, and My righteousness will never _____.",
+      "answer": "fail",
+      "accept": [
+        "abolished",
+        "broken"
+      ],
+      "verse_reference": "Isaiah 51:6"
+    }
+  ]
+}

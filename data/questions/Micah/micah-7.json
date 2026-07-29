@@ -1,0 +1,57 @@
+{
+  "book": "Micah",
+  "chapter": 7,
+  "questions": [
+    {
+      "id": "micah-7-q1",
+      "type": "multiple_choice",
+      "question": "How does Micah 7 describe the prophet's hope amid corruption?",
+      "options": [
+        "He will gather a great army together to defend the whole land",
+        "He will look to the LORD and wait for the God of his salvation",
+        "He will offer up many sacrifices upon all of the high places",
+        "He will flee away to the high mountains in search of safety"
+      ],
+      "answer": "He will look to the LORD and wait for the God of his salvation",
+      "verse_reference": "Micah 7:7"
+    },
+    {
+      "id": "micah-7-q2",
+      "type": "multiple_choice",
+      "question": "What does Micah marvel at concerning God at the book's end?",
+      "options": [
+        "That he hides away his face entirely from the sinful nation",
+        "That he scatters all of the people abroad among the nations",
+        "That he repays each and every one according to his own deeds",
+        "That he pardons iniquity and delights in steadfast love"
+      ],
+      "answer": "That he pardons iniquity and delights in steadfast love",
+      "verse_reference": "Micah 7:18"
+    },
+    {
+      "id": "micah-7-q3",
+      "type": "true_false",
+      "question": "Micah 7 says God will cast all our sins into the depths of the sea.",
+      "answer": "true",
+      "verse_reference": "Micah 7:19"
+    },
+    {
+      "id": "micah-7-q4",
+      "type": "fill_blank",
+      "question": "But as for me, I will look to the LORD; I will wait for the God of my _____.",
+      "answer": "salvation",
+      "verse_reference": "Micah 7:7"
+    },
+    {
+      "id": "micah-7-q5",
+      "type": "fill_blank",
+      "question": "Who is a God like You, who _____ iniquity and passes over transgression?",
+      "answer": "pardons",
+      "accept": [
+        "pardoneth",
+        "forgiveth"
+      ],
+      "verse_reference": "Micah 7:18"
+    }
+  ]
+}

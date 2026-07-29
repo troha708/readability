@@ -1,0 +1,57 @@
+{
+  "book": "Daniel",
+  "chapter": 10,
+  "questions": [
+    {
+      "id": "daniel-10-q1",
+      "type": "multiple_choice",
+      "question": "What was Daniel doing before the vision of chapter 10?",
+      "options": [
+        "Feasting and rejoicing for many days",
+        "Mourning and fasting for three weeks",
+        "Marching with the army into battle",
+        "Building an altar by the great river"
+      ],
+      "answer": "Mourning and fasting for three weeks",
+      "verse_reference": "Daniel 10:2-3"
+    },
+    {
+      "id": "daniel-10-q2",
+      "type": "multiple_choice",
+      "question": "What heavenly being is mentioned as helping against the 'prince of Persia'?",
+      "options": [
+        "Gabriel, the chief messenger of God",
+        "Michael, one of the chief princes",
+        "Cyrus, the king of Persia",
+        "Elijah, returned from heaven"
+      ],
+      "answer": "Michael, one of the chief princes",
+      "verse_reference": "Daniel 10:13"
+    },
+    {
+      "id": "daniel-10-q3",
+      "type": "true_false",
+      "question": "The man in the vision told Daniel he was greatly loved and should not fear.",
+      "answer": "true",
+      "verse_reference": "Daniel 10:19"
+    },
+    {
+      "id": "daniel-10-q4",
+      "type": "fill_blank",
+      "question": "The prince of the kingdom of Persia withstood the messenger for _____ days.",
+      "answer": "twenty-one",
+      "accept": [
+        "21",
+        "one and twenty"
+      ],
+      "verse_reference": "Daniel 10:13"
+    },
+    {
+      "id": "daniel-10-q5",
+      "type": "fill_blank",
+      "question": "O man greatly loved, fear not, _____ be with you; be strong and of good courage.",
+      "answer": "peace",
+      "verse_reference": "Daniel 10:19"
+    }
+  ]
+}

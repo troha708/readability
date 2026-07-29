@@ -1,0 +1,24 @@
+{
+  "book": "Jude",
+  "source": "Berean Standard Bible (CC0 Public Domain)",
+  "chapters": {
+    "1": [
+      {
+        "beforeVerse": 1,
+        "heading": "A Greeting from Jude"
+      },
+      {
+        "beforeVerse": 3,
+        "heading": "God’s Judgment on the Ungodly"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "A Call to Persevere"
+      },
+      {
+        "beforeVerse": 24,
+        "heading": "Doxology"
+      }
+    ]
+  }
+}

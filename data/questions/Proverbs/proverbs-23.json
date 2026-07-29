@@ -1,0 +1,53 @@
+{
+  "book": "Proverbs",
+  "chapter": 23,
+  "questions": [
+    {
+      "id": "proverbs-23-q1",
+      "type": "multiple_choice",
+      "question": "What does Proverbs 23 warn against toiling to acquire?",
+      "options": [
+        "Friends, who all scatter in the hard times",
+        "Land, which passes on to other hands",
+        "Wisdom, which fades away with old age",
+        "Wealth, which sprouts wings and flies away"
+      ],
+      "answer": "Wealth, which sprouts wings and flies away",
+      "verse_reference": "Proverbs 23:4-5"
+    },
+    {
+      "id": "proverbs-23-q2",
+      "type": "multiple_choice",
+      "question": "How does Proverbs 23 say wine bites in the end?",
+      "options": [
+        "Gently, fading by the morning",
+        "Not at all, leaving no mark",
+        "Like a serpent and stings like an adder",
+        "Like a friend with a soft and gentle touch"
+      ],
+      "answer": "Like a serpent and stings like an adder",
+      "verse_reference": "Proverbs 23:32"
+    },
+    {
+      "id": "proverbs-23-q3",
+      "type": "true_false",
+      "question": "Proverbs 23 urges, 'Buy truth, and do not sell it.'",
+      "answer": "true",
+      "verse_reference": "Proverbs 23:23"
+    },
+    {
+      "id": "proverbs-23-q4",
+      "type": "fill_blank",
+      "question": "Do not toil to acquire wealth; be discerning enough to desist. For riches sprout _____ and fly away.",
+      "answer": "wings",
+      "verse_reference": "Proverbs 23:4-5"
+    },
+    {
+      "id": "proverbs-23-q5",
+      "type": "fill_blank",
+      "question": "Give me your heart, my son, and let your eyes observe my _____.",
+      "answer": "ways",
+      "verse_reference": "Proverbs 23:26"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "book": "Luke",
+  "chapter": 13,
+  "questions": [
+    {
+      "id": "luke-13-q1",
+      "type": "multiple_choice",
+      "question": "What did Jesus compare the Kingdom of God to?",
+      "options": [
+        "A mustard seed",
+        "A pearl",
+        "A treasure",
+        "A wide fishing net"
+      ],
+      "answer": "A mustard seed",
+      "verse_reference": "Luke 13:18-19"
+    },
+    {
+      "id": "luke-13-q2",
+      "type": "multiple_choice",
+      "question": "Jesus healed a woman on the Sabbath who had been bent over for how long?",
+      "options": [
+        "Seven years",
+        "Twelve years",
+        "Eighteen years",
+        "Thirty years"
+      ],
+      "answer": "Eighteen years",
+      "verse_reference": "Luke 13:11,16"
+    },
+    {
+      "id": "luke-13-q3",
+      "type": "true_false",
+      "question": "Jesus said that many who are last will be first, and the first will be last.",
+      "answer": "true",
+      "verse_reference": "Luke 13:30"
+    },
+    {
+      "id": "luke-13-q4",
+      "type": "fill_blank",
+      "question": "Strive to enter in by the narrow _____.",
+      "answer": "door",
+      "accept": [
+        "gate"
+      ],
+      "verse_reference": "Luke 13:24"
+    },
+    {
+      "id": "luke-13-q5",
+      "type": "fill_blank",
+      "question": "Unless you repent, you will all _____ in the same way.",
+      "answer": "perish",
+      "verse_reference": "Luke 13:3"
+    }
+  ]
+}

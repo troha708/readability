@@ -1,0 +1,53 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 23,
+  "questions": [
+    {
+      "id": "2-chronicles-23-q1",
+      "type": "multiple_choice",
+      "question": "Which priest organized the overthrow of Athaliah?",
+      "options": [
+        "Zechariah",
+        "Zadok",
+        "Jehoiada",
+        "Azariah"
+      ],
+      "answer": "Jehoiada",
+      "verse_reference": "2 Chronicles 23:1"
+    },
+    {
+      "id": "2-chronicles-23-q2",
+      "type": "multiple_choice",
+      "question": "Who was proclaimed king and crowned in the temple?",
+      "options": [
+        "Jehoram (the son of Jehoshaphat)",
+        "Amaziah (the son of Joash)",
+        "Uzziah (the son of Amaziah)",
+        "Joash (the young son of Ahaziah)"
+      ],
+      "answer": "Joash (the young son of Ahaziah)",
+      "verse_reference": "2 Chronicles 23:11"
+    },
+    {
+      "id": "2-chronicles-23-q3",
+      "type": "true_false",
+      "question": "Athaliah cried 'Treason!' and was put to death.",
+      "answer": "true",
+      "verse_reference": "2 Chronicles 23:13-15"
+    },
+    {
+      "id": "2-chronicles-23-q4",
+      "type": "fill_blank",
+      "question": "Jehoiada made a covenant that they should be the LORD's _____.",
+      "answer": "people",
+      "verse_reference": "2 Chronicles 23:16"
+    },
+    {
+      "id": "2-chronicles-23-q5",
+      "type": "fill_blank",
+      "question": "The people went and broke down the house of _____ and its altars.",
+      "answer": "Baal",
+      "verse_reference": "2 Chronicles 23:17"
+    }
+  ]
+}

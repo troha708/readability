@@ -1,0 +1,53 @@
+{
+  "book": "1 Samuel",
+  "chapter": 26,
+  "questions": [
+    {
+      "id": "1-samuel-26-q1",
+      "type": "multiple_choice",
+      "question": "What did David take from beside the sleeping Saul instead of killing him?",
+      "options": [
+        "His royal robe and belt",
+        "His crown and signet ring",
+        "His spear and water jug",
+        "His sword and shield"
+      ],
+      "answer": "His spear and water jug",
+      "verse_reference": "1 Samuel 26:11-12"
+    },
+    {
+      "id": "1-samuel-26-q2",
+      "type": "multiple_choice",
+      "question": "Who went with David into Saul's camp at night?",
+      "options": [
+        "Abigail",
+        "Jonathan",
+        "Joab",
+        "Abishai"
+      ],
+      "answer": "Abishai",
+      "verse_reference": "1 Samuel 26:6-7"
+    },
+    {
+      "id": "1-samuel-26-q3",
+      "type": "true_false",
+      "question": "David again refused to harm Saul, the LORD's anointed.",
+      "answer": "true",
+      "verse_reference": "1 Samuel 26:9"
+    },
+    {
+      "id": "1-samuel-26-q4",
+      "type": "fill_blank",
+      "question": "David took Saul's _____ and water jug from beside his head as he slept.",
+      "answer": "spear",
+      "verse_reference": "1 Samuel 26:11-12"
+    },
+    {
+      "id": "1-samuel-26-q5",
+      "type": "fill_blank",
+      "question": "David said no one could harm the LORD's _____ and be guiltless.",
+      "answer": "anointed",
+      "verse_reference": "1 Samuel 26:9"
+    }
+  ]
+}

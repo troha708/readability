@@ -1,0 +1,53 @@
+{
+  "book": "Judges",
+  "chapter": 19,
+  "questions": [
+    {
+      "id": "judges-19-q1",
+      "type": "multiple_choice",
+      "question": "What does chapter 19 describe (a dark account)?",
+      "options": [
+        "A joyful harvest festival held each year at Shiloh",
+        "The crowning of one of the judges as king over Israel",
+        "The horrific abuse of a Levite's concubine at Gibeah",
+        "A royal wedding feast in the land of Benjamin"
+      ],
+      "answer": "The horrific abuse of a Levite's concubine at Gibeah",
+      "verse_reference": "Judges 19:22-28"
+    },
+    {
+      "id": "judges-19-q2",
+      "type": "multiple_choice",
+      "question": "What did the Levite do to call all Israel to action?",
+      "options": [
+        "Cut his concubine into twelve pieces and sent them through Israel",
+        "Blew a trumpet through the land to summon the fighting men",
+        "Prayed publicly and at length for the LORD to send help",
+        "Wrote letters of urgent appeal to each one of the tribes"
+      ],
+      "answer": "Cut his concubine into twelve pieces and sent them through Israel",
+      "verse_reference": "Judges 19:29"
+    },
+    {
+      "id": "judges-19-q3",
+      "type": "true_false",
+      "question": "This account again shows the lawlessness of a time with no king in Israel.",
+      "answer": "true",
+      "verse_reference": "Judges 19:1"
+    },
+    {
+      "id": "judges-19-q4",
+      "type": "fill_blank",
+      "question": "The wicked men of _____ abused the Levite's concubine through the night.",
+      "answer": "Gibeah",
+      "verse_reference": "Judges 19:22-25"
+    },
+    {
+      "id": "judges-19-q5",
+      "type": "fill_blank",
+      "question": "The Levite cut his concubine into _____ pieces and sent them throughout Israel.",
+      "answer": "twelve",
+      "verse_reference": "Judges 19:29"
+    }
+  ]
+}

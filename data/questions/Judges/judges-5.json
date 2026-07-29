@@ -1,0 +1,53 @@
+{
+  "book": "Judges",
+  "chapter": 5,
+  "questions": [
+    {
+      "id": "judges-5-q1",
+      "type": "multiple_choice",
+      "question": "What is Judges 5?",
+      "options": [
+        "A code of laws given at Shiloh",
+        "A battle plan against the Canaanites",
+        "A genealogy of the twelve tribes",
+        "The song of Deborah and Barak"
+      ],
+      "answer": "The song of Deborah and Barak",
+      "verse_reference": "Judges 5:1"
+    },
+    {
+      "id": "judges-5-q2",
+      "type": "multiple_choice",
+      "question": "What did the song celebrate?",
+      "options": [
+        "The crowning of Israel's first king",
+        "The LORD's victory over Sisera and the enemy",
+        "The wedding of Deborah's daughter",
+        "A bountiful harvest after the long, hard drought"
+      ],
+      "answer": "The LORD's victory over Sisera and the enemy",
+      "verse_reference": "Judges 5:1-31"
+    },
+    {
+      "id": "judges-5-q3",
+      "type": "true_false",
+      "question": "The song praised those who willingly offered themselves for the battle.",
+      "answer": "true",
+      "verse_reference": "Judges 5:2-9"
+    },
+    {
+      "id": "judges-5-q4",
+      "type": "fill_blank",
+      "question": "Deborah and _____ sang together on the day of victory.",
+      "answer": "Barak",
+      "verse_reference": "Judges 5:1"
+    },
+    {
+      "id": "judges-5-q5",
+      "type": "fill_blank",
+      "question": "The song blessed _____ above women for killing Sisera.",
+      "answer": "Jael",
+      "verse_reference": "Judges 5:24"
+    }
+  ]
+}

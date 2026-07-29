@@ -1,0 +1,53 @@
+{
+  "book": "2 Kings",
+  "chapter": 18,
+  "questions": [
+    {
+      "id": "2-kings-18-q1",
+      "type": "multiple_choice",
+      "question": "What kind of king was Hezekiah of Judah?",
+      "options": [
+        "A good king who trusted the LORD and removed idols",
+        "A weak and idle king who did nothing at all",
+        "A wicked king who led the whole of Judah deep into sin",
+        "A foreign ruler set up over them by Assyria"
+      ],
+      "answer": "A good king who trusted the LORD and removed idols",
+      "verse_reference": "2 Kings 18:3-5"
+    },
+    {
+      "id": "2-kings-18-q2",
+      "type": "multiple_choice",
+      "question": "Which Assyrian king invaded Judah and besieged its cities?",
+      "options": [
+        "Pul",
+        "Sennacherib",
+        "Nebuchadnezzar",
+        "Cyrus"
+      ],
+      "answer": "Sennacherib",
+      "verse_reference": "2 Kings 18:13"
+    },
+    {
+      "id": "2-kings-18-q3",
+      "type": "true_false",
+      "question": "The Assyrian field commander mocked Judah and the LORD before the walls of Jerusalem.",
+      "answer": "true",
+      "verse_reference": "2 Kings 18:28-35"
+    },
+    {
+      "id": "2-kings-18-q4",
+      "type": "fill_blank",
+      "question": "King _____ of Judah trusted in the LORD and removed the high places.",
+      "answer": "Hezekiah",
+      "verse_reference": "2 Kings 18:3-5"
+    },
+    {
+      "id": "2-kings-18-q5",
+      "type": "fill_blank",
+      "question": "_____, king of Assyria, came up against the fortified cities of Judah.",
+      "answer": "Sennacherib",
+      "verse_reference": "2 Kings 18:13"
+    }
+  ]
+}

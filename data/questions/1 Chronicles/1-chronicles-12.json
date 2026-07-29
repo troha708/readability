@@ -1,0 +1,57 @@
+{
+  "book": "1 Chronicles",
+  "chapter": 12,
+  "questions": [
+    {
+      "id": "1-chronicles-12-q1",
+      "type": "multiple_choice",
+      "question": "Where did warriors come to David while he was kept from Saul?",
+      "options": [
+        "Hebron",
+        "Ziklag",
+        "Gibeah",
+        "Jerusalem"
+      ],
+      "answer": "Ziklag",
+      "verse_reference": "1 Chronicles 12:1"
+    },
+    {
+      "id": "1-chronicles-12-q2",
+      "type": "multiple_choice",
+      "question": "The men of Issachar were known for what?",
+      "options": [
+        "Their great skill with the bow in the heat of fierce battle",
+        "Sailing the open seas and trading with far-off lands",
+        "Building strong walls and heavily fortified cities",
+        "Understanding the times and knowing what Israel should do"
+      ],
+      "answer": "Understanding the times and knowing what Israel should do",
+      "verse_reference": "1 Chronicles 12:32"
+    },
+    {
+      "id": "1-chronicles-12-q3",
+      "type": "true_false",
+      "question": "A great army came to Hebron to turn the kingdom of Saul over to David.",
+      "answer": "true",
+      "verse_reference": "1 Chronicles 12:38"
+    },
+    {
+      "id": "1-chronicles-12-q4",
+      "type": "fill_blank",
+      "question": "The warriors came to Hebron of a single _____ to make David king.",
+      "answer": "mind",
+      "accept": [
+        "heart",
+        "accord"
+      ],
+      "verse_reference": "1 Chronicles 12:38"
+    },
+    {
+      "id": "1-chronicles-12-q5",
+      "type": "fill_blank",
+      "question": "The Gadites had faces like _____ and were swift as gazelles on the mountains.",
+      "answer": "lions",
+      "verse_reference": "1 Chronicles 12:8"
+    }
+  ]
+}

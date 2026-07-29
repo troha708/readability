@@ -1,0 +1,53 @@
+{
+  "book": "Judges",
+  "chapter": 21,
+  "questions": [
+    {
+      "id": "judges-21-q1",
+      "type": "multiple_choice",
+      "question": "What was Israel's concern after the war?",
+      "options": [
+        "That a great and terrible famine would starve the whole of the nation",
+        "That the tribe of Benjamin would die out for lack of wives",
+        "That the people would soon demand a king to rule them",
+        "That a long drought would ruin all of the coming harvest"
+      ],
+      "answer": "That the tribe of Benjamin would die out for lack of wives",
+      "verse_reference": "Judges 21:3-7"
+    },
+    {
+      "id": "judges-21-q2",
+      "type": "multiple_choice",
+      "question": "How did the surviving Benjamites get wives?",
+      "options": [
+        "They bought wives from the Moabites",
+        "They took wives from Jabesh-gilead and Shiloh",
+        "They brought wives back from Egypt",
+        "They were given wives by the Philistines"
+      ],
+      "answer": "They took wives from Jabesh-gilead and Shiloh",
+      "verse_reference": "Judges 21:12-21"
+    },
+    {
+      "id": "judges-21-q3",
+      "type": "true_false",
+      "question": "The book of Judges ends with the refrain that everyone did what was right in his own eyes.",
+      "answer": "true",
+      "verse_reference": "Judges 21:25"
+    },
+    {
+      "id": "judges-21-q4",
+      "type": "fill_blank",
+      "question": "The book ends, \"Everyone did what was right in his own _____.\"",
+      "answer": "eyes",
+      "verse_reference": "Judges 21:25"
+    },
+    {
+      "id": "judges-21-q5",
+      "type": "fill_blank",
+      "question": "Wives were provided for Benjamin from Jabesh-gilead and from _____.",
+      "answer": "Shiloh",
+      "verse_reference": "Judges 21:19-21"
+    }
+  ]
+}

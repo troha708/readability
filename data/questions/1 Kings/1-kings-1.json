@@ -1,0 +1,53 @@
+{
+  "book": "1 Kings",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "1-kings-1-q1",
+      "type": "multiple_choice",
+      "question": "Who tried to make himself king while David was old?",
+      "options": [
+        "Adonijah",
+        "Absalom",
+        "Joab",
+        "Solomon"
+      ],
+      "answer": "Adonijah",
+      "verse_reference": "1 Kings 1:5"
+    },
+    {
+      "id": "1-kings-1-q2",
+      "type": "multiple_choice",
+      "question": "Whom did David name as his successor instead?",
+      "options": [
+        "Solomon",
+        "Adonijah",
+        "Joab",
+        "Nathan"
+      ],
+      "answer": "Solomon",
+      "verse_reference": "1 Kings 1:30"
+    },
+    {
+      "id": "1-kings-1-q3",
+      "type": "true_false",
+      "question": "Nathan and Bathsheba urged David to confirm Solomon as king.",
+      "answer": "true",
+      "verse_reference": "1 Kings 1:11-31"
+    },
+    {
+      "id": "1-kings-1-q4",
+      "type": "fill_blank",
+      "question": "_____, David's son, exalted himself, saying, \"I will be king.\"",
+      "answer": "Adonijah",
+      "verse_reference": "1 Kings 1:5"
+    },
+    {
+      "id": "1-kings-1-q5",
+      "type": "fill_blank",
+      "question": "David had _____ anointed king before he died.",
+      "answer": "Solomon",
+      "verse_reference": "1 Kings 1:39"
+    }
+  ]
+}

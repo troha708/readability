@@ -1,0 +1,53 @@
+{
+  "book": "Ezekiel",
+  "chapter": 11,
+  "questions": [
+    {
+      "id": "ezekiel-11-q1",
+      "type": "multiple_choice",
+      "question": "What promise about the heart does God give the exiles in chapter 11?",
+      "options": [
+        "A hardened heart that would never turn back",
+        "A divided heart, torn between two masters",
+        "A new heart and a new spirit, removing the heart of stone",
+        "A cold heart of stone set in place of their hearts of flesh"
+      ],
+      "answer": "A new heart and a new spirit, removing the heart of stone",
+      "verse_reference": "Ezekiel 11:19"
+    },
+    {
+      "id": "ezekiel-11-q2",
+      "type": "multiple_choice",
+      "question": "What did the wicked leaders of the city falsely say?",
+      "options": [
+        "We must turn and repent of all our sins before it is far too late",
+        "The day of the LORD has now come at last, and the end is very near",
+        "Let us all flee away at once to Egypt, where we will surely be safe",
+        "The city is the cauldron and they are the meat (safe inside)"
+      ],
+      "answer": "The city is the cauldron and they are the meat (safe inside)",
+      "verse_reference": "Ezekiel 11:3"
+    },
+    {
+      "id": "ezekiel-11-q3",
+      "type": "true_false",
+      "question": "At the end of chapter 11 the glory of the LORD departed and stood on the mountain east of the city.",
+      "answer": "true",
+      "verse_reference": "Ezekiel 11:23"
+    },
+    {
+      "id": "ezekiel-11-q4",
+      "type": "fill_blank",
+      "question": "I will give them one heart, and a new _____ I will put within them.",
+      "answer": "spirit",
+      "verse_reference": "Ezekiel 11:19"
+    },
+    {
+      "id": "ezekiel-11-q5",
+      "type": "fill_blank",
+      "question": "I will remove the heart of _____ from their flesh and give them a heart of flesh.",
+      "answer": "stone",
+      "verse_reference": "Ezekiel 11:19"
+    }
+  ]
+}

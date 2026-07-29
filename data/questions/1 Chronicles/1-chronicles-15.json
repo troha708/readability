@@ -1,0 +1,53 @@
+{
+  "book": "1 Chronicles",
+  "chapter": 15,
+  "questions": [
+    {
+      "id": "1-chronicles-15-q1",
+      "type": "multiple_choice",
+      "question": "Who alone were permitted to carry the ark of God?",
+      "options": [
+        "The priests only",
+        "The mighty men",
+        "The elders",
+        "The Levites"
+      ],
+      "answer": "The Levites",
+      "verse_reference": "1 Chronicles 15:2"
+    },
+    {
+      "id": "1-chronicles-15-q2",
+      "type": "multiple_choice",
+      "question": "Who despised David in her heart as he danced before the ark?",
+      "options": [
+        "Michal",
+        "Bathsheba",
+        "Merab",
+        "Abigail"
+      ],
+      "answer": "Michal",
+      "verse_reference": "1 Chronicles 15:29"
+    },
+    {
+      "id": "1-chronicles-15-q3",
+      "type": "true_false",
+      "question": "This time the ark was carried on the shoulders of the Levites with poles.",
+      "answer": "true",
+      "verse_reference": "1 Chronicles 15:15"
+    },
+    {
+      "id": "1-chronicles-15-q4",
+      "type": "fill_blank",
+      "question": "David was clothed with a robe of fine linen and wore a linen _____.",
+      "answer": "ephod",
+      "verse_reference": "1 Chronicles 15:27"
+    },
+    {
+      "id": "1-chronicles-15-q5",
+      "type": "fill_blank",
+      "question": "They brought the ark with songs, lyres, harps, and _____.",
+      "answer": "cymbals",
+      "verse_reference": "1 Chronicles 15:28"
+    }
+  ]
+}

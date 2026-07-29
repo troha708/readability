@@ -1,0 +1,60 @@
+{
+  "book": "Ezekiel",
+  "chapter": 42,
+  "questions": [
+    {
+      "id": "ezekiel-42-q1",
+      "type": "multiple_choice",
+      "question": "What does Ezekiel 42 describe?",
+      "options": [
+        "The great bronze altar standing in the middle of the court",
+        "The side chambers/rooms for the priests in the temple area",
+        "The wide river of water flowing out from the threshold",
+        "The east gate through which the glory of the LORD came"
+      ],
+      "answer": "The side chambers/rooms for the priests in the temple area",
+      "verse_reference": "Ezekiel 42:1-14"
+    },
+    {
+      "id": "ezekiel-42-q2",
+      "type": "multiple_choice",
+      "question": "What were these holy chambers used for?",
+      "options": [
+        "Where priests ate offerings and kept garments",
+        "Where all the people gathered to hear the holy law",
+        "Where the temple treasures were stored",
+        "Where the king sat to judge the people"
+      ],
+      "answer": "Where priests ate offerings and kept garments",
+      "verse_reference": "Ezekiel 42:13-14"
+    },
+    {
+      "id": "ezekiel-42-q3",
+      "type": "true_false",
+      "question": "The vision distinguishes between the holy place and the common, with a wall around the temple area.",
+      "answer": "true",
+      "verse_reference": "Ezekiel 42:20"
+    },
+    {
+      "id": "ezekiel-42-q4",
+      "type": "fill_blank",
+      "question": "These are the holy chambers where the priests shall eat the most holy _____.",
+      "answer": "offerings",
+      "accept": [
+        "things"
+      ],
+      "verse_reference": "Ezekiel 42:13"
+    },
+    {
+      "id": "ezekiel-42-q5",
+      "type": "fill_blank",
+      "question": "The wall was to make a separation between the holy and the _____.",
+      "answer": "common",
+      "accept": [
+        "profane",
+        "prophane"
+      ],
+      "verse_reference": "Ezekiel 42:20"
+    }
+  ]
+}

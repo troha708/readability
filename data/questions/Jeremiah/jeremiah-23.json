@@ -1,0 +1,56 @@
+{
+  "book": "Jeremiah",
+  "chapter": 23,
+  "questions": [
+    {
+      "id": "jeremiah-23-q1",
+      "type": "multiple_choice",
+      "question": "What does God promise to raise up for David in Jeremiah 23?",
+      "options": [
+        "A line of priests to serve forever",
+        "A righteous Branch, a king who will reign wisely",
+        "A new temple far more glorious than the very first",
+        "A great army to drive out the enemy"
+      ],
+      "answer": "A righteous Branch, a king who will reign wisely",
+      "verse_reference": "Jeremiah 23:5"
+    },
+    {
+      "id": "jeremiah-23-q2",
+      "type": "multiple_choice",
+      "question": "What does God condemn in the false prophets of Jeremiah 23?",
+      "options": [
+        "They demand to be paid in full beforehand before they will even speak a single word",
+        "They prophesy lies and dreams, leading people astray, though he did not send them",
+        "They have wholly abandoned the whole city in its most desperate and darkest hour of need",
+        "They speak only the truth but always in obscure riddles that no one at all can understand"
+      ],
+      "answer": "They prophesy lies and dreams, leading people astray, though he did not send them",
+      "verse_reference": "Jeremiah 23:21, 25"
+    },
+    {
+      "id": "jeremiah-23-q3",
+      "type": "true_false",
+      "question": "Jeremiah 23 says the LORD fills heaven and earth; no one can hide in secret places from him.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 23:24"
+    },
+    {
+      "id": "jeremiah-23-q4",
+      "type": "fill_blank",
+      "question": "I will raise up for David a righteous _____, and he shall reign as king and deal wisely.",
+      "answer": "Branch",
+      "accept": [
+        "shoot"
+      ],
+      "verse_reference": "Jeremiah 23:5"
+    },
+    {
+      "id": "jeremiah-23-q5",
+      "type": "fill_blank",
+      "question": "Is not my word like _____, declares the LORD, and like a hammer that breaks the rock in pieces?",
+      "answer": "fire",
+      "verse_reference": "Jeremiah 23:29"
+    }
+  ]
+}

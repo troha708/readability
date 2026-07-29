@@ -1,0 +1,53 @@
+{
+  "book": "Jeremiah",
+  "chapter": 34,
+  "questions": [
+    {
+      "id": "jeremiah-34-q1",
+      "type": "multiple_choice",
+      "question": "What promise did King Zedekiah and the people make, then break, in chapter 34?",
+      "options": [
+        "To make a lasting peace with all the surrounding nations",
+        "To rebuild the broken walls of the holy city",
+        "To free their Hebrew slaves, then they took them back",
+        "To pay a heavy tribute to the king of Babylon"
+      ],
+      "answer": "To free their Hebrew slaves, then they took them back",
+      "verse_reference": "Jeremiah 34:8-11"
+    },
+    {
+      "id": "jeremiah-34-q2",
+      "type": "multiple_choice",
+      "question": "What did God say their broken covenant would bring?",
+      "options": [
+        "Peace and rest throughout the land",
+        "Liberty to sword, pestilence, and famine",
+        "Deliverance from the Babylonian army",
+        "A great harvest after the drought"
+      ],
+      "answer": "Liberty to sword, pestilence, and famine",
+      "verse_reference": "Jeremiah 34:17"
+    },
+    {
+      "id": "jeremiah-34-q3",
+      "type": "true_false",
+      "question": "God said Zedekiah would not die by the sword but in peace, yet would see the king of Babylon.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 34:4-5"
+    },
+    {
+      "id": "jeremiah-34-q4",
+      "type": "fill_blank",
+      "question": "You took back the male and female slaves you had set at _____.",
+      "answer": "liberty",
+      "verse_reference": "Jeremiah 34:16"
+    },
+    {
+      "id": "jeremiah-34-q5",
+      "type": "fill_blank",
+      "question": "Behold, I proclaim to you liberty to the _____, to pestilence, and to famine.",
+      "answer": "sword",
+      "verse_reference": "Jeremiah 34:17"
+    }
+  ]
+}

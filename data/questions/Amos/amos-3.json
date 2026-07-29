@@ -1,0 +1,53 @@
+{
+  "book": "Amos",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "amos-3-q1",
+      "type": "multiple_choice",
+      "question": "What rhetorical question shows the prophet must speak in Amos 3?",
+      "options": [
+        "The harvest is past; who will not weep? The famine has come; who can but mourn?",
+        "The day is dark; who will not tremble? The end has come; who can but despair?",
+        "The trumpet has loudly sounded; who will not flee? The army has come; who can but fight?",
+        "The lion has roared; who will not fear? The Lord GOD has spoken; who can but prophesy?"
+      ],
+      "answer": "The lion has roared; who will not fear? The Lord GOD has spoken; who can but prophesy?",
+      "verse_reference": "Amos 3:8"
+    },
+    {
+      "id": "amos-3-q2",
+      "type": "multiple_choice",
+      "question": "What does Amos 3 say God does before acting?",
+      "options": [
+        "Hides his plans from all the nations",
+        "Sends his word by the kings of the earth",
+        "Speaks only through the priests at the high altar",
+        "Reveals his secret to his servants the prophets"
+      ],
+      "answer": "Reveals his secret to his servants the prophets",
+      "verse_reference": "Amos 3:7"
+    },
+    {
+      "id": "amos-3-q3",
+      "type": "true_false",
+      "question": "Amos 3 says, 'You only have I known of all the families of the earth; therefore I will punish you.'",
+      "answer": "true",
+      "verse_reference": "Amos 3:2"
+    },
+    {
+      "id": "amos-3-q4",
+      "type": "fill_blank",
+      "question": "The _____ has roared; who will not fear?",
+      "answer": "lion",
+      "verse_reference": "Amos 3:8"
+    },
+    {
+      "id": "amos-3-q5",
+      "type": "fill_blank",
+      "question": "The Lord GOD does nothing without revealing his secret to his servants the _____.",
+      "answer": "prophets",
+      "verse_reference": "Amos 3:7"
+    }
+  ]
+}

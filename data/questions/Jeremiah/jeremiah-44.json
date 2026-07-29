@@ -1,0 +1,57 @@
+{
+  "book": "Jeremiah",
+  "chapter": 44,
+  "questions": [
+    {
+      "id": "jeremiah-44-q1",
+      "type": "multiple_choice",
+      "question": "What sin did the Jews in Egypt persist in, per chapter 44?",
+      "options": [
+        "Marrying the women of the Egyptians",
+        "Burning incense to the queen of heaven and other gods",
+        "Breaking the Sabbath and the feasts",
+        "Stubbornly refusing to pay the tithes owed to the priests"
+      ],
+      "answer": "Burning incense to the queen of heaven and other gods",
+      "verse_reference": "Jeremiah 44:17-19"
+    },
+    {
+      "id": "jeremiah-44-q2",
+      "type": "multiple_choice",
+      "question": "How did the people defiantly respond to Jeremiah?",
+      "options": [
+        "They begged and pleaded with Jeremiah to pray for them",
+        "They repented at last and turned back again to the LORD",
+        "They returned to the land of Judah again at once",
+        "They refused and kept worshiping the queen of heaven"
+      ],
+      "answer": "They refused and kept worshiping the queen of heaven",
+      "verse_reference": "Jeremiah 44:16-17"
+    },
+    {
+      "id": "jeremiah-44-q3",
+      "type": "true_false",
+      "question": "Jeremiah warned that the Jews in Egypt would be consumed by sword and famine.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 44:27"
+    },
+    {
+      "id": "jeremiah-44-q4",
+      "type": "fill_blank",
+      "question": "We will do everything we have vowed, make offerings to the queen of _____.",
+      "answer": "heaven",
+      "accept": [
+        "heavens",
+        "sky"
+      ],
+      "verse_reference": "Jeremiah 44:17"
+    },
+    {
+      "id": "jeremiah-44-q5",
+      "type": "fill_blank",
+      "question": "This was the sign that God would punish them: Pharaoh _____ would be given into the hand of his enemies.",
+      "answer": "Hophra",
+      "verse_reference": "Jeremiah 44:30"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "2-chronicles-4-q1",
+      "type": "multiple_choice",
+      "question": "What was the large basin called that Solomon made for the priests to wash in?",
+      "options": [
+        "The golden bowl",
+        "The laver of fire",
+        "The ark",
+        "The bronze sea"
+      ],
+      "answer": "The bronze sea",
+      "verse_reference": "2 Chronicles 4:2"
+    },
+    {
+      "id": "2-chronicles-4-q2",
+      "type": "multiple_choice",
+      "question": "How many golden lampstands did Solomon make for the temple?",
+      "options": [
+        "Ten",
+        "Twelve",
+        "One",
+        "Seven"
+      ],
+      "answer": "Ten",
+      "verse_reference": "2 Chronicles 4:7"
+    },
+    {
+      "id": "2-chronicles-4-q3",
+      "type": "true_false",
+      "question": "The bronze sea rested on twelve bronze oxen.",
+      "answer": "true",
+      "verse_reference": "2 Chronicles 4:4"
+    },
+    {
+      "id": "2-chronicles-4-q4",
+      "type": "fill_blank",
+      "question": "Solomon made the bronze _____ on which the burnt offerings were made.",
+      "answer": "altar",
+      "verse_reference": "2 Chronicles 4:1"
+    },
+    {
+      "id": "2-chronicles-4-q5",
+      "type": "fill_blank",
+      "question": "All the utensils Huram made for the temple were of polished _____.",
+      "answer": "bronze",
+      "accept": [
+        "brass"
+      ],
+      "verse_reference": "2 Chronicles 4:16"
+    }
+  ]
+}

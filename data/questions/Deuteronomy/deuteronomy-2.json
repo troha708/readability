@@ -1,0 +1,53 @@
+{
+  "book": "Deuteronomy",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "deuteronomy-2-q1",
+      "type": "multiple_choice",
+      "question": "Which peoples were Israel told not to attack, because God had given them their land?",
+      "options": [
+        "Bashan, Heshbon, and Gilead",
+        "Canaan, Hazor, and Ai",
+        "Edom, Moab, and Ammon",
+        "Midian, Amalek, and Ammon"
+      ],
+      "answer": "Edom, Moab, and Ammon",
+      "verse_reference": "Deuteronomy 2:4-19"
+    },
+    {
+      "id": "deuteronomy-2-q2",
+      "type": "multiple_choice",
+      "question": "Which king did Israel defeat in this chapter?",
+      "options": [
+        "Sihon, king of Heshbon",
+        "Og, the king of Bashan",
+        "Arad, the king of Negev",
+        "Balak, the king of Moab"
+      ],
+      "answer": "Sihon, king of Heshbon",
+      "verse_reference": "Deuteronomy 2:24-33"
+    },
+    {
+      "id": "deuteronomy-2-q3",
+      "type": "true_false",
+      "question": "God told Israel not to provoke the descendants of Esau (Edom).",
+      "answer": "true",
+      "verse_reference": "Deuteronomy 2:4-5"
+    },
+    {
+      "id": "deuteronomy-2-q4",
+      "type": "fill_blank",
+      "question": "God said he had given Mount Seir to _____ as a possession.",
+      "answer": "Esau",
+      "verse_reference": "Deuteronomy 2:5"
+    },
+    {
+      "id": "deuteronomy-2-q5",
+      "type": "fill_blank",
+      "question": "Israel defeated Sihon, the king of _____.",
+      "answer": "Heshbon",
+      "verse_reference": "Deuteronomy 2:26-30"
+    }
+  ]
+}

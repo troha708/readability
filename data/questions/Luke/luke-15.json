@@ -1,0 +1,56 @@
+{
+  "book": "Luke",
+  "chapter": 15,
+  "questions": [
+    {
+      "id": "luke-15-q1",
+      "type": "multiple_choice",
+      "question": "In the Parable of the Lost Sheep, how many sheep did the shepherd leave behind to find the one that was lost?",
+      "options": [
+        "One hundred",
+        "Ninety-nine",
+        "Seventy-five",
+        "Fifty"
+      ],
+      "answer": "Ninety-nine",
+      "verse_reference": "Luke 15:4"
+    },
+    {
+      "id": "luke-15-q2",
+      "type": "multiple_choice",
+      "question": "In the Parable of the Prodigal Son, what job did the younger son take in the far country?",
+      "options": [
+        "A servant",
+        "Feeding pigs",
+        "A poor carpenter",
+        "A fisherman"
+      ],
+      "answer": "Feeding pigs",
+      "verse_reference": "Luke 15:15"
+    },
+    {
+      "id": "luke-15-q3",
+      "type": "true_false",
+      "question": "The older brother was happy when the prodigal son returned home.",
+      "answer": "false",
+      "verse_reference": "Luke 15:28"
+    },
+    {
+      "id": "luke-15-q4",
+      "type": "fill_blank",
+      "question": "There will be more joy in heaven over one sinner who repents than over ninety-nine righteous ones who do not need to _____.",
+      "answer": "repent",
+      "accept": [
+        "repentance"
+      ],
+      "verse_reference": "Luke 15:7"
+    },
+    {
+      "id": "luke-15-q5",
+      "type": "fill_blank",
+      "question": "For this, my son, was dead and is _____ again. He was lost and is found.",
+      "answer": "alive",
+      "verse_reference": "Luke 15:24"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "book": "Colossians",
+  "source": "Berean Standard Bible (CC0 Public Domain)",
+  "chapters": {
+    "1": [
+      {
+        "beforeVerse": 1,
+        "heading": "Greetings from Paul and Timothy"
+      },
+      {
+        "beforeVerse": 3,
+        "heading": "Thanksgiving and Prayer"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "The Supremacy of the Son"
+      },
+      {
+        "beforeVerse": 24,
+        "heading": "Paul’s Suffering for the Church"
+      }
+    ],
+    "2": [
+      {
+        "beforeVerse": 1,
+        "heading": "Absent in Body, Present in Spirit"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "Alive with Christ"
+      }
+    ],
+    "3": [
+      {
+        "beforeVerse": 1,
+        "heading": "Put On the New Self"
+      },
+      {
+        "beforeVerse": 18,
+        "heading": "Christian Households"
+      },
+      {
+        "beforeVerse": 22,
+        "heading": "Serving with Honor"
+      }
+    ],
+    "4": [
+      {
+        "beforeVerse": 1,
+        "heading": "Prayerful Speech and Actions"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "Greetings from Paul’s Fellow Workers"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "Signature and Final Instructions"
+      }
+    ]
+  }
+}

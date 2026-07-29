@@ -1,0 +1,56 @@
+{
+  "book": "Psalms",
+  "chapter": 9,
+  "questions": [
+    {
+      "id": "psalms-9-q1",
+      "type": "multiple_choice",
+      "question": "What does David resolve to do in Psalm 9?",
+      "options": [
+        "Give thanks to the LORD with his whole heart",
+        "Question why the wicked always seem to prosper",
+        "Plead for rescue from his enemies",
+        "Cry out to the LORD in bitter distress"
+      ],
+      "answer": "Give thanks to the LORD with his whole heart",
+      "verse_reference": "Psalm 9:1"
+    },
+    {
+      "id": "psalms-9-q2",
+      "type": "multiple_choice",
+      "question": "How is the LORD described as ruling?",
+      "options": [
+        "He pardons the sins of the penitent",
+        "He scatters the proud and the mighty",
+        "He gathers the exiles from afar",
+        "He judges the world with righteousness"
+      ],
+      "answer": "He judges the world with righteousness",
+      "verse_reference": "Psalm 9:8"
+    },
+    {
+      "id": "psalms-9-q3",
+      "type": "true_false",
+      "question": "David says the LORD is a stronghold for the oppressed, in times of trouble.",
+      "answer": "true",
+      "verse_reference": "Psalm 9:9"
+    },
+    {
+      "id": "psalms-9-q4",
+      "type": "fill_blank",
+      "question": "Those who know your name put their _____ in you.",
+      "answer": "trust",
+      "verse_reference": "Psalm 9:10"
+    },
+    {
+      "id": "psalms-9-q5",
+      "type": "fill_blank",
+      "question": "The nations have fallen into a pit of their own _____.",
+      "answer": "making",
+      "accept": [
+        "made"
+      ],
+      "verse_reference": "Psalm 9:15"
+    }
+  ]
+}

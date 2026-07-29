@@ -1,0 +1,58 @@
+{
+  "book": "James",
+  "chapter": 5,
+  "questions": [
+    {
+      "id": "jas_5_1",
+      "type": "multiple_choice",
+      "question": "James holds up which Old Testament figure as an example of patience in suffering?",
+      "options": [
+        "Job",
+        "Moses",
+        "David",
+        "Elijah"
+      ],
+      "correct": "Job",
+      "verse_ref": "James 5:11",
+      "feedback": "James points to Job's perseverance and the Lord's compassion."
+    },
+    {
+      "id": "jas_5_2",
+      "type": "multiple_choice",
+      "question": "James says the prayer offered in faith will do what for the sick person?",
+      "options": [
+        "Give them peace",
+        "Make them well",
+        "Send them angels",
+        "Forgive their debts"
+      ],
+      "correct": "Make them well",
+      "verse_ref": "James 5:15",
+      "feedback": "The prayer offered in faith will make the sick person well."
+    },
+    {
+      "id": "jas_5_3",
+      "type": "true_false",
+      "question": "James tells believers to swear oaths by heaven and earth.",
+      "correct": false,
+      "verse_ref": "James 5:12",
+      "feedback": "James says do not swear — let your yes be yes and your no be no."
+    },
+    {
+      "id": "jas_5_4",
+      "type": "fill_in_the_blank",
+      "question": "The earnest prayer of a _____ person has great power.",
+      "correct": "righteous",
+      "verse_ref": "James 5:16",
+      "feedback": "The prayer of a righteous person is powerful and effective."
+    },
+    {
+      "id": "jas_5_5",
+      "type": "fill_in_the_blank",
+      "question": "Be patient, brothers, until the coming of the Lord, like a farmer waiting for the precious _____ of the earth.",
+      "correct": "fruit",
+      "verse_ref": "James 5:7",
+      "feedback": "Be patient like a farmer waiting for the precious fruit of the earth."
+    }
+  ]
+}

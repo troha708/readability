@@ -1,0 +1,53 @@
+{
+  "book": "Deuteronomy",
+  "chapter": 27,
+  "questions": [
+    {
+      "id": "deuteronomy-27-q1",
+      "type": "multiple_choice",
+      "question": "On which two mountains were the blessings and curses to be pronounced?",
+      "options": [
+        "Sinai and Horeb",
+        "Gerizim and Ebal",
+        "Nebo and Carmel",
+        "Zion and Moriah"
+      ],
+      "answer": "Gerizim and Ebal",
+      "verse_reference": "Deuteronomy 27:12-13"
+    },
+    {
+      "id": "deuteronomy-27-q2",
+      "type": "multiple_choice",
+      "question": "What were the Israelites to write the law on after crossing the Jordan?",
+      "options": [
+        "The palms of their hands",
+        "Smooth wooden boards",
+        "Rolled-up parchment scrolls",
+        "Large plastered stones"
+      ],
+      "answer": "Large plastered stones",
+      "verse_reference": "Deuteronomy 27:2-3"
+    },
+    {
+      "id": "deuteronomy-27-q3",
+      "type": "true_false",
+      "question": "The people were to respond \"Amen\" to the curses pronounced by the Levites.",
+      "answer": "true",
+      "verse_reference": "Deuteronomy 27:14-26"
+    },
+    {
+      "id": "deuteronomy-27-q4",
+      "type": "fill_blank",
+      "question": "The curses were to be pronounced from Mount _____.",
+      "answer": "Ebal",
+      "verse_reference": "Deuteronomy 27:13"
+    },
+    {
+      "id": "deuteronomy-27-q5",
+      "type": "fill_blank",
+      "question": "After each curse the people were to say, \"_____.\"",
+      "answer": "Amen",
+      "verse_reference": "Deuteronomy 27:15-26"
+    }
+  ]
+}

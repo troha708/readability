@@ -1,0 +1,57 @@
+{
+  "book": "Isaiah",
+  "chapter": 5,
+  "questions": [
+    {
+      "id": "isaiah-5-q1",
+      "type": "multiple_choice",
+      "question": "What parable opens Isaiah 5?",
+      "options": [
+        "The parable of the lost and wandering sheep",
+        "The song of the vineyard that yielded wild grapes",
+        "The riddle of the eagle and the cedar",
+        "The story of the rich man and his lamb"
+      ],
+      "answer": "The song of the vineyard that yielded wild grapes",
+      "verse_reference": "Isaiah 5:1-2"
+    },
+    {
+      "id": "isaiah-5-q2",
+      "type": "multiple_choice",
+      "question": "What does the vineyard represent?",
+      "options": [
+        "The pagan nations all surrounding the land",
+        "The house of Israel and the men of Judah",
+        "The priests who served at the temple",
+        "The kings of Assyria and Babylon"
+      ],
+      "answer": "The house of Israel and the men of Judah",
+      "verse_reference": "Isaiah 5:7"
+    },
+    {
+      "id": "isaiah-5-q3",
+      "type": "true_false",
+      "question": "Isaiah 5 pronounces a series of woes, including on those who call evil good and good evil.",
+      "answer": "true",
+      "verse_reference": "Isaiah 5:20"
+    },
+    {
+      "id": "isaiah-5-q4",
+      "type": "fill_blank",
+      "question": "He looked for justice, but behold, _____; for righteousness, but behold, an outcry!",
+      "answer": "bloodshed",
+      "accept": [
+        "oppression",
+        "blood-shedding"
+      ],
+      "verse_reference": "Isaiah 5:7"
+    },
+    {
+      "id": "isaiah-5-q5",
+      "type": "fill_blank",
+      "question": "Woe to those who call evil good and good _____.",
+      "answer": "evil",
+      "verse_reference": "Isaiah 5:20"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "book": "Luke",
+  "chapter": 9,
+  "questions": [
+    {
+      "id": "luke-9-q1",
+      "type": "multiple_choice",
+      "question": "How many people did Jesus feed with five loaves and two fish?",
+      "options": [
+        "Around seven thousand men",
+        "Some four thousand",
+        "Nearly three thousand",
+        "About five thousand men"
+      ],
+      "answer": "About five thousand men",
+      "verse_reference": "Luke 9:14"
+    },
+    {
+      "id": "luke-9-q2",
+      "type": "multiple_choice",
+      "question": "Who appeared with Jesus on the mountain during the Transfiguration?",
+      "options": [
+        "Samuel and Daniel",
+        "Abraham and David",
+        "Isaiah and Jeremiah",
+        "Moses and Elijah"
+      ],
+      "answer": "Moses and Elijah",
+      "verse_reference": "Luke 9:30"
+    },
+    {
+      "id": "luke-9-q3",
+      "type": "true_false",
+      "question": "Jesus said that whoever loses his life for his sake will save it.",
+      "answer": "true",
+      "verse_reference": "Luke 9:24"
+    },
+    {
+      "id": "luke-9-q4",
+      "type": "fill_blank",
+      "question": "The Son of Man will be delivered up into the _____ of men.",
+      "answer": "hands",
+      "verse_reference": "Luke 9:44"
+    },
+    {
+      "id": "luke-9-q5",
+      "type": "fill_blank",
+      "question": "No one, having put his hand to the plow and looking back, is fit for God's _____.",
+      "answer": "Kingdom",
+      "accept": [
+        "reign"
+      ],
+      "verse_reference": "Luke 9:62"
+    }
+  ]
+}

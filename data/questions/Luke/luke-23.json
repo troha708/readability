@@ -1,0 +1,53 @@
+{
+  "book": "Luke",
+  "chapter": 23,
+  "questions": [
+    {
+      "id": "luke-23-q1",
+      "type": "multiple_choice",
+      "question": "Who did Pilate send Jesus to for questioning?",
+      "options": [
+        "Caesar",
+        "Herod",
+        "The Sanhedrin",
+        "Annas"
+      ],
+      "answer": "Herod",
+      "verse_reference": "Luke 23:7"
+    },
+    {
+      "id": "luke-23-q2",
+      "type": "multiple_choice",
+      "question": "What did the criminal on the cross ask Jesus?",
+      "options": [
+        "To save them both from the cruel death they faced",
+        "To prove himself the Christ by coming down",
+        "To remember him when he came into his Kingdom",
+        "To forgive the soldiers for what they did"
+      ],
+      "answer": "To remember him when he came into his Kingdom",
+      "verse_reference": "Luke 23:42"
+    },
+    {
+      "id": "luke-23-q3",
+      "type": "true_false",
+      "question": "Jesus asked the Father to forgive those who crucified him because they didn't know what they were doing.",
+      "answer": "true",
+      "verse_reference": "Luke 23:34"
+    },
+    {
+      "id": "luke-23-q4",
+      "type": "fill_blank",
+      "question": "Father, into your hands I commit my _____!",
+      "answer": "spirit",
+      "verse_reference": "Luke 23:46"
+    },
+    {
+      "id": "luke-23-q5",
+      "type": "fill_blank",
+      "question": "Today you will be with me in _____.",
+      "answer": "Paradise",
+      "verse_reference": "Luke 23:43"
+    }
+  ]
+}

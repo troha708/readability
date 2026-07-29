@@ -1,0 +1,56 @@
+{
+  "book": "Romans",
+  "chapter": 12,
+  "questions": [
+    {
+      "id": "romans-12-q1",
+      "type": "multiple_choice",
+      "question": "Paul urges believers to present their bodies as what?",
+      "options": [
+        "Burnt offerings laid out upon the altar",
+        "Obedient servants of the law of Moses",
+        "Soldiers fully armed for the great final battle",
+        "Living sacrifices, holy and acceptable to God"
+      ],
+      "answer": "Living sacrifices, holy and acceptable to God",
+      "verse_reference": "Romans 12:1"
+    },
+    {
+      "id": "romans-12-q2",
+      "type": "multiple_choice",
+      "question": "What should believers do instead of taking revenge, according to Paul?",
+      "options": [
+        "Confront the person publicly",
+        "Overcome evil with good",
+        "Report it to authorities",
+        "Ignore it completely"
+      ],
+      "answer": "Overcome evil with good",
+      "verse_reference": "Romans 12:21"
+    },
+    {
+      "id": "romans-12-q3",
+      "type": "true_false",
+      "question": "Paul says believers should conform to the pattern of this world.",
+      "answer": "false",
+      "verse_reference": "Romans 12:2"
+    },
+    {
+      "id": "romans-12-q4",
+      "type": "fill_blank",
+      "question": "Don't be conformed to this world, but be _____ by the renewing of your mind.",
+      "answer": "transformed",
+      "accept": [
+        "changed"
+      ],
+      "verse_reference": "Romans 12:2"
+    },
+    {
+      "id": "romans-12-q5",
+      "type": "fill_blank",
+      "question": "If your enemy is hungry, feed him. If he is thirsty, give him a _____.",
+      "answer": "drink",
+      "verse_reference": "Romans 12:20"
+    }
+  ]
+}

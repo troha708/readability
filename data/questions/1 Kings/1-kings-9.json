@@ -1,0 +1,53 @@
+{
+  "book": "1 Kings",
+  "chapter": 9,
+  "questions": [
+    {
+      "id": "1-kings-9-q1",
+      "type": "multiple_choice",
+      "question": "What did God promise Solomon if he walked faithfully?",
+      "options": [
+        "To grant him many wives and sons",
+        "To make him richer than all kings",
+        "To establish his throne forever",
+        "To give him a long and healthy life"
+      ],
+      "answer": "To establish his throne forever",
+      "verse_reference": "1 Kings 9:4-5"
+    },
+    {
+      "id": "1-kings-9-q2",
+      "type": "multiple_choice",
+      "question": "What did God warn would happen if Israel turned to other gods?",
+      "options": [
+        "Israel would be cut off and the temple rejected",
+        "A short famine would warn the people",
+        "A mild rebuke would come through a prophet",
+        "Nothing would change for many years"
+      ],
+      "answer": "Israel would be cut off and the temple rejected",
+      "verse_reference": "1 Kings 9:6-9"
+    },
+    {
+      "id": "1-kings-9-q3",
+      "type": "true_false",
+      "question": "God appeared to Solomon a second time after the temple was finished.",
+      "answer": "true",
+      "verse_reference": "1 Kings 9:2"
+    },
+    {
+      "id": "1-kings-9-q4",
+      "type": "fill_blank",
+      "question": "God promised to establish Solomon's royal _____ over Israel forever if he obeyed.",
+      "answer": "throne",
+      "verse_reference": "1 Kings 9:5"
+    },
+    {
+      "id": "1-kings-9-q5",
+      "type": "fill_blank",
+      "question": "God warned that disobedience would cause Israel to be cut off from the _____ he gave them.",
+      "answer": "land",
+      "verse_reference": "1 Kings 9:7"
+    }
+  ]
+}

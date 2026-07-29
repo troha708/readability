@@ -1,0 +1,56 @@
+{
+  "book": "Jeremiah",
+  "chapter": 49,
+  "questions": [
+    {
+      "id": "jeremiah-49-q1",
+      "type": "multiple_choice",
+      "question": "Which nations are addressed in the oracles of Jeremiah 49?",
+      "options": [
+        "Israel, Judah, Samaria, and Galilee",
+        "Egypt, Assyria, Babylon, Persia, and Media",
+        "Ammon, Edom, Damascus, Kedar, and Elam",
+        "Moab, Philistia, Tyre, and Sidon"
+      ],
+      "answer": "Ammon, Edom, Damascus, Kedar, and Elam",
+      "verse_reference": "Jeremiah 49:1, 7, 23, 28, 34"
+    },
+    {
+      "id": "jeremiah-49-q2",
+      "type": "multiple_choice",
+      "question": "What does God say about Edom's pride?",
+      "options": [
+        "Its humble and lowly spirit will spare it from harm",
+        "Its cause is just, and it will surely be vindicated",
+        "Its high walls and rocky heights will keep it safe",
+        "The terror Edom inspired and its pride have deceived it"
+      ],
+      "answer": "The terror Edom inspired and its pride have deceived it",
+      "verse_reference": "Jeremiah 49:16"
+    },
+    {
+      "id": "jeremiah-49-q3",
+      "type": "true_false",
+      "question": "Jeremiah 49 says God will restore the fortunes of the Ammonites afterward.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 49:6"
+    },
+    {
+      "id": "jeremiah-49-q4",
+      "type": "fill_blank",
+      "question": "Concerning Edom: the pride of your heart has _____ you.",
+      "answer": "deceived",
+      "verse_reference": "Jeremiah 49:16"
+    },
+    {
+      "id": "jeremiah-49-q5",
+      "type": "fill_blank",
+      "question": "Damascus has become _____; she turns to flee, and panic has seized her.",
+      "answer": "feeble",
+      "accept": [
+        "discouraged"
+      ],
+      "verse_reference": "Jeremiah 49:24"
+    }
+  ]
+}

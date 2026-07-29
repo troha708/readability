@@ -1,0 +1,59 @@
+{
+  "book": "Acts",
+  "chapter": 19,
+  "questions": [
+    {
+      "id": "acts-19-q1",
+      "type": "multiple_choice",
+      "question": "In Ephesus, what did many who practiced sorcery do after believing?",
+      "options": [
+        "Hid their scrolls away in secret",
+        "Sold their books for a great price",
+        "Burned their magic books publicly",
+        "Handed their scrolls over to Paul"
+      ],
+      "answer": "Burned their magic books publicly",
+      "verse_reference": "Acts 19:19"
+    },
+    {
+      "id": "acts-19-q2",
+      "type": "multiple_choice",
+      "question": "Who started a riot in Ephesus because Paul's teaching was threatening the silver shrine business?",
+      "options": [
+        "Demetrius",
+        "Gaius",
+        "Alexander",
+        "Aristarchus"
+      ],
+      "answer": "Demetrius",
+      "verse_reference": "Acts 19:24-27"
+    },
+    {
+      "id": "acts-19-q3",
+      "type": "true_false",
+      "question": "The seven sons of Sceva successfully drove out evil spirits using the name of Jesus.",
+      "answer": "false",
+      "verse_reference": "Acts 19:14-16"
+    },
+    {
+      "id": "acts-19-q4",
+      "type": "fill_blank",
+      "question": "The evil spirit answered, 'Jesus I know, and Paul I know, but who are _____?'",
+      "answer": "you",
+      "accept": [
+        "ye"
+      ],
+      "verse_reference": "Acts 19:15"
+    },
+    {
+      "id": "acts-19-q5",
+      "type": "fill_blank",
+      "question": "The crowd in the theater shouted for about two hours, 'Great is _____ of the Ephesians!'",
+      "answer": "Artemis",
+      "accept": [
+        "Diana"
+      ],
+      "verse_reference": "Acts 19:34"
+    }
+  ]
+}

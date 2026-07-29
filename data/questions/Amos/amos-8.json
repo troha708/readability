@@ -1,0 +1,54 @@
+{
+  "book": "Amos",
+  "chapter": 8,
+  "questions": [
+    {
+      "id": "amos-8-q1",
+      "type": "multiple_choice",
+      "question": "What did the basket of summer fruit signify in Amos 8?",
+      "options": [
+        "That the exile would soon be over",
+        "That a great harvest was at hand",
+        "That a king would restore the land",
+        "That the end had come upon Israel"
+      ],
+      "answer": "That the end had come upon Israel",
+      "verse_reference": "Amos 8:1-2"
+    },
+    {
+      "id": "amos-8-q2",
+      "type": "multiple_choice",
+      "question": "What unusual famine does Amos 8 foretell?",
+      "options": [
+        "A plague that swept through the cities",
+        "A famine of bread spread across the whole land",
+        "A famine of hearing the words of the LORD",
+        "A drought that dried up every stream"
+      ],
+      "answer": "A famine of hearing the words of the LORD",
+      "verse_reference": "Amos 8:11"
+    },
+    {
+      "id": "amos-8-q3",
+      "type": "true_false",
+      "question": "Amos 8 condemns merchants who cheat with false balances and trample the needy.",
+      "answer": "true",
+      "verse_reference": "Amos 8:4-5"
+    },
+    {
+      "id": "amos-8-q4",
+      "type": "fill_blank",
+      "question": "Behold, the days are coming when I will send a famine of hearing the words of the _____.",
+      "answer": "LORD",
+      "accept": ["Jehovah", "Yahweh"],
+      "verse_reference": "Amos 8:11"
+    },
+    {
+      "id": "amos-8-q5",
+      "type": "fill_blank",
+      "question": "The basket of summer fruit meant 'the _____ has come upon my people Israel.'",
+      "answer": "end",
+      "verse_reference": "Amos 8:2"
+    }
+  ]
+}

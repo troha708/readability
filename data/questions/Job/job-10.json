@@ -1,0 +1,53 @@
+{
+  "book": "Job",
+  "chapter": 10,
+  "questions": [
+    {
+      "id": "job-10-q1",
+      "type": "multiple_choice",
+      "question": "What did Job say he would do in the bitterness of his soul?",
+      "options": [
+        "Stay silent and bear it alone",
+        "Give free utterance to his complaint",
+        "Flee far from the eyes of men",
+        "Praise God in spite of all his losses"
+      ],
+      "answer": "Give free utterance to his complaint",
+      "verse_reference": "Job 10:1"
+    },
+    {
+      "id": "job-10-q2",
+      "type": "multiple_choice",
+      "question": "What did Job ask God not to do?",
+      "options": [
+        "Bless him richly as he had so often done before",
+        "Condemn him; show him why he contends with him",
+        "Heal him at last of his many painful sores",
+        "Speak even a single word of reply to him"
+      ],
+      "answer": "Condemn him; show him why he contends with him",
+      "verse_reference": "Job 10:2"
+    },
+    {
+      "id": "job-10-q3",
+      "type": "true_false",
+      "question": "Job acknowledged that God's hands fashioned and made him.",
+      "answer": "true",
+      "verse_reference": "Job 10:8"
+    },
+    {
+      "id": "job-10-q4",
+      "type": "fill_blank",
+      "question": "Job said God had clothed him with skin and flesh and knit him with bones and _____.",
+      "answer": "sinews",
+      "verse_reference": "Job 10:11"
+    },
+    {
+      "id": "job-10-q5",
+      "type": "fill_blank",
+      "question": "Job asked God to remember that he made him like _____.",
+      "answer": "clay",
+      "verse_reference": "Job 10:9"
+    }
+  ]
+}

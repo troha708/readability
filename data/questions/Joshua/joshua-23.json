@@ -1,0 +1,58 @@
+{
+  "book": "Joshua",
+  "chapter": 23,
+  "questions": [
+    {
+      "id": "joshua-23-q1",
+      "type": "multiple_choice",
+      "question": "What did Joshua, now old, urge the leaders to do?",
+      "options": [
+        "March out to war against all the nations",
+        "Choose for themselves a king to rule over all the tribes",
+        "Build a great temple in the new land",
+        "Hold fast to the LORD and obey the law of Moses"
+      ],
+      "answer": "Hold fast to the LORD and obey the law of Moses",
+      "verse_reference": "Joshua 23:6-8"
+    },
+    {
+      "id": "joshua-23-q2",
+      "type": "multiple_choice",
+      "question": "What warning did Joshua give about the remaining nations?",
+      "options": [
+        "To take tribute from them but to spare all their lives",
+        "To drive them all out swiftly before the next harvest",
+        "Not to associate with them or their gods, lest a snare",
+        "To teach them the law of Moses and the whole covenant"
+      ],
+      "answer": "Not to associate with them or their gods, lest a snare",
+      "verse_reference": "Joshua 23:7-13"
+    },
+    {
+      "id": "joshua-23-q3",
+      "type": "true_false",
+      "question": "Joshua said one man of them would put a thousand to flight, because God fought for them.",
+      "answer": "true",
+      "verse_reference": "Joshua 23:10"
+    },
+    {
+      "id": "joshua-23-q4",
+      "type": "fill_blank",
+      "question": "Joshua warned that intermarrying with the nations would become a _____ to them.",
+      "answer": "snare",
+      "verse_reference": "Joshua 23:13"
+    },
+    {
+      "id": "joshua-23-q5",
+      "type": "fill_blank",
+      "question": "Joshua said not one good _____ of the LORD had failed; all had come to pass.",
+      "answer": "promise",
+      "accept": [
+        "promises",
+        "thing",
+        "things"
+      ],
+      "verse_reference": "Joshua 23:14"
+    }
+  ]
+}

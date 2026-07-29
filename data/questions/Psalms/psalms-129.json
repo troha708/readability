@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 129,
+  "questions": [
+    {
+      "id": "psalms-129-q1",
+      "type": "multiple_choice",
+      "question": "What does Israel say in Psalm 129?",
+      "options": [
+        "Greatly have they afflicted me from my youth, yet they have not prevailed",
+        "My many enemies have surrounded me on every side and have won",
+        "The LORD has dealt very bountifully with me throughout the whole of my days",
+        "I have been wholly forsaken and forgotten by every one of my friends"
+      ],
+      "answer": "Greatly have they afflicted me from my youth, yet they have not prevailed",
+      "verse_reference": "Psalm 129:1-2"
+    },
+    {
+      "id": "psalms-129-q2",
+      "type": "multiple_choice",
+      "question": "To what does the psalm wish the enemies of Zion be like?",
+      "options": [
+        "Wax before the fire that melts and is gone",
+        "Dust on the road that the rain washes away",
+        "Chaff on the threshing floor that the wind blows away",
+        "Grass on the housetops that withers before it grows"
+      ],
+      "answer": "Grass on the housetops that withers before it grows",
+      "verse_reference": "Psalm 129:6"
+    },
+    {
+      "id": "psalms-129-q3",
+      "type": "true_false",
+      "question": "The psalm declares the LORD is righteous and has cut the cords of the wicked.",
+      "answer": "true",
+      "verse_reference": "Psalm 129:4"
+    },
+    {
+      "id": "psalms-129-q4",
+      "type": "fill_blank",
+      "question": "Greatly have they afflicted me from my _____, yet they have not prevailed against me.",
+      "answer": "youth",
+      "verse_reference": "Psalm 129:2"
+    },
+    {
+      "id": "psalms-129-q5",
+      "type": "fill_blank",
+      "question": "The LORD is righteous; he has cut the cords of the _____.",
+      "answer": "wicked",
+      "verse_reference": "Psalm 129:4"
+    }
+  ]
+}

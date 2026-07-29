@@ -1,0 +1,56 @@
+{
+  "book": "Jeremiah",
+  "chapter": 38,
+  "questions": [
+    {
+      "id": "jeremiah-38-q1",
+      "type": "multiple_choice",
+      "question": "Where did the officials throw Jeremiah in chapter 38?",
+      "options": [
+        "Into a cistern (well) full of mud",
+        "Onto a ship bound for Egypt",
+        "Outside the gates of the city",
+        "Into the king's own deep prison cell"
+      ],
+      "answer": "Into a cistern (well) full of mud",
+      "verse_reference": "Jeremiah 38:6"
+    },
+    {
+      "id": "jeremiah-38-q2",
+      "type": "multiple_choice",
+      "question": "Who rescued Jeremiah from the cistern?",
+      "options": [
+        "Zedekiah's own young son",
+        "Pashhur the temple priest",
+        "Baruch the faithful scribe",
+        "Ebed-melech the Ethiopian"
+      ],
+      "answer": "Ebed-melech the Ethiopian",
+      "verse_reference": "Jeremiah 38:7-13"
+    },
+    {
+      "id": "jeremiah-38-q3",
+      "type": "true_false",
+      "question": "Jeremiah advised Zedekiah that if he surrendered to Babylon, his life would be spared and the city not burned.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 38:17"
+    },
+    {
+      "id": "jeremiah-38-q4",
+      "type": "fill_blank",
+      "question": "They cast Jeremiah into the cistern, and there was no water, only _____, and he sank.",
+      "answer": "mud",
+      "accept": [
+        "mire"
+      ],
+      "verse_reference": "Jeremiah 38:6"
+    },
+    {
+      "id": "jeremiah-38-q5",
+      "type": "fill_blank",
+      "question": "Ebed-melech let down ropes and old _____ for Jeremiah to put under his arms.",
+      "answer": "rags",
+      "verse_reference": "Jeremiah 38:11-12"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "book": "Leviticus",
+  "chapter": 10,
+  "questions": [
+    {
+      "id": "leviticus-10-q1",
+      "type": "multiple_choice",
+      "question": "What happened to Aaron's sons Nadab and Abihu?",
+      "options": [
+        "They were struck with leprosy and sent outside the camp",
+        "A plague broke out and they died with many others",
+        "Fire from the LORD consumed them for unauthorized fire",
+        "The ground opened and swallowed them and their tents"
+      ],
+      "answer": "Fire from the LORD consumed them for unauthorized fire",
+      "verse_reference": "Leviticus 10:1-2"
+    },
+    {
+      "id": "leviticus-10-q2",
+      "type": "multiple_choice",
+      "question": "What were the priests forbidden to do before serving in the tent of meeting?",
+      "options": [
+        "Eat bread before the offering",
+        "Sleep within the holy tent",
+        "Speak during the sacrifice",
+        "Drink wine or strong drink"
+      ],
+      "answer": "Drink wine or strong drink",
+      "verse_reference": "Leviticus 10:9"
+    },
+    {
+      "id": "leviticus-10-q3",
+      "type": "true_false",
+      "question": "Nadab and Abihu offered unauthorized (\"strange\") fire before the LORD.",
+      "answer": "true",
+      "verse_reference": "Leviticus 10:1"
+    },
+    {
+      "id": "leviticus-10-q4",
+      "type": "fill_blank",
+      "question": "Nadab and Abihu offered _____ fire that God had not commanded them.",
+      "answer": "unauthorized",
+      "accept": [
+        "strange"
+      ],
+      "verse_reference": "Leviticus 10:1"
+    },
+    {
+      "id": "leviticus-10-q5",
+      "type": "fill_blank",
+      "question": "Priests were not to drink _____ when they entered the tent of meeting.",
+      "answer": "wine",
+      "verse_reference": "Leviticus 10:9"
+    }
+  ]
+}

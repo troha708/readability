@@ -1,0 +1,56 @@
+{
+  "book": "1 Samuel",
+  "chapter": 11,
+  "questions": [
+    {
+      "id": "1-samuel-11-q1",
+      "type": "multiple_choice",
+      "question": "Whose city did Saul rescue from Nahash the Ammonite?",
+      "options": [
+        "Bethlehem",
+        "Jabesh-gilead",
+        "Shiloh",
+        "Hebron"
+      ],
+      "answer": "Jabesh-gilead",
+      "verse_reference": "1 Samuel 11:1-11"
+    },
+    {
+      "id": "1-samuel-11-q2",
+      "type": "multiple_choice",
+      "question": "What happened after Saul's victory?",
+      "options": [
+        "Saul fled away in fear from the gathered people",
+        "Saul fell badly wounded and very soon afterward died",
+        "The kingdom was renewed and Saul confirmed as king",
+        "Saul was rejected and quickly lost his royal throne"
+      ],
+      "answer": "The kingdom was renewed and Saul confirmed as king",
+      "verse_reference": "1 Samuel 11:14-15"
+    },
+    {
+      "id": "1-samuel-11-q3",
+      "type": "true_false",
+      "question": "The Spirit of God came on Saul and he rallied Israel to battle.",
+      "answer": "true",
+      "verse_reference": "1 Samuel 11:6"
+    },
+    {
+      "id": "1-samuel-11-q4",
+      "type": "fill_blank",
+      "question": "Saul defeated _____ the Ammonite, who had threatened Jabesh-gilead.",
+      "answer": "Nahash",
+      "verse_reference": "1 Samuel 11:1-11"
+    },
+    {
+      "id": "1-samuel-11-q5",
+      "type": "fill_blank",
+      "question": "After the victory, the people renewed the _____ and confirmed Saul at Gilgal.",
+      "answer": "kingship",
+      "accept": [
+        "kingdom"
+      ],
+      "verse_reference": "1 Samuel 11:14"
+    }
+  ]
+}

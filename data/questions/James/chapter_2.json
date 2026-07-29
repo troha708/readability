@@ -1,0 +1,59 @@
+{
+  "book": "James",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "jas_2_1",
+      "type": "multiple_choice",
+      "question": "James says faith without works is what?",
+      "options": [
+        "Weak",
+        "Young",
+        "Dead",
+        "Hidden"
+      ],
+      "correct": "Dead",
+      "verse_ref": "James 2:26",
+      "feedback": "Faith without works is dead."
+    },
+    {
+      "id": "jas_2_2",
+      "type": "multiple_choice",
+      "question": "James criticizes believers for showing favoritism to whom?",
+      "options": [
+        "The rich",
+        "Religious leaders",
+        "Romans",
+        "Family members"
+      ],
+      "correct": "The rich",
+      "verse_ref": "James 2:1-4",
+      "feedback": "James rebukes giving the rich preferential treatment while dishonoring the poor."
+    },
+    {
+      "id": "jas_2_3",
+      "type": "true_false",
+      "question": "James says that even the demons believe in one God.",
+      "correct": true,
+      "verse_ref": "James 2:19",
+      "feedback": "Even the demons believe — and shudder."
+    },
+    {
+      "id": "jas_2_4",
+      "type": "fill_in_the_blank",
+      "question": "Abraham was considered righteous for what he did when he offered his son _____ on the altar.",
+      "correct": "Isaac",
+      "verse_ref": "James 2:21",
+      "feedback": "Abraham was justified by works when he offered Isaac on the altar."
+    },
+    {
+      "id": "jas_2_5",
+      "type": "fill_in_the_blank",
+      "question": "James says to love your _____ as yourself — this is the royal law.",
+      "correct": "neighbor",
+      "accept": ["neighbour"],
+      "verse_ref": "James 2:8",
+      "feedback": "Love your neighbor as yourself — the royal law found in Scripture."
+    }
+  ]
+}

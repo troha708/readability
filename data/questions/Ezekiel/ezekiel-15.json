@@ -1,0 +1,56 @@
+{
+  "book": "Ezekiel",
+  "chapter": 15,
+  "questions": [
+    {
+      "id": "ezekiel-15-q1",
+      "type": "multiple_choice",
+      "question": "To what useless thing does Ezekiel 15 compare Jerusalem?",
+      "options": [
+        "A withered fig tree that bears no fruit",
+        "The wood of the vine, good for nothing but fuel",
+        "A clay pot cracked beyond repair",
+        "A wide field all overgrown with thorns and briers"
+      ],
+      "answer": "The wood of the vine, good for nothing but fuel",
+      "verse_reference": "Ezekiel 15:2-4"
+    },
+    {
+      "id": "ezekiel-15-q2",
+      "type": "multiple_choice",
+      "question": "What is the point of the parable of the vine?",
+      "options": [
+        "The exiles will all be gathered together and restored to their own land once more",
+        "The many nations of the wide earth will come at last to worship the LORD in Zion",
+        "The inhabitants of Jerusalem are to be given to the fire because of unfaithfulness",
+        "The ruined and broken temple will at last be rebuilt in glory after the long exile"
+      ],
+      "answer": "The inhabitants of Jerusalem are to be given to the fire because of unfaithfulness",
+      "verse_reference": "Ezekiel 15:6-7"
+    },
+    {
+      "id": "ezekiel-15-q3",
+      "type": "true_false",
+      "question": "Ezekiel 15 says vine wood was already useless even before it was burned.",
+      "answer": "true",
+      "verse_reference": "Ezekiel 15:5"
+    },
+    {
+      "id": "ezekiel-15-q4",
+      "type": "fill_blank",
+      "question": "Like the wood of the _____ among the trees of the forest, so are the inhabitants of Jerusalem.",
+      "answer": "vine",
+      "verse_reference": "Ezekiel 15:6"
+    },
+    {
+      "id": "ezekiel-15-q5",
+      "type": "fill_blank",
+      "question": "The fire has consumed both ends and the middle is charred; can it be useful for _____?",
+      "answer": "anything",
+      "accept": [
+        "work"
+      ],
+      "verse_reference": "Ezekiel 15:4-5"
+    }
+  ]
+}

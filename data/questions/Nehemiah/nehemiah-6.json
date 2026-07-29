@@ -1,0 +1,53 @@
+{
+  "book": "Nehemiah",
+  "chapter": 6,
+  "questions": [
+    {
+      "id": "nehemiah-6-q1",
+      "type": "multiple_choice",
+      "question": "What did Sanballat repeatedly try to do to Nehemiah?",
+      "options": [
+        "Lure him to a meeting to harm him",
+        "Pay him to abandon the work",
+        "Promote him in the king's service",
+        "Befriend him and win his trust"
+      ],
+      "answer": "Lure him to a meeting to harm him",
+      "verse_reference": "Nehemiah 6:2"
+    },
+    {
+      "id": "nehemiah-6-q2",
+      "type": "multiple_choice",
+      "question": "How long did it take to finish the wall?",
+      "options": [
+        "Fifty-two days",
+        "One year",
+        "Seven weeks",
+        "Six months"
+      ],
+      "answer": "Fifty-two days",
+      "verse_reference": "Nehemiah 6:15"
+    },
+    {
+      "id": "nehemiah-6-q3",
+      "type": "true_false",
+      "question": "Nehemiah refused to hide in the temple when advised to, saying a man like him would not flee.",
+      "answer": "true",
+      "verse_reference": "Nehemiah 6:11"
+    },
+    {
+      "id": "nehemiah-6-q4",
+      "type": "fill_blank",
+      "question": "Nehemiah replied to Sanballat, 'I am doing a great _____ and I cannot come down.'",
+      "answer": "work",
+      "verse_reference": "Nehemiah 6:3"
+    },
+    {
+      "id": "nehemiah-6-q5",
+      "type": "fill_blank",
+      "question": "When the wall was finished, the surrounding nations perceived the work was done with the help of _____.",
+      "answer": "God",
+      "verse_reference": "Nehemiah 6:16"
+    }
+  ]
+}

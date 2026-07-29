@@ -1,0 +1,24 @@
+{
+  "book": "Philemon",
+  "source": "Berean Standard Bible (CC0 Public Domain)",
+  "chapters": {
+    "1": [
+      {
+        "beforeVerse": 1,
+        "heading": "Greetings from Paul and Timothy"
+      },
+      {
+        "beforeVerse": 4,
+        "heading": "Philemon’s Faith and Love"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "Paul’s Appeal for Onesimus"
+      },
+      {
+        "beforeVerse": 23,
+        "heading": "Additional Greetings"
+      }
+    ]
+  }
+}

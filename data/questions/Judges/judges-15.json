@@ -1,0 +1,56 @@
+{
+  "book": "Judges",
+  "chapter": 15,
+  "questions": [
+    {
+      "id": "judges-15-q1",
+      "type": "multiple_choice",
+      "question": "How did Samson burn the Philistines' fields?",
+      "options": [
+        "By pouring out jars of burning oil",
+        "With a torch in each of his hands",
+        "By hurling lamps from the hilltops",
+        "By tying torches to foxes' tails"
+      ],
+      "answer": "By tying torches to foxes' tails",
+      "verse_reference": "Judges 15:4-5"
+    },
+    {
+      "id": "judges-15-q2",
+      "type": "multiple_choice",
+      "question": "With what did Samson kill a thousand Philistines?",
+      "options": [
+        "A sword taken in battle",
+        "The jawbone of a donkey",
+        "A spear seized from a soldier",
+        "A bow drawn from the hills"
+      ],
+      "answer": "The jawbone of a donkey",
+      "verse_reference": "Judges 15:15"
+    },
+    {
+      "id": "judges-15-q3",
+      "type": "true_false",
+      "question": "The Philistines bound Samson, but he broke free and struck them down.",
+      "answer": "true",
+      "verse_reference": "Judges 15:13-15"
+    },
+    {
+      "id": "judges-15-q4",
+      "type": "fill_blank",
+      "question": "Samson caught three hundred _____ and tied torches to their tails.",
+      "answer": "foxes",
+      "accept": [
+        "jackals"
+      ],
+      "verse_reference": "Judges 15:4"
+    },
+    {
+      "id": "judges-15-q5",
+      "type": "fill_blank",
+      "question": "Samson killed a thousand men with the _____ of a donkey.",
+      "answer": "jawbone",
+      "verse_reference": "Judges 15:15"
+    }
+  ]
+}

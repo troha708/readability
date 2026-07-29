@@ -1,0 +1,54 @@
+{
+  "book": "Numbers",
+  "chapter": 23,
+  "questions": [
+    {
+      "id": "numbers-23-q1",
+      "type": "multiple_choice",
+      "question": "What did Balaam do instead of cursing Israel?",
+      "options": [
+        "He refused to speak",
+        "He cursed them",
+        "He fled",
+        "He blessed them"
+      ],
+      "answer": "He blessed them",
+      "verse_reference": "Numbers 23:11-12"
+    },
+    {
+      "id": "numbers-23-q2",
+      "type": "multiple_choice",
+      "question": "Why could Balaam not curse Israel?",
+      "options": [
+        "The angel of the LORD had struck him entirely mute",
+        "He could only say what God put in his mouth",
+        "He had forgotten the words of the curse",
+        "He was too afraid of angering King Balak"
+      ],
+      "answer": "He could only say what God put in his mouth",
+      "verse_reference": "Numbers 23:12"
+    },
+    {
+      "id": "numbers-23-q3",
+      "type": "true_false",
+      "question": "Balaam said God is not a man, that he should lie.",
+      "answer": "true",
+      "verse_reference": "Numbers 23:19"
+    },
+    {
+      "id": "numbers-23-q4",
+      "type": "fill_blank",
+      "question": "Balaam said, \"How can I curse whom God has not _____?\"",
+      "answer": "cursed",
+      "accept": ["pierced"],
+      "verse_reference": "Numbers 23:8"
+    },
+    {
+      "id": "numbers-23-q5",
+      "type": "fill_blank",
+      "question": "\"God is not a man, that he should _____,\" Balaam declared.",
+      "answer": "lie",
+      "verse_reference": "Numbers 23:19"
+    }
+  ]
+}

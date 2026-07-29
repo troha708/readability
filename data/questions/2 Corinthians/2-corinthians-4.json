@@ -1,0 +1,53 @@
+{
+  "book": "2 Corinthians",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "2cor-4-q1",
+      "type": "multiple_choice",
+      "question": "Paul says believers carry a treasure in what kind of vessels?",
+      "options": [
+        "Vessels of pure gold",
+        "Clay jars (earthen vessels)",
+        "Polished cups of beaten silver",
+        "Boxes of carved wood"
+      ],
+      "answer": "Clay jars (earthen vessels)",
+      "verse_reference": "2 Corinthians 4:7"
+    },
+    {
+      "id": "2cor-4-q2",
+      "type": "multiple_choice",
+      "question": "What does Paul say about their outer self versus inner self?",
+      "options": [
+        "Both the outer and the inner are growing ever stronger",
+        "The inner self is far weaker than the outer self",
+        "The outer is wasting away but the inner is being renewed",
+        "Both the outer and the inner are slowly wasting away"
+      ],
+      "answer": "The outer is wasting away but the inner is being renewed",
+      "verse_reference": "2 Corinthians 4:16"
+    },
+    {
+      "id": "2cor-4-q3",
+      "type": "true_false",
+      "question": "Paul says their light and momentary troubles are achieving an eternal glory that far outweighs them all.",
+      "answer": "true",
+      "verse_reference": "2 Corinthians 4:17"
+    },
+    {
+      "id": "2cor-4-q4",
+      "type": "fill_blank",
+      "question": "We fix our eyes not on what is _____, but on what is unseen, since what is seen is temporary, but what is unseen is eternal.",
+      "answer": "seen",
+      "verse_reference": "2 Corinthians 4:18"
+    },
+    {
+      "id": "2cor-4-q5",
+      "type": "fill_blank",
+      "question": "For God, who said 'Let _____ shine out of darkness,' has shone in our hearts.",
+      "answer": "light",
+      "verse_reference": "2 Corinthians 4:6"
+    }
+  ]
+}

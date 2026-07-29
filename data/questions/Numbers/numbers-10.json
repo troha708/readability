@@ -1,0 +1,53 @@
+{
+  "book": "Numbers",
+  "chapter": 10,
+  "questions": [
+    {
+      "id": "numbers-10-q1",
+      "type": "multiple_choice",
+      "question": "What were the two silver trumpets used for?",
+      "options": [
+        "To make music for worship and feasts",
+        "To summon the assembly and signal war",
+        "To warn the camp of approaching fire",
+        "To call the priests to the altar only"
+      ],
+      "answer": "To summon the assembly and signal war",
+      "verse_reference": "Numbers 10:2-9"
+    },
+    {
+      "id": "numbers-10-q2",
+      "type": "multiple_choice",
+      "question": "From which wilderness did Israel finally set out?",
+      "options": [
+        "Paran",
+        "Shur",
+        "Zin",
+        "Sinai"
+      ],
+      "answer": "Sinai",
+      "verse_reference": "Numbers 10:12"
+    },
+    {
+      "id": "numbers-10-q3",
+      "type": "true_false",
+      "question": "The ark of the covenant went before them to seek out a resting place.",
+      "answer": "true",
+      "verse_reference": "Numbers 10:33"
+    },
+    {
+      "id": "numbers-10-q4",
+      "type": "fill_blank",
+      "question": "God told Moses to make two _____ of silver to call the congregation.",
+      "answer": "trumpets",
+      "verse_reference": "Numbers 10:2"
+    },
+    {
+      "id": "numbers-10-q5",
+      "type": "fill_blank",
+      "question": "The Israelites set out from the wilderness of _____, and the cloud settled in Paran.",
+      "answer": "Sinai",
+      "verse_reference": "Numbers 10:12"
+    }
+  ]
+}

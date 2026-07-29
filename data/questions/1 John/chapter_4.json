@@ -1,0 +1,58 @@
+{
+  "book": "1 John",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "1jn_4_1",
+      "type": "multiple_choice",
+      "question": "John says God is what?",
+      "options": [
+        "Truth",
+        "Spirit",
+        "Light",
+        "Love"
+      ],
+      "correct": "Love",
+      "verse_ref": "1 John 4:8",
+      "feedback": "Whoever does not love does not know God, because God is love."
+    },
+    {
+      "id": "1jn_4_2",
+      "type": "multiple_choice",
+      "question": "John says perfect love drives out what?",
+      "options": [
+        "Doubt",
+        "Anger",
+        "Fear",
+        "Sin"
+      ],
+      "correct": "Fear",
+      "verse_ref": "1 John 4:18",
+      "feedback": "There is no fear in love. Perfect love drives out fear."
+    },
+    {
+      "id": "1jn_4_3",
+      "type": "true_false",
+      "question": "John says we love because God first loved us.",
+      "correct": true,
+      "verse_ref": "1 John 4:19",
+      "feedback": "We love because he first loved us."
+    },
+    {
+      "id": "1jn_4_4",
+      "type": "fill_in_the_blank",
+      "question": "Test the _____ to see whether they are from God, because many false prophets have gone out.",
+      "correct": "spirits",
+      "verse_ref": "1 John 4:1",
+      "feedback": "Test the spirits to see whether they are from God."
+    },
+    {
+      "id": "1jn_4_5",
+      "type": "fill_in_the_blank",
+      "question": "The one who is in you is _____ than the one who is in the world.",
+      "correct": "greater",
+      "verse_ref": "1 John 4:4",
+      "feedback": "The one in you is greater than the one in the world."
+    }
+  ]
+}

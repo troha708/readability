@@ -1,0 +1,53 @@
+{
+  "book": "Exodus",
+  "chapter": 35,
+  "questions": [
+    {
+      "id": "exodus-35-q1",
+      "type": "multiple_choice",
+      "question": "What did Moses ask the people to bring for building the tabernacle?",
+      "options": [
+        "Freewill offerings of materials and skilled work",
+        "A fixed tax collected from every tribe",
+        "Animals and grain for the daily morning sacrifices",
+        "Silver redeemed from each firstborn son"
+      ],
+      "answer": "Freewill offerings of materials and skilled work",
+      "verse_reference": "Exodus 35:5"
+    },
+    {
+      "id": "exodus-35-q2",
+      "type": "multiple_choice",
+      "question": "What command did Moses repeat about the seventh day?",
+      "options": [
+        "To keep the Sabbath as a day of rest",
+        "To fast from all food for seven days",
+        "To offer a sacrifice every morning",
+        "To set out on the journey at dawn"
+      ],
+      "answer": "To keep the Sabbath as a day of rest",
+      "verse_reference": "Exodus 35:2"
+    },
+    {
+      "id": "exodus-35-q3",
+      "type": "true_false",
+      "question": "The people gave so willingly that their hearts stirred them to bring offerings.",
+      "answer": "true",
+      "verse_reference": "Exodus 35:21"
+    },
+    {
+      "id": "exodus-35-q4",
+      "type": "fill_blank",
+      "question": "Whoever was of a willing _____ brought the LORD's offering.",
+      "answer": "heart",
+      "verse_reference": "Exodus 35:5"
+    },
+    {
+      "id": "exodus-35-q5",
+      "type": "fill_blank",
+      "question": "On the seventh day there was to be a holy day of _____ to the LORD.",
+      "answer": "rest",
+      "verse_reference": "Exodus 35:2"
+    }
+  ]
+}

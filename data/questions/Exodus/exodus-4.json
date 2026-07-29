@@ -1,0 +1,53 @@
+{
+  "book": "Exodus",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "exodus-4-q1",
+      "type": "multiple_choice",
+      "question": "What did Moses' staff become when he threw it on the ground?",
+      "options": [
+        "A snake",
+        "A flower",
+        "Gold",
+        "Fire"
+      ],
+      "answer": "A snake",
+      "verse_reference": "Exodus 4:3"
+    },
+    {
+      "id": "exodus-4-q2",
+      "type": "multiple_choice",
+      "question": "Whom did God appoint to speak for Moses?",
+      "options": [
+        "Joshua, his servant",
+        "Miriam, his sister",
+        "Hur, his companion",
+        "Aaron, his brother"
+      ],
+      "answer": "Aaron, his brother",
+      "verse_reference": "Exodus 4:14-16"
+    },
+    {
+      "id": "exodus-4-q3",
+      "type": "true_false",
+      "question": "Moses made excuses, saying he was slow of speech and not eloquent.",
+      "answer": "true",
+      "verse_reference": "Exodus 4:10"
+    },
+    {
+      "id": "exodus-4-q4",
+      "type": "fill_blank",
+      "question": "God told Moses that Aaron the _____ was already on his way to meet him.",
+      "answer": "Levite",
+      "verse_reference": "Exodus 4:14"
+    },
+    {
+      "id": "exodus-4-q5",
+      "type": "fill_blank",
+      "question": "As a sign, God made Moses' hand become _____ as snow, then restored it.",
+      "answer": "leprous",
+      "verse_reference": "Exodus 4:6"
+    }
+  ]
+}

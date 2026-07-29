@@ -1,0 +1,53 @@
+{
+  "book": "Esther",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "esther-3-q1",
+      "type": "multiple_choice",
+      "question": "Why did Haman become enraged at Mordecai?",
+      "options": [
+        "Mordecai had openly insulted his name",
+        "Mordecai had taken his place at court",
+        "Mordecai owed him a great sum of money",
+        "Mordecai would not bow down to him"
+      ],
+      "answer": "Mordecai would not bow down to him",
+      "verse_reference": "Esther 3:5"
+    },
+    {
+      "id": "esther-3-q2",
+      "type": "multiple_choice",
+      "question": "What did Haman plot to do?",
+      "options": [
+        "Seize the royal throne for himself",
+        "Destroy all the Jews throughout the kingdom",
+        "Lay a heavy and crushing tax on the Jews",
+        "Drive Mordecai out of the whole city in disgrace"
+      ],
+      "answer": "Destroy all the Jews throughout the kingdom",
+      "verse_reference": "Esther 3:6"
+    },
+    {
+      "id": "esther-3-q3",
+      "type": "true_false",
+      "question": "Lots (Pur) were cast to choose the day for destroying the Jews.",
+      "answer": "true",
+      "verse_reference": "Esther 3:7"
+    },
+    {
+      "id": "esther-3-q4",
+      "type": "fill_blank",
+      "question": "Haman offered to pay _____ thousand talents of silver into the king's treasuries.",
+      "answer": "ten",
+      "verse_reference": "Esther 3:9"
+    },
+    {
+      "id": "esther-3-q5",
+      "type": "fill_blank",
+      "question": "The king gave Haman his signet _____ to seal the decree.",
+      "answer": "ring",
+      "verse_reference": "Esther 3:10"
+    }
+  ]
+}

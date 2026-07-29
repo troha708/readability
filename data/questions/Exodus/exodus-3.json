@@ -1,0 +1,53 @@
+{
+  "book": "Exodus",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "exodus-3-q1",
+      "type": "multiple_choice",
+      "question": "How did God first appear to Moses?",
+      "options": [
+        "In a dream",
+        "In a vision of a throne",
+        "In a burning bush",
+        "As a pillar of fire"
+      ],
+      "answer": "In a burning bush",
+      "verse_reference": "Exodus 3:2"
+    },
+    {
+      "id": "exodus-3-q2",
+      "type": "multiple_choice",
+      "question": "What did God tell Moses to remove because he was standing on holy ground?",
+      "options": [
+        "His sandals",
+        "His staff",
+        "His cloak",
+        "His head covering"
+      ],
+      "answer": "His sandals",
+      "verse_reference": "Exodus 3:5"
+    },
+    {
+      "id": "exodus-3-q3",
+      "type": "true_false",
+      "question": "God told Moses he would lead Israel out of Egypt to a land flowing with milk and honey.",
+      "answer": "true",
+      "verse_reference": "Exodus 3:8"
+    },
+    {
+      "id": "exodus-3-q4",
+      "type": "fill_blank",
+      "question": "God told Moses his name was, \"I AM WHO I _____.\"",
+      "answer": "AM",
+      "verse_reference": "Exodus 3:14"
+    },
+    {
+      "id": "exodus-3-q5",
+      "type": "fill_blank",
+      "question": "Moses saw that the bush was burning but was not _____.",
+      "answer": "consumed",
+      "verse_reference": "Exodus 3:2"
+    }
+  ]
+}

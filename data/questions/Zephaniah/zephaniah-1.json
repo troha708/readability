@@ -1,0 +1,53 @@
+{
+  "book": "Zephaniah",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "zephaniah-1-q1",
+      "type": "multiple_choice",
+      "question": "What great event does Zephaniah 1 announce?",
+      "options": [
+        "The long-awaited return of the exiles to the land",
+        "A coming time of lasting peace and great plenty",
+        "The great day of the LORD, near and hastening",
+        "The full rebuilding of the holy temple in Zion"
+      ],
+      "answer": "The great day of the LORD, near and hastening",
+      "verse_reference": "Zephaniah 1:14"
+    },
+    {
+      "id": "zephaniah-1-q2",
+      "type": "multiple_choice",
+      "question": "Whom will God punish, including those who are complacent?",
+      "options": [
+        "Those who flee away to the high mountains long before the great day comes",
+        "Those who mourn deeply in rough sackcloth on account of all of their sins",
+        "Those who keep the holy Sabbath and all of the appointed feasts most faithfully",
+        "Those who say in their hearts, 'The LORD will not do good, nor will he do ill'"
+      ],
+      "answer": "Those who say in their hearts, 'The LORD will not do good, nor will he do ill'",
+      "verse_reference": "Zephaniah 1:12"
+    },
+    {
+      "id": "zephaniah-1-q3",
+      "type": "true_false",
+      "question": "Zephaniah 1 describes the day of the LORD as a day of wrath, distress, and darkness.",
+      "answer": "true",
+      "verse_reference": "Zephaniah 1:15"
+    },
+    {
+      "id": "zephaniah-1-q4",
+      "type": "fill_blank",
+      "question": "The great day of the LORD is _____, near and hastening fast.",
+      "answer": "near",
+      "verse_reference": "Zephaniah 1:14"
+    },
+    {
+      "id": "zephaniah-1-q5",
+      "type": "fill_blank",
+      "question": "Neither their silver nor their gold shall be able to _____ them on the day of the LORD's wrath.",
+      "answer": "deliver",
+      "verse_reference": "Zephaniah 1:18"
+    }
+  ]
+}

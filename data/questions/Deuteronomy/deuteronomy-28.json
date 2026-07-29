@@ -1,0 +1,53 @@
+{
+  "book": "Deuteronomy",
+  "chapter": 28,
+  "questions": [
+    {
+      "id": "deuteronomy-28-q1",
+      "type": "multiple_choice",
+      "question": "What does chapter 28 lay out at length?",
+      "options": [
+        "Instructions for keeping all of the yearly festivals",
+        "Blessings for obedience and curses for disobedience",
+        "Duties assigned to the priests and the kings",
+        "Plans for the coming conquest of Canaan"
+      ],
+      "answer": "Blessings for obedience and curses for disobedience",
+      "verse_reference": "Deuteronomy 28:1-15"
+    },
+    {
+      "id": "deuteronomy-28-q2",
+      "type": "multiple_choice",
+      "question": "What did God warn would happen if Israel disobeyed?",
+      "options": [
+        "Their harvests would fail for only a single year",
+        "Their kings would come to rule over the surrounding lands",
+        "Their land would be given to the tribe of Levi",
+        "They would be cursed and scattered among the nations"
+      ],
+      "answer": "They would be cursed and scattered among the nations",
+      "verse_reference": "Deuteronomy 28:64"
+    },
+    {
+      "id": "deuteronomy-28-q3",
+      "type": "true_false",
+      "question": "Obedience would bring blessing in the city and in the field.",
+      "answer": "true",
+      "verse_reference": "Deuteronomy 28:3"
+    },
+    {
+      "id": "deuteronomy-28-q4",
+      "type": "fill_blank",
+      "question": "\"_____ shall you be in the city, and blessed shall you be in the field,\" for obedience.",
+      "answer": "Blessed",
+      "verse_reference": "Deuteronomy 28:3"
+    },
+    {
+      "id": "deuteronomy-28-q5",
+      "type": "fill_blank",
+      "question": "If they obeyed, the LORD would set Israel high above all _____ of the earth.",
+      "answer": "nations",
+      "verse_reference": "Deuteronomy 28:1"
+    }
+  ]
+}

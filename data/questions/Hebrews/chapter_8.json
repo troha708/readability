@@ -1,0 +1,59 @@
+{
+  "book": "Hebrews",
+  "chapter": 8,
+  "questions": [
+    {
+      "id": "heb_8_1",
+      "type": "multiple_choice",
+      "question": "Where does the author say our high priest is seated?",
+      "options": [
+        "Before the ark of the covenant in the holy place",
+        "At the gate of the temple among the people",
+        "At the right hand of the throne of the Majesty in heaven",
+        "Within the earthly tabernacle made by human hands"
+      ],
+      "correct": "At the right hand of the throne of the Majesty in heaven",
+      "verse_ref": "Hebrews 8:1",
+      "feedback": "Our high priest is seated at the right hand of the throne of the Majesty in heaven."
+    },
+    {
+      "id": "heb_8_2",
+      "type": "multiple_choice",
+      "question": "The new covenant promises that God will put his laws where?",
+      "options": [
+        "Within the holy temple courts",
+        "On freshly cut stone tablets of law",
+        "In a sealed and written book",
+        "In their minds and on their hearts"
+      ],
+      "correct": "In their minds and on their hearts",
+      "verse_ref": "Hebrews 8:10",
+      "feedback": "God will put his laws in their minds and write them on their hearts."
+    },
+    {
+      "id": "heb_8_3",
+      "type": "true_false",
+      "question": "The author says the first covenant was faultless.",
+      "correct": false,
+      "verse_ref": "Hebrews 8:7",
+      "feedback": "If the first covenant had been faultless, there would have been no need for a second."
+    },
+    {
+      "id": "heb_8_4",
+      "type": "fill_in_the_blank",
+      "question": "By calling the covenant new, God has made the first one _____.",
+      "correct": "obsolete",
+      "accept": ["old"],
+      "verse_ref": "Hebrews 8:13",
+      "feedback": "By calling it new, God made the first covenant obsolete."
+    },
+    {
+      "id": "heb_8_5",
+      "type": "fill_in_the_blank",
+      "question": "The earthly priests serve at a sanctuary that is a copy and _____ of what is in heaven.",
+      "correct": "shadow",
+      "verse_ref": "Hebrews 8:5",
+      "feedback": "They serve at a sanctuary that is a copy and shadow of the heavenly one."
+    }
+  ]
+}

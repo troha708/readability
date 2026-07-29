@@ -1,0 +1,56 @@
+{
+  "book": "Romans",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "romans-1-q1",
+      "type": "multiple_choice",
+      "question": "Who wrote the letter to the Romans?",
+      "options": [
+        "James",
+        "Peter",
+        "John",
+        "Paul"
+      ],
+      "answer": "Paul",
+      "verse_reference": "Romans 1:1"
+    },
+    {
+      "id": "romans-1-q2",
+      "type": "multiple_choice",
+      "question": "Paul said he was not ashamed of the gospel because it is what?",
+      "options": [
+        "The hidden mystery of the ages",
+        "The promise of God to the nations",
+        "The power of God for salvation",
+        "The wisdom of God for the wise"
+      ],
+      "answer": "The power of God for salvation",
+      "verse_reference": "Romans 1:16"
+    },
+    {
+      "id": "romans-1-q3",
+      "type": "true_false",
+      "question": "Paul had already visited Rome when he wrote this letter.",
+      "answer": "false",
+      "verse_reference": "Romans 1:10-13"
+    },
+    {
+      "id": "romans-1-q4",
+      "type": "fill_blank",
+      "question": "For in it is revealed God's righteousness from faith to faith. As it is written, 'The righteous shall live by _____.",
+      "answer": "faith",
+      "verse_reference": "Romans 1:17"
+    },
+    {
+      "id": "romans-1-q5",
+      "type": "fill_blank",
+      "question": "God's invisible qualities have been clearly seen since the creation of the world, being understood from His _____.",
+      "answer": "workmanship",
+      "accept": [
+        "works"
+      ],
+      "verse_reference": "Romans 1:20"
+    }
+  ]
+}

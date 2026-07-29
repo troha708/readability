@@ -1,0 +1,53 @@
+{
+  "book": "Isaiah",
+  "chapter": 62,
+  "questions": [
+    {
+      "id": "isaiah-62-q1",
+      "type": "multiple_choice",
+      "question": "What does Isaiah 62 say about Zion's future name?",
+      "options": [
+        "She will be called City of Truth, and her land Holy",
+        "She will be called the Mother of all Nations, and her land Free",
+        "She will be called My Delight Is in Her, and her land Married",
+        "She will be called Forsaken, and her land Desolate"
+      ],
+      "answer": "She will be called My Delight Is in Her, and her land Married",
+      "verse_reference": "Isaiah 62:4"
+    },
+    {
+      "id": "isaiah-62-q2",
+      "type": "multiple_choice",
+      "question": "What does the prophet vow not to do for Zion's sake in Isaiah 62?",
+      "options": [
+        "To gather home all of her exiles from the distant lands",
+        "To lead out all of her armies against the surrounding nations",
+        "To rebuild all of her broken walls with his very own hands",
+        "To keep silent until her righteousness shines out"
+      ],
+      "answer": "To keep silent until her righteousness shines out",
+      "verse_reference": "Isaiah 62:1"
+    },
+    {
+      "id": "isaiah-62-q3",
+      "type": "true_false",
+      "question": "Isaiah 62 says God rejoices over Zion as a bridegroom rejoices over his bride.",
+      "answer": "true",
+      "verse_reference": "Isaiah 62:5"
+    },
+    {
+      "id": "isaiah-62-q4",
+      "type": "fill_blank",
+      "question": "You shall no more be termed Forsaken; you shall be called My _____ Is in Her.",
+      "answer": "Delight",
+      "verse_reference": "Isaiah 62:4"
+    },
+    {
+      "id": "isaiah-62-q5",
+      "type": "fill_blank",
+      "question": "As the bridegroom rejoices over the bride, so shall your God rejoice over _____.",
+      "answer": "you",
+      "verse_reference": "Isaiah 62:5"
+    }
+  ]
+}

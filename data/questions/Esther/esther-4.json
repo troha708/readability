@@ -1,0 +1,57 @@
+{
+  "book": "Esther",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "esther-4-q1",
+      "type": "multiple_choice",
+      "question": "How did Mordecai react to the decree against the Jews?",
+      "options": [
+        "He fled away from the city to a far-off province",
+        "He tore his clothes, put on sackcloth, and wailed",
+        "He offered a large bribe to win Haman over to him",
+        "He did nothing at all and waited very quietly"
+      ],
+      "answer": "He tore his clothes, put on sackcloth, and wailed",
+      "verse_reference": "Esther 4:1"
+    },
+    {
+      "id": "esther-4-q2",
+      "type": "multiple_choice",
+      "question": "What famous reason did Mordecai give for Esther to act?",
+      "options": [
+        "Perhaps she had come to the kingdom for such a time as this",
+        "The king would surely listen to so fair and so lovely a queen",
+        "No one else in the whole palace would dare to speak up",
+        "Her own people would reward her richly with great honor"
+      ],
+      "answer": "Perhaps she had come to the kingdom for such a time as this",
+      "verse_reference": "Esther 4:14"
+    },
+    {
+      "id": "esther-4-q3",
+      "type": "true_false",
+      "question": "Esther asked the Jews to fast for her for three days before she approached the king.",
+      "answer": "true",
+      "verse_reference": "Esther 4:16"
+    },
+    {
+      "id": "esther-4-q4",
+      "type": "fill_blank",
+      "question": "Esther said she would go to the king, and 'if I perish, I _____.'",
+      "answer": "perish",
+      "verse_reference": "Esther 4:16"
+    },
+    {
+      "id": "esther-4-q5",
+      "type": "fill_blank",
+      "question": "Approaching the king uninvited could mean death unless he held out the golden _____.",
+      "answer": "scepter",
+      "accept": [
+        "sceptre",
+        "rod"
+      ],
+      "verse_reference": "Esther 4:11"
+    }
+  ]
+}

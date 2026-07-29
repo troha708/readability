@@ -1,0 +1,53 @@
+{
+  "book": "Genesis",
+  "chapter": 11,
+  "questions": [
+    {
+      "id": "genesis-11-q1",
+      "type": "multiple_choice",
+      "question": "Why did the people build the tower of Babel?",
+      "options": [
+        "To find shelter from a coming flood",
+        "To make a name for themselves",
+        "To store grain for the years of famine",
+        "To offer sacrifices to God on high"
+      ],
+      "answer": "To make a name for themselves",
+      "verse_reference": "Genesis 11:4"
+    },
+    {
+      "id": "genesis-11-q2",
+      "type": "multiple_choice",
+      "question": "How did God stop the building of the tower?",
+      "options": [
+        "He sent fire",
+        "He confused their language",
+        "He caused an earthquake",
+        "He sent a flood"
+      ],
+      "answer": "He confused their language",
+      "verse_reference": "Genesis 11:7"
+    },
+    {
+      "id": "genesis-11-q3",
+      "type": "true_false",
+      "question": "Abram's wife Sarai was barren and had no child.",
+      "answer": "true",
+      "verse_reference": "Genesis 11:30"
+    },
+    {
+      "id": "genesis-11-q4",
+      "type": "fill_blank",
+      "question": "The city was called _____ because there the LORD confused the language of the earth.",
+      "answer": "Babel",
+      "verse_reference": "Genesis 11:9"
+    },
+    {
+      "id": "genesis-11-q5",
+      "type": "fill_blank",
+      "question": "Abram's father was named _____.",
+      "answer": "Terah",
+      "verse_reference": "Genesis 11:27"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Joshua",
+  "chapter": 17,
+  "questions": [
+    {
+      "id": "joshua-17-q1",
+      "type": "multiple_choice",
+      "question": "Which tribe received the inheritance described, alongside Ephraim?",
+      "options": [
+        "Reuben",
+        "Judah",
+        "Manasseh",
+        "Benjamin"
+      ],
+      "answer": "Manasseh",
+      "verse_reference": "Joshua 17:1"
+    },
+    {
+      "id": "joshua-17-q2",
+      "type": "multiple_choice",
+      "question": "What did the tribes of Joseph complain about to Joshua?",
+      "options": [
+        "Too little water in the dry season",
+        "Too little land for so many people",
+        "Too rough a terrain to farm well",
+        "Too many enemies left in the hills"
+      ],
+      "answer": "Too little land for so many people",
+      "verse_reference": "Joshua 17:14"
+    },
+    {
+      "id": "joshua-17-q3",
+      "type": "true_false",
+      "question": "The daughters of Zelophehad received an inheritance among Manasseh's sons.",
+      "answer": "true",
+      "verse_reference": "Joshua 17:3-4"
+    },
+    {
+      "id": "joshua-17-q4",
+      "type": "fill_blank",
+      "question": "The tribe of _____ also failed to fully drive out the Canaanites.",
+      "answer": "Manasseh",
+      "verse_reference": "Joshua 17:12-13"
+    },
+    {
+      "id": "joshua-17-q5",
+      "type": "fill_blank",
+      "question": "Joshua told the house of Joseph to clear the forested hill _____ for more room.",
+      "answer": "country",
+      "verse_reference": "Joshua 17:15-18"
+    }
+  ]
+}

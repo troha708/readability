@@ -1,0 +1,56 @@
+{
+  "book": "Exodus",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "exodus-1-q1",
+      "type": "multiple_choice",
+      "question": "Why did the new king of Egypt oppress the Israelites?",
+      "options": [
+        "They demanded their freedom and threatened revolt",
+        "They had grown numerous and he feared them",
+        "They had sided with Egypt's enemies in war",
+        "They refused to worship the gods of Egypt"
+      ],
+      "answer": "They had grown numerous and he feared them",
+      "verse_reference": "Exodus 1:9-10"
+    },
+    {
+      "id": "exodus-1-q2",
+      "type": "multiple_choice",
+      "question": "What did Pharaoh command the Hebrew midwives to do?",
+      "options": [
+        "Teach the Hebrew children Egyptian law",
+        "Count all the Hebrew people in Egypt",
+        "Kill every newborn Hebrew boy",
+        "Free every Hebrew slave at once"
+      ],
+      "answer": "Kill every newborn Hebrew boy",
+      "verse_reference": "Exodus 1:16"
+    },
+    {
+      "id": "exodus-1-q3",
+      "type": "true_false",
+      "question": "The Hebrew midwives obeyed Pharaoh and killed the baby boys.",
+      "answer": "false",
+      "verse_reference": "Exodus 1:17"
+    },
+    {
+      "id": "exodus-1-q4",
+      "type": "fill_blank",
+      "question": "The two Hebrew midwives were named Shiphrah and _____.",
+      "answer": "Puah",
+      "verse_reference": "Exodus 1:15"
+    },
+    {
+      "id": "exodus-1-q5",
+      "type": "fill_blank",
+      "question": "Pharaoh ordered that every Hebrew son be cast into the _____.",
+      "answer": "Nile",
+      "accept": [
+        "river"
+      ],
+      "verse_reference": "Exodus 1:22"
+    }
+  ]
+}

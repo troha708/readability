@@ -1,0 +1,56 @@
+{
+  "book": "Colossians",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "col-3-q1",
+      "type": "multiple_choice",
+      "question": "Paul says believers should set their hearts on things where?",
+      "options": [
+        "Below in the depths of the earth",
+        "Around in the cities of the nations",
+        "Behind in the days that are past",
+        "Above where Christ is seated"
+      ],
+      "answer": "Above where Christ is seated",
+      "verse_reference": "Colossians 3:1-2"
+    },
+    {
+      "id": "col-3-q2",
+      "type": "multiple_choice",
+      "question": "What does Paul say should rule in believers hearts?",
+      "options": [
+        "Human wisdom",
+        "The holy fear of God",
+        "The Mosaic law",
+        "The peace of Christ"
+      ],
+      "answer": "The peace of Christ",
+      "verse_reference": "Colossians 3:15"
+    },
+    {
+      "id": "col-3-q3",
+      "type": "true_false",
+      "question": "Paul says in the new self there is no distinction between Greek and Jew, slave and free.",
+      "answer": "true",
+      "verse_reference": "Colossians 3:11"
+    },
+    {
+      "id": "col-3-q4",
+      "type": "fill_blank",
+      "question": "Whatever you do, in word or in deed, do all in the _____ of the Lord Jesus.",
+      "answer": "name",
+      "verse_reference": "Colossians 3:17"
+    },
+    {
+      "id": "col-3-q5",
+      "type": "fill_blank",
+      "question": "Above all these things, put on _____, which is the bond of perfection.",
+      "answer": "love",
+      "accept": [
+        "charity"
+      ],
+      "verse_reference": "Colossians 3:14"
+    }
+  ]
+}

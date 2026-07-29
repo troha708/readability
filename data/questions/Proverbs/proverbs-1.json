@@ -1,0 +1,56 @@
+{
+  "book": "Proverbs",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "proverbs-1-q1",
+      "type": "multiple_choice",
+      "question": "What does Proverbs 1 call the beginning of knowledge?",
+      "options": [
+        "The pursuit of wealth",
+        "The fear of the LORD",
+        "A long and broad education",
+        "The lessons of hard experience"
+      ],
+      "answer": "The fear of the LORD",
+      "verse_reference": "Proverbs 1:7"
+    },
+    {
+      "id": "proverbs-1-q2",
+      "type": "multiple_choice",
+      "question": "Who is pictured calling aloud in the streets in Proverbs 1?",
+      "options": [
+        "Folly",
+        "Wisdom",
+        "The king",
+        "The teacher"
+      ],
+      "answer": "Wisdom",
+      "verse_reference": "Proverbs 1:20"
+    },
+    {
+      "id": "proverbs-1-q3",
+      "type": "true_false",
+      "question": "Proverbs 1 warns a son not to consent if sinners entice him.",
+      "answer": "true",
+      "verse_reference": "Proverbs 1:10"
+    },
+    {
+      "id": "proverbs-1-q4",
+      "type": "fill_blank",
+      "question": "The fear of the LORD is the beginning of _____; fools despise wisdom and instruction.",
+      "answer": "knowledge",
+      "verse_reference": "Proverbs 1:7"
+    },
+    {
+      "id": "proverbs-1-q5",
+      "type": "fill_blank",
+      "question": "Hear, my son, your father's instruction, and forsake not your mother's _____.",
+      "answer": "teaching",
+      "accept": [
+        "law"
+      ],
+      "verse_reference": "Proverbs 1:8"
+    }
+  ]
+}

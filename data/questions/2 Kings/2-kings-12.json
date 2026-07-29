@@ -1,0 +1,56 @@
+{
+  "book": "2 Kings",
+  "chapter": 12,
+  "questions": [
+    {
+      "id": "2-kings-12-q1",
+      "type": "multiple_choice",
+      "question": "What did King Joash do during his reign?",
+      "options": [
+        "Reigned without any notable deeds",
+        "Waged war on the northern kingdom",
+        "Built altars to foreign idols",
+        "Repaired the temple of the LORD"
+      ],
+      "answer": "Repaired the temple of the LORD",
+      "verse_reference": "2 Kings 12:4-14"
+    },
+    {
+      "id": "2-kings-12-q2",
+      "type": "multiple_choice",
+      "question": "Under whose guidance did Joash do right?",
+      "options": [
+        "Jehoiada the priest",
+        "Nathan the king's prophet",
+        "Hilkiah the priest",
+        "Elisha the prophet"
+      ],
+      "answer": "Jehoiada the priest",
+      "verse_reference": "2 Kings 12:2"
+    },
+    {
+      "id": "2-kings-12-q3",
+      "type": "true_false",
+      "question": "Money was collected from the people to fund the temple repairs.",
+      "answer": "true",
+      "verse_reference": "2 Kings 12:9-12"
+    },
+    {
+      "id": "2-kings-12-q4",
+      "type": "fill_blank",
+      "question": "King _____ ordered the temple of the LORD to be repaired.",
+      "answer": "Joash",
+      "accept": [
+        "Jehoash"
+      ],
+      "verse_reference": "2 Kings 12:4-7"
+    },
+    {
+      "id": "2-kings-12-q5",
+      "type": "fill_blank",
+      "question": "Joash did right all the days that _____ the priest instructed him.",
+      "answer": "Jehoiada",
+      "verse_reference": "2 Kings 12:2"
+    }
+  ]
+}

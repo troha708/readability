@@ -1,0 +1,134 @@
+{
+  "book": "Ecclesiastes",
+  "source": "Berean Standard Bible (CC0 Public Domain)",
+  "chapters": {
+    "1": [
+      {
+        "beforeVerse": 1,
+        "heading": "Everything Is Futile"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "With Wisdom Comes Sorrow"
+      }
+    ],
+    "2": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Futility of Pleasure"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "The Wise and the Foolish"
+      },
+      {
+        "beforeVerse": 18,
+        "heading": "The Futility of Work"
+      }
+    ],
+    "3": [
+      {
+        "beforeVerse": 1,
+        "heading": "To Everything There Is a Season"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "God’s Works Remain Forever"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "From Dust to Dust"
+      }
+    ],
+    "4": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Evil of Oppression"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "The Futility of Power"
+      }
+    ],
+    "5": [
+      {
+        "beforeVerse": 1,
+        "heading": "Approaching God with Fear"
+      },
+      {
+        "beforeVerse": 8,
+        "heading": "The Futility of Wealth"
+      }
+    ],
+    "6": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Futility of Life"
+      }
+    ],
+    "7": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Value of Wisdom"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "The Limits of Human Wisdom"
+      }
+    ],
+    "8": [
+      {
+        "beforeVerse": 1,
+        "heading": "Obey the King"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "Fear God"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "God’s Ways Are Mysterious"
+      }
+    ],
+    "9": [
+      {
+        "beforeVerse": 1,
+        "heading": "Death Comes to Good and Bad"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "Enjoy Your Portion in This Life"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "Wisdom Is Better than Strength"
+      }
+    ],
+    "10": [
+      {
+        "beforeVerse": 1,
+        "heading": "Wisdom and Folly"
+      }
+    ],
+    "11": [
+      {
+        "beforeVerse": 1,
+        "heading": "Cast Your Bread upon the Waters"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "Enjoy Your Years"
+      }
+    ],
+    "12": [
+      {
+        "beforeVerse": 1,
+        "heading": "Remember Your Creator"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "The Whole Duty of Man"
+      }
+    ]
+  }
+}

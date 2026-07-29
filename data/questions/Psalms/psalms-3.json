@@ -1,0 +1,62 @@
+{
+  "book": "Psalms",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "psalms-3-q1",
+      "type": "multiple_choice",
+      "question": "What was the occasion of Psalm 3?",
+      "options": [
+        "When David fled from Absalom his son",
+        "When the Philistines seized David in Gath",
+        "When Nathan confronted David over Bathsheba",
+        "When David fled from Saul into the cave"
+      ],
+      "answer": "When David fled from Absalom his son",
+      "verse_reference": "Psalm 3:title"
+    },
+    {
+      "id": "psalms-3-q2",
+      "type": "multiple_choice",
+      "question": "Why could David lie down and sleep in peace?",
+      "options": [
+        "His enemies left",
+        "He had very many soldiers",
+        "He hid in a cave",
+        "The LORD sustained him"
+      ],
+      "answer": "The LORD sustained him",
+      "verse_reference": "Psalm 3:5"
+    },
+    {
+      "id": "psalms-3-q3",
+      "type": "true_false",
+      "question": "David called the LORD a shield about him and the lifter of his head.",
+      "answer": "true",
+      "verse_reference": "Psalm 3:3"
+    },
+    {
+      "id": "psalms-3-q4",
+      "type": "fill_blank",
+      "question": "David said, 'Salvation belongs to the _____.'",
+      "answer": "LORD",
+      "accept": [
+        "Jehovah",
+        "Yahweh"
+      ],
+      "verse_reference": "Psalm 3:8"
+    },
+    {
+      "id": "psalms-3-q5",
+      "type": "fill_blank",
+      "question": "Many were saying of David, 'God will not _____ him.'",
+      "answer": "deliver",
+      "accept": [
+        "save",
+        "help",
+        "salvation"
+      ],
+      "verse_reference": "Psalm 3:2"
+    }
+  ]
+}

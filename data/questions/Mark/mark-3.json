@@ -1,0 +1,53 @@
+{
+  "book": "Mark",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "mark-3-q1",
+      "type": "multiple_choice",
+      "question": "What did Jesus heal on the Sabbath in the synagogue?",
+      "options": [
+        "A man with a withered hand",
+        "A child sick with a fever",
+        "A woman bent over for years",
+        "A man blind from his birth"
+      ],
+      "answer": "A man with a withered hand",
+      "verse_reference": "Mark 3:1-5"
+    },
+    {
+      "id": "mark-3-q2",
+      "type": "multiple_choice",
+      "question": "How many apostles did Jesus appoint?",
+      "options": [
+        "Seventy",
+        "Ten",
+        "Seven",
+        "Twelve"
+      ],
+      "answer": "Twelve",
+      "verse_reference": "Mark 3:14"
+    },
+    {
+      "id": "mark-3-q3",
+      "type": "true_false",
+      "question": "Jesus said that whoever does the will of God is his brother, sister, and mother.",
+      "answer": "true",
+      "verse_reference": "Mark 3:35"
+    },
+    {
+      "id": "mark-3-q4",
+      "type": "fill_blank",
+      "question": "If a house is divided against itself, that house _____ stand.",
+      "answer": "cannot",
+      "verse_reference": "Mark 3:25"
+    },
+    {
+      "id": "mark-3-q5",
+      "type": "fill_blank",
+      "question": "For whoever does the will of God is my brother, my sister, and _____.",
+      "answer": "mother",
+      "verse_reference": "Mark 3:35"
+    }
+  ]
+}

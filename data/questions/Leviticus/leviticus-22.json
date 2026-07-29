@@ -1,0 +1,57 @@
+{
+  "book": "Leviticus",
+  "chapter": 22,
+  "questions": [
+    {
+      "id": "leviticus-22-q1",
+      "type": "multiple_choice",
+      "question": "What does chapter 22 emphasize about offerings?",
+      "options": [
+        "They could be any quality",
+        "Only priests could bring them",
+        "They must be without defect",
+        "They were optional"
+      ],
+      "answer": "They must be without defect",
+      "verse_reference": "Leviticus 22:20-21"
+    },
+    {
+      "id": "leviticus-22-q2",
+      "type": "multiple_choice",
+      "question": "Who was allowed to eat the holy offerings?",
+      "options": [
+        "Only the poor and the fatherless",
+        "Foreigners who lived among the people",
+        "Anyone who entered the tent of meeting",
+        "The priest's household, but not an outsider"
+      ],
+      "answer": "The priest's household, but not an outsider",
+      "verse_reference": "Leviticus 22:10-13"
+    },
+    {
+      "id": "leviticus-22-q3",
+      "type": "true_false",
+      "question": "An animal with a defect or blemish was not acceptable as an offering.",
+      "answer": "true",
+      "verse_reference": "Leviticus 22:20"
+    },
+    {
+      "id": "leviticus-22-q4",
+      "type": "fill_blank",
+      "question": "God said, \"I am the LORD who _____ you.\"",
+      "answer": "sanctifies",
+      "accept": ["hallow", "halloweth", "sanctify"],
+      "verse_reference": "Leviticus 22:32"
+    },
+    {
+      "id": "leviticus-22-q5",
+      "type": "fill_blank",
+      "question": "No one outside a priest's _____ may eat the sacred offering.",
+      "answer": "family",
+      "accept": [
+        "household"
+      ],
+      "verse_reference": "Leviticus 22:10"
+    }
+  ]
+}

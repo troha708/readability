@@ -1,0 +1,56 @@
+{
+  "book": "Isaiah",
+  "chapter": 49,
+  "questions": [
+    {
+      "id": "isaiah-49-q1",
+      "type": "multiple_choice",
+      "question": "What does the servant in Isaiah 49 become for the nations?",
+      "options": [
+        "A mighty warrior who breaks all of the nations with a great rod of iron",
+        "A righteous judge who will one day rule over all of the peoples with justice",
+        "A glorious king who will sit upon the high and golden throne of Babylon",
+        "A light for the nations, that salvation may reach the end of the earth"
+      ],
+      "answer": "A light for the nations, that salvation may reach the end of the earth",
+      "verse_reference": "Isaiah 49:6"
+    },
+    {
+      "id": "isaiah-49-q2",
+      "type": "multiple_choice",
+      "question": "How does God answer Zion's fear of being forgotten in Isaiah 49?",
+      "options": [
+        "Your enemies are very mighty and strong, but I myself will scatter them all before your eyes",
+        "Though you have surely sinned greatly, turn back to me again and I will surely receive you once more",
+        "Can a mother forget her child? Even so I will not forget you; I have engraved you on my palms",
+        "Wait but a very little while longer, and I will send to you a deliverer to set you wholly free"
+      ],
+      "answer": "Can a mother forget her child? Even so I will not forget you; I have engraved you on my palms",
+      "verse_reference": "Isaiah 49:15-16"
+    },
+    {
+      "id": "isaiah-49-q3",
+      "type": "true_false",
+      "question": "God says it is too light a thing for the servant only to restore Israel; he will also be salvation to the nations.",
+      "answer": "true",
+      "verse_reference": "Isaiah 49:6"
+    },
+    {
+      "id": "isaiah-49-q4",
+      "type": "fill_blank",
+      "question": "I will make you as a light for the nations, that my salvation may reach the end of the _____.",
+      "answer": "earth",
+      "accept": [
+        "world"
+      ],
+      "verse_reference": "Isaiah 49:6"
+    },
+    {
+      "id": "isaiah-49-q5",
+      "type": "fill_blank",
+      "question": "Behold, I have engraved you on the palms of my _____.",
+      "answer": "hands",
+      "verse_reference": "Isaiah 49:16"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "book": "1 John",
+  "chapter": 5,
+  "questions": [
+    {
+      "id": "1jn_5_1",
+      "type": "multiple_choice",
+      "question": "John says God's commands are not what?",
+      "options": [
+        "Secret",
+        "Only temporary",
+        "Burdensome",
+        "Optional"
+      ],
+      "correct": "Burdensome",
+      "verse_ref": "1 John 5:3",
+      "feedback": "This is love for God: to keep his commands. And his commands are not burdensome."
+    },
+    {
+      "id": "1jn_5_2",
+      "type": "multiple_choice",
+      "question": "What is the victory that has overcome the world?",
+      "options": [
+        "Our faith",
+        "Our works",
+        "Our prayers",
+        "Our sacrifices"
+      ],
+      "correct": "Our faith",
+      "verse_ref": "1 John 5:4",
+      "feedback": "This is the victory that has overcome the world — our faith."
+    },
+    {
+      "id": "1jn_5_3",
+      "type": "true_false",
+      "question": "John writes so that believers may know they have eternal life.",
+      "correct": true,
+      "verse_ref": "1 John 5:13",
+      "feedback": "I write these things so that you may know you have eternal life."
+    },
+    {
+      "id": "1jn_5_4",
+      "type": "fill_in_the_blank",
+      "question": "This is the testimony: God has given us eternal life, and this life is in his _____.",
+      "correct": "Son",
+      "verse_ref": "1 John 5:11",
+      "feedback": "God has given us eternal life, and this life is in his Son."
+    },
+    {
+      "id": "1jn_5_5",
+      "type": "fill_in_the_blank",
+      "question": "Little children, keep yourselves from _____.",
+      "correct": "idols",
+      "verse_ref": "1 John 5:21",
+      "feedback": "Dear children, keep yourselves from idols."
+    }
+  ]
+}

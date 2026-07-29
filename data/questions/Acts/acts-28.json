@@ -1,0 +1,56 @@
+{
+  "book": "Acts",
+  "chapter": 28,
+  "questions": [
+    {
+      "id": "acts-28-q1",
+      "type": "multiple_choice",
+      "question": "What island did Paul and the others land on after the shipwreck?",
+      "options": [
+        "Crete",
+        "Cyprus",
+        "Malta",
+        "Sicily"
+      ],
+      "answer": "Malta",
+      "verse_reference": "Acts 28:1"
+    },
+    {
+      "id": "acts-28-q2",
+      "type": "multiple_choice",
+      "question": "What happened when Paul was bitten by a venomous snake on Malta?",
+      "options": [
+        "He prayed and was quickly healed",
+        "Luke the physician healed him",
+        "He shook it off and was unharmed",
+        "He became gravely ill for days"
+      ],
+      "answer": "He shook it off and was unharmed",
+      "verse_reference": "Acts 28:3-5"
+    },
+    {
+      "id": "acts-28-q3",
+      "type": "true_false",
+      "question": "When Paul finally arrived in Rome, he was thrown into a dungeon.",
+      "answer": "false",
+      "verse_reference": "Acts 28:16"
+    },
+    {
+      "id": "acts-28-q4",
+      "type": "fill_blank",
+      "question": "Paul stayed two whole years in his own rented house in Rome, welcoming all who came to him, preaching the _____ of God.",
+      "answer": "kingdom",
+      "accept": [
+        "reign"
+      ],
+      "verse_reference": "Acts 28:30-31"
+    },
+    {
+      "id": "acts-28-q5",
+      "type": "fill_blank",
+      "question": "The islanders expected Paul to swell up or suddenly fall down dead after the snake bite, but when nothing happened they said he was a _____.",
+      "answer": "god",
+      "verse_reference": "Acts 28:6"
+    }
+  ]
+}

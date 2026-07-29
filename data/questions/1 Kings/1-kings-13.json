@@ -1,0 +1,53 @@
+{
+  "book": "1 Kings",
+  "chapter": 13,
+  "questions": [
+    {
+      "id": "1-kings-13-q1",
+      "type": "multiple_choice",
+      "question": "What did a man of God prophesy against the altar at Bethel?",
+      "options": [
+        "That a blessing would rest on all who worshiped",
+        "That a famine would strike for seven years",
+        "That a future king named Josiah would defile it",
+        "That a great harvest would fill the land"
+      ],
+      "answer": "That a future king named Josiah would defile it",
+      "verse_reference": "1 Kings 13:2"
+    },
+    {
+      "id": "1-kings-13-q2",
+      "type": "multiple_choice",
+      "question": "What happened to the man of God for disobeying God on his way home?",
+      "options": [
+        "He was struck blind for a time",
+        "He was richly rewarded by God",
+        "He returned home unharmed",
+        "He was killed by a lion"
+      ],
+      "answer": "He was killed by a lion",
+      "verse_reference": "1 Kings 13:24"
+    },
+    {
+      "id": "1-kings-13-q3",
+      "type": "true_false",
+      "question": "King Jeroboam's hand withered when he tried to seize the man of God.",
+      "answer": "true",
+      "verse_reference": "1 Kings 13:4"
+    },
+    {
+      "id": "1-kings-13-q4",
+      "type": "fill_blank",
+      "question": "The man of God foretold that a king named _____ would one day defile the altar.",
+      "answer": "Josiah",
+      "verse_reference": "1 Kings 13:2"
+    },
+    {
+      "id": "1-kings-13-q5",
+      "type": "fill_blank",
+      "question": "A _____ killed the disobedient man of God on the road.",
+      "answer": "lion",
+      "verse_reference": "1 Kings 13:24"
+    }
+  ]
+}

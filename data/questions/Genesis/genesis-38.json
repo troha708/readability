@@ -1,0 +1,53 @@
+{
+  "book": "Genesis",
+  "chapter": 38,
+  "questions": [
+    {
+      "id": "genesis-38-q1",
+      "type": "multiple_choice",
+      "question": "Who deceived Judah by disguising herself with a veil?",
+      "options": [
+        "Leah his wife",
+        "Tamar",
+        "Dinah his daughter",
+        "Rachel"
+      ],
+      "answer": "Tamar",
+      "verse_reference": "Genesis 38:14-15"
+    },
+    {
+      "id": "genesis-38-q2",
+      "type": "multiple_choice",
+      "question": "What did Tamar take from Judah as a pledge?",
+      "options": [
+        "His seal, cord, and staff",
+        "His ring, cloak, and sandals",
+        "His sword, belt, and purse",
+        "His robe, bracelet, and rod"
+      ],
+      "answer": "His seal, cord, and staff",
+      "verse_reference": "Genesis 38:18"
+    },
+    {
+      "id": "genesis-38-q3",
+      "type": "true_false",
+      "question": "Judah admitted that Tamar was more righteous than he was.",
+      "answer": "true",
+      "verse_reference": "Genesis 38:26"
+    },
+    {
+      "id": "genesis-38-q4",
+      "type": "fill_blank",
+      "question": "Tamar gave birth to twins; the one who broke out first was named _____.",
+      "answer": "Perez",
+      "verse_reference": "Genesis 38:29"
+    },
+    {
+      "id": "genesis-38-q5",
+      "type": "fill_blank",
+      "question": "Judah had withheld from Tamar his third son, _____.",
+      "answer": "Shelah",
+      "verse_reference": "Genesis 38:11"
+    }
+  ]
+}

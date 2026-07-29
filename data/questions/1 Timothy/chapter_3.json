@@ -1,0 +1,59 @@
+{
+  "book": "1 Timothy",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "1tim_3_1",
+      "type": "multiple_choice",
+      "question": "An overseer must be the husband of how many wives?",
+      "options": [
+        "One",
+        "Two",
+        "None",
+        "As many as he wishes"
+      ],
+      "correct": "One",
+      "verse_ref": "1 Timothy 3:2",
+      "feedback": "An overseer must be the husband of one wife, sober-minded, and respectable."
+    },
+    {
+      "id": "1tim_3_2",
+      "type": "multiple_choice",
+      "question": "Paul says the church is the pillar and foundation of what?",
+      "options": [
+        "The faith",
+        "The truth",
+        "God's kingdom",
+        "The law"
+      ],
+      "correct": "The truth",
+      "verse_ref": "1 Timothy 3:15",
+      "feedback": "The church of the living God is the pillar and foundation of the truth."
+    },
+    {
+      "id": "1tim_3_3",
+      "type": "true_false",
+      "question": "Paul says an overseer must not be a recent convert.",
+      "correct": true,
+      "verse_ref": "1 Timothy 3:6",
+      "feedback": "A recent convert might become puffed up with conceit and fall into condemnation."
+    },
+    {
+      "id": "1tim_3_4",
+      "type": "fill_in_the_blank",
+      "question": "Deacons must hold the mystery of the faith with a clear _____.",
+      "correct": "conscience",
+      "verse_ref": "1 Timothy 3:9",
+      "feedback": "Deacons must hold the mystery of the faith with a clear conscience."
+    },
+    {
+      "id": "1tim_3_5",
+      "type": "fill_in_the_blank",
+      "question": "An overseer must manage his own _____ well before managing God's church.",
+      "correct": "household",
+      "accept": ["house"],
+      "verse_ref": "1 Timothy 3:4-5",
+      "feedback": "He must manage his own household well as qualification for church leadership."
+    }
+  ]
+}

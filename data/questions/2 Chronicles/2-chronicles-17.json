@@ -1,0 +1,63 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 17,
+  "questions": [
+    {
+      "id": "2-chronicles-17-q1",
+      "type": "multiple_choice",
+      "question": "What did King Jehoshaphat send officials and Levites to do throughout Judah?",
+      "options": [
+        "Recruit more soldiers for the king's army",
+        "Collect taxes from every town",
+        "Build new cities across the land",
+        "Teach the Book of the Law of the LORD"
+      ],
+      "answer": "Teach the Book of the Law of the LORD",
+      "verse_reference": "2 Chronicles 17:7-9"
+    },
+    {
+      "id": "2-chronicles-17-q2",
+      "type": "multiple_choice",
+      "question": "Why did the LORD establish Jehoshaphat's kingdom?",
+      "options": [
+        "He built up the largest army in the whole region",
+        "He walked in the earlier ways of David and sought God",
+        "He gathered to himself very great wealth and much tribute",
+        "He made strong alliances with all of his neighbors"
+      ],
+      "answer": "He walked in the earlier ways of David and sought God",
+      "verse_reference": "2 Chronicles 17:3-4"
+    },
+    {
+      "id": "2-chronicles-17-q3",
+      "type": "true_false",
+      "question": "The fear of the LORD fell on the surrounding kingdoms so they did not make war on Jehoshaphat.",
+      "answer": "true",
+      "verse_reference": "2 Chronicles 17:10"
+    },
+    {
+      "id": "2-chronicles-17-q4",
+      "type": "fill_blank",
+      "question": "Jehoshaphat's heart took _____ in the ways of the LORD.",
+      "answer": "delight",
+      "accept": [
+        "courage"
+      ],
+      "verse_reference": "2 Chronicles 17:6"
+    },
+    {
+      "id": "2-chronicles-17-q5",
+      "type": "fill_blank",
+      "question": "He removed the high places and the _____ from Judah.",
+      "answer": "Asherah poles",
+      "accept": [
+        "Asherim",
+        "groves",
+        "Asherah",
+        "Asherahs",
+        "shrines"
+      ],
+      "verse_reference": "2 Chronicles 17:6"
+    }
+  ]
+}

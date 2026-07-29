@@ -1,0 +1,56 @@
+{
+  "book": "Psalms",
+  "chapter": 44,
+  "questions": [
+    {
+      "id": "psalms-44-q1",
+      "type": "multiple_choice",
+      "question": "What is the mood of much of Psalm 44?",
+      "options": [
+        "A joyful royal psalm honoring the wedding of the king",
+        "A festive hymn celebrating a great and bountiful harvest",
+        "A wisdom poem comparing the two very different paths",
+        "A communal lament feeling rejected by God despite faithfulness"
+      ],
+      "answer": "A communal lament feeling rejected by God despite faithfulness",
+      "verse_reference": "Psalm 44:9"
+    },
+    {
+      "id": "psalms-44-q2",
+      "type": "multiple_choice",
+      "question": "What did the psalmist's fathers tell of?",
+      "options": [
+        "The riches God gave to the patriarchs",
+        "The law God spoke from Mount Sinai",
+        "The deeds God did in driving out the nations",
+        "The great temple that God allowed Solomon to build"
+      ],
+      "answer": "The deeds God did in driving out the nations",
+      "verse_reference": "Psalm 44:1-2"
+    },
+    {
+      "id": "psalms-44-q3",
+      "type": "true_false",
+      "question": "The psalm pleads, 'Rise up; come to our help! Redeem us for the sake of your steadfast love.'",
+      "answer": "true",
+      "verse_reference": "Psalm 44:26"
+    },
+    {
+      "id": "psalms-44-q4",
+      "type": "fill_blank",
+      "question": "In God we have boasted continually, and we will give thanks to your _____ forever.",
+      "answer": "name",
+      "verse_reference": "Psalm 44:8"
+    },
+    {
+      "id": "psalms-44-q5",
+      "type": "fill_blank",
+      "question": "For your sake we are killed all the day long; we are regarded as sheep to be _____.",
+      "answer": "slaughtered",
+      "accept": [
+        "slaughter"
+      ],
+      "verse_reference": "Psalm 44:22"
+    }
+  ]
+}

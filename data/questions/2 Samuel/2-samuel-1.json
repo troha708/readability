@@ -1,0 +1,53 @@
+{
+  "book": "2 Samuel",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "2-samuel-1-q1",
+      "type": "multiple_choice",
+      "question": "How did David respond to the news of Saul's and Jonathan's deaths?",
+      "options": [
+        "He mourned and lamented",
+        "He rejoiced",
+        "He seized the throne at once",
+        "He fled"
+      ],
+      "answer": "He mourned and lamented",
+      "verse_reference": "2 Samuel 1:11-12"
+    },
+    {
+      "id": "2-samuel-1-q2",
+      "type": "multiple_choice",
+      "question": "What did David do to the Amalekite who claimed to have killed Saul?",
+      "options": [
+        "Had him put to death",
+        "Rewarded him",
+        "Made him a household servant",
+        "Ignored him"
+      ],
+      "answer": "Had him put to death",
+      "verse_reference": "2 Samuel 1:15"
+    },
+    {
+      "id": "2-samuel-1-q3",
+      "type": "true_false",
+      "question": "David composed a lament for Saul and Jonathan.",
+      "answer": "true",
+      "verse_reference": "2 Samuel 1:17"
+    },
+    {
+      "id": "2-samuel-1-q4",
+      "type": "fill_blank",
+      "question": "David lamented, \"How the _____ have fallen!\"",
+      "answer": "mighty",
+      "verse_reference": "2 Samuel 1:19"
+    },
+    {
+      "id": "2-samuel-1-q5",
+      "type": "fill_blank",
+      "question": "David grieved deeply for his friend _____, Saul's son.",
+      "answer": "Jonathan",
+      "verse_reference": "2 Samuel 1:26"
+    }
+  ]
+}

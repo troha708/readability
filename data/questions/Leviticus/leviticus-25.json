@@ -1,0 +1,54 @@
+{
+  "book": "Leviticus",
+  "chapter": 25,
+  "questions": [
+    {
+      "id": "leviticus-25-q1",
+      "type": "multiple_choice",
+      "question": "What was to happen to the land every seventh year?",
+      "options": [
+        "It was sold to the highest bidder",
+        "It rested (a Sabbath year, not sown)",
+        "It was divided among the tribes again",
+        "It was burned to clear the weeds"
+      ],
+      "answer": "It rested (a Sabbath year, not sown)",
+      "verse_reference": "Leviticus 25:4"
+    },
+    {
+      "id": "leviticus-25-q2",
+      "type": "multiple_choice",
+      "question": "What was the fiftieth year called, when slaves were freed and land returned?",
+      "options": [
+        "The Sabbath",
+        "The Jubilee",
+        "The Passover",
+        "The Atonement"
+      ],
+      "answer": "The Jubilee",
+      "verse_reference": "Leviticus 25:10"
+    },
+    {
+      "id": "leviticus-25-q3",
+      "type": "true_false",
+      "question": "In the Year of Jubilee, property returned to its original family and slaves were freed.",
+      "answer": "true",
+      "verse_reference": "Leviticus 25:10"
+    },
+    {
+      "id": "leviticus-25-q4",
+      "type": "fill_blank",
+      "question": "Every seventh year the land was to have a _____ of rest.",
+      "answer": "Sabbath",
+      "verse_reference": "Leviticus 25:4"
+    },
+    {
+      "id": "leviticus-25-q5",
+      "type": "fill_blank",
+      "question": "The fiftieth year, the year of _____, proclaimed liberty throughout the land.",
+      "answer": "Jubilee",
+      "accept": ["jubile"],
+      "verse_reference": "Leviticus 25:10"
+    }
+  ]
+}

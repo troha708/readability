@@ -1,0 +1,53 @@
+{
+  "book": "Isaiah",
+  "chapter": 9,
+  "questions": [
+    {
+      "id": "isaiah-9-q1",
+      "type": "multiple_choice",
+      "question": "What famous prophecy of a child appears in Isaiah 9?",
+      "options": [
+        "'A new king shall arise to rule the land of Egypt'",
+        "'A mighty king of Babylon shall be brought low'",
+        "'For to us a child is born, to us a son is given'",
+        "'Behold, a judge shall come to deliver his people'"
+      ],
+      "answer": "'For to us a child is born, to us a son is given'",
+      "verse_reference": "Isaiah 9:6"
+    },
+    {
+      "id": "isaiah-9-q2",
+      "type": "multiple_choice",
+      "question": "By which names is this child called in Isaiah 9?",
+      "options": [
+        "Bright Morning Star, Lion of Judah, Root of David, and Branch of Life",
+        "King of all Kings, Lord of all Lords, Ruler of All, and Judge of Earth",
+        "Holy One of Israel, great Redeemer, Rock of Ages, and Shield of Faith",
+        "Wonderful Counselor, Mighty God, Everlasting Father, Prince of Peace"
+      ],
+      "answer": "Wonderful Counselor, Mighty God, Everlasting Father, Prince of Peace",
+      "verse_reference": "Isaiah 9:6"
+    },
+    {
+      "id": "isaiah-9-q3",
+      "type": "true_false",
+      "question": "Isaiah 9 says the people who walked in darkness have seen a great light.",
+      "answer": "true",
+      "verse_reference": "Isaiah 9:2"
+    },
+    {
+      "id": "isaiah-9-q4",
+      "type": "fill_blank",
+      "question": "For to us a child is born, to us a _____ is given.",
+      "answer": "son",
+      "verse_reference": "Isaiah 9:6"
+    },
+    {
+      "id": "isaiah-9-q5",
+      "type": "fill_blank",
+      "question": "And his name shall be called Wonderful Counselor, Mighty God, Everlasting Father, Prince of _____.",
+      "answer": "Peace",
+      "verse_reference": "Isaiah 9:6"
+    }
+  ]
+}

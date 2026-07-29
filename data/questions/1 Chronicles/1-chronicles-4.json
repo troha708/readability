@@ -1,0 +1,56 @@
+{
+  "book": "1 Chronicles",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "1-chronicles-4-q1",
+      "type": "multiple_choice",
+      "question": "What did Jabez ask God to do for him?",
+      "options": [
+        "Give him many strong sons and heirs",
+        "Deliver him from all his enemies",
+        "Bless him and enlarge his border",
+        "Make him a ruler over his brothers"
+      ],
+      "answer": "Bless him and enlarge his border",
+      "verse_reference": "1 Chronicles 4:10"
+    },
+    {
+      "id": "1-chronicles-4-q2",
+      "type": "multiple_choice",
+      "question": "Why was Jabez given his name?",
+      "options": [
+        "He was born in pain",
+        "He was a warrior",
+        "He was the firstborn",
+        "He was honored"
+      ],
+      "answer": "He was born in pain",
+      "verse_reference": "1 Chronicles 4:9"
+    },
+    {
+      "id": "1-chronicles-4-q3",
+      "type": "true_false",
+      "question": "God granted Jabez what he requested.",
+      "answer": "true",
+      "verse_reference": "1 Chronicles 4:10"
+    },
+    {
+      "id": "1-chronicles-4-q4",
+      "type": "fill_blank",
+      "question": "Jabez was more honorable than his _____.",
+      "answer": "brothers",
+      "accept": [
+        "brethren"
+      ],
+      "verse_reference": "1 Chronicles 4:9"
+    },
+    {
+      "id": "1-chronicles-4-q5",
+      "type": "fill_blank",
+      "question": "This chapter records the descendants of Judah and _____.",
+      "answer": "Simeon",
+      "verse_reference": "1 Chronicles 4:24"
+    }
+  ]
+}

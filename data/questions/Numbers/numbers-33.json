@@ -1,0 +1,56 @@
+{
+  "book": "Numbers",
+  "chapter": 33,
+  "questions": [
+    {
+      "id": "numbers-33-q1",
+      "type": "multiple_choice",
+      "question": "What does chapter 33 record?",
+      "options": [
+        "The list of Israel's journey stages from Egypt",
+        "The record of a great battle in the desert",
+        "The numbering of the fighting men by tribe",
+        "The laws for keeping the yearly festivals"
+      ],
+      "answer": "The list of Israel's journey stages from Egypt",
+      "verse_reference": "Numbers 33:1-2"
+    },
+    {
+      "id": "numbers-33-q2",
+      "type": "multiple_choice",
+      "question": "What did God command Israel to do to the inhabitants of Canaan and their idols?",
+      "options": [
+        "Drive them out and destroy their idols",
+        "Make peace and live quietly alongside them",
+        "Tax them and spare their temples",
+        "Leave them alone and pass them by"
+      ],
+      "answer": "Drive them out and destroy their idols",
+      "verse_reference": "Numbers 33:52"
+    },
+    {
+      "id": "numbers-33-q3",
+      "type": "true_false",
+      "question": "Moses recorded the starting points of Israel's journeys at God's command.",
+      "answer": "true",
+      "verse_reference": "Numbers 33:2"
+    },
+    {
+      "id": "numbers-33-q4",
+      "type": "fill_blank",
+      "question": "Chapter 33 lists the stages of Israel's _____ from Egypt to the plains of Moab.",
+      "answer": "journeys",
+      "accept": [
+        "journey"
+      ],
+      "verse_reference": "Numbers 33:1"
+    },
+    {
+      "id": "numbers-33-q5",
+      "type": "fill_blank",
+      "question": "God told Israel to drive out the inhabitants and destroy their carved _____.",
+      "answer": "images",
+      "verse_reference": "Numbers 33:52"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "book": "Genesis",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "genesis-4-q1",
+      "type": "multiple_choice",
+      "question": "What was Cain's occupation?",
+      "options": [
+        "A keeper of sheep (shepherd)",
+        "A worker of the ground (farmer)",
+        "A builder of cities",
+        "A hunter of wild game"
+      ],
+      "answer": "A worker of the ground (farmer)",
+      "verse_reference": "Genesis 4:2"
+    },
+    {
+      "id": "genesis-4-q2",
+      "type": "multiple_choice",
+      "question": "Where did Cain settle after killing his brother?",
+      "options": [
+        "The land of Nod, east of Eden",
+        "The land of Uz, east of the Jordan",
+        "The plain of Shinar, by the river",
+        "The region of Havilah, near the gold"
+      ],
+      "answer": "The land of Nod, east of Eden",
+      "verse_reference": "Genesis 4:16"
+    },
+    {
+      "id": "genesis-4-q3",
+      "type": "true_false",
+      "question": "When God asked where Abel was, Cain replied, \"Am I my brother's keeper?\"",
+      "answer": "true",
+      "verse_reference": "Genesis 4:9"
+    },
+    {
+      "id": "genesis-4-q4",
+      "type": "fill_blank",
+      "question": "Cain rose up against his brother _____ and killed him.",
+      "answer": "Abel",
+      "accept": [
+        "Habel"
+      ],
+      "verse_reference": "Genesis 4:8"
+    },
+    {
+      "id": "genesis-4-q5",
+      "type": "fill_blank",
+      "question": "Adam and Eve had another son in place of Abel and named him _____.",
+      "answer": "Seth",
+      "accept": [
+        "Sheth"
+      ],
+      "verse_reference": "Genesis 4:25"
+    }
+  ]
+}

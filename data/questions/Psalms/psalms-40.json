@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 40,
+  "questions": [
+    {
+      "id": "psalms-40-q1",
+      "type": "multiple_choice",
+      "question": "What did the LORD do when David waited patiently?",
+      "options": [
+        "Sent down fire from heaven to consume all of his enemies",
+        "Inclined to him, heard his cry, and drew him up from the pit",
+        "Opened up the heavens and poured down the cool refreshing rain",
+        "Raised up a great army to go out and fight on his behalf"
+      ],
+      "answer": "Inclined to him, heard his cry, and drew him up from the pit",
+      "verse_reference": "Psalm 40:1-2"
+    },
+    {
+      "id": "psalms-40-q2",
+      "type": "multiple_choice",
+      "question": "What did God put in David's mouth?",
+      "options": [
+        "A solemn vow, a binding oath",
+        "A quiet prayer, a whispered plea",
+        "A new song, a song of praise",
+        "A bitter cry, a lament of grief"
+      ],
+      "answer": "A new song, a song of praise",
+      "verse_reference": "Psalm 40:3"
+    },
+    {
+      "id": "psalms-40-q3",
+      "type": "true_false",
+      "question": "David delights to do God's will, and God's law is within his heart.",
+      "answer": "true",
+      "verse_reference": "Psalm 40:8"
+    },
+    {
+      "id": "psalms-40-q4",
+      "type": "fill_blank",
+      "question": "He set my feet upon a rock and made my footsteps _____.",
+      "answer": "firm",
+      "verse_reference": "Psalm 40:2"
+    },
+    {
+      "id": "psalms-40-q5",
+      "type": "fill_blank",
+      "question": "I proclaim _____ in the great assembly; I do not seal my lips.",
+      "answer": "righteousness",
+      "verse_reference": "Psalm 40:9"
+    }
+  ]
+}

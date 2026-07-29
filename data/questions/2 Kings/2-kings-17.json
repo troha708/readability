@@ -1,0 +1,53 @@
+{
+  "book": "2 Kings",
+  "chapter": 17,
+  "questions": [
+    {
+      "id": "2-kings-17-q1",
+      "type": "multiple_choice",
+      "question": "What happened to the northern kingdom of Israel in this chapter?",
+      "options": [
+        "It prospered greatly and grew strong once again",
+        "It was conquered by Assyria and the people exiled",
+        "It made a lasting peace with the empire of Assyria",
+        "It split once more into two rival kingdoms"
+      ],
+      "answer": "It was conquered by Assyria and the people exiled",
+      "verse_reference": "2 Kings 17:6"
+    },
+    {
+      "id": "2-kings-17-q2",
+      "type": "multiple_choice",
+      "question": "Why did Israel fall, according to the writer?",
+      "options": [
+        "Misfortune and very bad luck overtook them",
+        "They sinned against the LORD and worshiped other gods",
+        "Their armies were far too weak to resist the enemy",
+        "A long and severe famine drained all their strength"
+      ],
+      "answer": "They sinned against the LORD and worshiped other gods",
+      "verse_reference": "2 Kings 17:7-18"
+    },
+    {
+      "id": "2-kings-17-q3",
+      "type": "true_false",
+      "question": "The capital Samaria fell to the king of Assyria.",
+      "answer": "true",
+      "verse_reference": "2 Kings 17:5-6"
+    },
+    {
+      "id": "2-kings-17-q4",
+      "type": "fill_blank",
+      "question": "The king of _____ captured Samaria and carried Israel away into exile.",
+      "answer": "Assyria",
+      "verse_reference": "2 Kings 17:6"
+    },
+    {
+      "id": "2-kings-17-q5",
+      "type": "fill_blank",
+      "question": "Israel fell because they had _____ against the LORD their God.",
+      "answer": "sinned",
+      "verse_reference": "2 Kings 17:7"
+    }
+  ]
+}

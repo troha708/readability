@@ -1,0 +1,53 @@
+{
+  "book": "Luke",
+  "chapter": 12,
+  "questions": [
+    {
+      "id": "luke-12-q1",
+      "type": "multiple_choice",
+      "question": "In the Parable of the Rich Fool, what did God say to the rich man?",
+      "options": [
+        "You fool, tonight your soul is required of you",
+        "Store up still more, and your soul shall have rest",
+        "Share your grain freely with all your neighbors",
+        "Well done, you have been faithful with little"
+      ],
+      "answer": "You fool, tonight your soul is required of you",
+      "verse_reference": "Luke 12:20"
+    },
+    {
+      "id": "luke-12-q2",
+      "type": "multiple_choice",
+      "question": "Jesus said not to worry about your life because God takes care of what creatures?",
+      "options": [
+        "Ravens and lilies",
+        "Sparrows and doves",
+        "Sheep and goats",
+        "Fish and whales"
+      ],
+      "answer": "Ravens and lilies",
+      "verse_reference": "Luke 12:24-27"
+    },
+    {
+      "id": "luke-12-q3",
+      "type": "true_false",
+      "question": "Jesus said that where your treasure is, there your heart will be also.",
+      "answer": "true",
+      "verse_reference": "Luke 12:34"
+    },
+    {
+      "id": "luke-12-q4",
+      "type": "fill_blank",
+      "question": "Do not be afraid, little flock, for your Father is _____ to give you the kingdom.",
+      "answer": "pleased",
+      "verse_reference": "Luke 12:32"
+    },
+    {
+      "id": "luke-12-q5",
+      "type": "fill_blank",
+      "question": "To whomever much is given, of him will much be _____.",
+      "answer": "required",
+      "verse_reference": "Luke 12:48"
+    }
+  ]
+}

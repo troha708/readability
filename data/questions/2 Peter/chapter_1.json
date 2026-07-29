@@ -1,0 +1,58 @@
+{
+  "book": "2 Peter",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "2pet_1_1",
+      "type": "multiple_choice",
+      "question": "Peter says to add to faith what sequence of virtues?",
+      "options": [
+        "Prayer, fasting, almsgiving, worship, study, silence, obedience, humility, and zeal",
+        "Goodness, knowledge, self-control, perseverance, godliness, mutual affection, love",
+        "Wisdom, courage, justice, temperance, prudence, honor, mercy, and patience",
+        "Hope, charity, obedience, humility, patience, gentleness, joy, and kindness"
+      ],
+      "correct": "Goodness, knowledge, self-control, perseverance, godliness, mutual affection, love",
+      "verse_ref": "2 Peter 1:5-7",
+      "feedback": "Add to faith: goodness, knowledge, self-control, perseverance, godliness, mutual affection, love."
+    },
+    {
+      "id": "2pet_1_2",
+      "type": "multiple_choice",
+      "question": "Peter says Scripture came about not by the prophet's own interpretation but by what?",
+      "options": [
+        "The careful study of learned scholars",
+        "Angels dictating the very words",
+        "Dreams and night visions alone",
+        "The Holy Spirit carrying men along"
+      ],
+      "correct": "The Holy Spirit carrying men along",
+      "verse_ref": "2 Peter 1:21",
+      "feedback": "Prophecy came as people were carried along by the Holy Spirit."
+    },
+    {
+      "id": "2pet_1_3",
+      "type": "true_false",
+      "question": "Peter says he was an eyewitness of Christ's majesty.",
+      "correct": true,
+      "verse_ref": "2 Peter 1:16",
+      "feedback": "Peter was an eyewitness of Christ's majesty on the sacred mountain."
+    },
+    {
+      "id": "2pet_1_4",
+      "type": "fill_in_the_blank",
+      "question": "God's divine power has given us everything we need for life and _____.",
+      "correct": "godliness",
+      "verse_ref": "2 Peter 1:3",
+      "feedback": "His divine power has given us everything needed for life and godliness."
+    },
+    {
+      "id": "2pet_1_5",
+      "type": "fill_in_the_blank",
+      "question": "Make every effort to confirm your calling and _____.",
+      "correct": "election",
+      "verse_ref": "2 Peter 1:10",
+      "feedback": "Make every effort to confirm your calling and election."
+    }
+  ]
+}

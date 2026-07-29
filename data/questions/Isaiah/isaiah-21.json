@@ -1,0 +1,56 @@
+{
+  "book": "Isaiah",
+  "chapter": 21,
+  "questions": [
+    {
+      "id": "isaiah-21-q1",
+      "type": "multiple_choice",
+      "question": "What cry concerning Babylon appears in Isaiah 21?",
+      "options": [
+        "'Babylon shall surely rise'",
+        "'Babylon shall reign on high'",
+        "'Fallen, fallen is Babylon'",
+        "'Babylon is greatly blessed'"
+      ],
+      "answer": "'Fallen, fallen is Babylon'",
+      "verse_reference": "Isaiah 21:9"
+    },
+    {
+      "id": "isaiah-21-q2",
+      "type": "multiple_choice",
+      "question": "What was the watchman set to do in Isaiah 21?",
+      "options": [
+        "Sound the alarm at dawn",
+        "Report what he sees",
+        "Sleep until the morning",
+        "Guard the gate alone"
+      ],
+      "answer": "Report what he sees",
+      "verse_reference": "Isaiah 21:6"
+    },
+    {
+      "id": "isaiah-21-q3",
+      "type": "true_false",
+      "question": "Isaiah 21 also contains brief oracles concerning Dumah (Edom) and Arabia.",
+      "answer": "true",
+      "verse_reference": "Isaiah 21:11-16"
+    },
+    {
+      "id": "isaiah-21-q4",
+      "type": "fill_blank",
+      "question": "Fallen, fallen is _____; and all the carved images of her gods he has shattered.",
+      "answer": "Babylon",
+      "accept": [
+        "Babel"
+      ],
+      "verse_reference": "Isaiah 21:9"
+    },
+    {
+      "id": "isaiah-21-q5",
+      "type": "fill_blank",
+      "question": "Watchman, what time of the _____? Watchman, what time of the night?",
+      "answer": "night",
+      "verse_reference": "Isaiah 21:11"
+    }
+  ]
+}

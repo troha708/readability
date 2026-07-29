@@ -1,0 +1,58 @@
+{
+  "book": "2 Corinthians",
+  "chapter": 6,
+  "questions": [
+    {
+      "id": "2cor-6-q1",
+      "type": "multiple_choice",
+      "question": "Paul warns believers not to be yoked together with whom?",
+      "options": [
+        "Pharisees",
+        "Unbelievers",
+        "Other believers",
+        "Tax collectors"
+      ],
+      "answer": "Unbelievers",
+      "verse_reference": "2 Corinthians 6:14"
+    },
+    {
+      "id": "2cor-6-q2",
+      "type": "multiple_choice",
+      "question": "Paul lists many hardships he has endured. Which of these does he NOT mention?",
+      "options": [
+        "Beatings and imprisonments",
+        "Sleepless nights and hunger",
+        "Hardships and calamities",
+        "Exile to a foreign land"
+      ],
+      "answer": "Exile to a foreign land",
+      "verse_reference": "2 Corinthians 6:4-5"
+    },
+    {
+      "id": "2cor-6-q3",
+      "type": "true_false",
+      "question": "Paul urges the Corinthians not to receive God's grace in vain.",
+      "answer": "true",
+      "verse_reference": "2 Corinthians 6:1"
+    },
+    {
+      "id": "2cor-6-q4",
+      "type": "fill_blank",
+      "question": "Do not be unequally _____ with unbelievers.",
+      "answer": "yoked",
+      "verse_reference": "2 Corinthians 6:14"
+    },
+    {
+      "id": "2cor-6-q5",
+      "type": "fill_blank",
+      "question": "What partnership can righteousness have with _____?",
+      "answer": "wickedness",
+      "accept": [
+        "lawlessness",
+        "unrighteousness",
+        "iniquity"
+      ],
+      "verse_reference": "2 Corinthians 6:14"
+    }
+  ]
+}

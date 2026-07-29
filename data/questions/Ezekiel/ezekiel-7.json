@@ -1,0 +1,57 @@
+{
+  "book": "Ezekiel",
+  "chapter": 7,
+  "questions": [
+    {
+      "id": "ezekiel-7-q1",
+      "type": "multiple_choice",
+      "question": "What does Ezekiel 7 repeatedly announce?",
+      "options": [
+        "The exiles will soon return home",
+        "The end has come upon the land",
+        "A new king will restore the throne",
+        "A time of peace is near at hand"
+      ],
+      "answer": "The end has come upon the land",
+      "verse_reference": "Ezekiel 7:2"
+    },
+    {
+      "id": "ezekiel-7-q2",
+      "type": "multiple_choice",
+      "question": "What would happen to their silver and gold in the day of wrath?",
+      "options": [
+        "It could not deliver them; they would throw it in the streets",
+        "It would be hidden away deep within the temple vaults",
+        "It would buy their safety and ransom their very lives",
+        "It would multiply many, many times over in all of their storehouses"
+      ],
+      "answer": "It could not deliver them; they would throw it in the streets",
+      "verse_reference": "Ezekiel 7:19"
+    },
+    {
+      "id": "ezekiel-7-q3",
+      "type": "true_false",
+      "question": "Ezekiel 7 says the day of the LORD's wrath has come and disaster follows disaster.",
+      "answer": "true",
+      "verse_reference": "Ezekiel 7:5, 26"
+    },
+    {
+      "id": "ezekiel-7-q4",
+      "type": "fill_blank",
+      "question": "An end! The _____ has come upon the four corners of the land.",
+      "answer": "end",
+      "verse_reference": "Ezekiel 7:2"
+    },
+    {
+      "id": "ezekiel-7-q5",
+      "type": "fill_blank",
+      "question": "They will throw their silver into the streets, and their gold will seem _____.",
+      "answer": "unclean",
+      "accept": [
+        "removed",
+        "impurity"
+      ],
+      "verse_reference": "Ezekiel 7:19"
+    }
+  ]
+}

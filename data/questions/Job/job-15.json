@@ -1,0 +1,56 @@
+{
+  "book": "Job",
+  "chapter": 15,
+  "questions": [
+    {
+      "id": "job-15-q1",
+      "type": "multiple_choice",
+      "question": "Who begins the second cycle of speeches?",
+      "options": [
+        "Elihu the Buzite",
+        "Bildad the Shuhite",
+        "Zophar the Naamathite",
+        "Eliphaz the Temanite"
+      ],
+      "answer": "Eliphaz the Temanite",
+      "verse_reference": "Job 15:1"
+    },
+    {
+      "id": "job-15-q2",
+      "type": "multiple_choice",
+      "question": "What did Eliphaz say about the wicked man?",
+      "options": [
+        "He is soon forgotten by everyone",
+        "He is blessed above the righteous",
+        "He writhes in pain all his days",
+        "He prospers and thrives forever"
+      ],
+      "answer": "He writhes in pain all his days",
+      "verse_reference": "Job 15:20"
+    },
+    {
+      "id": "job-15-q3",
+      "type": "true_false",
+      "question": "Eliphaz accused Job of doing away with the fear of God.",
+      "answer": "true",
+      "verse_reference": "Job 15:4"
+    },
+    {
+      "id": "job-15-q4",
+      "type": "fill_blank",
+      "question": "Eliphaz asked if Job was the first man ever _____.",
+      "answer": "born",
+      "verse_reference": "Job 15:7"
+    },
+    {
+      "id": "job-15-q5",
+      "type": "fill_blank",
+      "question": "Eliphaz said even the heavens are not pure in God's _____.",
+      "answer": "eyes",
+      "accept": [
+        "sight"
+      ],
+      "verse_reference": "Job 15:15"
+    }
+  ]
+}

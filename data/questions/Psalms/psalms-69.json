@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 69,
+  "questions": [
+    {
+      "id": "psalms-69-q1",
+      "type": "multiple_choice",
+      "question": "How does David describe his distress in Psalm 69?",
+      "options": [
+        "The waters have come up to his neck; he sinks in deep mire",
+        "He walks at ease through a garden full of fruit",
+        "His table is spread before him in a place of plenty",
+        "He rests in green pastures beside still and quiet waters"
+      ],
+      "answer": "The waters have come up to his neck; he sinks in deep mire",
+      "verse_reference": "Psalm 69:1-2"
+    },
+    {
+      "id": "psalms-69-q2",
+      "type": "multiple_choice",
+      "question": "What consumed David, which is quoted in the New Testament?",
+      "options": [
+        "Deep grief for his sin",
+        "Fear of his foes",
+        "Hunger for bread",
+        "Zeal for God's house"
+      ],
+      "answer": "Zeal for God's house",
+      "verse_reference": "Psalm 69:9"
+    },
+    {
+      "id": "psalms-69-q3",
+      "type": "true_false",
+      "question": "David says they gave him poison for food and sour wine to drink.",
+      "answer": "true",
+      "verse_reference": "Psalm 69:21"
+    },
+    {
+      "id": "psalms-69-q4",
+      "type": "fill_blank",
+      "question": "Save me, O God! For the _____ have come up to my neck.",
+      "answer": "waters",
+      "verse_reference": "Psalm 69:1"
+    },
+    {
+      "id": "psalms-69-q5",
+      "type": "fill_blank",
+      "question": "Zeal for your _____ has consumed me.",
+      "answer": "house",
+      "verse_reference": "Psalm 69:9"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Acts",
+  "chapter": 9,
+  "questions": [
+    {
+      "id": "acts-9-q1",
+      "type": "multiple_choice",
+      "question": "On the road to which city did Saul encounter a blinding light and hear the voice of Jesus?",
+      "options": [
+        "Antioch",
+        "Tarsus",
+        "Jerusalem",
+        "Damascus"
+      ],
+      "answer": "Damascus",
+      "verse_reference": "Acts 9:3"
+    },
+    {
+      "id": "acts-9-q2",
+      "type": "multiple_choice",
+      "question": "Who was sent by God to lay hands on Saul so he could regain his sight?",
+      "options": [
+        "Peter",
+        "Ananias",
+        "Barnabas",
+        "Philip"
+      ],
+      "answer": "Ananias",
+      "verse_reference": "Acts 9:10-12,17"
+    },
+    {
+      "id": "acts-9-q3",
+      "type": "true_false",
+      "question": "Saul was blind for seven days after his encounter on the road.",
+      "answer": "false",
+      "verse_reference": "Acts 9:9"
+    },
+    {
+      "id": "acts-9-q4",
+      "type": "fill_blank",
+      "question": "Jesus said to Saul, 'Saul, Saul, why do you _____ me?'",
+      "answer": "persecute",
+      "verse_reference": "Acts 9:4"
+    },
+    {
+      "id": "acts-9-q5",
+      "type": "fill_blank",
+      "question": "In Joppa, Peter raised a disciple named _____ from the dead.",
+      "answer": "Tabitha",
+      "verse_reference": "Acts 9:40"
+    }
+  ]
+}

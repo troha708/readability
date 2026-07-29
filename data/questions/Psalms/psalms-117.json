@@ -1,0 +1,56 @@
+{
+  "book": "Psalms",
+  "chapter": 117,
+  "questions": [
+    {
+      "id": "psalms-117-q1",
+      "type": "multiple_choice",
+      "question": "What is notable about Psalm 117?",
+      "options": [
+        "It is the shortest psalm and chapter in the Bible",
+        "It is the only psalm ever written by the wise King Solomon",
+        "It is the central chapter of the whole Bible",
+        "It is the longest of all the psalms by far"
+      ],
+      "answer": "It is the shortest psalm and chapter in the Bible",
+      "verse_reference": "Psalm 117:1-2"
+    },
+    {
+      "id": "psalms-117-q2",
+      "type": "multiple_choice",
+      "question": "Whom does Psalm 117 call to praise the LORD?",
+      "options": [
+        "The priests and the Levites",
+        "All nations and all peoples",
+        "The poor and the lowly",
+        "The kings and the rulers"
+      ],
+      "answer": "All nations and all peoples",
+      "verse_reference": "Psalm 117:1"
+    },
+    {
+      "id": "psalms-117-q3",
+      "type": "true_false",
+      "question": "The psalm says great is the LORD's steadfast love toward us, and his faithfulness endures forever.",
+      "answer": "true",
+      "verse_reference": "Psalm 117:2"
+    },
+    {
+      "id": "psalms-117-q4",
+      "type": "fill_blank",
+      "question": "Praise the LORD, all _____! Extol him, all peoples!",
+      "answer": "nations",
+      "verse_reference": "Psalm 117:1"
+    },
+    {
+      "id": "psalms-117-q5",
+      "type": "fill_blank",
+      "question": "Great is his steadfast love toward us, and the _____ of the LORD endures forever.",
+      "answer": "faithfulness",
+      "accept": [
+        "truth"
+      ],
+      "verse_reference": "Psalm 117:2"
+    }
+  ]
+}

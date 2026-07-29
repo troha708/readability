@@ -1,0 +1,58 @@
+{
+  "book": "2 Corinthians",
+  "chapter": 11,
+  "questions": [
+    {
+      "id": "2cor-11-q1",
+      "type": "multiple_choice",
+      "question": "Paul warns that Satan disguises himself as what?",
+      "options": [
+        "A serpent",
+        "An angel of light",
+        "A wolf in sheep's clothing",
+        "A roaring lion"
+      ],
+      "answer": "An angel of light",
+      "verse_reference": "2 Corinthians 11:14"
+    },
+    {
+      "id": "2cor-11-q2",
+      "type": "multiple_choice",
+      "question": "Paul calls the false teachers in Corinth what?",
+      "options": [
+        "Wolves",
+        "Super-apostles",
+        "Pharisees",
+        "False prophets"
+      ],
+      "answer": "Super-apostles",
+      "verse_reference": "2 Corinthians 11:5"
+    },
+    {
+      "id": "2cor-11-q3",
+      "type": "true_false",
+      "question": "Paul lists many sufferings he endured including beatings, shipwrecks, and danger from rivers.",
+      "answer": "true",
+      "verse_reference": "2 Corinthians 11:23-27"
+    },
+    {
+      "id": "2cor-11-q4",
+      "type": "fill_blank",
+      "question": "Five times I received from the Jews forty stripes minus _____.",
+      "answer": "one",
+      "verse_reference": "2 Corinthians 11:24"
+    },
+    {
+      "id": "2cor-11-q5",
+      "type": "fill_blank",
+      "question": "Besides everything else, I face daily the pressure of my _____ for all the churches.",
+      "answer": "concern",
+      "accept": [
+        "care",
+        "anxiety",
+        "burden"
+      ],
+      "verse_reference": "2 Corinthians 11:28"
+    }
+  ]
+}

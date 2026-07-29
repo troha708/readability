@@ -1,0 +1,76 @@
+{
+  "book": "1 John",
+  "source": "Berean Standard Bible (CC0 Public Domain)",
+  "chapters": {
+    "1": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Word of Life"
+      },
+      {
+        "beforeVerse": 5,
+        "heading": "Walking in the Light"
+      }
+    ],
+    "2": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jesus Our Advocate"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "A New Commandment"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "Do Not Love the World"
+      },
+      {
+        "beforeVerse": 18,
+        "heading": "Beware of Antichrists"
+      },
+      {
+        "beforeVerse": 24,
+        "heading": "Remain in Christ"
+      }
+    ],
+    "3": [
+      {
+        "beforeVerse": 1,
+        "heading": "Children of God"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "Love One Another"
+      }
+    ],
+    "4": [
+      {
+        "beforeVerse": 1,
+        "heading": "Testing the Spirits"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "Love Comes from God"
+      }
+    ],
+    "5": [
+      {
+        "beforeVerse": 1,
+        "heading": "Overcoming the World"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "God’s Testimony about His Son"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "Effective Prayer"
+      },
+      {
+        "beforeVerse": 18,
+        "heading": "The True God"
+      }
+    ]
+  }
+}

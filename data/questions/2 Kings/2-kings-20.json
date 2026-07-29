@@ -1,0 +1,53 @@
+{
+  "book": "2 Kings",
+  "chapter": 20,
+  "questions": [
+    {
+      "id": "2-kings-20-q1",
+      "type": "multiple_choice",
+      "question": "What did God do when Hezekiah prayed during his deadly illness?",
+      "options": [
+        "Added fifteen years to his life",
+        "Restored his lost kingdom to him",
+        "Sent a prophet to anoint his son",
+        "Made the sun stand still for a day"
+      ],
+      "answer": "Added fifteen years to his life",
+      "verse_reference": "2 Kings 20:6"
+    },
+    {
+      "id": "2-kings-20-q2",
+      "type": "multiple_choice",
+      "question": "What sign did God give Hezekiah?",
+      "options": [
+        "The shadow went back ten steps on the stairway",
+        "A great rainbow appeared over the whole city",
+        "A bright and blazing star fell from the sky",
+        "A violent earthquake shook the whole temple of God"
+      ],
+      "answer": "The shadow went back ten steps on the stairway",
+      "verse_reference": "2 Kings 20:9-11"
+    },
+    {
+      "id": "2-kings-20-q3",
+      "type": "true_false",
+      "question": "Hezekiah unwisely showed all his treasures to envoys from Babylon.",
+      "answer": "true",
+      "verse_reference": "2 Kings 20:12-18"
+    },
+    {
+      "id": "2-kings-20-q4",
+      "type": "fill_blank",
+      "question": "God added _____ years to Hezekiah's life after he prayed.",
+      "answer": "fifteen",
+      "verse_reference": "2 Kings 20:6"
+    },
+    {
+      "id": "2-kings-20-q5",
+      "type": "fill_blank",
+      "question": "As a sign, the _____ went backward ten steps on the stairway of Ahaz.",
+      "answer": "shadow",
+      "verse_reference": "2 Kings 20:11"
+    }
+  ]
+}

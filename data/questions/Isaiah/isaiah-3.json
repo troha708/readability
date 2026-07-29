@@ -1,0 +1,56 @@
+{
+  "book": "Isaiah",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "isaiah-3-q1",
+      "type": "multiple_choice",
+      "question": "What does Isaiah 3 announce against Jerusalem and Judah?",
+      "options": [
+        "The full rebuilding of the temple and all of its broken-down walls",
+        "The removal of support and leaders, and judgment for their sin",
+        "A long and lasting time of perfect peace and great prosperity",
+        "A great and abundant harvest blessing the whole of the land"
+      ],
+      "answer": "The removal of support and leaders, and judgment for their sin",
+      "verse_reference": "Isaiah 3:1-8"
+    },
+    {
+      "id": "isaiah-3-q2",
+      "type": "multiple_choice",
+      "question": "Whom does the LORD especially indict in Isaiah 3?",
+      "options": [
+        "The priests who neglected the daily sacrifices",
+        "The elders and princes who crushed the poor",
+        "The foreign nations surrounding Jerusalem",
+        "The false prophets who spoke their own dreams"
+      ],
+      "answer": "The elders and princes who crushed the poor",
+      "verse_reference": "Isaiah 3:14"
+    },
+    {
+      "id": "isaiah-3-q3",
+      "type": "true_false",
+      "question": "Isaiah 3 rebukes the haughty women of Zion for their finery and pride.",
+      "answer": "true",
+      "verse_reference": "Isaiah 3:16"
+    },
+    {
+      "id": "isaiah-3-q4",
+      "type": "fill_blank",
+      "question": "The look on their faces bears witness against them; they proclaim their _____ like Sodom.",
+      "answer": "sin",
+      "verse_reference": "Isaiah 3:9"
+    },
+    {
+      "id": "isaiah-3-q5",
+      "type": "fill_blank",
+      "question": "What do you mean by crushing my people, by grinding the face of the _____?",
+      "answer": "poor",
+      "accept": [
+        "afflicted"
+      ],
+      "verse_reference": "Isaiah 3:15"
+    }
+  ]
+}

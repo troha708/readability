@@ -1,0 +1,53 @@
+{
+  "book": "Hosea",
+  "chapter": 13,
+  "questions": [
+    {
+      "id": "hosea-13-q1",
+      "type": "multiple_choice",
+      "question": "What does Hosea 13 warn about Israel forgetting?",
+      "options": [
+        "The calf of gold set up in Samaria",
+        "The army of Egypt they trusted in",
+        "The king they had demanded for themselves",
+        "The LORD, who was their God and Savior"
+      ],
+      "answer": "The LORD, who was their God and Savior",
+      "verse_reference": "Hosea 13:4-6"
+    },
+    {
+      "id": "hosea-13-q2",
+      "type": "multiple_choice",
+      "question": "What triumphant question about death appears in Hosea 13?",
+      "options": [
+        "Who among all men has no fear at all of death and of the grave?",
+        "Why must all of the living go down at the last to the grave?",
+        "When will death at long last come to claim its very own?",
+        "O Death, where are your plagues? O Sheol, where is your sting?"
+      ],
+      "answer": "O Death, where are your plagues? O Sheol, where is your sting?",
+      "verse_reference": "Hosea 13:14"
+    },
+    {
+      "id": "hosea-13-q3",
+      "type": "true_false",
+      "question": "Hosea 13 says there is no savior besides the LORD.",
+      "answer": "true",
+      "verse_reference": "Hosea 13:4"
+    },
+    {
+      "id": "hosea-13-q4",
+      "type": "fill_blank",
+      "question": "O Death, where are your _____? O Sheol, where is your sting?",
+      "answer": "plagues",
+      "verse_reference": "Hosea 13:14"
+    },
+    {
+      "id": "hosea-13-q5",
+      "type": "fill_blank",
+      "question": "It was I who knew you in the wilderness, in the land of _____.",
+      "answer": "drought",
+      "verse_reference": "Hosea 13:5"
+    }
+  ]
+}

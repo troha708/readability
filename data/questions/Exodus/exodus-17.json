@@ -1,0 +1,53 @@
+{
+  "book": "Exodus",
+  "chapter": 17,
+  "questions": [
+    {
+      "id": "exodus-17-q1",
+      "type": "multiple_choice",
+      "question": "How did God provide water for the people at Rephidim?",
+      "options": [
+        "The people dug deep wells through the night",
+        "Rain fell from a clear and cloudless sky",
+        "A hidden spring burst up from the sand",
+        "Moses struck the rock and water came out"
+      ],
+      "answer": "Moses struck the rock and water came out",
+      "verse_reference": "Exodus 17:6"
+    },
+    {
+      "id": "exodus-17-q2",
+      "type": "multiple_choice",
+      "question": "What happened during the battle with Amalek while Moses held up his hands?",
+      "options": [
+        "It rained",
+        "Israel prevailed",
+        "The enemy fled at once",
+        "Nothing changed"
+      ],
+      "answer": "Israel prevailed",
+      "verse_reference": "Exodus 17:11"
+    },
+    {
+      "id": "exodus-17-q3",
+      "type": "true_false",
+      "question": "Aaron and Hur held up Moses' hands when they grew tired.",
+      "answer": "true",
+      "verse_reference": "Exodus 17:12"
+    },
+    {
+      "id": "exodus-17-q4",
+      "type": "fill_blank",
+      "question": "Moses struck the _____ at Horeb, and water came out for the people to drink.",
+      "answer": "rock",
+      "verse_reference": "Exodus 17:6"
+    },
+    {
+      "id": "exodus-17-q5",
+      "type": "fill_blank",
+      "question": "_____ and Hur supported Moses' hands until the sun went down.",
+      "answer": "Aaron",
+      "verse_reference": "Exodus 17:12"
+    }
+  ]
+}

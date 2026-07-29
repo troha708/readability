@@ -1,0 +1,56 @@
+{
+  "book": "Ezekiel",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "ezekiel-2-q1",
+      "type": "multiple_choice",
+      "question": "How did God address Ezekiel throughout his commission?",
+      "options": [
+        "Son of man",
+        "O prophet of old",
+        "O priest",
+        "O king"
+      ],
+      "answer": "Son of man",
+      "verse_reference": "Ezekiel 2:1"
+    },
+    {
+      "id": "ezekiel-2-q2",
+      "type": "multiple_choice",
+      "question": "To whom was Ezekiel sent?",
+      "options": [
+        "The exiles already in Babylon only",
+        "The kings of the surrounding nations",
+        "The rebellious house of Israel",
+        "The pagan city of Nineveh"
+      ],
+      "answer": "The rebellious house of Israel",
+      "verse_reference": "Ezekiel 2:3"
+    },
+    {
+      "id": "ezekiel-2-q3",
+      "type": "true_false",
+      "question": "God told Ezekiel not to be afraid of the people, even though they were like briers and thorns.",
+      "answer": "true",
+      "verse_reference": "Ezekiel 2:6"
+    },
+    {
+      "id": "ezekiel-2-q4",
+      "type": "fill_blank",
+      "question": "Son of man, stand on your feet, and I will speak with _____.",
+      "answer": "you",
+      "accept": [
+        "thee"
+      ],
+      "verse_reference": "Ezekiel 2:1"
+    },
+    {
+      "id": "ezekiel-2-q5",
+      "type": "fill_blank",
+      "question": "Ezekiel was shown a scroll written within and without with words of lamentation and _____.",
+      "answer": "woe",
+      "verse_reference": "Ezekiel 2:10"
+    }
+  ]
+}

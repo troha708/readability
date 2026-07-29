@@ -1,0 +1,61 @@
+{
+  "book": "Nehemiah",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "nehemiah-2-q1",
+      "type": "multiple_choice",
+      "question": "What did Nehemiah ask King Artaxerxes for?",
+      "options": [
+        "To be sent to Judah to rebuild the city",
+        "An army to defend the province",
+        "A great gift of gold from the royal treasury",
+        "Freedom for all the Jewish exiles"
+      ],
+      "answer": "To be sent to Judah to rebuild the city",
+      "verse_reference": "Nehemiah 2:5"
+    },
+    {
+      "id": "nehemiah-2-q2",
+      "type": "multiple_choice",
+      "question": "What did Nehemiah do first when he arrived in Jerusalem?",
+      "options": [
+        "Inspected the walls by night",
+        "Began building the walls at once",
+        "Held a feast for the leaders",
+        "Called the whole city to assemble"
+      ],
+      "answer": "Inspected the walls by night",
+      "verse_reference": "Nehemiah 2:12-15"
+    },
+    {
+      "id": "nehemiah-2-q3",
+      "type": "true_false",
+      "question": "Sanballat and Tobiah were displeased that someone had come to seek the welfare of Israel.",
+      "answer": "true",
+      "verse_reference": "Nehemiah 2:10"
+    },
+    {
+      "id": "nehemiah-2-q4",
+      "type": "fill_blank",
+      "question": "Nehemiah told the people, 'Come, let us rebuild the wall of Jerusalem, so that we will no longer be a _____.'",
+      "answer": "disgrace",
+      "accept": [
+        "reproach",
+        "derision"
+      ],
+      "verse_reference": "Nehemiah 2:17"
+    },
+    {
+      "id": "nehemiah-2-q5",
+      "type": "fill_blank",
+      "question": "Nehemiah said the God of heaven would grant them _____, so they should arise and build.",
+      "answer": "success",
+      "accept": [
+        "prosper",
+        "prosperity"
+      ],
+      "verse_reference": "Nehemiah 2:20"
+    }
+  ]
+}

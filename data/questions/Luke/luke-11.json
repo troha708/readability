@@ -1,0 +1,53 @@
+{
+  "book": "Luke",
+  "chapter": 11,
+  "questions": [
+    {
+      "id": "luke-11-q1",
+      "type": "multiple_choice",
+      "question": "What did the disciples ask Jesus to teach them?",
+      "options": [
+        "How to fast",
+        "How to preach",
+        "How to heal",
+        "How to pray"
+      ],
+      "answer": "How to pray",
+      "verse_reference": "Luke 11:1"
+    },
+    {
+      "id": "luke-11-q2",
+      "type": "multiple_choice",
+      "question": "Jesus said that when an unclean spirit returns to a person, it brings how many other spirits?",
+      "options": [
+        "Five",
+        "Three",
+        "Twelve",
+        "Seven"
+      ],
+      "answer": "Seven",
+      "verse_reference": "Luke 11:26"
+    },
+    {
+      "id": "luke-11-q3",
+      "type": "true_false",
+      "question": "Jesus said that a kingdom divided against itself is brought to desolation.",
+      "answer": "true",
+      "verse_reference": "Luke 11:17"
+    },
+    {
+      "id": "luke-11-q4",
+      "type": "fill_blank",
+      "question": "Keep asking, and it will be given you. Keep seeking, and you will find. Keep knocking, and it will be _____ to you.",
+      "answer": "opened",
+      "verse_reference": "Luke 11:9"
+    },
+    {
+      "id": "luke-11-q5",
+      "type": "fill_blank",
+      "question": "Blessed are those who hear the _____ of God, and keep it.",
+      "answer": "word",
+      "verse_reference": "Luke 11:28"
+    }
+  ]
+}

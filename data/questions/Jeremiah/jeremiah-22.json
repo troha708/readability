@@ -1,0 +1,61 @@
+{
+  "book": "Jeremiah",
+  "chapter": 22,
+  "questions": [
+    {
+      "id": "jeremiah-22-q1",
+      "type": "multiple_choice",
+      "question": "What did God command the king of Judah to do in Jeremiah 22?",
+      "options": [
+        "Do justice and righteousness, and deliver the oppressed",
+        "Gather to himself yet more horses and chariots for the war",
+        "Make a binding treaty with the king of the land of Egypt",
+        "Build for himself a far grander palace than all his fathers"
+      ],
+      "answer": "Do justice and righteousness, and deliver the oppressed",
+      "verse_reference": "Jeremiah 22:3"
+    },
+    {
+      "id": "jeremiah-22-q2",
+      "type": "multiple_choice",
+      "question": "Which king is condemned for building his house by unrighteousness in Jeremiah 22?",
+      "options": [
+        "King Hezekiah",
+        "Josiah",
+        "Jehoiakim",
+        "David"
+      ],
+      "answer": "Jehoiakim",
+      "verse_reference": "Jeremiah 22:13-18"
+    },
+    {
+      "id": "jeremiah-22-q3",
+      "type": "true_false",
+      "question": "Jeremiah 22 declares that Coniah (Jehoiachin) would be recorded as childless regarding his throne.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 22:30"
+    },
+    {
+      "id": "jeremiah-22-q4",
+      "type": "fill_blank",
+      "question": "Do _____ and righteousness, and deliver from the hand of the oppressor him who has been robbed.",
+      "answer": "justice",
+      "accept": [
+        "judgment",
+        "judgement"
+      ],
+      "verse_reference": "Jeremiah 22:3"
+    },
+    {
+      "id": "jeremiah-22-q5",
+      "type": "fill_blank",
+      "question": "Woe to him who makes his countrymen serve without _____ and fails to pay their wages.",
+      "answer": "pay",
+      "accept": [
+        "wages",
+        "nothing"
+      ],
+      "verse_reference": "Jeremiah 22:13"
+    }
+  ]
+}

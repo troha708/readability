@@ -1,0 +1,56 @@
+{
+  "book": "Mark",
+  "chapter": 9,
+  "questions": [
+    {
+      "id": "mark-9-q1",
+      "type": "multiple_choice",
+      "question": "Who appeared with Jesus during the Transfiguration?",
+      "options": [
+        "Abraham and David",
+        "Moses and Elijah",
+        "Isaiah and Jeremiah",
+        "Samuel and Daniel"
+      ],
+      "answer": "Moses and Elijah",
+      "verse_reference": "Mark 9:4"
+    },
+    {
+      "id": "mark-9-q2",
+      "type": "multiple_choice",
+      "question": "What were the disciples arguing about on the road?",
+      "options": [
+        "Who was the greatest",
+        "Where to go next",
+        "Who should lead after Jesus",
+        "How to perform miracles"
+      ],
+      "answer": "Who was the greatest",
+      "verse_reference": "Mark 9:34"
+    },
+    {
+      "id": "mark-9-q3",
+      "type": "true_false",
+      "question": "Jesus said that whoever is not against us is for us.",
+      "answer": "true",
+      "verse_reference": "Mark 9:40"
+    },
+    {
+      "id": "mark-9-q4",
+      "type": "fill_blank",
+      "question": "If any man wants to be first, he shall be _____ of all, and servant of all.",
+      "answer": "last",
+      "verse_reference": "Mark 9:35"
+    },
+    {
+      "id": "mark-9-q5",
+      "type": "fill_blank",
+      "question": "All things are possible to him who _____.",
+      "answer": "believes",
+      "accept": [
+        "believeth"
+      ],
+      "verse_reference": "Mark 9:23"
+    }
+  ]
+}

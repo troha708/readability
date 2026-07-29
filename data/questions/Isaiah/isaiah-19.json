@@ -1,0 +1,56 @@
+{
+  "book": "Isaiah",
+  "chapter": 19,
+  "questions": [
+    {
+      "id": "isaiah-19-q1",
+      "type": "multiple_choice",
+      "question": "Against which nation is the oracle in Isaiah 19?",
+      "options": [
+        "Egypt",
+        "Moab",
+        "Edom",
+        "Assyria"
+      ],
+      "answer": "Egypt",
+      "verse_reference": "Isaiah 19:1"
+    },
+    {
+      "id": "isaiah-19-q2",
+      "type": "multiple_choice",
+      "question": "What surprising blessing does Isaiah 19 foresee?",
+      "options": [
+        "A new pharaoh who would honor the LORD",
+        "The utter and final destruction of all Egypt",
+        "Egypt, Assyria, and Israel together blessed by God",
+        "A long age of war among all the nations"
+      ],
+      "answer": "Egypt, Assyria, and Israel together blessed by God",
+      "verse_reference": "Isaiah 19:24-25"
+    },
+    {
+      "id": "isaiah-19-q3",
+      "type": "true_false",
+      "question": "Isaiah 19 says the LORD will make himself known to Egypt, and they will know the LORD in that day.",
+      "answer": "true",
+      "verse_reference": "Isaiah 19:21"
+    },
+    {
+      "id": "isaiah-19-q4",
+      "type": "fill_blank",
+      "question": "Behold, the LORD is riding on a swift cloud and comes to _____.",
+      "answer": "Egypt",
+      "verse_reference": "Isaiah 19:1"
+    },
+    {
+      "id": "isaiah-19-q5",
+      "type": "fill_blank",
+      "question": "Blessed be Egypt My people, Assyria My handiwork, and Israel My _____.",
+      "answer": "inheritance",
+      "accept": [
+        "heritage"
+      ],
+      "verse_reference": "Isaiah 19:25"
+    }
+  ]
+}

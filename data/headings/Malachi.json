@@ -1,0 +1,46 @@
+{
+  "book": "Malachi",
+  "source": "Berean Standard Bible (CC0 Public Domain)",
+  "chapters": {
+    "1": [
+      {
+        "beforeVerse": 1,
+        "heading": "The LORD’s Love for Israel"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "The Polluted Offerings"
+      }
+    ],
+    "2": [
+      {
+        "beforeVerse": 1,
+        "heading": "A Warning to the Priests"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "Judah’s Unfaithfulness"
+      }
+    ],
+    "3": [
+      {
+        "beforeVerse": 1,
+        "heading": "I Will Send My Messenger"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "Robbing God"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "The Book of Remembrance"
+      }
+    ],
+    "4": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Day of the LORD"
+      }
+    ]
+  }
+}

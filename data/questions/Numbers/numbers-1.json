@@ -1,0 +1,57 @@
+{
+  "book": "Numbers",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "numbers-1-q1",
+      "type": "multiple_choice",
+      "question": "What does God command Moses to take at the start of Numbers?",
+      "options": [
+        "A sacrifice at the tent of meeting",
+        "A long march toward the promised land",
+        "An offering of gold from each tribe",
+        "A census of the men able to fight"
+      ],
+      "answer": "A census of the men able to fight",
+      "verse_reference": "Numbers 1:2-3"
+    },
+    {
+      "id": "numbers-1-q2",
+      "type": "multiple_choice",
+      "question": "Which tribe was not counted in the military census, but set apart for the tabernacle?",
+      "options": [
+        "Judah",
+        "Levi",
+        "Reuben",
+        "Dan"
+      ],
+      "answer": "Levi",
+      "verse_reference": "Numbers 1:47-49"
+    },
+    {
+      "id": "numbers-1-q3",
+      "type": "true_false",
+      "question": "The Levites were assigned to care for the tabernacle.",
+      "answer": "true",
+      "verse_reference": "Numbers 1:50"
+    },
+    {
+      "id": "numbers-1-q4",
+      "type": "fill_blank",
+      "question": "Moses counted the men twenty years old and upward who could serve in Israel's _____.",
+      "answer": "army",
+      "accept": [
+        "war",
+        "host"
+      ],
+      "verse_reference": "Numbers 1:3"
+    },
+    {
+      "id": "numbers-1-q5",
+      "type": "fill_blank",
+      "question": "The tribe of _____ was not numbered with the others, but set apart for the tent.",
+      "answer": "Levi",
+      "verse_reference": "Numbers 1:47-49"
+    }
+  ]
+}

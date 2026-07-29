@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 61,
+  "questions": [
+    {
+      "id": "psalms-61-q1",
+      "type": "multiple_choice",
+      "question": "From where does David call to God in Psalm 61?",
+      "options": [
+        "From the depths of the sea, when the waters rise",
+        "From the gate of the city, when enemies press in",
+        "From the height of the mountain, when the storm breaks",
+        "From the end of the earth, when his heart is faint"
+      ],
+      "answer": "From the end of the earth, when his heart is faint",
+      "verse_reference": "Psalm 61:2"
+    },
+    {
+      "id": "psalms-61-q2",
+      "type": "multiple_choice",
+      "question": "To what does David ask to be led?",
+      "options": [
+        "The shelter that hides him from the storm",
+        "The rock that is higher than he",
+        "The fortress that no army can take",
+        "The tower that stands above the plain"
+      ],
+      "answer": "The rock that is higher than he",
+      "verse_reference": "Psalm 61:2"
+    },
+    {
+      "id": "psalms-61-q3",
+      "type": "true_false",
+      "question": "David longs to dwell in God's tent forever and take refuge under the shelter of his wings.",
+      "answer": "true",
+      "verse_reference": "Psalm 61:4"
+    },
+    {
+      "id": "psalms-61-q4",
+      "type": "fill_blank",
+      "question": "Lead me to the _____ that is higher than I.",
+      "answer": "rock",
+      "verse_reference": "Psalm 61:2"
+    },
+    {
+      "id": "psalms-61-q5",
+      "type": "fill_blank",
+      "question": "For you, O God, have heard my vows; you have given me the heritage of those who fear your _____.",
+      "answer": "name",
+      "verse_reference": "Psalm 61:5"
+    }
+  ]
+}

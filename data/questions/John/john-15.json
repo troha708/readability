@@ -1,0 +1,53 @@
+{
+  "book": "John",
+  "chapter": 15,
+  "questions": [
+    {
+      "id": "john-15-q1",
+      "type": "multiple_choice",
+      "question": "In his teaching about remaining in him, what did Jesus compare himself to?",
+      "options": [
+        "An olive tree",
+        "A fig tree",
+        "A cedar of Lebanon",
+        "The true vine"
+      ],
+      "answer": "The true vine",
+      "verse_reference": "John 15:1"
+    },
+    {
+      "id": "john-15-q2",
+      "type": "multiple_choice",
+      "question": "What happens to branches that don't bear fruit, according to Jesus?",
+      "options": [
+        "They are watered more",
+        "They are pruned gently",
+        "They are taken away",
+        "They are left alone"
+      ],
+      "answer": "They are taken away",
+      "verse_reference": "John 15:2"
+    },
+    {
+      "id": "john-15-q3",
+      "type": "true_false",
+      "question": "Jesus said that the world would love his followers because they belong to him.",
+      "answer": "false",
+      "verse_reference": "John 15:19"
+    },
+    {
+      "id": "john-15-q4",
+      "type": "fill_blank",
+      "question": "Greater love has no one than this, that someone lay down his _____ for his friends.",
+      "answer": "life",
+      "verse_reference": "John 15:13"
+    },
+    {
+      "id": "john-15-q5",
+      "type": "fill_blank",
+      "question": "I am the vine. You are the _____. He who remains in me and I in him bears much fruit.",
+      "answer": "branches",
+      "verse_reference": "John 15:5"
+    }
+  ]
+}

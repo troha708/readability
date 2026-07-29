@@ -1,0 +1,58 @@
+{
+  "book": "1 Thessalonians",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "1thess_1_1",
+      "type": "multiple_choice",
+      "question": "What did Paul say the Thessalonians' faith had become known throughout?",
+      "options": [
+        "Jerusalem and all Judea",
+        "Macedonia and Achaia",
+        "Ephesus and Galatia",
+        "Rome and Corinth"
+      ],
+      "correct": "Macedonia and Achaia",
+      "verse_ref": "1 Thessalonians 1:7-8",
+      "feedback": "Paul praised them because their faith was reported in Macedonia and Achaia."
+    },
+    {
+      "id": "1thess_1_2",
+      "type": "multiple_choice",
+      "question": "Paul said the Thessalonians turned to God from what?",
+      "options": [
+        "Idols",
+        "The law",
+        "Sin",
+        "Roman customs"
+      ],
+      "correct": "Idols",
+      "verse_ref": "1 Thessalonians 1:9",
+      "feedback": "They turned to God from idols to serve the living and true God."
+    },
+    {
+      "id": "1thess_1_3",
+      "type": "true_false",
+      "question": "Paul says the gospel came to the Thessalonians in word only.",
+      "correct": false,
+      "verse_ref": "1 Thessalonians 1:5",
+      "feedback": "Paul says the gospel came not only in word but also in power and in the Holy Spirit."
+    },
+    {
+      "id": "1thess_1_4",
+      "type": "fill_in_the_blank",
+      "question": "Paul constantly remembered the Thessalonians' work of faith, labor of _____, and endurance of hope.",
+      "correct": "love",
+      "verse_ref": "1 Thessalonians 1:3",
+      "feedback": "Paul remembered their work of faith, labor of love, and endurance of hope."
+    },
+    {
+      "id": "1thess_1_5",
+      "type": "fill_in_the_blank",
+      "question": "The Thessalonians became imitators of Paul and of the _____.",
+      "correct": "Lord",
+      "verse_ref": "1 Thessalonians 1:6",
+      "feedback": "They became imitators of Paul and of the Lord, receiving the word in much affliction with joy."
+    }
+  ]
+}

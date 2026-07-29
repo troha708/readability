@@ -1,0 +1,56 @@
+{
+  "book": "Job",
+  "chapter": 21,
+  "questions": [
+    {
+      "id": "job-21-q1",
+      "type": "multiple_choice",
+      "question": "What did Job point out that contradicted his friends?",
+      "options": [
+        "The righteous never once suffer at all",
+        "The wicked always die very young",
+        "Everyone suffers exactly equally",
+        "The wicked often grow old and prosper"
+      ],
+      "answer": "The wicked often grow old and prosper",
+      "verse_reference": "Job 21:7"
+    },
+    {
+      "id": "job-21-q2",
+      "type": "multiple_choice",
+      "question": "How did the wicked treat God, according to Job?",
+      "options": [
+        "They feared him and kept his law",
+        "They worshiped him with great devotion",
+        "They told God to depart, not wanting his ways",
+        "They served him faithfully all their days"
+      ],
+      "answer": "They told God to depart, not wanting his ways",
+      "verse_reference": "Job 21:14"
+    },
+    {
+      "id": "job-21-q3",
+      "type": "true_false",
+      "question": "Job said the wicked spend their days in prosperity and go down to the grave in peace.",
+      "answer": "true",
+      "verse_reference": "Job 21:13"
+    },
+    {
+      "id": "job-21-q4",
+      "type": "fill_blank",
+      "question": "Job said his friends' answers were left as _____.",
+      "answer": "falsehood",
+      "accept": [
+        "lies"
+      ],
+      "verse_reference": "Job 21:34"
+    },
+    {
+      "id": "job-21-q5",
+      "type": "fill_blank",
+      "question": "Job asked how often the lamp of the wicked is actually put _____.",
+      "answer": "out",
+      "verse_reference": "Job 21:17"
+    }
+  ]
+}

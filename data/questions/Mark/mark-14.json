@@ -1,0 +1,53 @@
+{
+  "book": "Mark",
+  "chapter": 14,
+  "questions": [
+    {
+      "id": "mark-14-q1",
+      "type": "multiple_choice",
+      "question": "How did Judas identify Jesus to those who came to arrest him?",
+      "options": [
+        "He called out his name",
+        "He stood beside him",
+        "He pointed at him",
+        "He kissed him"
+      ],
+      "answer": "He kissed him",
+      "verse_reference": "Mark 14:44-45"
+    },
+    {
+      "id": "mark-14-q2",
+      "type": "multiple_choice",
+      "question": "How many times did Peter deny knowing Jesus?",
+      "options": [
+        "A full four times",
+        "Once",
+        "Three times",
+        "Twice"
+      ],
+      "answer": "Three times",
+      "verse_reference": "Mark 14:66-72"
+    },
+    {
+      "id": "mark-14-q3",
+      "type": "true_false",
+      "question": "In the Garden of Gethsemane, Jesus found his disciples sleeping when he returned from praying.",
+      "answer": "true",
+      "verse_reference": "Mark 14:37"
+    },
+    {
+      "id": "mark-14-q4",
+      "type": "fill_blank",
+      "question": "Watch and pray, that you may not enter into _____.",
+      "answer": "temptation",
+      "verse_reference": "Mark 14:38"
+    },
+    {
+      "id": "mark-14-q5",
+      "type": "fill_blank",
+      "question": "Abba, Father, all things are possible to you. Please remove this _____ from me. However, not what I desire, but what you desire.",
+      "answer": "cup",
+      "verse_reference": "Mark 14:36"
+    }
+  ]
+}

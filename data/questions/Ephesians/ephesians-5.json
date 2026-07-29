@@ -1,0 +1,56 @@
+{
+  "book": "Ephesians",
+  "chapter": 5,
+  "questions": [
+    {
+      "id": "eph-5-q1",
+      "type": "multiple_choice",
+      "question": "Paul says believers should walk as what?",
+      "options": [
+        "Soldiers of Rome",
+        "Priests of the temple",
+        "Scholars of the law",
+        "Children of light"
+      ],
+      "answer": "Children of light",
+      "verse_reference": "Ephesians 5:8"
+    },
+    {
+      "id": "eph-5-q2",
+      "type": "multiple_choice",
+      "question": "Instead of being drunk with wine, Paul says to be filled with what?",
+      "options": [
+        "Wisdom",
+        "Deep secret knowledge",
+        "The Holy Spirit",
+        "Joy"
+      ],
+      "answer": "The Holy Spirit",
+      "verse_reference": "Ephesians 5:18"
+    },
+    {
+      "id": "eph-5-q3",
+      "type": "true_false",
+      "question": "Paul compares the relationship between husband and wife to Christ and the church.",
+      "answer": "true",
+      "verse_reference": "Ephesians 5:25,32"
+    },
+    {
+      "id": "eph-5-q4",
+      "type": "fill_blank",
+      "question": "Be very careful then how you live — not as unwise but as _____.",
+      "answer": "wise",
+      "verse_reference": "Ephesians 5:15"
+    },
+    {
+      "id": "eph-5-q5",
+      "type": "fill_blank",
+      "question": "Husbands, love your wives, just as Christ also loved the _____ and gave himself up for her.",
+      "answer": "church",
+      "accept": [
+        "assembly"
+      ],
+      "verse_reference": "Ephesians 5:25"
+    }
+  ]
+}

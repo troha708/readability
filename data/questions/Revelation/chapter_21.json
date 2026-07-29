@@ -1,0 +1,59 @@
+{
+  "book": "Revelation",
+  "chapter": 21,
+  "questions": [
+    {
+      "id": "rev_21_1",
+      "type": "multiple_choice",
+      "question": "What does John see coming down out of heaven?",
+      "options": [
+        "The new Jerusalem",
+        "A golden temple",
+        "A great host of angels",
+        "The tree of life"
+      ],
+      "correct": "The new Jerusalem",
+      "verse_ref": "Revelation 21:2",
+      "feedback": "John saw the Holy City, the new Jerusalem, coming down out of heaven."
+    },
+    {
+      "id": "rev_21_2",
+      "type": "multiple_choice",
+      "question": "How many gates does the new Jerusalem have?",
+      "options": [
+        "Twelve",
+        "Just seven",
+        "Four",
+        "One"
+      ],
+      "correct": "Twelve",
+      "verse_ref": "Revelation 21:12",
+      "feedback": "The city had twelve gates with twelve angels, and the names of the twelve tribes."
+    },
+    {
+      "id": "rev_21_3",
+      "type": "true_false",
+      "question": "There is a temple in the new Jerusalem.",
+      "correct": false,
+      "verse_ref": "Revelation 21:22",
+      "feedback": "There is no temple in the city because the Lord God Almighty and the Lamb are its temple."
+    },
+    {
+      "id": "rev_21_4",
+      "type": "fill_in_the_blank",
+      "question": "God will wipe every tear from their eyes. There will be no more death or _____ or crying or pain.",
+      "correct": "mourning",
+      "accept": ["sorrow", "grief"],
+      "verse_ref": "Revelation 21:4",
+      "feedback": "No more death, mourning, crying, or pain — the old order has passed away."
+    },
+    {
+      "id": "rev_21_5",
+      "type": "fill_in_the_blank",
+      "question": "He who was seated on the throne said: I am making everything _____!",
+      "correct": "new",
+      "verse_ref": "Revelation 21:5",
+      "feedback": "He who sat on the throne said: I am making everything new!"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "book": "Psalms",
+  "chapter": 19,
+  "questions": [
+    {
+      "id": "psalms-19-q1",
+      "type": "multiple_choice",
+      "question": "What declares the glory of God in Psalm 19?",
+      "options": [
+        "The seas",
+        "The heavens",
+        "The mountains",
+        "The kings"
+      ],
+      "answer": "The heavens",
+      "verse_reference": "Psalm 19:1"
+    },
+    {
+      "id": "psalms-19-q2",
+      "type": "multiple_choice",
+      "question": "How is the law of the LORD described?",
+      "options": [
+        "Faded with the years",
+        "Hidden from the simple",
+        "Perfect, reviving the soul",
+        "Heavy, hard to carry"
+      ],
+      "answer": "Perfect, reviving the soul",
+      "verse_reference": "Psalm 19:7"
+    },
+    {
+      "id": "psalms-19-q3",
+      "type": "true_false",
+      "question": "The psalm says the rules of the LORD are sweeter than honey and more desirable than gold.",
+      "answer": "true",
+      "verse_reference": "Psalm 19:10"
+    },
+    {
+      "id": "psalms-19-q4",
+      "type": "fill_blank",
+      "question": "The heavens declare the glory of God; the skies proclaim the work of His _____.",
+      "answer": "hands",
+      "accept": [
+        "handiwork"
+      ],
+      "verse_reference": "Psalm 19:1"
+    },
+    {
+      "id": "psalms-19-q5",
+      "type": "fill_blank",
+      "question": "Let the words of my mouth and the meditation of my heart be acceptable, O LORD, my rock and my _____.",
+      "answer": "redeemer",
+      "verse_reference": "Psalm 19:14"
+    }
+  ]
+}

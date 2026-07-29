@@ -1,0 +1,6 @@
+{
+  "source": "BSB Translation Tables (bsb_tables.tsv), bereanbible.com; per-word English glosses from STEPBible TAHOT/TAGNT (Tyndale House Cambridge) via data/strongs",
+  "license": "BSB tables: public domain (2023 dedication). Glosses: CC BY 4.0",
+  "url": "https://bereanbible.com/ and https://github.com/STEPBible/STEPBible-Data",
+  "notes": "Reverse interlinear for the verse sheet: one row per original-language word (word, transliteration, parsing, Strong's number, BSB rendering, dual sort keys), reformatted per verse. The gloss field is the concise TAHOT/TAGNT English gloss for the word's Strong's number."
+}

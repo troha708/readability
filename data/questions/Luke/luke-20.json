@@ -1,0 +1,53 @@
+{
+  "book": "Luke",
+  "chapter": 20,
+  "questions": [
+    {
+      "id": "luke-20-q1",
+      "type": "multiple_choice",
+      "question": "In the Parable of the Wicked Tenants, what did they do to the owner's son?",
+      "options": [
+        "They imprisoned him",
+        "They sent him away",
+        "They killed him",
+        "They honored him"
+      ],
+      "answer": "They killed him",
+      "verse_reference": "Luke 20:14-15"
+    },
+    {
+      "id": "luke-20-q2",
+      "type": "multiple_choice",
+      "question": "The religious leaders tried to trap Jesus with a question about paying taxes to whom?",
+      "options": [
+        "Herod",
+        "The temple",
+        "Caesar",
+        "The Pharisees"
+      ],
+      "answer": "Caesar",
+      "verse_reference": "Luke 20:22-25"
+    },
+    {
+      "id": "luke-20-q3",
+      "type": "true_false",
+      "question": "Jesus said that God is not the God of the dead, but of the living.",
+      "answer": "true",
+      "verse_reference": "Luke 20:38"
+    },
+    {
+      "id": "luke-20-q4",
+      "type": "fill_blank",
+      "question": "Then give to Caesar the things that are Caesar's, and to God the things that are _____.",
+      "answer": "God's",
+      "verse_reference": "Luke 20:25"
+    },
+    {
+      "id": "luke-20-q5",
+      "type": "fill_blank",
+      "question": "The stone which the builders rejected was made the chief _____.",
+      "answer": "cornerstone",
+      "verse_reference": "Luke 20:17"
+    }
+  ]
+}

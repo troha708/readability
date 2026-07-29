@@ -1,0 +1,53 @@
+{
+  "book": "Nehemiah",
+  "chapter": 10,
+  "questions": [
+    {
+      "id": "nehemiah-10-q1",
+      "type": "multiple_choice",
+      "question": "What did the people do at the end of the confession?",
+      "options": [
+        "Scattered and went back to their towns",
+        "Crowned a king to rule over them",
+        "Fled the city in fear of attack",
+        "Made and sealed a binding covenant"
+      ],
+      "answer": "Made and sealed a binding covenant",
+      "verse_reference": "Nehemiah 10:1"
+    },
+    {
+      "id": "nehemiah-10-q2",
+      "type": "multiple_choice",
+      "question": "What were three things the people pledged in the covenant?",
+      "options": [
+        "To rebuild the walls, to crown a new king, and to gather a large army together",
+        "To pay regular tribute to Persia, to fast often, and to keep completely silent",
+        "To free all of their many slaves, to forgive all debts, and to leave the land to rest",
+        "Not to intermarry with the peoples, to keep the Sabbath, and to support the temple"
+      ],
+      "answer": "Not to intermarry with the peoples, to keep the Sabbath, and to support the temple",
+      "verse_reference": "Nehemiah 10:30-39"
+    },
+    {
+      "id": "nehemiah-10-q3",
+      "type": "true_false",
+      "question": "The people promised not to neglect the house of their God.",
+      "answer": "true",
+      "verse_reference": "Nehemiah 10:39"
+    },
+    {
+      "id": "nehemiah-10-q4",
+      "type": "fill_blank",
+      "question": "They took an oath to walk in God's _____ given by Moses.",
+      "answer": "Law",
+      "verse_reference": "Nehemiah 10:29"
+    },
+    {
+      "id": "nehemiah-10-q5",
+      "type": "fill_blank",
+      "question": "They cast lots to bring the wood offering and the _____ of their ground to the temple.",
+      "answer": "firstfruits",
+      "verse_reference": "Nehemiah 10:34-35"
+    }
+  ]
+}

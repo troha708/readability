@@ -1,0 +1,53 @@
+{
+  "book": "Job",
+  "chapter": 39,
+  "questions": [
+    {
+      "id": "job-39-q1",
+      "type": "multiple_choice",
+      "question": "What is the subject of God's questions in chapter 39?",
+      "options": [
+        "Wild animals and birds",
+        "The depths of the grave",
+        "The stars and the seas",
+        "The kings of the earth"
+      ],
+      "answer": "Wild animals and birds",
+      "verse_reference": "Job 39:1"
+    },
+    {
+      "id": "job-39-q2",
+      "type": "multiple_choice",
+      "question": "Which animal did God describe as laughing at fear and charging into battle?",
+      "options": [
+        "The ox",
+        "The donkey",
+        "The warhorse",
+        "The ostrich"
+      ],
+      "answer": "The warhorse",
+      "verse_reference": "Job 39:19-25"
+    },
+    {
+      "id": "job-39-q3",
+      "type": "true_false",
+      "question": "God described the ostrich as dealing cruelly with her young, lacking wisdom.",
+      "answer": "true",
+      "verse_reference": "Job 39:13-17"
+    },
+    {
+      "id": "job-39-q4",
+      "type": "fill_blank",
+      "question": "God asked if Job knew when the mountain _____ give birth.",
+      "answer": "goats",
+      "verse_reference": "Job 39:1"
+    },
+    {
+      "id": "job-39-q5",
+      "type": "fill_blank",
+      "question": "God asked, 'Is it by your understanding that the _____ soars?'",
+      "answer": "hawk",
+      "verse_reference": "Job 39:26"
+    }
+  ]
+}

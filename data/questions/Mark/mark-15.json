@@ -1,0 +1,53 @@
+{
+  "book": "Mark",
+  "chapter": 15,
+  "questions": [
+    {
+      "id": "mark-15-q1",
+      "type": "multiple_choice",
+      "question": "Who was released instead of Jesus at the crowd's request?",
+      "options": [
+        "Barabbas",
+        "Old Lazarus",
+        "Judas",
+        "Simon"
+      ],
+      "answer": "Barabbas",
+      "verse_reference": "Mark 15:11-15"
+    },
+    {
+      "id": "mark-15-q2",
+      "type": "multiple_choice",
+      "question": "Who asked Pilate for Jesus' body to bury it?",
+      "options": [
+        "Nicodemus the Pharisee",
+        "Simon of Cyrene",
+        "Lazarus of Bethany",
+        "Joseph of Arimathaea"
+      ],
+      "answer": "Joseph of Arimathaea",
+      "verse_reference": "Mark 15:43"
+    },
+    {
+      "id": "mark-15-q3",
+      "type": "true_false",
+      "question": "The centurion at the cross said, 'Truly this man was the Son of God.'",
+      "answer": "true",
+      "verse_reference": "Mark 15:39"
+    },
+    {
+      "id": "mark-15-q4",
+      "type": "fill_blank",
+      "question": "The veil of the temple was torn in two from the _____ to the bottom.",
+      "answer": "top",
+      "verse_reference": "Mark 15:38"
+    },
+    {
+      "id": "mark-15-q5",
+      "type": "fill_blank",
+      "question": "My God, my God, why have you _____ me?",
+      "answer": "forsaken",
+      "verse_reference": "Mark 15:34"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "2 Kings",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "2-kings-1-q1",
+      "type": "multiple_choice",
+      "question": "To which foreign god did King Ahaziah send messengers when he was injured?",
+      "options": [
+        "Molech of the Ammonites",
+        "Dagon of the Philistines",
+        "Baal-Zebub of Ekron",
+        "Chemosh of the Moabites"
+      ],
+      "answer": "Baal-Zebub of Ekron",
+      "verse_reference": "2 Kings 1:2"
+    },
+    {
+      "id": "2-kings-1-q2",
+      "type": "multiple_choice",
+      "question": "What happened to the soldiers sent to seize Elijah?",
+      "options": [
+        "They turned aside and very quickly lost his trail",
+        "They seized Elijah and bound him with cords",
+        "They fled in great terror back to the king",
+        "Fire came down and consumed two groups of fifty"
+      ],
+      "answer": "Fire came down and consumed two groups of fifty",
+      "verse_reference": "2 Kings 1:10-12"
+    },
+    {
+      "id": "2-kings-1-q3",
+      "type": "true_false",
+      "question": "Elijah prophesied that Ahaziah would not recover but would die.",
+      "answer": "true",
+      "verse_reference": "2 Kings 1:4"
+    },
+    {
+      "id": "2-kings-1-q4",
+      "type": "fill_blank",
+      "question": "Elijah said Ahaziah would die because he sought a foreign god instead of the _____ of Israel.",
+      "answer": "God",
+      "verse_reference": "2 Kings 1:3-16"
+    },
+    {
+      "id": "2-kings-1-q5",
+      "type": "fill_blank",
+      "question": "_____ came down from heaven and consumed the captains and their fifties.",
+      "answer": "Fire",
+      "verse_reference": "2 Kings 1:10-12"
+    }
+  ]
+}

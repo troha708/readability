@@ -1,0 +1,59 @@
+{
+  "book": "Song Of Solomon",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "song-of-solomon-3-q1",
+      "type": "multiple_choice",
+      "question": "What does the woman do at night in chapter 3?",
+      "options": [
+        "Sleeps soundly until the morning light",
+        "Seeks the one her soul loves through the city",
+        "Sings songs of joy to the dawn",
+        "Travels far to a distant land"
+      ],
+      "answer": "Seeks the one her soul loves through the city",
+      "verse_reference": "Song of Solomon 3:1-2"
+    },
+    {
+      "id": "song-of-solomon-3-q2",
+      "type": "multiple_choice",
+      "question": "What grand sight is described at the end of chapter 3?",
+      "options": [
+        "A great battle on the plain",
+        "King Solomon's carriage/procession",
+        "A sudden storm over the hills",
+        "A vineyard heavy with much ripe fruit"
+      ],
+      "answer": "King Solomon's carriage/procession",
+      "verse_reference": "Song of Solomon 3:7-9"
+    },
+    {
+      "id": "song-of-solomon-3-q3",
+      "type": "true_false",
+      "question": "In chapter 3 the bride says she found him whom her soul loves and would not let him go.",
+      "answer": "true",
+      "verse_reference": "Song of Solomon 3:4"
+    },
+    {
+      "id": "song-of-solomon-3-q4",
+      "type": "fill_blank",
+      "question": "On my bed at night I sought the one I _____; I sought him, but did not find him.",
+      "answer": "love",
+      "accept": [
+        "loves"
+      ],
+      "verse_reference": "Song of Solomon 3:1"
+    },
+    {
+      "id": "song-of-solomon-3-q5",
+      "type": "fill_blank",
+      "question": "Behold, it is _____ carriage, escorted by sixty mighty men of Israel.",
+      "answer": "Solomon's",
+      "accept": [
+        "Solomon"
+      ],
+      "verse_reference": "Song of Solomon 3:7"
+    }
+  ]
+}

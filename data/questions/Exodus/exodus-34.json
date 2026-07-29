@@ -1,0 +1,53 @@
+{
+  "book": "Exodus",
+  "chapter": 34,
+  "questions": [
+    {
+      "id": "exodus-34-q1",
+      "type": "multiple_choice",
+      "question": "What did God tell Moses to cut for the new commandments?",
+      "options": [
+        "Two stone tablets like the first",
+        "Two polished bronze plates for engraving",
+        "A scroll of fine Egyptian linen",
+        "A wooden ark to hold the law"
+      ],
+      "answer": "Two stone tablets like the first",
+      "verse_reference": "Exodus 34:1"
+    },
+    {
+      "id": "exodus-34-q2",
+      "type": "multiple_choice",
+      "question": "What happened to Moses' face after he spoke with God?",
+      "options": [
+        "It was scarred",
+        "It aged",
+        "Nothing",
+        "It became radiant"
+      ],
+      "answer": "It became radiant",
+      "verse_reference": "Exodus 34:29-30"
+    },
+    {
+      "id": "exodus-34-q3",
+      "type": "true_false",
+      "question": "God described himself as merciful, gracious, slow to anger, and abounding in love.",
+      "answer": "true",
+      "verse_reference": "Exodus 34:6"
+    },
+    {
+      "id": "exodus-34-q4",
+      "type": "fill_blank",
+      "question": "Because his face was radiant, Moses put a _____ over it.",
+      "answer": "veil",
+      "verse_reference": "Exodus 34:33"
+    },
+    {
+      "id": "exodus-34-q5",
+      "type": "fill_blank",
+      "question": "Moses was on the mountain forty days, eating no bread and drinking no _____.",
+      "answer": "water",
+      "verse_reference": "Exodus 34:28"
+    }
+  ]
+}

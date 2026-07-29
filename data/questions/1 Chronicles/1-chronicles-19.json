@@ -1,0 +1,53 @@
+{
+  "book": "1 Chronicles",
+  "chapter": 19,
+  "questions": [
+    {
+      "id": "1-chronicles-19-q1",
+      "type": "multiple_choice",
+      "question": "Why did David send messengers to the king of the Ammonites?",
+      "options": [
+        "To declare open war on all the Ammonite cities",
+        "To show kindness because of his father's kindness",
+        "To collect the yearly tribute that was owed to him",
+        "To propose a marriage between the two royal houses"
+      ],
+      "answer": "To show kindness because of his father's kindness",
+      "verse_reference": "1 Chronicles 19:2"
+    },
+    {
+      "id": "1-chronicles-19-q2",
+      "type": "multiple_choice",
+      "question": "How did the Ammonites humiliate David's messengers?",
+      "options": [
+        "Shaved them and cut off their garments",
+        "Killed them and sent back their dead bodies",
+        "Robbed them of their gifts and gold",
+        "Threw them into the city's prison"
+      ],
+      "answer": "Shaved them and cut off their garments",
+      "verse_reference": "1 Chronicles 19:4"
+    },
+    {
+      "id": "1-chronicles-19-q3",
+      "type": "true_false",
+      "question": "The Ammonites hired Aramean chariots and horsemen to fight Israel.",
+      "answer": "true",
+      "verse_reference": "1 Chronicles 19:6-7"
+    },
+    {
+      "id": "1-chronicles-19-q4",
+      "type": "fill_blank",
+      "question": "Joab said, 'Be strong, and let us use our strength for our people and for the cities of our _____.'",
+      "answer": "God",
+      "verse_reference": "1 Chronicles 19:13"
+    },
+    {
+      "id": "1-chronicles-19-q5",
+      "type": "fill_blank",
+      "question": "Joab put his brother _____ in charge of the forces against the Ammonites.",
+      "answer": "Abishai",
+      "verse_reference": "1 Chronicles 19:11"
+    }
+  ]
+}

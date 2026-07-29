@@ -1,0 +1,53 @@
+{
+  "book": "Deuteronomy",
+  "chapter": 12,
+  "questions": [
+    {
+      "id": "deuteronomy-12-q1",
+      "type": "multiple_choice",
+      "question": "What did God command about where to worship and sacrifice?",
+      "options": [
+        "On every hilltop all throughout the land",
+        "At any high place they wished to use",
+        "In the private homes of each family",
+        "At the one place the LORD would choose"
+      ],
+      "answer": "At the one place the LORD would choose",
+      "verse_reference": "Deuteronomy 12:5-11"
+    },
+    {
+      "id": "deuteronomy-12-q2",
+      "type": "multiple_choice",
+      "question": "What were they to destroy in the land?",
+      "options": [
+        "The pagan places of worship and idols",
+        "Their own altars and high offering places",
+        "The crops and orchards of the land",
+        "The walls and gates of the cities"
+      ],
+      "answer": "The pagan places of worship and idols",
+      "verse_reference": "Deuteronomy 12:2-3"
+    },
+    {
+      "id": "deuteronomy-12-q3",
+      "type": "true_false",
+      "question": "They were forbidden to eat blood.",
+      "answer": "true",
+      "verse_reference": "Deuteronomy 12:16-23"
+    },
+    {
+      "id": "deuteronomy-12-q4",
+      "type": "fill_blank",
+      "question": "They were to bring their offerings to the _____ the LORD would choose.",
+      "answer": "place",
+      "verse_reference": "Deuteronomy 12:5"
+    },
+    {
+      "id": "deuteronomy-12-q5",
+      "type": "fill_blank",
+      "question": "They were not to eat the _____, for it is the life.",
+      "answer": "blood",
+      "verse_reference": "Deuteronomy 12:23"
+    }
+  ]
+}

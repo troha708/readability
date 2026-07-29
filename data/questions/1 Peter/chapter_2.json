@@ -1,0 +1,64 @@
+{
+  "book": "1 Peter",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "1pet_2_1",
+      "type": "multiple_choice",
+      "question": "Peter calls believers what kind of priesthood?",
+      "options": [
+        "A Melchizedek priesthood",
+        "An angelic priesthood",
+        "A royal priesthood",
+        "A Levitical priesthood"
+      ],
+      "correct": "A royal priesthood",
+      "verse_ref": "1 Peter 2:9",
+      "feedback": "Believers are a chosen people, a royal priesthood, a holy nation."
+    },
+    {
+      "id": "1pet_2_2",
+      "type": "multiple_choice",
+      "question": "Peter says Christ left believers an example so they should follow in his what?",
+      "options": [
+        "Steps",
+        "Law",
+        "Traditions",
+        "Prayers"
+      ],
+      "correct": "Steps",
+      "verse_ref": "1 Peter 2:21",
+      "feedback": "Christ suffered for you, leaving an example to follow in his steps."
+    },
+    {
+      "id": "1pet_2_3",
+      "type": "true_false",
+      "question": "Peter describes Christ as the cornerstone that the builders rejected.",
+      "correct": true,
+      "verse_ref": "1 Peter 2:7",
+      "feedback": "The stone the builders rejected has become the cornerstone."
+    },
+    {
+      "id": "1pet_2_4",
+      "type": "fill_in_the_blank",
+      "question": "Peter urges believers as foreigners and exiles to abstain from sinful _____ which wage war against the soul.",
+      "correct": "desires",
+      "accept": [
+        "lusts"
+      ],
+      "verse_ref": "1 Peter 2:11",
+      "feedback": "Abstain from sinful desires which wage war against your soul."
+    },
+    {
+      "id": "1pet_2_5",
+      "type": "fill_in_the_blank",
+      "question": "By Christ's _____ you have been healed.",
+      "correct": "stripes",
+      "accept": [
+        "wounds"
+      ],
+      "verse_ref": "1 Peter 2:24",
+      "feedback": "By His stripes you are healed."
+    }
+  ]
+}

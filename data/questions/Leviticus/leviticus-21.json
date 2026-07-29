@@ -1,0 +1,53 @@
+{
+  "book": "Leviticus",
+  "chapter": 21,
+  "questions": [
+    {
+      "id": "leviticus-21-q1",
+      "type": "multiple_choice",
+      "question": "Whom do the rules in chapter 21 concern?",
+      "options": [
+        "The kings",
+        "Farmers",
+        "The priests",
+        "Foreign sojourners"
+      ],
+      "answer": "The priests",
+      "verse_reference": "Leviticus 21:1"
+    },
+    {
+      "id": "leviticus-21-q2",
+      "type": "multiple_choice",
+      "question": "What was required of priests who served at the altar?",
+      "options": [
+        "Owning a portion of the land",
+        "Being without physical defect",
+        "Reaching at least fifty years",
+        "Coming from a wealthy family"
+      ],
+      "answer": "Being without physical defect",
+      "verse_reference": "Leviticus 21:17-21"
+    },
+    {
+      "id": "leviticus-21-q3",
+      "type": "true_false",
+      "question": "The high priest was held to even stricter standards of holiness than other priests.",
+      "answer": "true",
+      "verse_reference": "Leviticus 21:10-15"
+    },
+    {
+      "id": "leviticus-21-q4",
+      "type": "fill_blank",
+      "question": "The priests were to be _____ to their God and not profane his name.",
+      "answer": "holy",
+      "verse_reference": "Leviticus 21:6"
+    },
+    {
+      "id": "leviticus-21-q5",
+      "type": "fill_blank",
+      "question": "A priest was not to make himself unclean for the _____ among his people, except close family.",
+      "answer": "dead",
+      "verse_reference": "Leviticus 21:1"
+    }
+  ]
+}

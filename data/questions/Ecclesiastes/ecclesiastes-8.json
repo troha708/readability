@@ -1,0 +1,53 @@
+{
+  "book": "Ecclesiastes",
+  "chapter": 8,
+  "questions": [
+    {
+      "id": "ecclesiastes-8-q1",
+      "type": "multiple_choice",
+      "question": "What does Ecclesiastes 8 advise concerning the king's command?",
+      "options": [
+        "Speak against it boldly before the royal court",
+        "Leave his presence the moment you disagree with him",
+        "Resist it whenever it conflicts with your own wishes",
+        "Keep it, because of your oath before God"
+      ],
+      "answer": "Keep it, because of your oath before God",
+      "verse_reference": "Ecclesiastes 8:2"
+    },
+    {
+      "id": "ecclesiastes-8-q2",
+      "type": "multiple_choice",
+      "question": "What does the Preacher conclude that no man has power over?",
+      "options": [
+        "The wind, to restrain it, or the day of his death",
+        "The rising and the setting of the sun each day",
+        "The rivers that run endlessly down into the sea",
+        "The times and seasons that are appointed under heaven"
+      ],
+      "answer": "The wind, to restrain it, or the day of his death",
+      "verse_reference": "Ecclesiastes 8:8"
+    },
+    {
+      "id": "ecclesiastes-8-q3",
+      "type": "true_false",
+      "question": "Ecclesiastes 8 says it will be well with those who fear God, who fear before him.",
+      "answer": "true",
+      "verse_reference": "Ecclesiastes 8:12"
+    },
+    {
+      "id": "ecclesiastes-8-q4",
+      "type": "fill_blank",
+      "question": "No man has power to retain the spirit, or power over the day of _____.",
+      "answer": "death",
+      "verse_reference": "Ecclesiastes 8:8"
+    },
+    {
+      "id": "ecclesiastes-8-q5",
+      "type": "fill_blank",
+      "question": "It will be well with those who fear God, who are reverent in His _____.",
+      "answer": "presence",
+      "verse_reference": "Ecclesiastes 8:12"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Numbers",
+  "chapter": 19,
+  "questions": [
+    {
+      "id": "numbers-19-q1",
+      "type": "multiple_choice",
+      "question": "What animal's ashes were used to make the water for cleansing from contact with death?",
+      "options": [
+        "A lamb",
+        "A red heifer",
+        "A bull",
+        "A goat"
+      ],
+      "answer": "A red heifer",
+      "verse_reference": "Numbers 19:2-9"
+    },
+    {
+      "id": "numbers-19-q2",
+      "type": "multiple_choice",
+      "question": "What made a person unclean for seven days?",
+      "options": [
+        "Eating unclean pork",
+        "Doing daily work",
+        "Traveling on the road",
+        "Touching a dead body"
+      ],
+      "answer": "Touching a dead body",
+      "verse_reference": "Numbers 19:11"
+    },
+    {
+      "id": "numbers-19-q3",
+      "type": "true_false",
+      "question": "The ashes of the red heifer were mixed with water to purify the unclean.",
+      "answer": "true",
+      "verse_reference": "Numbers 19:9-17"
+    },
+    {
+      "id": "numbers-19-q4",
+      "type": "fill_blank",
+      "question": "A _____ heifer without defect was burned, and its ashes used for purification.",
+      "answer": "red",
+      "verse_reference": "Numbers 19:2"
+    },
+    {
+      "id": "numbers-19-q5",
+      "type": "fill_blank",
+      "question": "Whoever touched a dead body was unclean for _____ days.",
+      "answer": "seven",
+      "verse_reference": "Numbers 19:11"
+    }
+  ]
+}

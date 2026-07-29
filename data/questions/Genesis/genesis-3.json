@@ -1,0 +1,53 @@
+{
+  "book": "Genesis",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "genesis-3-q1",
+      "type": "multiple_choice",
+      "question": "Which creature tempted the woman to eat the forbidden fruit?",
+      "options": [
+        "A raven",
+        "A goat",
+        "A lion",
+        "A serpent"
+      ],
+      "answer": "A serpent",
+      "verse_reference": "Genesis 3:1"
+    },
+    {
+      "id": "genesis-3-q2",
+      "type": "multiple_choice",
+      "question": "What did Adam and Eve sew together to cover themselves?",
+      "options": [
+        "Animal skins",
+        "Fig leaves",
+        "Wool",
+        "Linen"
+      ],
+      "answer": "Fig leaves",
+      "verse_reference": "Genesis 3:7"
+    },
+    {
+      "id": "genesis-3-q3",
+      "type": "true_false",
+      "question": "God placed cherubim and a flaming sword to guard the way to the tree of life.",
+      "answer": "true",
+      "verse_reference": "Genesis 3:24"
+    },
+    {
+      "id": "genesis-3-q4",
+      "type": "fill_blank",
+      "question": "The serpent said to the woman, \"You won't surely _____.\"",
+      "answer": "die",
+      "verse_reference": "Genesis 3:4"
+    },
+    {
+      "id": "genesis-3-q5",
+      "type": "fill_blank",
+      "question": "God told the man, \"For dust you are, and to dust you shall _____.\"",
+      "answer": "return",
+      "verse_reference": "Genesis 3:19"
+    }
+  ]
+}

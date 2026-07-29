@@ -1,0 +1,57 @@
+{
+  "book": "Numbers",
+  "chapter": 21,
+  "questions": [
+    {
+      "id": "numbers-21-q1",
+      "type": "multiple_choice",
+      "question": "When the people were bitten by snakes, what did God tell Moses to make?",
+      "options": [
+        "A new staff of almond wood",
+        "A fire upon the mountain",
+        "An altar of uncut stones",
+        "A bronze serpent on a pole"
+      ],
+      "answer": "A bronze serpent on a pole",
+      "verse_reference": "Numbers 21:8-9"
+    },
+    {
+      "id": "numbers-21-q2",
+      "type": "multiple_choice",
+      "question": "What happened to those who looked at the bronze serpent?",
+      "options": [
+        "They lived",
+        "Nothing",
+        "They were blinded",
+        "They died"
+      ],
+      "answer": "They lived",
+      "verse_reference": "Numbers 21:9"
+    },
+    {
+      "id": "numbers-21-q3",
+      "type": "true_false",
+      "question": "The people again complained against God and Moses about the food and water.",
+      "answer": "true",
+      "verse_reference": "Numbers 21:5"
+    },
+    {
+      "id": "numbers-21-q4",
+      "type": "fill_blank",
+      "question": "Whoever was bitten and looked at the bronze _____ would live.",
+      "answer": "snake",
+      "accept": [
+        "serpent"
+      ],
+      "verse_reference": "Numbers 21:9"
+    },
+    {
+      "id": "numbers-21-q5",
+      "type": "fill_blank",
+      "question": "Moses set the bronze serpent on a _____ so the people could look and live.",
+      "answer": "pole",
+      "accept": ["standard", "ensign"],
+      "verse_reference": "Numbers 21:9"
+    }
+  ]
+}

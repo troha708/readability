@@ -1,0 +1,53 @@
+{
+  "book": "Ezekiel",
+  "chapter": 48,
+  "questions": [
+    {
+      "id": "ezekiel-48-q1",
+      "type": "multiple_choice",
+      "question": "What does Ezekiel 48 describe?",
+      "options": [
+        "The full rebuilding of all of the ruined and broken cities",
+        "The division of the land among the twelve tribes",
+        "The long genealogy of all of the priestly families",
+        "The final great battle against all of the gathered nations"
+      ],
+      "answer": "The division of the land among the twelve tribes",
+      "verse_reference": "Ezekiel 48:1-29"
+    },
+    {
+      "id": "ezekiel-48-q2",
+      "type": "multiple_choice",
+      "question": "What is the new name of the city at the very end of Ezekiel?",
+      "options": [
+        "Jerusalem",
+        "The LORD Is There",
+        "City of David",
+        "Zion"
+      ],
+      "answer": "The LORD Is There",
+      "verse_reference": "Ezekiel 48:35"
+    },
+    {
+      "id": "ezekiel-48-q3",
+      "type": "true_false",
+      "question": "The city was to have twelve gates, named for the twelve tribes of Israel.",
+      "answer": "true",
+      "verse_reference": "Ezekiel 48:31-34"
+    },
+    {
+      "id": "ezekiel-48-q4",
+      "type": "fill_blank",
+      "question": "The land was divided as an inheritance among the twelve _____ of Israel.",
+      "answer": "tribes",
+      "verse_reference": "Ezekiel 48:29"
+    },
+    {
+      "id": "ezekiel-48-q5",
+      "type": "fill_blank",
+      "question": "And the name of the city from that time on shall be, 'The LORD Is _____.'",
+      "answer": "There",
+      "verse_reference": "Ezekiel 48:35"
+    }
+  ]
+}

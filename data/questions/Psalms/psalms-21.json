@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 21,
+  "questions": [
+    {
+      "id": "psalms-21-q1",
+      "type": "multiple_choice",
+      "question": "In what does the king rejoice in Psalm 21?",
+      "options": [
+        "The LORD's wonders in creation",
+        "The LORD's great mercy and forgiveness",
+        "The LORD's law and commandments",
+        "The LORD's strength and salvation"
+      ],
+      "answer": "The LORD's strength and salvation",
+      "verse_reference": "Psalm 21:1"
+    },
+    {
+      "id": "psalms-21-q2",
+      "type": "multiple_choice",
+      "question": "What did God set on the king's head?",
+      "options": [
+        "A throne of polished cedar",
+        "A robe of royal purple",
+        "A crown of fine gold",
+        "A scepter of pure ivory"
+      ],
+      "answer": "A crown of fine gold",
+      "verse_reference": "Psalm 21:3"
+    },
+    {
+      "id": "psalms-21-q3",
+      "type": "true_false",
+      "question": "The king trusts in the LORD, and through the steadfast love of the Most High he shall not be moved.",
+      "answer": "true",
+      "verse_reference": "Psalm 21:7"
+    },
+    {
+      "id": "psalms-21-q4",
+      "type": "fill_blank",
+      "question": "He asked life of you; you gave it to him, length of _____ forever.",
+      "answer": "days",
+      "verse_reference": "Psalm 21:4"
+    },
+    {
+      "id": "psalms-21-q5",
+      "type": "fill_blank",
+      "question": "Be exalted, O LORD, in your _____.",
+      "answer": "strength",
+      "verse_reference": "Psalm 21:13"
+    }
+  ]
+}

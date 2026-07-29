@@ -1,0 +1,53 @@
+{
+  "book": "Genesis",
+  "chapter": 50,
+  "questions": [
+    {
+      "id": "genesis-50-q1",
+      "type": "multiple_choice",
+      "question": "Where was Jacob buried?",
+      "options": [
+        "In the cave of Machpelah in Canaan",
+        "In the royal tombs of the kings of Egypt",
+        "On the mountain of Moriah",
+        "Beside the well at Beersheba"
+      ],
+      "answer": "In the cave of Machpelah in Canaan",
+      "verse_reference": "Genesis 50:13"
+    },
+    {
+      "id": "genesis-50-q2",
+      "type": "multiple_choice",
+      "question": "What did Joseph tell his fearful brothers about the evil they had done?",
+      "options": [
+        "\"I will repay you for all this evil\"",
+        "\"You meant evil, but God meant it for good\"",
+        "\"Leave Egypt and never return here\"",
+        "\"I can never forgive what you did\""
+      ],
+      "answer": "\"You meant evil, but God meant it for good\"",
+      "verse_reference": "Genesis 50:20"
+    },
+    {
+      "id": "genesis-50-q3",
+      "type": "true_false",
+      "question": "Joseph forgave his brothers and promised to provide for them and their children.",
+      "answer": "true",
+      "verse_reference": "Genesis 50:19-21"
+    },
+    {
+      "id": "genesis-50-q4",
+      "type": "fill_blank",
+      "question": "Joseph said, \"You meant evil against me, but God meant it for _____.\"",
+      "answer": "good",
+      "verse_reference": "Genesis 50:20"
+    },
+    {
+      "id": "genesis-50-q5",
+      "type": "fill_blank",
+      "question": "Before he died, Joseph made the Israelites swear to carry his _____ up out of Egypt.",
+      "answer": "bones",
+      "verse_reference": "Genesis 50:25"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "book": "Ezekiel",
+  "chapter": 23,
+  "questions": [
+    {
+      "id": "ezekiel-23-q1",
+      "type": "multiple_choice",
+      "question": "Who are the two sisters in the allegory of Ezekiel 23?",
+      "options": [
+        "Leah of Israel and her sister Rachel of Judah",
+        "Oholah (Samaria) and Oholibah (Jerusalem)",
+        "Hagar of Egypt and her mistress Sarah of Canaan",
+        "Naomi of Bethlehem and her daughter Ruth of Moab"
+      ],
+      "answer": "Oholah (Samaria) and Oholibah (Jerusalem)",
+      "verse_reference": "Ezekiel 23:4"
+    },
+    {
+      "id": "ezekiel-23-q2",
+      "type": "multiple_choice",
+      "question": "What do the two sisters represent?",
+      "options": [
+        "Two faithful prophets who were sent to warn the rebellious people",
+        "Two great cities that lived together at peace under the rule of one king",
+        "Samaria and Jerusalem, unfaithful through idolatry and foreign alliances",
+        "Two wholly faithful cities that never once turned away from the LORD"
+      ],
+      "answer": "Samaria and Jerusalem, unfaithful through idolatry and foreign alliances",
+      "verse_reference": "Ezekiel 23:4-11"
+    },
+    {
+      "id": "ezekiel-23-q3",
+      "type": "true_false",
+      "question": "Oholibah (Jerusalem) was said to be more corrupt than her sister Oholah (Samaria).",
+      "answer": "true",
+      "verse_reference": "Ezekiel 23:11"
+    },
+    {
+      "id": "ezekiel-23-q4",
+      "type": "fill_blank",
+      "question": "Oholah is _____ and Oholibah is Jerusalem.",
+      "answer": "Samaria",
+      "verse_reference": "Ezekiel 23:4"
+    },
+    {
+      "id": "ezekiel-23-q5",
+      "type": "fill_blank",
+      "question": "You must bear the consequences of your indecency and _____.",
+      "answer": "prostitution",
+      "accept": [
+        "whoredoms",
+        "whoredom",
+        "fornications"
+      ],
+      "verse_reference": "Ezekiel 23:29-35"
+    }
+  ]
+}

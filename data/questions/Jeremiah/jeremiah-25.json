@@ -1,0 +1,60 @@
+{
+  "book": "Jeremiah",
+  "chapter": 25,
+  "questions": [
+    {
+      "id": "jeremiah-25-q1",
+      "type": "multiple_choice",
+      "question": "How many years did Jeremiah 25 say the nations would serve Babylon?",
+      "options": [
+        "One hundred",
+        "Ten",
+        "Seventy",
+        "Forty"
+      ],
+      "answer": "Seventy",
+      "verse_reference": "Jeremiah 25:11"
+    },
+    {
+      "id": "jeremiah-25-q2",
+      "type": "multiple_choice",
+      "question": "What symbolic object did God give Jeremiah to make the nations drink in chapter 25?",
+      "options": [
+        "The scroll of the words of his judgment",
+        "The cup of the wine of his wrath",
+        "The yoke of the king of Babylon",
+        "The sword of the avenging angel"
+      ],
+      "answer": "The cup of the wine of his wrath",
+      "verse_reference": "Jeremiah 25:15"
+    },
+    {
+      "id": "jeremiah-25-q3",
+      "type": "true_false",
+      "question": "Jeremiah 25 says that after seventy years God would punish the king of Babylon as well.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 25:12"
+    },
+    {
+      "id": "jeremiah-25-q4",
+      "type": "fill_blank",
+      "question": "This whole land shall become a ruin and a waste, and these nations shall serve the king of Babylon _____ years.",
+      "answer": "seventy",
+      "accept": [
+        "70"
+      ],
+      "verse_reference": "Jeremiah 25:11"
+    },
+    {
+      "id": "jeremiah-25-q5",
+      "type": "fill_blank",
+      "question": "Take from my hand this cup of the wine of _____, and make all the nations drink it.",
+      "answer": "wrath",
+      "accept": [
+        "fury",
+        "indignation"
+      ],
+      "verse_reference": "Jeremiah 25:15"
+    }
+  ]
+}

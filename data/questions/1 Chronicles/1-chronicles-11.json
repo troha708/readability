@@ -1,0 +1,53 @@
+{
+  "book": "1 Chronicles",
+  "chapter": 11,
+  "questions": [
+    {
+      "id": "1-chronicles-11-q1",
+      "type": "multiple_choice",
+      "question": "Where did all Israel gather to anoint David king over Israel?",
+      "options": [
+        "Jerusalem",
+        "Hebron",
+        "Bethlehem",
+        "Gibeon"
+      ],
+      "answer": "Hebron",
+      "verse_reference": "1 Chronicles 11:3"
+    },
+    {
+      "id": "1-chronicles-11-q2",
+      "type": "multiple_choice",
+      "question": "Who became chief commander by striking down the Jebusites first?",
+      "options": [
+        "Abishai",
+        "Joab",
+        "Benaiah",
+        "Asahel"
+      ],
+      "answer": "Joab",
+      "verse_reference": "1 Chronicles 11:6"
+    },
+    {
+      "id": "1-chronicles-11-q3",
+      "type": "true_false",
+      "question": "David captured the stronghold of Zion, the city of David.",
+      "answer": "true",
+      "verse_reference": "1 Chronicles 11:5"
+    },
+    {
+      "id": "1-chronicles-11-q4",
+      "type": "fill_blank",
+      "question": "David's mighty men broke through the Philistine camp to bring him water from the well of _____.",
+      "answer": "Bethlehem",
+      "verse_reference": "1 Chronicles 11:17"
+    },
+    {
+      "id": "1-chronicles-11-q5",
+      "type": "fill_blank",
+      "question": "Benaiah went down and killed a _____ in a pit on a snowy day.",
+      "answer": "lion",
+      "verse_reference": "1 Chronicles 11:22"
+    }
+  ]
+}

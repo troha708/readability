@@ -1,0 +1,53 @@
+{
+  "book": "Deuteronomy",
+  "chapter": 20,
+  "questions": [
+    {
+      "id": "deuteronomy-20-q1",
+      "type": "multiple_choice",
+      "question": "What does chapter 20 give laws about?",
+      "options": [
+        "Tithes",
+        "Marriage",
+        "Warfare",
+        "Feasts"
+      ],
+      "answer": "Warfare",
+      "verse_reference": "Deuteronomy 20:1"
+    },
+    {
+      "id": "deuteronomy-20-q2",
+      "type": "multiple_choice",
+      "question": "Who was exempt from going out to battle?",
+      "options": [
+        "Those with a new house, vineyard, or wife",
+        "Those who owned great wealth or many flocks",
+        "Those who were old or weak in body",
+        "Those who served as priests at the altar"
+      ],
+      "answer": "Those with a new house, vineyard, or wife",
+      "verse_reference": "Deuteronomy 20:5-7"
+    },
+    {
+      "id": "deuteronomy-20-q3",
+      "type": "true_false",
+      "question": "The priest was to encourage the army not to fear, for the LORD goes with them.",
+      "answer": "true",
+      "verse_reference": "Deuteronomy 20:1-4"
+    },
+    {
+      "id": "deuteronomy-20-q4",
+      "type": "fill_blank",
+      "question": "Moses said not to fear in battle, for the LORD your God goes with you to _____ for you.",
+      "answer": "fight",
+      "verse_reference": "Deuteronomy 20:4"
+    },
+    {
+      "id": "deuteronomy-20-q5",
+      "type": "fill_blank",
+      "question": "A man who had planted a new _____ and not yet used its fruit could return home.",
+      "answer": "vineyard",
+      "verse_reference": "Deuteronomy 20:6"
+    }
+  ]
+}

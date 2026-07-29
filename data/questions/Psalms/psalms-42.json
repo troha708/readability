@@ -1,0 +1,56 @@
+{
+  "book": "Psalms",
+  "chapter": 42,
+  "questions": [
+    {
+      "id": "psalms-42-q1",
+      "type": "multiple_choice",
+      "question": "To what does the psalmist compare his longing for God?",
+      "options": [
+        "A small bird seeking out its own nest",
+        "A deer panting for flowing streams",
+        "A young child seeking a parent",
+        "A weary traveler seeking home"
+      ],
+      "answer": "A deer panting for flowing streams",
+      "verse_reference": "Psalm 42:1"
+    },
+    {
+      "id": "psalms-42-q2",
+      "type": "multiple_choice",
+      "question": "What question does the psalmist ask his own soul?",
+      "options": [
+        "How long, O LORD, will you forget me?",
+        "Who shall ascend the hill of the LORD?",
+        "What shall I render to the LORD?",
+        "Why are you cast down, O my soul?"
+      ],
+      "answer": "Why are you cast down, O my soul?",
+      "verse_reference": "Psalm 42:5"
+    },
+    {
+      "id": "psalms-42-q3",
+      "type": "true_false",
+      "question": "The psalm is attributed to the Sons of Korah.",
+      "answer": "true",
+      "verse_reference": "Psalm 42:title"
+    },
+    {
+      "id": "psalms-42-q4",
+      "type": "fill_blank",
+      "question": "My soul thirsts for God, for the _____ God.",
+      "answer": "living",
+      "verse_reference": "Psalm 42:2"
+    },
+    {
+      "id": "psalms-42-q5",
+      "type": "fill_blank",
+      "question": "Hope in God; for I shall again _____ him, my salvation.",
+      "answer": "praise",
+      "accept": [
+        "confess"
+      ],
+      "verse_reference": "Psalm 42:5"
+    }
+  ]
+}

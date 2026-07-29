@@ -1,0 +1,57 @@
+{
+  "book": "Job",
+  "chapter": 34,
+  "questions": [
+    {
+      "id": "job-34-q1",
+      "type": "multiple_choice",
+      "question": "What was Elihu's main argument in chapter 34?",
+      "options": [
+        "God is deeply unjust to the truly innocent man",
+        "God is just and repays everyone according to their deeds",
+        "Job is righteous and has done no wrong at all",
+        "The wicked always prosper greatly and go entirely free"
+      ],
+      "answer": "God is just and repays everyone according to their deeds",
+      "verse_reference": "Job 34:10-11"
+    },
+    {
+      "id": "job-34-q2",
+      "type": "multiple_choice",
+      "question": "What did Elihu say it is unthinkable for God to do?",
+      "options": [
+        "Do wickedness or pervert justice",
+        "Create anything new under heaven",
+        "Speak a word to a suffering man",
+        "Rest from his work for a single day"
+      ],
+      "answer": "Do wickedness or pervert justice",
+      "verse_reference": "Job 34:12"
+    },
+    {
+      "id": "job-34-q3",
+      "type": "true_false",
+      "question": "Elihu said God shows no partiality to princes or to the rich over the poor.",
+      "answer": "true",
+      "verse_reference": "Job 34:19"
+    },
+    {
+      "id": "job-34-q4",
+      "type": "fill_blank",
+      "question": "Elihu said God's eyes are on the ways of a man, and He sees his every _____.",
+      "answer": "step",
+      "accept": [
+        "steps",
+        "goings"
+      ],
+      "verse_reference": "Job 34:21"
+    },
+    {
+      "id": "job-34-q5",
+      "type": "fill_blank",
+      "question": "Elihu accused Job of adding _____ to his sin by his words.",
+      "answer": "rebellion",
+      "verse_reference": "Job 34:37"
+    }
+  ]
+}

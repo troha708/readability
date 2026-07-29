@@ -1,0 +1,56 @@
+{
+  "book": "2 Corinthians",
+  "chapter": 9,
+  "questions": [
+    {
+      "id": "2cor-9-q1",
+      "type": "multiple_choice",
+      "question": "Paul says God loves what kind of giver?",
+      "options": [
+        "A generous giver",
+        "A sacrificial giver",
+        "A cheerful giver",
+        "A quiet giver"
+      ],
+      "answer": "A cheerful giver",
+      "verse_reference": "2 Corinthians 9:7"
+    },
+    {
+      "id": "2cor-9-q2",
+      "type": "multiple_choice",
+      "question": "What agricultural principle does Paul use to describe giving?",
+      "options": [
+        "A man will always reap exactly what he has sown",
+        "The first and best of the fruit belongs to God",
+        "Seed must be planted in its own proper season",
+        "Whoever sows sparingly will also reap sparingly"
+      ],
+      "answer": "Whoever sows sparingly will also reap sparingly",
+      "verse_reference": "2 Corinthians 9:6"
+    },
+    {
+      "id": "2cor-9-q3",
+      "type": "true_false",
+      "question": "Paul says each person should give reluctantly or under compulsion.",
+      "answer": "false",
+      "verse_reference": "2 Corinthians 9:7"
+    },
+    {
+      "id": "2cor-9-q4",
+      "type": "fill_blank",
+      "question": "God is able to make all _____ abound to you, so that in all things at all times, having all that you need, you will abound in every good work.",
+      "answer": "grace",
+      "verse_reference": "2 Corinthians 9:8"
+    },
+    {
+      "id": "2cor-9-q5",
+      "type": "fill_blank",
+      "question": "Thanks be to God for his _____ gift!",
+      "answer": "indescribable",
+      "accept": [
+        "unspeakable"
+      ],
+      "verse_reference": "2 Corinthians 9:15"
+    }
+  ]
+}

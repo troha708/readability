@@ -1,0 +1,54 @@
+{
+  "book": "Joel",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "joel-1-q1",
+      "type": "multiple_choice",
+      "question": "What disaster does Joel 1 describe?",
+      "options": [
+        "A great and sweeping flood",
+        "A violent earthquake",
+        "A devastating locust plague",
+        "A long and ruinous war"
+      ],
+      "answer": "A devastating locust plague",
+      "verse_reference": "Joel 1:4"
+    },
+    {
+      "id": "joel-1-q2",
+      "type": "multiple_choice",
+      "question": "Whom does Joel call to lament and to consecrate a fast?",
+      "options": [
+        "The kings, the princes, and the wealthy merchants of the land",
+        "The elders, the priests, and all the inhabitants of the land",
+        "The prophets, the scribes, and the judges who sit at the gate",
+        "The soldiers, the farmers, and the shepherds out in the fields"
+      ],
+      "answer": "The elders, the priests, and all the inhabitants of the land",
+      "verse_reference": "Joel 1:13-14"
+    },
+    {
+      "id": "joel-1-q3",
+      "type": "true_false",
+      "question": "Joel 1 says the day of the LORD is near, as destruction from the Almighty.",
+      "answer": "true",
+      "verse_reference": "Joel 1:15"
+    },
+    {
+      "id": "joel-1-q4",
+      "type": "fill_blank",
+      "question": "What the devouring locust left, the _____ locust has eaten.",
+      "answer": "swarming",
+      "verse_reference": "Joel 1:4"
+    },
+    {
+      "id": "joel-1-q5",
+      "type": "fill_blank",
+      "question": "Consecrate a fast; call a solemn _____; gather the elders.",
+      "answer": "assembly",
+      "accept": ["restraint"],
+      "verse_reference": "Joel 1:14"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Job",
+  "chapter": 14,
+  "questions": [
+    {
+      "id": "job-14-q1",
+      "type": "multiple_choice",
+      "question": "How did Job describe man's life?",
+      "options": [
+        "Endless, stretching beyond the grave",
+        "Long and secure, free from harm",
+        "Few of days and full of trouble",
+        "Carefree and without any sorrow"
+      ],
+      "answer": "Few of days and full of trouble",
+      "verse_reference": "Job 14:1"
+    },
+    {
+      "id": "job-14-q2",
+      "type": "multiple_choice",
+      "question": "What hope did Job note about a tree compared to man?",
+      "options": [
+        "Man, much like a tree, only grows stronger with each passing year",
+        "A tree dies forever, but man is raised again at the very last day",
+        "A cut tree may sprout again, but man lies down and does not rise",
+        "Both the tree and man alike wither and return to the dust"
+      ],
+      "answer": "A cut tree may sprout again, but man lies down and does not rise",
+      "verse_reference": "Job 14:7-12"
+    },
+    {
+      "id": "job-14-q3",
+      "type": "true_false",
+      "question": "Job compared man to a flower that comes up and withers.",
+      "answer": "true",
+      "verse_reference": "Job 14:2"
+    },
+    {
+      "id": "job-14-q4",
+      "type": "fill_blank",
+      "question": "Job said man's days are determined, and the number of his _____ is with God.",
+      "answer": "months",
+      "verse_reference": "Job 14:5"
+    },
+    {
+      "id": "job-14-q5",
+      "type": "fill_blank",
+      "question": "Job asked, 'If a man dies, shall he live _____?'",
+      "answer": "again",
+      "verse_reference": "Job 14:14"
+    }
+  ]
+}

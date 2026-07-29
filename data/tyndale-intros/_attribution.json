@@ -1,0 +1,7 @@
+{
+  "source": "Tyndale Open Study Notes, Tyndale House Publishers",
+  "license": "CC BY-SA 4.0",
+  "url": "https://tyndaleopenresources.com/",
+  "attribution": "Adapted from Tyndale Open Study Notes. The original work by Tyndale House Publishers is available for free at http://www.tyndaleopenresources.com.",
+  "notes": "Book introductions reformatted from BookIntros.xml + BookIntroSummaries.xml to per-book JSON by scripts/build-tyndale-intros.py; scripture links flattened to their text. This adapted dataset remains CC BY-SA 4.0."
+}

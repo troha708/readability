@@ -1,0 +1,53 @@
+{
+  "book": "Jeremiah",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "jeremiah-4-q1",
+      "type": "multiple_choice",
+      "question": "From which direction does Jeremiah 4 say disaster is coming?",
+      "options": [
+        "The east",
+        "The sea",
+        "The south",
+        "The north"
+      ],
+      "answer": "The north",
+      "verse_reference": "Jeremiah 4:6"
+    },
+    {
+      "id": "jeremiah-4-q2",
+      "type": "multiple_choice",
+      "question": "What does God call the people to do to their hearts in Jeremiah 4?",
+      "options": [
+        "Circumcise them, removing the foreskin of the heart",
+        "Harden them firmly against the coming of the enemy",
+        "Fill them entirely with the wisdom of the holy law",
+        "Offer them all up as a pleasing sacrifice to God"
+      ],
+      "answer": "Circumcise them, removing the foreskin of the heart",
+      "verse_reference": "Jeremiah 4:4"
+    },
+    {
+      "id": "jeremiah-4-q3",
+      "type": "true_false",
+      "question": "Jeremiah 4 describes the coming judgment as making the land desolate, like a return to formlessness.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 4:23"
+    },
+    {
+      "id": "jeremiah-4-q4",
+      "type": "fill_blank",
+      "question": "Break up your fallow ground, and sow not among _____.",
+      "answer": "thorns",
+      "verse_reference": "Jeremiah 4:3"
+    },
+    {
+      "id": "jeremiah-4-q5",
+      "type": "fill_blank",
+      "question": "Disaster is coming out of the _____, and great destruction.",
+      "answer": "north",
+      "verse_reference": "Jeremiah 4:6"
+    }
+  ]
+}

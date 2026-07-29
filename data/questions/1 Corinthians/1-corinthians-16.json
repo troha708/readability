@@ -1,0 +1,56 @@
+{
+  "book": "1 Corinthians",
+  "chapter": 16,
+  "questions": [
+    {
+      "id": "1cor-16-q1",
+      "type": "multiple_choice",
+      "question": "What does Paul instruct the Corinthians to do on the first day of every week?",
+      "options": [
+        "Set aside money for the collection",
+        "Fast from sunrise until the evening",
+        "Pray together for three full hours",
+        "Gather to read aloud from the Torah"
+      ],
+      "answer": "Set aside money for the collection",
+      "verse_reference": "1 Corinthians 16:2"
+    },
+    {
+      "id": "1cor-16-q2",
+      "type": "multiple_choice",
+      "question": "What city was Paul staying in when he wrote this letter?",
+      "options": [
+        "Rome",
+        "Athens",
+        "Ephesus",
+        "Antioch"
+      ],
+      "answer": "Ephesus",
+      "verse_reference": "1 Corinthians 16:8"
+    },
+    {
+      "id": "1cor-16-q3",
+      "type": "true_false",
+      "question": "Paul tells the Corinthians to make sure Timothy has nothing to fear when he visits them.",
+      "answer": "true",
+      "verse_reference": "1 Corinthians 16:10"
+    },
+    {
+      "id": "1cor-16-q4",
+      "type": "fill_blank",
+      "question": "Be on the alert. Stand firm in the _____. Be courageous. Be strong.",
+      "answer": "faith",
+      "verse_reference": "1 Corinthians 16:13"
+    },
+    {
+      "id": "1cor-16-q5",
+      "type": "fill_blank",
+      "question": "Let all that you do be done in _____.",
+      "answer": "love",
+      "accept": [
+        "charity"
+      ],
+      "verse_reference": "1 Corinthians 16:14"
+    }
+  ]
+}

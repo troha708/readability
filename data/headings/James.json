@@ -1,0 +1,76 @@
+{
+  "book": "James",
+  "source": "Berean Standard Bible (CC0 Public Domain)",
+  "chapters": {
+    "1": [
+      {
+        "beforeVerse": 1,
+        "heading": "A Greeting from James"
+      },
+      {
+        "beforeVerse": 2,
+        "heading": "Rejoicing in Trials"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "Good and Perfect Gifts"
+      },
+      {
+        "beforeVerse": 19,
+        "heading": "Hearing and Doing"
+      }
+    ],
+    "2": [
+      {
+        "beforeVerse": 1,
+        "heading": "A Warning against Favoritism"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "Faith and Works"
+      }
+    ],
+    "3": [
+      {
+        "beforeVerse": 1,
+        "heading": "Taming the Tongue"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "The Wisdom from Above"
+      }
+    ],
+    "4": [
+      {
+        "beforeVerse": 1,
+        "heading": "A Warning against Pride"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "Drawing Near to God"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "Do Not Boast about Tomorrow"
+      }
+    ],
+    "5": [
+      {
+        "beforeVerse": 1,
+        "heading": "A Warning to the Rich"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "Patience in Suffering"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "The Prayer of Faith"
+      },
+      {
+        "beforeVerse": 19,
+        "heading": "Restoring a Sinner"
+      }
+    ]
+  }
+}

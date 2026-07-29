@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 79,
+  "questions": [
+    {
+      "id": "psalms-79-q1",
+      "type": "multiple_choice",
+      "question": "What disaster does Psalm 79 lament?",
+      "options": [
+        "The scattered exiles at last returning home from far-off Babylon",
+        "The nations defiling the temple and laying Jerusalem in ruins",
+        "The king victoriously leading Israel on to a great triumph",
+        "The harvest failing entirely because of a long and bitter drought"
+      ],
+      "answer": "The nations defiling the temple and laying Jerusalem in ruins",
+      "verse_reference": "Psalm 79:1"
+    },
+    {
+      "id": "psalms-79-q2",
+      "type": "multiple_choice",
+      "question": "What does Asaph ask God to do for his people?",
+      "options": [
+        "Repay all the nations seven times over for their evil deeds",
+        "Raise up a mighty deliverer from the royal line of David",
+        "Help and atone for their sins for the glory of his name",
+        "Send rain to revive the parched and the dying land again"
+      ],
+      "answer": "Help and atone for their sins for the glory of his name",
+      "verse_reference": "Psalm 79:9"
+    },
+    {
+      "id": "psalms-79-q3",
+      "type": "true_false",
+      "question": "The psalm asks God not to remember former iniquities against them.",
+      "answer": "true",
+      "verse_reference": "Psalm 79:8"
+    },
+    {
+      "id": "psalms-79-q4",
+      "type": "fill_blank",
+      "question": "Help us, O God of our salvation, for the glory of your _____.",
+      "answer": "name",
+      "verse_reference": "Psalm 79:9"
+    },
+    {
+      "id": "psalms-79-q5",
+      "type": "fill_blank",
+      "question": "We your people, the sheep of your pasture, will give thanks to you _____.",
+      "answer": "forever",
+      "verse_reference": "Psalm 79:13"
+    }
+  ]
+}

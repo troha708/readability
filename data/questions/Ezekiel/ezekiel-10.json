@@ -1,0 +1,56 @@
+{
+  "book": "Ezekiel",
+  "chapter": 10,
+  "questions": [
+    {
+      "id": "ezekiel-10-q1",
+      "type": "multiple_choice",
+      "question": "What did Ezekiel see departing in chapter 10?",
+      "options": [
+        "The ark of the covenant being carried away into the exile",
+        "A great and mighty army descending all around upon the city",
+        "A wide river of fire flowing out from the foot of the altar",
+        "The glory of the LORD leaving the threshold of the temple"
+      ],
+      "answer": "The glory of the LORD leaving the threshold of the temple",
+      "verse_reference": "Ezekiel 10:18"
+    },
+    {
+      "id": "ezekiel-10-q2",
+      "type": "multiple_choice",
+      "question": "What creatures were associated with the wheels in this vision?",
+      "options": [
+        "Lions",
+        "The cherubim",
+        "Eagles",
+        "Oxen"
+      ],
+      "answer": "The cherubim",
+      "verse_reference": "Ezekiel 10:9-15"
+    },
+    {
+      "id": "ezekiel-10-q3",
+      "type": "true_false",
+      "question": "Ezekiel realized the living creatures he had seen by the Chebar were the cherubim.",
+      "answer": "true",
+      "verse_reference": "Ezekiel 10:20"
+    },
+    {
+      "id": "ezekiel-10-q4",
+      "type": "fill_blank",
+      "question": "The glory of the LORD rose from the cherubim and stood over the threshold of the _____.",
+      "answer": "temple",
+      "accept": [
+        "house"
+      ],
+      "verse_reference": "Ezekiel 10:4"
+    },
+    {
+      "id": "ezekiel-10-q5",
+      "type": "fill_blank",
+      "question": "The cherubim were full of _____ all around, even their wings and the wheels.",
+      "answer": "eyes",
+      "verse_reference": "Ezekiel 10:12"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "book": "Jeremiah",
+  "chapter": 7,
+  "questions": [
+    {
+      "id": "jeremiah-7-q1",
+      "type": "multiple_choice",
+      "question": "What deceptive words did the people trust in Jeremiah 7's temple sermon?",
+      "options": [
+        "'Our sacrifices have made us clean' declared by the priests",
+        "'This is the temple of the LORD' repeated three times",
+        "'We are the children of Abraham' said with pride",
+        "'The LORD will never let Zion fall' spoken boldly"
+      ],
+      "answer": "'This is the temple of the LORD' repeated three times",
+      "verse_reference": "Jeremiah 7:4"
+    },
+    {
+      "id": "jeremiah-7-q2",
+      "type": "multiple_choice",
+      "question": "What had God's house become, according to Jeremiah 7?",
+      "options": [
+        "A grand palace for the king",
+        "A true house of prayer for all",
+        "A den of robbers in their eyes",
+        "A crowded and noisy marketplace"
+      ],
+      "answer": "A den of robbers in their eyes",
+      "verse_reference": "Jeremiah 7:11"
+    },
+    {
+      "id": "jeremiah-7-q3",
+      "type": "true_false",
+      "question": "Jeremiah 7 tells the people to amend their ways and deeds if they want to dwell in the land.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 7:3"
+    },
+    {
+      "id": "jeremiah-7-q4",
+      "type": "fill_blank",
+      "question": "Has this house, which is called by my name, become a den of _____ in your eyes?",
+      "answer": "robbers",
+      "accept": [
+        "thieves",
+        "burglars"
+      ],
+      "verse_reference": "Jeremiah 7:11"
+    },
+    {
+      "id": "jeremiah-7-q5",
+      "type": "fill_blank",
+      "question": "Do not trust in these deceptive words: 'This is the _____ of the LORD.'",
+      "answer": "temple",
+      "verse_reference": "Jeremiah 7:4"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "book": "Ezra",
+  "chapter": 7,
+  "questions": [
+    {
+      "id": "ezra-7-q1",
+      "type": "multiple_choice",
+      "question": "Who is introduced in chapter 7 as a scribe skilled in the Law of Moses?",
+      "options": [
+        "Jeshua",
+        "Zerubbabel",
+        "Ezra",
+        "Nehemiah"
+      ],
+      "answer": "Ezra",
+      "verse_reference": "Ezra 7:6"
+    },
+    {
+      "id": "ezra-7-q2",
+      "type": "multiple_choice",
+      "question": "Why did the good hand of God rest on Ezra?",
+      "options": [
+        "He commanded a great, well-trained, and well-disciplined army",
+        "He came from a noble, ancient, and highly honored family",
+        "He had gathered to himself great wealth while in Babylon",
+        "He set his heart to study, do, and teach the Law of the LORD"
+      ],
+      "answer": "He set his heart to study, do, and teach the Law of the LORD",
+      "verse_reference": "Ezra 7:10"
+    },
+    {
+      "id": "ezra-7-q3",
+      "type": "true_false",
+      "question": "King Artaxerxes gave Ezra a letter granting him authority and provisions.",
+      "answer": "true",
+      "verse_reference": "Ezra 7:11-26"
+    },
+    {
+      "id": "ezra-7-q4",
+      "type": "fill_blank",
+      "question": "Ezra came up from _____ to Jerusalem.",
+      "answer": "Babylon",
+      "accept": [
+        "Babel"
+      ],
+      "verse_reference": "Ezra 7:6"
+    },
+    {
+      "id": "ezra-7-q5",
+      "type": "fill_blank",
+      "question": "Ezra was a scribe skilled in the Law of _____.",
+      "answer": "Moses",
+      "verse_reference": "Ezra 7:6"
+    }
+  ]
+}

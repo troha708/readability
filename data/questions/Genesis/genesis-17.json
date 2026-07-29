@@ -1,0 +1,53 @@
+{
+  "book": "Genesis",
+  "chapter": 17,
+  "questions": [
+    {
+      "id": "genesis-17-q1",
+      "type": "multiple_choice",
+      "question": "What new name did God give to Abram?",
+      "options": [
+        "Isaac his son",
+        "Israel the chosen",
+        "Abraham",
+        "Abimelech"
+      ],
+      "answer": "Abraham",
+      "verse_reference": "Genesis 17:5"
+    },
+    {
+      "id": "genesis-17-q2",
+      "type": "multiple_choice",
+      "question": "What did God give as the sign of his covenant with Abraham?",
+      "options": [
+        "A rainbow",
+        "The seventh-day Sabbath",
+        "An altar",
+        "Circumcision"
+      ],
+      "answer": "Circumcision",
+      "verse_reference": "Genesis 17:11"
+    },
+    {
+      "id": "genesis-17-q3",
+      "type": "true_false",
+      "question": "God changed Sarai's name to Sarah.",
+      "answer": "true",
+      "verse_reference": "Genesis 17:15"
+    },
+    {
+      "id": "genesis-17-q4",
+      "type": "fill_blank",
+      "question": "God appeared to Abram and said, \"I am God _____\" (El Shaddai).",
+      "answer": "Almighty",
+      "verse_reference": "Genesis 17:1"
+    },
+    {
+      "id": "genesis-17-q5",
+      "type": "fill_blank",
+      "question": "God said Sarah would bear a son, and Abraham was to name him _____.",
+      "answer": "Isaac",
+      "verse_reference": "Genesis 17:19"
+    }
+  ]
+}

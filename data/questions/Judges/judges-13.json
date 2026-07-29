@@ -1,0 +1,56 @@
+{
+  "book": "Judges",
+  "chapter": 13,
+  "questions": [
+    {
+      "id": "judges-13-q1",
+      "type": "multiple_choice",
+      "question": "To whom did the angel announce the birth of Samson?",
+      "options": [
+        "Boaz and his household",
+        "Elkanah and Hannah",
+        "Manoah and his wife",
+        "Gideon and his father"
+      ],
+      "answer": "Manoah and his wife",
+      "verse_reference": "Judges 13:2-3"
+    },
+    {
+      "id": "judges-13-q2",
+      "type": "multiple_choice",
+      "question": "What was Samson to be from birth?",
+      "options": [
+        "A king, chosen to rule over Israel",
+        "A prophet, called to speak for God",
+        "A priest, born to serve at the altar",
+        "A Nazirite, set apart to God"
+      ],
+      "answer": "A Nazirite, set apart to God",
+      "verse_reference": "Judges 13:5"
+    },
+    {
+      "id": "judges-13-q3",
+      "type": "true_false",
+      "question": "Samson's mother was barren before the angel's announcement.",
+      "answer": "true",
+      "verse_reference": "Judges 13:2-3"
+    },
+    {
+      "id": "judges-13-q4",
+      "type": "fill_blank",
+      "question": "Samson was to be a _____ to God from the womb; no razor was to touch his head.",
+      "answer": "Nazirite",
+      "accept": [
+        "Nazarite"
+      ],
+      "verse_reference": "Judges 13:5"
+    },
+    {
+      "id": "judges-13-q5",
+      "type": "fill_blank",
+      "question": "The angel said Samson would begin to deliver Israel from the _____.",
+      "answer": "Philistines",
+      "verse_reference": "Judges 13:5"
+    }
+  ]
+}

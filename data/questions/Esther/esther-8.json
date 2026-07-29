@@ -1,0 +1,56 @@
+{
+  "book": "Esther",
+  "chapter": 8,
+  "questions": [
+    {
+      "id": "esther-8-q1",
+      "type": "multiple_choice",
+      "question": "What did the king give Esther and Mordecai after Haman's fall?",
+      "options": [
+        "Nothing beyond their thanks",
+        "Haman's house and the signet ring",
+        "Command of the royal army",
+        "A distant province to govern"
+      ],
+      "answer": "Haman's house and the signet ring",
+      "verse_reference": "Esther 8:1-2"
+    },
+    {
+      "id": "esther-8-q2",
+      "type": "multiple_choice",
+      "question": "Since the first decree could not be revoked, what was issued?",
+      "options": [
+        "A full and complete pardon for all of Haman's family",
+        "An order sending the Jews into exile for their safety",
+        "A new decree allowing the Jews to defend themselves",
+        "A heavy tax laid upon all the enemy provinces"
+      ],
+      "answer": "A new decree allowing the Jews to defend themselves",
+      "verse_reference": "Esther 8:11"
+    },
+    {
+      "id": "esther-8-q3",
+      "type": "true_false",
+      "question": "Many people of the land became Jews because the fear of the Jews had fallen on them.",
+      "answer": "true",
+      "verse_reference": "Esther 8:17"
+    },
+    {
+      "id": "esther-8-q4",
+      "type": "fill_blank",
+      "question": "Mordecai went out from the king's presence in royal robes of blue and _____.",
+      "answer": "white",
+      "verse_reference": "Esther 8:15"
+    },
+    {
+      "id": "esther-8-q5",
+      "type": "fill_blank",
+      "question": "For the Jews there was light and gladness and joy and _____.",
+      "answer": "honor",
+      "accept": [
+        "honour"
+      ],
+      "verse_reference": "Esther 8:16"
+    }
+  ]
+}

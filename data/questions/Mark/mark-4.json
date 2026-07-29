@@ -1,0 +1,62 @@
+{
+  "book": "Mark",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "mark-4-q1",
+      "type": "multiple_choice",
+      "question": "In the Parable of the Sower, what happened to the seed that fell on good soil?",
+      "options": [
+        "It withered in the sun",
+        "It grew and produced a crop",
+        "It was choked by thorns",
+        "It was eaten by birds"
+      ],
+      "answer": "It grew and produced a crop",
+      "verse_reference": "Mark 4:8"
+    },
+    {
+      "id": "mark-4-q2",
+      "type": "multiple_choice",
+      "question": "What did Jesus do to calm the storm on the sea?",
+      "options": [
+        "He rebuked the wind and told the sea to be still",
+        "He stepped out and walked upon the raging stormy water",
+        "He spread his cloak across the side of the boat",
+        "He lifted up his hands and prayed to the Father"
+      ],
+      "answer": "He rebuked the wind and told the sea to be still",
+      "verse_reference": "Mark 4:39"
+    },
+    {
+      "id": "mark-4-q3",
+      "type": "true_false",
+      "question": "Jesus said the Kingdom of God is like a mustard seed, which is the smallest of all seeds on the earth.",
+      "answer": "true",
+      "verse_reference": "Mark 4:31"
+    },
+    {
+      "id": "mark-4-q4",
+      "type": "fill_blank",
+      "question": "Peace! Be _____!",
+      "answer": "still",
+      "accept": [
+        "stilled",
+        "mute"
+      ],
+      "verse_reference": "Mark 4:39"
+    },
+    {
+      "id": "mark-4-q5",
+      "type": "fill_blank",
+      "question": "There is nothing hidden that will not be _____, and nothing concealed that will not be brought to light.",
+      "answer": "disclosed",
+      "accept": [
+        "known",
+        "manifested",
+        "opened"
+      ],
+      "verse_reference": "Mark 4:22"
+    }
+  ]
+}

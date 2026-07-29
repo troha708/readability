@@ -1,0 +1,56 @@
+{
+  "book": "Jeremiah",
+  "chapter": 51,
+  "questions": [
+    {
+      "id": "jeremiah-51-q1",
+      "type": "multiple_choice",
+      "question": "What does Jeremiah 51 continue to proclaim?",
+      "options": [
+        "A famine across the land",
+        "Israel's long-hidden sin",
+        "Babylon's judgment and fall",
+        "A great famine across the land"
+      ],
+      "answer": "Babylon's judgment and fall",
+      "verse_reference": "Jeremiah 51:1-2"
+    },
+    {
+      "id": "jeremiah-51-q2",
+      "type": "multiple_choice",
+      "question": "What did Jeremiah have done with the scroll of judgment against Babylon?",
+      "options": [
+        "Bound a stone to it and threw it into the Euphrates",
+        "Read it aloud before the very face of the king of Babylon",
+        "Sealed it away in a clay jar for the sake of safekeeping",
+        "Burned it up entirely upon the altar of the holy temple"
+      ],
+      "answer": "Bound a stone to it and threw it into the Euphrates",
+      "verse_reference": "Jeremiah 51:63"
+    },
+    {
+      "id": "jeremiah-51-q3",
+      "type": "true_false",
+      "question": "Jeremiah 51 says Babylon will sink and not rise, because of the disaster God brings upon her.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 51:64"
+    },
+    {
+      "id": "jeremiah-51-q4",
+      "type": "fill_blank",
+      "question": "Thus shall Babylon _____ and rise no more, because of the disaster that I am bringing upon her.",
+      "answer": "sink",
+      "accept": [
+        "drowned"
+      ],
+      "verse_reference": "Jeremiah 51:64"
+    },
+    {
+      "id": "jeremiah-51-q5",
+      "type": "fill_blank",
+      "question": "The LORD of hosts is his name; he is the one who formed all things, and Israel is the tribe of his _____.",
+      "answer": "inheritance",
+      "verse_reference": "Jeremiah 51:19"
+    }
+  ]
+}

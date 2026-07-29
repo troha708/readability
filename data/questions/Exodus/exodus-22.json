@@ -1,0 +1,56 @@
+{
+  "book": "Exodus",
+  "chapter": 22,
+  "questions": [
+    {
+      "id": "exodus-22-q1",
+      "type": "multiple_choice",
+      "question": "What do the laws of this chapter mainly cover?",
+      "options": [
+        "Property, restitution, and social duty",
+        "Worship, sacrifice, and temple service",
+        "Priesthood, garments, and ordination",
+        "Festivals, feasts, and holy days"
+      ],
+      "answer": "Property, restitution, and social duty",
+      "verse_reference": "Exodus 22:1-15"
+    },
+    {
+      "id": "exodus-22-q2",
+      "type": "multiple_choice",
+      "question": "How were the Israelites told to treat foreigners (sojourners)?",
+      "options": [
+        "To enslave them for hard labor",
+        "To drive them out of the land",
+        "To tax them more than the people",
+        "Not to wrong or oppress them"
+      ],
+      "answer": "Not to wrong or oppress them",
+      "verse_reference": "Exodus 22:21"
+    },
+    {
+      "id": "exodus-22-q3",
+      "type": "true_false",
+      "question": "They were commanded not to take advantage of any widow or fatherless child.",
+      "answer": "true",
+      "verse_reference": "Exodus 22:22"
+    },
+    {
+      "id": "exodus-22-q4",
+      "type": "fill_blank",
+      "question": "\"You shall not allow a _____ to live,\" referring to those who practiced harmful magic.",
+      "answer": "sorceress",
+      "accept": [
+        "witch"
+      ],
+      "verse_reference": "Exodus 22:18"
+    },
+    {
+      "id": "exodus-22-q5",
+      "type": "fill_blank",
+      "question": "They were not to oppress a _____ or a fatherless child.",
+      "answer": "widow",
+      "verse_reference": "Exodus 22:22"
+    }
+  ]
+}

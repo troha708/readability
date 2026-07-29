@@ -1,0 +1,60 @@
+{
+  "book": "1 Corinthians",
+  "chapter": 14,
+  "questions": [
+    {
+      "id": "1cor-14-q1",
+      "type": "multiple_choice",
+      "question": "Which spiritual gift does Paul say is greater for building up the church — tongues or prophecy?",
+      "options": [
+        "Tongues",
+        "They are equal",
+        "Neither",
+        "Prophecy"
+      ],
+      "answer": "Prophecy",
+      "verse_reference": "1 Corinthians 14:1-5"
+    },
+    {
+      "id": "1cor-14-q2",
+      "type": "multiple_choice",
+      "question": "Paul says everything in worship should be done how?",
+      "options": [
+        "With great emotion",
+        "In a fitting and orderly way",
+        "As loudly as possible",
+        "In complete silence"
+      ],
+      "answer": "In a fitting and orderly way",
+      "verse_reference": "1 Corinthians 14:40"
+    },
+    {
+      "id": "1cor-14-q3",
+      "type": "true_false",
+      "question": "Paul says he speaks in tongues more than all the Corinthians.",
+      "answer": "true",
+      "verse_reference": "1 Corinthians 14:18"
+    },
+    {
+      "id": "1cor-14-q4",
+      "type": "fill_blank",
+      "question": "In the church I would rather speak five _____ words to instruct others than ten thousand words in a tongue.",
+      "answer": "coherent",
+      "accept": [
+        "understanding"
+      ],
+      "verse_reference": "1 Corinthians 14:19"
+    },
+    {
+      "id": "1cor-14-q5",
+      "type": "fill_blank",
+      "question": "For God is not a God of _____ but of peace.",
+      "answer": "disorder",
+      "accept": [
+        "confusion",
+        "tumult"
+      ],
+      "verse_reference": "1 Corinthians 14:33"
+    }
+  ]
+}

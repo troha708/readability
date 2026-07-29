@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 58,
+  "questions": [
+    {
+      "id": "psalms-58-q1",
+      "type": "multiple_choice",
+      "question": "Whom does Psalm 58 address and rebuke?",
+      "options": [
+        "Greedy merchants who cheat with their false scales",
+        "False prophets who speak their own dreams",
+        "Idle priests who neglect the holy things",
+        "Unjust rulers/judges who do not judge uprightly"
+      ],
+      "answer": "Unjust rulers/judges who do not judge uprightly",
+      "verse_reference": "Psalm 58:1-2"
+    },
+    {
+      "id": "psalms-58-q2",
+      "type": "multiple_choice",
+      "question": "To what does David compare the wicked?",
+      "options": [
+        "The venom of a serpent, like a deaf adder",
+        "The bite of a wolf among the sheep",
+        "The sting of a scorpion hidden in the sand",
+        "The roar of a lion stalking its prey"
+      ],
+      "answer": "The venom of a serpent, like a deaf adder",
+      "verse_reference": "Psalm 58:4"
+    },
+    {
+      "id": "psalms-58-q3",
+      "type": "true_false",
+      "question": "The psalm declares that mankind will say there is a reward for the righteous and a God who judges the earth.",
+      "answer": "true",
+      "verse_reference": "Psalm 58:11"
+    },
+    {
+      "id": "psalms-58-q4",
+      "type": "fill_blank",
+      "question": "Surely there is a reward for the _____.",
+      "answer": "righteous",
+      "verse_reference": "Psalm 58:11"
+    },
+    {
+      "id": "psalms-58-q5",
+      "type": "fill_blank",
+      "question": "The wicked are estranged from the womb; the _____ go astray from birth.",
+      "answer": "liars",
+      "verse_reference": "Psalm 58:3"
+    }
+  ]
+}

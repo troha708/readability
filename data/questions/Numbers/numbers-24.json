@@ -1,0 +1,53 @@
+{
+  "book": "Numbers",
+  "chapter": 24,
+  "questions": [
+    {
+      "id": "numbers-24-q1",
+      "type": "multiple_choice",
+      "question": "What did Balaam continue to do in his oracles?",
+      "options": [
+        "Bless Israel and prophesy their future",
+        "Demand more silver and gold for himself",
+        "Curse Israel before the king of Moab",
+        "Stand silent and refuse to speak"
+      ],
+      "answer": "Bless Israel and prophesy their future",
+      "verse_reference": "Numbers 24:1-10"
+    },
+    {
+      "id": "numbers-24-q2",
+      "type": "multiple_choice",
+      "question": "What did Balaam foretell would come out of Jacob?",
+      "options": [
+        "A famine lasting seven long years",
+        "A priest to bless all the nations",
+        "A star and a scepter (a ruler)",
+        "A flood covering the whole land"
+      ],
+      "answer": "A star and a scepter (a ruler)",
+      "verse_reference": "Numbers 24:17"
+    },
+    {
+      "id": "numbers-24-q3",
+      "type": "true_false",
+      "question": "Balak was angry that Balaam had blessed Israel three times.",
+      "answer": "true",
+      "verse_reference": "Numbers 24:10"
+    },
+    {
+      "id": "numbers-24-q4",
+      "type": "fill_blank",
+      "question": "Balaam prophesied, \"A _____ will come out of Jacob,\" a scepter out of Israel.",
+      "answer": "star",
+      "verse_reference": "Numbers 24:17"
+    },
+    {
+      "id": "numbers-24-q5",
+      "type": "fill_blank",
+      "question": "Balak's anger burned, and he struck his _____ together against Balaam.",
+      "answer": "hands",
+      "verse_reference": "Numbers 24:10"
+    }
+  ]
+}

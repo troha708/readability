@@ -1,0 +1,56 @@
+{
+  "book": "Acts",
+  "chapter": 15,
+  "questions": [
+    {
+      "id": "acts-15-q1",
+      "type": "multiple_choice",
+      "question": "What was the main issue debated at the Council of Jerusalem?",
+      "options": [
+        "Whether women were permitted to teach in the assembly",
+        "Whether Gentiles must be circumcised and follow the Law of Moses",
+        "Whether Gentile believers should pay the yearly temple tax",
+        "Whether believers were free to eat meat from the market"
+      ],
+      "answer": "Whether Gentiles must be circumcised and follow the Law of Moses",
+      "verse_reference": "Acts 15:1,5"
+    },
+    {
+      "id": "acts-15-q2",
+      "type": "multiple_choice",
+      "question": "What caused Paul and Barnabas to part ways?",
+      "options": [
+        "A dispute over taking John Mark with them",
+        "A doctrinal disagreement",
+        "Barnabas wanted to return to Cyprus alone",
+        "Paul wanted to go to Rome"
+      ],
+      "answer": "A dispute over taking John Mark with them",
+      "verse_reference": "Acts 15:37-39"
+    },
+    {
+      "id": "acts-15-q3",
+      "type": "true_false",
+      "question": "The council decided that Gentile believers must be circumcised.",
+      "answer": "false",
+      "verse_reference": "Acts 15:19-20"
+    },
+    {
+      "id": "acts-15-q4",
+      "type": "fill_blank",
+      "question": "It seemed good to the Holy _____ and to us to lay no greater burden on you than these necessary things.",
+      "answer": "Spirit",
+      "accept": [
+        "Ghost"
+      ],
+      "verse_reference": "Acts 15:28"
+    },
+    {
+      "id": "acts-15-q5",
+      "type": "fill_blank",
+      "question": "After the disagreement, Paul chose _____ as his new traveling companion.",
+      "answer": "Silas",
+      "verse_reference": "Acts 15:40"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "2 Samuel",
+  "chapter": 22,
+  "questions": [
+    {
+      "id": "2-samuel-22-q1",
+      "type": "multiple_choice",
+      "question": "What is 2 Samuel 22?",
+      "options": [
+        "David's song of praise for deliverance",
+        "A battle plan against the Ammonites",
+        "A census of all the fighting men",
+        "A genealogy of the house of David"
+      ],
+      "answer": "David's song of praise for deliverance",
+      "verse_reference": "2 Samuel 22:1"
+    },
+    {
+      "id": "2-samuel-22-q2",
+      "type": "multiple_choice",
+      "question": "What metaphors does David use for God in the song?",
+      "options": [
+        "A father and a mighty king",
+        "A rock, fortress, and deliverer",
+        "A shepherd and a strong gate",
+        "A vine and a fruitful green branch"
+      ],
+      "answer": "A rock, fortress, and deliverer",
+      "verse_reference": "2 Samuel 22:2-3"
+    },
+    {
+      "id": "2-samuel-22-q3",
+      "type": "true_false",
+      "question": "David praised God for rescuing him from all his enemies, including Saul.",
+      "answer": "true",
+      "verse_reference": "2 Samuel 22:1"
+    },
+    {
+      "id": "2-samuel-22-q4",
+      "type": "fill_blank",
+      "question": "David sang, \"The LORD is my _____, my fortress, and my deliverer.\"",
+      "answer": "rock",
+      "verse_reference": "2 Samuel 22:2"
+    },
+    {
+      "id": "2-samuel-22-q5",
+      "type": "fill_blank",
+      "question": "This song closely matches Psalm _____ in the book of Psalms.",
+      "answer": "18",
+      "verse_reference": "2 Samuel 22:1"
+    }
+  ]
+}

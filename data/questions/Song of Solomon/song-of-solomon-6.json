@@ -1,0 +1,56 @@
+{
+  "book": "Song Of Solomon",
+  "chapter": 6,
+  "questions": [
+    {
+      "id": "song-of-solomon-6-q1",
+      "type": "multiple_choice",
+      "question": "What mutual declaration appears in chapter 6?",
+      "options": [
+        "Our love has failed and grown bitterly cold",
+        "I am my beloved's and my beloved is mine",
+        "I am left all alone in the night",
+        "The time has come for us to part"
+      ],
+      "answer": "I am my beloved's and my beloved is mine",
+      "verse_reference": "Song of Solomon 6:3"
+    },
+    {
+      "id": "song-of-solomon-6-q2",
+      "type": "multiple_choice",
+      "question": "How does the beloved describe the bride's uniqueness?",
+      "options": [
+        "His dove, his perfect one",
+        "A stranger he scarcely knows",
+        "A rival to the other maidens",
+        "One of many women he admires"
+      ],
+      "answer": "His dove, his perfect one",
+      "verse_reference": "Song of Solomon 6:9"
+    },
+    {
+      "id": "song-of-solomon-6-q3",
+      "type": "true_false",
+      "question": "In chapter 6 the bride is compared to one as awesome as an army with banners.",
+      "answer": "true",
+      "verse_reference": "Song of Solomon 6:4"
+    },
+    {
+      "id": "song-of-solomon-6-q4",
+      "type": "fill_blank",
+      "question": "I belong to my beloved and he belongs to _____.",
+      "answer": "me",
+      "accept": [
+        "mine"
+      ],
+      "verse_reference": "Song of Solomon 6:3"
+    },
+    {
+      "id": "song-of-solomon-6-q5",
+      "type": "fill_blank",
+      "question": "My _____, my perfect one, is the only one.",
+      "answer": "dove",
+      "verse_reference": "Song of Solomon 6:9"
+    }
+  ]
+}

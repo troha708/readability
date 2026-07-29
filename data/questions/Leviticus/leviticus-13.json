@@ -1,0 +1,53 @@
+{
+  "book": "Leviticus",
+  "chapter": 13,
+  "questions": [
+    {
+      "id": "leviticus-13-q1",
+      "type": "multiple_choice",
+      "question": "What does chapter 13 deal with?",
+      "options": [
+        "The ordination of the priests",
+        "Diagnosing skin diseases",
+        "Offerings of grain and oil",
+        "Rules for clean and unclean food"
+      ],
+      "answer": "Diagnosing skin diseases",
+      "verse_reference": "Leviticus 13:2"
+    },
+    {
+      "id": "leviticus-13-q2",
+      "type": "multiple_choice",
+      "question": "Who examined a person to declare them clean or unclean?",
+      "options": [
+        "The king",
+        "The priest",
+        "A physician",
+        "The elders"
+      ],
+      "answer": "The priest",
+      "verse_reference": "Leviticus 13:3"
+    },
+    {
+      "id": "leviticus-13-q3",
+      "type": "true_false",
+      "question": "A person declared unclean had to live alone, outside the camp.",
+      "answer": "true",
+      "verse_reference": "Leviticus 13:46"
+    },
+    {
+      "id": "leviticus-13-q4",
+      "type": "fill_blank",
+      "question": "The _____ examined the diseased person and pronounced them clean or unclean.",
+      "answer": "priest",
+      "verse_reference": "Leviticus 13:3"
+    },
+    {
+      "id": "leviticus-13-q5",
+      "type": "fill_blank",
+      "question": "A person with an infectious skin disease had to cry out, \"_____! Unclean!\"",
+      "answer": "Unclean",
+      "verse_reference": "Leviticus 13:45"
+    }
+  ]
+}

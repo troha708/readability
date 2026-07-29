@@ -1,0 +1,59 @@
+{
+  "book": "Isaiah",
+  "chapter": 39,
+  "questions": [
+    {
+      "id": "isaiah-39-q1",
+      "type": "multiple_choice",
+      "question": "Who sent envoys to Hezekiah, and what did he show them?",
+      "options": [
+        "Assyria; the walls and the gates of the city",
+        "Persia; his army and its weapons",
+        "Babylon; all his treasures and storehouses",
+        "Egypt; the gold of the temple alone"
+      ],
+      "answer": "Babylon; all his treasures and storehouses",
+      "verse_reference": "Isaiah 39:1-2"
+    },
+    {
+      "id": "isaiah-39-q2",
+      "type": "multiple_choice",
+      "question": "What did Isaiah prophesy as a result?",
+      "options": [
+        "All would be carried to Babylon, and his sons would be eunuchs there",
+        "A righteous son of David would very soon restore the fallen throne",
+        "The whole city would be graciously spared for very many more years",
+        "All of the treasures would be returned to him again with interest"
+      ],
+      "answer": "All would be carried to Babylon, and his sons would be eunuchs there",
+      "verse_reference": "Isaiah 39:6-7"
+    },
+    {
+      "id": "isaiah-39-q3",
+      "type": "true_false",
+      "question": "Hezekiah accepted Isaiah's word, glad there would be peace in his own days.",
+      "answer": "true",
+      "verse_reference": "Isaiah 39:8"
+    },
+    {
+      "id": "isaiah-39-q4",
+      "type": "fill_blank",
+      "question": "Nothing is left, said Hezekiah; they have seen all that is in my _____.",
+      "answer": "palace",
+      "accept": [
+        "house"
+      ],
+      "verse_reference": "Isaiah 39:4"
+    },
+    {
+      "id": "isaiah-39-q5",
+      "type": "fill_blank",
+      "question": "Days are coming when all in your house shall be carried to _____.",
+      "answer": "Babylon",
+      "accept": [
+        "Babel"
+      ],
+      "verse_reference": "Isaiah 39:6"
+    }
+  ]
+}

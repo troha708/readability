@@ -1,0 +1,56 @@
+{
+  "book": "1 Chronicles",
+  "chapter": 6,
+  "questions": [
+    {
+      "id": "1-chronicles-6-q1",
+      "type": "multiple_choice",
+      "question": "This chapter primarily records the descendants of which tribe?",
+      "options": [
+        "Judah",
+        "Levi",
+        "Benjamin",
+        "Dan"
+      ],
+      "answer": "Levi",
+      "verse_reference": "1 Chronicles 6:1"
+    },
+    {
+      "id": "1-chronicles-6-q2",
+      "type": "multiple_choice",
+      "question": "Whom did David put in charge of the service of song in the house of the LORD?",
+      "options": [
+        "Certain Levites",
+        "The Aaronic priests",
+        "The kings",
+        "The judges"
+      ],
+      "answer": "Certain Levites",
+      "verse_reference": "1 Chronicles 6:31-32"
+    },
+    {
+      "id": "1-chronicles-6-q3",
+      "type": "true_false",
+      "question": "Aaron and his sons were set apart to make offerings on the altar.",
+      "answer": "true",
+      "verse_reference": "1 Chronicles 6:49"
+    },
+    {
+      "id": "1-chronicles-6-q4",
+      "type": "fill_blank",
+      "question": "Heman the singer was a descendant of _____ the prophet.",
+      "answer": "Samuel",
+      "accept": [
+        "Shemuel"
+      ],
+      "verse_reference": "1 Chronicles 6:33"
+    },
+    {
+      "id": "1-chronicles-6-q5",
+      "type": "fill_blank",
+      "question": "The Levites were given _____ to live in throughout Israel.",
+      "answer": "cities",
+      "verse_reference": "1 Chronicles 6:64"
+    }
+  ]
+}

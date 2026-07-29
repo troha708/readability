@@ -1,0 +1,53 @@
+{
+  "book": "Jeremiah",
+  "chapter": 13,
+  "questions": [
+    {
+      "id": "jeremiah-13-q1",
+      "type": "multiple_choice",
+      "question": "What sign did God have Jeremiah perform with a linen loincloth in chapter 13?",
+      "options": [
+        "Give it away to the poor, showing forth God's tender care for all the needy",
+        "Hide it by the Euphrates until it was ruined, showing how pride would be ruined",
+        "Wear it continually until it fell apart, showing the great weariness of the people",
+        "Burn it whole upon the altar, showing the people the coming day of judgment"
+      ],
+      "answer": "Hide it by the Euphrates until it was ruined, showing how pride would be ruined",
+      "verse_reference": "Jeremiah 13:1-9"
+    },
+    {
+      "id": "jeremiah-13-q2",
+      "type": "multiple_choice",
+      "question": "What rhetorical question about change does Jeremiah 13 ask?",
+      "options": [
+        "Can the sun stop?",
+        "Can a river flow backward?",
+        "Can a leopard change its spots?",
+        "Can a stone speak?"
+      ],
+      "answer": "Can a leopard change its spots?",
+      "verse_reference": "Jeremiah 13:23"
+    },
+    {
+      "id": "jeremiah-13-q3",
+      "type": "true_false",
+      "question": "Jeremiah 13 warns the king and queen mother to humble themselves before exile comes.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 13:18"
+    },
+    {
+      "id": "jeremiah-13-q4",
+      "type": "fill_blank",
+      "question": "Can the Ethiopian change his skin or the _____ his spots?",
+      "answer": "leopard",
+      "verse_reference": "Jeremiah 13:23"
+    },
+    {
+      "id": "jeremiah-13-q5",
+      "type": "fill_blank",
+      "question": "As the loincloth clings to the waist, so I made the whole house of Israel cling to _____.",
+      "answer": "me",
+      "verse_reference": "Jeremiah 13:11"
+    }
+  ]
+}

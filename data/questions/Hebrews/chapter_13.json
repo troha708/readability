@@ -1,0 +1,58 @@
+{
+  "book": "Hebrews",
+  "chapter": 13,
+  "questions": [
+    {
+      "id": "heb_13_1",
+      "type": "multiple_choice",
+      "question": "The author says Jesus Christ is the same when?",
+      "options": [
+        "Yesterday, today, and forever",
+        "Whenever his people gather to pray",
+        "Only within the temple courts",
+        "During the appointed yearly feasts"
+      ],
+      "correct": "Yesterday, today, and forever",
+      "verse_ref": "Hebrews 13:8",
+      "feedback": "Jesus Christ is the same yesterday, today, and forever."
+    },
+    {
+      "id": "heb_13_2",
+      "type": "multiple_choice",
+      "question": "The author says some who showed hospitality to strangers unknowingly entertained whom?",
+      "options": [
+        "Angels",
+        "Prophets",
+        "Kings",
+        "The Messiah"
+      ],
+      "correct": "Angels",
+      "verse_ref": "Hebrews 13:2",
+      "feedback": "Some have entertained angels without knowing it."
+    },
+    {
+      "id": "heb_13_3",
+      "type": "true_false",
+      "question": "The author says to obey your leaders and submit to their authority.",
+      "correct": true,
+      "verse_ref": "Hebrews 13:17",
+      "feedback": "Obey your leaders and submit to them, for they keep watch over your souls."
+    },
+    {
+      "id": "heb_13_4",
+      "type": "fill_in_the_blank",
+      "question": "Keep your lives free from the love of _____ and be content with what you have.",
+      "correct": "money",
+      "verse_ref": "Hebrews 13:5",
+      "feedback": "Keep free from the love of money and be content with what you have."
+    },
+    {
+      "id": "heb_13_5",
+      "type": "fill_in_the_blank",
+      "question": "Through Jesus let us continually offer to God a sacrifice of _____ — the fruit of lips that confess his name.",
+      "correct": "praise",
+      "verse_ref": "Hebrews 13:15",
+      "feedback": "Offer God a sacrifice of praise — the fruit of lips that confess his name."
+    }
+  ]
+}

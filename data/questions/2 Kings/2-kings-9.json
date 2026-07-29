@@ -1,0 +1,53 @@
+{
+  "book": "2 Kings",
+  "chapter": 9,
+  "questions": [
+    {
+      "id": "2-kings-9-q1",
+      "type": "multiple_choice",
+      "question": "Whom did Elisha have anointed king to destroy Ahab's house?",
+      "options": [
+        "Joram",
+        "Hazael",
+        "Jehu",
+        "Naaman"
+      ],
+      "answer": "Jehu",
+      "verse_reference": "2 Kings 9:6"
+    },
+    {
+      "id": "2-kings-9-q2",
+      "type": "multiple_choice",
+      "question": "What happened to Jezebel?",
+      "options": [
+        "She was thrown from a window and trampled",
+        "She fled the city and died in the desert",
+        "She was struck down by an archer's arrow",
+        "She drank poison rather than be taken"
+      ],
+      "answer": "She was thrown from a window and trampled",
+      "verse_reference": "2 Kings 9:33"
+    },
+    {
+      "id": "2-kings-9-q3",
+      "type": "true_false",
+      "question": "Jehu killed Joram, king of Israel, fulfilling prophecy.",
+      "answer": "true",
+      "verse_reference": "2 Kings 9:24"
+    },
+    {
+      "id": "2-kings-9-q4",
+      "type": "fill_blank",
+      "question": "_____ was anointed king to wipe out the house of Ahab.",
+      "answer": "Jehu",
+      "verse_reference": "2 Kings 9:6"
+    },
+    {
+      "id": "2-kings-9-q5",
+      "type": "fill_blank",
+      "question": "_____ was thrown down from a window, and dogs ate her body as prophesied.",
+      "answer": "Jezebel",
+      "verse_reference": "2 Kings 9:33-36"
+    }
+  ]
+}

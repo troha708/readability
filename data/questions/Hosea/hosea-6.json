@@ -1,0 +1,53 @@
+{
+  "book": "Hosea",
+  "chapter": 6,
+  "questions": [
+    {
+      "id": "hosea-6-q1",
+      "type": "multiple_choice",
+      "question": "What does Hosea 6 call the people to do?",
+      "options": [
+        "Offer up many more sacrifices to win back his favor",
+        "Build new altars for themselves on every high place",
+        "Flee away to Egypt for safety from the great foe",
+        "Return to the LORD, who has torn but will heal"
+      ],
+      "answer": "Return to the LORD, who has torn but will heal",
+      "verse_reference": "Hosea 6:1"
+    },
+    {
+      "id": "hosea-6-q2",
+      "type": "multiple_choice",
+      "question": "What does God desire more than sacrifice, according to Hosea 6?",
+      "options": [
+        "Strong armies and fortified cities",
+        "Gold and silver from the nations",
+        "Steadfast love and the knowledge of God",
+        "Burnt offerings and very many sacrifices"
+      ],
+      "answer": "Steadfast love and the knowledge of God",
+      "verse_reference": "Hosea 6:6"
+    },
+    {
+      "id": "hosea-6-q3",
+      "type": "true_false",
+      "question": "Hosea 6 says God's going out is sure as the dawn, and he will come like the rain.",
+      "answer": "true",
+      "verse_reference": "Hosea 6:3"
+    },
+    {
+      "id": "hosea-6-q4",
+      "type": "fill_blank",
+      "question": "Come, let us _____ to the LORD; for he has torn us, that he may heal us.",
+      "answer": "return",
+      "verse_reference": "Hosea 6:1"
+    },
+    {
+      "id": "hosea-6-q5",
+      "type": "fill_blank",
+      "question": "I desire steadfast love and not _____, the knowledge of God rather than burnt offerings.",
+      "answer": "sacrifice",
+      "verse_reference": "Hosea 6:6"
+    }
+  ]
+}

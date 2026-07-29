@@ -1,0 +1,56 @@
+{
+  "book": "Isaiah",
+  "chapter": 33,
+  "questions": [
+    {
+      "id": "isaiah-33-q1",
+      "type": "multiple_choice",
+      "question": "What woe opens Isaiah 33?",
+      "options": [
+        "Woe to the rich who trust in their great wealth",
+        "Woe to the prophets who prophesy out of their hearts",
+        "Woe to the city that does not heed correction",
+        "Woe to the destroyer who has not been destroyed"
+      ],
+      "answer": "Woe to the destroyer who has not been destroyed",
+      "verse_reference": "Isaiah 33:1"
+    },
+    {
+      "id": "isaiah-33-q2",
+      "type": "multiple_choice",
+      "question": "How is the LORD described in Isaiah 33?",
+      "options": [
+        "Exalted on high, filling Zion with justice",
+        "Angry, pouring out wrath without mercy",
+        "Silent, leaving the people to their fate",
+        "Hidden, far removed from the affairs of men"
+      ],
+      "answer": "Exalted on high, filling Zion with justice",
+      "verse_reference": "Isaiah 33:5"
+    },
+    {
+      "id": "isaiah-33-q3",
+      "type": "true_false",
+      "question": "Isaiah 33 says the LORD is our judge, our lawgiver, and our king; he will save us.",
+      "answer": "true",
+      "verse_reference": "Isaiah 33:22"
+    },
+    {
+      "id": "isaiah-33-q4",
+      "type": "fill_blank",
+      "question": "The LORD is our judge; the LORD is our lawgiver; the LORD is our king; he will _____ us.",
+      "answer": "save",
+      "verse_reference": "Isaiah 33:22"
+    },
+    {
+      "id": "isaiah-33-q5",
+      "type": "fill_blank",
+      "question": "Your eyes will behold the king in his _____.",
+      "answer": "beauty",
+      "accept": [
+        "glory"
+      ],
+      "verse_reference": "Isaiah 33:17"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "book": "Job",
+  "chapter": 42,
+  "questions": [
+    {
+      "id": "job-42-q1",
+      "type": "multiple_choice",
+      "question": "How did Job respond after God spoke?",
+      "options": [
+        "He blamed his friends",
+        "He stayed completely silent forever",
+        "He defended himself",
+        "He repented in dust and ashes"
+      ],
+      "answer": "He repented in dust and ashes",
+      "verse_reference": "Job 42:6"
+    },
+    {
+      "id": "job-42-q2",
+      "type": "multiple_choice",
+      "question": "What did God do for Job in the end?",
+      "options": [
+        "Gave him a brand new name and a place at the royal court",
+        "Left him poor but finally at peace with his Maker",
+        "Took him quietly away to rest among his ancestors",
+        "Restored his fortunes and gave him twice as much as before"
+      ],
+      "answer": "Restored his fortunes and gave him twice as much as before",
+      "verse_reference": "Job 42:10"
+    },
+    {
+      "id": "job-42-q3",
+      "type": "true_false",
+      "question": "God was angry with Job's three friends for not speaking what was right, as Job had.",
+      "answer": "true",
+      "verse_reference": "Job 42:7"
+    },
+    {
+      "id": "job-42-q4",
+      "type": "fill_blank",
+      "question": "Job said, 'I had heard of you by the hearing of the ear, but now my _____ see you.'",
+      "answer": "eyes",
+      "accept": [
+        "eye"
+      ],
+      "verse_reference": "Job 42:5"
+    },
+    {
+      "id": "job-42-q5",
+      "type": "fill_blank",
+      "question": "Job prayed for his friends, and the LORD accepted Job's _____.",
+      "answer": "prayer",
+      "verse_reference": "Job 42:9"
+    }
+  ]
+}

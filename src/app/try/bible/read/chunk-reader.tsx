@@ -1,0 +1,2584 @@
+"use client";
+
+import React, {
+  useCallback,
+  useEffect,
+  useLayoutEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
+import Link from "next/link";
+import { useRouter, useSearchParams } from "next/navigation";
+import { isChapterUrlSyncSuppressed } from "@/lib/reading-nav-guard";
+import {
+  getReadingMode,
+  setReadingMode,
+  saveLastReadUrl,
+  type ReadingMode,
+} from "@/lib/reading-progress";
+import {
+  markChapterComplete,
+  markReadingComplete,
+  loadAllProgress,
+  emitMilestone,
+} from "@/lib/progress-service";
+import { Logo } from "@/components/logo";
+import { FormattedChunkText, type SectionHeading } from "./format-chunk-text";
+import type { BookIntro } from "@/lib/content/chapter-data";
+import { InlineQuiz, type QuizQuestion } from "./inline-quiz";
+import { bibleBookSortIndex, chapterUnit, OT_BOOK_ORDER } from "@/lib/bible-book-order";
+import { isOverviewAtStart } from "@/lib/overview-placement";
+import { parseScriptureRefs } from "@/lib/scripture-refs";
+import { VersePeekLink } from "@/components/verse-peek";
+import { SITE_URL } from "@/lib/site";
+import { createPortal } from "react-dom";
+import {
+  type HighlightColor,
+  type VerseHighlight,
+  type HighlightsMap,
+  loadHighlights,
+  saveHighlight,
+  removeHighlight,
+  getHighlightsForChapter,
+  HIGHLIGHT_COLORS,
+  highlightColorInfo,
+} from "@/lib/highlights-service";
+import { SearchModal } from "@/components/search-modal";
+import { SiteFooter } from "@/components/site-footer";
+import { Tutorial } from "@/components/tutorial";
+import { FirstContactHint } from "@/components/first-contact-hint";
+import { fetchChapter, fetchBookPlaces } from "@/lib/content/client";
+import type { BookPlaces, ChapterPlaces } from "@/lib/content/places";
+import { VerseSheet } from "./verse-sheet";
+import { ChapterMapSheet } from "./chapter-map-sheet";
+
+// ── Types ────────────────────────────────────────────────────
+
+type LoadedChapter = {
+  chapterNumber: number;
+  text: string;
+  questions: QuizQuestion[];
+  headings: SectionHeading[] | null;
+};
+
+type VersionInfo = { abbr: string; name: string };
+
+type CompletionAge = "recent" | "fading" | "old";
+
+function getCompletionAge(timestamp: string | undefined): CompletionAge {
+  if (!timestamp) return "old";
+  const days = (Date.now() - new Date(timestamp).getTime()) / (1000 * 60 * 60 * 24);
+  if (days <= 7) return "recent";
+  if (days <= 30) return "fading";
+  return "old";
+}
+
+// Build a standard Bible reference (e.g. "Matthew 6:5-9", or cross-chapter
+// "Matthew 6:5-7:2") from the set of selected verses.
+function formatReference(
+  bookName: string,
+  verses: { chapter: number; verse: number }[],
+): string {
+  if (verses.length === 0) return bookName;
+  const sorted = [...verses].sort(
+    (a, b) => a.chapter - b.chapter || a.verse - b.verse,
+  );
+  const first = sorted[0];
+  const last = sorted[sorted.length - 1];
+  if (first.chapter === last.chapter) {
+    return first.verse === last.verse
+      ? `${bookName} ${first.chapter}:${first.verse}`
+      : `${bookName} ${first.chapter}:${first.verse}-${last.verse}`;
+  }
+  return `${bookName} ${first.chapter}:${first.verse}-${last.chapter}:${last.verse}`;
+}
+
+// ── Search phrase spotlight ──────────────────────────────────
+//
+// A search result jumps to the chapter and briefly highlights the exact matched
+// phrase. The phrase is plain text, but the rendered scripture splits it across
+// nodes (verse-number sups, divine-name spans, bionic bold), so we concatenate
+// the body text nodes, locate the phrase with a whitespace- and quote-tolerant
+// regex, then map the match back onto a DOM Range.
+
+function buildPhraseRegex(phrase: string): RegExp | null {
+  const trimmed = phrase.trim();
+  if (!trimmed) return null;
+  const source = trimmed
+    .replace(/[.*+?^${}()|[\]\\]/g, "\\$&") // escape regex metacharacters
+    .replace(/['‘’]/g, "['‘’]") // any apostrophe variant
+    .replace(/["“”]/g, '["“”]') // any quote variant
+    .replace(/\s+/g, "\\s+"); // tolerate whitespace differences
+  try {
+    return new RegExp(source, "i");
+  } catch {
+    return null;
+  }
+}
+
+function findPhraseRange(root: HTMLElement, phrase: string): Range | null {
+  const re = buildPhraseRegex(phrase);
+  if (!re) return null;
+
+  const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+    acceptNode(node) {
+      const el = node.parentElement;
+      if (!el) return NodeFilter.FILTER_REJECT;
+      // Skip verse numbers, headings, and buttons — match only the scripture
+      // prose the reader sees as body text.
+      if (el.closest("[data-verse-num], sup, h3, button")) {
+        return NodeFilter.FILTER_REJECT;
+      }
+      return NodeFilter.FILTER_ACCEPT;
+    },
+  });
+
+  const map: { node: Text; start: number }[] = [];
+  let combined = "";
+  let n: Node | null;
+  while ((n = walker.nextNode())) {
+    const t = n as Text;
+    map.push({ node: t, start: combined.length });
+    combined += t.nodeValue ?? "";
+  }
+  if (map.length === 0) return null;
+
+  const m = re.exec(combined);
+  if (!m) return null;
+
+  // Binary-search the node whose text run contains a given combined-string index.
+  const locate = (idx: number): { node: Text; offset: number } => {
+    let lo = 0;
+    let hi = map.length - 1;
+    let res = 0;
+    while (lo <= hi) {
+      const mid = (lo + hi) >> 1;
+      if (map[mid].start <= idx) {
+        res = mid;
+        lo = mid + 1;
+      } else {
+        hi = mid - 1;
+      }
+    }
+    return { node: map[res].node, offset: idx - map[res].start };
+  };
+
+  const startPos = locate(m.index);
+  const endPos = locate(m.index + m[0].length);
+  const range = document.createRange();
+  range.setStart(startPos.node, Math.min(startPos.offset, startPos.node.length));
+  range.setEnd(endPos.node, Math.min(endPos.offset, endPos.node.length));
+  return range;
+}
+
+type HighlightRegistry = {
+  set(name: string, highlight: unknown): void;
+  delete(name: string): void;
+};
+
+// Spotlight a range for ~2s. Prefers the CSS Custom Highlight API (no DOM
+// mutation, spans multiple nodes cleanly); where unavailable, flashes the
+// phrase's containing block instead. Returns a cleanup function.
+function spotlightRange(range: Range): () => void {
+  const registry =
+    (CSS as unknown as { highlights?: HighlightRegistry }).highlights ?? null;
+  const HighlightCtor = (
+    window as unknown as { Highlight?: new (r: Range) => unknown }
+  ).Highlight;
+
+  if (registry && HighlightCtor) {
+    registry.set("search-phrase", new HighlightCtor(range));
+    const id = window.setTimeout(() => registry.delete("search-phrase"), 2200);
+    return () => {
+      window.clearTimeout(id);
+      registry.delete("search-phrase");
+    };
+  }
+
+  const block = range.startContainer.parentElement?.closest(
+    "p, li, blockquote, div",
+  ) as HTMLElement | null;
+  if (block) {
+    block.classList.add("verse-flash");
+    const id = window.setTimeout(() => block.classList.remove("verse-flash"), 2500);
+    return () => {
+      window.clearTimeout(id);
+      block.classList.remove("verse-flash");
+    };
+  }
+  return () => {};
+}
+
+// ── Icons ────────────────────────────────────────────────────
+
+function SunIcon() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="12" cy="12" r="5" />
+      <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+    </svg>
+  );
+}
+
+function MoonIcon() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+    </svg>
+  );
+}
+
+// ── ChapterSection ───────────────────────────────────────────
+
+type ChapterSectionProps = {
+  bookName: string;
+  chapter: LoadedChapter;
+  bionic: boolean;
+  showCrossRefs: boolean;
+  redLetter: boolean;
+  fontSize: number;
+  mode: ReadingMode;
+  chapterHighlights: Record<number, VerseHighlight>;
+  onHeadingMount: (chNum: number, el: HTMLElement | null) => void;
+  onReadingComplete: (chNum: number) => void;
+  onNextChapter: (chNum: number) => void;
+  onSkipQuiz: (chNum: number) => void;
+  onSwitchToReadMode: (chNum: number) => void;
+};
+
+const ChapterSection = React.memo(function ChapterSection({
+  bookName,
+  chapter,
+  bionic,
+  showCrossRefs,
+  redLetter,
+  fontSize,
+  mode,
+  chapterHighlights,
+  onHeadingMount,
+  onReadingComplete,
+  onNextChapter,
+  onSkipQuiz,
+  onSwitchToReadMode,
+}: ChapterSectionProps) {
+  const { chapterNumber, text, questions, headings } = chapter;
+  const endSentinelRef = useRef<HTMLDivElement>(null);
+  const readMarkedRef = useRef(false);
+
+  const headingCallbackRef = useCallback(
+    (el: HTMLElement | null) => onHeadingMount(chapterNumber, el),
+    [chapterNumber, onHeadingMount],
+  );
+
+  // Use refs for callbacks to avoid stale closures in the observer
+  const onReadingCompleteRef = useRef(onReadingComplete);
+  const onNextChapterRef = useRef(onNextChapter);
+  const modeRef = useRef(mode);
+  useEffect(() => { onReadingCompleteRef.current = onReadingComplete; }, [onReadingComplete]);
+  useEffect(() => { onNextChapterRef.current = onNextChapter; }, [onNextChapter]);
+  useEffect(() => { modeRef.current = mode; }, [mode]);
+
+  useEffect(() => {
+    const el = endSentinelRef.current;
+    if (!el) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting && !readMarkedRef.current) {
+          readMarkedRef.current = true;
+          onReadingCompleteRef.current(chapterNumber);
+          if (modeRef.current === "read") {
+            onNextChapterRef.current(chapterNumber);
+          }
+        }
+      },
+      { threshold: 0.1 },
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [chapterNumber]);
+
+  return (
+    <section className="mb-16" data-chapter={chapterNumber}>
+      <article
+        ref={headingCallbackRef}
+        className="max-w-none font-scripture font-[450] text-neutral-800 dark:font-normal dark:text-neutral-300"
+        style={{ fontSize: `${fontSize}px` }}
+      >
+        <FormattedChunkText
+          chunkText={text}
+          bionic={bionic}
+          showCrossRefs={showCrossRefs}
+          redLetter={redLetter}
+          highlights={chapterHighlights}
+          headings={headings ?? undefined}
+          chapterNumber={chapterNumber}
+        />
+      </article>
+
+      {/* End-of-chapter sentinel — triggers reading complete */}
+      <div ref={endSentinelRef} className="h-2" />
+
+      {/* Inline quiz (study mode only) */}
+      {mode === "study" && (
+        <div className="mt-8">
+          <InlineQuiz
+            bookName={bookName}
+            chapterNumber={chapterNumber}
+            questions={questions}
+            onComplete={() => onNextChapter(chapterNumber)}
+            onSkip={() => onSkipQuiz(chapterNumber)}
+            onSwitchToRead={() => onSwitchToReadMode(chapterNumber)}
+          />
+        </div>
+      )}
+    </section>
+  );
+});
+
+// ── NotesDrawer ─────────────────────────────────────────────
+
+function NotesDrawer({
+  bookName,
+  highlights,
+  onClose,
+  onScrollToVerse,
+}: {
+  bookName: string;
+  highlights: HighlightsMap;
+  onClose: () => void;
+  onScrollToVerse: (chapter: number, verse: number) => void;
+}) {
+  // Filter highlights for current book, group consecutive same-color/note verses into ranges
+  const rawHighlights: { chapter: number; verse: number; hl: VerseHighlight }[] = [];
+  for (const [key, hl] of Object.entries(highlights)) {
+    const parts = key.split(":");
+    if (parts[0] === bookName) {
+      rawHighlights.push({
+        chapter: parseInt(parts[1], 10),
+        verse: parseInt(parts[2], 10),
+        hl,
+      });
+    }
+  }
+  rawHighlights.sort((a, b) => a.chapter - b.chapter || a.verse - b.verse);
+
+  // Group consecutive verses with same chapter, color, and note into ranges
+  type VerseRange = { chapter: number; startVerse: number; endVerse: number; hl: VerseHighlight };
+  const groupedHighlights: VerseRange[] = [];
+  for (const h of rawHighlights) {
+    const last = groupedHighlights[groupedHighlights.length - 1];
+    if (
+      last &&
+      last.chapter === h.chapter &&
+      last.hl.color === h.hl.color &&
+      last.hl.note === h.hl.note &&
+      h.verse === last.endVerse + 1
+    ) {
+      last.endVerse = h.verse;
+    } else {
+      groupedHighlights.push({ chapter: h.chapter, startVerse: h.verse, endVerse: h.verse, hl: h.hl });
+    }
+  }
+
+  const chapters = [...new Set(groupedHighlights.map((h) => h.chapter))].sort((a, b) => a - b);
+
+  return (
+    <div className="border-b border-neutral-200 bg-neutral-50 px-4 py-4 dark:border-neutral-700 dark:bg-neutral-800">
+      <div className="mx-auto max-w-2xl">
+        <div className="mb-3 flex items-center justify-between">
+          <h2 className="text-sm font-bold text-neutral-700 dark:text-neutral-200">
+            Highlights & Notes — {bookName}
+          </h2>
+          <button
+            onClick={onClose}
+            aria-label="Close highlights and notes"
+            className="rounded-md p-1 text-neutral-400 hover:bg-neutral-200 hover:text-neutral-600 dark:hover:bg-neutral-700 dark:hover:text-neutral-300"
+          >
+            ×
+          </button>
+        </div>
+
+        {groupedHighlights.length === 0 ? (
+          <div className="py-6 text-center">
+            <p className="text-sm text-neutral-400 dark:text-neutral-500">
+              No highlights yet.
+            </p>
+            <p className="mt-1 text-xs text-neutral-400 dark:text-neutral-500">
+              Select any text while reading, then pick a color to highlight it.
+            </p>
+          </div>
+        ) : (
+          <div className="max-h-72 space-y-4 overflow-y-auto pr-1">
+            {chapters.map((ch) => (
+              <div key={ch}>
+                <p className="mb-1.5 text-xs font-bold uppercase tracking-wider text-neutral-400 dark:text-neutral-500">
+                  {chapterUnit(bookName)} {ch}
+                </p>
+                <div className="space-y-1.5">
+                  {groupedHighlights
+                    .filter((h) => h.chapter === ch)
+                    .map((h) => {
+                      const colorInfo = highlightColorInfo(h.hl.color);
+                      const verseLabel = h.startVerse === h.endVerse
+                        ? `${h.startVerse}`
+                        : `${h.startVerse}-${h.endVerse}`;
+                      return (
+                        <button
+                          key={`${h.chapter}:${h.startVerse}-${h.endVerse}`}
+                          onClick={() => onScrollToVerse(h.chapter, h.startVerse)}
+                          className={`block w-full rounded-lg px-3 py-2 text-left transition-all hover:ring-1 hover:ring-inset ${colorInfo.bg} ${colorInfo.ring.replace("ring-", "hover:ring-")}`}
+                        >
+                          <div className="flex items-center gap-2">
+                            <span className={`inline-block h-2.5 w-2.5 rounded-full ${colorInfo.dot}`} />
+                            <span className="text-xs font-bold text-neutral-700 dark:text-neutral-200">
+                              {bookName} {ch}:{verseLabel}
+                            </span>
+                            <span className="text-[0.6rem] text-neutral-400 dark:text-neutral-500">
+                              tap to jump
+                            </span>
+                          </div>
+                          {h.hl.note && (
+                            <p className="mt-1 pl-[18px] text-sm leading-snug text-neutral-600 dark:text-neutral-300">
+                              {h.hl.note}
+                            </p>
+                          )}
+                        </button>
+                      );
+                    })}
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+
+        <Link
+          href="/try/bible/highlights"
+          className="mt-3 flex items-center justify-center gap-1.5 rounded-lg border border-neutral-200 py-2 text-xs font-semibold text-neutral-500 transition-colors hover:bg-neutral-100 hover:text-neutral-700 dark:border-neutral-600 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-200"
+        >
+          View all notes
+          <span aria-hidden="true">→</span>
+        </Link>
+      </div>
+    </div>
+  );
+}
+
+// ── Book overview body ───────────────────────────────────────
+
+// Calmer than the dotted underline notes use: the intros are far more
+// reference-dense, so the links sit quietly in the amber prose and only firm
+// up on hover, rather than turning the essay into a field of underlines.
+const OVERVIEW_REF_CLASS =
+  "cursor-pointer underline decoration-dotted decoration-amber-700/30 underline-offset-2 transition-colors hover:decoration-amber-700/70 dark:decoration-amber-400/25 dark:hover:decoration-amber-400/60";
+
+/**
+ * Renders overview prose with its scripture references (both "Mark 1:1" and
+ * bare same-book "8:27-33" forms) turned into verse-peek links. No current
+ * chapter is passed: a whole-book intro has none on screen, so every reference
+ * is a live jump.
+ */
+function linkifyOverview(
+  text: string,
+  book: string,
+  versionAbbr: string,
+): React.ReactNode {
+  const refs = parseScriptureRefs(text, book);
+  if (refs.length === 0) return text;
+  const nodes: React.ReactNode[] = [];
+  let last = 0;
+  refs.forEach((r, i) => {
+    if (r.index > last) nodes.push(text.slice(last, r.index));
+    nodes.push(
+      <VersePeekLink
+        key={i}
+        reference={r}
+        versionAbbr={versionAbbr}
+        className={OVERVIEW_REF_CLASS}
+      >
+        {text.slice(r.index, r.index + r.length)}
+      </VersePeekLink>,
+    );
+    last = r.index + r.length;
+  });
+  if (last < text.length) nodes.push(text.slice(last));
+  return <>{nodes}</>;
+}
+
+/**
+ * The start-of-book overview: the Tyndale introduction (Purpose/Author/Date/
+ * Setting sidebar plus the introductory essay) on the web reader, or a legacy
+ * summary string on the offline reader until its bundle is rebuilt.
+ */
+function BookOverviewBody({
+  bookName,
+  intro,
+  summary,
+  fontSize,
+  versionAbbr,
+}: {
+  bookName: string;
+  intro?: BookIntro | null;
+  summary?: string | null;
+  fontSize: number;
+  versionAbbr: string;
+}) {
+  if (!intro) {
+    return (
+      <>
+        <h2 className="mb-4 text-lg font-bold text-amber-800 dark:text-amber-300">
+          {bookName}
+        </h2>
+        {(summary ?? "").split("\n\n").map((paragraph, i) => (
+          <p
+            key={i}
+            className="mb-4 font-scripture font-[450] leading-relaxed text-neutral-800 last:mb-0 dark:font-normal dark:text-neutral-300"
+            style={{ fontSize: `${fontSize}px` }}
+          >
+            {linkifyOverview(paragraph, bookName, versionAbbr)}
+          </p>
+        ))}
+      </>
+    );
+  }
+
+  return (
+    <>
+      <h2 className="mb-4 text-lg font-bold text-amber-800 dark:text-amber-300">
+        {bookName}
+      </h2>
+      {intro.fields.length > 0 && (
+        <dl className="mb-5">
+          {intro.fields.map((f) => (
+            <div key={f.label} className="mb-2 last:mb-0">
+              <dt className="text-[0.7rem] font-bold uppercase tracking-widest text-amber-800 dark:text-amber-400/90">
+                {f.label}
+              </dt>
+              <dd
+                className="font-scripture font-[450] leading-relaxed text-neutral-800 dark:font-normal dark:text-neutral-300"
+                style={{ fontSize: `${fontSize}px` }}
+              >
+                {linkifyOverview(f.value, bookName, versionAbbr)}
+              </dd>
+            </div>
+          ))}
+        </dl>
+      )}
+      {intro.sections.map((section, si) => (
+        <div key={si} className="mb-5 last:mb-0">
+          {section.heading && (
+            <h3 className="mb-2 text-sm font-bold uppercase tracking-wide text-amber-800 dark:text-amber-300">
+              {section.heading}
+            </h3>
+          )}
+          {section.paragraphs.map((paragraph, pi) => (
+            <p
+              key={pi}
+              className="mb-3 font-scripture font-[450] leading-relaxed text-neutral-800 last:mb-0 dark:font-normal dark:text-neutral-300"
+              style={{ fontSize: `${fontSize}px` }}
+            >
+              {linkifyOverview(paragraph, bookName, versionAbbr)}
+            </p>
+          ))}
+        </div>
+      ))}
+      <p className="mt-6 text-[11px] text-amber-700 dark:text-amber-400/60">
+        Adapted from{" "}
+        <a
+          href="https://tyndaleopenresources.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline decoration-amber-400/50 underline-offset-2 hover:text-amber-800 dark:hover:text-amber-300"
+        >
+          Tyndale Open Study Notes
+        </a>
+        , © Tyndale House Publishers (CC BY-SA 4.0)
+      </p>
+    </>
+  );
+}
+
+// ── ChunkReader ──────────────────────────────────────────────
+
+type Props = {
+  bookName: string;
+  initialChapterNumber: number;
+  initialText: string;
+  initialQuestions: QuizQuestion[];
+  initialHeadings: SectionHeading[] | null;
+  // The start-of-book overview: the Tyndale intro on the web reader; the offline
+  // (mobile) reader still passes a legacy summary string until its bundle is
+  // rebuilt. Exactly one is set.
+  bookIntro?: BookIntro | null;
+  bookSummary?: string | null;
+  scrollToOverview?: boolean;
+  versionAbbr: string;
+  versionName: string;
+  availableVersions: VersionInfo[];
+  chapterNumbers: number[];
+  allBookNames: string[];
+};
+
+export function ChunkReader({
+  bookName,
+  initialChapterNumber,
+  initialText,
+  initialQuestions,
+  initialHeadings,
+  bookIntro,
+  bookSummary,
+  scrollToOverview,
+  versionAbbr,
+  availableVersions,
+  chapterNumbers,
+  allBookNames,
+}: Props) {
+  const router = useRouter();
+  // Read reactively (not just at mount) so a search jump lands even when the
+  // target is the chapter already on screen — same book+chapter keeps the same
+  // component key, so ChunkReader doesn't remount and a mount-only effect never
+  // fires.
+  const highlightParam = useSearchParams().get("highlight");
+
+  // Display settings
+  const [dark, setDark] = useState(false);
+  const [bionic, setBionic] = useState(false);
+  // Verse-number superscripts can be hidden for a more natural read (default on).
+  const [verseNumbers, setVerseNumbers] = useState(true);
+  // BSB ships cross-references (parallel passages) beside section headings.
+  // Off by default; readers can opt in via the settings menu under BSB.
+  const [showCrossRefs, setShowCrossRefs] = useState(false);
+  // Words of Jesus carry <wj> markup where the source text provides it.
+  // Rendered in the normal body colour by default; opt-in via settings.
+  const [redLetter, setRedLetter] = useState(false);
+  const [mode, setMode] = useState<ReadingMode>("read");
+  const [fontSize, setFontSize] = useState(17);
+  const FONT_SIZE_MIN = 14;
+  const FONT_SIZE_MAX = 28;
+  const FONT_SIZE_STEP = 1;
+
+  // Continuous chapter state
+  const [loadedChapters, setLoadedChapters] = useState<LoadedChapter[]>([
+    {
+      chapterNumber: initialChapterNumber,
+      text: initialText,
+      questions: initialQuestions,
+      headings: initialHeadings,
+    },
+  ]);
+  const [loadingNext, setLoadingNext] = useState(false);
+  const [visibleChapterNumber, setVisibleChapterNumber] = useState(initialChapterNumber);
+  const visibleChapterRef = useRef(initialChapterNumber);
+
+  // Track loaded chapter numbers to prevent duplicates
+  const loadedChapterNums = useRef<Set<number>>(new Set([initialChapterNumber]));
+  const loadingRef = useRef(false);
+  const [loadingPrev, setLoadingPrev] = useState(false);
+  const loadingPrevRef = useRef(false);
+  const topSentinelRef = useRef<HTMLDivElement>(null);
+  const pendingScrollAdjust = useRef<{ anchor: HTMLElement; top: number } | null>(null);
+
+  // Progress for chapter strip coloring
+  const [chapterTimestamps, setChapterTimestamps] = useState<Record<string, string>>({});
+  const [readDone, setReadDone] = useState<Record<string, boolean>>({});
+  const [quizDone, setQuizDone] = useState<Record<string, boolean>>({});
+
+  // Highlights state
+  const [allHighlights, setAllHighlights] = useState<HighlightsMap>({});
+  const [notesDrawerOpen, setNotesDrawerOpen] = useState(false);
+
+  // Search
+  const [searchOpen, setSearchOpen] = useState(false);
+
+  // Chapter map — the whole book's place index is fetched once, so the Map
+  // button can show/hide instantly as the visible chapter changes. The open
+  // sheet holds a snapshot: scrolling the reader behind it must not swap or
+  // unmount the map mid-interaction.
+  const [bookPlaces, setBookPlaces] = useState<BookPlaces | null>(null);
+  const [mapSheet, setMapSheet] = useState<{ chapter: number; data: ChapterPlaces } | null>(null);
+
+  useEffect(() => {
+    function onKey(e: KeyboardEvent) {
+      if ((e.metaKey || e.ctrlKey) && e.key === "k") {
+        e.preventDefault();
+        setSearchOpen((o) => !o);
+      }
+    }
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, []);
+
+  useEffect(() => {
+    let cancelled = false;
+    setBookPlaces(null);
+    setMapSheet(null);
+    fetchBookPlaces(bookName).then((p) => {
+      if (!cancelled) setBookPlaces(p);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [bookName]);
+
+  const chapterPlaces = bookPlaces?.[String(visibleChapterNumber)] ?? null;
+
+  // Scroll the reader to a verse (used by the notes drawer and chapter map);
+  // falls back to the chapter heading, or navigates if it isn't loaded.
+  function scrollToVerse(chapter: number, verse: number) {
+    const section = contentRef.current?.querySelector(`section[data-chapter="${chapter}"]`);
+    if (section) {
+      const el = section.querySelector(`[data-verse-num="${verse}"]`);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth", block: "center" });
+        return;
+      }
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+      return;
+    }
+    router.push(readUrl({ chapter }));
+  }
+
+  // Dropdown state
+  const [bookOpen, setBookOpen] = useState(false);
+  const [settingsOpen, setSettingsOpen] = useState(false);
+  const bookRef = useRef<HTMLDivElement>(null);
+  const settingsRef = useRef<HTMLDivElement>(null);
+
+  // Header height — drives the notes drawer's sticky offset so its top isn't
+  // hidden behind the (variable-height) header.
+  const headerRef = useRef<HTMLElement>(null);
+  const [headerHeight, setHeaderHeight] = useState(57);
+  useEffect(() => {
+    const el = headerRef.current;
+    if (!el) return;
+    const update = () => setHeaderHeight(el.offsetHeight);
+    update();
+    const ro = new ResizeObserver(update);
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
+
+  // Chapter strip
+  const chapterStripRef = useRef<HTMLDivElement>(null);
+  const activeChapterRef = useRef<HTMLAnchorElement>(null);
+  const [chapterStripJustify, setChapterStripJustify] = useState<"center" | "flex-start">("center");
+
+  // Chapter heading elements for scroll detection
+  const headingRefs = useRef<Map<number, HTMLElement>>(new Map());
+
+  // Book overview section. The overview is now the Tyndale book introduction and
+  // renders at the start of every book (see lib/overview-placement); the offline
+  // reader may still pass a legacy summary string instead.
+  const hasOverview = !!bookIntro || !!bookSummary;
+  const overviewAtStart = hasOverview && isOverviewAtStart(bookName);
+  const [summaryVisible, setSummaryVisible] = useState(false);
+  // Start-placed overviews render collapsed so they don't wall off the scripture;
+  // one tap (or arriving via an overview link) expands them.
+  const [overviewExpanded, setOverviewExpanded] = useState(false);
+  const summaryHeadingRef = useRef<HTMLDivElement>(null);
+  const summaryStripRef = useRef<HTMLButtonElement>(null);
+
+  const sortedBooks = [...allBookNames].sort(
+    (a, b) => bibleBookSortIndex(a) - bibleBookSortIndex(b),
+  );
+  // First New Testament book in the sorted list, used to draw an OT/NT divider.
+  const firstNtBook = sortedBooks.find(
+    (n) => bibleBookSortIndex(n) >= OT_BOOK_ORDER.length,
+  );
+
+  // ── Init ──────────────────────────────────────────────────
+
+  // Continue Reading anchoring: whether this session has saved a position yet
+  // (deep-linked visits defer to the first interaction), and a pending
+  // debounced save's chapter so a completion can flush it first.
+  const lastReadSavedRef = useRef(false);
+  const pendingLastReadRef = useRef<number | null>(null);
+
+  useEffect(() => {
+    setDark(document.documentElement.classList.contains("dark"));
+    setBionic(localStorage.getItem("bionic") === "true");
+    setVerseNumbers(localStorage.getItem("verseNumbers") !== "false");
+    setShowCrossRefs(localStorage.getItem("bsbCrossRefs") === "true");
+    setRedLetter(localStorage.getItem("redLetter") === "true");
+    setMode(getReadingMode());
+    const saved = localStorage.getItem("bibleFontSize");
+    if (saved) {
+      const n = parseInt(saved, 10);
+      if (n >= FONT_SIZE_MIN && n <= FONT_SIZE_MAX) setFontSize(n);
+    }
+    // Anchor Continue Reading on this open — unless it's a ?verse=/?highlight=
+    // deep link (shared quote, cross-ref chip, search hit, highlight
+    // back-link). Those are look-ups, not a chosen reading position: they
+    // anchor only on the visitor's first interaction (see the intent
+    // listeners), so a glance-and-leave never moves the Continue button, the
+    // daily reminder, or the landing redirect off the real frontier.
+    const q = new URLSearchParams(window.location.search);
+    if (!q.has("verse") && !q.has("highlight")) {
+      lastReadSavedRef.current = true;
+      saveLastReadUrl(`/try/bible/read?book=${encodeURIComponent(bookName)}&chapter=${initialChapterNumber}&version=${versionAbbr}`);
+    }
+  }, []);
+
+  useEffect(() => {
+    loadAllProgress().then(({ read, quiz, timestamps }) => {
+      setReadDone(read);
+      setQuizDone(quiz);
+      setChapterTimestamps(timestamps);
+    });
+    loadHighlights().then(setAllHighlights);
+  }, []);
+
+  // A shared-quote deep link (?verse=N) means someone followed a link to read
+  // a specific passage — don't greet them with the tutorial overlay. Captured
+  // once at mount because the scroll-spy strips the param from the URL.
+  const [cameFromShareLink] = useState(
+    () =>
+      typeof window !== "undefined" &&
+      new URLSearchParams(window.location.search).has("verse"),
+  );
+
+  // While a deep-link (verse or search-phrase) is settling, hold off the
+  // prev-chapter auto-load: a chapter prepended above the viewport would strand
+  // the reader a chapter-height too low, and the compensating scroll can race
+  // the jump. Cleared once the position is stable, which re-arms the top sentinel.
+  const [suppressPrevLoad, setSuppressPrevLoad] = useState(
+    () =>
+      cameFromShareLink ||
+      (typeof window !== "undefined" &&
+        new URLSearchParams(window.location.search).has("highlight")),
+  );
+
+  // Deep-link: scroll to ?verse=N (e.g. from a copied quote's share link).
+  // Retries briefly because the verse spans render with the first paint but
+  // layout may still be settling. The jump is instant (not smooth) so nothing
+  // can cancel it mid-animation, and the position is re-asserted for ~2.5s
+  // against late layout shifts — unless the reader starts scrolling on
+  // their own.
+  useEffect(() => {
+    const verse = parseInt(
+      new URLSearchParams(window.location.search).get("verse") ?? "",
+      10,
+    );
+    if (!verse) {
+      // A search-phrase deep-link runs its own settling; only clear suppression
+      // here when there's no highlight jump waiting to land.
+      if (!new URLSearchParams(window.location.search).has("highlight")) {
+        setSuppressPrevLoad(false);
+      }
+      return;
+    }
+    let attempts = 0;
+    let timer: number | undefined;
+    let guard: number | undefined;
+    let interacted = false;
+    const markInteracted = () => {
+      interacted = true;
+    };
+    window.addEventListener("wheel", markInteracted, { passive: true, once: true });
+    window.addEventListener("touchstart", markInteracted, { passive: true, once: true });
+    window.addEventListener("keydown", markInteracted, { once: true });
+
+    const tryScroll = () => {
+      const section = contentRef.current?.querySelector(
+        `section[data-chapter="${initialChapterNumber}"]`,
+      );
+      const el = section?.querySelector(`[data-verse-num="${verse}"]`);
+      if (el instanceof HTMLElement) {
+        // Land on the START of the quote: top-align the first verse just below
+        // the sticky header so the reader begins at the quote rather than
+        // somewhere past it. scroll-margin clears the (variable-height) header.
+        const offset = (headerRef.current?.offsetHeight ?? headerHeight) + 16;
+        el.style.scrollMarginTop = `${offset}px`;
+        el.scrollIntoView({ block: "start" });
+        const para = el.closest("p") ?? el.parentElement;
+        if (para) {
+          para.classList.add("verse-flash");
+          window.setTimeout(() => para.classList.remove("verse-flash"), 2600);
+        }
+        let checks = 0;
+        guard = window.setInterval(() => {
+          if (!interacted) {
+            const r = el.getBoundingClientRect();
+            // Re-pin to the top if late layout shifts nudge it away.
+            if (Math.abs(r.top - offset) > 24) {
+              el.scrollIntoView({ block: "start" });
+            }
+          }
+          if (interacted || ++checks >= 10) {
+            window.clearInterval(guard);
+            setSuppressPrevLoad(false);
+          }
+        }, 250);
+      } else if (++attempts < 10) {
+        timer = window.setTimeout(tryScroll, 100);
+      } else {
+        setSuppressPrevLoad(false);
+      }
+    };
+    timer = window.setTimeout(tryScroll, 100);
+    return () => {
+      window.clearTimeout(timer);
+      window.clearInterval(guard);
+      window.removeEventListener("wheel", markInteracted);
+      window.removeEventListener("touchstart", markInteracted);
+      window.removeEventListener("keydown", markInteracted);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // Search deep-link: jump to and briefly spotlight the exact phrase a search
+  // result matched (?highlight=…). The chapter renders with the first paint but
+  // layout may still be settling, so retry briefly until the phrase is found.
+  // The jump is instant (not smooth) so the prev-chapter prepend's compensating
+  // scroll can't cancel it mid-animation and fling the reader away; prev-load
+  // stays suppressed until the phrase lands (or the reader takes over).
+  useEffect(() => {
+    const phrase = highlightParam;
+    if (!phrase) return;
+
+    // A same-chapter search result doesn't remount the reader, so the
+    // mount-time suppression is long gone. Re-suppress: the route's
+    // scroll-to-top puts the top sentinel in view, and a previous chapter
+    // prepending mid-jump is exactly the fling this guards against.
+    setSuppressPrevLoad(true);
+
+    let attempts = 0;
+    let findTimer: number | undefined;
+    let releaseTimer: number | undefined;
+    let cleanup: (() => void) | undefined;
+    let interacted = false;
+
+    const release = () => setSuppressPrevLoad(false);
+    const onInteract = () => {
+      interacted = true;
+      release();
+    };
+    window.addEventListener("wheel", onInteract, { passive: true, once: true });
+    window.addEventListener("touchstart", onInteract, { passive: true, once: true });
+    window.addEventListener("keydown", onInteract, { once: true });
+
+    const tryFlash = () => {
+      const section = contentRef.current?.querySelector(
+        `section[data-chapter="${initialChapterNumber}"]`,
+      );
+      if (section instanceof HTMLElement) {
+        const range = findPhraseRange(section, phrase);
+        if (range && range.getClientRects().length > 0) {
+          const offset = (headerRef.current?.offsetHeight ?? headerHeight) + 24;
+          const top = window.scrollY + range.getBoundingClientRect().top - offset;
+          window.scrollTo({ top: Math.max(0, top) }); // instant — see note above
+          cleanup = spotlightRange(range);
+          // Note: don't strip ?highlight= here. In the App Router a raw
+          // history.replaceState syncs back into useSearchParams, which would
+          // flip highlightParam to null, re-run this effect, and its cleanup
+          // would clear the spotlight instantly. The [highlightParam] dep
+          // already stops a scroll from re-flashing, so leaving the param is
+          // both correct and harmless (a reload simply re-flashes).
+          // Re-arm the prev-chapter auto-load once the position has settled.
+          releaseTimer = window.setTimeout(() => {
+            if (!interacted) release();
+          }, 800);
+          return;
+        }
+      }
+      if (++attempts < 12) findTimer = window.setTimeout(tryFlash, 100);
+      else release(); // phrase not found — don't leave prev-load stuck off
+    };
+    findTimer = window.setTimeout(tryFlash, 120);
+
+    return () => {
+      window.clearTimeout(findTimer);
+      window.clearTimeout(releaseTimer);
+      cleanup?.();
+      window.removeEventListener("wheel", onInteract);
+      window.removeEventListener("touchstart", onInteract);
+      window.removeEventListener("keydown", onInteract);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [highlightParam]);
+
+  // Auto-scroll to overview when arriving via overview link
+  const didScrollToOverview = useRef(false);
+  useEffect(() => {
+    if (!scrollToOverview || didScrollToOverview.current || !hasOverview) return;
+    if (loadingNext) return; // wait until chapters finish loading
+    // A start-placed overview is collapsed by default; arriving via an overview
+    // link means the reader wants to read it, so open it before scrolling.
+    if (overviewAtStart) setOverviewExpanded(true);
+    const el = summaryHeadingRef.current;
+    if (el) {
+      didScrollToOverview.current = true;
+      // Small delay to let the DOM settle after render
+      requestAnimationFrame(() => {
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    }
+  }, [scrollToOverview, hasOverview, loadingNext, overviewAtStart]);
+
+  // ── Scroll detection for visible chapter ─────────────────
+
+  // True once the reader has genuinely scrolled (wheel/touch/key). Programmatic
+  // scrolls — the prev-chapter prepend's compensating jump, deep-link settles —
+  // also fire scroll events, and near the top of a chapter they can resolve the
+  // spy's best-visible heading to the *previous* chapter. Gating the last-read
+  // save on real interaction keeps merely opening a chapter from recording its
+  // neighbor as the reading position.
+  const userScrolledRef = useRef(false);
+  const lastReadSaveTimerRef = useRef<number | undefined>(undefined);
+  useEffect(() => {
+    const mark = () => {
+      userScrolledRef.current = true;
+      // A deep-linked visit anchors Continue Reading only once the visitor
+      // actually interacts — this is that first-interaction save.
+      if (!lastReadSavedRef.current) {
+        lastReadSavedRef.current = true;
+        const ch = visibleChapterRef.current ?? initialChapterNumber;
+        saveLastReadUrl(
+          `/try/bible/read?book=${encodeURIComponent(bookName)}&chapter=${ch}&version=${versionAbbr}`,
+        );
+      }
+    };
+    window.addEventListener("wheel", mark, { passive: true });
+    window.addEventListener("touchstart", mark, { passive: true });
+    window.addEventListener("keydown", mark);
+    // Scrollbar drags and middle-click autoscroll fire no wheel/touch/key
+    // events — the pointer press that starts them is the interaction signal
+    // (Firefox dispatches no events for scrollbar presses; nothing to hook).
+    window.addEventListener("pointerdown", mark, { passive: true });
+    window.addEventListener("mousedown", mark, { passive: true });
+    return () => {
+      window.removeEventListener("wheel", mark);
+      window.removeEventListener("touchstart", mark);
+      window.removeEventListener("keydown", mark);
+      window.removeEventListener("pointerdown", mark);
+      window.removeEventListener("mousedown", mark);
+    };
+    // bookName/versionAbbr are fixed for this mount (remount-by-key per book).
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
+    function onScroll() {
+      // Check if summary heading is in view (most recently scrolled past 120px)
+      const summaryEl = summaryHeadingRef.current;
+      const summaryTop = summaryEl ? summaryEl.getBoundingClientRect().top : Infinity;
+
+      let bestChapter: number | null = null;
+      let bestChapterTop = -Infinity;
+      for (const [chNum, el] of headingRefs.current) {
+        const top = el.getBoundingClientRect().top;
+        if (top <= 120 && top > bestChapterTop) {
+          bestChapterTop = top;
+          bestChapter = chNum;
+        }
+      }
+
+      // Summary is "active" if its heading has scrolled past 120px and is
+      // below the last chapter heading — or, at the top of the book where no
+      // heading has crossed the line yet, when the expanded overview card is
+      // what's on screen (reading it should highlight Overview, not "1").
+      const summaryActive =
+        (summaryTop <= 120 && summaryTop > bestChapterTop) ||
+        (bestChapter === null && overviewExpanded && summaryTop < window.innerHeight);
+      setSummaryVisible(summaryActive);
+
+      if (bestChapter !== null && bestChapter !== visibleChapterRef.current) {
+        // Track the visible chapter for the strip highlight even while a
+        // deep-link is settling (so a later scroll event doesn't see a stale
+        // ref and "change" back)...
+        visibleChapterRef.current = bestChapter;
+        setVisibleChapterNumber(bestChapter);
+        // ...but don't let a stray scroll during a just-applied reminder
+        // deep-link rewrite the chapter in the URL and snap the reader back.
+        if (isChapterUrlSyncSuppressed()) return;
+        const url = new URL(window.location.href);
+        url.searchParams.set("chapter", String(bestChapter));
+        url.searchParams.delete("chunk");
+        url.searchParams.delete("verse");
+        window.history.replaceState({}, "", url.toString());
+        // Keep the saved position on the chapter actually being read, so
+        // Continue Reading resumes here — not at the chapter first opened.
+        // Debounced: a hard navigation away fires a scroll-to-top on the dying
+        // document, whose transition would otherwise record the chapter above.
+        // Its timer never gets to run; a real reading pause's does.
+        if (userScrolledRef.current) {
+          const chapterToSave = bestChapter;
+          window.clearTimeout(lastReadSaveTimerRef.current);
+          pendingLastReadRef.current = chapterToSave;
+          lastReadSaveTimerRef.current = window.setTimeout(() => {
+            pendingLastReadRef.current = null;
+            lastReadSavedRef.current = true;
+            saveLastReadUrl(
+              `/try/bible/read?book=${encodeURIComponent(bookName)}&chapter=${chapterToSave}&version=${versionAbbr}`,
+            );
+          }, 300);
+        }
+      }
+    }
+    // Expanding/collapsing the overview changes what's on screen without a
+    // scroll event, so recompute once on (re)subscribe.
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      // A pending save must not outlive the reader — on a client-side nav to
+      // another chapter it would overwrite the new mount's saved position.
+      window.clearTimeout(lastReadSaveTimerRef.current);
+    };
+    // bookName/versionAbbr are fixed for this mount (remount-by-key per book).
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [overviewExpanded]);
+
+  // ── Chapter strip ─────────────────────────────────────────
+
+  const updateChapterStripJustify = useCallback(() => {
+    const node = chapterStripRef.current;
+    if (!node) return;
+    setChapterStripJustify(node.scrollWidth > node.clientWidth ? "flex-start" : "center");
+  }, []);
+
+  useLayoutEffect(() => {
+    updateChapterStripJustify();
+    const node = chapterStripRef.current;
+    if (!node || typeof ResizeObserver === "undefined") return;
+    const ro = new ResizeObserver(() => updateChapterStripJustify());
+    ro.observe(node);
+    return () => ro.disconnect();
+  }, [bookName, chapterNumbers, chapterTimestamps, mode, quizDone, readDone, updateChapterStripJustify]);
+
+  useEffect(() => {
+    const container = chapterStripRef.current;
+    if (!container) return;
+    if (summaryVisible) {
+      const el = summaryStripRef.current;
+      if (el) el.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+    } else if (visibleChapterNumber <= 5) {
+      container.scrollLeft = 0;
+    } else {
+      const el = activeChapterRef.current;
+      if (el) el.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+    }
+  }, [visibleChapterNumber, summaryVisible, chapterStripJustify]);
+
+  // Hold ArrowLeft / ArrowRight to scroll the chapter strip horizontally.
+  // A rAF loop keeps the strip moving for as long as the key is held (rather
+  // than one nudge per OS key-repeat), and scrollLeft naturally clamps so it
+  // stops once either end of the strip comes into view.
+  useEffect(() => {
+    let direction: -1 | 0 | 1 = 0;
+    let raf: number | null = null;
+
+    const step = () => {
+      const node = chapterStripRef.current;
+      if (node && direction !== 0) node.scrollLeft += direction * 10;
+      raf = direction !== 0 ? requestAnimationFrame(step) : null;
+    };
+
+    const isEditable = (el: EventTarget | null) => {
+      if (!(el instanceof HTMLElement)) return false;
+      return el.tagName === "INPUT" || el.tagName === "TEXTAREA" || el.isContentEditable;
+    };
+
+    function onKeyDown(e: KeyboardEvent) {
+      if (e.key !== "ArrowLeft" && e.key !== "ArrowRight") return;
+      if (e.metaKey || e.ctrlKey || e.altKey) return;
+      if (searchOpen || isEditable(e.target)) return;
+      e.preventDefault();
+      direction = e.key === "ArrowLeft" ? -1 : 1;
+      if (raf === null) raf = requestAnimationFrame(step);
+    }
+
+    function onKeyUp(e: KeyboardEvent) {
+      if (e.key === "ArrowLeft" && direction === -1) direction = 0;
+      if (e.key === "ArrowRight" && direction === 1) direction = 0;
+    }
+
+    window.addEventListener("keydown", onKeyDown);
+    window.addEventListener("keyup", onKeyUp);
+    return () => {
+      window.removeEventListener("keydown", onKeyDown);
+      window.removeEventListener("keyup", onKeyUp);
+      if (raf !== null) cancelAnimationFrame(raf);
+    };
+  }, [searchOpen]);
+
+  // Restore scroll position after a chapter is prepended above. Compensates by
+  // the previously-first section's measured displacement rather than the
+  // scrollHeight delta: when the reader sits mid-chapter (e.g. a search jump
+  // just landed), the browser's native scroll anchoring has already adjusted
+  // for the insertion, and adding the full height again flung the reader a
+  // chapter-height down. Measuring the anchor picks up only the residual.
+  // Also resets loadingPrevRef here (not in finally) so the IntersectionObserver
+  // cannot cascade another load before the scroll adjustment settles.
+  useLayoutEffect(() => {
+    if (pendingScrollAdjust.current !== null) {
+      const { anchor, top } = pendingScrollAdjust.current;
+      window.scrollBy(0, anchor.getBoundingClientRect().top - top);
+      pendingScrollAdjust.current = null;
+      loadingPrevRef.current = false;
+    }
+  }, [loadedChapters]);
+
+  // ── Close dropdowns on outside click ─────────────────────
+
+  useEffect(() => {
+    function handleClick(e: MouseEvent) {
+      if (bookRef.current && !bookRef.current.contains(e.target as Node)) setBookOpen(false);
+      if (settingsRef.current && !settingsRef.current.contains(e.target as Node)) setSettingsOpen(false);
+    }
+    document.addEventListener("mousedown", handleClick);
+    return () => document.removeEventListener("mousedown", handleClick);
+  }, []);
+
+  // ── Display toggles ───────────────────────────────────────
+
+  function toggleTheme() {
+    const next = !dark;
+    setDark(next);
+    document.documentElement.classList.toggle("dark", next);
+    localStorage.setItem("theme", next ? "dark" : "light");
+  }
+
+  function toggleBionic() {
+    const next = !bionic;
+    setBionic(next);
+    localStorage.setItem("bionic", String(next));
+  }
+
+  function toggleVerseNumbers() {
+    const next = !verseNumbers;
+    setVerseNumbers(next);
+    localStorage.setItem("verseNumbers", String(next));
+  }
+
+  function toggleCrossRefs() {
+    const next = !showCrossRefs;
+    setShowCrossRefs(next);
+    localStorage.setItem("bsbCrossRefs", String(next));
+  }
+
+  function toggleRedLetter() {
+    const next = !redLetter;
+    setRedLetter(next);
+    localStorage.setItem("redLetter", String(next));
+  }
+
+  function changeFontSize(delta: number) {
+    setFontSize((prev) => {
+      const next = Math.min(FONT_SIZE_MAX, Math.max(FONT_SIZE_MIN, prev + delta));
+      localStorage.setItem("bibleFontSize", String(next));
+      return next;
+    });
+  }
+
+  // ── URL helpers ───────────────────────────────────────────
+
+  function readUrl(overrides: {
+    book?: string;
+    chapter?: number;
+    version?: string;
+    overview?: boolean;
+  }) {
+    const b = encodeURIComponent(overrides.book ?? bookName);
+    const c = overrides.chapter ?? visibleChapterRef.current;
+    const v = overrides.version ?? versionAbbr;
+    const o = overrides.overview ? "&overview=1" : "";
+    return `/try/bible/read?book=${b}&chapter=${c}&version=${v}${o}`;
+  }
+
+  // The chapter-strip "Overview" chip. The overview sits above chapter 1, so the
+  // chip renders before the chapter buttons (see the strip below).
+  const overviewChip = hasOverview ? (
+    <button
+      ref={summaryVisible ? summaryStripRef : undefined}
+      onClick={() => {
+        const el = summaryHeadingRef.current;
+        if (el) {
+          // Card is mounted (reader is near the overview) — open and scroll.
+          if (overviewAtStart) setOverviewExpanded(true);
+          el.scrollIntoView({ behavior: "smooth", block: "start" });
+        } else {
+          // Deep-linked away from where the overview lives — go to it.
+          // Start overviews sit above chapter 1; end overviews after the last.
+          router.push(
+            readUrl({
+              chapter: overviewAtStart
+                ? chapterNumbers[0]
+                : chapterNumbers[chapterNumbers.length - 1],
+              overview: true,
+            }),
+          );
+        }
+      }}
+      style={{ flexShrink: 0, height: "28px", paddingLeft: "10px", paddingRight: "10px" }}
+      className={`flex items-center justify-center rounded text-xs font-semibold transition-all ${
+        summaryVisible
+          ? "bg-amber-500/20 text-gold ring-2 ring-gold/60 dark:bg-amber-400/20 dark:text-gold-bright dark:ring-gold-bright/60"
+          : "bg-amber-500/10 text-gold hover:bg-amber-500/20 dark:bg-amber-400/10 dark:text-gold-bright dark:hover:bg-amber-400/20"
+      }`}
+    >
+      Overview
+    </button>
+  ) : null;
+
+  // ── Chapter loading ───────────────────────────────────────
+
+  const loadNextChapter = useCallback(
+    async (afterChapterNumber: number) => {
+      if (loadingRef.current) return;
+      const idx = chapterNumbers.indexOf(afterChapterNumber);
+      const nextNum = chapterNumbers[idx + 1];
+      if (nextNum === undefined) return;
+      if (loadedChapterNums.current.has(nextNum)) return;
+
+      loadingRef.current = true;
+      loadedChapterNums.current.add(nextNum);
+      setLoadingNext(true);
+
+      try {
+        const data = await fetchChapter(bookName, nextNum, versionAbbr);
+        if (!data.text) {
+          loadedChapterNums.current.delete(nextNum);
+          return;
+        }
+        setLoadedChapters((prev) => [
+          ...prev,
+          {
+            chapterNumber: nextNum,
+            text: data.text,
+            questions: data.questions,
+            headings: data.headings,
+          },
+        ]);
+      } finally {
+        loadingRef.current = false;
+        setLoadingNext(false);
+      }
+    },
+    [bookName, chapterNumbers, versionAbbr],
+  );
+
+  const loadPrevChapter = useCallback(async () => {
+    if (loadingPrevRef.current) return;
+    const firstLoadedNum = Math.min(...Array.from(loadedChapterNums.current));
+    const idx = chapterNumbers.indexOf(firstLoadedNum);
+    if (idx <= 0) return;
+    const prevNum = chapterNumbers[idx - 1];
+    if (loadedChapterNums.current.has(prevNum)) return;
+
+    loadingPrevRef.current = true;
+    loadedChapterNums.current.add(prevNum);
+    setLoadingPrev(true);
+
+    try {
+      const data = await fetchChapter(bookName, prevNum, versionAbbr);
+      if (!data.text) {
+        loadedChapterNums.current.delete(prevNum);
+        return;
+      }
+      const anchor = contentRef.current?.querySelector(
+        "section[data-chapter]",
+      ) as HTMLElement | null;
+      pendingScrollAdjust.current = anchor
+        ? { anchor, top: anchor.getBoundingClientRect().top }
+        : null;
+      setLoadedChapters((prev) => [
+        {
+          chapterNumber: prevNum,
+          text: data.text,
+          questions: data.questions,
+          headings: data.headings,
+        },
+        ...prev,
+      ]);
+    } finally {
+      // If a scroll adjustment is pending (success path), keep loadingPrevRef = true
+      // so the observer cannot fire again before useLayoutEffect resets it.
+      // On the error path (pendingScrollAdjust was never set), reset here.
+      if (pendingScrollAdjust.current === null) {
+        loadingPrevRef.current = false;
+      }
+      setLoadingPrev(false);
+    }
+  }, [bookName, chapterNumbers, versionAbbr]);
+
+  // In read mode, eagerly load all remaining chapters without waiting for scroll
+  useEffect(() => {
+    if (scrollToOverview) return;
+    if (mode !== "read") return;
+    if (loadedChapters.length === 0) return;
+    const lastChapter = loadedChapters[loadedChapters.length - 1];
+    void loadNextChapter(lastChapter.chapterNumber);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [mode, loadedChapters, loadNextChapter]);
+
+  // Load previous chapter when top sentinel becomes visible. Suppressed while
+  // a verse deep-link scroll is in flight; when re-armed, the observer's
+  // initial callback fires if the sentinel is still in view, so a deep link
+  // near the top of a chapter still gets its previous chapter loaded.
+  useEffect(() => {
+    if (scrollToOverview || suppressPrevLoad) return;
+    const el = topSentinelRef.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) void loadPrevChapter();
+      },
+      { threshold: 0.1 },
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [loadPrevChapter, suppressPrevLoad]);
+
+  // ── Chapter section callbacks ─────────────────────────────
+
+  const handleHeadingMount = useCallback((chNum: number, el: HTMLElement | null) => {
+    if (el) headingRefs.current.set(chNum, el);
+    else headingRefs.current.delete(chNum);
+  }, []);
+
+  // A pending debounced position save must land before a completion is
+  // recorded, or flagLastReadCompleted checks the previous chapter's saved
+  // URL and misses (entering and finishing a short chapter inside one
+  // 300 ms debounce window).
+  const flushPendingLastRead = useCallback(() => {
+    if (pendingLastReadRef.current !== null) {
+      window.clearTimeout(lastReadSaveTimerRef.current);
+      const ch = pendingLastReadRef.current;
+      pendingLastReadRef.current = null;
+      lastReadSavedRef.current = true;
+      saveLastReadUrl(
+        `/try/bible/read?book=${encodeURIComponent(bookName)}&chapter=${ch}&version=${versionAbbr}`,
+      );
+    }
+  }, [bookName, versionAbbr]);
+
+  const handleReadingComplete = useCallback(
+    (chNum: number) => {
+      flushPendingLastRead();
+      void markReadingComplete(bookName, chNum);
+      setReadDone((prev) => ({ ...prev, [`${bookName}:${chNum}`]: true }));
+    },
+    [bookName, flushPendingLastRead],
+  );
+
+  const handleReadModeChapterComplete = useCallback(
+    (chNum: number) => {
+      flushPendingLastRead();
+      void markChapterComplete(bookName, chNum);
+      setReadDone((prev) => ({ ...prev, [`${bookName}:${chNum}`]: true }));
+      setQuizDone((prev) => ({ ...prev, [`${bookName}:${chNum}`]: true }));
+      void loadNextChapter(chNum);
+    },
+    [bookName, loadNextChapter, flushPendingLastRead],
+  );
+
+  const handleStudyModeQuizComplete = useCallback(
+    (chNum: number) => {
+      setQuizDone((prev) => ({ ...prev, [`${bookName}:${chNum}`]: true }));
+      void loadNextChapter(chNum);
+    },
+    [bookName, loadNextChapter],
+  );
+
+  // Route the onReadingComplete and onNextChapter to the right handlers
+  const handleReadingCompleteForSection = useCallback(
+    (chNum: number) => {
+      if (mode === "read") {
+        handleReadModeChapterComplete(chNum);
+      } else {
+        handleReadingComplete(chNum);
+      }
+    },
+    [mode, handleReadModeChapterComplete, handleReadingComplete],
+  );
+
+  const handleNextChapterForSection = useCallback(
+    (chNum: number) => {
+      if (mode === "study") {
+        handleStudyModeQuizComplete(chNum);
+      }
+      // read mode is handled in handleReadingCompleteForSection
+    },
+    [mode, handleStudyModeQuizComplete],
+  );
+
+  // Skip the quiz: move on without quiz credit — the chapter keeps its
+  // reading-complete mark only, so progress stays honest.
+  const handleSkipQuiz = useCallback(
+    (chNum: number) => {
+      void loadNextChapter(chNum);
+    },
+    [loadNextChapter],
+  );
+
+  // Permanently switch to read mode from the quiz. The reader already hit
+  // the end of the chapter, so under read-mode rules it counts as complete.
+  const handleSwitchToReadMode = useCallback(
+    (chNum: number) => {
+      setMode("read");
+      setReadingMode("read");
+      handleReadModeChapterComplete(chNum);
+      // The chapter was usually already marked read on scroll, so the write
+      // above won't fire the milestone event itself — but under read-mode
+      // rules the chapter just became complete, which is worth a nudge check.
+      emitMilestone();
+    },
+    [handleReadModeChapterComplete],
+  );
+
+  // ── Selection-based highlighting ─────────────────────────
+
+  const contentRef = useRef<HTMLDivElement>(null);
+  const [selectionToolbar, setSelectionToolbar] = useState<{
+    x: number;
+    y: number;
+    verses: { chapter: number; verse: number }[];
+    quote: string;
+  } | null>(null);
+  const [selectionNote, setSelectionNote] = useState("");
+  const [showNoteInput, setShowNoteInput] = useState(false);
+  const [copiedRef, setCopiedRef] = useState(false);
+  const toolbarRef = useRef<HTMLDivElement>(null);
+
+  // Find the chapter number for a DOM node by walking up to its <section>
+  function chapterForNode(node: Node): number {
+    const el = node instanceof Element ? node : node.parentElement;
+    if (!el) return visibleChapterNumber;
+    const section = el.closest("section");
+    const attr = section?.getAttribute("data-chapter");
+    if (attr) return parseInt(attr, 10);
+    return visibleChapterNumber;
+  }
+
+  // Find the verse number that "owns" a given DOM node by walking backward
+  // through previous siblings / parents to the nearest verse marker. Two things
+  // matter for correctness:
+  //  - Confine the walk to the node's own chapter <section>. Otherwise a tap at
+  //    the top of a chapter walks past its start into the previous chapter and
+  //    grabs that chapter's last verse (a tap on Matthew 2:1 once resolved to
+  //    "2:25" — Matthew 1's verse 25 — a verse that doesn't exist).
+  //  - Recognise both marker kinds: verse-number superscripts carry
+  //    data-verse-num, while poetry/continuation lines carry data-verse-id
+  //    ("MAT.1.2"). Verse 1's own marker is the drop-cap numeral, which sits
+  //    beside the text; a node before any marker within the chapter is verse 1.
+  function verseForNode(node: Node): number | null {
+    const startEl = node instanceof Element ? node : node.parentElement;
+    const section = startEl?.closest("section[data-chapter]") ?? null;
+    if (!section) return null;
+    let cur: Node | null = node;
+    while (cur && section.contains(cur)) {
+      if (cur instanceof Element) {
+        const num = cur.getAttribute("data-verse-num");
+        if (num) return parseInt(num, 10);
+        const vid = cur.getAttribute("data-verse-id");
+        const m = vid ? /\.(\d+)$/.exec(vid) : null;
+        if (m) return parseInt(m[1], 10);
+      }
+      if (cur.previousSibling) {
+        cur = cur.previousSibling;
+        while (cur.lastChild) cur = cur.lastChild;
+        continue;
+      }
+      cur = cur.parentNode;
+    }
+    // No marker precedes this node within the chapter → it belongs to verse 1.
+    return 1;
+  }
+
+  useEffect(() => {
+    function onPointerUp() {
+      // Small delay to let the selection finalize
+      requestAnimationFrame(() => {
+        const sel = window.getSelection();
+        if (!sel || sel.isCollapsed || !sel.toString().trim()) {
+          // Don't dismiss if toolbar is focused (note input)
+          if (toolbarRef.current?.contains(document.activeElement)) return;
+          setSelectionToolbar(null);
+          setShowNoteInput(false);
+          setSelectionNote("");
+          return;
+        }
+
+        const range = sel.getRangeAt(0);
+        const container = contentRef.current;
+        if (!container || !container.contains(range.startContainer) || !container.contains(range.endContainer)) {
+          return;
+        }
+
+        const startVerseNum = verseForNode(range.startContainer);
+        const endVerseNum = verseForNode(range.endContainer);
+        if (!startVerseNum) return;
+
+        const startChapter = chapterForNode(range.startContainer);
+        const endChapter = chapterForNode(range.endContainer);
+
+        // Build verse list
+        const verses: { chapter: number; verse: number }[] = [];
+        if (startChapter === endChapter && endVerseNum) {
+          const lo = Math.min(startVerseNum, endVerseNum);
+          const hi = Math.max(startVerseNum, endVerseNum);
+          for (let v = lo; v <= hi; v++) {
+            verses.push({ chapter: startChapter, verse: v });
+          }
+        } else {
+          // Cross-chapter selection: just use the start verse
+          verses.push({ chapter: startChapter, verse: startVerseNum });
+          if (endVerseNum && (endChapter !== startChapter || endVerseNum !== startVerseNum)) {
+            verses.push({ chapter: endChapter, verse: endVerseNum });
+          }
+        }
+
+        // Clean quote text: clone the selection and strip verse-number
+        // superscripts, buttons, and section headings (h3, editorial — not
+        // scripture) so the copied text reads as plain prose, not "5When you
+        // pray...".
+        //
+        // Replace each stripped node with a space rather than removing it
+        // outright: textContent does not insert any separator at element
+        // boundaries, so deleting an inter-verse <sup> would glue the verses
+        // together (e.g. "...the wicked.Nor stand...").
+        const frag = range.cloneContents();
+        const replaceWithSpace = (el: Element) =>
+          el.replaceWith(document.createTextNode(" "));
+        frag
+          .querySelectorAll("[data-verse-num], button, h3")
+          .forEach(replaceWithSpace);
+        // Selections that span multiple paragraphs or poetry lines come back as
+        // separate block elements with no whitespace between them; insert a
+        // space around each so the lines don't run together when flattened.
+        frag
+          .querySelectorAll("p, div, li, br, h1, h2, h3, h4, h5, h6, blockquote")
+          .forEach((el) => {
+            const parent = el.parentNode;
+            if (!parent) return;
+            parent.insertBefore(document.createTextNode(" "), el);
+            parent.insertBefore(document.createTextNode(" "), el.nextSibling);
+          });
+        const quote = (frag.textContent ?? "").replace(/\s+/g, " ").trim();
+
+        const rect = range.getBoundingClientRect();
+        setSelectionToolbar({
+          x: rect.left + rect.width / 2,
+          y: rect.top + window.scrollY,
+          verses,
+          quote,
+        });
+      });
+    }
+
+    document.addEventListener("mouseup", onPointerUp);
+    document.addEventListener("touchend", onPointerUp);
+    return () => {
+      document.removeEventListener("mouseup", onPointerUp);
+      document.removeEventListener("touchend", onPointerUp);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [visibleChapterNumber]);
+
+  const handleHighlightColor = useCallback(
+    (color: HighlightColor) => {
+      if (!selectionToolbar) return;
+      for (const { chapter, verse } of selectionToolbar.verses) {
+        const key = `${bookName}:${chapter}:${verse}`;
+        void saveHighlight(bookName, chapter, verse, color, selectionNote).then((hl) => {
+          setAllHighlights((prev) => ({ ...prev, [key]: hl }));
+        });
+      }
+      window.getSelection()?.removeAllRanges();
+      if (!showNoteInput) {
+        setSelectionToolbar(null);
+        setSelectionNote("");
+      }
+    },
+    [bookName, selectionToolbar, selectionNote, showNoteInput],
+  );
+
+  const handleSaveNote = useCallback(() => {
+    if (!selectionToolbar) return;
+    for (const { chapter, verse } of selectionToolbar.verses) {
+      const key = `${bookName}:${chapter}:${verse}`;
+      const existing = allHighlights[key];
+      const color = existing?.color ?? "yellow";
+      void saveHighlight(bookName, chapter, verse, color, selectionNote).then((hl) => {
+        setAllHighlights((prev) => ({ ...prev, [key]: hl }));
+      });
+    }
+    setSelectionToolbar(null);
+    setShowNoteInput(false);
+    setSelectionNote("");
+  }, [bookName, selectionToolbar, allHighlights, selectionNote]);
+
+  const handleRemoveHighlight = useCallback(() => {
+    if (!selectionToolbar) return;
+    for (const { chapter, verse } of selectionToolbar.verses) {
+      const key = `${bookName}:${chapter}:${verse}`;
+      void removeHighlight(bookName, chapter, verse);
+      setAllHighlights((prev) => {
+        const next = { ...prev };
+        delete next[key];
+        return next;
+      });
+    }
+    setSelectionToolbar(null);
+    setShowNoteInput(false);
+    setSelectionNote("");
+  }, [bookName, selectionToolbar]);
+
+  // ── Verse sheet (tap a verse → study hub) ─────────────────
+
+  const [verseSheet, setVerseSheet] = useState<{
+    chapter: number;
+    verse: number;
+  } | null>(null);
+
+  useEffect(() => {
+    const container = contentRef.current;
+    if (!container) return;
+
+    function onClick(e: MouseEvent) {
+      const target = e.target as Node;
+      const el = target instanceof Element ? target : target.parentElement;
+      if (!el) return;
+      // Only taps on scripture prose: inside a paragraph within the chapter
+      // article — not buttons, links, or headings, and not while a text
+      // selection (or the selection toolbar) is active.
+      if (el.closest("button, a, h1, h2, h3")) return;
+      if (!el.closest("article") || !el.closest("p")) return;
+      const sel = window.getSelection();
+      if (sel && !sel.isCollapsed) return;
+      if (selectionToolbar) return;
+      const verse = verseForNode(target);
+      if (!verse) return;
+      setVerseSheet({ chapter: chapterForNode(target), verse });
+    }
+
+    container.addEventListener("click", onClick);
+    return () => container.removeEventListener("click", onClick);
+    // verseForNode/chapterForNode are stable module-pattern helpers defined in
+    // this component; the effect re-binds when the toolbar state changes so the
+    // guard above sees the current value.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectionToolbar, visibleChapterNumber]);
+
+  // Whole-verse hover highlight (desktop). As the cursor moves over scripture,
+  // light up the verse it's on so it reads as tappable — each run of verse text
+  // is a .vtext span carrying its verse in data-hv, and we toggle .vh-on across
+  // the same-verse spans within the hovered chapter. Nothing happens on press;
+  // the click handler above opens the tools on release. Suppressed mid-selection
+  // so a drag to highlight doesn't flicker the hover.
+  useEffect(() => {
+    // Hover is a pointer affordance — skip it on touch devices, where a
+    // synthetic mousemove on tap could otherwise leave a verse stuck lit.
+    if (!window.matchMedia?.("(hover: hover)").matches) return;
+    const el0 = contentRef.current;
+    if (!el0) return;
+    const container: HTMLElement = el0;
+    let lastKey: string | null = null;
+
+    function clear() {
+      if (!lastKey) return;
+      container.querySelectorAll(".vtext.vh-on").forEach((s) => s.classList.remove("vh-on"));
+      lastKey = null;
+    }
+
+    function onMove(e: MouseEvent) {
+      const node = e.target as Node;
+      const el = node instanceof Element ? node : node.parentElement;
+      const vt = el?.closest(".vtext");
+      const sel = window.getSelection();
+      if (
+        !vt ||
+        el?.closest("button, a, h1, h2, h3") ||
+        (sel && !sel.isCollapsed)
+      ) {
+        clear();
+        return;
+      }
+      const section = vt.closest("section[data-chapter]");
+      const verse = vt.getAttribute("data-hv");
+      if (!section || !verse) {
+        clear();
+        return;
+      }
+      const key = `${section.getAttribute("data-chapter")}:${verse}`;
+      if (key === lastKey) return;
+      clear();
+      lastKey = key;
+      section.querySelectorAll(`.vtext[data-hv="${verse}"]`).forEach((s) => {
+        if (!s.closest("h1, h2, h3")) s.classList.add("vh-on");
+      });
+    }
+
+    container.addEventListener("mousemove", onMove);
+    container.addEventListener("mouseleave", clear);
+    return () => {
+      container.removeEventListener("mousemove", onMove);
+      container.removeEventListener("mouseleave", clear);
+      clear();
+    };
+  }, []);
+
+  const sheetHighlightKey = verseSheet
+    ? `${bookName}:${verseSheet.chapter}:${verseSheet.verse}`
+    : null;
+  const sheetHighlight = sheetHighlightKey
+    ? (allHighlights[sheetHighlightKey] ?? null)
+    : null;
+
+  const handleSheetHighlight = useCallback(
+    (color: HighlightColor) => {
+      if (!verseSheet) return;
+      const key = `${bookName}:${verseSheet.chapter}:${verseSheet.verse}`;
+      const note = allHighlights[key]?.note ?? "";
+      void saveHighlight(bookName, verseSheet.chapter, verseSheet.verse, color, note).then(
+        (hl) => setAllHighlights((prev) => ({ ...prev, [key]: hl })),
+      );
+    },
+    [bookName, verseSheet, allHighlights],
+  );
+
+  const handleSheetRemoveHighlight = useCallback(() => {
+    if (!verseSheet) return;
+    const key = `${bookName}:${verseSheet.chapter}:${verseSheet.verse}`;
+    void removeHighlight(bookName, verseSheet.chapter, verseSheet.verse);
+    setAllHighlights((prev) => {
+      const next = { ...prev };
+      delete next[key];
+      return next;
+    });
+  }, [bookName, verseSheet]);
+
+  const handleSheetSaveNote = useCallback(
+    (note: string) => {
+      if (!verseSheet) return;
+      const key = `${bookName}:${verseSheet.chapter}:${verseSheet.verse}`;
+      const color = allHighlights[key]?.color ?? "yellow";
+      void saveHighlight(bookName, verseSheet.chapter, verseSheet.verse, color, note).then(
+        (hl) => setAllHighlights((prev) => ({ ...prev, [key]: hl })),
+      );
+    },
+    [bookName, verseSheet, allHighlights],
+  );
+
+  // ── Chapter strip helpers ─────────────────────────────────
+
+  function isChapterDone(chNum: number): boolean {
+    const key = `${bookName}:${chNum}`;
+    if (mode === "read") return !!readDone[key];
+    return !!readDone[key] && !!quizDone[key];
+  }
+
+  function getChapterButtonStyle(chNum: number): string {
+    // While the overview is being read, the Overview chip carries the
+    // "you are here" ring — no chapter square should compete with it.
+    const isCurrent = chNum === visibleChapterNumber && !summaryVisible;
+    const isCompleted = isChapterDone(chNum);
+
+    if (isCurrent) {
+      // "You are here": distinguished by a solid gold ring + bold number.
+      return "bg-amber-500/20 text-amber-900 ring-2 ring-amber-500 font-bold dark:bg-amber-400/20 dark:text-amber-100 dark:ring-amber-400";
+    }
+    if (isCompleted) {
+      // Completed chapters get a clearly gold-tinted square (graded by age) so
+      // they read as "done" at a glance — softer than the current chapter.
+      const age = getCompletionAge(chapterTimestamps[`${bookName}:${chNum}`]);
+      if (age === "recent")
+        return "bg-amber-500/20 text-amber-800 ring-1 ring-inset ring-amber-500/30 font-semibold hover:bg-amber-500/28 dark:bg-amber-400/22 dark:text-amber-200 dark:ring-amber-400/25 dark:hover:bg-amber-400/30";
+      if (age === "fading")
+        return "bg-amber-500/11 text-amber-700/90 font-semibold hover:bg-amber-500/18 dark:bg-amber-400/13 dark:text-amber-300/85 dark:hover:bg-amber-400/20";
+      return "bg-amber-500/6 text-amber-600/70 font-medium hover:bg-amber-500/12 dark:bg-amber-400/7 dark:text-amber-400/60 dark:hover:bg-amber-400/13";
+    }
+    return "bg-neutral-100 text-neutral-600 hover:bg-neutral-200 dark:bg-neutral-800 dark:text-neutral-400 dark:hover:bg-neutral-700";
+  }
+
+  // ── Render ────────────────────────────────────────────────
+
+  return (
+    <div className="min-h-screen">
+      {/* Sticky header */}
+      <header ref={headerRef} className="sticky top-0 z-10 border-b border-neutral-200 bg-white/95 px-4 py-3 dark:border-neutral-700 dark:bg-neutral-925/95">
+        {/* Controls row */}
+        <div className="mx-auto flex max-w-2xl items-center justify-between gap-2">
+          {/* Brand + roadmap */}
+          <div className="flex min-w-0 items-center gap-2">
+            <Logo compact icon={false} />
+            <div className="h-5 w-px shrink-0 bg-neutral-200 dark:bg-neutral-700" />
+            <button
+              onClick={() => router.push("/try/bible/start")}
+              aria-label="Back to library"
+              title="Back to library"
+              className="flex shrink-0 items-center gap-1.5 rounded-md px-1.5 py-1 text-sm text-neutral-500 hover:bg-neutral-100 hover:text-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-neutral-200"
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <line x1="19" y1="12" x2="5" y2="12" />
+                <polyline points="12 19 5 12 12 5" />
+              </svg>
+              <span className="hidden sm:inline">Library</span>
+            </button>
+          </div>
+
+          {/* Actions */}
+          <div className="flex shrink-0 items-center gap-1">
+          {/* Search */}
+          <button
+            data-tutorial="search"
+            onClick={() => setSearchOpen(true)}
+            aria-label="Search"
+            className="rounded-md p-1.5 text-neutral-500 hover:bg-neutral-100 hover:text-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-neutral-200"
+          >
+            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+            </svg>
+          </button>
+
+          {/* Chapter map — only when the visible chapter mentions mappable places */}
+          {chapterPlaces && chapterPlaces.places.length > 0 && (
+            <button
+              data-tutorial="map"
+              onClick={() =>
+                setMapSheet({ chapter: visibleChapterNumber, data: chapterPlaces })
+              }
+              aria-label="Map of places in this chapter"
+              className={`relative flex items-center gap-1 rounded-md px-2 py-1 text-[0.65rem] font-semibold leading-none transition-all ${
+                mapSheet
+                  ? "bg-amber-100 text-amber-800 dark:bg-amber-900/50 dark:text-amber-400"
+                  : "text-neutral-400 hover:bg-neutral-100 hover:text-neutral-600 dark:hover:bg-neutral-800 dark:hover:text-neutral-300"
+              }`}
+            >
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              Map
+            </button>
+          )}
+
+          {/* Notes panel */}
+          {(() => {
+            // Count grouped highlight/note entries (consecutive same-color/note
+            // verses count as one), matching how the drawer displays them.
+            const entries = Object.entries(allHighlights)
+              .filter(([k]) => k.startsWith(bookName + ":"))
+              .map(([k, hl]) => {
+                const parts = k.split(":");
+                return { chapter: parseInt(parts[1], 10), verse: parseInt(parts[2], 10), hl };
+              })
+              .sort((a, b) => a.chapter - b.chapter || a.verse - b.verse);
+            let count = 0;
+            let prev: (typeof entries)[number] | null = null;
+            for (const e of entries) {
+              const contiguous =
+                prev &&
+                prev.chapter === e.chapter &&
+                prev.hl.color === e.hl.color &&
+                prev.hl.note === e.hl.note &&
+                e.verse === prev.verse + 1;
+              if (!contiguous) count++;
+              prev = e;
+            }
+            return (
+              <button
+                data-tutorial="notes"
+                onClick={() => setNotesDrawerOpen((o) => !o)}
+                aria-label="View highlights and notes"
+                className={`relative flex items-center gap-1 rounded-md px-2 py-1 text-[0.65rem] font-semibold leading-none transition-all ${
+                  notesDrawerOpen
+                    ? "bg-amber-100 text-amber-800 dark:bg-amber-900/50 dark:text-amber-400"
+                    : "text-neutral-400 hover:bg-neutral-100 hover:text-neutral-600 dark:hover:bg-neutral-800 dark:hover:text-neutral-300"
+                }`}
+              >
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M12 20h9" />
+                  <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
+                </svg>
+                Notes
+                {count > 0 && (
+                  <span className="ml-0.5 flex h-4 min-w-[16px] items-center justify-center rounded-full bg-neutral-200 px-1 text-[0.6rem] font-bold text-neutral-600 dark:bg-neutral-700 dark:text-neutral-300">
+                    {count}
+                  </span>
+                )}
+              </button>
+            );
+          })()}
+
+          {/* Settings menu (display preferences) */}
+          <div ref={settingsRef} className="relative shrink-0">
+            <button
+              data-tutorial="settings"
+              onClick={() => {
+                setSettingsOpen((o) => !o);
+                setBookOpen(false);
+              }}
+              aria-label="Display settings"
+              title="Display settings"
+              className={`rounded-md p-1.5 transition-colors ${
+                settingsOpen
+                  ? "bg-neutral-100 text-neutral-700 dark:bg-neutral-800 dark:text-neutral-200"
+                  : "text-neutral-500 hover:bg-neutral-100 hover:text-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-neutral-200"
+              }`}
+            >
+              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+                <line x1="4" y1="7" x2="20" y2="7" />
+                <circle cx="9" cy="7" r="2.2" fill="currentColor" />
+                <line x1="4" y1="17" x2="20" y2="17" />
+                <circle cx="15" cy="17" r="2.2" fill="currentColor" />
+              </svg>
+            </button>
+            {settingsOpen && (
+              <div className="absolute right-0 top-full z-20 mt-1 w-60 rounded-lg border border-neutral-200 bg-white p-1.5 shadow-lg dark:border-neutral-700 dark:bg-neutral-800">
+                {/* Reading mode */}
+                <div className="flex items-center justify-between px-2 py-1.5">
+                  <span className="text-xs font-semibold text-neutral-500 dark:text-neutral-400">Mode</span>
+                  <div className="inline-flex rounded-md bg-neutral-100 p-0.5 dark:bg-neutral-700">
+                    <button
+                      onClick={() => { setMode("read"); setReadingMode("read"); }}
+                      className={`rounded px-2.5 py-1 text-xs font-semibold leading-none transition-all ${
+                        mode === "read"
+                          ? "bg-white text-amber-700 shadow-sm dark:bg-neutral-600 dark:text-amber-400"
+                          : "text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-300"
+                      }`}
+                    >
+                      Read
+                    </button>
+                    <button
+                      onClick={() => { setMode("study"); setReadingMode("study"); }}
+                      className={`rounded px-2.5 py-1 text-xs font-semibold leading-none transition-all ${
+                        mode === "study"
+                          ? "bg-white text-amber-700 shadow-sm dark:bg-neutral-600 dark:text-amber-400"
+                          : "text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-300"
+                      }`}
+                    >
+                      Study
+                    </button>
+                  </div>
+                </div>
+
+                <div className="my-1 h-px bg-neutral-100 dark:bg-neutral-700" />
+
+                {/* Text size */}
+                <div className="flex items-center justify-between px-2 py-1.5">
+                  <span className="text-xs font-semibold text-neutral-500 dark:text-neutral-400">Text size</span>
+                  <div className="flex items-center gap-1.5">
+                    <button
+                      onClick={() => changeFontSize(-FONT_SIZE_STEP)}
+                      disabled={fontSize <= FONT_SIZE_MIN}
+                      aria-label="Decrease font size"
+                      className="flex h-7 w-7 items-center justify-center rounded text-sm font-medium text-neutral-600 hover:bg-neutral-100 disabled:cursor-not-allowed disabled:opacity-30 dark:text-neutral-300 dark:hover:bg-neutral-700"
+                    >
+                      −
+                    </button>
+                    <span className="min-w-[3ch] text-center text-xs font-semibold tabular-nums text-neutral-700 dark:text-neutral-200">
+                      {fontSize}
+                    </span>
+                    <button
+                      onClick={() => changeFontSize(FONT_SIZE_STEP)}
+                      disabled={fontSize >= FONT_SIZE_MAX}
+                      aria-label="Increase font size"
+                      className="flex h-7 w-7 items-center justify-center rounded text-sm font-medium text-neutral-600 hover:bg-neutral-100 disabled:cursor-not-allowed disabled:opacity-30 dark:text-neutral-300 dark:hover:bg-neutral-700"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+
+                {/* Theme */}
+                <button
+                  onClick={toggleTheme}
+                  className="flex w-full items-center justify-between rounded-md px-2 py-1.5 text-left hover:bg-neutral-100 dark:hover:bg-neutral-700"
+                >
+                  <span className="text-xs font-semibold text-neutral-500 dark:text-neutral-400">Theme</span>
+                  <span className="flex items-center gap-1.5 text-xs font-medium text-neutral-700 dark:text-neutral-200">
+                    {dark ? <SunIcon /> : <MoonIcon />}
+                    {dark ? "Light" : "Dark"}
+                  </span>
+                </button>
+
+                {/* Bionic reading */}
+                <button
+                  data-tutorial="bionic"
+                  onClick={toggleBionic}
+                  className="flex w-full items-center justify-between rounded-md px-2 py-1.5 text-left hover:bg-neutral-100 dark:hover:bg-neutral-700"
+                >
+                  <span className="text-xs font-semibold text-neutral-500 dark:text-neutral-400">Bionic reading</span>
+                  <span
+                    className={`flex h-5 w-9 items-center rounded-full p-0.5 transition-colors ${
+                      bionic ? "bg-amber-500" : "bg-neutral-300 dark:bg-neutral-600"
+                    }`}
+                  >
+                    <span
+                      className={`h-4 w-4 rounded-full bg-white shadow transition-transform ${
+                        bionic ? "translate-x-4" : "translate-x-0"
+                      }`}
+                    />
+                  </span>
+                </button>
+
+                {/* Verse numbers */}
+                <button
+                  onClick={toggleVerseNumbers}
+                  className="flex w-full items-center justify-between rounded-md px-2 py-1.5 text-left hover:bg-neutral-100 dark:hover:bg-neutral-700"
+                >
+                  <span className="text-xs font-semibold text-neutral-500 dark:text-neutral-400">Verse numbers</span>
+                  <span
+                    className={`flex h-5 w-9 items-center rounded-full p-0.5 transition-colors ${
+                      verseNumbers ? "bg-amber-500" : "bg-neutral-300 dark:bg-neutral-600"
+                    }`}
+                  >
+                    <span
+                      className={`h-4 w-4 rounded-full bg-white shadow transition-transform ${
+                        verseNumbers ? "translate-x-4" : "translate-x-0"
+                      }`}
+                    />
+                  </span>
+                </button>
+
+                {/* Red letters (words of Jesus) */}
+                <button
+                  onClick={toggleRedLetter}
+                  className="flex w-full items-center justify-between rounded-md px-2 py-1.5 text-left hover:bg-neutral-100 dark:hover:bg-neutral-700"
+                >
+                  <span className="text-xs font-semibold text-neutral-500 dark:text-neutral-400">Red letters</span>
+                  <span
+                    className={`flex h-5 w-9 items-center rounded-full p-0.5 transition-colors ${
+                      redLetter ? "bg-amber-500" : "bg-neutral-300 dark:bg-neutral-600"
+                    }`}
+                  >
+                    <span
+                      className={`h-4 w-4 rounded-full bg-white shadow transition-transform ${
+                        redLetter ? "translate-x-4" : "translate-x-0"
+                      }`}
+                    />
+                  </span>
+                </button>
+
+                {/* Cross-references (BSB only) */}
+                {versionAbbr === "BSB" && (
+                  <button
+                    onClick={toggleCrossRefs}
+                    className="flex w-full items-center justify-between rounded-md px-2 py-1.5 text-left hover:bg-neutral-100 dark:hover:bg-neutral-700"
+                  >
+                    <span className="text-xs font-semibold text-neutral-500 dark:text-neutral-400">Cross-references</span>
+                    <span
+                      className={`flex h-5 w-9 items-center rounded-full p-0.5 transition-colors ${
+                        showCrossRefs ? "bg-amber-500" : "bg-neutral-300 dark:bg-neutral-600"
+                      }`}
+                    >
+                      <span
+                        className={`h-4 w-4 rounded-full bg-white shadow transition-transform ${
+                          showCrossRefs ? "translate-x-4" : "translate-x-0"
+                        }`}
+                      />
+                    </span>
+                  </button>
+                )}
+
+                <div className="my-1 h-px bg-neutral-100 dark:bg-neutral-700" />
+
+                {/* Translation */}
+                <div className="px-2 pb-1 pt-0.5 text-xs font-semibold text-neutral-500 dark:text-neutral-400">
+                  Translation
+                </div>
+                {availableVersions.map((v) => (
+                  <button
+                    key={v.abbr}
+                    onClick={() => {
+                      setSettingsOpen(false);
+                      if (v.abbr !== versionAbbr) {
+                        // Find the chapter whose heading is closest to top of viewport
+                        let bestCh = visibleChapterRef.current;
+                        let bestDist = Infinity;
+                        for (const [chNum, el] of headingRefs.current) {
+                          const dist = Math.abs(el.getBoundingClientRect().top);
+                          if (dist < bestDist) {
+                            bestDist = dist;
+                            bestCh = chNum;
+                          }
+                        }
+                        window.location.href = `/try/bible/read?book=${encodeURIComponent(bookName)}&chapter=${bestCh}&version=${v.abbr}`;
+                      }
+                    }}
+                    className={`block w-full rounded-md px-2 py-1.5 text-left text-sm hover:bg-neutral-100 dark:hover:bg-neutral-700 ${
+                      v.abbr === versionAbbr
+                        ? "font-semibold text-amber-700 dark:text-amber-400"
+                        : "text-neutral-700 dark:text-neutral-300"
+                    }`}
+                  >
+                    <span className="font-medium">{v.abbr}</span>{" "}
+                    <span className="text-neutral-500 dark:text-neutral-400">{v.name}</span>
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+          </div>
+        </div>
+
+        {/* Book selector + chapter strip */}
+        <div className="mx-auto mt-2 flex max-w-2xl items-center gap-3">
+          {/* Book selector */}
+          <div ref={bookRef} className="relative shrink-0">
+            <button
+              onClick={() => {
+                setBookOpen((o) => !o);
+                setSettingsOpen(false);
+              }}
+              className="flex h-7 items-center rounded-md border border-neutral-300 px-2.5 text-sm font-medium text-neutral-700 hover:bg-neutral-50 dark:border-neutral-600 dark:text-neutral-300 dark:hover:bg-neutral-800"
+            >
+              {bookName}
+              <span className="ml-1 text-neutral-400">▾</span>
+            </button>
+            {bookOpen && (
+              <div className="absolute left-0 top-full z-20 mt-1 max-h-64 w-44 overflow-y-auto rounded-lg border border-neutral-200 bg-white py-1 shadow-lg dark:border-neutral-700 dark:bg-neutral-800">
+                {sortedBooks.map((name) => (
+                  <React.Fragment key={name}>
+                    {name === firstNtBook && (
+                      <div className="my-1 flex items-center gap-2 px-3 py-0.5">
+                        <span className="h-px flex-1 bg-neutral-200 dark:bg-neutral-700" />
+                        <span className="text-[10px] font-semibold uppercase tracking-wider text-neutral-400 dark:text-neutral-500">
+                          New Testament
+                        </span>
+                        <span className="h-px flex-1 bg-neutral-200 dark:bg-neutral-700" />
+                      </div>
+                    )}
+                    <button
+                      onClick={() => {
+                        setBookOpen(false);
+                        router.push(readUrl({ book: name, chapter: 1 }));
+                      }}
+                      className={`block w-full px-3 py-1.5 text-left text-sm hover:bg-neutral-100 dark:hover:bg-neutral-700 ${
+                        name === bookName
+                          ? "font-semibold text-amber-700 dark:text-amber-400"
+                          : "text-neutral-700 dark:text-neutral-300"
+                      }`}
+                    >
+                      {name}
+                    </button>
+                  </React.Fragment>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Chapter strip */}
+          <div
+            ref={chapterStripRef}
+            style={{
+              display: "flex",
+              flexWrap: "nowrap",
+              overflowX: "auto",
+              gap: "4px",
+              flex: "1 1 auto",
+              minWidth: 0,
+              paddingTop: "2px",
+              paddingBottom: "2px",
+              paddingLeft: "3px",
+              marginRight: "-16px",
+              paddingRight: "16px",
+              justifyContent: chapterStripJustify,
+              WebkitOverflowScrolling: "touch",
+              scrollbarWidth: "none",
+              msOverflowStyle: "none",
+            } as React.CSSProperties}
+          >
+            {overviewAtStart && overviewChip}
+            {/* Real anchors (not button+push) so every chapter of the book is
+                crawlable from any chapter's server-rendered HTML. */}
+            {chapterNumbers.map((num) => (
+              <Link
+                key={num}
+                href={readUrl({ chapter: num })}
+                ref={num === visibleChapterNumber && !summaryVisible ? activeChapterRef : undefined}
+                style={{ flexShrink: 0, width: "28px", height: "28px" }}
+                className={`flex items-center justify-center rounded text-xs transition-all ${getChapterButtonStyle(num)}`}
+              >
+                {num}
+              </Link>
+            ))}
+            {!overviewAtStart && overviewChip}
+          </div>
+        </div>
+      </header>
+
+      {/* Notes drawer — sticky below header */}
+      {notesDrawerOpen && (
+        <>
+        {/* Backdrop to close on outside click */}
+        <div className="fixed inset-0 z-[8]" onClick={() => setNotesDrawerOpen(false)} />
+        <div className="sticky z-[9]" style={{ top: headerHeight }}>
+          <NotesDrawer
+            bookName={bookName}
+            highlights={allHighlights}
+            onClose={() => setNotesDrawerOpen(false)}
+            onScrollToVerse={(chapter, verse) => {
+              setNotesDrawerOpen(false);
+              scrollToVerse(chapter, verse);
+            }}
+          />
+        </div>
+        </>
+      )}
+
+      {/* Continuous chapter content */}
+      <div className="px-4 py-10">
+        <div
+          ref={contentRef}
+          data-tutorial="content"
+          className={`mx-auto max-w-2xl ${verseNumbers ? "" : "hide-verse-nums"}`}
+        >
+          {/* Top sentinel — triggers loading the previous chapter on scroll */}
+          <div ref={topSentinelRef} className="h-1" />
+          {loadingPrev && (
+            <div className="flex items-center justify-center py-6">
+              <div className="h-6 w-6 animate-spin rounded-full border-2 border-amber-500 border-t-transparent" />
+            </div>
+          )}
+          {/* Book overview — shown collapsed above chapter 1 */}
+          {hasOverview &&
+            overviewAtStart &&
+            loadedChapters[0]?.chapterNumber === chapterNumbers[0] && (
+              <section className="mb-10">
+                <div
+                  ref={summaryHeadingRef}
+                  className="overflow-hidden rounded-2xl border border-amber-200 bg-white shadow-sm dark:border-amber-300/10 dark:bg-amber-400/5"
+                >
+                  <button
+                    onClick={() => setOverviewExpanded((v) => !v)}
+                    aria-expanded={overviewExpanded}
+                    className="flex w-full items-center justify-between gap-3 px-6 py-4 text-left transition-colors hover:bg-amber-50 dark:hover:bg-amber-400/10"
+                  >
+                    <span className="flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-amber-800 dark:text-gold-bright">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+                      </svg>
+                      Book Overview
+                    </span>
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className={`shrink-0 text-amber-800 transition-transform dark:text-gold-bright ${
+                        overviewExpanded ? "rotate-90" : ""
+                      }`}
+                    >
+                      <path d="M9 18l6-6-6-6" />
+                    </svg>
+                  </button>
+                  {overviewExpanded && (
+                    <div className="border-t border-amber-200 px-6 pb-6 pt-5 dark:border-amber-300/10 md:px-8">
+                      <BookOverviewBody
+                        bookName={bookName}
+                        intro={bookIntro}
+                        summary={bookSummary}
+                        fontSize={fontSize}
+                        versionAbbr={versionAbbr}
+                      />
+                    </div>
+                  )}
+                </div>
+              </section>
+            )}
+
+          {loadedChapters.map((ch) => (
+            <ChapterSection
+              key={ch.chapterNumber}
+              bookName={bookName}
+              chapter={ch}
+              bionic={bionic}
+              showCrossRefs={showCrossRefs}
+              redLetter={redLetter}
+              fontSize={fontSize}
+              mode={mode}
+              chapterHighlights={getHighlightsForChapter(allHighlights, bookName, ch.chapterNumber)}
+              onHeadingMount={handleHeadingMount}
+              onReadingComplete={handleReadingCompleteForSection}
+              onNextChapter={handleNextChapterForSection}
+              onSkipQuiz={handleSkipQuiz}
+              onSwitchToReadMode={handleSwitchToReadMode}
+            />
+          ))}
+
+          {/* The overview is now an introduction shown at the START of the book
+              (above chapter 1), so there is no end-of-book recap here anymore. */}
+
+          {/* Loading indicator */}
+          {loadingNext && (
+            <div className="flex items-center justify-center py-10">
+              <div className="h-6 w-6 animate-spin rounded-full border-2 border-amber-500 border-t-transparent" />
+            </div>
+          )}
+
+          {/* End of book */}
+          {!loadingNext &&
+            loadedChapters.length > 0 &&
+            chapterNumbers.indexOf(
+              loadedChapters[loadedChapters.length - 1].chapterNumber,
+            ) === chapterNumbers.length - 1 && (
+              <div className="py-10 text-center">
+                <p className="mb-4 text-sm font-medium text-neutral-500 dark:text-neutral-400">
+                  End of {bookName}
+                </p>
+                <button
+                  onClick={() => router.push("/try/bible/start")}
+                  className="rounded-lg bg-amber-600 px-5 py-2.5 text-sm font-semibold text-neutral-950 shadow-sm transition-colors hover:bg-amber-700"
+                >
+                  Back to Library →
+                </button>
+              </div>
+            )}
+        </div>
+      </div>
+
+      <SiteFooter />
+
+      {/* Selection highlight toolbar — rendered via portal to avoid nesting issues */}
+      {selectionToolbar &&
+        typeof document !== "undefined" &&
+        createPortal(
+          <div
+            ref={toolbarRef}
+            className="absolute z-50"
+            style={{
+              left: `${selectionToolbar.x}px`,
+              top: `${selectionToolbar.y - 8}px`,
+              transform: "translate(-50%, -100%)",
+            }}
+          >
+            <div className="rounded-xl bg-white shadow-xl ring-1 ring-neutral-200 dark:bg-neutral-800 dark:ring-neutral-700">
+              <div className="flex items-center gap-1.5 px-2.5 py-2">
+                <span className="text-sm font-bold text-neutral-500 dark:text-neutral-400">Highlight</span>
+                {HIGHLIGHT_COLORS.map((c) => (
+                  <button
+                    key={c.name}
+                    onClick={() => handleHighlightColor(c.name)}
+                    className={`h-7 w-7 shrink-0 rounded-full ${c.dot} transition-transform hover:scale-110 active:scale-95`}
+                  />
+                ))}
+                <button
+                  onClick={() => setShowNoteInput((o) => !o)}
+                  className={`shrink-0 rounded p-0.5 ${showNoteInput ? "text-amber-700 dark:text-amber-400" : "text-neutral-400 hover:text-neutral-600 dark:hover:text-neutral-300"}`}
+                >
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                </button>
+                <button
+                  onClick={() => {
+                    const { quote, verses } = selectionToolbar;
+                    // Copy the selected text, its reference, and the deep link.
+                    const reference = formatReference(bookName, verses);
+                    const text = quote ? `“${quote}” — ${reference}` : reference;
+                    const first = [...verses].sort(
+                      (a, b) => a.chapter - b.chapter || a.verse - b.verse,
+                    )[0];
+                    // Deep link to the first verse; the reader scrolls to
+                    // ?verse=N on load. Always link to the production site —
+                    // shared quotes should point people at the real website,
+                    // not a dev server or the mobile app's local origin.
+                    const link = `${SITE_URL}${readUrl({ chapter: first.chapter })}&verse=${first.verse}`;
+                    void navigator.clipboard?.writeText(`${text}\n${link}`);
+                    setCopiedRef(true);
+                    window.setTimeout(() => setCopiedRef(false), 1500);
+                  }}
+                  title={`Copy quote (${formatReference(bookName, selectionToolbar.verses)})`}
+                  aria-label="Copy quote"
+                  className={`shrink-0 rounded p-0.5 ${copiedRef ? "text-amber-700 dark:text-amber-400" : "text-neutral-400 hover:text-neutral-600 dark:hover:text-neutral-300"}`}
+                >
+                  {copiedRef ? (
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                  ) : (
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                  )}
+                </button>
+                {selectionToolbar.verses.some((v) => allHighlights[`${bookName}:${v.chapter}:${v.verse}`]) && (
+                  <button
+                    onClick={handleRemoveHighlight}
+                    className="shrink-0 rounded p-0.5 text-neutral-400 hover:text-red-500"
+                  >
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+                  </button>
+                )}
+              </div>
+              {showNoteInput && (
+                <div className="border-t border-neutral-100 px-2 py-1.5 dark:border-neutral-700">
+                  <textarea
+                    value={selectionNote}
+                    onChange={(e) => setSelectionNote(e.target.value)}
+                    placeholder="Add a note..."
+                    rows={4}
+                    className="w-full resize-none rounded border border-neutral-200 bg-neutral-50 px-2 py-1 text-xs text-neutral-700 placeholder-neutral-400 focus:border-amber-400 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-neutral-200"
+                    autoFocus
+                    onMouseDown={(e) => e.stopPropagation()}
+                  />
+                  <button
+                    onClick={handleSaveNote}
+                    className="mt-1 w-full rounded bg-amber-600 py-1 text-xs font-semibold text-neutral-950 hover:bg-amber-700"
+                  >
+                    Save
+                  </button>
+                </div>
+              )}
+            </div>
+            {/* Arrow pointing down */}
+            <div className="flex justify-center">
+              <div className="h-2 w-2 rotate-45 border-b border-r border-neutral-200 bg-white dark:border-neutral-700 dark:bg-neutral-800" />
+            </div>
+          </div>,
+          document.body,
+        )}
+
+      <SearchModal open={searchOpen} onClose={() => setSearchOpen(false)} version={versionAbbr} />
+      {mapSheet && (
+        <ChapterMapSheet
+          bookName={bookName}
+          chapter={mapSheet.chapter}
+          data={mapSheet.data}
+          onClose={() => setMapSheet(null)}
+          onGoToVerse={(verse) => {
+            setMapSheet(null);
+            scrollToVerse(mapSheet.chapter, verse);
+          }}
+        />
+      )}
+      {verseSheet && (
+        <VerseSheet
+          bookName={bookName}
+          chapter={verseSheet.chapter}
+          verse={verseSheet.verse}
+          versionAbbr={versionAbbr}
+          highlight={sheetHighlight}
+          onHighlight={handleSheetHighlight}
+          onRemoveHighlight={handleSheetRemoveHighlight}
+          onSaveNote={handleSheetSaveNote}
+          onClose={() => setVerseSheet(null)}
+        />
+      )}
+      {/* Not marked as seen — organic visits still get the tutorial later. */}
+      {!cameFromShareLink && <Tutorial />}
+      {/* The chapter Map button isn't on every chapter, so it's taught on
+          first contact (after the basic tour) rather than in the linear tour. */}
+      <FirstContactHint
+        selector='[data-tutorial="map"]'
+        storageKey="hint-map-seen"
+        title="This chapter has a map"
+        description="When a chapter names real places, a Map button appears here. Open it to see where they are, and tap any place to read about it."
+      />
+    </div>
+  );
+}

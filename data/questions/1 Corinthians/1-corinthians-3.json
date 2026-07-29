@@ -1,0 +1,56 @@
+{
+  "book": "1 Corinthians",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "1cor-3-q1",
+      "type": "multiple_choice",
+      "question": "Paul compares the Corinthian believers to what because of their immaturity?",
+      "options": [
+        "Children",
+        "Infants needing milk",
+        "Lost sheep",
+        "Withered branches"
+      ],
+      "answer": "Infants needing milk",
+      "verse_reference": "1 Corinthians 3:1-2"
+    },
+    {
+      "id": "1cor-3-q2",
+      "type": "multiple_choice",
+      "question": "What metaphor does Paul use for believers collectively?",
+      "options": [
+        "A great kingdom",
+        "An army",
+        "God's temple",
+        "A garden"
+      ],
+      "answer": "God's temple",
+      "verse_reference": "1 Corinthians 3:16"
+    },
+    {
+      "id": "1cor-3-q3",
+      "type": "true_false",
+      "question": "Paul says he planted, Apollos watered, but God gave the growth.",
+      "answer": "true",
+      "verse_reference": "1 Corinthians 3:6"
+    },
+    {
+      "id": "1cor-3-q4",
+      "type": "fill_blank",
+      "question": "For no one can lay any foundation other than the one already laid, which is Jesus _____.",
+      "answer": "Christ",
+      "verse_reference": "1 Corinthians 3:11"
+    },
+    {
+      "id": "1cor-3-q5",
+      "type": "fill_blank",
+      "question": "Don't you know that you are a _____ of God and that God's Spirit lives in you?",
+      "answer": "temple",
+      "accept": [
+        "sanctuary"
+      ],
+      "verse_reference": "1 Corinthians 3:16"
+    }
+  ]
+}

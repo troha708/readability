@@ -1,0 +1,60 @@
+{
+  "book": "Habakkuk",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "habakkuk-2-q1",
+      "type": "multiple_choice",
+      "question": "What did God tell Habakkuk to do with the vision?",
+      "options": [
+        "Burn it up in the fire entirely, for the vision will surely never once come true",
+        "Keep it hidden away and tightly sealed up until the great and final day of judgment",
+        "Proclaim it at once aloud to all of the many nations of the whole wide earth",
+        "Write it down and make it plain on tablets, for it awaits its appointed time"
+      ],
+      "answer": "Write it down and make it plain on tablets, for it awaits its appointed time",
+      "verse_reference": "Habakkuk 2:2-3"
+    },
+    {
+      "id": "habakkuk-2-q2",
+      "type": "multiple_choice",
+      "question": "What famous statement of faith appears in Habakkuk 2?",
+      "options": [
+        "The righteous shall live by his faith",
+        "The proud of heart shall surely fall",
+        "Seek the LORD, and you shall find him",
+        "The wicked shall prosper for a season"
+      ],
+      "answer": "The righteous shall live by his faith",
+      "verse_reference": "Habakkuk 2:4"
+    },
+    {
+      "id": "habakkuk-2-q3",
+      "type": "true_false",
+      "question": "Habakkuk 2 says the earth will be filled with the knowledge of the glory of the LORD as the waters cover the sea.",
+      "answer": "true",
+      "verse_reference": "Habakkuk 2:14"
+    },
+    {
+      "id": "habakkuk-2-q4",
+      "type": "fill_blank",
+      "question": "The righteous shall live by his _____.",
+      "answer": "faith",
+      "accept": [
+        "steadfastness",
+        "stedfastness"
+      ],
+      "verse_reference": "Habakkuk 2:4"
+    },
+    {
+      "id": "habakkuk-2-q5",
+      "type": "fill_blank",
+      "question": "The LORD is in His holy temple; let all the earth be _____ before Him.",
+      "answer": "silent",
+      "accept": [
+        "silence"
+      ],
+      "verse_reference": "Habakkuk 2:20"
+    }
+  ]
+}

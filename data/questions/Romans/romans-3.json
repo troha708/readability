@@ -1,0 +1,56 @@
+{
+  "book": "Romans",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "romans-3-q1",
+      "type": "multiple_choice",
+      "question": "According to Paul, how many people are righteous on their own?",
+      "options": [
+        "Only Jews",
+        "None",
+        "A few",
+        "Many"
+      ],
+      "answer": "None",
+      "verse_reference": "Romans 3:10"
+    },
+    {
+      "id": "romans-3-q2",
+      "type": "multiple_choice",
+      "question": "Paul says people are justified freely by God's grace through what?",
+      "options": [
+        "The careful keeping of the whole law",
+        "The sacrifices offered at the temple",
+        "The sign of circumcision in their flesh",
+        "The redemption that is in Christ Jesus"
+      ],
+      "answer": "The redemption that is in Christ Jesus",
+      "verse_reference": "Romans 3:24"
+    },
+    {
+      "id": "romans-3-q3",
+      "type": "true_false",
+      "question": "Paul argues that faith in Christ overthrows and destroys the Law.",
+      "answer": "false",
+      "verse_reference": "Romans 3:31"
+    },
+    {
+      "id": "romans-3-q4",
+      "type": "fill_blank",
+      "question": "For all have _____ and fall short of the glory of God.",
+      "answer": "sinned",
+      "verse_reference": "Romans 3:23"
+    },
+    {
+      "id": "romans-3-q5",
+      "type": "fill_blank",
+      "question": "There is no _____, for all have sinned.",
+      "answer": "distinction",
+      "accept": [
+        "difference"
+      ],
+      "verse_reference": "Romans 3:22-23"
+    }
+  ]
+}

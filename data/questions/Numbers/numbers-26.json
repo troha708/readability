@@ -1,0 +1,53 @@
+{
+  "book": "Numbers",
+  "chapter": 26,
+  "questions": [
+    {
+      "id": "numbers-26-q1",
+      "type": "multiple_choice",
+      "question": "What happened in chapter 26?",
+      "options": [
+        "A great battle against the Midianites",
+        "A second census of the new generation",
+        "A famine that struck the wilderness camp",
+        "A festival of thanksgiving to the LORD"
+      ],
+      "answer": "A second census of the new generation",
+      "verse_reference": "Numbers 26:2"
+    },
+    {
+      "id": "numbers-26-q2",
+      "type": "multiple_choice",
+      "question": "Why was the new census taken?",
+      "options": [
+        "To keep a record for the coming war",
+        "To number the priests for the temple",
+        "To divide the land among the tribes",
+        "To set the amount of the temple tax"
+      ],
+      "answer": "To divide the land among the tribes",
+      "verse_reference": "Numbers 26:53-54"
+    },
+    {
+      "id": "numbers-26-q3",
+      "type": "true_false",
+      "question": "Almost none counted in the first census were still alive, just as God had said.",
+      "answer": "true",
+      "verse_reference": "Numbers 26:64-65"
+    },
+    {
+      "id": "numbers-26-q4",
+      "type": "fill_blank",
+      "question": "This census counted the new _____ that had grown up in the wilderness.",
+      "answer": "generation",
+      "verse_reference": "Numbers 26:64"
+    },
+    {
+      "id": "numbers-26-q5",
+      "type": "fill_blank",
+      "question": "The land was to be divided as an inheritance according to the _____ of names.",
+      "answer": "number",
+      "verse_reference": "Numbers 26:53"
+    }
+  ]
+}

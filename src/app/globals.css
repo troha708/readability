@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light palette from esv.org: the READING surface is pure white (their
+   `main` reads on --text-bg-color #fff; #fafafa is only their column
+   gutter), with #424547 text. */
+:root {
+  --background: #ffffff;
+  --foreground: #424547;
+}
+
+/* Dark reading ground: a warm near-black (neutral-925; sampled against
+   Reddit's dark mode #13120E) with esv.org's #d3d7da text — the contrast
+   stays ~13:1, well below the old glaring 17:1. ESV's #202121/#282a2b
+   greys remain as the raised-surface steps (cards, sheets, panels). The
+   landing and static shells keep their own near-black bg-neutral-950. */
+.dark {
+  --background: #14110f;
+  --foreground: #d3d7da;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Brief spotlight on the verse a ?verse= deep link points at */
+@keyframes verse-flash {
+  0%,
+  35% {
+    background-color: rgb(211 168 60 / 0.22);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+.verse-flash {
+  animation: verse-flash 2.5s ease-out 1;
+  border-radius: 0.25rem;
+}
+
+/* Brief spotlight on the exact phrase a search result jumps to */
+::highlight(search-phrase) {
+  background-color: rgb(211 168 60 / 0.45);
+  color: inherit;
+}
+
+/* Verse tap affordance. Each run of scripture text is a .vtext span (see
+   format-chunk-text); it shows a pointer cursor so the verse reads as tappable,
+   and the reader's hover handler toggles .vh-on across the spans of the verse
+   under the cursor to light the whole verse (desktop). The translucent gold
+   works over both light and dark backgrounds. Section headings opt out. */
+.vtext {
+  cursor: pointer;
+}
+h1 .vtext,
+h2 .vtext,
+h3 .vtext {
+  cursor: default;
+}
+.vh-on {
+  background-color: rgb(211 168 60 / 0.16);
+  border-radius: 0.125rem;
+}
+
+/* "Verse numbers off" (reader display setting): hide the verse-number
+   superscripts for an uninterrupted read. They stay in the DOM (carrying
+   data-verse-num) so verse tap/selection and the chapter drop-cap are
+   unaffected — only the little markers disappear. */
+.hide-verse-nums .verse-num {
+  display: none;
+}

@@ -1,0 +1,58 @@
+{
+  "book": "Proverbs",
+  "chapter": 16,
+  "questions": [
+    {
+      "id": "proverbs-16-q1",
+      "type": "multiple_choice",
+      "question": "What does Proverbs 16 say to commit to the LORD?",
+      "options": [
+        "Your enemies, and they will be scattered",
+        "Your children alone, and they will surely prosper",
+        "Your wealth, and it will be multiplied",
+        "Your work, and your plans will be established"
+      ],
+      "answer": "Your work, and your plans will be established",
+      "verse_reference": "Proverbs 16:3"
+    },
+    {
+      "id": "proverbs-16-q2",
+      "type": "multiple_choice",
+      "question": "What famous warning about pride does Proverbs 16 contain?",
+      "options": [
+        "A proud heart is the surest of all foundations for true wisdom",
+        "Pride goes before destruction, and a haughty spirit before a fall",
+        "Pride lifts a man up high above his neighbors and wins him much honor",
+        "The proud are richly rewarded, but the humble are very soon forgotten"
+      ],
+      "answer": "Pride goes before destruction, and a haughty spirit before a fall",
+      "verse_reference": "Proverbs 16:18"
+    },
+    {
+      "id": "proverbs-16-q3",
+      "type": "true_false",
+      "question": "Proverbs 16 says the heart of man plans his way, but the LORD establishes his steps.",
+      "answer": "true",
+      "verse_reference": "Proverbs 16:9"
+    },
+    {
+      "id": "proverbs-16-q4",
+      "type": "fill_blank",
+      "question": "_____ goes before destruction, and a haughty spirit before a fall.",
+      "answer": "Pride",
+      "verse_reference": "Proverbs 16:18"
+    },
+    {
+      "id": "proverbs-16-q5",
+      "type": "fill_blank",
+      "question": "Commit your work to the LORD, and your plans will be _____.",
+      "answer": "achieved",
+      "accept": [
+        "established",
+        "succeed",
+        "directed"
+      ],
+      "verse_reference": "Proverbs 16:3"
+    }
+  ]
+}

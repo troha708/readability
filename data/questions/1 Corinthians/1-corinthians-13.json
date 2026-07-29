@@ -1,0 +1,56 @@
+{
+  "book": "1 Corinthians",
+  "chapter": 13,
+  "questions": [
+    {
+      "id": "1cor-13-q1",
+      "type": "multiple_choice",
+      "question": "This chapter is famously known as the chapter about what?",
+      "options": [
+        "Faith",
+        "Wisdom",
+        "Hope",
+        "Love"
+      ],
+      "answer": "Love",
+      "verse_reference": "1 Corinthians 13:1-13"
+    },
+    {
+      "id": "1cor-13-q2",
+      "type": "multiple_choice",
+      "question": "Paul says that without love, even speaking in tongues makes him like what?",
+      "options": [
+        "A lamp hidden under a basket",
+        "A barren tree without any fruit",
+        "A noisy gong or clanging cymbal",
+        "A house built upon the sand"
+      ],
+      "answer": "A noisy gong or clanging cymbal",
+      "verse_reference": "1 Corinthians 13:1"
+    },
+    {
+      "id": "1cor-13-q3",
+      "type": "true_false",
+      "question": "Paul says love keeps a record of wrongs.",
+      "answer": "false",
+      "verse_reference": "1 Corinthians 13:5"
+    },
+    {
+      "id": "1cor-13-q4",
+      "type": "fill_blank",
+      "question": "Love is patient. Love is _____. Love doesn't envy.",
+      "answer": "kind",
+      "verse_reference": "1 Corinthians 13:4"
+    },
+    {
+      "id": "1cor-13-q5",
+      "type": "fill_blank",
+      "question": "Now these three remain: faith, hope, and love. But the greatest of these is _____.",
+      "answer": "love",
+      "accept": [
+        "charity"
+      ],
+      "verse_reference": "1 Corinthians 13:13"
+    }
+  ]
+}

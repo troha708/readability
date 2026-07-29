@@ -1,0 +1,56 @@
+{
+  "book": "Ezra",
+  "chapter": 9,
+  "questions": [
+    {
+      "id": "ezra-9-q1",
+      "type": "multiple_choice",
+      "question": "What sin did Ezra learn the people had committed?",
+      "options": [
+        "Worship of the idols of Babylon",
+        "Intermarriage with the surrounding peoples",
+        "Theft from the sacred treasury of the temple",
+        "Murder among the leading families"
+      ],
+      "answer": "Intermarriage with the surrounding peoples",
+      "verse_reference": "Ezra 9:1-2"
+    },
+    {
+      "id": "ezra-9-q2",
+      "type": "multiple_choice",
+      "question": "How did Ezra react when he heard this?",
+      "options": [
+        "He fled away from the city and hid himself for many days",
+        "He rejoiced greatly that the exiles had finally returned",
+        "He tore his garment, pulled hair, and sat appalled",
+        "He ignored the troubling report and said nothing at all"
+      ],
+      "answer": "He tore his garment, pulled hair, and sat appalled",
+      "verse_reference": "Ezra 9:3"
+    },
+    {
+      "id": "ezra-9-q3",
+      "type": "true_false",
+      "question": "Ezra prayed, confessing the people's guilt and acknowledging God's grace in leaving a remnant.",
+      "answer": "true",
+      "verse_reference": "Ezra 9:6-15"
+    },
+    {
+      "id": "ezra-9-q4",
+      "type": "fill_blank",
+      "question": "Ezra said he was too ashamed to lift his _____ to God because of their iniquities.",
+      "answer": "face",
+      "accept": [
+        "eyes"
+      ],
+      "verse_reference": "Ezra 9:6"
+    },
+    {
+      "id": "ezra-9-q5",
+      "type": "fill_blank",
+      "question": "Ezra fell on his knees and spread out his _____ to the LORD his God.",
+      "answer": "hands",
+      "verse_reference": "Ezra 9:5"
+    }
+  ]
+}

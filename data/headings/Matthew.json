@@ -1,0 +1,674 @@
+{
+  "book": "Matthew",
+  "source": "Berean Standard Bible (CC0 Public Domain)",
+  "chapters": {
+    "1": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Genealogy of Jesus"
+      },
+      {
+        "beforeVerse": 18,
+        "heading": "The Birth of Jesus"
+      }
+    ],
+    "2": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Pilgrimage of the Magi"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "The Flight to Egypt"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "Weeping and Great Mourning"
+      },
+      {
+        "beforeVerse": 19,
+        "heading": "The Return to Nazareth"
+      }
+    ],
+    "3": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Mission of John the Baptist"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "The Baptism of Jesus"
+      }
+    ],
+    "4": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Temptation of Jesus"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "Jesus Begins His Ministry"
+      },
+      {
+        "beforeVerse": 18,
+        "heading": "The First Disciples"
+      },
+      {
+        "beforeVerse": 23,
+        "heading": "Jesus Heals the Multitudes"
+      }
+    ],
+    "5": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Sermon on the Mount"
+      },
+      {
+        "beforeVerse": 3,
+        "heading": "The Beatitudes"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "Salt and Light"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "The Fulfillment of the Law"
+      },
+      {
+        "beforeVerse": 21,
+        "heading": "Anger and Reconciliation"
+      },
+      {
+        "beforeVerse": 27,
+        "heading": "Adultery"
+      },
+      {
+        "beforeVerse": 31,
+        "heading": "Divorce"
+      },
+      {
+        "beforeVerse": 33,
+        "heading": "Oaths and Vows"
+      },
+      {
+        "beforeVerse": 38,
+        "heading": "Love Your Enemies"
+      }
+    ],
+    "6": [
+      {
+        "beforeVerse": 1,
+        "heading": "Giving to the Needy"
+      },
+      {
+        "beforeVerse": 5,
+        "heading": "The Lord’s Prayer"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "Proper Fasting"
+      },
+      {
+        "beforeVerse": 19,
+        "heading": "Treasures in Heaven"
+      },
+      {
+        "beforeVerse": 22,
+        "heading": "The Lamp of the Body"
+      },
+      {
+        "beforeVerse": 25,
+        "heading": "Do Not Worry"
+      }
+    ],
+    "7": [
+      {
+        "beforeVerse": 1,
+        "heading": "Judging Others"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "Ask, Seek, Knock"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "The Narrow Gate"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "A Tree and Its Fruit"
+      },
+      {
+        "beforeVerse": 24,
+        "heading": "The House on the Rock"
+      },
+      {
+        "beforeVerse": 28,
+        "heading": "The Authority of Jesus"
+      }
+    ],
+    "8": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Leper’s Prayer"
+      },
+      {
+        "beforeVerse": 5,
+        "heading": "The Faith of the Centurion"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "Jesus Heals at Peter’s House"
+      },
+      {
+        "beforeVerse": 18,
+        "heading": "The Cost of Discipleship"
+      },
+      {
+        "beforeVerse": 23,
+        "heading": "Jesus Calms the Storm"
+      },
+      {
+        "beforeVerse": 28,
+        "heading": "The Demons and the Pigs"
+      }
+    ],
+    "9": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jesus Heals a Paralytic"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "Jesus Calls Matthew"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "Questions about Fasting"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "The Patches and the Wineskins"
+      },
+      {
+        "beforeVerse": 18,
+        "heading": "The Healing Touch of Jesus"
+      },
+      {
+        "beforeVerse": 27,
+        "heading": "Jesus Heals the Blind and Mute"
+      },
+      {
+        "beforeVerse": 35,
+        "heading": "The Lord of the Harvest"
+      }
+    ],
+    "10": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Twelve Apostles"
+      },
+      {
+        "beforeVerse": 5,
+        "heading": "The Ministry of the Twelve"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "Sheep among Wolves"
+      },
+      {
+        "beforeVerse": 26,
+        "heading": "Fear God Alone"
+      },
+      {
+        "beforeVerse": 32,
+        "heading": "Confessing Christ"
+      },
+      {
+        "beforeVerse": 34,
+        "heading": "Not Peace but a Sword"
+      },
+      {
+        "beforeVerse": 40,
+        "heading": "The Reward of Service"
+      }
+    ],
+    "11": [
+      {
+        "beforeVerse": 1,
+        "heading": "John’s Inquiry"
+      },
+      {
+        "beforeVerse": 7,
+        "heading": "Jesus Testifies about John"
+      },
+      {
+        "beforeVerse": 20,
+        "heading": "Woe to the Unrepentant"
+      },
+      {
+        "beforeVerse": 25,
+        "heading": "Rest for the Weary"
+      }
+    ],
+    "12": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Lord of the Sabbath"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "Jesus Heals on the Sabbath"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "God’s Chosen Servant"
+      },
+      {
+        "beforeVerse": 22,
+        "heading": "A House Divided"
+      },
+      {
+        "beforeVerse": 31,
+        "heading": "The Unpardonable Sin"
+      },
+      {
+        "beforeVerse": 33,
+        "heading": "Good and Bad Fruit"
+      },
+      {
+        "beforeVerse": 38,
+        "heading": "The Sign of Jonah"
+      },
+      {
+        "beforeVerse": 43,
+        "heading": "An Unclean Spirit Returns"
+      },
+      {
+        "beforeVerse": 46,
+        "heading": "Jesus’ Mother and Brothers"
+      }
+    ],
+    "13": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Parable of the Sower"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "The Purpose of Jesus’ Parables"
+      },
+      {
+        "beforeVerse": 18,
+        "heading": "The Parable of the Sower Explained"
+      },
+      {
+        "beforeVerse": 24,
+        "heading": "The Parable of the Weeds"
+      },
+      {
+        "beforeVerse": 31,
+        "heading": "The Parable of the Mustard Seed"
+      },
+      {
+        "beforeVerse": 33,
+        "heading": "The Parable of the Leaven"
+      },
+      {
+        "beforeVerse": 34,
+        "heading": "I Will Open My Mouth in Parables"
+      },
+      {
+        "beforeVerse": 36,
+        "heading": "The Parable of the Weeds Explained"
+      },
+      {
+        "beforeVerse": 44,
+        "heading": "The Parables of the Treasure and the Pearl"
+      },
+      {
+        "beforeVerse": 47,
+        "heading": "The Parable of the Net"
+      },
+      {
+        "beforeVerse": 53,
+        "heading": "The Rejection at Nazareth"
+      }
+    ],
+    "14": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Beheading of John"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "The Feeding of the Five Thousand"
+      },
+      {
+        "beforeVerse": 22,
+        "heading": "Jesus Walks on Water"
+      },
+      {
+        "beforeVerse": 34,
+        "heading": "Jesus Heals at Gennesaret"
+      }
+    ],
+    "15": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Tradition of the Elders"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "What Defiles a Man"
+      },
+      {
+        "beforeVerse": 21,
+        "heading": "The Faith of the Canaanite Woman"
+      },
+      {
+        "beforeVerse": 29,
+        "heading": "The Feeding of the Four Thousand"
+      }
+    ],
+    "16": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Demand for a Sign"
+      },
+      {
+        "beforeVerse": 5,
+        "heading": "The Leaven of the Pharisees and Sadducees"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "Peter’s Confession of Christ"
+      },
+      {
+        "beforeVerse": 21,
+        "heading": "Christ’s Passion Foretold"
+      },
+      {
+        "beforeVerse": 24,
+        "heading": "Take Up Your Cross"
+      }
+    ],
+    "17": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Transfiguration"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "The Boy with a Demon"
+      },
+      {
+        "beforeVerse": 19,
+        "heading": "The Power of Faith"
+      },
+      {
+        "beforeVerse": 22,
+        "heading": "The Second Prediction of the Passion"
+      },
+      {
+        "beforeVerse": 24,
+        "heading": "The Temple Tax"
+      }
+    ],
+    "18": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Greatest in the Kingdom"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "Temptations and Trespasses"
+      },
+      {
+        "beforeVerse": 10,
+        "heading": "The Parable of the Lost Sheep"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "A Brother Who Sins"
+      },
+      {
+        "beforeVerse": 19,
+        "heading": "Ask in My Name"
+      },
+      {
+        "beforeVerse": 21,
+        "heading": "The Unforgiving Servant"
+      }
+    ],
+    "19": [
+      {
+        "beforeVerse": 1,
+        "heading": "Teachings about Divorce"
+      },
+      {
+        "beforeVerse": 13,
+        "heading": "Jesus Blesses the Children"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "The Rich Young Man"
+      }
+    ],
+    "20": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Parable of the Workers"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "The Third Prediction of the Passion"
+      },
+      {
+        "beforeVerse": 20,
+        "heading": "A Mother’s Request"
+      },
+      {
+        "beforeVerse": 29,
+        "heading": "The Blind Men by the Road"
+      }
+    ],
+    "21": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Triumphal Entry"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "Jesus Cleanses the Temple"
+      },
+      {
+        "beforeVerse": 18,
+        "heading": "The Barren Fig Tree"
+      },
+      {
+        "beforeVerse": 23,
+        "heading": "Jesus’ Authority Challenged"
+      },
+      {
+        "beforeVerse": 28,
+        "heading": "The Parable of the Two Sons"
+      },
+      {
+        "beforeVerse": 33,
+        "heading": "The Parable of the Wicked Tenants"
+      }
+    ],
+    "22": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Parable of the Banquet"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "Paying Taxes to Caesar"
+      },
+      {
+        "beforeVerse": 23,
+        "heading": "The Sadducees and the Resurrection"
+      },
+      {
+        "beforeVerse": 34,
+        "heading": "The Greatest Commandment"
+      },
+      {
+        "beforeVerse": 41,
+        "heading": "Whose Son Is the Christ?"
+      }
+    ],
+    "23": [
+      {
+        "beforeVerse": 1,
+        "heading": "Woes to Scribes and Pharisees"
+      },
+      {
+        "beforeVerse": 37,
+        "heading": "Lament over Jerusalem"
+      }
+    ],
+    "24": [
+      {
+        "beforeVerse": 1,
+        "heading": "Temple Destruction and Other Signs"
+      },
+      {
+        "beforeVerse": 9,
+        "heading": "Witnessing to All Nations"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "The Abomination of Desolation"
+      },
+      {
+        "beforeVerse": 26,
+        "heading": "The Return of the Son of Man"
+      },
+      {
+        "beforeVerse": 32,
+        "heading": "The Lesson of the Fig Tree"
+      },
+      {
+        "beforeVerse": 36,
+        "heading": "Readiness at Any Hour"
+      }
+    ],
+    "25": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Parable of the Ten Virgins"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "The Parable of the Talents"
+      },
+      {
+        "beforeVerse": 31,
+        "heading": "The Sheep and the Goats"
+      }
+    ],
+    "26": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Plot to Kill Jesus"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "Jesus Anointed at Bethany"
+      },
+      {
+        "beforeVerse": 14,
+        "heading": "Judas Agrees to Betray Jesus"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "Preparing the Passover"
+      },
+      {
+        "beforeVerse": 20,
+        "heading": "The Last Supper"
+      },
+      {
+        "beforeVerse": 31,
+        "heading": "Jesus Predicts Peter’s Denial"
+      },
+      {
+        "beforeVerse": 36,
+        "heading": "Jesus Prays at Gethsemane"
+      },
+      {
+        "beforeVerse": 47,
+        "heading": "The Betrayal of Jesus"
+      },
+      {
+        "beforeVerse": 57,
+        "heading": "Jesus before the Sanhedrin"
+      },
+      {
+        "beforeVerse": 69,
+        "heading": "Peter Denies Jesus"
+      }
+    ],
+    "27": [
+      {
+        "beforeVerse": 1,
+        "heading": "Jesus Delivered to Pilate"
+      },
+      {
+        "beforeVerse": 3,
+        "heading": "Judas Hangs Himself"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "Jesus before Pilate"
+      },
+      {
+        "beforeVerse": 15,
+        "heading": "The Crowd Chooses Barabbas"
+      },
+      {
+        "beforeVerse": 24,
+        "heading": "Pilate Washes His Hands"
+      },
+      {
+        "beforeVerse": 27,
+        "heading": "The Soldiers Mock Jesus"
+      },
+      {
+        "beforeVerse": 32,
+        "heading": "The Crucifixion"
+      },
+      {
+        "beforeVerse": 45,
+        "heading": "The Death of Jesus"
+      },
+      {
+        "beforeVerse": 57,
+        "heading": "The Burial of Jesus"
+      },
+      {
+        "beforeVerse": 62,
+        "heading": "The Guards at the Tomb"
+      }
+    ],
+    "28": [
+      {
+        "beforeVerse": 1,
+        "heading": "The Resurrection"
+      },
+      {
+        "beforeVerse": 11,
+        "heading": "The Report of the Guards"
+      },
+      {
+        "beforeVerse": 16,
+        "heading": "The Great Commission"
+      }
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "book": "2 Kings",
+  "chapter": 25,
+  "questions": [
+    {
+      "id": "2-kings-25-q1",
+      "type": "multiple_choice",
+      "question": "What happened to Jerusalem and the temple in this final chapter?",
+      "options": [
+        "They were sold to a neighboring king",
+        "They were spared in return for a heavy tribute",
+        "They were rebuilt grander than before",
+        "They were destroyed and burned by Babylon"
+      ],
+      "answer": "They were destroyed and burned by Babylon",
+      "verse_reference": "2 Kings 25:8-10"
+    },
+    {
+      "id": "2-kings-25-q2",
+      "type": "multiple_choice",
+      "question": "What happened to King Zedekiah of Judah?",
+      "options": [
+        "He was captured, blinded, and taken to Babylon",
+        "He surrendered and was graciously spared by the king",
+        "He was killed defending the temple gate",
+        "He escaped by night and fled into Egypt"
+      ],
+      "answer": "He was captured, blinded, and taken to Babylon",
+      "verse_reference": "2 Kings 25:6-7"
+    },
+    {
+      "id": "2-kings-25-q3",
+      "type": "true_false",
+      "question": "The people of Judah were carried into exile in Babylon.",
+      "answer": "true",
+      "verse_reference": "2 Kings 25:11"
+    },
+    {
+      "id": "2-kings-25-q4",
+      "type": "fill_blank",
+      "question": "The Babylonians burned the _____ of the LORD and the king's palace.",
+      "answer": "house",
+      "verse_reference": "2 Kings 25:9"
+    },
+    {
+      "id": "2-kings-25-q5",
+      "type": "fill_blank",
+      "question": "King _____ of Judah was blinded and carried to Babylon.",
+      "answer": "Zedekiah",
+      "verse_reference": "2 Kings 25:6-7"
+    }
+  ]
+}

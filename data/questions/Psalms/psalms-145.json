@@ -1,0 +1,58 @@
+{
+  "book": "Psalms",
+  "chapter": 145,
+  "questions": [
+    {
+      "id": "psalms-145-q1",
+      "type": "multiple_choice",
+      "question": "How does David begin Psalm 145?",
+      "options": [
+        "'Have mercy on me, O God, for I have sinned'",
+        "'I will extol you, my God and King'",
+        "'Out of the depths I cry to you, O LORD'",
+        "'How long, O LORD? Will you forget me forever?'"
+      ],
+      "answer": "'I will extol you, my God and King'",
+      "verse_reference": "Psalm 145:1"
+    },
+    {
+      "id": "psalms-145-q2",
+      "type": "multiple_choice",
+      "question": "How does the psalm describe the LORD's character?",
+      "options": [
+        "Holy and unknowable, veiled deep in cloud and wrapped about in fire",
+        "Gracious and merciful, slow to anger and abounding in steadfast love",
+        "Mighty and dreadful, swift to judge and altogether terrible in wrath",
+        "Distant and hidden away, silent in heaven and very far from all men"
+      ],
+      "answer": "Gracious and merciful, slow to anger and abounding in steadfast love",
+      "verse_reference": "Psalm 145:8"
+    },
+    {
+      "id": "psalms-145-q3",
+      "type": "true_false",
+      "question": "The psalm says the LORD is good to all, and his mercy is over all that he has made.",
+      "answer": "true",
+      "verse_reference": "Psalm 145:9"
+    },
+    {
+      "id": "psalms-145-q4",
+      "type": "fill_blank",
+      "question": "The LORD is gracious and compassionate, slow to anger and abounding in loving _____.",
+      "answer": "devotion",
+      "accept": [
+        "love",
+        "mercy",
+        "kindness"
+      ],
+      "verse_reference": "Psalm 145:8"
+    },
+    {
+      "id": "psalms-145-q5",
+      "type": "fill_blank",
+      "question": "The LORD is near to all who call on him, to all who call on him in _____.",
+      "answer": "truth",
+      "verse_reference": "Psalm 145:18"
+    }
+  ]
+}

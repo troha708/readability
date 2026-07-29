@@ -1,0 +1,59 @@
+{
+  "book": "Ezekiel",
+  "chapter": 22,
+  "questions": [
+    {
+      "id": "ezekiel-22-q1",
+      "type": "multiple_choice",
+      "question": "What does God call Jerusalem in chapter 22?",
+      "options": [
+        "The holy city, set apart for worship",
+        "The merchant city, rich with trade",
+        "The bloody city, full of idols and injustice",
+        "The fallen city, emptied of its people"
+      ],
+      "answer": "The bloody city, full of idols and injustice",
+      "verse_reference": "Ezekiel 22:2-4"
+    },
+    {
+      "id": "ezekiel-22-q2",
+      "type": "multiple_choice",
+      "question": "Whom did God seek but not find in Ezekiel 22?",
+      "options": [
+        "A man to stand in the gap before him for the land",
+        "A king to lead the whole army out into the battle",
+        "A prophet to warn all the people of the judgment",
+        "A priest to offer up all of the proper sacrifices"
+      ],
+      "answer": "A man to stand in the gap before him for the land",
+      "verse_reference": "Ezekiel 22:30"
+    },
+    {
+      "id": "ezekiel-22-q3",
+      "type": "true_false",
+      "question": "Ezekiel 22 says the people had become dross to be melted in the furnace of God's wrath.",
+      "answer": "true",
+      "verse_reference": "Ezekiel 22:18-22"
+    },
+    {
+      "id": "ezekiel-22-q4",
+      "type": "fill_blank",
+      "question": "I searched for a man among them to repair the wall and stand in the _____ before Me.",
+      "answer": "gap",
+      "accept": [
+        "breach"
+      ],
+      "verse_reference": "Ezekiel 22:30"
+    },
+    {
+      "id": "ezekiel-22-q5",
+      "type": "fill_blank",
+      "question": "Her prophets whitewash these deeds with false visions and _____ divinations.",
+      "answer": "lying",
+      "accept": [
+        "lies"
+      ],
+      "verse_reference": "Ezekiel 22:28"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "book": "Ezekiel",
+  "chapter": 14,
+  "questions": [
+    {
+      "id": "ezekiel-14-q1",
+      "type": "multiple_choice",
+      "question": "What did God say the elders had set up in their hearts in chapter 14?",
+      "options": [
+        "Prayers",
+        "A temple",
+        "Idols",
+        "Plans for return"
+      ],
+      "answer": "Idols",
+      "verse_reference": "Ezekiel 14:3"
+    },
+    {
+      "id": "ezekiel-14-q2",
+      "type": "multiple_choice",
+      "question": "Which three righteous men does God name, who could only save themselves by their righteousness?",
+      "options": [
+        "Abraham, Isaac, Jacob",
+        "Noah, Daniel, and Job",
+        "Moses, Aaron, Samuel",
+        "Elijah, Elisha, Isaiah"
+      ],
+      "answer": "Noah, Daniel, and Job",
+      "verse_reference": "Ezekiel 14:14"
+    },
+    {
+      "id": "ezekiel-14-q3",
+      "type": "true_false",
+      "question": "God said even Noah, Daniel, and Job could not save sons or daughters by their righteousness in such a sinful land.",
+      "answer": "true",
+      "verse_reference": "Ezekiel 14:16, 20"
+    },
+    {
+      "id": "ezekiel-14-q4",
+      "type": "fill_blank",
+      "question": "These men have taken their idols into their _____.",
+      "answer": "hearts",
+      "accept": [
+        "heart"
+      ],
+      "verse_reference": "Ezekiel 14:3"
+    },
+    {
+      "id": "ezekiel-14-q5",
+      "type": "fill_blank",
+      "question": "Even if Noah, Daniel, and _____ were in it, they would deliver but their own lives.",
+      "answer": "Job",
+      "verse_reference": "Ezekiel 14:14"
+    }
+  ]
+}

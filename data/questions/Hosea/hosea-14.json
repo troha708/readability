@@ -1,0 +1,56 @@
+{
+  "book": "Hosea",
+  "chapter": 14,
+  "questions": [
+    {
+      "id": "hosea-14-q1",
+      "type": "multiple_choice",
+      "question": "How does Hosea end in chapter 14?",
+      "options": [
+        "With a call to return to the LORD and a promise of healing",
+        "With a long list of all of the nations that are to be judged",
+        "With a great vision of the holy temple being rebuilt at last",
+        "With a final solemn pronouncement of utter destruction"
+      ],
+      "answer": "With a call to return to the LORD and a promise of healing",
+      "verse_reference": "Hosea 14:1-4"
+    },
+    {
+      "id": "hosea-14-q2",
+      "type": "multiple_choice",
+      "question": "What does God promise to be for Israel if they return?",
+      "options": [
+        "Like the dew, so Israel will blossom like the lily",
+        "Like a great fire, consuming up all of the dry stubble",
+        "Like a long drought, drying up all of the flowing streams",
+        "Like a great flood, sweeping all of the people clean away"
+      ],
+      "answer": "Like the dew, so Israel will blossom like the lily",
+      "verse_reference": "Hosea 14:5"
+    },
+    {
+      "id": "hosea-14-q3",
+      "type": "true_false",
+      "question": "Hosea 14 says God will heal their apostasy and love them freely.",
+      "answer": "true",
+      "verse_reference": "Hosea 14:4"
+    },
+    {
+      "id": "hosea-14-q4",
+      "type": "fill_blank",
+      "question": "Return, O Israel, to the LORD your God, for you have stumbled because of your _____.",
+      "answer": "iniquity",
+      "accept": [
+        "sin"
+      ],
+      "verse_reference": "Hosea 14:1"
+    },
+    {
+      "id": "hosea-14-q5",
+      "type": "fill_blank",
+      "question": "I will be like the _____ to Israel; he shall blossom like the lily.",
+      "answer": "dew",
+      "verse_reference": "Hosea 14:5"
+    }
+  ]
+}

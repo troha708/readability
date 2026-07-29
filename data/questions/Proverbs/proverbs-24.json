@@ -1,0 +1,56 @@
+{
+  "book": "Proverbs",
+  "chapter": 24,
+  "questions": [
+    {
+      "id": "proverbs-24-q1",
+      "type": "multiple_choice",
+      "question": "What does Proverbs 24 warn against envying?",
+      "options": [
+        "The poor, and the ease of their lives",
+        "The wise, and the honor they receive",
+        "Evil men, and being with them",
+        "Kings, and the splendor of their courts"
+      ],
+      "answer": "Evil men, and being with them",
+      "verse_reference": "Proverbs 24:1"
+    },
+    {
+      "id": "proverbs-24-q2",
+      "type": "multiple_choice",
+      "question": "What does Proverbs 24 say about the righteous falling?",
+      "options": [
+        "Though they fall seven times, they rise again",
+        "Once fallen, they stay down forever",
+        "They never fall, for God upholds them",
+        "When they fall, they are soon forgotten"
+      ],
+      "answer": "Though they fall seven times, they rise again",
+      "verse_reference": "Proverbs 24:16"
+    },
+    {
+      "id": "proverbs-24-q3",
+      "type": "true_false",
+      "question": "Proverbs 24 says if you faint in the day of adversity, your strength is small.",
+      "answer": "true",
+      "verse_reference": "Proverbs 24:10"
+    },
+    {
+      "id": "proverbs-24-q4",
+      "type": "fill_blank",
+      "question": "By _____ a house is built, and by understanding it is established.",
+      "answer": "wisdom",
+      "verse_reference": "Proverbs 24:3"
+    },
+    {
+      "id": "proverbs-24-q5",
+      "type": "fill_blank",
+      "question": "A righteous man may fall seven times, yet he still _____ up.",
+      "answer": "gets",
+      "accept": [
+        "rises"
+      ],
+      "verse_reference": "Proverbs 24:16"
+    }
+  ]
+}

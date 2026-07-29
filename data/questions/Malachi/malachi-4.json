@@ -1,0 +1,53 @@
+{
+  "book": "Malachi",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "malachi-4-q1",
+      "type": "multiple_choice",
+      "question": "How does Malachi 4 describe the coming day of the LORD?",
+      "options": [
+        "A day of very great feasting and of much joy for every people and every nation upon the earth",
+        "Burning like an oven, but with the sun of righteousness rising with healing for those who fear God",
+        "Cool and very quiet, a day of deep rest and of gladness for all of the whole wide earth to share in",
+        "Dark and entirely silent, a day with no word at all coming forth from the mouth of the LORD"
+      ],
+      "answer": "Burning like an oven, but with the sun of righteousness rising with healing for those who fear God",
+      "verse_reference": "Malachi 4:1-2"
+    },
+    {
+      "id": "malachi-4-q2",
+      "type": "multiple_choice",
+      "question": "Whom does God promise to send before the great day of the LORD, ending the Old Testament?",
+      "options": [
+        "Samuel the seer",
+        "Elijah the prophet",
+        "Moses the lawgiver",
+        "Isaiah the prophet"
+      ],
+      "answer": "Elijah the prophet",
+      "verse_reference": "Malachi 4:5"
+    },
+    {
+      "id": "malachi-4-q3",
+      "type": "true_false",
+      "question": "Malachi 4 says Elijah will turn the hearts of fathers to children and children to fathers.",
+      "answer": "true",
+      "verse_reference": "Malachi 4:6"
+    },
+    {
+      "id": "malachi-4-q4",
+      "type": "fill_blank",
+      "question": "The sun of _____ shall rise with healing in its wings.",
+      "answer": "righteousness",
+      "verse_reference": "Malachi 4:2"
+    },
+    {
+      "id": "malachi-4-q5",
+      "type": "fill_blank",
+      "question": "Behold, I will send you _____ the prophet before the great and awesome day of the LORD comes.",
+      "answer": "Elijah",
+      "verse_reference": "Malachi 4:5"
+    }
+  ]
+}

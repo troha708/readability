@@ -1,0 +1,59 @@
+{
+  "book": "Revelation",
+  "chapter": 16,
+  "questions": [
+    {
+      "id": "rev_16_1",
+      "type": "multiple_choice",
+      "question": "The sixth bowl is poured on what river, drying it up?",
+      "options": [
+        "The deep Jordan",
+        "The Nile",
+        "The Tigris",
+        "The Euphrates"
+      ],
+      "correct": "The Euphrates",
+      "verse_ref": "Revelation 16:12",
+      "feedback": "The sixth bowl dried up the great river Euphrates."
+    },
+    {
+      "id": "rev_16_2",
+      "type": "multiple_choice",
+      "question": "Where do the kings of the earth gather for battle?",
+      "options": [
+        "Mount Sinai",
+        "Armageddon",
+        "Babylon",
+        "Jerusalem"
+      ],
+      "correct": "Armageddon",
+      "verse_ref": "Revelation 16:16",
+      "feedback": "They gathered the kings to the place called Armageddon."
+    },
+    {
+      "id": "rev_16_3",
+      "type": "true_false",
+      "question": "People repented and gave God glory after the plagues.",
+      "correct": false,
+      "verse_ref": "Revelation 16:9,11",
+      "feedback": "They cursed God and refused to repent."
+    },
+    {
+      "id": "rev_16_4",
+      "type": "fill_in_the_blank",
+      "question": "The seventh bowl was poured into the air, and a loud voice from the throne said: It is _____!",
+      "correct": "done",
+      "verse_ref": "Revelation 16:17",
+      "feedback": "A loud voice said: It is done!"
+    },
+    {
+      "id": "rev_16_5",
+      "type": "fill_in_the_blank",
+      "question": "Huge _____ of about a hundred pounds each fell on people from the sky.",
+      "correct": "hailstones",
+      "accept": ["hail"],
+      "verse_ref": "Revelation 16:21",
+      "feedback": "Enormous hailstones fell on people from the sky."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "Jeremiah",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "jeremiah-2-q1",
+      "type": "multiple_choice",
+      "question": "What two evils does God accuse his people of in Jeremiah 2?",
+      "options": [
+        "Refusing entirely to pay the tithes that were owed to the priests",
+        "Breaking the holy Sabbath and wholly neglecting the temple worship",
+        "Forsaking him, the fountain of living waters, and digging broken cisterns",
+        "Marrying foreign wives and forsaking the wives of their own people"
+      ],
+      "answer": "Forsaking him, the fountain of living waters, and digging broken cisterns",
+      "verse_reference": "Jeremiah 2:13"
+    },
+    {
+      "id": "jeremiah-2-q2",
+      "type": "multiple_choice",
+      "question": "What did the people exchange their glory for, according to Jeremiah 2?",
+      "options": [
+        "The favor of the kings of Assyria",
+        "That which does not profit (worthless idols)",
+        "The wealth and chariots of Egypt",
+        "The empty wisdom of all the surrounding nations"
+      ],
+      "answer": "That which does not profit (worthless idols)",
+      "verse_reference": "Jeremiah 2:11"
+    },
+    {
+      "id": "jeremiah-2-q3",
+      "type": "true_false",
+      "question": "God recalls the devotion of Israel's youth, her love as a bride following him in the wilderness.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 2:2"
+    },
+    {
+      "id": "jeremiah-2-q4",
+      "type": "fill_blank",
+      "question": "They have forsaken me, the fountain of living waters, and hewed out cisterns, broken cisterns that can hold no _____.",
+      "answer": "water",
+      "verse_reference": "Jeremiah 2:13"
+    },
+    {
+      "id": "jeremiah-2-q5",
+      "type": "fill_blank",
+      "question": "Has a nation changed its gods, even though they are no _____?",
+      "answer": "gods",
+      "verse_reference": "Jeremiah 2:11"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "book": "Psalms",
+  "chapter": 93,
+  "questions": [
+    {
+      "id": "psalms-93-q1",
+      "type": "multiple_choice",
+      "question": "What is the opening declaration of Psalm 93?",
+      "options": [
+        "The kingdom has fallen and the king is dead",
+        "The LORD has forsaken his holy city",
+        "A famine spreads across the whole land",
+        "The LORD reigns; he is robed in majesty"
+      ],
+      "answer": "The LORD reigns; he is robed in majesty",
+      "verse_reference": "Psalm 93:1"
+    },
+    {
+      "id": "psalms-93-q2",
+      "type": "multiple_choice",
+      "question": "What is said about God's throne?",
+      "options": [
+        "It is hidden from the wise, but revealed to the simple",
+        "It is established from of old; he is from everlasting",
+        "It is fragile and passing, like the morning dew",
+        "It is feared by the nations, mocked by the proud"
+      ],
+      "answer": "It is established from of old; he is from everlasting",
+      "verse_reference": "Psalm 93:2"
+    },
+    {
+      "id": "psalms-93-q3",
+      "type": "true_false",
+      "question": "The psalm says the floods have lifted up their voice, but the LORD on high is mightier.",
+      "answer": "true",
+      "verse_reference": "Psalm 93:3-4"
+    },
+    {
+      "id": "psalms-93-q4",
+      "type": "fill_blank",
+      "question": "The LORD _____; he is robed in majesty.",
+      "answer": "reigns",
+      "accept": [
+        "reigneth"
+      ],
+      "verse_reference": "Psalm 93:1"
+    },
+    {
+      "id": "psalms-93-q5",
+      "type": "fill_blank",
+      "question": "Your decrees are very trustworthy; _____ befits your house, O LORD, forevermore.",
+      "answer": "holiness",
+      "verse_reference": "Psalm 93:5"
+    }
+  ]
+}

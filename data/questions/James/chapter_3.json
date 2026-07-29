@@ -1,0 +1,59 @@
+{
+  "book": "James",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "jas_3_1",
+      "type": "multiple_choice",
+      "question": "James says the tongue is a small part of the body but it boasts of what?",
+      "options": [
+        "Truth",
+        "Power",
+        "Great things",
+        "Wisdom"
+      ],
+      "correct": "Great things",
+      "verse_ref": "James 3:5",
+      "feedback": "The tongue is small but it boasts of great things."
+    },
+    {
+      "id": "jas_3_2",
+      "type": "multiple_choice",
+      "question": "James says wisdom from above is first of all what?",
+      "options": [
+        "Pure",
+        "Powerful",
+        "Bold",
+        "Strict"
+      ],
+      "correct": "Pure",
+      "verse_ref": "James 3:17",
+      "feedback": "The wisdom from above is first pure, then peaceable, gentle, and open to reason."
+    },
+    {
+      "id": "jas_3_3",
+      "type": "true_false",
+      "question": "James says no human being can tame the tongue.",
+      "correct": true,
+      "verse_ref": "James 3:8",
+      "feedback": "No human being can tame the tongue — it is a restless evil full of deadly poison."
+    },
+    {
+      "id": "jas_3_4",
+      "type": "fill_in_the_blank",
+      "question": "James compares the tongue to a small _____ that sets a great forest ablaze.",
+      "correct": "spark",
+      "accept": ["fire"],
+      "verse_ref": "James 3:5",
+      "feedback": "Consider how small a spark sets a great forest ablaze."
+    },
+    {
+      "id": "jas_3_5",
+      "type": "fill_in_the_blank",
+      "question": "Peacemakers who sow in peace reap a harvest of _____.",
+      "correct": "righteousness",
+      "verse_ref": "James 3:18",
+      "feedback": "Peacemakers who sow in peace reap a harvest of righteousness."
+    }
+  ]
+}

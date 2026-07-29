@@ -1,0 +1,53 @@
+{
+  "book": "Hosea",
+  "chapter": 10,
+  "questions": [
+    {
+      "id": "hosea-10-q1",
+      "type": "multiple_choice",
+      "question": "To what does Hosea 10 compare Israel?",
+      "options": [
+        "A luxuriant vine that yields fruit, but for itself",
+        "A scattered flock of sheep without any shepherd at all",
+        "A barren and dry fig tree that bears no fruit at all",
+        "A withered and dying field parched under the hot sun"
+      ],
+      "answer": "A luxuriant vine that yields fruit, but for itself",
+      "verse_reference": "Hosea 10:1"
+    },
+    {
+      "id": "hosea-10-q2",
+      "type": "multiple_choice",
+      "question": "What does Hosea 10 call the people to sow and reap?",
+      "options": [
+        "Sow righteousness and reap steadfast love; seek the LORD",
+        "Offer up many sacrifices on each and every high place",
+        "Raise up a great army and strongly fortify all the cities",
+        "Gather up much wealth and store it away for the future"
+      ],
+      "answer": "Sow righteousness and reap steadfast love; seek the LORD",
+      "verse_reference": "Hosea 10:12"
+    },
+    {
+      "id": "hosea-10-q3",
+      "type": "true_false",
+      "question": "Hosea 10 says it is time to seek the LORD, that he may come and rain righteousness.",
+      "answer": "true",
+      "verse_reference": "Hosea 10:12"
+    },
+    {
+      "id": "hosea-10-q4",
+      "type": "fill_blank",
+      "question": "Sow for yourselves _____, reap steadfast love; break up your fallow ground.",
+      "answer": "righteousness",
+      "verse_reference": "Hosea 10:12"
+    },
+    {
+      "id": "hosea-10-q5",
+      "type": "fill_blank",
+      "question": "Israel is a luxuriant _____ that yields its fruit.",
+      "answer": "vine",
+      "verse_reference": "Hosea 10:1"
+    }
+  ]
+}

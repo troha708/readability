@@ -1,0 +1,56 @@
+{
+  "book": "Numbers",
+  "chapter": 31,
+  "questions": [
+    {
+      "id": "numbers-31-q1",
+      "type": "multiple_choice",
+      "question": "Against whom did Israel wage war in this chapter?",
+      "options": [
+        "Moab",
+        "Midian",
+        "Edom",
+        "Amalek"
+      ],
+      "answer": "Midian",
+      "verse_reference": "Numbers 31:1-3"
+    },
+    {
+      "id": "numbers-31-q2",
+      "type": "multiple_choice",
+      "question": "Who was killed among the Midianites, the one who had advised the sin at Peor?",
+      "options": [
+        "King Balak",
+        "Balaam",
+        "Sihon",
+        "Og"
+      ],
+      "answer": "Balaam",
+      "verse_reference": "Numbers 31:8"
+    },
+    {
+      "id": "numbers-31-q3",
+      "type": "true_false",
+      "question": "The spoils of war were divided between the soldiers and the rest of the congregation.",
+      "answer": "true",
+      "verse_reference": "Numbers 31:27"
+    },
+    {
+      "id": "numbers-31-q4",
+      "type": "fill_blank",
+      "question": "The LORD commanded Israel to take vengeance on _____ for leading them into sin.",
+      "answer": "Midianites",
+      "accept": [
+        "Midian"
+      ],
+      "verse_reference": "Numbers 31:2-3"
+    },
+    {
+      "id": "numbers-31-q5",
+      "type": "fill_blank",
+      "question": "_____ son of Beor was killed with the sword among the Midianites.",
+      "answer": "Balaam",
+      "verse_reference": "Numbers 31:8"
+    }
+  ]
+}

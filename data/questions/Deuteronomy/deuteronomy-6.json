@@ -1,0 +1,53 @@
+{
+  "book": "Deuteronomy",
+  "chapter": 6,
+  "questions": [
+    {
+      "id": "deuteronomy-6-q1",
+      "type": "multiple_choice",
+      "question": "What is the famous declaration in Deuteronomy 6:4?",
+      "options": [
+        "The Shema: \"The LORD is one\"",
+        "The Golden Rule: \"Do to others as you would have them do to you\"",
+        "The first commandment: \"You shall have no other gods before me\"",
+        "The blessing: \"The LORD bless you and keep you\""
+      ],
+      "answer": "The Shema: \"The LORD is one\"",
+      "verse_reference": "Deuteronomy 6:4"
+    },
+    {
+      "id": "deuteronomy-6-q2",
+      "type": "multiple_choice",
+      "question": "How were the Israelites to teach God's commands to their children?",
+      "options": [
+        "Only through the priests and the Levites",
+        "Diligently, talking of them at home and on the way",
+        "Once each year at the great festival gathering",
+        "By having them copy out the whole law by hand"
+      ],
+      "answer": "Diligently, talking of them at home and on the way",
+      "verse_reference": "Deuteronomy 6:6-7"
+    },
+    {
+      "id": "deuteronomy-6-q3",
+      "type": "true_false",
+      "question": "\"You shall love the LORD your God with all your heart, soul, and might.\"",
+      "answer": "true",
+      "verse_reference": "Deuteronomy 6:5"
+    },
+    {
+      "id": "deuteronomy-6-q4",
+      "type": "fill_blank",
+      "question": "\"Hear, O Israel: The LORD our God, the LORD is _____.\"",
+      "answer": "one",
+      "verse_reference": "Deuteronomy 6:4"
+    },
+    {
+      "id": "deuteronomy-6-q5",
+      "type": "fill_blank",
+      "question": "\"You shall love the LORD your God with all your _____,\" and soul and might.",
+      "answer": "heart",
+      "verse_reference": "Deuteronomy 6:5"
+    }
+  ]
+}

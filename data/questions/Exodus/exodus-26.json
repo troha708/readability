@@ -1,0 +1,56 @@
+{
+  "book": "Exodus",
+  "chapter": 26,
+  "questions": [
+    {
+      "id": "exodus-26-q1",
+      "type": "multiple_choice",
+      "question": "What was the tabernacle?",
+      "options": [
+        "A great temple built of carved stone",
+        "A royal palace of cedar",
+        "A walled fortress city",
+        "A portable tent sanctuary"
+      ],
+      "answer": "A portable tent sanctuary",
+      "verse_reference": "Exodus 26:1"
+    },
+    {
+      "id": "exodus-26-q2",
+      "type": "multiple_choice",
+      "question": "What separated the Holy Place from the Most Holy Place?",
+      "options": [
+        "A wall",
+        "A heavy wooden door",
+        "A river",
+        "A veil (curtain)"
+      ],
+      "answer": "A veil (curtain)",
+      "verse_reference": "Exodus 26:33"
+    },
+    {
+      "id": "exodus-26-q3",
+      "type": "true_false",
+      "question": "The tabernacle was designed to be taken apart and carried as Israel traveled.",
+      "answer": "true",
+      "verse_reference": "Exodus 26:1-30"
+    },
+    {
+      "id": "exodus-26-q4",
+      "type": "fill_blank",
+      "question": "A _____ separated the Holy Place from the Most Holy Place, where the ark stood.",
+      "answer": "veil",
+      "accept": [
+        "curtain"
+      ],
+      "verse_reference": "Exodus 26:33"
+    },
+    {
+      "id": "exodus-26-q5",
+      "type": "fill_blank",
+      "question": "The innermost room of the tabernacle was called the Most _____ Place.",
+      "answer": "Holy",
+      "verse_reference": "Exodus 26:33-34"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "1 Kings",
+  "chapter": 8,
+  "questions": [
+    {
+      "id": "1-kings-8-q1",
+      "type": "multiple_choice",
+      "question": "What was brought into the temple at its dedication?",
+      "options": [
+        "The treasures of foreign kings",
+        "The prisoners taken in war",
+        "The ark of the covenant",
+        "The idols of the conquered nations"
+      ],
+      "answer": "The ark of the covenant",
+      "verse_reference": "1 Kings 8:6"
+    },
+    {
+      "id": "1-kings-8-q2",
+      "type": "multiple_choice",
+      "question": "What filled the temple when the priests came out?",
+      "options": [
+        "A blinding light shining down from the heavens",
+        "Smoke and the glory of the LORD (a cloud)",
+        "A deep and very sudden silence over all",
+        "A fire that came and consumed the offering"
+      ],
+      "answer": "Smoke and the glory of the LORD (a cloud)",
+      "verse_reference": "1 Kings 8:10-11"
+    },
+    {
+      "id": "1-kings-8-q3",
+      "type": "true_false",
+      "question": "Solomon prayed a long prayer of dedication, asking God to hear his people.",
+      "answer": "true",
+      "verse_reference": "1 Kings 8:22-53"
+    },
+    {
+      "id": "1-kings-8-q4",
+      "type": "fill_blank",
+      "question": "The priests brought the _____ of the covenant into the Most Holy Place.",
+      "answer": "ark",
+      "verse_reference": "1 Kings 8:6"
+    },
+    {
+      "id": "1-kings-8-q5",
+      "type": "fill_blank",
+      "question": "A _____ filled the temple, for the glory of the LORD filled the house.",
+      "answer": "cloud",
+      "verse_reference": "1 Kings 8:10-11"
+    }
+  ]
+}

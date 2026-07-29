@@ -1,0 +1,53 @@
+{
+  "book": "2 Samuel",
+  "chapter": 13,
+  "questions": [
+    {
+      "id": "2-samuel-13-q1",
+      "type": "multiple_choice",
+      "question": "What tragic event happened in David's family in this chapter?",
+      "options": [
+        "A war broke out among David's sons",
+        "Amnon assaulted his half-sister Tamar",
+        "A famine struck the land for three years",
+        "A flood swept through the king's house"
+      ],
+      "answer": "Amnon assaulted his half-sister Tamar",
+      "verse_reference": "2 Samuel 13:14"
+    },
+    {
+      "id": "2-samuel-13-q2",
+      "type": "multiple_choice",
+      "question": "Who killed Amnon to avenge Tamar?",
+      "options": [
+        "David",
+        "Absalom",
+        "Joab",
+        "Adonijah"
+      ],
+      "answer": "Absalom",
+      "verse_reference": "2 Samuel 13:28-29"
+    },
+    {
+      "id": "2-samuel-13-q3",
+      "type": "true_false",
+      "question": "Absalom fled after killing Amnon.",
+      "answer": "true",
+      "verse_reference": "2 Samuel 13:37-38"
+    },
+    {
+      "id": "2-samuel-13-q4",
+      "type": "fill_blank",
+      "question": "_____ assaulted his half-sister Tamar, bringing disgrace on David's house.",
+      "answer": "Amnon",
+      "verse_reference": "2 Samuel 13:14"
+    },
+    {
+      "id": "2-samuel-13-q5",
+      "type": "fill_blank",
+      "question": "_____, Tamar's brother, had Amnon killed in revenge.",
+      "answer": "Absalom",
+      "verse_reference": "2 Samuel 13:28-29"
+    }
+  ]
+}

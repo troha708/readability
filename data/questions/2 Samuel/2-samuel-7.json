@@ -1,0 +1,53 @@
+{
+  "book": "2 Samuel",
+  "chapter": 7,
+  "questions": [
+    {
+      "id": "2-samuel-7-q1",
+      "type": "multiple_choice",
+      "question": "What did David want to build for the LORD?",
+      "options": [
+        "A great royal throne",
+        "A city wall",
+        "A grand palace",
+        "A temple (house)"
+      ],
+      "answer": "A temple (house)",
+      "verse_reference": "2 Samuel 7:2"
+    },
+    {
+      "id": "2-samuel-7-q2",
+      "type": "multiple_choice",
+      "question": "What did God promise David instead?",
+      "options": [
+        "Great riches and a vast abundance of treasure",
+        "An everlasting dynasty (house and throne)",
+        "A long and peaceful old age",
+        "Many wives and a large household"
+      ],
+      "answer": "An everlasting dynasty (house and throne)",
+      "verse_reference": "2 Samuel 7:11-16"
+    },
+    {
+      "id": "2-samuel-7-q3",
+      "type": "true_false",
+      "question": "God said David's son, not David, would build the temple.",
+      "answer": "true",
+      "verse_reference": "2 Samuel 7:12-13"
+    },
+    {
+      "id": "2-samuel-7-q4",
+      "type": "fill_blank",
+      "question": "God promised that David's _____ and kingdom would endure forever.",
+      "answer": "house",
+      "verse_reference": "2 Samuel 7:16"
+    },
+    {
+      "id": "2-samuel-7-q5",
+      "type": "fill_blank",
+      "question": "God said David's _____ would build the house for God's name.",
+      "answer": "son",
+      "verse_reference": "2 Samuel 7:13"
+    }
+  ]
+}

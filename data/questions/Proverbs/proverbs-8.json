@@ -1,0 +1,56 @@
+{
+  "book": "Proverbs",
+  "chapter": 8,
+  "questions": [
+    {
+      "id": "proverbs-8-q1",
+      "type": "multiple_choice",
+      "question": "Who speaks in Proverbs 8?",
+      "options": [
+        "Folly, personified",
+        "A wandering prophet",
+        "The reigning king",
+        "Wisdom, personified"
+      ],
+      "answer": "Wisdom, personified",
+      "verse_reference": "Proverbs 8:1"
+    },
+    {
+      "id": "proverbs-8-q2",
+      "type": "multiple_choice",
+      "question": "What does Wisdom say about her origin in Proverbs 8?",
+      "options": [
+        "The LORD possessed her at the beginning of his work, before creation",
+        "She was the very last of all the things that God brought into being",
+        "She has no beginning at all that any living creature could ever once trace",
+        "She first arose long ago out of the minds of the wise men of old"
+      ],
+      "answer": "The LORD possessed her at the beginning of his work, before creation",
+      "verse_reference": "Proverbs 8:22"
+    },
+    {
+      "id": "proverbs-8-q3",
+      "type": "true_false",
+      "question": "Wisdom declares that whoever finds her finds life and obtains favor from the LORD.",
+      "answer": "true",
+      "verse_reference": "Proverbs 8:35"
+    },
+    {
+      "id": "proverbs-8-q4",
+      "type": "fill_blank",
+      "question": "The LORD created me as His first course, before His _____ of old.",
+      "answer": "works",
+      "accept": [
+        "deeds"
+      ],
+      "verse_reference": "Proverbs 8:22"
+    },
+    {
+      "id": "proverbs-8-q5",
+      "type": "fill_blank",
+      "question": "I love those who love me, and those who seek me diligently _____ me.",
+      "answer": "find",
+      "verse_reference": "Proverbs 8:17"
+    }
+  ]
+}

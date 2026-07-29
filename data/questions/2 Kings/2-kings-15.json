@@ -1,0 +1,53 @@
+{
+  "book": "2 Kings",
+  "chapter": 15,
+  "questions": [
+    {
+      "id": "2-kings-15-q1",
+      "type": "multiple_choice",
+      "question": "What rising empire begins to threaten Israel in this chapter?",
+      "options": [
+        "Babylon",
+        "Assyria",
+        "Egypt",
+        "Persia"
+      ],
+      "answer": "Assyria",
+      "verse_reference": "2 Kings 15:19"
+    },
+    {
+      "id": "2-kings-15-q2",
+      "type": "multiple_choice",
+      "question": "How did most of Israel's kings in this chapter come to the throne?",
+      "options": [
+        "By appointment from Assyria",
+        "By assassination and conspiracy",
+        "By the choice of the people",
+        "By the peaceful succession of sons"
+      ],
+      "answer": "By assassination and conspiracy",
+      "verse_reference": "2 Kings 15:10-30"
+    },
+    {
+      "id": "2-kings-15-q3",
+      "type": "true_false",
+      "question": "King Azariah (Uzziah) of Judah became leprous until the day of his death.",
+      "answer": "true",
+      "verse_reference": "2 Kings 15:5"
+    },
+    {
+      "id": "2-kings-15-q4",
+      "type": "fill_blank",
+      "question": "King Pul (Tiglath-Pileser) of _____ came against the land, and Israel paid tribute.",
+      "answer": "Assyria",
+      "verse_reference": "2 Kings 15:19"
+    },
+    {
+      "id": "2-kings-15-q5",
+      "type": "fill_blank",
+      "question": "King Azariah was struck with _____ and lived in a separate house.",
+      "answer": "leprosy",
+      "verse_reference": "2 Kings 15:5"
+    }
+  ]
+}

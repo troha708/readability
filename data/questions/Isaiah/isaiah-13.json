@@ -1,0 +1,56 @@
+{
+  "book": "Isaiah",
+  "chapter": 13,
+  "questions": [
+    {
+      "id": "isaiah-13-q1",
+      "type": "multiple_choice",
+      "question": "Against which great city is the oracle in Isaiah 13?",
+      "options": [
+        "Nineveh",
+        "Damascus",
+        "Babylon",
+        "Tyre"
+      ],
+      "answer": "Babylon",
+      "verse_reference": "Isaiah 13:1"
+    },
+    {
+      "id": "isaiah-13-q2",
+      "type": "multiple_choice",
+      "question": "What does Isaiah 13 call the coming judgment?",
+      "options": [
+        "The day of the LORD",
+        "The year of the LORD's favor",
+        "The time of Jacob's trouble",
+        "The hour of Israel's deliverance"
+      ],
+      "answer": "The day of the LORD",
+      "verse_reference": "Isaiah 13:6"
+    },
+    {
+      "id": "isaiah-13-q3",
+      "type": "true_false",
+      "question": "Isaiah 13 prophesies that Babylon will be overthrown like Sodom and Gomorrah.",
+      "answer": "true",
+      "verse_reference": "Isaiah 13:19"
+    },
+    {
+      "id": "isaiah-13-q4",
+      "type": "fill_blank",
+      "question": "The oracle concerning _____, which Isaiah the son of Amoz saw.",
+      "answer": "Babylon",
+      "accept": [
+        "Babel"
+      ],
+      "verse_reference": "Isaiah 13:1"
+    },
+    {
+      "id": "isaiah-13-q5",
+      "type": "fill_blank",
+      "question": "Wail, for the day of the LORD is near; as destruction from the Almighty it will _____.",
+      "answer": "come",
+      "verse_reference": "Isaiah 13:6"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "book": "1 John",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "1jn_1_1",
+      "type": "multiple_choice",
+      "question": "John says God is what, and in him there is no darkness at all?",
+      "options": [
+        "Spirit",
+        "Truth",
+        "Light",
+        "Love"
+      ],
+      "correct": "Light",
+      "verse_ref": "1 John 1:5",
+      "feedback": "God is light; in him there is no darkness at all."
+    },
+    {
+      "id": "1jn_1_2",
+      "type": "multiple_choice",
+      "question": "What does John say happens if we confess our sins?",
+      "options": [
+        "God is faithful and just to forgive us",
+        "We must still make many sacrifices",
+        "We must do penance for each one",
+        "Nothing changes at all until the judgment"
+      ],
+      "correct": "God is faithful and just to forgive us",
+      "verse_ref": "1 John 1:9",
+      "feedback": "If we confess our sins, God is faithful and just to forgive us and cleanse us."
+    },
+    {
+      "id": "1jn_1_3",
+      "type": "true_false",
+      "question": "John says if we claim to be without sin we deceive ourselves.",
+      "correct": true,
+      "verse_ref": "1 John 1:8",
+      "feedback": "If we claim to be without sin, we deceive ourselves and the truth is not in us."
+    },
+    {
+      "id": "1jn_1_4",
+      "type": "fill_in_the_blank",
+      "question": "The blood of Jesus his Son purifies us from all _____.",
+      "correct": "sin",
+      "verse_ref": "1 John 1:7",
+      "feedback": "The blood of Jesus purifies us from all sin."
+    },
+    {
+      "id": "1jn_1_5",
+      "type": "fill_in_the_blank",
+      "question": "John writes so that his readers' _____ may be complete.",
+      "correct": "joy",
+      "verse_ref": "1 John 1:4",
+      "feedback": "John writes these things so that their joy may be complete."
+    }
+  ]
+}

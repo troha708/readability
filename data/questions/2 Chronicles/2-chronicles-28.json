@@ -1,0 +1,53 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 28,
+  "questions": [
+    {
+      "id": "2-chronicles-28-q1",
+      "type": "multiple_choice",
+      "question": "How is King Ahaz described?",
+      "options": [
+        "He was righteous and faithfully trusted the LORD throughout all of his days",
+        "He walked in the ways of the kings of Israel and made idols for the Baals",
+        "He was wise and constantly sought out the counsel of all the prophets",
+        "He was peaceful and steadily built up the fortified cities of Judah"
+      ],
+      "answer": "He walked in the ways of the kings of Israel and made idols for the Baals",
+      "verse_reference": "2 Chronicles 28:2"
+    },
+    {
+      "id": "2-chronicles-28-q2",
+      "type": "multiple_choice",
+      "question": "What did the prophet Oded persuade the Israelites to do with the captives of Judah?",
+      "options": [
+        "Put them to death by the sword",
+        "Keep them as servants in Israel",
+        "Sell them in the slave markets",
+        "Clothe, feed, and return them"
+      ],
+      "answer": "Clothe, feed, and return them",
+      "verse_reference": "2 Chronicles 28:9-15"
+    },
+    {
+      "id": "2-chronicles-28-q3",
+      "type": "true_false",
+      "question": "Ahaz sacrificed his own children in the fire, following pagan practices.",
+      "answer": "true",
+      "verse_reference": "2 Chronicles 28:3"
+    },
+    {
+      "id": "2-chronicles-28-q4",
+      "type": "fill_blank",
+      "question": "Ahaz shut the doors of the house of the LORD and made altars in every _____ of Jerusalem.",
+      "answer": "corner",
+      "verse_reference": "2 Chronicles 28:24"
+    },
+    {
+      "id": "2-chronicles-28-q5",
+      "type": "fill_blank",
+      "question": "Ahaz sacrificed to the gods of _____, who had defeated him, thinking they would help.",
+      "answer": "Damascus",
+      "verse_reference": "2 Chronicles 28:23"
+    }
+  ]
+}

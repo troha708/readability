@@ -1,0 +1,57 @@
+{
+  "book": "Ezekiel",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "ezekiel-4-q1",
+      "type": "multiple_choice",
+      "question": "What sign-act did Ezekiel perform with a brick in chapter 4?",
+      "options": [
+        "Portrayed the siege of Jerusalem on it",
+        "Carved an idol of the king upon it",
+        "Built a small altar out of many of them",
+        "Wrote the names of the twelve tribes on it"
+      ],
+      "answer": "Portrayed the siege of Jerusalem on it",
+      "verse_reference": "Ezekiel 4:1-2"
+    },
+    {
+      "id": "ezekiel-4-q2",
+      "type": "multiple_choice",
+      "question": "What did Ezekiel do while lying on his side for many days?",
+      "options": [
+        "Kept a constant watch for the approaching enemy army from afar",
+        "Fasted from all food and from all water in deep and bitter mourning",
+        "Bore the punishment of Israel and Judah, a day for each year",
+        "Recited aloud the whole law of Moses over and over again"
+      ],
+      "answer": "Bore the punishment of Israel and Judah, a day for each year",
+      "verse_reference": "Ezekiel 4:4-6"
+    },
+    {
+      "id": "ezekiel-4-q3",
+      "type": "true_false",
+      "question": "Ezekiel was to eat rationed food cooked over fuel, picturing the scarcity of the siege.",
+      "answer": "true",
+      "verse_reference": "Ezekiel 4:9-11"
+    },
+    {
+      "id": "ezekiel-4-q4",
+      "type": "fill_blank",
+      "question": "Ezekiel lay on his left side _____ days for the house of Israel.",
+      "answer": "390",
+      "accept": [
+        "three hundred and ninety",
+        "three hundred ninety"
+      ],
+      "verse_reference": "Ezekiel 4:5"
+    },
+    {
+      "id": "ezekiel-4-q5",
+      "type": "fill_blank",
+      "question": "This is a sign for the house of _____, said the LORD.",
+      "answer": "Israel",
+      "verse_reference": "Ezekiel 4:3"
+    }
+  ]
+}

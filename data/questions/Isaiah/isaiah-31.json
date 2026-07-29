@@ -1,0 +1,53 @@
+{
+  "book": "Isaiah",
+  "chapter": 31,
+  "questions": [
+    {
+      "id": "isaiah-31-q1",
+      "type": "multiple_choice",
+      "question": "What woe does Isaiah 31 pronounce?",
+      "options": [
+        "Woe to the proud prophets who speak lies in my name",
+        "Woe to those who go down to Egypt for help and rely on horses",
+        "Woe to those who grind down the very faces of the poor in the dust",
+        "Woe to the city that is full of bloodshed and deceit"
+      ],
+      "answer": "Woe to those who go down to Egypt for help and rely on horses",
+      "verse_reference": "Isaiah 31:1"
+    },
+    {
+      "id": "isaiah-31-q2",
+      "type": "multiple_choice",
+      "question": "How are the Egyptians contrasted with God in Isaiah 31?",
+      "options": [
+        "They are very many, while the people of Israel are few",
+        "They are man, not God; their horses are flesh, not spirit",
+        "They are exceedingly wise, while the people of Israel are foolish",
+        "They are very rich, while the people of Israel are poor"
+      ],
+      "answer": "They are man, not God; their horses are flesh, not spirit",
+      "verse_reference": "Isaiah 31:3"
+    },
+    {
+      "id": "isaiah-31-q3",
+      "type": "true_false",
+      "question": "Isaiah 31 says the LORD of hosts will protect Jerusalem like birds hovering over it.",
+      "answer": "true",
+      "verse_reference": "Isaiah 31:5"
+    },
+    {
+      "id": "isaiah-31-q4",
+      "type": "fill_blank",
+      "question": "Woe to those who go down to _____ for help and rely on horses.",
+      "answer": "Egypt",
+      "verse_reference": "Isaiah 31:1"
+    },
+    {
+      "id": "isaiah-31-q5",
+      "type": "fill_blank",
+      "question": "The Egyptians are man, and not God, and their horses are flesh, and not _____.",
+      "answer": "spirit",
+      "verse_reference": "Isaiah 31:3"
+    }
+  ]
+}

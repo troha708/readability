@@ -1,0 +1,56 @@
+{
+  "book": "Acts",
+  "chapter": 6,
+  "questions": [
+    {
+      "id": "acts-6-q1",
+      "type": "multiple_choice",
+      "question": "How many men were chosen to serve tables so the apostles could focus on prayer and ministry of the word?",
+      "options": [
+        "Three",
+        "Five",
+        "Seven",
+        "Twelve"
+      ],
+      "answer": "Seven",
+      "verse_reference": "Acts 6:3"
+    },
+    {
+      "id": "acts-6-q2",
+      "type": "multiple_choice",
+      "question": "Who was described as full of faith and the Holy Spirit and was one of the seven chosen?",
+      "options": [
+        "Stephen",
+        "Philip",
+        "Timothy",
+        "Barnabas"
+      ],
+      "answer": "Stephen",
+      "verse_reference": "Acts 6:5"
+    },
+    {
+      "id": "acts-6-q3",
+      "type": "true_false",
+      "question": "The complaint that led to choosing the seven was that Hebrew-speaking widows were being overlooked in the daily distribution.",
+      "answer": "false",
+      "verse_reference": "Acts 6:1"
+    },
+    {
+      "id": "acts-6-q4",
+      "type": "fill_blank",
+      "question": "Stephen, full of grace and _____, performed great wonders and signs among the people.",
+      "answer": "power",
+      "verse_reference": "Acts 6:8"
+    },
+    {
+      "id": "acts-6-q5",
+      "type": "fill_blank",
+      "question": "All who sat in the council, looking steadfastly at Stephen, saw his face like the face of an _____.",
+      "answer": "angel",
+      "accept": [
+        "messenger"
+      ],
+      "verse_reference": "Acts 6:15"
+    }
+  ]
+}

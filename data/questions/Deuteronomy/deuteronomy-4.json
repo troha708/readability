@@ -1,0 +1,53 @@
+{
+  "book": "Deuteronomy",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "deuteronomy-4-q1",
+      "type": "multiple_choice",
+      "question": "What does Moses urge Israel to do in chapter 4?",
+      "options": [
+        "Build a great temple in the new land",
+        "Obey God's laws and not forget the covenant",
+        "Offer daily sacrifices on every hill",
+        "Choose a king to rule over all of the tribes"
+      ],
+      "answer": "Obey God's laws and not forget the covenant",
+      "verse_reference": "Deuteronomy 4:1-9"
+    },
+    {
+      "id": "deuteronomy-4-q2",
+      "type": "multiple_choice",
+      "question": "Why were they to make no idols?",
+      "options": [
+        "They saw no form of God at Sinai, only heard his voice",
+        "The surrounding nations would mock their carved gods",
+        "The gold had all been used for the tabernacle",
+        "No craftsman among them was skilled enough to make one"
+      ],
+      "answer": "They saw no form of God at Sinai, only heard his voice",
+      "verse_reference": "Deuteronomy 4:15-16"
+    },
+    {
+      "id": "deuteronomy-4-q3",
+      "type": "true_false",
+      "question": "Moses warned them not to add to or take away from God's commands.",
+      "answer": "true",
+      "verse_reference": "Deuteronomy 4:2"
+    },
+    {
+      "id": "deuteronomy-4-q4",
+      "type": "fill_blank",
+      "question": "Israel was to watch themselves closely, lest they _____ the things their eyes had seen.",
+      "answer": "forget",
+      "verse_reference": "Deuteronomy 4:9"
+    },
+    {
+      "id": "deuteronomy-4-q5",
+      "type": "fill_blank",
+      "question": "Moses said the LORD spoke to them out of the midst of the _____ at Horeb.",
+      "answer": "fire",
+      "verse_reference": "Deuteronomy 4:12-15"
+    }
+  ]
+}

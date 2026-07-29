@@ -1,0 +1,56 @@
+{
+  "book": "Isaiah",
+  "chapter": 58,
+  "questions": [
+    {
+      "id": "isaiah-58-q1",
+      "type": "multiple_choice",
+      "question": "What kind of fasting does God reject in Isaiah 58?",
+      "options": [
+        "Fasting without offering a sacrifice",
+        "Fasting while quarreling and oppressing workers",
+        "Fasting on the wrong day of the week",
+        "Fasting in private without telling anyone at all"
+      ],
+      "answer": "Fasting while quarreling and oppressing workers",
+      "verse_reference": "Isaiah 58:3-4"
+    },
+    {
+      "id": "isaiah-58-q2",
+      "type": "multiple_choice",
+      "question": "What is the fast God chooses, according to Isaiah 58?",
+      "options": [
+        "To loose the bonds of wickedness, share bread with the hungry, and house the poor",
+        "To recite very long and very solemn prayers aloud out in the public square",
+        "To put on the rough sackcloth and to sit down in the ashes for many days and nights",
+        "To bring greater and far more costly offerings to the holy temple of the LORD"
+      ],
+      "answer": "To loose the bonds of wickedness, share bread with the hungry, and house the poor",
+      "verse_reference": "Isaiah 58:6-7"
+    },
+    {
+      "id": "isaiah-58-q3",
+      "type": "true_false",
+      "question": "Isaiah 58 promises that honoring the Sabbath and delighting in the LORD brings blessing.",
+      "answer": "true",
+      "verse_reference": "Isaiah 58:13-14"
+    },
+    {
+      "id": "isaiah-58-q4",
+      "type": "fill_blank",
+      "question": "Is not this the fast that I choose: to loose the bonds of _____?",
+      "answer": "wickedness",
+      "verse_reference": "Isaiah 58:6"
+    },
+    {
+      "id": "isaiah-58-q5",
+      "type": "fill_blank",
+      "question": "Share your bread with the hungry, and bring the poor and homeless into your _____.",
+      "answer": "home",
+      "accept": [
+        "house"
+      ],
+      "verse_reference": "Isaiah 58:7"
+    }
+  ]
+}

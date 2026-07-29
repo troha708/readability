@@ -1,0 +1,56 @@
+{
+  "book": "Romans",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "romans-2-q1",
+      "type": "multiple_choice",
+      "question": "What does Paul say about those who judge others while doing the same things?",
+      "options": [
+        "They are wise",
+        "They are without excuse",
+        "They are forgiven",
+        "They are surely righteous"
+      ],
+      "answer": "They are without excuse",
+      "verse_reference": "Romans 2:1"
+    },
+    {
+      "id": "romans-2-q2",
+      "type": "multiple_choice",
+      "question": "According to Paul, what leads people to repentance?",
+      "options": [
+        "The goodness of God",
+        "The Law of Moses",
+        "The preaching of prophets",
+        "Fear of punishment"
+      ],
+      "answer": "The goodness of God",
+      "verse_reference": "Romans 2:4"
+    },
+    {
+      "id": "romans-2-q3",
+      "type": "true_false",
+      "question": "Paul argues that having the Law automatically makes someone righteous before God.",
+      "answer": "false",
+      "verse_reference": "Romans 2:13"
+    },
+    {
+      "id": "romans-2-q4",
+      "type": "fill_blank",
+      "question": "For it is not the hearers of the law who are righteous before God, but the _____ of the law will be justified.",
+      "answer": "doers",
+      "verse_reference": "Romans 2:13"
+    },
+    {
+      "id": "romans-2-q5",
+      "type": "fill_blank",
+      "question": "For he is not a Jew who is one outwardly, neither is that circumcision which is outward in the flesh; but he is a Jew who is one _____, and circumcision is that of the heart.",
+      "answer": "inwardly",
+      "accept": [
+        "within"
+      ],
+      "verse_reference": "Romans 2:28-29"
+    }
+  ]
+}

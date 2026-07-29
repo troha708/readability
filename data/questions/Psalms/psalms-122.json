@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 122,
+  "questions": [
+    {
+      "id": "psalms-122-q1",
+      "type": "multiple_choice",
+      "question": "What made the psalmist glad in Psalm 122?",
+      "options": [
+        "When they said, 'Let us return to the land of Egypt!'",
+        "When they said, 'Let us build a city and a tower!'",
+        "When they said, 'Let us choose a king to rule us!'",
+        "When they said, 'Let us go to the house of the LORD!'"
+      ],
+      "answer": "When they said, 'Let us go to the house of the LORD!'",
+      "verse_reference": "Psalm 122:1"
+    },
+    {
+      "id": "psalms-122-q2",
+      "type": "multiple_choice",
+      "question": "For what does the psalm urge prayer?",
+      "options": [
+        "For the strength of the army",
+        "For the wealth of the nation",
+        "For the peace of Jerusalem",
+        "For the wisdom of the king"
+      ],
+      "answer": "For the peace of Jerusalem",
+      "verse_reference": "Psalm 122:6"
+    },
+    {
+      "id": "psalms-122-q3",
+      "type": "true_false",
+      "question": "The psalm describes Jerusalem as a city bound firmly together where the tribes go up.",
+      "answer": "true",
+      "verse_reference": "Psalm 122:3-4"
+    },
+    {
+      "id": "psalms-122-q4",
+      "type": "fill_blank",
+      "question": "I was _____ when they said to me, 'Let us go to the house of the LORD!'",
+      "answer": "glad",
+      "verse_reference": "Psalm 122:1"
+    },
+    {
+      "id": "psalms-122-q5",
+      "type": "fill_blank",
+      "question": "Pray for the _____ of Jerusalem! May they be secure who love you!",
+      "answer": "peace",
+      "verse_reference": "Psalm 122:6"
+    }
+  ]
+}

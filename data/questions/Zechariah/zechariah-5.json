@@ -1,0 +1,57 @@
+{
+  "book": "Zechariah",
+  "chapter": 5,
+  "questions": [
+    {
+      "id": "zechariah-5-q1",
+      "type": "multiple_choice",
+      "question": "What did Zechariah see flying in the vision of chapter 5?",
+      "options": [
+        "A bird",
+        "A flying scroll",
+        "A swift flying arrow",
+        "A cloud"
+      ],
+      "answer": "A flying scroll",
+      "verse_reference": "Zechariah 5:1-2"
+    },
+    {
+      "id": "zechariah-5-q2",
+      "type": "multiple_choice",
+      "question": "What was in the basket (ephah) Zechariah saw?",
+      "options": [
+        "A woman, representing Wickedness",
+        "A scroll of the curse against thieves",
+        "A measure of gold and silver coins",
+        "A heap of grain from the harvest"
+      ],
+      "answer": "A woman, representing Wickedness",
+      "verse_reference": "Zechariah 5:7-8"
+    },
+    {
+      "id": "zechariah-5-q3",
+      "type": "true_false",
+      "question": "The flying scroll represented a curse going out over the whole land against thieves and liars.",
+      "answer": "true",
+      "verse_reference": "Zechariah 5:3"
+    },
+    {
+      "id": "zechariah-5-q4",
+      "type": "fill_blank",
+      "question": "Zechariah saw a flying _____, twenty cubits long and ten cubits wide.",
+      "answer": "scroll",
+      "accept": [
+        "roll",
+        "book"
+      ],
+      "verse_reference": "Zechariah 5:2"
+    },
+    {
+      "id": "zechariah-5-q5",
+      "type": "fill_blank",
+      "question": "The angel said the woman in the basket was _____.",
+      "answer": "Wickedness",
+      "verse_reference": "Zechariah 5:8"
+    }
+  ]
+}

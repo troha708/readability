@@ -1,0 +1,59 @@
+{
+  "book": "1 Timothy",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "1tim_1_1",
+      "type": "multiple_choice",
+      "question": "Paul calls Timothy his true child in what?",
+      "options": [
+        "The law",
+        "The faith",
+        "Apostleship",
+        "Christ's service"
+      ],
+      "correct": "The faith",
+      "verse_ref": "1 Timothy 1:2",
+      "feedback": "Paul addresses Timothy as his true child in the faith."
+    },
+    {
+      "id": "1tim_1_2",
+      "type": "multiple_choice",
+      "question": "Paul says Christ Jesus came into the world to do what?",
+      "options": [
+        "Save sinners",
+        "Establish a kingdom",
+        "Teach the law",
+        "Judge the nations"
+      ],
+      "correct": "Save sinners",
+      "verse_ref": "1 Timothy 1:15",
+      "feedback": "Christ Jesus came into the world to save sinners, of whom Paul says he is the foremost."
+    },
+    {
+      "id": "1tim_1_3",
+      "type": "true_false",
+      "question": "Paul says the law is good if one uses it lawfully.",
+      "correct": true,
+      "verse_ref": "1 Timothy 1:8",
+      "feedback": "Paul affirms the law is good if one uses it lawfully."
+    },
+    {
+      "id": "1tim_1_4",
+      "type": "fill_in_the_blank",
+      "question": "The aim of Paul's charge is love from a pure heart, a good _____, and sincere faith.",
+      "correct": "conscience",
+      "verse_ref": "1 Timothy 1:5",
+      "feedback": "The goal is love from a pure heart, good conscience, and sincere faith."
+    },
+    {
+      "id": "1tim_1_5",
+      "type": "fill_in_the_blank",
+      "question": "Paul handed Hymenaeus and Alexander over to _____ so they would learn not to blaspheme.",
+      "correct": "Satan",
+      "accept": ["Adversary"],
+      "verse_ref": "1 Timothy 1:20",
+      "feedback": "Paul handed them to Satan that they might learn not to blaspheme."
+    }
+  ]
+}

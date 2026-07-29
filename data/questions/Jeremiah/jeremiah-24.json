@@ -1,0 +1,53 @@
+{
+  "book": "Jeremiah",
+  "chapter": 24,
+  "questions": [
+    {
+      "id": "jeremiah-24-q1",
+      "type": "multiple_choice",
+      "question": "What two objects did God show Jeremiah in chapter 24?",
+      "options": [
+        "Two clay jars, one full and one empty",
+        "Two baskets of figs, one good and one bad",
+        "Two scrolls, one sealed and one open",
+        "Two olive trees, one green and one withered"
+      ],
+      "answer": "Two baskets of figs, one good and one bad",
+      "verse_reference": "Jeremiah 24:1-2"
+    },
+    {
+      "id": "jeremiah-24-q2",
+      "type": "multiple_choice",
+      "question": "What did the good figs represent?",
+      "options": [
+        "The kings who would one day return to rebuild the city of David",
+        "The exiles God sent to Babylon, whom he would watch over for good",
+        "The nations that would one day come to worship the LORD God",
+        "The priests who had yet remained faithful in the temple of the LORD"
+      ],
+      "answer": "The exiles God sent to Babylon, whom he would watch over for good",
+      "verse_reference": "Jeremiah 24:5"
+    },
+    {
+      "id": "jeremiah-24-q3",
+      "type": "true_false",
+      "question": "The bad figs represented Zedekiah and those who remained, whom God would make a horror.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 24:8-9"
+    },
+    {
+      "id": "jeremiah-24-q4",
+      "type": "fill_blank",
+      "question": "Like these good _____, so I will regard as good the exiles from Judah.",
+      "answer": "figs",
+      "verse_reference": "Jeremiah 24:5"
+    },
+    {
+      "id": "jeremiah-24-q5",
+      "type": "fill_blank",
+      "question": "I will give them a heart to know me, that I am the LORD, and they shall be my _____.",
+      "answer": "people",
+      "verse_reference": "Jeremiah 24:7"
+    }
+  ]
+}

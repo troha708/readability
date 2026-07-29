@@ -1,0 +1,69 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# testing
+/coverage
+
+# next.js
+/.next/
+# alternate build dirs selected via NEXT_DIST_DIR (parallel dev/build processes)
+/.next-*/
+out/
+
+# offline content bundle (generated for the mobile build only; never ship on web)
+/public/offline/
+
+# temp holding area used by scripts/build-mobile.mjs
+/.mobile-hidden/
+
+# Capacitor: generated web assets copied into the native project by `cap sync`
+/android/app/src/main/assets/public/
+/android/app/src/main/assets/capacitor.config.json
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env*.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# Local device test artifacts
+screen.png
+reminder-trace.log
+
+# python bytecode from the one-off content scripts
+__pycache__/
+
+# local scratch files (screenshots etc.) — never commit or deploy
+/.scratch/
+/ui-review-shots/
+/scripts/_verify.mjs
+/assets/logo-green-backup.png
+# one-off comparison / geography prototypes dropped in the repo root
+/compare-*.html
+/geo-*.html
+.env*
+!.env.example
+
+# Claude Code session tooling (local only)
+.claude/

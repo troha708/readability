@@ -1,0 +1,58 @@
+{
+  "book": "1 John",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "1jn_3_1",
+      "type": "multiple_choice",
+      "question": "John says we know we have passed from death to life because we do what?",
+      "options": [
+        "Perform miracles",
+        "Memorize Scripture",
+        "Love each other",
+        "Keep the Sabbath"
+      ],
+      "correct": "Love each other",
+      "verse_ref": "1 John 3:14",
+      "feedback": "We know we have passed from death to life because we love each other."
+    },
+    {
+      "id": "1jn_3_2",
+      "type": "multiple_choice",
+      "question": "John says if our hearts do not condemn us, we have what before God?",
+      "options": [
+        "Wealth",
+        "Confidence",
+        "Power",
+        "Perfection"
+      ],
+      "correct": "Confidence",
+      "verse_ref": "1 John 3:21",
+      "feedback": "If our hearts do not condemn us, we have confidence before God."
+    },
+    {
+      "id": "1jn_3_3",
+      "type": "true_false",
+      "question": "John says we should love not just with words but with actions and in truth.",
+      "correct": true,
+      "verse_ref": "1 John 3:18",
+      "feedback": "Let us not love with words or speech but with actions and in truth."
+    },
+    {
+      "id": "1jn_3_4",
+      "type": "fill_in_the_blank",
+      "question": "See what great _____ the Father has lavished on us, that we should be called children of God!",
+      "correct": "love",
+      "verse_ref": "1 John 3:1",
+      "feedback": "See what great love the Father has lavished on us — to be called children of God."
+    },
+    {
+      "id": "1jn_3_5",
+      "type": "fill_in_the_blank",
+      "question": "No one who is born of God will continue to _____ because God's seed remains in them.",
+      "correct": "sin",
+      "verse_ref": "1 John 3:9",
+      "feedback": "No one born of God will continue to sin because God's seed remains in them."
+    }
+  ]
+}

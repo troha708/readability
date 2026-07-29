@@ -1,0 +1,53 @@
+{
+  "book": "Genesis",
+  "chapter": 45,
+  "questions": [
+    {
+      "id": "genesis-45-q1",
+      "type": "multiple_choice",
+      "question": "What did Joseph say when he revealed himself to his brothers?",
+      "options": [
+        "\"I forgive you\"",
+        "\"Where is my father?\"",
+        "\"Bow before me\"",
+        "\"I am Joseph\""
+      ],
+      "answer": "\"I am Joseph\"",
+      "verse_reference": "Genesis 45:3"
+    },
+    {
+      "id": "genesis-45-q2",
+      "type": "multiple_choice",
+      "question": "How did Joseph explain why he had been sent to Egypt?",
+      "options": [
+        "God sent him to preserve life",
+        "God sent him to humble his brothers",
+        "God sent him to rule over Egypt",
+        "God sent him to end the famine"
+      ],
+      "answer": "God sent him to preserve life",
+      "verse_reference": "Genesis 45:7"
+    },
+    {
+      "id": "genesis-45-q3",
+      "type": "true_false",
+      "question": "Joseph urged his brothers to bring their father Jacob down to Egypt.",
+      "answer": "true",
+      "verse_reference": "Genesis 45:9"
+    },
+    {
+      "id": "genesis-45-q4",
+      "type": "fill_blank",
+      "question": "Joseph said, \"It was not you who sent me here, but _____.\"",
+      "answer": "God",
+      "verse_reference": "Genesis 45:8"
+    },
+    {
+      "id": "genesis-45-q5",
+      "type": "fill_blank",
+      "question": "Pharaoh invited the family to settle in the best of the land, the region of _____.",
+      "answer": "Goshen",
+      "verse_reference": "Genesis 45:10"
+    }
+  ]
+}

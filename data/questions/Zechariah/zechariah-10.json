@@ -1,0 +1,53 @@
+{
+  "book": "Zechariah",
+  "chapter": 10,
+  "questions": [
+    {
+      "id": "zechariah-10-q1",
+      "type": "multiple_choice",
+      "question": "What does Zechariah 10 condemn the people for relying on?",
+      "options": [
+        "The priests who had served faithfully at the holy altar",
+        "The prophets who had spoken the truth to the people",
+        "Household idols (teraphim) and diviners who speak lies",
+        "The kings of all of the surrounding hostile nations"
+      ],
+      "answer": "Household idols (teraphim) and diviners who speak lies",
+      "verse_reference": "Zechariah 10:2"
+    },
+    {
+      "id": "zechariah-10-q2",
+      "type": "multiple_choice",
+      "question": "How does Zechariah 10 picture God's care for Judah?",
+      "options": [
+        "As a king far off who has wholly forgotten his people in exile",
+        "As caring for his flock, making them like a majestic warhorse",
+        "As a stranger who passes by and shows them no concern",
+        "As a stern judge who weighs each of their deeds alone"
+      ],
+      "answer": "As caring for his flock, making them like a majestic warhorse",
+      "verse_reference": "Zechariah 10:3"
+    },
+    {
+      "id": "zechariah-10-q3",
+      "type": "true_false",
+      "question": "Zechariah 10 says God will strengthen the house of Judah and save the house of Joseph and bring them back.",
+      "answer": "true",
+      "verse_reference": "Zechariah 10:6"
+    },
+    {
+      "id": "zechariah-10-q4",
+      "type": "fill_blank",
+      "question": "The LORD of hosts cares for his flock, the house of _____.",
+      "answer": "Judah",
+      "verse_reference": "Zechariah 10:3"
+    },
+    {
+      "id": "zechariah-10-q5",
+      "type": "fill_blank",
+      "question": "I will strengthen them in the LORD, and they shall walk in his _____.",
+      "answer": "name",
+      "verse_reference": "Zechariah 10:12"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "book": "Jonah",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "jonah-2-q1",
+      "type": "multiple_choice",
+      "question": "What did Jonah do from inside the fish?",
+      "options": [
+        "Slept soundly in the deep",
+        "Cursed the day he was born",
+        "Demanded to be set free",
+        "Prayed to the LORD his God"
+      ],
+      "answer": "Prayed to the LORD his God",
+      "verse_reference": "Jonah 2:1"
+    },
+    {
+      "id": "jonah-2-q2",
+      "type": "multiple_choice",
+      "question": "What did Jonah declare in his prayer?",
+      "options": [
+        "He deserved to die in the sea",
+        "Salvation belongs to the LORD",
+        "He was lost beyond all hope",
+        "He had turned away from God"
+      ],
+      "answer": "Salvation belongs to the LORD",
+      "verse_reference": "Jonah 2:9"
+    },
+    {
+      "id": "jonah-2-q3",
+      "type": "true_false",
+      "question": "After Jonah prayed, the LORD spoke to the fish, and it vomited Jonah out onto dry land.",
+      "answer": "true",
+      "verse_reference": "Jonah 2:10"
+    },
+    {
+      "id": "jonah-2-q4",
+      "type": "fill_blank",
+      "question": "I called out to the LORD, out of my distress, and he _____ me.",
+      "answer": "answered",
+      "accept": [
+        "heard"
+      ],
+      "verse_reference": "Jonah 2:2"
+    },
+    {
+      "id": "jonah-2-q5",
+      "type": "fill_blank",
+      "question": "Salvation belongs to the _____!",
+      "answer": "LORD",
+      "accept": [
+        "Jehovah",
+        "Yahweh"
+      ],
+      "verse_reference": "Jonah 2:9"
+    }
+  ]
+}

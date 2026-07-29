@@ -1,0 +1,56 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 8,
+  "questions": [
+    {
+      "id": "2-chronicles-8-q1",
+      "type": "multiple_choice",
+      "question": "What did Solomon do over twenty years after building the temple and his palace?",
+      "options": [
+        "Abandoned Jerusalem",
+        "Built and fortified cities",
+        "Went to war almost constantly",
+        "Stopped all building"
+      ],
+      "answer": "Built and fortified cities",
+      "verse_reference": "2 Chronicles 8:1-6"
+    },
+    {
+      "id": "2-chronicles-8-q2",
+      "type": "multiple_choice",
+      "question": "From whom did Solomon conscript forced labor?",
+      "options": [
+        "The Egyptians who had come and settled in Judah",
+        "The descendants of the surviving Canaanite peoples",
+        "The Phoenician traders of the cities of Tyre and Sidon",
+        "The Israelites who lived in the northern tribes"
+      ],
+      "answer": "The descendants of the surviving Canaanite peoples",
+      "verse_reference": "2 Chronicles 8:7-8"
+    },
+    {
+      "id": "2-chronicles-8-q3",
+      "type": "true_false",
+      "question": "Solomon kept the appointed feasts and offerings according to the command of Moses.",
+      "answer": "true",
+      "verse_reference": "2 Chronicles 8:13"
+    },
+    {
+      "id": "2-chronicles-8-q4",
+      "type": "fill_blank",
+      "question": "Solomon's ships, with Hiram's servants, went to _____ and brought back gold.",
+      "answer": "Ophir",
+      "verse_reference": "2 Chronicles 8:18"
+    },
+    {
+      "id": "2-chronicles-8-q5",
+      "type": "fill_blank",
+      "question": "Solomon did not make any of the people of _____ slaves for his work; they were soldiers.",
+      "answer": "Israel",
+      "accept": [
+        "Israelites"
+      ],
+      "verse_reference": "2 Chronicles 8:9"
+    }
+  ]
+}

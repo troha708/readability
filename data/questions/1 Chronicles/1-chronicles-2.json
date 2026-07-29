@@ -1,0 +1,57 @@
+{
+  "book": "1 Chronicles",
+  "chapter": 2,
+  "questions": [
+    {
+      "id": "1-chronicles-2-q1",
+      "type": "multiple_choice",
+      "question": "How many sons of Israel are listed at the start of chapter 2?",
+      "options": [
+        "Twenty",
+        "Ten",
+        "Seven",
+        "Twelve"
+      ],
+      "answer": "Twelve",
+      "verse_reference": "1 Chronicles 2:1-2"
+    },
+    {
+      "id": "1-chronicles-2-q2",
+      "type": "multiple_choice",
+      "question": "Who was the father of Jesse?",
+      "options": [
+        "Boaz",
+        "Obed",
+        "Ram",
+        "Nahshon"
+      ],
+      "answer": "Obed",
+      "verse_reference": "1 Chronicles 2:12"
+    },
+    {
+      "id": "1-chronicles-2-q3",
+      "type": "true_false",
+      "question": "David is listed as a son of Jesse in this chapter.",
+      "answer": "true",
+      "verse_reference": "1 Chronicles 2:15"
+    },
+    {
+      "id": "1-chronicles-2-q4",
+      "type": "fill_blank",
+      "question": "Bezalel, the temple craftsman, descended from the tribe of _____.",
+      "answer": "Judah",
+      "verse_reference": "1 Chronicles 2:20"
+    },
+    {
+      "id": "1-chronicles-2-q5",
+      "type": "fill_blank",
+      "question": "Achar (Achan) brought trouble on Israel by breaking faith over the _____ thing.",
+      "answer": "devoted",
+      "accept": [
+        "accursed",
+        "excommunicate"
+      ],
+      "verse_reference": "1 Chronicles 2:7"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "book": "Isaiah",
+  "chapter": 10,
+  "questions": [
+    {
+      "id": "isaiah-10-q1",
+      "type": "multiple_choice",
+      "question": "Whom does the LORD call the rod of his anger in Isaiah 10?",
+      "options": [
+        "Edom",
+        "Assyria",
+        "Egypt",
+        "Babylon"
+      ],
+      "answer": "Assyria",
+      "verse_reference": "Isaiah 10:5"
+    },
+    {
+      "id": "isaiah-10-q2",
+      "type": "multiple_choice",
+      "question": "What will happen to Assyria after God uses it?",
+      "options": [
+        "It will be spared and prosper for ever",
+        "It will turn and repent before the LORD",
+        "It will be rewarded and rule over the nations",
+        "It too will be punished for its arrogance"
+      ],
+      "answer": "It too will be punished for its arrogance",
+      "verse_reference": "Isaiah 10:12"
+    },
+    {
+      "id": "isaiah-10-q3",
+      "type": "true_false",
+      "question": "Isaiah 10 promises that a remnant of Israel will return and lean on the LORD.",
+      "answer": "true",
+      "verse_reference": "Isaiah 10:20-21"
+    },
+    {
+      "id": "isaiah-10-q4",
+      "type": "fill_blank",
+      "question": "Woe to _____, the rod of my anger; the staff in their hands is my fury!",
+      "answer": "Assyria",
+      "accept": [
+        "Assyrian",
+        "Asshur"
+      ],
+      "verse_reference": "Isaiah 10:5"
+    },
+    {
+      "id": "isaiah-10-q5",
+      "type": "fill_blank",
+      "question": "A _____ will return, the remnant of Jacob, to the mighty God.",
+      "answer": "remnant",
+      "verse_reference": "Isaiah 10:21"
+    }
+  ]
+}

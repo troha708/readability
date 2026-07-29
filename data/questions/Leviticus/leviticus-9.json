@@ -1,0 +1,56 @@
+{
+  "book": "Leviticus",
+  "chapter": 9,
+  "questions": [
+    {
+      "id": "leviticus-9-q1",
+      "type": "multiple_choice",
+      "question": "What happened after Aaron offered the first sacrifices?",
+      "options": [
+        "Rain fell and put out the altar fire",
+        "Fire from the LORD consumed the offering",
+        "A cloud filled the tent and hid the altar",
+        "The earth shook and split open the ground"
+      ],
+      "answer": "Fire from the LORD consumed the offering",
+      "verse_reference": "Leviticus 9:24"
+    },
+    {
+      "id": "leviticus-9-q2",
+      "type": "multiple_choice",
+      "question": "How did the people respond when the glory of the LORD appeared?",
+      "options": [
+        "They shouted and fell facedown",
+        "They turned and fled in terror",
+        "They grumbled and complained aloud",
+        "They stood silent and unmoved"
+      ],
+      "answer": "They shouted and fell facedown",
+      "verse_reference": "Leviticus 9:24"
+    },
+    {
+      "id": "leviticus-9-q3",
+      "type": "true_false",
+      "question": "The glory of the LORD appeared to all the people.",
+      "answer": "true",
+      "verse_reference": "Leviticus 9:23"
+    },
+    {
+      "id": "leviticus-9-q4",
+      "type": "fill_blank",
+      "question": "_____ came out from before the LORD and consumed the burnt offering on the altar.",
+      "answer": "Fire",
+      "verse_reference": "Leviticus 9:24"
+    },
+    {
+      "id": "leviticus-9-q5",
+      "type": "fill_blank",
+      "question": "When the people saw it, they shouted for joy and fell _____.",
+      "answer": "facedown",
+      "accept": [
+        "faces"
+      ],
+      "verse_reference": "Leviticus 9:24"
+    }
+  ]
+}

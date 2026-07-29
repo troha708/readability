@@ -1,0 +1,60 @@
+{
+  "book": "Psalms",
+  "chapter": 30,
+  "questions": [
+    {
+      "id": "psalms-30-q1",
+      "type": "multiple_choice",
+      "question": "Why does David extol the LORD in Psalm 30?",
+      "options": [
+        "Because God made him wealthy and great",
+        "Because God gave him victory in war",
+        "Because God granted him a long life",
+        "Because God drew him up and healed him"
+      ],
+      "answer": "Because God drew him up and healed him",
+      "verse_reference": "Psalm 30:1-2"
+    },
+    {
+      "id": "psalms-30-q2",
+      "type": "multiple_choice",
+      "question": "What well-known contrast does David make?",
+      "options": [
+        "Sorrow endures for a season, but glory shall last on forever",
+        "Trouble rises up like the sea, but God stills the raging storm",
+        "The wicked flourish for a single day, but very soon they all wither",
+        "Weeping may tarry for the night, but joy comes with the morning"
+      ],
+      "answer": "Weeping may tarry for the night, but joy comes with the morning",
+      "verse_reference": "Psalm 30:5"
+    },
+    {
+      "id": "psalms-30-q3",
+      "type": "true_false",
+      "question": "David says God turned his mourning into dancing.",
+      "answer": "true",
+      "verse_reference": "Psalm 30:11"
+    },
+    {
+      "id": "psalms-30-q4",
+      "type": "fill_blank",
+      "question": "Weeping may tarry for the night, but _____ comes with the morning.",
+      "answer": "joy",
+      "accept": [
+        "singing",
+        "rejoicing"
+      ],
+      "verse_reference": "Psalm 30:5"
+    },
+    {
+      "id": "psalms-30-q5",
+      "type": "fill_blank",
+      "question": "You have turned for me my mourning into _____.",
+      "answer": "dancing",
+      "accept": [
+        "joy"
+      ],
+      "verse_reference": "Psalm 30:11"
+    }
+  ]
+}

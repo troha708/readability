@@ -1,0 +1,53 @@
+{
+  "book": "1 Corinthians",
+  "chapter": 10,
+  "questions": [
+    {
+      "id": "1cor-10-q1",
+      "type": "multiple_choice",
+      "question": "Paul warns the Corinthians using examples from which period of Israel's history?",
+      "options": [
+        "The wilderness wandering after Egypt",
+        "The long reign of King David in Jerusalem",
+        "The conquest of all the land of Canaan",
+        "The years of exile in far-off Babylon"
+      ],
+      "answer": "The wilderness wandering after Egypt",
+      "verse_reference": "1 Corinthians 10:1-5"
+    },
+    {
+      "id": "1cor-10-q2",
+      "type": "multiple_choice",
+      "question": "Paul says you cannot drink the cup of the Lord and the cup of whom?",
+      "options": [
+        "Caesar",
+        "Demons",
+        "Pharisees",
+        "The world"
+      ],
+      "answer": "Demons",
+      "verse_reference": "1 Corinthians 10:21"
+    },
+    {
+      "id": "1cor-10-q3",
+      "type": "true_false",
+      "question": "Paul says God will not let you be tempted beyond what you can bear.",
+      "answer": "true",
+      "verse_reference": "1 Corinthians 10:13"
+    },
+    {
+      "id": "1cor-10-q4",
+      "type": "fill_blank",
+      "question": "So whether you eat or drink, or whatever you do, do all to the _____ of God.",
+      "answer": "glory",
+      "verse_reference": "1 Corinthians 10:31"
+    },
+    {
+      "id": "1cor-10-q5",
+      "type": "fill_blank",
+      "question": "No temptation has taken you except what is common to man. God is _____ and will not allow you to be tempted above what you are able.",
+      "answer": "faithful",
+      "verse_reference": "1 Corinthians 10:13"
+    }
+  ]
+}

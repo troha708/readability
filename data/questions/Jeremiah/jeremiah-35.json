@@ -1,0 +1,56 @@
+{
+  "book": "Jeremiah",
+  "chapter": 35,
+  "questions": [
+    {
+      "id": "jeremiah-35-q1",
+      "type": "multiple_choice",
+      "question": "Whom did God hold up as an example of faithfulness in chapter 35?",
+      "options": [
+        "The faithful exiles, who continually prayed for the whole city's welfare",
+        "The Rechabites, who obeyed their forefather's command not to drink wine",
+        "The priests, who carefully kept all of the temple sacrifices",
+        "The elders, who still remembered and kept the law of Moses"
+      ],
+      "answer": "The Rechabites, who obeyed their forefather's command not to drink wine",
+      "verse_reference": "Jeremiah 35:6-8"
+    },
+    {
+      "id": "jeremiah-35-q2",
+      "type": "multiple_choice",
+      "question": "What lesson did the Rechabites teach Judah?",
+      "options": [
+        "That all of the faithful would be spared from the coming exile",
+        "That they kept a man's command, but Judah would not obey God",
+        "That their obedience would soon bring to them great earthly riches",
+        "That fasting from all wine pleased the LORD their God very greatly"
+      ],
+      "answer": "That they kept a man's command, but Judah would not obey God",
+      "verse_reference": "Jeremiah 35:14-16"
+    },
+    {
+      "id": "jeremiah-35-q3",
+      "type": "true_false",
+      "question": "God promised the Rechabites that Jonadab would never lack a man to stand before him.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 35:19"
+    },
+    {
+      "id": "jeremiah-35-q4",
+      "type": "fill_blank",
+      "question": "The sons of the _____ have kept the command their father gave them, but this people has not obeyed me.",
+      "answer": "Rechabites",
+      "accept": [
+        "Rechab"
+      ],
+      "verse_reference": "Jeremiah 35:14, 16"
+    },
+    {
+      "id": "jeremiah-35-q5",
+      "type": "fill_blank",
+      "question": "Jeremiah set wine before the Rechabites, but they refused to _____ it.",
+      "answer": "drink",
+      "verse_reference": "Jeremiah 35:5-6"
+    }
+  ]
+}

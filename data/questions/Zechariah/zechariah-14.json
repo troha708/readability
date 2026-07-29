@@ -1,0 +1,53 @@
+{
+  "book": "Zechariah",
+  "chapter": 14,
+  "questions": [
+    {
+      "id": "zechariah-14-q1",
+      "type": "multiple_choice",
+      "question": "What does Zechariah 14 say about the LORD in the day of the LORD?",
+      "options": [
+        "He will carry all of the people away into a long and bitter exile",
+        "He will go out and fight, and his feet shall stand on the Mount of Olives",
+        "He will hide away his face and leave the whole city to fall to ruin",
+        "He will at last make a lasting peace with all of the surrounding nations"
+      ],
+      "answer": "He will go out and fight, and his feet shall stand on the Mount of Olives",
+      "verse_reference": "Zechariah 14:3-4"
+    },
+    {
+      "id": "zechariah-14-q2",
+      "type": "multiple_choice",
+      "question": "What climactic declaration ends Zechariah 14?",
+      "options": [
+        "The long and bitter famine will at last end, and the land will yield its fruit",
+        "The temple will be rebuilt in far greater glory than it had ever once known before",
+        "The LORD will be king over all the earth; the LORD will be one and his name one",
+        "Mighty Babylon will at last fall, never again to rise up forever and ever"
+      ],
+      "answer": "The LORD will be king over all the earth; the LORD will be one and his name one",
+      "verse_reference": "Zechariah 14:9"
+    },
+    {
+      "id": "zechariah-14-q3",
+      "type": "true_false",
+      "question": "Zechariah 14 says living waters shall flow out from Jerusalem.",
+      "answer": "true",
+      "verse_reference": "Zechariah 14:8"
+    },
+    {
+      "id": "zechariah-14-q4",
+      "type": "fill_blank",
+      "question": "On that day his feet shall stand on the Mount of _____, which lies before Jerusalem.",
+      "answer": "Olives",
+      "verse_reference": "Zechariah 14:4"
+    },
+    {
+      "id": "zechariah-14-q5",
+      "type": "fill_blank",
+      "question": "The LORD will be _____ over all the earth.",
+      "answer": "king",
+      "verse_reference": "Zechariah 14:9"
+    }
+  ]
+}

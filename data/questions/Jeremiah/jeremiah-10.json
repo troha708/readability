@@ -1,0 +1,53 @@
+{
+  "book": "Jeremiah",
+  "chapter": 10,
+  "questions": [
+    {
+      "id": "jeremiah-10-q1",
+      "type": "multiple_choice",
+      "question": "How does Jeremiah 10 describe idols?",
+      "options": [
+        "Like faithful shepherds leading their flocks to good pasture",
+        "Like scarecrows in a cucumber field; they cannot speak or walk",
+        "Like watchful watchmen guarding the great gates of the city",
+        "Like mighty and exalted kings seated high on their golden thrones"
+      ],
+      "answer": "Like scarecrows in a cucumber field; they cannot speak or walk",
+      "verse_reference": "Jeremiah 10:5"
+    },
+    {
+      "id": "jeremiah-10-q2",
+      "type": "multiple_choice",
+      "question": "In contrast, how is the LORD described in Jeremiah 10?",
+      "options": [
+        "A lifeless idol of silver and beaten gold",
+        "A distant maker unknown to the peoples of earth",
+        "The greatest among all the many gods of the nations",
+        "The true God, the living God, the everlasting King"
+      ],
+      "answer": "The true God, the living God, the everlasting King",
+      "verse_reference": "Jeremiah 10:10"
+    },
+    {
+      "id": "jeremiah-10-q3",
+      "type": "true_false",
+      "question": "Jeremiah 10 says the LORD made the earth by his power and stretched out the heavens by his understanding.",
+      "answer": "true",
+      "verse_reference": "Jeremiah 10:12"
+    },
+    {
+      "id": "jeremiah-10-q4",
+      "type": "fill_blank",
+      "question": "Their idols are like _____ in a cucumber field, and they cannot speak.",
+      "answer": "scarecrows",
+      "verse_reference": "Jeremiah 10:5"
+    },
+    {
+      "id": "jeremiah-10-q5",
+      "type": "fill_blank",
+      "question": "The LORD is the true God; he is the living God and the everlasting _____.",
+      "answer": "King",
+      "verse_reference": "Jeremiah 10:10"
+    }
+  ]
+}

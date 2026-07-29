@@ -1,0 +1,53 @@
+{
+  "book": "1 Chronicles",
+  "chapter": 13,
+  "questions": [
+    {
+      "id": "1-chronicles-13-q1",
+      "type": "multiple_choice",
+      "question": "What did David want to bring back to Jerusalem?",
+      "options": [
+        "The bronze altar",
+        "Solomon's throne",
+        "The ark of God",
+        "The golden calf"
+      ],
+      "answer": "The ark of God",
+      "verse_reference": "1 Chronicles 13:3"
+    },
+    {
+      "id": "1-chronicles-13-q2",
+      "type": "multiple_choice",
+      "question": "Who died when he reached out to steady the ark?",
+      "options": [
+        "Ahio",
+        "Uzzah",
+        "Obed-edom",
+        "Abinadab"
+      ],
+      "answer": "Uzzah",
+      "verse_reference": "1 Chronicles 13:10"
+    },
+    {
+      "id": "1-chronicles-13-q3",
+      "type": "true_false",
+      "question": "David was angry and afraid of God that day and did not bring the ark to himself.",
+      "answer": "true",
+      "verse_reference": "1 Chronicles 13:11-13"
+    },
+    {
+      "id": "1-chronicles-13-q4",
+      "type": "fill_blank",
+      "question": "The ark was carried on a new _____.",
+      "answer": "cart",
+      "verse_reference": "1 Chronicles 13:7"
+    },
+    {
+      "id": "1-chronicles-13-q5",
+      "type": "fill_blank",
+      "question": "The ark was left at the house of _____-edom, and the LORD blessed his household.",
+      "answer": "Obed",
+      "verse_reference": "1 Chronicles 13:13-14"
+    }
+  ]
+}

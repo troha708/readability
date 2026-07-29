@@ -1,0 +1,53 @@
+{
+  "book": "Zechariah",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "zechariah-4-q1",
+      "type": "multiple_choice",
+      "question": "What did Zechariah see in the vision of chapter 4?",
+      "options": [
+        "Four war chariots passing between two bronze mountains",
+        "A golden lampstand with two olive trees beside it",
+        "A woman seated in a basket of lead",
+        "A flying scroll covered with writing"
+      ],
+      "answer": "A golden lampstand with two olive trees beside it",
+      "verse_reference": "Zechariah 4:2-3"
+    },
+    {
+      "id": "zechariah-4-q2",
+      "type": "multiple_choice",
+      "question": "What famous word came to Zerubbabel in Zechariah 4?",
+      "options": [
+        "'A great and mighty army will defend the whole holy city'",
+        "'By the strength of your own two hands the work is fully done'",
+        "'Not by might, nor by power, but by my Spirit, says the LORD'",
+        "'The gathered wealth of all the nations will build my house'"
+      ],
+      "answer": "'Not by might, nor by power, but by my Spirit, says the LORD'",
+      "verse_reference": "Zechariah 4:6"
+    },
+    {
+      "id": "zechariah-4-q3",
+      "type": "true_false",
+      "question": "Zechariah 4 says whoever has despised the day of small things will rejoice to see the plumb line in Zerubbabel's hand.",
+      "answer": "true",
+      "verse_reference": "Zechariah 4:10"
+    },
+    {
+      "id": "zechariah-4-q4",
+      "type": "fill_blank",
+      "question": "Not by might, nor by power, but by my _____, says the LORD of hosts.",
+      "answer": "Spirit",
+      "verse_reference": "Zechariah 4:6"
+    },
+    {
+      "id": "zechariah-4-q5",
+      "type": "fill_blank",
+      "question": "The hands of _____ have laid the foundation of this house; his hands shall also complete it.",
+      "answer": "Zerubbabel",
+      "verse_reference": "Zechariah 4:9"
+    }
+  ]
+}

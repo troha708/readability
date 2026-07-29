@@ -1,0 +1,53 @@
+{
+  "book": "1 Kings",
+  "chapter": 5,
+  "questions": [
+    {
+      "id": "1-kings-5-q1",
+      "type": "multiple_choice",
+      "question": "With which king did Solomon make a deal for cedar timber?",
+      "options": [
+        "Nebuchadnezzar",
+        "Hiram of Tyre",
+        "Pharaoh",
+        "Ben-Hadad"
+      ],
+      "answer": "Hiram of Tyre",
+      "verse_reference": "1 Kings 5:1-10"
+    },
+    {
+      "id": "1-kings-5-q2",
+      "type": "multiple_choice",
+      "question": "What did Solomon prepare to build?",
+      "options": [
+        "A fleet of trading ships",
+        "A wall around Jerusalem",
+        "The temple of the LORD",
+        "A palace for his household"
+      ],
+      "answer": "The temple of the LORD",
+      "verse_reference": "1 Kings 5:5"
+    },
+    {
+      "id": "1-kings-5-q3",
+      "type": "true_false",
+      "question": "Solomon used a large labor force to quarry stone and gather materials.",
+      "answer": "true",
+      "verse_reference": "1 Kings 5:13-18"
+    },
+    {
+      "id": "1-kings-5-q4",
+      "type": "fill_blank",
+      "question": "Solomon made a treaty with King _____ of Tyre for cedar and cypress wood.",
+      "answer": "Hiram",
+      "verse_reference": "1 Kings 5:1-10"
+    },
+    {
+      "id": "1-kings-5-q5",
+      "type": "fill_blank",
+      "question": "Solomon prepared to build a _____ for the name of the LORD.",
+      "answer": "house",
+      "verse_reference": "1 Kings 5:5"
+    }
+  ]
+}

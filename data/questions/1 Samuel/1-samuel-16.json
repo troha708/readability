@@ -1,0 +1,53 @@
+{
+  "book": "1 Samuel",
+  "chapter": 16,
+  "questions": [
+    {
+      "id": "1-samuel-16-q1",
+      "type": "multiple_choice",
+      "question": "Whom did Samuel anoint as the next king, in Bethlehem?",
+      "options": [
+        "Eliab, the firstborn of Jesse",
+        "Abinadab, a son of Jesse",
+        "Jonathan, the eldest son of King Saul",
+        "David, the youngest son of Jesse"
+      ],
+      "answer": "David, the youngest son of Jesse",
+      "verse_reference": "1 Samuel 16:13"
+    },
+    {
+      "id": "1-samuel-16-q2",
+      "type": "multiple_choice",
+      "question": "What does God look at, rather than outward appearance?",
+      "options": [
+        "The hands",
+        "The heart",
+        "The height",
+        "The age"
+      ],
+      "answer": "The heart",
+      "verse_reference": "1 Samuel 16:7"
+    },
+    {
+      "id": "1-samuel-16-q3",
+      "type": "true_false",
+      "question": "David was the youngest of Jesse's sons and was keeping the sheep.",
+      "answer": "true",
+      "verse_reference": "1 Samuel 16:11"
+    },
+    {
+      "id": "1-samuel-16-q4",
+      "type": "fill_blank",
+      "question": "The LORD said man looks at the outward appearance, but the LORD looks at the _____.",
+      "answer": "heart",
+      "verse_reference": "1 Samuel 16:7"
+    },
+    {
+      "id": "1-samuel-16-q5",
+      "type": "fill_blank",
+      "question": "Samuel anointed _____, the youngest son of Jesse, as the next king.",
+      "answer": "David",
+      "verse_reference": "1 Samuel 16:13"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "book": "Mark",
+  "chapter": 13,
+  "questions": [
+    {
+      "id": "mark-13-q1",
+      "type": "multiple_choice",
+      "question": "What did Jesus predict would happen to the temple buildings?",
+      "options": [
+        "They would be converted to Roman use",
+        "They would be renovated",
+        "Not one stone would be left on another",
+        "They would last forever"
+      ],
+      "answer": "Not one stone would be left on another",
+      "verse_reference": "Mark 13:2"
+    },
+    {
+      "id": "mark-13-q2",
+      "type": "multiple_choice",
+      "question": "Jesus said no one knows the day or hour of his return, not even whom?",
+      "options": [
+        "The scribes or the teachers of the law",
+        "The angels in heaven or the Son",
+        "The kings of the earth or their armies",
+        "The prophets of old or the priests"
+      ],
+      "answer": "The angels in heaven or the Son",
+      "verse_reference": "Mark 13:32"
+    },
+    {
+      "id": "mark-13-q3",
+      "type": "true_false",
+      "question": "Jesus warned that false christs and false prophets would arise and show signs and wonders.",
+      "answer": "true",
+      "verse_reference": "Mark 13:22"
+    },
+    {
+      "id": "mark-13-q4",
+      "type": "fill_blank",
+      "question": "Heaven and earth will pass away, but my _____ will not pass away.",
+      "answer": "words",
+      "verse_reference": "Mark 13:31"
+    },
+    {
+      "id": "mark-13-q5",
+      "type": "fill_blank",
+      "question": "What I tell you, I tell all: _____.",
+      "answer": "Keep watch",
+      "accept": [
+        "Watch"
+      ],
+      "verse_reference": "Mark 13:37"
+    }
+  ]
+}

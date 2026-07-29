@@ -1,0 +1,59 @@
+{
+  "book": "Zechariah",
+  "chapter": 6,
+  "questions": [
+    {
+      "id": "zechariah-6-q1",
+      "type": "multiple_choice",
+      "question": "What did Zechariah see coming out from between two mountains in chapter 6?",
+      "options": [
+        "Four tall and spreading trees",
+        "Four chariots with horses",
+        "Four sealed and written scrolls",
+        "Four flowing rivers of water"
+      ],
+      "answer": "Four chariots with horses",
+      "verse_reference": "Zechariah 6:1"
+    },
+    {
+      "id": "zechariah-6-q2",
+      "type": "multiple_choice",
+      "question": "What did God instruct concerning Joshua the high priest in Zechariah 6?",
+      "options": [
+        "To carry the ark back into the temple",
+        "To build an altar of uncut stones",
+        "To crown him, pointing to the coming Branch",
+        "To tear down the idols of the nations"
+      ],
+      "answer": "To crown him, pointing to the coming Branch",
+      "verse_reference": "Zechariah 6:11"
+    },
+    {
+      "id": "zechariah-6-q3",
+      "type": "true_false",
+      "question": "Zechariah 6 says the Branch shall build the temple of the LORD and bear royal honor.",
+      "answer": "true",
+      "verse_reference": "Zechariah 6:12-13"
+    },
+    {
+      "id": "zechariah-6-q4",
+      "type": "fill_blank",
+      "question": "Behold, the man whose name is the _____: he shall branch out and build the temple of the LORD.",
+      "answer": "Branch",
+      "accept": [
+        "Shoot"
+      ],
+      "verse_reference": "Zechariah 6:12"
+    },
+    {
+      "id": "zechariah-6-q5",
+      "type": "fill_blank",
+      "question": "The four chariots are the four _____ of heaven going out.",
+      "answer": "spirits",
+      "accept": [
+        "winds"
+      ],
+      "verse_reference": "Zechariah 6:5"
+    }
+  ]
+}

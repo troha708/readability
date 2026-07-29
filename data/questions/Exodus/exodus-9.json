@@ -1,0 +1,56 @@
+{
+  "book": "Exodus",
+  "chapter": 9,
+  "questions": [
+    {
+      "id": "exodus-9-q1",
+      "type": "multiple_choice",
+      "question": "Which plague struck the Egyptians' bodies with painful sores?",
+      "options": [
+        "Boils",
+        "Hail",
+        "Locusts",
+        "Blood"
+      ],
+      "answer": "Boils",
+      "verse_reference": "Exodus 9:10"
+    },
+    {
+      "id": "exodus-9-q2",
+      "type": "multiple_choice",
+      "question": "What fell from the sky in the seventh plague, destroying crops and animals?",
+      "options": [
+        "Sheets of blood-red rain",
+        "Hail mixed with fire",
+        "Burning ash and black smoke",
+        "Swarms of stinging flies"
+      ],
+      "answer": "Hail mixed with fire",
+      "verse_reference": "Exodus 9:23-24"
+    },
+    {
+      "id": "exodus-9-q3",
+      "type": "true_false",
+      "question": "The plague on the livestock killed the animals of Egypt but spared those of Israel.",
+      "answer": "true",
+      "verse_reference": "Exodus 9:4-6"
+    },
+    {
+      "id": "exodus-9-q4",
+      "type": "fill_blank",
+      "question": "Moses warned Pharaoh that _____ would fall, the worst Egypt had ever known.",
+      "answer": "hail",
+      "verse_reference": "Exodus 9:18"
+    },
+    {
+      "id": "exodus-9-q5",
+      "type": "fill_blank",
+      "question": "The plague of boils came from handfuls of _____ that Moses tossed toward the sky.",
+      "answer": "soot",
+      "accept": [
+        "ashes"
+      ],
+      "verse_reference": "Exodus 9:8-10"
+    }
+  ]
+}

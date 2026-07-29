@@ -1,0 +1,56 @@
+{
+  "book": "Job",
+  "chapter": 1,
+  "questions": [
+    {
+      "id": "job-1-q1",
+      "type": "multiple_choice",
+      "question": "How is Job described at the beginning of the book?",
+      "options": [
+        "Foolish and reckless, scorning the ways of God and of men",
+        "Poor and obscure, entirely unknown among all of his people",
+        "Blameless and upright, fearing God and turning away from evil",
+        "Wicked and proud, harshly oppressing the poor folk all around him"
+      ],
+      "answer": "Blameless and upright, fearing God and turning away from evil",
+      "verse_reference": "Job 1:1"
+    },
+    {
+      "id": "job-1-q2",
+      "type": "multiple_choice",
+      "question": "What did Satan claim was the reason for Job's faithfulness?",
+      "options": [
+        "His own great wisdom had shaped him",
+        "His many friends had taught him to",
+        "He was afraid of God's punishment",
+        "God had blessed and protected him"
+      ],
+      "answer": "God had blessed and protected him",
+      "verse_reference": "Job 1:9-10"
+    },
+    {
+      "id": "job-1-q3",
+      "type": "true_false",
+      "question": "In one day Job lost his oxen, sheep, camels, servants, and all his children.",
+      "answer": "true",
+      "verse_reference": "Job 1:13-19"
+    },
+    {
+      "id": "job-1-q4",
+      "type": "fill_blank",
+      "question": "Job said, 'The LORD gave, and the LORD has taken away; blessed be the _____ of the LORD.'",
+      "answer": "name",
+      "verse_reference": "Job 1:21"
+    },
+    {
+      "id": "job-1-q5",
+      "type": "fill_blank",
+      "question": "In all this Job did not sin or charge God with _____.",
+      "answer": "wrongdoing",
+      "accept": [
+        "wrong"
+      ],
+      "verse_reference": "Job 1:22"
+    }
+  ]
+}

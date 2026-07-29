@@ -1,0 +1,58 @@
+{
+  "book": "2 Timothy",
+  "chapter": 4,
+  "questions": [
+    {
+      "id": "2tim_4_1",
+      "type": "multiple_choice",
+      "question": "Paul says people will accumulate teachers to suit their own what?",
+      "options": [
+        "Traditions",
+        "Cultures",
+        "Desires",
+        "Families"
+      ],
+      "correct": "Desires",
+      "verse_ref": "2 Timothy 4:3",
+      "feedback": "People will gather teachers to suit their own desires, turning away from truth."
+    },
+    {
+      "id": "2tim_4_2",
+      "type": "multiple_choice",
+      "question": "What metaphor does Paul use to describe his life nearing its end?",
+      "options": [
+        "A flower that fades by the evening",
+        "Being poured out as a drink offering",
+        "A candle slowly burning down to nothing",
+        "The sun sinking low at the day's end"
+      ],
+      "correct": "Being poured out as a drink offering",
+      "verse_ref": "2 Timothy 4:6",
+      "feedback": "Paul says he is already being poured out as a drink offering; the time of his departure has come."
+    },
+    {
+      "id": "2tim_4_3",
+      "type": "true_false",
+      "question": "Paul says he has fought the good fight and finished the race.",
+      "correct": true,
+      "verse_ref": "2 Timothy 4:7",
+      "feedback": "Paul declares he has fought the good fight, finished the race, and kept the faith."
+    },
+    {
+      "id": "2tim_4_4",
+      "type": "fill_in_the_blank",
+      "question": "Paul says a crown of _____ is laid up for him, which the Lord will award on that day.",
+      "correct": "righteousness",
+      "verse_ref": "2 Timothy 4:8",
+      "feedback": "A crown of righteousness awaits Paul and all who have loved Christ's appearing."
+    },
+    {
+      "id": "2tim_4_5",
+      "type": "fill_in_the_blank",
+      "question": "Paul says _____ deserted him because he was in love with the present world.",
+      "correct": "Demas",
+      "verse_ref": "2 Timothy 4:10",
+      "feedback": "Demas deserted Paul, having loved this present world."
+    }
+  ]
+}

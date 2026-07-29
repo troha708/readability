@@ -1,0 +1,54 @@
+{
+  "book": "Numbers",
+  "chapter": 12,
+  "questions": [
+    {
+      "id": "numbers-12-q1",
+      "type": "multiple_choice",
+      "question": "Why did Miriam and Aaron speak against Moses?",
+      "options": [
+        "Over his great age and his failing strength",
+        "Over his Cushite wife and his unique role",
+        "Over the way he led them in battle",
+        "Over the wealth he had gathered"
+      ],
+      "answer": "Over his Cushite wife and his unique role",
+      "verse_reference": "Numbers 12:1-2"
+    },
+    {
+      "id": "numbers-12-q2",
+      "type": "multiple_choice",
+      "question": "What happened to Miriam as punishment?",
+      "options": [
+        "She died",
+        "She became leprous",
+        "She was exiled",
+        "She lost her voice"
+      ],
+      "answer": "She became leprous",
+      "verse_reference": "Numbers 12:10"
+    },
+    {
+      "id": "numbers-12-q3",
+      "type": "true_false",
+      "question": "God said he spoke to Moses face to face, not in riddles.",
+      "answer": "true",
+      "verse_reference": "Numbers 12:8"
+    },
+    {
+      "id": "numbers-12-q4",
+      "type": "fill_blank",
+      "question": "Miriam became _____, white as snow, for speaking against Moses.",
+      "answer": "leprous",
+      "verse_reference": "Numbers 12:10"
+    },
+    {
+      "id": "numbers-12-q5",
+      "type": "fill_blank",
+      "question": "The LORD said Moses was very _____, more than anyone on the earth.",
+      "answer": "humble",
+      "accept": ["meek"],
+      "verse_reference": "Numbers 12:3"
+    }
+  ]
+}

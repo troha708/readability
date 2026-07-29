@@ -1,0 +1,53 @@
+{
+  "book": "1 Chronicles",
+  "chapter": 26,
+  "questions": [
+    {
+      "id": "1-chronicles-26-q1",
+      "type": "multiple_choice",
+      "question": "What duty did the Korahites and others in this chapter perform?",
+      "options": [
+        "Gatekeepers",
+        "Temple singers",
+        "Scribes",
+        "Priests"
+      ],
+      "answer": "Gatekeepers",
+      "verse_reference": "1 Chronicles 26:1"
+    },
+    {
+      "id": "1-chronicles-26-q2",
+      "type": "multiple_choice",
+      "question": "What else were some Levites placed in charge of?",
+      "options": [
+        "The training of the king's army",
+        "The vineyards of the great royal estate",
+        "The treasuries of the house of God",
+        "The fishing along the Jordan"
+      ],
+      "answer": "The treasuries of the house of God",
+      "verse_reference": "1 Chronicles 26:20"
+    },
+    {
+      "id": "1-chronicles-26-q3",
+      "type": "true_false",
+      "question": "Lots were cast for each gate, for small and great alike.",
+      "answer": "true",
+      "verse_reference": "1 Chronicles 26:13"
+    },
+    {
+      "id": "1-chronicles-26-q4",
+      "type": "fill_blank",
+      "question": "Obed-edom was blessed by God and had many able _____.",
+      "answer": "sons",
+      "verse_reference": "1 Chronicles 26:5-8"
+    },
+    {
+      "id": "1-chronicles-26-q5",
+      "type": "fill_blank",
+      "question": "Some Levites were appointed as officers and _____ over Israel for outside duties.",
+      "answer": "judges",
+      "verse_reference": "1 Chronicles 26:29"
+    }
+  ]
+}

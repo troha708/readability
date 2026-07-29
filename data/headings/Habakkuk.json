@@ -1,0 +1,40 @@
+{
+  "book": "Habakkuk",
+  "source": "Berean Standard Bible (CC0 Public Domain)",
+  "chapters": {
+    "1": [
+      {
+        "beforeVerse": 1,
+        "heading": "Habakkuk’s First Complaint"
+      },
+      {
+        "beforeVerse": 5,
+        "heading": "The LORD’s Answer"
+      },
+      {
+        "beforeVerse": 12,
+        "heading": "Habakkuk’s Second Complaint"
+      }
+    ],
+    "2": [
+      {
+        "beforeVerse": 1,
+        "heading": "The LORD Answers Again"
+      },
+      {
+        "beforeVerse": 6,
+        "heading": "Woe to the Chaldeans"
+      }
+    ],
+    "3": [
+      {
+        "beforeVerse": 1,
+        "heading": "Habakkuk’s Prayer"
+      },
+      {
+        "beforeVerse": 17,
+        "heading": "Habakkuk Rejoices"
+      }
+    ]
+  }
+}

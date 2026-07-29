@@ -1,0 +1,56 @@
+{
+  "book": "2 Samuel",
+  "chapter": 10,
+  "questions": [
+    {
+      "id": "2-samuel-10-q1",
+      "type": "multiple_choice",
+      "question": "How did the Ammonites insult David's envoys?",
+      "options": [
+        "They killed them outright and sent back their dead bodies",
+        "They shaved off half their beards and cut their garments",
+        "They imprisoned them all in the deep city dungeon",
+        "They robbed them of all their gifts and their gold"
+      ],
+      "answer": "They shaved off half their beards and cut their garments",
+      "verse_reference": "2 Samuel 10:4"
+    },
+    {
+      "id": "2-samuel-10-q2",
+      "type": "multiple_choice",
+      "question": "Who led Israel's army to victory over the Ammonites and Arameans?",
+      "options": [
+        "Abner",
+        "Abishai",
+        "Joab",
+        "David"
+      ],
+      "answer": "Joab",
+      "verse_reference": "2 Samuel 10:7-14"
+    },
+    {
+      "id": "2-samuel-10-q3",
+      "type": "true_false",
+      "question": "The Ammonites hired Aramean (Syrian) soldiers to fight Israel.",
+      "answer": "true",
+      "verse_reference": "2 Samuel 10:6"
+    },
+    {
+      "id": "2-samuel-10-q4",
+      "type": "fill_blank",
+      "question": "The Ammonites humiliated David's men by shaving off half their _____.",
+      "answer": "beards",
+      "accept": [
+        "beard"
+      ],
+      "verse_reference": "2 Samuel 10:4"
+    },
+    {
+      "id": "2-samuel-10-q5",
+      "type": "fill_blank",
+      "question": "_____ led Israel's forces against the Ammonites and Arameans.",
+      "answer": "Joab",
+      "verse_reference": "2 Samuel 10:7"
+    }
+  ]
+}

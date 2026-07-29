@@ -1,0 +1,59 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 6,
+  "questions": [
+    {
+      "id": "2-chronicles-6-q1",
+      "type": "multiple_choice",
+      "question": "What did Solomon do before the altar in front of the assembly?",
+      "options": [
+        "Offered a thousand burnt offerings",
+        "Read aloud the law of Moses",
+        "Spread out his hands and prayed",
+        "Sang a psalm of thanksgiving"
+      ],
+      "answer": "Spread out his hands and prayed",
+      "verse_reference": "2 Chronicles 6:12-13"
+    },
+    {
+      "id": "2-chronicles-6-q2",
+      "type": "multiple_choice",
+      "question": "In his prayer, Solomon acknowledged that even what could not contain God?",
+      "options": [
+        "The seas and all their depths",
+        "The temple he had just built",
+        "The whole earth and its fullness",
+        "Heaven and the highest heaven"
+      ],
+      "answer": "Heaven and the highest heaven",
+      "verse_reference": "2 Chronicles 6:18"
+    },
+    {
+      "id": "2-chronicles-6-q3",
+      "type": "true_false",
+      "question": "Solomon prayed that God would hear and forgive when his people pray toward this house.",
+      "answer": "true",
+      "verse_reference": "2 Chronicles 6:21"
+    },
+    {
+      "id": "2-chronicles-6-q4",
+      "type": "fill_blank",
+      "question": "Solomon knelt on a bronze _____ he had made and prayed.",
+      "answer": "platform",
+      "accept": [
+        "scaffold"
+      ],
+      "verse_reference": "2 Chronicles 6:13"
+    },
+    {
+      "id": "2-chronicles-6-q5",
+      "type": "fill_blank",
+      "question": "Solomon asked that when foreigners pray toward the house, God would hear from _____.",
+      "answer": "heaven",
+      "accept": [
+        "heavens"
+      ],
+      "verse_reference": "2 Chronicles 6:33"
+    }
+  ]
+}

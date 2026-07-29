@@ -1,0 +1,53 @@
+{
+  "book": "Job",
+  "chapter": 40,
+  "questions": [
+    {
+      "id": "job-40-q1",
+      "type": "multiple_choice",
+      "question": "How did Job first respond when God challenged him to answer?",
+      "options": [
+        "He laid his hand on his mouth, saying he was of small account",
+        "He fled away in great terror from the raging desert storm",
+        "He praised himself loudly for all of his past good deeds",
+        "He argued back at God, defending his own innocence at great length"
+      ],
+      "answer": "He laid his hand on his mouth, saying he was of small account",
+      "verse_reference": "Job 40:4"
+    },
+    {
+      "id": "job-40-q2",
+      "type": "multiple_choice",
+      "question": "Which great creature did God describe at the end of chapter 40?",
+      "options": [
+        "Leviathan",
+        "Behemoth",
+        "The eagle",
+        "The lion"
+      ],
+      "answer": "Behemoth",
+      "verse_reference": "Job 40:15"
+    },
+    {
+      "id": "job-40-q3",
+      "type": "true_false",
+      "question": "God challenged whether Job could clothe himself with majesty and bring down the proud.",
+      "answer": "true",
+      "verse_reference": "Job 40:9-12"
+    },
+    {
+      "id": "job-40-q4",
+      "type": "fill_blank",
+      "question": "God described Behemoth, whose strength is in his loins and power in his belly _____.",
+      "answer": "muscles",
+      "verse_reference": "Job 40:16"
+    },
+    {
+      "id": "job-40-q5",
+      "type": "fill_blank",
+      "question": "Job said, 'I have spoken once, but I have no answer — twice, but I have nothing to _____.'",
+      "answer": "add",
+      "verse_reference": "Job 40:5"
+    }
+  ]
+}

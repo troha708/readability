@@ -1,0 +1,53 @@
+{
+  "book": "Psalms",
+  "chapter": 115,
+  "questions": [
+    {
+      "id": "psalms-115-q1",
+      "type": "multiple_choice",
+      "question": "To whom does Psalm 115 say glory belongs, not to us?",
+      "options": [
+        "The temple's gold, for its splendor and worth",
+        "The king's throne, for his justice and power",
+        "God's name, for his steadfast love and faithfulness",
+        "Zion's walls, for their strength and beauty"
+      ],
+      "answer": "God's name, for his steadfast love and faithfulness",
+      "verse_reference": "Psalm 115:1"
+    },
+    {
+      "id": "psalms-115-q2",
+      "type": "multiple_choice",
+      "question": "How are idols described in Psalm 115?",
+      "options": [
+        "They have names but hold no power, temples but show no glory",
+        "They have wealth but bring no joy, gold but give no help",
+        "They have priests but hear no prayer, altars but grant no mercy",
+        "They have mouths but do not speak, eyes but do not see"
+      ],
+      "answer": "They have mouths but do not speak, eyes but do not see",
+      "verse_reference": "Psalm 115:5"
+    },
+    {
+      "id": "psalms-115-q3",
+      "type": "true_false",
+      "question": "The psalm warns that those who make idols become like them.",
+      "answer": "true",
+      "verse_reference": "Psalm 115:8"
+    },
+    {
+      "id": "psalms-115-q4",
+      "type": "fill_blank",
+      "question": "Not to us, O LORD, not to us, but to your _____ give glory.",
+      "answer": "name",
+      "verse_reference": "Psalm 115:1"
+    },
+    {
+      "id": "psalms-115-q5",
+      "type": "fill_blank",
+      "question": "Our God is in the heavens; he does all that he _____.",
+      "answer": "pleases",
+      "verse_reference": "Psalm 115:3"
+    }
+  ]
+}

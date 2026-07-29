@@ -1,0 +1,56 @@
+{
+  "book": "Psalms",
+  "chapter": 123,
+  "questions": [
+    {
+      "id": "psalms-123-q1",
+      "type": "multiple_choice",
+      "question": "To whom does the psalmist lift his eyes in Psalm 123?",
+      "options": [
+        "The king, who sits upon his throne",
+        "The hills, from which his help will come",
+        "God, who is enthroned in the heavens",
+        "The temple, where his glory dwells"
+      ],
+      "answer": "God, who is enthroned in the heavens",
+      "verse_reference": "Psalm 123:1"
+    },
+    {
+      "id": "psalms-123-q2",
+      "type": "multiple_choice",
+      "question": "To what does the psalm compare looking to the LORD?",
+      "options": [
+        "As a watchman waits for the coming morning",
+        "As a farmer watches the sky for the early autumn rain",
+        "As the eyes of servants look to their master's hand",
+        "As a weaned child rests against its mother"
+      ],
+      "answer": "As the eyes of servants look to their master's hand",
+      "verse_reference": "Psalm 123:2"
+    },
+    {
+      "id": "psalms-123-q3",
+      "type": "true_false",
+      "question": "The psalmist asks for mercy because they have had more than enough of contempt.",
+      "answer": "true",
+      "verse_reference": "Psalm 123:3-4"
+    },
+    {
+      "id": "psalms-123-q4",
+      "type": "fill_blank",
+      "question": "To you I lift up my eyes, O you who are enthroned in _____!",
+      "answer": "heaven",
+      "accept": [
+        "heavens"
+      ],
+      "verse_reference": "Psalm 123:1"
+    },
+    {
+      "id": "psalms-123-q5",
+      "type": "fill_blank",
+      "question": "Our eyes look to the LORD our God, till he has _____ upon us.",
+      "answer": "mercy",
+      "verse_reference": "Psalm 123:2"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "book": "2 Chronicles",
+  "chapter": 21,
+  "questions": [
+    {
+      "id": "2-chronicles-21-q1",
+      "type": "multiple_choice",
+      "question": "What did Jehoram do when he became king?",
+      "options": [
+        "Built a temple",
+        "Killed all his brothers",
+        "Freed slaves",
+        "Made peace with Edom"
+      ],
+      "answer": "Killed all his brothers",
+      "verse_reference": "2 Chronicles 21:4"
+    },
+    {
+      "id": "2-chronicles-21-q2",
+      "type": "multiple_choice",
+      "question": "Whose daughter did Jehoram marry, leading him into evil?",
+      "options": [
+        "Pharaoh's",
+        "Ahab's",
+        "Ben-hadad's",
+        "Hiram's"
+      ],
+      "answer": "Ahab's",
+      "verse_reference": "2 Chronicles 21:6"
+    },
+    {
+      "id": "2-chronicles-21-q3",
+      "type": "true_false",
+      "question": "Jehoram received a letter from the prophet Elijah warning of judgment.",
+      "answer": "true",
+      "verse_reference": "2 Chronicles 21:12"
+    },
+    {
+      "id": "2-chronicles-21-q4",
+      "type": "fill_blank",
+      "question": "Jehoram died of an incurable disease of his _____.",
+      "answer": "bowels",
+      "verse_reference": "2 Chronicles 21:18-19"
+    },
+    {
+      "id": "2-chronicles-21-q5",
+      "type": "fill_blank",
+      "question": "He departed with no one's _____, and was not buried in the tombs of the kings.",
+      "answer": "regret",
+      "verse_reference": "2 Chronicles 21:20"
+    }
+  ]
+}

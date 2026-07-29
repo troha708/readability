@@ -1,0 +1,56 @@
+{
+  "book": "Esther",
+  "chapter": 5,
+  "questions": [
+    {
+      "id": "esther-5-q1",
+      "type": "multiple_choice",
+      "question": "What did Esther do when she approached the king?",
+      "options": [
+        "Demanded justice against Haman at once",
+        "Wept and begged for her people's lives",
+        "Invited the king and Haman to a banquet",
+        "Openly accused Haman before the court"
+      ],
+      "answer": "Invited the king and Haman to a banquet",
+      "verse_reference": "Esther 5:4"
+    },
+    {
+      "id": "esther-5-q2",
+      "type": "multiple_choice",
+      "question": "What did Haman build on his wife's advice?",
+      "options": [
+        "A gallows for Mordecai",
+        "A throne above the nobles",
+        "A great feast for the king",
+        "A statue of himself"
+      ],
+      "answer": "A gallows for Mordecai",
+      "verse_reference": "Esther 5:14"
+    },
+    {
+      "id": "esther-5-q3",
+      "type": "true_false",
+      "question": "Haman was pleased and joyful until he saw Mordecai refusing to honor him.",
+      "answer": "true",
+      "verse_reference": "Esther 5:9"
+    },
+    {
+      "id": "esther-5-q4",
+      "type": "fill_blank",
+      "question": "The king held out the golden scepter, and Esther touched the tip of the _____.",
+      "answer": "scepter",
+      "accept": [
+        "sceptre"
+      ],
+      "verse_reference": "Esther 5:2"
+    },
+    {
+      "id": "esther-5-q5",
+      "type": "fill_blank",
+      "question": "The gallows Haman built was _____ cubits high.",
+      "answer": "fifty",
+      "verse_reference": "Esther 5:14"
+    }
+  ]
+}

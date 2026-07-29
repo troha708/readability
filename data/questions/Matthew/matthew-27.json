@@ -1,0 +1,53 @@
+{
+  "book": "Matthew",
+  "chapter": 27,
+  "questions": [
+    {
+      "id": "matthew-27-q1",
+      "type": "multiple_choice",
+      "question": "What did Judas do with the thirty pieces of silver after he regretted betraying Jesus?",
+      "options": [
+        "Kept them hidden away",
+        "Threw them into the sanctuary",
+        "Gave them all to the poor",
+        "Buried them in a secret place"
+      ],
+      "answer": "Threw them into the sanctuary",
+      "verse_reference": "Matthew 27:5"
+    },
+    {
+      "id": "matthew-27-q2",
+      "type": "multiple_choice",
+      "question": "Pilate offered to release one prisoner to the crowd. Who did they choose instead of Jesus?",
+      "options": [
+        "Judas",
+        "Lazarus",
+        "Barabbas",
+        "Simon"
+      ],
+      "answer": "Barabbas",
+      "verse_reference": "Matthew 27:21"
+    },
+    {
+      "id": "matthew-27-q3",
+      "type": "true_false",
+      "question": "When Jesus died, the veil of the temple was torn in two from top to bottom.",
+      "answer": "true",
+      "verse_reference": "Matthew 27:51"
+    },
+    {
+      "id": "matthew-27-q4",
+      "type": "fill_blank",
+      "question": "The centurion and those watching Jesus said, 'Truly this was the Son of _____!'",
+      "answer": "God",
+      "verse_reference": "Matthew 27:54"
+    },
+    {
+      "id": "matthew-27-q5",
+      "type": "fill_blank",
+      "question": "About the ninth hour Jesus cried with a loud voice, 'My God, my God, why have you _____ me?'",
+      "answer": "forsaken",
+      "verse_reference": "Matthew 27:46"
+    }
+  ]
+}

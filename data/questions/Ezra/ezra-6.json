@@ -1,0 +1,53 @@
+{
+  "book": "Ezra",
+  "chapter": 6,
+  "questions": [
+    {
+      "id": "ezra-6-q1",
+      "type": "multiple_choice",
+      "question": "What did King Darius find when he searched the records?",
+      "options": [
+        "Nothing of any use to the matter",
+        "A treaty with the kings of the region",
+        "The decree of Cyrus authorizing the temple",
+        "A map of the old city of Jerusalem"
+      ],
+      "answer": "The decree of Cyrus authorizing the temple",
+      "verse_reference": "Ezra 6:2-3"
+    },
+    {
+      "id": "ezra-6-q2",
+      "type": "multiple_choice",
+      "question": "What did Darius command Tattenai to do?",
+      "options": [
+        "Let the work continue and pay its costs from royal taxes",
+        "Tear down what had already been built so far",
+        "Halt all the building until further notice from the court",
+        "Arrest the leaders and send them to Babylon"
+      ],
+      "answer": "Let the work continue and pay its costs from royal taxes",
+      "verse_reference": "Ezra 6:7-8"
+    },
+    {
+      "id": "ezra-6-q3",
+      "type": "true_false",
+      "question": "The temple was completed and dedicated with joy, and they kept the Passover.",
+      "answer": "true",
+      "verse_reference": "Ezra 6:15-19"
+    },
+    {
+      "id": "ezra-6-q4",
+      "type": "fill_blank",
+      "question": "The house was finished in the sixth year of the reign of _____ the king.",
+      "answer": "Darius",
+      "verse_reference": "Ezra 6:15"
+    },
+    {
+      "id": "ezra-6-q5",
+      "type": "fill_blank",
+      "question": "The work prospered through the prophesying of Haggai and _____.",
+      "answer": "Zechariah",
+      "verse_reference": "Ezra 6:14"
+    }
+  ]
+}

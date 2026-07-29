@@ -1,0 +1,53 @@
+{
+  "book": "Joshua",
+  "chapter": 3,
+  "questions": [
+    {
+      "id": "joshua-3-q1",
+      "type": "multiple_choice",
+      "question": "What happened when the priests carrying the ark stepped into the Jordan?",
+      "options": [
+        "The priests all sank and were swiftly carried off by the current",
+        "The water stopped and piled up so Israel crossed on dry ground",
+        "A sudden and violent storm swept many of the priests away",
+        "The water rose higher and forced them all back to the shore"
+      ],
+      "answer": "The water stopped and piled up so Israel crossed on dry ground",
+      "verse_reference": "Joshua 3:15-17"
+    },
+    {
+      "id": "joshua-3-q2",
+      "type": "multiple_choice",
+      "question": "What went ahead of the people into the Jordan?",
+      "options": [
+        "Joshua and his chosen captains",
+        "The armed men of the army",
+        "The elders of the twelve tribes",
+        "The ark of the covenant"
+      ],
+      "answer": "The ark of the covenant",
+      "verse_reference": "Joshua 3:6-11"
+    },
+    {
+      "id": "joshua-3-q3",
+      "type": "true_false",
+      "question": "The people crossed the Jordan on dry ground.",
+      "answer": "true",
+      "verse_reference": "Joshua 3:17"
+    },
+    {
+      "id": "joshua-3-q4",
+      "type": "fill_blank",
+      "question": "The waters of the Jordan stood and rose up in a _____ as Israel crossed.",
+      "answer": "heap",
+      "verse_reference": "Joshua 3:13-16"
+    },
+    {
+      "id": "joshua-3-q5",
+      "type": "fill_blank",
+      "question": "The priests carried the _____ of the covenant into the Jordan ahead of the people.",
+      "answer": "ark",
+      "verse_reference": "Joshua 3:14"
+    }
+  ]
+}

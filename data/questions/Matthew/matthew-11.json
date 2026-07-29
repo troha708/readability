@@ -1,0 +1,53 @@
+{
+  "book": "Matthew",
+  "chapter": 11,
+  "questions": [
+    {
+      "id": "matthew-11-q1",
+      "type": "multiple_choice",
+      "question": "Who sent disciples to ask Jesus, 'Are you he who comes, or should we look for another?'",
+      "options": [
+        "Nicodemus",
+        "Peter",
+        "John the Baptist",
+        "Herod"
+      ],
+      "answer": "John the Baptist",
+      "verse_reference": "Matthew 11:2-3"
+    },
+    {
+      "id": "matthew-11-q2",
+      "type": "multiple_choice",
+      "question": "Jesus pronounced woes on Chorazin and Bethsaida because they did not do what?",
+      "options": [
+        "Follow the law",
+        "Welcome his disciples",
+        "Repent",
+        "Pay their taxes"
+      ],
+      "answer": "Repent",
+      "verse_reference": "Matthew 11:20-21"
+    },
+    {
+      "id": "matthew-11-q3",
+      "type": "true_false",
+      "question": "Jesus said that among those born of women, no one greater than John the Baptist has arisen.",
+      "answer": "true",
+      "verse_reference": "Matthew 11:11"
+    },
+    {
+      "id": "matthew-11-q4",
+      "type": "fill_blank",
+      "question": "Come to me, all you who labor and are heavily burdened, and I will give you _____.",
+      "answer": "rest",
+      "verse_reference": "Matthew 11:28"
+    },
+    {
+      "id": "matthew-11-q5",
+      "type": "fill_blank",
+      "question": "For my yoke is easy, and my _____ is light.",
+      "answer": "burden",
+      "verse_reference": "Matthew 11:30"
+    }
+  ]
+}
