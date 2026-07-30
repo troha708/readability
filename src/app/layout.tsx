@@ -57,9 +57,10 @@ export const metadata: Metadata = {
     // (Next's file convention), so no explicit images here.
   },
   twitter: {
-    // The share image is a portrait reader screenshot; the small-summary card
-    // shows it uncropped, where summary_large_image would slice it to a strip.
-    card: "summary",
+    // Large-image card so the reader preview renders big in the unfurl
+    // (Discord/Slack show the portrait shot large and uncropped; note that
+    // Twitter/X itself center-crops a portrait to a landscape strip).
+    card: "summary_large_image",
     title: "A study Bible",
     description:
       "Notes, cross-references, word study and maps. Free and open source, with no ads and no account required.",
