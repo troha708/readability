@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     template: "%s | Readability",
   },
   description:
-    "A study Bible: cross-references, word study, maps, a dictionary, and a quiz for every chapter.",
+    "Notes, cross-references, word study and maps. Free and open source, with no ads and no account required.",
   keywords: [
     "Bible",
     "Bible reading app",
@@ -48,19 +48,21 @@ export const metadata: Metadata = {
     "Scripture",
   ],
   openGraph: {
-    title: "Readability — A study Bible",
+    title: "A study Bible",
     description:
-      "A study Bible: cross-references, word study, maps, a dictionary, and a quiz for every chapter.",
+      "Notes, cross-references, word study and maps. Free and open source, with no ads and no account required.",
     type: "website",
     siteName: "Readability",
-    // og:image / twitter:image are supplied by src/app/opengraph-image.tsx
+    // og:image / twitter:image are supplied by src/app/opengraph-image.png
     // (Next's file convention), so no explicit images here.
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Readability — A study Bible",
+    // The share image is a portrait reader screenshot; the small-summary card
+    // shows it uncropped, where summary_large_image would slice it to a strip.
+    card: "summary",
+    title: "A study Bible",
     description:
-      "A study Bible: cross-references, word study, maps, a dictionary, and a quiz for every chapter.",
+      "Notes, cross-references, word study and maps. Free and open source, with no ads and no account required.",
   },
   appleWebApp: {
     capable: true,
