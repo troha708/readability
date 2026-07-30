@@ -37,7 +37,7 @@ const features: { id: string; content: ReactNode }[] = [
   {
     id: "intro",
     content:
-      "An introduction to every book: who wrote it, when, its setting and purpose. Adapted from Tyndale House's study notes.",
+      "An introduction to every book: who wrote it, when, its setting and purpose.",
   },
   {
     id: "dictionary",
