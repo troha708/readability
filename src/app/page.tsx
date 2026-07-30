@@ -134,8 +134,11 @@ export default function Home() {
               A study Bible
             </h1>
             <p className="mt-4 text-base leading-relaxed text-neutral-300">
-              Notes, cross-references, word study and maps. Free, with no ads{" "}
-              <span className="whitespace-nowrap">and no account required.</span>
+              Notes, cross-references, word study and maps.
+              <span className="block">
+                Free and open source, with no ads{" "}
+                <span className="whitespace-nowrap">and no account required.</span>
+              </span>
             </p>
             <div className="mt-7">
               <Link
