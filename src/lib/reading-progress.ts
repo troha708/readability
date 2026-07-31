@@ -32,6 +32,10 @@ export function saveLastReadUrl(url: string, completedHere = false): void {
   localStorage.setItem(LAST_READ_KEY, url);
   if (completedHere) localStorage.setItem(LAST_READ_DONE_KEY, "1");
   else localStorage.removeItem(LAST_READ_DONE_KEY);
+  // Mirror "this browser reads here" into a cookie so the middleware can
+  // send bare readability.bible visits straight to the library — progress
+  // itself stays in localStorage, which the server can't see.
+  document.cookie = "rb-reader=1; path=/; max-age=31536000; samesite=lax";
 }
 
 /**
