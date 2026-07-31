@@ -5,30 +5,12 @@ A study Bible — live at [readability.bible](https://readability.bible).
 Read the whole Bible (BSB or KJV) with per-verse study tools: study notes and
 book introductions adapted from Tyndale House resources, cross-references,
 Greek/Hebrew word study, a Bible dictionary, chapter maps and a searchable
-atlas, comprehension quizzes, reading progress, and a seven-translation verse
-compare. Built with [Next.js](https://nextjs.org),
+atlas (embeddable on any site), comprehension quizzes, reading progress, and a
+seven-translation verse compare. Built with [Next.js](https://nextjs.org),
 [Tailwind CSS](https://tailwindcss.com), and [Supabase](https://supabase.com).
 
 All scripture and study content is served from the JSON datasets in `data/` —
 the database is used only for accounts, reading progress, and highlights.
-
-## Embedding the atlas
-
-The [atlas](https://readability.bible/try/bible/map) can be embedded on any
-site as an iframe — no API key or account:
-
-```html
-<iframe
-  src="https://readability.bible/try/bible/map?embed=1"
-  width="100%" height="400" style="border: 0" loading="lazy"
-  title="Bible atlas"></iframe>
-```
-
-`?embed=1` renders the map alone; clicking anywhere on it opens the full
-atlas. To embed a specific region, frame the view by hand on the live atlas
-and copy the `x`, `y`, and `k` (center and zoom) values from the address bar
-into the iframe URL. An optional `min=` of 3, 10, or 50 hides places the
-Bible mentions fewer than that many times.
 
 ## Getting started
 
@@ -49,6 +31,24 @@ npm run db:migrate
 ```
 
 Sign-in is passwordless (email code) at `/login`.
+
+## Embedding the atlas
+
+The [atlas](https://readability.bible/try/bible/map) can be embedded on any
+site as an iframe — no API key or account:
+
+```html
+<iframe
+  src="https://readability.bible/try/bible/map?embed=1"
+  width="100%" height="400" style="border: 0" loading="lazy"
+  title="Bible atlas"></iframe>
+```
+
+`?embed=1` renders the map alone; clicking anywhere on it opens the full
+atlas. To embed a specific region, frame the view by hand on the live atlas
+and copy the `x`, `y`, and `k` (center and zoom) values from the address bar
+into the iframe URL. An optional `min=` of 3, 10, or 50 hides places the
+Bible mentions fewer than that many times.
 
 ## Scripts
 
