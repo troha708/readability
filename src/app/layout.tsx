@@ -24,6 +24,8 @@ import { ServiceWorkerRegister } from "@/components/sw-register";
 import { ReminderSync } from "@/components/reminder-sync";
 import { SignupNudge } from "@/components/signup-nudge";
 import { ErrorReporter } from "@/components/error-reporter";
+import { Analytics } from "@vercel/analytics/next";
+import { IS_MOBILE } from "@/lib/build-target";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -104,6 +106,11 @@ export default function RootLayout({
         <ReminderSync />
         <SignupNudge />
         <ErrorReporter />
+        {/* Web Analytics was enabled on the Vercel dashboard in 2026-03 but
+            the tracking component was never mounted, so no data exists before
+            2026-07-31. Skipped in the native bundle: its script endpoint only
+            exists when served by Vercel. */}
+        {!IS_MOBILE && <Analytics />}
       </body>
     </html>
   );
