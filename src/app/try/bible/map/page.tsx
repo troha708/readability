@@ -50,8 +50,11 @@ type Props = { searchParams: Promise<SearchParams> };
 // No description on the base page: platforms fall back from og:description to
 // the meta description, so the only way to get a title-only preview card is to
 // carry neither. Search engines snippet from the sr-only BaseContent instead.
+// The null is load-bearing — leaving the field absent would inherit the root
+// layout's site-wide description, and link cards would show it under the title.
 const BASE_METADATA: Metadata = {
   title: "Bible Atlas — every place mentioned in the Bible",
+  description: null,
   alternates: { canonical: "/try/bible/map" },
   openGraph: {
     title: "Bible Atlas — every place mentioned in the Bible",
