@@ -11,7 +11,7 @@ const CONTACT = "readablebibleapp@gmail.com";
 
 export default function PrivacyPage() {
   return (
-    <LegalPage title="Privacy Policy" effectiveDate="June 21, 2026">
+    <LegalPage title="Privacy Policy" effectiveDate="August 1, 2026">
       <p>
         Readability is a Bible reading and comprehension app. This policy explains what
         information we collect, how we use it, and the choices you have.
@@ -42,9 +42,11 @@ export default function PrivacyPage() {
           </li>
         </ul>
         <p>
-          We do not run third-party advertising, we do not sell your personal information, and
-          we do not currently use analytics or tracking cookies. The only cookies we set are
-          the session cookies needed to keep you signed in.
+          We do not run third-party advertising and we do not sell your personal information.
+          We use Vercel Web Analytics to count visits in aggregate; it is cookieless and does
+          not identify individual visitors. The only cookies we set are the session cookies
+          needed to keep you signed in and a small flag that lets returning readers skip the
+          welcome page — it contains nothing about you.
         </p>
       </LegalSection>
 
@@ -59,8 +61,9 @@ export default function PrivacyPage() {
       <LegalSection heading="Service providers">
         <p>
           We rely on a small number of providers to operate the app, who process data on our
-          behalf: <strong>Supabase</strong> (authentication and database hosting) and{" "}
-          <strong>Vercel</strong> (application hosting and delivery). These providers may store
+          behalf: <strong>Supabase</strong> (authentication and database hosting),{" "}
+          <strong>Vercel</strong> (application hosting, delivery, and aggregate analytics), and{" "}
+          <strong>Resend</strong> (delivery of sign-in code emails). These providers may store
           data in the regions where their infrastructure operates.
         </p>
       </LegalSection>

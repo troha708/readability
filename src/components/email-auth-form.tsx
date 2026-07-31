@@ -264,6 +264,17 @@ export function EmailAuthForm({ mode }: { mode: "login" | "signup" }) {
           {copy.switchLabel}
         </Link>
       </p>
+
+      <p className="mt-4 text-center text-xs text-neutral-400 dark:text-neutral-500">
+        Your email is used only for sign-in codes and syncing your reading
+        progress.{" "}
+        <Link
+          href="/privacy"
+          className="underline underline-offset-2 hover:text-neutral-600 dark:hover:text-neutral-300"
+        >
+          Privacy policy
+        </Link>
+      </p>
     </div>
   );
 }
