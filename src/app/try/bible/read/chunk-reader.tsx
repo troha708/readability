@@ -1647,18 +1647,46 @@ export function ChunkReader({
         frag
           .querySelectorAll("[data-verse-num], button, h3")
           .forEach(replaceWithSpace);
-        // Selections that span multiple paragraphs or poetry lines come back as
-        // separate block elements with no whitespace between them; insert a
-        // space around each so the lines don't run together when flattened.
+        // Selections that span multiple blocks come back as separate elements
+        // with no whitespace between them; mark each block boundary with a
+        // newline so the copied quote keeps the paragraph structure. Poetry
+        // lines break singly, prose paragraphs get a blank line between them.
+        // Poetry is recognized by the pl-6/pl-12 indent classes the formatter
+        // puts on q1/q2 lines (format-chunk-text.tsx); if those ever change,
+        // copies degrade to blank-line separation rather than breaking.
+        //
+        // The source chunk HTML carries its own newlines between elements
+        // (whitespace text nodes); flatten those to spaces first so only the
+        // separators inserted below decide the line structure.
+        const walker = document.createTreeWalker(frag, NodeFilter.SHOW_TEXT);
+        for (let n = walker.nextNode(); n; n = walker.nextNode()) {
+          if (n.nodeValue && /[\r\n]/.test(n.nodeValue)) {
+            n.nodeValue = n.nodeValue.replace(/[\r\n]+/g, " ");
+          }
+        }
         frag
-          .querySelectorAll("p, div, li, br, h1, h2, h3, h4, h5, h6, blockquote")
+          .querySelectorAll("br")
+          .forEach((br) => br.replaceWith(document.createTextNode("\n")));
+        frag
+          .querySelectorAll("p, div, li, h1, h2, h4, h5, h6, blockquote")
           .forEach((el) => {
             const parent = el.parentNode;
             if (!parent) return;
-            parent.insertBefore(document.createTextNode(" "), el);
-            parent.insertBefore(document.createTextNode(" "), el.nextSibling);
+            const poetryLine =
+              el.tagName === "P" && /\bpl-(?:6|12)\b/.test(el.className);
+            parent.insertBefore(
+              document.createTextNode(poetryLine ? "\n" : "\n\n"),
+              el,
+            );
           });
-        const quote = (frag.textContent ?? "").replace(/\s+/g, " ").trim();
+        // Collapse whitespace within each line, then squeeze the newline runs
+        // left by nested blocks down to at most one blank line.
+        const quote = (frag.textContent ?? "")
+          .split("\n")
+          .map((line) => line.replace(/\s+/g, " ").trim())
+          .join("\n")
+          .replace(/\n{3,}/g, "\n\n")
+          .trim();
 
         const rect = range.getBoundingClientRect();
         setSelectionToolbar({
