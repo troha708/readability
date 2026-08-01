@@ -159,6 +159,15 @@ export function Atlas() {
   const [atlas, setAtlas] = useState<AtlasData | null>(null);
   const [failed, setFailed] = useState(false);
   const [panel, setPanel] = useState<Panel | null>(null);
+  // The place the user explicitly picked (search, deep link, see-also):
+  // exempt from the kind/mentions filters so quieting the map can't evict
+  // it. Anchored to its own key — not derived from the panel, whose members
+  // are whole clusters and reshuffle as filters change.
+  const [exemptKey, setExemptKey] = useState<string | null>(null);
+  useEffect(() => {
+    // Closing the card (✕, background tap) ends the exemption too.
+    if (!panel) setExemptKey(null);
+  }, [panel]);
   const [query, setQuery] = useState("");
   const [searchOpen, setSearchOpen] = useState(false);
   const [showAllRefs, setShowAllRefs] = useState(false);
@@ -449,13 +458,19 @@ export function Atlas() {
   }, [atlas, groupedPlaces, journeyIdx]);
 
   const basePlaces = focus ? focus.places : scopedPlaces;
-  const places = useMemo(
-    () =>
-      journeyView
-        ? journeyView.stops
-        : basePlaces.filter((p) => kinds.has(p.kind) && p.mentions >= minMentions),
-    [journeyView, basePlaces, kinds, minMentions],
-  );
+  const places = useMemo(() => {
+    if (journeyView) return journeyView.stops;
+    const out = basePlaces.filter((p) => kinds.has(p.kind) && p.mentions >= minMentions);
+    // The picked place is exempt from the kind and mentions filters:
+    // quieting the map (50+) must not evict the place the user searched
+    // for or is reading about — and, in the other direction, searching no
+    // longer needs to reset the user's chosen filter.
+    if (exemptKey && !out.some((p) => placeKey(p) === exemptKey)) {
+      const sel = basePlaces.find((p) => placeKey(p) === exemptKey);
+      if (sel) out.push(sel);
+    }
+    return out;
+  }, [journeyView, basePlaces, kinds, minMentions, exemptKey]);
 
   function toggleKind(kind: PlaceKind) {
     setKinds((prev) => {
@@ -515,20 +530,23 @@ export function Atlas() {
     setShowAllRefs(false);
     if (r.unlocated) {
       if (zoomTo) mapApi.current?.focusKey(null);
+      setExemptKey(null);
       setPanel({ type: "unlocated", place: r.place as AtlasUnlocated });
       return false;
     }
     const p = r.place as GroupedPlace;
     const members = p.members?.length ? p.members : [p];
     const pMentions = members.reduce((n, m) => n + mentionsOf(m), 0);
-    // Searching a place relaxes any filter that would hide it.
+    // The user's kind/mentions filters stay as set — the selection itself
+    // is exempt (see the places memo), so the target appears without
+    // un-quieting the rest of the map. filterRelaxed only notes that the
+    // marker isn't on screen yet, so the zoom must wait a commit.
     const filterRelaxed = !kinds.has(p.kind) || pMentions < minMentions;
-    setKinds((prev) => (prev.has(p.kind) ? prev : new Set([...prev, p.kind])));
-    if (pMentions < minMentions) setMinMentions(0);
     const scopeRelaxed = journeyView
       ? !journeyView.stops.some((s) => placeKey(s) === placeKey(p))
       : !members.some((m) => [...m.refs, ...m.softRefs].some((ref) => refInScope(ref)));
     if (scopeRelaxed) setScope("all");
+    setExemptKey(placeKey(p));
     setPanel({ type: "places", members: [p] });
     if (!zoomTo) {
       // The shared view keeps focus mode too: with book&chapter in the URL
@@ -574,7 +592,9 @@ export function Atlas() {
       }
       mapApi.current?.setView(x, y, k);
     }
-  }, [focus, scope, kinds, minMentions]);
+    // `exemptKey` is a dep so a filter-exempt selection (which enters the
+    // place set without any filter change) still fires its deferred zoom.
+  }, [focus, scope, kinds, minMentions, exemptKey]);
 
   // ?place= deep link (shared URLs, the sitemap's place pages): select that
   // place as if it had been picked from search, once the map has done its
@@ -1327,6 +1347,11 @@ export function Atlas() {
                 }
                 pendingSearch.current = null;
                 setShowAllRefs(false);
+                // A deselection, or selecting something else, ends the
+                // picked place's filter exemption.
+                if (!members) setExemptKey(null);
+                else if (exemptKey && !members.some((m) => placeKey(m) === exemptKey))
+                  setExemptKey(null);
                 setPanel(members ? { type: "places", members } : null);
               }}
               apiRef={mapApi}
