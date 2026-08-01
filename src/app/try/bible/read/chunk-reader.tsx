@@ -49,6 +49,7 @@ import { SiteFooter } from "@/components/site-footer";
 import { Tutorial } from "@/components/tutorial";
 import { FirstContactHint } from "@/components/first-contact-hint";
 import { fetchChapter, fetchBookPlaces } from "@/lib/content/client";
+import { IS_MOBILE } from "@/lib/build-target";
 import type { BookPlaces, ChapterPlaces } from "@/lib/content/places";
 import { VerseSheet } from "./verse-sheet";
 import { ChapterMapSheet } from "./chapter-map-sheet";
@@ -737,7 +738,7 @@ export function ChunkReader({
       section.scrollIntoView({ behavior: "smooth", block: "start" });
       return;
     }
-    router.push(readUrl({ chapter }));
+    navigateReadUrl(readUrl({ chapter }));
   }
 
   // Dropdown state
@@ -843,12 +844,32 @@ export function ChunkReader({
   // prev-chapter auto-load: a chapter prepended above the viewport would strand
   // the reader a chapter-height too low, and the compensating scroll can race
   // the jump. Cleared once the position is stable, which re-arms the top sentinel.
+  //
+  // On the NATIVE (static-export) build the hold covers every chapter open
+  // until the reader actually scrolls: there the compensating scroll loses a
+  // race with the router's own scroll restoration (programmatic scrolls are
+  // snapped back to the top for a beat after hydration), so an unsuppressed
+  // sentinel cascades prepend-after-prepend all the way to chapter 1 —
+  // observed as the URL walking 26→25→…→1 on a Job 26 open. A real scroll
+  // gesture both proves the reader wants to move up and postdates the
+  // restoration window, so re-arming then is safe.
   const [suppressPrevLoad, setSuppressPrevLoad] = useState(
     () =>
+      IS_MOBILE ||
       cameFromShareLink ||
       (typeof window !== "undefined" &&
         new URLSearchParams(window.location.search).has("highlight")),
   );
+  useEffect(() => {
+    if (!IS_MOBILE) return;
+    const rearm = () => setSuppressPrevLoad(false);
+    window.addEventListener("wheel", rearm, { once: true, passive: true });
+    window.addEventListener("touchmove", rearm, { once: true, passive: true });
+    return () => {
+      window.removeEventListener("wheel", rearm);
+      window.removeEventListener("touchmove", rearm);
+    };
+  }, []);
 
   // Deep-link: scroll to ?verse=N (e.g. from a copied quote's share link).
   // Retries briefly because the verse spans render with the first paint but
@@ -1093,11 +1114,19 @@ export function ChunkReader({
         // ...but don't let a stray scroll during a just-applied reminder
         // deep-link rewrite the chapter in the URL and snap the reader back.
         if (isChapterUrlSyncSuppressed()) return;
-        const url = new URL(window.location.href);
-        url.searchParams.set("chapter", String(bestChapter));
-        url.searchParams.delete("chunk");
-        url.searchParams.delete("verse");
-        window.history.replaceState({}, "", url.toString());
+        // The URL mirror serves the web's address bar and canonical URLs.
+        // The native build has no visible address bar, and there each
+        // replaceState makes the static-export router snap the scroll back
+        // to the top — mid-scroll, that cascades the prev-chapter loader all
+        // the way to chapter 1 (a Job 26 open walked 26→25→…→1). Position
+        // saving below still runs; only the address-bar write is web-only.
+        if (!IS_MOBILE) {
+          const url = new URL(window.location.href);
+          url.searchParams.set("chapter", String(bestChapter));
+          url.searchParams.delete("chunk");
+          url.searchParams.delete("verse");
+          window.history.replaceState({}, "", url.toString());
+        }
         // Keep the saved position on the chapter actually being read, so
         // Continue Reading resumes here — not at the chapter first opened.
         // Debounced: a hard navigation away fires a scroll-to-top on the dying
@@ -1288,6 +1317,17 @@ export function ChunkReader({
     return `/try/bible/read?book=${b}&chapter=${c}&version=${v}${o}`;
   }
 
+  // Same-route navigations (chapter strip, book picker, overview chip) hang
+  // in the static export: the router's refetch of the identical segment
+  // never resolves against bundled files, so the address bar updates while
+  // the old tree stays frozen. The native build hard-navigates instead — a
+  // full load is instant against local assets, and the cold-start path
+  // reads the params correctly (see OfflineRead).
+  function navigateReadUrl(url: string) {
+    if (IS_MOBILE) window.location.assign(url);
+    else router.push(url);
+  }
+
   // The chapter-strip "Overview" chip. The overview sits above chapter 1, so the
   // chip renders before the chapter buttons (see the strip below).
   const overviewChip = hasOverview ? (
@@ -1302,7 +1342,7 @@ export function ChunkReader({
         } else {
           // Deep-linked away from where the overview lives — go to it.
           // Start overviews sit above chapter 1; end overviews after the last.
-          router.push(
+          navigateReadUrl(
             readUrl({
               chapter: overviewAtStart
                 ? chapterNumbers[0]
@@ -2275,7 +2315,7 @@ export function ChunkReader({
                     <button
                       onClick={() => {
                         setBookOpen(false);
-                        router.push(readUrl({ book: name, chapter: 1 }));
+                        navigateReadUrl(readUrl({ book: name, chapter: 1 }));
                       }}
                       className={`block w-full px-3 py-1.5 text-left text-sm hover:bg-neutral-100 dark:hover:bg-neutral-700 ${
                         name === bookName
@@ -2319,6 +2359,14 @@ export function ChunkReader({
               <Link
                 key={num}
                 href={readUrl({ chapter: num })}
+                onClick={(e) => {
+                  // Native build: same-route Link navs hang (see
+                  // navigateReadUrl) — hard-navigate instead.
+                  if (IS_MOBILE) {
+                    e.preventDefault();
+                    navigateReadUrl(readUrl({ chapter: num }));
+                  }
+                }}
                 ref={num === visibleChapterNumber && !summaryVisible ? activeChapterRef : undefined}
                 style={{ flexShrink: 0, width: "28px", height: "28px" }}
                 className={`flex items-center justify-center rounded text-xs transition-all ${getChapterButtonStyle(num)}`}
