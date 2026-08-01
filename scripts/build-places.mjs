@@ -154,6 +154,7 @@ for (const rec of ancient) {
   const isSoft = (v) => (v.instance_types?.name ?? 0) < MIN_NAME_TRANSLATIONS;
 
   let name = rec.friendly_id.replace(/ \d+$/, "");
+  const baseName = name;
   const idents = rec.identifications ?? [];
   const top = idents[0];
   const resolution = (top?.resolutions ?? []).find((r) => r.lonlat);
@@ -199,8 +200,15 @@ for (const rec of ancient) {
     // modern equivalent.
     const kind = kindOf(resolution.type);
     const modern = kind === 2 ? undefined : modernById.get(resolution.modern_basis_id);
+    // Compare against the pre-rename base name too: Mount Abarim's modern
+    // basis is literally named "Abarim", and "near modern Abarim" under a
+    // card titled Mount Abarim is noise, not identification.
     let modernName = "";
-    if (modern && modern.friendly_id.toLowerCase() !== name.toLowerCase()) {
+    if (
+      modern &&
+      modern.friendly_id.toLowerCase() !== name.toLowerCase() &&
+      modern.friendly_id.toLowerCase() !== baseName.toLowerCase()
+    ) {
       modernName = modern.preceding_article
         ? `${modern.preceding_article} ${modern.friendly_id}`
         : modern.friendly_id;
