@@ -97,6 +97,18 @@ function mentionsOf(p: AtlasPlace | AtlasUnlocated): number {
   return count(p.refs) + ("softRefs" in p ? count(p.softRefs) : 0);
 }
 
+/** Where a place's references live, as a book span ("Genesis–Joshua",
+ *  "Revelation") across all three tiers. Distinguishes same-named records
+ *  (the three Babylons, the Ain pair at Tel Halif) using only the data —
+ *  shown in See-also links and duplicate-name search rows. */
+function bookSpanOf(p: AtlasPlace, books: string[]): string {
+  const idx = new Set<number>();
+  for (const [b] of [...p.refs, ...p.softRefs, ...p.gentilicRefs]) idx.add(b);
+  const s = [...idx].sort((a, b) => a - b);
+  if (s.length === 0) return "";
+  return s.length === 1 ? books[s[0]] : `${books[s[0]]}–${books[s[s.length - 1]]}`;
+}
+
 /** Distinct chapters behind mentionsOf — union of regular and soft refs
  *  (a chapter can hold both, e.g. Jebus in Joshua 18). */
 function chapterCountOf(p: AtlasPlace | AtlasUnlocated): number {
@@ -787,18 +799,25 @@ export function Atlas() {
             return (
               <p className="mt-1.5 text-xs text-neutral-500 dark:text-neutral-400">
                 See also:{" "}
-                {siblings.map((o, i) => (
-                  <span key={o.link}>
-                    {i > 0 && " · "}
-                    <button
-                      onClick={() => pickResult({ place: o, unlocated: false })}
-                      className="underline decoration-neutral-300 underline-offset-2 hover:text-neutral-700 dark:hover:text-neutral-300"
-                    >
-                      {o.name}
-                      {o.type ? ` (${o.type})` : ""}
-                    </button>
-                  </span>
-                ))}
+                {siblings.map((o, i) => {
+                  // Type alone can't tell the three Babylons apart — the
+                  // book span (from the record's own refs) can.
+                  const hint = [o.type, bookSpanOf(o, atlas!.books)]
+                    .filter(Boolean)
+                    .join(" · ");
+                  return (
+                    <span key={o.link}>
+                      {i > 0 && " · "}
+                      <button
+                        onClick={() => pickResult({ place: o, unlocated: false })}
+                        className="underline decoration-neutral-300 underline-offset-2 hover:text-neutral-700 dark:hover:text-neutral-300"
+                      >
+                        {o.name}
+                        {hint ? ` (${hint})` : ""}
+                      </button>
+                    </span>
+                  );
+                })}
               </p>
             );
           })()}
@@ -862,13 +881,20 @@ export function Atlas() {
                 <span className="truncate text-xs text-neutral-400">
                   {r.unlocated
                     ? "location unknown"
-                    : [
-                        (r.place as AtlasPlace).type ||
-                          KIND_LABELS[(r.place as AtlasPlace).kind],
-                        (r.place as AtlasPlace).modern,
-                      ]
-                        .filter(Boolean)
-                        .join(" · ")}
+                    : (() => {
+                        const lp = r.place as AtlasPlace;
+                        // Same-named places (the Ains, the Babylons) also get
+                        // their book span, so the rows tell themselves apart.
+                        const dup =
+                          (sameName.get(normalize(lp.name.replace(/^Mount /, "")))?.length ?? 0) > 1;
+                        return [
+                          lp.type || KIND_LABELS[lp.kind],
+                          lp.modern,
+                          dup ? bookSpanOf(lp, atlas!.books) : "",
+                        ]
+                          .filter(Boolean)
+                          .join(" · ");
+                      })()}
                 </span>
                 <span className="ml-auto shrink-0 text-xs tabular-nums text-neutral-400">
                   {r.mentions > 0 ? r.mentions : ""}
