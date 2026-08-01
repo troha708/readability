@@ -22,8 +22,9 @@ import {
  * on one chapter's places (the reader's map sheet expands to this).
  *
  * The map itself is client-rendered from static files under public/maps/.
- * For search engines, each deep link — ?place= (1,213 places), ?journey=
- * (Paul's routes), ?book=&chapter= (chapter focus) — gets its own metadata
+ * For search engines, each deep link — ?place= (every located + unlocated
+ * place), ?journey= (Paul's routes), ?book=&chapter= (chapter focus) — gets
+ * its own metadata
  * and a server-rendered text equivalent of what the map shows there, since
  * crawlers see none of the client-side map. The text mirrors visible map
  * content (names, identifications, verse refs) rather than adding to it.
@@ -121,59 +122,49 @@ function verseCount(n: number): string {
   return n === 1 ? "1 verse" : `${n} verses`;
 }
 
-function bookSpan(refs: AtlasRef[]): string {
-  const books = distinctBooks(refs);
-  if (books.length === 1) return books[0];
-  if (books.length <= 3) return books.join(", ");
-  return `${books.length} books`;
+/** Located-place count, for crawler copy — kept computed so a dataset
+ *  refresh can't leave a stale literal behind. */
+function placeCountLabel(): string {
+  return loadAtlasData().places.length.toLocaleString("en-US");
 }
 
+// Like the base page, deep-link cards are title-only: no meta description and
+// no og:description (platforms fall back from one to the other, so both must
+// be absent — the null is load-bearing against inheriting the site-wide
+// description). Search engines snippet from each target's sr-only content.
 function targetMetadata(target: SeoTarget): Metadata {
   if (target.kind === "place") {
     const { place } = target;
-    const mentions = verseCount(mentionsOf(place));
-    const span = bookSpan(place.refs);
     const url = `/try/bible/map?place=${encodeURIComponent(placeSlug(place.link))}`;
     const title = target.located
       ? `${place.name} — Bible map & verses`
       : `${place.name} in the Bible — verses & location`;
-    const modern =
-      target.located && target.place.modern
-        ? `, identified with ${target.place.modern},`
-        : "";
-    const description = target.located
-      ? `${place.name}${modern} on the Bible Atlas map: mentioned in ${mentions} across ${span}. Read every reference in context, with the scholarly sources behind the location.`
-      : `${place.name} appears in ${mentions} of the Bible (${span}). Its location is unidentified — read every reference in context, with links to the scholarly discussion.`;
     return {
       title,
-      description,
+      description: null,
       alternates: { canonical: url },
-      openGraph: { title, description, url },
+      openGraph: { title, url },
     };
   }
   if (target.kind === "journey") {
     const journey = loadAtlasData().journeys[target.index];
     const url = `/try/bible/map?journey=${target.index}`;
     const title = `${journey.name} — Bible route map`;
-    const stops = journey.stops.slice(0, 5).map((s) => s.name);
-    const description = `${journey.name} mapped stop by stop: ${stops.join(", ")}… Every leg links to its verse in Acts.`;
     return {
       title,
-      description,
+      description: null,
       alternates: { canonical: url },
-      openGraph: { title, description, url },
+      openGraph: { title, url },
     };
   }
   const ref = chapterReference(target.book, target.chapter);
   const url = `/try/bible/map?book=${encodeURIComponent(target.book)}&chapter=${target.chapter}`;
   const title = `${ref} map — places in the chapter`;
-  const names = target.places.slice(0, 4).map((p) => p.name);
-  const description = `The ${target.places.length === 1 ? "place" : `${target.places.length} places`} named in ${ref} — ${names.join(", ")}${target.places.length > 4 ? "…" : ""} — on an interactive Bible map, each linked to its verses and sources.`;
   return {
     title,
-    description,
+    description: null,
     alternates: { canonical: url },
-    openGraph: { title, description, url },
+    openGraph: { title, url },
   };
 }
 
@@ -302,7 +293,7 @@ function PlaceContent({ target }: { target: SeoTarget & { kind: "place" } }) {
           </a>
         </p>
         <p>
-          <Link href="/try/bible/map">All 1,180 places on the Bible Atlas</Link>
+          <Link href="/try/bible/map">All {placeCountLabel()} places on the Bible Atlas</Link>
         </p>
       </div>
     </>
@@ -359,7 +350,7 @@ function JourneyContent({ index }: { index: number }) {
           })}
         </ol>
         <p>
-          <Link href="/try/bible/map">All 1,180 places on the Bible Atlas</Link>
+          <Link href="/try/bible/map">All {placeCountLabel()} places on the Bible Atlas</Link>
         </p>
       </div>
     </>
@@ -408,7 +399,7 @@ function FocusContent({
           <Link href={refHref(target.book, target.chapter)}>Read {ref}</Link>
         </p>
         <p>
-          <Link href="/try/bible/map">All 1,180 places on the Bible Atlas</Link>
+          <Link href="/try/bible/map">All {placeCountLabel()} places on the Bible Atlas</Link>
         </p>
       </div>
     </>
@@ -427,7 +418,7 @@ function BaseContent() {
     <div className="sr-only">
       <h1>Bible Atlas — every place mentioned in the Bible</h1>
       <p>
-        An interactive map of 1,180 biblical places from the OpenBible.info
+        An interactive map of {placeCountLabel()} biblical places from the OpenBible.info
         geocoding dataset: search any place, filter by type, book, or how often
         the Bible mentions it, and open every verse reference in the reader.
         Each location links to the scholarly sources behind its identification.
