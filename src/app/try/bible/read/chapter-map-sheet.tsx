@@ -216,11 +216,15 @@ export function ChapterMapSheet({
                           </div>
                         ))}
                       <p className="mt-0.5 text-xs text-neutral-500 dark:text-neutral-400">
-                        {p.uncertain
-                          ? `Location uncertain${p.modern ? ` — possibly near modern ${p.modern}` : " — best-supported site shown"}. `
-                          : p.modern
-                            ? `Near modern ${p.modern}. `
-                            : ""}
+                        {p.aka
+                          ? p.uncertain
+                            ? `Identification uncertain — possibly another name for ${p.aka}. `
+                            : `Another name for ${p.aka}. `
+                          : p.uncertain
+                            ? `Location uncertain${p.modern ? ` — possibly near modern ${p.modern}` : " — best-supported site shown"}. `
+                            : p.modern
+                              ? `Near modern ${p.modern}. `
+                              : ""}
                         {grouped ? (
                           <span>{members.length} entries in the source data.</span>
                         ) : (

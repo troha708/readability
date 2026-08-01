@@ -134,6 +134,22 @@ const BOOK_INDEX = new Map(CANON_ORDER.map((b, i) => [b, i]));
 const ancient = readJsonl("ancient.jsonl");
 const modernById = new Map(readJsonl("modern.jsonl").map((m) => [m.id, m]));
 
+// Display name per record id (numeral stripped, Mount rule applied) — needed
+// before the main pass so "another name for <ancient>" identifications can
+// name their referent (Babylon 2/3 → Rome).
+const displayNameById = new Map();
+for (const rec of ancient) {
+  let n = rec.friendly_id.replace(/ \d+$/, "");
+  const res = (rec.identifications?.[0]?.resolutions ?? []).find((r) => r.lonlat);
+  if (
+    res?.type?.startsWith("mountain") &&
+    (rec.translation_name_counts?.[`Mount ${n}`] ?? 0) > 0 &&
+    !n.startsWith("Mount ")
+  )
+    n = `Mount ${n}`;
+  displayNameById.set(rec.id, n);
+}
+
 // per book → per chapter → { p: Map(dedupKey → entry), u: Map(name → entry) }
 const byBook = new Map();
 // Whole-Bible view for the atlas page: dedupKey → { entry, refs: Map }
@@ -148,6 +164,7 @@ let skippedVerses = 0;
 let softVerseCount = 0;
 let gentilicVerseCount = 0;
 let mountRenames = 0;
+let akaCount = 0;
 const softPlaceNames = new Set();
 const gentilicPlaceNames = new Set();
 
@@ -231,6 +248,21 @@ for (const rec of ancient) {
         : modern.friendly_id;
     }
 
+    // "Another name for <ancient>" identifications (Babylon 2/3 → Rome,
+    // Zion → Jerusalem, Sheshach → Babylon): surface the referent so the
+    // card can say so and link the right dictionary article. Keyed on the
+    // identification's own wording — other ancient-record relations ("in
+    // Jerusalem", "within 10 km of X", region anchors) are NOT aliases and
+    // stay silent. Suppressed when the referent shares this record's own
+    // name (Josh 21:16's Ain → the town Ain) — the grouping and uncertainty
+    // notes carry that case.
+    const isAlias =
+      top?.id_source === "ancient" &&
+      /^another name for (the )?</i.test(top.description ?? "");
+    const akaName = isAlias ? displayNameById.get(top.id) : undefined;
+    const aka = akaName && akaName !== name ? akaName : "";
+    if (aka) akaCount++;
+
     entry = {
       name,
       x: Math.round(x),
@@ -240,6 +272,7 @@ for (const rec of ancient) {
       modernName,
       link: `${rec.id}/${rec.url_slug}`,
       type: resolution.type ?? "",
+      aka,
     };
     locatedPlaces++;
     if (uncertain) uncertainPlaces++;
@@ -485,8 +518,11 @@ for (const [book, chapters] of byBook) {
       )
       .map((e) => {
         const t = [e.name, e.x, e.y, e.kind, e.uncertain, e.verses, e.modernName, e.link, e.type];
-        if (e.soft.length || e.gentilic.length) t.push(e.soft);
-        if (e.gentilic.length) t.push(e.gentilic);
+        // Positional tail: soft(9), gentilic(10), aka(11) — earlier slots
+        // are emitted as empty placeholders when a later one is present.
+        if (e.soft.length || e.gentilic.length || e.aka) t.push(e.soft);
+        if (e.gentilic.length || e.aka) t.push(e.gentilic);
+        if (e.aka) t.push(e.aka);
         return t;
       });
     const unlocated = [...ch.u.values()]
@@ -537,8 +573,10 @@ const atlas = {
         packRefs(refs),
         entry.type,
       ];
-      if (softRefs.size || gentilicRefs.size) t.push(packRefs(softRefs));
-      if (gentilicRefs.size) t.push(packRefs(gentilicRefs));
+      // Positional tail: softRefs(9), gentilicRefs(10), aka(11).
+      if (softRefs.size || gentilicRefs.size || entry.aka) t.push(packRefs(softRefs));
+      if (gentilicRefs.size || entry.aka) t.push(packRefs(gentilicRefs));
+      if (entry.aka) t.push(entry.aka);
       return t;
     }),
   unlocated: [...atlasUnlocated.values()]
@@ -564,5 +602,6 @@ console.log(
   `soft refs (name in only 1 of 10 translations): ${softVerseCount} verses across ` +
     `${softPlaceNames.size} places · gentilic refs (named only through its people): ` +
     `${gentilicVerseCount} verses across ${gentilicPlaceNames.size} places · ` +
-    `"Mount X" renames from translated names: ${mountRenames}`,
+    `"Mount X" renames from translated names: ${mountRenames} · ` +
+    `another-name identifications surfaced (aka): ${akaCount}`,
 );

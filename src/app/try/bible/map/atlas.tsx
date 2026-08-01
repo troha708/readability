@@ -445,7 +445,7 @@ export function Atlas() {
       const ap = byKey.get(key);
       const base: GroupedPlace = ap ?? {
         name: s.name, x: s.x, y: s.y, kind: 0, uncertain: false, modern: "", link: "", refs: [],
-        type: "", softRefs: [], gentilicRefs: [], members: [],
+        type: "", softRefs: [], gentilicRefs: [], aka: "", members: [],
       };
       stops.push({
         ...base,
@@ -798,7 +798,10 @@ export function Atlas() {
     // Header numbers span the whole group; a single-member group renders
     // exactly as a plain place.
     const view = lp ? (grouped ? mergedRefs(lp) : lp) : null;
-    const dictId = dictIdFor(lp ?? { name: p.name });
+    // An alias record's dictionary article is its referent's: the Babylon
+    // at Rome links the Rome article, not Mesopotamian Babylon (whose
+    // article never mentions the figurative usage).
+    const dictId = dictIdFor(lp ? { name: lp.aka || lp.name } : { name: p.name });
 
     const sourcesLink = (link: string) => (
       <a
@@ -874,11 +877,15 @@ export function Atlas() {
         <p className="mt-0.5 text-xs text-neutral-500 dark:text-neutral-400">
           {!located
             ? "Location unknown. "
-            : lp!.uncertain
-              ? `Location uncertain${lp!.modern ? ` — possibly near modern ${lp!.modern}` : " — best-supported site shown"}. `
-              : lp!.modern
-                ? `Near modern ${lp!.modern}. `
-                : ""}
+            : lp!.aka
+              ? lp!.uncertain
+                ? `Identification uncertain — possibly another name for ${lp!.aka}. `
+                : `Another name for ${lp!.aka}. `
+              : lp!.uncertain
+                ? `Location uncertain${lp!.modern ? ` — possibly near modern ${lp!.modern}` : " — best-supported site shown"}. `
+                : lp!.modern
+                  ? `Near modern ${lp!.modern}. `
+                  : ""}
           {grouped && (
             // The dataset keeps these as distinct textual records that
             // resolve to the same site; the card groups them, each list

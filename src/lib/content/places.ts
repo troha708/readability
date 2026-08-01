@@ -32,6 +32,10 @@ export type ChapterPlace = {
    *  its people ("country of the Gerasenes") — shown as "named through its
    *  people". */
   gentilic: number[];
+  /** Set when the dataset's leading identification reads "another name for
+   *  X" (Babylon 2/3 → "Rome", Zion → "Jerusalem"): the referent's display
+   *  name. Empty otherwise. */
+  aka: string;
 };
 
 /** Full URL of a place's OpenBible.info page (sources + confidence). */
@@ -59,7 +63,7 @@ export type ChapterPlaces = {
 /** Keyed by chapter number as a string; chapters with no places are absent. */
 export type BookPlaces = Record<string, ChapterPlaces>;
 
-type PlaceTuple = [string, number, number, number, number, number[], string, string, string, number[]?, number[]?];
+type PlaceTuple = [string, number, number, number, number, number[], string, string, string, number[]?, number[]?, string?];
 type UnlocatedTuple = [string, number[]];
 type JourneyTuple = [number, string, number[]];
 export type RawBookPlaces = {
@@ -71,7 +75,7 @@ export function parseBookPlaces(raw: RawBookPlaces): BookPlaces {
   const out: BookPlaces = {};
   for (const [chapter, ch] of Object.entries(raw.chapters)) {
     out[chapter] = {
-      places: ch.p.map(([name, x, y, kind, uncertain, verses, modern, link, type, soft, gentilic]) => ({
+      places: ch.p.map(([name, x, y, kind, uncertain, verses, modern, link, type, soft, gentilic, aka]) => ({
         name,
         x,
         y,
@@ -83,6 +87,7 @@ export function parseBookPlaces(raw: RawBookPlaces): BookPlaces {
         type: type ?? "",
         soft: soft ?? [],
         gentilic: gentilic ?? [],
+        aka: aka ?? "",
       })),
       unlocated: (ch.u ?? []).map(([name, verses]) => ({ name, verses })),
       journey: ch.j
@@ -115,6 +120,8 @@ export type AtlasPlace = {
   /** Refs where the text names the place only through its people (see
    *  ChapterPlace.gentilic). */
   gentilicRefs: AtlasRef[];
+  /** "Another name for X" referent (see ChapterPlace.aka). */
+  aka: string;
 };
 
 export type AtlasUnlocated = { name: string; link: string; refs: AtlasRef[] };
@@ -134,7 +141,7 @@ export type AtlasData = {
 export type RawAtlas = {
   v: number;
   books: string[];
-  places: [string, number, number, number, number, string, string, AtlasRef[], string, AtlasRef[]?, AtlasRef[]?][];
+  places: [string, number, number, number, number, string, string, AtlasRef[], string, AtlasRef[]?, AtlasRef[]?, string?][];
   unlocated: [string, string, AtlasRef[]][];
   journeys?: { n: string; s: [string, number, number, string][] }[];
 };
@@ -142,7 +149,7 @@ export type RawAtlas = {
 export function parseAtlas(raw: RawAtlas): AtlasData {
   return {
     books: raw.books,
-    places: raw.places.map(([name, x, y, kind, uncertain, modern, link, refs, type, softRefs, gentilicRefs]) => ({
+    places: raw.places.map(([name, x, y, kind, uncertain, modern, link, refs, type, softRefs, gentilicRefs, aka]) => ({
       name,
       x,
       y,
@@ -154,6 +161,7 @@ export function parseAtlas(raw: RawAtlas): AtlasData {
       type: type ?? "",
       softRefs: softRefs ?? [],
       gentilicRefs: gentilicRefs ?? [],
+      aka: aka ?? "",
     })),
     unlocated: raw.unlocated.map(([name, link, refs]) => ({ name, link, refs })),
     journeys: (raw.journeys ?? []).map(({ n, s }) => ({

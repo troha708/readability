@@ -60,7 +60,7 @@ for (const [book, chapters] of byBook) {
     if (!bsbChapters.has(chKey)) fail(`${book} ${chKey}: chapter not in BSB text`);
     for (const p of ch.p ?? []) {
       placeCount++;
-      const [name, x, y, kind, uncertain, verses, modernName, link, type, soft, gentilic] = p;
+      const [name, x, y, kind, uncertain, verses, modernName, link, type, soft, gentilic, aka] = p;
       if (typeof name !== "string" || !name) fail(`${book} ${chKey}: empty place name`);
       if (/ \d+$/.test(name)) fail(`${book} ${chKey}: "${name}" kept a disambiguation suffix`);
       if (!Number.isInteger(x) || x < 0 || x > GRID_WIDTH || !Number.isInteger(y) || y < 0 || y > GRID_HEIGHT)
@@ -73,11 +73,14 @@ for (const [book, chapters] of byBook) {
         !Array.isArray(a) || a.some((v) => !Number.isInteger(v) || v < 1);
       if (badVerseArr(verses) || (verses.length === 0 && !soft && !gentilic))
         fail(`${book} ${chKey}: "${name}" bad verse list`);
-      // Soft may be an empty placeholder only when gentilic follows it.
-      if (soft !== undefined && (badVerseArr(soft) || (soft.length === 0 && !gentilic?.length)))
+      // Soft/gentilic may be empty placeholders only when a later tail slot
+      // (gentilic, aka) needs the position.
+      if (soft !== undefined && (badVerseArr(soft) || (soft.length === 0 && !gentilic?.length && !aka)))
         fail(`${book} ${chKey}: "${name}" bad soft verse list`);
-      if (gentilic !== undefined && (badVerseArr(gentilic) || gentilic.length === 0))
+      if (gentilic !== undefined && (badVerseArr(gentilic) || (gentilic.length === 0 && !aka)))
         fail(`${book} ${chKey}: "${name}" bad gentilic verse list`);
+      if (aka !== undefined && (typeof aka !== "string" || !aka || aka === name))
+        fail(`${book} ${chKey}: "${name}" bad aka "${aka}"`);
       const tiers = [verses, soft ?? [], gentilic ?? []];
       const total = tiers.flat().length;
       if (new Set(tiers.flat()).size !== total)
@@ -160,7 +163,7 @@ if (!fs.existsSync(atlasFile)) {
   if (!Array.isArray(atlas.places) || atlas.places.length < 1000)
     fail(`atlas has only ${atlas.places?.length} places`);
   const seenLinks = new Set();
-  for (const [name, x, y, kind, uncertain, modern, link, refs, type, softRefs, gentilicRefs] of atlas.places) {
+  for (const [name, x, y, kind, uncertain, modern, link, refs, type, softRefs, gentilicRefs, aka] of atlas.places) {
     if (typeof link !== "string" || !link.includes("/")) fail(`atlas "${name}": bad link`);
     if (seenLinks.has(link)) fail(`atlas "${name}": duplicate link ${link}`);
     seenLinks.add(link);
@@ -183,15 +186,17 @@ if (!fs.existsSync(atlasFile)) {
     };
     checkRefs(refs, "regular");
     if (softRefs !== undefined) {
-      if (!Array.isArray(softRefs) || (softRefs.length === 0 && !gentilicRefs?.length))
+      if (!Array.isArray(softRefs) || (softRefs.length === 0 && !gentilicRefs?.length && !aka))
         fail(`atlas "${name}": empty soft ref list`);
-      else checkRefs(softRefs, "soft");
+      else if (softRefs.length) checkRefs(softRefs, "soft");
     }
     if (gentilicRefs !== undefined) {
-      if (!Array.isArray(gentilicRefs) || gentilicRefs.length === 0)
+      if (!Array.isArray(gentilicRefs) || (gentilicRefs.length === 0 && !aka))
         fail(`atlas "${name}": empty gentilic ref list`);
-      else checkRefs(gentilicRefs, "gentilic");
+      else if (gentilicRefs.length) checkRefs(gentilicRefs, "gentilic");
     }
+    if (aka !== undefined && (typeof aka !== "string" || !aka || aka === name))
+      fail(`atlas "${name}": bad aka "${aka}"`);
   }
   const jerusalem = atlas.places.find((p) => p[0] === "Jerusalem");
   if (!jerusalem) fail("atlas: Jerusalem missing");
@@ -214,6 +219,17 @@ if (!fs.existsSync(atlasFile)) {
     if (JSON.stringify(mtZaphon[9] ?? []) !== `[[${JOB},26,[7]]]`)
       fail(`atlas Mount Zaphon: soft refs ${JSON.stringify(mtZaphon[9])} != Job 26:7`);
   }
+  // Another-name identifications must surface as aka (Babylon 2/3 → Rome),
+  // and stay suppressed when the referent shares the record's own name
+  // (Josh 21:16's Ain → the town Ain).
+  for (const slug of ["babylon-2", "babylon-3"]) {
+    const b = atlas.places.find((p) => p[6].endsWith(`/${slug}`));
+    if (!b) fail(`atlas: ${slug} missing`);
+    else if (b[11] !== "Rome") fail(`atlas ${slug}: aka "${b[11]}" != "Rome"`);
+  }
+  const ain3 = atlas.places.find((p) => p[6].endsWith("/ain-3"));
+  if (ain3 && ain3[11] !== undefined) fail(`atlas ain-3: unexpected aka "${ain3[11]}"`);
+
   const townZaphon = atlas.places.find((p) => p[0] === "Zaphon");
   if (!townZaphon) fail('atlas: town "Zaphon" missing');
   else if (townZaphon[8] !== "settlement")
