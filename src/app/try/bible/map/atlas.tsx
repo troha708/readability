@@ -72,8 +72,10 @@ const KIND_FILTERS: { kind: PlaceKind; label: string }[] = [
   { kind: 2, label: "Regions" },
   { kind: 3, label: "Natural" },
 ];
+// "All" is 0, not 1: gentilic-only places (Gerasa — named solely through
+// "the Gerasenes") carry a mentions count of 0 and must still render.
 const MENTION_FILTERS = [
-  { label: "All", min: 1 },
+  { label: "All", min: 0 },
   { label: "3+", min: 3 },
   { label: "10+", min: 10 },
   { label: "50+", min: 50 },
@@ -83,9 +85,25 @@ const SEARCH_LIMIT = 10;
 
 type WeightedPlace = AtlasPlace & { weight: number; mentions: number };
 
-/** Total verse mentions across the whole Bible. */
+/** Total verse mentions across the whole Bible: every verse where at least
+ *  one translation prints the name — regular refs plus the "some
+ *  translations read..." tier. Gentilic refs are deliberately excluded
+ *  ("Jebusites" names the people, not the place), so the number stays
+ *  defensible against the text. Drives the Mentions filter, prominence
+ *  weighting, search-row counts, and the panel figure — all from this one
+ *  function so they can never disagree. */
 function mentionsOf(p: AtlasPlace | AtlasUnlocated): number {
-  return p.refs.reduce((n, [, , verses]) => n + verses.length, 0);
+  const count = (refs: AtlasRef[]) => refs.reduce((n, [, , verses]) => n + verses.length, 0);
+  return count(p.refs) + ("softRefs" in p ? count(p.softRefs) : 0);
+}
+
+/** Distinct chapters behind mentionsOf — union of regular and soft refs
+ *  (a chapter can hold both, e.g. Jebus in Joshua 18). */
+function chapterCountOf(p: AtlasPlace | AtlasUnlocated): number {
+  if (!("softRefs" in p) || p.softRefs.length === 0) return p.refs.length;
+  const keys = new Set(p.refs.map(([b, ch]) => `${b}:${ch}`));
+  for (const [b, ch] of p.softRefs) keys.add(`${b}:${ch}`);
+  return keys.size;
 }
 type Panel =
   | { type: "places"; members: AtlasPlace[] }
@@ -104,7 +122,7 @@ export function Atlas() {
   // ?min= carries the Mentions filter (3/10/50) in shared and embedded URLs.
   const [minMentions, setMinMentions] = useState(() => {
     const m = Number(searchParams.get("min"));
-    return m === 3 || m === 10 || m === 50 ? m : 1;
+    return m === 3 || m === 10 || m === 50 ? m : 0;
   });
   // One scope control: the whole Bible, a testament, a single book (a number
   // indexes atlas.books), or a journey overlay ("j0".."j3"). A ?journey=N
@@ -270,7 +288,11 @@ export function Atlas() {
     if (bIdx === -1) return null;
     const places: WeightedPlace[] = [];
     for (const p of atlas.places) {
-      const ref = p.refs.find(([b, ch]) => b === bIdx && ch === focusChapter);
+      // Chapter focus is about completeness (like the reader's sheet), so a
+      // place whose presence in the chapter is soft or gentilic still shows.
+      const inChapter = (rs: AtlasRef[]) =>
+        rs.find(([b, ch]) => b === bIdx && ch === focusChapter);
+      const ref = inChapter(p.refs) ?? inChapter(p.softRefs) ?? inChapter(p.gentilicRefs);
       if (ref) places.push({ ...p, weight: ref[2].length, mentions: mentionsOf(p) });
     }
     return places.length > 0 ? { book: focusBook, chapter: focusChapter, places } : null;
@@ -315,6 +337,7 @@ export function Atlas() {
     for (const p of allPlaces) {
       let mentions = 0;
       for (const r of p.refs) if (refInScope(r)) mentions += r[2].length;
+      for (const r of p.softRefs) if (refInScope(r)) mentions += r[2].length;
       if (mentions > 0) out.push({ ...p, weight: mentions, mentions });
     }
     return out;
@@ -424,7 +447,7 @@ export function Atlas() {
     // Searching a place relaxes any filter that would hide it.
     const filterRelaxed = !kinds.has(p.kind) || mentionsOf(p) < minMentions;
     setKinds((prev) => (prev.has(p.kind) ? prev : new Set([...prev, p.kind])));
-    if (mentionsOf(p) < minMentions) setMinMentions(1);
+    if (mentionsOf(p) < minMentions) setMinMentions(0);
     const scopeRelaxed = journeyView
       ? !journeyView.stops.some((s) => placeKey(s) === placeKey(p))
       : !p.refs.some((ref) => refInScope(ref));
@@ -685,13 +708,13 @@ export function Atlas() {
             <span className="text-xs text-neutral-400">{lp.type || KIND_LABELS[lp.kind]}</span>
           )}
           <span className="text-xs text-neutral-400">
-            {mentionsOf(p) === 0 && lp && lp.softRefs.length + lp.gentilicRefs.length > 0
+            {lp && p.refs.length === 0 && lp.softRefs.length + lp.gentilicRefs.length > 0
               ? lp.softRefs.length === 0
                 ? "named only through its people"
                 : lp.gentilicRefs.length === 0
                   ? "named only in some translations"
                   : "named only indirectly"
-              : `${mentionsOf(p)} mention${mentionsOf(p) === 1 ? "" : "s"} in ${p.refs.length} chapter${p.refs.length === 1 ? "" : "s"}`}
+              : `${mentionsOf(p)} mention${mentionsOf(p) === 1 ? "" : "s"} in ${chapterCountOf(p)} chapter${chapterCountOf(p) === 1 ? "" : "s"}`}
           </span>
         </div>
         <p className="mt-0.5 text-xs text-neutral-500 dark:text-neutral-400">

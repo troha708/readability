@@ -52,8 +52,10 @@ type Marker = {
   seq?: number;
 };
 
-function mentionsOf(p: { refs: AtlasRef[] }): number {
-  return p.refs.reduce((n, [, , verses]) => n + verses.length, 0);
+// Mirrors the page's mentionsOf: regular + soft tiers, gentilic excluded.
+function mentionsOf(p: { refs: AtlasRef[]; softRefs?: AtlasRef[] }): number {
+  const count = (refs: AtlasRef[]) => refs.reduce((n, [, , verses]) => n + verses.length, 0);
+  return count(p.refs) + count(p.softRefs ?? []);
 }
 
 export async function GET(req: NextRequest) {
@@ -100,7 +102,8 @@ function render(req: NextRequest) {
       : undefined;
   // ?min= — the page's Mentions filter; journeys ignore it, like the page.
   const minRaw = Number(sp.get("min"));
-  const min = minRaw === 3 || minRaw === 10 || minRaw === 50 ? minRaw : 1;
+  // Default 0, matching the page's "All": gentilic-only places count 0.
+  const min = minRaw === 3 || minRaw === 10 || minRaw === 50 ? minRaw : 0;
 
   if (journey) {
     const seen = new Set<string>();
@@ -125,17 +128,21 @@ function render(req: NextRequest) {
     const book = sp.get("book");
     const chapter = parseInt(sp.get("chapter") ?? "", 10);
     const bIdx = book ? atlas.books.indexOf(book) : -1;
+    // Chapter presence spans all tiers — soft/gentilic-only places (Mount
+    // Zaphon in Job 26, Gerasa in Mark 5) belong on the chapter's card too.
+    const inChapter = (p: (typeof atlas.places)[number]) =>
+      [...p.refs, ...p.softRefs, ...p.gentilicRefs].find(
+        ([b, ch]) => b === bIdx && ch === chapter,
+      );
     const focusPlaces =
       bIdx !== -1 && Number.isFinite(chapter)
-        ? atlas.places.filter((p) =>
-            p.refs.some(([b, ch]) => b === bIdx && ch === chapter),
-          )
+        ? atlas.places.filter((p) => inChapter(p))
         : [];
     if (focusPlaces.length > 0) {
       markers = focusPlaces
         .filter((p) => mentionsOf(p) >= min)
         .map((p) => {
-          const ref = p.refs.find(([b, ch]) => b === bIdx && ch === chapter);
+          const ref = inChapter(p);
           return { ...p, weight: ref ? ref[2].length : 1 };
         });
       title = `Places in ${chapterReference(atlas.books[bIdx], chapter)}`;

@@ -108,8 +108,11 @@ function resolveTarget(params: SearchParams): SeoTarget | null {
     const chapter = parseInt(params.chapter, 10);
     const bIdx = atlas.books.indexOf(params.book);
     if (bIdx !== -1 && Number.isFinite(chapter)) {
+      // Chapter presence spans all three tiers, like the map itself.
       const places = atlas.places.filter((p) =>
-        p.refs.some(([b, ch]) => b === bIdx && ch === chapter),
+        [...p.refs, ...p.softRefs, ...p.gentilicRefs].some(
+          ([b, ch]) => b === bIdx && ch === chapter,
+        ),
       );
       if (places.length > 0)
         return { kind: "focus", book: atlas.books[bIdx], chapter, places };
@@ -415,7 +418,9 @@ function FocusContent({
         </p>
         <ul>
           {target.places.map((p) => {
-            const chRef = p.refs.find(([b, ch]) => b === bIdx && ch === target.chapter);
+            const chRef = [...p.refs, ...p.softRefs, ...p.gentilicRefs].find(
+              ([b, ch]) => b === bIdx && ch === target.chapter,
+            );
             return (
               <li key={placeSlug(p.link)}>
                 <Link href={`/try/bible/map?place=${encodeURIComponent(placeSlug(p.link))}`}>

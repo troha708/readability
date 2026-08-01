@@ -31,7 +31,8 @@ export function ChapterMapSheet({
   const [selection, setSelection] = useState<ChapterPlace[] | null>(null);
   const reference = `${chapterReference(bookName, chapter)}`;
   const places = useMemo(
-    () => data.places.map((p) => ({ ...p, weight: p.verses.length })),
+    // Weight mirrors the atlas mentionsOf: regular + soft, gentilic excluded.
+    () => data.places.map((p) => ({ ...p, weight: p.verses.length + p.soft.length })),
     [data],
   );
 
