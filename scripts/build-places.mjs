@@ -98,11 +98,15 @@ const OSIS_TO_BOOK = {
 
 // Dataset resolution type → marker kind.
 const KIND_WATER = new Set(["river", "body of water", "spring", "well", "pool", "wadi", "canal"]);
-const KIND_REGION = new Set(["region", "people group", "road", "field"]);
+// "road" stays with regions deliberately: routes get italic labels in
+// printed atlases, and a triangle would misread as a peak. "field" does NOT
+// — Akeldama, Helkath-hazzurim and Washer's Field are specific plots of
+// ground (points, like a garden), not areas.
+const KIND_REGION = new Set(["region", "people group", "road"]);
 const KIND_NATURAL = new Set([
   "mountain", "mountain range", "mountain ridge", "mountain pass", "hill",
   "cliff", "rock", "promontory", "valley", "island", "tree", "forest",
-  "natural area", "garden", "stone heap",
+  "natural area", "garden", "stone heap", "field",
 ]);
 
 function kindOf(type) {

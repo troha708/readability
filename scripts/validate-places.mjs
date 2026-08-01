@@ -205,6 +205,13 @@ if (!fs.existsSync(atlasFile)) {
   if (!townZaphon) fail('atlas: town "Zaphon" missing');
   else if (townZaphon[8] !== "settlement")
     fail(`atlas town Zaphon: type "${townZaphon[8]}" != "settlement"`);
+
+  // Fields are plots of ground — points (kind 3), never italic region labels
+  // (2026-08-01 kind audit).
+  const akeldama = atlas.places.find((p) => p[0] === "Akeldama");
+  if (!akeldama) fail("atlas: Akeldama missing");
+  else if (akeldama[3] !== 3 || akeldama[8] !== "field")
+    fail(`atlas Akeldama: kind ${akeldama[3]}/type "${akeldama[8]}", expected 3/"field"`);
   const job26 = (byBook.get("Job")?.["26"]?.p ?? []).find((p) => p[0] === "Mount Zaphon");
   if (!job26) fail("Job 26: Mount Zaphon missing from chapter file");
   else if (JSON.stringify(job26[9] ?? []) !== "[7]" || job26[5].length !== 0)
