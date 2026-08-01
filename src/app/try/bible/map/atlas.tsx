@@ -97,16 +97,22 @@ function mentionsOf(p: AtlasPlace | AtlasUnlocated): number {
   return count(p.refs) + ("softRefs" in p ? count(p.softRefs) : 0);
 }
 
-/** Where a place's references live, as a book span ("Genesis–Joshua",
- *  "Revelation") across all three tiers. Distinguishes same-named records
- *  (the three Babylons, the Ain pair at Tel Halif) using only the data —
- *  shown in See-also links and duplicate-name search rows. */
+/** Where a place's references live, across all three tiers, as a span.
+ *  Distinguishes same-named records (the three Babylons, the Ain pair at
+ *  Tel Halif) using only the data — shown in See-also links and
+ *  duplicate-name search rows. Single-book records get chapter precision
+ *  ("Joshua 21", "Revelation 14–18"): the two Tel Halif Ains are BOTH in
+ *  Joshua, so a book-level span couldn't tell them apart. */
 function bookSpanOf(p: AtlasPlace, books: string[]): string {
-  const idx = new Set<number>();
-  for (const [b] of [...p.refs, ...p.softRefs, ...p.gentilicRefs]) idx.add(b);
-  const s = [...idx].sort((a, b) => a - b);
-  if (s.length === 0) return "";
-  return s.length === 1 ? books[s[0]] : `${books[s[0]]}–${books[s[s.length - 1]]}`;
+  const allRefs = [...p.refs, ...p.softRefs, ...p.gentilicRefs];
+  const idx = [...new Set(allRefs.map(([b]) => b))].sort((a, b) => a - b);
+  if (idx.length === 0) return "";
+  if (idx.length > 1) return `${books[idx[0]]}–${books[idx[idx.length - 1]]}`;
+  const chapters = [...new Set(allRefs.map(([, ch]) => ch))].sort((a, b) => a - b);
+  const book = books[idx[0]];
+  return chapters.length === 1
+    ? `${book} ${chapters[0]}`
+    : `${book} ${chapters[0]}–${chapters[chapters.length - 1]}`;
 }
 
 /** Distinct chapters behind mentionsOf — union of regular and soft refs
