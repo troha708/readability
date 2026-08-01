@@ -22,6 +22,12 @@ export type ChapterPlace = {
   /** openbible.info path piece "<id>/<slug>" — the page listing the sources
    *  attesting this identification. */
   link: string;
+  /** The dataset's resolution type word: "mountain", "river", "region"... */
+  type: string;
+  /** Verses where only one of the dataset's ten translations renders the
+   *  place as a proper name (e.g. NRSV's "Zaphon" at Job 26:7) — shown as
+   *  "some translations read...", never as regular citations. */
+  soft: number[];
 };
 
 /** Full URL of a place's OpenBible.info page (sources + confidence). */
@@ -49,7 +55,7 @@ export type ChapterPlaces = {
 /** Keyed by chapter number as a string; chapters with no places are absent. */
 export type BookPlaces = Record<string, ChapterPlaces>;
 
-type PlaceTuple = [string, number, number, number, number, number[], string, string];
+type PlaceTuple = [string, number, number, number, number, number[], string, string, string, number[]?];
 type UnlocatedTuple = [string, number[]];
 type JourneyTuple = [number, string, number[]];
 export type RawBookPlaces = {
@@ -61,7 +67,7 @@ export function parseBookPlaces(raw: RawBookPlaces): BookPlaces {
   const out: BookPlaces = {};
   for (const [chapter, ch] of Object.entries(raw.chapters)) {
     out[chapter] = {
-      places: ch.p.map(([name, x, y, kind, uncertain, verses, modern, link]) => ({
+      places: ch.p.map(([name, x, y, kind, uncertain, verses, modern, link, type, soft]) => ({
         name,
         x,
         y,
@@ -70,6 +76,8 @@ export function parseBookPlaces(raw: RawBookPlaces): BookPlaces {
         verses,
         modern,
         link,
+        type: type ?? "",
+        soft: soft ?? [],
       })),
       unlocated: (ch.u ?? []).map(([name, verses]) => ({ name, verses })),
       journey: ch.j
@@ -94,6 +102,11 @@ export type AtlasPlace = {
   modern: string;
   link: string;
   refs: AtlasRef[];
+  /** The dataset's resolution type word: "mountain", "river", "region"... */
+  type: string;
+  /** Refs where only one of the ten translations prints the name (see
+   *  ChapterPlace.soft). Empty for most places. */
+  softRefs: AtlasRef[];
 };
 
 export type AtlasUnlocated = { name: string; link: string; refs: AtlasRef[] };
@@ -113,7 +126,7 @@ export type AtlasData = {
 export type RawAtlas = {
   v: number;
   books: string[];
-  places: [string, number, number, number, number, string, string, AtlasRef[]][];
+  places: [string, number, number, number, number, string, string, AtlasRef[], string, AtlasRef[]?][];
   unlocated: [string, string, AtlasRef[]][];
   journeys?: { n: string; s: [string, number, number, string][] }[];
 };
@@ -121,7 +134,7 @@ export type RawAtlas = {
 export function parseAtlas(raw: RawAtlas): AtlasData {
   return {
     books: raw.books,
-    places: raw.places.map(([name, x, y, kind, uncertain, modern, link, refs]) => ({
+    places: raw.places.map(([name, x, y, kind, uncertain, modern, link, refs, type, softRefs]) => ({
       name,
       x,
       y,
@@ -130,6 +143,8 @@ export function parseAtlas(raw: RawAtlas): AtlasData {
       modern,
       link,
       refs,
+      type: type ?? "",
+      softRefs: softRefs ?? [],
     })),
     unlocated: raw.unlocated.map(([name, link, refs]) => ({ name, link, refs })),
     journeys: (raw.journeys ?? []).map(({ n, s }) => ({

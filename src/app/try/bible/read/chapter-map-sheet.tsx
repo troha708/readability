@@ -124,9 +124,9 @@ export function ChapterMapSheet({
                       <span className="font-semibold text-neutral-800 dark:text-neutral-100">
                         {p.name}
                       </span>
-                      {p.kind > 0 && (
+                      {(p.type || p.kind > 0) && (
                         <span className="text-xs text-neutral-400">
-                          {KIND_LABELS[p.kind]}
+                          {p.type || KIND_LABELS[p.kind]}
                         </span>
                       )}
                       <span className="flex flex-wrap gap-1">
@@ -141,6 +141,22 @@ export function ChapterMapSheet({
                         ))}
                       </span>
                     </div>
+                    {p.soft.length > 0 && (
+                      <p className="mt-0.5 text-xs italic text-neutral-500 dark:text-neutral-400">
+                        Some translations read {p.name} here:{" "}
+                        {p.soft.map((v, i) => (
+                          <span key={v}>
+                            {i > 0 && ", "}
+                            <button
+                              onClick={() => onGoToVerse(v)}
+                              className="underline decoration-neutral-300 underline-offset-2 hover:text-amber-700 dark:hover:text-amber-400"
+                            >
+                              v. {v}
+                            </button>
+                          </span>
+                        ))}
+                      </p>
+                    )}
                     <p className="mt-0.5 text-xs text-neutral-500 dark:text-neutral-400">
                       {p.uncertain
                         ? `Location uncertain${p.modern ? ` — possibly near modern ${p.modern}` : " — best-supported site shown"}. `
@@ -159,6 +175,19 @@ export function ChapterMapSheet({
                   </div>
                 ))}
               </div>
+            )}
+
+            {/* Places whose presence in this chapter rests on single-translation
+                renderings (e.g. NRSV's "Zaphon" at Job 26:7) — say so up front,
+                not only in the tap card. */}
+            {data.places.some((p) => p.verses.length === 0 && p.soft.length > 0) && (
+              <p className="mt-3 text-xs italic text-neutral-400">
+                Named here only in some translations:{" "}
+                {data.places
+                  .filter((p) => p.verses.length === 0 && p.soft.length > 0)
+                  .map((p) => `${p.name} (v. ${p.soft.join(", ")})`)
+                  .join(" · ")}
+              </p>
             )}
 
             {/* Unlocated places — honesty over silence */}

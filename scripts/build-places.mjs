@@ -7,10 +7,12 @@
  * Only representative-point coordinates are used (plain CC BY); the dataset's
  * OSM-derived precise geometries (ODbL) are not touched.
  *
- * A place is included in a chapter when at least MIN_NAME_TRANSLATIONS of the
- * dataset's ten reference translations render it as a proper name in some
- * verse of that chapter — this keeps markers aligned with names the reader
- * can actually see in the text, and drops single-translation idiosyncrasies.
+ * Every verse the dataset lists for a place is kept (the geocoding data is
+ * the source of truth). A verse where at least MIN_NAME_TRANSLATIONS of the
+ * dataset's ten reference translations render the place as a proper name is
+ * a regular reference; a verse below that bar (e.g. Job 26:7, where the NRSV
+ * alone reads "Zaphon" and the rest "the north") is emitted separately as a
+ * "soft" reference so the UI can present it as "some translations read...".
  * The location comes from the dataset's top-ranked identification; when the
  * source votes are split across candidates the place is flagged uncertain.
  * Places with no locatable identification (Eden, Azazel...) are listed
@@ -18,10 +20,12 @@
  *
  * Output: data/places/<Book>.json
  *   { "book": "...", "chapters": { "12": {
- *       "p": [[name, x, y, kind, uncertain, [verses], modernName, link], ...],
+ *       "p": [[name, x, y, kind, uncertain, [verses], modernName, link,
+ *              type, [softVerses]], ...],
  *       "u": [[name, [verses]], ...] } } }
  * x/y are integer grid units (see scripts/map-projection.mjs);
  * kind: 0 settlement, 1 water, 2 region/people, 3 natural feature;
+ * type is the dataset's resolution type word ("mountain", "river", ...);
  * link is the openbible.info path piece "<id>/<slug>" — the place's page
  * there lists the sources attesting each identification, which is what makes
  * every marker verifiable.
@@ -30,7 +34,8 @@
  * located place with its verse references across the whole Bible, keyed to a
  * canon-ordered book list:
  *   { v, books: [...66 names], places: [[name, x, y, kind, uncertain,
- *     modern, link, [[bookIdx, chapter, [verses]], ...]], ...],
+ *     modern, link, [[bookIdx, chapter, [verses]], ...], type,
+ *     [[bookIdx, chapter, [softVerses]], ...]], ...],
  *     unlocated: [[name, link, refs], ...] }
  *
  * Prerequisite (~15 MB, not committed):
@@ -61,6 +66,9 @@ if (!SRC || !fs.existsSync(SRC)) {
   process.exit(1);
 }
 
+// Verses at/above this many proper-name translations are regular references;
+// verses below it (but with at least one) are "soft" references. Nothing the
+// dataset lists is dropped.
 const MIN_NAME_TRANSLATIONS = 2;
 // A top-ranked identification owning less than this share of the (positive)
 // source votes across all candidates is presented as uncertain.
@@ -129,17 +137,34 @@ let locatedPlaces = 0;
 let unlocatedPlaces = 0;
 let uncertainPlaces = 0;
 let skippedVerses = 0;
+let softVerseCount = 0;
+let mountRenames = 0;
+const softPlaceNames = new Set();
 
 for (const rec of ancient) {
-  const keptVerses = (rec.verses ?? []).filter(
-    (v) => (v.instance_types?.name ?? 0) >= MIN_NAME_TRANSLATIONS,
-  );
+  // Follow the dataset: every verse where at least one translation renders
+  // the place as a proper name is kept. Below MIN_NAME_TRANSLATIONS it's
+  // "soft" — the name isn't visible in most translations there.
+  const keptVerses = (rec.verses ?? []).filter((v) => (v.instance_types?.name ?? 0) >= 1);
   if (keptVerses.length === 0) continue;
+  const isSoft = (v) => (v.instance_types?.name ?? 0) < MIN_NAME_TRANSLATIONS;
 
-  const name = rec.friendly_id.replace(/ \d+$/, "");
+  let name = rec.friendly_id.replace(/ \d+$/, "");
   const idents = rec.identifications ?? [];
   const top = idents[0];
   const resolution = (top?.resolutions ?? []).find((r) => r.lonlat);
+
+  // The dataset types Jebel al-Aqra as a mountain and its translations
+  // include "Mount Zaphon" — use that fuller rendering so same-named places
+  // (here, the Gadite town Zaphon) stay distinguishable everywhere.
+  if (
+    resolution?.type?.startsWith("mountain") &&
+    (rec.translation_name_counts?.[`Mount ${name}`] ?? 0) > 0 &&
+    !name.startsWith("Mount ")
+  ) {
+    name = `Mount ${name}`;
+    mountRenames++;
+  }
 
   let entry = null;
   const [lon, lat] = resolution
@@ -185,6 +210,7 @@ for (const rec of ancient) {
       uncertain: uncertain ? 1 : 0,
       modernName,
       link: `${rec.id}/${rec.url_slug}`,
+      type: resolution.type ?? "",
     };
     locatedPlaces++;
     if (uncertain) uncertainPlaces++;
@@ -217,6 +243,11 @@ for (const rec of ancient) {
       ch = { p: new Map(), u: new Map() };
       chapters.set(chapter, ch);
     }
+    const soft = isSoft(v);
+    if (soft) {
+      softVerseCount++;
+      softPlaceNames.add(entry ? entry.name : rec.friendly_id);
+    }
     if (entry) {
       // Two ancient places can resolve to the same name and spot in one
       // chapter (e.g. the two figurative Babylons that both resolve to Rome);
@@ -224,17 +255,17 @@ for (const rec of ancient) {
       const key = `${entry.name}|${entry.x}|${entry.y}`;
       let dedup = ch.p.get(key);
       if (!dedup) {
-        dedup = { ...entry, verses: new Set() };
+        dedup = { ...entry, verses: new Set(), soft: new Set() };
         ch.p.set(key, dedup);
       }
-      dedup.verses.add(verse);
+      (soft ? dedup.soft : dedup.verses).add(verse);
 
       let atlas = atlasPlaces.get(key);
       if (!atlas) {
-        atlas = { entry, refs: new Map() };
+        atlas = { entry, refs: new Map(), softRefs: new Map() };
         atlasPlaces.set(key, atlas);
       }
-      addRef(atlas.refs, book, chapter, verse);
+      addRef(soft ? atlas.softRefs : atlas.refs, book, chapter, verse);
     } else {
       let dedup = ch.u.get(rec.friendly_id);
       if (!dedup) {
@@ -401,9 +432,21 @@ for (const [book, chapters] of byBook) {
   for (const key of keys) {
     const ch = chapters.get(key);
     const places = [...ch.p.values()]
-      .map((e) => ({ ...e, verses: [...e.verses].sort((a, b) => a - b) }))
-      .sort((a, b) => a.verses[0] - b.verses[0] || a.name.localeCompare(b.name))
-      .map((e) => [e.name, e.x, e.y, e.kind, e.uncertain, e.verses, e.modernName, e.link]);
+      .map((e) => ({
+        ...e,
+        verses: [...e.verses].sort((a, b) => a - b),
+        soft: [...e.soft].sort((a, b) => a - b),
+      }))
+      .sort(
+        (a, b) =>
+          (a.verses[0] ?? a.soft[0]) - (b.verses[0] ?? b.soft[0]) ||
+          a.name.localeCompare(b.name),
+      )
+      .map((e) => {
+        const t = [e.name, e.x, e.y, e.kind, e.uncertain, e.verses, e.modernName, e.link, e.type];
+        if (e.soft.length) t.push(e.soft);
+        return t;
+      });
     const unlocated = [...ch.u.values()]
       .map((e) => ({ ...e, verses: [...e.verses].sort((a, b) => a - b) }))
       .sort((a, b) => a.verses[0] - b.verses[0] || a.name.localeCompare(b.name))
@@ -436,20 +479,25 @@ fs.writeFileSync(
 
 // Whole-Bible atlas for /try/bible/map.
 const atlas = {
-  v: 1,
+  v: 2,
   books: CANON_ORDER,
   places: [...atlasPlaces.values()]
     .sort((a, b) => a.entry.name.localeCompare(b.entry.name))
-    .map(({ entry, refs }) => [
-      entry.name,
-      entry.x,
-      entry.y,
-      entry.kind,
-      entry.uncertain,
-      entry.modernName,
-      entry.link,
-      packRefs(refs),
-    ]),
+    .map(({ entry, refs, softRefs }) => {
+      const t = [
+        entry.name,
+        entry.x,
+        entry.y,
+        entry.kind,
+        entry.uncertain,
+        entry.modernName,
+        entry.link,
+        packRefs(refs),
+        entry.type,
+      ];
+      if (softRefs.size) t.push(packRefs(softRefs));
+      return t;
+    }),
   unlocated: [...atlasUnlocated.values()]
     .sort((a, b) => a.name.localeCompare(b.name))
     .map(({ name, link, refs }) => [name, link, packRefs(refs)]),
@@ -468,4 +516,8 @@ console.log(
     `${locatedPlaces} located (${uncertainPlaces} uncertain), ${unlocatedPlaces} unlocated, ` +
     `${skippedVerses} verse refs skipped → data/places/ (${(totalBytes / 1024).toFixed(0)} KB) · ` +
     `atlas: ${atlas.places.length} places → public/maps/atlas.json (${(fs.statSync(atlasFile).size / 1024).toFixed(0)} KB)`,
+);
+console.log(
+  `soft refs (name in only 1 of 10 translations): ${softVerseCount} verses across ` +
+    `${softPlaceNames.size} places · "Mount X" renames from translated names: ${mountRenames}`,
 );

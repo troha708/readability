@@ -60,18 +60,28 @@ for (const [book, chapters] of byBook) {
     if (!bsbChapters.has(chKey)) fail(`${book} ${chKey}: chapter not in BSB text`);
     for (const p of ch.p ?? []) {
       placeCount++;
-      const [name, x, y, kind, uncertain, verses, modernName, link] = p;
+      const [name, x, y, kind, uncertain, verses, modernName, link, type, soft] = p;
       if (typeof name !== "string" || !name) fail(`${book} ${chKey}: empty place name`);
       if (/ \d+$/.test(name)) fail(`${book} ${chKey}: "${name}" kept a disambiguation suffix`);
       if (!Number.isInteger(x) || x < 0 || x > GRID_WIDTH || !Number.isInteger(y) || y < 0 || y > GRID_HEIGHT)
         fail(`${book} ${chKey}: "${name}" out-of-grid coordinates ${x},${y}`);
       if (![0, 1, 2, 3].includes(kind)) fail(`${book} ${chKey}: "${name}" bad kind ${kind}`);
       if (![0, 1].includes(uncertain)) fail(`${book} ${chKey}: "${name}" bad uncertain flag`);
-      if (!Array.isArray(verses) || verses.length === 0 || verses.some((v) => !Number.isInteger(v) || v < 1))
+      // Regular verses may be empty only when soft verses carry the entry
+      // (the place's presence in this chapter rests on 1-of-10-translation
+      // renderings, e.g. Mount Zaphon in Job 26).
+      const badVerseArr = (a) =>
+        !Array.isArray(a) || a.some((v) => !Number.isInteger(v) || v < 1);
+      if (badVerseArr(verses) || (verses.length === 0 && !soft))
         fail(`${book} ${chKey}: "${name}" bad verse list`);
+      if (soft !== undefined && (badVerseArr(soft) || soft.length === 0))
+        fail(`${book} ${chKey}: "${name}" bad soft verse list`);
+      if (soft && verses.some((v) => soft.includes(v)))
+        fail(`${book} ${chKey}: "${name}" verse listed as both regular and soft`);
       if (typeof modernName !== "string") fail(`${book} ${chKey}: "${name}" bad modern name`);
       if (typeof link !== "string" || !/^[a-z0-9]+\/.+$/.test(link))
         fail(`${book} ${chKey}: "${name}" bad openbible link "${link}"`);
+      if (typeof type !== "string") fail(`${book} ${chKey}: "${name}" missing type word`);
     }
     for (const [name, verses] of ch.u ?? []) {
       if (typeof name !== "string" || !name) fail(`${book} ${chKey}: empty unlocated name`);
@@ -145,24 +155,60 @@ if (!fs.existsSync(atlasFile)) {
     fail(`atlas books list has ${atlas.books?.length} entries, expected 66`);
   if (!Array.isArray(atlas.places) || atlas.places.length < 1000)
     fail(`atlas has only ${atlas.places?.length} places`);
-  for (const [name, x, y, kind, uncertain, modern, link, refs] of atlas.places) {
+  for (const [name, x, y, kind, uncertain, modern, link, refs, type, softRefs] of atlas.places) {
     if (typeof link !== "string" || !link.includes("/")) fail(`atlas "${name}": bad link`);
     if (!Number.isInteger(x) || x < 0 || x > GRID_WIDTH || !Number.isInteger(y) || y < 0 || y > GRID_HEIGHT)
       fail(`atlas "${name}": out-of-grid ${x},${y}`);
     if (![0, 1, 2, 3].includes(kind) || ![0, 1].includes(uncertain) || typeof modern !== "string")
       fail(`atlas "${name}": bad kind/uncertain/modern`);
-    if (!Array.isArray(refs) || refs.length === 0) fail(`atlas "${name}": no refs`);
-    for (const [bIdx, ch, verses] of refs) {
-      if (!Number.isInteger(bIdx) || bIdx < 0 || bIdx >= atlas.books.length)
-        fail(`atlas "${name}": bad book index ${bIdx}`);
-      if (!Number.isInteger(ch) || ch < 1 || !Array.isArray(verses) || verses.length === 0)
-        fail(`atlas "${name}": bad ref ${bIdx}:${ch}`);
+    if (typeof type !== "string") fail(`atlas "${name}": missing type word`);
+    // Regular refs may be empty only when the place exists purely through
+    // soft (1-of-10-translation) references.
+    if (!Array.isArray(refs) || (refs.length === 0 && !softRefs)) fail(`atlas "${name}": no refs`);
+    const checkRefs = (list, label) => {
+      for (const [bIdx, ch, verses] of list) {
+        if (!Number.isInteger(bIdx) || bIdx < 0 || bIdx >= atlas.books.length)
+          fail(`atlas "${name}": bad ${label} book index ${bIdx}`);
+        if (!Number.isInteger(ch) || ch < 1 || !Array.isArray(verses) || verses.length === 0)
+          fail(`atlas "${name}": bad ${label} ref ${bIdx}:${ch}`);
+      }
+    };
+    checkRefs(refs, "regular");
+    if (softRefs !== undefined) {
+      if (!Array.isArray(softRefs) || softRefs.length === 0)
+        fail(`atlas "${name}": empty soft ref list`);
+      else checkRefs(softRefs, "soft");
     }
   }
   const jerusalem = atlas.places.find((p) => p[0] === "Jerusalem");
   if (!jerusalem) fail("atlas: Jerusalem missing");
   else if (jerusalem[7].length < 300)
     fail(`atlas: Jerusalem has only ${jerusalem[7].length} chapter refs — parse regression?`);
+
+  // The two Zaphons (the defect an academic reader caught 2026-08-01): the
+  // mountain must carry its "Mount" rendering, its type word, its regular
+  // refs (Ps 48:2, Isa 14:13) AND its soft ref (Job 26:7, NRSV-only) — and
+  // stay distinct from the Gadite town.
+  const JOB = 17, PS = 18, ISA = 22;
+  const mtZaphon = atlas.places.find((p) => p[0] === "Mount Zaphon");
+  if (!mtZaphon) {
+    fail('atlas: "Mount Zaphon" missing (rename from translated names broken?)');
+  } else {
+    if (mtZaphon[8] !== "mountain") fail(`atlas Mount Zaphon: type "${mtZaphon[8]}" != "mountain"`);
+    const hard = JSON.stringify(mtZaphon[7]);
+    if (!hard.includes(`[${PS},48,[2]]`) || !hard.includes(`[${ISA},14,[13]]`))
+      fail(`atlas Mount Zaphon: regular refs ${hard} missing Ps 48:2 / Isa 14:13`);
+    if (JSON.stringify(mtZaphon[9] ?? []) !== `[[${JOB},26,[7]]]`)
+      fail(`atlas Mount Zaphon: soft refs ${JSON.stringify(mtZaphon[9])} != Job 26:7`);
+  }
+  const townZaphon = atlas.places.find((p) => p[0] === "Zaphon");
+  if (!townZaphon) fail('atlas: town "Zaphon" missing');
+  else if (townZaphon[8] !== "settlement")
+    fail(`atlas town Zaphon: type "${townZaphon[8]}" != "settlement"`);
+  const job26 = (byBook.get("Job")?.["26"]?.p ?? []).find((p) => p[0] === "Mount Zaphon");
+  if (!job26) fail("Job 26: Mount Zaphon missing from chapter file");
+  else if (JSON.stringify(job26[9] ?? []) !== "[7]" || job26[5].length !== 0)
+    fail(`Job 26 Mount Zaphon: expected soft [7] + no regular verses, got ${JSON.stringify(job26[5])}/${JSON.stringify(job26[9])}`);
 
   // Paul's journeys: four routes, sane stop counts, coordinates on-grid.
   if (!Array.isArray(atlas.journeys) || atlas.journeys.length !== 4) {

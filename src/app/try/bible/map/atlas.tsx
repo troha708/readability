@@ -339,6 +339,7 @@ export function Atlas() {
       const ap = byKey.get(key);
       const base: AtlasPlace = ap ?? {
         name: s.name, x: s.x, y: s.y, kind: 0, uncertain: false, modern: "", link: "", refs: [],
+        type: "", softRefs: [],
       };
       stops.push({
         ...base,
@@ -388,6 +389,21 @@ export function Atlas() {
       })
       .slice(0, SEARCH_LIMIT);
   }, [atlas, query]);
+
+  // Places sharing a base name (the two Zaphons, the four Apheks) cross-link
+  // in the detail panel, so one entry can never silently hide another — an
+  // academic reader clicked the town Zaphon and reasonably concluded the
+  // mountain's references were missing (2026-08-01).
+  const sameName = useMemo(() => {
+    const groups = new Map<string, AtlasPlace[]>();
+    for (const p of atlas?.places ?? []) {
+      const base = normalize(p.name.replace(/^Mount /, ""));
+      let g = groups.get(base);
+      if (!g) groups.set(base, (g = []));
+      g.push(p);
+    }
+    return groups;
+  }, [atlas]);
 
   /** Select a search result / deep-linked place. `zoomTo: false` selects
    *  without moving the camera (a shared ?x=&y=&k= view is about to land).
@@ -632,14 +648,22 @@ export function Atlas() {
     ? `/try/bible/read?book=${encodeURIComponent(focus.book)}&chapter=${focus.chapter}`
     : "/try/bible/start";
 
-  function refChip(place: AtlasPlace | AtlasUnlocated, [bIdx, ch, verses]: [number, number, number[]]) {
+  function refChip(
+    place: AtlasPlace | AtlasUnlocated,
+    [bIdx, ch, verses]: [number, number, number[]],
+    muted = false,
+  ) {
     const book = atlas!.books[bIdx];
     return (
       <Link
         key={`${bIdx}:${ch}`}
         href={`/try/bible/read?book=${encodeURIComponent(book)}&chapter=${ch}&verse=${verses[0]}`}
         title={`${chapterReference(book, ch)}:${verses.join(", ")}`}
-        className="rounded-full bg-white px-2 py-0.5 text-xs font-medium text-amber-700 shadow-sm transition-colors hover:bg-amber-50 dark:bg-neutral-700 dark:text-amber-400 dark:hover:bg-neutral-600"
+        className={
+          muted
+            ? "rounded-full border border-dashed border-neutral-300 px-2 py-0.5 text-xs font-medium text-neutral-500 transition-colors hover:text-amber-700 dark:border-neutral-600 dark:text-neutral-400 dark:hover:text-amber-400"
+            : "rounded-full bg-white px-2 py-0.5 text-xs font-medium text-amber-700 shadow-sm transition-colors hover:bg-amber-50 dark:bg-neutral-700 dark:text-amber-400 dark:hover:bg-neutral-600"
+        }
       >
         {chapterReference(book, ch)}
         {verses.length > 1 && (
@@ -657,12 +681,13 @@ export function Atlas() {
       <div key={p.link} className="py-1.5 first:pt-0 last:pb-0">
         <div className="flex flex-wrap items-baseline gap-x-2">
           <span className="font-semibold text-neutral-800 dark:text-neutral-100">{p.name}</span>
-          {lp && lp.kind > 0 && (
-            <span className="text-xs text-neutral-400">{KIND_LABELS[lp.kind]}</span>
+          {lp && (lp.type || lp.kind > 0) && (
+            <span className="text-xs text-neutral-400">{lp.type || KIND_LABELS[lp.kind]}</span>
           )}
           <span className="text-xs text-neutral-400">
-            {mentionsOf(p)} mention{mentionsOf(p) === 1 ? "" : "s"} in {p.refs.length}{" "}
-            chapter{p.refs.length === 1 ? "" : "s"}
+            {mentionsOf(p) === 0 && lp && lp.softRefs.length > 0
+              ? "named only in some translations"
+              : `${mentionsOf(p)} mention${mentionsOf(p) === 1 ? "" : "s"} in ${p.refs.length} chapter${p.refs.length === 1 ? "" : "s"}`}
           </span>
         </div>
         <p className="mt-0.5 text-xs text-neutral-500 dark:text-neutral-400">
@@ -706,6 +731,40 @@ export function Atlas() {
             </button>
           )}
         </div>
+        {lp && lp.softRefs.length > 0 && (
+          <div className="mt-1.5">
+            <p className="text-xs italic text-neutral-500 dark:text-neutral-400">
+              Some translations read {lp.name} here:
+            </p>
+            <div className="mt-1 flex flex-wrap gap-1">
+              {lp.softRefs.map((r) => refChip(p, r, true))}
+            </div>
+          </div>
+        )}
+        {lp &&
+          (() => {
+            const siblings = (
+              sameName.get(normalize(lp.name.replace(/^Mount /, ""))) ?? []
+            ).filter((o) => o.link !== lp.link);
+            if (siblings.length === 0) return null;
+            return (
+              <p className="mt-1.5 text-xs text-neutral-500 dark:text-neutral-400">
+                See also:{" "}
+                {siblings.map((o, i) => (
+                  <span key={o.link}>
+                    {i > 0 && " · "}
+                    <button
+                      onClick={() => pickResult({ place: o, unlocated: false })}
+                      className="underline decoration-neutral-300 underline-offset-2 hover:text-neutral-700 dark:hover:text-neutral-300"
+                    >
+                      {o.name}
+                      {o.type ? ` (${o.type})` : ""}
+                    </button>
+                  </span>
+                ))}
+              </p>
+            );
+          })()}
       </div>
     );
   }
@@ -766,10 +825,16 @@ export function Atlas() {
                 <span className="truncate text-xs text-neutral-400">
                   {r.unlocated
                     ? "location unknown"
-                    : (r.place as AtlasPlace).modern || KIND_LABELS[(r.place as AtlasPlace).kind] || ""}
+                    : [
+                        (r.place as AtlasPlace).type ||
+                          KIND_LABELS[(r.place as AtlasPlace).kind],
+                        (r.place as AtlasPlace).modern,
+                      ]
+                        .filter(Boolean)
+                        .join(" · ")}
                 </span>
                 <span className="ml-auto shrink-0 text-xs tabular-nums text-neutral-400">
-                  {r.mentions}
+                  {r.mentions > 0 ? r.mentions : ""}
                 </span>
               </button>
             </li>

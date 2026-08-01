@@ -93,13 +93,15 @@ function niceBar(unitsPerPx: number, maxPx: number): { d: number; px: number } {
 }
 
 /**
- * Regions and natural features read as italic labels sitting on the land —
- * the way a printed atlas writes "Plain of Sharon" or "Galilee" across an
- * area rather than pinning it with a dot — while settlements keep their
- * marker. Journey stops keep their numbered marker regardless.
+ * Regions read as italic labels sitting on the land — the way a printed
+ * atlas writes "Plain of Sharon" or "Galilee" across an area rather than
+ * pinning it with a dot. Natural features (mountains, valleys, islands) are
+ * POINTS and keep the triangle glyph the Key promises — an italic-labelled
+ * Mount Zaphon was indistinguishable from a region (academic-reader catch,
+ * 2026-08-01). Journey stops keep their numbered marker regardless.
  */
 function isFeaturePlace(p: MapPlaceBase): boolean {
-  return p.seq == null && (p.kind === 2 || p.kind === 3);
+  return p.seq == null && p.kind === 2;
 }
 
 /** Greedy screen-space clustering; members keep their input order. */
