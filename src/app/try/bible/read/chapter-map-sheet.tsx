@@ -15,6 +15,12 @@ import { PlacesMap } from "@/components/places-map";
 
 const KIND_LABELS = ["", "water", "region", "natural feature"];
 
+/** One marker per name+site. Where the dataset keeps several records for
+ *  the same name at the same site (Zin in Joshua 15, Red Sea in Numbers
+ *  33), the card lists each record's verses separately, each with its own
+ *  Sources link — grouping is display-only. */
+type GroupedChapterPlace = ChapterPlace & { members: ChapterPlace[]; weight: number };
+
 export function ChapterMapSheet({
   bookName,
   chapter,
@@ -28,11 +34,31 @@ export function ChapterMapSheet({
   onClose: () => void;
   onGoToVerse: (verse: number) => void;
 }) {
-  const [selection, setSelection] = useState<ChapterPlace[] | null>(null);
+  const [selection, setSelection] = useState<GroupedChapterPlace[] | null>(null);
   const reference = `${chapterReference(bookName, chapter)}`;
   const places = useMemo(
-    // Weight mirrors the atlas mentionsOf: regular + soft, gentilic excluded.
-    () => data.places.map((p) => ({ ...p, weight: p.verses.length + p.soft.length })),
+    // Same-named records at the same site (Zin in Joshua 15, Red Sea in
+    // Numbers 33) group into ONE marker and one card; the card keeps each
+    // record's verses and Sources link separate. Weight mirrors the atlas
+    // mentionsOf: regular + soft, gentilic excluded.
+    () => {
+      const bySite = new Map<string, ChapterPlace[]>();
+      for (const p of data.places) {
+        const k = `${p.name}|${p.x}|${p.y}`;
+        let g = bySite.get(k);
+        if (!g) bySite.set(k, (g = []));
+        g.push(p);
+      }
+      return [...bySite.values()].map((members): GroupedChapterPlace => {
+        const count = (m: ChapterPlace) => m.verses.length + m.soft.length;
+        const sorted = [...members].sort((a, b) => count(b) - count(a));
+        return {
+          ...sorted[0],
+          members: sorted,
+          weight: sorted.reduce((n, m) => n + count(m), 0),
+        };
+      });
+    },
     [data],
   );
 
@@ -116,81 +142,94 @@ export function ChapterMapSheet({
             {/* Selected place card */}
             {selection && (
               <div className="mt-3 rounded-xl bg-neutral-100/80 px-4 py-3 dark:bg-neutral-800/60">
-                {selection.map((p) => (
-                  // key by link: names repeat (91 dupes) and, since records
-                  // stopped merging, so do name+coords pairs (the two Ais) —
-                  // the openbible link is the one per-record unique id.
-                  <div key={p.link} className="py-1 first:pt-0 last:pb-0">
-                    <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
-                      <span className="font-semibold text-neutral-800 dark:text-neutral-100">
-                        {p.name}
+                {selection.map((p) => {
+                  const members = p.members?.length ? p.members : [p];
+                  const grouped = members.length > 1;
+                  const verseButtons = (verses: number[], muted = false) =>
+                    verses.map((v, i) => (
+                      <span key={v}>
+                        {muted && i > 0 && ", "}
+                        <button
+                          onClick={() => onGoToVerse(v)}
+                          className={
+                            muted
+                              ? "underline decoration-neutral-300 underline-offset-2 hover:text-amber-700 dark:hover:text-amber-400"
+                              : "rounded-full bg-white px-2 py-0.5 text-xs font-medium text-amber-700 shadow-sm transition-colors hover:bg-amber-50 dark:bg-neutral-700 dark:text-amber-400 dark:hover:bg-neutral-600"
+                          }
+                        >
+                          v. {v}
+                        </button>
                       </span>
-                      {(p.type || p.kind > 0) && (
-                        <span className="text-xs text-neutral-400">
-                          {p.type || KIND_LABELS[p.kind]}
-                        </span>
+                    ));
+                  const tierLines = (m: ChapterPlace) => (
+                    <>
+                      {m.soft.length > 0 && (
+                        <p className="mt-0.5 text-xs italic text-neutral-500 dark:text-neutral-400">
+                          Some translations read {m.name} here: {verseButtons(m.soft, true)}
+                        </p>
                       )}
-                      <span className="flex flex-wrap gap-1">
-                        {p.verses.map((v) => (
-                          <button
-                            key={v}
-                            onClick={() => onGoToVerse(v)}
-                            className="rounded-full bg-white px-2 py-0.5 text-xs font-medium text-amber-700 shadow-sm transition-colors hover:bg-amber-50 dark:bg-neutral-700 dark:text-amber-400 dark:hover:bg-neutral-600"
-                          >
-                            v. {v}
-                          </button>
+                      {m.gentilic.length > 0 && (
+                        <p className="mt-0.5 text-xs italic text-neutral-500 dark:text-neutral-400">
+                          Named through its people here: {verseButtons(m.gentilic, true)}
+                        </p>
+                      )}
+                    </>
+                  );
+                  const sourcesLink = (link: string) => (
+                    <a
+                      href={openBiblePlaceUrl(link)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline decoration-neutral-300 underline-offset-2 hover:text-neutral-600 dark:hover:text-neutral-300"
+                    >
+                      Sources ↗
+                    </a>
+                  );
+                  return (
+                    // key by leader link: unique per name+site group.
+                    <div key={p.link} className="py-1 first:pt-0 last:pb-0">
+                      <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
+                        <span className="font-semibold text-neutral-800 dark:text-neutral-100">
+                          {p.name}
+                        </span>
+                        {(p.type || p.kind > 0) && (
+                          <span className="text-xs text-neutral-400">
+                            {p.type || KIND_LABELS[p.kind]}
+                          </span>
+                        )}
+                        {!grouped && (
+                          <span className="flex flex-wrap gap-1">{verseButtons(p.verses)}</span>
+                        )}
+                      </div>
+                      {!grouped && tierLines(p)}
+                      {grouped &&
+                        members.map((m) => (
+                          <div key={m.link} className="mt-1">
+                            <span className="flex flex-wrap items-center gap-1 text-xs text-neutral-500 dark:text-neutral-400">
+                              {verseButtons(m.verses)}
+                              {m.uncertain && (
+                                <span className="italic">identification uncertain ·</span>
+                              )}
+                              {sourcesLink(m.link)}
+                            </span>
+                            {tierLines(m)}
+                          </div>
                         ))}
-                      </span>
+                      <p className="mt-0.5 text-xs text-neutral-500 dark:text-neutral-400">
+                        {p.uncertain
+                          ? `Location uncertain${p.modern ? ` — possibly near modern ${p.modern}` : " — best-supported site shown"}. `
+                          : p.modern
+                            ? `Near modern ${p.modern}. `
+                            : ""}
+                        {grouped ? (
+                          <span>{members.length} entries in the source data.</span>
+                        ) : (
+                          sourcesLink(p.link)
+                        )}
+                      </p>
                     </div>
-                    {p.soft.length > 0 && (
-                      <p className="mt-0.5 text-xs italic text-neutral-500 dark:text-neutral-400">
-                        Some translations read {p.name} here:{" "}
-                        {p.soft.map((v, i) => (
-                          <span key={v}>
-                            {i > 0 && ", "}
-                            <button
-                              onClick={() => onGoToVerse(v)}
-                              className="underline decoration-neutral-300 underline-offset-2 hover:text-amber-700 dark:hover:text-amber-400"
-                            >
-                              v. {v}
-                            </button>
-                          </span>
-                        ))}
-                      </p>
-                    )}
-                    {p.gentilic.length > 0 && (
-                      <p className="mt-0.5 text-xs italic text-neutral-500 dark:text-neutral-400">
-                        Named through its people here:{" "}
-                        {p.gentilic.map((v, i) => (
-                          <span key={v}>
-                            {i > 0 && ", "}
-                            <button
-                              onClick={() => onGoToVerse(v)}
-                              className="underline decoration-neutral-300 underline-offset-2 hover:text-amber-700 dark:hover:text-amber-400"
-                            >
-                              v. {v}
-                            </button>
-                          </span>
-                        ))}
-                      </p>
-                    )}
-                    <p className="mt-0.5 text-xs text-neutral-500 dark:text-neutral-400">
-                      {p.uncertain
-                        ? `Location uncertain${p.modern ? ` — possibly near modern ${p.modern}` : " — best-supported site shown"}. `
-                        : p.modern
-                          ? `Near modern ${p.modern}. `
-                          : ""}
-                      <a
-                        href={openBiblePlaceUrl(p.link)}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="underline decoration-neutral-300 underline-offset-2 hover:text-neutral-600 dark:hover:text-neutral-300"
-                      >
-                        Sources ↗
-                      </a>
-                    </p>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             )}
 

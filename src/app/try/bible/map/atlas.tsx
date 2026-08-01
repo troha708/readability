@@ -83,7 +83,33 @@ const MENTION_FILTERS = [
 const INITIAL_REF_CHIPS = 24;
 const SEARCH_LIMIT = 10;
 
-type WeightedPlace = AtlasPlace & { weight: number; mentions: number };
+/** One map object per name+site. Usually a single dataset record; where
+ *  records share both a name and an identified site (the two Ais at Et
+ *  Tell, the Tel Halif Ains — 50 sites, 106 records), the group renders as
+ *  ONE pin and ONE card whose reference lists stay separated per record,
+ *  each with its own Sources link. Grouping is display-only: the records
+ *  underneath remain exactly as the dataset keeps them. `members` is sorted
+ *  most-mentioned first; the leader's own fields come from members[0]. */
+type GroupedPlace = AtlasPlace & { members: AtlasPlace[] };
+
+type WeightedPlace = GroupedPlace & { weight: number; mentions: number };
+
+/** Mentions across a whole group (regular + soft, gentilic excluded —
+ *  the same semantics as mentionsOf). */
+function groupMentionsOf(g: GroupedPlace): number {
+  return g.members.reduce((n, m) => n + mentionsOf(m), 0);
+}
+
+/** A synthetic place whose ref lists span the whole group — for book spans
+ *  and chapter counts over a grouped card. */
+function mergedRefs(g: GroupedPlace): AtlasPlace {
+  return {
+    ...g,
+    refs: g.members.flatMap((m) => m.refs),
+    softRefs: g.members.flatMap((m) => m.softRefs),
+    gentilicRefs: g.members.flatMap((m) => m.gentilicRefs),
+  };
+}
 
 /** Total verse mentions across the whole Bible: every verse where at least
  *  one translation prints the name — regular refs plus the "some
@@ -297,6 +323,32 @@ export function Atlas() {
     return unqualified.length === 1 ? unqualified[0] : null;
   };
 
+  // One display object per name+site (see GroupedPlace). Most groups have a
+  // single member; the 50 multi-member groups are same-named records the
+  // dataset identifies with the same site.
+  const groupedPlaces = useMemo(() => {
+    const bySite = new Map<string, AtlasPlace[]>();
+    for (const p of atlas?.places ?? []) {
+      const k = `${p.name}|${p.x}|${p.y}`;
+      let g = bySite.get(k);
+      if (!g) bySite.set(k, (g = []));
+      g.push(p);
+    }
+    return [...bySite.values()].map((members): GroupedPlace => {
+      const sorted = [...members].sort((a, b) => mentionsOf(b) - mentionsOf(a));
+      return { ...sorted[0], members: sorted };
+    });
+  }, [atlas]);
+
+  // Any member's slug resolves its group — sitemap URLs and shared links to
+  // a non-leader record (?place=ai-3) must keep working.
+  const leaderBySlug = useMemo(() => {
+    const m = new Map<string, GroupedPlace>();
+    for (const g of groupedPlaces)
+      for (const mem of g.members) m.set(placeSlug(mem.link), g);
+    return m;
+  }, [groupedPlaces]);
+
   // Focus mode: ?book=Genesis&chapter=12 shows only that chapter's places.
   const focusBook = searchParams.get("book");
   const focusChapter = parseInt(searchParams.get("chapter") ?? "", 10);
@@ -305,26 +357,28 @@ export function Atlas() {
     const bIdx = atlas.books.indexOf(focusBook);
     if (bIdx === -1) return null;
     const places: WeightedPlace[] = [];
-    for (const p of atlas.places) {
+    for (const g of groupedPlaces) {
       // Chapter focus is about completeness (like the reader's sheet), so a
       // place whose presence in the chapter is soft or gentilic still shows.
       const inChapter = (rs: AtlasRef[]) =>
         rs.find(([b, ch]) => b === bIdx && ch === focusChapter);
-      const ref = inChapter(p.refs) ?? inChapter(p.softRefs) ?? inChapter(p.gentilicRefs);
-      if (ref) places.push({ ...p, weight: ref[2].length, mentions: mentionsOf(p) });
+      let weight = 0;
+      for (const m of g.members) {
+        const ref = inChapter(m.refs) ?? inChapter(m.softRefs) ?? inChapter(m.gentilicRefs);
+        if (ref) weight += ref[2].length;
+      }
+      if (weight > 0) places.push({ ...g, weight, mentions: groupMentionsOf(g) });
     }
     return places.length > 0 ? { book: focusBook, chapter: focusChapter, places } : null;
-  }, [atlas, focusBook, focusChapter]);
+  }, [atlas, groupedPlaces, focusBook, focusChapter]);
 
   const allPlaces = useMemo(
     () =>
-      atlas
-        ? atlas.places.map((p): WeightedPlace => {
-            const mentions = mentionsOf(p);
-            return { ...p, weight: mentions, mentions };
-          })
-        : [],
-    [atlas],
+      groupedPlaces.map((g): WeightedPlace => {
+        const mentions = groupMentionsOf(g);
+        return { ...g, weight: mentions, mentions };
+      }),
+    [groupedPlaces],
   );
 
   // Most-mentioned position per atlas name, for resolving a title qualifier
@@ -354,8 +408,10 @@ export function Atlas() {
     const out: WeightedPlace[] = [];
     for (const p of allPlaces) {
       let mentions = 0;
-      for (const r of p.refs) if (refInScope(r)) mentions += r[2].length;
-      for (const r of p.softRefs) if (refInScope(r)) mentions += r[2].length;
+      for (const m of p.members) {
+        for (const r of m.refs) if (refInScope(r)) mentions += r[2].length;
+        for (const r of m.softRefs) if (refInScope(r)) mentions += r[2].length;
+      }
       if (mentions > 0) out.push({ ...p, weight: mentions, mentions });
     }
     return out;
@@ -370,7 +426,7 @@ export function Atlas() {
     if (!atlas || journeyIdx === null) return null;
     const j = atlas.journeys[journeyIdx];
     if (!j) return null;
-    const byKey = new Map(atlas.places.map((p) => [`${p.name}|${p.x}|${p.y}`, p]));
+    const byKey = new Map(groupedPlaces.map((p) => [`${p.name}|${p.x}|${p.y}`, p]));
     const seen = new Set<string>();
     const stops: (WeightedPlace & { seq: number })[] = [];
     j.stops.forEach((s, i) => {
@@ -378,19 +434,19 @@ export function Atlas() {
       if (seen.has(key)) return; // return legs revisit cities — number once
       seen.add(key);
       const ap = byKey.get(key);
-      const base: AtlasPlace = ap ?? {
+      const base: GroupedPlace = ap ?? {
         name: s.name, x: s.x, y: s.y, kind: 0, uncertain: false, modern: "", link: "", refs: [],
-        type: "", softRefs: [], gentilicRefs: [],
+        type: "", softRefs: [], gentilicRefs: [], members: [],
       };
       stops.push({
         ...base,
         weight: 1000 - i,
-        mentions: ap ? mentionsOf(ap) : 0,
+        mentions: ap ? groupMentionsOf(ap) : 0,
         seq: i + 1,
       });
     });
     return { journey: j, stops, route: j.stops.flatMap((s) => [s.x, s.y]) };
-  }, [atlas, journeyIdx]);
+  }, [atlas, groupedPlaces, journeyIdx]);
 
   const basePlaces = focus ? focus.places : scopedPlaces;
   const places = useMemo(
@@ -414,9 +470,9 @@ export function Atlas() {
   const results = useMemo(() => {
     const q = normalize(query.trim());
     if (!atlas || q.length < 2) return [];
-    const located = atlas.places
+    const located = groupedPlaces
       .filter((p) => normalize(p.name).includes(q))
-      .map((p) => ({ place: p, unlocated: false as const, mentions: mentionsOf(p) }));
+      .map((p) => ({ place: p, unlocated: false as const, mentions: groupMentionsOf(p) }));
     const unlocated = atlas.unlocated
       .filter((p) => normalize(p.name).includes(q))
       .map((p) => ({ place: p, unlocated: true as const, mentions: mentionsOf(p) }));
@@ -429,22 +485,23 @@ export function Atlas() {
         return ap - bp || b.mentions - a.mentions;
       })
       .slice(0, SEARCH_LIMIT);
-  }, [atlas, query]);
+  }, [atlas, groupedPlaces, query]);
 
   // Places sharing a base name (the two Zaphons, the four Apheks) cross-link
   // in the detail panel, so one entry can never silently hide another — an
   // academic reader clicked the town Zaphon and reasonably concluded the
-  // mountain's references were missing (2026-08-01).
+  // mountain's references were missing (2026-08-01). Built over groups, so
+  // same-site records never cross-link to themselves.
   const sameName = useMemo(() => {
-    const groups = new Map<string, AtlasPlace[]>();
-    for (const p of atlas?.places ?? []) {
+    const groups = new Map<string, GroupedPlace[]>();
+    for (const p of groupedPlaces) {
       const base = normalize(p.name.replace(/^Mount /, ""));
       let g = groups.get(base);
       if (!g) groups.set(base, (g = []));
       g.push(p);
     }
     return groups;
-  }, [atlas]);
+  }, [groupedPlaces]);
 
   /** Select a search result / deep-linked place. `zoomTo: false` selects
    *  without moving the camera (a shared ?x=&y=&k= view is about to land).
@@ -461,14 +518,16 @@ export function Atlas() {
       setPanel({ type: "unlocated", place: r.place as AtlasUnlocated });
       return false;
     }
-    const p = r.place as AtlasPlace;
+    const p = r.place as GroupedPlace;
+    const members = p.members?.length ? p.members : [p];
+    const pMentions = members.reduce((n, m) => n + mentionsOf(m), 0);
     // Searching a place relaxes any filter that would hide it.
-    const filterRelaxed = !kinds.has(p.kind) || mentionsOf(p) < minMentions;
+    const filterRelaxed = !kinds.has(p.kind) || pMentions < minMentions;
     setKinds((prev) => (prev.has(p.kind) ? prev : new Set([...prev, p.kind])));
-    if (mentionsOf(p) < minMentions) setMinMentions(0);
+    if (pMentions < minMentions) setMinMentions(0);
     const scopeRelaxed = journeyView
       ? !journeyView.stops.some((s) => placeKey(s) === placeKey(p))
-      : !p.refs.some((ref) => refInScope(ref));
+      : !members.some((m) => [...m.refs, ...m.softRefs].some((ref) => refInScope(ref)));
     if (scopeRelaxed) setScope("all");
     setPanel({ type: "places", members: [p] });
     if (!zoomTo) {
@@ -534,9 +593,7 @@ export function Atlas() {
     if (!newPlace && !newView) return;
     if (placeParam) appliedPlace.current = placeParam;
     appliedView.current = viewSig;
-    const located = placeParam
-      ? atlas.places.find((p) => placeSlug(p.link) === placeParam)
-      : undefined;
+    const located = placeParam ? leaderBySlug.get(placeParam) : undefined;
     const unlocated =
       located || !placeParam
         ? undefined
@@ -715,9 +772,68 @@ export function Atlas() {
   }
 
   function placeDetails(p: AtlasPlace | AtlasUnlocated, located: boolean) {
-    const refs = showAllRefs ? p.refs : p.refs.slice(0, INITIAL_REF_CHIPS);
-    const lp = located ? (p as AtlasPlace) : null;
+    const lp = located ? (p as GroupedPlace) : null;
+    const members = lp ? (lp.members?.length ? lp.members : [lp]) : [];
+    const grouped = members.length > 1;
+    // Header numbers span the whole group; a single-member group renders
+    // exactly as a plain place.
+    const view = lp ? (grouped ? mergedRefs(lp) : lp) : null;
     const dictId = dictIdFor(lp ?? { name: p.name });
+
+    const sourcesLink = (link: string) => (
+      <a
+        href={openBiblePlaceUrl(link)}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="underline decoration-neutral-300 underline-offset-2 hover:text-neutral-600 dark:hover:text-neutral-300"
+      >
+        Sources ↗
+      </a>
+    );
+
+    // One record's reference lists: regular chips, then the soft and
+    // gentilic tiers. Used once for plain places, per member for groups.
+    const refLists = (m: AtlasPlace) => {
+      const shown = showAllRefs ? m.refs : m.refs.slice(0, INITIAL_REF_CHIPS);
+      return (
+        <>
+          {m.refs.length > 0 && (
+            <div className="mt-1.5 flex flex-wrap gap-1">
+              {shown.map((r) => refChip(m, r))}
+              {m.refs.length > INITIAL_REF_CHIPS && !showAllRefs && (
+                <button
+                  onClick={() => setShowAllRefs(true)}
+                  className="rounded-full px-2 py-0.5 text-xs font-medium text-neutral-500 underline decoration-neutral-300 underline-offset-2 hover:text-neutral-700 dark:hover:text-neutral-300"
+                >
+                  all {m.refs.length}
+                </button>
+              )}
+            </div>
+          )}
+          {m.softRefs.length > 0 && (
+            <div className="mt-1.5">
+              <p className="text-xs italic text-neutral-500 dark:text-neutral-400">
+                Some translations read {m.name} here:
+              </p>
+              <div className="mt-1 flex flex-wrap gap-1">
+                {m.softRefs.map((r) => refChip(m, r, true))}
+              </div>
+            </div>
+          )}
+          {m.gentilicRefs.length > 0 && (
+            <div className="mt-1.5">
+              <p className="text-xs italic text-neutral-500 dark:text-neutral-400">
+                Named through its people here:
+              </p>
+              <div className="mt-1 flex flex-wrap gap-1">
+                {m.gentilicRefs.map((r) => refChip(m, r, true))}
+              </div>
+            </div>
+          )}
+        </>
+      );
+    };
+
     return (
       <div key={p.link} className="py-1.5 first:pt-0 last:pb-0">
         <div className="flex flex-wrap items-baseline gap-x-2">
@@ -726,13 +842,13 @@ export function Atlas() {
             <span className="text-xs text-neutral-400">{lp.type || KIND_LABELS[lp.kind]}</span>
           )}
           <span className="text-xs text-neutral-400">
-            {lp && p.refs.length === 0 && lp.softRefs.length + lp.gentilicRefs.length > 0
-              ? lp.softRefs.length === 0
+            {view && view.refs.length === 0 && view.softRefs.length + view.gentilicRefs.length > 0
+              ? view.softRefs.length === 0
                 ? "named only through its people"
-                : lp.gentilicRefs.length === 0
+                : view.gentilicRefs.length === 0
                   ? "named only in some translations"
                   : "named only indirectly"
-              : `${mentionsOf(p)} mention${mentionsOf(p) === 1 ? "" : "s"} in ${chapterCountOf(p)} chapter${chapterCountOf(p) === 1 ? "" : "s"}`}
+              : `${mentionsOf(view ?? p)} mention${mentionsOf(view ?? p) === 1 ? "" : "s"} in ${chapterCountOf(view ?? p)} chapter${chapterCountOf(view ?? p) === 1 ? "" : "s"}`}
           </span>
         </div>
         <p className="mt-0.5 text-xs text-neutral-500 dark:text-neutral-400">
@@ -743,19 +859,16 @@ export function Atlas() {
               : lp!.modern
                 ? `Near modern ${lp!.modern}. `
                 : ""}
-          {p.link && (
-            <a
-              href={openBiblePlaceUrl(p.link)}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline decoration-neutral-300 underline-offset-2 hover:text-neutral-600 dark:hover:text-neutral-300"
-            >
-              Sources ↗
-            </a>
+          {grouped && (
+            // The dataset keeps these as distinct textual records that
+            // resolve to the same site; the card groups them, each list
+            // keeping its own source page below.
+            <span>{members.length} entries in the source data. </span>
           )}
+          {!grouped && p.link && sourcesLink(p.link)}
           {dictId && (
             <>
-              {p.link && " · "}
+              {(!grouped && p.link) || grouped ? " · " : ""}
               <Link
                 href={`/try/bible/dictionary?entry=${encodeURIComponent(dictId)}`}
                 className="underline decoration-neutral-300 underline-offset-2 hover:text-neutral-600 dark:hover:text-neutral-300"
@@ -765,37 +878,35 @@ export function Atlas() {
             </>
           )}
         </p>
-        <div className="mt-1.5 flex flex-wrap gap-1">
-          {refs.map((r) => refChip(p, r))}
-          {p.refs.length > INITIAL_REF_CHIPS && !showAllRefs && (
-            <button
-              onClick={() => setShowAllRefs(true)}
-              className="rounded-full px-2 py-0.5 text-xs font-medium text-neutral-500 underline decoration-neutral-300 underline-offset-2 hover:text-neutral-700 dark:hover:text-neutral-300"
-            >
-              all {p.refs.length}
-            </button>
-          )}
-        </div>
-        {lp && lp.softRefs.length > 0 && (
-          <div className="mt-1.5">
-            <p className="text-xs italic text-neutral-500 dark:text-neutral-400">
-              Some translations read {lp.name} here:
-            </p>
-            <div className="mt-1 flex flex-wrap gap-1">
-              {lp.softRefs.map((r) => refChip(p, r, true))}
-            </div>
+        {!lp && (
+          <div className="mt-1.5 flex flex-wrap gap-1">
+            {(showAllRefs ? p.refs : p.refs.slice(0, INITIAL_REF_CHIPS)).map((r) => refChip(p, r))}
+            {p.refs.length > INITIAL_REF_CHIPS && !showAllRefs && (
+              <button
+                onClick={() => setShowAllRefs(true)}
+                className="rounded-full px-2 py-0.5 text-xs font-medium text-neutral-500 underline decoration-neutral-300 underline-offset-2 hover:text-neutral-700 dark:hover:text-neutral-300"
+              >
+                all {p.refs.length}
+              </button>
+            )}
           </div>
         )}
-        {lp && lp.gentilicRefs.length > 0 && (
-          <div className="mt-1.5">
-            <p className="text-xs italic text-neutral-500 dark:text-neutral-400">
-              Named through its people here:
-            </p>
-            <div className="mt-1 flex flex-wrap gap-1">
-              {lp.gentilicRefs.map((r) => refChip(p, r, true))}
+        {lp && !grouped && refLists(lp)}
+        {lp &&
+          grouped &&
+          members.map((m) => (
+            <div key={m.link} className="mt-2">
+              <p className="text-xs text-neutral-500 dark:text-neutral-400">
+                {bookSpanOf(m, atlas!.books)}
+                {m.uncertain && (
+                  <span className="italic"> · identification uncertain</span>
+                )}
+                {" · "}
+                {sourcesLink(m.link)}
+              </p>
+              {refLists(m)}
             </div>
-          </div>
-        )}
+          ))}
         {lp &&
           (() => {
             const siblings = (
@@ -808,7 +919,7 @@ export function Atlas() {
                 {siblings.map((o, i) => {
                   // Type alone can't tell the three Babylons apart — the
                   // book span (from the record's own refs) can.
-                  const hint = [o.type, bookSpanOf(o, atlas!.books)]
+                  const hint = [o.type, bookSpanOf(mergedRefs(o), atlas!.books)]
                     .filter(Boolean)
                     .join(" · ");
                   return (
@@ -888,7 +999,7 @@ export function Atlas() {
                   {r.unlocated
                     ? "location unknown"
                     : (() => {
-                        const lp = r.place as AtlasPlace;
+                        const lp = r.place as GroupedPlace;
                         // Same-named places (the Ains, the Babylons) also get
                         // their book span, so the rows tell themselves apart.
                         const dup =
@@ -896,7 +1007,7 @@ export function Atlas() {
                         return [
                           lp.type || KIND_LABELS[lp.kind],
                           lp.modern,
-                          dup ? bookSpanOf(lp, atlas!.books) : "",
+                          dup ? bookSpanOf(mergedRefs(lp), atlas!.books) : "",
                         ]
                           .filter(Boolean)
                           .join(" · ");
