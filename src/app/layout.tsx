@@ -86,6 +86,15 @@ export const viewport: Viewport = {
 // access but run matchMedia fine. Dark only as the last resort.
 const themeScript = `(function(){var dark=true;try{var t=localStorage.getItem('theme');dark=t?t!=='light':window.matchMedia('(prefers-color-scheme: dark)').matches}catch(e){try{dark=window.matchMedia('(prefers-color-scheme: dark)').matches}catch(e2){}}if(dark)document.documentElement.classList.add('dark')})()`;
 
+// The other half of ReturningUserRedirect's session guard: any full page
+// load AWAY from the landing marks the tab's session, so navigating to "/"
+// from inside the app (the reader's logo link) never triggers the
+// returning-reader redirect. Without this, a session that ENTERS on a deep
+// link (bookmark, shared reader URL) has no flag, and the logo bounces the
+// user straight back to the reader. The landing itself must not set the
+// flag here — its redirect only fires when "/" is the session's first page.
+const sessionScript = `(function(){try{if(location.pathname!=='/')sessionStorage.setItem('bible-session-active','true')}catch(e){}})()`;
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -99,6 +108,7 @@ export default function RootLayout({
     >
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+        <script dangerouslySetInnerHTML={{ __html: sessionScript }} />
       </head>
       <body className="antialiased">
         {children}

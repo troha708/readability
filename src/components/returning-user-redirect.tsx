@@ -12,7 +12,10 @@ export function ReturningUserRedirect() {
 
   useEffect(() => {
     // If the user has already visited any page this session (tab/window),
-    // they're navigating internally — don't redirect.
+    // they're navigating internally — don't redirect. The flag is set by
+    // this component AND by the root layout's sessionScript on every
+    // non-landing page load, so a session entering on a deep link still
+    // counts as "in the app" when the logo brings it to "/".
     if (sessionStorage.getItem(SESSION_KEY)) return;
 
     // Mark session as active so future in-app navigations to "/" won't redirect.

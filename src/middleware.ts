@@ -15,6 +15,11 @@ function landingRedirect(request: NextRequest): NextResponse | null {
   const url = request.nextUrl;
   if (url.pathname !== "/") return null;
   if (url.searchParams.has("stay")) return null;
+  // App Router client-side navigations (and prefetches) fetch RSC payloads
+  // with this header — by definition the user is already inside the app
+  // (e.g. the reader's logo link), so never bounce them off the landing.
+  // Also keeps a prefetch of "/" from caching a redirect response.
+  if (request.headers.get("rsc")) return null;
   const referer = request.headers.get("referer");
   try {
     if (referer && new URL(referer).origin === url.origin) return null;
