@@ -232,7 +232,13 @@ function PlaceContent({ target }: { target: SeoTarget & { kind: "place" } }) {
   const slug = placeSlug(place.link);
   const url = `/try/bible/map?place=${encodeURIComponent(slug)}`;
   const mentions = mentionsOf(place);
-  const span = distinctBooks(place.refs);
+  // Soft/gentilic tiers exist on located places only; unlocated ref lists
+  // already carry every tier merged.
+  const softRefs = target.located ? target.place.softRefs : [];
+  const gentilicRefs = target.located ? target.place.gentilicRefs : [];
+  const totalMentions =
+    mentions + mentionsOf({ refs: softRefs }) + mentionsOf({ refs: gentilicRefs });
+  const span = distinctBooks([...place.refs, ...softRefs, ...gentilicRefs]);
 
   const jsonLd: object[] = [breadcrumbJsonLd(place.name, url)];
   if (target.located) {
@@ -241,7 +247,7 @@ function PlaceContent({ target }: { target: SeoTarget & { kind: "place" } }) {
       "@type": "Place",
       name: place.name,
       ...(target.place.modern ? { alternateName: target.place.modern } : {}),
-      description: `${place.name}, a ${KIND_LABELS[target.place.kind]} mentioned in ${verseCount(mentions)} of the Bible.`,
+      description: `${place.name}, a ${KIND_LABELS[target.place.kind]} named in ${verseCount(totalMentions)} of the Bible.`,
       sameAs: openBiblePlaceUrl(place.link),
       url: `${SITE_URL}${url}`,
     });
@@ -249,6 +255,17 @@ function PlaceContent({ target }: { target: SeoTarget & { kind: "place" } }) {
 
   const shownRefs = place.refs.slice(0, MAX_REF_LINKS);
   const elided = place.refs.length - shownRefs.length;
+  const refList = (refs: AtlasRef[]) => (
+    <ul>
+      {refs.map(([b, ch, verses]) => (
+        <li key={`${b}-${ch}`}>
+          <Link href={refHref(books[b], ch, verses[0])}>
+            {books[b]} {ch}:{verses.join(", ")}
+          </Link>
+        </li>
+      ))}
+    </ul>
+  );
 
   return (
     <>
@@ -261,9 +278,16 @@ function PlaceContent({ target }: { target: SeoTarget & { kind: "place" } }) {
         <p>
           {target.located ? (
             <>
-              {place.name} is a {KIND_LABELS[target.place.kind]} mentioned in{" "}
-              {verseCount(mentions)} of the Bible ({span.join(", ")}), shown here
-              on an interactive map.
+              {place.name} is a {KIND_LABELS[target.place.kind]} named in{" "}
+              {verseCount(totalMentions)} of the Bible ({span.join(", ")}), shown
+              here on an interactive map.
+              {mentions === 0 &&
+                gentilicRefs.length > 0 &&
+                " The text names it through its people rather than by its own name."}
+              {mentions === 0 &&
+                gentilicRefs.length === 0 &&
+                softRefs.length > 0 &&
+                " Only some translations render the name."}
               {target.place.modern && ` It is identified with ${target.place.modern}.`}
               {target.place.uncertain &&
                 " The identification is uncertain: scholars split it across candidate sites."}
@@ -276,17 +300,25 @@ function PlaceContent({ target }: { target: SeoTarget & { kind: "place" } }) {
             </>
           )}
         </p>
-        <h2>Verses that mention {place.name}</h2>
-        <ul>
-          {shownRefs.map(([b, ch, verses]) => (
-            <li key={`${b}-${ch}`}>
-              <Link href={refHref(books[b], ch, verses[0])}>
-                {books[b]} {ch}:{verses.join(", ")}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        {shownRefs.length > 0 && (
+          <>
+            <h2>Verses that mention {place.name}</h2>
+            {refList(shownRefs)}
+          </>
+        )}
         {elided > 0 && <p>…and {elided} more chapters on the map itself.</p>}
+        {softRefs.length > 0 && (
+          <>
+            <h2>Verses where some translations read {place.name}</h2>
+            {refList(softRefs)}
+          </>
+        )}
+        {gentilicRefs.length > 0 && (
+          <>
+            <h2>Verses that name {place.name} through its people</h2>
+            {refList(gentilicRefs)}
+          </>
+        )}
         <p>
           <a href={openBiblePlaceUrl(place.link)} rel="noopener">
             Scholarly sources for {place.name} (OpenBible.info)

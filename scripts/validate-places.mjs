@@ -60,24 +60,28 @@ for (const [book, chapters] of byBook) {
     if (!bsbChapters.has(chKey)) fail(`${book} ${chKey}: chapter not in BSB text`);
     for (const p of ch.p ?? []) {
       placeCount++;
-      const [name, x, y, kind, uncertain, verses, modernName, link, type, soft] = p;
+      const [name, x, y, kind, uncertain, verses, modernName, link, type, soft, gentilic] = p;
       if (typeof name !== "string" || !name) fail(`${book} ${chKey}: empty place name`);
       if (/ \d+$/.test(name)) fail(`${book} ${chKey}: "${name}" kept a disambiguation suffix`);
       if (!Number.isInteger(x) || x < 0 || x > GRID_WIDTH || !Number.isInteger(y) || y < 0 || y > GRID_HEIGHT)
         fail(`${book} ${chKey}: "${name}" out-of-grid coordinates ${x},${y}`);
       if (![0, 1, 2, 3].includes(kind)) fail(`${book} ${chKey}: "${name}" bad kind ${kind}`);
       if (![0, 1].includes(uncertain)) fail(`${book} ${chKey}: "${name}" bad uncertain flag`);
-      // Regular verses may be empty only when soft verses carry the entry
-      // (the place's presence in this chapter rests on 1-of-10-translation
-      // renderings, e.g. Mount Zaphon in Job 26).
+      // Regular verses may be empty only when soft or gentilic verses carry
+      // the entry (Mount Zaphon in Job 26; Gerasa in Mark 5).
       const badVerseArr = (a) =>
         !Array.isArray(a) || a.some((v) => !Number.isInteger(v) || v < 1);
-      if (badVerseArr(verses) || (verses.length === 0 && !soft))
+      if (badVerseArr(verses) || (verses.length === 0 && !soft && !gentilic))
         fail(`${book} ${chKey}: "${name}" bad verse list`);
-      if (soft !== undefined && (badVerseArr(soft) || soft.length === 0))
+      // Soft may be an empty placeholder only when gentilic follows it.
+      if (soft !== undefined && (badVerseArr(soft) || (soft.length === 0 && !gentilic?.length)))
         fail(`${book} ${chKey}: "${name}" bad soft verse list`);
-      if (soft && verses.some((v) => soft.includes(v)))
-        fail(`${book} ${chKey}: "${name}" verse listed as both regular and soft`);
+      if (gentilic !== undefined && (badVerseArr(gentilic) || gentilic.length === 0))
+        fail(`${book} ${chKey}: "${name}" bad gentilic verse list`);
+      const tiers = [verses, soft ?? [], gentilic ?? []];
+      const total = tiers.flat().length;
+      if (new Set(tiers.flat()).size !== total)
+        fail(`${book} ${chKey}: "${name}" verse listed in two tiers`);
       if (typeof modernName !== "string") fail(`${book} ${chKey}: "${name}" bad modern name`);
       if (typeof link !== "string" || !/^[a-z0-9]+\/.+$/.test(link))
         fail(`${book} ${chKey}: "${name}" bad openbible link "${link}"`);
@@ -155,16 +159,20 @@ if (!fs.existsSync(atlasFile)) {
     fail(`atlas books list has ${atlas.books?.length} entries, expected 66`);
   if (!Array.isArray(atlas.places) || atlas.places.length < 1000)
     fail(`atlas has only ${atlas.places?.length} places`);
-  for (const [name, x, y, kind, uncertain, modern, link, refs, type, softRefs] of atlas.places) {
+  const seenLinks = new Set();
+  for (const [name, x, y, kind, uncertain, modern, link, refs, type, softRefs, gentilicRefs] of atlas.places) {
     if (typeof link !== "string" || !link.includes("/")) fail(`atlas "${name}": bad link`);
+    if (seenLinks.has(link)) fail(`atlas "${name}": duplicate link ${link}`);
+    seenLinks.add(link);
     if (!Number.isInteger(x) || x < 0 || x > GRID_WIDTH || !Number.isInteger(y) || y < 0 || y > GRID_HEIGHT)
       fail(`atlas "${name}": out-of-grid ${x},${y}`);
     if (![0, 1, 2, 3].includes(kind) || ![0, 1].includes(uncertain) || typeof modern !== "string")
       fail(`atlas "${name}": bad kind/uncertain/modern`);
     if (typeof type !== "string") fail(`atlas "${name}": missing type word`);
     // Regular refs may be empty only when the place exists purely through
-    // soft (1-of-10-translation) references.
-    if (!Array.isArray(refs) || (refs.length === 0 && !softRefs)) fail(`atlas "${name}": no refs`);
+    // soft or gentilic references (Gerasa: only "country of the Gerasenes").
+    if (!Array.isArray(refs) || (refs.length === 0 && !softRefs && !gentilicRefs))
+      fail(`atlas "${name}": no refs`);
     const checkRefs = (list, label) => {
       for (const [bIdx, ch, verses] of list) {
         if (!Number.isInteger(bIdx) || bIdx < 0 || bIdx >= atlas.books.length)
@@ -175,9 +183,14 @@ if (!fs.existsSync(atlasFile)) {
     };
     checkRefs(refs, "regular");
     if (softRefs !== undefined) {
-      if (!Array.isArray(softRefs) || softRefs.length === 0)
+      if (!Array.isArray(softRefs) || (softRefs.length === 0 && !gentilicRefs?.length))
         fail(`atlas "${name}": empty soft ref list`);
       else checkRefs(softRefs, "soft");
+    }
+    if (gentilicRefs !== undefined) {
+      if (!Array.isArray(gentilicRefs) || gentilicRefs.length === 0)
+        fail(`atlas "${name}": empty gentilic ref list`);
+      else checkRefs(gentilicRefs, "gentilic");
     }
   }
   const jerusalem = atlas.places.find((p) => p[0] === "Jerusalem");
@@ -212,6 +225,40 @@ if (!fs.existsSync(atlasFile)) {
   if (!akeldama) fail("atlas: Akeldama missing");
   else if (akeldama[3] !== 3 || akeldama[8] !== "field")
     fail(`atlas Akeldama: kind ${akeldama[3]}/type "${akeldama[8]}", expected 3/"field"`);
+
+  // Gentilic tier (2026-08-01 source-consistency audit): places named only
+  // through their people must exist and carry those refs in the third tier.
+  const MARK = 40;
+  const gerasa = atlas.places.find((p) => p[0] === "Gerasa");
+  if (!gerasa) {
+    fail("atlas: Gerasa missing (gentilic-only place dropped?)");
+  } else {
+    if (gerasa[7].length !== 0) fail(`atlas Gerasa: expected no regular refs, got ${JSON.stringify(gerasa[7])}`);
+    const g = JSON.stringify(gerasa[10] ?? []);
+    if (!g.includes(`[${MARK},5,`)) fail(`atlas Gerasa: gentilic refs ${g} missing Mark 5`);
+  }
+  if (!atlas.places.find((p) => p[0] === "Gadara")) fail("atlas: Gadara missing");
+  const jebus = atlas.places.find((p) => p[0] === "Jebus");
+  const JOSH = 5;
+  if (!jebus) fail("atlas: Jebus missing");
+  else if (!JSON.stringify(jebus[10] ?? []).includes(`[${JOSH},15,[8]]`))
+    fail(`atlas Jebus: gentilic refs ${JSON.stringify(jebus[10])} missing Josh 15:8`);
+
+  // Unmerged same-site records: Joshua's Ai (ai-1) and the Ezra/Nehemiah Ai
+  // (ai-3) both resolve to Deir Dibwan — they must ship as SEPARATE entries
+  // at identical coordinates, each with its own link and verse list, so each
+  // card matches its own source page. (ai-2 is a different Ai, in Ammon.)
+  const coLocatedAis = atlas.places.filter(
+    (p, _, all) =>
+      p[0] === "Ai" &&
+      all.some((q) => q !== p && q[0] === "Ai" && q[1] === p[1] && q[2] === p[2]),
+  );
+  if (coLocatedAis.length < 2)
+    fail(
+      `atlas: expected ≥2 co-located Ai entries (unmerge regression?), have ${coLocatedAis.length}`,
+    );
+  if (new Set(coLocatedAis.map((p) => p[6])).size !== coLocatedAis.length)
+    fail("atlas: co-located Ai entries share a link");
   const job26 = (byBook.get("Job")?.["26"]?.p ?? []).find((p) => p[0] === "Mount Zaphon");
   if (!job26) fail("Job 26: Mount Zaphon missing from chapter file");
   else if (JSON.stringify(job26[9] ?? []) !== "[7]" || job26[5].length !== 0)

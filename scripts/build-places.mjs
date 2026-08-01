@@ -7,12 +7,16 @@
  * Only representative-point coordinates are used (plain CC BY); the dataset's
  * OSM-derived precise geometries (ODbL) are not touched.
  *
- * Every verse the dataset lists for a place is kept (the geocoding data is
- * the source of truth). A verse where at least MIN_NAME_TRANSLATIONS of the
- * dataset's ten reference translations render the place as a proper name is
- * a regular reference; a verse below that bar (e.g. Job 26:7, where the NRSV
- * alone reads "Zaphon" and the rest "the north") is emitted separately as a
- * "soft" reference so the UI can present it as "some translations read...".
+ * Every verse the dataset lists for a place is kept whenever the text names
+ * the place in any form (the geocoding data is the source of truth), in
+ * three tiers: regular (proper name in ≥ MIN_NAME_TRANSLATIONS of the ten
+ * reference translations), "soft" (exactly one — Job 26:7, where the NRSV
+ * alone reads "Zaphon" — presented as "some translations read..."), and
+ * "gentilic" (no translation prints the name but the text names the people —
+ * "country of the Gerasenes" — presented as "named through its people").
+ * Only pure common-noun instances are excluded. One output entry per
+ * dataset record — same-name co-located records are NOT merged, so every
+ * card matches its own openbible.info source page.
  * The location comes from the dataset's top-ranked identification; when the
  * source votes are split across candidates the place is flagged uncertain.
  * Places with no locatable identification (Eden, Azazel...) are listed
@@ -21,7 +25,7 @@
  * Output: data/places/<Book>.json
  *   { "book": "...", "chapters": { "12": {
  *       "p": [[name, x, y, kind, uncertain, [verses], modernName, link,
- *              type, [softVerses]], ...],
+ *              type, [softVerses], [gentilicVerses]], ...],
  *       "u": [[name, [verses]], ...] } } }
  * x/y are integer grid units (see scripts/map-projection.mjs);
  * kind: 0 settlement, 1 water, 2 region/people, 3 natural feature;
@@ -35,7 +39,7 @@
  * canon-ordered book list:
  *   { v, books: [...66 names], places: [[name, x, y, kind, uncertain,
  *     modern, link, [[bookIdx, chapter, [verses]], ...], type,
- *     [[bookIdx, chapter, [softVerses]], ...]], ...],
+ *     [softRefs...], [gentilicRefs...]], ...],
  *     unlocated: [[name, link, refs], ...] }
  *
  * Prerequisite (~15 MB, not committed):
@@ -142,16 +146,29 @@ let unlocatedPlaces = 0;
 let uncertainPlaces = 0;
 let skippedVerses = 0;
 let softVerseCount = 0;
+let gentilicVerseCount = 0;
 let mountRenames = 0;
 const softPlaceNames = new Set();
+const gentilicPlaceNames = new Set();
 
 for (const rec of ancient) {
-  // Follow the dataset: every verse where at least one translation renders
-  // the place as a proper name is kept. Below MIN_NAME_TRANSLATIONS it's
-  // "soft" — the name isn't visible in most translations there.
-  const keptVerses = (rec.verses ?? []).filter((v) => (v.instance_types?.name ?? 0) >= 1);
+  // Follow the dataset: keep every verse where the place is visible in the
+  // text at all — as a proper name in at least one translation, or through
+  // its people ("Jebusites", "country of the Gerasenes"). Three tiers:
+  //   hard:     name in ≥ MIN_NAME_TRANSLATIONS translations (plain citation)
+  //   soft:     name in exactly 1 translation ("Some translations read...")
+  //   gentilic: name in 0, people_group in ≥1 ("Named through its people")
+  // Pure common-noun instances ("springs") stay excluded — no translation's
+  // text names the place in any form there.
+  const keptVerses = (rec.verses ?? []).filter(
+    (v) => (v.instance_types?.name ?? 0) >= 1 || (v.instance_types?.people_group ?? 0) >= 1,
+  );
   if (keptVerses.length === 0) continue;
-  const isSoft = (v) => (v.instance_types?.name ?? 0) < MIN_NAME_TRANSLATIONS;
+  const tierOf = (v) => {
+    const names = v.instance_types?.name ?? 0;
+    if (names >= MIN_NAME_TRANSLATIONS) return "hard";
+    return names >= 1 ? "soft" : "gentilic";
+  };
 
   let name = rec.friendly_id.replace(/ \d+$/, "");
   const baseName = name;
@@ -255,29 +272,39 @@ for (const rec of ancient) {
       ch = { p: new Map(), u: new Map() };
       chapters.set(chapter, ch);
     }
-    const soft = isSoft(v);
-    if (soft) {
+    const tier = tierOf(v);
+    if (tier === "soft") {
       softVerseCount++;
       softPlaceNames.add(entry ? entry.name : rec.friendly_id);
+    } else if (tier === "gentilic") {
+      gentilicVerseCount++;
+      gentilicPlaceNames.add(entry ? entry.name : rec.friendly_id);
     }
     if (entry) {
-      // Two ancient places can resolve to the same name and spot in one
-      // chapter (e.g. the two figurative Babylons that both resolve to Rome);
-      // merge their verse lists (the first record's link wins).
-      const key = `${entry.name}|${entry.x}|${entry.y}`;
+      // One entry per dataset record — records are NOT merged even when two
+      // share a name and coordinates (the two figurative Babylons at Rome,
+      // Ai 1/Ai 2): each keeps its own verse list and its own Sources link,
+      // so every card matches its openbible.info page exactly. Co-located
+      // markers cluster on the map and the panel shows both cards.
+      const key = entry.link;
       let dedup = ch.p.get(key);
       if (!dedup) {
-        dedup = { ...entry, verses: new Set(), soft: new Set() };
+        dedup = { ...entry, verses: new Set(), soft: new Set(), gentilic: new Set() };
         ch.p.set(key, dedup);
       }
-      (soft ? dedup.soft : dedup.verses).add(verse);
+      (tier === "hard" ? dedup.verses : tier === "soft" ? dedup.soft : dedup.gentilic).add(verse);
 
       let atlas = atlasPlaces.get(key);
       if (!atlas) {
-        atlas = { entry, refs: new Map(), softRefs: new Map() };
+        atlas = { entry, refs: new Map(), softRefs: new Map(), gentilicRefs: new Map() };
         atlasPlaces.set(key, atlas);
       }
-      addRef(soft ? atlas.softRefs : atlas.refs, book, chapter, verse);
+      addRef(
+        tier === "hard" ? atlas.refs : tier === "soft" ? atlas.softRefs : atlas.gentilicRefs,
+        book,
+        chapter,
+        verse,
+      );
     } else {
       let dedup = ch.u.get(rec.friendly_id);
       if (!dedup) {
@@ -448,15 +475,18 @@ for (const [book, chapters] of byBook) {
         ...e,
         verses: [...e.verses].sort((a, b) => a - b),
         soft: [...e.soft].sort((a, b) => a - b),
+        gentilic: [...e.gentilic].sort((a, b) => a - b),
       }))
       .sort(
         (a, b) =>
-          (a.verses[0] ?? a.soft[0]) - (b.verses[0] ?? b.soft[0]) ||
+          (a.verses[0] ?? a.soft[0] ?? a.gentilic[0]) -
+            (b.verses[0] ?? b.soft[0] ?? b.gentilic[0]) ||
           a.name.localeCompare(b.name),
       )
       .map((e) => {
         const t = [e.name, e.x, e.y, e.kind, e.uncertain, e.verses, e.modernName, e.link, e.type];
-        if (e.soft.length) t.push(e.soft);
+        if (e.soft.length || e.gentilic.length) t.push(e.soft);
+        if (e.gentilic.length) t.push(e.gentilic);
         return t;
       });
     const unlocated = [...ch.u.values()]
@@ -495,7 +525,7 @@ const atlas = {
   books: CANON_ORDER,
   places: [...atlasPlaces.values()]
     .sort((a, b) => a.entry.name.localeCompare(b.entry.name))
-    .map(({ entry, refs, softRefs }) => {
+    .map(({ entry, refs, softRefs, gentilicRefs }) => {
       const t = [
         entry.name,
         entry.x,
@@ -507,7 +537,8 @@ const atlas = {
         packRefs(refs),
         entry.type,
       ];
-      if (softRefs.size) t.push(packRefs(softRefs));
+      if (softRefs.size || gentilicRefs.size) t.push(packRefs(softRefs));
+      if (gentilicRefs.size) t.push(packRefs(gentilicRefs));
       return t;
     }),
   unlocated: [...atlasUnlocated.values()]
@@ -531,5 +562,7 @@ console.log(
 );
 console.log(
   `soft refs (name in only 1 of 10 translations): ${softVerseCount} verses across ` +
-    `${softPlaceNames.size} places · "Mount X" renames from translated names: ${mountRenames}`,
+    `${softPlaceNames.size} places · gentilic refs (named only through its people): ` +
+    `${gentilicVerseCount} verses across ${gentilicPlaceNames.size} places · ` +
+    `"Mount X" renames from translated names: ${mountRenames}`,
 );

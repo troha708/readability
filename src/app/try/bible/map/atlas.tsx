@@ -339,7 +339,7 @@ export function Atlas() {
       const ap = byKey.get(key);
       const base: AtlasPlace = ap ?? {
         name: s.name, x: s.x, y: s.y, kind: 0, uncertain: false, modern: "", link: "", refs: [],
-        type: "", softRefs: [],
+        type: "", softRefs: [], gentilicRefs: [],
       };
       stops.push({
         ...base,
@@ -685,8 +685,12 @@ export function Atlas() {
             <span className="text-xs text-neutral-400">{lp.type || KIND_LABELS[lp.kind]}</span>
           )}
           <span className="text-xs text-neutral-400">
-            {mentionsOf(p) === 0 && lp && lp.softRefs.length > 0
-              ? "named only in some translations"
+            {mentionsOf(p) === 0 && lp && lp.softRefs.length + lp.gentilicRefs.length > 0
+              ? lp.softRefs.length === 0
+                ? "named only through its people"
+                : lp.gentilicRefs.length === 0
+                  ? "named only in some translations"
+                  : "named only indirectly"
               : `${mentionsOf(p)} mention${mentionsOf(p) === 1 ? "" : "s"} in ${p.refs.length} chapter${p.refs.length === 1 ? "" : "s"}`}
           </span>
         </div>
@@ -738,6 +742,16 @@ export function Atlas() {
             </p>
             <div className="mt-1 flex flex-wrap gap-1">
               {lp.softRefs.map((r) => refChip(p, r, true))}
+            </div>
+          </div>
+        )}
+        {lp && lp.gentilicRefs.length > 0 && (
+          <div className="mt-1.5">
+            <p className="text-xs italic text-neutral-500 dark:text-neutral-400">
+              Named through its people here:
+            </p>
+            <div className="mt-1 flex flex-wrap gap-1">
+              {lp.gentilicRefs.map((r) => refChip(p, r, true))}
             </div>
           </div>
         )}

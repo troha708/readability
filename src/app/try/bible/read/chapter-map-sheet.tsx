@@ -116,10 +116,10 @@ export function ChapterMapSheet({
             {selection && (
               <div className="mt-3 rounded-xl bg-neutral-100/80 px-4 py-3 dark:bg-neutral-800/60">
                 {selection.map((p) => (
-                  // key by name + exact coords: names repeat (91 dupes), and
-                  // two same-named places in one cluster would collide and
-                  // drop a card if keyed by name alone.
-                  <div key={`${p.name}:${p.x}:${p.y}`} className="py-1 first:pt-0 last:pb-0">
+                  // key by link: names repeat (91 dupes) and, since records
+                  // stopped merging, so do name+coords pairs (the two Ais) —
+                  // the openbible link is the one per-record unique id.
+                  <div key={p.link} className="py-1 first:pt-0 last:pb-0">
                     <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
                       <span className="font-semibold text-neutral-800 dark:text-neutral-100">
                         {p.name}
@@ -145,6 +145,22 @@ export function ChapterMapSheet({
                       <p className="mt-0.5 text-xs italic text-neutral-500 dark:text-neutral-400">
                         Some translations read {p.name} here:{" "}
                         {p.soft.map((v, i) => (
+                          <span key={v}>
+                            {i > 0 && ", "}
+                            <button
+                              onClick={() => onGoToVerse(v)}
+                              className="underline decoration-neutral-300 underline-offset-2 hover:text-amber-700 dark:hover:text-amber-400"
+                            >
+                              v. {v}
+                            </button>
+                          </span>
+                        ))}
+                      </p>
+                    )}
+                    {p.gentilic.length > 0 && (
+                      <p className="mt-0.5 text-xs italic text-neutral-500 dark:text-neutral-400">
+                        Named through its people here:{" "}
+                        {p.gentilic.map((v, i) => (
                           <span key={v}>
                             {i > 0 && ", "}
                             <button
@@ -186,6 +202,21 @@ export function ChapterMapSheet({
                 {data.places
                   .filter((p) => p.verses.length === 0 && p.soft.length > 0)
                   .map((p) => `${p.name} (v. ${p.soft.join(", ")})`)
+                  .join(" · ")}
+              </p>
+            )}
+            {/* Places the chapter names only through their people ("country of
+                the Gerasenes") — same up-front honesty. */}
+            {data.places.some(
+              (p) => p.verses.length === 0 && p.soft.length === 0 && p.gentilic.length > 0,
+            ) && (
+              <p className="mt-3 text-xs italic text-neutral-400">
+                Named here only through its people:{" "}
+                {data.places
+                  .filter(
+                    (p) => p.verses.length === 0 && p.soft.length === 0 && p.gentilic.length > 0,
+                  )
+                  .map((p) => `${p.name} (v. ${p.gentilic.join(", ")})`)
                   .join(" · ")}
               </p>
             )}
