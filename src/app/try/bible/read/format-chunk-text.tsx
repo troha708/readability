@@ -208,6 +208,19 @@ function getParserOptions(
   const opts: HTMLReactParserOptions = {
     replace(domNode) {
       if (domNode.type === "text") {
+        // Digits inside a verse-number marker (or the chapter numeral) are
+        // labels, not scripture text. The parser visits an element's children
+        // before its own branch runs, so currentVerse still holds the
+        // PREVIOUS verse here — wrapping the digit would tag verse N+1's
+        // number as part of verse N and hover would light the wrong marker.
+        const parent = (domNode as unknown as { parent: unknown }).parent;
+        if (
+          isVerseMarker(parent) ||
+          (parent instanceof Element &&
+            (parent.attribs?.class ?? "").includes("chapter-num"))
+        ) {
+          return;
+        }
         const raw = (domNode as unknown as { data: string }).data;
         if (!raw.trim()) return;
 

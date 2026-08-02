@@ -1857,7 +1857,9 @@ export function ChunkReader({
     function onMove(e: MouseEvent) {
       const node = e.target as Node;
       const el = node instanceof Element ? node : node.parentElement;
-      const vt = el?.closest(".vtext");
+      // A verse's text runs carry data-hv; its superscript number carries
+      // data-verse-num. Either lights the verse it belongs to.
+      const vt = el?.closest(".vtext") ?? el?.closest("sup[data-verse-num]");
       const sel = window.getSelection();
       if (
         !vt ||
@@ -1868,7 +1870,7 @@ export function ChunkReader({
         return;
       }
       const section = vt.closest("section[data-chapter]");
-      const verse = vt.getAttribute("data-hv");
+      const verse = vt.getAttribute("data-hv") ?? vt.getAttribute("data-verse-num");
       if (!section || !verse) {
         clear();
         return;
