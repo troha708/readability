@@ -34,6 +34,14 @@ function isElement(node: DOMNode): node is Element {
   return node.type === "tag";
 }
 
+// A verse-number marker span in the source HTML — the boundary where one
+// verse's text ends and the next begins.
+function isVerseMarker(node: unknown): boolean {
+  if (!(node instanceof Element) || node.name !== "span") return false;
+  const cls = node.attribs?.class ?? "";
+  return cls === "v" || cls.startsWith("v ") || !!node.attribs?.["data-number"];
+}
+
 // Section headings in the manner of esv.org: the scripture serif, italic, at
 // body size — one weight step above the body text (500/450 vs the body's
 // 450/400) so they hold their own without shouting. The hand-tuned halfway
@@ -208,7 +216,16 @@ function getParserOptions(
         const pil = /^\s*¶\s?/.exec(raw);
         const text = pil ? raw.slice(pil[0].length) : raw;
 
-        let content: ReactNode = bionic ? bionicifyText(text) : text;
+        // A verse's last run ends with the inter-verse space; keep that space
+        // outside the wraps below so the hover/highlight band stops at the
+        // verse's final word instead of running up under the next verse's
+        // number.
+        const trail = isVerseMarker(domNode.next)
+          ? /\s+$/.exec(text)?.[0]
+          : undefined;
+        const body = trail ? text.slice(0, -trail.length) : text;
+
+        let content: ReactNode = bionic ? bionicifyText(body) : body;
         if (currentVerse && highlights?.[currentVerse]) {
           content = (
             <HighlightedVerseSpan highlight={highlights[currentVerse]}>
@@ -226,6 +243,13 @@ function getParserOptions(
             <span className="vtext" data-hv={currentVerse}>
               {content}
             </span>
+          );
+        }
+        if (trail) {
+          content = (
+            <>
+              {content}{" "}
+            </>
           );
         }
 

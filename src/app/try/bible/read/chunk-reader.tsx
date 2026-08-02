@@ -1835,7 +1835,8 @@ export function ChunkReader({
   // Whole-verse hover highlight (desktop). As the cursor moves over scripture,
   // light up the verse it's on so it reads as tappable — each run of verse text
   // is a .vtext span carrying its verse in data-hv, and we toggle .vh-on across
-  // the same-verse spans within the hovered chapter. Nothing happens on press;
+  // the same-verse spans, plus the verse's own superscript marker, within the
+  // hovered chapter. Nothing happens on press;
   // the click handler above opens the tools on release. Suppressed mid-selection
   // so a drag to highlight doesn't flicker the hover.
   useEffect(() => {
@@ -1849,7 +1850,7 @@ export function ChunkReader({
 
     function clear() {
       if (!lastKey) return;
-      container.querySelectorAll(".vtext.vh-on").forEach((s) => s.classList.remove("vh-on"));
+      container.querySelectorAll(".vh-on").forEach((s) => s.classList.remove("vh-on"));
       lastKey = null;
     }
 
@@ -1879,6 +1880,12 @@ export function ChunkReader({
       section.querySelectorAll(`.vtext[data-hv="${verse}"]`).forEach((s) => {
         if (!s.closest("h1, h2, h3")) s.classList.add("vh-on");
       });
+      // The verse's own superscript number precedes its text — light it with
+      // the verse. (Verse 1's stand-in marker is the drop-cap numeral, a span
+      // not a sup, deliberately left unlit: a gold block that size shouts.)
+      section
+        .querySelectorAll(`sup[data-verse-num="${verse}"]`)
+        .forEach((s) => s.classList.add("vh-on"));
     }
 
     container.addEventListener("mousemove", onMove);
