@@ -14,7 +14,7 @@
  * started book is complete, advance to the next incomplete book in canon order
  * after the most recently finished one (so completing John points at Acts).
  * Mode decides what "finished" means (read-only vs read + quiz). Falls back to
- * Genesis 1 for a brand-new reader.
+ * John 1 for a brand-new reader — the recommended first book.
  */
 import { bibleBookSortIndex } from "./bible-book-order";
 import type { LastReadPosition, ReadingMode } from "./reading-progress";
@@ -145,5 +145,5 @@ export function computeContinueTarget(
     }
   }
 
-  return { book: "Genesis", chapter: 1 };
+  return { book: "John", chapter: 1 };
 }

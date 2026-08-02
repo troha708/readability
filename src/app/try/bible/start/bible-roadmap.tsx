@@ -97,7 +97,7 @@ export function BibleRoadmap({ books, versionAbbr, booksWithSummary }: Props) {
   const activeBookRef = useRef<HTMLDivElement | null>(null);
   const didScrollToActive = useRef(false);
   const [continueTarget, setContinueTarget] = useState<{ book: string; chapter: number }>({
-    book: "Genesis",
+    book: "John",
     chapter: 1,
   });
   const [hasStarted, setHasStarted] = useState(false);
@@ -150,10 +150,9 @@ export function BibleRoadmap({ books, versionAbbr, booksWithSummary }: Props) {
       setContinueTarget(target);
 
       const activeBook = books.find((b) => b.name === target.book);
-      // Fresh readers start with just Genesis open — the first page of the
-      // book; everything else stays collapsed. Once there's progress, the
-      // continue-target book is the one expanded.
-      setExpandedBooks(new Set([hasProgress ? target.book : "Genesis"]));
+      // Only the continue-target book is expanded; for a fresh reader that's
+      // the John 1 fallback, so John is the one book open on first visit.
+      setExpandedBooks(new Set([target.book]));
       setExpandedSections(new Set([activeBook?.testament ?? "OT"]));
     }
     init();
@@ -162,7 +161,8 @@ export function BibleRoadmap({ books, versionAbbr, booksWithSummary }: Props) {
   // Once a returning reader's active book is rendered, scroll it near the top
   // of the viewport so they land where they left off — the whole canonical
   // tree stays visible above (a scroll up), rather than hiding earlier books.
-  // Fresh readers stay at the top (Genesis is the first book).
+  // Fresh readers stay at the top: the OT section is collapsed for them, so
+  // John's grid already sits in view without a jump.
   useEffect(() => {
     if (didScrollToActive.current || !hasStarted) return;
     const el = activeBookRef.current;
