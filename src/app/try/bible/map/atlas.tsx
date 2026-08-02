@@ -564,6 +564,12 @@ export function Atlas() {
       // Same race as focus-exit: until the relaxed scope/filters land, the
       // map's place set doesn't contain this place, so an immediate zoom
       // would find nothing (and a scope reset also refits) — zoom after.
+      // Arm pendingSearch NOW, not in the deferred effect: swapping the
+      // exemption evicts the previously selected place from the set, and
+      // the map reports that dying selection as null BEFORE the deferred
+      // zoom runs (child effects fire first). The selection handler treats
+      // a null during a pending pick as machinery, not a user deselection.
+      pendingSearch.current = placeKey(p);
       pendingZoom.current = placeKey(p);
     } else {
       pendingSearch.current = placeKey(p);
@@ -1344,13 +1350,17 @@ export function Atlas() {
               onReady={() => setMapReady(true)}
               onViewChange={handleViewChange}
               onSelectionChange={(members) => {
-                if (
-                  pendingSearch.current &&
-                  members?.some((m) => placeKey(m) === pendingSearch.current)
-                ) {
-                  // keep the searched place's single-place panel
-                  pendingSearch.current = null;
-                  return;
+                if (pendingSearch.current) {
+                  // While a picked place's zoom is still landing, a null
+                  // report is the OLD selection dying mid-handoff (its
+                  // exemption was just replaced) — swallow it; the picked
+                  // place's own report follows and consumes the pending key.
+                  if (!members) return;
+                  if (members.some((m) => placeKey(m) === pendingSearch.current)) {
+                    // keep the searched place's single-place panel
+                    pendingSearch.current = null;
+                    return;
+                  }
                 }
                 pendingSearch.current = null;
                 setShowAllRefs(false);
