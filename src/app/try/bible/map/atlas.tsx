@@ -545,6 +545,12 @@ export function Atlas() {
     const scopeRelaxed = journeyView
       ? !journeyView.stops.some((s) => placeKey(s) === placeKey(p))
       : !members.some((m) => [...m.refs, ...m.softRefs].some((ref) => refInScope(ref)));
+    // The deferred zoom below fires from a state-change effect. Re-picking
+    // the place that already holds the exemption changes nothing — the
+    // effect would never run and the zoom went dead (searching your way
+    // back to Antioch, 2026-08-03). Its marker is already on the map in
+    // that case, so the direct zoom is both safe and required.
+    const exemptChanged = exemptKey !== placeKey(p);
     if (scopeRelaxed) setScope("all");
     setExemptKey(placeKey(p));
     setPanel({ type: "places", members: [p] });
@@ -560,7 +566,7 @@ export function Atlas() {
       pendingZoom.current = placeKey(p);
       appliedPlace.current = placeSlug(p.link);
       router.replace(`/try/bible/map?place=${encodeURIComponent(placeSlug(p.link))}`);
-    } else if (scopeRelaxed || filterRelaxed) {
+    } else if (scopeRelaxed || (filterRelaxed && exemptChanged)) {
       // Same race as focus-exit: until the relaxed scope/filters land, the
       // map's place set doesn't contain this place, so an immediate zoom
       // would find nothing (and a scope reset also refits) — zoom after.
