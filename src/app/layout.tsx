@@ -59,10 +59,10 @@ export const metadata: Metadata = {
     // (Next's file convention), so no explicit images here.
   },
   twitter: {
-    // Large-image card so the reader preview renders big in the unfurl
-    // (Discord/Slack show the portrait shot large and uncropped; note that
-    // Twitter/X itself center-crops a portrait to a landscape strip).
-    card: "summary_large_image",
+    // Small-summary card: text on the left, the portrait John 1 reader shot
+    // as a compact thumbnail on the right (owner-preferred, 2026-08-04).
+    // summary_large_image would render the portrait as a big standalone box.
+    card: "summary",
     title: "A study Bible",
     description:
       "Notes, cross-references, word study and maps. Free and open source, with no ads and no account required.",
