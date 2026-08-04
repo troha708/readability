@@ -20,7 +20,6 @@ import { isOverviewAtStart } from "@/lib/overview-placement";
 import { computeContinueTarget } from "@/lib/continue-target";
 import { SearchModal } from "@/components/search-modal";
 import { SiteFooter } from "@/components/site-footer";
-import { Tutorial, LIBRARY_TUTORIAL_STEPS } from "@/components/tutorial";
 import { isNativeApp } from "@/lib/notifications";
 
 type ChapterInfo = { chapterNumber: number };
@@ -445,7 +444,7 @@ export function BibleRoadmap({ books, versionAbbr, booksWithSummary }: Props) {
           <Logo />
           <div className="flex items-center gap-2">
             {/* Mode toggle */}
-            <div data-tutorial="mode" className="inline-flex rounded-lg bg-neutral-100 p-0.5 dark:bg-neutral-800">
+            <div className="inline-flex rounded-lg bg-neutral-100 p-0.5 dark:bg-neutral-800">
               <button
                 onClick={() => {
                   setMode("read");
@@ -576,8 +575,6 @@ export function BibleRoadmap({ books, versionAbbr, booksWithSummary }: Props) {
         version={versionAbbr}
         bookChapterCounts={bookChapterCounts}
       />
-
-      <Tutorial steps={LIBRARY_TUTORIAL_STEPS} storageKey="bible-library-tutorial-complete" />
     </main>
   );
 }

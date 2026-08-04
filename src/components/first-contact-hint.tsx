@@ -4,22 +4,18 @@ import { useCallback, useEffect, useRef, useState } from "react";
 
 /**
  * A one-time, non-blocking coachmark for a *conditional* reading feature — one
- * that isn't on every chapter (the chapter Map button), so it can't be taught
- * by the linear tour, which would spotlight an element that may not be present.
+ * that isn't on every chapter (the chapter Map button).
  *
- * Instead this teaches on first natural contact: the first time an element
- * matching `selector` is on screen — and only after the basic tour is done
- * (`gateKey`) — a small amber callout points at it. It's dismissed by any tap,
- * by scrolling past, or by the ×, and never shown again (`storageKey`). Unlike
- * the tour it does not dim the screen or block clicks, so it can't interrupt
- * reading: tapping the feature both engages it and dismisses the hint.
+ * It teaches on first natural contact: the first time an element matching
+ * `selector` is on screen, a small amber callout points at it. It's dismissed
+ * by any tap, by scrolling past, or by the ×, and never shown again
+ * (`storageKey`). It does not dim the screen or block clicks, so it can't
+ * interrupt reading: tapping the feature both engages it and dismisses the hint.
  */
 
 // Only one hint shows at a time across all mounted instances (if two
 // first-contact targets are in view at once, the second waits its turn).
 let anyHintActive = false;
-
-const GATE_EVENT = "bible-tutorial-done";
 
 // On screen and laid out. A small top/bottom margin keeps it from latching onto
 // a sliver at the very edge — but it must stay small so a control docked in the
@@ -34,13 +30,11 @@ export function FirstContactHint({
   title,
   description,
   storageKey,
-  gateKey = "bible-tutorial-complete",
 }: {
   selector: string;
   title: string;
   description: string;
   storageKey: string;
-  gateKey?: string;
 }) {
   const [rect, setRect] = useState<DOMRect | null>(null);
   const targetRef = useRef<Element | null>(null);
@@ -70,13 +64,6 @@ export function FirstContactHint({
     if (seen()) return;
 
     let raf = 0;
-    const gatePasses = () => {
-      try {
-        return !!localStorage.getItem(gateKey);
-      } catch {
-        return false;
-      }
-    };
 
     const scan = () => {
       // Already showing: keep it anchored, or retire it once scrolled away.
@@ -86,7 +73,7 @@ export function FirstContactHint({
         else setRect(t.getBoundingClientRect());
         return;
       }
-      if (anyHintActive || !gatePasses() || seen()) return;
+      if (anyHintActive || seen()) return;
       const el = Array.from(document.querySelectorAll(selector)).find(onScreen);
       if (el) {
         targetRef.current = el;
@@ -121,7 +108,6 @@ export function FirstContactHint({
     window.addEventListener("scroll", onScrollOrResize, true);
     window.addEventListener("resize", onScrollOrResize);
     window.addEventListener("pointerdown", onPointerDown, true);
-    window.addEventListener(GATE_EVENT, scan);
 
     return () => {
       clearTimeout(initial);
@@ -130,10 +116,9 @@ export function FirstContactHint({
       window.removeEventListener("scroll", onScrollOrResize, true);
       window.removeEventListener("resize", onScrollOrResize);
       window.removeEventListener("pointerdown", onPointerDown, true);
-      window.removeEventListener(GATE_EVENT, scan);
       if (activeRef.current) anyHintActive = false;
     };
-  }, [selector, storageKey, gateKey, dismiss]);
+  }, [selector, storageKey, dismiss]);
 
   if (!rect) return null;
 

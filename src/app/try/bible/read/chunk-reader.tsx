@@ -46,7 +46,6 @@ import {
 } from "@/lib/highlights-service";
 import { SearchModal } from "@/components/search-modal";
 import { SiteFooter } from "@/components/site-footer";
-import { Tutorial } from "@/components/tutorial";
 import { FirstContactHint } from "@/components/first-contact-hint";
 import { fetchChapter, fetchBookPlaces } from "@/lib/content/client";
 import { IS_MOBILE } from "@/lib/build-target";
@@ -832,8 +831,8 @@ export function ChunkReader({
   }, []);
 
   // A shared-quote deep link (?verse=N) means someone followed a link to read
-  // a specific passage — don't greet them with the tutorial overlay. Captured
-  // once at mount because the scroll-spy strips the param from the URL.
+  // a specific passage. Captured once at mount because the scroll-spy strips the
+  // param from the URL.
   const [cameFromShareLink] = useState(
     () =>
       typeof window !== "undefined" &&
@@ -2002,7 +2001,6 @@ export function ChunkReader({
           <div className="flex shrink-0 items-center gap-1">
           {/* Search */}
           <button
-            data-tutorial="search"
             onClick={() => setSearchOpen(true)}
             aria-label="Search"
             className="rounded-md p-1.5 text-neutral-500 hover:bg-neutral-100 hover:text-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-neutral-200"
@@ -2059,7 +2057,6 @@ export function ChunkReader({
             }
             return (
               <button
-                data-tutorial="notes"
                 onClick={() => setNotesDrawerOpen((o) => !o)}
                 aria-label="View highlights and notes"
                 className={`relative flex items-center gap-1 rounded-md px-2 py-1 text-[0.65rem] font-semibold leading-none transition-all ${
@@ -2085,7 +2082,6 @@ export function ChunkReader({
           {/* Settings menu (display preferences) */}
           <div ref={settingsRef} className="relative shrink-0">
             <button
-              data-tutorial="settings"
               onClick={() => {
                 setSettingsOpen((o) => !o);
                 setBookOpen(false);
@@ -2176,7 +2172,6 @@ export function ChunkReader({
 
                 {/* Bionic reading */}
                 <button
-                  data-tutorial="bionic"
                   onClick={toggleBionic}
                   className="flex w-full items-center justify-between rounded-md px-2 py-1.5 text-left hover:bg-neutral-100 dark:hover:bg-neutral-700"
                 >
@@ -2411,7 +2406,6 @@ export function ChunkReader({
       <div className="px-4 py-10">
         <div
           ref={contentRef}
-          data-tutorial="content"
           className={`mx-auto max-w-2xl ${verseNumbers ? "" : "hide-verse-nums"}`}
         >
           {/* Top sentinel — triggers loading the previous chapter on scroll */}
@@ -2654,10 +2648,8 @@ export function ChunkReader({
           onClose={() => setVerseSheet(null)}
         />
       )}
-      {/* Not marked as seen — organic visits still get the tutorial later. */}
-      {!cameFromShareLink && <Tutorial />}
       {/* The chapter Map button isn't on every chapter, so it's taught on
-          first contact (after the basic tour) rather than in the linear tour. */}
+          first contact rather than up front. */}
       <FirstContactHint
         selector='[data-tutorial="map"]'
         storageKey="hint-map-seen"
