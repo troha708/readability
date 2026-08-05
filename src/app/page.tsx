@@ -78,14 +78,13 @@ const features: { id: string; content: ReactNode }[] = [
     id: "quiz",
     content: (
       <>
-        5,946 questions are also browsable in the{" "}
+        5,946 questions browsable in the{" "}
         <Link
           href="/try/bible/quiz"
           className="text-amber-500 underline decoration-amber-500/40 underline-offset-2 transition-colors hover:text-amber-400 hover:decoration-amber-400"
         >
           Bible Quiz
         </Link>
-        .
       </>
     ),
   },
