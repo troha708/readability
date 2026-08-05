@@ -506,6 +506,19 @@ export function BibleRoadmap({ books, versionAbbr, booksWithSummary }: Props) {
               </svg>
               <span className="hidden md:inline">Dictionary</span>
             </Link>
+            <Link
+              href="/try/bible/quiz"
+              aria-label="Bible quiz"
+              title="Bible quiz"
+              className="inline-flex items-center gap-1.5 rounded-md px-2 py-1.5 text-sm font-medium text-neutral-500 hover:bg-neutral-100 hover:text-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-neutral-200"
+            >
+              <svg className="h-5 w-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M9.88 9.4a2.25 2.25 0 1 1 3.04 2.09c-.6.24-.92.79-.92 1.4v.36" />
+                <path d="M12 16.5h.01" />
+              </svg>
+              <span className="hidden md:inline">Quiz</span>
+            </Link>
             {isNative && (
               <Link
                 href="/try/bible/settings"
