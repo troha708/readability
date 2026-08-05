@@ -2,17 +2,16 @@
 
 import { useState } from "react";
 import type { IndexedQuestion } from "@/lib/content/quiz-index";
-import { QuizList } from "./quiz-list";
+import { QuizRunner } from "./quiz-runner";
 
 /**
- * The hub's random round: a handful of questions drawn from across the whole
- * Bible, a new set each time you ask for one.
+ * The hub's random round: questions drawn from across the whole Bible, a new
+ * set each time you ask for one.
  *
  * The pool ships with the page (see randomPool) rather than coming from an
- * endpoint, so the first round is in the server-rendered HTML and the whole
- * thing still works on the static mobile export. Rounds are dealt from a
- * shuffled pool without repeats, so nothing comes round again until the pool
- * is spent — at which point it reshuffles.
+ * endpoint, so this works on the static mobile export. Rounds are dealt from a
+ * shuffled pool without repeats, so nothing recurs until the pool is spent, at
+ * which point it reshuffles.
  */
 export function RandomQuiz({
   pool,
@@ -21,8 +20,8 @@ export function RandomQuiz({
   pool: IndexedQuestion[];
   drawSize?: number;
 }) {
-  // Round 0 is the server-rendered draw: the head of the pool, untouched, so
-  // the markup is identical on both sides of hydration.
+  // Round 0 is the head of the pool untouched, so the server and the client
+  // render the same markup on first paint.
   const [round, setRound] = useState(0);
   const [dealt, setDealt] = useState<IndexedQuestion[]>(() => pool.slice(0, drawSize));
   const [remaining, setRemaining] = useState<IndexedQuestion[] | null>(null);
@@ -36,9 +35,7 @@ export function RandomQuiz({
     return a;
   }
 
-  function next() {
-    // First click shuffles everything the opening round didn't use; after that
-    // we keep dealing off the same shuffle until it runs out.
+  function deal() {
     let source = remaining ?? shuffle(pool.slice(drawSize));
     if (source.length < drawSize) source = shuffle(pool);
     setDealt(source.slice(0, drawSize));
@@ -54,13 +51,18 @@ export function RandomQuiz({
         </h2>
         <button
           type="button"
-          onClick={next}
+          onClick={deal}
           className="rounded-full border border-neutral-300 px-3 py-1 text-sm font-medium text-neutral-700 transition-colors hover:border-amber-500 hover:text-amber-700 dark:border-neutral-600 dark:text-neutral-300 dark:hover:border-amber-500 dark:hover:text-amber-400"
         >
           New questions
         </button>
       </div>
-      <QuizList key={round} questions={dealt} />
+      <QuizRunner
+        key={round}
+        questions={dealt}
+        onRestart={deal}
+        restartLabel="New questions"
+      />
     </>
   );
 }
