@@ -26,6 +26,9 @@ export function SiteFooter({ className = "" }: { className?: string }) {
         <Link href="/try/bible/dictionary" className="underline hover:text-neutral-600 dark:hover:text-neutral-400">
           Dictionary
         </Link>
+        <Link href="/try/bible/quiz" className="underline hover:text-neutral-600 dark:hover:text-neutral-400">
+          Quiz
+        </Link>
         <Link href="/about" className="underline hover:text-neutral-600 dark:hover:text-neutral-400">
           About
         </Link>

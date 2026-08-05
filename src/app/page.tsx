@@ -76,8 +76,20 @@ const features: { id: string; content: ReactNode }[] = [
   },
   {
     id: "quiz",
-    content:
-      "Optional Study mode adds a short comprehension quiz at the end of each chapter; the default Read mode skips them.",
+    content: (
+      <>
+        Optional Study mode adds a short comprehension quiz at the end of each
+        chapter; the default Read mode skips them. All 5,946 questions are also
+        browsable in the{" "}
+        <Link
+          href="/try/bible/quiz"
+          className="text-amber-500 underline decoration-amber-500/40 underline-offset-2 transition-colors hover:text-amber-400 hover:decoration-amber-400"
+        >
+          Bible Quiz
+        </Link>
+        .
+      </>
+    ),
   },
 ];
 
@@ -116,6 +128,12 @@ export default function Home() {
               className="px-3 py-2 text-neutral-400 transition-colors hover:text-amber-400 sm:px-4"
             >
               Dictionary
+            </Link>
+            <Link
+              href="/try/bible/quiz"
+              className="px-3 py-2 text-neutral-400 transition-colors hover:text-amber-400 sm:px-4"
+            >
+              Quiz
             </Link>
           </nav>
           <div className="flex items-stretch max-sm:ml-auto">
