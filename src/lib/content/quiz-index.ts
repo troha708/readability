@@ -149,14 +149,3 @@ export function bookRoutes(): { section: string; book: string }[] {
   );
 }
 
-/**
- * A spread of questions from across a section, for the hub's preview strip.
- * Takes them from evenly spaced chapters rather than the first few, so the
- * sample doesn't come entirely from the opening book.
- */
-export function sampleQuestions(slug: string, n: number): IndexedQuestion[] {
-  const all = sectionBooks(slug).flatMap((b) => b.chapters.flatMap((c) => c.questions));
-  if (all.length <= n) return all;
-  const step = Math.floor(all.length / n);
-  return Array.from({ length: n }, (_, i) => all[i * step]);
-}

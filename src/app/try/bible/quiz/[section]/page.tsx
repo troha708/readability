@@ -4,13 +4,7 @@ import { notFound } from "next/navigation";
 import { Logo } from "@/components/logo";
 import { SiteFooter } from "@/components/site-footer";
 import { QUIZ_SECTIONS, quizSection } from "@/lib/quiz-sections";
-import {
-  sectionBooks,
-  sectionQuestionCount,
-  sampleQuestions,
-  bookSlug,
-} from "@/lib/content/quiz-index";
-import { QuizList } from "../quiz-list";
+import { sectionBooks, sectionQuestionCount, bookSlug } from "@/lib/content/quiz-index";
 
 /**
  * A section index: the books it covers, and a handful of its questions so the
@@ -54,7 +48,6 @@ export default async function QuizSectionPage({ params }: Props) {
 
   const books = sectionBooks(slug);
   const count = sectionQuestionCount(slug);
-  const samples = sampleQuestions(slug, 5);
 
   return (
     <main className="flex min-h-screen flex-col bg-white dark:bg-neutral-950">
@@ -101,10 +94,6 @@ export default async function QuizSectionPage({ params }: Props) {
             ))}
           </ul>
 
-          <h2 className="font-display pt-4 text-xl font-semibold text-neutral-900 dark:text-white">
-            A sample
-          </h2>
-          <QuizList questions={samples} />
         </div>
       </article>
 

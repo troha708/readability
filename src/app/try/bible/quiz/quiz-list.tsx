@@ -120,7 +120,7 @@ function QuestionItem({
           {answered!.correct ? "Correct." : `Answer: ${q.answer}`}
           {q.verse_reference ? ` — ${q.verse_reference}` : ""}{" "}
           <Link className="qz-go" href={q.readHref}>
-            Read it in context →
+            Read
           </Link>
         </p>
       )}

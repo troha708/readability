@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Logo } from "@/components/logo";
 import { SiteFooter } from "@/components/site-footer";
-import { sectionSummaries, totalQuestionCount, sampleQuestions } from "@/lib/content/quiz-index";
-import { QuizList } from "./quiz-list";
+import { sectionSummaries, totalQuestionCount } from "@/lib/content/quiz-index";
 
 /**
  * The quiz hub: the category page above the 1,189 per-chapter quizzes, which
@@ -36,7 +35,6 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function QuizHubPage() {
   const sections = sectionSummaries();
   const total = totalQuestionCount();
-  const samples = sampleQuestions("gospels", 3);
 
   return (
     <main className="flex min-h-screen flex-col bg-white dark:bg-neutral-950">
@@ -86,11 +84,6 @@ export default function QuizHubPage() {
               </li>
             ))}
           </ul>
-
-          <h2 className="font-display pt-4 text-xl font-semibold text-neutral-900 dark:text-white">
-            A sample
-          </h2>
-          <QuizList questions={samples} />
 
           <p className="pt-4">
             Each chapter also has its own scored quiz, from the{" "}
