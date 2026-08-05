@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { IndexedQuestion } from "@/lib/content/quiz-index";
 import { QuizRunner } from "./quiz-runner";
 
@@ -20,11 +20,14 @@ export function RandomQuiz({
   pool: IndexedQuestion[];
   drawSize?: number;
 }) {
-  // Round 0 is the head of the pool untouched, so the server and the client
-  // render the same markup on first paint.
+  // Round 0 is the head of the pool untouched so server and client hydrate to
+  // identical markup — Math.random() during render would mismatch. The real
+  // shuffle happens in the effect below, immediately after mount, otherwise
+  // every first visit opens on the same Genesis 1 question.
   const [round, setRound] = useState(0);
   const [dealt, setDealt] = useState<IndexedQuestion[]>(() => pool.slice(0, drawSize));
   const [remaining, setRemaining] = useState<IndexedQuestion[] | null>(null);
+  const shuffledOnMount = useRef(false);
 
   function shuffle(xs: IndexedQuestion[]): IndexedQuestion[] {
     const a = [...xs];
@@ -36,12 +39,24 @@ export function RandomQuiz({
   }
 
   function deal() {
-    let source = remaining ?? shuffle(pool.slice(drawSize));
+    // With nothing left over, shuffle the whole pool — including the questions
+    // the server-rendered opening round used, so nothing is permanently
+    // excluded from later draws.
+    let source = remaining ?? shuffle(pool);
     if (source.length < drawSize) source = shuffle(pool);
     setDealt(source.slice(0, drawSize));
     setRemaining(source.slice(drawSize));
     setRound((r) => r + 1);
   }
+
+  useEffect(() => {
+    if (shuffledOnMount.current) return;
+    shuffledOnMount.current = true;
+    deal();
+    // Deliberately once, on mount: this replaces the deterministic opening
+    // round with a real one as soon as the client can generate randomness.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <>
