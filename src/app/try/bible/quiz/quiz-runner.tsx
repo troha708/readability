@@ -66,7 +66,11 @@ export function QuizRunner({
   const wasCorrect = showFeedback && accepted.some((a) => normalize(a) === normalize(given!));
 
   useEffect(() => {
-    if (showFeedback) nextRef.current?.focus();
+    // preventScroll matters: focusing normally makes the browser scroll the
+    // button into view, which yanks the page as soon as you answer. Enter is
+    // handled by a window listener below, so focus is only here for keyboard
+    // users tabbing through.
+    if (showFeedback) nextRef.current?.focus({ preventScroll: true });
   }, [showFeedback, index]);
 
   function answer(value: string) {
