@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Logo } from "@/components/logo";
 import { SiteFooter } from "@/components/site-footer";
 import { sectionSummaries, totalQuestionCount, sampleQuestions } from "@/lib/content/quiz-index";
-import { QuestionCard } from "./question-card";
+import { QuizList } from "./quiz-list";
 
 /**
  * The quiz hub: the category page above the 1,189 per-chapter quizzes, which
@@ -22,9 +22,9 @@ export async function generateMetadata(): Promise<Metadata> {
   const total = totalQuestionCount();
   const title = `Bible Quiz — ${total.toLocaleString()} questions on every chapter`;
   const description =
-    `A free Bible quiz with ${total.toLocaleString()} questions covering all 66 books: ` +
-    `multiple choice, true or false, and fill in the blank. Every question links to ` +
-    `the verse it comes from, so a wrong answer takes you straight to the passage.`;
+    `${total.toLocaleString()} Bible quiz questions covering all 66 books: ` +
+    `multiple choice, true or false, and fill in the blank, each linked to the ` +
+    `verse it comes from.`;
   return {
     title,
     description,
@@ -58,10 +58,7 @@ export default function QuizHubPage() {
         <div className="mt-8 space-y-6 font-scripture text-[16px] font-normal leading-relaxed text-neutral-800 dark:text-white">
           <p>
             {total.toLocaleString()} questions covering every chapter of the
-            Bible — multiple choice, true or false, and fill in the blank. Every
-            question is checked against the Berean Standard Bible, and every one
-            links to the verse it came from, so getting it wrong takes you to
-            the passage rather than just telling you the answer.
+            Bible: multiple choice, true or false, and fill in the blank.
           </p>
 
           <h2 className="font-display pt-4 text-xl font-semibold text-neutral-900 dark:text-white">
@@ -91,31 +88,19 @@ export default function QuizHubPage() {
           </ul>
 
           <h2 className="font-display pt-4 text-xl font-semibold text-neutral-900 dark:text-white">
-            Try a few
+            A sample
           </h2>
-          <p>
-            Three from the Gospels. Reveal the answer, or open the verse to read
-            it in context.
-          </p>
-          <ol className="qz-list">
-            {samples.map((q) => (
-              <QuestionCard key={q.id} question={q} />
-            ))}
-          </ol>
+          <QuizList questions={samples} />
 
-          <h2 className="font-display pt-4 text-xl font-semibold text-neutral-900 dark:text-white">
-            Quiz a single chapter
-          </h2>
-          <p>
-            Every chapter has its own five-question quiz that scores you and
-            tracks what you&apos;ve completed. Pick a chapter from the{" "}
+          <p className="pt-4">
+            Each chapter also has its own scored quiz, from the{" "}
             <Link
               href="/try/bible/start"
               className="underline decoration-neutral-300 underline-offset-2 hover:text-amber-700 dark:decoration-neutral-600 dark:hover:text-amber-400"
             >
               reading roadmap
-            </Link>
-            , or open a section above and follow any chapter heading.
+            </Link>{" "}
+            or any chapter heading above.
           </p>
         </div>
       </article>

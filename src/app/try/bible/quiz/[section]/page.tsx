@@ -10,7 +10,7 @@ import {
   sampleQuestions,
   bookSlug,
 } from "@/lib/content/quiz-index";
-import { QuestionCard } from "../question-card";
+import { QuizList } from "../quiz-list";
 
 /**
  * A section index: the books it covers, and a handful of its questions so the
@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const count = sectionQuestionCount(slug);
   const title = `${section.title} Quiz — ${count.toLocaleString()} questions`;
-  const description = `${section.blurb} ${count.toLocaleString()} questions with answers, each linked to the verse it comes from.`;
+  const description = `${section.blurb} ${count.toLocaleString()} quiz questions with answers, each linked to the verse it comes from.`;
 
   return {
     title,
@@ -76,8 +76,7 @@ export default async function QuizSectionPage({ params }: Props) {
         <div className="mt-8 space-y-6 font-scripture text-[16px] font-normal leading-relaxed text-neutral-800 dark:text-white">
           <p>
             {section.blurb} {count.toLocaleString()} questions across{" "}
-            {books.length === 1 ? "one book" : `${books.length} books`}, each
-            linked to the verse it comes from.
+            {books.length === 1 ? "one book" : `${books.length} books`}.
           </p>
 
           <h2 className="font-display pt-4 text-xl font-semibold text-neutral-900 dark:text-white">
@@ -105,11 +104,7 @@ export default async function QuizSectionPage({ params }: Props) {
           <h2 className="font-display pt-4 text-xl font-semibold text-neutral-900 dark:text-white">
             A sample
           </h2>
-          <ol className="qz-list">
-            {samples.map((q) => (
-              <QuestionCard key={q.id} question={q} />
-            ))}
-          </ol>
+          <QuizList questions={samples} />
         </div>
       </article>
 

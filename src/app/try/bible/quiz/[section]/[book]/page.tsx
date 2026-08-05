@@ -5,7 +5,7 @@ import { Logo } from "@/components/logo";
 import { SiteFooter } from "@/components/site-footer";
 import { quizSection } from "@/lib/quiz-sections";
 import { bookGroup, bookRoutes } from "@/lib/content/quiz-index";
-import { QuestionCard } from "../../question-card";
+import { QuizList } from "../../quiz-list";
 
 /**
  * Every question in one book, grouped by chapter, answers collapsed, each
@@ -28,10 +28,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const title = `${group.book} Quiz — ${group.count} questions`;
   const description =
-    `A ${group.count}-question quiz on the book of ${group.book}, covering all ` +
+    `${group.count} quiz questions on ${group.book}, covering all ` +
     `${group.chapters.length} ${group.chapters.length === 1 ? "chapter" : "chapters"}. ` +
-    `Multiple choice, true or false, and fill in the blank, with every answer ` +
-    `linked to the verse it comes from.`;
+    `Multiple choice, true or false, and fill in the blank, each linked to the ` +
+    `verse it comes from.`;
 
   return {
     title,
@@ -74,8 +74,7 @@ export default async function QuizBookPage({ params }: Props) {
             {group.chapters.length === 1
               ? "one chapter"
               : `${group.chapters.length} chapters`}
-            . Reveal any answer, or open the verse to read it in context. Each
-            chapter heading links to that chapter&apos;s scored quiz.
+            . Each chapter heading links to that chapter&apos;s scored quiz.
           </p>
 
           {group.chapters.map((c) => (
@@ -88,11 +87,7 @@ export default async function QuizBookPage({ params }: Props) {
                   {c.reference}
                 </Link>
               </h2>
-              <ol className="qz-list">
-                {c.questions.map((q) => (
-                  <QuestionCard key={q.id} question={q} />
-                ))}
-              </ol>
+              <QuizList questions={c.questions} />
             </section>
           ))}
         </div>
