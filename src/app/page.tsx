@@ -79,7 +79,7 @@ const features: { id: string; content: ReactNode }[] = [
     content: (
       <>
         Optional Study mode adds a short comprehension quiz at the end of each
-        chapter; the default Read mode skips them. All 5,946 questions are also
+        chapter; the default Read mode skips them. 5,946 questions are also
         browsable in the{" "}
         <Link
           href="/try/bible/quiz"

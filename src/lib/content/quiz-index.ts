@@ -115,6 +115,24 @@ export function totalQuestionCount(): number {
   return QUIZ_SECTIONS.reduce((n, s) => n + sectionQuestionCount(s.slug), 0);
 }
 
+/**
+ * A pool for the hub's random round, taken at an even stride across the whole
+ * corpus so a draw genuinely spans the canon rather than clustering in
+ * Genesis. Bundled with the page rather than fetched, so the round works on
+ * the static mobile export and the first draw is in the server-rendered HTML.
+ *
+ * The client shuffles this and deals from it without repeats, so a pool of n
+ * gives n/drawSize distinct rounds before anything comes round again.
+ */
+export function randomPool(n: number): IndexedQuestion[] {
+  const all = QUIZ_SECTIONS.flatMap((s) =>
+    sectionBooks(s.slug).flatMap((b) => b.chapters.flatMap((c) => c.questions)),
+  );
+  if (all.length <= n) return all;
+  const stride = all.length / n;
+  return Array.from({ length: n }, (_, i) => all[Math.floor(i * stride)]);
+}
+
 export type SectionSummary = QuizSection & {
   questionCount: number;
   bookCount: number;

@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Logo } from "@/components/logo";
 import { SiteFooter } from "@/components/site-footer";
-import { sectionSummaries, totalQuestionCount } from "@/lib/content/quiz-index";
+import { sectionSummaries, totalQuestionCount, randomPool } from "@/lib/content/quiz-index";
+import { RandomQuiz } from "./random-quiz";
 
 /**
  * The quiz hub: the category page above the 1,189 per-chapter quizzes, which
@@ -35,6 +36,7 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function QuizHubPage() {
   const sections = sectionSummaries();
   const total = totalQuestionCount();
+  const pool = randomPool(240);
 
   return (
     <main className="flex min-h-screen flex-col bg-white dark:bg-neutral-950">
@@ -58,6 +60,8 @@ export default function QuizHubPage() {
             {total.toLocaleString()} questions covering every chapter of the
             Bible: multiple choice, true or false, and fill in the blank.
           </p>
+
+          <RandomQuiz pool={pool} />
 
           <h2 className="font-display pt-4 text-xl font-semibold text-neutral-900 dark:text-white">
             Quiz by section
