@@ -73,3 +73,68 @@ h3 .vtext {
 .hide-verse-nums .verse-num {
   display: none;
 }
+
+/* Quiz question cards. These pages render every question in a book into the
+   HTML so search can see them, which means the markup repeats hundreds of
+   times per page — carrying Tailwind class strings on each node pushed the
+   larger sections past 3 MB. Styling them here instead keeps the pages a
+   fraction of that size. */
+.qz-list {
+  list-style: none;
+  margin-top: 0.5rem;
+}
+.qz {
+  border: 1px solid rgb(229 229 229);
+  border-radius: 0.5rem;
+  padding: 0.6rem 0.9rem;
+  margin-top: 0.6rem;
+}
+.qz-q {
+  font-weight: 500;
+}
+.qz-opts,
+.qz-ref {
+  font-size: 0.875rem;
+  color: rgb(82 82 82);
+  margin-top: 0.35rem;
+}
+.qz summary {
+  cursor: pointer;
+  list-style: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: rgb(180 83 9);
+  margin-top: 0.5rem;
+}
+.qz summary::-webkit-details-marker {
+  display: none;
+}
+.qz summary:hover {
+  text-decoration: underline;
+}
+.qz-a {
+  margin-top: 0.4rem;
+}
+.qz-go {
+  display: inline-block;
+  margin-top: 0.4rem;
+  font-size: 0.875rem;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.qz-go:hover {
+  color: rgb(180 83 9);
+}
+@media (prefers-color-scheme: dark) {
+  .qz {
+    border-color: rgb(64 64 64);
+  }
+  .qz-opts,
+  .qz-ref {
+    color: rgb(163 163 163);
+  }
+  .qz summary,
+  .qz-go:hover {
+    color: rgb(251 191 36);
+  }
+}

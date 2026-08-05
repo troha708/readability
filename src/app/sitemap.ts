@@ -6,6 +6,8 @@ import { IS_MOBILE } from "@/lib/build-target";
 import { SITE_URL } from "@/lib/site";
 import { loadAtlasData } from "@/lib/content/atlas-server";
 import { placeSlug } from "@/lib/content/places";
+import { QUIZ_SECTIONS } from "@/lib/quiz-sections";
+import { bookRoutes } from "@/lib/content/quiz-index";
 
 const BASE = SITE_URL;
 
@@ -18,6 +20,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: BASE, changeFrequency: "weekly", priority: 1 },
     { url: `${BASE}/try/bible/start`, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE}/try/bible/map`, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE}/try/bible/quiz`, changeFrequency: "monthly", priority: 0.8 },
+    ...QUIZ_SECTIONS.map((s) => ({
+      url: `${BASE}/try/bible/quiz/${s.slug}`,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    })),
+    // Per-book quiz pages carry the questions and the "genesis quiz" terms.
+    ...bookRoutes().map(({ section, book }) => ({
+      url: `${BASE}/try/bible/quiz/${section}/${book}`,
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    })),
   ];
 
   // A sitemap is meaningless in the offline app; skip the dynamic part for
@@ -59,10 +73,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
           priority: version === "BSB" ? 0.7 : 0.4,
         });
       }
+      // Raised from 0.3: these are now the spokes under /try/bible/quiz
+      // rather than orphans nothing linked to.
       entries.push({
         url: `${BASE}/try/bible/questions/${encodeURIComponent(bookName)}/${chapterNumber}`,
         changeFrequency: "monthly",
-        priority: 0.3,
+        priority: 0.5,
       });
     }
   }
