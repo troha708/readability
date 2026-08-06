@@ -1091,9 +1091,9 @@ export function HeroMockup() {
         <div className="sticky top-0 z-10 select-none border-b border-neutral-700 bg-neutral-925/95 px-4 py-3 backdrop-blur-sm">
           <div className="flex items-center justify-between gap-2">
             <div className="flex min-w-0 items-center gap-2">
-              <span className="text-base font-bold text-neutral-200">Readability</span>
+              <span className="text-base font-bold tracking-[0.25px] text-neutral-200">Readability</span>
               <div className="h-5 w-px shrink-0 bg-neutral-700" />
-              <span className="flex shrink-0 items-center gap-1.5 px-1.5 py-1 text-sm text-neutral-500">
+              <span className="flex shrink-0 items-center gap-1.5 px-1.5 py-1 text-sm font-medium tracking-[0.25px] text-neutral-500">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <line x1="19" y1="12" x2="5" y2="12" />
                   <polyline points="12 19 5 12 12 5" />
@@ -1109,14 +1109,14 @@ export function HeroMockup() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                 </svg>
               </span>
-              <span className="flex items-center gap-1 rounded-md px-2 py-1 text-[0.65rem] font-semibold leading-none text-neutral-400">
+              <span className="flex items-center gap-1 rounded-md px-2 py-1 text-[0.65rem] font-medium tracking-[0.25px] leading-none text-neutral-400">
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
                   <circle cx="12" cy="10" r="3" />
                 </svg>
                 Map
               </span>
-              <span className="flex items-center gap-1 rounded-md px-2 py-1 text-[0.65rem] font-semibold leading-none text-neutral-400">
+              <span className="flex items-center gap-1 rounded-md px-2 py-1 text-[0.65rem] font-medium tracking-[0.25px] leading-none text-neutral-400">
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M12 20h9" />
                   <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
@@ -1135,13 +1135,13 @@ export function HeroMockup() {
           </div>
           {/* Book selector + chapter strip */}
           <div className="mt-2 flex items-center gap-3">
-            <span className="flex h-7 shrink-0 items-center rounded-md border border-neutral-600 px-2.5 text-sm font-medium text-neutral-300">
+            <span className="flex h-7 shrink-0 items-center rounded-md border border-neutral-600 px-2.5 text-sm font-medium tracking-[0.25px] text-neutral-300">
               John <span className="ml-1 text-neutral-500">▾</span>
             </span>
             <div className="flex min-w-0 flex-1 gap-1 overflow-hidden py-0.5 pl-0.5">
               {/* Overview chip + chapter chips, styled as the reader's strip:
-                  muted gold chip, gold-ringed current chapter, quiet rest. */}
-              <span className="flex h-7 shrink-0 items-center rounded bg-amber-400/10 px-2.5 text-xs font-semibold text-gold-bright">
+                  muted gold chip, solid-gold current chapter, quiet rest. */}
+              <span className="flex h-7 shrink-0 items-center rounded bg-amber-400/10 px-2.5 text-xs font-medium tracking-[0.25px] text-gold-bright">
                 Overview
               </span>
               {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((num) => (
@@ -1149,7 +1149,7 @@ export function HeroMockup() {
                   key={num}
                   className={`flex h-7 w-7 shrink-0 items-center justify-center rounded text-xs ${
                     num === 1
-                      ? "bg-amber-400/20 font-bold text-amber-100 ring-2 ring-amber-400"
+                      ? "bg-amber-400 font-bold text-neutral-950"
                       : "bg-neutral-800 text-neutral-400"
                   }`}
                 >
