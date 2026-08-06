@@ -27,21 +27,14 @@ const config: Config = {
         // whose measured ground is #13120E) — pages sit on it and the cooler
         // 900/800 become the raised-surface steps above it. 950 stays stock
         // near-black: the landing and static shells anchor on it.
-        // 350 and 650 are the reader's chapter-numeral and section-heading
-        // grey: the exact midpoint between the heading cross-reference (400
-        // dark / 500 light) and the scripture body (300 dark / 800 light), so
-        // that chrome reads a step quieter than the words without dropping to
-        // the reference's weight.
         neutral: {
           50: "#fafafa",
           100: "#f2f2f2",
           200: "#dce0e3",
           300: "#d3d7da",
-          350: "#b7bbbf",
           400: "#9a9fa3",
           500: "#75797d",
           600: "#5e6266",
-          650: "#4f5254",
           700: "#424547",
           800: "#282a2b",
           900: "#202121",
