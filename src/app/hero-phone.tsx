@@ -36,18 +36,15 @@ export function HeroPhone() {
   }, []);
 
   return (
-    <div className="mx-auto w-[308px] max-w-full">
-      <div className="relative rounded-[2.5rem] border-[14px] border-neutral-900 bg-neutral-900 shadow-2xl ring-1 ring-neutral-700/60">
-        {/* Notch */}
-        <div className="absolute left-1/2 top-0 z-10 h-[18px] w-[110px] -translate-x-1/2 rounded-b-[1rem] bg-neutral-900" />
-        {/* Volume pair, silent switch, wake button */}
-        <div className="absolute -left-[17px] top-[70px] h-[30px] w-[3px] rounded-l-lg bg-neutral-800" />
-        <div className="absolute -left-[17px] top-[118px] h-[44px] w-[3px] rounded-l-lg bg-neutral-800" />
-        <div className="absolute -left-[17px] top-[172px] h-[44px] w-[3px] rounded-l-lg bg-neutral-800" />
-        <div className="absolute -right-[17px] top-[136px] h-[62px] w-[3px] rounded-r-lg bg-neutral-800" />
+    <div className="mx-auto w-[304px] max-w-full">
+      {/* No notch and no side buttons: the notch sat over the app's own
+          header, and at this size the extra hardware detail only got in the
+          way of the thing being shown. An even bezel around a plain
+          rectangular screen reads as a phone without any of that. */}
+      <div className="rounded-[2rem] border-[12px] border-neutral-900 bg-neutral-900 shadow-2xl ring-1 ring-neutral-700/60">
         <video
           ref={videoRef}
-          className="block w-full rounded-[2rem] bg-neutral-925"
+          className="block w-full rounded-[1.25rem] bg-neutral-925"
           style={{ aspectRatio: "390 / 844" }}
           src="/hero/reader.webm"
           poster="/hero/reader-poster.jpg"
