@@ -44,12 +44,12 @@ function isVerseMarker(node: unknown): boolean {
 
 // Section headings in the manner of esv.org: the scripture serif, italic, at
 // body size — one weight step above the body text (500/450 vs the body's
-// 450/400) so they hold their own without shouting. The hand-tuned halfway
-// gold, in its `deep` shade on the light page: the DEFAULT token's 3.5:1
-// there was the faintest text on the reading surface, so headings take the
-// same hue with more ink (4.9:1). Dark mode keeps `bright`. Margins per site.
+// 450/400) so they hold their own without shouting. Grey rather than gold
+// (owner-directed): the midpoint between the cross-reference beside the
+// heading and the scripture itself, so the heading is plainly chrome without
+// receding to the reference's weight. Margins per site.
 const HEADING_CLASS =
-  "font-scripture text-[1em] font-medium italic text-gold-deep dark:font-[450] dark:text-gold-bright";
+  "font-scripture text-[1em] font-medium italic text-neutral-650 dark:font-[450] dark:text-neutral-350";
 
 // KJV paragraph mark (pilcrow). Shown but de-emphasised — the same muted grey as
 // the verse-number superscripts — and excluded from text selection and screen
@@ -331,7 +331,7 @@ function getParserOptions(
                 anchor for verse-1 text and the selection toolbar never opens. */}
             <span
               data-verse-num={1}
-              className="float-left mr-2.5 mt-[0.08em] font-display text-[3.4em] font-semibold leading-[0.78] text-amber-700 dark:text-amber-400"
+              className="float-left mr-2.5 mt-[0.08em] font-display text-[3.4em] font-semibold leading-[0.78] text-neutral-650 dark:text-neutral-350"
             >
               {chapterNumber}
             </span>
