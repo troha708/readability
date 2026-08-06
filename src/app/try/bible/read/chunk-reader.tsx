@@ -71,13 +71,13 @@ const EMPTY_HIGHLIGHTS: Record<number, VerseHighlight> = {};
 /** Width of each wide-screen side rail, in px. */
 const RAIL_WIDTH = 216;
 
-// While a rail is out, its edge LINE warms to gold and carries a tight glow —
-// the line itself lighting up, not a wash of colour thrown across the page.
-// (A wide 28px spill was tried first and read as a shadow, not a glow.)
+// The warm reveal: the edge line lights up AND throws a soft spill sideways
+// onto the page — both, but at roughly half the strength of the first cut,
+// which was too assertive.
 const RAIL_GLOW_LEFT =
-  "border-r-amber-500/40 shadow-[1px_0_7px_-1px_rgba(224,184,90,0.20)] dark:border-r-amber-400/30";
+  "border-r-amber-500/25 shadow-[8px_0_28px_-12px_rgba(224,184,90,0.22)] dark:border-r-amber-400/20";
 const RAIL_GLOW_RIGHT =
-  "border-l-amber-500/40 shadow-[-1px_0_7px_-1px_rgba(224,184,90,0.20)] dark:border-l-amber-400/30";
+  "border-l-amber-500/25 shadow-[-8px_0_28px_-12px_rgba(224,184,90,0.22)] dark:border-l-amber-400/20";
 
 type CompletionAge = "recent" | "fading" | "old";
 
@@ -1008,9 +1008,6 @@ export function ChunkReader({
     if (!window.matchMedia?.("(hover: hover)").matches) return;
     setAutoHideRails(localStorage.getItem("readerAutoHideRails") !== "false");
   }, []);
-
-  /** A rail counts as "out" only when it is actually showing. */
-  const railOut = (open: boolean) => !autoHideRails || open;
 
   function toggleAutoHideRails() {
     const next = !autoHideRails;
@@ -2759,7 +2756,7 @@ export function ChunkReader({
 
       {/* Left panel — way out, book picker, chapter grid */}
       <aside
-        className={`fixed left-0 top-0 z-20 hidden h-screen w-[216px] flex-col border-r border-neutral-200 bg-white transition-[transform,box-shadow] duration-[420ms] ease-[cubic-bezier(0.32,0.72,0,1)] dark:border-neutral-700 dark:bg-neutral-925 xl:flex ${railOut(leftRailOpen) ? RAIL_GLOW_LEFT : ""}`}
+        className={`fixed left-0 top-0 z-20 hidden h-screen w-[216px] flex-col border-r border-neutral-200 bg-white transition-[transform,box-shadow,border-color] duration-[420ms] ease-[cubic-bezier(0.32,0.72,0,1)] dark:border-neutral-700 dark:bg-neutral-925 xl:flex ${autoHideRails && leftRailOpen ? RAIL_GLOW_LEFT : ""}`}
         style={{ transform: autoHideRails && !leftRailOpen ? `translateX(-${RAIL_WIDTH}px)` : "translateX(0)" }}
         // A folded rail is off-screen: keep it out of the tab order and away
         // from assistive tech until it comes back.
@@ -2825,7 +2822,7 @@ export function ChunkReader({
 
       {/* Right panel — brand, tools, and the settings menu */}
       <aside
-        className={`fixed right-0 top-0 z-20 hidden h-screen w-[216px] flex-col border-l border-neutral-200 bg-white transition-[transform,box-shadow] duration-[420ms] ease-[cubic-bezier(0.32,0.72,0,1)] dark:border-neutral-700 dark:bg-neutral-925 xl:flex ${railOut(rightRailOpen) ? RAIL_GLOW_RIGHT : ""}`}
+        className={`fixed right-0 top-0 z-20 hidden h-screen w-[216px] flex-col border-l border-neutral-200 bg-white transition-[transform,box-shadow,border-color] duration-[420ms] ease-[cubic-bezier(0.32,0.72,0,1)] dark:border-neutral-700 dark:bg-neutral-925 xl:flex ${autoHideRails && rightRailOpen ? RAIL_GLOW_RIGHT : ""}`}
         style={{ transform: autoHideRails && !rightRailOpen ? `translateX(${RAIL_WIDTH}px)` : "translateX(0)" }}
         inert={autoHideRails && !rightRailOpen}
       >
@@ -2982,7 +2979,14 @@ export function ChunkReader({
           <p className="text-[10.5px] font-medium tracking-[0.25px] text-neutral-400 dark:text-neutral-500">
             © {new Date().getFullYear()} Readability
           </p>
-          <div className="mt-1 flex gap-3 text-[10.5px] font-medium tracking-[0.25px] text-neutral-400 dark:text-neutral-500">
+          {/* Wraps rather than scrolls: four links don't fit one 216px row. */}
+          <div className="mt-1 flex flex-wrap gap-x-3 gap-y-1 text-[10.5px] font-medium tracking-[0.25px] text-neutral-400 dark:text-neutral-500">
+            <Link href="/try/bible/dictionary" className="underline hover:text-neutral-600 dark:hover:text-neutral-300">
+              Dictionary
+            </Link>
+            <Link href="/try/bible/quiz" className="underline hover:text-neutral-600 dark:hover:text-neutral-300">
+              Quiz
+            </Link>
             <Link href="/support" className="underline hover:text-neutral-600 dark:hover:text-neutral-300">
               Support
             </Link>
