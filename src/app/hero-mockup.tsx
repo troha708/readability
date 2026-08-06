@@ -838,7 +838,9 @@ function MockVerseSheet({
   onClose: () => void;
 }) {
   const data = VERSES[verse];
-  const [openSection, setOpenSection] = useState<string | null>(null);
+  // Study notes start open: a collapsed row of headers shows that the
+  // commentary exists, not what it reads like.
+  const [openSection, setOpenSection] = useState<string | null>("tyndale");
   const [noteOpen, setNoteOpen] = useState(false);
   const [noteDraft, setNoteDraft] = useState(note);
   const [copied, setCopied] = useState(false);
@@ -856,9 +858,9 @@ function MockVerseSheet({
 
   return (
     <div className="absolute inset-0 z-20 flex items-end justify-center">
-      <div className="absolute inset-0 rounded-xl bg-black/40" onClick={onClose} />
+      <div className="absolute inset-0 bg-black/40" onClick={onClose} />
 
-      <div className="relative flex max-h-[92%] w-full flex-col rounded-t-2xl border border-b-0 border-neutral-700 bg-neutral-900 shadow-2xl">
+      <div className="relative flex max-h-[62%] w-full flex-col rounded-t-2xl border border-b-0 border-neutral-700 bg-neutral-900 shadow-2xl">
         <div className="mx-auto mt-2 h-1 w-10 shrink-0 rounded-full bg-neutral-700" />
         {/* Header */}
         <div className="flex items-center justify-between px-5 pb-2 pt-1">
@@ -1046,7 +1048,9 @@ function MockVerseSheet({
 }
 
 export function HeroMockup() {
-  const [sheetVerse, setSheetVerse] = useState<number | null>(null);
+  // Opens on verse 1 so the hero shows the feature itself — tap a verse, read
+  // the commentary — rather than asking a visitor to discover it.
+  const [sheetVerse, setSheetVerse] = useState<number | null>(1);
   const [highlights, setHighlights] = useState<Record<number, string>>({});
   const [notes, setNotes] = useState<Record<number, string>>({});
 
@@ -1080,11 +1084,24 @@ export function HeroMockup() {
       .hero-mockup-scroll::-webkit-scrollbar-thumb { background: #9a9fa3; border-radius: 6px; border: 2px solid #14110f; }
       .hero-mockup-scroll::-webkit-scrollbar-thumb:hover { background: #c4c4c4; }
     `}</style>
-    <div className="dark relative mx-auto w-full max-w-3xl overflow-hidden rounded-xl border border-neutral-700 bg-neutral-925 shadow-2xl">
+    {/* Tablet shell, portrait. The app inside sits at one fixed width now, so
+        the breakpoint-dependent bits it used to carry are gone — those tracked
+        the browser viewport, not this frame, and would have shown desktop
+        variants inside a screen a third that wide. */}
+    <div className="dark mx-auto w-full max-w-[460px]">
+      <div className="relative rounded-[1.5rem] border border-neutral-700 bg-neutral-900 p-3 shadow-2xl">
+        {/* Front camera */}
+        <div className="absolute left-1/2 top-[7px] z-30 h-1.5 w-1.5 -translate-x-1/2 rounded-full bg-neutral-700" />
+        {/* Screen — 3:4, portrait tablet. Clips the sheet's backdrop to the
+            rounded corners, so the sheet needs no radius of its own. */}
+        <div
+          className="relative overflow-hidden rounded-[0.75rem] bg-neutral-925"
+          style={{ aspectRatio: "3 / 4" }}
+        >
       {/* Scrollable app viewport — mirrors the reading page, sticky header included */}
       {/* No overscroll containment: when this inner scroller hits its top or
           bottom, the wheel must chain to the page scroll. */}
-      <div className="hero-mockup-scroll max-h-[736px] overflow-y-auto">
+      <div className="hero-mockup-scroll h-full overflow-y-auto">
         {/* App header — same layout as the real reader header. The real one is
             built from buttons, whose text the browser never lets you select;
             these are display-only spans, so match that with select-none. */}
@@ -1098,9 +1115,7 @@ export function HeroMockup() {
                   <line x1="19" y1="12" x2="5" y2="12" />
                   <polyline points="12 19 5 12 12 5" />
                 </svg>
-                {/* Breakpoints track the viewport but the frame is a half-
-                    column from md to lg, so hide the label in that band. */}
-                <span className="hidden sm:inline md:hidden lg:inline">Library</span>
+                {/* The real reader shows no Library label at phone width. */}
               </span>
             </div>
             <div className="flex shrink-0 items-center gap-1">
@@ -1161,7 +1176,7 @@ export function HeroMockup() {
         </div>
 
         {/* Reading content */}
-        <div className="space-y-4 bg-neutral-925 p-5 pb-6 sm:p-6 sm:pb-7" style={{ fontSize: "16px" }}>
+        <div className="space-y-4 bg-neutral-925 p-5 pb-6" style={{ fontSize: "16px" }}>
           <div>
             {/* Section heading, with the BSB parallel-passage refs inline */}
             <p className="font-scripture text-[1em] font-[450] italic text-gold-bright">
@@ -1246,6 +1261,8 @@ export function HeroMockup() {
           onClose={() => setSheetVerse(null)}
         />
       )}
+        </div>
+      </div>
     </div>
     </>
   );
