@@ -31,7 +31,7 @@ import { bibleBookSortIndex, chapterUnit, OT_BOOK_ORDER } from "@/lib/bible-book
 import { isOverviewAtStart } from "@/lib/overview-placement";
 import { parseScriptureRefs } from "@/lib/scripture-refs";
 import { VersePeekLink } from "@/components/verse-peek";
-import { SITE_URL } from "@/lib/site";
+import { SITE_URL, GITHUB_URL } from "@/lib/site";
 import { createPortal } from "react-dom";
 import {
   type HighlightColor,
@@ -70,6 +70,12 @@ const EMPTY_HIGHLIGHTS: Record<number, VerseHighlight> = {};
 
 /** Width of each wide-screen side rail, in px. */
 const RAIL_WIDTH = 216;
+
+// A warm edge glow while a rail is out — the gold the reader already uses,
+// thrown sideways from the rail's inner edge so it reads as light spilling
+// onto the page rather than a border.
+const RAIL_GLOW_LEFT = "shadow-[8px_0_28px_-10px_rgba(224,184,90,0.45)]";
+const RAIL_GLOW_RIGHT = "shadow-[-8px_0_28px_-10px_rgba(224,184,90,0.45)]";
 
 type CompletionAge = "recent" | "fading" | "old";
 
@@ -1000,6 +1006,9 @@ export function ChunkReader({
     if (!window.matchMedia?.("(hover: hover)").matches) return;
     setAutoHideRails(localStorage.getItem("readerAutoHideRails") !== "false");
   }, []);
+
+  /** A rail counts as "out" only when it is actually showing. */
+  const railOut = (open: boolean) => !autoHideRails || open;
 
   function toggleAutoHideRails() {
     const next = !autoHideRails;
@@ -2708,9 +2717,46 @@ export function ChunkReader({
           so the shared open/visible state stays in sync without a media query
           in JS (and without a flash of the wrong one before hydration). */}
 
+      {/* Edge tabs — the only sign a folded rail is there at all. An open book
+          for the navigation side, a spanner for the tools side. They fade out
+          as their rail comes forward, since the rail itself is then the
+          affordance. Clicking one pins its rail out until the cursor leaves. */}
+      {autoHideRails && (
+        <>
+          <button
+            onClick={() => setLeftRailOpen(true)}
+            aria-label="Show navigation panel"
+            title="Navigation"
+            className={`fixed left-0 top-1/2 z-10 hidden -translate-y-1/2 rounded-r-lg border border-l-0 border-neutral-200 bg-white/95 py-3 pl-1.5 pr-2 text-neutral-400 backdrop-blur transition-opacity duration-300 hover:text-gold dark:border-neutral-700 dark:bg-neutral-925/95 dark:hover:text-gold-bright xl:block ${
+              leftRailOpen ? "pointer-events-none opacity-0" : "opacity-100"
+            }`}
+          >
+            {/* Open book */}
+            <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M12 6.5C10.5 5.2 8.5 4.5 6 4.5H3v14h3c2.5 0 4.5.7 6 2" />
+              <path d="M12 6.5c1.5-1.3 3.5-2 6-2h3v14h-3c-2.5 0-4.5.7-6 2" />
+              <path d="M12 6.5v14" />
+            </svg>
+          </button>
+          <button
+            onClick={() => setRightRailOpen(true)}
+            aria-label="Show reading tools"
+            title="Tools"
+            className={`fixed right-0 top-1/2 z-10 hidden -translate-y-1/2 rounded-l-lg border border-r-0 border-neutral-200 bg-white/95 py-3 pl-2 pr-1.5 text-neutral-400 backdrop-blur transition-opacity duration-300 hover:text-gold dark:border-neutral-700 dark:bg-neutral-925/95 dark:hover:text-gold-bright xl:block ${
+              rightRailOpen ? "pointer-events-none opacity-0" : "opacity-100"
+            }`}
+          >
+            {/* Spanner */}
+            <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M14.7 6.3a4.5 4.5 0 0 0 5.9 5.9l-8.4 8.4a2.1 2.1 0 0 1-3-3l8.4-8.4a4.5 4.5 0 0 0-5.9-5.9l3 3-2.1 2.1-3-3a4.5 4.5 0 0 1 5.1-.1z" />
+            </svg>
+          </button>
+        </>
+      )}
+
       {/* Left panel — way out, book picker, chapter grid */}
       <aside
-        className="fixed left-0 top-0 z-20 hidden h-screen w-[216px] flex-col border-r border-neutral-200 bg-white transition-transform duration-300 ease-out dark:border-neutral-700 dark:bg-neutral-925 xl:flex"
+        className={`fixed left-0 top-0 z-20 hidden h-screen w-[216px] flex-col border-r border-neutral-200 bg-white transition-[transform,box-shadow] duration-[420ms] ease-[cubic-bezier(0.32,0.72,0,1)] dark:border-neutral-700 dark:bg-neutral-925 xl:flex ${railOut(leftRailOpen) ? RAIL_GLOW_LEFT : ""}`}
         style={{ transform: autoHideRails && !leftRailOpen ? `translateX(-${RAIL_WIDTH}px)` : "translateX(0)" }}
         // A folded rail is off-screen: keep it out of the tab order and away
         // from assistive tech until it comes back.
@@ -2776,7 +2822,7 @@ export function ChunkReader({
 
       {/* Right panel — brand, tools, and the settings menu */}
       <aside
-        className="fixed right-0 top-0 z-20 hidden h-screen w-[216px] flex-col border-l border-neutral-200 bg-white transition-transform duration-300 ease-out dark:border-neutral-700 dark:bg-neutral-925 xl:flex"
+        className={`fixed right-0 top-0 z-20 hidden h-screen w-[216px] flex-col border-l border-neutral-200 bg-white transition-[transform,box-shadow] duration-[420ms] ease-[cubic-bezier(0.32,0.72,0,1)] dark:border-neutral-700 dark:bg-neutral-925 xl:flex ${railOut(rightRailOpen) ? RAIL_GLOW_RIGHT : ""}`}
         style={{ transform: autoHideRails && !rightRailOpen ? `translateX(${RAIL_WIDTH}px)` : "translateX(0)" }}
         inert={autoHideRails && !rightRailOpen}
       >
@@ -2923,6 +2969,23 @@ export function ChunkReader({
               onPick={pickVersion}
               hover="hover:bg-neutral-100 dark:hover:bg-neutral-800"
             />
+          </div>
+        </div>
+
+        {/* Foot of the rail. A direct child of the aside, which is the flex
+            column — the tools list above it takes flex-1, so this lands at the
+            bottom of the screen rather than under the translation list. */}
+        <div className="shrink-0 border-t border-neutral-200 px-4 py-3 dark:border-neutral-800">
+          <p className="text-[10.5px] font-medium tracking-[0.25px] text-neutral-400 dark:text-neutral-500">
+            © {new Date().getFullYear()} Readability
+          </p>
+          <div className="mt-1 flex gap-3 text-[10.5px] font-medium tracking-[0.25px] text-neutral-400 dark:text-neutral-500">
+            <Link href="/support" className="underline hover:text-neutral-600 dark:hover:text-neutral-300">
+              Support
+            </Link>
+            <a href={GITHUB_URL} className="underline hover:text-neutral-600 dark:hover:text-neutral-300">
+              GitHub
+            </a>
           </div>
         </div>
       </aside>
