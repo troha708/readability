@@ -2317,8 +2317,11 @@ export function ChunkReader({
     const isCompleted = isChapterDone(chNum);
 
     if (isCurrent) {
-      // "You are here": distinguished by a solid gold ring + bold number.
-      return "bg-amber-500/20 text-amber-900 ring-2 ring-amber-500 font-bold dark:bg-amber-400/20 dark:text-amber-100 dark:ring-amber-400";
+      // "You are here": a solid gold fill, no ring (owner asked for the box
+      // gone). The fill has to carry the whole signal — a recently-read
+      // chapter already sits on the same 20% amber tint, so merely dropping
+      // the ring would leave the two near-indistinguishable.
+      return "bg-amber-500 font-bold text-neutral-950 dark:bg-amber-400 dark:text-neutral-950";
     }
     if (isCompleted) {
       // Completed chapters get a clearly gold-tinted square (graded by age) so
