@@ -466,6 +466,240 @@ function NotesDrawer({
   );
 }
 
+// ── Shared reader controls ───────────────────────────────────
+//
+// The narrow-screen sticky header and the wide-screen side panels show the same
+// controls in different furniture, so the bodies live here and each layout
+// supplies its own container.
+
+function ToggleRow({
+  label,
+  on,
+  hover,
+  onClick,
+}: {
+  label: string;
+  on: boolean;
+  hover: string;
+  onClick: () => void;
+}) {
+  return (
+    <button
+      onClick={onClick}
+      className={`flex w-full items-center justify-between rounded-md px-2 py-1.5 text-left ${hover}`}
+    >
+      <span className="text-xs font-semibold text-neutral-500 dark:text-neutral-400">
+        {label}
+      </span>
+      <span
+        className={`flex h-5 w-9 items-center rounded-full p-0.5 transition-colors ${
+          on ? "bg-amber-500" : "bg-neutral-300 dark:bg-neutral-600"
+        }`}
+      >
+        <span
+          className={`h-4 w-4 rounded-full bg-white shadow transition-transform ${
+            on ? "translate-x-4" : "translate-x-0"
+          }`}
+        />
+      </span>
+    </button>
+  );
+}
+
+type SettingsControlsProps = {
+  /** Which surface these sit on — only affects the hover tint. */
+  surface: "menu" | "panel";
+  mode: ReadingMode;
+  onMode: (m: ReadingMode) => void;
+  fontSize: number;
+  fontSizeMin: number;
+  fontSizeMax: number;
+  onFontSize: (delta: number) => void;
+  dark: boolean;
+  onToggleTheme: () => void;
+  bionic: boolean;
+  onToggleBionic: () => void;
+  verseNumbers: boolean;
+  onToggleVerseNumbers: () => void;
+  redLetter: boolean;
+  onToggleRedLetter: () => void;
+  showCrossRefs: boolean;
+  onToggleCrossRefs: () => void;
+  versionAbbr: string;
+  availableVersions: VersionInfo[];
+  onPickVersion: (abbr: string) => void;
+};
+
+function SettingsControls({
+  surface,
+  mode,
+  onMode,
+  fontSize,
+  fontSizeMin,
+  fontSizeMax,
+  onFontSize,
+  dark,
+  onToggleTheme,
+  bionic,
+  onToggleBionic,
+  verseNumbers,
+  onToggleVerseNumbers,
+  redLetter,
+  onToggleRedLetter,
+  showCrossRefs,
+  onToggleCrossRefs,
+  versionAbbr,
+  availableVersions,
+  onPickVersion,
+}: SettingsControlsProps) {
+  const hover =
+    surface === "panel"
+      ? "hover:bg-neutral-100 dark:hover:bg-neutral-800"
+      : "hover:bg-neutral-100 dark:hover:bg-neutral-700";
+  const rule =
+    surface === "panel"
+      ? "my-1 h-px bg-neutral-200 dark:bg-neutral-800"
+      : "my-1 h-px bg-neutral-100 dark:bg-neutral-700";
+
+  return (
+    <>
+      {/* Reading mode */}
+      <div className="flex items-center justify-between px-2 py-1.5">
+        <span className="text-xs font-semibold text-neutral-500 dark:text-neutral-400">Mode</span>
+        <div className="inline-flex rounded-md bg-neutral-100 p-0.5 dark:bg-neutral-700">
+          {(["read", "study"] as const).map((m) => (
+            <button
+              key={m}
+              onClick={() => onMode(m)}
+              className={`rounded px-2.5 py-1 text-xs font-semibold capitalize leading-none transition-all ${
+                mode === m
+                  ? "bg-white text-amber-700 shadow-sm dark:bg-neutral-600 dark:text-amber-400"
+                  : "text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-300"
+              }`}
+            >
+              {m}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div className={rule} />
+
+      {/* Text size */}
+      <div className="flex items-center justify-between px-2 py-1.5">
+        <span className="text-xs font-semibold text-neutral-500 dark:text-neutral-400">Text size</span>
+        <div className="flex items-center gap-1.5">
+          <button
+            onClick={() => onFontSize(-1)}
+            disabled={fontSize <= fontSizeMin}
+            aria-label="Decrease font size"
+            className={`flex h-7 w-7 items-center justify-center rounded text-sm font-medium text-neutral-600 disabled:cursor-not-allowed disabled:opacity-30 dark:text-neutral-300 ${hover}`}
+          >
+            −
+          </button>
+          <span className="min-w-[3ch] text-center text-xs font-semibold tabular-nums text-neutral-700 dark:text-neutral-200">
+            {fontSize}
+          </span>
+          <button
+            onClick={() => onFontSize(1)}
+            disabled={fontSize >= fontSizeMax}
+            aria-label="Increase font size"
+            className={`flex h-7 w-7 items-center justify-center rounded text-sm font-medium text-neutral-600 disabled:cursor-not-allowed disabled:opacity-30 dark:text-neutral-300 ${hover}`}
+          >
+            +
+          </button>
+        </div>
+      </div>
+
+      {/* Theme */}
+      <button
+        onClick={onToggleTheme}
+        className={`flex w-full items-center justify-between rounded-md px-2 py-1.5 text-left ${hover}`}
+      >
+        <span className="text-xs font-semibold text-neutral-500 dark:text-neutral-400">Theme</span>
+        <span className="flex items-center gap-1.5 text-xs font-medium text-neutral-700 dark:text-neutral-200">
+          {dark ? <SunIcon /> : <MoonIcon />}
+          {dark ? "Light" : "Dark"}
+        </span>
+      </button>
+
+      <ToggleRow label="Bionic reading" on={bionic} hover={hover} onClick={onToggleBionic} />
+      <ToggleRow label="Verse numbers" on={verseNumbers} hover={hover} onClick={onToggleVerseNumbers} />
+      <ToggleRow label="Red letters" on={redLetter} hover={hover} onClick={onToggleRedLetter} />
+      {/* Cross-references (BSB only) */}
+      {versionAbbr === "BSB" && (
+        <ToggleRow
+          label="Cross-references"
+          on={showCrossRefs}
+          hover={hover}
+          onClick={onToggleCrossRefs}
+        />
+      )}
+
+      <div className={rule} />
+
+      {/* Translation */}
+      <div className="px-2 pb-1 pt-0.5 text-xs font-semibold text-neutral-500 dark:text-neutral-400">
+        Translation
+      </div>
+      {availableVersions.map((v) => (
+        <button
+          key={v.abbr}
+          onClick={() => onPickVersion(v.abbr)}
+          className={`block w-full rounded-md px-2 py-1.5 text-left text-sm ${hover} ${
+            v.abbr === versionAbbr
+              ? "font-semibold text-amber-700 dark:text-amber-400"
+              : "text-neutral-700 dark:text-neutral-300"
+          }`}
+        >
+          <span className="font-medium">{v.abbr}</span>{" "}
+          <span className="text-neutral-500 dark:text-neutral-400">{v.name}</span>
+        </button>
+      ))}
+    </>
+  );
+}
+
+function BookMenu({
+  books,
+  firstNtBook,
+  current,
+  onPick,
+}: {
+  books: string[];
+  firstNtBook: string | undefined;
+  current: string;
+  onPick: (name: string) => void;
+}) {
+  return (
+    <>
+      {books.map((name) => (
+        <React.Fragment key={name}>
+          {name === firstNtBook && (
+            <div className="my-1 flex items-center gap-2 px-3 py-0.5">
+              <span className="h-px flex-1 bg-neutral-200 dark:bg-neutral-700" />
+              <span className="text-[10px] font-semibold uppercase tracking-wider text-neutral-400 dark:text-neutral-500">
+                New Testament
+              </span>
+              <span className="h-px flex-1 bg-neutral-200 dark:bg-neutral-700" />
+            </div>
+          )}
+          <button
+            onClick={() => onPick(name)}
+            className={`block w-full px-3 py-1.5 text-left text-sm hover:bg-neutral-100 dark:hover:bg-neutral-700 ${
+              name === current
+                ? "font-semibold text-amber-700 dark:text-amber-400"
+                : "text-neutral-700 dark:text-neutral-300"
+            }`}
+          >
+            {name}
+          </button>
+        </React.Fragment>
+      ))}
+    </>
+  );
+}
+
 // ── Book overview body ───────────────────────────────────────
 
 // Calmer than the dotted underline notes use: the intros are far more
@@ -740,10 +974,13 @@ export function ChunkReader({
     navigateReadUrl(readUrl({ chapter }));
   }
 
-  // Dropdown state
+  // Dropdown state. The book picker exists twice — once in the narrow-screen
+  // header, once in the wide-screen left panel — and shares its open state, so
+  // outside-click detection has to know about both containers.
   const [bookOpen, setBookOpen] = useState(false);
   const [settingsOpen, setSettingsOpen] = useState(false);
   const bookRef = useRef<HTMLDivElement>(null);
+  const panelBookRef = useRef<HTMLDivElement>(null);
   const settingsRef = useRef<HTMLDivElement>(null);
 
   // Header height — drives the notes drawer's sticky offset so its top isn't
@@ -760,9 +997,13 @@ export function ChunkReader({
     return () => ro.disconnect();
   }, []);
 
-  // Chapter strip
+  // Chapter strip (narrow screens) and its wide-screen counterpart, the chapter
+  // grid in the left panel. Both are always in the DOM — only one is displayed —
+  // so each keeps its own refs rather than fighting over one.
   const chapterStripRef = useRef<HTMLDivElement>(null);
   const activeChapterRef = useRef<HTMLAnchorElement>(null);
+  const panelChapterListRef = useRef<HTMLDivElement>(null);
+  const panelActiveChapterRef = useRef<HTMLAnchorElement>(null);
   const [chapterStripJustify, setChapterStripJustify] = useState<"center" | "flex-start">("center");
 
   // Chapter heading elements for scroll detection
@@ -1190,6 +1431,20 @@ export function ChunkReader({
     }
   }, [visibleChapterNumber, summaryVisible, chapterStripJustify]);
 
+  // Same idea for the left panel's vertical chapter grid: keep the chapter
+  // being read in view as the reader scrolls through a long book. Only the
+  // grid's own scroll box moves (block: "nearest"), never the page.
+  useEffect(() => {
+    const list = panelChapterListRef.current;
+    const el = panelActiveChapterRef.current;
+    if (!list || !el || list.clientHeight === 0) return;
+    const listRect = list.getBoundingClientRect();
+    const elRect = el.getBoundingClientRect();
+    if (elRect.top < listRect.top || elRect.bottom > listRect.bottom) {
+      el.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    }
+  }, [visibleChapterNumber, summaryVisible]);
+
   // Hold ArrowLeft / ArrowRight to scroll the chapter strip horizontally.
   // A rAF loop keeps the strip moving for as long as the key is held (rather
   // than one nudge per OS key-repeat), and scrollLeft naturally clamps so it
@@ -1213,6 +1468,9 @@ export function ChunkReader({
       if (e.key !== "ArrowLeft" && e.key !== "ArrowRight") return;
       if (e.metaKey || e.ctrlKey || e.altKey) return;
       if (searchOpen || isEditable(e.target)) return;
+      // Wide screens show the chapter grid in the left panel instead of the
+      // strip; with nothing to scroll, leave the arrow keys to the browser.
+      if (!chapterStripRef.current || chapterStripRef.current.clientWidth === 0) return;
       e.preventDefault();
       direction = e.key === "ArrowLeft" ? -1 : 1;
       if (raf === null) raf = requestAnimationFrame(step);
@@ -1253,8 +1511,11 @@ export function ChunkReader({
 
   useEffect(() => {
     function handleClick(e: MouseEvent) {
-      if (bookRef.current && !bookRef.current.contains(e.target as Node)) setBookOpen(false);
-      if (settingsRef.current && !settingsRef.current.contains(e.target as Node)) setSettingsOpen(false);
+      const t = e.target as Node;
+      const inBookPicker =
+        !!bookRef.current?.contains(t) || !!panelBookRef.current?.contains(t);
+      if (!inBookPicker) setBookOpen(false);
+      if (settingsRef.current && !settingsRef.current.contains(t)) setSettingsOpen(false);
     }
     document.addEventListener("mousedown", handleClick);
     return () => document.removeEventListener("mousedown", handleClick);
@@ -1327,11 +1588,15 @@ export function ChunkReader({
     else router.push(url);
   }
 
-  // The chapter-strip "Overview" chip. The overview sits above chapter 1, so the
-  // chip renders before the chapter buttons (see the strip below).
-  const overviewChip = hasOverview ? (
+  // The "Overview" chip. The overview sits above chapter 1, so the chip renders
+  // before the chapter buttons (see the strip below). Both layouts draw one, so
+  // the horizontal strip's scroll-into-view ref is passed in rather than baked.
+  const overviewChip = (
+    ref?: React.Ref<HTMLButtonElement>,
+    extraClass = "",
+  ) => (hasOverview ? (
     <button
-      ref={summaryVisible ? summaryStripRef : undefined}
+      ref={ref}
       onClick={() => {
         const el = summaryHeadingRef.current;
         if (el) {
@@ -1352,7 +1617,7 @@ export function ChunkReader({
         }
       }}
       style={{ flexShrink: 0, height: "28px", paddingLeft: "10px", paddingRight: "10px" }}
-      className={`flex items-center justify-center rounded text-xs font-semibold transition-all ${
+      className={`flex items-center justify-center rounded text-xs font-semibold transition-all ${extraClass} ${
         summaryVisible
           ? "bg-amber-500/20 text-gold ring-2 ring-gold/60 dark:bg-amber-400/20 dark:text-gold-bright dark:ring-gold-bright/60"
           : "bg-amber-500/10 text-gold hover:bg-amber-500/20 dark:bg-amber-400/10 dark:text-gold-bright dark:hover:bg-amber-400/20"
@@ -1360,7 +1625,46 @@ export function ChunkReader({
     >
       Overview
     </button>
-  ) : null;
+  ) : null);
+
+  // A chapter square. Real anchors (not button + push) so every chapter of the
+  // book stays crawlable from any chapter's server-rendered HTML.
+  const chapterLink = (num: number, ref?: React.Ref<HTMLAnchorElement>) => (
+    <Link
+      key={num}
+      href={readUrl({ chapter: num })}
+      onClick={(e) => {
+        // Native build: same-route Link navs hang (see navigateReadUrl) —
+        // hard-navigate instead.
+        if (IS_MOBILE) {
+          e.preventDefault();
+          navigateReadUrl(readUrl({ chapter: num }));
+        }
+      }}
+      ref={ref}
+      style={{ flexShrink: 0, width: "28px", height: "28px" }}
+      className={`flex items-center justify-center rounded text-xs transition-all ${getChapterButtonStyle(num)}`}
+    >
+      {num}
+    </Link>
+  );
+
+  // Switching translation keeps the reader where they are: jump back in at the
+  // chapter whose heading is nearest the top of the viewport.
+  function pickVersion(abbr: string) {
+    setSettingsOpen(false);
+    if (abbr === versionAbbr) return;
+    let bestCh = visibleChapterRef.current;
+    let bestDist = Infinity;
+    for (const [chNum, el] of headingRefs.current) {
+      const dist = Math.abs(el.getBoundingClientRect().top);
+      if (dist < bestDist) {
+        bestDist = dist;
+        bestCh = chNum;
+      }
+    }
+    window.location.href = `/try/bible/read?book=${encodeURIComponent(bookName)}&chapter=${bestCh}&version=${abbr}`;
+  }
 
   // ── Chapter loading ───────────────────────────────────────
 
@@ -1971,12 +2275,39 @@ export function ChunkReader({
     return "bg-neutral-100 text-neutral-600 hover:bg-neutral-200 dark:bg-neutral-800 dark:text-neutral-400 dark:hover:bg-neutral-700";
   }
 
+  // Badge on the Notes button: grouped highlight/note entries for this book
+  // (consecutive same-color/note verses count as one), matching how the drawer
+  // displays them.
+  const notesCount = useMemo(() => {
+    const entries = Object.entries(allHighlights)
+      .filter(([k]) => k.startsWith(bookName + ":"))
+      .map(([k, hl]) => {
+        const parts = k.split(":");
+        return { chapter: parseInt(parts[1], 10), verse: parseInt(parts[2], 10), hl };
+      })
+      .sort((a, b) => a.chapter - b.chapter || a.verse - b.verse);
+    let count = 0;
+    let prev: (typeof entries)[number] | null = null;
+    for (const e of entries) {
+      const contiguous =
+        prev &&
+        prev.chapter === e.chapter &&
+        prev.hl.color === e.hl.color &&
+        prev.hl.note === e.hl.note &&
+        e.verse === prev.verse + 1;
+      if (!contiguous) count++;
+      prev = e;
+    }
+    return count;
+  }, [allHighlights, bookName]);
+
   // ── Render ────────────────────────────────────────────────
 
   return (
     <div className="min-h-screen">
-      {/* Sticky header */}
-      <header ref={headerRef} className="sticky top-0 z-10 border-b border-neutral-200 bg-white/95 px-4 py-3 dark:border-neutral-700 dark:bg-neutral-925/95">
+      {/* Sticky header — narrow screens only. From xl up its contents move into
+          the two side panels below (chapters left, tools right). */}
+      <header ref={headerRef} className="sticky top-0 z-10 border-b border-neutral-200 bg-white/95 px-4 py-3 dark:border-neutral-700 dark:bg-neutral-925/95 xl:hidden">
         {/* Controls row */}
         <div className="mx-auto flex max-w-2xl items-center justify-between gap-2">
           {/* Brand + roadmap */}
@@ -2033,51 +2364,26 @@ export function ChunkReader({
           )}
 
           {/* Notes panel */}
-          {(() => {
-            // Count grouped highlight/note entries (consecutive same-color/note
-            // verses count as one), matching how the drawer displays them.
-            const entries = Object.entries(allHighlights)
-              .filter(([k]) => k.startsWith(bookName + ":"))
-              .map(([k, hl]) => {
-                const parts = k.split(":");
-                return { chapter: parseInt(parts[1], 10), verse: parseInt(parts[2], 10), hl };
-              })
-              .sort((a, b) => a.chapter - b.chapter || a.verse - b.verse);
-            let count = 0;
-            let prev: (typeof entries)[number] | null = null;
-            for (const e of entries) {
-              const contiguous =
-                prev &&
-                prev.chapter === e.chapter &&
-                prev.hl.color === e.hl.color &&
-                prev.hl.note === e.hl.note &&
-                e.verse === prev.verse + 1;
-              if (!contiguous) count++;
-              prev = e;
-            }
-            return (
-              <button
-                onClick={() => setNotesDrawerOpen((o) => !o)}
-                aria-label="View highlights and notes"
-                className={`relative flex items-center gap-1 rounded-md px-2 py-1 text-[0.65rem] font-semibold leading-none transition-all ${
-                  notesDrawerOpen
-                    ? "bg-amber-100 text-amber-800 dark:bg-amber-900/50 dark:text-amber-400"
-                    : "text-neutral-400 hover:bg-neutral-100 hover:text-neutral-600 dark:hover:bg-neutral-800 dark:hover:text-neutral-300"
-                }`}
-              >
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 20h9" />
-                  <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
-                </svg>
-                Notes
-                {count > 0 && (
-                  <span className="ml-0.5 flex h-4 min-w-[16px] items-center justify-center rounded-full bg-neutral-200 px-1 text-[0.6rem] font-bold text-neutral-600 dark:bg-neutral-700 dark:text-neutral-300">
-                    {count}
-                  </span>
-                )}
-              </button>
-            );
-          })()}
+          <button
+            onClick={() => setNotesDrawerOpen((o) => !o)}
+            aria-label="View highlights and notes"
+            className={`relative flex items-center gap-1 rounded-md px-2 py-1 text-[0.65rem] font-semibold leading-none transition-all ${
+              notesDrawerOpen
+                ? "bg-amber-100 text-amber-800 dark:bg-amber-900/50 dark:text-amber-400"
+                : "text-neutral-400 hover:bg-neutral-100 hover:text-neutral-600 dark:hover:bg-neutral-800 dark:hover:text-neutral-300"
+            }`}
+          >
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M12 20h9" />
+              <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
+            </svg>
+            Notes
+            {notesCount > 0 && (
+              <span className="ml-0.5 flex h-4 min-w-[16px] items-center justify-center rounded-full bg-neutral-200 px-1 text-[0.6rem] font-bold text-neutral-600 dark:bg-neutral-700 dark:text-neutral-300">
+                {notesCount}
+              </span>
+            )}
+          </button>
 
           {/* Settings menu (display preferences) */}
           <div ref={settingsRef} className="relative shrink-0">
@@ -2103,186 +2409,28 @@ export function ChunkReader({
             </button>
             {settingsOpen && (
               <div className="absolute right-0 top-full z-20 mt-1 w-60 rounded-lg border border-neutral-200 bg-white p-1.5 shadow-lg dark:border-neutral-700 dark:bg-neutral-800">
-                {/* Reading mode */}
-                <div className="flex items-center justify-between px-2 py-1.5">
-                  <span className="text-xs font-semibold text-neutral-500 dark:text-neutral-400">Mode</span>
-                  <div className="inline-flex rounded-md bg-neutral-100 p-0.5 dark:bg-neutral-700">
-                    <button
-                      onClick={() => { setMode("read"); setReadingMode("read"); }}
-                      className={`rounded px-2.5 py-1 text-xs font-semibold leading-none transition-all ${
-                        mode === "read"
-                          ? "bg-white text-amber-700 shadow-sm dark:bg-neutral-600 dark:text-amber-400"
-                          : "text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-300"
-                      }`}
-                    >
-                      Read
-                    </button>
-                    <button
-                      onClick={() => { setMode("study"); setReadingMode("study"); }}
-                      className={`rounded px-2.5 py-1 text-xs font-semibold leading-none transition-all ${
-                        mode === "study"
-                          ? "bg-white text-amber-700 shadow-sm dark:bg-neutral-600 dark:text-amber-400"
-                          : "text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-300"
-                      }`}
-                    >
-                      Study
-                    </button>
-                  </div>
-                </div>
-
-                <div className="my-1 h-px bg-neutral-100 dark:bg-neutral-700" />
-
-                {/* Text size */}
-                <div className="flex items-center justify-between px-2 py-1.5">
-                  <span className="text-xs font-semibold text-neutral-500 dark:text-neutral-400">Text size</span>
-                  <div className="flex items-center gap-1.5">
-                    <button
-                      onClick={() => changeFontSize(-FONT_SIZE_STEP)}
-                      disabled={fontSize <= FONT_SIZE_MIN}
-                      aria-label="Decrease font size"
-                      className="flex h-7 w-7 items-center justify-center rounded text-sm font-medium text-neutral-600 hover:bg-neutral-100 disabled:cursor-not-allowed disabled:opacity-30 dark:text-neutral-300 dark:hover:bg-neutral-700"
-                    >
-                      −
-                    </button>
-                    <span className="min-w-[3ch] text-center text-xs font-semibold tabular-nums text-neutral-700 dark:text-neutral-200">
-                      {fontSize}
-                    </span>
-                    <button
-                      onClick={() => changeFontSize(FONT_SIZE_STEP)}
-                      disabled={fontSize >= FONT_SIZE_MAX}
-                      aria-label="Increase font size"
-                      className="flex h-7 w-7 items-center justify-center rounded text-sm font-medium text-neutral-600 hover:bg-neutral-100 disabled:cursor-not-allowed disabled:opacity-30 dark:text-neutral-300 dark:hover:bg-neutral-700"
-                    >
-                      +
-                    </button>
-                  </div>
-                </div>
-
-                {/* Theme */}
-                <button
-                  onClick={toggleTheme}
-                  className="flex w-full items-center justify-between rounded-md px-2 py-1.5 text-left hover:bg-neutral-100 dark:hover:bg-neutral-700"
-                >
-                  <span className="text-xs font-semibold text-neutral-500 dark:text-neutral-400">Theme</span>
-                  <span className="flex items-center gap-1.5 text-xs font-medium text-neutral-700 dark:text-neutral-200">
-                    {dark ? <SunIcon /> : <MoonIcon />}
-                    {dark ? "Light" : "Dark"}
-                  </span>
-                </button>
-
-                {/* Bionic reading */}
-                <button
-                  onClick={toggleBionic}
-                  className="flex w-full items-center justify-between rounded-md px-2 py-1.5 text-left hover:bg-neutral-100 dark:hover:bg-neutral-700"
-                >
-                  <span className="text-xs font-semibold text-neutral-500 dark:text-neutral-400">Bionic reading</span>
-                  <span
-                    className={`flex h-5 w-9 items-center rounded-full p-0.5 transition-colors ${
-                      bionic ? "bg-amber-500" : "bg-neutral-300 dark:bg-neutral-600"
-                    }`}
-                  >
-                    <span
-                      className={`h-4 w-4 rounded-full bg-white shadow transition-transform ${
-                        bionic ? "translate-x-4" : "translate-x-0"
-                      }`}
-                    />
-                  </span>
-                </button>
-
-                {/* Verse numbers */}
-                <button
-                  onClick={toggleVerseNumbers}
-                  className="flex w-full items-center justify-between rounded-md px-2 py-1.5 text-left hover:bg-neutral-100 dark:hover:bg-neutral-700"
-                >
-                  <span className="text-xs font-semibold text-neutral-500 dark:text-neutral-400">Verse numbers</span>
-                  <span
-                    className={`flex h-5 w-9 items-center rounded-full p-0.5 transition-colors ${
-                      verseNumbers ? "bg-amber-500" : "bg-neutral-300 dark:bg-neutral-600"
-                    }`}
-                  >
-                    <span
-                      className={`h-4 w-4 rounded-full bg-white shadow transition-transform ${
-                        verseNumbers ? "translate-x-4" : "translate-x-0"
-                      }`}
-                    />
-                  </span>
-                </button>
-
-                {/* Red letters (words of Jesus) */}
-                <button
-                  onClick={toggleRedLetter}
-                  className="flex w-full items-center justify-between rounded-md px-2 py-1.5 text-left hover:bg-neutral-100 dark:hover:bg-neutral-700"
-                >
-                  <span className="text-xs font-semibold text-neutral-500 dark:text-neutral-400">Red letters</span>
-                  <span
-                    className={`flex h-5 w-9 items-center rounded-full p-0.5 transition-colors ${
-                      redLetter ? "bg-amber-500" : "bg-neutral-300 dark:bg-neutral-600"
-                    }`}
-                  >
-                    <span
-                      className={`h-4 w-4 rounded-full bg-white shadow transition-transform ${
-                        redLetter ? "translate-x-4" : "translate-x-0"
-                      }`}
-                    />
-                  </span>
-                </button>
-
-                {/* Cross-references (BSB only) */}
-                {versionAbbr === "BSB" && (
-                  <button
-                    onClick={toggleCrossRefs}
-                    className="flex w-full items-center justify-between rounded-md px-2 py-1.5 text-left hover:bg-neutral-100 dark:hover:bg-neutral-700"
-                  >
-                    <span className="text-xs font-semibold text-neutral-500 dark:text-neutral-400">Cross-references</span>
-                    <span
-                      className={`flex h-5 w-9 items-center rounded-full p-0.5 transition-colors ${
-                        showCrossRefs ? "bg-amber-500" : "bg-neutral-300 dark:bg-neutral-600"
-                      }`}
-                    >
-                      <span
-                        className={`h-4 w-4 rounded-full bg-white shadow transition-transform ${
-                          showCrossRefs ? "translate-x-4" : "translate-x-0"
-                        }`}
-                      />
-                    </span>
-                  </button>
-                )}
-
-                <div className="my-1 h-px bg-neutral-100 dark:bg-neutral-700" />
-
-                {/* Translation */}
-                <div className="px-2 pb-1 pt-0.5 text-xs font-semibold text-neutral-500 dark:text-neutral-400">
-                  Translation
-                </div>
-                {availableVersions.map((v) => (
-                  <button
-                    key={v.abbr}
-                    onClick={() => {
-                      setSettingsOpen(false);
-                      if (v.abbr !== versionAbbr) {
-                        // Find the chapter whose heading is closest to top of viewport
-                        let bestCh = visibleChapterRef.current;
-                        let bestDist = Infinity;
-                        for (const [chNum, el] of headingRefs.current) {
-                          const dist = Math.abs(el.getBoundingClientRect().top);
-                          if (dist < bestDist) {
-                            bestDist = dist;
-                            bestCh = chNum;
-                          }
-                        }
-                        window.location.href = `/try/bible/read?book=${encodeURIComponent(bookName)}&chapter=${bestCh}&version=${v.abbr}`;
-                      }
-                    }}
-                    className={`block w-full rounded-md px-2 py-1.5 text-left text-sm hover:bg-neutral-100 dark:hover:bg-neutral-700 ${
-                      v.abbr === versionAbbr
-                        ? "font-semibold text-amber-700 dark:text-amber-400"
-                        : "text-neutral-700 dark:text-neutral-300"
-                    }`}
-                  >
-                    <span className="font-medium">{v.abbr}</span>{" "}
-                    <span className="text-neutral-500 dark:text-neutral-400">{v.name}</span>
-                  </button>
-                ))}
+                <SettingsControls
+                  surface="menu"
+                  mode={mode}
+                  onMode={(m) => { setMode(m); setReadingMode(m); }}
+                  fontSize={fontSize}
+                  fontSizeMin={FONT_SIZE_MIN}
+                  fontSizeMax={FONT_SIZE_MAX}
+                  onFontSize={(d) => changeFontSize(d * FONT_SIZE_STEP)}
+                  dark={dark}
+                  onToggleTheme={toggleTheme}
+                  bionic={bionic}
+                  onToggleBionic={toggleBionic}
+                  verseNumbers={verseNumbers}
+                  onToggleVerseNumbers={toggleVerseNumbers}
+                  redLetter={redLetter}
+                  onToggleRedLetter={toggleRedLetter}
+                  showCrossRefs={showCrossRefs}
+                  onToggleCrossRefs={toggleCrossRefs}
+                  versionAbbr={versionAbbr}
+                  availableVersions={availableVersions}
+                  onPickVersion={pickVersion}
+                />
               </div>
             )}
           </div>
@@ -2305,32 +2453,15 @@ export function ChunkReader({
             </button>
             {bookOpen && (
               <div className="absolute left-0 top-full z-20 mt-1 max-h-64 w-44 overflow-y-auto rounded-lg border border-neutral-200 bg-white py-1 shadow-lg dark:border-neutral-700 dark:bg-neutral-800">
-                {sortedBooks.map((name) => (
-                  <React.Fragment key={name}>
-                    {name === firstNtBook && (
-                      <div className="my-1 flex items-center gap-2 px-3 py-0.5">
-                        <span className="h-px flex-1 bg-neutral-200 dark:bg-neutral-700" />
-                        <span className="text-[10px] font-semibold uppercase tracking-wider text-neutral-400 dark:text-neutral-500">
-                          New Testament
-                        </span>
-                        <span className="h-px flex-1 bg-neutral-200 dark:bg-neutral-700" />
-                      </div>
-                    )}
-                    <button
-                      onClick={() => {
-                        setBookOpen(false);
-                        navigateReadUrl(readUrl({ book: name, chapter: 1 }));
-                      }}
-                      className={`block w-full px-3 py-1.5 text-left text-sm hover:bg-neutral-100 dark:hover:bg-neutral-700 ${
-                        name === bookName
-                          ? "font-semibold text-amber-700 dark:text-amber-400"
-                          : "text-neutral-700 dark:text-neutral-300"
-                      }`}
-                    >
-                      {name}
-                    </button>
-                  </React.Fragment>
-                ))}
+                <BookMenu
+                  books={sortedBooks}
+                  firstNtBook={firstNtBook}
+                  current={bookName}
+                  onPick={(name) => {
+                    setBookOpen(false);
+                    navigateReadUrl(readUrl({ book: name, chapter: 1 }));
+                  }}
+                />
               </div>
             )}
           </div>
@@ -2356,32 +2487,177 @@ export function ChunkReader({
               msOverflowStyle: "none",
             } as React.CSSProperties}
           >
-            {overviewAtStart && overviewChip}
-            {/* Real anchors (not button+push) so every chapter of the book is
-                crawlable from any chapter's server-rendered HTML. */}
-            {chapterNumbers.map((num) => (
-              <Link
-                key={num}
-                href={readUrl({ chapter: num })}
-                onClick={(e) => {
-                  // Native build: same-route Link navs hang (see
-                  // navigateReadUrl) — hard-navigate instead.
-                  if (IS_MOBILE) {
-                    e.preventDefault();
-                    navigateReadUrl(readUrl({ chapter: num }));
-                  }
-                }}
-                ref={num === visibleChapterNumber && !summaryVisible ? activeChapterRef : undefined}
-                style={{ flexShrink: 0, width: "28px", height: "28px" }}
-                className={`flex items-center justify-center rounded text-xs transition-all ${getChapterButtonStyle(num)}`}
-              >
-                {num}
-              </Link>
-            ))}
-            {!overviewAtStart && overviewChip}
+            {overviewAtStart && overviewChip(summaryVisible ? summaryStripRef : undefined)}
+            {chapterNumbers.map((num) =>
+              chapterLink(
+                num,
+                num === visibleChapterNumber && !summaryVisible ? activeChapterRef : undefined,
+              ),
+            )}
+            {!overviewAtStart && overviewChip(summaryVisible ? summaryStripRef : undefined)}
           </div>
         </div>
       </header>
+
+      {/* ── Wide-screen side panels ──────────────────────────────
+          Everything the sticky header carries, split in two and docked to the
+          edges from xl up: chapters on the left, reading tools on the right.
+          Both are in the DOM at every width — CSS decides which layout shows —
+          so the shared open/visible state stays in sync without a media query
+          in JS (and without a flash of the wrong one before hydration). */}
+
+      {/* Left panel — book picker + chapter grid */}
+      <aside className="fixed left-0 top-0 z-10 hidden h-screen w-[260px] flex-col border-r border-neutral-200 bg-white dark:border-neutral-700 dark:bg-neutral-925 xl:flex">
+        <div
+          ref={panelBookRef}
+          className="relative shrink-0 border-b border-neutral-200 px-4 py-3 dark:border-neutral-700"
+        >
+          <button
+            onClick={() => setBookOpen((o) => !o)}
+            className="flex h-8 w-full items-center justify-between rounded-md border border-neutral-300 px-2.5 text-sm font-medium text-neutral-700 hover:bg-neutral-50 dark:border-neutral-600 dark:text-neutral-300 dark:hover:bg-neutral-800"
+          >
+            <span className="truncate">{bookName}</span>
+            <span className="ml-1 shrink-0 text-neutral-400">▾</span>
+          </button>
+          {bookOpen && (
+            <div className="absolute left-4 right-4 top-full z-20 mt-1 max-h-[70vh] overflow-y-auto rounded-lg border border-neutral-200 bg-white py-1 shadow-lg dark:border-neutral-700 dark:bg-neutral-800">
+              <BookMenu
+                books={sortedBooks}
+                firstNtBook={firstNtBook}
+                current={bookName}
+                onPick={(name) => {
+                  setBookOpen(false);
+                  navigateReadUrl(readUrl({ book: name, chapter: 1 }));
+                }}
+              />
+            </div>
+          )}
+        </div>
+        <div ref={panelChapterListRef} className="flex-1 overflow-y-auto px-4 py-3">
+          {overviewAtStart && hasOverview && (
+            <div className="mb-2">{overviewChip(undefined, "w-full")}</div>
+          )}
+          <div className="flex flex-wrap gap-1">
+            {chapterNumbers.map((num) =>
+              chapterLink(
+                num,
+                num === visibleChapterNumber && !summaryVisible
+                  ? panelActiveChapterRef
+                  : undefined,
+              ),
+            )}
+          </div>
+          {!overviewAtStart && hasOverview && (
+            <div className="mt-2">{overviewChip(undefined, "w-full")}</div>
+          )}
+        </div>
+      </aside>
+
+      {/* Right panel — brand, tools, display settings */}
+      <aside className="fixed right-0 top-0 z-10 hidden h-screen w-[260px] flex-col border-l border-neutral-200 bg-white dark:border-neutral-700 dark:bg-neutral-925 xl:flex">
+        <div className="flex shrink-0 items-center gap-2 border-b border-neutral-200 px-4 py-3 dark:border-neutral-700">
+          <Logo compact icon={false} />
+          <div className="h-5 w-px shrink-0 bg-neutral-200 dark:bg-neutral-700" />
+          <button
+            onClick={() => router.push("/try/bible/start")}
+            className="flex shrink-0 items-center gap-1.5 rounded-md px-1.5 py-1 text-sm text-neutral-500 hover:bg-neutral-100 hover:text-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-neutral-200"
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <line x1="19" y1="12" x2="5" y2="12" />
+              <polyline points="12 19 5 12 12 5" />
+            </svg>
+            Library
+          </button>
+        </div>
+
+        <div className="flex-1 overflow-y-auto p-2">
+          <button
+            onClick={() => setSearchOpen(true)}
+            className="flex w-full items-center justify-between rounded-md px-2 py-1.5 text-left hover:bg-neutral-100 dark:hover:bg-neutral-800"
+          >
+            <span className="flex items-center gap-2 text-xs font-semibold text-neutral-500 dark:text-neutral-400">
+              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+              </svg>
+              Search
+            </span>
+            <kbd className="rounded border border-neutral-200 px-1 text-[0.6rem] font-medium text-neutral-400 dark:border-neutral-700 dark:text-neutral-500">
+              ⌘K
+            </kbd>
+          </button>
+
+          {chapterPlaces && chapterPlaces.places.length > 0 && (
+            <button
+              data-tutorial="map"
+              onClick={() =>
+                setMapSheet({ chapter: visibleChapterNumber, data: chapterPlaces })
+              }
+              className={`flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-left text-xs font-semibold ${
+                mapSheet
+                  ? "bg-amber-100 text-amber-800 dark:bg-amber-900/50 dark:text-amber-400"
+                  : "text-neutral-500 hover:bg-neutral-100 dark:text-neutral-400 dark:hover:bg-neutral-800"
+              }`}
+            >
+              <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              Map of this chapter
+            </button>
+          )}
+
+          <button
+            onClick={() => setNotesDrawerOpen((o) => !o)}
+            className={`flex w-full items-center justify-between rounded-md px-2 py-1.5 text-left text-xs font-semibold ${
+              notesDrawerOpen
+                ? "bg-amber-100 text-amber-800 dark:bg-amber-900/50 dark:text-amber-400"
+                : "text-neutral-500 hover:bg-neutral-100 dark:text-neutral-400 dark:hover:bg-neutral-800"
+            }`}
+          >
+            <span className="flex items-center gap-2">
+              <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M12 20h9" />
+                <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
+              </svg>
+              Highlights &amp; notes
+            </span>
+            {notesCount > 0 && (
+              <span className="flex h-4 min-w-[16px] items-center justify-center rounded-full bg-neutral-200 px-1 text-[0.6rem] font-bold text-neutral-600 dark:bg-neutral-700 dark:text-neutral-300">
+                {notesCount}
+              </span>
+            )}
+          </button>
+
+          <div className="my-2 h-px bg-neutral-200 dark:bg-neutral-800" />
+
+          <SettingsControls
+            surface="panel"
+            mode={mode}
+            onMode={(m) => { setMode(m); setReadingMode(m); }}
+            fontSize={fontSize}
+            fontSizeMin={FONT_SIZE_MIN}
+            fontSizeMax={FONT_SIZE_MAX}
+            onFontSize={(d) => changeFontSize(d * FONT_SIZE_STEP)}
+            dark={dark}
+            onToggleTheme={toggleTheme}
+            bionic={bionic}
+            onToggleBionic={toggleBionic}
+            verseNumbers={verseNumbers}
+            onToggleVerseNumbers={toggleVerseNumbers}
+            redLetter={redLetter}
+            onToggleRedLetter={toggleRedLetter}
+            showCrossRefs={showCrossRefs}
+            onToggleCrossRefs={toggleCrossRefs}
+            versionAbbr={versionAbbr}
+            availableVersions={availableVersions}
+            onPickVersion={pickVersion}
+          />
+        </div>
+      </aside>
+
+      {/* Reading column. From xl up it's inset by the two panel widths so the
+          centred scripture (and the footer's link row) clear them. */}
+      <div className="xl:px-[264px]">
 
       {/* Notes drawer — sticky below header */}
       {notesDrawerOpen && (
@@ -2527,6 +2803,7 @@ export function ChunkReader({
       </div>
 
       <SiteFooter />
+      </div>
 
       {/* Selection highlight toolbar — rendered via portal to avoid nesting issues */}
       {selectionToolbar &&
