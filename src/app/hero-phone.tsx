@@ -36,25 +36,27 @@ export function HeroPhone() {
   }, []);
 
   return (
-    <div className="mx-auto w-[304px] max-w-full">
-      {/* No notch and no side buttons: the notch sat over the app's own
-          header, and at this size the extra hardware detail only got in the
-          way of the thing being shown. An even bezel around a plain
-          rectangular screen reads as a phone without any of that. */}
-      <div className="rounded-[2rem] border-[12px] border-neutral-900 bg-neutral-900 shadow-2xl ring-1 ring-neutral-700/60">
-        <video
-          ref={videoRef}
-          className="block w-full rounded-[1.25rem] bg-neutral-925"
-          style={{ aspectRatio: "390 / 844" }}
-          src="/hero/reader.webm"
-          poster="/hero/reader-poster.jpg"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="metadata"
-          aria-label="The reader on a phone: scrolling John 1, tapping a verse, and reading its study notes"
-        />
+    <div className="mx-auto w-[306px] max-w-full">
+      {/* No notch: it sat over the app's own header and looked broken. What
+          makes this read as a device rather than a grey box is the edge —
+          a bright metallic rim catching light at the top, a black bezel
+          inside it, and a deep drop shadow underneath. */}
+      <div className="rounded-[2.6rem] bg-gradient-to-b from-neutral-500 via-neutral-700 to-neutral-800 p-[2px] shadow-[0_28px_55px_-12px_rgba(0,0,0,0.85)]">
+        <div className="rounded-[2.5rem] bg-neutral-950 p-[9px] ring-1 ring-inset ring-black/60">
+          <video
+            ref={videoRef}
+            className="block w-full rounded-[2rem] bg-neutral-925"
+            style={{ aspectRatio: "390 / 844" }}
+            src="/hero/reader.webm"
+            poster="/hero/reader-poster.jpg"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            aria-label="The reader on a phone: reading John 1, tapping verse 12, and opening its study notes"
+          />
+        </div>
       </div>
     </div>
   );
