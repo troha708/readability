@@ -51,6 +51,11 @@ export function FirstContactHint({
       // private mode etc. — the hint simply may show again next session
     }
     setRect(null);
+    // The reader waits on this before folding its side rails away, so a first
+    // visit isn't reading a coachmark and losing the panels at the same time.
+    window.dispatchEvent(
+      new CustomEvent("first-contact-dismissed", { detail: storageKey }),
+    );
   }, [storageKey]);
 
   useEffect(() => {

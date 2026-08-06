@@ -68,6 +68,9 @@ type VersionInfo = { abbr: string; name: string };
 // reference and keeps ChapterSection's memo.
 const EMPTY_HIGHLIGHTS: Record<number, VerseHighlight> = {};
 
+/** Width of each wide-screen side rail, in px. */
+const RAIL_WIDTH = 216;
+
 type CompletionAge = "recent" | "fading" | "old";
 
 function getCompletionAge(timestamp: string | undefined): CompletionAge {
@@ -541,6 +544,12 @@ type SettingsControlsProps = {
    * there it must not also be buried here.
    */
   includeTranslation: boolean;
+  /**
+   * The side-rail auto-hide switch, offered only by the rails' own menu — there
+   * are no rails on a narrow screen for it to govern.
+   */
+  autoHideRails?: boolean;
+  onToggleAutoHideRails?: () => void;
 };
 
 function SettingsControls({
@@ -564,6 +573,8 @@ function SettingsControls({
   availableVersions,
   onPickVersion,
   includeTranslation,
+  autoHideRails,
+  onToggleAutoHideRails,
 }: SettingsControlsProps) {
   return (
     <>
@@ -636,6 +647,13 @@ function SettingsControls({
           label="Cross-references"
           on={showCrossRefs}
           onClick={onToggleCrossRefs}
+        />
+      )}
+      {onToggleAutoHideRails && (
+        <ToggleRow
+          label="Hide side panels"
+          on={!!autoHideRails}
+          onClick={onToggleAutoHideRails}
         />
       )}
 
@@ -958,6 +976,98 @@ export function ChunkReader({
   // Search
   const [searchOpen, setSearchOpen] = useState(false);
 
+  // ── Auto-hiding side rails (wide screens, pointer devices) ──
+  //
+  // Default is on. The rails fold off-canvas and come back when the cursor
+  // reaches either edge, so the scripture has the screen to itself while
+  // you're reading it. Off pins them open, which is the old behaviour.
+  const [autoHideRails, setAutoHideRails] = useState(false);
+  const [leftRailOpen, setLeftRailOpen] = useState(true);
+  const [rightRailOpen, setRightRailOpen] = useState(true);
+
+  // A rail must not fold away while one of its own menus is open. Kept in a
+  // ref because the mousemove handler below must not re-bind on every toggle.
+  // (Assigned further down, once the dropdown state exists.)
+  const railMenuOpenRef = useRef(false);
+  // Until the opening beat has run, the cursor may bring a rail out but must
+  // not put one away — otherwise dismissing the map coachmark (which leaves
+  // the cursor mid-screen) folds them instantly and the beat never happens.
+  const introFoldedRef = useRef(false);
+
+  useEffect(() => {
+    // Touch-only devices have no cursor to bring the rails back, so there they
+    // stay pinned whatever the setting says.
+    if (!window.matchMedia?.("(hover: hover)").matches) return;
+    setAutoHideRails(localStorage.getItem("readerAutoHideRails") !== "false");
+  }, []);
+
+  function toggleAutoHideRails() {
+    const next = !autoHideRails;
+    setAutoHideRails(next);
+    localStorage.setItem("readerAutoHideRails", String(next));
+    if (!next) {
+      setLeftRailOpen(true);
+      setRightRailOpen(true);
+    }
+  }
+
+  // The opening beat: rails start open, and fold once the reader has had a
+  // moment — after the map coachmark is dismissed if one is due, since losing
+  // the panels while reading a coachmark would be two things at once.
+  useEffect(() => {
+    if (!autoHideRails) return;
+    let settle: number | undefined;
+    const fold = () => {
+      introFoldedRef.current = true;
+      setLeftRailOpen(false);
+      setRightRailOpen(false);
+    };
+    const alreadySeen = (() => {
+      try {
+        return !!localStorage.getItem("hint-map-seen");
+      } catch {
+        return true;
+      }
+    })();
+    if (alreadySeen) {
+      settle = window.setTimeout(fold, 1600);
+      return () => window.clearTimeout(settle);
+    }
+    const onDismissed = () => {
+      settle = window.setTimeout(fold, 1000);
+    };
+    window.addEventListener("first-contact-dismissed", onDismissed, { once: true });
+    // The hint only appears on chapters that have places; don't wait forever
+    // on one that doesn't.
+    const fallback = window.setTimeout(fold, 7000);
+    return () => {
+      window.removeEventListener("first-contact-dismissed", onDismissed);
+      window.clearTimeout(settle);
+      window.clearTimeout(fallback);
+    };
+  }, [autoHideRails]);
+
+  // Cursor to an edge unfolds that rail; back toward the middle folds it away.
+  // The two thresholds are deliberately far apart — a single boundary makes
+  // the rail flicker when the cursor sits on it.
+  useEffect(() => {
+    if (!autoHideRails) return;
+    const REVEAL = 80; // within this of the edge → open
+    const RELEASE = RAIL_WIDTH + 64; // past the rail by this much → close
+    function onMove(e: MouseEvent) {
+      const w = window.innerWidth;
+      const held = railMenuOpenRef.current || !introFoldedRef.current;
+      setLeftRailOpen((open) =>
+        e.clientX <= REVEAL ? true : !held && e.clientX > RELEASE ? false : open,
+      );
+      setRightRailOpen((open) =>
+        e.clientX >= w - REVEAL ? true : !held && e.clientX < w - RELEASE ? false : open,
+      );
+    }
+    window.addEventListener("mousemove", onMove, { passive: true });
+    return () => window.removeEventListener("mousemove", onMove);
+  }, [autoHideRails]);
+
   // Fullscreen — a wide-screen reading control (the native app is already
   // fullscreen, and phone browsers don't offer it). Never persisted: the API
   // only grants fullscreen from a user gesture, so a saved preference could
@@ -1042,6 +1152,12 @@ export function ChunkReader({
   const panelBookRef = useRef<HTMLDivElement>(null);
   const settingsRef = useRef<HTMLDivElement>(null);
   const panelSettingsRef = useRef<HTMLDivElement>(null);
+
+  // Feeds the rail auto-hide: an open picker or settings menu holds its rail
+  // out even when the cursor wanders back toward the middle.
+  useEffect(() => {
+    railMenuOpenRef.current = bookOpen || settingsOpen;
+  }, [bookOpen, settingsOpen]);
 
   // Header height — drives the notes drawer's sticky offset so its top isn't
   // hidden behind the (variable-height) header.
@@ -2593,7 +2709,13 @@ export function ChunkReader({
           in JS (and without a flash of the wrong one before hydration). */}
 
       {/* Left panel — way out, book picker, chapter grid */}
-      <aside className="fixed left-0 top-0 z-10 hidden h-screen w-[216px] flex-col border-r border-neutral-200 bg-white dark:border-neutral-700 dark:bg-neutral-925 xl:flex">
+      <aside
+        className="fixed left-0 top-0 z-20 hidden h-screen w-[216px] flex-col border-r border-neutral-200 bg-white transition-transform duration-300 ease-out dark:border-neutral-700 dark:bg-neutral-925 xl:flex"
+        style={{ transform: autoHideRails && !leftRailOpen ? `translateX(-${RAIL_WIDTH}px)` : "translateX(0)" }}
+        // A folded rail is off-screen: keep it out of the tab order and away
+        // from assistive tech until it comes back.
+        inert={autoHideRails && !leftRailOpen}
+      >
         {/* Leaving the book sits with choosing one, above the picker. */}
         <div className="shrink-0 px-3 pb-1 pt-3">
           <button
@@ -2653,7 +2775,11 @@ export function ChunkReader({
       </aside>
 
       {/* Right panel — brand, tools, and the settings menu */}
-      <aside className="fixed right-0 top-0 z-10 hidden h-screen w-[216px] flex-col border-l border-neutral-200 bg-white dark:border-neutral-700 dark:bg-neutral-925 xl:flex">
+      <aside
+        className="fixed right-0 top-0 z-20 hidden h-screen w-[216px] flex-col border-l border-neutral-200 bg-white transition-transform duration-300 ease-out dark:border-neutral-700 dark:bg-neutral-925 xl:flex"
+        style={{ transform: autoHideRails && !rightRailOpen ? `translateX(${RAIL_WIDTH}px)` : "translateX(0)" }}
+        inert={autoHideRails && !rightRailOpen}
+      >
         <div className="shrink-0 border-b border-neutral-200 px-3 py-3 dark:border-neutral-700">
           <Logo compact icon={false} />
         </div>
@@ -2762,6 +2888,8 @@ export function ChunkReader({
                   availableVersions={availableVersions}
                   onPickVersion={pickVersion}
                   includeTranslation={false}
+                  autoHideRails={autoHideRails}
+                  onToggleAutoHideRails={toggleAutoHideRails}
                 />
               </div>
             )}
@@ -2801,7 +2929,7 @@ export function ChunkReader({
 
       {/* Reading column. From xl up it's inset by the two panel widths so the
           centred scripture (and the footer's link row) clear them. */}
-      <div className="xl:px-[220px]">
+      <div className={autoHideRails ? "" : "xl:px-[220px]"}>
 
       {/* Notes drawer — sticky below header */}
       {notesDrawerOpen && (
