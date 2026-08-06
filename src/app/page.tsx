@@ -113,7 +113,11 @@ export default function Home() {
           <LandingSearch />
           {/* Atlas/Dictionary live in the footer too, so on phones the bar
               keeps just logo + Sign in (literal.club does the same). */}
-          <nav className="hidden items-center text-sm font-medium max-md:ml-auto sm:flex">
+          {/* Bar type set like esv.org's footer strip ("© 2001 – 2026
+              Crossway · Take a Tour · About · …"): their sans at 10.5px,
+              weight 500, 0.25px letter-spacing. Their grey there is
+              rgb(154,159,163) — already this site's neutral-400. */}
+          <nav className="hidden items-center text-[10.5px] font-medium tracking-[0.25px] max-md:ml-auto sm:flex">
             <Link
               href="/try/bible/map"
               className="px-3 py-2 text-neutral-400 transition-colors hover:text-amber-400 sm:px-4"
@@ -167,15 +171,16 @@ export default function Home() {
               </span>
             </p>
             <div className="mt-7">
-              {/* Set like esv.org's "Read Now" (their `a.button`): flat
-                  #ac9d71 gold, 2px radius, 40px tall, 15px side padding, their
-                  sans at 12px/500 with 0.25px tracking, capitalized, no icon.
-                  Label ink is the site's near-black rather than their white,
-                  per owner. Hover lifts to #bfb391 — their other landing gold,
-                  the one the section kicker uses. */}
+              {/* Shaped like esv.org's "Read Now" (their `a.button`): flat
+                  fill, small radius, sans, capitalized, no icon — at 1.5x
+                  their size, so 60px tall on 22.5px side padding with 18px/500
+                  type and 0.375px tracking. Their own #ac9d71 is a gold for
+                  white pages and washed out on this one, so the fill is
+                  amber-400, the same amber the mockup's chapter numerals use,
+                  hovering to the amber-300 they hover to. */}
               <Link
                 href="/try/bible/start"
-                className="inline-flex h-10 items-center rounded-[2px] bg-[#ac9d71] px-[15px] text-[12px] font-medium capitalize tracking-[0.25px] text-neutral-950 transition-colors hover:bg-[#bfb391]"
+                className="inline-flex h-[60px] items-center rounded-[3px] bg-amber-400 px-[22.5px] text-[18px] font-bold capitalize tracking-[0.375px] text-neutral-950 transition-colors hover:bg-amber-300"
               >
                 Start reading
               </Link>
