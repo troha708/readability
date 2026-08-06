@@ -64,6 +64,10 @@ type LoadedChapter = {
 
 type VersionInfo = { abbr: string; name: string };
 
+// One shared empty map, so a chapter with no highlights still gets a stable
+// reference and keeps ChapterSection's memo.
+const EMPTY_HIGHLIGHTS: Record<number, VerseHighlight> = {};
+
 type CompletionAge = "recent" | "fading" | "old";
 
 function getCompletionAge(timestamp: string | undefined): CompletionAge {
@@ -2336,6 +2340,24 @@ export function ChunkReader({
     return "bg-neutral-100 text-neutral-600 hover:bg-neutral-200 dark:bg-neutral-800 dark:text-neutral-400 dark:hover:bg-neutral-700";
   }
 
+  // Per-chapter highlight maps, built once per highlights change.
+  //
+  // ChapterSection is memoised, but this prop used to be built inline in the
+  // render, so every chapter got a brand-new object on every ChunkReader state
+  // change and the memo never held. Opening the verse sheet re-rendered — and
+  // re-parsed the HTML of — every loaded chapter: a measured 160ms main-thread
+  // block, and 370ms before the sheet appeared at all.
+  const highlightsByChapter = useMemo(() => {
+    const map = new Map<number, Record<number, VerseHighlight>>();
+    for (const ch of loadedChapters) {
+      map.set(
+        ch.chapterNumber,
+        getHighlightsForChapter(allHighlights, bookName, ch.chapterNumber),
+      );
+    }
+    return map;
+  }, [allHighlights, bookName, loadedChapters]);
+
   // Badge on the Notes button: grouped highlight/note entries for this book
   // (consecutive same-color/note verses count as one), matching how the drawer
   // displays them.
@@ -2879,7 +2901,7 @@ export function ChunkReader({
               redLetter={redLetter}
               fontSize={fontSize}
               mode={mode}
-              chapterHighlights={getHighlightsForChapter(allHighlights, bookName, ch.chapterNumber)}
+              chapterHighlights={highlightsByChapter.get(ch.chapterNumber) ?? EMPTY_HIGHLIGHTS}
               onHeadingMount={handleHeadingMount}
               onReadingComplete={handleReadingCompleteForSection}
               onNextChapter={handleNextChapterForSection}

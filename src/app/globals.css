@@ -42,6 +42,40 @@ body {
   border-radius: 0.25rem;
 }
 
+/* Bottom sheets rise into place rather than appearing.
+   Transform only — animating height or max-height here re-lays-out the whole
+   sheet every frame, and these sheets are heavy (cross-references, Strong's,
+   parallel translations). translateY runs on the compositor. */
+@keyframes sheet-rise {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes sheet-backdrop {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.sheet-rise {
+  animation: sheet-rise 260ms cubic-bezier(0.32, 0.72, 0, 1) both;
+  will-change: transform;
+}
+.sheet-backdrop {
+  animation: sheet-backdrop 260ms ease-out both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .sheet-rise,
+  .sheet-backdrop {
+    animation: none;
+  }
+}
+
 /* Brief spotlight on the exact phrase a search result jumps to */
 ::highlight(search-phrase) {
   background-color: rgb(211 168 60 / 0.45);

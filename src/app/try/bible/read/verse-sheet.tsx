@@ -291,12 +291,12 @@ export function VerseSheet({
   return (
     <div className="fixed inset-0 z-50 flex items-end justify-center">
       {/* Backdrop */}
-      <div className="absolute inset-0 bg-black/40" onClick={onClose} />
+      <div className="sheet-backdrop absolute inset-0 bg-black/40" onClick={onClose} />
 
       {/* Sheet */}
       <div
         ref={sheetRef}
-        className="relative flex w-full max-w-2xl flex-col rounded-t-2xl border border-b-0 border-neutral-200 bg-white shadow-2xl dark:border-neutral-700 dark:bg-neutral-900"
+        className="sheet-rise relative flex w-full max-w-2xl flex-col rounded-t-2xl border border-b-0 border-neutral-200 bg-white shadow-2xl dark:border-neutral-700 dark:bg-neutral-900"
         style={{
           maxHeight,
           transition: dragging ? "none" : "max-height 300ms ease",
