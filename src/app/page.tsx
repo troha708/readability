@@ -167,12 +167,17 @@ export default function Home() {
               </span>
             </p>
             <div className="mt-7">
+              {/* Set like esv.org's "Read Now" (their `a.button`): flat
+                  #ac9d71 gold, 2px radius, 40px tall, 15px side padding, their
+                  sans at 12px/500 with 0.25px tracking, capitalized, no icon.
+                  Label ink is the site's near-black rather than their white,
+                  per owner. Hover lifts to #bfb391 — their other landing gold,
+                  the one the section kicker uses. */}
               <Link
                 href="/try/bible/start"
-                className="inline-flex items-center gap-2 rounded-lg bg-amber-600 px-5 py-2.5 text-base font-semibold text-neutral-950 transition-colors hover:bg-amber-500"
+                className="inline-flex h-10 items-center rounded-[2px] bg-[#ac9d71] px-[15px] text-[12px] font-medium capitalize tracking-[0.25px] text-neutral-950 transition-colors hover:bg-[#bfb391]"
               >
                 Start reading
-                <span aria-hidden="true">→</span>
               </Link>
             </div>
           </div>
