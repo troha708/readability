@@ -553,14 +553,14 @@ export function BibleRoadmap({ books, versionAbbr, booksWithSummary }: Props) {
             tree (and it's where a returning reader is scrolled past on load).
             -mx-4 px-4 bleeds the frosted background to the container edges. */}
         <div className="sticky top-0 z-20 -mx-4 mb-6 flex items-center justify-center gap-3 bg-white/90 px-4 py-3 backdrop-blur dark:bg-neutral-950/90">
-          {/* Same size and colours as the landing page's Start Reading, and
-              the same flat shape: amber-400 fill, 2px radius, near-black bold
-              capitalized sans, no arrow. The book and chapter stay — they say
-              where this resumes — carried at the same weight the landing CTA
-              would give a secondary line. */}
+          {/* Same size, colours and type as the landing page's Start Reading —
+              amber-400 fill, near-black bold capitalized sans, no arrow —
+              but rounder than the landing's near-square 2px corners
+              (owner-directed). The book and chapter stay: they say where this
+              resumes. */}
           <Link
             href={readUrl(continueTarget.book, continueTarget.chapter)}
-            className="inline-flex h-[54px] items-center gap-2 rounded-[2px] bg-amber-400 px-[20.3px] text-[16.2px] font-bold capitalize tracking-[0.34px] text-neutral-950 transition-colors hover:bg-amber-300"
+            className="inline-flex h-[54px] items-center gap-2 rounded-lg bg-amber-400 px-[20.3px] text-[16.2px] font-bold capitalize tracking-[0.34px] text-neutral-950 transition-colors hover:bg-amber-300"
           >
             {hasStarted ? "Continue Reading" : "Begin Reading"}
             <span className="text-xs font-normal normal-case text-neutral-950/70">
