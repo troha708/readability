@@ -71,11 +71,13 @@ const EMPTY_HIGHLIGHTS: Record<number, VerseHighlight> = {};
 /** Width of each wide-screen side rail, in px. */
 const RAIL_WIDTH = 216;
 
-// A warm edge glow while a rail is out — the gold the reader already uses,
-// thrown sideways from the rail's inner edge so it reads as light spilling
-// onto the page rather than a border.
-const RAIL_GLOW_LEFT = "shadow-[8px_0_28px_-10px_rgba(224,184,90,0.45)]";
-const RAIL_GLOW_RIGHT = "shadow-[-8px_0_28px_-10px_rgba(224,184,90,0.45)]";
+// While a rail is out, its edge LINE warms to gold and carries a tight glow —
+// the line itself lighting up, not a wash of colour thrown across the page.
+// (A wide 28px spill was tried first and read as a shadow, not a glow.)
+const RAIL_GLOW_LEFT =
+  "border-r-amber-500/40 shadow-[1px_0_7px_-1px_rgba(224,184,90,0.20)] dark:border-r-amber-400/30";
+const RAIL_GLOW_RIGHT =
+  "border-l-amber-500/40 shadow-[-1px_0_7px_-1px_rgba(224,184,90,0.20)] dark:border-l-amber-400/30";
 
 type CompletionAge = "recent" | "fading" | "old";
 
@@ -2727,7 +2729,7 @@ export function ChunkReader({
             onClick={() => setLeftRailOpen(true)}
             aria-label="Show navigation panel"
             title="Navigation"
-            className={`fixed left-0 top-1/2 z-10 hidden -translate-y-1/2 rounded-r-lg border border-l-0 border-neutral-200 bg-white/95 py-3 pl-1.5 pr-2 text-neutral-400 backdrop-blur transition-opacity duration-300 hover:text-gold dark:border-neutral-700 dark:bg-neutral-925/95 dark:hover:text-gold-bright xl:block ${
+            className={`fixed left-0 top-24 z-10 hidden rounded-r-lg border border-l-0 border-neutral-200 bg-white/95 py-3 pl-1.5 pr-2 text-neutral-400 backdrop-blur transition-opacity duration-300 hover:text-gold dark:border-neutral-700 dark:bg-neutral-925/95 dark:hover:text-gold-bright xl:block ${
               leftRailOpen ? "pointer-events-none opacity-0" : "opacity-100"
             }`}
           >
@@ -2742,13 +2744,14 @@ export function ChunkReader({
             onClick={() => setRightRailOpen(true)}
             aria-label="Show reading tools"
             title="Tools"
-            className={`fixed right-0 top-1/2 z-10 hidden -translate-y-1/2 rounded-l-lg border border-r-0 border-neutral-200 bg-white/95 py-3 pl-2 pr-1.5 text-neutral-400 backdrop-blur transition-opacity duration-300 hover:text-gold dark:border-neutral-700 dark:bg-neutral-925/95 dark:hover:text-gold-bright xl:block ${
+            className={`fixed right-0 top-24 z-10 hidden rounded-l-lg border border-r-0 border-neutral-200 bg-white/95 py-3 pl-2 pr-1.5 text-neutral-400 backdrop-blur transition-opacity duration-300 hover:text-gold dark:border-neutral-700 dark:bg-neutral-925/95 dark:hover:text-gold-bright xl:block ${
               rightRailOpen ? "pointer-events-none opacity-0" : "opacity-100"
             }`}
           >
-            {/* Spanner */}
+            {/* Spanner: open jaws at the head, handle running down to the
+                left. The previous path collapsed into an unreadable blob. */}
             <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M14.7 6.3a4.5 4.5 0 0 0 5.9 5.9l-8.4 8.4a2.1 2.1 0 0 1-3-3l8.4-8.4a4.5 4.5 0 0 0-5.9-5.9l3 3-2.1 2.1-3-3a4.5 4.5 0 0 1 5.1-.1z" />
+              <path d="M20.4 4.6a5.5 5.5 0 0 1-7.1 7.1L5.6 19.4a2.1 2.1 0 0 1-3-3l7.7-7.7a5.5 5.5 0 0 1 7.1-7.1l-3.3 3.3.9 3 3 .9 3.4-3.2z" />
             </svg>
           </button>
         </>

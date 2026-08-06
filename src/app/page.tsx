@@ -189,9 +189,6 @@ export default function Home() {
           </div>
 
           <div className="relative mt-12 min-w-0 md:mt-0">
-            <p className="mb-3 text-center text-xs text-neutral-400">
-              Tap any verse for study notes
-            </p>
             <HeroPhone />
           </div>
         </section>
