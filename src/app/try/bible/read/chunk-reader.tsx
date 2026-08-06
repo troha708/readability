@@ -1681,7 +1681,10 @@ export function ChunkReader({
       style={{ flexShrink: 0, height: "28px", paddingLeft: "10px", paddingRight: "10px" }}
       className={`flex items-center justify-center rounded text-xs font-medium tracking-[0.25px] transition-all ${extraClass} ${
         summaryVisible
-          ? "bg-amber-500/20 text-gold ring-2 ring-gold/60 dark:bg-amber-400/20 dark:text-gold-bright dark:ring-gold-bright/60"
+          ? // "You are here" reads the same as it does on a chapter square:
+            // a solid gold fill, no ring. This was the last amber outline left
+            // in the strip after the chapter squares lost theirs.
+            "bg-amber-500 font-bold text-neutral-950 dark:bg-amber-400 dark:text-neutral-950"
           : "bg-amber-500/10 text-gold hover:bg-amber-500/20 dark:bg-amber-400/10 dark:text-gold-bright dark:hover:bg-amber-400/20"
       }`}
     >
