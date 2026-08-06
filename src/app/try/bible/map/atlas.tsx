@@ -763,7 +763,7 @@ export function Atlas() {
           aria-label="Open the Bible Atlas on readability.bible"
           className="absolute inset-0 z-30"
         >
-          <span className="absolute bottom-2 right-2 rounded-md bg-neutral-900/80 px-2 py-1 text-[11px] font-medium text-neutral-200">
+          <span className="absolute bottom-2 right-2 rounded-md bg-neutral-900/80 px-2 py-1 text-[11px] font-medium tracking-[0.25px] text-neutral-200">
             Bible Atlas · readability.bible ↗
           </span>
           <span className="absolute left-2 top-2 rounded bg-neutral-900/60 px-1.5 py-0.5 text-[9px] text-neutral-400">
@@ -791,8 +791,8 @@ export function Atlas() {
         title={`${chapterReference(book, ch)}:${verses.join(", ")}`}
         className={
           muted
-            ? "rounded-full border border-dashed border-neutral-300 px-2 py-0.5 text-xs font-medium text-neutral-500 transition-colors hover:text-amber-700 dark:border-neutral-600 dark:text-neutral-400 dark:hover:text-amber-400"
-            : "rounded-full bg-white px-2 py-0.5 text-xs font-medium text-amber-700 shadow-sm transition-colors hover:bg-amber-50 dark:bg-neutral-700 dark:text-amber-400 dark:hover:bg-neutral-600"
+            ? "rounded-full border border-dashed border-neutral-300 px-2 py-0.5 text-xs font-medium tracking-[0.25px] text-neutral-500 transition-colors hover:text-amber-700 dark:border-neutral-600 dark:text-neutral-400 dark:hover:text-amber-400"
+            : "rounded-full bg-white px-2 py-0.5 text-xs font-medium tracking-[0.25px] text-amber-700 shadow-sm transition-colors hover:bg-amber-50 dark:bg-neutral-700 dark:text-amber-400 dark:hover:bg-neutral-600"
         }
       >
         {chapterReference(book, ch)}
@@ -838,7 +838,7 @@ export function Atlas() {
               {m.refs.length > INITIAL_REF_CHIPS && !showAllRefs && (
                 <button
                   onClick={() => setShowAllRefs(true)}
-                  className="rounded-full px-2 py-0.5 text-xs font-medium text-neutral-500 underline decoration-neutral-300 underline-offset-2 hover:text-neutral-700 dark:hover:text-neutral-300"
+                  className="rounded-full px-2 py-0.5 text-xs font-medium tracking-[0.25px] text-neutral-500 underline decoration-neutral-300 underline-offset-2 hover:text-neutral-700 dark:hover:text-neutral-300"
                 >
                   all {m.refs.length}
                 </button>
@@ -923,7 +923,7 @@ export function Atlas() {
             {p.refs.length > INITIAL_REF_CHIPS && !showAllRefs && (
               <button
                 onClick={() => setShowAllRefs(true)}
-                className="rounded-full px-2 py-0.5 text-xs font-medium text-neutral-500 underline decoration-neutral-300 underline-offset-2 hover:text-neutral-700 dark:hover:text-neutral-300"
+                className="rounded-full px-2 py-0.5 text-xs font-medium tracking-[0.25px] text-neutral-500 underline decoration-neutral-300 underline-offset-2 hover:text-neutral-700 dark:hover:text-neutral-300"
               >
                 all {p.refs.length}
               </button>
@@ -984,7 +984,7 @@ export function Atlas() {
   const backLink = (alwaysLabel: boolean) => (
     <Link
       href={backHref}
-      className="flex shrink-0 items-center gap-1.5 rounded-md px-1.5 py-1 text-sm text-neutral-500 hover:bg-neutral-100 hover:text-neutral-700 dark:hover:bg-neutral-800 dark:hover:text-neutral-400"
+      className="flex shrink-0 items-center gap-1.5 rounded-md px-1.5 py-1 text-sm font-medium tracking-[0.25px] text-neutral-500 hover:bg-neutral-100 hover:text-neutral-700 dark:hover:bg-neutral-800 dark:hover:text-neutral-400"
     >
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <line x1="19" y1="12" x2="5" y2="12" />
@@ -1016,8 +1016,8 @@ export function Atlas() {
         aria-label="Search places"
         className={
           floating
-            ? "w-full rounded-lg border border-neutral-200 bg-white/95 px-3.5 py-2 text-sm text-neutral-800 shadow-lg outline-none backdrop-blur placeholder:text-neutral-400 focus:border-amber-400 dark:border-neutral-700 dark:bg-neutral-800/95 dark:text-neutral-100"
-            : "w-full rounded-lg border border-neutral-300 bg-white px-3 py-1.5 text-sm text-neutral-800 outline-none placeholder:text-neutral-400 focus:border-amber-400 dark:border-neutral-600 dark:bg-neutral-800 dark:text-neutral-100"
+            ? "w-full rounded-lg border border-neutral-200 bg-white/95 px-3.5 py-2 text-sm tracking-[0.25px] text-neutral-800 shadow-lg outline-none backdrop-blur placeholder:text-neutral-400 focus:border-amber-400 dark:border-neutral-700 dark:bg-neutral-800/95 dark:text-neutral-100"
+            : "w-full rounded-lg border border-neutral-300 bg-white px-3 py-1.5 text-sm tracking-[0.25px] text-neutral-800 outline-none placeholder:text-neutral-400 focus:border-amber-400 dark:border-neutral-600 dark:bg-neutral-800 dark:text-neutral-100"
         }
       />
       {searchOpen && results.length > 0 && (
@@ -1070,7 +1070,7 @@ export function Atlas() {
           key={kind}
           onClick={() => toggleKind(kind)}
           aria-pressed={kinds.has(kind)}
-          className={`rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors ${
+          className={`rounded-full px-2.5 py-0.5 text-xs font-medium tracking-[0.25px] transition-colors ${
             kinds.has(kind)
               ? "bg-amber-100 text-amber-800 dark:bg-amber-900/50 dark:text-amber-400"
               : "bg-neutral-100 text-neutral-400 line-through dark:bg-neutral-800 dark:text-neutral-500"
@@ -1089,7 +1089,7 @@ export function Atlas() {
           key={min}
           onClick={() => setMinMentions(min)}
           aria-pressed={minMentions === min}
-          className={`rounded-full px-2 py-0.5 text-xs font-medium transition-colors ${
+          className={`rounded-full px-2 py-0.5 text-xs font-medium tracking-[0.25px] transition-colors ${
             minMentions === min
               ? "bg-white text-amber-700 shadow-sm dark:bg-neutral-700 dark:text-amber-400"
               : "text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-300"
@@ -1265,7 +1265,7 @@ export function Atlas() {
           <Logo compact />
           <div className="h-5 w-px shrink-0 bg-neutral-200 dark:bg-neutral-700" />
           {backLink(false)}
-          <span className="hidden text-sm font-semibold text-amber-700 dark:text-amber-400 sm:inline">
+          <span className="hidden text-sm font-semibold tracking-[0.25px] text-amber-700 dark:text-amber-400 sm:inline">
             Atlas
           </span>
           <div className="ml-auto w-full max-w-xs">{searchBox(false)}</div>
@@ -1283,7 +1283,7 @@ export function Atlas() {
             </>
           )}
           {scopeSelect(
-            "rounded-full border border-neutral-200 bg-white px-2 py-0.5 text-xs font-medium text-neutral-600 outline-none dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-300",
+            "rounded-full border border-neutral-200 bg-white px-2 py-0.5 text-xs font-medium tracking-[0.25px] text-neutral-600 outline-none dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-300",
           )}
           {journeyNote}
           {focusNote}
@@ -1299,7 +1299,7 @@ export function Atlas() {
           <div className="flex items-center gap-2">
             <Logo compact />
             <div className="h-5 w-px shrink-0 bg-neutral-200 dark:bg-neutral-700" />
-            <span className="text-sm font-semibold text-amber-700 dark:text-amber-400">
+            <span className="text-sm font-semibold tracking-[0.25px] text-amber-700 dark:text-amber-400">
               Atlas
             </span>
           </div>
@@ -1312,7 +1312,7 @@ export function Atlas() {
           <div>
             <div className={sideHeading}>Scope</div>
             {scopeSelect(
-              "mt-1.5 w-full rounded-lg border border-neutral-200 bg-white px-2.5 py-1.5 text-sm font-medium text-neutral-600 outline-none dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-300",
+              "mt-1.5 w-full rounded-lg border border-neutral-200 bg-white px-2.5 py-1.5 text-sm font-medium tracking-[0.25px] text-neutral-600 outline-none dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-300",
             )}
           </div>
         )}
