@@ -954,6 +954,33 @@ export function ChunkReader({
   // Search
   const [searchOpen, setSearchOpen] = useState(false);
 
+  // Fullscreen — a wide-screen reading control (the native app is already
+  // fullscreen, and phone browsers don't offer it). Never persisted: the API
+  // only grants fullscreen from a user gesture, so a saved preference could
+  // not be restored on load anyway. `available` is read after mount because
+  // document.fullscreenEnabled doesn't exist during SSR.
+  const [fullscreen, setFullscreen] = useState(false);
+  const [fullscreenAvailable, setFullscreenAvailable] = useState(false);
+
+  useEffect(() => {
+    setFullscreenAvailable(!!document.fullscreenEnabled);
+    // The reader isn't the only way out of fullscreen — Esc and the browser's
+    // own control bypass the button entirely — so the label follows the
+    // document rather than the click.
+    const sync = () => setFullscreen(!!document.fullscreenElement);
+    sync();
+    document.addEventListener("fullscreenchange", sync);
+    return () => document.removeEventListener("fullscreenchange", sync);
+  }, []);
+
+  const toggleFullscreen = useCallback(() => {
+    // Both calls reject when the gesture isn't trusted or the browser blocks
+    // it; there's nothing to recover, and the change listener above keeps the
+    // label honest either way.
+    if (document.fullscreenElement) void document.exitFullscreen().catch(() => {});
+    else void document.documentElement.requestFullscreen().catch(() => {});
+  }, []);
+
   // Chapter map — the whole book's place index is fetched once, so the Map
   // button can show/hide instantly as the visible chapter changes. The open
   // sheet holds a snapshot: scrolling the reader behind it must not swap or
@@ -2710,9 +2737,28 @@ export function ChunkReader({
             )}
           </div>
 
-          {/* Translation is the one display choice a reader changes mid-passage,
-              so the rail lists it in the open rather than behind the menu. */}
+          {/* Display choices the rail keeps in the open rather than behind the
+              settings menu. */}
           <div className="mt-2 border-t border-neutral-200 pt-2 dark:border-neutral-800">
+            {fullscreenAvailable && (
+              <button
+                onClick={toggleFullscreen}
+                className={`mb-1 flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-left text-xs font-semibold ${
+                  fullscreen
+                    ? "bg-amber-100 text-amber-800 dark:bg-amber-900/50 dark:text-amber-400"
+                    : `text-neutral-500 dark:text-neutral-400 ${PANEL_ROW_HOVER}`
+                }`}
+              >
+                <svg className="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  {fullscreen ? (
+                    <path d="M9 3v6H3M15 3v6h6M9 21v-6H3M15 21v-6h6" />
+                  ) : (
+                    <path d="M3 9V3h6M21 9V3h-6M3 15v6h6M21 15v6h-6" />
+                  )}
+                </svg>
+                {fullscreen ? "Exit fullscreen" : "Fullscreen"}
+              </button>
+            )}
             <TranslationList
               versions={availableVersions}
               current={versionAbbr}
