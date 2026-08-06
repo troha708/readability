@@ -181,7 +181,7 @@ export default function Home() {
                   hovering to the amber-300 they hover to. */}
               <Link
                 href="/try/bible/start"
-                className="inline-flex h-[45px] items-center rounded-[2px] bg-amber-400 px-[16.9px] text-[13.5px] font-bold capitalize tracking-[0.28px] text-neutral-950 transition-colors hover:bg-amber-300"
+                className="inline-flex h-[54px] items-center rounded-[2px] bg-amber-400 px-[20.3px] text-[16.2px] font-bold capitalize tracking-[0.34px] text-neutral-950 transition-colors hover:bg-amber-300"
               >
                 Start reading
               </Link>
