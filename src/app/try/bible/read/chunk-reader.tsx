@@ -533,7 +533,7 @@ type SettingsControlsProps = {
   onPickVersion: (abbr: string) => void;
   /**
    * Whether the translation list belongs in this menu. The narrow-screen header
-   * has nowhere else to put it; the wide-screen rail shows it in the open, so
+   * has nowhere else to put it; the wide-screen rail lists it in the open, so
    * there it must not also be buried here.
    */
   includeTranslation: boolean;
@@ -638,25 +638,52 @@ function SettingsControls({
       {includeTranslation && (
         <>
           <div className={MENU_RULE} />
-          <div className="px-2 pb-1 pt-0.5 text-xs font-semibold text-neutral-500 dark:text-neutral-400">
-            Translation
-          </div>
-          {availableVersions.map((v) => (
-            <button
-              key={v.abbr}
-              onClick={() => onPickVersion(v.abbr)}
-              className={`block w-full rounded-md px-2 py-1.5 text-left text-sm ${MENU_HOVER} ${
-                v.abbr === versionAbbr
-                  ? "font-semibold text-amber-700 dark:text-amber-400"
-                  : "text-neutral-700 dark:text-neutral-300"
-              }`}
-            >
-              <span className="font-medium">{v.abbr}</span>{" "}
-              <span className="text-neutral-500 dark:text-neutral-400">{v.name}</span>
-            </button>
-          ))}
+          <TranslationList
+            versions={availableVersions}
+            current={versionAbbr}
+            onPick={onPickVersion}
+          />
         </>
       )}
+    </>
+  );
+}
+
+/**
+ * The translation choices, one per row: abbreviation then full name. Shown
+ * inside the settings menu on narrow screens and directly in the wide-screen
+ * right rail, so both read identically.
+ */
+function TranslationList({
+  versions,
+  current,
+  onPick,
+  hover = MENU_HOVER,
+}: {
+  versions: VersionInfo[];
+  current: string;
+  onPick: (abbr: string) => void;
+  hover?: string;
+}) {
+  return (
+    <>
+      <div className="px-2 pb-1 pt-0.5 text-xs font-semibold text-neutral-500 dark:text-neutral-400">
+        Translation
+      </div>
+      {versions.map((v) => (
+        <button
+          key={v.abbr}
+          onClick={() => onPick(v.abbr)}
+          className={`block w-full rounded-md px-2 py-1.5 text-left text-sm ${hover} ${
+            v.abbr === current
+              ? "font-semibold text-amber-700 dark:text-amber-400"
+              : "text-neutral-700 dark:text-neutral-300"
+          }`}
+        >
+          <span className="font-medium">{v.abbr}</span>{" "}
+          <span className="text-neutral-500 dark:text-neutral-400">{v.name}</span>
+        </button>
+      ))}
     </>
   );
 }
@@ -2510,21 +2537,8 @@ export function ChunkReader({
           so the shared open/visible state stays in sync without a media query
           in JS (and without a flash of the wrong one before hydration). */}
 
-      {/* Left panel — brand, way out, book picker, chapter grid */}
+      {/* Left panel — book picker + chapter grid */}
       <aside className="fixed left-0 top-0 z-10 hidden h-screen w-[196px] flex-col border-r border-neutral-200 bg-white dark:border-neutral-700 dark:bg-neutral-925 xl:flex">
-        <div className="shrink-0 border-b border-neutral-200 px-3 py-3 dark:border-neutral-700">
-          <Logo compact icon={false} />
-          <button
-            onClick={() => router.push("/try/bible/start")}
-            className="mt-1 flex items-center gap-1.5 text-xs font-semibold text-neutral-500 transition-colors hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-200"
-          >
-            <svg className="h-3.5 w-3.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <line x1="19" y1="12" x2="5" y2="12" />
-              <polyline points="12 19 5 12 12 5" />
-            </svg>
-            Library
-          </button>
-        </div>
         <div
           ref={panelBookRef}
           className="relative shrink-0 border-b border-neutral-200 px-3 py-3 dark:border-neutral-700"
@@ -2570,12 +2584,27 @@ export function ChunkReader({
         </div>
       </aside>
 
-      {/* Right panel — tools, translation, and the settings menu */}
+      {/* Right panel — brand, tools, and the settings menu */}
       <aside className="fixed right-0 top-0 z-10 hidden h-screen w-[196px] flex-col border-l border-neutral-200 bg-white dark:border-neutral-700 dark:bg-neutral-925 xl:flex">
-        {/* No overflow on this list: it's a handful of fixed rows that never
-            scroll, and a scroll container here would clip the settings menu,
-            which is wider than the rail and opens leftward over the column. */}
+        <div className="shrink-0 border-b border-neutral-200 px-3 py-3 dark:border-neutral-700">
+          <Logo compact icon={false} />
+        </div>
+
+        {/* No overflow on this list: it's five fixed rows that never scroll, and
+            a scroll container here would clip the settings menu, which is wider
+            than the rail and opens leftward over the reading column. */}
         <div className="flex-1 p-2">
+          <button
+            onClick={() => router.push("/try/bible/start")}
+            className={`flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-left text-xs font-semibold text-neutral-500 dark:text-neutral-400 ${PANEL_ROW_HOVER}`}
+          >
+            <svg className="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <line x1="19" y1="12" x2="5" y2="12" />
+              <polyline points="12 19 5 12 12 5" />
+            </svg>
+            Library
+          </button>
+
           <button
             onClick={() => setSearchOpen(true)}
             className={`flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-left text-xs font-semibold text-neutral-500 dark:text-neutral-400 ${PANEL_ROW_HOVER}`}
@@ -2681,29 +2710,15 @@ export function ChunkReader({
             )}
           </div>
 
-          {/* Translation stays in the open — it's the one display choice a
-              reader changes mid-passage, so it doesn't belong behind the menu.
-              Abbreviations only at this width; the full name is the tooltip. */}
-          <div className="mt-2 border-t border-neutral-200 px-2 pb-1 pt-2.5 dark:border-neutral-800">
-            <div className="mb-1.5 text-xs font-semibold text-neutral-500 dark:text-neutral-400">
-              Translation
-            </div>
-            <div className="flex flex-wrap gap-0.5 rounded-md bg-neutral-100 p-0.5 dark:bg-neutral-800">
-              {availableVersions.map((v) => (
-                <button
-                  key={v.abbr}
-                  onClick={() => pickVersion(v.abbr)}
-                  title={v.name}
-                  className={`flex-1 rounded px-2 py-1 text-xs font-semibold leading-none transition-all ${
-                    v.abbr === versionAbbr
-                      ? "bg-white text-amber-700 shadow-sm dark:bg-neutral-600 dark:text-amber-400"
-                      : "text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-300"
-                  }`}
-                >
-                  {v.abbr}
-                </button>
-              ))}
-            </div>
+          {/* Translation is the one display choice a reader changes mid-passage,
+              so the rail lists it in the open rather than behind the menu. */}
+          <div className="mt-2 border-t border-neutral-200 pt-2 dark:border-neutral-800">
+            <TranslationList
+              versions={availableVersions}
+              current={versionAbbr}
+              onPick={pickVersion}
+              hover="hover:bg-neutral-100 dark:hover:bg-neutral-800"
+            />
           </div>
         </div>
       </aside>
