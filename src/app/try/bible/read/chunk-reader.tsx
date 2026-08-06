@@ -472,21 +472,26 @@ function NotesDrawer({
 // controls in different furniture, so the bodies live here and each layout
 // supplies its own container.
 
+const MENU_HOVER = "hover:bg-neutral-100 dark:hover:bg-neutral-700";
+const MENU_RULE = "my-1 h-px bg-neutral-100 dark:bg-neutral-700";
+// Rows in the wide-screen rails sit on the page ground, not a raised menu, so
+// they hover one step darker than menu items do.
+const PANEL_ROW_HOVER =
+  "hover:bg-neutral-100 hover:text-neutral-700 dark:hover:bg-neutral-800 dark:hover:text-neutral-200";
+
 function ToggleRow({
   label,
   on,
-  hover,
   onClick,
 }: {
   label: string;
   on: boolean;
-  hover: string;
   onClick: () => void;
 }) {
   return (
     <button
       onClick={onClick}
-      className={`flex w-full items-center justify-between rounded-md px-2 py-1.5 text-left ${hover}`}
+      className={`flex w-full items-center justify-between rounded-md px-2 py-1.5 text-left ${MENU_HOVER}`}
     >
       <span className="text-xs font-semibold text-neutral-500 dark:text-neutral-400">
         {label}
@@ -507,8 +512,6 @@ function ToggleRow({
 }
 
 type SettingsControlsProps = {
-  /** Which surface these sit on — only affects the hover tint. */
-  surface: "menu" | "panel";
   mode: ReadingMode;
   onMode: (m: ReadingMode) => void;
   fontSize: number;
@@ -531,7 +534,6 @@ type SettingsControlsProps = {
 };
 
 function SettingsControls({
-  surface,
   mode,
   onMode,
   fontSize,
@@ -552,15 +554,6 @@ function SettingsControls({
   availableVersions,
   onPickVersion,
 }: SettingsControlsProps) {
-  const hover =
-    surface === "panel"
-      ? "hover:bg-neutral-100 dark:hover:bg-neutral-800"
-      : "hover:bg-neutral-100 dark:hover:bg-neutral-700";
-  const rule =
-    surface === "panel"
-      ? "my-1 h-px bg-neutral-200 dark:bg-neutral-800"
-      : "my-1 h-px bg-neutral-100 dark:bg-neutral-700";
-
   return (
     <>
       {/* Reading mode */}
@@ -583,7 +576,7 @@ function SettingsControls({
         </div>
       </div>
 
-      <div className={rule} />
+      <div className={MENU_RULE} />
 
       {/* Text size */}
       <div className="flex items-center justify-between px-2 py-1.5">
@@ -593,7 +586,7 @@ function SettingsControls({
             onClick={() => onFontSize(-1)}
             disabled={fontSize <= fontSizeMin}
             aria-label="Decrease font size"
-            className={`flex h-7 w-7 items-center justify-center rounded text-sm font-medium text-neutral-600 disabled:cursor-not-allowed disabled:opacity-30 dark:text-neutral-300 ${hover}`}
+            className={`flex h-7 w-7 items-center justify-center rounded text-sm font-medium text-neutral-600 disabled:cursor-not-allowed disabled:opacity-30 dark:text-neutral-300 ${MENU_HOVER}`}
           >
             −
           </button>
@@ -604,7 +597,7 @@ function SettingsControls({
             onClick={() => onFontSize(1)}
             disabled={fontSize >= fontSizeMax}
             aria-label="Increase font size"
-            className={`flex h-7 w-7 items-center justify-center rounded text-sm font-medium text-neutral-600 disabled:cursor-not-allowed disabled:opacity-30 dark:text-neutral-300 ${hover}`}
+            className={`flex h-7 w-7 items-center justify-center rounded text-sm font-medium text-neutral-600 disabled:cursor-not-allowed disabled:opacity-30 dark:text-neutral-300 ${MENU_HOVER}`}
           >
             +
           </button>
@@ -614,7 +607,7 @@ function SettingsControls({
       {/* Theme */}
       <button
         onClick={onToggleTheme}
-        className={`flex w-full items-center justify-between rounded-md px-2 py-1.5 text-left ${hover}`}
+        className={`flex w-full items-center justify-between rounded-md px-2 py-1.5 text-left ${MENU_HOVER}`}
       >
         <span className="text-xs font-semibold text-neutral-500 dark:text-neutral-400">Theme</span>
         <span className="flex items-center gap-1.5 text-xs font-medium text-neutral-700 dark:text-neutral-200">
@@ -623,20 +616,19 @@ function SettingsControls({
         </span>
       </button>
 
-      <ToggleRow label="Bionic reading" on={bionic} hover={hover} onClick={onToggleBionic} />
-      <ToggleRow label="Verse numbers" on={verseNumbers} hover={hover} onClick={onToggleVerseNumbers} />
-      <ToggleRow label="Red letters" on={redLetter} hover={hover} onClick={onToggleRedLetter} />
+      <ToggleRow label="Bionic reading" on={bionic} onClick={onToggleBionic} />
+      <ToggleRow label="Verse numbers" on={verseNumbers} onClick={onToggleVerseNumbers} />
+      <ToggleRow label="Red letters" on={redLetter} onClick={onToggleRedLetter} />
       {/* Cross-references (BSB only) */}
       {versionAbbr === "BSB" && (
         <ToggleRow
           label="Cross-references"
           on={showCrossRefs}
-          hover={hover}
           onClick={onToggleCrossRefs}
         />
       )}
 
-      <div className={rule} />
+      <div className={MENU_RULE} />
 
       {/* Translation */}
       <div className="px-2 pb-1 pt-0.5 text-xs font-semibold text-neutral-500 dark:text-neutral-400">
@@ -646,7 +638,7 @@ function SettingsControls({
         <button
           key={v.abbr}
           onClick={() => onPickVersion(v.abbr)}
-          className={`block w-full rounded-md px-2 py-1.5 text-left text-sm ${hover} ${
+          className={`block w-full rounded-md px-2 py-1.5 text-left text-sm ${MENU_HOVER} ${
             v.abbr === versionAbbr
               ? "font-semibold text-amber-700 dark:text-amber-400"
               : "text-neutral-700 dark:text-neutral-300"
@@ -974,14 +966,15 @@ export function ChunkReader({
     navigateReadUrl(readUrl({ chapter }));
   }
 
-  // Dropdown state. The book picker exists twice — once in the narrow-screen
-  // header, once in the wide-screen left panel — and shares its open state, so
-  // outside-click detection has to know about both containers.
+  // Dropdown state. The book picker and the settings menu each exist twice —
+  // once in the narrow-screen header, once in a wide-screen panel — and share
+  // their open state, so outside-click detection has to know both containers.
   const [bookOpen, setBookOpen] = useState(false);
   const [settingsOpen, setSettingsOpen] = useState(false);
   const bookRef = useRef<HTMLDivElement>(null);
   const panelBookRef = useRef<HTMLDivElement>(null);
   const settingsRef = useRef<HTMLDivElement>(null);
+  const panelSettingsRef = useRef<HTMLDivElement>(null);
 
   // Header height — drives the notes drawer's sticky offset so its top isn't
   // hidden behind the (variable-height) header.
@@ -1515,7 +1508,9 @@ export function ChunkReader({
       const inBookPicker =
         !!bookRef.current?.contains(t) || !!panelBookRef.current?.contains(t);
       if (!inBookPicker) setBookOpen(false);
-      if (settingsRef.current && !settingsRef.current.contains(t)) setSettingsOpen(false);
+      const inSettings =
+        !!settingsRef.current?.contains(t) || !!panelSettingsRef.current?.contains(t);
+      if (!inSettings) setSettingsOpen(false);
     }
     document.addEventListener("mousedown", handleClick);
     return () => document.removeEventListener("mousedown", handleClick);
@@ -2410,7 +2405,6 @@ export function ChunkReader({
             {settingsOpen && (
               <div className="absolute right-0 top-full z-20 mt-1 w-60 rounded-lg border border-neutral-200 bg-white p-1.5 shadow-lg dark:border-neutral-700 dark:bg-neutral-800">
                 <SettingsControls
-                  surface="menu"
                   mode={mode}
                   onMode={(m) => { setMode(m); setReadingMode(m); }}
                   fontSize={fontSize}
@@ -2507,10 +2501,10 @@ export function ChunkReader({
           in JS (and without a flash of the wrong one before hydration). */}
 
       {/* Left panel — book picker + chapter grid */}
-      <aside className="fixed left-0 top-0 z-10 hidden h-screen w-[260px] flex-col border-r border-neutral-200 bg-white dark:border-neutral-700 dark:bg-neutral-925 xl:flex">
+      <aside className="fixed left-0 top-0 z-10 hidden h-screen w-[196px] flex-col border-r border-neutral-200 bg-white dark:border-neutral-700 dark:bg-neutral-925 xl:flex">
         <div
           ref={panelBookRef}
-          className="relative shrink-0 border-b border-neutral-200 px-4 py-3 dark:border-neutral-700"
+          className="relative shrink-0 border-b border-neutral-200 px-3 py-3 dark:border-neutral-700"
         >
           <button
             onClick={() => setBookOpen((o) => !o)}
@@ -2520,7 +2514,7 @@ export function ChunkReader({
             <span className="ml-1 shrink-0 text-neutral-400">▾</span>
           </button>
           {bookOpen && (
-            <div className="absolute left-4 right-4 top-full z-20 mt-1 max-h-[70vh] overflow-y-auto rounded-lg border border-neutral-200 bg-white py-1 shadow-lg dark:border-neutral-700 dark:bg-neutral-800">
+            <div className="absolute left-3 right-3 top-full z-20 mt-1 max-h-[70vh] overflow-y-auto rounded-lg border border-neutral-200 bg-white py-1 shadow-lg dark:border-neutral-700 dark:bg-neutral-800">
               <BookMenu
                 books={sortedBooks}
                 firstNtBook={firstNtBook}
@@ -2533,7 +2527,7 @@ export function ChunkReader({
             </div>
           )}
         </div>
-        <div ref={panelChapterListRef} className="flex-1 overflow-y-auto px-4 py-3">
+        <div ref={panelChapterListRef} className="flex-1 overflow-y-auto px-3 py-3">
           {overviewAtStart && hasOverview && (
             <div className="mb-2">{overviewChip(undefined, "w-full")}</div>
           )}
@@ -2553,37 +2547,35 @@ export function ChunkReader({
         </div>
       </aside>
 
-      {/* Right panel — brand, tools, display settings */}
-      <aside className="fixed right-0 top-0 z-10 hidden h-screen w-[260px] flex-col border-l border-neutral-200 bg-white dark:border-neutral-700 dark:bg-neutral-925 xl:flex">
-        <div className="flex shrink-0 items-center gap-2 border-b border-neutral-200 px-4 py-3 dark:border-neutral-700">
+      {/* Right panel — brand, tools, and the settings menu */}
+      <aside className="fixed right-0 top-0 z-10 hidden h-screen w-[196px] flex-col border-l border-neutral-200 bg-white dark:border-neutral-700 dark:bg-neutral-925 xl:flex">
+        <div className="shrink-0 border-b border-neutral-200 px-3 py-3 dark:border-neutral-700">
           <Logo compact icon={false} />
-          <div className="h-5 w-px shrink-0 bg-neutral-200 dark:bg-neutral-700" />
+        </div>
+
+        {/* No overflow on this list: it's five fixed rows that never scroll, and
+            a scroll container here would clip the settings menu, which is wider
+            than the rail and opens leftward over the reading column. */}
+        <div className="flex-1 p-2">
           <button
             onClick={() => router.push("/try/bible/start")}
-            className="flex shrink-0 items-center gap-1.5 rounded-md px-1.5 py-1 text-sm text-neutral-500 hover:bg-neutral-100 hover:text-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-neutral-200"
+            className={`flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-left text-xs font-semibold text-neutral-500 dark:text-neutral-400 ${PANEL_ROW_HOVER}`}
           >
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <svg className="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <line x1="19" y1="12" x2="5" y2="12" />
               <polyline points="12 19 5 12 12 5" />
             </svg>
             Library
           </button>
-        </div>
 
-        <div className="flex-1 overflow-y-auto p-2">
           <button
             onClick={() => setSearchOpen(true)}
-            className="flex w-full items-center justify-between rounded-md px-2 py-1.5 text-left hover:bg-neutral-100 dark:hover:bg-neutral-800"
+            className={`flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-left text-xs font-semibold text-neutral-500 dark:text-neutral-400 ${PANEL_ROW_HOVER}`}
           >
-            <span className="flex items-center gap-2 text-xs font-semibold text-neutral-500 dark:text-neutral-400">
-              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-              </svg>
-              Search
-            </span>
-            <kbd className="rounded border border-neutral-200 px-1 text-[0.6rem] font-medium text-neutral-400 dark:border-neutral-700 dark:text-neutral-500">
-              ⌘K
-            </kbd>
+            <svg className="h-4 w-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+            </svg>
+            Search
           </button>
 
           {chapterPlaces && chapterPlaces.places.length > 0 && (
@@ -2595,69 +2587,96 @@ export function ChunkReader({
               className={`flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-left text-xs font-semibold ${
                 mapSheet
                   ? "bg-amber-100 text-amber-800 dark:bg-amber-900/50 dark:text-amber-400"
-                  : "text-neutral-500 hover:bg-neutral-100 dark:text-neutral-400 dark:hover:bg-neutral-800"
+                  : `text-neutral-500 dark:text-neutral-400 ${PANEL_ROW_HOVER}`
               }`}
             >
-              <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <svg className="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
                 <circle cx="12" cy="10" r="3" />
               </svg>
-              Map of this chapter
+              Map
             </button>
           )}
 
           <button
             onClick={() => setNotesDrawerOpen((o) => !o)}
-            className={`flex w-full items-center justify-between rounded-md px-2 py-1.5 text-left text-xs font-semibold ${
+            className={`flex w-full items-center justify-between gap-2 rounded-md px-2 py-1.5 text-left text-xs font-semibold ${
               notesDrawerOpen
                 ? "bg-amber-100 text-amber-800 dark:bg-amber-900/50 dark:text-amber-400"
-                : "text-neutral-500 hover:bg-neutral-100 dark:text-neutral-400 dark:hover:bg-neutral-800"
+                : `text-neutral-500 dark:text-neutral-400 ${PANEL_ROW_HOVER}`
             }`}
           >
             <span className="flex items-center gap-2">
-              <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <svg className="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M12 20h9" />
                 <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
               </svg>
-              Highlights &amp; notes
+              Notes
             </span>
             {notesCount > 0 && (
-              <span className="flex h-4 min-w-[16px] items-center justify-center rounded-full bg-neutral-200 px-1 text-[0.6rem] font-bold text-neutral-600 dark:bg-neutral-700 dark:text-neutral-300">
+              <span className="flex h-4 min-w-[16px] shrink-0 items-center justify-center rounded-full bg-neutral-200 px-1 text-[0.6rem] font-bold text-neutral-600 dark:bg-neutral-700 dark:text-neutral-300">
                 {notesCount}
               </span>
             )}
           </button>
 
-          <div className="my-2 h-px bg-neutral-200 dark:bg-neutral-800" />
-
-          <SettingsControls
-            surface="panel"
-            mode={mode}
-            onMode={(m) => { setMode(m); setReadingMode(m); }}
-            fontSize={fontSize}
-            fontSizeMin={FONT_SIZE_MIN}
-            fontSizeMax={FONT_SIZE_MAX}
-            onFontSize={(d) => changeFontSize(d * FONT_SIZE_STEP)}
-            dark={dark}
-            onToggleTheme={toggleTheme}
-            bionic={bionic}
-            onToggleBionic={toggleBionic}
-            verseNumbers={verseNumbers}
-            onToggleVerseNumbers={toggleVerseNumbers}
-            redLetter={redLetter}
-            onToggleRedLetter={toggleRedLetter}
-            showCrossRefs={showCrossRefs}
-            onToggleCrossRefs={toggleCrossRefs}
-            versionAbbr={versionAbbr}
-            availableVersions={availableVersions}
-            onPickVersion={pickVersion}
-          />
+          {/* Display settings — behind the same icon as on narrow screens, so
+              the rail stays a short list of destinations rather than a wall of
+              switches. The menu is wider than the panel and opens leftward
+              over the reading column. */}
+          <div ref={panelSettingsRef} className="relative">
+            <button
+              onClick={() => {
+                setSettingsOpen((o) => !o);
+                setBookOpen(false);
+              }}
+              aria-label="Display settings"
+              className={`flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-left text-xs font-semibold ${
+                settingsOpen
+                  ? "bg-neutral-100 text-neutral-700 dark:bg-neutral-800 dark:text-neutral-200"
+                  : `text-neutral-500 dark:text-neutral-400 ${PANEL_ROW_HOVER}`
+              }`}
+            >
+              <svg className="h-4 w-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+                <line x1="4" y1="7" x2="20" y2="7" />
+                <circle cx="9" cy="7" r="2.2" fill="currentColor" />
+                <line x1="4" y1="17" x2="20" y2="17" />
+                <circle cx="15" cy="17" r="2.2" fill="currentColor" />
+              </svg>
+              Settings
+            </button>
+            {settingsOpen && (
+              <div className="absolute right-0 top-full z-20 mt-1 w-60 rounded-lg border border-neutral-200 bg-white p-1.5 shadow-lg dark:border-neutral-700 dark:bg-neutral-800">
+                <SettingsControls
+                  mode={mode}
+                  onMode={(m) => { setMode(m); setReadingMode(m); }}
+                  fontSize={fontSize}
+                  fontSizeMin={FONT_SIZE_MIN}
+                  fontSizeMax={FONT_SIZE_MAX}
+                  onFontSize={(d) => changeFontSize(d * FONT_SIZE_STEP)}
+                  dark={dark}
+                  onToggleTheme={toggleTheme}
+                  bionic={bionic}
+                  onToggleBionic={toggleBionic}
+                  verseNumbers={verseNumbers}
+                  onToggleVerseNumbers={toggleVerseNumbers}
+                  redLetter={redLetter}
+                  onToggleRedLetter={toggleRedLetter}
+                  showCrossRefs={showCrossRefs}
+                  onToggleCrossRefs={toggleCrossRefs}
+                  versionAbbr={versionAbbr}
+                  availableVersions={availableVersions}
+                  onPickVersion={pickVersion}
+                />
+              </div>
+            )}
+          </div>
         </div>
       </aside>
 
       {/* Reading column. From xl up it's inset by the two panel widths so the
           centred scripture (and the footer's link row) clear them. */}
-      <div className="xl:px-[264px]">
+      <div className="xl:px-[200px]">
 
       {/* Notes drawer — sticky below header */}
       {notesDrawerOpen && (
