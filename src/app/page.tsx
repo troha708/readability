@@ -145,7 +145,13 @@ export default function Home() {
         {/* Hero — text left, mockup right on md+; stacked (text first) below md */}
         <section className="pb-4 pt-8 md:grid md:grid-cols-2 md:items-center md:gap-10 lg:gap-16">
           <div>
-            <h1 className="font-display text-3xl font-semibold leading-[1.1] tracking-tight text-white sm:text-4xl lg:text-[2.6rem]">
+            {/* Set like esv.org's "Read the Bible Online": their H1 is Sentinel
+                Book ITALIC at 400, line-height 1.2, letter-spacing 0.25px on
+                50px (0.005em). Sentinel is Hoefler&Co's commercial face and
+                their webfont is licensed to them, so this uses Bitter — the
+                free slab already loaded here as the scripture serif, chosen
+                for being Sentinel's closest relative. */}
+            <h1 className="font-scripture text-3xl/[1.2] font-normal italic tracking-[0.005em] text-white sm:text-4xl/[1.2] lg:text-[2.6rem]/[1.2]">
               A study Bible
             </h1>
             <p className="mt-4 text-base leading-relaxed text-neutral-300">
