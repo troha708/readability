@@ -4,7 +4,7 @@ import { Logo } from "@/components/logo";
 import { AuthButton } from "@/components/auth-button";
 import { ReturningUserRedirect } from "@/components/returning-user-redirect";
 import { SiteFooter } from "@/components/site-footer";
-import { HeroPhone } from "./hero-phone";
+import { HeroMockup } from "./hero-mockup";
 import { LandingSearch } from "./landing-search";
 import { SITE_URL } from "@/lib/site";
 
@@ -192,7 +192,7 @@ export default function Home() {
             <p className="mb-3 text-center text-xs text-neutral-400">
               Tap any verse for study notes
             </p>
-            <HeroPhone />
+            <HeroMockup />
           </div>
         </section>
       </div>
