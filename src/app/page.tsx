@@ -159,7 +159,7 @@ export default function Home() {
                 stands in for Sentinel as above; leading-relaxed is already
                 their exact 1.625. Colour stays ours — theirs is light-theme
                 ink on white, this page is near-black. */}
-            <p className="mt-4 font-scripture text-base font-light leading-relaxed tracking-[0.0156em] text-neutral-300">
+            <p className="mt-4 font-scripture text-base font-normal leading-relaxed tracking-[0.0156em] text-neutral-300">
               Notes, cross-references, word study and maps.
               <span className="block">
                 Free and open source, with no ads{" "}
@@ -191,10 +191,14 @@ export default function Home() {
       <div className="mx-auto max-w-6xl px-6">
         {/* What's in it */}
         <section className="pb-16 pt-14 md:grid md:grid-cols-3 md:gap-10">
-          <h2 className="text-xl font-semibold text-white">
+          {/* Set like esv.org's section kicker (their `landing-copy-title`):
+              their sans at 13px/23px, weight 400, uppercase, 1px tracking, in
+              the muted gold #bfb391. Ours is the system sans, which is what
+              this site uses wherever they use Gotham. */}
+          <h2 className="text-[13px] font-normal uppercase leading-[23px] tracking-[1px] text-[#bfb391]">
             What&rsquo;s in it
           </h2>
-          <ul className="mt-4 list-disc space-y-2.5 pl-5 font-scripture text-base font-light leading-relaxed tracking-[0.0156em] text-neutral-300 marker:text-neutral-600 md:col-span-2 md:mt-0">
+          <ul className="mt-4 list-disc space-y-2.5 pl-5 font-scripture text-base font-normal leading-relaxed tracking-[0.0156em] text-neutral-300 marker:text-neutral-600 md:col-span-2 md:mt-0">
             {features.map((f) => (
               <li key={f.id}>{f.content}</li>
             ))}
