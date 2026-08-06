@@ -450,7 +450,7 @@ export function BibleRoadmap({ books, versionAbbr, booksWithSummary }: Props) {
                   setMode("read");
                   setReadingMode("read");
                 }}
-                className={`rounded-md px-2.5 py-1 text-xs font-semibold transition-all ${
+                className={`rounded-md px-2.5 py-1 text-xs font-medium tracking-[0.25px] transition-all ${
                   mode === "read"
                     ? "bg-white text-amber-700 shadow-sm dark:bg-neutral-700 dark:text-amber-400"
                     : "text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-300"
@@ -463,7 +463,7 @@ export function BibleRoadmap({ books, versionAbbr, booksWithSummary }: Props) {
                   setMode("study");
                   setReadingMode("study");
                 }}
-                className={`rounded-md px-2.5 py-1 text-xs font-semibold transition-all ${
+                className={`rounded-md px-2.5 py-1 text-xs font-medium tracking-[0.25px] transition-all ${
                   mode === "study"
                     ? "bg-white text-amber-700 shadow-sm dark:bg-neutral-700 dark:text-amber-400"
                     : "text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-300"
@@ -486,7 +486,7 @@ export function BibleRoadmap({ books, versionAbbr, booksWithSummary }: Props) {
               href="/try/bible/map"
               aria-label="Bible atlas"
               title="Bible atlas"
-              className="inline-flex items-center gap-1.5 rounded-md px-2 py-1.5 text-sm font-medium text-neutral-500 hover:bg-neutral-100 hover:text-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-neutral-200"
+              className="inline-flex items-center gap-1.5 rounded-md px-2 py-1.5 text-sm font-medium tracking-[0.25px] text-neutral-500 hover:bg-neutral-100 hover:text-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-neutral-200"
             >
               <svg className="h-5 w-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
                 <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
@@ -498,7 +498,7 @@ export function BibleRoadmap({ books, versionAbbr, booksWithSummary }: Props) {
               href="/try/bible/dictionary"
               aria-label="Bible dictionary"
               title="Bible dictionary"
-              className="inline-flex items-center gap-1.5 rounded-md px-2 py-1.5 text-sm font-medium text-neutral-500 hover:bg-neutral-100 hover:text-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-neutral-200"
+              className="inline-flex items-center gap-1.5 rounded-md px-2 py-1.5 text-sm font-medium tracking-[0.25px] text-neutral-500 hover:bg-neutral-100 hover:text-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-neutral-200"
             >
               <svg className="h-5 w-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
                 <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
@@ -510,7 +510,7 @@ export function BibleRoadmap({ books, versionAbbr, booksWithSummary }: Props) {
               href="/try/bible/quiz"
               aria-label="Bible quiz"
               title="Bible quiz"
-              className="inline-flex items-center gap-1.5 rounded-md px-2 py-1.5 text-sm font-medium text-neutral-500 hover:bg-neutral-100 hover:text-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-neutral-200"
+              className="inline-flex items-center gap-1.5 rounded-md px-2 py-1.5 text-sm font-medium tracking-[0.25px] text-neutral-500 hover:bg-neutral-100 hover:text-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-neutral-200"
             >
               <svg className="h-5 w-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
                 <circle cx="12" cy="12" r="9" />
