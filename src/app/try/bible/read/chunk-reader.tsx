@@ -2592,11 +2592,24 @@ export function ChunkReader({
           so the shared open/visible state stays in sync without a media query
           in JS (and without a flash of the wrong one before hydration). */}
 
-      {/* Left panel — book picker + chapter grid */}
-      <aside className="fixed left-0 top-0 z-10 hidden h-screen w-[196px] flex-col border-r border-neutral-200 bg-white dark:border-neutral-700 dark:bg-neutral-925 xl:flex">
+      {/* Left panel — way out, book picker, chapter grid */}
+      <aside className="fixed left-0 top-0 z-10 hidden h-screen w-[216px] flex-col border-r border-neutral-200 bg-white dark:border-neutral-700 dark:bg-neutral-925 xl:flex">
+        {/* Leaving the book sits with choosing one, above the picker. */}
+        <div className="shrink-0 px-3 pb-1 pt-3">
+          <button
+            onClick={() => router.push("/try/bible/start")}
+            className={`flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-left text-xs font-medium tracking-[0.25px] text-neutral-500 dark:text-neutral-400 ${PANEL_ROW_HOVER}`}
+          >
+            <svg className="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <line x1="19" y1="12" x2="5" y2="12" />
+              <polyline points="12 19 5 12 12 5" />
+            </svg>
+            Library
+          </button>
+        </div>
         <div
           ref={panelBookRef}
-          className="relative shrink-0 border-b border-neutral-200 px-3 py-3 dark:border-neutral-700"
+          className="relative shrink-0 border-b border-neutral-200 px-3 pb-3 pt-1 dark:border-neutral-700"
         >
           <button
             onClick={() => setBookOpen((o) => !o)}
@@ -2640,26 +2653,15 @@ export function ChunkReader({
       </aside>
 
       {/* Right panel — brand, tools, and the settings menu */}
-      <aside className="fixed right-0 top-0 z-10 hidden h-screen w-[196px] flex-col border-l border-neutral-200 bg-white dark:border-neutral-700 dark:bg-neutral-925 xl:flex">
+      <aside className="fixed right-0 top-0 z-10 hidden h-screen w-[216px] flex-col border-l border-neutral-200 bg-white dark:border-neutral-700 dark:bg-neutral-925 xl:flex">
         <div className="shrink-0 border-b border-neutral-200 px-3 py-3 dark:border-neutral-700">
           <Logo compact icon={false} />
         </div>
 
-        {/* No overflow on this list: it's five fixed rows that never scroll, and
-            a scroll container here would clip the settings menu, which is wider
-            than the rail and opens leftward over the reading column. */}
+        {/* No overflow on this list: it's a handful of fixed rows that never
+            scroll, and a scroll container here would clip the settings menu,
+            which is wider than the rail and opens leftward over the column. */}
         <div className="flex-1 p-2">
-          <button
-            onClick={() => router.push("/try/bible/start")}
-            className={`flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-left text-xs font-medium tracking-[0.25px] text-neutral-500 dark:text-neutral-400 ${PANEL_ROW_HOVER}`}
-          >
-            <svg className="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <line x1="19" y1="12" x2="5" y2="12" />
-              <polyline points="12 19 5 12 12 5" />
-            </svg>
-            Library
-          </button>
-
           <button
             onClick={() => setSearchOpen(true)}
             className={`flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-left text-xs font-medium tracking-[0.25px] text-neutral-500 dark:text-neutral-400 ${PANEL_ROW_HOVER}`}
@@ -2799,7 +2801,7 @@ export function ChunkReader({
 
       {/* Reading column. From xl up it's inset by the two panel widths so the
           centred scripture (and the footer's link row) clear them. */}
-      <div className="xl:px-[200px]">
+      <div className="xl:px-[220px]">
 
       {/* Notes drawer — sticky below header */}
       {notesDrawerOpen && (
