@@ -493,7 +493,7 @@ function ToggleRow({
       onClick={onClick}
       className={`flex w-full items-center justify-between rounded-md px-2 py-1.5 text-left ${MENU_HOVER}`}
     >
-      <span className="text-xs font-semibold text-neutral-500 dark:text-neutral-400">
+      <span className="text-xs font-medium tracking-[0.25px] text-neutral-500 dark:text-neutral-400">
         {label}
       </span>
       <span
@@ -565,13 +565,13 @@ function SettingsControls({
     <>
       {/* Reading mode */}
       <div className="flex items-center justify-between px-2 py-1.5">
-        <span className="text-xs font-semibold text-neutral-500 dark:text-neutral-400">Mode</span>
+        <span className="text-xs font-medium tracking-[0.25px] text-neutral-500 dark:text-neutral-400">Mode</span>
         <div className="inline-flex rounded-md bg-neutral-100 p-0.5 dark:bg-neutral-700">
           {(["read", "study"] as const).map((m) => (
             <button
               key={m}
               onClick={() => onMode(m)}
-              className={`rounded px-2.5 py-1 text-xs font-semibold capitalize leading-none transition-all ${
+              className={`rounded px-2.5 py-1 text-xs font-medium tracking-[0.25px] capitalize leading-none transition-all ${
                 mode === m
                   ? "bg-white text-amber-700 shadow-sm dark:bg-neutral-600 dark:text-amber-400"
                   : "text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-300"
@@ -587,24 +587,24 @@ function SettingsControls({
 
       {/* Text size */}
       <div className="flex items-center justify-between px-2 py-1.5">
-        <span className="text-xs font-semibold text-neutral-500 dark:text-neutral-400">Text size</span>
+        <span className="text-xs font-medium tracking-[0.25px] text-neutral-500 dark:text-neutral-400">Text size</span>
         <div className="flex items-center gap-1.5">
           <button
             onClick={() => onFontSize(-1)}
             disabled={fontSize <= fontSizeMin}
             aria-label="Decrease font size"
-            className={`flex h-7 w-7 items-center justify-center rounded text-sm font-medium text-neutral-600 disabled:cursor-not-allowed disabled:opacity-30 dark:text-neutral-300 ${MENU_HOVER}`}
+            className={`flex h-7 w-7 items-center justify-center rounded text-sm font-medium tracking-[0.25px] text-neutral-600 disabled:cursor-not-allowed disabled:opacity-30 dark:text-neutral-300 ${MENU_HOVER}`}
           >
             −
           </button>
-          <span className="min-w-[3ch] text-center text-xs font-semibold tabular-nums text-neutral-700 dark:text-neutral-200">
+          <span className="min-w-[3ch] text-center text-xs font-medium tracking-[0.25px] tabular-nums text-neutral-700 dark:text-neutral-200">
             {fontSize}
           </span>
           <button
             onClick={() => onFontSize(1)}
             disabled={fontSize >= fontSizeMax}
             aria-label="Increase font size"
-            className={`flex h-7 w-7 items-center justify-center rounded text-sm font-medium text-neutral-600 disabled:cursor-not-allowed disabled:opacity-30 dark:text-neutral-300 ${MENU_HOVER}`}
+            className={`flex h-7 w-7 items-center justify-center rounded text-sm font-medium tracking-[0.25px] text-neutral-600 disabled:cursor-not-allowed disabled:opacity-30 dark:text-neutral-300 ${MENU_HOVER}`}
           >
             +
           </button>
@@ -616,7 +616,7 @@ function SettingsControls({
         onClick={onToggleTheme}
         className={`flex w-full items-center justify-between rounded-md px-2 py-1.5 text-left ${MENU_HOVER}`}
       >
-        <span className="text-xs font-semibold text-neutral-500 dark:text-neutral-400">Theme</span>
+        <span className="text-xs font-medium tracking-[0.25px] text-neutral-500 dark:text-neutral-400">Theme</span>
         <span className="flex items-center gap-1.5 text-xs font-medium text-neutral-700 dark:text-neutral-200">
           {dark ? <SunIcon /> : <MoonIcon />}
           {dark ? "Light" : "Dark"}
@@ -667,14 +667,14 @@ function TranslationList({
 }) {
   return (
     <>
-      <div className="px-2 pb-1 pt-0.5 text-xs font-semibold text-neutral-500 dark:text-neutral-400">
+      <div className="px-2 pb-1 pt-0.5 text-xs font-medium tracking-[0.25px] text-neutral-500 dark:text-neutral-400">
         Translation
       </div>
       {versions.map((v) => (
         <button
           key={v.abbr}
           onClick={() => onPick(v.abbr)}
-          className={`block w-full rounded-md px-2 py-1.5 text-left text-sm ${hover} ${
+          className={`block w-full rounded-md px-2 py-1.5 text-left text-sm font-medium tracking-[0.25px] ${hover} ${
             v.abbr === current
               ? "font-semibold text-amber-700 dark:text-amber-400"
               : "text-neutral-700 dark:text-neutral-300"
@@ -714,7 +714,7 @@ function BookMenu({
           )}
           <button
             onClick={() => onPick(name)}
-            className={`block w-full px-3 py-1.5 text-left text-sm hover:bg-neutral-100 dark:hover:bg-neutral-700 ${
+            className={`block w-full px-3 py-1.5 text-left text-sm font-medium tracking-[0.25px] hover:bg-neutral-100 dark:hover:bg-neutral-700 ${
               name === current
                 ? "font-semibold text-amber-700 dark:text-amber-400"
                 : "text-neutral-700 dark:text-neutral-300"
@@ -1675,7 +1675,7 @@ export function ChunkReader({
         }
       }}
       style={{ flexShrink: 0, height: "28px", paddingLeft: "10px", paddingRight: "10px" }}
-      className={`flex items-center justify-center rounded text-xs font-semibold transition-all ${extraClass} ${
+      className={`flex items-center justify-center rounded text-xs font-medium tracking-[0.25px] transition-all ${extraClass} ${
         summaryVisible
           ? "bg-amber-500/20 text-gold ring-2 ring-gold/60 dark:bg-amber-400/20 dark:text-gold-bright dark:ring-gold-bright/60"
           : "bg-amber-500/10 text-gold hover:bg-amber-500/20 dark:bg-amber-400/10 dark:text-gold-bright dark:hover:bg-amber-400/20"
@@ -2379,7 +2379,7 @@ export function ChunkReader({
               onClick={() => router.push("/try/bible/start")}
               aria-label="Back to library"
               title="Back to library"
-              className="flex shrink-0 items-center gap-1.5 rounded-md px-1.5 py-1 text-sm text-neutral-500 hover:bg-neutral-100 hover:text-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-neutral-200"
+              className="flex shrink-0 items-center gap-1.5 rounded-md px-1.5 py-1 text-sm font-medium tracking-[0.25px] text-neutral-500 hover:bg-neutral-100 hover:text-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-neutral-200"
             >
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <line x1="19" y1="12" x2="5" y2="12" />
@@ -2410,7 +2410,7 @@ export function ChunkReader({
                 setMapSheet({ chapter: visibleChapterNumber, data: chapterPlaces })
               }
               aria-label="Map of places in this chapter"
-              className={`relative flex items-center gap-1 rounded-md px-2 py-1 text-[0.65rem] font-semibold leading-none transition-all ${
+              className={`relative flex items-center gap-1 rounded-md px-2 py-1 text-[0.65rem] font-medium tracking-[0.25px] leading-none transition-all ${
                 mapSheet
                   ? "bg-amber-100 text-amber-800 dark:bg-amber-900/50 dark:text-amber-400"
                   : "text-neutral-400 hover:bg-neutral-100 hover:text-neutral-600 dark:hover:bg-neutral-800 dark:hover:text-neutral-300"
@@ -2428,7 +2428,7 @@ export function ChunkReader({
           <button
             onClick={() => setNotesDrawerOpen((o) => !o)}
             aria-label="View highlights and notes"
-            className={`relative flex items-center gap-1 rounded-md px-2 py-1 text-[0.65rem] font-semibold leading-none transition-all ${
+            className={`relative flex items-center gap-1 rounded-md px-2 py-1 text-[0.65rem] font-medium tracking-[0.25px] leading-none transition-all ${
               notesDrawerOpen
                 ? "bg-amber-100 text-amber-800 dark:bg-amber-900/50 dark:text-amber-400"
                 : "text-neutral-400 hover:bg-neutral-100 hover:text-neutral-600 dark:hover:bg-neutral-800 dark:hover:text-neutral-300"
@@ -2507,7 +2507,7 @@ export function ChunkReader({
                 setBookOpen((o) => !o);
                 setSettingsOpen(false);
               }}
-              className="flex h-7 items-center rounded-md border border-neutral-300 px-2.5 text-sm font-medium text-neutral-700 hover:bg-neutral-50 dark:border-neutral-600 dark:text-neutral-300 dark:hover:bg-neutral-800"
+              className="flex h-7 items-center rounded-md border border-neutral-300 px-2.5 text-sm font-medium tracking-[0.25px] text-neutral-700 hover:bg-neutral-50 dark:border-neutral-600 dark:text-neutral-300 dark:hover:bg-neutral-800"
             >
               {bookName}
               <span className="ml-1 text-neutral-400">▾</span>
@@ -2575,7 +2575,7 @@ export function ChunkReader({
         >
           <button
             onClick={() => setBookOpen((o) => !o)}
-            className="flex h-8 w-full items-center justify-between rounded-md border border-neutral-300 px-2.5 text-sm font-medium text-neutral-700 hover:bg-neutral-50 dark:border-neutral-600 dark:text-neutral-300 dark:hover:bg-neutral-800"
+            className="flex h-8 w-full items-center justify-between rounded-md border border-neutral-300 px-2.5 text-sm font-medium tracking-[0.25px] text-neutral-700 hover:bg-neutral-50 dark:border-neutral-600 dark:text-neutral-300 dark:hover:bg-neutral-800"
           >
             <span className="truncate">{bookName}</span>
             <span className="ml-1 shrink-0 text-neutral-400">▾</span>
@@ -2626,7 +2626,7 @@ export function ChunkReader({
         <div className="flex-1 p-2">
           <button
             onClick={() => router.push("/try/bible/start")}
-            className={`flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-left text-xs font-semibold text-neutral-500 dark:text-neutral-400 ${PANEL_ROW_HOVER}`}
+            className={`flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-left text-xs font-medium tracking-[0.25px] text-neutral-500 dark:text-neutral-400 ${PANEL_ROW_HOVER}`}
           >
             <svg className="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <line x1="19" y1="12" x2="5" y2="12" />
@@ -2637,7 +2637,7 @@ export function ChunkReader({
 
           <button
             onClick={() => setSearchOpen(true)}
-            className={`flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-left text-xs font-semibold text-neutral-500 dark:text-neutral-400 ${PANEL_ROW_HOVER}`}
+            className={`flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-left text-xs font-medium tracking-[0.25px] text-neutral-500 dark:text-neutral-400 ${PANEL_ROW_HOVER}`}
           >
             <svg className="h-4 w-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
@@ -2651,7 +2651,7 @@ export function ChunkReader({
               onClick={() =>
                 setMapSheet({ chapter: visibleChapterNumber, data: chapterPlaces })
               }
-              className={`flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-left text-xs font-semibold ${
+              className={`flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-left text-xs font-medium tracking-[0.25px] ${
                 mapSheet
                   ? "bg-amber-100 text-amber-800 dark:bg-amber-900/50 dark:text-amber-400"
                   : `text-neutral-500 dark:text-neutral-400 ${PANEL_ROW_HOVER}`
@@ -2667,7 +2667,7 @@ export function ChunkReader({
 
           <button
             onClick={() => setNotesDrawerOpen((o) => !o)}
-            className={`flex w-full items-center justify-between gap-2 rounded-md px-2 py-1.5 text-left text-xs font-semibold ${
+            className={`flex w-full items-center justify-between gap-2 rounded-md px-2 py-1.5 text-left text-xs font-medium tracking-[0.25px] ${
               notesDrawerOpen
                 ? "bg-amber-100 text-amber-800 dark:bg-amber-900/50 dark:text-amber-400"
                 : `text-neutral-500 dark:text-neutral-400 ${PANEL_ROW_HOVER}`
@@ -2698,7 +2698,7 @@ export function ChunkReader({
                 setBookOpen(false);
               }}
               aria-label="Display settings"
-              className={`flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-left text-xs font-semibold ${
+              className={`flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-left text-xs font-medium tracking-[0.25px] ${
                 settingsOpen
                   ? "bg-neutral-100 text-neutral-700 dark:bg-neutral-800 dark:text-neutral-200"
                   : `text-neutral-500 dark:text-neutral-400 ${PANEL_ROW_HOVER}`
@@ -2746,7 +2746,7 @@ export function ChunkReader({
             {fullscreenAvailable && (
               <button
                 onClick={toggleFullscreen}
-                className={`mb-1 flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-left text-xs font-semibold ${
+                className={`mb-1 flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-left text-xs font-medium tracking-[0.25px] ${
                   fullscreen
                     ? "bg-amber-100 text-amber-800 dark:bg-amber-900/50 dark:text-amber-400"
                     : `text-neutral-500 dark:text-neutral-400 ${PANEL_ROW_HOVER}`

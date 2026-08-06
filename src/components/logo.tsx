@@ -10,7 +10,9 @@ export function Logo({ compact = false, icon = true }: Props) {
   return (
     <Link
       href="/"
-      className={`inline-flex items-center font-bold text-neutral-900 transition-colors hover:text-amber-600 dark:text-white dark:hover:text-amber-400 ${
+      // Same size and weight as before; the 0.25px letter-spacing is what puts
+      // the wordmark on the same typographic footing as the bar's other items.
+      className={`inline-flex items-center font-bold tracking-[0.25px] text-neutral-900 transition-colors hover:text-amber-600 dark:text-white dark:hover:text-amber-400 ${
         compact ? "gap-1.5 text-base" : "gap-2 text-xl"
       }`}
     >

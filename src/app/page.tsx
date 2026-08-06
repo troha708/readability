@@ -113,11 +113,12 @@ export default function Home() {
           <LandingSearch />
           {/* Atlas/Dictionary live in the footer too, so on phones the bar
               keeps just logo + Sign in (literal.club does the same). */}
-          {/* Bar type set like esv.org's footer strip ("© 2001 – 2026
-              Crossway · Take a Tour · About · …"): their sans at 10.5px,
-              weight 500, 0.25px letter-spacing. Their grey there is
-              rgb(154,159,163) — already this site's neutral-400. */}
-          <nav className="hidden items-center text-[10.5px] font-medium tracking-[0.25px] max-md:ml-auto sm:flex">
+          {/* Bar type takes the treatment from esv.org's footer strip ("© 2001
+              – 2026 Crossway · Take a Tour · About · …") — weight 500, 0.25px
+              letter-spacing — but keeps this bar's own size, so the links
+              still fill the header. Their grey there is rgb(154,159,163),
+              already this site's neutral-400. */}
+          <nav className="hidden items-center text-sm font-medium tracking-[0.25px] max-md:ml-auto sm:flex">
             <Link
               href="/try/bible/map"
               className="px-3 py-2 text-neutral-400 transition-colors hover:text-amber-400 sm:px-4"
@@ -180,7 +181,7 @@ export default function Home() {
                   hovering to the amber-300 they hover to. */}
               <Link
                 href="/try/bible/start"
-                className="inline-flex h-[60px] items-center rounded-[3px] bg-amber-400 px-[22.5px] text-[18px] font-bold capitalize tracking-[0.375px] text-neutral-950 transition-colors hover:bg-amber-300"
+                className="inline-flex h-[45px] items-center rounded-[2px] bg-amber-400 px-[16.9px] text-[13.5px] font-bold capitalize tracking-[0.28px] text-neutral-950 transition-colors hover:bg-amber-300"
               >
                 Start reading
               </Link>
