@@ -151,10 +151,15 @@ export default function Home() {
                 their webfont is licensed to them, so this uses Bitter — the
                 free slab already loaded here as the scripture serif, chosen
                 for being Sentinel's closest relative. */}
-            <h1 className="font-scripture text-3xl/[1.2] font-normal italic tracking-[0.005em] text-white sm:text-4xl/[1.2] lg:text-[2.6rem]/[1.2]">
+            <h1 className="font-scripture text-3xl/[1.2] font-semibold italic tracking-[0.005em] text-white sm:text-4xl/[1.2] lg:text-[2.6rem]/[1.2]">
               A study Bible
             </h1>
-            <p className="mt-4 text-base leading-relaxed text-neutral-300">
+            {/* Body copy set like esv.org's landing paragraphs: Sentinel at
+                weight 300, 16px/26px, letter-spacing 0.25px (0.0156em). Bitter
+                stands in for Sentinel as above; leading-relaxed is already
+                their exact 1.625. Colour stays ours — theirs is light-theme
+                ink on white, this page is near-black. */}
+            <p className="mt-4 font-scripture text-base font-light leading-relaxed tracking-[0.0156em] text-neutral-300">
               Notes, cross-references, word study and maps.
               <span className="block">
                 Free and open source, with no ads{" "}
@@ -189,7 +194,7 @@ export default function Home() {
           <h2 className="text-xl font-semibold text-white">
             What&rsquo;s in it
           </h2>
-          <ul className="mt-4 list-disc space-y-2.5 pl-5 leading-relaxed text-neutral-300 marker:text-neutral-600 md:col-span-2 md:mt-0">
+          <ul className="mt-4 list-disc space-y-2.5 pl-5 font-scripture text-base font-light leading-relaxed tracking-[0.0156em] text-neutral-300 marker:text-neutral-600 md:col-span-2 md:mt-0">
             {features.map((f) => (
               <li key={f.id}>{f.content}</li>
             ))}
