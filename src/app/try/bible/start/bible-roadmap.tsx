@@ -16,6 +16,7 @@ import { AuthButton } from "@/components/auth-button";
 import { Logo } from "@/components/logo";
 import { useUser } from "@/hooks/useUser";
 import { bibleBookSortIndex, bookGenre } from "@/lib/bible-book-order";
+import { originalName, divisionOriginalName } from "@/lib/book-names-original";
 import { isOverviewAtStart } from "@/lib/overview-placement";
 import { computeContinueTarget } from "@/lib/continue-target";
 import { SearchModal } from "@/components/search-modal";
@@ -34,60 +35,51 @@ type Props = {
   books: BookInfo[];
   versionAbbr: string;
   booksWithSummary: Set<string>;
+  /**
+   * Book name -> the one-line "Purpose" from its Tyndale intro. Optional
+   * because the native app renders from a bundled roadmap blob that doesn't
+   * carry the intros; there the rows simply show no purpose line until that
+   * bundle is rebuilt to include them.
+   */
+  purposeByBook?: Record<string, string>;
 };
 
-type CompletionAge = "recent" | "fading" | "old";
-
-function getCompletionAge(timestamp: string | undefined): CompletionAge {
-  if (!timestamp) return "old";
-  const days = (Date.now() - new Date(timestamp).getTime()) / (1000 * 60 * 60 * 24);
-  if (days <= 7) return "recent";
-  if (days <= 30) return "fading";
-  return "old";
-}
-
-const AGE_STYLES = {
-  recent: {
-    button:
-      "bg-amber-100 font-semibold text-amber-700 ring-1 ring-inset ring-amber-300 dark:bg-amber-900/40 dark:text-amber-400 dark:ring-amber-700",
-    badge: "bg-amber-500 text-white",
-    icon: "text-amber-500 dark:text-amber-400",
-  },
-  fading: {
-    button:
-      "bg-amber-50 font-semibold text-amber-600/60 ring-1 ring-inset ring-amber-200 dark:bg-amber-950/25 dark:text-amber-500/50 dark:ring-amber-800/60",
-    badge: "bg-amber-400/70 text-white dark:bg-amber-700",
-    icon: "text-amber-400/70 dark:text-amber-600",
-  },
-  old: {
-    button:
-      "bg-amber-50/60 font-semibold text-amber-500/50 ring-1 ring-inset ring-amber-200/60 dark:bg-amber-950/15 dark:text-amber-600/40 dark:ring-amber-800/40",
-    badge: "bg-amber-300/60 text-white dark:bg-amber-800/60",
-    icon: "text-amber-300/60 dark:text-amber-700/50",
-  },
-} as const;
-
-function BookIcon({ className }: { className?: string }) {
+/**
+ * The original-language name set beside the English one. Greek and Hebrew get
+ * different families (no single free face covers both with the pointing), and
+ * the Hebrew is marked rtl so the numbered books — שְׁמוּאֵל א — order correctly
+ * next to surrounding Latin text.
+ */
+function OriginalTitle({
+  name,
+  className = "",
+}: {
+  name: { original: string; translit: string; script: "hebrew" | "greek" };
+  className?: string;
+}) {
   return (
-    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
-    </svg>
+    <span
+      className={`${name.script === "hebrew" ? "font-hebrew" : "font-greek"} ${className}`}
+      dir={name.script === "hebrew" ? "rtl" : undefined}
+      title={name.translit}
+    >
+      {name.original}
+    </span>
   );
 }
 
-function PencilIcon({ className }: { className?: string }) {
-  return (
-    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
-    </svg>
-  );
-}
-
-export function BibleRoadmap({ books, versionAbbr, booksWithSummary }: Props) {
+export function BibleRoadmap({
+  books,
+  versionAbbr,
+  booksWithSummary,
+  purposeByBook = {},
+}: Props) {
   const { user, loading: userLoading } = useUser();
   const [readingDone, setReadingDone] = useState<ReadingProgress>({});
   const [quizDone, setQuizDone] = useState<ReadingProgress>({});
-  const [timestamps, setTimestamps] = useState<Record<string, string>>({});
+  // Completion timestamps are still loaded — computeContinueTarget uses them
+  // to pick where you resume — but nothing renders from them any more. The
+  // recent/fading/old fade on completed chapters is gone.
   const [mode, setMode] = useState<ReadingMode>("read");
   const [expandedBooks, setExpandedBooks] = useState<Set<string>>(new Set());
   const [expandedSections, setExpandedSections] = useState<Set<string>>(new Set(["OT", "NT"]));
@@ -126,7 +118,6 @@ export function BibleRoadmap({ books, versionAbbr, booksWithSummary }: Props) {
       const { read: readProg, quiz: quizProg, timestamps: ts } = await loadAllProgress();
       setReadingDone(readProg);
       setQuizDone(quizProg);
-      setTimestamps(ts);
       // A saved reading position counts as started even before any chapter
       // is completed — exiting mid-chapter on a first visit still means
       // "continue", not "begin".
@@ -206,9 +197,9 @@ export function BibleRoadmap({ books, versionAbbr, booksWithSummary }: Props) {
 
   // The Overview button jumps to wherever the book's overview lives: the first
   // chapter for orientation books (overview above chapter 1), the last chapter
-  // for narrative books (recap after the story). It's placed in the chapter grid
-  // to match — first for orientation books, last for narrative recaps.
-  function renderOverviewLink(book: BookInfo, isStudy: boolean) {
+  // for narrative books (recap after the story). It sits in the chapter run to
+  // match — first for orientation books, last for narrative recaps.
+  function renderOverviewLink(book: BookInfo) {
     if (!booksWithSummary.has(book.name)) return null;
     const targetChapter = isOverviewAtStart(book.name)
       ? book.chapters[0].chapterNumber
@@ -216,17 +207,152 @@ export function BibleRoadmap({ books, versionAbbr, booksWithSummary }: Props) {
     return (
       <Link
         href={readUrl(book.name, targetChapter) + "&overview=1"}
-        className={`flex ${
-          isStudy ? "h-11 flex-col gap-0.5" : "h-7"
-        } items-center justify-center rounded px-2.5 text-xs font-semibold transition-colors bg-amber-100 text-amber-700 hover:bg-amber-200 dark:bg-amber-900/40 dark:text-amber-400 dark:hover:bg-amber-800/60`}
+        className="inline-flex h-11 items-center px-1 font-ui text-[13px] font-medium text-gold transition-colors hover:text-gold-deep dark:text-gold-bright dark:hover:text-amber-300"
       >
-        <span className={isStudy ? "leading-none" : ""}>Overview</span>
-        {isStudy && (
-          <span className="text-[0.6rem] font-normal text-amber-700/80 dark:text-amber-400/70">
-            summary
-          </span>
-        )}
+        <span className="border-b-[1.5px] border-dashed border-current pb-0.5">Overview</span>
       </Link>
+    );
+  }
+
+  /**
+   * One book: a row in the canon table. The English name carries a gold rule
+   * sized to how much of the book is read — progress as a property of the row,
+   * not the reason the row exists.
+   */
+  function renderBookRow(book: BookInfo, isActiveBook: boolean, isStudy: boolean) {
+    const hasChapters = book.chapters.length > 0;
+    const completedCount = book.chapters.filter((ch) => {
+      const key = `${book.name}:${ch.chapterNumber}`;
+      if (!isStudy) return !!readingDone[key];
+      return !!readingDone[key] && !!quizDone[key];
+    }).length;
+    const isExpanded = expandedBooks.has(book.name);
+    const orig = originalName(book.name);
+    const purpose = purposeByBook[book.name];
+    const pct = hasChapters ? Math.round((completedCount / book.chapters.length) * 100) : 0;
+
+    return (
+      <div
+        key={book.name}
+        ref={isActiveBook ? activeBookRef : undefined}
+        className="scroll-mt-24 border-b border-neutral-200 last:border-b-0 dark:border-neutral-800"
+      >
+        {/* Rendered as a real link to chapter 1 so crawlers get a
+            server-rendered path into every book — the chapter run below only
+            exists when expanded — but click toggles the row open. */}
+        <a
+          href={
+            hasChapters
+              ? `/try/bible/read?book=${encodeURIComponent(book.name)}&chapter=1&version=${versionAbbr}`
+              : undefined
+          }
+          onClick={(e) => {
+            e.preventDefault();
+            if (hasChapters) toggleBook(book.name);
+          }}
+          aria-expanded={hasChapters ? isExpanded : undefined}
+          className={`flex items-baseline gap-2.5 py-2.5 ${
+            hasChapters ? "cursor-pointer" : "cursor-default"
+          }`}
+        >
+          <span className="relative shrink-0">
+            <span
+              className={`font-scripture text-[17px] font-semibold ${
+                isActiveBook
+                  ? "text-gold dark:text-gold-bright"
+                  : hasChapters
+                    ? "text-neutral-800 dark:text-neutral-200"
+                    : "text-neutral-400 dark:text-neutral-600"
+              }`}
+            >
+              {book.name}
+            </span>
+            {/* Progress as a rule under the book name. It needs the faint
+                track behind it: without one, a book two chapters into
+                twenty-one draws a 9%-wide dash under the first syllable and
+                reads as a stray mark rather than a measure. */}
+            {pct > 0 && (
+              <span
+                aria-hidden="true"
+                className="absolute -bottom-1 left-0 block h-0.5 w-full bg-neutral-200 dark:bg-neutral-800"
+              >
+                <span
+                  className="block h-full bg-gold dark:bg-gold-bright"
+                  style={{ width: `${pct}%` }}
+                />
+              </span>
+            )}
+          </span>
+          {orig && (
+            <OriginalTitle
+              name={orig}
+              className="min-w-0 truncate text-[15px] text-gold dark:text-gold-bright"
+            />
+          )}
+          <span className="ml-auto shrink-0 whitespace-nowrap font-ui text-[11px] font-medium tracking-[0.25px] tabular-nums text-neutral-400 dark:text-neutral-500">
+            {book.chapters.length}
+            {completedCount > 0 &&
+              (completedCount === book.chapters.length
+                ? " · all read"
+                : ` · ${completedCount} read`)}
+          </span>
+        </a>
+
+        {isExpanded && hasChapters && (
+          <div className="pb-2">
+            {purpose && (
+              <p className="mb-1 max-w-prose font-scripture text-[15px] italic leading-relaxed text-neutral-500 dark:text-neutral-400">
+                {purpose}
+              </p>
+            )}
+            {isOverviewAtStart(book.name) && renderOverviewLink(book)}
+            {/* Chapter numbers are figures in a reference work, not buttons —
+                but each link still carries a 44px box so the target clears the
+                platform minimum. The glyph is what you see; the box is not.
+                A fixed 44px track rather than flex-wrap, so the figures line up
+                in columns when they wrap: Psalms wraps seven times and ragged
+                rows read as a mistake. */}
+            <div className="grid grid-cols-[repeat(auto-fill,minmax(2.75rem,1fr))]">
+              {book.chapters.map((ch) => {
+                const key = `${book.name}:${ch.chapterNumber}`;
+                const readComplete = !!readingDone[key];
+                const quizComplete = !!quizDone[key];
+                const isComplete = isStudy ? readComplete && quizComplete : readComplete;
+                const isNextUnread =
+                  isActiveBook && ch.chapterNumber === continueTarget.chapter && !isComplete;
+                // In Study mode a chapter that's read but not yet quizzed is a
+                // real third state, so the rule under the figure goes dotted
+                // rather than the row growing a second line for it.
+                const partial = isStudy && readComplete && !quizComplete;
+                return (
+                  <Link
+                    key={ch.chapterNumber}
+                    href={readUrl(book.name, ch.chapterNumber)}
+                    aria-label={`${book.name} ${ch.chapterNumber}`}
+                    className="inline-flex h-11 min-w-[2.75rem] items-center justify-center px-1 font-ui text-[13px] tabular-nums transition-colors"
+                  >
+                    <span
+                      className={`border-b-[1.5px] pb-0.5 ${
+                        isNextUnread
+                          ? "border-gold font-bold text-gold dark:border-gold-bright dark:text-gold-bright"
+                          : isComplete
+                            ? "border-gold text-neutral-700 dark:border-gold-bright dark:text-neutral-300"
+                            : partial
+                              ? "border-dotted border-gold text-neutral-700 dark:border-gold-bright dark:text-neutral-300"
+                              : "border-transparent text-neutral-400 hover:text-neutral-700 dark:text-neutral-500 dark:hover:text-neutral-300"
+                      }`}
+                    >
+                      {ch.chapterNumber}
+                    </span>
+                  </Link>
+                );
+              })}
+            </div>
+            {/* Narrative books' recap lives after the story — link last. */}
+            {!isOverviewAtStart(book.name) && renderOverviewLink(book)}
+          </div>
+        )}
+      </div>
     );
   }
 
@@ -236,6 +362,18 @@ export function BibleRoadmap({ books, versionAbbr, booksWithSummary }: Props) {
     // "Show earlier books" toggle. Returning readers are scrolled to their
     // active book instead (see the scroll effect above).
     const visibleBooks = sectionBooks;
+    const isStudy = mode === "study";
+
+    // Books grouped into their canon divisions, in canonical order. The
+    // division was already in the data (BOOK_GENRES) — it just rendered as a
+    // 0.6rem label floated into the right margin.
+    const divisions: { genre: string; books: BookInfo[] }[] = [];
+    for (const book of visibleBooks) {
+      const genre = bookGenre(book.name) ?? "Other";
+      const last = divisions[divisions.length - 1];
+      if (last && last.genre === genre) last.books.push(book);
+      else divisions.push({ genre, books: [book] });
+    }
 
     return (
       <div className="mb-4">
@@ -264,174 +402,44 @@ export function BibleRoadmap({ books, versionAbbr, booksWithSummary }: Props) {
           <div className="h-px flex-1 bg-neutral-200 dark:bg-neutral-700" />
         </button>
         {!isSectionExpanded ? null : (
-        <>
-        <div className="relative ml-3">
-          {/* Vertical line starts at the first dot, not above it */}
-          <div className="absolute left-0 top-[22px] bottom-0 w-0.5 bg-neutral-200 dark:bg-neutral-700" />
-          {visibleBooks.map((book, idx) => {
-            const isActiveBook = book.name === continueTarget.book;
-            const genre = bookGenre(book.name);
-            const showGenreLabel =
-              genre !== (idx > 0 ? bookGenre(visibleBooks[idx - 1].name) : null);
-            const hasChapters = book.chapters.length > 0;
-            const isStudy = mode === "study";
-            const completedCount = book.chapters.filter((ch) => {
-              const key = `${book.name}:${ch.chapterNumber}`;
-              if (!isStudy) return !!readingDone[key];
-              return !!readingDone[key] && !!quizDone[key];
-            }).length;
-            const allComplete = hasChapters && completedCount === book.chapters.length;
-            const isExpanded = expandedBooks.has(book.name);
-
-            return (
-              <div
-                key={book.name}
-                ref={isActiveBook ? activeBookRef : undefined}
-                className={`relative scroll-mt-24 py-2.5 pl-8${
-                  showGenreLabel && idx !== 0 ? " mt-2" : ""
-                }`}
-              >
-                {/* Genre label — floated to the right edge, vertically aligned
-                    with the book name so it adds no height to the timeline */}
-                {showGenreLabel && genre && (
-                  <span className="pointer-events-none absolute right-1 top-3.5 hidden h-4 items-center text-[0.6rem] font-semibold uppercase tracking-widest text-neutral-400 dark:text-neutral-500 sm:flex">
-                    {genre}
-                  </span>
-                )}
-                {/* Timeline dot */}
-                <div
-                  className={`absolute -left-[9px] top-3.5 h-4 w-4 rounded-full border-2 ${
-                    allComplete
-                      ? "border-amber-500 bg-amber-500"
-                      : isActiveBook
-                        ? "border-amber-500 bg-amber-500"
-                        : hasChapters
-                          ? "border-neutral-300 bg-white dark:border-neutral-600 dark:bg-neutral-900"
-                          : "border-neutral-200 bg-neutral-100 dark:border-neutral-700 dark:bg-neutral-800"
-                  }`}
-                />
-
-                {/* Book name — expands/collapses on click, but rendered as a
-                    real link to the book's first chapter so crawlers get a
-                    server-rendered path into every book (the chapter grid
-                    below only renders when expanded). */}
-                <a
-                  href={
-                    hasChapters
-                      ? `/try/bible/read?book=${encodeURIComponent(book.name)}&chapter=1&version=${versionAbbr}`
-                      : undefined
-                  }
-                  onClick={(e) => {
-                    e.preventDefault();
-                    if (hasChapters) toggleBook(book.name);
-                  }}
-                  className={`flex items-center gap-2 ${hasChapters ? "cursor-pointer" : "cursor-default"}`}
-                >
-                  {hasChapters && (
-                    <svg
-                      className={`h-3.5 w-3.5 flex-shrink-0 text-neutral-400 transition-transform duration-200 dark:text-neutral-500 ${
-                        isExpanded ? "rotate-90" : ""
-                      }`}
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth={2.5}
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                    </svg>
-                  )}
-                  <h3
-                    className={`text-sm font-semibold ${
-                      hasChapters
-                        ? "text-neutral-800 dark:text-neutral-200"
-                        : "text-neutral-400 dark:text-neutral-600"
-                    }`}
-                  >
-                    {book.name}
-                  </h3>
-                  {isActiveBook && (
-                    <span className="rounded-full bg-amber-100 px-2 py-0.5 text-[0.6rem] font-bold uppercase tracking-wider text-amber-700 dark:bg-amber-900/40 dark:text-amber-400">
-                      Up next
+          <div className="flex flex-col gap-7">
+            {divisions.map(({ genre, books: divisionBooks }) => {
+              const divOrig = divisionOriginalName(genre);
+              const chapterTotal = divisionBooks.reduce((n, b) => n + b.chapters.length, 0);
+              return (
+                <div key={genre}>
+                  {/* The division head. This is the one Bible-specific thing
+                      the old page had, and it rendered as a floated 0.6rem
+                      grey label — it carries the structure now. */}
+                  <div className="flex items-baseline gap-3 border-b border-neutral-300 pb-1 dark:border-neutral-700">
+                    <span className="font-ui text-[11px] font-medium uppercase tracking-[1.2px] text-neutral-500 dark:text-neutral-400">
+                      {genre}
                     </span>
-                  )}
-                  {!isExpanded && hasChapters && (
-                    <span className="text-[0.65rem] text-neutral-400 dark:text-neutral-500">
-                      {book.chapters.length} ch.
-                      {completedCount > 0 && ` · ${completedCount} done`}
+                    {divOrig && (
+                      <OriginalTitle
+                        name={divOrig}
+                        className="text-[15px] text-gold dark:text-gold-bright"
+                      />
+                    )}
+                    <span className="ml-auto whitespace-nowrap font-ui text-[11px] font-medium tracking-[0.25px] tabular-nums text-neutral-400 dark:text-neutral-500">
+                      {divisionBooks.length} {divisionBooks.length === 1 ? "book" : "books"} ·{" "}
+                      {chapterTotal} chapters
                     </span>
-                  )}
-                </a>
-
-                {/* Collapsible chapter grid */}
-                {isExpanded && hasChapters && (
-                  <div className="mt-1.5 flex flex-wrap gap-1">
-                    {isOverviewAtStart(book.name) && renderOverviewLink(book, isStudy)}
-                    {book.chapters.map((ch) => {
-                      const key = `${book.name}:${ch.chapterNumber}`;
-                      const readComplete = !!readingDone[key];
-                      const quizComplete = !!quizDone[key];
-                      const isComplete = isStudy
-                        ? readComplete && quizComplete
-                        : readComplete;
-                      const isNextUnread =
-                        isActiveBook && ch.chapterNumber === continueTarget.chapter && !isComplete;
-                      const age = isComplete ? getCompletionAge(timestamps[key]) : null;
-                      const ageStyle = age ? AGE_STYLES[age] : null;
-                      return (
-                        <Link
-                          key={ch.chapterNumber}
-                          href={readUrl(book.name, ch.chapterNumber)}
-                          className={`relative flex ${
-                            isStudy ? "h-11 min-w-[2.25rem] flex-col gap-0.5" : "h-7 min-w-[1.75rem]"
-                          } items-center justify-center rounded px-1 text-xs tabular-nums transition-colors ${
-                            isNextUnread
-                              ? "bg-amber-500 font-bold text-white ring-2 ring-amber-400 shadow-md shadow-amber-500/25 dark:bg-amber-400 dark:text-amber-950 dark:ring-amber-300 dark:shadow-amber-400/20"
-                              : ageStyle
-                                ? ageStyle.button
-                                : "bg-neutral-100 text-neutral-600 hover:bg-neutral-200 dark:bg-neutral-800 dark:text-neutral-400 dark:hover:bg-neutral-700"
-                          }`}
-                        >
-                          <span className={isStudy ? "leading-none" : ""}>
-                            {ch.chapterNumber}
-                          </span>
-                          {isStudy && (
-                            <span className="flex items-center gap-1">
-                              <BookIcon
-                                className={`h-3 w-3 ${
-                                  isNextUnread
-                                    ? readComplete ? "text-white" : "text-amber-200 dark:text-amber-700"
-                                    : readComplete
-                                      ? (ageStyle?.icon ?? "text-amber-500 dark:text-amber-400")
-                                      : "text-neutral-300 dark:text-neutral-600"
-                                }`}
-                              />
-                              <PencilIcon
-                                className={`h-3 w-3 ${
-                                  isNextUnread
-                                    ? quizComplete ? "text-white" : "text-amber-200 dark:text-amber-700"
-                                    : quizComplete
-                                      ? (ageStyle?.icon ?? "text-amber-500 dark:text-amber-400")
-                                      : "text-neutral-300 dark:text-neutral-600"
-                                }`}
-                              />
-                            </span>
-                          )}
-                        </Link>
-                      );
-                    })}
-                    {/* Narrative books' recap lives after the story — button last. */}
-                    {!isOverviewAtStart(book.name) && renderOverviewLink(book, isStudy)}
                   </div>
-                )}
-              </div>
-            );
-          })}
-        </div>
-        </>
+                  <div>
+                    {divisionBooks.map((book) =>
+                      renderBookRow(book, book.name === continueTarget.book, isStudy),
+                    )}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         )}
       </div>
     );
   }
+
 
   // Dark theme opts out of the body's #202121 onto the landing's
   // near-black, so landing → library reads as one surface.

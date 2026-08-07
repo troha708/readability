@@ -1,5 +1,5 @@
 import { BIBLE_BOOK_ORDER, OT_BOOK_ORDER } from "@/lib/bible-book-order";
-import { existsSync } from "fs";
+import { existsSync, readFileSync } from "fs";
 import { join } from "path";
 import type { Metadata } from "next";
 import { BibleRoadmap, type BookInfo } from "./bible-roadmap";
@@ -45,11 +45,31 @@ export default function BibleStartPage() {
       .map((b) => b.name),
   );
 
+  // The one-line "Purpose" field from each Tyndale book intro, read at build
+  // time. It's what an expanded book shows instead of a grid of squares — a
+  // sentence of real editorial matter. Books without an intro file just don't
+  // get a line; nothing else depends on it.
+  const purposeByBook: Record<string, string> = {};
+  for (const b of books) {
+    const path = join(process.cwd(), "data", "tyndale-intros", `${b.name}.json`);
+    if (!existsSync(path)) continue;
+    try {
+      const intro = JSON.parse(readFileSync(path, "utf8")) as {
+        fields?: { label: string; value: string }[];
+      };
+      const purpose = intro.fields?.find((f) => f.label === "Purpose")?.value;
+      if (purpose) purposeByBook[b.name] = purpose;
+    } catch {
+      // A malformed intro file shouldn't take the whole library page down.
+    }
+  }
+
   return (
     <BibleRoadmap
       books={books}
       versionAbbr="BSB"
       booksWithSummary={booksWithSummary}
+      purposeByBook={purposeByBook}
     />
   );
 }

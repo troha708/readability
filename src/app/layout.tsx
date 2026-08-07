@@ -1,5 +1,11 @@
 import type { Metadata, Viewport } from "next";
-import { Bitter, Fraunces } from "next/font/google";
+import {
+  Bitter,
+  Fraunces,
+  Gentium_Plus,
+  Montserrat,
+  Noto_Serif_Hebrew,
+} from "next/font/google";
 import { SITE_URL } from "@/lib/site";
 import "./globals.css";
 
@@ -18,6 +24,35 @@ const scripture = Bitter({
   subsets: ["latin"],
   style: ["normal", "italic"],
   variable: "--font-scripture",
+  display: "swap",
+});
+
+// Geometric sans for figures and small uppercase labels — chapter counts,
+// division heads, metadata. Stands in for esv.org's Gotham, which is a
+// commercial Hoefler & Co face we can't ship from an AGPL repo; Montserrat
+// comes out of the same early-twentieth-century signage lettering.
+const ui = Montserrat({
+  subsets: ["latin"],
+  variable: "--font-ui",
+  display: "swap",
+});
+
+// Original-language book names on the library page. esv.org sets Greek and
+// Hebrew in Gentium Plus and Ezra SIL; Gentium we can use directly, but Ezra
+// isn't on Google Fonts, so Hebrew goes to Noto Serif Hebrew rather than
+// vendoring a binary. Both are SIL Open Font Licence and both carry the
+// pointing — polytonic Greek accents, and niqqud on the Hebrew.
+const greek = Gentium_Plus({
+  subsets: ["greek-ext"],
+  weight: ["400"],
+  variable: "--font-greek",
+  display: "swap",
+});
+
+const hebrew = Noto_Serif_Hebrew({
+  subsets: ["hebrew"],
+  weight: ["400"],
+  variable: "--font-hebrew",
   display: "swap",
 });
 import { ServiceWorkerRegister } from "@/components/sw-register";
@@ -103,7 +138,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${display.variable} ${scripture.variable}`}
+      className={`${display.variable} ${scripture.variable} ${ui.variable} ${greek.variable} ${hebrew.variable}`}
       suppressHydrationWarning
     >
       <head>
