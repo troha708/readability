@@ -6,6 +6,12 @@
    `main` reads on --text-bg-color #fff; #fafafa is only their column
    gutter), with #424547 text. */
 :root {
+  /* Tells the browser which way to paint the things CSS cannot reach:
+     scrollbars, form controls, the canvas behind the page. Without it Chrome
+     draws a light scrollbar on every scroller — the book dropdown, the left
+     rail's chapter list on Psalms, the notes drawer — however dark the panel
+     itself is painted. */
+  color-scheme: light;
   --background: #ffffff;
   --foreground: #424547;
 }
@@ -23,6 +29,7 @@
    #202121/#282a2b greys remain the raised-surface steps (cards, sheets,
    panels). The landing and static shells keep bg-neutral-950. */
 .dark {
+  color-scheme: dark;
   --background: #100e0d;
   --foreground: #d3d7da;
 }
