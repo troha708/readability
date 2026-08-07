@@ -27,7 +27,9 @@ export type DictArticle = { id: string; t: string; b: DictBlock[] };
 /**
  * Which browse facet an entry belongs to (scripts/categorize-dictionary.mjs).
  * `variant` = an alternate-spelling / "See X" redirect stub: still searchable,
- * but hidden from the facet browse.
+ * but hidden from the facet browse. `theme` = one of the 298 Tyndale theme
+ * essays folded in from the removed topics hub — a topical treatment ("The
+ * Fall", "God's Covenant with Abraham") rather than a reference entry.
  */
 export type DictCat =
   | "people"
@@ -36,6 +38,7 @@ export type DictCat =
   | "culture"
   | "context"
   | "other"
+  | "theme"
   | "variant";
 
 /** A search-index row: [id, title, letter, wordCount, cat?]. */

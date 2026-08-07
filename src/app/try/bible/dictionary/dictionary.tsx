@@ -57,7 +57,7 @@ const MAX_RESULTS = 80;
 // past this, the count shows a "showing first N" hint and a letter narrows it.
 const BROWSE_CAP = 600;
 
-// The six browse facets, in a reading order that leads with the concrete.
+// The seven browse facets, in a reading order that leads with the concrete.
 // `variant` (alt-spelling / "See X" stubs) is intentionally not a facet: those
 // stay searchable but out of the browse. Codes come from _index.json's 5th slot.
 const FACETS: { code: DictCat; label: string }[] = [
@@ -66,6 +66,7 @@ const FACETS: { code: DictCat; label: string }[] = [
   { code: "theology", label: "God, Faith & Theology" },
   { code: "culture", label: "Worship, Objects & Daily Life" },
   { code: "context", label: "Scripture, History & Peoples" },
+  { code: "theme", label: "Themes" },
   { code: "other", label: "Other" },
 ];
 
