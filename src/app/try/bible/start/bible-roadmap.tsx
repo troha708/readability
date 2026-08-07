@@ -611,14 +611,14 @@ export function BibleRoadmap({
 
         {/* Continue Reading — sticky so it stays reachable while scrolling the
             tree (and it's where a returning reader is scrolled past on load).
-            No background: the two buttons float over the canon table and the
-            rows pass behind them. Both are opaque in their own right, so they
-            stay legible against whatever scrolls under.
-            pointer-events matter here. The bar spans the full width but is
-            now invisible, and an invisible strip that eats clicks on the book
-            rows underneath it is worse than a visible one — so the container
-            passes clicks through and only the two links take them back. */}
-        <div className="pointer-events-none sticky top-0 z-20 mb-6 flex items-center justify-center gap-3 py-3 [&>a]:pointer-events-auto">
+            Fully opaque, on the page's own ground rather than a tint of it:
+            a translucent or absent background let book rows slide half-hidden
+            behind the two buttons, which read as debris around them. -mx-4
+            px-4 bleeds that ground to the container edges so no row shows
+            down the sides, and the gap below the bar is padding rather than
+            margin — margin isn't painted, so a row scrolling up flashed
+            through that band before it reached the opaque box. */}
+        <div className="sticky top-0 z-20 -mx-4 flex items-center justify-center gap-3 bg-white px-4 pb-6 pt-3 dark:bg-neutral-950">
           {/* Same size, colours and type as the landing page's Start Reading —
               amber-400 fill, near-black bold capitalized sans, no arrow —
               but rounder than the landing's near-square 2px corners
