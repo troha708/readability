@@ -313,10 +313,10 @@ export function EmailAuthForm({ mode }: { mode: "login" | "signup" }) {
           .
         </p>
         <p className="mt-2">
-          We keep your email address and your reading progress. That is all —
-          there is no password to store, no advertising, no third-party
-          tracking, and your data is never sold. You can ask us to delete the
-          account and everything in it at any time.
+          We keep your email address and your reading progress. There is no
+          password to store, no advertising, no third-party tracking, and your
+          data is never sold. You can ask us to delete the account and
+          everything in it at any time.
         </p>
         <p className="mt-2">
           <Link
