@@ -1217,11 +1217,14 @@ export function ChunkReader({
   const panelSettingsRef = useRef<HTMLDivElement>(null);
   const themesMenuRef = useRef<HTMLDivElement>(null);
 
-  // Feeds the rail auto-hide: an open picker or settings menu holds its rail
-  // out even when the cursor wanders back toward the middle.
+  // Feeds the rail auto-hide: an open picker, settings menu or themes list
+  // holds its rail out even when the cursor wanders back toward the middle.
+  // Every menu in the expression must be in the deps — a missing one leaves
+  // the ref holding a stale value, and the rail slides out from under an open
+  // menu that is wider than it, stranding the overhang on screen.
   useEffect(() => {
     railMenuOpenRef.current = bookOpen || settingsOpen || themesOpen;
-  }, [bookOpen, settingsOpen]);
+  }, [bookOpen, settingsOpen, themesOpen]);
 
   // Header height — drives the notes drawer's sticky offset so its top isn't
   // hidden behind the (variable-height) header.
