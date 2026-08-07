@@ -2729,7 +2729,7 @@ export function ChunkReader({
             onClick={() => setLeftRailOpen(true)}
             aria-label="Show navigation panel"
             title="Navigation"
-            className={`fixed left-0 top-24 z-10 hidden rounded-r-lg border border-l-0 border-neutral-200 bg-white/95 py-3 pl-1.5 pr-2 text-gold backdrop-blur transition-[opacity,color] duration-300 hover:text-gold-deep dark:border-neutral-700 dark:bg-neutral-925/95 dark:hover:text-gold-bright xl:block ${
+            className={`fixed left-0 top-24 z-10 hidden rounded-r-lg border border-l-0 border-current bg-white/95 py-3 pl-1.5 pr-2 text-gold backdrop-blur transition-[opacity,color,border-color] duration-300 hover:text-gold-deep dark:bg-neutral-925/95 dark:hover:text-gold-bright xl:block ${
               leftRailOpen ? "pointer-events-none opacity-0" : "opacity-100"
             }`}
           >
@@ -2744,7 +2744,7 @@ export function ChunkReader({
             onClick={() => setRightRailOpen(true)}
             aria-label="Show reading tools"
             title="Tools"
-            className={`fixed right-0 top-24 z-10 hidden rounded-l-lg border border-r-0 border-neutral-200 bg-white/95 py-3 pl-2 pr-1.5 text-gold backdrop-blur transition-[opacity,color] duration-300 hover:text-gold-deep dark:border-neutral-700 dark:bg-neutral-925/95 dark:hover:text-gold-bright xl:block ${
+            className={`fixed right-0 top-24 z-10 hidden rounded-l-lg border border-r-0 border-current bg-white/95 py-3 pl-2 pr-1.5 text-gold backdrop-blur transition-[opacity,color,border-color] duration-300 hover:text-gold-deep dark:bg-neutral-925/95 dark:hover:text-gold-bright xl:block ${
               rightRailOpen ? "pointer-events-none opacity-0" : "opacity-100"
             }`}
           >
