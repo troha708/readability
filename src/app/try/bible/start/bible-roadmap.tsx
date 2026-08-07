@@ -575,17 +575,23 @@ export function BibleRoadmap({
             margin — margin isn't painted, so a row scrolling up flashed
             through that band before it reached the opaque box. */}
         <div className="sticky top-0 z-20 -mx-4 flex items-center justify-center gap-3 bg-white px-4 pb-6 pt-3 dark:bg-neutral-950">
-          {/* Same size, colours and type as the landing page's Start Reading —
-              amber-400 fill, near-black bold capitalized sans, no arrow —
-              but rounder than the landing's near-square 2px corners
-              (owner-directed). The book and chapter stay: they say where this
-              resumes. */}
+          {/* This used to be the landing page's Start Reading button verbatim
+              — a solid amber-400 fill with bold near-black sans — which on a
+              near-black page was the loudest thing on it by a wide margin and
+              fought the table it sits over.
+              It keeps the amber, but as the tint-and-ring the chapter squares
+              already use for a read chapter, one step stronger. Set in Bitter
+              like the rest of the page rather than the landing's sans, and no
+              longer capitalized. It still reads as the primary action because
+              it's the only tinted thing above the table, not because it
+              shouts. NB: the library and the landing now differ deliberately;
+              the landing button is untouched. */}
           <Link
             href={readUrl(continueTarget.book, continueTarget.chapter)}
-            className="inline-flex h-[54px] items-center gap-2 rounded-lg bg-amber-400 px-[20.3px] text-[16.2px] font-bold capitalize tracking-[0.34px] text-neutral-950 transition-colors hover:bg-amber-300"
+            className="inline-flex h-11 items-center gap-2 rounded-md bg-amber-500/12 px-4 font-scripture text-[15px] font-semibold text-amber-800 ring-1 ring-inset ring-amber-500/25 transition-colors hover:bg-amber-500/20 dark:bg-amber-400/10 dark:text-gold-bright dark:ring-amber-400/20 dark:hover:bg-amber-400/16"
           >
-            {hasStarted ? "Continue Reading" : "Begin Reading"}
-            <span className="text-xs font-normal normal-case text-neutral-950/70">
+            {hasStarted ? "Continue reading" : "Begin reading"}
+            <span className="font-scripture text-[13px] font-normal text-amber-800/60 dark:text-gold-bright/60">
               {continueTarget.book} {continueTarget.chapter}
             </span>
           </Link>
