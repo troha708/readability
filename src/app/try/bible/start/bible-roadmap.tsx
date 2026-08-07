@@ -207,9 +207,14 @@ export function BibleRoadmap({
     return (
       <Link
         href={readUrl(book.name, targetChapter) + "&overview=1"}
-        className="mb-1 inline-flex h-9 items-center rounded border border-amber-500/30 bg-amber-500/10 px-3 font-ui text-[12px] font-semibold text-amber-700 transition-colors hover:bg-amber-500/20 dark:border-amber-400/25 dark:bg-amber-400/10 dark:text-amber-400 dark:hover:bg-amber-400/20"
+        // Sits in the chapter grid rather than above it, spanning two of the
+        // 2.75rem tracks — the word doesn't fit one cell, and letting it span
+        // whole tracks keeps the squares after it in column.
+        className="col-span-2 inline-flex h-11 w-full items-center justify-center p-0.5"
       >
-        Overview
+        <span className="flex h-full w-full items-center justify-center rounded border border-amber-500/30 bg-amber-500/10 font-ui text-[11px] font-semibold text-amber-700 transition-colors hover:bg-amber-500/20 dark:border-amber-400/25 dark:bg-amber-400/10 dark:text-amber-400 dark:hover:bg-amber-400/20">
+          Overview
+        </span>
       </Link>
     );
   }
@@ -341,7 +346,6 @@ export function BibleRoadmap({
                 {purpose}
               </p>
             )}
-            {isOverviewAtStart(book.name) && renderOverviewLink(book)}
             {/* Chapters as a grid of squares. Fixed 2.75rem tracks rather
                 than flex-wrap so the squares stay square and line up in
                 columns when they wrap — Psalms wraps seven times, and ragged
@@ -349,6 +353,7 @@ export function BibleRoadmap({
                 the tap target clears the platform minimum where the old 28px
                 chip didn't. */}
             <div className="grid grid-cols-[repeat(auto-fill,2.75rem)]">
+              {isOverviewAtStart(book.name) && renderOverviewLink(book)}
               {book.chapters.map((ch) => {
                 const key = `${book.name}:${ch.chapterNumber}`;
                 const readComplete = !!readingDone[key];
@@ -386,9 +391,9 @@ export function BibleRoadmap({
                   </Link>
                 );
               })}
+              {/* Narrative books' recap lives after the story — link last. */}
+              {!isOverviewAtStart(book.name) && renderOverviewLink(book)}
             </div>
-            {/* Narrative books' recap lives after the story — link last. */}
-            {!isOverviewAtStart(book.name) && renderOverviewLink(book)}
           </div>
         )}
       </div>
