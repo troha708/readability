@@ -488,9 +488,11 @@ export function BibleRoadmap({ books, versionAbbr, booksWithSummary }: Props) {
               title="Bible atlas"
               className="inline-flex items-center gap-1.5 rounded-md px-2 py-1.5 text-sm font-medium tracking-[0.25px] text-neutral-500 hover:bg-neutral-100 hover:text-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-neutral-200"
             >
+              {/* Treasure map: a parchment sheet with rippled top and bottom
+                  edges, and the X. A dropped-pin marker read as Google Maps. */}
               <svg className="h-5 w-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
-                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-                <circle cx="12" cy="10" r="3" />
+                <path d="M3 4.6C7.5 7.6 16.5 2 21 4.6V19.4C16.5 16.4 7.5 22 3 19.4Z" />
+                <path d="M11.3 10.2L15.1 14M15.1 10.2L11.3 14" />
               </svg>
               <span className="hidden md:inline">Atlas</span>
             </Link>
