@@ -140,7 +140,7 @@ function canonicalBook(matched: string): string {
 
 // "Malachi 3:1", "Daniel 7:13-14", "Genesis 1:31-2:1"
 const VERSE_REF = new RegExp(
-  `\\b(${BOOK_PATTERN})\\.?\\s+(\\d{1,3}):(\\d{1,3})(?:[-–](\\d{1,3})(?::(\\d{1,3}))?)?`,
+  `(?<!\\d\\s)\\b(${BOOK_PATTERN})\\.?\\s+(\\d{1,3}):(\\d{1,3})(?:[-–](\\d{1,3})(?::(\\d{1,3}))?)?`,
   "g",
 );
 
@@ -148,7 +148,7 @@ const VERSE_REF = new RegExp(
 // (already claimed by the pass above; the lookahead just prevents a partial
 // re-match of its book-and-chapter prefix).
 const CHAPTER_REF = new RegExp(
-  `\\b(${BOOK_PATTERN})\\.?\\s+(\\d{1,3})(?:[-–](\\d{1,3}))?\\b(?!:)`,
+  `(?<!\\d\\s)\\b(${BOOK_PATTERN})\\.?\\s+(\\d{1,3})(?:[-–](\\d{1,3}))?\\b(?!:)`,
   "g",
 );
 
@@ -171,6 +171,48 @@ const BARE_REF = /\b(\d{1,3}):(\d{1,3})(?:[-–](\d{1,3})(?::(\d{1,3}))?)?/g;
 // genuine shorthand and keep working, because a lower-case word before the
 // digits is prose, not a citation.
 const PRECEDING_BOOK_WORD = /(?:^|[\s(])(?:[1-4]\s*)?[A-Z][A-Za-z]*\.?\s+$/;
+
+// Nothing but list punctuation and further verse numbers between two
+// references — the second continues the first's book. Citations run
+// "1 Chr 15:18, 21; 16:38; 26:4, 8, 15": the bare verses between the
+// chapter:verse pairs are part of the same list, so the separator has to
+// tolerate them or the chain breaks at the first "…, 21; …" and everything
+// after it falls back to the wrong book. Anything wordier ("… 12:9. Later,
+// 14:33 …") is a new sentence and gets no inheritance.
+const LIST_SEPARATOR = /^[\s,;]*(?:\d{1,3}(?:[-–]\d{1,3})?[\s,;]*)*(?:and\s+|or\s+)?$/i;
+
+/**
+ * The book a bare reference continues from, or null if it starts fresh.
+ *
+ * Citation lists name the book once: "1 Cor 12:9-10, 14:33-36, 15:1-8". Read
+ * as same-book shorthand, the tail of that list points at the chapter being
+ * read instead — which is how a note in 1 Timothy (six chapters) came to link
+ * to 1 Timothy 14:33-36. Where the number happens to exist in the current
+ * book the link is worse still, because it goes somewhere real and wrong.
+ */
+type Span = { index: number; length: number; book: string };
+
+/** End offset of the span closest before `index`, or -1 if there is none. */
+function nearestEnd(spans: readonly Span[], index: number): number {
+  let best = -1;
+  for (const s of spans) {
+    const end = s.index + s.length;
+    if (end <= index && end > best) best = end;
+  }
+  return best;
+}
+
+function continuedBook(text: string, index: number, found: readonly Span[]): string | null {
+  let prior: Span | null = null;
+  for (const r of found) {
+    const end = r.index + r.length;
+    if (end <= index && (!prior || end > prior.index + prior.length)) prior = r;
+  }
+  if (!prior) return null;
+  return LIST_SEPARATOR.test(text.slice(prior.index + prior.length, index))
+    ? prior.book
+    : null;
+}
 
 export function parseScriptureRefs(
   text: string,
@@ -223,13 +265,30 @@ export function parseScriptureRefs(
     push(ref);
   }
 
+  // Spans we refused to link because they cite a book we don't recognise.
+  // Tracked so that the rest of such a citation's list is refused too:
+  // "1 Maccabees 2:18; 6:28" must drop both halves, not just the first.
+  const suppressed: { index: number; length: number; book: string }[] = [];
+
   for (const m of text.matchAll(BARE_REF)) {
     if (!isFree(m.index, m.index + m[0].length)) continue;
-    if (PRECEDING_BOOK_WORD.test(text.slice(0, m.index))) continue;
+    const unknownBook = PRECEDING_BOOK_WORD.test(text.slice(0, m.index));
+    // A continuation of an unrecognised citation is itself unrecognised —
+    // and `suppressed` must win over `refs` when it is the nearer of the two,
+    // or "…; 6:28" would inherit from whatever legitimate reference happened
+    // to come before the apocryphal one.
+    const continuesSuppressed =
+      continuedBook(text, m.index, suppressed) !== null &&
+      (continuedBook(text, m.index, refs) === null ||
+        nearestEnd(suppressed, m.index) > nearestEnd(refs, m.index));
+    if (unknownBook || continuesSuppressed) {
+      suppressed.push({ index: m.index, length: m[0].length, book: "" });
+      continue;
+    }
     const ref: ScriptureRef = {
       index: m.index,
       length: m[0].length,
-      book: currentBook,
+      book: continuedBook(text, m.index, refs) ?? currentBook,
       chapter: parseInt(m[1], 10),
       verse: parseInt(m[2], 10),
     };
