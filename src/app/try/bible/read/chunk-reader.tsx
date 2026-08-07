@@ -81,15 +81,18 @@ const BOX_CLASS =
 // The warm reveal: the edge line lights up AND throws a soft spill sideways
 // onto the page — both, but at roughly half the strength of the first cut,
 // which was too assertive.
-// The reveal: the rail's outer edge lights up and throws a warm spill
-// sideways. The spill stays amber — it is the light — but the edge itself is a
-// plain white line rather than a second amber one, so the glow reads as
-// something the panel is casting instead of something it is painted with.
-// Light mode keeps a neutral line: white on a white page is no line at all.
+// The reveal: the rail's outer edge lights up and throws a spill sideways.
+// Edge and spill are the same white — one light source should not have two
+// temperatures, which is what a white line casting an amber halo looked like.
+// White also keeps the accent free: gold carries meaning here (the active
+// chapter, the current book, headings, the numeral) and a reveal affordance
+// carries none, so it should not spend it. The warm ground stops a neutral
+// spill reading cold. Light mode keeps a neutral line — white on a white page
+// is no line at all.
 const RAIL_GLOW_LEFT =
-  "border-r-neutral-300 shadow-[8px_0_28px_-12px_rgba(224,184,90,0.22)] dark:border-r-white/45";
+  "border-r-neutral-300 shadow-[8px_0_28px_-12px_rgba(255,255,255,0.20)] dark:border-r-white/45";
 const RAIL_GLOW_RIGHT =
-  "border-l-neutral-300 shadow-[-8px_0_28px_-12px_rgba(224,184,90,0.22)] dark:border-l-white/45";
+  "border-l-neutral-300 shadow-[-8px_0_28px_-12px_rgba(255,255,255,0.20)] dark:border-l-white/45";
 
 type CompletionAge = "recent" | "fading" | "old";
 
