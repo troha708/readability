@@ -246,6 +246,11 @@ export function BibleRoadmap({
     const isExpanded = expandedBooks.has(book.name);
     const orig = originalName(book.name);
     const purpose = purposeByBook[book.name];
+    // The divider goes at the bottom of whatever the book's last row is, so an
+    // open book isn't cut off from its own chapter grid by a line through the
+    // middle of it.
+    const divider = "border-b border-neutral-200 dark:border-neutral-800";
+    const rowDivider = isExpanded ? "" : divider;
 
     return (
       <Fragment key={book.name}>
@@ -255,7 +260,7 @@ export function BibleRoadmap({
               leaves the Greek floating in the centre of the row instead of
               sitting beside the English. This is the contents-page
               arrangement — title left, figure right, space between. */}
-          <td className="w-px whitespace-nowrap py-1.5 pr-3">
+          <td className={`w-px whitespace-nowrap py-2 pr-3 ${rowDivider}`}>
             {/* A real link to chapter 1 so crawlers reach every book — the
                 chapter grid below only exists when open — but click toggles.
                 draggable={false} and the selection guard keep the row's text
@@ -277,7 +282,7 @@ export function BibleRoadmap({
                 toggleBook(book.name);
               }}
               aria-expanded={hasChapters ? isExpanded : undefined}
-              className={`select-text font-scripture text-[15px] ${
+              className={`select-text font-scripture text-[17px] ${
                 hasChapters ? "cursor-pointer" : "cursor-default"
               } ${
                 isActiveBook
@@ -298,15 +303,15 @@ export function BibleRoadmap({
               {book.name}
             </a>
           </td>
-          <td className="w-full select-text py-1.5 pr-3">
+          <td className={`w-full select-text py-2 pr-3 ${rowDivider}`}>
             {orig && (
               <OriginalTitle
                 name={orig}
-                className="text-[15px] text-neutral-500 dark:text-neutral-400"
+                className="text-[17px] text-neutral-500 dark:text-neutral-400"
               />
             )}
           </td>
-          <td className="w-px whitespace-nowrap py-1.5 text-right font-scripture text-[13px] tabular-nums text-neutral-400 dark:text-neutral-500">
+          <td className={`w-px whitespace-nowrap py-2 text-right font-scripture text-[14px] tabular-nums text-neutral-400 dark:text-neutral-500 ${rowDivider}`}>
             {completedCount > 0
               ? `${completedCount}/${book.chapters.length}`
               : book.chapters.length}
@@ -314,9 +319,9 @@ export function BibleRoadmap({
         </tr>
         {isExpanded && hasChapters && (
           <tr>
-            <td colSpan={3} className="pb-3">
+            <td colSpan={3} className={`pb-3 ${divider}`}>
               {purpose && (
-                <p className="mb-2 max-w-prose font-scripture text-[13px] italic leading-relaxed text-neutral-500 dark:text-neutral-500">
+                <p className="mb-2 max-w-prose font-scripture text-[14px] italic leading-relaxed text-neutral-500 dark:text-neutral-500">
                   {purpose}
                 </p>
               )}
@@ -388,7 +393,7 @@ export function BibleRoadmap({
         <button
           onClick={() => toggleSection(testament)}
           aria-expanded={isSectionExpanded}
-          className="mb-2 font-scripture text-[15px] font-semibold text-neutral-800 dark:text-neutral-300"
+          className="mb-2 font-scripture text-[17px] font-semibold text-neutral-800 dark:text-neutral-300"
         >
           <span
             aria-hidden="true"
@@ -410,7 +415,7 @@ export function BibleRoadmap({
                   <tr>
                     <th
                       colSpan={3}
-                      className="pb-1 pt-5 text-left font-scripture text-[13px] font-normal italic text-neutral-400 dark:text-neutral-500"
+                      className="pb-1 pt-6 text-left font-scripture text-[14px] font-normal italic text-neutral-400 dark:text-neutral-500"
                     >
                       {genre}
                     </th>
