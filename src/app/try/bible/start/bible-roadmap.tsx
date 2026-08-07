@@ -580,15 +580,12 @@ export function BibleRoadmap({
               rounder than the landing's near-square 2px corners
               (owner-directed). The book and chapter stay: they say where this
               resumes.
-              The fill alone is muted off the landing's amber-400 (#ecc06b,
-              hsl 39.5 77% 67%): saturation down twenty points at the same
-              lightness, so it keeps the button's weight without the glare on
-              a near-black page. Hue and lightness are untouched, which is why
-              it still reads as the same button rather than a different one.
-              Near-black text on it is 10.6:1, down from 11.6:1. */}
+              The fill alone is muted, off the landing's amber-400 — see
+              gold.fill in tailwind.config.ts for the derivation. Near-black
+              text on it is 10.6:1, down from 11.6:1. */}
           <Link
             href={readUrl(continueTarget.book, continueTarget.chapter)}
-            className="inline-flex h-[54px] items-center gap-2 rounded-lg bg-[#daba7b] px-[20.3px] text-[16.2px] font-bold capitalize tracking-[0.34px] text-neutral-950 transition-colors hover:bg-[#e1c793]"
+            className="inline-flex h-[54px] items-center gap-2 rounded-lg bg-gold-fill px-[20.3px] text-[16.2px] font-bold capitalize tracking-[0.34px] text-neutral-950 transition-colors hover:bg-gold-fill-hover"
           >
             {hasStarted ? "Continue Reading" : "Begin Reading"}
             <span className="text-xs font-normal normal-case text-neutral-950/70">

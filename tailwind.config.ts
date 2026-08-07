@@ -69,6 +69,13 @@ const config: Config = {
           DEFAULT: "#9c8343",
           deep: "#6b5a2d",
           bright: "#c9ad72",
+          // Solid fill for primary buttons. The landing's amber-400 (#ecc06b,
+          // hsl 39.5 77% 67%) with twenty points of saturation taken out at
+          // the same hue and lightness — it keeps a button's weight without
+          // glaring off a near-black page. Always pairs with neutral-950
+          // text: 10.6:1. Never white, which on this hue is about 2:1.
+          fill: "#daba7b",
+          "fill-hover": "#e1c793",
         },
         // Gold accent: `amber` is remapped to a clean gold (anchored on 400,
         // the heading accent) rather than Tailwind's orange-leaning default.

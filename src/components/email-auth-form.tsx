@@ -13,6 +13,8 @@ type Copy = {
   switchPrompt: string;
   switchLabel: string;
   switchPath: "/login" | "/signup";
+  /** Opening clause of the disclosure — the rest is shared. */
+  handled: string;
 };
 
 const COPY: Record<"login" | "signup", Copy> = {
@@ -22,6 +24,7 @@ const COPY: Record<"login" | "signup", Copy> = {
     switchPrompt: "Don't have an account?",
     switchLabel: "Sign up",
     switchPath: "/signup",
+    handled: "Sign-in is handled by",
   },
   signup: {
     heading: "Create your account",
@@ -30,8 +33,25 @@ const COPY: Record<"login" | "signup", Copy> = {
     switchPrompt: "Already have an account?",
     switchLabel: "Sign in",
     switchPath: "/login",
+    handled: "Your account is created and held by",
   },
 };
+
+// Shared field and button styling. The form used to sit on the body's Arial
+// with a glossy amber-600 button — heavy drop shadow, a hover shadow on top of
+// it, and an active scale — which matched nothing else on the site. It's on
+// Bitter and Fraunces now like every other document page, and the button takes
+// the same muted gold fill as the library's resume button.
+//
+// The fill also fixes a real defect: amber-600 (#d3a83c) under white text
+// measures 2.2:1, far below the 4.5:1 floor. gold.fill under neutral-950 is
+// 10.6:1.
+const FIELD =
+  "w-full rounded-lg border border-neutral-300 bg-white px-4 py-2.5 font-scripture text-neutral-900 outline-none transition-colors placeholder:text-neutral-400 focus:border-gold focus:ring-2 focus:ring-gold/20 dark:border-neutral-700 dark:bg-neutral-900 dark:text-white dark:placeholder:text-neutral-500";
+const SUBMIT =
+  "w-full rounded-lg bg-gold-fill px-4 py-3 font-bold text-neutral-950 transition-colors hover:bg-gold-fill-hover disabled:cursor-not-allowed disabled:opacity-60 disabled:hover:bg-gold-fill";
+const LABEL =
+  "mb-1.5 block font-scripture text-sm font-medium text-neutral-700 dark:text-neutral-300";
 
 export function EmailAuthForm({ mode }: { mode: "login" | "signup" }) {
   const copy = COPY[mode];
@@ -140,10 +160,10 @@ export function EmailAuthForm({ mode }: { mode: "login" | "signup" }) {
 
   return (
     <div className="w-full max-w-sm">
-      <h1 className="text-3xl font-extrabold tracking-tight text-neutral-900 dark:text-white">
+      <h1 className="font-display text-3xl font-semibold tracking-tight text-neutral-900 dark:text-white">
         {step === "email" ? copy.heading : "Check your email"}
       </h1>
-      <p className="mt-2 text-sm text-neutral-500 dark:text-neutral-400">
+      <p className="mt-2 font-scripture text-[15px] leading-relaxed text-neutral-500 dark:text-neutral-400">
         {step === "email" ? (
           copy.subheading
         ) : (
@@ -156,7 +176,7 @@ export function EmailAuthForm({ mode }: { mode: "login" | "signup" }) {
       {step === "email" ? (
         <form onSubmit={handleSendCode} className="mt-8 space-y-4">
           <div>
-            <label htmlFor="email" className="mb-1.5 block text-sm font-medium text-neutral-700 dark:text-neutral-300">
+            <label htmlFor="email" className={LABEL}>
               Email
             </label>
             <input
@@ -167,14 +187,14 @@ export function EmailAuthForm({ mode }: { mode: "login" | "signup" }) {
               required
               autoFocus
               placeholder="you@example.com"
-              className="w-full rounded-xl border border-neutral-300 bg-white px-4 py-2.5 text-neutral-900 outline-none transition-colors placeholder:text-neutral-400 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 dark:border-neutral-700 dark:bg-neutral-900 dark:text-white dark:placeholder:text-neutral-500"
+              className={FIELD}
             />
           </div>
           {message && (
             <p
               role="alert"
               aria-live="polite"
-              className={`rounded-lg px-3 py-2 text-sm ${
+              className={`rounded-lg px-3 py-2 font-scripture text-sm ${
                 message.type === "error"
                   ? "bg-red-50 text-red-600 dark:bg-red-950/40 dark:text-red-400"
                   : "bg-amber-50 text-amber-700 dark:bg-amber-950/40 dark:text-amber-400"
@@ -186,7 +206,7 @@ export function EmailAuthForm({ mode }: { mode: "login" | "signup" }) {
           <button
             type="submit"
             disabled={loading}
-            className="w-full rounded-xl bg-amber-600 px-4 py-3 font-bold text-white shadow-lg shadow-amber-500/20 transition-all hover:bg-amber-700 hover:shadow-xl hover:shadow-amber-500/30 active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-60 disabled:hover:bg-amber-600"
+            className={SUBMIT}
           >
             {loading ? "Sending code..." : "Send code"}
           </button>
@@ -194,7 +214,7 @@ export function EmailAuthForm({ mode }: { mode: "login" | "signup" }) {
       ) : (
         <form onSubmit={handleVerify} className="mt-8 space-y-4">
           <div>
-            <label htmlFor="otp-code" className="mb-1.5 block text-sm font-medium text-neutral-700 dark:text-neutral-300">
+            <label htmlFor="otp-code" className={LABEL}>
               Six-digit code
             </label>
             <input
@@ -209,14 +229,14 @@ export function EmailAuthForm({ mode }: { mode: "login" | "signup" }) {
               onChange={(e) => setCode(e.target.value.replace(/\D/g, ""))}
               required
               placeholder="123456"
-              className="w-full rounded-xl border border-neutral-300 bg-white px-4 py-2.5 text-center text-xl tracking-[0.4em] text-neutral-900 outline-none transition-colors placeholder:tracking-[0.4em] placeholder:text-neutral-300 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 dark:border-neutral-700 dark:bg-neutral-900 dark:text-white dark:placeholder:text-neutral-600"
+              className={`${FIELD} text-center text-xl tracking-[0.4em] placeholder:tracking-[0.4em]`}
             />
           </div>
           {message && (
             <p
               role="alert"
               aria-live="polite"
-              className={`rounded-lg px-3 py-2 text-sm ${
+              className={`rounded-lg px-3 py-2 font-scripture text-sm ${
                 message.type === "error"
                   ? "bg-red-50 text-red-600 dark:bg-red-950/40 dark:text-red-400"
                   : "bg-amber-50 text-amber-700 dark:bg-amber-950/40 dark:text-amber-400"
@@ -228,11 +248,11 @@ export function EmailAuthForm({ mode }: { mode: "login" | "signup" }) {
           <button
             type="submit"
             disabled={loading || code.length < 6}
-            className="w-full rounded-xl bg-amber-600 px-4 py-3 font-bold text-white shadow-lg shadow-amber-500/20 transition-all hover:bg-amber-700 hover:shadow-xl hover:shadow-amber-500/30 active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-60 disabled:hover:bg-amber-600"
+            className={SUBMIT}
           >
             {loading ? "Signing in..." : "Sign in"}
           </button>
-          <div className="flex items-center justify-between text-sm">
+          <div className="flex items-center justify-between font-scripture text-sm">
             <button
               type="button"
               onClick={() => {
@@ -255,7 +275,7 @@ export function EmailAuthForm({ mode }: { mode: "login" | "signup" }) {
         </form>
       )}
 
-      <p className="mt-6 text-center text-sm text-neutral-600 dark:text-neutral-400">
+      <p className="mt-6 text-center font-scripture text-sm text-neutral-600 dark:text-neutral-400">
         {copy.switchPrompt}{" "}
         <Link
           href={switchHref}
@@ -265,16 +285,55 @@ export function EmailAuthForm({ mode }: { mode: "login" | "signup" }) {
         </Link>
       </p>
 
-      <p className="mt-4 text-center text-xs text-neutral-400 dark:text-neutral-500">
-        Your email is used only for sign-in codes and syncing your reading
-        progress.{" "}
-        <Link
-          href="/privacy"
-          className="underline underline-offset-2 hover:text-neutral-600 dark:hover:text-neutral-300"
-        >
-          Privacy policy
-        </Link>
-      </p>
+      {/* Named third parties, not "we use trusted partners". Someone handing
+          over an email address should be able to see where it goes before
+          they type it, not after, and the providers here are the same three
+          the privacy policy lists. */}
+      <div className="mt-8 border-t border-neutral-200 pt-4 font-scripture text-[13px] leading-relaxed text-neutral-500 dark:border-neutral-800 dark:text-neutral-400">
+        <p>
+          {copy.handled}{" "}
+          <a
+            href="https://supabase.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium text-neutral-700 underline underline-offset-2 hover:text-gold dark:text-neutral-300 dark:hover:text-gold-bright"
+          >
+            Supabase
+          </a>
+          , a third-party authentication and database service. Your email
+          address is stored with them, and the six-digit code is delivered by{" "}
+          <a
+            href="https://resend.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium text-neutral-700 underline underline-offset-2 hover:text-gold dark:text-neutral-300 dark:hover:text-gold-bright"
+          >
+            Resend
+          </a>
+          .
+        </p>
+        <p className="mt-2">
+          We keep your email address and your reading progress. That is all —
+          there is no password to store, no advertising, no third-party
+          tracking, and your data is never sold. You can ask us to delete the
+          account and everything in it at any time.
+        </p>
+        <p className="mt-2">
+          <Link
+            href="/privacy"
+            className="font-medium underline underline-offset-2 hover:text-neutral-700 dark:hover:text-neutral-200"
+          >
+            Privacy policy
+          </Link>
+          {" · "}
+          <Link
+            href="/terms"
+            className="font-medium underline underline-offset-2 hover:text-neutral-700 dark:hover:text-neutral-200"
+          >
+            Terms
+          </Link>
+        </p>
+      </div>
     </div>
   );
 }
