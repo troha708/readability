@@ -58,8 +58,9 @@ export function DictPlaceMap({
           strokeLinecap="round"
           strokeLinejoin="round"
         >
-          <path d="M3 4.6C7.5 7.6 16.5 2 21 4.6V19.4C16.5 16.4 7.5 22 3 19.4Z" />
-          <path d="M11.3 10.2L15.1 14M15.1 10.2L11.3 14" />
+          <path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2z" />
+          <path d="M9 4v14" />
+          <path d="M15 6v14" />
         </svg>
         {open ? "Hide map" : "Show on map"}
       </button>

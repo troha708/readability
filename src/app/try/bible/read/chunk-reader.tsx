@@ -2565,11 +2565,12 @@ export function ChunkReader({
                   : "text-neutral-400 hover:bg-neutral-100 hover:text-neutral-600 dark:hover:bg-neutral-800 dark:hover:text-neutral-300"
               }`}
             >
-              {/* Treasure map, not a dropped pin. Stroke drops to 2 (the rest
-                  of this bar's weight) — 2.5 filled the sheet in at 12px. */}
+              {/* An unfurled paper map, not a dropped pin. Stroke drops to 2
+                  (the rest of this bar's weight) — 2.5 closed up the folds. */}
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M3 4.6C7.5 7.6 16.5 2 21 4.6V19.4C16.5 16.4 7.5 22 3 19.4Z" />
-                <path d="M11.3 10.2L15.1 14M15.1 10.2L11.3 14" />
+                <path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2z" />
+                <path d="M9 4v14" />
+                <path d="M15 6v14" />
               </svg>
               Map
             </button>
@@ -2859,8 +2860,9 @@ export function ChunkReader({
               }`}
             >
               <svg className="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M3 4.6C7.5 7.6 16.5 2 21 4.6V19.4C16.5 16.4 7.5 22 3 19.4Z" />
-                <path d="M11.3 10.2L15.1 14M15.1 10.2L11.3 14" />
+                <path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2z" />
+                <path d="M9 4v14" />
+                <path d="M15 6v14" />
               </svg>
               Map
             </button>
