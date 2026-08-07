@@ -2780,7 +2780,7 @@ export function ChunkReader({
               // 42px: the tabs are 46px tall and the spanner's top edge is at
               // 96, so this lands its bottom at 88 — an 8px gap, rather than
               // the two boxes touching or overlapping.
-              className={`fixed right-0 top-[2.625rem] rounded-l-lg pl-2 pr-3 ${BOX_CLASS} ${
+              className={`fixed right-[7.5rem] top-[2.625rem] rounded-lg pl-2 pr-3 ${BOX_CLASS} ${
                 rightRailOpen ? "pointer-events-none opacity-0" : "opacity-100"
               }`}
             >
