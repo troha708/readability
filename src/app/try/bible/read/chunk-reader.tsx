@@ -3033,13 +3033,14 @@ export function ChunkReader({
           <p className="text-[10.5px] font-medium tracking-[0.25px] text-neutral-400 dark:text-neutral-500">
             © {new Date().getFullYear()} Readability
           </p>
-          {/* Wraps rather than scrolls: four links don't fit one 216px row. */}
-          <div className="mt-1 flex flex-wrap gap-x-3 gap-y-1 text-[10.5px] font-medium tracking-[0.25px] text-neutral-400 dark:text-neutral-500">
-            <Link href="/try/bible/dictionary" className="underline hover:text-neutral-600 dark:hover:text-neutral-300">
-              Dictionary
-            </Link>
-            <Link href="/try/bible/quiz" className="underline hover:text-neutral-600 dark:hover:text-neutral-300">
-              Quiz
+          {/* Three links, spread across a single row. Dictionary and Quiz
+              came out: both already have their own entries in the tools list
+              directly above, and at four the row had to wrap. Three fit the
+              216px rail, so justify-between can space them edge to edge
+              without wrapping. */}
+          <div className="mt-1 flex items-baseline justify-between whitespace-nowrap text-[10.5px] font-medium tracking-[0.25px] text-neutral-400 dark:text-neutral-500">
+            <Link href="/credits" className="underline hover:text-neutral-600 dark:hover:text-neutral-300">
+              Credits
             </Link>
             <Link href="/support" className="underline hover:text-neutral-600 dark:hover:text-neutral-300">
               Support
