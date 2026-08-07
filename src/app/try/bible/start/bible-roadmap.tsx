@@ -209,12 +209,11 @@ export function BibleRoadmap({
         href={readUrl(book.name, targetChapter) + "&overview=1"}
         // Sits in the chapter grid rather than above it, spanning three of the
         // 2.25rem tracks — the word doesn't fit one cell, and letting it span
-        // whole tracks keeps the squares after it in column.
-        className="col-span-3 inline-flex h-9 w-full items-center justify-center p-px"
+        // whole tracks keeps the squares after it in column. Styled as the
+        // reader's own Overview chip: the same faint amber wash and gold text.
+        className="col-span-3 flex h-9 w-full items-center justify-center rounded bg-amber-500/10 text-[12px] font-medium text-gold transition-all hover:bg-amber-500/20 dark:bg-amber-400/10 dark:text-gold-bright dark:hover:bg-amber-400/20"
       >
-        <span className="flex h-full w-full items-center justify-center border border-neutral-200 font-scripture text-[11px] italic text-neutral-500 transition-colors hover:border-neutral-400 dark:border-neutral-800 dark:text-neutral-400 dark:hover:border-neutral-600">
-          Overview
-        </span>
+        Overview
       </Link>
     );
   }
@@ -325,9 +324,19 @@ export function BibleRoadmap({
                   {purpose}
                 </p>
               )}
-              {/* Chapters on a fixed 2.25rem track so the squares stay square
-                  and line up in columns when they wrap. */}
-              <div className="grid grid-cols-[repeat(auto-fill,2.25rem)]">
+              {/* The reader's left-panel chapter list: filled rounded squares,
+                  gap-1, solid gold for where you are, an amber tint for done,
+                  neutral otherwise. Same colours and shapes as
+                  getChapterButtonStyle in chunk-reader, so the library and the
+                  panel you open it into read as one control.
+                  Two deliberate differences. The squares are 36px rather than
+                  the panel's 28px — the panel is a 216px rail beside the text,
+                  this is the primary way you navigate on a phone. And the
+                  track is a fixed grid rather than flex-wrap, so the figures
+                  line up in columns when they wrap; Psalms wraps seven times
+                  in a full-width page where the narrow rail barely wraps at
+                  all. */}
+              <div className="grid grid-cols-[repeat(auto-fill,2.25rem)] gap-1">
                 {isOverviewAtStart(book.name) && renderOverviewLink(book)}
                 {book.chapters.map((ch) => {
                   const key = `${book.name}:${ch.chapterNumber}`;
@@ -336,28 +345,27 @@ export function BibleRoadmap({
                   const isComplete = isStudy ? readComplete && quizComplete : readComplete;
                   const isNextUnread =
                     isActiveBook && ch.chapterNumber === continueTarget.chapter && !isComplete;
-                  // Study mode's third state: read but not yet quizzed.
+                  // Study mode's third state — read but not yet quizzed — takes
+                  // the panel's "fading" tint, which is the step below its
+                  // completed one. Nothing here grades by age: that ramp was
+                  // deleted from the library and isn't coming back with this.
                   const partial = isStudy && readComplete && !quizComplete;
                   return (
                     <Link
                       key={ch.chapterNumber}
                       href={readUrl(book.name, ch.chapterNumber)}
                       aria-label={`${book.name} ${ch.chapterNumber}`}
-                      className="inline-flex h-9 w-9 items-center justify-center p-px font-scripture text-[12px] tabular-nums"
+                      className={`flex h-9 w-9 items-center justify-center rounded text-[13px] tabular-nums transition-all ${
+                        isNextUnread
+                          ? "bg-amber-500 font-bold text-neutral-950 dark:bg-amber-400 dark:text-neutral-950"
+                          : isComplete
+                            ? "bg-amber-500/20 font-semibold text-amber-800 ring-1 ring-inset ring-amber-500/30 hover:bg-amber-500/28 dark:bg-amber-400/22 dark:text-amber-200 dark:ring-amber-400/25 dark:hover:bg-amber-400/30"
+                            : partial
+                              ? "bg-amber-500/11 font-semibold text-amber-700/90 hover:bg-amber-500/18 dark:bg-amber-400/13 dark:text-amber-300/85 dark:hover:bg-amber-400/20"
+                              : "bg-neutral-100 text-neutral-600 hover:bg-neutral-200 dark:bg-neutral-800 dark:text-neutral-400 dark:hover:bg-neutral-700"
+                      }`}
                     >
-                      <span
-                        className={`flex h-full w-full items-center justify-center border ${
-                          isNextUnread
-                            ? "border-gold bg-gold font-semibold text-white dark:border-gold-bright dark:bg-gold-bright dark:text-neutral-950"
-                            : isComplete
-                              ? "border-neutral-400 text-neutral-700 dark:border-neutral-500 dark:text-neutral-300"
-                              : partial
-                                ? "border-dashed border-neutral-400 text-neutral-600 dark:border-neutral-600 dark:text-neutral-400"
-                                : "border-neutral-200 text-neutral-400 hover:border-neutral-400 dark:border-neutral-800 dark:text-neutral-500 dark:hover:border-neutral-600"
-                        }`}
-                      >
-                        {ch.chapterNumber}
-                      </span>
+                      {ch.chapterNumber}
                     </Link>
                   );
                 })}
