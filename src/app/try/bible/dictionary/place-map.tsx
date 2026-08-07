@@ -49,18 +49,20 @@ export function DictPlaceMap({
         className="inline-flex items-center gap-1.5 rounded-lg border border-neutral-200 px-3 py-1.5 text-sm font-medium text-neutral-600 transition-colors hover:border-neutral-300 hover:text-amber-700 dark:border-neutral-700 dark:text-neutral-300 dark:hover:text-amber-400"
       >
         <svg
-          width="15"
-          height="15"
+          width="17"
+          height="17"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
-          strokeWidth={2}
+          strokeWidth={1.5}
           strokeLinecap="round"
           strokeLinejoin="round"
         >
           <path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2z" />
           <path d="M9 4v14" />
           <path d="M15 6v14" />
+          <path d="M4 14.8c1.6-1.4 2.4.5 4 .1 1.7-.4 2.2-2.1 3.9-2.1 1.7 0 2.3 1.7 4 1.5 1.6-.2 2.2-1.5 3.4-2.1" />
+          <path d="M17.9 6.6l.6 1.6 1.6.6-1.6.6-.6 1.6-.6-1.6-1.6-.6 1.6-.6z" />
         </svg>
         {open ? "Hide map" : "Show on map"}
       </button>

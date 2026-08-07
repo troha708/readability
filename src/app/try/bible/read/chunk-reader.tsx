@@ -2565,12 +2565,15 @@ export function ChunkReader({
                   : "text-neutral-400 hover:bg-neutral-100 hover:text-neutral-600 dark:hover:bg-neutral-800 dark:hover:text-neutral-300"
               }`}
             >
-              {/* An unfurled paper map, not a dropped pin. Stroke drops to 2
-                  (the rest of this bar's weight) — 2.5 closed up the folds. */}
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              {/* The printed chart needs room: 12px reduced the coastline and
+                  compass rose to smudges, so this one runs at 15 — still
+                  small against its neighbours, but the detail survives. */}
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2z" />
                 <path d="M9 4v14" />
                 <path d="M15 6v14" />
+                <path d="M4 14.8c1.6-1.4 2.4.5 4 .1 1.7-.4 2.2-2.1 3.9-2.1 1.7 0 2.3 1.7 4 1.5 1.6-.2 2.2-1.5 3.4-2.1" />
+                <path d="M17.9 6.6l.6 1.6 1.6.6-1.6.6-.6 1.6-.6-1.6-1.6-.6 1.6-.6z" />
               </svg>
               Map
             </button>
@@ -2859,10 +2862,12 @@ export function ChunkReader({
                   : `text-neutral-500 dark:text-neutral-400 ${PANEL_ROW_HOVER}`
               }`}
             >
-              <svg className="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <svg className="h-[18px] w-[18px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2z" />
                 <path d="M9 4v14" />
                 <path d="M15 6v14" />
+                <path d="M4 14.8c1.6-1.4 2.4.5 4 .1 1.7-.4 2.2-2.1 3.9-2.1 1.7 0 2.3 1.7 4 1.5 1.6-.2 2.2-1.5 3.4-2.1" />
+                <path d="M17.9 6.6l.6 1.6 1.6.6-1.6.6-.6 1.6-.6-1.6-1.6-.6 1.6-.6z" />
               </svg>
               Map
             </button>

@@ -488,13 +488,17 @@ export function BibleRoadmap({ books, versionAbbr, booksWithSummary }: Props) {
               title="Bible atlas"
               className="inline-flex items-center gap-1.5 rounded-md px-2 py-1.5 text-sm font-medium tracking-[0.25px] text-neutral-500 hover:bg-neutral-100 hover:text-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-neutral-200"
             >
-              {/* An unfurled paper map — folded panels, creased. A dropped-pin
-                  marker read as Google Maps; a bare sheet reads as a blank
-                  rectangle, and it's the fold creases that say "map". */}
-              <svg className="h-5 w-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+              {/* An unfurled paper map with a chart printed on it: folded
+                  panels, a coastline sweeping across them, a compass rose in
+                  the top right. The detail is what says "map" rather than
+                  "sheet of paper", so the stroke thins to 1.5 to carry it —
+                  at 2 the coastline and the rose close up. */}
+              <svg className="h-5 w-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round">
                 <path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2z" />
                 <path d="M9 4v14" />
                 <path d="M15 6v14" />
+                <path d="M4 14.8c1.6-1.4 2.4.5 4 .1 1.7-.4 2.2-2.1 3.9-2.1 1.7 0 2.3 1.7 4 1.5 1.6-.2 2.2-1.5 3.4-2.1" />
+                <path d="M17.9 6.6l.6 1.6 1.6.6-1.6.6-.6 1.6-.6-1.6-1.6-.6 1.6-.6z" />
               </svg>
               <span className="hidden md:inline">Atlas</span>
             </Link>
