@@ -44,30 +44,6 @@ type Props = {
   purposeByBook?: Record<string, string>;
 };
 
-/**
- * The original-language name set beside the English one. Greek and Hebrew get
- * different families (no single free face covers both with the pointing), and
- * the Hebrew is marked rtl so the numbered books — שְׁמוּאֵל א — order correctly
- * next to surrounding Latin text.
- */
-function OriginalTitle({
-  name,
-  className = "",
-}: {
-  name: { original: string; translit: string; script: "hebrew" | "greek" };
-  className?: string;
-}) {
-  return (
-    <span
-      className={`${name.script === "hebrew" ? "font-hebrew" : "font-greek"} ${className}`}
-      dir={name.script === "hebrew" ? "rtl" : undefined}
-      title={name.translit}
-    >
-      {name.original}
-    </span>
-  );
-}
-
 export function BibleRoadmap({
   books,
   versionAbbr,
@@ -254,12 +230,11 @@ export function BibleRoadmap({
     return (
       <Fragment key={book.name}>
         <tr ref={isActiveBook ? activeBookRef : undefined} className="scroll-mt-24 align-baseline">
-          {/* w-px + nowrap on the outer columns, w-full on the middle one:
-              auto table layout otherwise splits the slack three ways and
-              leaves the Greek floating in the centre of the row instead of
-              sitting beside the English. This is the contents-page
-              arrangement — title left, figure right, space between. */}
-          <td className={`w-px whitespace-nowrap py-2 pr-3 ${rowDivider}`}>
+          {/* w-full here and w-px + nowrap on the figure: auto table layout
+              otherwise splits the slack and pulls the count in off the edge.
+              This is the contents-page arrangement — title left, figure
+              right, space between. */}
+          <td className={`w-full py-2 pr-3 ${rowDivider}`}>
             {/* A real link to chapter 1 so crawlers reach every book — the
                 chapter grid below only exists when open — but click toggles.
                 draggable={false} and the selection guard keep the row's text
@@ -300,15 +275,22 @@ export function BibleRoadmap({
                 {hasChapters ? (isExpanded ? "▾" : "▸") : ""}
               </span>
               {book.name}
+              {/* Set in the English name's own type — same family, size and
+                  colour, one space along. dir is not a style: without it the
+                  numbered Hebrew books (שְׁמוּאֵל א) reorder against the Latin
+                  text now sitting immediately before them. */}
+              {orig && (
+                <>
+                  {" "}
+                  <span
+                    dir={orig.script === "hebrew" ? "rtl" : undefined}
+                    title={orig.translit}
+                  >
+                    {orig.original}
+                  </span>
+                </>
+              )}
             </a>
-          </td>
-          <td className={`w-full select-text py-2 pr-3 ${rowDivider}`}>
-            {orig && (
-              <OriginalTitle
-                name={orig}
-                className="text-[17px] text-neutral-500 dark:text-neutral-400"
-              />
-            )}
           </td>
           <td className={`w-px whitespace-nowrap py-2 text-right font-scripture text-[14px] tabular-nums text-neutral-400 dark:text-neutral-500 ${rowDivider}`}>
             {completedCount > 0
@@ -318,7 +300,7 @@ export function BibleRoadmap({
         </tr>
         {isExpanded && hasChapters && (
           <tr>
-            <td colSpan={3} className={`pb-3 ${divider}`}>
+            <td colSpan={2} className={`pb-3 ${divider}`}>
               {purpose && (
                 <p className="mb-2 max-w-prose font-scripture text-[14px] italic leading-relaxed text-neutral-500 dark:text-neutral-500">
                   {purpose}
@@ -422,7 +404,7 @@ export function BibleRoadmap({
                       decorated. */}
                   <tr>
                     <th
-                      colSpan={3}
+                      colSpan={2}
                       className="pb-1 pt-6 text-left font-scripture text-[14px] font-normal italic text-neutral-400 dark:text-neutral-500"
                     >
                       {genre}
