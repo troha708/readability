@@ -70,6 +70,11 @@ const EMPTY_HIGHLIGHTS: Record<number, VerseHighlight> = {};
 
 /** Width of each wide-screen side rail, in px. */
 const RAIL_WIDTH = 216;
+// The edge tabs (navigation, atlas, tools) share one box so they read as a
+// set: same border, same fill, same padding, same size. Only the side they
+// round on and their vertical position differ.
+const BOX_CLASS =
+  "z-10 hidden border border-current bg-white/95 py-3 text-gold backdrop-blur transition-[opacity,color,border-color] duration-300 hover:text-gold-deep dark:bg-neutral-925/95 dark:hover:text-gold-bright xl:block";
 
 // The warm reveal: the edge line lights up AND throws a soft spill sideways
 // onto the page — both, but at roughly half the strength of the first cut,
@@ -2736,7 +2741,7 @@ export function ChunkReader({
             onClick={() => setLeftRailOpen(true)}
             aria-label="Show navigation panel"
             title="Navigation"
-            className={`fixed left-0 top-24 z-10 hidden rounded-r-lg border border-l-0 border-current bg-white/95 py-3 pl-1.5 pr-2 text-gold backdrop-blur transition-[opacity,color,border-color] duration-300 hover:text-gold-deep dark:bg-neutral-925/95 dark:hover:text-gold-bright xl:block ${
+            className={`fixed left-0 top-24 rounded-r-lg border-l-0 pl-1.5 pr-2 ${BOX_CLASS} ${
               leftRailOpen ? "pointer-events-none opacity-0" : "opacity-100"
             }`}
           >
@@ -2747,15 +2752,49 @@ export function ChunkReader({
               <path d="M12 6.5v14" />
             </svg>
           </button>
+          {/* The chapter's map, straight from the text — click it and the
+              sheet opens; no detour through the tools panel. It sits directly
+              above the spanner in the same box, and only appears on chapters
+              that actually map somewhere. The count rides the icon's corner
+              rather than taking a second line, so the box stays the size of
+              its neighbours. */}
+          {placeCount > 0 && chapterPlaces && (
+            <button
+              onClick={() => setMapSheet({ chapter: visibleChapterNumber, data: chapterPlaces })}
+              aria-label={`Map of ${placeCount} ${placeCount === 1 ? "place" : "places"} in this chapter`}
+              title={`${placeCount} ${placeCount === 1 ? "place" : "places"} in this chapter`}
+              // 42px: the tabs are 46px tall and the spanner's top edge is at
+              // 96, so this lands its bottom at 88 — an 8px gap, rather than
+              // the two boxes touching or overlapping.
+              className={`fixed right-0 top-[2.625rem] rounded-l-lg border-r-0 pl-2 pr-1.5 ${BOX_CLASS} ${
+                rightRailOpen ? "pointer-events-none opacity-0" : "opacity-100"
+              }`}
+            >
+              <span className="relative block">
+                {/* The same unfurled chart as the rail button. */}
+                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2z" />
+                  <path d="M9 4v14" />
+                  <path d="M15 6v14" />
+                  <path d="M4 14.8c1.6-1.4 2.4.5 4 .1 1.7-.4 2.2-2.1 3.9-2.1 1.7 0 2.3 1.7 4 1.5 1.6-.2 2.2-1.5 3.4-2.1" />
+                  <path d="M17.9 6.6l.6 1.6 1.6.6-1.6.6-.6 1.6-.6-1.6-1.6-.6 1.6-.6z" />
+                </svg>
+                {/* Left of the icon, not right: the tab is flush with the
+                    screen edge, so a badge hung off its right side is cut in
+                    half by the viewport. */}
+                <span className="absolute -left-1.5 -top-2 text-[10px] font-bold leading-none tabular-nums">
+                  {placeCount}
+                </span>
+              </span>
+            </button>
+          )}
           <button
             onClick={() => setRightRailOpen(true)}
             aria-label="Show reading tools"
             title="Tools"
-            className={`fixed right-0 z-10 hidden rounded-l-lg border border-r-0 border-current bg-white/95 py-3 pl-2 pr-1.5 text-gold backdrop-blur transition-[opacity,color,border-color] duration-300 hover:text-gold-deep dark:bg-neutral-925/95 dark:hover:text-gold-bright xl:block ${
-              // The atlas tab owns top-24 when the chapter has places; this
-              // drops below it so the two don't stack on the same spot.
-              placeCount > 0 ? "top-[9.5rem]" : "top-24"
-            } ${rightRailOpen ? "pointer-events-none opacity-0" : "opacity-100"}`}
+            className={`fixed right-0 top-24 rounded-l-lg border-r-0 pl-2 pr-1.5 ${BOX_CLASS} ${
+              rightRailOpen ? "pointer-events-none opacity-0" : "opacity-100"
+            }`}
           >
             {/* Spanner: open jaws at the head, handle running down to the
                 left. The previous path collapsed into an unreadable blob. */}
@@ -2764,38 +2803,6 @@ export function ChunkReader({
             </svg>
           </button>
         </>
-      )}
-
-      {/* Atlas tab — the chapter's places, one click from the text.
-          The map already had two entry points, but on a wide screen both sit
-          inside the right rail, so seeing what a chapter maps meant opening a
-          panel first. This is an edge tab in the same family as the rail
-          reveals, and it stays put whether the rails are pinned or folded.
-          The count is the promise: it says how many places are actually there
-          before you spend a click finding out. Narrow screens keep using the
-          header button, which carries the same number. */}
-      {placeCount > 0 && chapterPlaces && (
-        <button
-          onClick={() => setMapSheet({ chapter: visibleChapterNumber, data: chapterPlaces })}
-          aria-label={`Map of ${placeCount} ${placeCount === 1 ? "place" : "places"} in this chapter`}
-          title={`${placeCount} ${placeCount === 1 ? "place" : "places"} in this chapter`}
-          className={`fixed right-0 top-24 z-10 hidden flex-col items-center gap-1 rounded-l-lg border border-r-0 border-current bg-white/95 py-2.5 pl-2 pr-1.5 backdrop-blur transition-colors hover:text-gold-deep dark:bg-neutral-925/95 dark:hover:text-gold-bright xl:flex ${
-            mapSheet ? "text-gold-deep dark:text-gold-bright" : "text-gold"
-          }`}
-        >
-          {/* The same unfurled chart as the rail button, at 20 to match the
-              other edge tabs' icons. */}
-          <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2z" />
-            <path d="M9 4v14" />
-            <path d="M15 6v14" />
-            <path d="M4 14.8c1.6-1.4 2.4.5 4 .1 1.7-.4 2.2-2.1 3.9-2.1 1.7 0 2.3 1.7 4 1.5 1.6-.2 2.2-1.5 3.4-2.1" />
-            <path d="M17.9 6.6l.6 1.6 1.6.6-1.6.6-.6 1.6-.6-1.6-1.6-.6 1.6-.6z" />
-          </svg>
-          <span className="text-[10px] font-semibold leading-none tabular-nums">
-            {placeCount}
-          </span>
-        </button>
       )}
 
       {/* Left panel — way out, book picker, chapter grid */}
