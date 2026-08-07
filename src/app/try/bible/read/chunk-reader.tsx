@@ -2658,45 +2658,6 @@ export function ChunkReader({
             </button>
           )}
 
-          {/* Themes — the Tyndale essays that cite this chapter. Same shape as
-              the Map row above it, count and all, because it answers the same
-              kind of question: is there anything here worth leaving the text
-              for? Opens in place rather than in a sheet: these are links out,
-              not a thing to read here. */}
-          {themeCount > 0 && (
-            <div ref={themesMenuRef} className="relative">
-              <button
-                onClick={() => setThemesOpen((o) => !o)}
-                aria-expanded={themesOpen}
-                className={`flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-left text-xs font-medium tracking-[0.25px] ${
-                  themesOpen
-                    ? "bg-amber-100 text-amber-800 dark:bg-amber-900/50 dark:text-amber-400"
-                    : `text-neutral-500 dark:text-neutral-400 ${PANEL_ROW_HOVER}`
-                }`}
-              >
-                {/* Three stacked strands — a thread running through the text. */}
-                <svg className="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M4 7h16" />
-                  <path d="M4 12h10" />
-                  <path d="M4 17h13" />
-                </svg>
-                Themes <span className="tabular-nums opacity-70">{themeCount}</span>
-              </button>
-              {themesOpen && (
-                <div className="absolute right-0 top-full z-20 mt-1 max-h-72 w-64 overflow-y-auto rounded-lg border border-neutral-200 bg-white py-1 shadow-lg dark:border-neutral-700 dark:bg-neutral-800">
-                  {chapterThemes.map((t) => (
-                    <a
-                      key={t.id}
-                      href={`/try/bible/dictionary?entry=${encodeURIComponent(t.id)}`}
-                      className="block px-3 py-1.5 font-scripture text-[13px] leading-snug text-neutral-700 hover:bg-neutral-100 hover:text-gold dark:text-neutral-300 dark:hover:bg-neutral-700 dark:hover:text-gold-bright"
-                    >
-                      {t.title}
-                    </a>
-                  ))}
-                </div>
-              )}
-            </div>
-          )}
 
           {/* Notes panel */}
           <button
@@ -3026,6 +2987,46 @@ export function ChunkReader({
               </svg>
               Map <span className="tabular-nums opacity-70">{placeCount}</span>
             </button>
+          )}
+
+          {/* Themes — the Tyndale essays that cite this chapter. Same shape as
+              the Map row above it, count and all, because it answers the same
+              kind of question: is there anything here worth leaving the text
+              for? Opens in place rather than in a sheet: these are links out,
+              not a thing to read here. */}
+          {themeCount > 0 && (
+            <div ref={themesMenuRef} className="relative">
+              <button
+                onClick={() => setThemesOpen((o) => !o)}
+                aria-expanded={themesOpen}
+                className={`flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-left text-xs font-medium tracking-[0.25px] ${
+                  themesOpen
+                    ? "bg-amber-100 text-amber-800 dark:bg-amber-900/50 dark:text-amber-400"
+                    : `text-neutral-500 dark:text-neutral-400 ${PANEL_ROW_HOVER}`
+                }`}
+              >
+                {/* Three stacked strands — a thread running through the text. */}
+                <svg className="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M4 7h16" />
+                  <path d="M4 12h10" />
+                  <path d="M4 17h13" />
+                </svg>
+                Themes <span className="tabular-nums opacity-70">{themeCount}</span>
+              </button>
+              {themesOpen && (
+                <div className="absolute right-0 top-full z-20 mt-1 max-h-72 w-64 overflow-y-auto rounded-lg border border-neutral-200 bg-white py-1 shadow-lg dark:border-neutral-700 dark:bg-neutral-800">
+                  {chapterThemes.map((t) => (
+                    <a
+                      key={t.id}
+                      href={`/try/bible/dictionary?entry=${encodeURIComponent(t.id)}`}
+                      className="block px-3 py-1.5 font-scripture text-[13px] leading-snug text-neutral-700 hover:bg-neutral-100 hover:text-gold dark:text-neutral-300 dark:hover:bg-neutral-700 dark:hover:text-gold-bright"
+                    >
+                      {t.title}
+                    </a>
+                  ))}
+                </div>
+              )}
+            </div>
           )}
 
           <button
