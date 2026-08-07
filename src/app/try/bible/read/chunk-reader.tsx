@@ -944,8 +944,9 @@ export function ChunkReader({
   // Display settings
   const [dark, setDark] = useState(false);
   const [bionic, setBionic] = useState(false);
-  // Verse-number superscripts can be hidden for a more natural read (default on).
-  const [verseNumbers, setVerseNumbers] = useState(true);
+  // Verse-number superscripts, OFF by default: the chapter reads as prose
+  // until you ask for the apparatus. Opt back in from the settings menu.
+  const [verseNumbers, setVerseNumbers] = useState(false);
   // BSB ships cross-references (parallel passages) beside section headings.
   // Off by default; readers can opt in via the settings menu under BSB.
   const [showCrossRefs, setShowCrossRefs] = useState(false);
@@ -1244,7 +1245,10 @@ export function ChunkReader({
   useEffect(() => {
     setDark(document.documentElement.classList.contains("dark"));
     setBionic(localStorage.getItem("bionic") === "true");
-    setVerseNumbers(localStorage.getItem("verseNumbers") !== "false");
+    // === "true", not !== "false": absent now means off. Readers who turned
+    // them on or off explicitly keep what they chose — only the untouched
+    // default moves.
+    setVerseNumbers(localStorage.getItem("verseNumbers") === "true");
     setShowCrossRefs(localStorage.getItem("bsbCrossRefs") === "true");
     setRedLetter(localStorage.getItem("redLetter") === "true");
     setMode(getReadingMode());
