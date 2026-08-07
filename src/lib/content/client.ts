@@ -8,6 +8,7 @@ import { IS_MOBILE } from "@/lib/build-target";
 import * as offline from "./offline";
 import type { ChapterContent, SearchResult } from "./offline";
 import { parseBookPlaces, type BookPlaces, type RawBookPlaces } from "./places";
+import { parseBookThemes, type BookThemes, type RawBookThemes } from "./chapter-themes";
 import type { SearchScope } from "@/lib/search/verse-search";
 
 export async function fetchChapter(
@@ -224,6 +225,23 @@ export async function fetchBookPlaces(book: string): Promise<BookPlaces> {
     return data.chapters ? parseBookPlaces(data) : {};
   } catch {
     return {}; // offline on web — the Map button simply stays hidden
+  }
+}
+
+/** Per-chapter theme essays for a whole book (chapter-keyed, client-cached). */
+export async function fetchBookThemes(book: string): Promise<BookThemes> {
+  if (IS_MOBILE) {
+    // Not in the offline bundle yet — the native build simply shows no Themes
+    // row until that bundle is rebuilt to carry the index.
+    return {};
+  }
+  try {
+    const res = await fetch(`/api/chapter-themes?book=${encodeURIComponent(book)}`);
+    if (!res.ok) return {};
+    const data = (await res.json()) as RawBookThemes;
+    return data.chapters ? parseBookThemes(data) : {};
+  } catch {
+    return {}; // offline on web — the Themes row simply stays hidden
   }
 }
 

@@ -47,9 +47,10 @@ import {
 import { SearchModal } from "@/components/search-modal";
 import { SiteFooter } from "@/components/site-footer";
 import { FirstContactHint } from "@/components/first-contact-hint";
-import { fetchChapter, fetchBookPlaces } from "@/lib/content/client";
+import { fetchChapter, fetchBookPlaces, fetchBookThemes } from "@/lib/content/client";
 import { IS_MOBILE } from "@/lib/build-target";
 import type { BookPlaces, ChapterPlaces } from "@/lib/content/places";
+import type { BookThemes } from "@/lib/content/chapter-themes";
 import { VerseSheet } from "./verse-sheet";
 import { ChapterMapSheet } from "./chapter-map-sheet";
 import { ReadingHistorySheet } from "./reading-history-sheet";
@@ -1037,6 +1038,7 @@ export function ChunkReader({
       // to close before the fold can happen.
       setSettingsOpen(false);
       setBookOpen(false);
+      setThemesOpen(false);
     } else {
       setLeftRailOpen(true);
       setRightRailOpen(true);
@@ -1134,6 +1136,10 @@ export function ChunkReader({
   const [bookPlaces, setBookPlaces] = useState<BookPlaces | null>(null);
   const [mapSheet, setMapSheet] = useState<{ chapter: number; data: ChapterPlaces } | null>(null);
   const [historyOpen, setHistoryOpen] = useState(false);
+  // Theme essays citing this chapter. Fetched per book and sliced per
+  // chapter, the same shape as the place index.
+  const [bookThemes, setBookThemes] = useState<BookThemes | null>(null);
+  const [themesOpen, setThemesOpen] = useState(false);
 
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
@@ -1166,11 +1172,23 @@ export function ChunkReader({
     recordChapterView(bookName, visibleChapterNumber, versionAbbr);
   }, [bookName, visibleChapterNumber, versionAbbr]);
 
+  useEffect(() => {
+    let live = true;
+    fetchBookThemes(bookName).then((t) => {
+      if (live) setBookThemes(t);
+    });
+    return () => {
+      live = false;
+    };
+  }, [bookName]);
+
   const chapterPlaces = bookPlaces?.[String(visibleChapterNumber)] ?? null;
   // How many places this chapter puts on the map. Located places only — the
   // `unlocated` list is names the dataset can't site, so they're nothing to go
   // and see, which is what the count on the atlas tab is promising.
   const placeCount = chapterPlaces?.places.length ?? 0;
+  const chapterThemes = bookThemes?.[String(visibleChapterNumber)] ?? [];
+  const themeCount = chapterThemes.length;
 
   // Scroll the reader to a verse (used by the notes drawer and chapter map);
   // falls back to the chapter heading, or navigates if it isn't loaded.
@@ -1197,11 +1215,12 @@ export function ChunkReader({
   const panelBookRef = useRef<HTMLDivElement>(null);
   const settingsRef = useRef<HTMLDivElement>(null);
   const panelSettingsRef = useRef<HTMLDivElement>(null);
+  const themesMenuRef = useRef<HTMLDivElement>(null);
 
   // Feeds the rail auto-hide: an open picker or settings menu holds its rail
   // out even when the cursor wanders back toward the middle.
   useEffect(() => {
-    railMenuOpenRef.current = bookOpen || settingsOpen;
+    railMenuOpenRef.current = bookOpen || settingsOpen || themesOpen;
   }, [bookOpen, settingsOpen]);
 
   // Header height — drives the notes drawer's sticky offset so its top isn't
@@ -1741,6 +1760,7 @@ export function ChunkReader({
       const inSettings =
         !!settingsRef.current?.contains(t) || !!panelSettingsRef.current?.contains(t);
       if (!inSettings) setSettingsOpen(false);
+      if (!themesMenuRef.current?.contains(t)) setThemesOpen(false);
     }
     document.addEventListener("mousedown", handleClick);
     return () => document.removeEventListener("mousedown", handleClick);
@@ -2636,6 +2656,46 @@ export function ChunkReader({
               </svg>
               Map <span className="tabular-nums opacity-70">{placeCount}</span>
             </button>
+          )}
+
+          {/* Themes — the Tyndale essays that cite this chapter. Same shape as
+              the Map row above it, count and all, because it answers the same
+              kind of question: is there anything here worth leaving the text
+              for? Opens in place rather than in a sheet: these are links out,
+              not a thing to read here. */}
+          {themeCount > 0 && (
+            <div ref={themesMenuRef} className="relative">
+              <button
+                onClick={() => setThemesOpen((o) => !o)}
+                aria-expanded={themesOpen}
+                className={`flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-left text-xs font-medium tracking-[0.25px] ${
+                  themesOpen
+                    ? "bg-amber-100 text-amber-800 dark:bg-amber-900/50 dark:text-amber-400"
+                    : `text-neutral-500 dark:text-neutral-400 ${PANEL_ROW_HOVER}`
+                }`}
+              >
+                {/* Three stacked strands — a thread running through the text. */}
+                <svg className="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M4 7h16" />
+                  <path d="M4 12h10" />
+                  <path d="M4 17h13" />
+                </svg>
+                Themes <span className="tabular-nums opacity-70">{themeCount}</span>
+              </button>
+              {themesOpen && (
+                <div className="absolute right-0 top-full z-20 mt-1 max-h-72 w-64 overflow-y-auto rounded-lg border border-neutral-200 bg-white py-1 shadow-lg dark:border-neutral-700 dark:bg-neutral-800">
+                  {chapterThemes.map((t) => (
+                    <a
+                      key={t.id}
+                      href={`/try/bible/dictionary?entry=${encodeURIComponent(t.id)}`}
+                      className="block px-3 py-1.5 font-scripture text-[13px] leading-snug text-neutral-700 hover:bg-neutral-100 hover:text-gold dark:text-neutral-300 dark:hover:bg-neutral-700 dark:hover:text-gold-bright"
+                    >
+                      {t.title}
+                    </a>
+                  ))}
+                </div>
+              )}
+            </div>
           )}
 
           {/* Notes panel */}
