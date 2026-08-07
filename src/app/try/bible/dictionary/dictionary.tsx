@@ -550,6 +550,15 @@ export function Dictionary() {
   // Normalized place name → every atlas place bearing it (biblical names
   // recur: two Antiochs, six Ramahs). A hyphen-and-space-blind secondary key
   // covers spelling drift ("En-Gedi" ↔ "Engedi", "Be-Eshterah" ↔ "Beeshterah").
+  // Browse category by article id. Keyed on the id and not the title: the
+  // theme merge left 14 titles owned by two articles apiece (Jerusalem, Zion,
+  // Wisdom…), so a title lookup returns whichever sorted last.
+  const catById = useMemo(() => {
+    const m = new Map<string, DictCat | undefined>();
+    for (const e of index ?? []) m.set(e.id, e.cat);
+    return m;
+  }, [index]);
+
   const atlasByName = useMemo(() => {
     const m = new Map<string, AtlasPlace[]>();
     if (!atlas) return m;
@@ -592,6 +601,13 @@ export function Dictionary() {
   // among same-named places, prefer the one the article's citations point at.
   const matchedPlace = useMemo(() => {
     if (!article || !atlas) return null;
+    // Only place articles get a map. Matching was on name alone, so any
+    // article whose name or alias happened to hit the atlas got one — Judas
+    // carries the alias "Judas of Galilee", which resolved to Galilee and put
+    // a map of the Sea of Galilee on a disciple. _place-aliases.json is not a
+    // place file despite the name: of its 317 entries only 65 are places, the
+    // rest people, theology and culture.
+    if (catById.get(article.id) !== "place") return null;
     const mentionsOf = (p: AtlasPlace) =>
       p.refs.reduce((n, [, , v]) => n + v.length, 0);
     const verseOverlap = (p: AtlasPlace) =>
@@ -637,7 +653,7 @@ export function Dictionary() {
       }
     }
     return matched;
-  }, [article, atlas, atlasByName, aliases, articleRefs]);
+  }, [article, atlas, atlasByName, aliases, articleRefs, catById]);
 
   // The matched place plus every place the Bible mentions 10+ times, so the
   // map shows the looked-up place among the major places across the whole
