@@ -827,7 +827,7 @@ function BookOverviewBody({
   if (!intro) {
     return (
       <>
-        <h2 className="mb-4 text-lg font-bold text-amber-800 dark:text-amber-300">
+        <h2 className="mb-4 font-ui text-lg font-bold text-amber-800 dark:text-amber-300">
           {bookName}
         </h2>
         {(summary ?? "").split("\n\n").map((paragraph, i) => (
@@ -845,14 +845,14 @@ function BookOverviewBody({
 
   return (
     <>
-      <h2 className="mb-4 text-lg font-bold text-amber-800 dark:text-amber-300">
+      <h2 className="mb-4 font-ui text-lg font-bold text-amber-800 dark:text-amber-300">
         {bookName}
       </h2>
       {intro.fields.length > 0 && (
         <dl className="mb-5">
           {intro.fields.map((f) => (
             <div key={f.label} className="mb-2 last:mb-0">
-              <dt className="text-[0.7rem] font-bold uppercase tracking-widest text-amber-800 dark:text-amber-400/90">
+              <dt className="font-ui text-[0.7rem] font-bold uppercase tracking-widest text-amber-800 dark:text-amber-400/90">
                 {f.label}
               </dt>
               <dd
@@ -868,7 +868,7 @@ function BookOverviewBody({
       {intro.sections.map((section, si) => (
         <div key={si} className="mb-5 last:mb-0">
           {section.heading && (
-            <h3 className="mb-2 text-sm font-bold uppercase tracking-wide text-amber-800 dark:text-amber-300">
+            <h3 className="mb-2 font-ui text-sm font-bold uppercase tracking-wide text-amber-800 dark:text-amber-300">
               {section.heading}
             </h3>
           )}
@@ -3134,7 +3134,7 @@ export function ChunkReader({
                     aria-expanded={overviewExpanded}
                     className="flex w-full items-center justify-between gap-3 px-6 py-4 text-left transition-colors hover:bg-amber-50 dark:hover:bg-amber-400/10"
                   >
-                    <span className="flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-amber-800 dark:text-gold-bright">
+                    <span className="flex items-center gap-2 font-ui text-xs font-semibold uppercase tracking-widest text-amber-800 dark:text-gold-bright">
                       <svg
                         width="16"
                         height="16"

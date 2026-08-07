@@ -15,6 +15,20 @@ const config: Config = {
         // Scripture body text — slab text serif in the manner of esv.org's
         // Sentinel (read at font-light with generous leading).
         scripture: ["var(--font-scripture)", "Georgia", "Times New Roman", "serif"],
+        // Chrome and labels — the Overview card's headings and its Purpose /
+        // Author / Date labels. esv.org splits the same way: serif for prose,
+        // sans for the furniture around it. Their sans is Gotham, which is
+        // commercial; their own top nav declares no family at all and lands on
+        // the platform UI sans, which is what this resolves to.
+        ui: [
+          "system-ui",
+          "-apple-system",
+          "Segoe UI",
+          "Roboto",
+          "Helvetica Neue",
+          "Arial",
+          "sans-serif",
+        ],
         // Original-language book names on the library page. Greek and Hebrew
         // are separate families because no single free face covers both with
         // the pointing; the stack falls through to whichever the OS supplies.
