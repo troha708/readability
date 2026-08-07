@@ -49,11 +49,79 @@ export function scriptureRefLabel(r: ScripturePassage): string {
   return label;
 }
 
-// Notes cite books by full canonical name; the only variants that occur are
-// the singular "Psalm 2:7" and the alternate Song title.
+// Notes cite books both in full and abbreviated. The abbreviations are the
+// Tyndale corpus's own, counted across data/tyndale and data/tyndale-intros —
+// "1 Cor" alone appears 464 times, "2 Kgs" 483, "1 Sam" 379. Until these were
+// listed, none of them matched a book, so the bare-reference pass below
+// claimed the bare "4:14-17" out of "1 Cor 4:14-17" and resolved it against
+// whatever book was open: an Ephesians note linked to Ephesians 4:14-17.
+//
+// Variants are listed where the corpus uses them (1 Thes / 1 Thess, Ps / Pss).
+// "Phil" is Philippians and "Phlm" Philemon — the pair worth being careful
+// about, since one is a common prefix of the other's full name.
 const BOOK_ALIASES: Record<string, string> = {
   Psalm: "Psalms",
+  Ps: "Psalms",
+  Pss: "Psalms",
   "Song of Songs": "Song of Solomon",
+  Song: "Song of Solomon",
+  Gen: "Genesis",
+  Exod: "Exodus",
+  Ex: "Exodus",
+  Lev: "Leviticus",
+  Num: "Numbers",
+  Deut: "Deuteronomy",
+  Josh: "Joshua",
+  Judg: "Judges",
+  "1 Sam": "1 Samuel",
+  "2 Sam": "2 Samuel",
+  "1 Kgs": "1 Kings",
+  "2 Kgs": "2 Kings",
+  "1 Chr": "1 Chronicles",
+  "2 Chr": "2 Chronicles",
+  Neh: "Nehemiah",
+  Esth: "Esther",
+  Prov: "Proverbs",
+  Eccl: "Ecclesiastes",
+  Isa: "Isaiah",
+  Jer: "Jeremiah",
+  Lam: "Lamentations",
+  Ezek: "Ezekiel",
+  Dan: "Daniel",
+  Hos: "Hosea",
+  Obad: "Obadiah",
+  Jon: "Jonah",
+  Mic: "Micah",
+  Nah: "Nahum",
+  Hab: "Habakkuk",
+  Zeph: "Zephaniah",
+  Hag: "Haggai",
+  Zech: "Zechariah",
+  Mal: "Malachi",
+  Matt: "Matthew",
+  Rom: "Romans",
+  "1 Cor": "1 Corinthians",
+  "2 Cor": "2 Corinthians",
+  Gal: "Galatians",
+  Eph: "Ephesians",
+  Phil: "Philippians",
+  Col: "Colossians",
+  "1 Thes": "1 Thessalonians",
+  "2 Thes": "2 Thessalonians",
+  "1 Thess": "1 Thessalonians",
+  "2 Thess": "2 Thessalonians",
+  "1 Tim": "1 Timothy",
+  "2 Tim": "2 Timothy",
+  Phlm: "Philemon",
+  Philem: "Philemon",
+  Heb: "Hebrews",
+  Jas: "James",
+  "1 Pet": "1 Peter",
+  "2 Pet": "2 Peter",
+  "1 Jn": "1 John",
+  "2 Jn": "2 John",
+  "3 Jn": "3 John",
+  Rev: "Revelation",
 };
 
 const BOOK_PATTERN = [
@@ -72,7 +140,7 @@ function canonicalBook(matched: string): string {
 
 // "Malachi 3:1", "Daniel 7:13-14", "Genesis 1:31-2:1"
 const VERSE_REF = new RegExp(
-  `\\b(${BOOK_PATTERN})\\s+(\\d{1,3}):(\\d{1,3})(?:[-–](\\d{1,3})(?::(\\d{1,3}))?)?`,
+  `\\b(${BOOK_PATTERN})\\.?\\s+(\\d{1,3}):(\\d{1,3})(?:[-–](\\d{1,3})(?::(\\d{1,3}))?)?`,
   "g",
 );
 
@@ -80,13 +148,29 @@ const VERSE_REF = new RegExp(
 // (already claimed by the pass above; the lookahead just prevents a partial
 // re-match of its book-and-chapter prefix).
 const CHAPTER_REF = new RegExp(
-  `\\b(${BOOK_PATTERN})\\s+(\\d{1,3})(?:[-–](\\d{1,3}))?\\b(?!:)`,
+  `\\b(${BOOK_PATTERN})\\.?\\s+(\\d{1,3})(?:[-–](\\d{1,3}))?\\b(?!:)`,
   "g",
 );
 
 // Same-book shorthand: "(15:38)", "(14:32-42)". The colon keeps plain numbers
 // and ranges ("13 by 8", "13-14") from matching.
 const BARE_REF = /\b(\d{1,3}):(\d{1,3})(?:[-–](\d{1,3})(?::(\d{1,3}))?)?/g;
+
+// A capitalised word — optionally with a leading numeral, optionally
+// abbreviated with a full stop — sitting immediately before a bare reference.
+// That shape is a book name we don't recognise, so the digits after it are NOT
+// same-book shorthand and must not be resolved against the current book.
+//
+// This is the guard the "1 Cor" bug needed as much as the alias list: the
+// corpus also cites books we deliberately don't carry — 1 Maccabees, Sirach,
+// 2 Baruch, Tobit, 1 Enoch, the Mishnah tract Gittin — and without it those
+// become links to whatever chapter is open. An unrecognised book now yields
+// plain text, which is the honest outcome.
+//
+// Deliberately only capitalised words: "see 15:38" and "verses 15:38" are
+// genuine shorthand and keep working, because a lower-case word before the
+// digits is prose, not a citation.
+const PRECEDING_BOOK_WORD = /(?:^|[\s(])(?:[1-4]\s*)?[A-Z][A-Za-z]*\.?\s+$/;
 
 export function parseScriptureRefs(
   text: string,
@@ -141,6 +225,7 @@ export function parseScriptureRefs(
 
   for (const m of text.matchAll(BARE_REF)) {
     if (!isFree(m.index, m.index + m[0].length)) continue;
+    if (PRECEDING_BOOK_WORD.test(text.slice(0, m.index))) continue;
     const ref: ScriptureRef = {
       index: m.index,
       length: m[0].length,
