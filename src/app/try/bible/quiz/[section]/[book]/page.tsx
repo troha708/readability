@@ -64,7 +64,7 @@ export default async function QuizBookPage({ params }: Props) {
       </nav>
 
       <article className="mx-auto w-full max-w-2xl flex-1 px-6 pb-24 pt-6">
-        <h1 className="font-display text-3xl font-semibold tracking-tight text-neutral-900 dark:text-white">
+        <h1 className="font-display text-3xl font-bold tracking-tight text-neutral-900 dark:text-white">
           {group.book} Quiz
         </h1>
 
@@ -79,7 +79,7 @@ export default async function QuizBookPage({ params }: Props) {
 
           <QuizRunner questions={group.chapters.flatMap((c) => c.questions)} />
 
-          <h2 className="font-display pt-6 text-xl font-semibold text-neutral-900 dark:text-white">
+          <h2 className="font-display pt-6 text-xl font-bold text-neutral-900 dark:text-white">
             By chapter
           </h2>
           <ul className="flex flex-wrap gap-2">

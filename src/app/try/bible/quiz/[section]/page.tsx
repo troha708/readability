@@ -62,7 +62,7 @@ export default async function QuizSectionPage({ params }: Props) {
       </nav>
 
       <article className="mx-auto w-full max-w-2xl flex-1 px-6 pb-24 pt-6">
-        <h1 className="font-display text-3xl font-semibold tracking-tight text-neutral-900 dark:text-white">
+        <h1 className="font-display text-3xl font-bold tracking-tight text-neutral-900 dark:text-white">
           {section.title} Quiz
         </h1>
 
@@ -72,7 +72,7 @@ export default async function QuizSectionPage({ params }: Props) {
             {books.length === 1 ? "one book" : `${books.length} books`}.
           </p>
 
-          <h2 className="font-display pt-4 text-xl font-semibold text-neutral-900 dark:text-white">
+          <h2 className="font-display pt-4 text-xl font-bold text-neutral-900 dark:text-white">
             Choose a book
           </h2>
           <ul className="space-y-2">

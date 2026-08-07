@@ -29,7 +29,7 @@ export function LegalPage({
       </nav>
 
       <article className="mx-auto w-full max-w-2xl flex-1 px-6 pb-24 pt-6">
-        <h1 className="font-display text-3xl font-semibold tracking-tight text-neutral-900 dark:text-white">
+        <h1 className="font-display text-3xl font-bold tracking-tight text-neutral-900 dark:text-white">
           {title}
         </h1>
         <p className="mt-2 text-sm text-neutral-800 dark:text-white">
@@ -49,7 +49,7 @@ export function LegalPage({
 export function LegalSection({ heading, children }: { heading: string; children: React.ReactNode }) {
   return (
     <section className="space-y-3">
-      <h2 className="font-display text-lg font-semibold text-neutral-900 dark:text-white">{heading}</h2>
+      <h2 className="font-display text-lg font-bold text-neutral-900 dark:text-white">{heading}</h2>
       {children}
     </section>
   );

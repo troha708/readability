@@ -331,7 +331,7 @@ function getParserOptions(
                 anchor for verse-1 text and the selection toolbar never opens. */}
             <span
               data-verse-num={1}
-              className="float-left mr-2.5 mt-[0.08em] font-display text-[3.4em] font-semibold leading-[0.78] text-amber-700 dark:text-amber-400"
+              className="float-left mr-2.5 mt-[0.08em] font-display text-[3.4em] font-bold leading-[0.78] text-amber-700 dark:text-amber-400"
             >
               {chapterNumber}
             </span>

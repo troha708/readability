@@ -61,7 +61,7 @@ export function RandomQuiz({
   return (
     <>
       <div className="flex items-baseline justify-between gap-4">
-        <h2 className="font-display text-xl font-semibold text-neutral-900 dark:text-white">
+        <h2 className="font-display text-xl font-bold text-neutral-900 dark:text-white">
           Random
         </h2>
         <button

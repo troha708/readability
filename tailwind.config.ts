@@ -11,7 +11,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        display: ["var(--font-display)", "ui-serif", "Georgia", "serif"],
+        display: ["var(--font-display)", "Baskerville", "Georgia", "ui-serif", "serif"],
         // Scripture body text — slab text serif in the manner of esv.org's
         // Sentinel (read at font-light with generous leading).
         scripture: ["var(--font-scripture)", "Georgia", "Times New Roman", "serif"],

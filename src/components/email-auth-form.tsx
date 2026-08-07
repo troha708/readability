@@ -40,7 +40,7 @@ const COPY: Record<"login" | "signup", Copy> = {
 // Shared field and button styling. The form used to sit on the body's Arial
 // with a glossy amber-600 button — heavy drop shadow, a hover shadow on top of
 // it, and an active scale — which matched nothing else on the site. It's on
-// Bitter and Fraunces now like every other document page, and the button takes
+// Bitter and the display face now like every other document page, and the button takes
 // the same muted gold fill as the library's resume button.
 //
 // The fill also fixes a real defect: amber-600 (#d3a83c) under white text
@@ -160,7 +160,7 @@ export function EmailAuthForm({ mode }: { mode: "login" | "signup" }) {
 
   return (
     <div className="w-full max-w-sm">
-      <h1 className="font-display text-3xl font-semibold tracking-tight text-neutral-900 dark:text-white">
+      <h1 className="font-display text-3xl font-bold tracking-tight text-neutral-900 dark:text-white">
         {step === "email" ? copy.heading : "Check your email"}
       </h1>
       <p className="mt-2 font-scripture text-[15px] leading-relaxed text-neutral-500 dark:text-neutral-400">

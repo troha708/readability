@@ -29,7 +29,7 @@ export default function SupportPage() {
       </nav>
 
       <article className="mx-auto w-full max-w-2xl flex-1 px-6 pb-24 pt-6">
-        <h1 className="font-display text-3xl font-semibold tracking-tight text-neutral-900 dark:text-white">
+        <h1 className="font-display text-3xl font-bold tracking-tight text-neutral-900 dark:text-white">
           Support Readability
         </h1>
 
