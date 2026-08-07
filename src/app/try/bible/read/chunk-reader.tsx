@@ -76,7 +76,7 @@ const RAIL_WIDTH = 216;
 // set: same border, same fill, same padding, same size. Only the side they
 // round on and their vertical position differ.
 const BOX_CLASS =
-  "z-10 hidden border border-current bg-white/95 py-3 text-gold backdrop-blur transition-[opacity,color,border-color] duration-300 hover:text-gold-deep dark:bg-neutral-925/95 dark:hover:text-gold-bright xl:block";
+  "z-10 hidden bg-white/95 py-3 text-gold backdrop-blur transition-[opacity,color] duration-300 hover:text-gold-deep dark:bg-neutral-925/95 dark:hover:text-gold-bright xl:block";
 
 // The warm reveal: the edge line lights up AND throws a soft spill sideways
 // onto the page — both, but at roughly half the strength of the first cut,
@@ -2756,7 +2756,7 @@ export function ChunkReader({
             onClick={() => setLeftRailOpen(true)}
             aria-label="Show navigation panel"
             title="Navigation"
-            className={`fixed left-0 top-24 rounded-r-lg border-l-0 pl-1.5 pr-2 ${BOX_CLASS} ${
+            className={`fixed left-0 top-24 rounded-r-lg pl-1.5 pr-2 ${BOX_CLASS} ${
               leftRailOpen ? "pointer-events-none opacity-0" : "opacity-100"
             }`}
           >
@@ -2781,7 +2781,7 @@ export function ChunkReader({
               // 42px: the tabs are 46px tall and the spanner's top edge is at
               // 96, so this lands its bottom at 88 — an 8px gap, rather than
               // the two boxes touching or overlapping.
-              className={`fixed right-0 top-[2.625rem] rounded-l-lg border-r-0 pl-2 pr-1.5 ${BOX_CLASS} ${
+              className={`fixed right-0 top-[2.625rem] rounded-l-lg pl-2 pr-1.5 ${BOX_CLASS} ${
                 rightRailOpen ? "pointer-events-none opacity-0" : "opacity-100"
               }`}
             >
@@ -2807,7 +2807,7 @@ export function ChunkReader({
             onClick={() => setRightRailOpen(true)}
             aria-label="Show reading tools"
             title="Tools"
-            className={`fixed right-0 top-24 rounded-l-lg border-r-0 pl-2 pr-1.5 ${BOX_CLASS} ${
+            className={`fixed right-0 top-24 rounded-l-lg pl-2 pr-1.5 ${BOX_CLASS} ${
               rightRailOpen ? "pointer-events-none opacity-0" : "opacity-100"
             }`}
           >

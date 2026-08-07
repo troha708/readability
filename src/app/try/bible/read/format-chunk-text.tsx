@@ -331,11 +331,11 @@ function getParserOptions(
                 anchor for verse-1 text and the selection toolbar never opens. */}
             <span
               data-verse-num={1}
-              // 3.0em, down from 3.4: Libre Baskerville has a taller x-height
+              // 3.1em, down from 3.4: Libre Baskerville has a taller x-height
               // and heavier stems than Fraunces did, so the numeral gained
               // apparent size when the face changed even though the em value
               // did not.
-              className="float-left mr-2.5 mt-[0.08em] font-display text-[3em] font-bold leading-[0.78] text-amber-700 dark:text-amber-400"
+              className="float-left mr-2.5 mt-[0.08em] font-display text-[3.1em] font-bold leading-[0.78] text-amber-700 dark:text-amber-400"
             >
               {chapterNumber}
             </span>
