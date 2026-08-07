@@ -22,7 +22,9 @@ const config: Config = {
         // Grey ramp taken from esv.org's palette — their light and black
         // themes land almost slot-for-slot on Tailwind's neutral scale
         // (800 = dark surface, 700 = borders and light-theme text,
-        // 400 = secondary, 300 = black-theme text). 925 is the dark READING
+        // 400 = secondary, 300 = black-theme text). 300 carries the
+        // scripture in dark mode and is the same value as --foreground in
+        // globals.css — keep the two in step. 925 is the dark READING
         // GROUND: a warm near-black (owner-picked against Reddit's dark mode,
         // whose measured ground is #13120E) — pages sit on it and the cooler
         // 900/800 become the raised-surface steps above it. It has since
@@ -35,7 +37,7 @@ const config: Config = {
           50: "#fafafa",
           100: "#f2f2f2",
           200: "#dce0e3",
-          300: "#d3d7da",
+          300: "#cdd1d4",
           400: "#9a9fa3",
           500: "#75797d",
           600: "#5e6266",
