@@ -3,7 +3,6 @@ import {
   Bitter,
   Fraunces,
   Gentium_Plus,
-  Montserrat,
   Noto_Serif_Hebrew,
 } from "next/font/google";
 import { SITE_URL } from "@/lib/site";
@@ -24,16 +23,6 @@ const scripture = Bitter({
   subsets: ["latin"],
   style: ["normal", "italic"],
   variable: "--font-scripture",
-  display: "swap",
-});
-
-// Geometric sans for figures and small uppercase labels — chapter counts,
-// division heads, metadata. Stands in for esv.org's Gotham, which is a
-// commercial Hoefler & Co face we can't ship from an AGPL repo; Montserrat
-// comes out of the same early-twentieth-century signage lettering.
-const ui = Montserrat({
-  subsets: ["latin"],
-  variable: "--font-ui",
   display: "swap",
 });
 
@@ -138,7 +127,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${display.variable} ${scripture.variable} ${ui.variable} ${greek.variable} ${hebrew.variable}`}
+      className={`${display.variable} ${scripture.variable} ${greek.variable} ${hebrew.variable}`}
       suppressHydrationWarning
     >
       <head>

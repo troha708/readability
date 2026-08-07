@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { Fragment, useEffect, useRef, useState } from "react";
 import {
   getLastReadPosition,
   getReadingMode,
@@ -16,7 +16,7 @@ import { AuthButton } from "@/components/auth-button";
 import { Logo } from "@/components/logo";
 import { useUser } from "@/hooks/useUser";
 import { bibleBookSortIndex, bookGenre } from "@/lib/bible-book-order";
-import { originalName, divisionOriginalName } from "@/lib/book-names-original";
+import { originalName } from "@/lib/book-names-original";
 import { isOverviewAtStart } from "@/lib/overview-placement";
 import { computeContinueTarget } from "@/lib/continue-target";
 import { SearchModal } from "@/components/search-modal";
@@ -85,7 +85,7 @@ export function BibleRoadmap({
   const [expandedSections, setExpandedSections] = useState<Set<string>>(new Set(["OT", "NT"]));
   // The active (continue-reading) book's row, scrolled to on load for
   // returning readers so they land on where they left off.
-  const activeBookRef = useRef<HTMLDivElement | null>(null);
+  const activeBookRef = useRef<HTMLTableRowElement | null>(null);
   const didScrollToActive = useRef(false);
   const [continueTarget, setContinueTarget] = useState<{ book: string; chapter: number }>({
     book: "John",
@@ -207,12 +207,12 @@ export function BibleRoadmap({
     return (
       <Link
         href={readUrl(book.name, targetChapter) + "&overview=1"}
-        // Sits in the chapter grid rather than above it, spanning two of the
-        // 2.75rem tracks — the word doesn't fit one cell, and letting it span
+        // Sits in the chapter grid rather than above it, spanning three of the
+        // 2.25rem tracks — the word doesn't fit one cell, and letting it span
         // whole tracks keeps the squares after it in column.
-        className="col-span-2 inline-flex h-11 w-full items-center justify-center p-0.5"
+        className="col-span-3 inline-flex h-9 w-full items-center justify-center p-px"
       >
-        <span className="flex h-full w-full items-center justify-center rounded border border-amber-500/30 bg-amber-500/10 font-ui text-[11px] font-semibold text-amber-700 transition-colors hover:bg-amber-500/20 dark:border-amber-400/25 dark:bg-amber-400/10 dark:text-amber-400 dark:hover:bg-amber-400/20">
+        <span className="flex h-full w-full items-center justify-center border border-neutral-200 font-scripture text-[11px] italic text-neutral-500 transition-colors hover:border-neutral-400 dark:border-neutral-800 dark:text-neutral-400 dark:hover:border-neutral-600">
           Overview
         </span>
       </Link>
@@ -224,7 +224,19 @@ export function BibleRoadmap({
    * sized to how much of the book is read — progress as a property of the row,
    * not the reason the row exists.
    */
-  function renderBookRow(book: BookInfo, isActiveBook: boolean, isStudy: boolean) {
+  /**
+   * One book: two rows of a plain table. The first is the book — English name,
+   * original name, chapter count. The second only exists when the row is open
+   * and holds the chapter grid.
+   *
+   * Deliberately close to bare HTML: no rule per row, no accent on every line,
+   * no second family for the figures. The earlier version put a hairline under
+   * every book, an uppercase letter-spaced label over each division and gold on
+   * all 66 rows, and the page read as decorated rather than set. Standard
+   * Ebooks' contents page is a list of numerals 2em apart and nothing else;
+   * this aims at that end.
+   */
+  function renderBookRows(book: BookInfo, isActiveBook: boolean, isStudy: boolean) {
     const hasChapters = book.chapters.length > 0;
     const completedCount = book.chapters.filter((ch) => {
       const key = `${book.name}:${ch.chapterNumber}`;
@@ -234,169 +246,123 @@ export function BibleRoadmap({
     const isExpanded = expandedBooks.has(book.name);
     const orig = originalName(book.name);
     const purpose = purposeByBook[book.name];
-    const pct = hasChapters ? Math.round((completedCount / book.chapters.length) * 100) : 0;
 
     return (
-      <div
-        key={book.name}
-        ref={isActiveBook ? activeBookRef : undefined}
-        className="scroll-mt-24 border-b border-neutral-200 last:border-b-0 dark:border-neutral-800"
-      >
-        {/* Rendered as a real link to chapter 1 so crawlers get a
-            server-rendered path into every book — the chapter run below only
-            exists when expanded — but click toggles the row open.
-            draggable={false} matters: an anchor is draggable by default, so
-            dragging across the row starts a drag instead of selecting the
-            text, and the Greek and Hebrew are exactly what you'd want to
-            copy. The selection guard then stops the release-click from
-            collapsing the row you just selected out of. */}
-        <a
-          href={
-            hasChapters
-              ? `/try/bible/read?book=${encodeURIComponent(book.name)}&chapter=1&version=${versionAbbr}`
-              : undefined
-          }
-          draggable={false}
-          onClick={(e) => {
-            e.preventDefault();
-            if (!hasChapters) return;
-            const sel = typeof window !== "undefined" ? window.getSelection() : null;
-            if (sel && sel.type === "Range" && sel.toString().trim()) return;
-            toggleBook(book.name);
-          }}
-          aria-expanded={hasChapters ? isExpanded : undefined}
-          className={`flex select-text items-baseline gap-2 py-3 ${
-            hasChapters ? "cursor-pointer" : "cursor-default"
-          }`}
-        >
-          {/* The disclosure arrow. The row was expandable before but said so
-              nowhere — the only cue was the cursor. */}
-          <span className="flex h-5 w-4 shrink-0 select-none items-center justify-center self-center">
-            {hasChapters && (
-              <svg
-                className={`h-3.5 w-3.5 text-neutral-400 transition-transform duration-200 dark:text-neutral-500 ${
-                  isExpanded ? "rotate-90" : ""
-                }`}
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2.5}
-                aria-hidden="true"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-              </svg>
-            )}
-          </span>
-          <span className="relative shrink-0">
-            <span
-              className={`font-scripture text-[17px] font-semibold ${
+      <Fragment key={book.name}>
+        <tr ref={isActiveBook ? activeBookRef : undefined} className="scroll-mt-24 align-baseline">
+          {/* w-px + nowrap on the outer columns, w-full on the middle one:
+              auto table layout otherwise splits the slack three ways and
+              leaves the Greek floating in the centre of the row instead of
+              sitting beside the English. This is the contents-page
+              arrangement — title left, figure right, space between. */}
+          <td className="w-px whitespace-nowrap py-1.5 pr-3">
+            {/* A real link to chapter 1 so crawlers reach every book — the
+                chapter grid below only exists when open — but click toggles.
+                draggable={false} and the selection guard keep the row's text
+                selectable: an anchor drags by default, which turns a
+                drag-select of the Greek into a drag, and the release-click
+                would then collapse the row you just selected out of. */}
+            <a
+              href={
+                hasChapters
+                  ? `/try/bible/read?book=${encodeURIComponent(book.name)}&chapter=1&version=${versionAbbr}`
+                  : undefined
+              }
+              draggable={false}
+              onClick={(e) => {
+                e.preventDefault();
+                if (!hasChapters) return;
+                const sel = typeof window !== "undefined" ? window.getSelection() : null;
+                if (sel && sel.type === "Range" && sel.toString().trim()) return;
+                toggleBook(book.name);
+              }}
+              aria-expanded={hasChapters ? isExpanded : undefined}
+              className={`select-text font-scripture text-[15px] ${
+                hasChapters ? "cursor-pointer" : "cursor-default"
+              } ${
                 isActiveBook
                   ? "text-gold dark:text-gold-bright"
                   : hasChapters
-                    ? "text-neutral-800 dark:text-neutral-200"
+                    ? "text-neutral-800 dark:text-neutral-300"
                     : "text-neutral-400 dark:text-neutral-600"
               }`}
             >
-              {book.name}
-            </span>
-            {/* Progress as a rule under the book name. It needs the faint
-                track behind it: without one, a book two chapters into
-                twenty-one draws a 9%-wide dash under the first syllable and
-                reads as a stray mark rather than a measure. */}
-            {pct > 0 && (
+              {/* A text triangle rather than an SVG — it is the bare-HTML
+                  disclosure marker, and it costs no markup. */}
               <span
                 aria-hidden="true"
-                className="absolute -bottom-1 left-0 block h-0.5 w-full bg-neutral-200 dark:bg-neutral-800"
+                className="mr-1.5 inline-block w-2 select-none text-[10px] text-neutral-400 dark:text-neutral-600"
               >
-                <span
-                  className="block h-full bg-gold dark:bg-gold-bright"
-                  style={{ width: `${pct}%` }}
-                />
+                {hasChapters ? (isExpanded ? "▾" : "▸") : ""}
               </span>
+              {book.name}
+            </a>
+          </td>
+          <td className="w-full select-text py-1.5 pr-3">
+            {orig && (
+              <OriginalTitle
+                name={orig}
+                className="text-[15px] text-neutral-500 dark:text-neutral-400"
+              />
             )}
-          </span>
-          {orig && (
-            <OriginalTitle
-              name={orig}
-              className="min-w-0 shrink truncate text-[15px] text-gold dark:text-gold-bright"
-            />
-          )}
-          {/* The transliteration was a title attribute, which is a hover
-              tooltip — invisible on touch, and the whole point of the column
-              is that most readers can't sound out שְׁמוֹת. It hides below sm
-              only because the row runs out of width there. */}
-          {orig && (
-            <span className="hidden shrink-0 whitespace-nowrap font-scripture text-[13px] italic text-neutral-400 dark:text-neutral-500 sm:inline">
-              {orig.translit}
-            </span>
-          )}
-          <span className="ml-auto shrink-0 whitespace-nowrap pl-2 font-ui text-[11px] font-medium tracking-[0.25px] tabular-nums text-neutral-400 dark:text-neutral-500">
-            {book.chapters.length}
-            {completedCount > 0 &&
-              (completedCount === book.chapters.length
-                ? " · all read"
-                : ` · ${completedCount} read`)}
-          </span>
-        </a>
-
+          </td>
+          <td className="w-px whitespace-nowrap py-1.5 text-right font-scripture text-[13px] tabular-nums text-neutral-400 dark:text-neutral-500">
+            {completedCount > 0
+              ? `${completedCount}/${book.chapters.length}`
+              : book.chapters.length}
+          </td>
+        </tr>
         {isExpanded && hasChapters && (
-          <div className="pb-2">
-            {purpose && (
-              <p className="mb-1 max-w-prose font-scripture text-[15px] italic leading-relaxed text-neutral-500 dark:text-neutral-400">
-                {purpose}
-              </p>
-            )}
-            {/* Chapters as a grid of squares. Fixed 2.75rem tracks rather
-                than flex-wrap so the squares stay square and line up in
-                columns when they wrap — Psalms wraps seven times, and ragged
-                rows read as a mistake. The box is 40px inside a 44px cell, so
-                the tap target clears the platform minimum where the old 28px
-                chip didn't. */}
-            <div className="grid grid-cols-[repeat(auto-fill,2.75rem)]">
-              {isOverviewAtStart(book.name) && renderOverviewLink(book)}
-              {book.chapters.map((ch) => {
-                const key = `${book.name}:${ch.chapterNumber}`;
-                const readComplete = !!readingDone[key];
-                const quizComplete = !!quizDone[key];
-                const isComplete = isStudy ? readComplete && quizComplete : readComplete;
-                const isNextUnread =
-                  isActiveBook && ch.chapterNumber === continueTarget.chapter && !isComplete;
-                // In Study mode a chapter that's read but not yet quizzed is a
-                // real third state, so the rule under the figure goes dotted
-                // rather than the row growing a second line for it.
-                const partial = isStudy && readComplete && !quizComplete;
-                return (
-                  <Link
-                    key={ch.chapterNumber}
-                    href={readUrl(book.name, ch.chapterNumber)}
-                    aria-label={`${book.name} ${ch.chapterNumber}`}
-                    className="inline-flex h-11 w-11 items-center justify-center p-0.5 font-ui text-[13px] tabular-nums"
-                  >
-                    <span
-                      className={`flex h-full w-full items-center justify-center rounded border transition-colors ${
-                        isNextUnread
-                          ? "border-amber-500 bg-amber-500 font-bold text-neutral-950 dark:border-amber-400 dark:bg-amber-400"
-                          : isComplete
-                            ? "border-amber-500/30 bg-amber-500/10 font-semibold text-amber-700 dark:border-amber-400/25 dark:bg-amber-400/10 dark:text-amber-400"
-                            : partial
-                              ? // Study mode's third state: read but not yet
-                                // quizzed. Outlined, not filled, so it reads as
-                                // started rather than done.
-                                "border-dashed border-amber-500/50 text-amber-700/80 dark:border-amber-400/40 dark:text-amber-400/70"
-                              : "border-neutral-200 bg-neutral-50 text-neutral-500 hover:bg-neutral-100 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-400 dark:hover:bg-neutral-800"
-                      }`}
+          <tr>
+            <td colSpan={3} className="pb-3">
+              {purpose && (
+                <p className="mb-2 max-w-prose font-scripture text-[13px] italic leading-relaxed text-neutral-500 dark:text-neutral-500">
+                  {purpose}
+                </p>
+              )}
+              {/* Chapters on a fixed 2.25rem track so the squares stay square
+                  and line up in columns when they wrap. */}
+              <div className="grid grid-cols-[repeat(auto-fill,2.25rem)]">
+                {isOverviewAtStart(book.name) && renderOverviewLink(book)}
+                {book.chapters.map((ch) => {
+                  const key = `${book.name}:${ch.chapterNumber}`;
+                  const readComplete = !!readingDone[key];
+                  const quizComplete = !!quizDone[key];
+                  const isComplete = isStudy ? readComplete && quizComplete : readComplete;
+                  const isNextUnread =
+                    isActiveBook && ch.chapterNumber === continueTarget.chapter && !isComplete;
+                  // Study mode's third state: read but not yet quizzed.
+                  const partial = isStudy && readComplete && !quizComplete;
+                  return (
+                    <Link
+                      key={ch.chapterNumber}
+                      href={readUrl(book.name, ch.chapterNumber)}
+                      aria-label={`${book.name} ${ch.chapterNumber}`}
+                      className="inline-flex h-9 w-9 items-center justify-center p-px font-scripture text-[12px] tabular-nums"
                     >
-                      {ch.chapterNumber}
-                    </span>
-                  </Link>
-                );
-              })}
-              {/* Narrative books' recap lives after the story — link last. */}
-              {!isOverviewAtStart(book.name) && renderOverviewLink(book)}
-            </div>
-          </div>
+                      <span
+                        className={`flex h-full w-full items-center justify-center border ${
+                          isNextUnread
+                            ? "border-gold bg-gold font-semibold text-white dark:border-gold-bright dark:bg-gold-bright dark:text-neutral-950"
+                            : isComplete
+                              ? "border-neutral-400 text-neutral-700 dark:border-neutral-500 dark:text-neutral-300"
+                              : partial
+                                ? "border-dashed border-neutral-400 text-neutral-600 dark:border-neutral-600 dark:text-neutral-400"
+                                : "border-neutral-200 text-neutral-400 hover:border-neutral-400 dark:border-neutral-800 dark:text-neutral-500 dark:hover:border-neutral-600"
+                        }`}
+                      >
+                        {ch.chapterNumber}
+                      </span>
+                    </Link>
+                  );
+                })}
+                {/* Narrative books' recap lives after the story — link last. */}
+                {!isOverviewAtStart(book.name) && renderOverviewLink(book)}
+              </div>
+            </td>
+          </tr>
         )}
-      </div>
+      </Fragment>
     );
   }
 
@@ -408,9 +374,7 @@ export function BibleRoadmap({
     const visibleBooks = sectionBooks;
     const isStudy = mode === "study";
 
-    // Books grouped into their canon divisions, in canonical order. The
-    // division was already in the data (BOOK_GENRES) — it just rendered as a
-    // 0.6rem label floated into the right margin.
+    // Books grouped into their canon divisions, in canonical order.
     const divisions: { genre: string; books: BookInfo[] }[] = [];
     for (const book of visibleBooks) {
       const genre = bookGenre(book.name) ?? "Other";
@@ -420,65 +384,44 @@ export function BibleRoadmap({
     }
 
     return (
-      <div className="mb-4">
+      <div className="mb-8">
         <button
           onClick={() => toggleSection(testament)}
-          className="mb-4 flex w-full items-center gap-3"
+          aria-expanded={isSectionExpanded}
+          className="mb-2 font-scripture text-[15px] font-semibold text-neutral-800 dark:text-neutral-300"
         >
-          <div className="h-px flex-1 bg-neutral-200 dark:bg-neutral-700" />
-          <span className="flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-neutral-400 dark:text-neutral-500">
-            {label}
-            {!isSectionExpanded && (
-              <span className="normal-case tracking-normal">
-                · {sectionBooks.length} books
-              </span>
-            )}
-            <svg
-              className={`h-3 w-3 transition-transform duration-200 ${isSectionExpanded ? "rotate-90" : ""}`}
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={2.5}
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-            </svg>
+          <span
+            aria-hidden="true"
+            className="mr-1.5 inline-block w-2 text-[10px] text-neutral-400 dark:text-neutral-600"
+          >
+            {isSectionExpanded ? "▾" : "▸"}
           </span>
-          <div className="h-px flex-1 bg-neutral-200 dark:bg-neutral-700" />
+          {label}
         </button>
-        {!isSectionExpanded ? null : (
-          <div className="flex flex-col gap-7">
-            {divisions.map(({ genre, books: divisionBooks }) => {
-              const divOrig = divisionOriginalName(genre);
-              const chapterTotal = divisionBooks.reduce((n, b) => n + b.chapters.length, 0);
-              return (
-                <div key={genre}>
-                  {/* The division head. This is the one Bible-specific thing
-                      the old page had, and it rendered as a floated 0.6rem
-                      grey label — it carries the structure now. */}
-                  <div className="flex items-baseline gap-3 border-b border-neutral-300 pb-1 dark:border-neutral-700">
-                    <span className="font-ui text-[11px] font-medium uppercase tracking-[1.2px] text-neutral-500 dark:text-neutral-400">
+        {isSectionExpanded && (
+          <table className="w-full border-collapse text-left">
+            <tbody>
+              {divisions.map(({ genre, books: divisionBooks }) => (
+                <Fragment key={genre}>
+                  {/* The division, as a plain row. It was an uppercase
+                      letter-spaced eyebrow with a right-aligned count; that
+                      treatment was most of what made the table read as
+                      decorated. */}
+                  <tr>
+                    <th
+                      colSpan={3}
+                      className="pb-1 pt-5 text-left font-scripture text-[13px] font-normal italic text-neutral-400 dark:text-neutral-500"
+                    >
                       {genre}
-                    </span>
-                    {divOrig && (
-                      <OriginalTitle
-                        name={divOrig}
-                        className="text-[15px] text-gold dark:text-gold-bright"
-                      />
-                    )}
-                    <span className="ml-auto whitespace-nowrap font-ui text-[11px] font-medium tracking-[0.25px] tabular-nums text-neutral-400 dark:text-neutral-500">
-                      {divisionBooks.length} {divisionBooks.length === 1 ? "book" : "books"} ·{" "}
-                      {chapterTotal} chapters
-                    </span>
-                  </div>
-                  <div>
-                    {divisionBooks.map((book) =>
-                      renderBookRow(book, book.name === continueTarget.book, isStudy),
-                    )}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
+                    </th>
+                  </tr>
+                  {divisionBooks.map((book) =>
+                    renderBookRows(book, book.name === continueTarget.book, isStudy),
+                  )}
+                </Fragment>
+              ))}
+            </tbody>
+          </table>
         )}
       </div>
     );
