@@ -15,7 +15,8 @@ export default function manifest(): MetadataRoute.Manifest {
     start_url: "/try/bible/start",
     scope: "/",
     display: "standalone",
-    background_color: "#14110f",
+    // Splash ground — tracks the dark reading ground (neutral-925).
+    background_color: "#100e0d",
     theme_color: "#d3a83c",
     categories: ["education", "books", "lifestyle"],
     icons: [

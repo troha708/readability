@@ -11,13 +11,18 @@
 }
 
 /* Dark reading ground: a warm near-black (neutral-925; sampled against
-   Reddit's dark mode #13120E) with esv.org's #d3d7da text — the contrast
-   stays ~13:1, well below the old glaring 17:1. ESV's #202121/#282a2b
-   greys remain as the raised-surface steps (cards, sheets, panels). The
-   landing and static shells keep their own near-black bg-neutral-950. */
+   Reddit's dark mode #13120E). It sat at #14110f, a visible step warmer
+   and lighter than the library page's #0a0a0a; it now travels ~40% of
+   that gap to #100e0d — near enough that moving between the two pages
+   doesn't register as a change of surface, still warm enough not to be
+   the flat neutral 950. Text comes down with it: on the darker ground
+   #d3d7da climbed to 13.3:1, so it steps back to #cdd1d4 (12.5:1) and
+   the page reads a shade calmer than before rather than brighter. ESV's
+   #202121/#282a2b greys remain the raised-surface steps (cards, sheets,
+   panels). The landing and static shells keep bg-neutral-950. */
 .dark {
-  --background: #14110f;
-  --foreground: #d3d7da;
+  --background: #100e0d;
+  --foreground: #cdd1d4;
 }
 
 body {
