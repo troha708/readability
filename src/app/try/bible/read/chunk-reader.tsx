@@ -944,9 +944,9 @@ export function ChunkReader({
   // Display settings
   const [dark, setDark] = useState(false);
   const [bionic, setBionic] = useState(false);
-  // Verse-number superscripts, OFF by default: the chapter reads as prose
-  // until you ask for the apparatus. Opt back in from the settings menu.
-  const [verseNumbers, setVerseNumbers] = useState(false);
+  // Verse-number superscripts, on by default; hideable from the settings menu
+  // for a more natural read.
+  const [verseNumbers, setVerseNumbers] = useState(true);
   // BSB ships cross-references (parallel passages) beside section headings.
   // Off by default; readers can opt in via the settings menu under BSB.
   const [showCrossRefs, setShowCrossRefs] = useState(false);
@@ -1245,10 +1245,9 @@ export function ChunkReader({
   useEffect(() => {
     setDark(document.documentElement.classList.contains("dark"));
     setBionic(localStorage.getItem("bionic") === "true");
-    // === "true", not !== "false": absent now means off. Readers who turned
-    // them on or off explicitly keep what they chose — only the untouched
-    // default moves.
-    setVerseNumbers(localStorage.getItem("verseNumbers") === "true");
+    // !== "false", not === "true": absent means on. Readers who explicitly
+    // turned them off keep that; only the untouched default moves.
+    setVerseNumbers(localStorage.getItem("verseNumbers") !== "false");
     setShowCrossRefs(localStorage.getItem("bsbCrossRefs") === "true");
     setRedLetter(localStorage.getItem("redLetter") === "true");
     setMode(getReadingMode());
@@ -2756,7 +2755,7 @@ export function ChunkReader({
             onClick={() => setLeftRailOpen(true)}
             aria-label="Show navigation panel"
             title="Navigation"
-            className={`fixed left-0 top-24 rounded-r-lg pl-1.5 pr-2 ${BOX_CLASS} ${
+            className={`fixed left-0 top-24 rounded-r-lg pl-3 pr-2 ${BOX_CLASS} ${
               leftRailOpen ? "pointer-events-none opacity-0" : "opacity-100"
             }`}
           >
@@ -2781,7 +2780,7 @@ export function ChunkReader({
               // 42px: the tabs are 46px tall and the spanner's top edge is at
               // 96, so this lands its bottom at 88 — an 8px gap, rather than
               // the two boxes touching or overlapping.
-              className={`fixed right-0 top-[2.625rem] rounded-l-lg pl-2 pr-1.5 ${BOX_CLASS} ${
+              className={`fixed right-0 top-[2.625rem] rounded-l-lg pl-2 pr-3 ${BOX_CLASS} ${
                 rightRailOpen ? "pointer-events-none opacity-0" : "opacity-100"
               }`}
             >
@@ -2807,7 +2806,7 @@ export function ChunkReader({
             onClick={() => setRightRailOpen(true)}
             aria-label="Show reading tools"
             title="Tools"
-            className={`fixed right-0 top-24 rounded-l-lg pl-2 pr-1.5 ${BOX_CLASS} ${
+            className={`fixed right-0 top-24 rounded-l-lg pl-2 pr-3 ${BOX_CLASS} ${
               rightRailOpen ? "pointer-events-none opacity-0" : "opacity-100"
             }`}
           >
