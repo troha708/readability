@@ -52,6 +52,8 @@ import { IS_MOBILE } from "@/lib/build-target";
 import type { BookPlaces, ChapterPlaces } from "@/lib/content/places";
 import { VerseSheet } from "./verse-sheet";
 import { ChapterMapSheet } from "./chapter-map-sheet";
+import { ReadingHistorySheet } from "./reading-history-sheet";
+import { clearReadingHistory, recordChapterView } from "@/lib/reading-history";
 
 // ── Types ────────────────────────────────────────────────────
 
@@ -1114,6 +1116,8 @@ export function ChunkReader({
   // unmount the map mid-interaction.
   const [bookPlaces, setBookPlaces] = useState<BookPlaces | null>(null);
   const [mapSheet, setMapSheet] = useState<{ chapter: number; data: ChapterPlaces } | null>(null);
+  const [historyOpen, setHistoryOpen] = useState(false);
+  const [historyConfirmClear, setHistoryConfirmClear] = useState(false);
 
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
@@ -1137,6 +1141,14 @@ export function ChunkReader({
       cancelled = true;
     };
   }, [bookName]);
+
+  // Note the chapter in view for the history list. Keyed on the visible
+  // chapter, not on navigation, so scrolling from Mark 3 into Mark 4
+  // records Mark 4 as well — that is what someone means by "chapters I
+  // looked at". Re-visits move the entry rather than duplicating it.
+  useEffect(() => {
+    recordChapterView(bookName, visibleChapterNumber, versionAbbr);
+  }, [bookName, visibleChapterNumber, versionAbbr]);
 
   const chapterPlaces = bookPlaces?.[String(visibleChapterNumber)] ?? null;
   // How many places this chapter puts on the map. Located places only — the
@@ -2940,6 +2952,58 @@ export function ChunkReader({
             )}
           </button>
 
+          <button
+            onClick={() => setHistoryOpen(true)}
+            className={`flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-left text-xs font-medium tracking-[0.25px] ${
+              historyOpen
+                ? "bg-amber-100 text-amber-800 dark:bg-amber-900/50 dark:text-amber-400"
+                : `text-neutral-500 dark:text-neutral-400 ${PANEL_ROW_HOVER}`
+            }`}
+          >
+            {/* Clock with the hands set back — the usual history glyph. */}
+            <svg className="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M3 12a9 9 0 1 0 3-6.7L3 8" />
+              <path d="M3 4v4h4" />
+              <path d="M12 8v4l3 2" />
+            </svg>
+            History
+          </button>
+
+          {/* Deleting sits under viewing, as asked, but it empties the list
+              with no undo — so the row asks first rather than firing on the
+              click that lands in a rail you are moving the cursor through. */}
+          {historyConfirmClear ? (
+            <div className="flex items-center gap-1 px-2 py-1.5">
+              <button
+                onClick={() => {
+                  clearReadingHistory();
+                  setHistoryConfirmClear(false);
+                }}
+                className="rounded-md bg-red-600 px-2 py-1 text-[0.7rem] font-semibold text-white transition-colors hover:bg-red-700"
+              >
+                Delete
+              </button>
+              <button
+                onClick={() => setHistoryConfirmClear(false)}
+                className="rounded-md px-2 py-1 text-[0.7rem] font-medium text-neutral-500 transition-colors hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-200"
+              >
+                Cancel
+              </button>
+            </div>
+          ) : (
+            <button
+              onClick={() => setHistoryConfirmClear(true)}
+              className={`flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-left text-xs font-medium tracking-[0.25px] text-neutral-500 dark:text-neutral-400 ${PANEL_ROW_HOVER}`}
+            >
+              <svg className="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M3 6h18" />
+                <path d="M8 6V4h8v2" />
+                <path d="M19 6l-1 14H6L5 6" />
+              </svg>
+              Delete history
+            </button>
+          )}
+
           {/* Display settings — behind the same icon as on narrow screens, so
               the rail stays a short list of destinations rather than a wall of
               switches. The menu is wider than the panel and opens leftward
@@ -3297,6 +3361,7 @@ export function ChunkReader({
         )}
 
       <SearchModal open={searchOpen} onClose={() => setSearchOpen(false)} version={versionAbbr} />
+      {historyOpen && <ReadingHistorySheet onClose={() => setHistoryOpen(false)} />}
       {mapSheet && (
         <ChapterMapSheet
           bookName={bookName}
