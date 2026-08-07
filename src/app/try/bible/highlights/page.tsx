@@ -138,7 +138,7 @@ export default function HighlightsPage() {
     }`;
 
   return (
-    <main className="min-h-screen px-4 py-8">
+    <main className="min-h-screen bg-white px-4 py-8 dark:bg-neutral-950">
       <div className="mx-auto max-w-2xl">
         {/* Navbar */}
         <div className="mb-2 flex items-center justify-between">
@@ -148,10 +148,10 @@ export default function HighlightsPage() {
 
         {/* Header */}
         <div className="mb-6 text-center">
-          <h1 className="text-2xl font-bold text-neutral-900 dark:text-white">
+          <h1 className="font-display text-2xl font-bold text-neutral-900 dark:text-white">
             My Highlights & Notes
           </h1>
-          <p className="mt-1 text-sm text-neutral-500 dark:text-neutral-400">
+          <p className="mt-1 font-scripture text-sm text-neutral-500 dark:text-neutral-400">
             {totalCount} highlight{totalCount !== 1 ? "s" : ""} across{" "}
             {bookNames.length} book{bookNames.length !== 1 ? "s" : ""}
           </p>
@@ -236,19 +236,19 @@ export default function HighlightsPage() {
         </div>
 
         {loading ? (
-          <div className="py-20 text-center text-sm text-neutral-400">
+          <div className="py-20 text-center font-scripture text-sm text-neutral-400">
             Loading highlights...
           </div>
         ) : totalCount === 0 ? (
           <div className="py-20 text-center">
-            <p className="text-neutral-400 dark:text-neutral-500">
+            <p className="font-scripture text-neutral-400 dark:text-neutral-500">
               {filter === "notes"
                 ? "No highlights with notes yet."
                 : filter !== "all"
                   ? `No ${colorLabel(filter as HighlightColor)} highlights yet.`
                   : "No highlights yet."}
             </p>
-            <p className="mt-2 text-sm text-neutral-400 dark:text-neutral-500">
+            <p className="mt-2 font-scripture text-sm text-neutral-400 dark:text-neutral-500">
               Select text while reading to highlight it.
             </p>
           </div>
@@ -256,7 +256,7 @@ export default function HighlightsPage() {
           <div className="space-y-6">
             {bookNames.map((book) => (
               <div key={book}>
-                <h2 className="mb-2 text-sm font-bold uppercase tracking-wider text-neutral-400 dark:text-neutral-500">
+                <h2 className="mb-2 font-ui text-sm font-bold uppercase tracking-wider text-neutral-400 dark:text-neutral-500">
                   {book}
                 </h2>
                 <div className="space-y-2">
@@ -273,7 +273,7 @@ export default function HighlightsPage() {
                       >
                         <div className="flex items-center gap-2">
                           <span className={`h-3 w-3 shrink-0 rounded-full ${colorInfo.dot}`} />
-                          <span className="text-sm font-semibold text-neutral-800 dark:text-neutral-200">
+                          <span className="font-scripture text-sm font-semibold text-neutral-800 dark:text-neutral-200">
                             {entry.book} {entry.chapter}:{verseLabel}
                           </span>
                           <span className="text-[0.6rem] font-medium text-neutral-400 dark:text-neutral-500">
@@ -284,7 +284,7 @@ export default function HighlightsPage() {
                           </span>
                         </div>
                         {entry.highlight.note && (
-                          <p className="mt-1.5 pl-5 text-sm text-neutral-600 dark:text-neutral-400">
+                          <p className="mt-1.5 pl-5 font-scripture text-sm text-neutral-600 dark:text-neutral-400">
                             {entry.highlight.note}
                           </p>
                         )}

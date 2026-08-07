@@ -419,7 +419,7 @@ function NotesDrawer({
     <div className="border-b border-neutral-200 bg-neutral-50 px-4 py-4 dark:border-neutral-700 dark:bg-neutral-800">
       <div className="mx-auto max-w-2xl">
         <div className="mb-3 flex items-center justify-between">
-          <h2 className="text-sm font-bold text-neutral-700 dark:text-neutral-200">
+          <h2 className="font-display text-sm font-bold text-neutral-700 dark:text-neutral-200">
             Highlights & Notes — {bookName}
           </h2>
           <button
@@ -433,10 +433,10 @@ function NotesDrawer({
 
         {groupedHighlights.length === 0 ? (
           <div className="py-6 text-center">
-            <p className="text-sm text-neutral-400 dark:text-neutral-500">
+            <p className="font-scripture text-sm text-neutral-400 dark:text-neutral-500">
               No highlights yet.
             </p>
-            <p className="mt-1 text-xs text-neutral-400 dark:text-neutral-500">
+            <p className="mt-1 font-scripture text-xs text-neutral-400 dark:text-neutral-500">
               Select any text while reading, then pick a color to highlight it.
             </p>
           </div>
@@ -444,7 +444,7 @@ function NotesDrawer({
           <div className="max-h-72 space-y-4 overflow-y-auto pr-1">
             {chapters.map((ch) => (
               <div key={ch}>
-                <p className="mb-1.5 text-xs font-bold uppercase tracking-wider text-neutral-400 dark:text-neutral-500">
+                <p className="mb-1.5 font-ui text-xs font-bold uppercase tracking-wider text-neutral-400 dark:text-neutral-500">
                   {chapterUnit(bookName)} {ch}
                 </p>
                 <div className="space-y-1.5">
@@ -1029,7 +1029,15 @@ export function ChunkReader({
     const next = !autoHideRails;
     setAutoHideRails(next);
     localStorage.setItem("readerAutoHideRails", String(next));
-    if (!next) {
+    if (next) {
+      // This is toggled from inside the settings menu, which lives in the
+      // right rail but is wider than it (w-60 against 216px) and opens
+      // leftward over the reading column. Folding the rail slides the menu
+      // with it and leaves the overhang stranded on screen, so the menus have
+      // to close before the fold can happen.
+      setSettingsOpen(false);
+      setBookOpen(false);
+    } else {
       setLeftRailOpen(true);
       setRightRailOpen(true);
     }
@@ -2370,6 +2378,9 @@ export function ChunkReader({
     if (!el0) return;
     const container: HTMLElement = el0;
     let lastKey: string | null = null;
+    // Where the cursor last was, so a scroll can re-ask what is under it.
+    let lastX = -1;
+    let lastY = -1;
 
     function clear() {
       if (!lastKey) return;
@@ -2377,9 +2388,8 @@ export function ChunkReader({
       lastKey = null;
     }
 
-    function onMove(e: MouseEvent) {
-      const node = e.target as Node;
-      const el = node instanceof Element ? node : node.parentElement;
+    function applyAt(x: number, y: number) {
+      const el = document.elementFromPoint(x, y);
       // A verse's text runs carry data-hv; its superscript number carries
       // data-verse-num. Either lights the verse it belongs to.
       const vt = el?.closest(".vtext") ?? el?.closest("sup[data-verse-num]");
@@ -2413,11 +2423,29 @@ export function ChunkReader({
         .forEach((s) => s.classList.add("vh-on"));
     }
 
+    function onMove(e: MouseEvent) {
+      lastX = e.clientX;
+      lastY = e.clientY;
+      applyAt(lastX, lastY);
+    }
+
+    // Scrolling moves the text out from under a stationary cursor, and no
+    // mousemove fires for that — so the verse the cursor has left stayed lit
+    // until the mouse was nudged. Re-ask what is under the last known cursor
+    // position instead: the verse now there lights up, and if the cursor has
+    // landed on no verse at all the highlight clears.
+    function onScroll() {
+      if (lastX < 0) return;
+      applyAt(lastX, lastY);
+    }
+
     container.addEventListener("mousemove", onMove);
     container.addEventListener("mouseleave", clear);
+    window.addEventListener("scroll", onScroll, { passive: true, capture: true });
     return () => {
       container.removeEventListener("mousemove", onMove);
       container.removeEventListener("mouseleave", clear);
+      window.removeEventListener("scroll", onScroll, { capture: true });
       clear();
     };
   }, []);
@@ -3098,9 +3126,12 @@ export function ChunkReader({
       {/* Notes drawer — sticky below header */}
       {notesDrawerOpen && (
         <>
-        {/* Backdrop to close on outside click */}
-        <div className="fixed inset-0 z-[8]" onClick={() => setNotesDrawerOpen(false)} />
-        <div className="sticky z-[9]" style={{ top: headerHeight }}>
+        {/* Backdrop to close on outside click. Sits above the edge tabs
+            (z-10) and below the rails (z-20): the tabs float over the reading
+            column, which is where this drawer opens, so at z-[8]/z-[9] the
+            book, spanner and map symbols punched straight through it. */}
+        <div className="fixed inset-0 z-[11]" onClick={() => setNotesDrawerOpen(false)} />
+        <div className="sticky z-[12]" style={{ top: headerHeight }}>
           <NotesDrawer
             bookName={bookName}
             highlights={allHighlights}
