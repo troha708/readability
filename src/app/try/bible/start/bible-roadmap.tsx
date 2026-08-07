@@ -207,9 +207,9 @@ export function BibleRoadmap({
     return (
       <Link
         href={readUrl(book.name, targetChapter) + "&overview=1"}
-        className="inline-flex h-11 items-center px-1 font-ui text-[13px] font-medium text-gold transition-colors hover:text-gold-deep dark:text-gold-bright dark:hover:text-amber-300"
+        className="mb-1 inline-flex h-9 items-center rounded border border-amber-500/30 bg-amber-500/10 px-3 font-ui text-[12px] font-semibold text-amber-700 transition-colors hover:bg-amber-500/20 dark:border-amber-400/25 dark:bg-amber-400/10 dark:text-amber-400 dark:hover:bg-amber-400/20"
       >
-        <span className="border-b-[1.5px] border-dashed border-current pb-0.5">Overview</span>
+        Overview
       </Link>
     );
   }
@@ -239,22 +239,49 @@ export function BibleRoadmap({
       >
         {/* Rendered as a real link to chapter 1 so crawlers get a
             server-rendered path into every book — the chapter run below only
-            exists when expanded — but click toggles the row open. */}
+            exists when expanded — but click toggles the row open.
+            draggable={false} matters: an anchor is draggable by default, so
+            dragging across the row starts a drag instead of selecting the
+            text, and the Greek and Hebrew are exactly what you'd want to
+            copy. The selection guard then stops the release-click from
+            collapsing the row you just selected out of. */}
         <a
           href={
             hasChapters
               ? `/try/bible/read?book=${encodeURIComponent(book.name)}&chapter=1&version=${versionAbbr}`
               : undefined
           }
+          draggable={false}
           onClick={(e) => {
             e.preventDefault();
-            if (hasChapters) toggleBook(book.name);
+            if (!hasChapters) return;
+            const sel = typeof window !== "undefined" ? window.getSelection() : null;
+            if (sel && sel.type === "Range" && sel.toString().trim()) return;
+            toggleBook(book.name);
           }}
           aria-expanded={hasChapters ? isExpanded : undefined}
-          className={`flex items-baseline gap-2.5 py-2.5 ${
+          className={`flex select-text items-baseline gap-2 py-3 ${
             hasChapters ? "cursor-pointer" : "cursor-default"
           }`}
         >
+          {/* The disclosure arrow. The row was expandable before but said so
+              nowhere — the only cue was the cursor. */}
+          <span className="flex h-5 w-4 shrink-0 select-none items-center justify-center self-center">
+            {hasChapters && (
+              <svg
+                className={`h-3.5 w-3.5 text-neutral-400 transition-transform duration-200 dark:text-neutral-500 ${
+                  isExpanded ? "rotate-90" : ""
+                }`}
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2.5}
+                aria-hidden="true"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            )}
+          </span>
           <span className="relative shrink-0">
             <span
               className={`font-scripture text-[17px] font-semibold ${
@@ -286,10 +313,19 @@ export function BibleRoadmap({
           {orig && (
             <OriginalTitle
               name={orig}
-              className="min-w-0 truncate text-[15px] text-gold dark:text-gold-bright"
+              className="min-w-0 shrink truncate text-[15px] text-gold dark:text-gold-bright"
             />
           )}
-          <span className="ml-auto shrink-0 whitespace-nowrap font-ui text-[11px] font-medium tracking-[0.25px] tabular-nums text-neutral-400 dark:text-neutral-500">
+          {/* The transliteration was a title attribute, which is a hover
+              tooltip — invisible on touch, and the whole point of the column
+              is that most readers can't sound out שְׁמוֹת. It hides below sm
+              only because the row runs out of width there. */}
+          {orig && (
+            <span className="hidden shrink-0 whitespace-nowrap font-scripture text-[13px] italic text-neutral-400 dark:text-neutral-500 sm:inline">
+              {orig.translit}
+            </span>
+          )}
+          <span className="ml-auto shrink-0 whitespace-nowrap pl-2 font-ui text-[11px] font-medium tracking-[0.25px] tabular-nums text-neutral-400 dark:text-neutral-500">
             {book.chapters.length}
             {completedCount > 0 &&
               (completedCount === book.chapters.length
@@ -306,13 +342,13 @@ export function BibleRoadmap({
               </p>
             )}
             {isOverviewAtStart(book.name) && renderOverviewLink(book)}
-            {/* Chapter numbers are figures in a reference work, not buttons —
-                but each link still carries a 44px box so the target clears the
-                platform minimum. The glyph is what you see; the box is not.
-                A fixed 44px track rather than flex-wrap, so the figures line up
-                in columns when they wrap: Psalms wraps seven times and ragged
-                rows read as a mistake. */}
-            <div className="grid grid-cols-[repeat(auto-fill,minmax(2.75rem,1fr))]">
+            {/* Chapters as a grid of squares. Fixed 2.75rem tracks rather
+                than flex-wrap so the squares stay square and line up in
+                columns when they wrap — Psalms wraps seven times, and ragged
+                rows read as a mistake. The box is 40px inside a 44px cell, so
+                the tap target clears the platform minimum where the old 28px
+                chip didn't. */}
+            <div className="grid grid-cols-[repeat(auto-fill,2.75rem)]">
               {book.chapters.map((ch) => {
                 const key = `${book.name}:${ch.chapterNumber}`;
                 const readComplete = !!readingDone[key];
@@ -329,17 +365,20 @@ export function BibleRoadmap({
                     key={ch.chapterNumber}
                     href={readUrl(book.name, ch.chapterNumber)}
                     aria-label={`${book.name} ${ch.chapterNumber}`}
-                    className="inline-flex h-11 min-w-[2.75rem] items-center justify-center px-1 font-ui text-[13px] tabular-nums transition-colors"
+                    className="inline-flex h-11 w-11 items-center justify-center p-0.5 font-ui text-[13px] tabular-nums"
                   >
                     <span
-                      className={`border-b-[1.5px] pb-0.5 ${
+                      className={`flex h-full w-full items-center justify-center rounded border transition-colors ${
                         isNextUnread
-                          ? "border-gold font-bold text-gold dark:border-gold-bright dark:text-gold-bright"
+                          ? "border-amber-500 bg-amber-500 font-bold text-neutral-950 dark:border-amber-400 dark:bg-amber-400"
                           : isComplete
-                            ? "border-gold text-neutral-700 dark:border-gold-bright dark:text-neutral-300"
+                            ? "border-amber-500/30 bg-amber-500/10 font-semibold text-amber-700 dark:border-amber-400/25 dark:bg-amber-400/10 dark:text-amber-400"
                             : partial
-                              ? "border-dotted border-gold text-neutral-700 dark:border-gold-bright dark:text-neutral-300"
-                              : "border-transparent text-neutral-400 hover:text-neutral-700 dark:text-neutral-500 dark:hover:text-neutral-300"
+                              ? // Study mode's third state: read but not yet
+                                // quizzed. Outlined, not filled, so it reads as
+                                // started rather than done.
+                                "border-dashed border-amber-500/50 text-amber-700/80 dark:border-amber-400/40 dark:text-amber-400/70"
+                              : "border-neutral-200 bg-neutral-50 text-neutral-500 hover:bg-neutral-100 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-400 dark:hover:bg-neutral-800"
                       }`}
                     >
                       {ch.chapterNumber}
