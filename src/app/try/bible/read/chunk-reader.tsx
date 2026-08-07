@@ -81,10 +81,15 @@ const BOX_CLASS =
 // The warm reveal: the edge line lights up AND throws a soft spill sideways
 // onto the page — both, but at roughly half the strength of the first cut,
 // which was too assertive.
+// The reveal: the rail's outer edge lights up and throws a warm spill
+// sideways. The spill stays amber — it is the light — but the edge itself is a
+// plain white line rather than a second amber one, so the glow reads as
+// something the panel is casting instead of something it is painted with.
+// Light mode keeps a neutral line: white on a white page is no line at all.
 const RAIL_GLOW_LEFT =
-  "border-r-amber-500/25 shadow-[8px_0_28px_-12px_rgba(224,184,90,0.22)] dark:border-r-amber-400/20";
+  "border-r-neutral-300 shadow-[8px_0_28px_-12px_rgba(224,184,90,0.22)] dark:border-r-white/45";
 const RAIL_GLOW_RIGHT =
-  "border-l-amber-500/25 shadow-[-8px_0_28px_-12px_rgba(224,184,90,0.22)] dark:border-l-amber-400/20";
+  "border-l-neutral-300 shadow-[-8px_0_28px_-12px_rgba(224,184,90,0.22)] dark:border-l-white/45";
 
 type CompletionAge = "recent" | "fading" | "old";
 
@@ -2755,7 +2760,7 @@ export function ChunkReader({
             onClick={() => setLeftRailOpen(true)}
             aria-label="Show navigation panel"
             title="Navigation"
-            className={`fixed left-0 top-24 rounded-r-lg pl-3 pr-2 ${BOX_CLASS} ${
+            className={`fixed left-0 top-[8.25rem] rounded-r-lg pl-3 pr-2 ${BOX_CLASS} ${
               leftRailOpen ? "pointer-events-none opacity-0" : "opacity-100"
             }`}
           >
@@ -2780,7 +2785,7 @@ export function ChunkReader({
               // 42px: the tabs are 46px tall and the spanner's top edge is at
               // 96, so this lands its bottom at 88 — an 8px gap, rather than
               // the two boxes touching or overlapping.
-              className={`fixed right-[5rem] top-[2.625rem] rounded-lg pl-2 pr-3 ${BOX_CLASS} ${
+              className={`fixed right-[5rem] top-[4.875rem] rounded-lg pl-2 pr-3 ${BOX_CLASS} ${
                 rightRailOpen ? "pointer-events-none opacity-0" : "opacity-100"
               }`}
             >
@@ -2806,7 +2811,7 @@ export function ChunkReader({
             onClick={() => setRightRailOpen(true)}
             aria-label="Show reading tools"
             title="Tools"
-            className={`fixed right-0 top-24 rounded-l-lg pl-2 pr-3 ${BOX_CLASS} ${
+            className={`fixed right-0 top-[8.25rem] rounded-l-lg pl-2 pr-3 ${BOX_CLASS} ${
               rightRailOpen ? "pointer-events-none opacity-0" : "opacity-100"
             }`}
           >
