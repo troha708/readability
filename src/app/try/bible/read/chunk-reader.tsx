@@ -2837,10 +2837,11 @@ export function ChunkReader({
               onClick={() => setMapSheet({ chapter: visibleChapterNumber, data: chapterPlaces })}
               aria-label={`Map of ${placeCount} ${placeCount === 1 ? "place" : "places"} in this chapter`}
               title={`${placeCount} ${placeCount === 1 ? "place" : "places"} in this chapter`}
-              // 42px: the tabs are 46px tall and the spanner's top edge is at
-              // 96, so this lands its bottom at 88 — an 8px gap, rather than
-              // the two boxes touching or overlapping.
-              className={`fixed right-[5rem] top-[4.875rem] rounded-lg pl-2 pr-3 ${BOX_CLASS} ${
+              // Flush with the edge and rounded on the left, exactly as the
+              // spanner below it, so the two read as one stack rather than a
+              // tab and a loose button. Its top sits far enough above the
+              // spanner's 8.25rem to leave a gap between the boxes.
+              className={`fixed right-0 top-[4.875rem] rounded-l-lg pl-2 pr-3 ${BOX_CLASS} ${
                 rightRailOpen ? "pointer-events-none opacity-0" : "opacity-100"
               }`}
             >
