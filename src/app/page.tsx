@@ -193,7 +193,7 @@ export default function Home() {
             {/* The panel waits to be tapped, so it has to say so — the video
                 that replaced this showed the tap and needed no caption. */}
             <p className="mb-2 text-xs text-neutral-400">
-              Tap any verse for study notes
+              Tap any verse to preview study notes
             </p>
             <HeroMockup />
           </div>
