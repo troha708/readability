@@ -1084,14 +1084,21 @@ export function HeroMockup() {
         is built from fixed-px type, so a smaller box would only reflow it and
         leave 16px scripture in a shrunken frame.
 
-        zoom, not transform: scale — zoom shrinks the layout box with the
-        picture, where a transform would leave the original 736px box behind
-        and stand the hero on ~110px of dead air. Firefox before 126 ignores
-        it and shows the panel full size, which is the old behaviour. */}
-    <div
-      style={{ zoom: 0.85 }}
-      className="dark relative mx-auto w-full max-w-3xl overflow-hidden rounded-xl border border-neutral-700 bg-neutral-925 shadow-2xl"
-    >
+        The 85% is on the wrapper and the zoom on the panel, and it has to be
+        that way round. zoom resolves the panel's w-full against its parent
+        *after* zooming, so the panel always fills whatever box it is given —
+        put the zoom on a full-width panel and the width never moves, which
+        squashes it. Handed an 85% box, it fills that instead, and lays its
+        contents out at 1/0.85 of it, so type and height come down together.
+
+        transform: scale would shrink it just as evenly but leaves the
+        original box behind: the panel's height is content-driven and varies
+        with the column, so nothing static could reclaim the gap. */}
+    <div className="mx-auto w-[85%] max-w-3xl">
+      <div
+        style={{ zoom: 0.85 }}
+        className="dark relative overflow-hidden rounded-xl border border-neutral-700 bg-neutral-925 shadow-2xl"
+      >
       {/* Scrollable app viewport — mirrors the reading page, sticky header included */}
       {/* No overscroll containment: when this inner scroller hits its top or
           bottom, the wheel must chain to the page scroll. */}
@@ -1257,6 +1264,7 @@ export function HeroMockup() {
           onClose={() => setSheetVerse(null)}
         />
       )}
+      </div>
     </div>
     </>
   );
