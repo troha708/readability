@@ -51,6 +51,7 @@ import { fetchChapter, fetchBookPlaces, fetchBookThemes } from "@/lib/content/cl
 import { IS_MOBILE } from "@/lib/build-target";
 import type { BookPlaces, ChapterPlaces } from "@/lib/content/places";
 import type { BookThemes } from "@/lib/content/chapter-themes";
+import { buildNoteRefIndex, findNoteBacklinks } from "@/lib/note-backlinks";
 import { VerseSheet } from "./verse-sheet";
 import { ChapterMapSheet } from "./chapter-map-sheet";
 import { ReadingHistorySheet } from "./reading-history-sheet";
@@ -2362,6 +2363,31 @@ export function ChunkReader({
     verse: number;
   } | null>(null);
 
+  // Every note's citations, parsed once per change to the collection rather
+  // than once per verse opened — a reader with a few hundred notes would
+  // otherwise re-parse all of them on every tap.
+  const noteRefIndex = useMemo(() => buildNoteRefIndex(allHighlights), [allHighlights]);
+
+  const sheetBacklinks = useMemo(
+    () =>
+      verseSheet
+        ? findNoteBacklinks(noteRefIndex, bookName, verseSheet.chapter, verseSheet.verse)
+        : [],
+    [noteRefIndex, bookName, verseSheet],
+  );
+
+  // Follow a backlink to the note that made it. Same book is a scroll; another
+  // book has to navigate, and the verse sheet cannot be opened across that
+  // load, so it lands the reader on the chapter with the note's verse in view.
+  function openNoteAt(book: string, chapter: number, verse: number) {
+    if (book !== bookName) {
+      navigateReadUrl(readUrl({ book, chapter }));
+      return;
+    }
+    setVerseSheet({ chapter, verse });
+    scrollToVerse(chapter, verse);
+  }
+
   useEffect(() => {
     const container = contentRef.current;
     if (!container) return;
@@ -3470,6 +3496,8 @@ export function ChunkReader({
           onRemoveHighlight={handleSheetRemoveHighlight}
           onSaveNote={handleSheetSaveNote}
           onClose={() => setVerseSheet(null)}
+          backlinks={sheetBacklinks}
+          onOpenNote={openNoteAt}
         />
       )}
       {/* The chapter Map button isn't on every chapter, so it's taught on

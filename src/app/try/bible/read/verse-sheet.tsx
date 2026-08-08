@@ -24,6 +24,7 @@ import {
   scriptureRefLabel,
   type ScripturePassage,
 } from "@/lib/scripture-refs";
+import type { NoteBacklink } from "@/lib/note-backlinks";
 import { VersePeek } from "@/components/verse-peek";
 import { useDragToExpand, SheetGrabber } from "@/components/draggable-sheet";
 import {
@@ -175,6 +176,8 @@ export function VerseSheet({
   onRemoveHighlight,
   onSaveNote,
   onClose,
+  backlinks = [],
+  onOpenNote,
 }: {
   bookName: string;
   chapter: number;
@@ -185,6 +188,9 @@ export function VerseSheet({
   onRemoveHighlight: () => void;
   onSaveNote: (note: string) => void;
   onClose: () => void;
+  /** The reader's own notes elsewhere that cite this verse. */
+  backlinks?: NoteBacklink[];
+  onOpenNote?: (book: string, chapter: number, verse: number) => void;
 }) {
   const [versions, setVersions] = useState<VerseVersion[] | null>(null);
   const [crossRefs, setCrossRefs] = useState<CrossRef[] | null>(null);
@@ -400,9 +406,55 @@ export function VerseSheet({
             </div>
           )}
           {!noteOpen && highlight?.note && (
-            <p className="mt-3 rounded-lg bg-neutral-100/80 px-3 py-2 text-sm italic text-neutral-700 dark:bg-neutral-800/60 dark:text-neutral-300">
-              ✎ {highlight.note}
-            </p>
+            <div className="mt-3 rounded-lg bg-neutral-100/80 px-3 py-2 dark:bg-neutral-800/60">
+              {/* Italic on the wrapper rather than the text, so NoteText's own
+                  colour and leading carry through and only the slant is added.
+                  The references inside are live here exactly as they are in a
+                  Tyndale note — the reader's own citations were the one kind
+                  of prose in the sheet that stayed inert. */}
+              <span aria-hidden="true" className="float-left pr-1.5 text-sm text-neutral-500">✎</span>
+              <div className="italic">
+                <NoteText
+                  text={highlight.note}
+                  book={bookName}
+                  chapter={chapter}
+                  onPeek={setPeek}
+                />
+              </div>
+            </div>
+          )}
+
+          {/* Notes elsewhere that cite this verse. Deliberately not a
+              SheetSection: this is a line or two about the reader's own
+              writing, and it belongs beside their note rather than filed
+              among the study apparatus below. */}
+          {backlinks.length > 0 && (
+            <div className="mt-3 border-l-2 border-neutral-200 pl-3 dark:border-neutral-700">
+              <p className="text-[11px] uppercase tracking-[0.6px] text-neutral-400 dark:text-neutral-500">
+                {backlinks.length === 1
+                  ? "Referenced by a note"
+                  : `Referenced by ${backlinks.length} notes`}
+              </p>
+              <ul className="mt-1 space-y-1.5">
+                {backlinks.map((b) => (
+                  <li key={`${b.book}:${b.chapter}:${b.verse}`}>
+                    <button
+                      onClick={() => onOpenNote?.(b.book, b.chapter, b.verse)}
+                      className="group text-left text-sm text-neutral-700 transition-colors hover:text-gold dark:text-neutral-300 dark:hover:text-gold-bright"
+                    >
+                      <span className="underline decoration-dotted decoration-neutral-400/70 underline-offset-2 group-hover:decoration-gold">
+                        {chapterReference(b.book, b.chapter)}:{b.verse}
+                      </span>{" "}
+                      {/* The note's own words, clipped — enough to recognise
+                          which note this is without reprinting it here. */}
+                      <span className="italic text-neutral-500 dark:text-neutral-400">
+                        {b.note.length > 90 ? `${b.note.slice(0, 90).trimEnd()}…` : b.note}
+                      </span>
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </div>
           )}
 
           <div className="mt-5">

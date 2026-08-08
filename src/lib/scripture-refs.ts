@@ -49,6 +49,44 @@ export function scriptureRefLabel(r: ScripturePassage): string {
   return label;
 }
 
+/**
+ * Does a parsed reference point at this verse?
+ *
+ * The four shapes the parser emits each cover a different span, and a range
+ * has to match anywhere inside it, not just at its first verse — a note citing
+ * "Romans 8:28-30" is about verse 29 as much as verse 28.
+ */
+export function passageCoversVerse(
+  passage: ScripturePassage,
+  book: string,
+  chapter: number,
+  verse: number,
+): boolean {
+  if (passage.book !== book) return false;
+
+  // Chapter-only ("Isaiah 40") or a chapter range ("Leviticus 13-14"): every
+  // verse of every chapter in the span.
+  if (passage.verse == null) {
+    return chapter >= passage.chapter && chapter <= (passage.endChapter ?? passage.chapter);
+  }
+
+  // Cross-chapter verse range ("Genesis 1:31-2:1"): open at the far end of the
+  // first chapter and at the near end of the last, whole chapters between.
+  if (passage.endChapter != null && passage.endVerse != null) {
+    if (chapter < passage.chapter || chapter > passage.endChapter) return false;
+    if (chapter === passage.chapter && verse < passage.verse) return false;
+    if (chapter === passage.endChapter && verse > passage.endVerse) return false;
+    return true;
+  }
+
+  // Single verse or a range inside one chapter.
+  return (
+    chapter === passage.chapter &&
+    verse >= passage.verse &&
+    verse <= (passage.endVerse ?? passage.verse)
+  );
+}
+
 // Notes cite books both in full and abbreviated. The abbreviations are the
 // Tyndale corpus's own, counted across data/tyndale and data/tyndale-intros —
 // "1 Cor" alone appears 464 times, "2 Kgs" 483, "1 Sam" 379. Until these were
