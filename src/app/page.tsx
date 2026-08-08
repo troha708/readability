@@ -166,11 +166,7 @@ export default function Home() {
                 their exact 1.625. Colour stays ours — theirs is light-theme
                 ink on white, this page is near-black. */}
             <p className="mt-4 font-scripture text-base font-normal leading-relaxed tracking-[0.0156em] text-neutral-300">
-              {/* The hyphen in cross-references is a legal break, and the
-                  line lands right on it — "cross-" then "references". */}
-              Read the King James or the Berean Standard, with notes,{" "}
-              <span className="whitespace-nowrap">cross-references</span>, word
-              study and maps.
+              Notes, cross-references, word study and maps.
               <span className="block">
                 Free and open source, with no ads{" "}
                 <span className="whitespace-nowrap">and no account required.</span>
