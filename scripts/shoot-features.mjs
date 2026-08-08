@@ -31,17 +31,11 @@ const DEST = join(ROOT, "public", "landing");
 const ORIGIN = process.env.FEATURES_ORIGIN ?? "http://localhost:3000";
 const reader = (b, c) => `${ORIGIN}/try/bible/read?book=${b}&chapter=${c}&version=BSB`;
 
-// The tile's aspect in the montage. The crop height follows from it, so the
-// component and the frame can never disagree about the shape.
-//
-// 1.4 rather than the 16:10 it started at. The components are all a fixed
-// width — a sheet is capped at 42rem whatever the viewport does — so the only
-// way a tile can show more of one is a taller window over it. At 16:10 every
-// tile stopped mid-feature: mid-sentence in the dictionary article, mid-verse
-// in the search results, and short of the definition in the verse sheet. This
-// buys about 14% more height on all six at once, which is the difference
-// between a tile that stops and a tile that finishes.
-const TILE_ASPECT = 1.4;
+// There is no shared tile aspect any more. Every tile used to be cut to one
+// ratio, which meant the ratio decided where each component stopped — and a
+// shape cannot know where a paragraph ends, so each stopped mid-sentence,
+// mid-verse or mid-definition. Each tile now names the element it should
+// finish on (see `stop` in tile()) and takes whatever height that comes to.
 
 mkdirSync(DEST, { recursive: true });
 
@@ -93,9 +87,20 @@ const clickByText = (re, scope = "button") =>
  * overview card is an unclassed div, the quiz page has no semantic root), so
  * they resolve through their own text instead.
  *
- * zoom > 1 crops the right edge; top skips that fraction of the tile height.
+ * `stop` is a second body returning the element the crop should finish on, and
+ * it is what keeps these pictures honest. Every tile used to be cut to one
+ * fixed ratio, which meant the ratio decided where each component stopped —
+ * mid-sentence in the dictionary, mid-verse in the search results, mid-field in
+ * the book introduction. A shape cannot know where a paragraph ends. So each
+ * tile now names the thing it wants to finish on and takes whatever height that
+ * comes to, and the montage lays the results out as columns because they no
+ * longer share a shape.
+ *
+ * Without `stop` the crop runs to the element's own foot. `pad` is the breathing
+ * room left below the stopping element; `top` skips that fraction of the height
+ * off the top.
  */
-async function tile(name, find, { zoom = 1, top = 0 } = {}) {
+async function tile(name, find, { top = 0, stop = null, pad = 16 } = {}) {
   // Pages differ by seconds in when they hydrate and paint — the dictionary
   // article and the quiz both arrive well after domcontentloaded — so wait on
   // the element itself rather than guessing a delay per page.
@@ -105,29 +110,45 @@ async function tile(name, find, { zoom = 1, top = 0 } = {}) {
       throw new Error(`${name}: element never appeared`);
     });
   const clip = await page.evaluate(
-    ([body, z, t, aspect]) => {
+    ([body, stopBody, t, padPx]) => {
       const el = new Function(body)();
       if (!el) return null;
       const r = el.getBoundingClientRect();
-      const width = r.width / z;
-      const height = width / aspect;
-      return { x: r.x, y: Math.max(0, r.y + t * height), width, height, own: r.height };
+      const y = Math.max(0, r.y + t * r.height);
+      let bottom = r.bottom;
+      if (stopBody) {
+        const s = new Function(stopBody)();
+        if (!s) return { missingStop: true };
+        bottom = Math.min(s.getBoundingClientRect().bottom + padPx, r.bottom);
+      }
+      return { x: r.x, y, width: r.width, height: bottom - y, own: r.bottom - y };
     },
-    [find, zoom, top, TILE_ASPECT],
+    [find, stop, top, pad],
   );
   if (!clip) throw new Error(`${name}: element not found`);
-  // A component shorter than its own crop means the shot would run off the
-  // bottom of it and photograph the page behind — which is how an early cut
-  // of the search tile ended up with half a chapter of John under the modal.
-  const needed = clip.height * (1 + top);
-  if (clip.own < needed)
+  if (clip.missingStop)
+    throw new Error(`${name}: the element the crop should stop on is not there`);
+  // A crop taller than what is left of the component would run off its bottom
+  // and photograph the page behind — which is how an early cut of the search
+  // tile ended up with half a chapter of John under the modal.
+  if (clip.height > clip.own + 1)
     throw new Error(
-      `${name}: ${Math.round(clip.own)}px tall, crop needs ${Math.round(needed)}px — it has not finished rendering`,
+      `${name}: crop wants ${Math.round(clip.height)}px but only ${Math.round(clip.own)}px of the component is left — it has not finished rendering`,
     );
+  if (clip.height < 40) throw new Error(`${name}: crop came to ${Math.round(clip.height)}px`);
   delete clip.own;
+  delete clip.missingStop;
   await page.screenshot({ path: join(DEST, `${name}.png`), clip });
-  console.log(`${name}: ${Math.round(clip.width * 2)}x${Math.round(clip.height * 2)}`);
+  console.log(
+    `${name}: ${Math.round(clip.width * 2)}x${Math.round(clip.height * 2)}  (${(clip.width / clip.height).toFixed(2)})`,
+  );
 }
+
+/** The last element with no children whose text matches — a leaf label. */
+const byText = (re) =>
+  `return [...document.querySelectorAll("*")]
+     .filter((e) => !e.children.length && ${re}.test((e.textContent || "").trim()))
+     .pop();`;
 
 const bySelector = (sel) => `return document.querySelector(${JSON.stringify(sel)});`;
 
@@ -188,11 +209,23 @@ await page
     throw new Error(`verse tools: tapped "${tapped}" but nothing was selected`);
   });
 await wait(1200);
-// Everything from the reference down to the word's definition is about 490px
-// of a 672px-wide sheet. A 16:10 window was 420 and had to skip the reference
-// line to reach the definition; at 1.4 the window is 480 and keeps both, so
-// this is back to trimming nothing but the sliver above the rounded top.
-await tile("verse-tools", bySelector('[class*="sheet-rise"]'), { top: 0.02 });
+// Stops on the word's entry, whole. That panel is the end of the thought the
+// tile is telling — verse, tools, words, meaning — so the picture ends where
+// the meaning does rather than partway through the definition.
+await tile("verse-tools", bySelector('[class*="sheet-rise"]'), {
+  top: 0.02,
+  // No handle of its own, and its classes are shared with the reader's note
+  // box, so it is found by what only it holds: the Strong's number. That has
+  // to be matched on the leaf span that renders it, not by searching ancestors
+  // for /\\bG3056\\b/ — textContent runs the spans together with no spaces, so
+  // the number arrives as "N-NMSG3056word" and the word boundary never hits.
+  // From the span, the nearest div up is the entry; its foot is the end of the
+  // definition.
+  stop: `const n = [...document.querySelectorAll('[class*="sheet-rise"] *')]
+           .filter((e) => !e.children.length && /^[GH]\\d{2,5}$/.test((e.textContent || "").trim()))
+           .pop();
+         return n && n.closest("div");`,
+});
 await page.keyboard.press("Escape");
 await wait(800);
 
@@ -206,11 +239,19 @@ await page.evaluate(() => {
 await wait(2000);
 await dismissNudge();
 // The card is the toggle's own parent — an unclassed div with no handle.
+// Stops after Setting, the last of the four labelled fields, so the tile ends
+// on a finished field rather than in the middle of the prose below it.
 await tile(
   "overview",
   `const b = [...document.querySelectorAll("button[aria-expanded]")]
      .find((x) => /Overview$/.test((x.textContent || "").trim()));
    return b && b.parentElement;`,
+  {
+    stop: `const lab = [...document.querySelectorAll("*")]
+             .filter((e) => !e.children.length && /^setting$/i.test((e.textContent || "").trim()))
+             .pop();
+           return lab && lab.parentElement;`,
+  },
 );
 
 // ── 3. Chapter map: the four places in John 2 ───────────────────────────
@@ -222,8 +263,13 @@ await dismissNudge();
 await tile("chapter-map", bySelector('div[class*="rounded-t-2xl"]'));
 
 // ── 4. Dictionary: the head of the Bethlehem article ────────────────────
+// Stops at the foot of the second paragraph. An article runs for screens, so
+// something has to end this tile; a whole paragraph is a place a reader's eye
+// accepts stopping, and a fixed height lands mid-sentence every time.
 await go(`${ORIGIN}/try/bible/dictionary?entry=Bethlehem`);
-await tile("dictionary", bySelector("article"));
+await tile("dictionary", bySelector("article"), {
+  stop: `return document.querySelectorAll("article p")[1];`,
+});
 
 // ── 5. Search: a live query, with the matches highlighted ───────────────
 await go(reader("John", 1));
@@ -248,12 +294,18 @@ await page
     throw new Error("search returned no results");
   });
 await wait(600);
-await tile("search", bySelector('div[class*="max-w-lg"][class*="rounded-xl"]'));
+// Stops at the foot of the second result, so the tile shows two whole verses
+// rather than two and the top line of a third.
+await tile("search", bySelector('div[class*="max-w-lg"][class*="rounded-xl"]'), {
+  stop: `return document.querySelectorAll('div[class*="max-w-lg"] ul li')[1];`,
+});
 
 // ── 6. Comprehension: a question with its options ───────────────────────
 await go(`${ORIGIN}/try/bible/questions/John/1`);
 // No wrapper to grab: frame the option buttons and reach back up over the
-// question and its type chip.
+// question and its type chip. Starts just above the chip rather than at the
+// page top, which would take in a half-cut site header, and stops on the
+// quiz's own footer row, below which is the site footer.
 await tile(
   "quiz",
   `const opts = [...document.querySelectorAll("button")]
@@ -262,21 +314,24 @@ await tile(
    const rects = opts.map((o) => o.getBoundingClientRect());
    const left = Math.min(...rects.map((r) => r.left)) - 18;
    const right = Math.max(...rects.map((r) => r.right)) + 18;
-   const width = right - left;
-   // Anchored at the BOTTOM, on the quiz's own footer row, with the height
-   // taken upward from there. Anchored at the top — as this was — a taller
-   // tile aspect runs straight off the end of the quiz and photographs the
-   // site footer underneath it, so the tile ends in a row of nav links.
-   const foot = [...document.querySelectorAll("*")]
-     .filter((e) => !e.children.length && /Skip quiz/i.test(e.textContent || ""))
+   const chip = [...document.querySelectorAll("*")]
+     .filter((e) => !e.children.length && /^Multiple Choice$/i.test((e.textContent || "").trim()))
      .pop();
-   const bottom = (foot ? foot.getBoundingClientRect().bottom : rects[rects.length - 1].bottom + 28) + 14;
-   const top = bottom - width / ${TILE_ASPECT};
+   const top = (chip ? chip.getBoundingClientRect().top : rects[0].top - 130) - 26;
+   const bottom = document.body.getBoundingClientRect().bottom;
+   // bottom as well as height: tile() reads r.bottom to know how much of the
+   // component is left below the crop, and a plain object without it yields
+   // NaN rather than a missing-property error.
    return {
      getBoundingClientRect: () => ({
-       x: left, y: top, width, height: bottom - top,
+       x: left, y: top, width: right - left, height: bottom - top, bottom,
      }),
    };`,
+  {
+    stop: `return [...document.querySelectorAll("*")]
+             .filter((e) => !e.children.length && /Skip quiz/i.test(e.textContent || ""))
+             .pop();`,
+  },
 );
 
 await ctx.close();
