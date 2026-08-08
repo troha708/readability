@@ -1080,7 +1080,18 @@ export function HeroMockup() {
       .hero-mockup-scroll::-webkit-scrollbar-thumb { background: #9a9fa3; border-radius: 6px; border: 2px solid #14110f; }
       .hero-mockup-scroll::-webkit-scrollbar-thumb:hover { background: #c4c4c4; }
     `}</style>
-    <div className="dark relative mx-auto w-full max-w-3xl overflow-hidden rounded-xl border border-neutral-700 bg-neutral-925 shadow-2xl">
+    {/* 15% down from full size. Scaled rather than narrowed: the app inside
+        is built from fixed-px type, so a smaller box would only reflow it and
+        leave 16px scripture in a shrunken frame.
+
+        zoom, not transform: scale — zoom shrinks the layout box with the
+        picture, where a transform would leave the original 736px box behind
+        and stand the hero on ~110px of dead air. Firefox before 126 ignores
+        it and shows the panel full size, which is the old behaviour. */}
+    <div
+      style={{ zoom: 0.85 }}
+      className="dark relative mx-auto w-full max-w-3xl overflow-hidden rounded-xl border border-neutral-700 bg-neutral-925 shadow-2xl"
+    >
       {/* Scrollable app viewport — mirrors the reading page, sticky header included */}
       {/* No overscroll containment: when this inner scroller hits its top or
           bottom, the wheel must chain to the page scroll. */}
