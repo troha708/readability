@@ -78,6 +78,11 @@ const RAIL_WIDTH = 216;
 // round on and their vertical position differ.
 const BOX_CLASS =
   "z-10 hidden bg-white/95 py-3 text-gold backdrop-blur transition-[opacity,color] duration-300 hover:text-gold-deep dark:bg-neutral-925/95 dark:hover:text-gold-bright xl:block";
+// Stroke weight for the 20px edge-tab marks. It was 1.8, which with round
+// caps is the weight a warning light is drawn at — heavy, closed, extruded.
+// Finer reads as something drawn. 1.1 was finer still and went washy at 20px
+// on a 1x display, where 1.25 holds; both were rendered and compared.
+const ICON_STROKE = 1.25;
 
 // The warm reveal: the edge line lights up AND throws a soft spill sideways
 // onto the page — both, but at roughly half the strength of the first cut,
@@ -2649,8 +2654,12 @@ export function ChunkReader({
             >
               {/* The printed chart needs room: 12px reduced the coastline and
                   compass rose to smudges, so this one runs at 15 — still
-                  small against its neighbours, but the detail survives. */}
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                  small against its neighbours, but the detail survives.
+                  It keeps 1.5 rather than dropping to the edge tabs' 1.25:
+                  across 15px that lands at much the same rendered thickness
+                  as 1.25 across 20, which is what optical consistency means
+                  between two sizes. Only the ends and corners are shared. */}
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="butt" strokeLinejoin="miter">
                 <path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2z" />
                 <path d="M9 4v14" />
                 <path d="M15 6v14" />
@@ -2819,11 +2828,13 @@ export function ChunkReader({
               leftRailOpen ? "pointer-events-none opacity-0" : "opacity-100"
             }`}
           >
-            {/* Open book */}
-            <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M12 6.5C10.5 5.2 8.5 4.5 6 4.5H3v14h3c2.5 0 4.5.7 6 2" />
-              <path d="M12 6.5c1.5-1.3 3.5-2 6-2h3v14h-3c-2.5 0-4.5.7-6 2" />
-              <path d="M12 6.5v14" />
+            {/* Open book. Drawn at the ICON_STROKE weight with cut ends and
+                mitred corners, and a shade narrower than it was so the finer
+                line has somewhere to sit. */}
+            <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={ICON_STROKE} strokeLinecap="butt" strokeLinejoin="miter">
+              <path d="M12 6.8C10.4 5.4 8 4.6 5.2 4.6H2.8v13.2h2.6c2.7 0 4.9.8 6.6 2.2" />
+              <path d="M12 6.8c1.6-1.4 4-2.2 6.8-2.2h2.4v13.2h-2.6c-2.7 0-4.9.8-6.6 2.2" />
+              <path d="M12 6.8v13.2" />
             </svg>
           </button>
           {/* The chapter's map, straight from the text — click it and the
@@ -2847,7 +2858,7 @@ export function ChunkReader({
             >
               <span className="relative block">
                 {/* The same unfurled chart as the rail button. */}
-                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={ICON_STROKE} strokeLinecap="butt" strokeLinejoin="miter">
                   <path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2z" />
                   <path d="M9 4v14" />
                   <path d="M15 6v14" />
@@ -2872,8 +2883,11 @@ export function ChunkReader({
             }`}
           >
             {/* Spanner: open jaws at the head, handle running down to the
-                left. The previous path collapsed into an unreadable blob. */}
-            <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                left. The previous path collapsed into an unreadable blob, and
+                redrawing the object at this size makes it worse — a candidate
+                with a properly cut jaw read as a bandaged club at 20px. The
+                silhouette stays; only the weight of the line changes. */}
+            <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={ICON_STROKE} strokeLinecap="butt" strokeLinejoin="miter">
               <path d="M20.4 4.6a5.5 5.5 0 0 1-7.1 7.1L5.6 19.4a2.1 2.1 0 0 1-3-3l7.7-7.7a5.5 5.5 0 0 1 7.1-7.1l-3.3 3.3.9 3 3 .9 3.4-3.2z" />
             </svg>
           </button>
