@@ -1,70 +1,57 @@
 import Image from "next/image";
 
 /**
- * The pictures under the "What's in it" list, following it in roughly its own
- * order. They were a narrow column beside the list, two tiles to about 235px:
- * at that size a screenshot of a full reading interface is a grey smudge with
- * the shape of a screenshot, which is worth nothing. They now take the page's
- * full width, so a tile is wide enough that what it shows can be read.
- *
- * That also ends the strict one-tile-per-bullet pairing, since nothing sits
- * beside its sentence any more: word study gets a picture of its own, because
- * the first bullet carries four separate features and tapping a word through
- * to its Greek is the one that has to be seen to be understood.
+ * The pictures beside the "What's in it" list: one per bullet, in the same
+ * order, so a tile and its sentence read as a pair.
  *
  * Each is a capture of the real component rather than an illustration of it —
  * scripts/shoot-features.mjs drives the app and shoots them, and re-running it
  * is how they stay current. The intrinsic sizes below are what that script
- * emitted; they are the crop's own 16:10, not a resize.
+ * emitted; they are the crop's own 1.4, not a resize — change TILE_ASPECT
+ * there and every pair here has to be updated to match.
  */
 const TILES = [
   {
     src: "/landing/verse-tools.png",
     w: 1344,
-    h: 840,
-    alt: "The verse sheet open on John 1:4: highlight colours, Note and Copy, then study notes, cross-references and the Greek word by word",
-  },
-  {
-    src: "/landing/word-study.png",
-    w: 1344,
-    h: 840,
-    alt: "The opening of John 1:1 as two aligned lines, Greek above and English below, with one word tapped: its partner is highlighted in the other line and its lemma, transliteration, parsing, Strong's number and definition are shown underneath",
+    h: 960,
+    alt: "The verse sheet open on John 1:1: highlight colours, Note and Copy, collapsed study notes and cross-references, and the Greek and English as two aligned lines with one word tapped — its partner highlighted in the other line and its transliteration, parsing, Strong's number and definition shown underneath",
   },
   {
     src: "/landing/overview.png",
     w: 1344,
-    h: 840,
+    h: 960,
     alt: "The introduction to John, giving its purpose, author, date and setting",
   },
   {
     src: "/landing/dictionary.png",
     w: 1472,
-    h: 920,
+    h: 1051,
     alt: "The dictionary article on Bethlehem, its prose linked through to the people and places it names",
   },
   {
     src: "/landing/chapter-map.png",
     w: 1344,
-    h: 840,
+    h: 960,
     alt: "The map for John 2, marking Cana, Capernaum and Jerusalem around the Sea of Galilee",
   },
   {
     src: "/landing/search.png",
     w: 1024,
-    h: 640,
+    h: 731,
     alt: "A search for “living water” returning fourteen verses with the words highlighted",
   },
   {
     src: "/landing/quiz.png",
     w: 1416,
-    h: 885,
+    h: 1011,
     alt: "A comprehension question on the opening of John's Gospel with four answers to choose from",
   },
 ];
 
 export function FeatureMontage({ className = "" }: { className?: string }) {
   return (
-    <div className={`grid grid-cols-1 gap-4 sm:grid-cols-2 ${className}`}>
+    <div className={`grid grid-cols-2 gap-3 ${className}`}>
       {TILES.map((t) => (
         <Image
           key={t.src}
@@ -72,9 +59,10 @@ export function FeatureMontage({ className = "" }: { className?: string }) {
           alt={t.alt}
           width={t.w}
           height={t.h}
-          // Half of the 72rem column at full size, most of the viewport on a
-          // phone — where one tile per row beats two unreadable ones.
-          sizes="(min-width: 75rem) 544px, (min-width: 40rem) 47vw, 92vw"
+          // Two columns of a 36rem block on desktop, two columns of the
+          // viewport below it — never more than ~282px either way, so the
+          // browser is told that rather than left to assume full width.
+          sizes="(min-width: 40rem) 282px, 45vw"
           className="w-full rounded-[3px] border border-neutral-800 bg-neutral-900"
         />
       ))}

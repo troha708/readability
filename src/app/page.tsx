@@ -202,13 +202,13 @@ export default function Home() {
       {/* Lower sections share the hero's wide container on desktop —
           heading left, content right — and stack vertically below md. */}
       <div className="mx-auto max-w-6xl px-6">
-        {/* What's in it — the list first, then the pictures full width under
-            it. They used to share the row, which capped a tile at about a
-            quarter of the page: big enough to see that it was a screenshot,
-            not big enough to see what of. Prose does not need the width and
-            screenshots do, so they stopped competing for it. */}
-        <section className="pb-16 pt-14">
-          <div className="max-w-[32rem]">
+        {/* What's in it — montage beside the list, kicker sitting over the
+            list. The split waits for lg: at md the container is only ~720px,
+            and half of that leaves the montage's two columns too narrow to
+            make out. Below lg the two stack, montage first. */}
+        <section className="pb-16 pt-14 lg:grid lg:grid-cols-[36rem_minmax(0,1fr)] lg:gap-10">
+          <FeatureMontage className="max-w-[36rem]" />
+          <div className="mt-8 flex max-w-[32rem] flex-col lg:mt-0">
             {/* Set like esv.org's section kicker (their `landing-copy-title`):
                 their sans at 13px/23px, weight 400, uppercase, 1px tracking, in
                 the muted gold #bfb391. Ours is the system sans, which is what
@@ -216,13 +216,18 @@ export default function Home() {
             <h2 className="text-[13px] font-normal uppercase leading-[23px] tracking-[1px] text-[#bfb391]">
               What&rsquo;s in it
             </h2>
-            <ul className="mt-4 list-disc space-y-2.5 pl-5 font-scripture text-base font-normal leading-relaxed tracking-[0.0156em] text-neutral-300 marker:text-neutral-600">
+            {/* The bullets spread to fill the column rather than sitting at a
+                fixed spacing, so the list ends level with the last row of
+                tiles whatever height the montage happens to be. gap-5 is the
+                floor — below lg the column has no height to fill and that is
+                all they get. Set as a number, this would need re-tuning every
+                time a bullet rewraps or a tile's crop changes. */}
+            <ul className="mt-4 flex flex-1 list-disc flex-col justify-between gap-5 pl-5 font-scripture text-base font-normal leading-relaxed tracking-[0.0156em] text-neutral-300 marker:text-neutral-600">
               {features.map((f) => (
                 <li key={f.id}>{f.content}</li>
               ))}
             </ul>
           </div>
-          <FeatureMontage className="mt-10" />
         </section>
       </div>
 

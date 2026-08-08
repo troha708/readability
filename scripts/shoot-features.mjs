@@ -33,7 +33,15 @@ const reader = (b, c) => `${ORIGIN}/try/bible/read?book=${b}&chapter=${c}&versio
 
 // The tile's aspect in the montage. The crop height follows from it, so the
 // component and the frame can never disagree about the shape.
-const TILE_ASPECT = 16 / 10;
+//
+// 1.4 rather than the 16:10 it started at. The components are all a fixed
+// width — a sheet is capped at 42rem whatever the viewport does — so the only
+// way a tile can show more of one is a taller window over it. At 16:10 every
+// tile stopped mid-feature: mid-sentence in the dictionary article, mid-verse
+// in the search results, and short of the definition in the verse sheet. This
+// buys about 14% more height on all six at once, which is the difference
+// between a tile that stops and a tile that finishes.
+const TILE_ASPECT = 1.4;
 
 mkdirSync(DEST, { recursive: true });
 
@@ -123,10 +131,13 @@ async function tile(name, find, { zoom = 1, top = 0 } = {}) {
 
 const bySelector = (sel) => `return document.querySelector(${JSON.stringify(sel)});`;
 
-// ── 1. Verse tools: the sheet on John 1:4, Original words open ──────────
+// ── 1. Verse tools: the sheet on John 1:1, Original words open, a word
+//       tapped through to its Strong's entry ─────────────────────────────
+// On 1:1 rather than 1:4 because the word tapped below has to be in the verse:
+// 1:4 has neither Λόγος nor an English "Word", and the tap would miss.
 await go(reader("John", 1));
 await page.evaluate(() => {
-  const v = document.querySelector('.vtext[data-hv="4"]');
+  const v = document.querySelector('.vtext[data-hv="1"]');
   const r = v.getClientRects()[0];
   v.dispatchEvent(
     new MouseEvent("click", { bubbles: true, clientX: r.x + 8, clientY: r.y + r.height / 2 }),
@@ -149,60 +160,22 @@ await page
 await clickByText(/^Original words/, '[class*="sheet-rise"] button');
 await wait(2500);
 await dismissNudge();
-await tile("verse-tools", bySelector('[class*="sheet-rise"]'), { top: 0.02 });
-await page.keyboard.press("Escape");
-await wait(800);
-
-// ── 1b. Word study: a word tapped, its partner lit, its entry open ──────
-// The one feature that has to be caught mid-interaction. The two lines mean
-// nothing until a word is selected: the picture has to show the tap, or it is
-// just Greek above English.
-await go(reader("John", 1));
-await page.evaluate(() => {
-  const v = document.querySelector('.vtext[data-hv="1"]');
-  const r = v.getClientRects()[0];
-  v.dispatchEvent(
-    new MouseEvent("click", { bubbles: true, clientX: r.x + 8, clientY: r.y + r.height / 2 }),
-  );
-});
-await page
-  .waitForFunction(
-    () =>
-      [...document.querySelectorAll('[class*="sheet-rise"] button')].some((x) =>
-        /^Original words/.test((x.textContent || "").trim()),
-      ),
-    null,
-    { timeout: 60_000 },
-  )
-  .catch(() => {
-    throw new Error("Original words never appeared — Strong's did not load");
-  });
-// The sheet remembers which sections a reader has opened, and the verse-tools
-// shot above left this one open — so clicking the header here would CLOSE it,
-// and the tap below would find nothing to tap. Open it only if it is shut.
-// The header carries no aria-expanded; its chevron flips instead, which is the
-// component's own record of the state.
-const wordsSectionOpen = () =>
-  page.evaluate(() => {
-    const b = [...document.querySelectorAll('[class*="sheet-rise"] button')].find((x) =>
-      /^Original words/.test((x.textContent || "").trim()),
-    );
-    return !!b?.querySelector('svg[class*="rotate-180"]');
-  });
-if (!(await wordsSectionOpen())) {
-  await clickByText(/^Original words/, '[class*="sheet-rise"] button');
-}
-await wait(2500);
-// "Word" — the noun the whole verse turns on, and the one a reader is most
-// likely to want the Greek for. Falling back to any word would shoot a
-// meaningless one silently, so a miss is an error instead.
+// Then tap a word, so the one tile carries the whole chain: the verse, its
+// tools, the sections, and a word followed through to its entry. The two
+// interlinear lines say nothing until a word is selected — unselected they are
+// just Greek above English — so the tap has to be in the picture.
+//
+// "Word" is the noun this verse turns on and the one a reader is likeliest to
+// want the Greek for. Falling back to any word would shoot a meaningless one
+// silently, so a miss is an error instead.
 const tapped = await page.evaluate(() => {
-  const btns = [...document.querySelectorAll('[class*="sheet-rise"] button')];
-  const w = btns.find((b) => /^(λόγος|Λόγος|Word)$/.test((b.textContent || "").trim()));
+  const w = [...document.querySelectorAll('[class*="sheet-rise"] button')].find((b) =>
+    /^(λόγος|Λόγος|Word)$/.test((b.textContent || "").trim()),
+  );
   w?.click();
   return w ? w.textContent.trim() : null;
 });
-if (!tapped) throw new Error("word study: no 'Word' token to tap");
+if (!tapped) throw new Error("verse tools: no 'Word' token to tap");
 // The selection paints its partner amber in the other line; until that shows,
 // the entry underneath has not rendered either.
 await page
@@ -212,20 +185,16 @@ await page
     { timeout: 20_000 },
   )
   .catch(() => {
-    throw new Error(`word study: tapped "${tapped}" but nothing was selected`);
+    throw new Error(`verse tools: tapped "${tapped}" but nothing was selected`);
   });
 await wait(1200);
-await dismissNudge();
-// Cropped from lower down than its neighbour. The entry the tap opens is the
-// whole point of this tile and it sits at the bottom of the sheet, below a
-// 16:10 window taken from the top — and the sheet does not scroll, so there is
-// nothing to pull up. Starting further down spends the verse's own reference,
-// which the tile can afford: what it has to show is a word, its partner, and
-// what the word means.
-await tile("word-study", bySelector('[class*="sheet-rise"]'), { top: 0.14 });
+// Everything from the reference down to the word's definition is about 490px
+// of a 672px-wide sheet. A 16:10 window was 420 and had to skip the reference
+// line to reach the definition; at 1.4 the window is 480 and keeps both, so
+// this is back to trimming nothing but the sliver above the rounded top.
+await tile("verse-tools", bySelector('[class*="sheet-rise"]'), { top: 0.02 });
 await page.keyboard.press("Escape");
 await wait(800);
-await go(reader("John", 1));
 
 // ── 2. Book overview: the head of the John card ─────────────────────────
 await page.evaluate(() => {
@@ -293,13 +262,19 @@ await tile(
    const rects = opts.map((o) => o.getBoundingClientRect());
    const left = Math.min(...rects.map((r) => r.left)) - 18;
    const right = Math.max(...rects.map((r) => r.right)) + 18;
-   const top = rects[0].top - 130;
-   // The four options come to less than 16:10, so the crop runs a little past
-   // the last one onto the quiz's own footer row — real page, not a gap.
-   const bottom = document.body.getBoundingClientRect().bottom;
+   const width = right - left;
+   // Anchored at the BOTTOM, on the quiz's own footer row, with the height
+   // taken upward from there. Anchored at the top — as this was — a taller
+   // tile aspect runs straight off the end of the quiz and photographs the
+   // site footer underneath it, so the tile ends in a row of nav links.
+   const foot = [...document.querySelectorAll("*")]
+     .filter((e) => !e.children.length && /Skip quiz/i.test(e.textContent || ""))
+     .pop();
+   const bottom = (foot ? foot.getBoundingClientRect().bottom : rects[rects.length - 1].bottom + 28) + 14;
+   const top = bottom - width / ${TILE_ASPECT};
    return {
      getBoundingClientRect: () => ({
-       x: left, y: top, width: right - left, height: bottom - top,
+       x: left, y: top, width, height: bottom - top,
      }),
    };`,
 );
