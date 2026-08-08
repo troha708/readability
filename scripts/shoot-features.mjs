@@ -100,7 +100,7 @@ const clickByText = (re, scope = "button") =>
  * room left below the stopping element; `top` skips that fraction of the height
  * off the top.
  */
-async function tile(name, find, { top = 0, stop = null, pad = 16 } = {}) {
+async function tile(name, find, { top = 0, stop = null, pad = 16, padX = 0 } = {}) {
   // Pages differ by seconds in when they hydrate and paint — the dictionary
   // article and the quiz both arrive well after domcontentloaded — so wait on
   // the element itself rather than guessing a delay per page.
@@ -110,7 +110,7 @@ async function tile(name, find, { top = 0, stop = null, pad = 16 } = {}) {
       throw new Error(`${name}: element never appeared`);
     });
   const clip = await page.evaluate(
-    ([body, stopBody, t, padPx]) => {
+    ([body, stopBody, t, padPx, padSide]) => {
       const el = new Function(body)();
       if (!el) return null;
       const r = el.getBoundingClientRect();
@@ -121,9 +121,16 @@ async function tile(name, find, { top = 0, stop = null, pad = 16 } = {}) {
         if (!s) return { missingStop: true };
         bottom = Math.min(s.getBoundingClientRect().bottom + padPx, r.bottom);
       }
-      return { x: r.x, y, width: r.width, height: bottom - y, own: r.bottom - y };
+      // padX widens the crop past the element on both sides, onto the page
+      // behind it. Some components are boxes with their own inner padding and
+      // some — the dictionary article — are bare text whose box stops at the
+      // glyphs, so a crop on the element alone has words touching both edges
+      // and reads as though it were cut off.
+      const x = Math.max(0, r.x - padSide);
+      const width = Math.min(r.width + padSide * 2, document.documentElement.clientWidth - x);
+      return { x, y, width, height: bottom - y, own: r.bottom - y };
     },
-    [find, stop, top, pad],
+    [find, stop, top, pad, padX],
   );
   if (!clip) throw new Error(`${name}: element not found`);
   if (clip.missingStop)
@@ -239,18 +246,21 @@ await page.evaluate(() => {
 await wait(2000);
 await dismissNudge();
 // The card is the toggle's own parent — an unclassed div with no handle.
-// Stops after Setting, the last of the four labelled fields, so the tile ends
-// on a finished field rather than in the middle of the prose below it.
+// Stops at the foot of the first paragraph of prose, one boundary past the
+// four labelled fields. Stopping on the fields gave a 1.73 tile against the
+// verse sheet's 1.20 beside it, which read as a stub; this comes to 1.12, so
+// the two sit at about the same size. The card runs on for 4,900px, and the
+// only boundaries below this are further paragraphs, each ~200px more.
 await tile(
   "overview",
   `const b = [...document.querySelectorAll("button[aria-expanded]")]
      .find((x) => /Overview$/.test((x.textContent || "").trim()));
    return b && b.parentElement;`,
   {
-    stop: `const lab = [...document.querySelectorAll("*")]
-             .filter((e) => !e.children.length && /^setting$/i.test((e.textContent || "").trim()))
-             .pop();
-           return lab && lab.parentElement;`,
+    stop: `const b = [...document.querySelectorAll("button[aria-expanded]")]
+             .find((x) => /Overview$/.test((x.textContent || "").trim()));
+           const card = b && b.parentElement;
+           return card && card.querySelector("p");`,
   },
 );
 
@@ -263,12 +273,21 @@ await dismissNudge();
 await tile("chapter-map", bySelector('div[class*="rounded-t-2xl"]'));
 
 // ── 4. Dictionary: the head of the Bethlehem article ────────────────────
-// Stops at the foot of the second paragraph. An article runs for screens, so
+// Stops at the foot of the third paragraph. An article runs for screens, so
 // something has to end this tile; a whole paragraph is a place a reader's eye
-// accepts stopping, and a fixed height lands mid-sentence every time.
+// accepts stopping, and a fixed height lands mid-sentence every time. The
+// third rather than the second because it brings the tile to 1.30, matching
+// the chapter map that sits beside it in the montage.
+//
+// padX because this is the one component that is bare text: the article's box
+// stops at the glyphs, where the sheet and the map are panels with their own
+// inner padding. Cropped to the element alone, every line touched both edges
+// and the tile read as though the words had been sliced off. 24px each side
+// is the page behind it, which is the margin the article is actually set in.
 await go(`${ORIGIN}/try/bible/dictionary?entry=Bethlehem`);
 await tile("dictionary", bySelector("article"), {
-  stop: `return document.querySelectorAll("article p")[1];`,
+  padX: 24,
+  stop: `return document.querySelectorAll("article p")[2];`,
 });
 
 // ── 5. Search: a live query, with the matches highlighted ───────────────

@@ -25,13 +25,13 @@ const TILES = [
   {
     src: "/landing/overview.png",
     w: 1344,
-    h: 778,
-    alt: "The introduction to John, giving its purpose, author, date and setting",
+    h: 1205,
+    alt: "The introduction to John, giving its purpose, author, date and setting, and opening on why the Gospel was written",
   },
   {
     src: "/landing/dictionary.png",
-    w: 1472,
-    h: 820,
+    w: 1568,
+    h: 1208,
     alt: "The dictionary article on Bethlehem, its prose linked through to the people and places it names",
   },
   {
