@@ -58,10 +58,10 @@ export function FeatureMontage({ className = "" }: { className?: string }) {
           alt={t.alt}
           width={t.w}
           height={t.h}
-          // Two columns of a 26rem block on desktop, two columns of the
-          // viewport below it — never more than ~200px either way, so the
+          // Two columns of a 30rem block on desktop, two columns of the
+          // viewport below it — never more than ~235px either way, so the
           // browser is told that rather than left to assume full width.
-          sizes="(min-width: 30rem) 200px, 45vw"
+          sizes="(min-width: 34rem) 235px, 45vw"
           className="w-full rounded-[3px] border border-neutral-800 bg-neutral-900"
         />
       ))}

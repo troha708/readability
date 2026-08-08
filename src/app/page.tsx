@@ -198,24 +198,26 @@ export default function Home() {
       {/* Lower sections share the hero's wide container on desktop —
           heading left, content right — and stack vertically below md. */}
       <div className="mx-auto max-w-6xl px-6">
-        {/* What's in it — kicker, montage, list. The three-way split waits
-            for lg: at md the container is only ~720px, and a third of that
-            leaves the montage's two columns too narrow to make out. Below lg
-            the three stack, montage between kicker and list. */}
-        <section className="pb-16 pt-14 lg:grid lg:grid-cols-[9rem_26rem_minmax(0,1fr)] lg:gap-8">
-          {/* Set like esv.org's section kicker (their `landing-copy-title`):
-              their sans at 13px/23px, weight 400, uppercase, 1px tracking, in
-              the muted gold #bfb391. Ours is the system sans, which is what
-              this site uses wherever they use Gotham. */}
-          <h2 className="text-[13px] font-normal uppercase leading-[23px] tracking-[1px] text-[#bfb391]">
-            What&rsquo;s in it
-          </h2>
-          <FeatureMontage className="mt-5 max-w-[26rem] lg:mt-0" />
-          <ul className="mt-7 list-disc space-y-2.5 pl-5 font-scripture text-base font-normal leading-relaxed tracking-[0.0156em] text-neutral-300 marker:text-neutral-600 lg:mt-0">
-            {features.map((f) => (
-              <li key={f.id}>{f.content}</li>
-            ))}
-          </ul>
+        {/* What's in it — montage beside the list, kicker sitting over the
+            list. The split waits for lg: at md the container is only ~720px,
+            and half of that leaves the montage's two columns too narrow to
+            make out. Below lg the two stack, montage first. */}
+        <section className="pb-16 pt-14 lg:grid lg:grid-cols-[30rem_minmax(0,1fr)] lg:gap-10">
+          <FeatureMontage className="max-w-[30rem]" />
+          <div className="mt-8 max-w-[32rem] lg:mt-0">
+            {/* Set like esv.org's section kicker (their `landing-copy-title`):
+                their sans at 13px/23px, weight 400, uppercase, 1px tracking, in
+                the muted gold #bfb391. Ours is the system sans, which is what
+                this site uses wherever they use Gotham. */}
+            <h2 className="text-[13px] font-normal uppercase leading-[23px] tracking-[1px] text-[#bfb391]">
+              What&rsquo;s in it
+            </h2>
+            <ul className="mt-4 list-disc space-y-2.5 pl-5 font-scripture text-base font-normal leading-relaxed tracking-[0.0156em] text-neutral-300 marker:text-neutral-600">
+              {features.map((f) => (
+                <li key={f.id}>{f.content}</li>
+              ))}
+            </ul>
+          </div>
         </section>
       </div>
 
