@@ -1,8 +1,16 @@
 import Image from "next/image";
 
 /**
- * The pictures beside the "What's in it" list: one per bullet, in the same
- * order, so a tile and its sentence read as a pair.
+ * The pictures under the "What's in it" list, following it in roughly its own
+ * order. They were a narrow column beside the list, two tiles to about 235px:
+ * at that size a screenshot of a full reading interface is a grey smudge with
+ * the shape of a screenshot, which is worth nothing. They now take the page's
+ * full width, so a tile is wide enough that what it shows can be read.
+ *
+ * That also ends the strict one-tile-per-bullet pairing, since nothing sits
+ * beside its sentence any more: word study gets a picture of its own, because
+ * the first bullet carries four separate features and tapping a word through
+ * to its Greek is the one that has to be seen to be understood.
  *
  * Each is a capture of the real component rather than an illustration of it —
  * scripts/shoot-features.mjs drives the app and shoots them, and re-running it
@@ -15,6 +23,12 @@ const TILES = [
     w: 1344,
     h: 840,
     alt: "The verse sheet open on John 1:4: highlight colours, Note and Copy, then study notes, cross-references and the Greek word by word",
+  },
+  {
+    src: "/landing/word-study.png",
+    w: 1344,
+    h: 840,
+    alt: "The opening of John 1:1 as two aligned lines, Greek above and English below, with one word tapped: its partner is highlighted in the other line and its lemma, transliteration, parsing, Strong's number and definition are shown underneath",
   },
   {
     src: "/landing/overview.png",
@@ -50,7 +64,7 @@ const TILES = [
 
 export function FeatureMontage({ className = "" }: { className?: string }) {
   return (
-    <div className={`grid grid-cols-2 gap-3 ${className}`}>
+    <div className={`grid grid-cols-1 gap-4 sm:grid-cols-2 ${className}`}>
       {TILES.map((t) => (
         <Image
           key={t.src}
@@ -58,10 +72,9 @@ export function FeatureMontage({ className = "" }: { className?: string }) {
           alt={t.alt}
           width={t.w}
           height={t.h}
-          // Two columns of a 30rem block on desktop, two columns of the
-          // viewport below it — never more than ~235px either way, so the
-          // browser is told that rather than left to assume full width.
-          sizes="(min-width: 34rem) 235px, 45vw"
+          // Half of the 72rem column at full size, most of the viewport on a
+          // phone — where one tile per row beats two unreadable ones.
+          sizes="(min-width: 75rem) 544px, (min-width: 40rem) 47vw, 92vw"
           className="w-full rounded-[3px] border border-neutral-800 bg-neutral-900"
         />
       ))}

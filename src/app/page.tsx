@@ -202,13 +202,13 @@ export default function Home() {
       {/* Lower sections share the hero's wide container on desktop —
           heading left, content right — and stack vertically below md. */}
       <div className="mx-auto max-w-6xl px-6">
-        {/* What's in it — montage beside the list, kicker sitting over the
-            list. The split waits for lg: at md the container is only ~720px,
-            and half of that leaves the montage's two columns too narrow to
-            make out. Below lg the two stack, montage first. */}
-        <section className="pb-16 pt-14 lg:grid lg:grid-cols-[30rem_minmax(0,1fr)] lg:gap-10">
-          <FeatureMontage className="max-w-[30rem]" />
-          <div className="mt-8 max-w-[32rem] lg:mt-0">
+        {/* What's in it — the list first, then the pictures full width under
+            it. They used to share the row, which capped a tile at about a
+            quarter of the page: big enough to see that it was a screenshot,
+            not big enough to see what of. Prose does not need the width and
+            screenshots do, so they stopped competing for it. */}
+        <section className="pb-16 pt-14">
+          <div className="max-w-[32rem]">
             {/* Set like esv.org's section kicker (their `landing-copy-title`):
                 their sans at 13px/23px, weight 400, uppercase, 1px tracking, in
                 the muted gold #bfb391. Ours is the system sans, which is what
@@ -222,6 +222,7 @@ export default function Home() {
               ))}
             </ul>
           </div>
+          <FeatureMontage className="mt-10" />
         </section>
       </div>
 

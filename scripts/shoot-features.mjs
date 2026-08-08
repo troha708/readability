@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 /**
- * Shoots the six tiles for the landing page's "What's in it" montage — one
- * per bullet, each a capture of the real component in dark mode.
+ * Shoots the tiles for the landing page's "What's in it" montage, each a
+ * capture of the real component in dark mode, in roughly the list's own order.
  *
  * The crops are baked in rather than done in CSS: the montage shows a tile at
- * 16:10 and roughly 200px wide, so shipping the whole 672px-tall verse sheet
- * would send pixels that are cropped away on arrival. Each tile takes the
+ * 16:10, so shipping the whole 672px-tall verse sheet would send pixels that
+ * are cropped away on arrival. Each tile takes the
  * component's full width and only as much height as 16:10 allows — `zoom`
  * above 1 would magnify further but crops the right edge, which cuts prose
  * mid-line, so it stays at 1. `top` skips the sliver of page caught above a
@@ -152,6 +152,80 @@ await dismissNudge();
 await tile("verse-tools", bySelector('[class*="sheet-rise"]'), { top: 0.02 });
 await page.keyboard.press("Escape");
 await wait(800);
+
+// ── 1b. Word study: a word tapped, its partner lit, its entry open ──────
+// The one feature that has to be caught mid-interaction. The two lines mean
+// nothing until a word is selected: the picture has to show the tap, or it is
+// just Greek above English.
+await go(reader("John", 1));
+await page.evaluate(() => {
+  const v = document.querySelector('.vtext[data-hv="1"]');
+  const r = v.getClientRects()[0];
+  v.dispatchEvent(
+    new MouseEvent("click", { bubbles: true, clientX: r.x + 8, clientY: r.y + r.height / 2 }),
+  );
+});
+await page
+  .waitForFunction(
+    () =>
+      [...document.querySelectorAll('[class*="sheet-rise"] button')].some((x) =>
+        /^Original words/.test((x.textContent || "").trim()),
+      ),
+    null,
+    { timeout: 60_000 },
+  )
+  .catch(() => {
+    throw new Error("Original words never appeared — Strong's did not load");
+  });
+// The sheet remembers which sections a reader has opened, and the verse-tools
+// shot above left this one open — so clicking the header here would CLOSE it,
+// and the tap below would find nothing to tap. Open it only if it is shut.
+// The header carries no aria-expanded; its chevron flips instead, which is the
+// component's own record of the state.
+const wordsSectionOpen = () =>
+  page.evaluate(() => {
+    const b = [...document.querySelectorAll('[class*="sheet-rise"] button')].find((x) =>
+      /^Original words/.test((x.textContent || "").trim()),
+    );
+    return !!b?.querySelector('svg[class*="rotate-180"]');
+  });
+if (!(await wordsSectionOpen())) {
+  await clickByText(/^Original words/, '[class*="sheet-rise"] button');
+}
+await wait(2500);
+// "Word" — the noun the whole verse turns on, and the one a reader is most
+// likely to want the Greek for. Falling back to any word would shoot a
+// meaningless one silently, so a miss is an error instead.
+const tapped = await page.evaluate(() => {
+  const btns = [...document.querySelectorAll('[class*="sheet-rise"] button')];
+  const w = btns.find((b) => /^(λόγος|Λόγος|Word)$/.test((b.textContent || "").trim()));
+  w?.click();
+  return w ? w.textContent.trim() : null;
+});
+if (!tapped) throw new Error("word study: no 'Word' token to tap");
+// The selection paints its partner amber in the other line; until that shows,
+// the entry underneath has not rendered either.
+await page
+  .waitForFunction(
+    () => !!document.querySelector('[class*="sheet-rise"] button[class*="bg-amber"]'),
+    null,
+    { timeout: 20_000 },
+  )
+  .catch(() => {
+    throw new Error(`word study: tapped "${tapped}" but nothing was selected`);
+  });
+await wait(1200);
+await dismissNudge();
+// Cropped from lower down than its neighbour. The entry the tap opens is the
+// whole point of this tile and it sits at the bottom of the sheet, below a
+// 16:10 window taken from the top — and the sheet does not scroll, so there is
+// nothing to pull up. Starting further down spends the verse's own reference,
+// which the tile can afford: what it has to show is a word, its partner, and
+// what the word means.
+await tile("word-study", bySelector('[class*="sheet-rise"]'), { top: 0.14 });
+await page.keyboard.press("Escape");
+await wait(800);
+await go(reader("John", 1));
 
 // ── 2. Book overview: the head of the John card ─────────────────────────
 await page.evaluate(() => {
