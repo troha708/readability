@@ -270,7 +270,7 @@ export function BibleRoadmap({
                   disclosure marker, and it costs no markup. */}
               <span
                 aria-hidden="true"
-                className="mr-1.5 inline-block w-2 select-none text-[10px] text-neutral-400 dark:text-neutral-600"
+                className="mr-1 inline-block w-3.5 select-none text-[13px] text-neutral-400 dark:text-neutral-600"
               >
                 {hasChapters ? (isExpanded ? "▾" : "▸") : ""}
               </span>
@@ -387,7 +387,7 @@ export function BibleRoadmap({
         >
           <span
             aria-hidden="true"
-            className="mr-1.5 inline-block w-2 text-[10px] text-neutral-400 dark:text-neutral-600"
+            className="mr-1 inline-block w-3.5 text-[13px] text-neutral-400 dark:text-neutral-600"
           >
             {isSectionExpanded ? "▾" : "▸"}
           </span>

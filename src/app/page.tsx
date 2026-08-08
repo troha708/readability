@@ -5,7 +5,7 @@ import { AuthButton } from "@/components/auth-button";
 import { ReturningUserRedirect } from "@/components/returning-user-redirect";
 import { SiteFooter } from "@/components/site-footer";
 import { FeatureMontage } from "./feature-montage";
-import { HeroPhone } from "./hero-phone";
+import { HeroMockup } from "./hero-mockup";
 import { LandingSearch } from "./landing-search";
 import { SITE_URL } from "@/lib/site";
 
@@ -190,7 +190,12 @@ export default function Home() {
           </div>
 
           <div className="relative mt-12 min-w-0 md:mt-0">
-            <HeroPhone />
+            {/* The panel waits to be tapped, so it has to say so — the video
+                that replaced this showed the tap and needed no caption. */}
+            <p className="mb-2 text-xs text-neutral-400">
+              Tap any verse for study notes
+            </p>
+            <HeroMockup />
           </div>
         </section>
       </div>
