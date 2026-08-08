@@ -1045,7 +1045,8 @@ function MockVerseSheet({
   );
 }
 
-export function HeroMockup() {
+/** `caption` renders above the panel and shares its box, so the two align. */
+export function HeroMockup({ caption }: { caption?: string }) {
   const [sheetVerse, setSheetVerse] = useState<number | null>(null);
   const [highlights, setHighlights] = useState<Record<number, string>>({});
   const [notes, setNotes] = useState<Record<number, string>>({});
@@ -1080,23 +1081,27 @@ export function HeroMockup() {
       .hero-mockup-scroll::-webkit-scrollbar-thumb { background: #9a9fa3; border-radius: 6px; border: 2px solid #14110f; }
       .hero-mockup-scroll::-webkit-scrollbar-thumb:hover { background: #c4c4c4; }
     `}</style>
-    {/* 15% down from full size. Scaled rather than narrowed: the app inside
+    {/* 5% down from full size. Scaled rather than narrowed: the app inside
         is built from fixed-px type, so a smaller box would only reflow it and
         leave 16px scripture in a shrunken frame.
 
-        The 85% is on the wrapper and the zoom on the panel, and it has to be
-        that way round. zoom resolves the panel's w-full against its parent
-        *after* zooming, so the panel always fills whatever box it is given —
-        put the zoom on a full-width panel and the width never moves, which
-        squashes it. Handed an 85% box, it fills that instead, and lays its
-        contents out at 1/0.85 of it, so type and height come down together.
+        The 95% is on the wrapper and the zoom on the panel, and it has to be
+        that way round — the two move together. zoom resolves the panel's
+        w-full against its parent *after* zooming, so the panel always fills
+        whatever box it is given: put the zoom on a full-width panel and the
+        width never moves, which squashes it. Handed a 95% box, it fills that
+        instead, and lays its contents out at 1/0.95 of it, so type and height
+        come down together.
 
         transform: scale would shrink it just as evenly but leaves the
         original box behind: the panel's height is content-driven and varies
         with the column, so nothing static could reclaim the gap. */}
-    <div className="mx-auto w-[85%] max-w-3xl">
+    <div className="mx-auto w-[95%] max-w-3xl">
+      {/* Inside the wrapper, so the caption starts at the panel's edge rather
+          than the column's — the panel is inset by a twentieth. */}
+      {caption && <p className="mb-2 text-xs text-neutral-400">{caption}</p>}
       <div
-        style={{ zoom: 0.85 }}
+        style={{ zoom: 0.95 }}
         className="dark relative overflow-hidden rounded-xl border border-neutral-700 bg-neutral-925 shadow-2xl"
       >
       {/* Scrollable app viewport — mirrors the reading page, sticky header included */}

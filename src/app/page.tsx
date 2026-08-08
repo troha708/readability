@@ -191,11 +191,10 @@ export default function Home() {
 
           <div className="relative mt-12 min-w-0 md:mt-0">
             {/* The panel waits to be tapped, so it has to say so — the video
-                that replaced this showed the tap and needed no caption. */}
-            <p className="mb-2 text-xs text-neutral-400">
-              Tap any verse to preview study notes
-            </p>
-            <HeroMockup />
+                that replaced this showed the tap and needed no caption. It
+                goes through the component rather than sitting here so that it
+                lands inside the panel's own box and lines up with its edge. */}
+            <HeroMockup caption="Tap any verse to preview study notes" />
           </div>
         </section>
       </div>
