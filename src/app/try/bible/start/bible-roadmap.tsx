@@ -230,11 +230,13 @@ export function BibleRoadmap({
     return (
       <Fragment key={book.name}>
         <tr ref={isActiveBook ? activeBookRef : undefined} className="scroll-mt-24 align-baseline">
-          {/* w-full here and w-px + nowrap on the figure: auto table layout
-              otherwise splits the slack and pulls the count in off the edge.
-              This is the contents-page arrangement — title left, figure
-              right, space between. */}
-          <td className={`w-full py-2 pr-3 ${rowDivider}`}>
+          {/* Three columns: title, original title, figure. The title cell
+              shrinks to its content and the original-title cell takes the
+              slack, so every Hebrew and Greek name starts on the same left
+              edge — a column you can read down — while the figure stays out
+              at the right. Give the slack to the title instead and the
+              originals scatter along the ragged edge of the English. */}
+          <td className={`w-px whitespace-nowrap py-2 pr-4 ${rowDivider}`}>
             {/* A real link to chapter 1 so crawlers reach every book — the
                 chapter grid below only exists when open — but click toggles.
                 draggable={false} and the selection guard keep the row's text
@@ -275,22 +277,23 @@ export function BibleRoadmap({
                 {hasChapters ? (isExpanded ? "▾" : "▸") : ""}
               </span>
               {book.name}
-              {/* Set in the English name's own type — same family, size and
-                  colour, one space along. dir is not a style: without it the
-                  numbered Hebrew books (שְׁמוּאֵל א) reorder against the Latin
-                  text now sitting immediately before them. */}
-              {orig && (
-                <>
-                  {" "}
-                  <span
-                    dir={orig.script === "hebrew" ? "rtl" : undefined}
-                    title={orig.translit}
-                  >
-                    {orig.original}
-                  </span>
-                </>
-              )}
             </a>
+          </td>
+          {/* Set in the English name's own type — same family, size and
+              colour. dir is not a style: without it the numbered Hebrew books
+              (שְׁמוּאֵל א) reorder against the Latin text around them. */}
+          <td className={`w-full py-2 pr-3 font-scripture text-[17px] ${rowDivider} ${
+            isActiveBook
+              ? "text-gold dark:text-gold-bright"
+              : hasChapters
+                ? "text-neutral-800 dark:text-neutral-300"
+                : "text-neutral-400 dark:text-neutral-600"
+          }`}>
+            {orig && (
+              <span dir={orig.script === "hebrew" ? "rtl" : undefined} title={orig.translit}>
+                {orig.original}
+              </span>
+            )}
           </td>
           <td className={`w-px whitespace-nowrap py-2 text-right font-scripture text-[14px] tabular-nums text-neutral-400 dark:text-neutral-500 ${rowDivider}`}>
             {completedCount > 0
@@ -300,7 +303,7 @@ export function BibleRoadmap({
         </tr>
         {isExpanded && hasChapters && (
           <tr>
-            <td colSpan={2} className={`pb-3 ${divider}`}>
+            <td colSpan={3} className={`pb-3 ${divider}`}>
               {purpose && (
                 <p className="mb-2 max-w-prose font-scripture text-[14px] italic leading-relaxed text-neutral-500 dark:text-neutral-500">
                   {purpose}
@@ -404,7 +407,7 @@ export function BibleRoadmap({
                       decorated. */}
                   <tr>
                     <th
-                      colSpan={2}
+                      colSpan={3}
                       className="pb-1 pt-6 text-left font-scripture text-[14px] font-normal italic text-neutral-400 dark:text-neutral-500"
                     >
                       {genre}
