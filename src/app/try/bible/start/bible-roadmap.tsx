@@ -204,12 +204,17 @@ export function BibleRoadmap({
    * original name, chapter count. The second only exists when the row is open
    * and holds the chapter grid.
    *
-   * Deliberately close to bare HTML: no rule per row, no accent on every line,
-   * no second family for the figures. The earlier version put a hairline under
-   * every book, an uppercase letter-spaced label over each division and gold on
-   * all 66 rows, and the page read as decorated rather than set. Standard
-   * Ebooks' contents page is a list of numerals 2em apart and nothing else;
-   * this aims at that end.
+   * Set like a contents page, not a data table. Standard Ebooks' own contents
+   * stylesheet is `list-style: none` with 2em between entries and no rule
+   * anywhere; entries are told apart by space and alignment. This had said it
+   * aimed at that while drawing a hairline under all sixty-six books, which is
+   * the default a table falls into when nobody sets it — so the rules are gone
+   * and the air they were standing in for is real.
+   *
+   * One size throughout, including the chapter figure: on a printed contents
+   * page the number is part of the line, and shrinking it is what turns it
+   * into a badge. What separates things is the space above a division and the
+   * column the originals stand in.
    */
   function renderBookRows(book: BookInfo, isActiveBook: boolean, isStudy: boolean) {
     const hasChapters = book.chapters.length > 0;
@@ -221,11 +226,9 @@ export function BibleRoadmap({
     const isExpanded = expandedBooks.has(book.name);
     const orig = originalName(book.name);
     const purpose = purposeByBook[book.name];
-    // The divider goes at the bottom of whatever the book's last row is, so an
-    // open book isn't cut off from its own chapter grid by a line through the
-    // middle of it.
-    const divider = "border-b border-neutral-200 dark:border-neutral-800";
-    const rowDivider = isExpanded ? "" : divider;
+    // Row rhythm. Wider than it was, because the hairline that used to hold
+    // the rows apart has gone and the space now has to do that on its own.
+    const cell = "py-[0.6rem]";
 
     return (
       <Fragment key={book.name}>
@@ -236,7 +239,7 @@ export function BibleRoadmap({
               edge — a column you can read down — while the figure stays out
               at the right. Give the slack to the title instead and the
               originals scatter along the ragged edge of the English. */}
-          <td className={`w-px whitespace-nowrap py-2 pr-4 ${rowDivider}`}>
+          <td className={`w-px whitespace-nowrap pr-4 ${cell}`}>
             {/* A real link to chapter 1 so crawlers reach every book — the
                 chapter grid below only exists when open — but click toggles.
                 draggable={false} and the selection guard keep the row's text
@@ -282,7 +285,7 @@ export function BibleRoadmap({
           {/* Set in the English name's own type — same family, size and
               colour. dir is not a style: without it the numbered Hebrew books
               (שְׁמוּאֵל א) reorder against the Latin text around them. */}
-          <td className={`w-full py-2 pr-3 font-scripture text-[17px] ${rowDivider} ${
+          <td className={`w-full pr-3 font-scripture text-[17px] ${cell} ${
             isActiveBook
               ? "text-gold dark:text-gold-bright"
               : hasChapters
@@ -295,7 +298,9 @@ export function BibleRoadmap({
               </span>
             )}
           </td>
-          <td className={`w-px whitespace-nowrap py-2 text-right font-scripture text-[14px] tabular-nums text-neutral-400 dark:text-neutral-500 ${rowDivider}`}>
+          {/* Same size as the title: on a contents page the figure is part of
+              the line. Set smaller it reads as a UI count pinned to the row. */}
+          <td className={`w-px whitespace-nowrap text-right font-scripture text-[17px] tabular-nums text-neutral-400 dark:text-neutral-500 ${cell}`}>
             {completedCount > 0
               ? `${completedCount}/${book.chapters.length}`
               : book.chapters.length}
@@ -303,7 +308,9 @@ export function BibleRoadmap({
         </tr>
         {isExpanded && hasChapters && (
           <tr>
-            <td colSpan={3} className={`pb-3 ${divider}`}>
+            {/* An open book keeps its grid close and takes its separation
+                from the next book below, since there is no rule to do it. */}
+            <td colSpan={3} className="pb-7">
               {purpose && (
                 <p className="mb-2 max-w-prose font-scripture text-[14px] italic leading-relaxed text-neutral-500 dark:text-neutral-500">
                   {purpose}
@@ -404,11 +411,13 @@ export function BibleRoadmap({
                   {/* The division, as a plain row. It was an uppercase
                       letter-spaced eyebrow with a right-aligned count; that
                       treatment was most of what made the table read as
-                      decorated. */}
+                      decorated. With the row rules gone, the space above a
+                      division is the only thing marking one part of the canon
+                      off from the next, so it carries more of it. */}
                   <tr>
                     <th
                       colSpan={3}
-                      className="pb-1 pt-6 text-left font-scripture text-[14px] font-normal italic text-neutral-400 dark:text-neutral-500"
+                      className="pb-2 pt-10 text-left font-scripture text-[14px] font-normal italic text-neutral-400 dark:text-neutral-500"
                     >
                       {genre}
                     </th>
