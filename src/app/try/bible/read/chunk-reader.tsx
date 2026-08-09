@@ -2513,12 +2513,24 @@ export function ChunkReader({
       applyAt(lastX, lastY);
     }
 
+    // Leaving the text is not the same as moving within it onto something that
+    // is not a verse. Only a mousemove inside the container updates the last
+    // known position, so once the cursor is out in the margin that position is
+    // stale — and the scroll handler above would keep asking what is under it
+    // and light whichever verse had moved there, with the pointer nowhere near
+    // the words. Forget the position along with the band.
+    function onLeave() {
+      lastX = -1;
+      lastY = -1;
+      clear();
+    }
+
     container.addEventListener("mousemove", onMove);
-    container.addEventListener("mouseleave", clear);
+    container.addEventListener("mouseleave", onLeave);
     window.addEventListener("scroll", onScroll, { passive: true, capture: true });
     return () => {
       container.removeEventListener("mousemove", onMove);
-      container.removeEventListener("mouseleave", clear);
+      container.removeEventListener("mouseleave", onLeave);
       window.removeEventListener("scroll", onScroll, { capture: true });
       clear();
     };
