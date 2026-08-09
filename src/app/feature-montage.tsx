@@ -37,8 +37,8 @@ const TILES = [
   {
     src: "/landing/chapter-map.png",
     w: 1344,
-    h: 1036,
-    alt: "The map for John 2, marking Cana, Capernaum and Jerusalem around the Sea of Galilee",
+    h: 1092,
+    alt: "The map for Acts 2, reaching from Rome to Mesopotamia: the countries the crowd at Pentecost had come from — Pontus, Cappadocia, Phrygia, Asia, Pamphylia, Egypt and Cyrene — marked around the Mediterranean, with Jerusalem and Galilee at its eastern end",
   },
   {
     src: "/landing/search.png",

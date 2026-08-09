@@ -29,6 +29,13 @@ import { dirname, join } from "node:path";
 const ROOT = process.env.FEATURES_ROOT ?? join(dirname(fileURLToPath(import.meta.url)), "..");
 const DEST = join(ROOT, "public", "landing");
 const ORIGIN = process.env.FEATURES_ORIGIN ?? "http://localhost:3000";
+/**
+ * FEATURES_ONLY=chapter-map re-shoots that tile alone. Replacing one picture is
+ * not a licence to quietly replace the other five: they would come back with
+ * whatever the components look like today, at whatever sizes that comes to, in
+ * a change that was about something else.
+ */
+const ONLY = process.env.FEATURES_ONLY ?? null;
 const reader = (b, c) => `${ORIGIN}/try/bible/read?book=${b}&chapter=${c}&version=BSB`;
 
 // There is no shared tile aspect any more. Every tile used to be cut to one
@@ -101,6 +108,7 @@ const clickByText = (re, scope = "button") =>
  * off the top.
  */
 async function tile(name, find, { top = 0, stop = null, pad = 16, padX = 0 } = {}) {
+  if (ONLY && name !== ONLY) return;
   // Pages differ by seconds in when they hydrate and paint — the dictionary
   // article and the quiz both arrive well after domcontentloaded — so wait on
   // the element itself rather than guessing a delay per page.
@@ -264,8 +272,11 @@ await tile(
   },
 );
 
-// ── 3. Chapter map: the four places in John 2 ───────────────────────────
-await go(reader("John", 2));
+// ── 3. Chapter map: the places named at Pentecost, Acts 2 ──────────────
+// Acts 2 rather than a chapter that stays in Galilee: the list of nations in
+// verses 9–11 reaches from Rome to Mesopotamia, so the map opens out to the
+// whole world the book is about instead of one province of it.
+await go(reader("Acts", 2));
 await wait(2000);
 await clickByText(/^Map/);
 await wait(4000);
@@ -276,8 +287,9 @@ await tile("chapter-map", bySelector('div[class*="rounded-t-2xl"]'));
 // Stops at the foot of the third paragraph. An article runs for screens, so
 // something has to end this tile; a whole paragraph is a place a reader's eye
 // accepts stopping, and a fixed height lands mid-sentence every time. The
-// third rather than the second because it brings the tile to 1.30, matching
-// the chapter map that sits beside it in the montage.
+// third rather than the second because it brings the tile to 1.30, close to
+// the chapter map that sits beside it in the montage — the two are not made to
+// agree, since the grid tops-aligns and lets each tile end where it ends.
 //
 // padX because this is the one component that is bare text: the article's box
 // stops at the glyphs, where the sheet and the map are panels with their own
