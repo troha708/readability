@@ -751,7 +751,16 @@ export function Dictionary() {
           <span className="mr-1 shrink-0">
             <Logo compact />
           </span>
-          {showingArticle ? (
+          {/* Always present, article or not: an article is often the first page
+              of the site someone lands on, and stepping back through the entry
+              list to reach the library is a step they didn't ask for. */}
+          <Link
+            href="/try/bible/start"
+            className="shrink-0 rounded-md px-2 py-1.5 text-sm font-medium text-neutral-500 transition-colors hover:bg-neutral-100 hover:text-neutral-800 dark:hover:bg-neutral-800 dark:hover:text-neutral-200"
+          >
+            ← Library
+          </Link>
+          {showingArticle && (
             <button
               onClick={closeEntry}
               className="shrink-0 rounded-md px-2 py-2 text-lg leading-none text-neutral-500 transition-colors hover:bg-neutral-100 hover:text-neutral-800 dark:hover:bg-neutral-800 dark:hover:text-neutral-200"
@@ -760,13 +769,6 @@ export function Dictionary() {
             >
               ←
             </button>
-          ) : (
-            <Link
-              href="/try/bible/start"
-              className="shrink-0 rounded-md px-2 py-1.5 text-sm font-medium text-neutral-500 transition-colors hover:bg-neutral-100 hover:text-neutral-800 dark:hover:bg-neutral-800 dark:hover:text-neutral-200"
-            >
-              ← Library
-            </Link>
           )}
           {/* Always present — search other entries without leaving the article.
               Same element in both views, so typing keeps focus. */}
