@@ -173,7 +173,7 @@ export function InterlinearView({
                 {detail.parse && (
                   <span className="ml-1.5 text-xs text-neutral-400">{detail.parse}</span>
                 )}
-                <span className="ml-1.5 text-[10px] font-medium tabular-nums text-neutral-300 dark:text-neutral-600">
+                <span className="ml-1.5 tabular-nums text-neutral-500 dark:text-neutral-400">
                   {detail.strong}
                 </span>
               </p>

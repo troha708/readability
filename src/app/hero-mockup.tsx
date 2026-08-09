@@ -618,7 +618,7 @@ function VerseNum({ num, onTap }: { num: number; onTap: () => void }) {
     <sup
       title="Verse tools"
       onClick={onTap}
-      className="ml-1 mr-px cursor-pointer select-none align-super font-sans text-[0.6em] font-normal leading-none text-neutral-500/70 transition-colors hover:text-amber-400"
+      className="ml-1 mr-px cursor-pointer select-none align-super font-sans text-[0.6em] font-normal leading-none text-neutral-500 transition-colors hover:text-amber-400"
     >
       {num}
     </sup>
@@ -773,7 +773,7 @@ function MockInterlinear({ words }: { words: MockWord[] }) {
                 {detail.parse && (
                   <span className="ml-1.5 text-xs text-neutral-400">{detail.parse}</span>
                 )}
-                <span className="ml-1.5 text-[10px] font-medium tabular-nums text-neutral-600">
+                <span className="ml-1.5 tabular-nums text-neutral-400">
                   {detail.strong}
                 </span>
               </p>

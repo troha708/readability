@@ -392,6 +392,11 @@ function getParserOptions(
         const hl = verseNum ? highlights?.[verseNum] : null;
         const hlColor = hl ? highlightColorInfo(hl.color) : null;
 
+        // One grey in both themes: 4.2:1 on the light page, 4.4:1 on the 925
+        // ground. The number is a landmark you look for rather than read, so it
+        // stays well behind the scripture (9.3:1 / 13.3:1) — but the old
+        // half-transparent grey sat under 3:1 either way, which is faint enough
+        // to hunt for.
         return (
           <sup
             data-verse-num={verseNum || undefined}
@@ -399,7 +404,7 @@ function getParserOptions(
             className={`verse-num ml-1 mr-px cursor-pointer select-none align-super font-sans text-[0.6em] leading-none transition-colors hover:text-amber-600 dark:hover:text-amber-400 ${
               hlColor
                 ? `font-bold ${hlColor.dot.replace("bg-", "text-")}`
-                : "font-normal text-neutral-500/80 dark:text-neutral-500/70"
+                : "font-normal text-neutral-500"
             }`}
           >
             {children}
@@ -595,7 +600,7 @@ function renderPlainText(
                   className={`ml-1 mr-px cursor-pointer select-none align-super font-sans text-[0.6em] leading-none transition-colors hover:text-amber-600 dark:hover:text-amber-400 ${
                     hlColor
                       ? `font-bold ${hlColor.dot.replace("bg-", "text-")}`
-                      : "font-normal text-neutral-500/80 dark:text-neutral-500/70"
+                      : "font-normal text-neutral-500"
                   }`}
                 >
                   {v.num}

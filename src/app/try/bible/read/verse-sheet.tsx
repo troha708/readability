@@ -595,7 +595,7 @@ export function VerseSheet({
                                 {w.surfaceTranslit || w.translit}
                               </span>{" "}
                               <span className="text-neutral-400">— “{w.word}”</span>
-                              <span className="ml-1.5 text-[10px] font-medium tabular-nums text-neutral-300 dark:text-neutral-600">
+                              <span className="ml-1.5 tabular-nums text-neutral-500 dark:text-neutral-400">
                                 {w.num}
                               </span>
                             </button>
