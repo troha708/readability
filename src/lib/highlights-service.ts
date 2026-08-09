@@ -2,8 +2,14 @@ import { createClient } from "@/lib/supabase/client";
 
 export type HighlightColor = "yellow" | "green" | "blue" | "pink";
 
+/**
+ * One reader's mark on one verse. The two halves are independent: a highlight
+ * with no note is a colour, a note with no highlight is `color: null`. Wanting
+ * to say something about a verse without painting it is an ordinary thing to
+ * want, so the colour is optional rather than assumed.
+ */
 export type VerseHighlight = {
-  color: HighlightColor;
+  color: HighlightColor | null;
   note: string;
   createdAt: string;
 };
@@ -25,6 +31,14 @@ export const HIGHLIGHT_COLORS: { name: HighlightColor; bg: string; ring: string;
 export function highlightColorInfo(color: HighlightColor) {
   return HIGHLIGHT_COLORS.find((c) => c.name === color) ?? HIGHLIGHT_COLORS[0];
 }
+
+// How a note with no highlight shows up in the lists: no tint on the verse —
+// nothing was painted — and a hollow marker where a colour dot would sit.
+export const NOTE_ONLY_STYLE = {
+  bg: "",
+  ring: "ring-neutral-300 dark:ring-neutral-600",
+  dot: "border border-neutral-400 dark:border-neutral-500",
+};
 
 // ── localStorage helpers ────────────────────────────────────
 
@@ -66,7 +80,7 @@ async function fetchSupabaseHighlights(userId: string): Promise<HighlightsMap> {
   const map: HighlightsMap = {};
   for (const row of data ?? []) {
     map[`${row.book}:${row.chapter}:${row.verse}`] = {
-      color: row.color as HighlightColor,
+      color: (row.color as HighlightColor | null) ?? null,
       note: row.note ?? "",
       createdAt: row.created_at,
     };
@@ -163,13 +177,24 @@ export async function loadHighlights(): Promise<HighlightsMap> {
   }
 }
 
+/**
+ * Write a verse's mark. A null colour with note text is a note on its own; a
+ * null colour with no note is nothing at all, so the record is removed rather
+ * than stored empty and the return is null — that is the caller's cue to drop
+ * the verse from its state.
+ */
 export async function saveHighlight(
   book: string,
   chapter: number,
   verse: number,
-  color: HighlightColor,
+  color: HighlightColor | null,
   note: string,
-): Promise<VerseHighlight> {
+): Promise<VerseHighlight | null> {
+  if (!color && !note.trim()) {
+    await removeHighlight(book, chapter, verse);
+    return null;
+  }
+
   const key = `${book}:${chapter}:${verse}`;
   const highlight: VerseHighlight = {
     color,

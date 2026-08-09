@@ -11,6 +11,7 @@ import {
   type VerseHighlight,
   type ColorLabels,
   highlightColorInfo,
+  NOTE_ONLY_STYLE,
   HIGHLIGHT_COLORS,
   getColorLabels,
   saveColorLabels,
@@ -120,10 +121,10 @@ export default function HighlightsPage() {
   const bookNames = Object.keys(grouped);
   const totalCount = Object.values(grouped).reduce((sum, ranges) => sum + ranges.length, 0);
 
-  // Count per color for badges
+  // Count per color for badges — a note with no highlight has no colour to count
   const colorCounts: Record<HighlightColor, number> = { yellow: 0, green: 0, blue: 0, pink: 0 };
   for (const v of Object.values(highlights)) {
-    colorCounts[v.color]++;
+    if (v.color) colorCounts[v.color]++;
   }
 
   function colorLabel(color: HighlightColor): string {
@@ -261,7 +262,9 @@ export default function HighlightsPage() {
                 </h2>
                 <div className="space-y-2">
                   {grouped[book].map((entry) => {
-                    const colorInfo = highlightColorInfo(entry.highlight.color);
+                    const colorInfo = entry.highlight.color
+                      ? highlightColorInfo(entry.highlight.color)
+                      : NOTE_ONLY_STYLE;
                     const verseLabel = entry.startVerse === entry.endVerse
                       ? `${entry.startVerse}`
                       : `${entry.startVerse}-${entry.endVerse}`;
@@ -277,7 +280,9 @@ export default function HighlightsPage() {
                             {entry.book} {entry.chapter}:{verseLabel}
                           </span>
                           <span className="text-[0.6rem] font-medium text-neutral-400 dark:text-neutral-500">
-                            {colorLabel(entry.highlight.color)}
+                            {entry.highlight.color
+                              ? colorLabel(entry.highlight.color)
+                              : "Note"}
                           </span>
                           <span className="ml-auto text-xs text-neutral-400 dark:text-neutral-500">
                             {new Date(entry.highlight.createdAt).toLocaleDateString()}

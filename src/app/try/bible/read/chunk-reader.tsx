@@ -39,10 +39,10 @@ import {
   type HighlightsMap,
   loadHighlights,
   saveHighlight,
-  removeHighlight,
   getHighlightsForChapter,
   HIGHLIGHT_COLORS,
   highlightColorInfo,
+  NOTE_ONLY_STYLE,
 } from "@/lib/highlights-service";
 import { SearchModal } from "@/components/search-modal";
 import { SiteFooter } from "@/components/site-footer";
@@ -458,7 +458,9 @@ function NotesDrawer({
                   {groupedHighlights
                     .filter((h) => h.chapter === ch)
                     .map((h) => {
-                      const colorInfo = highlightColorInfo(h.hl.color);
+                      const colorInfo = h.hl.color
+                        ? highlightColorInfo(h.hl.color)
+                        : NOTE_ONLY_STYLE;
                       const verseLabel = h.startVerse === h.endVerse
                         ? `${h.startVerse}`
                         : `${h.startVerse}-${h.endVerse}`;
@@ -2307,14 +2309,31 @@ export function ChunkReader({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [visibleChapterNumber]);
 
+  // A save that comes back null stored nothing — the verse has neither colour
+  // nor note left — so the verse leaves the map rather than sitting in it empty.
+  const applySaved = useCallback((key: string, hl: VerseHighlight | null) => {
+    setAllHighlights((prev) => {
+      if (hl) return { ...prev, [key]: hl };
+      const next = { ...prev };
+      delete next[key];
+      return next;
+    });
+  }, []);
+
   const handleHighlightColor = useCallback(
     (color: HighlightColor) => {
       if (!selectionToolbar) return;
       for (const { chapter, verse } of selectionToolbar.verses) {
         const key = `${bookName}:${chapter}:${verse}`;
-        void saveHighlight(bookName, chapter, verse, color, selectionNote).then((hl) => {
-          setAllHighlights((prev) => ({ ...prev, [key]: hl }));
-        });
+        // The note box may be open with something typed in it — that goes on
+        // with the colour. Empty, it means the reader is only picking a colour,
+        // so whatever note the verse already carries stays where it is.
+        const note = selectionNote.trim()
+          ? selectionNote
+          : (allHighlights[key]?.note ?? "");
+        void saveHighlight(bookName, chapter, verse, color, note).then((hl) =>
+          applySaved(key, hl),
+        );
       }
       window.getSelection()?.removeAllRanges();
       if (!showNoteInput) {
@@ -2322,39 +2341,40 @@ export function ChunkReader({
         setSelectionNote("");
       }
     },
-    [bookName, selectionToolbar, selectionNote, showNoteInput],
+    [bookName, selectionToolbar, selectionNote, showNoteInput, allHighlights, applySaved],
   );
 
   const handleSaveNote = useCallback(() => {
     if (!selectionToolbar) return;
     for (const { chapter, verse } of selectionToolbar.verses) {
       const key = `${bookName}:${chapter}:${verse}`;
-      const existing = allHighlights[key];
-      const color = existing?.color ?? "yellow";
-      void saveHighlight(bookName, chapter, verse, color, selectionNote).then((hl) => {
-        setAllHighlights((prev) => ({ ...prev, [key]: hl }));
-      });
+      // Whatever colour the verse already had, kept as it was. A verse with no
+      // highlight stays unhighlighted: asking for a note is not asking for one.
+      const color = allHighlights[key]?.color ?? null;
+      void saveHighlight(bookName, chapter, verse, color, selectionNote).then((hl) =>
+        applySaved(key, hl),
+      );
     }
     setSelectionToolbar(null);
     setShowNoteInput(false);
     setSelectionNote("");
-  }, [bookName, selectionToolbar, allHighlights, selectionNote]);
+  }, [bookName, selectionToolbar, allHighlights, selectionNote, applySaved]);
 
   const handleRemoveHighlight = useCallback(() => {
     if (!selectionToolbar) return;
     for (const { chapter, verse } of selectionToolbar.verses) {
       const key = `${bookName}:${chapter}:${verse}`;
-      void removeHighlight(bookName, chapter, verse);
-      setAllHighlights((prev) => {
-        const next = { ...prev };
-        delete next[key];
-        return next;
-      });
+      // The bin is aimed at the colour. A note on the verse is a separate mark
+      // and survives; with nothing left to keep, saveHighlight drops the verse.
+      const note = allHighlights[key]?.note ?? "";
+      void saveHighlight(bookName, chapter, verse, null, note).then((hl) =>
+        applySaved(key, hl),
+      );
     }
     setSelectionToolbar(null);
     setShowNoteInput(false);
     setSelectionNote("");
-  }, [bookName, selectionToolbar]);
+  }, [bookName, selectionToolbar, allHighlights, applySaved]);
 
   // ── Verse sheet (tap a verse → study hub) ─────────────────
 
@@ -2517,33 +2537,33 @@ export function ChunkReader({
       const key = `${bookName}:${verseSheet.chapter}:${verseSheet.verse}`;
       const note = allHighlights[key]?.note ?? "";
       void saveHighlight(bookName, verseSheet.chapter, verseSheet.verse, color, note).then(
-        (hl) => setAllHighlights((prev) => ({ ...prev, [key]: hl })),
+        (hl) => applySaved(key, hl),
       );
     },
-    [bookName, verseSheet, allHighlights],
+    [bookName, verseSheet, allHighlights, applySaved],
   );
 
+  // Clears the colour and keeps any note — the same split as the reading
+  // toolbar's bin.
   const handleSheetRemoveHighlight = useCallback(() => {
     if (!verseSheet) return;
     const key = `${bookName}:${verseSheet.chapter}:${verseSheet.verse}`;
-    void removeHighlight(bookName, verseSheet.chapter, verseSheet.verse);
-    setAllHighlights((prev) => {
-      const next = { ...prev };
-      delete next[key];
-      return next;
-    });
-  }, [bookName, verseSheet]);
+    const note = allHighlights[key]?.note ?? "";
+    void saveHighlight(bookName, verseSheet.chapter, verseSheet.verse, null, note).then(
+      (hl) => applySaved(key, hl),
+    );
+  }, [bookName, verseSheet, allHighlights, applySaved]);
 
   const handleSheetSaveNote = useCallback(
     (note: string) => {
       if (!verseSheet) return;
       const key = `${bookName}:${verseSheet.chapter}:${verseSheet.verse}`;
-      const color = allHighlights[key]?.color ?? "yellow";
+      const color = allHighlights[key]?.color ?? null;
       void saveHighlight(bookName, verseSheet.chapter, verseSheet.verse, color, note).then(
-        (hl) => setAllHighlights((prev) => ({ ...prev, [key]: hl })),
+        (hl) => applySaved(key, hl),
       );
     },
-    [bookName, verseSheet, allHighlights],
+    [bookName, verseSheet, allHighlights, applySaved],
   );
 
   // ── Chapter strip helpers ─────────────────────────────────

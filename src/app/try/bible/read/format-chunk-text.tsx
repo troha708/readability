@@ -42,6 +42,25 @@ function isVerseMarker(node: unknown): boolean {
   return cls === "v" || cls.startsWith("v ") || !!node.attribs?.["data-number"];
 }
 
+// Editorial matter set between the verses: the section heading ("The Seventh
+// Day") and the parallel-passage line under it ("(Exodus 16:22–30)"). Both are
+// paragraphs of their own in the source HTML, and both sit AFTER the last verse
+// of the section above them — so the parser reaches their words while the
+// running verse is still that earlier verse. They belong to no verse: a heading
+// is not part of the verse it follows, and must not take that verse's highlight
+// or answer to a tap meant for it.
+function isEditorialBlock(node: unknown): boolean {
+  let cur = node;
+  while (cur instanceof Element) {
+    if (cur.name === "p") {
+      const cls = cur.attribs?.class ?? "";
+      return /^s\d?$/.test(cls) || cls === "r";
+    }
+    cur = (cur as unknown as { parent: unknown }).parent;
+  }
+  return false;
+}
+
 // Section headings in the manner of esv.org: the scripture serif, italic, at
 // body size — one weight step above the body text (500/450 vs the body's
 // 450/400) so they hold their own without shouting. The hand-tuned halfway
@@ -181,6 +200,9 @@ function HighlightedVerseSpan({
   highlight: VerseHighlight;
   children: ReactNode;
 }) {
+  // Only ever rendered for a highlight that has a colour — a note on its own
+  // leaves the verse untinted.
+  if (!highlight.color) return <>{children}</>;
   const colorInfo = highlightColorInfo(highlight.color);
   return (
     <span className={`rounded-sm px-0.5 -mx-0.5 ${colorInfo.bg}`}>
@@ -238,10 +260,14 @@ function getParserOptions(
           : undefined;
         const body = trail ? text.slice(0, -trail.length) : text;
 
+        // Headings and reference lines carry no verse of their own, so they take
+        // none of the running verse's marks (see isEditorialBlock).
+        const verseOfText = isEditorialBlock(parent) ? null : currentVerse;
+
         let content: ReactNode = bionic ? bionicifyText(body) : body;
-        if (currentVerse && highlights?.[currentVerse]) {
+        if (verseOfText && highlights?.[verseOfText]?.color) {
           content = (
-            <HighlightedVerseSpan highlight={highlights[currentVerse]}>
+            <HighlightedVerseSpan highlight={highlights[verseOfText]}>
               {content}
             </HighlightedVerseSpan>
           );
@@ -251,9 +277,9 @@ function getParserOptions(
         // hover (the reader's hover handler toggles .vh-on on same-verse spans)
         // and so it reads as tappable (.vtext gets a pointer cursor). Text before
         // verse 1 has no verse yet and stays unwrapped.
-        if (currentVerse) {
+        if (verseOfText) {
           content = (
-            <span className="vtext" data-hv={currentVerse}>
+            <span className="vtext" data-hv={verseOfText}>
               {content}
             </span>
           );
@@ -390,7 +416,7 @@ function getParserOptions(
         }
 
         const hl = verseNum ? highlights?.[verseNum] : null;
-        const hlColor = hl ? highlightColorInfo(hl.color) : null;
+        const hlColor = hl?.color ? highlightColorInfo(hl.color) : null;
 
         // One grey in both themes: 4.2:1 on the light page, 4.4:1 on the 925
         // ground. The number is a landmark you look for rather than read, so it
@@ -588,7 +614,7 @@ function renderPlainText(
         const content = pv.map((v, i) => {
           const verseNum = v.num ? parseInt(v.num, 10) : null;
           const hl = verseNum ? highlights?.[verseNum] : null;
-          const hlColor = hl ? highlightColorInfo(hl.color) : null;
+          const hlColor = hl?.color ? highlightColorInfo(hl.color) : null;
           const bodyContent = bionic ? bionicifyText(v.body) : v.body;
 
           return (
@@ -607,7 +633,7 @@ function renderPlainText(
                   {hl?.note && <span className="ml-0.5 text-[0.8em]">✎</span>}
                 </sup>
               ) : null}
-              {hl ? (
+              {hl?.color ? (
                 <HighlightedVerseSpan highlight={hl}>
                   {bodyContent}
                 </HighlightedVerseSpan>

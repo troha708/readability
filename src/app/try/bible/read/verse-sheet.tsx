@@ -351,7 +351,10 @@ export function VerseSheet({
                 aria-label={`Highlight ${c.name}`}
               />
             ))}
-            {highlight && (
+            {/* Removes the colour, not the note — so it only appears when
+                there is a colour to remove. A note is cleared by emptying it
+                in the editor below. */}
+            {highlight?.color && (
               <button
                 onClick={onRemoveHighlight}
                 className="rounded-full border border-neutral-300 px-2.5 py-1 text-xs font-medium text-neutral-500 transition-colors hover:bg-neutral-100 dark:border-neutral-600 dark:text-neutral-400 dark:hover:bg-neutral-800"
