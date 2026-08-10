@@ -167,7 +167,30 @@ const byText = (re) =>
 
 const bySelector = (sel) => `return document.querySelector(${JSON.stringify(sel)});`;
 
-// ── 1. Verse tools: the sheet on John 1:1, Original words open, a word
+/**
+ * A tile that is the whole window rather than one component. The reading view
+ * with both panels out has no single element to crop to — the panels are fixed
+ * and full-height, the text column is not — and the shape of the three together
+ * is the picture, so this one takes the viewport as it stands.
+ */
+async function windowTile(name) {
+  if (ONLY && name !== ONLY) return;
+  const { width, height } = page.viewportSize();
+  await page.screenshot({ path: join(DEST, `${name}.png`) });
+  console.log(`${name}: ${width * 2}x${height * 2}  (${(width / height).toFixed(2)})`);
+}
+
+// ── 1. The reading view: John 1 with both side panels out ──────────────
+// Shot wider than the rest because the panels only exist from xl up, and at
+// 1280 — the breakpoint itself — the two 216px rails leave the text column
+// narrower than it ever is in use.
+await page.setViewportSize({ width: 1440, height: 900 });
+await go(reader("John", 1));
+await dismissNudge();
+await windowTile("reading-view");
+await page.setViewportSize({ width: 1280, height: 1000 });
+
+// ── 2. Verse tools: the sheet on John 1:1, Original words open, a word
 //       tapped through to its Strong's entry ─────────────────────────────
 // On 1:1 rather than 1:4 because the word tapped below has to be in the verse:
 // 1:4 has neither Λόγος nor an English "Word", and the tap would miss.
@@ -244,7 +267,7 @@ await tile("verse-tools", bySelector('[class*="sheet-rise"]'), {
 await page.keyboard.press("Escape");
 await wait(800);
 
-// ── 2. Book overview: the head of the John card ─────────────────────────
+// ── 3. Book overview: the head of the John card ─────────────────────────
 await page.evaluate(() => {
   const b = [...document.querySelectorAll("button[aria-expanded]")].find((x) =>
     /Overview$/.test((x.textContent || "").trim()),
@@ -272,7 +295,7 @@ await tile(
   },
 );
 
-// ── 3. Chapter map: the places named at Pentecost, Acts 2 ──────────────
+// ── 4. Chapter map: the places named at Pentecost, Acts 2 ──────────────
 // Acts 2 rather than a chapter that stays in Galilee: the list of nations in
 // verses 9–11 reaches from Rome to Mesopotamia, so the map opens out to the
 // whole world the book is about instead of one province of it.
@@ -283,24 +306,10 @@ await wait(4000);
 await dismissNudge();
 await tile("chapter-map", bySelector('div[class*="rounded-t-2xl"]'));
 
-// ── 4. Dictionary: the head of the Bethlehem article ────────────────────
-// Stops at the foot of the third paragraph. An article runs for screens, so
-// something has to end this tile; a whole paragraph is a place a reader's eye
-// accepts stopping, and a fixed height lands mid-sentence every time. The
-// third rather than the second because it brings the tile to 1.30, close to
-// the chapter map that sits beside it in the montage — the two are not made to
-// agree, since the grid tops-aligns and lets each tile end where it ends.
-//
-// padX because this is the one component that is bare text: the article's box
-// stops at the glyphs, where the sheet and the map are panels with their own
-// inner padding. Cropped to the element alone, every line touched both edges
-// and the tile read as though the words had been sliced off. 24px each side
-// is the page behind it, which is the margin the article is actually set in.
-await go(`${ORIGIN}/try/bible/dictionary?entry=Bethlehem`);
-await tile("dictionary", bySelector("article"), {
-  padX: 24,
-  stop: `return document.querySelectorAll("article p")[2];`,
-});
+// The dictionary article (Bethlehem) was the fifth tile until the montage was
+// re-cut; the montage no longer shows it, so it is no longer shot. Its crop
+// rules — stop on a whole paragraph, padX onto the page because the article is
+// bare text with no panel of its own — are in git if it comes back.
 
 // ── 5. Search: a live query, with the matches highlighted ───────────────
 await go(reader("John", 1));

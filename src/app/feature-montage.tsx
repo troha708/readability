@@ -4,8 +4,10 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
 /**
- * The pictures beside the "What's in it" list: one per bullet, in the same
- * order, so a tile and its sentence read as a pair.
+ * The pictures beside the "What's in it" list. They open on the same features
+ * the list names, but they are no longer one-to-one with the bullets and in the
+ * bullets' order: the montage opens on the reading view — the thing the site is
+ * — and the dictionary is named in the list without a picture of its own.
  *
  * Each is a capture of the real component rather than an illustration of it —
  * scripts/shoot-features.mjs drives the app and shoots them, and re-running it
@@ -17,6 +19,12 @@ import Image from "next/image";
  */
 const TILES = [
   {
+    src: "/landing/reading-view.png",
+    w: 2880,
+    h: 1800,
+    alt: "The reading view on a desktop: John 1 set between its two side panels — the book picker and chapter grid on the left, the reading and study tools on the right",
+  },
+  {
     src: "/landing/verse-tools.png",
     w: 1344,
     h: 1121,
@@ -27,12 +35,6 @@ const TILES = [
     w: 1344,
     h: 1205,
     alt: "The introduction to John, giving its purpose, author, date and setting, and opening on why the Gospel was written",
-  },
-  {
-    src: "/landing/dictionary.png",
-    w: 1568,
-    h: 1208,
-    alt: "The dictionary article on Bethlehem, its prose linked through to the people and places it names",
   },
   {
     src: "/landing/chapter-map.png",
