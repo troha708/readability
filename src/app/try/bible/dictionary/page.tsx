@@ -103,10 +103,27 @@ export async function generateMetadata({
   };
 }
 
-export default function DictionaryPage() {
+/**
+ * The article is loaded here as well as in generateMetadata and handed to the
+ * client component, so the prose ships in the HTML.
+ *
+ * It used to arrive only from /api/dictionary after hydration, which meant a
+ * crawler got a title, the description generateMetadata built, and nothing
+ * else — and robots.txt disallows /api/, so following the fetch was not an
+ * option either. 6,308 articles were reaching search engines as empty pages.
+ * Next dedupes the two loads within a request, so this costs nothing.
+ */
+export default async function DictionaryPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ entry?: string }>;
+}) {
+  const { entry } = await searchParams;
+  const article = entry ? loadArticle(entry) : null;
+
   return (
     <Suspense fallback={null}>
-      <Dictionary />
+      <Dictionary initialArticle={article} />
     </Suspense>
   );
 }

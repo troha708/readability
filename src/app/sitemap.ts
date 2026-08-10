@@ -5,6 +5,7 @@ import { READING_VERSIONS } from "@/lib/translations";
 import { IS_MOBILE } from "@/lib/build-target";
 import { SITE_URL } from "@/lib/site";
 import { loadAtlasData } from "@/lib/content/atlas-server";
+import { indexableDictionaryEntries } from "@/lib/content/dictionary-server";
 import { placeSlug } from "@/lib/content/places";
 import { QUIZ_SECTIONS } from "@/lib/quiz-sections";
 import { bookRoutes } from "@/lib/content/quiz-index";
@@ -20,6 +21,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: BASE, changeFrequency: "weekly", priority: 1 },
     { url: `${BASE}/try/bible/start`, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE}/try/bible/map`, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE}/try/bible/dictionary`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/try/bible/quiz`, changeFrequency: "monthly", priority: 0.8 },
     ...QUIZ_SECTIONS.map((s) => ({
       url: `${BASE}/try/bible/quiz/${s.slug}`,
@@ -53,6 +55,24 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: `${BASE}/try/bible/map?place=${encodeURIComponent(placeSlug(place.link))}`,
       changeFrequency: "monthly",
       priority: 0.4,
+    });
+  }
+
+  // Dictionary articles: the entries people arrive by name for — "who was
+  // Elhanan", "where was Cana", "what is a Nazirite". Every one is its own
+  // ?entry= page with its own title and description, and the article prose is
+  // rendered server-side (see the dictionary page), so a crawler gets the
+  // whole thing. Which entries qualify — and why most don't — is
+  // SITEMAP_MIN_WORDS in dictionary-server.
+  //
+  // Priority tracks length, since it is the one signal here that tracks depth:
+  // a 3,000-word article on Jerusalem is a better landing page than a
+  // fifty-word one on Jaazaniah.
+  for (const entry of indexableDictionaryEntries()) {
+    entries.push({
+      url: `${BASE}/try/bible/dictionary?entry=${encodeURIComponent(entry.id)}`,
+      changeFrequency: "yearly",
+      priority: entry.words >= 500 ? 0.6 : entry.words >= 150 ? 0.5 : 0.4,
     });
   }
 

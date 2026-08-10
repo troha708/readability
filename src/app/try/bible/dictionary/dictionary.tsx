@@ -452,7 +452,16 @@ function Spinner() {
 }
 
 // ── Main ─────────────────────────────────────────────────────────────
-export function Dictionary() {
+/**
+ * `initialArticle` is the ?entry= article the server already rendered into the
+ * HTML. Seeding state with it means the prose is present for crawlers and on
+ * first paint, with no fetch for the entry the reader arrived on.
+ */
+export function Dictionary({
+  initialArticle = null,
+}: {
+  initialArticle?: DictArticle | null;
+}) {
   const router = useRouter();
   const searchParams = useSearchParams();
   const entryId = searchParams.get("entry");
@@ -461,7 +470,7 @@ export function Dictionary() {
   const [query, setQuery] = useState("");
   const [letter, setLetter] = useState<string | null>(null);
   const [category, setCategory] = useState<DictCat | null>(null);
-  const [article, setArticle] = useState<DictArticle | null>(null);
+  const [article, setArticle] = useState<DictArticle | null>(initialArticle);
   const [articleLoading, setArticleLoading] = useState(false);
   const [peek, setPeek] = useState<ScripturePassage | null>(null);
   const [atlas, setAtlas] = useState<AtlasData | null>(null);
@@ -520,6 +529,13 @@ export function Dictionary() {
       setArticle(null);
       return;
     }
+    // The entry the page was served for is already in hand — refetching it
+    // would blank the article and request prose the HTML already carries.
+    if (initialArticle?.id === entryId) {
+      setArticle(initialArticle);
+      setArticleLoading(false);
+      return;
+    }
     let cancelled = false;
     setArticleLoading(true);
     setArticle(null);
@@ -533,7 +549,7 @@ export function Dictionary() {
     return () => {
       cancelled = true;
     };
-  }, [entryId]);
+  }, [entryId, initialArticle]);
 
   // Load the atlas the first time any article opens (place articles get a
   // "Show on map"); one fetch, reused thereafter, skipped during pure browse.
