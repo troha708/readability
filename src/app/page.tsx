@@ -51,7 +51,8 @@ const features: { id: string; content: ReactNode }[] = [
           Dictionary
         </Link>{" "}
         articles on all the significant people, places, and concepts in the
-        Bible.
+        Bible, including 298 theme essays that surface in the reader on the
+        chapters they discuss.
       </>
     ),
   },
