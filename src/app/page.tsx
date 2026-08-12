@@ -80,7 +80,7 @@ const features: { id: string; content: ReactNode }[] = [
           href="/try/bible/map"
           className="text-amber-500 underline decoration-amber-500/40 underline-offset-2 transition-colors hover:text-amber-400 hover:decoration-amber-400"
         >
-          Bible Atlas
+          Atlas
         </Link>
         , with {ATLAS_PLACE_COUNT} places mentioned in the Bible on one
         searchable map.
