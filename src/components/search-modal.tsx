@@ -7,6 +7,7 @@ import {
   fetchDictionaryIndex,
   type DictIndexEntry,
 } from "@/lib/content/client";
+import { SYNONYMS } from "@/lib/search/synonyms";
 import { parseBibleReference, type BibleReference } from "@/lib/bible-reference";
 import { chapterReference } from "@/lib/bible-book-order";
 import {
@@ -436,7 +437,10 @@ function HighlightedVerse({ text, tokens }: { text: string; tokens: string[] }) 
   const marked = tokens.filter((t) => !STOPWORDS.has(t));
   const subject = marked.length > 0 ? marked : tokens;
   const TAIL = "[\\p{L}\\p{N}']*";
-  const stems = subject.map((t) => escapeRegExp(matchPrefix(t)));
+  // Includes the words that stood in for the ones typed, or a verse matched on
+  // "carry his cross" would light up nothing for a reader who typed "pick".
+  const withSynonyms = subject.flatMap((t) => [t, ...(SYNONYMS.get(t) ?? [])]);
+  const stems = withSynonyms.map((t) => escapeRegExp(matchPrefix(t)));
   const compounds = subject.filter((t) => t.length >= 5).map(escapeRegExp);
   const alternatives = [`\\b(?:${stems.join("|")})${TAIL}`];
   if (compounds.length > 0) {

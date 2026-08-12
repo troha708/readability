@@ -1,4 +1,5 @@
 import { OT_BOOK_ORDER } from "@/lib/bible-book-order";
+import { SYNONYMS } from "@/lib/search/synonyms";
 
 /**
  * Verse-level full-text search over stored chapter HTML. Isomorphic: the
@@ -211,6 +212,9 @@ export const STOPWORDS = new Set([
   "when", "where", "why", "how", "up", "out", "down", "over", "under",
   "again", "also", "no", "nor", "than", "too", "very", "can", "would",
   "should", "could", "must", "one", "now", "here", "him self", "himself",
+  // Archaic auxiliaries carry no more meaning than the modern forms they
+  // stand for, and no suffix rule reaches them from "has" or "does".
+  "hath", "hast", "doth", "dost", "shalt", "wilt", "art", "wast", "thine",
 ]);
 
 /**
@@ -230,6 +234,9 @@ export function matchPrefix(token: string): string {
       return token.slice(0, -suffix.length);
     }
   }
+  // "enemies" cuts to "enem", which reaches "enemy" as well; stripping only
+  // the "es" would leave "enemi" and reach neither.
+  if (token.endsWith("ies") && token.length - 3 >= 3) return token.slice(0, -3);
   for (const suffix of ["ing", "ed", "es", "s"]) {
     if (token.endsWith(suffix) && token.length - suffix.length >= 4) {
       return token.slice(0, -suffix.length);
@@ -245,6 +252,13 @@ function endsAWord(m: string, word: string): boolean {
 
 /** What a compound match is worth against a clean word match. */
 const INNER_CREDIT = 0.5;
+/**
+ * What a synonym is worth against the word actually typed. Half, so a verse
+ * carrying the reader's own word always outranks one that merely means it —
+ * and so a loose entry in the table costs a place in the ranking rather than
+ * a wrong answer at the top.
+ */
+const SYNONYM_CREDIT = 0.5;
 /** Fraction of the content words' weight a verse must carry to be returned. */
 const COVERAGE_FLOOR = 0.6;
 /** Below this many content words, every one of them is still required. */
@@ -272,6 +286,15 @@ export function searchVerses(index: IndexedVerse[], query: string): VerseHit[] {
   const inner = tokens.map((t) =>
     !STOPWORDS.has(t) && t.length >= 5 ? t : null,
   );
+  // Words that stand in for the one typed (see synonyms.ts). Built only for
+  // content words, and only for the few that appear in the table, so most
+  // queries carry no alternates at all and pay nothing for the feature.
+  const alternates = tokens.map((t) => {
+    if (STOPWORDS.has(t)) return null;
+    const group = SYNONYMS.get(t);
+    return group ? group.map((a) => " " + matchPrefix(a)) : null;
+  });
+  const hasAlternates = alternates.some((a) => a !== null);
   const phraseNeedle = " " + tokens.join(" ");
   // Adjacent pairs, matched verbatim: a cheap stand-in for word order. A
   // paraphrase keeps some of the run ("and follow me") even where it loses
@@ -288,24 +311,52 @@ export function searchVerses(index: IndexedVerse[], query: string): VerseHit[] {
 
   // One pass to find which words each verse carries and how common each word
   // is; the weights aren't known until the whole translation has been seen.
-  const candidates: { v: IndexedVerse; hits: number[] }[] = [];
+  // `where` records the position each word was found at, so the span below
+  // doesn't have to search the verse a second time to work out which of the
+  // three ways a word matched.
+  const candidates: { v: IndexedVerse; hits: number[]; where: number[] }[] = [];
   const df = new Array(tokens.length).fill(0);
+  // Only the words that can qualify a verse are matched against every verse.
+  // Stopwords are matched nowhere: they carry no weight in coverage, and the
+  // phrase and adjacency tests read the verse text directly, so nothing needs
+  // them here. Skipping them stops "the lord is my shepherd" making a
+  // candidate of most of the Bible on the strength of "the".
+  //
+  // Scratch arrays, copied only when a verse actually becomes a candidate: the
+  // per-verse allocation is paid 31,000 times a query and the copy far fewer.
+  const hitScratch = new Array(tokens.length).fill(0);
+  const whereScratch = new Array(tokens.length).fill(-1);
 
   for (const v of index) {
     let any = false;
-    const hits = new Array(tokens.length).fill(0);
-    for (let i = 0; i < needles.length; i++) {
-      if (v.m.includes(needles[i])) {
-        hits[i] = 1;
-        df[i]++;
-        any = true;
+    for (const i of weighed) {
+      hitScratch[i] = 0;
+      whereScratch[i] = -1;
+      const at = v.m.indexOf(needles[i]);
+      if (at >= 0) {
+        hitScratch[i] = 1;
+        whereScratch[i] = at;
       } else if (inner[i] && endsAWord(v.m, inner[i]!)) {
-        hits[i] = INNER_CREDIT;
+        hitScratch[i] = INNER_CREDIT;
+        whereScratch[i] = v.m.indexOf(inner[i]!);
+      } else if (hasAlternates && alternates[i]) {
+        for (const alt of alternates[i]!) {
+          const altAt = v.m.indexOf(alt);
+          if (altAt >= 0) {
+            hitScratch[i] = SYNONYM_CREDIT;
+            whereScratch[i] = altAt;
+            break;
+          }
+        }
+      }
+      if (hitScratch[i] > 0) {
         df[i]++;
         any = true;
       }
     }
-    if (any) candidates.push({ v, hits });
+    if (any) {
+      candidates.push({ v, hits: hitScratch.slice(), where: whereScratch.slice() });
+    }
   }
 
   const n = Math.max(index.length, 1);
@@ -316,7 +367,7 @@ export function searchVerses(index: IndexedVerse[], query: string): VerseHit[] {
 
   const scored: { hit: VerseHit; score: number }[] = [];
 
-  for (const { v, hits } of candidates) {
+  for (const { v, hits, where } of candidates) {
     const carried = weighed.reduce((sum, i) => sum + idf[i] * hits[i], 0);
     const coverage = totalWeight > 0 ? carried / totalWeight : 0;
 
@@ -340,13 +391,10 @@ export function searchVerses(index: IndexedVerse[], query: string): VerseHit[] {
     let lo = Infinity;
     let hi = -Infinity;
     let found = 0;
-    for (let i = 0; i < needles.length; i++) {
-      if (!hits[i]) continue;
-      const at =
-        hits[i] === 1 ? v.m.indexOf(needles[i]) : v.m.indexOf(inner[i]!);
-      if (at < 0) continue;
-      lo = Math.min(lo, at);
-      hi = Math.max(hi, at);
+    for (let i = 0; i < where.length; i++) {
+      if (where[i] < 0) continue;
+      lo = Math.min(lo, where[i]);
+      hi = Math.max(hi, where[i]);
       found++;
     }
     // SPAN_HALF is the width at which closeness halves: a clause's worth of
