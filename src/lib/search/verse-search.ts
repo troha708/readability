@@ -25,6 +25,16 @@ import { OT_BOOK_ORDER } from "@/lib/bible-book-order";
  * Short queries keep the strict rule. Tolerance only applies from three
  * content words up, where one wrong word out of several shouldn't empty the
  * page; below that every word still has to be there.
+ *
+ * What this does NOT do is bridge a synonym, and short paraphrases can turn
+ * on one. "pick up your cross" holds two content words, "pick" and "cross",
+ * so both are required and BSB's "take up his cross" is missed — the longer
+ * "pick up your cross and follow me" only survives because a third content
+ * word gives it something to lose. Returning near misses instead of nothing
+ * was tried and is worse: "pick" appears in 49 verses against a "cross" that
+ * prefix-matching inflates to 247 with every crossing of the Jordan, so the
+ * page fills with "pick up your mat" and the cross never surfaces. An empty
+ * result is the honest answer until something knows pick means take.
  */
 
 export type VerseHit = {
