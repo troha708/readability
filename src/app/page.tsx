@@ -103,6 +103,7 @@ const features: { id: string; content: ReactNode }[] = [
         >
           Bible Quiz
         </Link>
+        .
       </>
     ),
   },
@@ -233,13 +234,13 @@ export default function Home() {
             <h2 className="text-[13px] font-normal uppercase leading-[23px] tracking-[1px] text-[#bfb391]">
               What&rsquo;s in it
             </h2>
-            {/* The bullets spread to fill the column rather than sitting at a
-                fixed spacing, so the list ends level with the last row of
-                tiles whatever height the montage happens to be. gap-5 is the
-                floor — below lg the column has no height to fill and that is
-                all they get. Set as a number, this would need re-tuning every
-                time a bullet rewraps or a tile's crop changes. */}
-            <ul className="mt-4 flex flex-1 list-disc flex-col justify-between gap-5 pl-5 font-scripture text-base font-normal leading-relaxed tracking-[0.0156em] text-neutral-300 marker:text-neutral-600">
+            {/* The list sits at its own spacing and stops where it stops. It
+                used to stretch to end level with the montage's last tile,
+                which meant six one-line items floating a centimetre apart —
+                the airy feature-list look of a sales page rather than
+                something written to be read. Columns of unequal height are
+                ordinary in print; forcing them level was the tell. */}
+            <ul className="mt-3 flex list-disc flex-col gap-2 pl-4 font-scripture text-base font-normal leading-relaxed tracking-[0.0156em] text-neutral-300 marker:text-neutral-600">
               {features.map((f) => (
                 <li key={f.id}>{f.content}</li>
               ))}
