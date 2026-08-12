@@ -10,6 +10,8 @@ import {
 import { parseBibleReference, type BibleReference } from "@/lib/bible-reference";
 import { chapterReference } from "@/lib/bible-book-order";
 import {
+  matchPrefix,
+  STOPWORDS,
   queryTokens,
   escapeRegExp,
   type SearchScope,
@@ -420,13 +422,27 @@ export function SearchModal({
   );
 }
 
-/** Verse text with every query word marked, matching on word starts. */
+/**
+ * Verse text with every query word marked. Follows the same rules the search
+ * matched on, so a result never arrives with nothing lit up: words are cut to
+ * the stem the matcher used ("loveth" marks "loves"), and a long word is also
+ * marked where it ends a compound ("steps" marks "footsteps").
+ */
 function HighlightedVerse({ text, tokens }: { text: string; tokens: string[] }) {
   if (tokens.length === 0) return <>{text}</>;
-  const re = new RegExp(
-    `(\\b(?:${tokens.map(escapeRegExp).join("|")})[\\p{L}\\p{N}']*)`,
-    "giu",
-  );
+  // Only the words the search actually weighed. Marking "and", "up" and "Me"
+  // as well buries the two words that earned the verse its place — on "pick up
+  // your cross and follow me" a third of Mark 8:34 came back highlighted.
+  const marked = tokens.filter((t) => !STOPWORDS.has(t));
+  const subject = marked.length > 0 ? marked : tokens;
+  const TAIL = "[\\p{L}\\p{N}']*";
+  const stems = subject.map((t) => escapeRegExp(matchPrefix(t)));
+  const compounds = subject.filter((t) => t.length >= 5).map(escapeRegExp);
+  const alternatives = [`\\b(?:${stems.join("|")})${TAIL}`];
+  if (compounds.length > 0) {
+    alternatives.push(`${TAIL}(?:${compounds.join("|")})${TAIL}`);
+  }
+  const re = new RegExp(`(${alternatives.join("|")})`, "giu");
   const parts = text.split(re);
   return (
     <>

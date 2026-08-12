@@ -6,10 +6,25 @@ import { OT_BOOK_ORDER } from "@/lib/bible-book-order";
  * mobile build runs it over the bundled /offline/text files, so both targets
  * return identical results.
  *
- * Matching model: a verse matches when it contains the query as an exact
- * phrase (ranked first) or contains every query word (ranked after). Words
- * match on a leading word boundary with an open tail, so "love" also matches
- * "loved" and "lovingkindness".
+ * Matching model: verses are scored, not filtered. A verse earns credit for
+ * each query word it carries, weighted by how rare that word is across the
+ * translation, plus a bonus for each adjacent pair of query words it repeats
+ * and a large one for carrying the query verbatim. Words match on a leading
+ * word boundary with an open tail, so "love" also matches "loved" and
+ * "lovingkindness".
+ *
+ * Two things follow from scoring rather than filtering. Half-remembered
+ * wording still lands: "pick up your cross and follow me" has neither "pick"
+ * nor "your" in it, but carries enough of the rest — and enough of it in the
+ * right order — to reach Mark 8:34. And where the old all-words rule did
+ * match, the results are now ordered by fit rather than by book, so "cross
+ * follow me" leads with Matthew 10:38 instead of Deuteronomy 4:14, which
+ * happens to contain all three words scattered across a sentence about
+ * crossing into the land.
+ *
+ * Short queries keep the strict rule. Tolerance only applies from three
+ * content words up, where one wrong word out of several shouldn't empty the
+ * page; below that every word still has to be there.
  */
 
 export type VerseHit = {
@@ -170,29 +185,178 @@ export function buildVerseIndex(
 }
 
 /**
- * Rank an index (already in canonical order) against a query: exact-phrase
- * hits first, then verses containing every word, canonical order within each
- * band. Returns all matches; the caller paginates.
+ * Words too common to say anything about which verse is wanted. They still
+ * count toward the phrase and adjacency bonuses — "follow me" is a better
+ * signal than "follow" alone — but a verse is never required to carry them,
+ * so "the lord" is not held to the "the".
+ */
+export const STOPWORDS = new Set([
+  "a", "an", "the", "and", "or", "but", "if", "of", "to", "in", "on", "at",
+  "by", "for", "with", "from", "into", "unto", "upon", "as", "that", "this",
+  "these", "those", "there", "then", "so", "not", "is", "was", "were", "are",
+  "be", "been", "am", "shall", "will", "may", "let", "do", "did", "have",
+  "has", "had", "i", "me", "my", "we", "us", "our", "you", "your", "ye",
+  "thee", "thy", "thou", "he", "him", "his", "she", "her", "it", "its",
+  "they", "them", "their", "who", "whom", "which", "what", "all", "any",
+  "when", "where", "why", "how", "up", "out", "down", "over", "under",
+  "again", "also", "no", "nor", "than", "too", "very", "can", "would",
+  "should", "could", "must", "one", "now", "here", "him self", "himself",
+]);
+
+/**
+ * A prefix both the query's form and the verse's form should share. Match
+ * text is prefix-open already, so "love" finds "loved" without help; this
+ * exists for the other direction, where the reader types the older or the
+ * inflected form — "loveth" for "loves", "works" for "work". Deliberately
+ * blunt: cutting to a shared prefix costs a little precision ("times" cuts to
+ * "tim", which also reaches "Timothy") and buys the recall that matters, and
+ * scoring across several words absorbs the stray.
+ */
+export function matchPrefix(token: string): string {
+  // Archaic verb endings cut to three, which is what "loveth" needs to reach
+  // "loves"; modern endings keep four so short words aren't shaved to noise.
+  for (const suffix of ["eth", "est"]) {
+    if (token.endsWith(suffix) && token.length - suffix.length >= 3) {
+      return token.slice(0, -suffix.length);
+    }
+  }
+  for (const suffix of ["ing", "ed", "es", "s"]) {
+    if (token.endsWith(suffix) && token.length - suffix.length >= 4) {
+      return token.slice(0, -suffix.length);
+    }
+  }
+  return token;
+}
+
+/** True when some word in the match text ends with `word`. */
+function endsAWord(m: string, word: string): boolean {
+  return m.includes(word + " ") || m.endsWith(word);
+}
+
+/** What a compound match is worth against a clean word match. */
+const INNER_CREDIT = 0.5;
+/** Fraction of the content words' weight a verse must carry to be returned. */
+const COVERAGE_FLOOR = 0.6;
+/** Below this many content words, every one of them is still required. */
+const TOLERANCE_MIN_CONTENT = 3;
+
+/**
+ * Rank an index (already in canonical order) against a query. Returns every
+ * verse that clears the coverage floor, best fit first, canonical order among
+ * equals; the caller paginates.
  */
 export function searchVerses(index: IndexedVerse[], query: string): VerseHit[] {
   const tokens = queryTokens(query);
   if (tokens.length === 0) return [];
-  const phraseNeedle = " " + tokens.join(" ");
 
-  const phraseHits: VerseHit[] = [];
-  const wordHits: VerseHit[] = [];
+  const needles = tokens.map((t) => " " + matchPrefix(t));
+  // Same word carried at the end of a compound. BSB has Christ leaving an
+  // example "that you should follow in His footsteps", so a reader typing the
+  // older "follow in his steps" finds nothing on word boundaries alone.
+  //
+  // Anchored to the end of a word rather than loose inside one, which is what
+  // keeps "hear" out of "heart" and "ear" out of "earth". Five characters
+  // minimum, because at four the English suffixes take over — "king" would
+  // arrive inside "walking", "taking" and "making". The raw word is used, not
+  // the stem, since a compound keeps the whole of it.
+  const inner = tokens.map((t) =>
+    !STOPWORDS.has(t) && t.length >= 5 ? t : null,
+  );
+  const phraseNeedle = " " + tokens.join(" ");
+  // Adjacent pairs, matched verbatim: a cheap stand-in for word order. A
+  // paraphrase keeps some of the run ("and follow me") even where it loses
+  // individual words, and a verse that merely contains the words keeps none.
+  const bigrams = tokens.slice(0, -1).map((t, i) => " " + t + " " + tokens[i + 1]);
+
+  const contentIdx = tokens
+    .map((t, i) => i)
+    .filter((i) => !STOPWORDS.has(tokens[i]));
+  // An all-stopword query ("out of the") has nothing to weigh, so every word
+  // counts and the strict rule applies.
+  const weighed = contentIdx.length > 0 ? contentIdx : tokens.map((_t, i) => i);
+  const requireAll = weighed.length < TOLERANCE_MIN_CONTENT;
+
+  // One pass to find which words each verse carries and how common each word
+  // is; the weights aren't known until the whole translation has been seen.
+  const candidates: { v: IndexedVerse; hits: number[] }[] = [];
+  const df = new Array(tokens.length).fill(0);
 
   for (const v of index) {
-    if (v.m.includes(phraseNeedle)) {
-      phraseHits.push({ book: v.book, chapter: v.chapter, verse: v.verse, text: v.text, phrase: true });
-      continue;
+    let any = false;
+    const hits = new Array(tokens.length).fill(0);
+    for (let i = 0; i < needles.length; i++) {
+      if (v.m.includes(needles[i])) {
+        hits[i] = 1;
+        df[i]++;
+        any = true;
+      } else if (inner[i] && endsAWord(v.m, inner[i]!)) {
+        hits[i] = INNER_CREDIT;
+        df[i]++;
+        any = true;
+      }
     }
-    if (tokens.length > 1 && tokens.every((t) => v.m.includes(" " + t))) {
-      wordHits.push({ book: v.book, chapter: v.chapter, verse: v.verse, text: v.text, phrase: false });
-    }
+    if (any) candidates.push({ v, hits });
   }
 
-  return phraseHits.concat(wordHits);
+  const n = Math.max(index.length, 1);
+  // Rarity weight. A word in every other verse ("said") should not outvote one
+  // in thirty ("cross"); df is never 0 here because only matched words count.
+  const idf = df.map((d) => Math.log(n / Math.max(d, 1)) + 1);
+  const totalWeight = weighed.reduce((sum, i) => sum + idf[i], 0);
+
+  const scored: { hit: VerseHit; score: number }[] = [];
+
+  for (const { v, hits } of candidates) {
+    const carried = weighed.reduce((sum, i) => sum + idf[i] * hits[i], 0);
+    const coverage = totalWeight > 0 ? carried / totalWeight : 0;
+
+    // Strict means every content word is present in some form, not that every
+    // one is present cleanly — otherwise "follow in his steps" (two content
+    // words, so strict) would still miss the footsteps of 1 Peter 2:21.
+    if (requireAll ? !weighed.every((i) => hits[i] > 0) : coverage < COVERAGE_FLOOR) {
+      continue;
+    }
+
+    const phrase = v.m.includes(phraseNeedle);
+    let adjacent = 0;
+    for (const b of bigrams) if (v.m.includes(b)) adjacent++;
+
+    // How far apart the words landed. Adjacency alone can't separate a verse
+    // that gathers the query into one clause from one that happens to hold the
+    // same words a sentence apart — Judges 3:28 opens with "Follow me" and
+    // closes with men crossing the Jordan, and on words and pairs alone it
+    // matched "cross follow me" as well as Matthew 10:38 did. First occurrence
+    // of each word is enough to tell the two apart.
+    let lo = Infinity;
+    let hi = -Infinity;
+    let found = 0;
+    for (let i = 0; i < needles.length; i++) {
+      if (!hits[i]) continue;
+      const at =
+        hits[i] === 1 ? v.m.indexOf(needles[i]) : v.m.indexOf(inner[i]!);
+      if (at < 0) continue;
+      lo = Math.min(lo, at);
+      hi = Math.max(hi, at);
+      found++;
+    }
+    // SPAN_HALF is the width at which closeness halves: a clause's worth of
+    // characters, so verse-length spans score near nothing.
+    const SPAN_HALF = 60;
+    const closeness = found > 1 ? 1 / (1 + (hi - lo) / SPAN_HALF) : 0;
+
+    scored.push({
+      hit: { book: v.book, chapter: v.chapter, verse: v.verse, text: v.text, phrase },
+      // The verbatim bonus dwarfs the rest so exact hits stay on top, as they
+      // were before scoring. Below that, coverage decides which verses qualify
+      // and the two order terms decide between them: repeated word pairs, then
+      // how tightly the words sit together.
+      score:
+        (phrase ? 1000 : 0) + coverage * 100 + adjacent * 10 + closeness * 30,
+    });
+  }
+
+  // Stable, so canonical order survives among equally good matches.
+  return scored.sort((a, b) => b.score - a.score).map((s) => s.hit);
 }
 
 export function escapeRegExp(s: string): string {
