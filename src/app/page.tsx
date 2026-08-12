@@ -9,6 +9,7 @@ import { HeroMockup } from "./hero-mockup";
 import { LandingSearch } from "./landing-search";
 import { SITE_URL } from "@/lib/site";
 import { loadAtlasData } from "@/lib/content/atlas-server";
+import { loadDictionaryIndex } from "@/lib/content/dictionary-server";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -38,6 +39,11 @@ const jsonLd = {
  */
 const ATLAS_PLACE_COUNT = loadAtlasData().places.length.toLocaleString("en-US");
 
+/** Theme essays, counted off the dictionary facet for the same reason. */
+const THEME_ESSAY_COUNT = loadDictionaryIndex().filter(
+  (e) => e.cat === "theme",
+).length;
+
 const features: { id: string; content: ReactNode }[] = [
   {
     id: "verse-tools",
@@ -60,7 +66,7 @@ const features: { id: string; content: ReactNode }[] = [
           Dictionary
         </Link>{" "}
         articles on all the significant people, places, and concepts in the
-        Bible, including 298 theme essays that surface in the reader on the
+        Bible, including {THEME_ESSAY_COUNT} theme essays linked from the
         chapters they discuss.
       </>
     ),
@@ -76,7 +82,8 @@ const features: { id: string; content: ReactNode }[] = [
         >
           Bible Atlas
         </Link>
-        , with {ATLAS_PLACE_COUNT} places on one searchable map.
+        , with {ATLAS_PLACE_COUNT} places mentioned in the Bible on one
+        searchable map.
       </>
     ),
   },
