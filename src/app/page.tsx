@@ -8,6 +8,7 @@ import { FeatureMontage } from "./feature-montage";
 import { HeroMockup } from "./hero-mockup";
 import { LandingSearch } from "./landing-search";
 import { SITE_URL } from "@/lib/site";
+import { loadAtlasData } from "@/lib/content/atlas-server";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -28,6 +29,14 @@ const jsonLd = {
     "Full-text search, highlights, and personal notes",
   ],
 };
+
+/**
+ * Places actually plotted on the atlas. Counted from the dataset rather than
+ * written in, the way the atlas page's own copy does it, so refreshing the
+ * data can't leave a stale number behind. It excludes the handful the dataset
+ * names but can't site — those aren't on the map, which is what this claims.
+ */
+const ATLAS_PLACE_COUNT = loadAtlasData().places.length.toLocaleString("en-US");
 
 const features: { id: string; content: ReactNode }[] = [
   {
@@ -67,7 +76,7 @@ const features: { id: string; content: ReactNode }[] = [
         >
           Bible Atlas
         </Link>
-        , with every place in the Bible on one searchable map.
+        , with {ATLAS_PLACE_COUNT} places on one searchable map.
       </>
     ),
   },

@@ -43,7 +43,7 @@ export default function AboutPage() {
             </a>
             . The Bible
             Atlas is built on OpenBible.info&rsquo;s geocoding data, which
-            locates every place mentioned in the Bible by{" "}
+            locates places mentioned in the Bible by{" "}
             <a
               className={link}
               href="https://www.openbible.info/blog/2021/11/rethinking-the-bible-atlas/"
