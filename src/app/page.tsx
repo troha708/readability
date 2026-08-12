@@ -239,8 +239,11 @@ export default function Home() {
                 which meant six one-line items floating a centimetre apart —
                 the airy feature-list look of a sales page rather than
                 something written to be read. Columns of unequal height are
-                ordinary in print; forcing them level was the tell. */}
-            <ul className="mt-3 flex list-disc flex-col gap-2 pl-4 font-scripture text-base font-normal leading-relaxed tracking-[0.0156em] text-neutral-300 marker:text-neutral-600">
+                ordinary in print; forcing them level was the tell.
+
+                14px sits between the two: enough that each item is plainly
+                its own, well short of the distributed spread. */}
+            <ul className="mt-3 flex list-disc flex-col gap-3.5 pl-4 font-scripture text-base font-normal leading-relaxed tracking-[0.0156em] text-neutral-300 marker:text-neutral-600">
               {features.map((f) => (
                 <li key={f.id}>{f.content}</li>
               ))}
