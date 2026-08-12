@@ -663,7 +663,10 @@ function SettingsControls({
         onClick={onToggleTheme}
         className={`flex w-full items-center justify-between rounded-md px-2 py-1.5 text-left ${MENU_HOVER}`}
       >
-        <span className="text-xs font-medium tracking-[0.25px] text-neutral-500 dark:text-neutral-400">Theme</span>
+        {/* "Appearance", not "Theme": the rail carries a Themes row a few
+            lines up, and two controls a letter apart in one column read as
+            the same thing. The value beside it still says Light or Dark. */}
+        <span className="text-xs font-medium tracking-[0.25px] text-neutral-500 dark:text-neutral-400">Appearance</span>
         <span className="flex items-center gap-1.5 text-xs font-medium text-neutral-700 dark:text-neutral-200">
           {dark ? <SunIcon /> : <MoonIcon />}
           {dark ? "Light" : "Dark"}
@@ -3081,11 +3084,15 @@ export function ChunkReader({
                     : `text-neutral-500 dark:text-neutral-400 ${PANEL_ROW_HOVER}`
                 }`}
               >
-                {/* Three stacked strands — a thread running through the text. */}
+                {/* The site's bulb, drawn as a stroke so it takes the row's
+                    colour like the magnifier and the map do — the gold PNG
+                    would sit here ignoring the hover and open states. Globe,
+                    shoulders, two bands: the mark's three bands won't hold at
+                    16px, so the shoulder line stands in for the first. */}
                 <svg className="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M4 7h16" />
-                  <path d="M4 12h10" />
-                  <path d="M4 17h13" />
+                  <path d="M12 1.8a7 7 0 0 0-3.9 12.8c.6.4 1 1.1 1.1 1.8h5.6c.1-.7.5-1.4 1.1-1.8A7 7 0 0 0 12 1.8Z" />
+                  <path d="M9.4 19.6h5.2" />
+                  <path d="M10.6 22.4h2.8" />
                 </svg>
                 Themes <span className="tabular-nums opacity-70">{themeCount}</span>
               </button>
