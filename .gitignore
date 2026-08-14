@@ -67,3 +67,10 @@ __pycache__/
 
 # Claude Code session tooling (local only)
 .claude/
+
+# local agent tooling and scratch files (swept in by an `git add -A`, 2026-08-15)
+/.agents/
+/skills-lock.json
+/PURPOSE.md
+/*.png
+/*.jpg
