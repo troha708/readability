@@ -197,10 +197,6 @@ export default function Home() {
             <p className="mt-4 font-scripture text-base font-normal leading-relaxed tracking-[0.0156em] text-neutral-300">
               Study notes from Tyndale House Publishers, cross-references, word
               study and maps.
-              <span className="block">
-                Free and open source, with no ads{" "}
-                <span className="whitespace-nowrap">and no account required.</span>
-              </span>
             </p>
             <div className="mt-7">
               {/* Shaped like esv.org's "Read Now" (their `a.button`): flat
