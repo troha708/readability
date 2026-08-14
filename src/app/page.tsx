@@ -56,7 +56,7 @@ const features: { id: string; content: ReactNode }[] = [
   },
   {
     id: "verse-languages",
-    content: "Study the Greek and Hebrew behind a verse, word by word.",
+    content: "A word-by-word Greek and Hebrew interlinear.",
   },
   {
     id: "intro",
