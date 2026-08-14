@@ -20,6 +20,7 @@ import {
 import Link from "next/link";
 import { chapterReference } from "@/lib/bible-book-order";
 import { LICENSED_META, isLicensedVersion } from "@/lib/licensed-versions";
+import { compareByApproach, translationInfo } from "@/lib/translations";
 import {
   parseScriptureRefs,
   scriptureRefLabel,
@@ -283,7 +284,25 @@ export function VerseSheet({
   }, [noteOpen]);
 
   const current = versions?.find((v) => v.abbr === versionAbbr);
-  const others = versions?.filter((v) => v.abbr !== versionAbbr) ?? [];
+  // Ordered from the most literal to the freest: reading down the column
+  // shows the verse loosen, which demonstrates what translation philosophy
+  // means far better than the labels alone do.
+  const others = (versions?.filter((v) => v.abbr !== versionAbbr) ?? []).sort(
+    compareByApproach,
+  );
+  // Runs of the same approach, in sorted order. A version with no approach
+  // (one that differs by source text rather than by philosophy) gets no
+  // heading — it doesn't sit on this axis at all.
+  const groupedVersions = others.reduce<{ band: string; rows: VerseVersion[] }[]>(
+    (groups, v) => {
+      const band = translationInfo(v.abbr)?.approach ?? "";
+      const last = groups[groups.length - 1];
+      if (last && last.band === band) last.rows.push(v);
+      else groups.push({ band, rows: [v] });
+      return groups;
+    },
+    [],
+  );
   // One notice per licensed publisher actually on screen (a version can
   // appear as `current` too, so both lists are considered).
   const licensedNotices = [
@@ -676,21 +695,51 @@ export function VerseSheet({
                   No other translations carry this verse.
                 </p>
               ) : (
-                <ul className="space-y-3">
-                  {others.map((v) => (
-                    <li key={v.abbr} className="text-sm leading-relaxed">
-                      <span
-                        className="mr-2 inline-block rounded-md bg-neutral-100 px-1.5 py-0.5 text-xs font-semibold text-neutral-500 dark:bg-neutral-800 dark:text-neutral-400"
-                        title={v.name}
-                      >
-                        {v.abbr}
-                      </span>
-                      <span className="font-scripture font-[450] text-neutral-600 dark:font-normal dark:text-neutral-300">
-                        {v.text}
-                      </span>
-                    </li>
+                <>
+                  {/* Grouped by approach rather than tagged per row: with
+                      seven public-domain texts the tag would just repeat
+                      "word-for-word" six times, and the heading says the same
+                      thing once. The bands are the translators' own account
+                      of their aim, not a ranking of ours. */}
+                  {groupedVersions.map(({ band, rows }) => (
+                    <div key={band} className="mb-4 last:mb-0">
+                      {band && (
+                        <div className="mb-2 text-[10px] font-semibold uppercase tracking-widest text-neutral-400 dark:text-neutral-500">
+                          {band}
+                        </div>
+                      )}
+                      <ul className="space-y-3">
+                        {rows.map((v) => (
+                          <li key={v.abbr} className="text-sm leading-relaxed">
+                            <span
+                              className="mr-2 inline-block rounded-md bg-neutral-100 px-1.5 py-0.5 text-xs font-semibold text-neutral-500 dark:bg-neutral-800 dark:text-neutral-400"
+                              title={v.name}
+                            >
+                              {v.abbr}
+                            </span>
+                            {/* The year answers "why does this one sound
+                                old?" — the single most useful thing to know
+                                about a translation, and beyond dispute. */}
+                            {translationInfo(v.abbr) && (
+                              <span
+                                className="mr-2 text-[11px] text-neutral-400 dark:text-neutral-500"
+                                title={translationInfo(v.abbr)?.note}
+                              >
+                                {translationInfo(v.abbr)!.year}
+                              </span>
+                            )}
+                            <span className="font-scripture font-[450] text-neutral-600 dark:font-normal dark:text-neutral-300">
+                              {v.text}
+                            </span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   ))}
-                </ul>
+                  <p className="mt-3 text-[11px] text-neutral-400">
+                    Ordered from the most literal to the freest.
+                  </p>
+                </>
               )}
               {/* Licensed translations are shown by permission, not owned:
                   the publisher's notice has to appear wherever their text

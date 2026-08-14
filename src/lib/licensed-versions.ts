@@ -13,6 +13,12 @@
 
 export type LicensedMeta = {
   name: string;
+  /** Edition year and translation approach, same fields as the on-disk texts
+   *  (see TRANSLATION_INFO) so the compare list can sort and label them
+   *  alongside each other. */
+  year: number;
+  approach: "word-for-word" | "balanced" | "thought-for-thought";
+  note?: string;
   publisher: string;
   publisherUrl: string;
   /** The publisher's required copyright line, shown wherever the text is. */
@@ -28,6 +34,8 @@ export type LicensedMeta = {
 export const LICENSED_META: Record<string, LicensedMeta> = {
   NIV: {
     name: "New International Version",
+    year: 2011,
+    approach: "balanced",
     publisher: "Biblica",
     publisherUrl: "https://www.biblica.com",
     notice:
@@ -35,6 +43,8 @@ export const LICENSED_META: Record<string, LicensedMeta> = {
   },
   NLT: {
     name: "New Living Translation",
+    year: 2015,
+    approach: "thought-for-thought",
     publisher: "Tyndale House Publishers",
     publisherUrl: "https://tyndale.com",
     notice:
@@ -42,6 +52,8 @@ export const LICENSED_META: Record<string, LicensedMeta> = {
   },
   NASB: {
     name: "New American Standard Bible",
+    year: 2020,
+    approach: "word-for-word",
     publisher: "The Lockman Foundation",
     publisherUrl: "https://www.lockman.org",
     notice:
@@ -49,6 +61,8 @@ export const LICENSED_META: Record<string, LicensedMeta> = {
   },
   CSB: {
     name: "Christian Standard Bible",
+    year: 2017,
+    approach: "balanced",
     publisher: "Holman Bible Publishers",
     publisherUrl: "https://csbible.com",
     notice:
@@ -56,6 +70,8 @@ export const LICENSED_META: Record<string, LicensedMeta> = {
   },
   NKJV: {
     name: "New King James Version",
+    year: 1982,
+    approach: "word-for-word",
     publisher: "Thomas Nelson",
     publisherUrl: "https://www.thomasnelson.com",
     notice:
@@ -63,6 +79,8 @@ export const LICENSED_META: Record<string, LicensedMeta> = {
   },
   GNT: {
     name: "Good News Translation",
+    year: 1992,
+    approach: "thought-for-thought",
     publisher: "American Bible Society",
     publisherUrl: "https://www.americanbible.org",
     notice:
@@ -70,6 +88,8 @@ export const LICENSED_META: Record<string, LicensedMeta> = {
   },
   CEV: {
     name: "Contemporary English Version",
+    year: 1995,
+    approach: "thought-for-thought",
     publisher: "American Bible Society",
     publisherUrl: "https://www.americanbible.org",
     notice:
