@@ -73,8 +73,13 @@ export function loadQuestions(bookName: string, chapterNum: number): ChapterQues
  * BSB heading overlay (public domain). BSB itself carries its \s1/\s2 headings
  * inline in the chunk HTML, so it must NOT also receive the overlay or
  * headings double up.
+ *
+ * Empty since the ASV/Geneva/Young's/Darby texts were dropped from the compare
+ * set — they were the only versions that needed it. The overlay plumbing is
+ * kept because it threads through the reader's rendering path, and would come
+ * straight back into use if a heading-less translation is ever added.
  */
-export const OVERLAY_HEADING_VERSIONS = new Set(["ASV", "GNV", "YLT", "DBY"]);
+export const OVERLAY_HEADING_VERSIONS = new Set<string>([]);
 
 export function loadHeadings(
   bookName: string,

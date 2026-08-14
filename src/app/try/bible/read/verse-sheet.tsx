@@ -303,6 +303,11 @@ export function VerseSheet({
     },
     [],
   );
+  // The axis only means something with more than one band on screen: a single
+  // label beside an arrow claims a spectrum the list doesn't show. With only
+  // the public-domain texts that is the usual case, so the bands fall back to
+  // plain headings until the licensed moderns fill the other two.
+  const showAxis = groupedVersions.filter((g) => g.band).length > 1;
   // One notice per licensed publisher actually on screen (a version can
   // appear as `current` too, so both lists are considered).
   const licensedNotices = [
@@ -696,49 +701,76 @@ export function VerseSheet({
                 </p>
               ) : (
                 <>
-                  {/* Grouped by approach rather than tagged per row: with
-                      seven public-domain texts the tag would just repeat
-                      "word-for-word" six times, and the heading says the same
-                      thing once. The bands are the translators' own account
-                      of their aim, not a ranking of ours. */}
-                  {groupedVersions.map(({ band, rows }) => (
-                    <div key={band} className="mb-4 last:mb-0">
-                      {band && (
-                        <div className="mb-2 text-[10px] font-semibold uppercase tracking-widest text-neutral-400 dark:text-neutral-500">
-                          {band}
-                        </div>
-                      )}
-                      <ul className="space-y-3">
-                        {rows.map((v) => (
-                          <li key={v.abbr} className="text-sm leading-relaxed">
-                            <span
-                              className="mr-2 inline-block rounded-md bg-neutral-100 px-1.5 py-0.5 text-xs font-semibold text-neutral-500 dark:bg-neutral-800 dark:text-neutral-400"
-                              title={v.name}
-                            >
-                              {v.abbr}
-                            </span>
-                            {/* The year answers "why does this one sound
-                                old?" — the single most useful thing to know
-                                about a translation, and beyond dispute. */}
-                            {translationInfo(v.abbr) && (
+                  {/* Grouped by approach rather than tagged per row: the tag
+                      would repeat the same word down a whole band, and the
+                      heading says it once. The bands are the translators' own
+                      account of their aim, not a ranking of ours.
+
+                      With two or more bands the headings move into a left
+                      gutter beside a downward arrow, so the order reads as a
+                      single axis from the most literal to the freest rather
+                      than as three unrelated groups. The labels stay
+                      horizontal and wrap: rotated, "thought-for-thought" is
+                      taller than a band of one or two rows and overruns its
+                      own group. */}
+                  <div className={showAxis ? "relative pl-[4.75rem]" : undefined}>
+                    {showAxis && (
+                      <div
+                        aria-hidden="true"
+                        className="absolute bottom-0 left-[4.25rem] top-1 flex flex-col items-center"
+                      >
+                        <div className="w-px flex-1 bg-neutral-200 dark:bg-neutral-700" />
+                        <div className="h-0 w-0 border-x-[3px] border-t-[5px] border-x-transparent border-t-neutral-300 dark:border-t-neutral-600" />
+                      </div>
+                    )}
+                    {groupedVersions.map(({ band, rows }) => (
+                      <div key={band} className="relative mb-4 last:mb-0">
+                        {band &&
+                          (showAxis ? (
+                            <div className="absolute -left-[4.75rem] top-0 w-16 text-right text-[10px] font-semibold uppercase leading-tight text-neutral-400 dark:text-neutral-500">
+                              {band}
+                            </div>
+                          ) : (
+                            <div className="mb-2 text-[10px] font-semibold uppercase tracking-widest text-neutral-400 dark:text-neutral-500">
+                              {band}
+                            </div>
+                          ))}
+                        <ul className="space-y-3">
+                          {rows.map((v) => (
+                            <li key={v.abbr} className="text-sm leading-relaxed">
                               <span
-                                className="mr-2 text-[11px] text-neutral-400 dark:text-neutral-500"
-                                title={translationInfo(v.abbr)?.note}
+                                className="mr-2 inline-block rounded-md bg-neutral-100 px-1.5 py-0.5 text-xs font-semibold text-neutral-500 dark:bg-neutral-800 dark:text-neutral-400"
+                                title={v.name}
                               >
-                                {translationInfo(v.abbr)!.year}
+                                {v.abbr}
                               </span>
-                            )}
-                            <span className="font-scripture font-[450] text-neutral-600 dark:font-normal dark:text-neutral-300">
-                              {v.text}
-                            </span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  ))}
-                  <p className="mt-3 text-[11px] text-neutral-400">
-                    Ordered from the most literal to the freest.
-                  </p>
+                              {/* The year answers "why does this one sound
+                                  old?" — the single most useful thing to know
+                                  about a translation, and beyond dispute. */}
+                              {translationInfo(v.abbr) && (
+                                <span
+                                  className="mr-2 text-[11px] text-neutral-400 dark:text-neutral-500"
+                                  title={translationInfo(v.abbr)?.note}
+                                >
+                                  {translationInfo(v.abbr)!.year}
+                                </span>
+                              )}
+                              <span className="font-scripture font-[450] text-neutral-600 dark:font-normal dark:text-neutral-300">
+                                {v.text}
+                              </span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
+                  </div>
+                  {/* The arrow states the ordering; the caption only repeats
+                      it when the bands are plain headings. */}
+                  {!showAxis && (
+                    <p className="mt-3 text-[11px] text-neutral-400">
+                      Ordered from the most literal to the freest.
+                    </p>
+                  )}
                 </>
               )}
               {/* Licensed translations are shown by permission, not owned:

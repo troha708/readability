@@ -84,10 +84,6 @@ const VERSES: Record<number, VerseData> = {
     versions: [
       { abbr: "KJV", text: "In the beginning was the Word, and the Word was with God, and the Word was God." },
       { abbr: "WEB", text: "In the beginning was the Word, and the Word was with God, and the Word was God." },
-      { abbr: "ASV", text: "In the beginning was the Word, and the Word was with God, and the Word was God." },
-      { abbr: "GNV", text: "In the beginning was that Word, and that Word was with God, and that Word was God." },
-      { abbr: "YLT", text: "In the beginning was the Word, and the Word was with God, and the Word was God;" },
-      { abbr: "DBY", text: "In [the] beginning was the Word, and the Word was with God, and the Word was God." },
     ],
   },
   2: {
@@ -113,10 +109,6 @@ const VERSES: Record<number, VerseData> = {
     versions: [
       { abbr: "KJV", text: "The same was in the beginning with God." },
       { abbr: "WEB", text: "The same was in the beginning with God." },
-      { abbr: "ASV", text: "The same was in the beginning with God." },
-      { abbr: "GNV", text: "This same was in the beginning with God." },
-      { abbr: "YLT", text: "this one was in the beginning with God;" },
-      { abbr: "DBY", text: "He was in the beginning with God." },
     ],
   },
   3: {
@@ -163,10 +155,6 @@ const VERSES: Record<number, VerseData> = {
     versions: [
       { abbr: "KJV", text: "All things were made by him; and without him was not any thing made that was made." },
       { abbr: "WEB", text: "All things were made through him. Without him, nothing was made that has been made." },
-      { abbr: "ASV", text: "All things were made through him; and without him was not anything made that hath been made." },
-      { abbr: "GNV", text: "All things were made by it, and without it was made nothing that was made." },
-      { abbr: "YLT", text: "all things through him did happen, and without him happened not even one thing that hath happened." },
-      { abbr: "DBY", text: "All things received being through him, and without him not one [thing] received being which has received being." },
     ],
   },
   4: {
@@ -213,10 +201,6 @@ const VERSES: Record<number, VerseData> = {
     versions: [
       { abbr: "KJV", text: "In him was life; and the life was the light of men." },
       { abbr: "WEB", text: "In him was life, and the life was the light of men." },
-      { abbr: "ASV", text: "In him was life; and the life was the light of men." },
-      { abbr: "GNV", text: "In it was life, and that life was the light of men." },
-      { abbr: "YLT", text: "In him was life, and the life was the light of men," },
-      { abbr: "DBY", text: "In him was life, and the life was the light of men." },
     ],
   },
   5: {
@@ -264,10 +248,6 @@ const VERSES: Record<number, VerseData> = {
     versions: [
       { abbr: "KJV", text: "And the light shineth in darkness; and the darkness comprehended it not." },
       { abbr: "WEB", text: "The light shines in the darkness, and the darkness hasn’t overcome it." },
-      { abbr: "ASV", text: "And the light shineth in the darkness; and the darkness apprehended it not." },
-      { abbr: "GNV", text: "And that light shineth in the darkenesse, and the darkenesse comprehended it not." },
-      { abbr: "YLT", text: "and the light in the darkness did shine, and the darkness did not perceive it." },
-      { abbr: "DBY", text: "And the light appears in darkness, and the darkness apprehended it not." },
     ],
   },
   6: {
@@ -301,10 +281,6 @@ const VERSES: Record<number, VerseData> = {
     versions: [
       { abbr: "KJV", text: "There was a man sent from God, whose name was John." },
       { abbr: "WEB", text: "There came a man sent from God, whose name was John." },
-      { abbr: "ASV", text: "There came a man, sent from God, whose name was John." },
-      { abbr: "GNV", text: "There was a man sent from God, whose name was Iohn." },
-      { abbr: "YLT", text: "There came a man — having been sent from God — whose name [is] John," },
-      { abbr: "DBY", text: "There was a man sent from God, his name John." },
     ],
   },
   7: {
@@ -344,10 +320,6 @@ const VERSES: Record<number, VerseData> = {
     versions: [
       { abbr: "KJV", text: "The same came for a witness, to bear witness of the Light, that all men through him might believe." },
       { abbr: "WEB", text: "The same came as a witness, that he might testify about the light, that all might believe through him." },
-      { abbr: "ASV", text: "The same came for witness, that he might bear witness of the light, that all might believe through him." },
-      { abbr: "GNV", text: "This same came for a witnesse, to beare witnesse of that light, that all men through him might beleeue." },
-      { abbr: "YLT", text: "this one came for testimony, that he might testify about the Light, that all might believe through him;" },
-      { abbr: "DBY", text: "He came for witness, that he might witness concerning the light, that all might believe through him." },
     ],
   },
   8: {
@@ -384,10 +356,6 @@ const VERSES: Record<number, VerseData> = {
     versions: [
       { abbr: "KJV", text: "He was not that Light, but was sent to bear witness of that Light." },
       { abbr: "WEB", text: "He was not the light, but was sent that he might testify about the light." },
-      { abbr: "ASV", text: "He was not the light, but came that he might bear witness of the light." },
-      { abbr: "GNV", text: "He was not that light, but was sent to beare witnesse of that light." },
-      { abbr: "YLT", text: "that one was not the Light, but — that he might testify about the Light." },
-      { abbr: "DBY", text: "He was not the light, but that he might witness concerning the light." },
     ],
   },
   9: {
@@ -426,10 +394,6 @@ const VERSES: Record<number, VerseData> = {
     versions: [
       { abbr: "KJV", text: "That was the true Light, which lighteth every man that cometh into the world." },
       { abbr: "WEB", text: "The true light that enlightens everyone was coming into the world." },
-      { abbr: "ASV", text: "There was the true light, even the light which lighteth every man, coming into the world." },
-      { abbr: "GNV", text: "This was that true light, which lighteth euery man that commeth into the world." },
-      { abbr: "YLT", text: "He was the true Light, which doth enlighten every man, coming to the world;" },
-      { abbr: "DBY", text: "The true light was that which, coming into the world, lightens every man." },
     ],
   },
   10: {
@@ -471,10 +435,6 @@ const VERSES: Record<number, VerseData> = {
     versions: [
       { abbr: "KJV", text: "He was in the world, and the world was made by him, and the world knew him not." },
       { abbr: "WEB", text: "He was in the world, and the world was made through him, and the world didn’t recognize him." },
-      { abbr: "ASV", text: "He was in the world, and the world was made through him, and the world knew him not." },
-      { abbr: "GNV", text: "He was in the world, and the worlde was made by him: and the worlde knewe him not." },
-      { abbr: "YLT", text: "in the world he was, and the world through him was made, and the world did not know him:" },
-      { abbr: "DBY", text: "He was in the world, and the world had [its] being through him, and the world knew him not." },
     ],
   },
   11: {
@@ -506,10 +466,6 @@ const VERSES: Record<number, VerseData> = {
     versions: [
       { abbr: "KJV", text: "He came unto his own, and his own received him not." },
       { abbr: "WEB", text: "He came to his own, and those who were his own didn’t receive him." },
-      { abbr: "ASV", text: "He came unto his own, and they that were his own received him not." },
-      { abbr: "GNV", text: "He came vnto his owne, and his owne receiued him not." },
-      { abbr: "YLT", text: "to his own things he came, and his own people did not receive him;" },
-      { abbr: "DBY", text: "He came to his own, and his own received him not;" },
     ],
   },
   12: {
@@ -551,10 +507,6 @@ const VERSES: Record<number, VerseData> = {
     versions: [
       { abbr: "KJV", text: "But as many as received him, to them gave he power to become the sons of God, even to them that believe on his name:" },
       { abbr: "WEB", text: "But as many as received him, to them he gave the right to become God’s children, to those who believe in his name:" },
-      { abbr: "ASV", text: "But as many as received him, to them gave he the right to become children of God, even to them that believe on his name:" },
-      { abbr: "GNV", text: "But as many as receiued him, to them he gaue prerogatiue to be the sonnes of God, euen to them that beleeue in his Name." },
-      { abbr: "YLT", text: "but as many as did receive him to them he gave authority to become sons of God — to those believing in his name," },
-      { abbr: "DBY", text: "but as many as received him, to them gave he [the] right to be children of God, to those that believe on his name;" },
     ],
   },
   13: {
@@ -596,10 +548,6 @@ const VERSES: Record<number, VerseData> = {
     versions: [
       { abbr: "KJV", text: "Which were born, not of blood, nor of the will of the flesh, nor of the will of man, but of God." },
       { abbr: "WEB", text: "who were born, not of blood, nor of the will of the flesh, nor of the will of man, but of God." },
-      { abbr: "ASV", text: "who were born, not of blood, nor of the will of the flesh, nor of the will of man, but of God." },
-      { abbr: "GNV", text: "Which are borne not of blood, nor of the will of the flesh, nor of ye wil of man, but of God." },
-      { abbr: "YLT", text: "who — not of blood nor of a will of flesh, nor of a will of man but — of God were begotten." },
-      { abbr: "DBY", text: "who have been born, not of blood, nor of flesh’s will, nor of man’s will, but of God." },
     ],
   },
 };

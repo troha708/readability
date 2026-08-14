@@ -25,10 +25,6 @@ const VERSION_DIRS: Record<string, string> = {
   BSB: join(process.cwd(), "data", "BSB"),
   KJV: join(process.cwd(), "data", "KJV"),
   WEB: join(process.cwd(), "data", "WEB"),
-  ASV: join(process.cwd(), "data", "ASV"),
-  GNV: join(process.cwd(), "data", "GNV"),
-  YLT: join(process.cwd(), "data", "YLT"),
-  DBY: join(process.cwd(), "data", "DBY"),
 };
 
 /** Book names come from URLs; allow only filename-shaped names ("1 Samuel",

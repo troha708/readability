@@ -22,7 +22,7 @@ const dataCredits = [
   {
     name: "eBible.org",
     url: "https://ebible.org",
-    role: "Source of the American Standard Version, Geneva Bible (1599), Young's Literal Translation, and Darby Translation texts, and home of the World English Bible translation project. The King James text is likewise public domain.",
+    role: "Home of the World English Bible translation project, whose text is offered for verse comparison. The King James text is likewise public domain.",
     license: "Public-domain texts",
   },
   {
