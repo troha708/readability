@@ -1,12 +1,7 @@
 /**
  * The translations the app offers. Reading is limited to the two most-read
- * public-domain texts (BSB, KJV); the verse-compare sheet adds WEB and the
- * licensed moderns so a reader can see a verse rendered several ways.
- *
- * The older public-domain set (ASV, Geneva, Young's, Darby) was dropped: each
- * either duplicated a text already here — WEB is a modern revision of the ASV
- * — or was a curiosity whose archaic English demonstrated age rather than
- * translation approach.
+ * public-domain texts (BSB, KJV); the verse-compare sheet adds the older,
+ * more literal set so a reader can see a single verse rendered several ways.
  * Client-safe (no fs) — shared by the reader picker, the verse compare sheet,
  * and the server-side verse lookup.
  */
@@ -14,7 +9,15 @@ import { LICENSED_META } from "@/lib/licensed-versions";
 
 export const READING_VERSIONS: string[] = ["BSB", "KJV"];
 
-export const COMPARE_VERSIONS: string[] = ["BSB", "KJV", "WEB"];
+export const COMPARE_VERSIONS: string[] = [
+  "BSB",
+  "KJV",
+  "WEB",
+  "ASV",
+  "GNV",
+  "YLT",
+  "DBY",
+];
 
 /**
  * How a translation renders its source, in the three bands the translators
@@ -45,6 +48,20 @@ export const TRANSLATION_INFO: Record<string, TranslationInfo> = {
     approach: "word-for-word",
     note: "A modern-English revision of the American Standard Version.",
   },
+  ASV: { name: "American Standard Version (1901)", year: 1901, approach: "word-for-word" },
+  GNV: {
+    name: "Geneva Bible (1599)",
+    year: 1599,
+    approach: "word-for-word",
+    note: "The English Bible of the Reformation, a generation before the King James.",
+  },
+  YLT: {
+    name: "Young's Literal Translation (1898)",
+    year: 1898,
+    approach: "word-for-word",
+    note: "Strictly literal: keeps Hebrew and Greek tense and word order even where the English strains.",
+  },
+  DBY: { name: "Darby Translation (1890)", year: 1890, approach: "word-for-word" },
 };
 
 /** Sort key: literal first, then freest, then by age within a band. */

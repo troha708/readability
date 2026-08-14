@@ -47,11 +47,9 @@ export default function TermsPage() {
       <LegalSection heading="Content and intellectual property">
         <p>
           Bible translations available in the app — the Berean Standard Bible (BSB) and King
-          James Version (KJV) for reading, plus the World English Bible (WEB) offered for verse
-          comparison — are in the public domain or freely usable under their respective terms.
-          Modern translations shown a verse at a time in the comparison panel remain the
-          copyright of their publishers, are displayed by permission, and are not redistributed.
-          The app’s original materials, including
+          James Version (KJV) for reading, plus older public-domain translations (ASV, Geneva,
+          Young’s Literal, Darby) offered for verse comparison — are in the public domain or
+          freely usable under their respective terms. The app’s original materials, including
           comprehension questions and design, are owned by Readability and provided for your
           personal study use.
         </p>
