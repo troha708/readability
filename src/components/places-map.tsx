@@ -42,6 +42,9 @@ export type MapPlaceBase = {
   y: number;
   kind: PlaceKind;
   uncertain: boolean;
+  /** Modern identification ("Tell es-Sultan"), shown under the ancient name
+   *  when the caller turns modern names on. Empty for regions. */
+  modern?: string;
   /** Label priority when labels collide (e.g. verse or reference count). */
   weight?: number;
   /** Journey-stop sequence number — renders as a numbered marker. */
@@ -104,6 +107,29 @@ function isFeaturePlace(p: MapPlaceBase): boolean {
   return p.seq == null && p.kind === 2;
 }
 
+// A few identifications are descriptive phrases rather than names ("the
+// intersection of Kidron Valley and Valley of Hinnom") — 26 of the 1,024
+// with a modern name. Left whole they would claim a 250 px collision box
+// and silence their neighbors' labels, so the sub-line is clipped at a word
+// boundary; the detail card always carries the full text.
+const MODERN_MAX = 24;
+
+/**
+ * The sub-line under a place's name: its modern identification, with a
+ * question mark when the identification is the best-supported candidate
+ * rather than a settled one (the same fact the dashed ring carries, in the
+ * printed-atlas convention).
+ */
+function modernSubLabel(p: MapPlaceBase): string {
+  const modern = p.modern?.trim();
+  if (!modern) return "";
+  const text =
+    modern.length > MODERN_MAX
+      ? `${modern.slice(0, MODERN_MAX - 1).replace(/[\s,]+\S*$/, "")}…`
+      : modern;
+  return p.uncertain ? `${text}?` : text;
+}
+
 /** Greedy screen-space clustering; members keep their input order. */
 function clusterPlaces<T extends MapPlaceBase>(places: T[], k: number): Cluster<T>[] {
   const clusters: Cluster<T>[] = [];
@@ -134,6 +160,7 @@ export function PlacesMap<T extends MapPlaceBase>({
   declutter = false,
   route,
   controls = true,
+  showModern = false,
   className = "",
   hintClassName = "left-2 top-2",
 }: {
@@ -167,6 +194,10 @@ export function PlacesMap<T extends MapPlaceBase>({
   /** False hides the zoom/fit controls and the declutter hint — the embed
    *  view is a non-interactive preview. */
   controls?: boolean;
+  /** Print each place's modern identification as a muted second line under
+   *  its name. Only lone places get one: a cluster's label already stands
+   *  for several places, and regions carry no modern name. */
+  showModern?: boolean;
   /** Sizing/border classes for the map container. */
   className?: string;
   /** Position classes for the declutter hint — a caller whose own UI floats
@@ -583,13 +614,20 @@ export function PlacesMap<T extends MapPlaceBase>({
       if (sx < -40 || sx > size.w + 40 || sy < -20 || sy > size.h + 20) continue;
       const text =
         c.members.length > 1 ? `${c.members[0].name} +${c.members.length - 1}` : c.members[0].name;
-      const w = text.length * 6.6 + 4;
       // Feature labels sit centered on the point; ordinary labels are offset
       // to the right of the dot — collision boxes must match each geometry.
       const asLabel = c.members.length === 1 && isFeaturePlace(c.members[0]);
+      // The modern sub-line widens and deepens the box, so it must be part
+      // of the collision geometry — otherwise it lies across its neighbours.
+      const sub =
+        showModern && c.members.length === 1 && !asLabel
+          ? modernSubLabel(c.members[0])
+          : "";
+      const w = Math.max(text.length * 6.6, sub.length * 5.6) + 4;
+      const h = sub ? 22 : 14;
       const box = asLabel
-        ? { x: sx - w / 2, y: sy - 7, w, h: 14 }
-        : { x: sx + 7, y: sy - 7, w, h: 14 };
+        ? { x: sx - w / 2, y: sy - 7, w, h }
+        : { x: sx + 7, y: sy - 7, w, h };
       if (!visible.has(i)) {
         if (boxes.some((b) => overlaps(box, b))) {
           // A feature's label IS its marker, and a bare ring names nothing —
@@ -615,7 +653,7 @@ export function PlacesMap<T extends MapPlaceBase>({
       boxes.push(box);
     }
     return { visible, small };
-  }, [clusters, view, size, selected]);
+  }, [clusters, view, size, selected, showModern]);
 
   const relScale = view && kFitMap > 0 ? view.k / kFitMap : 1;
 
@@ -706,6 +744,7 @@ export function PlacesMap<T extends MapPlaceBase>({
     const named =
       (isSelected && c.members.find((m) => placeKey(m) === selectedKey)) || heaviest;
     const label = many ? `${named.name} +${c.members.length - 1}` : named.name;
+    const sub = showModern && !many ? modernSubLabel(named) : "";
 
     return (
       <g
@@ -821,6 +860,20 @@ export function PlacesMap<T extends MapPlaceBase>({
             className="pointer-events-none fill-neutral-800 stroke-white text-[11px] font-medium dark:fill-neutral-100 dark:stroke-neutral-900"
           >
             {label}
+          </text>
+        )}
+        {labeled.has(i) && sub && (
+          // The modern identification, kept plainly subordinate to the
+          // ancient name: smaller, muted, upright (italic reads as a region
+          // label here).
+          <text
+            x="8"
+            dy="14"
+            paintOrder="stroke"
+            strokeWidth="2.5"
+            className="pointer-events-none fill-neutral-500 stroke-white text-[9px] dark:fill-neutral-400 dark:stroke-neutral-900"
+          >
+            {sub}
           </text>
         )}
       </g>

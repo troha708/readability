@@ -12,6 +12,7 @@ import { useEffect, useMemo, useState } from "react";
 import { chapterReference } from "@/lib/bible-book-order";
 import { openBiblePlaceUrl, type ChapterPlace, type ChapterPlaces } from "@/lib/content/places";
 import { PlacesMap } from "@/components/places-map";
+import { readShowModernNames, writeShowModernNames } from "@/lib/map-prefs";
 
 const KIND_LABELS = ["", "water", "region", "natural feature"];
 
@@ -35,6 +36,10 @@ export function ChapterMapSheet({
   onGoToVerse: (verse: number) => void;
 }) {
   const [selection, setSelection] = useState<GroupedChapterPlace[] | null>(null);
+  // Modern identifications under the ancient names — the same preference the
+  // atlas writes, so the setting follows the reader between the two maps.
+  const [showModern, setShowModern] = useState(false);
+  useEffect(() => setShowModern(readShowModernNames()), []);
   const reference = `${chapterReference(bookName, chapter)}`;
   const places = useMemo(
     // Same-named records at the same site (Zin in Joshua 15, Red Sea in
@@ -111,6 +116,7 @@ export function ChapterMapSheet({
             <PlacesMap
               places={places}
               route={data.journey?.route}
+              showModern={showModern}
               fitKey={`${bookName}|${chapter}`}
               onSelectionChange={setSelection}
               expandHref={`/try/bible/map?book=${encodeURIComponent(bookName)}&chapter=${chapter}`}
@@ -119,6 +125,26 @@ export function ChapterMapSheet({
           )}
 
           <div className="px-5">
+            {/* Modern identifications under the names on the map. Hidden when
+                this chapter's places have none to show; the setting is shared
+                with the full atlas. */}
+            {places.some((p) => p.modern) && (
+              <button
+                onClick={() => {
+                  const next = !showModern;
+                  setShowModern(next);
+                  writeShowModernNames(next);
+                }}
+                aria-pressed={showModern}
+                className={`mt-2 rounded-full px-2.5 py-0.5 text-xs font-medium tracking-[0.25px] transition-colors ${
+                  showModern
+                    ? "bg-amber-100 text-amber-800 dark:bg-amber-900/50 dark:text-amber-400"
+                    : "bg-neutral-100 text-neutral-500 dark:bg-neutral-800 dark:text-neutral-400"
+                }`}
+              >
+                Modern names
+              </button>
+            )}
             {/* Journey context (Acts): the chapter's own leg is drawn on the
                 map; the full route lives in the atlas. */}
             {data.journey && (

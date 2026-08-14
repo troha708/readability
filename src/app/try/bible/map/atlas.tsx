@@ -19,6 +19,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { Logo } from "@/components/logo";
 import { PlacesMap, placeKey, type PlacesMapApi } from "@/components/places-map";
 import { MAX_K } from "@/lib/map-view";
+import { readShowModernNames, writeShowModernNames } from "@/lib/map-prefs";
 import { chapterReference } from "@/lib/bible-book-order";
 import {
   openBiblePlaceUrl,
@@ -172,6 +173,16 @@ export function Atlas() {
   const [searchOpen, setSearchOpen] = useState(false);
   const [showAllRefs, setShowAllRefs] = useState(false);
   const [kinds, setKinds] = useState<Set<PlaceKind>>(new Set([0, 1, 2, 3]));
+  // Modern identifications under the ancient names. Read after mount (the
+  // page is prerendered, so the stored value can't seed the first render)
+  // and shared with the reader's chapter-map sheet.
+  const [showModern, setShowModern] = useState(false);
+  useEffect(() => setShowModern(readShowModernNames()), []);
+  function toggleModern() {
+    const next = !showModern;
+    setShowModern(next);
+    writeShowModernNames(next);
+  }
   // ?min= carries the Mentions filter (3/10/50) in shared and embedded URLs.
   const [minMentions, setMinMentions] = useState(() => {
     const m = Number(searchParams.get("min"));
@@ -1082,6 +1093,23 @@ export function Atlas() {
     </div>
   );
 
+  // Same chip shape as the kind filters, but this one changes what the
+  // labels say rather than which places are on the map.
+  const modernChip = (
+    <button
+      onClick={toggleModern}
+      aria-pressed={showModern}
+      title="Print each place's modern identification under its ancient name"
+      className={`rounded-full px-2.5 py-0.5 text-xs font-medium tracking-[0.25px] transition-colors ${
+        showModern
+          ? "bg-amber-100 text-amber-800 dark:bg-amber-900/50 dark:text-amber-400"
+          : "bg-neutral-100 text-neutral-500 dark:bg-neutral-800 dark:text-neutral-400"
+      }`}
+    >
+      Modern names
+    </button>
+  );
+
   const mentionControl = (
     <div className="inline-flex rounded-full bg-neutral-100 p-0.5 dark:bg-neutral-800">
       {MENTION_FILTERS.map(({ label, min }) => (
@@ -1247,6 +1275,14 @@ export function Atlas() {
             ))}
           </div>
         </div>
+        {showModern && (
+          <p>
+            The small second line is the site the place is identified with
+            today; a question mark marks an identification the sources are
+            divided on. Regions carry none — their point is representative,
+            not a site.
+          </p>
+        )}
         <p>
           The Dead Sea is drawn at its biblical-era extent, one lake including
           the southern basin; the modern lake has shrunk and split.
@@ -1285,6 +1321,7 @@ export function Atlas() {
           {scopeSelect(
             "rounded-full border border-neutral-200 bg-white px-2 py-0.5 text-xs font-medium tracking-[0.25px] text-neutral-600 outline-none dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-300",
           )}
+          {modernChip}
           {journeyNote}
           {focusNote}
           <div className="w-full">{mapKey}</div>
@@ -1328,6 +1365,10 @@ export function Atlas() {
             </div>
           </>
         )}
+        <div>
+          <div className={sideHeading}>Labels</div>
+          <div className="mt-1.5">{modernChip}</div>
+        </div>
         {journeyNote}
         {focusNote}
         {mapKey}
@@ -1352,6 +1393,7 @@ export function Atlas() {
               // set — progressive disclosure is for the unfiltered flood.
               declutter={!focus && !journeyView && places.length > 60}
               route={journeyView?.route}
+              showModern={showModern}
               fitKey={focus ? `${focus.book}|${focus.chapter}` : `scope|${scope}`}
               onReady={() => setMapReady(true)}
               onViewChange={handleViewChange}
