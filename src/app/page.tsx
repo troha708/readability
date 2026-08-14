@@ -200,7 +200,8 @@ export default function Home() {
                 their exact 1.625. Colour stays ours — theirs is light-theme
                 ink on white, this page is near-black. */}
             <p className="mt-4 font-scripture text-base font-normal leading-relaxed tracking-[0.0156em] text-neutral-300">
-              Notes, cross-references, word study and maps.
+              Study notes from Tyndale House Publishers, cross-references, word
+              study and maps.
               <span className="block">
                 Free and open source, with no ads{" "}
                 <span className="whitespace-nowrap">and no account required.</span>
