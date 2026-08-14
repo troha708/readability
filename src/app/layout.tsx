@@ -8,16 +8,9 @@ import {
 import { SITE_URL } from "@/lib/site";
 import "./globals.css";
 
-// Display face: page titles and the chapter drop cap. Libre Baskerville,
-// replacing Fraunces — whose soft/wonk axes read as styled rather than set,
-// and which is the same fashionable-variable-face pick that turns up in
-// generated work. Baskerville has a real Bible lineage: John Baskerville was
-// printer to Cambridge University from 1758 and produced the 1763 folio Bible.
-// This is not his types — Libre Baskerville is drawn from ATF's 1941 cut with
-// a taller x-height for screens — but it is that line rather than a trend.
-//
-// 400 and 700 only; there is no variable axis, so anything asking for 600
-// snaps to 700. Callers use font-bold explicitly for that reason.
+// Display face: page titles and the chapter drop cap. 400 and 700 only —
+// there is no variable axis, so anything asking for 600 snaps to 700, and
+// callers use font-bold explicitly for that reason.
 const display = Libre_Baskerville({
   subsets: ["latin"],
   weight: ["400", "700"],
@@ -34,11 +27,8 @@ const scripture = Bitter({
   display: "swap",
 });
 
-// Original-language book names on the library page. Greek is Gentium Plus;
-// Ezra SIL would suit the Hebrew but isn't on Google Fonts, so Hebrew goes to
-// Noto Serif Hebrew rather than vendoring a binary. Both are SIL Open Font
-// Licence and both carry the pointing — polytonic Greek accents, and niqqud
-// on the Hebrew.
+// Original-language book names on the library page. Both faces are SIL Open
+// Font Licence and carry the pointing — polytonic Greek accents, Hebrew niqqud.
 const greek = Gentium_Plus({
   subsets: ["greek-ext"],
   weight: ["400"],

@@ -4,18 +4,11 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
 /**
- * The pictures beside the "What's in it" list. They open on the same features
- * the list names, but they are no longer one-to-one with the bullets and in the
- * bullets' order: the montage opens on the reading view — the thing the site is
- * — and the dictionary is named in the list without a picture of its own.
- *
- * Each is a capture of the real component rather than an illustration of it —
- * scripts/shoot-features.mjs drives the app and shoots them, and re-running it
- * is how they stay current. The sizes below are each crop's own, and they no
- * longer agree: a tile ends where its content ends — the last of the book
- * introduction's fields, the foot of a paragraph, the end of a word's entry —
- * rather than at a shape decided in advance, which cut every one of them
- * mid-sentence. Re-run the script and copy the sizes it prints.
+ * The pictures beside the "What's in it" list — not one-to-one with the
+ * bullets. Each is a capture of the real component: scripts/shoot-features.mjs
+ * drives the app and shoots them, and re-running it is how they stay current.
+ * Each crop keeps its own size — re-run the script and copy the sizes it
+ * prints.
  */
 const TILES = [
   {

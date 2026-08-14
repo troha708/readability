@@ -1,17 +1,12 @@
 "use client";
 
 /**
- * Renders chunk HTML (from api.bible) with Tailwind styling.
+ * Renders chapter HTML (paragraphs, headings, verse spans) with Tailwind
+ * styling, falling back to plain-text rendering for legacy data.
  *
- * Handles both the new HTML format (paragraphs, headings, verse spans)
- * and falls back to plain-text rendering for legacy data.
- *
- * When `bionic` is true, the first ~40% of each word is bolded to
- * guide the reader's eye (bionic reading technique).
- *
- * When `highlights` are provided, highlighted verses get a colored
- * background. Verse number elements carry data-verse-num attributes
- * so the selection toolbar can identify which verses are selected.
+ * `bionic` bolds the first ~40% of each word. `highlights` tint their verses;
+ * verse-number elements carry data-verse-num so the selection toolbar can tell
+ * which verses are selected.
  */
 import { type ReactNode } from "react";
 import parse, {
@@ -61,12 +56,8 @@ function isEditorialBlock(node: unknown): boolean {
   return false;
 }
 
-// Section headings: the scripture serif, italic, at body size — one weight
-// step above the body text (500/450 vs the body's 450/400) so they hold their
-// own without shouting. The hand-tuned halfway gold, in its `deep` shade on
-// the light page: the DEFAULT token's 3.5:1 there was the faintest text on the
-// reading surface, so headings take the same hue with more ink (4.9:1). Dark
-// mode keeps `bright`.
+// Section headings: the scripture serif, italic, at body size, one weight step
+// above the body text so they hold their own without shouting.
 const HEADING_CLASS =
   "font-scripture text-[1em] font-medium italic text-gold-deep dark:font-[450] dark:text-gold-bright";
 
@@ -418,11 +409,9 @@ function getParserOptions(
         const hl = verseNum ? highlights?.[verseNum] : null;
         const hlColor = hl?.color ? highlightColorInfo(hl.color) : null;
 
-        // One grey in both themes: 4.2:1 on the light page, 4.4:1 on the 925
-        // ground. The number is a landmark you look for rather than read, so it
-        // stays well behind the scripture (9.3:1 / 13.3:1) — but the old
-        // half-transparent grey sat under 3:1 either way, which is faint enough
-        // to hunt for.
+        // One grey in both themes. The number is a landmark you look for
+        // rather than read, so it stays well behind the scripture — but not so
+        // faint you have to hunt for it.
         return (
           <sup
             data-verse-num={verseNum || undefined}
@@ -474,12 +463,9 @@ function getParserOptions(
 
       // Words of Jesus. The source marks these only in parts of the NT (the
       // Gospels, Acts, Revelation, and a few epistles), so colouring them
-      // would make scripture text an inconsistent colour both across the NT
-      // and against the OT (which has no such markup). Plain by default;
-      // readers can opt into red letters via the settings menu. The muted
-      // vermilion is the rubric pair from the discarded heading trial
-      // (64db98d2): light #a6453a reads APCA Lc ~76 on white; dark #db9c8d
-      // Lc ~55 on the 925 ground.
+      // would make scripture an inconsistent colour across the NT and against
+      // the OT, which has no such markup. Plain by default; readers can opt
+      // into red letters via the settings menu.
       if (tag === "wj") {
         if (redLetter) {
           return (

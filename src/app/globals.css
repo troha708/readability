@@ -15,18 +15,9 @@
   --foreground: #424547;
 }
 
-/* Dark reading ground: a warm near-black (neutral-925; sampled against
-   Reddit's dark mode #13120E). It sat at #14110f, a visible step warmer
-   and lighter than the library page's #0a0a0a; it now travels ~40% of
-   that gap to #100e0d — near enough that moving between the two pages
-   doesn't register as a change of surface, still warm enough not to be
-   the flat neutral 950. The text stays at #d3d7da: on the darker ground
-   that reads 13.3:1, which is the band Google's dark themes occupy (M3
-   baseline 13.3–14.4:1, Search ~13.4:1) — it was briefly stepped back to
-   #cdd1d4/12.5:1, below all of them, and put back. Keep it in step with
-   neutral-300 in tailwind.config.ts, which paints the scripture. The
-   #202121/#282a2b greys remain the raised-surface steps (cards, sheets,
-   panels). The landing and static shells keep bg-neutral-950. */
+/* Dark reading ground: a warm near-black (neutral-925). Keep both values in
+   step with neutral-925 and neutral-300 in tailwind.config.ts. The landing and
+   static shells keep bg-neutral-950. */
 .dark {
   color-scheme: dark;
   --background: #100e0d;

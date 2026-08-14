@@ -142,7 +142,7 @@ export default function Home() {
           </div>
           <LandingSearch />
           {/* Atlas/Dictionary live in the footer too, so on phones the bar
-              keeps just logo + Sign in (literal.club does the same). */}
+              keeps just logo + Sign in. */}
           {/* Bar type is footer-strip weight — 500 at 0.25px letter-spacing —
               but kept at this bar's own size, so the links still fill the
               header. The grey is neutral-400. */}

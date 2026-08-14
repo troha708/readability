@@ -7,9 +7,8 @@ import { useRouter } from "next/navigation";
 
 /**
  * `variant="flat"` renders the header-segment form used by the landing bar:
- * full-height, no pill, a vertical hairline on the left — in the manner of
- * literal.club's header actions. The default keeps the rounded button used
- * everywhere else.
+ * full-height, no pill, a vertical hairline on the left. The default keeps
+ * the rounded button used everywhere else.
  */
 export function AuthButton({
   variant = "default",

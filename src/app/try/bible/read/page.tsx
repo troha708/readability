@@ -30,8 +30,7 @@ type Props = {
 };
 
 // Pitch line that rides above the passage title in the social unfurl (the
-// og:site_name slot — like "YouVersion | The Bible App | Bible.com" on a
-// Bible.com link). Promotes the app rather than just naming it.
+// og:site_name slot). Promotes the app rather than just naming it.
 const SOCIAL_SITE_NAME = "Readability.bible — A study Bible";
 
 

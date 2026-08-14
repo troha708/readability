@@ -195,26 +195,14 @@ export function BibleRoadmap({
   }
 
   /**
-   * One book: a row in the canon table. The English name carries a gold rule
-   * sized to how much of the book is read — progress as a property of the row,
-   * not the reason the row exists.
-   */
-  /**
    * One book: two rows of a plain table. The first is the book — English name,
-   * original name, chapter count. The second only exists when the row is open
-   * and holds the chapter grid.
+   * original name, chapter count — with a gold rule under the English name
+   * sized to how much of the book is read. The second row only exists when the
+   * row is open and holds the chapter grid.
    *
-   * Set like a contents page, not a data table. Standard Ebooks' own contents
-   * stylesheet is `list-style: none` with 2em between entries and no rule
-   * anywhere; entries are told apart by space and alignment. This had said it
-   * aimed at that while drawing a hairline under all sixty-six books, which is
-   * the default a table falls into when nobody sets it — so the rules are gone
-   * and the air they were standing in for is real.
-   *
-   * One size throughout, including the chapter figure: on a printed contents
-   * page the number is part of the line, and shrinking it is what turns it
-   * into a badge. What separates things is the space above a division and the
-   * column the originals stand in.
+   * Set like a contents page, not a data table: no rules, one size throughout
+   * including the chapter figure. Entries are told apart by space and
+   * alignment.
    */
   function renderBookRows(book: BookInfo, isActiveBook: boolean, isStudy: boolean) {
     const hasChapters = book.chapters.length > 0;
