@@ -48,7 +48,7 @@ const features: { id: string; content: ReactNode }[] = [
   {
     id: "verse-notes",
     content:
-      "Tap any verse to open cross-references and study notes from Tyndale House Publishers.",
+      "Cross-references and study notes from Tyndale House Publishers.",
   },
   {
     id: "verse-compare",
