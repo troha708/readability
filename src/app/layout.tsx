@@ -25,8 +25,7 @@ const display = Libre_Baskerville({
   display: "swap",
 });
 
-// Slab text serif for scripture, in the manner of esv.org's Sentinel
-// (which is commercial). Real italics are loaded for psalm titles,
+// Slab text serif for scripture. Real italics are loaded for psalm titles,
 // cross-references and transliterations.
 const scripture = Bitter({
   subsets: ["latin"],
@@ -35,11 +34,11 @@ const scripture = Bitter({
   display: "swap",
 });
 
-// Original-language book names on the library page. esv.org sets Greek and
-// Hebrew in Gentium Plus and Ezra SIL; Gentium we can use directly, but Ezra
-// isn't on Google Fonts, so Hebrew goes to Noto Serif Hebrew rather than
-// vendoring a binary. Both are SIL Open Font Licence and both carry the
-// pointing — polytonic Greek accents, and niqqud on the Hebrew.
+// Original-language book names on the library page. Greek is Gentium Plus;
+// Ezra SIL would suit the Hebrew but isn't on Google Fonts, so Hebrew goes to
+// Noto Serif Hebrew rather than vendoring a binary. Both are SIL Open Font
+// Licence and both carry the pointing — polytonic Greek accents, and niqqud
+// on the Hebrew.
 const greek = Gentium_Plus({
   subsets: ["greek-ext"],
   weight: ["400"],
@@ -67,7 +66,7 @@ export const metadata: Metadata = {
     template: "%s | Readability",
   },
   description:
-    "Study notes from Tyndale House Publishers, cross-references, a Greek and Hebrew interlinear, and maps. Free and open source, with no ads and no account required.",
+    "Notes from Tyndale House Publishers, cross-references, a Greek and Hebrew interlinear, and maps. Free and open source, with no ads and no account required.",
   keywords: [
     "Bible",
     "Bible reading app",
@@ -85,7 +84,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "A study Bible",
     description:
-      "Study notes from Tyndale House Publishers, cross-references, a Greek and Hebrew interlinear, and maps. Free and open source, with no ads and no account required.",
+      "Notes from Tyndale House Publishers, cross-references, a Greek and Hebrew interlinear, and maps. Free and open source, with no ads and no account required.",
     type: "website",
     siteName: "Readability",
     // og:image / twitter:image are supplied by src/app/opengraph-image.png
@@ -98,7 +97,7 @@ export const metadata: Metadata = {
     card: "summary",
     title: "A study Bible",
     description:
-      "Study notes from Tyndale House Publishers, cross-references, a Greek and Hebrew interlinear, and maps. Free and open source, with no ads and no account required.",
+      "Notes from Tyndale House Publishers, cross-references, a Greek and Hebrew interlinear, and maps. Free and open source, with no ads and no account required.",
   },
   appleWebApp: {
     capable: true,

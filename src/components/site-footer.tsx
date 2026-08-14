@@ -4,8 +4,8 @@ import { GITHUB_URL } from "@/lib/site";
 export function SiteFooter({ className = "" }: { className?: string }) {
   return (
     <footer className={`border-t border-neutral-200 py-6 dark:border-neutral-800 ${className}`}>
-      {/* Takes the treatment from esv.org's footer strip — weight 500, 0.25px
-          letter-spacing — at this footer's own size and spacing. */}
+      {/* Footer-strip treatment — weight 500, 0.25px letter-spacing — at this
+          footer's own size and spacing. */}
       <p className="text-center text-xs font-medium tracking-[0.25px] text-neutral-500 dark:text-neutral-400">
         © {new Date().getFullYear()} Readability
       </p>

@@ -48,7 +48,7 @@ const features: { id: string; content: ReactNode }[] = [
   {
     id: "verse-notes",
     content:
-      "Cross-references and study notes from Tyndale House Publishers.",
+      "Cross-references and notes from Tyndale House Publishers.",
   },
   {
     id: "verse-compare",
@@ -143,11 +143,9 @@ export default function Home() {
           <LandingSearch />
           {/* Atlas/Dictionary live in the footer too, so on phones the bar
               keeps just logo + Sign in (literal.club does the same). */}
-          {/* Bar type takes the treatment from esv.org's footer strip ("© 2001
-              – 2026 Crossway · Take a Tour · About · …") — weight 500, 0.25px
-              letter-spacing — but keeps this bar's own size, so the links
-              still fill the header. Their grey there is rgb(154,159,163),
-              already this site's neutral-400. */}
+          {/* Bar type is footer-strip weight — 500 at 0.25px letter-spacing —
+              but kept at this bar's own size, so the links still fill the
+              header. The grey is neutral-400. */}
           <nav className="hidden items-center text-sm font-medium tracking-[0.25px] max-md:ml-auto sm:flex">
             <Link
               href="/try/bible/map"
@@ -180,32 +178,25 @@ export default function Home() {
         {/* Hero — text left, mockup right on md+; stacked (text first) below md */}
         <section className="pb-4 pt-8 md:grid md:grid-cols-2 md:items-center md:gap-10 lg:gap-16">
           <div>
-            {/* Set like esv.org's "Read the Bible Online": their H1 is Sentinel
-                Book ITALIC at 400, line-height 1.2, letter-spacing 0.25px on
-                50px (0.005em). Sentinel is Hoefler&Co's commercial face and
-                their webfont is licensed to them, so this uses Bitter — the
-                free slab already loaded here as the scripture serif, chosen
-                for being Sentinel's closest relative. */}
+            {/* The title is set in Bitter — the slab already loaded here as
+                the scripture serif — italic, line-height 1.2, 0.005em
+                tracking, so the page opens in the same voice it reads in. */}
             <h1 className="font-scripture text-3xl/[1.2] font-semibold italic tracking-[0.005em] text-white sm:text-4xl/[1.2] lg:text-[2.6rem]/[1.2]">
               A study Bible
             </h1>
-            {/* Body copy set like esv.org's landing paragraphs: Sentinel at
-                weight 300, 16px/26px, letter-spacing 0.25px (0.0156em). Bitter
-                stands in for Sentinel as above; leading-relaxed is already
-                their exact 1.625. Colour stays ours — theirs is light-theme
-                ink on white, this page is near-black. */}
+            {/* Body copy in the same slab at 16px, leading-relaxed (1.625),
+                0.0156em tracking, in the muted neutral this near-black page
+                uses for prose. */}
             <p className="mt-4 font-scripture text-base font-normal leading-relaxed tracking-[0.0156em] text-neutral-300">
-              Study notes from Tyndale House Publishers, cross-references, word
-              study and maps.
+              Notes from Tyndale House Publishers, cross-references, a Greek
+              and Hebrew interlinear, and maps.
             </p>
             <div className="mt-7">
-              {/* Shaped like esv.org's "Read Now" (their `a.button`): flat
-                  fill, small radius, sans, capitalized, no icon — at 1.5x
-                  their size, so 60px tall on 22.5px side padding with 18px/500
-                  type and 0.375px tracking. Their own #ac9d71 is a gold for
-                  white pages and washed out on this one, so the fill is
-                  amber-400, the same amber the mockup's chapter numerals use,
-                  hovering to the amber-300 they hover to. */}
+              {/* Flat fill, small radius, sans, capitalized, no icon: 54px
+                  tall on 20px of side padding, 16px type at 0.34px tracking.
+                  A muted print gold washes out on a near-black page, so the
+                  fill is amber-400 — the same amber the mockup's chapter
+                  numerals use — hovering to amber-300. */}
               <Link
                 href="/try/bible/start"
                 className="inline-flex h-[54px] items-center rounded-[2px] bg-amber-400 px-[20.3px] text-[16.2px] font-bold capitalize tracking-[0.34px] text-neutral-950 transition-colors hover:bg-amber-300"
@@ -220,7 +211,7 @@ export default function Home() {
                 that replaced this showed the tap and needed no caption. It
                 goes through the component rather than sitting here so that it
                 lands inside the panel's own box and lines up with its edge. */}
-            <HeroMockup caption="Tap any verse to preview study notes" />
+            <HeroMockup caption="Tap any verse to preview study features" />
           </div>
         </section>
       </div>
@@ -235,10 +226,8 @@ export default function Home() {
         <section className="pb-16 pt-14 lg:grid lg:grid-cols-[36rem_minmax(0,1fr)] lg:gap-10">
           <FeatureMontage className="max-w-[36rem]" />
           <div className="mt-8 flex max-w-[32rem] flex-col lg:mt-0">
-            {/* Set like esv.org's section kicker (their `landing-copy-title`):
-                their sans at 13px/23px, weight 400, uppercase, 1px tracking, in
-                the muted gold #bfb391. Ours is the system sans, which is what
-                this site uses wherever they use Gotham. */}
+            {/* Section kicker: the system sans at 13px/23px, weight 400,
+                uppercase, 1px tracking, in the muted gold #bfb391. */}
             <h2 className="text-[13px] font-normal uppercase leading-[23px] tracking-[1px] text-[#bfb391]">
               What&rsquo;s in it
             </h2>

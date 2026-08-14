@@ -12,14 +12,12 @@ const config: Config = {
     extend: {
       fontFamily: {
         display: ["var(--font-display)", "Baskerville", "Georgia", "ui-serif", "serif"],
-        // Scripture body text — slab text serif in the manner of esv.org's
-        // Sentinel (read at font-light with generous leading).
+        // Scripture body text — a slab text serif, read at font-light with
+        // generous leading.
         scripture: ["var(--font-scripture)", "Georgia", "Times New Roman", "serif"],
         // Chrome and labels — the Overview card's headings and its Purpose /
-        // Author / Date labels. esv.org splits the same way: serif for prose,
-        // sans for the furniture around it. Their sans is Gotham, which is
-        // commercial; their own top nav declares no family at all and lands on
-        // the platform UI sans, which is what this resolves to.
+        // Author / Date labels. Serif for prose, sans for the furniture around
+        // it; declaring no family here lands on the platform UI sans.
         ui: [
           "system-ui",
           "-apple-system",
@@ -38,10 +36,9 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        // Grey ramp taken from esv.org's palette — their light and black
-        // themes land almost slot-for-slot on Tailwind's neutral scale
-        // (800 = dark surface, 700 = borders and light-theme text,
-        // 400 = secondary, 300 = black-theme text). 300 carries the
+        // Grey ramp for the reading surfaces, slot-for-slot on Tailwind's
+        // neutral scale (800 = dark surface, 700 = borders and light-theme
+        // text, 400 = secondary, 300 = black-theme text). 300 carries the
         // scripture in dark mode and is the same value as --foreground in
         // globals.css — keep the two in step. On the 925 ground it reads
         // 13.3:1, which is where Google's dark themes sit (M3 baseline
@@ -69,8 +66,8 @@ const config: Config = {
           925: "#100e0d",
           950: "#0a0a0a",
         },
-        // Muted reader gold — halfway between the site amber and ESV's golds
-        // (#8f8367/#bfb391), per owner tuning. DEFAULT reads on light
+        // Muted reader gold — halfway between the site amber and the muted
+        // print golds #8f8367/#bfb391, per owner tuning. DEFAULT reads on light
         // surfaces, `bright` on dark. Reader chrome (headings, verse-sheet
         // references, Overview chip) uses this; the chapter drop cap alone
         // keeps the full site amber. `deep` is the same hue with more ink —

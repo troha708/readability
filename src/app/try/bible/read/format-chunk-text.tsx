@@ -61,12 +61,12 @@ function isEditorialBlock(node: unknown): boolean {
   return false;
 }
 
-// Section headings in the manner of esv.org: the scripture serif, italic, at
-// body size — one weight step above the body text (500/450 vs the body's
-// 450/400) so they hold their own without shouting. The hand-tuned halfway
-// gold, in its `deep` shade on the light page: the DEFAULT token's 3.5:1
-// there was the faintest text on the reading surface, so headings take the
-// same hue with more ink (4.9:1). Dark mode keeps `bright`. Margins per site.
+// Section headings: the scripture serif, italic, at body size — one weight
+// step above the body text (500/450 vs the body's 450/400) so they hold their
+// own without shouting. The hand-tuned halfway gold, in its `deep` shade on
+// the light page: the DEFAULT token's 3.5:1 there was the faintest text on the
+// reading surface, so headings take the same hue with more ink (4.9:1). Dark
+// mode keeps `bright`.
 const HEADING_CLASS =
   "font-scripture text-[1em] font-medium italic text-gold-deep dark:font-[450] dark:text-gold-bright";
 
@@ -223,7 +223,7 @@ function getParserOptions(
   let pIdx = 0;
   let currentVerse: number | null = null;
   // When a chapter number is supplied, the first body paragraph opens with a
-  // large drop-cap numeral (ESV-style) that the text wraps around, and verse
+  // large drop-cap numeral that the text wraps around, and verse
   // 1's small marker is suppressed since the drop cap stands in for it.
   let dropCapEmitted = false;
 

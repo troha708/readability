@@ -2,9 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Light palette from esv.org: the READING surface is pure white (their
-   `main` reads on --text-bg-color #fff; #fafafa is only their column
-   gutter), with #424547 text. */
+/* Light palette: the READING surface is pure white — #fafafa is only the
+   column gutter — with #424547 text. */
 :root {
   /* Tells the browser which way to paint the things CSS cannot reach:
      scrollbars, form controls, the canvas behind the page. Without it Chrome
@@ -25,7 +24,7 @@
    that reads 13.3:1, which is the band Google's dark themes occupy (M3
    baseline 13.3–14.4:1, Search ~13.4:1) — it was briefly stepped back to
    #cdd1d4/12.5:1, below all of them, and put back. Keep it in step with
-   neutral-300 in tailwind.config.ts, which paints the scripture. ESV's
+   neutral-300 in tailwind.config.ts, which paints the scripture. The
    #202121/#282a2b greys remain the raised-surface steps (cards, sheets,
    panels). The landing and static shells keep bg-neutral-950. */
 .dark {
