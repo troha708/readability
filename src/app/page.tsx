@@ -26,7 +26,7 @@ const jsonLd = {
     "Chapter maps and a searchable Bible atlas",
     "An introduction to every book of the Bible",
     "Cross-references, study notes, and Greek/Hebrew word study on any verse",
-    "Seven public-domain translations",
+    "Translation comparison on any verse",
     "Full-text search, highlights, and personal notes",
   ],
 };
@@ -46,9 +46,17 @@ const THEME_ESSAY_COUNT = loadDictionaryIndex().filter(
 
 const features: { id: string; content: ReactNode }[] = [
   {
-    id: "verse-tools",
+    id: "verse-notes",
     content:
-      "Tap any verse to open clear, modern-English study notes and cross-references, compare it across seven public-domain translations, or study the Greek and Hebrew word by word.",
+      "Tap any verse to open clear, modern-English study notes and cross-references.",
+  },
+  {
+    id: "verse-compare",
+    content: "Compare how translations render the same verse.",
+  },
+  {
+    id: "verse-languages",
+    content: "Study the Greek and Hebrew behind a verse, word by word.",
   },
   {
     id: "intro",
