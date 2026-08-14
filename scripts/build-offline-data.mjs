@@ -130,7 +130,9 @@ const LICENSED_ONLY = ["NIV", "NLT", "NASB", "CSB", "NKJV", "GNT", "CEV"];
 
 function main() {
   const args = process.argv.slice(2).map((a) => a.toUpperCase());
-  const translations = args.length ? args : ["BSB", "KJV", "WEB", "ASV", "GNV", "YLT", "DBY"];
+  const translations = args.length
+    ? args
+    : ["BSB", "KJV", "WEB", "ASV", "GNV", "YLT", "DBY", "JPS"];
 
   const licensed = translations.filter((abbr) => LICENSED_ONLY.includes(abbr));
   if (licensed.length > 0) {

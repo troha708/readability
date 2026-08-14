@@ -147,7 +147,7 @@ async function loadQuestions(
 // Translations without inline headings get the BSB heading overlay (mirrors
 // OVERLAY_HEADING_VERSIONS in chapter-data.ts, which can't be imported here
 // because it pulls in fs).
-const OVERLAY_HEADING_VERSIONS = new Set(["ASV", "GNV", "YLT", "DBY"]);
+const OVERLAY_HEADING_VERSIONS = new Set(["ASV", "GNV", "YLT", "DBY", "JPS"]);
 
 async function loadHeadings(
   book: string,

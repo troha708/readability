@@ -29,6 +29,7 @@ const VERSION_DIRS: Record<string, string> = {
   GNV: join(process.cwd(), "data", "GNV"),
   YLT: join(process.cwd(), "data", "YLT"),
   DBY: join(process.cwd(), "data", "DBY"),
+  JPS: join(process.cwd(), "data", "JPS"),
 };
 
 /** Book names come from URLs; allow only filename-shaped names ("1 Samuel",

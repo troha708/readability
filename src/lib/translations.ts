@@ -17,6 +17,7 @@ export const COMPARE_VERSIONS: string[] = [
   "GNV",
   "YLT",
   "DBY",
+  "JPS",
 ];
 
 /**
@@ -24,9 +25,9 @@ export const COMPARE_VERSIONS: string[] = [
  * themselves use. Deliberately coarse: the extremes are uncontested and
  * stated in each translation's own preface, while any finer scale — a number
  * out of ten, an ordering within a band — would assert a precision the field
- * doesn't agree on. Translations that differ by SOURCE TEXT rather than by
- * approach (a Septuagint or Vulgate rendering) carry `note` instead; they
- * don't belong anywhere on this axis.
+ * doesn't agree on. Translations that differ by SOURCE TEXT or by translating
+ * TRADITION rather than by approach (a Septuagint rendering; a Jewish Bible)
+ * carry `note` instead; they don't belong anywhere on this axis.
  */
 export type TranslationApproach = "word-for-word" | "balanced" | "thought-for-thought";
 
@@ -62,6 +63,11 @@ export const TRANSLATION_INFO: Record<string, TranslationInfo> = {
     note: "Strictly literal: keeps Hebrew and Greek tense and word order even where the English strains.",
   },
   DBY: { name: "Darby Translation (1890)", year: 1890, approach: "word-for-word" },
+  JPS: {
+    name: "JPS TaNaKH (1917)",
+    year: 1917,
+    note: "The Jewish Publication Society's Hebrew Bible: the Old Testament in the Jewish translating tradition rather than the Christian one. Old Testament only.",
+  },
 };
 
 /** Sort key: literal first, then freest, then by age within a band. */

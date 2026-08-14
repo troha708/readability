@@ -74,7 +74,7 @@ export function loadQuestions(bookName: string, chapterNum: number): ChapterQues
  * inline in the chunk HTML, so it must NOT also receive the overlay or
  * headings double up.
  */
-export const OVERLAY_HEADING_VERSIONS = new Set(["ASV", "GNV", "YLT", "DBY"]);
+export const OVERLAY_HEADING_VERSIONS = new Set(["ASV", "GNV", "YLT", "DBY", "JPS"]);
 
 export function loadHeadings(
   bookName: string,

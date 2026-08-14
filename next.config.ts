@@ -37,6 +37,7 @@ const nextConfig: NextConfig = isMobile
           "./data/GNV/*.json",
           "./data/YLT/*.json",
           "./data/DBY/*.json",
+          "./data/JPS/*.json",
         ],
         "/api/verse": [
           "./data/BSB/*.json",
@@ -46,6 +47,7 @@ const nextConfig: NextConfig = isMobile
           "./data/GNV/*.json",
           "./data/YLT/*.json",
           "./data/DBY/*.json",
+          "./data/JPS/*.json",
         ],
         "/api/cross-refs": [
           "./data/crossrefs/*.json",
@@ -56,6 +58,7 @@ const nextConfig: NextConfig = isMobile
           "./data/GNV/*.json",
           "./data/YLT/*.json",
           "./data/DBY/*.json",
+          "./data/JPS/*.json",
         ],
         "/api/strongs": ["./data/strongs/*.json", "./data/lexicon/*.json"],
         // The reader page and /api/chapter serve chapter text from the same
@@ -69,6 +72,7 @@ const nextConfig: NextConfig = isMobile
           "./data/GNV/*.json",
           "./data/YLT/*.json",
           "./data/DBY/*.json",
+          "./data/JPS/*.json",
         ],
         "/api/chapter": [
           "./data/BSB/*.json",
@@ -78,6 +82,7 @@ const nextConfig: NextConfig = isMobile
           "./data/GNV/*.json",
           "./data/YLT/*.json",
           "./data/DBY/*.json",
+          "./data/JPS/*.json",
         ],
       },
     };
