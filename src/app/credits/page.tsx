@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Logo } from "@/components/logo";
 import { SiteFooter } from "@/components/site-footer";
+import { configuredLicensedAbbrs } from "@/lib/content/verse-api";
+import { LICENSED_META } from "@/lib/licensed-versions";
 
 export const metadata: Metadata = {
   title: "Credits",
@@ -69,6 +71,7 @@ const dataCredits = [
 ];
 
 export default function CreditsPage() {
+  const licensedAbbrs = configuredLicensedAbbrs();
   return (
     <main className="flex min-h-screen flex-col bg-white dark:bg-neutral-950">
       <nav className="flex items-center justify-between px-6 py-4">
@@ -129,6 +132,51 @@ export default function CreditsPage() {
               </li>
             ))}
           </ul>
+
+          {/* Rendered only when licensed translations are switched on, so the
+              page never credits a publisher whose text the site isn't
+              showing. */}
+          {licensedAbbrs.length > 0 && (
+            <>
+              <h2 className="font-display pt-4 text-xl font-bold text-neutral-900 dark:text-white">
+                Licensed translations
+              </h2>
+              <p>
+                The modern translations in the verse panel&rsquo;s
+                &ldquo;Other translations&rdquo; section are shown by
+                permission of their publishers and are not part of this
+                project&rsquo;s source. They are fetched a verse at a time
+                through{" "}
+                <a
+                  href="https://api.bible"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline decoration-neutral-300 underline-offset-2 hover:text-amber-700 dark:decoration-neutral-600 dark:hover:text-amber-400"
+                >
+                  API.Bible
+                </a>
+                , a service of the American Bible Society.
+              </p>
+              <ul className="space-y-5">
+                {licensedAbbrs.map((abbr) => (
+                  <li key={abbr}>
+                    <a
+                      href={LICENSED_META[abbr].publisherUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-semibold text-neutral-900 underline decoration-neutral-300 underline-offset-2 hover:text-amber-700 dark:text-white dark:decoration-neutral-600 dark:hover:text-amber-400"
+                    >
+                      {LICENSED_META[abbr].name} ({abbr})
+                    </a>{" "}
+                    <span className="text-sm text-neutral-800 dark:text-white">
+                      ({LICENSED_META[abbr].publisher})
+                    </span>
+                    <p className="mt-1 text-sm">{LICENSED_META[abbr].notice}</p>
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
 
           <h2 className="font-display pt-4 text-xl font-bold text-neutral-900 dark:text-white">
             Software

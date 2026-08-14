@@ -19,6 +19,7 @@ import {
 } from "react";
 import Link from "next/link";
 import { chapterReference } from "@/lib/bible-book-order";
+import { LICENSED_META, isLicensedVersion } from "@/lib/licensed-versions";
 import {
   parseScriptureRefs,
   scriptureRefLabel,
@@ -283,6 +284,15 @@ export function VerseSheet({
 
   const current = versions?.find((v) => v.abbr === versionAbbr);
   const others = versions?.filter((v) => v.abbr !== versionAbbr) ?? [];
+  // One notice per licensed publisher actually on screen (a version can
+  // appear as `current` too, so both lists are considered).
+  const licensedNotices = [
+    ...new Map(
+      (versions ?? [])
+        .filter((v) => isLicensedVersion(v.abbr))
+        .map((v) => [v.abbr, { abbr: v.abbr, notice: LICENSED_META[v.abbr].notice }]),
+    ).values(),
+  ];
 
   function copyVerse() {
     const text = current?.text ?? "";
@@ -681,6 +691,19 @@ export function VerseSheet({
                     </li>
                   ))}
                 </ul>
+              )}
+              {/* Licensed translations are shown by permission, not owned:
+                  the publisher's notice has to appear wherever their text
+                  does. Driven by what actually came back, so nothing is
+                  credited that isn't on screen. */}
+              {licensedNotices.length > 0 && (
+                <div className="mt-3 space-y-1 border-t border-neutral-100 pt-2 dark:border-neutral-800">
+                  {licensedNotices.map(({ abbr, notice }) => (
+                    <p key={abbr} className="text-[11px] leading-snug text-neutral-400">
+                      {notice}
+                    </p>
+                  ))}
+                </div>
               )}
             </SheetSection>
 

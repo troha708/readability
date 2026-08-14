@@ -122,9 +122,25 @@ function buildTranslationText(abbr) {
 }
 
 // ── Main ─────────────────────────────────────────────────────────────
+// Translations we show by licence rather than own (API.Bible). They are
+// fetched a verse at a time on the web and must never be copied to a device:
+// the publishers permit display, not redistribution. Kept as a literal list
+// so this guard has no import dependency on the app's TypeScript.
+const LICENSED_ONLY = ["NIV", "NLT", "NASB", "CSB", "NKJV", "GNT", "CEV"];
+
 function main() {
   const args = process.argv.slice(2).map((a) => a.toUpperCase());
   const translations = args.length ? args : ["BSB", "KJV", "WEB", "ASV", "GNV", "YLT", "DBY"];
+
+  const licensed = translations.filter((abbr) => LICENSED_ONLY.includes(abbr));
+  if (licensed.length > 0) {
+    throw new Error(
+      `Refusing to bundle licensed translation(s): ${licensed.join(", ")}.\n` +
+        "These are shown by permission on the web and fetched per verse; " +
+        "bundling them into the app would be redistribution, which the " +
+        "licence does not grant.",
+    );
+  }
 
   console.log(`Building offline bundle → public/offline/`);
   console.log(`Translations: ${translations.join(", ")}\n`);
