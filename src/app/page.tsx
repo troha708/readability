@@ -97,16 +97,11 @@ const features: { id: string; content: ReactNode }[] = [
   },
   {
     id: "search",
-    content: "Full-text search across the whole Bible.",
+    content: "Full-text search.",
   },
   {
     id: "marks",
     content: "Highlights and private notes on any verse.",
-  },
-  {
-    id: "progress",
-    content:
-      "Reading progress saved to your device, and all of it synced if you sign in.",
   },
   {
     id: "quiz",
