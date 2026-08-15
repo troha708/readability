@@ -21,13 +21,13 @@ export function AuthButton({
   const flat = variant === "flat";
   const buttonClass = flat
     // Type matches the landing bar's other links — see the note there.
-    ? "flex h-full items-center px-4 text-sm font-medium tracking-[0.25px] text-neutral-400 transition-colors hover:text-neutral-200"
+    ? "flex h-full items-center px-4 text-sm font-medium tracking-[0.25px] text-neutral-500 transition-colors hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-200"
     : "rounded-lg border border-neutral-300 px-3 py-1.5 text-sm font-medium tracking-[0.25px] text-neutral-700 transition-colors hover:bg-neutral-100 dark:border-neutral-600 dark:text-neutral-300 dark:hover:bg-neutral-800";
 
   if (loading) {
     return flat ? (
       <div className="flex h-full items-center px-4">
-        <div className="h-4 w-12 animate-pulse rounded bg-neutral-800" />
+        <div className="h-4 w-12 animate-pulse rounded bg-neutral-200 dark:bg-neutral-800" />
       </div>
     ) : (
       <div className="h-8 w-20 animate-pulse rounded bg-neutral-200 dark:bg-neutral-700" />

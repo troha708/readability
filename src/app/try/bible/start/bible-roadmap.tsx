@@ -14,13 +14,12 @@ import {
 } from "@/lib/progress-service";
 import { AuthButton } from "@/components/auth-button";
 import { Logo } from "@/components/logo";
-import { useUser } from "@/hooks/useUser";
 import { bibleBookSortIndex, bookGenre } from "@/lib/bible-book-order";
 import { originalName } from "@/lib/book-names-original";
 import { isOverviewAtStart } from "@/lib/overview-placement";
 import { computeContinueTarget } from "@/lib/continue-target";
-import { SearchModal } from "@/components/search-modal";
 import { SiteFooter } from "@/components/site-footer";
+import { LandingSearch } from "@/app/landing-search";
 import { isNativeApp } from "@/lib/notifications";
 
 type ChapterInfo = { chapterNumber: number };
@@ -50,7 +49,6 @@ export function BibleRoadmap({
   booksWithSummary,
   purposeByBook = {},
 }: Props) {
-  const { user, loading: userLoading } = useUser();
   const [readingDone, setReadingDone] = useState<ReadingProgress>({});
   const [quizDone, setQuizDone] = useState<ReadingProgress>({});
   // Completion timestamps are still loaded — computeContinueTarget uses them
@@ -69,24 +67,12 @@ export function BibleRoadmap({
   });
   const [hasStarted, setHasStarted] = useState(false);
 
-  const [searchOpen, setSearchOpen] = useState(false);
   // Reminders are a native-app-only feature, so the settings entry point is
   // hidden on the web. Detected after mount to keep SSR markup stable.
   const [isNative, setIsNative] = useState(false);
 
   useEffect(() => {
     setIsNative(isNativeApp());
-  }, []);
-
-  useEffect(() => {
-    function onKey(e: KeyboardEvent) {
-      if ((e.metaKey || e.ctrlKey) && e.key === "k") {
-        e.preventDefault();
-        setSearchOpen((o) => !o);
-      }
-    }
-    document.addEventListener("keydown", onKey);
-    return () => document.removeEventListener("keydown", onKey);
   }, []);
 
   useEffect(() => {
@@ -143,11 +129,6 @@ export function BibleRoadmap({
   );
   const otBooks = sorted.filter((b) => b.testament === "OT");
   const ntBooks = sorted.filter((b) => b.testament === "NT");
-  // Canonical book name -> chapter count, so the search box can reject
-  // out-of-range references like "John 99".
-  const bookChapterCounts = Object.fromEntries(
-    books.map((b) => [b.name, b.chapters.length]),
-  );
 
   function toggleBook(bookName: string) {
     setExpandedBooks((prev) => {
@@ -426,135 +407,88 @@ export function BibleRoadmap({
   // Dark theme opts out of the body's #202121 onto the landing's
   // near-black, so landing → library reads as one surface.
   return (
-    <main className="min-h-screen px-4 py-8 dark:bg-neutral-950">
-      <div className="mx-auto max-w-2xl">
-        {/* Navbar — wraps to a second row on narrow screens (the control
-            cluster is dense: mode toggle, search, three nav links, sign in). */}
-        <div className="mb-6 flex flex-wrap items-center justify-between gap-y-2">
-          <Logo />
-          <div className="flex items-center gap-2">
-            {/* Mode toggle */}
-            <div className="inline-flex rounded-lg bg-neutral-100 p-0.5 dark:bg-neutral-800">
-              <button
-                onClick={() => {
-                  setMode("read");
-                  setReadingMode("read");
-                }}
-                className={`rounded-md px-2.5 py-1 text-xs font-medium tracking-[0.25px] transition-all ${
-                  mode === "read"
-                    ? "bg-white text-amber-700 shadow-sm dark:bg-neutral-700 dark:text-amber-400"
-                    : "text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-300"
-                }`}
-              >
-                Read
-              </button>
-              <button
-                onClick={() => {
-                  setMode("study");
-                  setReadingMode("study");
-                }}
-                className={`rounded-md px-2.5 py-1 text-xs font-medium tracking-[0.25px] transition-all ${
-                  mode === "study"
-                    ? "bg-white text-amber-700 shadow-sm dark:bg-neutral-700 dark:text-amber-400"
-                    : "text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-300"
-                }`}
-              >
-                Study
-              </button>
-            </div>
-
-            <button
-              onClick={() => setSearchOpen(true)}
-              aria-label="Search"
-              className="rounded-md p-1.5 text-neutral-500 hover:bg-neutral-100 hover:text-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-neutral-200"
-            >
-              <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-              </svg>
-            </button>
-            <Link
-              href="/try/bible/map"
-              aria-label="Bible atlas"
-              title="Bible atlas"
-              className="inline-flex items-center gap-1.5 rounded-md px-2 py-1.5 text-sm font-medium tracking-[0.25px] text-neutral-500 hover:bg-neutral-100 hover:text-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-neutral-200"
-            >
-              {/* An unfurled paper map with a chart printed on it: folded
-                  panels, a coastline sweeping across them, a compass rose in
-                  the top right. The detail is what says "map" rather than
-                  "sheet of paper", so the stroke thins to 1.5 to carry it —
-                  at 2 the coastline and the rose close up. */}
-              <svg className="h-5 w-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round">
-                <path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2z" />
-                <path d="M9 4v14" />
-                <path d="M15 6v14" />
-                <path d="M4 14.8c1.6-1.4 2.4.5 4 .1 1.7-.4 2.2-2.1 3.9-2.1 1.7 0 2.3 1.7 4 1.5 1.6-.2 2.2-1.5 3.4-2.1" />
-                <path d="M17.9 6.6l.6 1.6 1.6.6-1.6.6-.6 1.6-.6-1.6-1.6-.6 1.6-.6z" />
-              </svg>
-              <span className="hidden md:inline">Atlas</span>
+    <main className="min-h-screen dark:bg-neutral-950">
+      {/* The landing bar, on this page's own column: logo, the typeahead
+          search, quiet links, quiet Sign in, closed by a single hairline that
+          runs edge to edge. The search replaces the icon that opened the
+          modal — LandingSearch covers the same corpora and still hands off to
+          the modal for paging. */}
+      <div className="border-b border-neutral-200 dark:border-neutral-800">
+        <header className="mx-auto flex max-w-2xl flex-wrap items-stretch px-4 md:h-[72px] md:flex-nowrap">
+          <div className="flex h-14 items-center pr-4 md:h-auto md:pr-6">
+            <Logo />
+          </div>
+          <LandingSearch />
+          <nav className="hidden items-center text-sm font-medium tracking-[0.25px] max-md:ml-auto sm:flex">
+            <Link href="/try/bible/map" className="px-3 py-2 text-neutral-500 transition-colors hover:text-amber-600 dark:text-neutral-400 dark:hover:text-amber-400 sm:px-4">
+              Atlas
             </Link>
-            <Link
-              href="/try/bible/dictionary"
-              aria-label="Bible dictionary"
-              title="Bible dictionary"
-              className="inline-flex items-center gap-1.5 rounded-md px-2 py-1.5 text-sm font-medium tracking-[0.25px] text-neutral-500 hover:bg-neutral-100 hover:text-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-neutral-200"
-            >
-              <svg className="h-5 w-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
-                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
-                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z" />
-              </svg>
-              <span className="hidden md:inline">Dictionary</span>
+            <Link href="/try/bible/dictionary" className="px-3 py-2 text-neutral-500 transition-colors hover:text-amber-600 dark:text-neutral-400 dark:hover:text-amber-400 sm:px-4">
+              Dictionary
             </Link>
-            <Link
-              href="/try/bible/quiz"
-              aria-label="Bible quiz"
-              title="Bible quiz"
-              className="inline-flex items-center gap-1.5 rounded-md px-2 py-1.5 text-sm font-medium tracking-[0.25px] text-neutral-500 hover:bg-neutral-100 hover:text-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-neutral-200"
-            >
-              <svg className="h-5 w-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
-                <circle cx="12" cy="12" r="9" />
-                <path d="M9.88 9.4a2.25 2.25 0 1 1 3.04 2.09c-.6.24-.92.79-.92 1.4v.36" />
-                <path d="M12 16.5h.01" />
-              </svg>
-              <span className="hidden md:inline">Quiz</span>
+            <Link href="/try/bible/quiz" className="px-3 py-2 text-neutral-500 transition-colors hover:text-amber-600 dark:text-neutral-400 dark:hover:text-amber-400 sm:px-4">
+              Quiz
             </Link>
+          </nav>
+          <div className="flex items-stretch max-sm:ml-auto">
             {isNative && (
               <Link
                 href="/try/bible/settings"
                 aria-label="Reminders & settings"
-                className="rounded-md p-1.5 text-neutral-500 hover:bg-neutral-100 hover:text-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-neutral-200"
+                className="flex items-center px-3 text-neutral-500 transition-colors hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-200"
               >
                 <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
                 </svg>
               </Link>
             )}
-            <AuthButton />
+            <AuthButton variant="flat" />
           </div>
-        </div>
+        </header>
+      </div>
 
-        {/* Title page above the contents: centred over a left-ranged table,
-            the way a printed book sets the two. The page had no h1 at all
-            before this — the only naming was the document title. */}
-        <div className="pb-5 pt-4 text-center">
-          <h1 className="font-scripture text-[1.9rem]/[1.2] font-semibold italic tracking-[0.005em] text-neutral-900 dark:text-white">
+      <div className="mx-auto max-w-2xl px-4 py-8">
+        {/* Title over the contents, set exactly as the landing's h1 — same
+            face, weight, slant, tracking and size steps — so the two pages
+            open in one voice. Ranged left with the table beneath it; only the
+            colour differs, because this page has a light theme and the
+            landing does not. */}
+        <div className="flex flex-wrap items-center justify-between gap-3 pb-6">
+          <h1 className="font-scripture text-3xl/[1.2] font-semibold italic tracking-[0.005em] text-neutral-900 dark:text-white sm:text-4xl/[1.2] lg:text-[2.6rem]/[1.2]">
             A study Bible
           </h1>
+          {/* Read vs Study decides what counts as finishing a chapter, so it
+              sits with the contents rather than in the site bar. */}
+          <div className="inline-flex rounded-lg bg-neutral-100 p-0.5 dark:bg-neutral-800">
+            <button
+              onClick={() => {
+                setMode("read");
+                setReadingMode("read");
+              }}
+              className={`rounded-md px-2.5 py-1 text-xs font-medium tracking-[0.25px] transition-all ${
+                mode === "read"
+                  ? "bg-white text-amber-700 shadow-sm dark:bg-neutral-700 dark:text-amber-400"
+                  : "text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-300"
+              }`}
+            >
+              Read
+            </button>
+            <button
+              onClick={() => {
+                setMode("study");
+                setReadingMode("study");
+              }}
+              className={`rounded-md px-2.5 py-1 text-xs font-medium tracking-[0.25px] transition-all ${
+                mode === "study"
+                  ? "bg-white text-amber-700 shadow-sm dark:bg-neutral-700 dark:text-amber-400"
+                  : "text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-300"
+              }`}
+            >
+              Study
+            </button>
+          </div>
         </div>
 
-        {/* Sign-in banner for guests */}
-        {!userLoading && !user && (
-          <div className="mb-4 flex items-center justify-center gap-2 rounded-lg border border-blue-200 bg-blue-50 px-4 py-2.5 dark:border-blue-800 dark:bg-blue-950/40">
-            <svg className="h-4 w-4 flex-shrink-0 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z" />
-            </svg>
-            <p className="text-sm text-blue-700 dark:text-blue-300">
-              <Link href="/login?next=/try/bible/start" className="font-medium underline hover:no-underline">
-                Sign in
-              </Link>{" "}
-              to save your progress across devices
-            </p>
-          </div>
-        )}
 
         {/* Continue Reading — sticky so it stays reachable while scrolling the
             tree (and it's where a returning reader is scrolled past on load).
@@ -613,13 +547,6 @@ export function BibleRoadmap({
 
         <SiteFooter className="mt-8 border-t-0" />
       </div>
-
-      <SearchModal
-        open={searchOpen}
-        onClose={() => setSearchOpen(false)}
-        version={versionAbbr}
-        bookChapterCounts={bookChapterCounts}
-      />
     </main>
   );
 }
