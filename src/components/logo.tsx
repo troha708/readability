@@ -10,11 +10,9 @@ export function Logo({ compact = false, icon = true }: Props) {
   return (
     <Link
       href="/"
-      // The wordmark is set as the page title is — scripture serif, italic,
-      // semibold, 0.005em — so the mark and "A study Bible" read as one voice.
-      // It no longer shares the family of the bar's other items (sans at 500);
-      // it isn't one of them, it's the thing they sit beside.
-      className={`inline-flex items-center font-scripture font-semibold italic tracking-[0.005em] text-neutral-900 transition-colors hover:text-amber-600 dark:text-white dark:hover:text-amber-400 ${
+      // Same size and weight as before; the 0.25px letter-spacing is what puts
+      // the wordmark on the same typographic footing as the bar's other items.
+      className={`inline-flex items-center font-bold tracking-[0.25px] text-neutral-900 transition-colors hover:text-amber-600 dark:text-white dark:hover:text-amber-400 ${
         compact ? "gap-1.5 text-base" : "gap-2 text-xl"
       }`}
     >
