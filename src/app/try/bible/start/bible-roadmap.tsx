@@ -408,13 +408,15 @@ export function BibleRoadmap({
   // near-black, so landing → library reads as one surface.
   return (
     <main className="min-h-screen dark:bg-neutral-950">
-      {/* The landing bar, on this page's own column: logo, the typeahead
-          search, quiet links, quiet Sign in, closed by a single hairline that
-          runs edge to edge. The search replaces the icon that opened the
-          modal — LandingSearch covers the same corpora and still hands off to
-          the modal for paging. */}
+      {/* The landing bar, identical to it: same max-w-6xl column, same px-6,
+          same 72px height, same items. It is deliberately wider than the
+          max-w-2xl contents below — matching the contents squeezed the search
+          and the links into what read as the phone layout on a desktop.
+          The search replaces the icon that opened the modal; LandingSearch
+          covers the same corpora and still hands off to the modal for
+          paging. */}
       <div className="border-b border-neutral-200 dark:border-neutral-800">
-        <header className="mx-auto flex max-w-2xl flex-wrap items-stretch px-4 md:h-[72px] md:flex-nowrap">
+        <header className="mx-auto flex max-w-6xl flex-wrap items-stretch px-6 md:h-[72px] md:flex-nowrap">
           <div className="flex h-14 items-center pr-4 md:h-auto md:pr-6">
             <Logo />
           </div>
