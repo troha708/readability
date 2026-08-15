@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     template: "%s | Readability",
   },
   description:
-    "Notes from Tyndale House Publishers, cross-references, a Greek and Hebrew interlinear, and maps. Free and open source, with no ads and no account required.",
+    "Read with notes from Tyndale House Publishers, cross-references, a Greek and Hebrew interlinear, and maps. Free and open source, with no ads and no account required.",
   keywords: [
     "Bible",
     "Bible reading app",
@@ -74,7 +74,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "A study Bible",
     description:
-      "Notes from Tyndale House Publishers, cross-references, a Greek and Hebrew interlinear, and maps. Free and open source, with no ads and no account required.",
+      "Read with notes from Tyndale House Publishers, cross-references, a Greek and Hebrew interlinear, and maps. Free and open source, with no ads and no account required.",
     type: "website",
     siteName: "Readability",
     // og:image / twitter:image are supplied by src/app/opengraph-image.png
@@ -87,7 +87,7 @@ export const metadata: Metadata = {
     card: "summary",
     title: "A study Bible",
     description:
-      "Notes from Tyndale House Publishers, cross-references, a Greek and Hebrew interlinear, and maps. Free and open source, with no ads and no account required.",
+      "Read with notes from Tyndale House Publishers, cross-references, a Greek and Hebrew interlinear, and maps. Free and open source, with no ads and no account required.",
   },
   appleWebApp: {
     capable: true,

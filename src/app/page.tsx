@@ -188,8 +188,8 @@ export default function Home() {
                 0.0156em tracking, in the muted neutral this near-black page
                 uses for prose. */}
             <p className="mt-4 font-scripture text-base font-normal leading-relaxed tracking-[0.0156em] text-neutral-300">
-              Notes from Tyndale House Publishers, cross-references, a Greek
-              and Hebrew interlinear, and maps.
+              Read with notes from Tyndale House Publishers, cross-references,
+              a Greek and Hebrew interlinear, and maps.
             </p>
             <div className="mt-7">
               {/* Flat fill, small radius, sans, capitalized, no icon: 54px
