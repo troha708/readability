@@ -944,7 +944,7 @@ function MockVerseSheet({
           <div className="mt-5">
             {/* Tyndale study notes */}
             <MockSheetSection
-              title="Study notes"
+              title="Tyndale Open Study Notes"
               count={data.notes.length}
               open={openSection === "tyndale"}
               onToggle={() => toggle("tyndale")}

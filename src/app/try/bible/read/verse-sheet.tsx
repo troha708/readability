@@ -499,7 +499,7 @@ export function VerseSheet({
                 Study Notes (Tyndale House Publishers, CC BY-SA 4.0) */}
             {tyndaleNotes !== null && tyndaleNotes.length > 0 && (
               <SheetSection
-                title="Study notes"
+                title="Tyndale Open Study Notes"
                 count={tyndaleNotes.length}
                 open={openSections.has("tyndale")}
                 onToggle={() => toggleSection("tyndale")}
