@@ -501,21 +501,19 @@ export function BibleRoadmap({
             through that band before it reached the opaque box. */}
         <div className="sticky top-0 z-20 -mx-4 bg-white px-4 pb-6 pt-3 dark:bg-neutral-950">
           <div className="flex items-center justify-center gap-3">
-          {/* Same size, type and shape as the landing page's Start Reading —
-              solid fill, near-black bold capitalized sans, no arrow — but
-              rounder than the landing's near-square 2px corners
-              (owner-directed).
+          {/* The landing page's Start reading button, exactly: same fill,
+              hover, near-square 2px corners, height, padding and type. The
+              two pages open with the same control, so it should be the same
+              object. (It previously took the muted gold.fill at rounded-lg —
+              owner-directed then, owner-reversed now.)
               The chapter is the label rather than a subtitle beside it: a
               button that names its destination asks less of the reader than
               one that names an activity. "Begin John 1" states what the
               button has always done — computeContinueTarget falls back to
-              John 1 for a reader with no history.
-              The fill alone is muted, off the landing's amber-400 — see
-              gold.fill in tailwind.config.ts for the derivation. Near-black
-              text on it is 10.6:1, down from 11.6:1. */}
+              John 1 for a reader with no history. */}
           <Link
             href={readUrl(continueTarget.book, continueTarget.chapter)}
-            className="inline-flex h-[54px] items-center rounded-lg bg-gold-fill px-[20.3px] text-[16.2px] font-bold capitalize tracking-[0.34px] text-neutral-950 transition-colors hover:bg-gold-fill-hover"
+            className="inline-flex h-[54px] items-center rounded-[2px] bg-amber-400 px-[20.3px] text-[16.2px] font-bold capitalize tracking-[0.34px] text-neutral-950 transition-colors hover:bg-amber-300"
           >
             {hasStarted ? "Continue" : "Begin"} {continueTarget.book}{" "}
             {continueTarget.chapter}
