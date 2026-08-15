@@ -29,8 +29,10 @@ export default function AboutPage() {
       </nav>
 
       <article className="mx-auto w-full max-w-2xl flex-1 px-6 pb-24 pt-6">
-        <h1 className="font-display text-3xl font-bold tracking-tight text-neutral-900 dark:text-white">
-          About Readability
+        {/* Set as the landing's h1 is — same face, weight, slant, tracking
+            and size steps — so the two pages open in one voice. */}
+        <h1 className="font-scripture text-3xl/[1.2] font-semibold italic tracking-[0.005em] text-neutral-900 dark:text-white sm:text-4xl/[1.2] lg:text-[2.6rem]/[1.2]">
+          A study Bible
         </h1>
 
         <div className="mt-8 space-y-6 font-scripture text-[16px] font-normal leading-relaxed text-neutral-800 dark:text-white">

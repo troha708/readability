@@ -408,19 +408,16 @@ export function BibleRoadmap({
   // near-black, so landing → library reads as one surface.
   return (
     <main className="min-h-screen dark:bg-neutral-950">
-      {/* The landing bar, identical to it: same max-w-6xl column, same px-6,
-          same 72px height, same items. It is deliberately wider than the
-          max-w-2xl contents below — matching the contents squeezed the search
-          and the links into what read as the phone layout on a desktop.
-          The search replaces the icon that opened the modal; LandingSearch
-          covers the same corpora and still hands off to the modal for
-          paging. */}
+      {/* The landing bar on this page's own column: logo, quiet links, the
+          mode toggle, quiet Sign in, closed by a single hairline that runs
+          edge to edge. The search is not up here — at this width it crowded
+          the bar, so it sits in the sticky bar below with Continue, where a
+          reader looking for a passage is already looking. */}
       <div className="border-b border-neutral-200 dark:border-neutral-800">
-        <header className="mx-auto flex max-w-6xl flex-wrap items-stretch px-6 md:h-[72px] md:flex-nowrap">
+        <header className="mx-auto flex max-w-2xl items-stretch px-4 md:h-[72px]">
           <div className="flex h-14 items-center pr-4 md:h-auto md:pr-6">
             <Logo />
           </div>
-          <LandingSearch />
           <nav className="hidden items-center text-sm font-medium tracking-[0.25px] max-md:ml-auto sm:flex">
             <Link href="/try/bible/map" className="px-3 py-2 text-neutral-500 transition-colors hover:text-amber-600 dark:text-neutral-400 dark:hover:text-amber-400 sm:px-4">
               Atlas
@@ -432,7 +429,37 @@ export function BibleRoadmap({
               Quiz
             </Link>
           </nav>
-          <div className="flex items-stretch max-sm:ml-auto">
+          <div className="ml-auto flex items-center gap-3">
+            {/* Read vs Study decides what counts as finishing a chapter. */}
+            <div className="inline-flex rounded-lg bg-neutral-100 p-0.5 dark:bg-neutral-800">
+              <button
+                onClick={() => {
+                  setMode("read");
+                  setReadingMode("read");
+                }}
+                className={`rounded-md px-2.5 py-1 text-xs font-medium tracking-[0.25px] transition-all ${
+                  mode === "read"
+                    ? "bg-white text-amber-700 shadow-sm dark:bg-neutral-700 dark:text-amber-400"
+                    : "text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-300"
+                }`}
+              >
+                Read
+              </button>
+              <button
+                onClick={() => {
+                  setMode("study");
+                  setReadingMode("study");
+                }}
+                className={`rounded-md px-2.5 py-1 text-xs font-medium tracking-[0.25px] transition-all ${
+                  mode === "study"
+                    ? "bg-white text-amber-700 shadow-sm dark:bg-neutral-700 dark:text-amber-400"
+                    : "text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-300"
+                }`}
+              >
+                Study
+              </button>
+            </div>
+
             {isNative && (
               <Link
                 href="/try/bible/settings"
@@ -450,48 +477,6 @@ export function BibleRoadmap({
       </div>
 
       <div className="mx-auto max-w-2xl px-4 py-8">
-        {/* Title over the contents, set exactly as the landing's h1 — same
-            face, weight, slant, tracking and size steps — so the two pages
-            open in one voice. Ranged left with the table beneath it; only the
-            colour differs, because this page has a light theme and the
-            landing does not. */}
-        <div className="flex flex-wrap items-center justify-between gap-3 pb-6">
-          <h1 className="font-scripture text-3xl/[1.2] font-semibold italic tracking-[0.005em] text-neutral-900 dark:text-white sm:text-4xl/[1.2] lg:text-[2.6rem]/[1.2]">
-            A study Bible
-          </h1>
-          {/* Read vs Study decides what counts as finishing a chapter, so it
-              sits with the contents rather than in the site bar. */}
-          <div className="inline-flex rounded-lg bg-neutral-100 p-0.5 dark:bg-neutral-800">
-            <button
-              onClick={() => {
-                setMode("read");
-                setReadingMode("read");
-              }}
-              className={`rounded-md px-2.5 py-1 text-xs font-medium tracking-[0.25px] transition-all ${
-                mode === "read"
-                  ? "bg-white text-amber-700 shadow-sm dark:bg-neutral-700 dark:text-amber-400"
-                  : "text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-300"
-              }`}
-            >
-              Read
-            </button>
-            <button
-              onClick={() => {
-                setMode("study");
-                setReadingMode("study");
-              }}
-              className={`rounded-md px-2.5 py-1 text-xs font-medium tracking-[0.25px] transition-all ${
-                mode === "study"
-                  ? "bg-white text-amber-700 shadow-sm dark:bg-neutral-700 dark:text-amber-400"
-                  : "text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-300"
-              }`}
-            >
-              Study
-            </button>
-          </div>
-        </div>
-
-
         {/* Continue Reading — sticky so it stays reachable while scrolling the
             tree (and it's where a returning reader is scrolled past on load).
             Fully opaque, on the page's own ground rather than a tint of it:
@@ -502,6 +487,10 @@ export function BibleRoadmap({
             margin — margin isn't painted, so a row scrolling up flashed
             through that band before it reached the opaque box. */}
         <div className="sticky top-0 z-20 -mx-4 bg-white px-4 pb-6 pt-3 dark:bg-neutral-950">
+          {/* Search sits with Continue: both are ways of getting to a
+              passage, and the bar is what stays on screen while the canon
+              scrolls past. */}
+          <LandingSearch className="mb-3 w-full" />
           <div className="flex items-center justify-center gap-3">
           {/* The landing page's Start reading button, exactly: same fill,
               hover, near-square 2px corners, height, padding and type. The
