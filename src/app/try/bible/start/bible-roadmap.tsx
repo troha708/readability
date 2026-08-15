@@ -428,7 +428,7 @@ export function BibleRoadmap({
               Quiz
             </Link>
           </nav>
-          <div className="ml-auto flex items-center gap-3">
+          <div className="ml-auto flex items-stretch">
             {isNative && (
               <Link
                 href="/try/bible/settings"
@@ -441,9 +441,11 @@ export function BibleRoadmap({
               </Link>
             )}
             <AuthButton variant="flat" />
-            {/* The landing page's Start reading button, exactly: same fill,
-                hover, near-square 2px corners, height, padding and type — sat
-                just right of Sign in, the last thing on the bar.
+            {/* A full-height segment closing the bar, not a pill sitting in
+                it: the fill runs the whole height and out to the container
+                edge (-mr-4 cancels the header's padding), so the bar ends in
+                a block of colour. Same amber and near-black as the landing's
+                button, at the bar's own scale.
                 The chapter is the label rather than a subtitle beside it: a
                 button that names its destination asks less of the reader than
                 one that names an activity. "Begin John 1" states what the
@@ -451,7 +453,7 @@ export function BibleRoadmap({
                 John 1 for a reader with no history. */}
             <Link
               href={readUrl(continueTarget.book, continueTarget.chapter)}
-              className="inline-flex h-[54px] shrink-0 items-center self-center rounded-[2px] bg-amber-400 px-[20.3px] text-[16.2px] font-bold capitalize tracking-[0.34px] text-neutral-950 transition-colors hover:bg-amber-300"
+              className="-mr-4 flex shrink-0 items-center self-stretch bg-amber-400 px-5 py-3 text-sm font-bold capitalize tracking-[0.34px] text-neutral-950 transition-colors hover:bg-amber-300"
             >
               {hasStarted ? "Continue" : "Begin"} {continueTarget.book}{" "}
               {continueTarget.chapter}
@@ -461,30 +463,10 @@ export function BibleRoadmap({
       </div>
 
       <div className="mx-auto max-w-2xl px-4 py-8">
-        {/* Sticky so search stays reachable while the canon scrolls past.
-            Fully opaque, on the page's own ground rather than a tint of it:
-            a translucent or absent background let book rows slide half-hidden
-            behind it, which read as debris. -mx-4 px-4 bleeds that ground to
-            the container edges so no row shows down the sides, and the gap
-            below the bar is padding rather than margin — margin isn't
-            painted, so a row scrolling up flashed through that band before it
-            reached the opaque box. */}
-        <div className="sticky top-0 z-20 -mx-4 bg-white px-4 pb-6 pt-3 dark:bg-neutral-950">
-          {/* Continue lives in the header now; what stays here is the search
-              — the other way of getting to a passage — and the reader's own
-              notes. */}
-          <LandingSearch className="mb-3 w-full" />
-          <div className="flex items-center justify-center gap-3">
-          <Link
-            href="/try/bible/highlights"
-            className="inline-flex items-center gap-1.5 rounded-lg border border-neutral-200 bg-white px-4 py-2.5 text-sm font-medium text-neutral-600 shadow-sm transition-colors hover:border-amber-300 hover:text-amber-700 dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-400 dark:hover:border-amber-700 dark:hover:text-amber-400"
-          >
-            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Z" />
-            </svg>
-            Notes
-          </Link>
-          </div>
+        {/* The search sits at the head of the contents, not pinned: Continue
+            is in the header now, so nothing here needed to follow the scroll. */}
+        <div className="mb-6">
+          <LandingSearch className="w-full" />
         </div>
 
         {/* Canonical order always: Old Testament first (collapsed unless the
