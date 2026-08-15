@@ -532,6 +532,15 @@ export function BibleRoadmap({
           </div>
         </div>
 
+        {/* Title page above the contents: centred over a left-ranged table,
+            the way a printed book sets the two. The page had no h1 at all
+            before this — the only naming was the document title. */}
+        <div className="pb-5 pt-4 text-center">
+          <h1 className="font-scripture text-[1.9rem]/[1.2] font-semibold italic tracking-[0.005em] text-neutral-900 dark:text-white">
+            A study Bible
+          </h1>
+        </div>
+
         {/* Sign-in banner for guests */}
         {!userLoading && !user && (
           <div className="mb-4 flex items-center justify-center gap-2 rounded-lg border border-blue-200 bg-blue-50 px-4 py-2.5 dark:border-blue-800 dark:bg-blue-950/40">
@@ -556,23 +565,26 @@ export function BibleRoadmap({
             down the sides, and the gap below the bar is padding rather than
             margin — margin isn't painted, so a row scrolling up flashed
             through that band before it reached the opaque box. */}
-        <div className="sticky top-0 z-20 -mx-4 flex items-center justify-center gap-3 bg-white px-4 pb-6 pt-3 dark:bg-neutral-950">
+        <div className="sticky top-0 z-20 -mx-4 bg-white px-4 pb-6 pt-3 dark:bg-neutral-950">
+          <div className="flex items-center justify-center gap-3">
           {/* Same size, type and shape as the landing page's Start Reading —
               solid fill, near-black bold capitalized sans, no arrow — but
               rounder than the landing's near-square 2px corners
-              (owner-directed). The book and chapter stay: they say where this
-              resumes.
+              (owner-directed).
+              The chapter is the label rather than a subtitle beside it: a
+              button that names its destination asks less of the reader than
+              one that names an activity. "Begin John 1" states what the
+              button has always done — computeContinueTarget falls back to
+              John 1 for a reader with no history.
               The fill alone is muted, off the landing's amber-400 — see
               gold.fill in tailwind.config.ts for the derivation. Near-black
               text on it is 10.6:1, down from 11.6:1. */}
           <Link
             href={readUrl(continueTarget.book, continueTarget.chapter)}
-            className="inline-flex h-[54px] items-center gap-2 rounded-lg bg-gold-fill px-[20.3px] text-[16.2px] font-bold capitalize tracking-[0.34px] text-neutral-950 transition-colors hover:bg-gold-fill-hover"
+            className="inline-flex h-[54px] items-center rounded-lg bg-gold-fill px-[20.3px] text-[16.2px] font-bold capitalize tracking-[0.34px] text-neutral-950 transition-colors hover:bg-gold-fill-hover"
           >
-            {hasStarted ? "Continue Reading" : "Begin Reading"}
-            <span className="text-xs font-normal normal-case text-neutral-950/70">
-              {continueTarget.book} {continueTarget.chapter}
-            </span>
+            {hasStarted ? "Continue" : "Begin"} {continueTarget.book}{" "}
+            {continueTarget.chapter}
           </Link>
           <Link
             href="/try/bible/highlights"
@@ -583,6 +595,15 @@ export function BibleRoadmap({
             </svg>
             Notes
           </Link>
+          </div>
+          {/* Only before there's any history: a reader who has been here knows
+              the table is there, and the Continue button is the whole point of
+              the bar for them. */}
+          {!hasStarted && (
+            <p className="mt-3 text-center text-sm text-neutral-500 dark:text-neutral-400">
+              or select a book below
+            </p>
+          )}
         </div>
 
         {/* Canonical order always: Old Testament first (collapsed unless the
