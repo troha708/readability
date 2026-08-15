@@ -5,7 +5,6 @@ import { Fragment, useEffect, useRef, useState } from "react";
 import {
   getLastReadPosition,
   getReadingMode,
-  setReadingMode,
   type ReadingMode,
   type ReadingProgress,
 } from "@/lib/reading-progress";
@@ -408,11 +407,11 @@ export function BibleRoadmap({
   // near-black, so landing → library reads as one surface.
   return (
     <main className="min-h-screen dark:bg-neutral-950">
-      {/* The landing bar on this page's own column: logo, quiet links, the
-          mode toggle, quiet Sign in, closed by a single hairline that runs
-          edge to edge. The search is not up here — at this width it crowded
-          the bar, so it sits in the sticky bar below with Continue, where a
-          reader looking for a passage is already looking. */}
+      {/* The landing bar on this page's own column: logo, quiet links, quiet
+          Sign in, closed by a single hairline that runs edge to edge. The
+          search is not up here — at this width it crowded the bar, so it sits
+          in the sticky bar below with Continue, where a reader looking for a
+          passage is already looking. Read/Study is set in the reader itself. */}
       <div className="border-b border-neutral-200 dark:border-neutral-800">
         <header className="mx-auto flex max-w-2xl items-stretch px-4 md:h-[72px]">
           <div className="flex h-14 items-center pr-4 md:h-auto md:pr-6">
@@ -430,36 +429,6 @@ export function BibleRoadmap({
             </Link>
           </nav>
           <div className="ml-auto flex items-center gap-3">
-            {/* Read vs Study decides what counts as finishing a chapter. */}
-            <div className="inline-flex rounded-lg bg-neutral-100 p-0.5 dark:bg-neutral-800">
-              <button
-                onClick={() => {
-                  setMode("read");
-                  setReadingMode("read");
-                }}
-                className={`rounded-md px-2.5 py-1 text-xs font-medium tracking-[0.25px] transition-all ${
-                  mode === "read"
-                    ? "bg-white text-amber-700 shadow-sm dark:bg-neutral-700 dark:text-amber-400"
-                    : "text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-300"
-                }`}
-              >
-                Read
-              </button>
-              <button
-                onClick={() => {
-                  setMode("study");
-                  setReadingMode("study");
-                }}
-                className={`rounded-md px-2.5 py-1 text-xs font-medium tracking-[0.25px] transition-all ${
-                  mode === "study"
-                    ? "bg-white text-amber-700 shadow-sm dark:bg-neutral-700 dark:text-amber-400"
-                    : "text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-300"
-                }`}
-              >
-                Study
-              </button>
-            </div>
-
             {isNative && (
               <Link
                 href="/try/bible/settings"
