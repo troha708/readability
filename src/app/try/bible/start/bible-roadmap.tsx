@@ -428,7 +428,7 @@ export function BibleRoadmap({
               Quiz
             </Link>
           </nav>
-          <div className="ml-auto flex items-stretch">
+          <div className="ml-auto flex items-center gap-3">
             {isNative && (
               <Link
                 href="/try/bible/settings"
@@ -441,32 +441,33 @@ export function BibleRoadmap({
               </Link>
             )}
             <AuthButton variant="flat" />
-            {/* A full-height segment closing the bar, not a pill sitting in
-                it: the fill runs the whole height and out to the container
-                edge (-mr-4 cancels the header's padding), so the bar ends in
-                a block of colour. Same amber and near-black as the landing's
-                button, at the bar's own scale.
-                The chapter is the label rather than a subtitle beside it: a
-                button that names its destination asks less of the reader than
-                one that names an activity. "Begin John 1" states what the
-                button has always done — computeContinueTarget falls back to
-                John 1 for a reader with no history. */}
-            <Link
-              href={readUrl(continueTarget.book, continueTarget.chapter)}
-              className="-mr-4 flex shrink-0 items-center self-stretch bg-amber-400 px-5 py-3 text-sm font-bold capitalize tracking-[0.34px] text-neutral-950 transition-colors hover:bg-amber-300"
-            >
-              {hasStarted ? "Continue" : "Begin"} {continueTarget.book}{" "}
-              {continueTarget.chapter}
-            </Link>
           </div>
         </header>
       </div>
 
       <div className="mx-auto max-w-2xl px-4 py-8">
-        {/* The search sits at the head of the contents, not pinned: Continue
-            is in the header now, so nothing here needed to follow the scroll. */}
-        <div className="mb-6">
-          <LandingSearch className="w-full" />
+        {/* Search and Continue on one line, pinned so both stay reachable
+            while the canon scrolls past, closed by a hairline. Opaque on the
+            page's own ground — a translucent bar let book rows slide
+            half-hidden behind it — and -mx-4 px-4 bleeds that ground to the
+            container edges so no row shows down the sides. */}
+        <div className="sticky top-0 z-20 -mx-4 mb-6 flex items-stretch border-b border-neutral-200 bg-white px-4 dark:border-neutral-800 dark:bg-neutral-950">
+          <LandingSearch className="flex min-w-0 flex-1 items-center py-3" />
+          {/* A full-height block closing the bar rather than a pill sitting in
+              it: the fill runs the bar's whole height and out to the container
+              edge (-mr-4 cancels the padding).
+              The chapter is the label rather than a subtitle beside it: a
+              button that names its destination asks less of the reader than
+              one that names an activity. "Begin John 1" states what the button
+              has always done — computeContinueTarget falls back to John 1 for
+              a reader with no history. */}
+          <Link
+            href={readUrl(continueTarget.book, continueTarget.chapter)}
+            className="-mr-4 ml-3 flex shrink-0 items-center self-stretch bg-amber-400 px-5 text-sm font-bold capitalize tracking-[0.34px] text-neutral-950 transition-colors hover:bg-amber-300"
+          >
+            {hasStarted ? "Continue" : "Begin"} {continueTarget.book}{" "}
+            {continueTarget.chapter}
+          </Link>
         </div>
 
         {/* Canonical order always: Old Testament first (collapsed unless the
