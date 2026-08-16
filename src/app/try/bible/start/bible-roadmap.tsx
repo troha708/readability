@@ -11,6 +11,7 @@ import {
 import {
   loadAllProgress,
 } from "@/lib/progress-service";
+import { useUser } from "@/hooks/useUser";
 import { bibleBookSortIndex, bookGenre } from "@/lib/bible-book-order";
 import { originalName } from "@/lib/book-names-original";
 import { isOverviewAtStart } from "@/lib/overview-placement";
@@ -45,6 +46,7 @@ export function BibleRoadmap({
   booksWithSummary,
   purposeByBook = {},
 }: Props) {
+  const { user, loading: userLoading } = useUser();
   const [readingDone, setReadingDone] = useState<ReadingProgress>({});
   const [quizDone, setQuizDone] = useState<ReadingProgress>({});
   // Completion timestamps are still loaded — computeContinueTarget uses them
@@ -194,27 +196,13 @@ export function BibleRoadmap({
     const isExpanded = expandedBooks.has(book.name);
     const orig = originalName(book.name);
     const purpose = purposeByBook[book.name];
-    // Row rhythm, and the hairline that separates one book from the next.
-    // The rule belongs at the foot of the whole book, so an open book carries
-    // it on its chapter grid instead and the name never sits above a line
-    // dividing it from its own chapters.
-    const rule = "border-b border-neutral-100 dark:border-neutral-800";
-    const cell = `py-[0.6rem] ${isExpanded && hasChapters ? "" : rule}`;
+    // Row rhythm. Wider than it was, because the hairline that used to hold
+    // the rows apart has gone and the space now has to do that on its own.
+    const cell = "py-[0.6rem]";
 
     return (
       <Fragment key={book.name}>
-        <tr
-          ref={isActiveBook ? activeBookRef : undefined}
-          onClick={() => {
-            if (!hasChapters) return;
-            // A drag-select of the Greek ends in a click; without this the
-            // row you just selected out of would collapse under you.
-            const sel = typeof window !== "undefined" ? window.getSelection() : null;
-            if (sel && sel.type === "Range" && sel.toString().trim()) return;
-            toggleBook(book.name);
-          }}
-          className={`scroll-mt-24 align-baseline ${hasChapters ? "cursor-pointer" : ""}`}
-        >
+        <tr ref={isActiveBook ? activeBookRef : undefined} className="scroll-mt-24 align-baseline">
           {/* Three columns: title, original title, figure. The title cell
               shrinks to its content and the original-title cell takes the
               slack, so every Hebrew and Greek name starts on the same left
@@ -223,12 +211,11 @@ export function BibleRoadmap({
               originals scatter along the ragged edge of the English. */}
           <td className={`w-px whitespace-nowrap pr-4 ${cell}`}>
             {/* A real link to chapter 1 so crawlers reach every book — the
-                chapter grid below only exists when open — and the row's one
-                focusable thing, so the keyboard can open a book: activating
-                it dispatches a click that bubbles to the row's handler.
-                draggable={false} keeps the row's text selectable; an anchor
-                drags by default, which turns a drag-select of the Greek into
-                a drag. */}
+                chapter grid below only exists when open — but click toggles.
+                draggable={false} and the selection guard keep the row's text
+                selectable: an anchor drags by default, which turns a
+                drag-select of the Greek into a drag, and the release-click
+                would then collapse the row you just selected out of. */}
             <a
               href={
                 hasChapters
@@ -236,9 +223,15 @@ export function BibleRoadmap({
                   : undefined
               }
               draggable={false}
-              onClick={(e) => e.preventDefault()}
+              onClick={(e) => {
+                e.preventDefault();
+                if (!hasChapters) return;
+                const sel = typeof window !== "undefined" ? window.getSelection() : null;
+                if (sel && sel.type === "Range" && sel.toString().trim()) return;
+                toggleBook(book.name);
+              }}
               aria-expanded={hasChapters ? isExpanded : undefined}
-              className={`select-text font-scripture text-[18px] ${
+              className={`select-text font-scripture text-[17px] ${
                 hasChapters ? "cursor-pointer" : "cursor-default"
               } ${
                 isActiveBook
@@ -248,13 +241,21 @@ export function BibleRoadmap({
                     : "text-neutral-400 dark:text-neutral-600"
               }`}
             >
+              {/* A text triangle rather than an SVG — it is the bare-HTML
+                  disclosure marker, and it costs no markup. */}
+              <span
+                aria-hidden="true"
+                className="mr-1 inline-block w-3.5 select-none text-[13px] text-neutral-400 dark:text-neutral-600"
+              >
+                {hasChapters ? (isExpanded ? "▾" : "▸") : ""}
+              </span>
               {book.name}
             </a>
           </td>
           {/* Set in the English name's own type — same family, size and
               colour. dir is not a style: without it the numbered Hebrew books
               (שְׁמוּאֵל א) reorder against the Latin text around them. */}
-          <td className={`w-full pr-3 font-scripture text-[18px] ${cell} ${
+          <td className={`w-full pr-3 font-scripture text-[17px] ${cell} ${
             isActiveBook
               ? "text-gold dark:text-gold-bright"
               : hasChapters
@@ -269,7 +270,7 @@ export function BibleRoadmap({
           </td>
           {/* Same size as the title: on a contents page the figure is part of
               the line. Set smaller it reads as a UI count pinned to the row. */}
-          <td className={`w-px whitespace-nowrap text-right font-scripture text-[18px] tabular-nums text-neutral-400 dark:text-neutral-500 ${cell}`}>
+          <td className={`w-px whitespace-nowrap text-right font-scripture text-[17px] tabular-nums text-neutral-400 dark:text-neutral-500 ${cell}`}>
             {completedCount > 0
               ? `${completedCount}/${book.chapters.length}`
               : book.chapters.length}
@@ -277,9 +278,9 @@ export function BibleRoadmap({
         </tr>
         {isExpanded && hasChapters && (
           <tr>
-            {/* The open book's grid carries the book's dividing rule, so one
-                line falls between books whether a book is open or closed. */}
-            <td colSpan={3} className={`pb-7 ${rule}`}>
+            {/* An open book keeps its grid close and takes its separation
+                from the next book below, since there is no rule to do it. */}
+            <td colSpan={3} className="pb-7">
               {purpose && (
                 <p className="mb-2 max-w-prose font-scripture text-[14px] italic leading-relaxed text-neutral-500 dark:text-neutral-500">
                   {purpose}
@@ -362,8 +363,14 @@ export function BibleRoadmap({
         <button
           onClick={() => toggleSection(testament)}
           aria-expanded={isSectionExpanded}
-          className="mb-2 font-scripture text-[18px] font-semibold text-neutral-800 dark:text-neutral-300"
+          className="mb-2 font-scripture text-[17px] font-semibold text-neutral-800 dark:text-neutral-300"
         >
+          <span
+            aria-hidden="true"
+            className="mr-1 inline-block w-3.5 text-[13px] text-neutral-400 dark:text-neutral-600"
+          >
+            {isSectionExpanded ? "▾" : "▸"}
+          </span>
           {label}
         </button>
         {isSectionExpanded && (
@@ -404,55 +411,66 @@ export function BibleRoadmap({
     <main className="min-h-screen dark:bg-neutral-950">
       <SiteHeader />
 
-      {/* A spread: the title page on the left leaf, the contents on the
-          right. The left stays put while the canon scrolls past it, so the
-          way back into the book is always on screen without a bar pinned
-          over the text. Below lg the two stack, title first — the phone
-          layout, unchanged. */}
-      <div className="mx-auto max-w-2xl px-4 py-8 lg:grid lg:max-w-5xl lg:grid-cols-[18.5rem_minmax(0,1fr)] lg:gap-x-12">
-        {/* The landing's opening block, on this page: title then button,
-            ranged left and sitting on the vertical centre — the landing
-            centres the same pair against its mockup with md:items-center,
-            and here the leaf is a full screen tall so the pair holds the
-            middle as the canon scrolls past. Its subtitle is the one thing
-            left out; the library doesn't need to be sold to. */}
-        <div className="pb-7 lg:sticky lg:top-0 lg:flex lg:h-screen lg:flex-col lg:justify-center lg:pb-24">
-          {/* Set exactly as the landing's h1 — same face, weight, slant,
-              tracking and size steps — so the two pages open in one voice.
-              Only the colour differs, because this page has a light theme
-              and the landing does not. */}
-          <h1 className="font-scripture text-3xl/[1.2] font-semibold italic tracking-[0.005em] text-neutral-900 dark:text-white sm:text-4xl/[1.2] lg:text-[2.6rem]/[1.2]">
-            A study Bible
-          </h1>
-          {/* The landing page's Start reading button, exactly: same fill,
-              hover, near-square 2px corners, height, padding and type, at
-              the landing's own mt-7 below the title. The book and chapter
-              stay beside the label — they say where this resumes. */}
-          <div className="mt-7">
-            <Link
-              href={readUrl(continueTarget.book, continueTarget.chapter)}
-              className="inline-flex h-[54px] items-center gap-2 rounded-[2px] bg-amber-400 px-[20.3px] text-[16.2px] font-bold capitalize tracking-[0.34px] text-neutral-950 transition-colors hover:bg-amber-300"
-            >
-              {hasStarted ? "Continue Reading" : "Start Reading"}
-              <span className="text-xs font-normal normal-case text-neutral-950/70">
-                {continueTarget.book} {continueTarget.chapter}
-              </span>
-            </Link>
+      <div className="mx-auto max-w-2xl px-4 py-8">
+        {/* Sign-in banner for guests */}
+        {!userLoading && !user && (
+          <div className="mb-4 flex items-center justify-center gap-2 rounded-lg border border-blue-200 bg-blue-50 px-4 py-2.5 dark:border-blue-800 dark:bg-blue-950/40">
+            <svg className="h-4 w-4 flex-shrink-0 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z" />
+            </svg>
+            <p className="text-sm text-blue-700 dark:text-blue-300">
+              <Link href="/login?next=/try/bible/start" className="font-medium underline hover:no-underline">
+                Sign in
+              </Link>{" "}
+              to save your progress across devices
+            </p>
           </div>
+        )}
+
+        {/* Continue Reading — sticky so it stays reachable while scrolling the
+            tree (and it's where a returning reader is scrolled past on load).
+            Fully opaque, on the page's own ground rather than a tint of it:
+            a translucent or absent background let book rows slide half-hidden
+            behind the two buttons, which read as debris around them. -mx-4
+            px-4 bleeds that ground to the container edges so no row shows
+            down the sides, and the gap below the bar is padding rather than
+            margin — margin isn't painted, so a row scrolling up flashed
+            through that band before it reached the opaque box. */}
+        <div className="sticky top-0 z-20 -mx-4 flex items-center justify-center gap-3 bg-white px-4 pb-6 pt-3 dark:bg-neutral-950">
+          {/* Same size, type and shape as the landing page's Start Reading —
+              solid fill, near-black bold capitalized sans, no arrow — but
+              rounder than the landing's near-square 2px corners
+              (owner-directed). The book and chapter stay: they say where this
+              resumes.
+              The fill alone is muted, off the landing's amber-400 — see
+              gold.fill in tailwind.config.ts for the derivation. Near-black
+              text on it is 10.6:1, down from 11.6:1. */}
+          <Link
+            href={readUrl(continueTarget.book, continueTarget.chapter)}
+            className="inline-flex h-[54px] items-center gap-2 rounded-lg bg-gold-fill px-[20.3px] text-[16.2px] font-bold capitalize tracking-[0.34px] text-neutral-950 transition-colors hover:bg-gold-fill-hover"
+          >
+            {hasStarted ? "Continue Reading" : "Begin Reading"}
+            <span className="text-xs font-normal normal-case text-neutral-950/70">
+              {continueTarget.book} {continueTarget.chapter}
+            </span>
+          </Link>
+          <Link
+            href="/try/bible/highlights"
+            className="inline-flex items-center gap-1.5 rounded-lg border border-neutral-200 bg-white px-4 py-2.5 text-sm font-medium text-neutral-600 shadow-sm transition-colors hover:border-amber-300 hover:text-amber-700 dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-400 dark:hover:border-amber-700 dark:hover:text-amber-400"
+          >
+            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Z" />
+            </svg>
+            Notes
+          </Link>
         </div>
 
-        {/* Canonical order always: Old Testament first, New Testament under
-            it — one column, so the canon reads as one sequence. */}
-        <div className="min-w-0">
-          {renderSection("Old Testament", "OT", otBooks)}
-          {renderSection("New Testament", "NT", ntBooks)}
-        </div>
-      </div>
+        {/* Canonical order always: Old Testament first (collapsed unless the
+            reader is currently in it), New Testament below. */}
+        {renderSection("Old Testament", "OT", otBooks)}
+        {renderSection("New Testament", "NT", ntBooks)}
 
-      {/* Under the spread rather than in the right column: the footer closes
-          the page, so it takes the page's width. */}
-      <div className="mx-auto max-w-2xl px-4 pb-8 lg:max-w-5xl">
-        <SiteFooter className="border-t-0" />
+        <SiteFooter className="mt-8 border-t-0" />
       </div>
 
     </main>
