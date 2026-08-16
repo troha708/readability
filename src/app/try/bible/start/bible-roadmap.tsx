@@ -410,9 +410,13 @@ export function BibleRoadmap({
           over the text. Below lg the two stack, title first — the phone
           layout, unchanged. */}
       <div className="mx-auto max-w-2xl px-4 py-8 lg:grid lg:max-w-5xl lg:grid-cols-[17rem_minmax(0,1fr)] lg:gap-x-12">
-        {/* The landing's opening, on this page: the title, then the button
-            beneath it, both ranged left. */}
-        <div className="pb-7 lg:sticky lg:top-8 lg:self-start lg:pb-0">
+        {/* The landing's opening block, on this page: title then button,
+            ranged left and sitting on the vertical centre — the landing
+            centres the same pair against its mockup with md:items-center,
+            and here the leaf is a full screen tall so the pair holds the
+            middle as the canon scrolls past. Its subtitle is the one thing
+            left out; the library doesn't need to be sold to. */}
+        <div className="pb-7 lg:sticky lg:top-0 lg:flex lg:h-screen lg:flex-col lg:justify-center lg:pb-0">
           {/* Set exactly as the landing's h1 — same face, weight, slant,
               tracking and size steps — so the two pages open in one voice.
               Only the colour differs, because this page has a light theme
@@ -421,18 +425,20 @@ export function BibleRoadmap({
             A study Bible
           </h1>
           {/* The landing page's Start reading button, exactly: same fill,
-              hover, near-square 2px corners, height, padding and type. The
-              book and chapter stay beside the label — they say where this
-              resumes. */}
-          <Link
-            href={readUrl(continueTarget.book, continueTarget.chapter)}
-            className="mt-6 inline-flex h-[54px] items-center gap-2 rounded-[2px] bg-amber-400 px-[20.3px] text-[16.2px] font-bold capitalize tracking-[0.34px] text-neutral-950 transition-colors hover:bg-amber-300"
-          >
-            {hasStarted ? "Continue Reading" : "Start Reading"}
-            <span className="text-xs font-normal normal-case text-neutral-950/70">
-              {continueTarget.book} {continueTarget.chapter}
-            </span>
-          </Link>
+              hover, near-square 2px corners, height, padding and type, at
+              the landing's own mt-7 below the title. The book and chapter
+              stay beside the label — they say where this resumes. */}
+          <div className="mt-7">
+            <Link
+              href={readUrl(continueTarget.book, continueTarget.chapter)}
+              className="inline-flex h-[54px] items-center gap-2 rounded-[2px] bg-amber-400 px-[20.3px] text-[16.2px] font-bold capitalize tracking-[0.34px] text-neutral-950 transition-colors hover:bg-amber-300"
+            >
+              {hasStarted ? "Continue Reading" : "Start Reading"}
+              <span className="text-xs font-normal normal-case text-neutral-950/70">
+                {continueTarget.book} {continueTarget.chapter}
+              </span>
+            </Link>
+          </div>
         </div>
 
         {/* Canonical order always: Old Testament first, New Testament under
