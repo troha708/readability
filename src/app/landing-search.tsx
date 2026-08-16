@@ -214,7 +214,7 @@ export function LandingSearch({ className }: { className?: string } = {}) {
 
   return (
     // The search reads as a field: a whisper of the surface tone over the
-    // black bar (60% #202121 ≈ #171818), no rules around it. On phones it
+    // black bar (60% #201b14 ≈ #17130f), no rules around it. On phones it
     // takes its own full-width row under the logo.
     <div
       className={`relative ${

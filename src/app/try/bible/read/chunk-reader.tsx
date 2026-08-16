@@ -97,9 +97,9 @@ const ICON_STROKE = 1.25;
 // spill reading cold. Light mode keeps a neutral line — white on a white page
 // is no line at all.
 const RAIL_GLOW_LEFT =
-  "border-r-neutral-300 shadow-[8px_0_28px_-12px_rgba(255,255,255,0.20)] dark:border-r-white/45";
+  "border-r-neutral-300 shadow-[8px_0_28px_-12px_rgba(255,207,156,0.20)] dark:border-r-white/45";
 const RAIL_GLOW_RIGHT =
-  "border-l-neutral-300 shadow-[-8px_0_28px_-12px_rgba(255,255,255,0.20)] dark:border-l-white/45";
+  "border-l-neutral-300 shadow-[-8px_0_28px_-12px_rgba(255,207,156,0.20)] dark:border-l-white/45";
 
 type CompletionAge = "recent" | "fading" | "old";
 

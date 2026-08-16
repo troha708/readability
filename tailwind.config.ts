@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import { nightPalette } from "./tailwind.night-palette";
 
 const config: Config = {
   darkMode: "class",
@@ -33,58 +34,69 @@ const config: Config = {
         greek: ["var(--font-greek)", "Cardo", "Georgia", "serif"],
         hebrew: ["var(--font-hebrew)", "Ezra SIL", "SBL Hebrew", "David", "serif"],
       },
+      // Every value below is stored at 3800K — the colour temperature Windows
+      // Night Light puts the display at on its default slider — so the site
+      // reads the way it does through the filter without the filter being on.
+      // Do not hand-edit a hex here: change it at 6500K and re-run
+      // `node scripts/warm-palette.mjs --kelvin 3800`, which rewrites every
+      // literal in the tree from the neutral values it keeps in
+      // scripts/palette-baseline.json.
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        // Grey ramp for the reading surfaces (800 = dark surface, 700 =
-        // borders and light-theme text, 400 = secondary, 300 = black-theme
-        // text). 925 is the dark reading ground, 950 the landing and static
-        // shells. Keep 300 and 925 in step with --foreground and --background
-        // in globals.css.
+        // The ramp the reading surfaces are built from — warm rather than grey
+        // now, but the same ladder (800 = dark surface, 700 = borders and
+        // light-theme text, 400 = secondary, 300 = black-theme text). 925 is
+        // the dark reading ground, 950 the landing and static shells. Keep 300
+        // and 925 in step with --foreground and --background in globals.css.
         neutral: {
-          50: "#fafafa",
-          100: "#f2f2f2",
-          200: "#dce0e3",
-          300: "#d3d7da",
-          400: "#9a9fa3",
-          500: "#75797d",
-          600: "#5e6266",
-          700: "#424547",
-          800: "#282a2b",
-          900: "#202121",
-          925: "#100e0d",
-          950: "#0a0a0a",
+          50: "#facb99",
+          100: "#f2c494",
+          200: "#dcb68b",
+          300: "#d3af85",
+          400: "#9a8164",
+          500: "#75624c",
+          600: "#5e503e",
+          700: "#42382b",
+          800: "#28221a",
+          900: "#201b14",
+          925: "#100b08",
+          950: "#0a0806",
         },
         // Muted reader gold for reader chrome. DEFAULT reads on light
         // surfaces, `bright` on dark, `deep` is the same hue with more ink for
         // text at scripture size. The chapter drop cap keeps the site amber.
         gold: {
-          DEFAULT: "#9c8343",
-          deep: "#6b5a2d",
-          bright: "#c9ad72",
-          // Solid fill for primary buttons. The landing's amber-400 (#ecc06b,
-          // hsl 39.5 77% 67%) with twenty points of saturation taken out at
-          // the same hue and lightness — it keeps a button's weight without
-          // glaring off a near-black page. Always pairs with neutral-950
-          // text: 10.6:1. Never white, which on this hue is about 2:1.
-          fill: "#daba7b",
-          "fill-hover": "#e1c793",
+          DEFAULT: "#9c6a29",
+          deep: "#6b491c",
+          bright: "#c98c46",
+          // Solid fill for primary buttons. The landing's amber-400 (#ec9c41,
+          // hsl 31.9 82% 59%) with sixteen points of saturation taken out at
+          // the same hue — it keeps a button's weight without glaring off a
+          // near-black page. Always pairs with neutral-950 text: 8.1:1. Never
+          // white, which on this hue is about 2.5:1.
+          fill: "#da974b",
+          "fill-hover": "#e1a25a",
         },
-        // Gold accent: `amber` is remapped to a clean gold (anchored on 400,
-        // the heading accent) rather than Tailwind's orange-leaning default.
+        // Gold accent: `amber` is remapped to its own ramp anchored on 400,
+        // the heading accent, rather than running Tailwind's stock scale.
         amber: {
-          50: "#fdf8ec",
-          100: "#f8eed3",
-          200: "#f3e1b0",
-          300: "#ecd086",
-          400: "#ecc06b",
-          500: "#e0b85a",
-          600: "#d3a83c",
-          700: "#a9821f",
-          800: "#74571a",
-          900: "#352a12",
-          950: "#1a1304",
+          50: "#fdc990",
+          100: "#f8c181",
+          200: "#f3b76c",
+          300: "#eca952",
+          400: "#ec9c41",
+          500: "#e09537",
+          600: "#d38825",
+          700: "#a96a13",
+          800: "#744710",
+          900: "#35220b",
+          950: "#1a0f02",
         },
+        // Tailwind's stock red / yellow / blue / emerald / pink / stone, which
+        // components borrow for errors, highlight colours and the map, warmed
+        // to the same temperature. Generated — see tailwind.night-palette.ts.
+        ...nightPalette,
       },
     },
   },

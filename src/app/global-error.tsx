@@ -34,14 +34,14 @@ export default function GlobalError({
           padding: "1.5rem",
           textAlign: "center",
           fontFamily: "system-ui, sans-serif",
-          background: "#0a0a0a",
-          color: "#fafafa",
+          background: "#0a0806",
+          color: "#facb99",
         }}
       >
         <h1 style={{ fontSize: "1.5rem", fontWeight: 800, margin: 0 }}>
           Something went wrong
         </h1>
-        <p style={{ fontSize: "0.875rem", color: "#a3a3a3", maxWidth: "24rem", margin: 0 }}>
+        <p style={{ fontSize: "0.875rem", color: "#a38464", maxWidth: "24rem", margin: 0 }}>
           An unexpected error occurred. Please try again.
         </p>
         <button
@@ -50,8 +50,8 @@ export default function GlobalError({
             cursor: "pointer",
             borderRadius: "0.75rem",
             border: "none",
-            background: "#d97706",
-            color: "#0a0a0a",
+            background: "#d96104",
+            color: "#0a0806",
             padding: "0.75rem 1.5rem",
             fontSize: "1rem",
             fontWeight: 700,

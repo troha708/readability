@@ -746,7 +746,7 @@ export function Atlas() {
     const q = full.toString();
     const fullHref = `/try/bible/map${q ? `?${q}` : ""}`;
     return (
-      <div className="relative h-screen overflow-hidden bg-[#101820] supports-[height:100dvh]:h-dvh">
+      <div className="relative h-screen overflow-hidden bg-[#101314] supports-[height:100dvh]:h-dvh">
         {failed ? (
           <div className="flex h-full items-center justify-center text-sm text-neutral-400">
             The atlas needs a connection to load.
@@ -1220,7 +1220,7 @@ export function Atlas() {
           "Settlement",
         )}
         {keyRow(
-          <circle r="4.4" strokeWidth="1.4" className="fill-[#4e7d99] stroke-white dark:fill-[#7fa9c4] dark:stroke-neutral-900" />,
+          <circle r="4.4" strokeWidth="1.4" className="fill-[#4e655e] stroke-white dark:fill-[#7f8978] dark:stroke-neutral-900" />,
           "Water — sea, river, spring",
         )}
         {keyRow(
@@ -1256,13 +1256,13 @@ export function Atlas() {
           <div className="mt-1.5 space-y-1">
             {(
               [
-                ["#453c2c", "above 2,500 m — high peaks"],
-                ["#393228", "1,500–2,500 m — mountains"],
-                ["#302b26", "700–1,500 m — central ridges"],
-                ["#292624", "300–700 m — hill country"],
-                ["#232323", "0–300 m — plains"],
-                ["#1e1b17", "0 to −200 m — below sea level"],
-                ["#1a1612", "below −200 m — the deep rift"],
+                ["#45311b", "above 2,500 m — high peaks"],
+                ["#392918", "1,500–2,500 m — mountains"],
+                ["#302317", "700–1,500 m — central ridges"],
+                ["#291f16", "300–700 m — hill country"],
+                ["#231c15", "0–300 m — plains"],
+                ["#1e160e", "0 to −200 m — below sea level"],
+                ["#1a120b", "below −200 m — the deep rift"],
               ] as const
             ).map(([color, label]) => (
               <span key={color} className="flex items-center gap-2">

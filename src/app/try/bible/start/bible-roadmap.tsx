@@ -419,7 +419,7 @@ export function BibleRoadmap({
   }
 
 
-  // Dark theme opts out of the body's #202121 onto the landing's
+  // Dark theme opts out of the body's #201b14 onto the landing's
   // near-black, so landing → library reads as one surface.
   return (
     <main className="min-h-screen dark:bg-neutral-950">

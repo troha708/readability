@@ -43,9 +43,9 @@ const COPY: Record<"login" | "signup", Copy> = {
 // Bitter and the display face now like every other document page, and the button takes
 // the same muted gold fill as the library's resume button.
 //
-// The fill also fixes a real defect: amber-600 (#d3a83c) under white text
-// measures 2.2:1, far below the 4.5:1 floor. gold.fill under neutral-950 is
-// 10.6:1.
+// The fill also fixes a real defect: amber-600 (#d38825) under white text
+// measures 2.0:1, far below the 4.5:1 floor. gold.fill under neutral-950 is
+// 8.1:1.
 const FIELD =
   "w-full rounded-lg border border-neutral-300 bg-white px-4 py-2.5 font-scripture text-neutral-900 outline-none transition-colors placeholder:text-neutral-400 focus:border-gold focus:ring-2 focus:ring-gold/20 dark:border-neutral-700 dark:bg-neutral-900 dark:text-white dark:placeholder:text-neutral-500";
 const SUBMIT =

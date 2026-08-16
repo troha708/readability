@@ -1,0 +1,480 @@
+{
+  "kelvin": 3800,
+  "entries": [
+    {
+      "file": "src/app/manifest.ts",
+      "original": "#100e0d",
+      "current": "#100b08"
+    },
+    {
+      "file": "src/app/manifest.ts",
+      "original": "#d3a83c",
+      "current": "#d38825"
+    },
+    {
+      "file": "src/components/confetti-burst.tsx",
+      "original": "#f59e0b",
+      "current": "#f58007"
+    },
+    {
+      "file": "src/components/confetti-burst.tsx",
+      "original": "#fbbf24",
+      "current": "#fb9b16"
+    },
+    {
+      "file": "src/components/confetti-burst.tsx",
+      "original": "#fcd34d",
+      "current": "#fcab2f"
+    },
+    {
+      "file": "src/components/confetti-burst.tsx",
+      "original": "#f97316",
+      "current": "#f95d0d"
+    },
+    {
+      "file": "src/components/confetti-burst.tsx",
+      "original": "#fde68a",
+      "current": "#fdbb54"
+    },
+    {
+      "file": "src/components/confetti-burst.tsx",
+      "original": "#fb923c",
+      "current": "#fb7725"
+    },
+    {
+      "file": "src/components/email-auth-form.tsx",
+      "original": "#d3a83c",
+      "current": "#d38825"
+    },
+    {
+      "file": "src/components/places-map.tsx",
+      "original": "#e9e4d0",
+      "current": "#e9b97f"
+    },
+    {
+      "file": "src/components/places-map.tsx",
+      "original": "#1e1b17",
+      "current": "#1e160e"
+    },
+    {
+      "file": "src/components/places-map.tsx",
+      "original": "#dfd8c0",
+      "current": "#dfaf75"
+    },
+    {
+      "file": "src/components/places-map.tsx",
+      "original": "#1a1612",
+      "current": "#1a120b"
+    },
+    {
+      "file": "src/components/places-map.tsx",
+      "original": "#f1e9d8",
+      "current": "#f1bd84"
+    },
+    {
+      "file": "src/components/places-map.tsx",
+      "original": "#292624",
+      "current": "#291f16"
+    },
+    {
+      "file": "src/components/places-map.tsx",
+      "original": "#e6d9bf",
+      "current": "#e6b075"
+    },
+    {
+      "file": "src/components/places-map.tsx",
+      "original": "#302b26",
+      "current": "#302317"
+    },
+    {
+      "file": "src/components/places-map.tsx",
+      "original": "#d9c7a4",
+      "current": "#d9a264"
+    },
+    {
+      "file": "src/components/places-map.tsx",
+      "original": "#393228",
+      "current": "#392918"
+    },
+    {
+      "file": "src/components/places-map.tsx",
+      "original": "#cbb489",
+      "current": "#cb9254"
+    },
+    {
+      "file": "src/components/places-map.tsx",
+      "original": "#453c2c",
+      "current": "#45311b"
+    },
+    {
+      "file": "src/components/places-map.tsx",
+      "original": "#4e7d99",
+      "current": "#4e655e"
+    },
+    {
+      "file": "src/components/places-map.tsx",
+      "original": "#7fa9c4",
+      "current": "#7f8978"
+    },
+    {
+      "file": "src/components/places-map.tsx",
+      "original": "#d9e4ec",
+      "current": "#d9b990"
+    },
+    {
+      "file": "src/components/places-map.tsx",
+      "original": "#101820",
+      "current": "#101314"
+    },
+    {
+      "file": "src/components/places-map.tsx",
+      "original": "#faf7f2",
+      "current": "#fac894"
+    },
+    {
+      "file": "src/components/places-map.tsx",
+      "original": "#b0c2ce",
+      "current": "#b09d7e"
+    },
+    {
+      "file": "src/components/places-map.tsx",
+      "original": "#232323",
+      "current": "#231c15"
+    },
+    {
+      "file": "src/components/places-map.tsx",
+      "original": "#3e4a54",
+      "current": "#3e3c33"
+    },
+    {
+      "file": "src/components/places-map.tsx",
+      "original": "#a9c3d5",
+      "current": "#a99e82"
+    },
+    {
+      "file": "src/components/places-map.tsx",
+      "original": "#33475a",
+      "current": "#333a37"
+    },
+    {
+      "file": "src/components/places-map.tsx",
+      "original": "#7f99ab",
+      "current": "#7f7c69"
+    },
+    {
+      "file": "src/components/places-map.tsx",
+      "original": "#4e6678",
+      "current": "#4e5349"
+    },
+    {
+      "file": "src/app/global-error.tsx",
+      "original": "#0a0a0a",
+      "current": "#0a0806"
+    },
+    {
+      "file": "src/app/global-error.tsx",
+      "original": "#fafafa",
+      "current": "#facb99"
+    },
+    {
+      "file": "src/app/global-error.tsx",
+      "original": "#a3a3a3",
+      "current": "#a38464"
+    },
+    {
+      "file": "src/app/global-error.tsx",
+      "original": "#d97706",
+      "current": "#d96104"
+    },
+    {
+      "file": "src/app/hero-mockup.tsx",
+      "original": "#9a9fa3",
+      "current": "#9a8164"
+    },
+    {
+      "file": "src/app/hero-mockup.tsx",
+      "original": "#14110f",
+      "current": "#140e09"
+    },
+    {
+      "file": "src/app/hero-mockup.tsx",
+      "original": "#c4c4c4",
+      "current": "#c49f78"
+    },
+    {
+      "file": "src/app/hero-mockup.tsx",
+      "original": "rgb(211_168_60_/_0.16)",
+      "current": "rgb(211_136_37_/_0.16)"
+    },
+    {
+      "file": "src/app/landing-search.tsx",
+      "original": "#202121",
+      "current": "#201b14"
+    },
+    {
+      "file": "src/app/landing-search.tsx",
+      "original": "#171818",
+      "current": "#17130f"
+    },
+    {
+      "file": "src/app/layout.tsx",
+      "original": "#d3a83c",
+      "current": "#d38825"
+    },
+    {
+      "file": "src/app/page.tsx",
+      "original": "#bfb391",
+      "current": "#bf9159"
+    },
+    {
+      "file": "src/app/try/bible/start/bible-roadmap.tsx",
+      "original": "#202121",
+      "current": "#201b14"
+    },
+    {
+      "file": "src/app/try/bible/read/chunk-reader.tsx",
+      "original": "rgba(255,255,255,0.20)",
+      "current": "rgba(255,207,156,0.20)"
+    },
+    {
+      "file": "src/app/try/bible/read/format-chunk-text.tsx",
+      "original": "#a6453a",
+      "current": "#a63823"
+    },
+    {
+      "file": "src/app/try/bible/read/format-chunk-text.tsx",
+      "original": "#db9c8d",
+      "current": "#db7f56"
+    },
+    {
+      "file": "src/app/try/bible/map/atlas.tsx",
+      "original": "#101820",
+      "current": "#101314"
+    },
+    {
+      "file": "src/app/try/bible/map/atlas.tsx",
+      "original": "#4e7d99",
+      "current": "#4e655e"
+    },
+    {
+      "file": "src/app/try/bible/map/atlas.tsx",
+      "original": "#7fa9c4",
+      "current": "#7f8978"
+    },
+    {
+      "file": "src/app/try/bible/map/atlas.tsx",
+      "original": "#453c2c",
+      "current": "#45311b"
+    },
+    {
+      "file": "src/app/try/bible/map/atlas.tsx",
+      "original": "#393228",
+      "current": "#392918"
+    },
+    {
+      "file": "src/app/try/bible/map/atlas.tsx",
+      "original": "#302b26",
+      "current": "#302317"
+    },
+    {
+      "file": "src/app/try/bible/map/atlas.tsx",
+      "original": "#292624",
+      "current": "#291f16"
+    },
+    {
+      "file": "src/app/try/bible/map/atlas.tsx",
+      "original": "#232323",
+      "current": "#231c15"
+    },
+    {
+      "file": "src/app/try/bible/map/atlas.tsx",
+      "original": "#1e1b17",
+      "current": "#1e160e"
+    },
+    {
+      "file": "src/app/try/bible/map/atlas.tsx",
+      "original": "#1a1612",
+      "current": "#1a120b"
+    },
+    {
+      "file": "src/app/globals.css",
+      "original": "#ffffff",
+      "current": "#ffcf9c"
+    },
+    {
+      "file": "src/app/globals.css",
+      "original": "#fafafa",
+      "current": "#facb99"
+    },
+    {
+      "file": "src/app/globals.css",
+      "original": "#424547",
+      "current": "#42382b"
+    },
+    {
+      "file": "src/app/globals.css",
+      "original": "#100e0d",
+      "current": "#100b08"
+    },
+    {
+      "file": "src/app/globals.css",
+      "original": "#d3d7da",
+      "current": "#d3af85"
+    },
+    {
+      "file": "src/app/globals.css",
+      "original": "rgb(211 168 60 / 0.22)",
+      "current": "rgb(211 136 37 / 0.22)"
+    },
+    {
+      "file": "src/app/globals.css",
+      "original": "rgb(211 168 60 / 0.45)",
+      "current": "rgb(211 136 37 / 0.45)"
+    },
+    {
+      "file": "src/app/globals.css",
+      "original": "rgb(211 168 60 / 0.16)",
+      "current": "rgb(211 136 37 / 0.16)"
+    },
+    {
+      "file": "tailwind.config.ts",
+      "original": "#fafafa",
+      "current": "#facb99"
+    },
+    {
+      "file": "tailwind.config.ts",
+      "original": "#f2f2f2",
+      "current": "#f2c494"
+    },
+    {
+      "file": "tailwind.config.ts",
+      "original": "#dce0e3",
+      "current": "#dcb68b"
+    },
+    {
+      "file": "tailwind.config.ts",
+      "original": "#d3d7da",
+      "current": "#d3af85"
+    },
+    {
+      "file": "tailwind.config.ts",
+      "original": "#9a9fa3",
+      "current": "#9a8164"
+    },
+    {
+      "file": "tailwind.config.ts",
+      "original": "#75797d",
+      "current": "#75624c"
+    },
+    {
+      "file": "tailwind.config.ts",
+      "original": "#5e6266",
+      "current": "#5e503e"
+    },
+    {
+      "file": "tailwind.config.ts",
+      "original": "#424547",
+      "current": "#42382b"
+    },
+    {
+      "file": "tailwind.config.ts",
+      "original": "#282a2b",
+      "current": "#28221a"
+    },
+    {
+      "file": "tailwind.config.ts",
+      "original": "#202121",
+      "current": "#201b14"
+    },
+    {
+      "file": "tailwind.config.ts",
+      "original": "#100e0d",
+      "current": "#100b08"
+    },
+    {
+      "file": "tailwind.config.ts",
+      "original": "#0a0a0a",
+      "current": "#0a0806"
+    },
+    {
+      "file": "tailwind.config.ts",
+      "original": "#9c8343",
+      "current": "#9c6a29"
+    },
+    {
+      "file": "tailwind.config.ts",
+      "original": "#6b5a2d",
+      "current": "#6b491c"
+    },
+    {
+      "file": "tailwind.config.ts",
+      "original": "#c9ad72",
+      "current": "#c98c46"
+    },
+    {
+      "file": "tailwind.config.ts",
+      "original": "#ecc06b",
+      "current": "#ec9c41"
+    },
+    {
+      "file": "tailwind.config.ts",
+      "original": "#daba7b",
+      "current": "#da974b"
+    },
+    {
+      "file": "tailwind.config.ts",
+      "original": "#e1c793",
+      "current": "#e1a25a"
+    },
+    {
+      "file": "tailwind.config.ts",
+      "original": "#fdf8ec",
+      "current": "#fdc990"
+    },
+    {
+      "file": "tailwind.config.ts",
+      "original": "#f8eed3",
+      "current": "#f8c181"
+    },
+    {
+      "file": "tailwind.config.ts",
+      "original": "#f3e1b0",
+      "current": "#f3b76c"
+    },
+    {
+      "file": "tailwind.config.ts",
+      "original": "#ecd086",
+      "current": "#eca952"
+    },
+    {
+      "file": "tailwind.config.ts",
+      "original": "#e0b85a",
+      "current": "#e09537"
+    },
+    {
+      "file": "tailwind.config.ts",
+      "original": "#d3a83c",
+      "current": "#d38825"
+    },
+    {
+      "file": "tailwind.config.ts",
+      "original": "#a9821f",
+      "current": "#a96a13"
+    },
+    {
+      "file": "tailwind.config.ts",
+      "original": "#74571a",
+      "current": "#744710"
+    },
+    {
+      "file": "tailwind.config.ts",
+      "original": "#352a12",
+      "current": "#35220b"
+    },
+    {
+      "file": "tailwind.config.ts",
+      "original": "#1a1304",
+      "current": "#1a0f02"
+    }
+  ]
+}

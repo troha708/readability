@@ -184,8 +184,8 @@ export default function Home() {
           <FeatureMontage className="max-w-[36rem]" />
           <div className="mt-8 flex max-w-[32rem] flex-col lg:mt-0">
             {/* Section kicker: the system sans at 13px/23px, weight 400,
-                uppercase, 1px tracking, in the muted gold #bfb391. */}
-            <h2 className="text-[13px] font-normal uppercase leading-[23px] tracking-[1px] text-[#bfb391]">
+                uppercase, 1px tracking, in the muted gold #bf9159. */}
+            <h2 className="text-[13px] font-normal uppercase leading-[23px] tracking-[1px] text-[#bf9159]">
               What&rsquo;s in it
             </h2>
             {/* The list sits at its own spacing and stops where it stops. It

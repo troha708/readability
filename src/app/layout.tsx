@@ -97,7 +97,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#d3a83c",
+  themeColor: "#d38825",
 };
 
 // First visit follows the device's own light/dark setting (phones auto-switch

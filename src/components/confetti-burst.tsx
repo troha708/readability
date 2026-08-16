@@ -5,7 +5,7 @@ import { useEffect, useRef } from "react";
 // A small, subtle "party cracker" burst — a handful of confetti pieces that
 // pop outward from the center and fall away. Dependency-free (Web Animations
 // API), non-interactive, and skipped for users who prefer reduced motion.
-const COLORS = ["#f59e0b", "#fbbf24", "#fcd34d", "#f97316", "#fde68a", "#fb923c"];
+const COLORS = ["#f58007", "#fb9b16", "#fcab2f", "#f95d0d", "#fdbb54", "#fb7725"];
 
 export function ConfettiBurst({ count = 16 }: { count?: number }) {
   const ref = useRef<HTMLDivElement>(null);
