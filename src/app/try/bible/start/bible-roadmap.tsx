@@ -261,7 +261,7 @@ export function BibleRoadmap({
                 toggleBook(book.name);
               }}
               aria-expanded={hasChapters ? isExpanded : undefined}
-              className={`select-text font-scripture text-[17px] ${
+              className={`select-text font-scripture text-[18px] ${
                 hasChapters ? "cursor-pointer" : "cursor-default"
               } ${
                 isActiveBook
@@ -271,21 +271,13 @@ export function BibleRoadmap({
                     : "text-neutral-400 dark:text-neutral-600"
               }`}
             >
-              {/* A text triangle rather than an SVG — it is the bare-HTML
-                  disclosure marker, and it costs no markup. */}
-              <span
-                aria-hidden="true"
-                className="mr-1 inline-block w-3.5 select-none text-[13px] text-neutral-400 dark:text-neutral-600"
-              >
-                {hasChapters ? (isExpanded ? "▾" : "▸") : ""}
-              </span>
               {book.name}
             </a>
           </td>
           {/* Set in the English name's own type — same family, size and
               colour. dir is not a style: without it the numbered Hebrew books
               (שְׁמוּאֵל א) reorder against the Latin text around them. */}
-          <td className={`w-full pr-3 font-scripture text-[17px] ${cell} ${
+          <td className={`w-full pr-3 font-scripture text-[18px] ${cell} ${
             isActiveBook
               ? "text-gold dark:text-gold-bright"
               : hasChapters
@@ -300,7 +292,7 @@ export function BibleRoadmap({
           </td>
           {/* Same size as the title: on a contents page the figure is part of
               the line. Set smaller it reads as a UI count pinned to the row. */}
-          <td className={`w-px whitespace-nowrap text-right font-scripture text-[17px] tabular-nums text-neutral-400 dark:text-neutral-500 ${cell}`}>
+          <td className={`w-px whitespace-nowrap text-right font-scripture text-[18px] tabular-nums text-neutral-400 dark:text-neutral-500 ${cell}`}>
             {completedCount > 0
               ? `${completedCount}/${book.chapters.length}`
               : book.chapters.length}
@@ -393,14 +385,8 @@ export function BibleRoadmap({
         <button
           onClick={() => toggleSection(testament)}
           aria-expanded={isSectionExpanded}
-          className="mb-2 font-scripture text-[17px] font-semibold text-neutral-800 dark:text-neutral-300"
+          className="mb-2 font-scripture text-[18px] font-semibold text-neutral-800 dark:text-neutral-300"
         >
-          <span
-            aria-hidden="true"
-            className="mr-1 inline-block w-3.5 text-[13px] text-neutral-400 dark:text-neutral-600"
-          >
-            {isSectionExpanded ? "▾" : "▸"}
-          </span>
           {label}
         </button>
         {isSectionExpanded && (
