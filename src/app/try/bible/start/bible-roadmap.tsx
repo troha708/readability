@@ -427,7 +427,7 @@ export function BibleRoadmap({
             href={readUrl(continueTarget.book, continueTarget.chapter)}
             className="inline-flex h-[54px] items-center gap-2 rounded-lg bg-gold-fill px-[20.3px] text-[16.2px] font-bold capitalize tracking-[0.34px] text-neutral-950 transition-colors hover:bg-gold-fill-hover"
           >
-            {hasStarted ? "Continue Reading" : "Begin Reading"}
+            {hasStarted ? "Continue Reading" : "Start Reading"}
             <span className="text-xs font-normal normal-case text-neutral-950/70">
               {continueTarget.book} {continueTarget.chapter}
             </span>
