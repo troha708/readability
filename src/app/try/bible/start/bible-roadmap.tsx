@@ -404,28 +404,29 @@ export function BibleRoadmap({
     <main className="min-h-screen dark:bg-neutral-950">
       <SiteHeader />
 
-      <div className="mx-auto max-w-2xl px-4 py-8 lg:max-w-5xl">
-        {/* Continue Reading — sticky so it stays reachable while scrolling the
-            tree (and it's where a returning reader is scrolled past on load).
-            Fully opaque, on the page's own ground rather than a tint of it:
-            a translucent or absent background let book rows slide half-hidden
-            behind the two buttons, which read as debris around them. -mx-4
-            px-4 bleeds that ground to the container edges so no row shows
-            down the sides, and the gap below the bar is padding rather than
-            margin — margin isn't painted, so a row scrolling up flashed
-            through that band before it reached the opaque box. */}
-        <div className="sticky top-0 z-20 -mx-4 flex items-center justify-center gap-3 bg-white px-4 pb-6 pt-3 dark:bg-neutral-950">
-          {/* Same size, type and shape as the landing page's Start Reading —
-              solid fill, near-black bold capitalized sans, no arrow — but
-              rounder than the landing's near-square 2px corners
-              (owner-directed). The book and chapter stay: they say where this
-              resumes.
-              The fill alone is muted, off the landing's amber-400 — see
-              gold.fill in tailwind.config.ts for the derivation. Near-black
-              text on it is 10.6:1, down from 11.6:1. */}
+      {/* A spread: the title page on the left leaf, the contents on the
+          right. The left stays put while the canon scrolls past it, so the
+          way back into the book is always on screen without a bar pinned
+          over the text. Below lg the two stack, title first — the phone
+          layout, unchanged. */}
+      <div className="mx-auto max-w-2xl px-4 py-8 lg:grid lg:max-w-5xl lg:grid-cols-[17rem_minmax(0,1fr)] lg:gap-x-12">
+        {/* The landing's opening, on this page: the title, then the button
+            beneath it, both ranged left. */}
+        <div className="pb-7 lg:sticky lg:top-8 lg:self-start lg:pb-0">
+          {/* Set exactly as the landing's h1 — same face, weight, slant,
+              tracking and size steps — so the two pages open in one voice.
+              Only the colour differs, because this page has a light theme
+              and the landing does not. */}
+          <h1 className="font-scripture text-3xl/[1.2] font-semibold italic tracking-[0.005em] text-neutral-900 dark:text-white sm:text-4xl/[1.2] lg:text-[2.6rem]/[1.2]">
+            A study Bible
+          </h1>
+          {/* The landing page's Start reading button, exactly: same fill,
+              hover, near-square 2px corners, height, padding and type. The
+              book and chapter stay beside the label — they say where this
+              resumes. */}
           <Link
             href={readUrl(continueTarget.book, continueTarget.chapter)}
-            className="inline-flex h-[54px] items-center gap-2 rounded-lg bg-gold-fill px-[20.3px] text-[16.2px] font-bold capitalize tracking-[0.34px] text-neutral-950 transition-colors hover:bg-gold-fill-hover"
+            className="mt-6 inline-flex h-[54px] items-center gap-2 rounded-[2px] bg-amber-400 px-[20.3px] text-[16.2px] font-bold capitalize tracking-[0.34px] text-neutral-950 transition-colors hover:bg-amber-300"
           >
             {hasStarted ? "Continue Reading" : "Start Reading"}
             <span className="text-xs font-normal normal-case text-neutral-950/70">
@@ -434,16 +435,14 @@ export function BibleRoadmap({
           </Link>
         </div>
 
-        {/* Canonical order always: Old Testament first, New Testament after
-            it — beside it on a wide screen, beneath it on a narrow one. The
-            two columns are deliberately unequal, 39 books against 27: forcing
-            them level would mean breaking the canon across the fold. */}
-        <div className="lg:grid lg:grid-cols-2 lg:gap-x-12">
+        {/* Canonical order always: Old Testament first, New Testament under
+            it — one column, so the canon reads as one sequence. */}
+        <div className="min-w-0">
           {renderSection("Old Testament", "OT", otBooks)}
           {renderSection("New Testament", "NT", ntBooks)}
-        </div>
 
-        <SiteFooter className="mt-8 border-t-0" />
+          <SiteFooter className="mt-8 border-t-0" />
+        </div>
       </div>
 
     </main>
