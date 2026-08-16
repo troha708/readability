@@ -746,7 +746,7 @@ export function Atlas() {
     const q = full.toString();
     const fullHref = `/try/bible/map${q ? `?${q}` : ""}`;
     return (
-      <div className="relative h-screen overflow-hidden bg-[#101314] supports-[height:100dvh]:h-dvh">
+      <div className="relative h-screen overflow-hidden bg-[#101820] supports-[height:100dvh]:h-dvh">
         {failed ? (
           <div className="flex h-full items-center justify-center text-sm text-neutral-400">
             The atlas needs a connection to load.
@@ -803,7 +803,7 @@ export function Atlas() {
         className={
           muted
             ? "rounded-full border border-dashed border-neutral-300 px-2 py-0.5 text-xs font-medium tracking-[0.25px] text-neutral-500 transition-colors hover:text-amber-700 dark:border-neutral-600 dark:text-neutral-400 dark:hover:text-amber-400"
-            : "rounded-full bg-paper px-2 py-0.5 text-xs font-medium tracking-[0.25px] text-amber-700 shadow-sm transition-colors hover:bg-amber-50 dark:bg-neutral-700 dark:text-amber-400 dark:hover:bg-neutral-600"
+            : "rounded-full bg-white px-2 py-0.5 text-xs font-medium tracking-[0.25px] text-amber-700 shadow-sm transition-colors hover:bg-amber-50 dark:bg-neutral-700 dark:text-amber-400 dark:hover:bg-neutral-600"
         }
       >
         {chapterReference(book, ch)}
@@ -1027,12 +1027,12 @@ export function Atlas() {
         aria-label="Search places"
         className={
           floating
-            ? "w-full rounded-lg border border-neutral-200 bg-paper/95 px-3.5 py-2 text-sm tracking-[0.25px] text-neutral-800 shadow-lg outline-none backdrop-blur placeholder:text-neutral-400 focus:border-amber-400 dark:border-neutral-700 dark:bg-neutral-800/95 dark:text-neutral-100"
-            : "w-full rounded-lg border border-neutral-300 bg-paper px-3 py-1.5 text-sm tracking-[0.25px] text-neutral-800 outline-none placeholder:text-neutral-400 focus:border-amber-400 dark:border-neutral-600 dark:bg-neutral-800 dark:text-neutral-100"
+            ? "w-full rounded-lg border border-neutral-200 bg-white/95 px-3.5 py-2 text-sm tracking-[0.25px] text-neutral-800 shadow-lg outline-none backdrop-blur placeholder:text-neutral-400 focus:border-amber-400 dark:border-neutral-700 dark:bg-neutral-800/95 dark:text-neutral-100"
+            : "w-full rounded-lg border border-neutral-300 bg-white px-3 py-1.5 text-sm tracking-[0.25px] text-neutral-800 outline-none placeholder:text-neutral-400 focus:border-amber-400 dark:border-neutral-600 dark:bg-neutral-800 dark:text-neutral-100"
         }
       />
       {searchOpen && results.length > 0 && (
-        <ul className="absolute left-0 right-0 top-full z-20 mt-1 overflow-hidden rounded-lg border border-neutral-200 bg-paper shadow-lg dark:border-neutral-700 dark:bg-neutral-800">
+        <ul className="absolute left-0 right-0 top-full z-20 mt-1 overflow-hidden rounded-lg border border-neutral-200 bg-white shadow-lg dark:border-neutral-700 dark:bg-neutral-800">
           {results.map((r) => (
             <li key={r.place.link}>
               <button
@@ -1119,7 +1119,7 @@ export function Atlas() {
           aria-pressed={minMentions === min}
           className={`rounded-full px-2 py-0.5 text-xs font-medium tracking-[0.25px] transition-colors ${
             minMentions === min
-              ? "bg-paper text-amber-700 shadow-sm dark:bg-neutral-700 dark:text-amber-400"
+              ? "bg-white text-amber-700 shadow-sm dark:bg-neutral-700 dark:text-amber-400"
               : "text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-300"
           }`}
         >
@@ -1216,15 +1216,15 @@ export function Atlas() {
       <summary className={`cursor-pointer select-none ${sideHeading}`}>Key</summary>
       <div className="mt-1.5 space-y-1.5">
         {keyRow(
-          <circle r="4.4" strokeWidth="1.4" className="fill-amber-600 stroke-paper dark:fill-amber-400 dark:stroke-neutral-900" />,
+          <circle r="4.4" strokeWidth="1.4" className="fill-amber-600 stroke-white dark:fill-amber-400 dark:stroke-neutral-900" />,
           "Settlement",
         )}
         {keyRow(
-          <circle r="4.4" strokeWidth="1.4" className="fill-[#4e655e] stroke-paper dark:fill-[#7f8978] dark:stroke-neutral-900" />,
+          <circle r="4.4" strokeWidth="1.4" className="fill-[#4e7d99] stroke-white dark:fill-[#7fa9c4] dark:stroke-neutral-900" />,
           "Water — sea, river, spring",
         )}
         {keyRow(
-          <path d="M0 -5.2 L5 3.8 L-5 3.8 Z" strokeWidth="1.2" className="fill-amber-700 stroke-paper dark:fill-amber-500 dark:stroke-neutral-900" />,
+          <path d="M0 -5.2 L5 3.8 L-5 3.8 Z" strokeWidth="1.2" className="fill-amber-700 stroke-white dark:fill-amber-500 dark:stroke-neutral-900" />,
           "Natural feature — mountain, pass",
         )}
         {keyRow(
@@ -1237,15 +1237,15 @@ export function Atlas() {
         )}
         {keyRow(
           <>
-            <circle r="8.5" strokeWidth="1.5" className="fill-amber-600 stroke-paper dark:fill-amber-500 dark:stroke-neutral-900" />
-            <text textAnchor="middle" dy="3" className="fill-paper text-[9px] font-bold dark:fill-neutral-950">3</text>
+            <circle r="8.5" strokeWidth="1.5" className="fill-amber-600 stroke-white dark:fill-amber-500 dark:stroke-neutral-900" />
+            <text textAnchor="middle" dy="3" className="fill-white text-[9px] font-bold dark:fill-neutral-950">3</text>
           </>,
           "Several places together — zoom in to separate",
         )}
         {keyRow(
           <>
-            <rect x="-8" y="-8" width="16" height="16" rx="4" strokeWidth="1.5" className="fill-amber-600 stroke-paper dark:fill-amber-500 dark:stroke-neutral-900" />
-            <text textAnchor="middle" dy="3" className="fill-paper text-[9px] font-bold dark:fill-neutral-950">1</text>
+            <rect x="-8" y="-8" width="16" height="16" rx="4" strokeWidth="1.5" className="fill-amber-600 stroke-white dark:fill-amber-500 dark:stroke-neutral-900" />
+            <text textAnchor="middle" dy="3" className="fill-white text-[9px] font-bold dark:fill-neutral-950">1</text>
           </>,
           "Journey stop, numbered in order",
         )}
@@ -1256,13 +1256,13 @@ export function Atlas() {
           <div className="mt-1.5 space-y-1">
             {(
               [
-                ["#45311b", "above 2,500 m — high peaks"],
-                ["#392918", "1,500–2,500 m — mountains"],
-                ["#302317", "700–1,500 m — central ridges"],
-                ["#291f16", "300–700 m — hill country"],
-                ["#231c15", "0–300 m — plains"],
-                ["#1e160e", "0 to −200 m — below sea level"],
-                ["#1a120b", "below −200 m — the deep rift"],
+                ["#453c2c", "above 2,500 m — high peaks"],
+                ["#393228", "1,500–2,500 m — mountains"],
+                ["#302b26", "700–1,500 m — central ridges"],
+                ["#292624", "300–700 m — hill country"],
+                ["#232323", "0–300 m — plains"],
+                ["#1e1b17", "0 to −200 m — below sea level"],
+                ["#1a1612", "below −200 m — the deep rift"],
               ] as const
             ).map(([color, label]) => (
               <span key={color} className="flex items-center gap-2">
@@ -1294,9 +1294,9 @@ export function Atlas() {
   return (
     // h-screen fallback: 100dvh is dropped by iOS Safari < 16.4, which would
     // leave the flex column with height:auto and a 0-height map.
-    <div className="flex h-screen flex-col bg-paper supports-[height:100dvh]:h-dvh xl:flex-row dark:bg-neutral-925">
+    <div className="flex h-screen flex-col bg-white supports-[height:100dvh]:h-dvh xl:flex-row dark:bg-neutral-925">
       {/* Header (below xl) */}
-      <header className="border-b border-neutral-200 bg-paper/95 px-4 py-3 xl:hidden dark:border-neutral-700 dark:bg-neutral-925/95">
+      <header className="border-b border-neutral-200 bg-white/95 px-4 py-3 xl:hidden dark:border-neutral-700 dark:bg-neutral-925/95">
         <div className="mx-auto flex max-w-5xl items-center gap-2">
           <Logo compact />
           <div className="h-5 w-px shrink-0 bg-neutral-200 dark:bg-neutral-700" />
@@ -1319,7 +1319,7 @@ export function Atlas() {
             </>
           )}
           {scopeSelect(
-            "rounded-full border border-neutral-200 bg-paper px-2 py-0.5 text-xs font-medium tracking-[0.25px] text-neutral-600 outline-none dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-300",
+            "rounded-full border border-neutral-200 bg-white px-2 py-0.5 text-xs font-medium tracking-[0.25px] text-neutral-600 outline-none dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-300",
           )}
           {modernChip}
           {journeyNote}
@@ -1331,7 +1331,7 @@ export function Atlas() {
       {/* Sidebar (xl+) — the map keeps the full viewport height */}
       {/* pb-16: the floating notes FAB sits over the sidebar's bottom-left
           corner — the key's last lines need room to scroll clear of it. */}
-      <aside className="hidden w-52 shrink-0 flex-col gap-5 overflow-y-auto border-r border-neutral-200 bg-paper/95 px-3.5 pb-16 pt-4 xl:flex dark:border-neutral-700 dark:bg-neutral-925/95">
+      <aside className="hidden w-52 shrink-0 flex-col gap-5 overflow-y-auto border-r border-neutral-200 bg-white/95 px-3.5 pb-16 pt-4 xl:flex dark:border-neutral-700 dark:bg-neutral-925/95">
         <div>
           <div className="flex items-center gap-2">
             <Logo compact />
@@ -1349,7 +1349,7 @@ export function Atlas() {
           <div>
             <div className={sideHeading}>Scope</div>
             {scopeSelect(
-              "mt-1.5 w-full rounded-lg border border-neutral-200 bg-paper px-2.5 py-1.5 text-sm font-medium tracking-[0.25px] text-neutral-600 outline-none dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-300",
+              "mt-1.5 w-full rounded-lg border border-neutral-200 bg-white px-2.5 py-1.5 text-sm font-medium tracking-[0.25px] text-neutral-600 outline-none dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-300",
             )}
           </div>
         )}
@@ -1446,7 +1446,7 @@ export function Atlas() {
 
             {/* Detail panel */}
             {panel && (
-              <div className="absolute bottom-3 left-3 right-3 max-h-[45%] overflow-y-auto rounded-xl border border-neutral-200 bg-paper/95 p-4 shadow-lg backdrop-blur dark:border-neutral-700 dark:bg-neutral-900/95 sm:right-auto sm:w-96">
+              <div className="absolute bottom-3 left-3 right-3 max-h-[45%] overflow-y-auto rounded-xl border border-neutral-200 bg-white/95 p-4 shadow-lg backdrop-blur dark:border-neutral-700 dark:bg-neutral-900/95 sm:right-auto sm:w-96">
                 <button
                   onClick={() => {
                     setPanel(null);

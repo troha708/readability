@@ -278,12 +278,12 @@ export function PlacesMap<T extends MapPlaceBase>({
   // always renders its dark palette — see the `dark` class on the
   // container — the light values are kept for coherence.)
   const RELIEF_FILLS = [
-    "fill-[#e9b97f] dark:fill-[#1e160e]",
-    "fill-[#dfaf75] dark:fill-[#1a120b]",
-    "fill-[#f1bd84] dark:fill-[#291f16]",
-    "fill-[#e6b075] dark:fill-[#302317]",
-    "fill-[#d9a264] dark:fill-[#392918]",
-    "fill-[#cb9254] dark:fill-[#45311b]",
+    "fill-[#e9e4d0] dark:fill-[#1e1b17]",
+    "fill-[#dfd8c0] dark:fill-[#1a1612]",
+    "fill-[#f1e9d8] dark:fill-[#292624]",
+    "fill-[#e6d9bf] dark:fill-[#302b26]",
+    "fill-[#d9c7a4] dark:fill-[#393228]",
+    "fill-[#cbb489] dark:fill-[#453c2c]",
   ];
   // Relief is clipped to the land shape: the depression bands come from
   // elevation data alone, and any water body landlocked at the DEM's
@@ -723,7 +723,7 @@ export function PlacesMap<T extends MapPlaceBase>({
             dy={smallLbl ? "3" : "3.6"}
             paintOrder="stroke"
             strokeWidth={smallLbl ? "2.5" : "3"}
-            className={`${smallLbl ? "text-[9.5px]" : "text-[11px]"} font-medium italic tracking-wide stroke-paper dark:stroke-neutral-900 ${
+            className={`${smallLbl ? "text-[9.5px]" : "text-[11px]"} font-medium italic tracking-wide stroke-white dark:stroke-neutral-900 ${
               isSelected
                 ? "fill-amber-700 underline dark:fill-amber-300"
                 : "fill-stone-600 hover:fill-amber-700 dark:fill-stone-300 dark:hover:fill-amber-300"
@@ -785,13 +785,13 @@ export function PlacesMap<T extends MapPlaceBase>({
           <>
             <circle
               r="8.5"
-              className="fill-amber-600 stroke-paper dark:fill-amber-500 dark:stroke-neutral-900"
+              className="fill-amber-600 stroke-white dark:fill-amber-500 dark:stroke-neutral-900"
               strokeWidth="1.5"
             />
             <text
               textAnchor="middle"
               dy="3"
-              className="pointer-events-none fill-paper text-[9px] font-bold dark:fill-neutral-950"
+              className="pointer-events-none fill-white text-[9px] font-bold dark:fill-neutral-950"
             >
               {c.members.length}
             </text>
@@ -805,13 +805,13 @@ export function PlacesMap<T extends MapPlaceBase>({
               width="16"
               height="16"
               rx="4"
-              className="fill-amber-600 stroke-paper dark:fill-amber-500 dark:stroke-neutral-900"
+              className="fill-amber-600 stroke-white dark:fill-amber-500 dark:stroke-neutral-900"
               strokeWidth="1.5"
             />
             <text
               textAnchor="middle"
               dy="3"
-              className="pointer-events-none fill-paper text-[9px] font-bold dark:fill-neutral-950"
+              className="pointer-events-none fill-white text-[9px] font-bold dark:fill-neutral-950"
             >
               {first.seq}
             </text>
@@ -827,15 +827,15 @@ export function PlacesMap<T extends MapPlaceBase>({
           <path
             d="M0 -5.2 L5 3.8 L-5 3.8 Z"
             strokeWidth="1.2"
-            className={`fill-amber-700 stroke-paper dark:fill-amber-500 dark:stroke-neutral-900 ${uncertain ? "opacity-75" : ""}`}
+            className={`fill-amber-700 stroke-white dark:fill-amber-500 dark:stroke-neutral-900 ${uncertain ? "opacity-75" : ""}`}
           />
         ) : (
           <circle
             r="4.4"
             strokeWidth="1.4"
-            className={`stroke-paper dark:stroke-neutral-900 ${
+            className={`stroke-white dark:stroke-neutral-900 ${
               first.kind === 1
-                ? "fill-[#4e655e] dark:fill-[#7f8978]"
+                ? "fill-[#4e7d99] dark:fill-[#7fa9c4]"
                 : "fill-amber-600 dark:fill-amber-400"
             } ${uncertain ? "opacity-75" : ""}`}
           />
@@ -857,7 +857,7 @@ export function PlacesMap<T extends MapPlaceBase>({
             strokeWidth="2.5"
             // Not clickable: a long label ("Corinth +1") can lie across a
             // neighbor's dot and would steal its taps.
-            className="pointer-events-none fill-neutral-800 stroke-paper text-[11px] font-medium dark:fill-neutral-100 dark:stroke-neutral-900"
+            className="pointer-events-none fill-neutral-800 stroke-white text-[11px] font-medium dark:fill-neutral-100 dark:stroke-neutral-900"
           >
             {label}
           </text>
@@ -871,7 +871,7 @@ export function PlacesMap<T extends MapPlaceBase>({
             dy="14"
             paintOrder="stroke"
             strokeWidth="2.5"
-            className="pointer-events-none fill-neutral-500 stroke-paper text-[9px] dark:fill-neutral-400 dark:stroke-neutral-900"
+            className="pointer-events-none fill-neutral-500 stroke-white text-[9px] dark:fill-neutral-400 dark:stroke-neutral-900"
           >
             {sub}
           </text>
@@ -904,14 +904,14 @@ export function PlacesMap<T extends MapPlaceBase>({
           <div className="h-5 w-5 animate-spin rounded-full border-2 border-neutral-300 border-t-amber-500" />
         </div>
       ) : (
-        <svg width={size.w} height={size.h} className="block bg-[#d9b990] dark:bg-[#101314]">
+        <svg width={size.w} height={size.h} className="block bg-[#d9e4ec] dark:bg-[#101820]">
           <g transform={`translate(${view.tx} ${view.ty}) scale(${view.k})`}>
             <path
               d={paths.land}
               fillRule="evenodd"
               vectorEffect="non-scaling-stroke"
               strokeWidth="1"
-              className="fill-[#fac894] stroke-[#b09d7e] dark:fill-[#231c15] dark:stroke-[#3e3c33]"
+              className="fill-[#faf7f2] stroke-[#b0c2ce] dark:fill-[#232323] dark:stroke-[#3e4a54]"
             />
             <defs>
               <clipPath id={landClipId}>
@@ -928,13 +928,13 @@ export function PlacesMap<T extends MapPlaceBase>({
               fill="none"
               vectorEffect="non-scaling-stroke"
               strokeWidth="1"
-              className="stroke-[#a99e82] dark:stroke-[#333a37]"
+              className="stroke-[#a9c3d5] dark:stroke-[#33475a]"
             />
             <path
               d={paths.lakes}
               vectorEffect="non-scaling-stroke"
               strokeWidth="1"
-              className="fill-[#d9b990] stroke-[#b09d7e] dark:fill-[#101314] dark:stroke-[#3e3c33]"
+              className="fill-[#d9e4ec] stroke-[#b0c2ce] dark:fill-[#101820] dark:stroke-[#3e4a54]"
             />
             {routePath && (
               <path
@@ -962,7 +962,7 @@ export function PlacesMap<T extends MapPlaceBase>({
                   textAnchor="middle"
                   className={`pointer-events-none italic ${
                     kind === 1 ? "text-[10px]" : "text-[11px]"
-                  } fill-[#7f7c69] dark:fill-[#4e5349]`}
+                  } fill-[#7f99ab] dark:fill-[#4e6678]`}
                 >
                   {text}
                 </text>
@@ -980,7 +980,7 @@ export function PlacesMap<T extends MapPlaceBase>({
 
       {/* Zoom controls */}
       {controls && view && (
-        <div className="absolute right-2 top-2 flex flex-col overflow-hidden rounded-lg border border-neutral-200 bg-paper/95 shadow-sm dark:border-neutral-600 dark:bg-neutral-800/95">
+        <div className="absolute right-2 top-2 flex flex-col overflow-hidden rounded-lg border border-neutral-200 bg-white/95 shadow-sm dark:border-neutral-600 dark:bg-neutral-800/95">
           {[
             { label: <>+</>, title: "Zoom in", fn: () => zoomAt(1.6, size.w / 2, size.h / 2) },
             { label: <>−</>, title: "Zoom out", fn: () => zoomAt(1 / 1.6, size.w / 2, size.h / 2) },
@@ -1040,7 +1040,7 @@ export function PlacesMap<T extends MapPlaceBase>({
 
       {/* Declutter hint */}
       {controls && hiddenCount > 0 && (
-        <div className={`pointer-events-none absolute ${hintClassName} rounded-md bg-paper/80 px-2 py-1 text-[10px] font-medium text-neutral-500 dark:bg-neutral-900/80 dark:text-neutral-400`}>
+        <div className={`pointer-events-none absolute ${hintClassName} rounded-md bg-white/80 px-2 py-1 text-[10px] font-medium text-neutral-500 dark:bg-neutral-900/80 dark:text-neutral-400`}>
           {hiddenCount} more place{hiddenCount === 1 ? "" : "s"} — zoom in
         </div>
       )}

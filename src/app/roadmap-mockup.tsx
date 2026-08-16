@@ -93,7 +93,7 @@ export function RoadmapMockup() {
 
         {/* Matthew — not started */}
         <div className="relative py-2.5 pl-8">
-          <div className="absolute -left-[9px] top-3.5 h-4 w-4 rounded-full border-2 border-neutral-300 bg-paper dark:border-neutral-600 dark:bg-neutral-900" />
+          <div className="absolute -left-[9px] top-3.5 h-4 w-4 rounded-full border-2 border-neutral-300 bg-white dark:border-neutral-600 dark:bg-neutral-900" />
           <div className="flex items-center gap-2">
             <h3 className="text-sm font-semibold text-neutral-800 dark:text-neutral-200">Matthew</h3>
             <span className="text-[0.65rem] text-neutral-400 dark:text-neutral-500">28 ch.</span>
@@ -102,7 +102,7 @@ export function RoadmapMockup() {
 
         {/* Mark — not started */}
         <div className="relative py-2.5 pl-8">
-          <div className="absolute -left-[9px] top-3.5 h-4 w-4 rounded-full border-2 border-neutral-300 bg-paper dark:border-neutral-600 dark:bg-neutral-900" />
+          <div className="absolute -left-[9px] top-3.5 h-4 w-4 rounded-full border-2 border-neutral-300 bg-white dark:border-neutral-600 dark:bg-neutral-900" />
           <div className="flex items-center gap-2">
             <h3 className="text-sm font-semibold text-neutral-800 dark:text-neutral-200">Mark</h3>
             <span className="text-[0.65rem] text-neutral-400 dark:text-neutral-500">16 ch.</span>
@@ -111,7 +111,7 @@ export function RoadmapMockup() {
 
         {/* Luke — not started */}
         <div className="relative py-2.5 pl-8">
-          <div className="absolute -left-[9px] top-3.5 h-4 w-4 rounded-full border-2 border-neutral-300 bg-paper dark:border-neutral-600 dark:bg-neutral-900" />
+          <div className="absolute -left-[9px] top-3.5 h-4 w-4 rounded-full border-2 border-neutral-300 bg-white dark:border-neutral-600 dark:bg-neutral-900" />
           <div className="flex items-center gap-2">
             <h3 className="text-sm font-semibold text-neutral-800 dark:text-neutral-200">Luke</h3>
             <span className="text-[0.65rem] text-neutral-400 dark:text-neutral-500">24 ch.</span>
@@ -120,7 +120,7 @@ export function RoadmapMockup() {
 
         {/* Acts — not started */}
         <div className="relative py-2.5 pl-8">
-          <div className="absolute -left-[9px] top-3.5 h-4 w-4 rounded-full border-2 border-neutral-300 bg-paper dark:border-neutral-600 dark:bg-neutral-900" />
+          <div className="absolute -left-[9px] top-3.5 h-4 w-4 rounded-full border-2 border-neutral-300 bg-white dark:border-neutral-600 dark:bg-neutral-900" />
           <div className="flex items-center gap-2">
             <h3 className="text-sm font-semibold text-neutral-800 dark:text-neutral-200">Acts</h3>
             <span className="text-[0.65rem] text-neutral-400 dark:text-neutral-500">28 ch.</span>
@@ -129,7 +129,7 @@ export function RoadmapMockup() {
 
         {/* Romans — not started */}
         <div className="relative py-2.5 pl-8">
-          <div className="absolute -left-[9px] top-3.5 h-4 w-4 rounded-full border-2 border-neutral-300 bg-paper dark:border-neutral-600 dark:bg-neutral-900" />
+          <div className="absolute -left-[9px] top-3.5 h-4 w-4 rounded-full border-2 border-neutral-300 bg-white dark:border-neutral-600 dark:bg-neutral-900" />
           <div className="flex items-center gap-2">
             <h3 className="text-sm font-semibold text-neutral-800 dark:text-neutral-200">Romans</h3>
             <span className="text-[0.65rem] text-neutral-400 dark:text-neutral-500">16 ch.</span>

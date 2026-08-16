@@ -760,9 +760,9 @@ export function Dictionary({
   const showingArticle = Boolean(entryId);
 
   return (
-    <div className="min-h-screen bg-paper dark:bg-neutral-925">
+    <div className="min-h-screen bg-white dark:bg-neutral-925">
       {/* Header */}
-      <header className="sticky top-0 z-10 border-b border-neutral-200 bg-paper/90 backdrop-blur dark:border-neutral-800 dark:bg-neutral-925/90">
+      <header className="sticky top-0 z-10 border-b border-neutral-200 bg-white/90 backdrop-blur dark:border-neutral-800 dark:bg-neutral-925/90">
         <div className="mx-auto flex max-w-3xl items-center gap-2 px-4 py-3">
           <span className="mr-1 shrink-0">
             <Logo compact />
@@ -799,7 +799,7 @@ export function Dictionary({
               if (v && entryId) router.push(PATH);
             }}
             placeholder="Search the dictionary…"
-            className="w-full rounded-lg border border-neutral-300 bg-paper px-3 py-2 text-sm text-neutral-900 placeholder:text-neutral-400 focus:border-amber-500 focus:outline-none focus:ring-1 focus:ring-amber-500 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-100"
+            className="w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm text-neutral-900 placeholder:text-neutral-400 focus:border-amber-500 focus:outline-none focus:ring-1 focus:ring-amber-500 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-100"
             autoComplete="off"
           />
         </div>

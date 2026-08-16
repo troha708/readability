@@ -16,8 +16,8 @@ export default function manifest(): MetadataRoute.Manifest {
     scope: "/",
     display: "standalone",
     // Splash ground — tracks the dark reading ground (neutral-925).
-    background_color: "#100b08",
-    theme_color: "#d38825",
+    background_color: "#100e0d",
+    theme_color: "#d3a83c",
     categories: ["education", "books", "lifestyle"],
     icons: [
       { src: "/icons/icon-192.png", sizes: "192x192", type: "image/png", purpose: "any" },

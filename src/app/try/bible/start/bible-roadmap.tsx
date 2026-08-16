@@ -419,7 +419,7 @@ export function BibleRoadmap({
   }
 
 
-  // Dark theme opts out of the body's #201b14 onto the landing's
+  // Dark theme opts out of the body's #202121 onto the landing's
   // near-black, so landing → library reads as one surface.
   return (
     <main className="min-h-screen dark:bg-neutral-950">
@@ -450,7 +450,7 @@ export function BibleRoadmap({
             down the sides, and the gap below the bar is padding rather than
             margin — margin isn't painted, so a row scrolling up flashed
             through that band before it reached the opaque box. */}
-        <div className="sticky top-0 z-20 -mx-4 flex items-center justify-center gap-3 bg-paper px-4 pb-6 pt-3 dark:bg-neutral-950">
+        <div className="sticky top-0 z-20 -mx-4 flex items-center justify-center gap-3 bg-white px-4 pb-6 pt-3 dark:bg-neutral-950">
           {/* Same size, type and shape as the landing page's Start Reading —
               solid fill, near-black bold capitalized sans, no arrow — but
               rounder than the landing's near-square 2px corners
@@ -470,7 +470,7 @@ export function BibleRoadmap({
           </Link>
           <Link
             href="/try/bible/highlights"
-            className="inline-flex items-center gap-1.5 rounded-lg border border-neutral-200 bg-paper px-4 py-2.5 text-sm font-medium text-neutral-600 shadow-sm transition-colors hover:border-amber-300 hover:text-amber-700 dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-400 dark:hover:border-amber-700 dark:hover:text-amber-400"
+            className="inline-flex items-center gap-1.5 rounded-lg border border-neutral-200 bg-white px-4 py-2.5 text-sm font-medium text-neutral-600 shadow-sm transition-colors hover:border-amber-300 hover:text-amber-700 dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-400 dark:hover:border-amber-700 dark:hover:text-amber-400"
           >
             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Z" />

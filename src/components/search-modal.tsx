@@ -234,7 +234,7 @@ export function SearchModal({
       />
 
       {/* Modal */}
-      <div className="relative mx-4 w-full max-w-lg rounded-xl border border-neutral-200 bg-paper shadow-2xl dark:border-neutral-700 dark:bg-neutral-900">
+      <div className="relative mx-4 w-full max-w-lg rounded-xl border border-neutral-200 bg-white shadow-2xl dark:border-neutral-700 dark:bg-neutral-900">
         {/* Search input */}
         <div className="flex items-center gap-3 border-b border-neutral-200 px-4 py-3 dark:border-neutral-700">
           <svg

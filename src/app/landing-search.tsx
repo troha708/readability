@@ -214,7 +214,7 @@ export function LandingSearch({ className }: { className?: string } = {}) {
 
   return (
     // The search reads as a field: a whisper of the surface tone over the
-    // black bar (60% #201b14 ≈ #17130f), no rules around it. On phones it
+    // black bar (60% #202121 ≈ #171818), no rules around it. On phones it
     // takes its own full-width row under the logo.
     <div
       className={`relative ${
@@ -251,7 +251,7 @@ export function LandingSearch({ className }: { className?: string } = {}) {
       </div>
 
       {showPanel && (
-        <div className="absolute left-0 top-full z-30 mt-1 max-h-[70vh] w-full overflow-y-auto rounded-xl border border-neutral-200 bg-paper py-1 shadow-xl dark:border-neutral-800 dark:bg-neutral-900 md:w-[28rem]">
+        <div className="absolute left-0 top-full z-30 mt-1 max-h-[70vh] w-full overflow-y-auto rounded-xl border border-neutral-200 bg-white py-1 shadow-xl dark:border-neutral-800 dark:bg-neutral-900 md:w-[28rem]">
           {rows.map((row, i) => (
             <div key={i}>
               {i === firstDict && <p className={groupHeading}>Dictionary</p>}

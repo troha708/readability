@@ -469,7 +469,7 @@ function getParserOptions(
       if (tag === "wj") {
         if (redLetter) {
           return (
-            <span className="text-[#a63823] dark:text-[#db7f56]">
+            <span className="text-[#a6453a] dark:text-[#db9c8d]">
               {children}
             </span>
           );

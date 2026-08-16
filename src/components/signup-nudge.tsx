@@ -106,7 +106,7 @@ export function SignupNudge() {
 
   return (
     <div className="fixed inset-x-0 bottom-0 z-50 flex justify-center px-4 pb-[calc(env(safe-area-inset-bottom)+1rem)] pointer-events-none">
-      <div className="pointer-events-auto flex w-full max-w-sm items-start gap-3 rounded-2xl border border-neutral-200 bg-paper p-4 shadow-2xl dark:border-neutral-700 dark:bg-neutral-900">
+      <div className="pointer-events-auto flex w-full max-w-sm items-start gap-3 rounded-2xl border border-neutral-200 bg-white p-4 shadow-2xl dark:border-neutral-700 dark:bg-neutral-900">
         <p className="text-sm leading-relaxed text-neutral-600 dark:text-neutral-300">
           You can{" "}
           <Link

@@ -181,7 +181,7 @@ export function Quiz({
 
   if (phase === "review") {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-paper px-4 dark:bg-neutral-925">
+      <div className="flex min-h-screen items-center justify-center bg-white px-4 dark:bg-neutral-925">
         <div className="w-full max-w-md text-center">
           <div className="mx-auto mb-6 flex h-28 w-28 items-center justify-center rounded-full bg-amber-50 dark:bg-amber-900/30">
             <span className="text-4xl font-bold text-amber-600 dark:text-amber-400">
@@ -239,7 +239,7 @@ export function Quiz({
     else message = "Perfect — every question answered correctly!";
 
     return (
-      <div className="flex min-h-screen items-center justify-center bg-paper px-4 dark:bg-neutral-925">
+      <div className="flex min-h-screen items-center justify-center bg-white px-4 dark:bg-neutral-925">
         <div className="w-full max-w-md text-center">
           <div className="relative mx-auto mb-6 flex h-28 w-28 items-center justify-center rounded-full bg-amber-50 dark:bg-amber-900/30">
             {bookComplete && <ConfettiBurst />}
@@ -330,7 +330,7 @@ export function Quiz({
     if (!showFeedback) {
       return (
         base +
-        "border-neutral-200 bg-paper text-neutral-700 hover:border-amber-300 hover:bg-amber-50 active:scale-[0.98] dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-300 dark:hover:border-amber-600 dark:hover:bg-amber-900/20"
+        "border-neutral-200 bg-white text-neutral-700 hover:border-amber-300 hover:bg-amber-50 active:scale-[0.98] dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-300 dark:hover:border-amber-600 dark:hover:bg-amber-900/20"
       );
     }
     if (normalize(option) === normalize(current!.answer)) {
@@ -352,9 +352,9 @@ export function Quiz({
   }
 
   return (
-    <div className="min-h-screen bg-paper dark:bg-neutral-925">
+    <div className="min-h-screen bg-white dark:bg-neutral-925">
       {/* Header */}
-      <header className="sticky top-0 z-10 border-b border-neutral-200 bg-paper/95 px-4 py-3 backdrop-blur dark:border-neutral-700 dark:bg-neutral-925/95">
+      <header className="sticky top-0 z-10 border-b border-neutral-200 bg-white/95 px-4 py-3 backdrop-blur dark:border-neutral-700 dark:bg-neutral-925/95">
         <div className="mx-auto max-w-2xl">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
@@ -444,7 +444,7 @@ export function Quiz({
                   autoFocus
                   className={`w-full rounded-xl border-2 px-4 py-3.5 text-sm font-medium outline-none transition-all placeholder:text-neutral-400 ${
                     !showFeedback
-                      ? "border-neutral-200 bg-paper text-neutral-700 focus:border-amber-400 dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-300 dark:placeholder:text-neutral-600 dark:focus:border-amber-500"
+                      ? "border-neutral-200 bg-white text-neutral-700 focus:border-amber-400 dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-300 dark:placeholder:text-neutral-600 dark:focus:border-amber-500"
                       : wasCorrect
                         ? "border-amber-500 bg-amber-50 text-amber-700 dark:border-amber-500 dark:bg-amber-900/30 dark:text-amber-400"
                         : "border-red-400 bg-red-50 text-red-700 dark:border-red-500 dark:bg-red-900/30 dark:text-red-400"

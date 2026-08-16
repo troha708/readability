@@ -1064,7 +1064,7 @@ export function HeroMockup({ caption }: { caption?: string }) {
       <span
         onClick={() => openVerse(num)}
         title="Verse tools"
-        className={`cursor-pointer rounded-sm transition-colors hover:bg-[rgb(211_136_37_/_0.16)] ${bg ?? ""}`}
+        className={`cursor-pointer rounded-sm transition-colors hover:bg-[rgb(211_168_60_/_0.16)] ${bg ?? ""}`}
       >
         {text}
         {notes[num] && <span className="ml-0.5 align-super text-[0.6em] text-neutral-500">✎</span>}
@@ -1075,11 +1075,11 @@ export function HeroMockup({ caption }: { caption?: string }) {
   return (
     <>
     <style>{`
-      .hero-mockup-scroll { scrollbar-width: thin; scrollbar-color: #9a8164 #140e09; }
+      .hero-mockup-scroll { scrollbar-width: thin; scrollbar-color: #9a9fa3 #14110f; }
       .hero-mockup-scroll::-webkit-scrollbar { width: 12px; }
-      .hero-mockup-scroll::-webkit-scrollbar-track { background: #140e09; }
-      .hero-mockup-scroll::-webkit-scrollbar-thumb { background: #9a8164; border-radius: 6px; border: 2px solid #140e09; }
-      .hero-mockup-scroll::-webkit-scrollbar-thumb:hover { background: #c49f78; }
+      .hero-mockup-scroll::-webkit-scrollbar-track { background: #14110f; }
+      .hero-mockup-scroll::-webkit-scrollbar-thumb { background: #9a9fa3; border-radius: 6px; border: 2px solid #14110f; }
+      .hero-mockup-scroll::-webkit-scrollbar-thumb:hover { background: #c4c4c4; }
     `}</style>
     {/* 5% down from full size. Scaled rather than narrowed: the app inside
         is built from fixed-px type, so a smaller box would only reflow it and

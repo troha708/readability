@@ -82,7 +82,7 @@ export function ChapterMapSheet({
       <div className="absolute inset-0 bg-black/40" onClick={onClose} />
 
       {/* Sheet */}
-      <div className="relative flex max-h-[85vh] w-full max-w-2xl flex-col rounded-t-2xl border border-b-0 border-neutral-200 bg-paper shadow-2xl dark:border-neutral-700 dark:bg-neutral-900">
+      <div className="relative flex max-h-[85vh] w-full max-w-2xl flex-col rounded-t-2xl border border-b-0 border-neutral-200 bg-white shadow-2xl dark:border-neutral-700 dark:bg-neutral-900">
         {/* Header */}
         <div className="flex items-center justify-between px-5 pb-2 pt-3">
           <span className="text-base font-semibold text-amber-700 dark:text-amber-400">
@@ -180,7 +180,7 @@ export function ChapterMapSheet({
                           className={
                             muted
                               ? "underline decoration-neutral-300 underline-offset-2 hover:text-amber-700 dark:hover:text-amber-400"
-                              : "rounded-full bg-paper px-2 py-0.5 text-xs font-medium text-amber-700 shadow-sm transition-colors hover:bg-amber-50 dark:bg-neutral-700 dark:text-amber-400 dark:hover:bg-neutral-600"
+                              : "rounded-full bg-white px-2 py-0.5 text-xs font-medium text-amber-700 shadow-sm transition-colors hover:bg-amber-50 dark:bg-neutral-700 dark:text-amber-400 dark:hover:bg-neutral-600"
                           }
                         >
                           v. {v}

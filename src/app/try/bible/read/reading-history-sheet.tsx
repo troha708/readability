@@ -43,7 +43,7 @@ export function ReadingHistorySheet({ onClose }: { onClose: () => void }) {
         role="dialog"
         aria-modal="true"
         aria-label="Reading history"
-        className="sheet-backdrop relative flex max-h-[85vh] w-full max-w-2xl flex-col rounded-t-2xl border border-b-0 border-neutral-200 bg-paper shadow-2xl dark:border-neutral-700 dark:bg-neutral-900"
+        className="sheet-backdrop relative flex max-h-[85vh] w-full max-w-2xl flex-col rounded-t-2xl border border-b-0 border-neutral-200 bg-white shadow-2xl dark:border-neutral-700 dark:bg-neutral-900"
       >
         <div className="flex items-center justify-between px-5 pb-2 pt-3">
           <span className="font-display text-base font-bold text-neutral-900 dark:text-white">
