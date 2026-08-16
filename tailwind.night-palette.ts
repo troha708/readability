@@ -4,7 +4,7 @@
 // the components borrow sit in the same night light as the palette proper.
 // The trailing comment on each line is the neutral (D65) value it came from.
 export const nightPalette = {
-  white: "#ffcf9c", // #ffffff
+  paper: "#ffcf9c", // #ffffff
   red: {
     50: "#fec494", // #fef2f2
     100: "#feb78a", // #fee2e2

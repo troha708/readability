@@ -50,7 +50,7 @@ export default async function QuizSectionPage({ params }: Props) {
   const count = sectionQuestionCount(slug);
 
   return (
-    <main className="flex min-h-screen flex-col bg-white dark:bg-neutral-950">
+    <main className="flex min-h-screen flex-col bg-paper dark:bg-neutral-950">
       <nav className="flex items-center justify-between px-6 py-4">
         <Logo />
         <Link

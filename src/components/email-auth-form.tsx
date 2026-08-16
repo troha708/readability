@@ -47,7 +47,7 @@ const COPY: Record<"login" | "signup", Copy> = {
 // measures 2.0:1, far below the 4.5:1 floor. gold.fill under neutral-950 is
 // 8.1:1.
 const FIELD =
-  "w-full rounded-lg border border-neutral-300 bg-white px-4 py-2.5 font-scripture text-neutral-900 outline-none transition-colors placeholder:text-neutral-400 focus:border-gold focus:ring-2 focus:ring-gold/20 dark:border-neutral-700 dark:bg-neutral-900 dark:text-white dark:placeholder:text-neutral-500";
+  "w-full rounded-lg border border-neutral-300 bg-paper px-4 py-2.5 font-scripture text-neutral-900 outline-none transition-colors placeholder:text-neutral-400 focus:border-gold focus:ring-2 focus:ring-gold/20 dark:border-neutral-700 dark:bg-neutral-900 dark:text-white dark:placeholder:text-neutral-500";
 const SUBMIT =
   "w-full rounded-lg bg-gold-fill px-4 py-3 font-bold text-neutral-950 transition-colors hover:bg-gold-fill-hover disabled:cursor-not-allowed disabled:opacity-60 disabled:hover:bg-gold-fill";
 const LABEL =

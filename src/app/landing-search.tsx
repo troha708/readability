@@ -251,7 +251,7 @@ export function LandingSearch({ className }: { className?: string } = {}) {
       </div>
 
       {showPanel && (
-        <div className="absolute left-0 top-full z-30 mt-1 max-h-[70vh] w-full overflow-y-auto rounded-xl border border-neutral-200 bg-white py-1 shadow-xl dark:border-neutral-800 dark:bg-neutral-900 md:w-[28rem]">
+        <div className="absolute left-0 top-full z-30 mt-1 max-h-[70vh] w-full overflow-y-auto rounded-xl border border-neutral-200 bg-paper py-1 shadow-xl dark:border-neutral-800 dark:bg-neutral-900 md:w-[28rem]">
           {rows.map((row, i) => (
             <div key={i}>
               {i === firstDict && <p className={groupHeading}>Dictionary</p>}

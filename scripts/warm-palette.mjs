@@ -125,11 +125,15 @@ function replaceLiteral(text, from, to) {
 
 function writeNightPalette(kelvin, gains) {
   const colors = require("tailwindcss/colors");
-  // `white` is a keyword rather than a family, and it is the one every panel,
-  // card and rail in the light theme is painted with — leave it at #ffffff and
-  // the chrome stays cold against a warmed reading page. (`black` needs no
-  // entry: every gain multiplied by zero is still zero.)
-  const white = `  white: "${warmHex("#ffffff", gains)}", // #ffffff\n`;
+  // White does two jobs, and only one of them warms. As a SURFACE it is the
+  // page — every panel, card and rail in the light theme is painted with it,
+  // and left cold it fights the warmed page behind it; that role is `paper`,
+  // and the components use bg-/fill-/stroke-paper for it. As INK it is the
+  // brightest text on a dark ground, which the document pages ask for by name
+  // rather than settle for a grey; `text-white` keeps Tailwind's own #ffffff so
+  // white text reads white and not amber. (`black` needs no entry: every gain
+  // multiplied by zero is still zero.)
+  const white = `  paper: "${warmHex("#ffffff", gains)}", // #ffffff\n`;
   const body = white + DEFAULT_FAMILIES.map((family) => {
     const steps = Object.entries(colors[family])
       .filter(([, v]) => typeof v === "string" && v.startsWith("#"))

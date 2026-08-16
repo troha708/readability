@@ -93,9 +93,13 @@ const config: Config = {
           900: "#35220b",
           950: "#1a0f02",
         },
-        // Tailwind's stock red / yellow / blue / emerald / pink / stone, which
-        // components borrow for errors, highlight colours and the map, warmed
-        // to the same temperature. Generated — see tailwind.night-palette.ts.
+        // `paper` — the warmed white every light-theme panel, card and rail is
+        // painted with (bg-/fill-/stroke-paper). Tailwind's own `white` is left
+        // alone and reserved for INK: `text-white` is the brightest text on a
+        // dark ground, which the document pages ask for by name, and warming it
+        // turned white text amber. Plus stock red / yellow / blue / emerald /
+        // pink / stone, which components borrow for errors, highlight colours
+        // and the map. Generated — see tailwind.night-palette.ts.
         ...nightPalette,
       },
     },

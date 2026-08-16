@@ -723,7 +723,7 @@ export function PlacesMap<T extends MapPlaceBase>({
             dy={smallLbl ? "3" : "3.6"}
             paintOrder="stroke"
             strokeWidth={smallLbl ? "2.5" : "3"}
-            className={`${smallLbl ? "text-[9.5px]" : "text-[11px]"} font-medium italic tracking-wide stroke-white dark:stroke-neutral-900 ${
+            className={`${smallLbl ? "text-[9.5px]" : "text-[11px]"} font-medium italic tracking-wide stroke-paper dark:stroke-neutral-900 ${
               isSelected
                 ? "fill-amber-700 underline dark:fill-amber-300"
                 : "fill-stone-600 hover:fill-amber-700 dark:fill-stone-300 dark:hover:fill-amber-300"
@@ -785,13 +785,13 @@ export function PlacesMap<T extends MapPlaceBase>({
           <>
             <circle
               r="8.5"
-              className="fill-amber-600 stroke-white dark:fill-amber-500 dark:stroke-neutral-900"
+              className="fill-amber-600 stroke-paper dark:fill-amber-500 dark:stroke-neutral-900"
               strokeWidth="1.5"
             />
             <text
               textAnchor="middle"
               dy="3"
-              className="pointer-events-none fill-white text-[9px] font-bold dark:fill-neutral-950"
+              className="pointer-events-none fill-paper text-[9px] font-bold dark:fill-neutral-950"
             >
               {c.members.length}
             </text>
@@ -805,13 +805,13 @@ export function PlacesMap<T extends MapPlaceBase>({
               width="16"
               height="16"
               rx="4"
-              className="fill-amber-600 stroke-white dark:fill-amber-500 dark:stroke-neutral-900"
+              className="fill-amber-600 stroke-paper dark:fill-amber-500 dark:stroke-neutral-900"
               strokeWidth="1.5"
             />
             <text
               textAnchor="middle"
               dy="3"
-              className="pointer-events-none fill-white text-[9px] font-bold dark:fill-neutral-950"
+              className="pointer-events-none fill-paper text-[9px] font-bold dark:fill-neutral-950"
             >
               {first.seq}
             </text>
@@ -827,13 +827,13 @@ export function PlacesMap<T extends MapPlaceBase>({
           <path
             d="M0 -5.2 L5 3.8 L-5 3.8 Z"
             strokeWidth="1.2"
-            className={`fill-amber-700 stroke-white dark:fill-amber-500 dark:stroke-neutral-900 ${uncertain ? "opacity-75" : ""}`}
+            className={`fill-amber-700 stroke-paper dark:fill-amber-500 dark:stroke-neutral-900 ${uncertain ? "opacity-75" : ""}`}
           />
         ) : (
           <circle
             r="4.4"
             strokeWidth="1.4"
-            className={`stroke-white dark:stroke-neutral-900 ${
+            className={`stroke-paper dark:stroke-neutral-900 ${
               first.kind === 1
                 ? "fill-[#4e655e] dark:fill-[#7f8978]"
                 : "fill-amber-600 dark:fill-amber-400"
@@ -857,7 +857,7 @@ export function PlacesMap<T extends MapPlaceBase>({
             strokeWidth="2.5"
             // Not clickable: a long label ("Corinth +1") can lie across a
             // neighbor's dot and would steal its taps.
-            className="pointer-events-none fill-neutral-800 stroke-white text-[11px] font-medium dark:fill-neutral-100 dark:stroke-neutral-900"
+            className="pointer-events-none fill-neutral-800 stroke-paper text-[11px] font-medium dark:fill-neutral-100 dark:stroke-neutral-900"
           >
             {label}
           </text>
@@ -871,7 +871,7 @@ export function PlacesMap<T extends MapPlaceBase>({
             dy="14"
             paintOrder="stroke"
             strokeWidth="2.5"
-            className="pointer-events-none fill-neutral-500 stroke-white text-[9px] dark:fill-neutral-400 dark:stroke-neutral-900"
+            className="pointer-events-none fill-neutral-500 stroke-paper text-[9px] dark:fill-neutral-400 dark:stroke-neutral-900"
           >
             {sub}
           </text>
@@ -980,7 +980,7 @@ export function PlacesMap<T extends MapPlaceBase>({
 
       {/* Zoom controls */}
       {controls && view && (
-        <div className="absolute right-2 top-2 flex flex-col overflow-hidden rounded-lg border border-neutral-200 bg-white/95 shadow-sm dark:border-neutral-600 dark:bg-neutral-800/95">
+        <div className="absolute right-2 top-2 flex flex-col overflow-hidden rounded-lg border border-neutral-200 bg-paper/95 shadow-sm dark:border-neutral-600 dark:bg-neutral-800/95">
           {[
             { label: <>+</>, title: "Zoom in", fn: () => zoomAt(1.6, size.w / 2, size.h / 2) },
             { label: <>−</>, title: "Zoom out", fn: () => zoomAt(1 / 1.6, size.w / 2, size.h / 2) },
@@ -1040,7 +1040,7 @@ export function PlacesMap<T extends MapPlaceBase>({
 
       {/* Declutter hint */}
       {controls && hiddenCount > 0 && (
-        <div className={`pointer-events-none absolute ${hintClassName} rounded-md bg-white/80 px-2 py-1 text-[10px] font-medium text-neutral-500 dark:bg-neutral-900/80 dark:text-neutral-400`}>
+        <div className={`pointer-events-none absolute ${hintClassName} rounded-md bg-paper/80 px-2 py-1 text-[10px] font-medium text-neutral-500 dark:bg-neutral-900/80 dark:text-neutral-400`}>
           {hiddenCount} more place{hiddenCount === 1 ? "" : "s"} — zoom in
         </div>
       )}

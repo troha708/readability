@@ -71,7 +71,7 @@ export function NotificationSettings() {
   if (!mounted) return null;
 
   return (
-    <div className="rounded-xl border border-neutral-200 bg-white p-5 shadow-sm dark:border-neutral-700 dark:bg-neutral-800">
+    <div className="rounded-xl border border-neutral-200 bg-paper p-5 shadow-sm dark:border-neutral-700 dark:bg-neutral-800">
       <div className="flex items-start justify-between gap-4">
         <div>
           <h2 className="flex items-center gap-2 text-base font-semibold text-neutral-900 dark:text-neutral-100">
@@ -98,7 +98,7 @@ export function NotificationSettings() {
             }`}
           >
             <span
-              className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
+              className={`inline-block h-4 w-4 transform rounded-full bg-paper transition-transform ${
                 enabled ? "translate-x-6" : "translate-x-1"
               }`}
             />
@@ -122,7 +122,7 @@ export function NotificationSettings() {
               type="time"
               value={timeValue}
               onChange={(e) => handleTimeChange(e.target.value)}
-              className="rounded-md border border-neutral-300 bg-white px-2 py-1 text-sm text-neutral-900 dark:border-neutral-600 dark:bg-neutral-800 dark:text-neutral-100"
+              className="rounded-md border border-neutral-300 bg-paper px-2 py-1 text-sm text-neutral-900 dark:border-neutral-600 dark:bg-neutral-800 dark:text-neutral-100"
             />
           </div>
 

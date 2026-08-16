@@ -94,7 +94,7 @@ export function VersePeek({
       {/* Sheet */}
       <div
         ref={sheetRef}
-        className="relative flex w-full max-w-2xl flex-col rounded-t-2xl border border-b-0 border-neutral-200 bg-white shadow-2xl dark:border-neutral-700 dark:bg-neutral-900"
+        className="relative flex w-full max-w-2xl flex-col rounded-t-2xl border border-b-0 border-neutral-200 bg-paper shadow-2xl dark:border-neutral-700 dark:bg-neutral-900"
         style={{
           maxHeight,
           transition: dragging ? "none" : "max-height 300ms ease",

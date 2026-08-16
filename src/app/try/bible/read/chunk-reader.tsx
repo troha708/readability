@@ -78,7 +78,7 @@ const RAIL_WIDTH = 216;
 // set: same border, same fill, same padding, same size. Only the side they
 // round on and their vertical position differ.
 const BOX_CLASS =
-  "z-10 hidden bg-white/95 py-3 text-gold backdrop-blur transition-[opacity,color] duration-300 hover:text-gold-deep dark:bg-neutral-925/95 dark:hover:text-gold-bright xl:block";
+  "z-10 hidden bg-paper/95 py-3 text-gold backdrop-blur transition-[opacity,color] duration-300 hover:text-gold-deep dark:bg-neutral-925/95 dark:hover:text-gold-bright xl:block";
 // Stroke weight for the 20px edge-tab marks. It was 1.8, which with round
 // caps is the weight a warning light is drawn at — heavy, closed, extruded.
 // Finer reads as something drawn. 1.1 was finer still and went washy at 20px
@@ -97,9 +97,9 @@ const ICON_STROKE = 1.25;
 // spill reading cold. Light mode keeps a neutral line — white on a white page
 // is no line at all.
 const RAIL_GLOW_LEFT =
-  "border-r-neutral-300 shadow-[8px_0_28px_-12px_rgba(255,207,156,0.20)] dark:border-r-white/45";
+  "border-r-neutral-300 shadow-[8px_0_28px_-12px_rgba(255,207,156,0.20)] dark:border-r-paper/45";
 const RAIL_GLOW_RIGHT =
-  "border-l-neutral-300 shadow-[-8px_0_28px_-12px_rgba(255,207,156,0.20)] dark:border-l-white/45";
+  "border-l-neutral-300 shadow-[-8px_0_28px_-12px_rgba(255,207,156,0.20)] dark:border-l-paper/45";
 
 type CompletionAge = "recent" | "fading" | "old";
 
@@ -541,7 +541,7 @@ function ToggleRow({
         }`}
       >
         <span
-          className={`h-4 w-4 rounded-full bg-white shadow transition-transform ${
+          className={`h-4 w-4 rounded-full bg-paper shadow transition-transform ${
             on ? "translate-x-4" : "translate-x-0"
           }`}
         />
@@ -620,7 +620,7 @@ function SettingsControls({
               onClick={() => onMode(m)}
               className={`rounded px-2.5 py-1 text-xs font-medium tracking-[0.25px] capitalize leading-none transition-all ${
                 mode === m
-                  ? "bg-white text-amber-700 shadow-sm dark:bg-neutral-600 dark:text-amber-400"
+                  ? "bg-paper text-amber-700 shadow-sm dark:bg-neutral-600 dark:text-amber-400"
                   : "text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-300"
               }`}
             >
@@ -2668,7 +2668,7 @@ export function ChunkReader({
     <div className="min-h-screen">
       {/* Sticky header — narrow screens only. From xl up its contents move into
           the two side panels below (chapters left, tools right). */}
-      <header ref={headerRef} className="sticky top-0 z-10 border-b border-neutral-200 bg-white/95 px-4 py-3 dark:border-neutral-700 dark:bg-neutral-925/95 xl:hidden">
+      <header ref={headerRef} className="sticky top-0 z-10 border-b border-neutral-200 bg-paper/95 px-4 py-3 dark:border-neutral-700 dark:bg-neutral-925/95 xl:hidden">
         {/* Controls row */}
         <div className="mx-auto flex max-w-2xl items-center justify-between gap-2">
           {/* Brand + roadmap */}
@@ -2780,7 +2780,7 @@ export function ChunkReader({
               </svg>
             </button>
             {settingsOpen && (
-              <div className="absolute right-0 top-full z-20 mt-1 w-60 rounded-lg border border-neutral-200 bg-white p-1.5 shadow-lg dark:border-neutral-700 dark:bg-neutral-800">
+              <div className="absolute right-0 top-full z-20 mt-1 w-60 rounded-lg border border-neutral-200 bg-paper p-1.5 shadow-lg dark:border-neutral-700 dark:bg-neutral-800">
                 <SettingsControls
                   mode={mode}
                   onMode={(m) => { setMode(m); setReadingMode(m); }}
@@ -2824,7 +2824,7 @@ export function ChunkReader({
               <span className="ml-1 text-neutral-400">▾</span>
             </button>
             {bookOpen && (
-              <div className="absolute left-0 top-full z-20 mt-1 max-h-64 w-44 overflow-y-auto rounded-lg border border-neutral-200 bg-white py-1 shadow-lg dark:border-neutral-700 dark:bg-neutral-800">
+              <div className="absolute left-0 top-full z-20 mt-1 max-h-64 w-44 overflow-y-auto rounded-lg border border-neutral-200 bg-paper py-1 shadow-lg dark:border-neutral-700 dark:bg-neutral-800">
                 <BookMenu
                   books={sortedBooks}
                   firstNtBook={firstNtBook}
@@ -2960,7 +2960,7 @@ export function ChunkReader({
 
       {/* Left panel — way out, book picker, chapter grid */}
       <aside
-        className={`fixed left-0 top-0 z-20 hidden h-screen w-[216px] flex-col border-r border-neutral-200 bg-white transition-[transform,box-shadow,border-color] duration-[420ms] ease-[cubic-bezier(0.32,0.72,0,1)] dark:border-neutral-700 dark:bg-neutral-925 xl:flex ${autoHideRails && leftRailOpen ? RAIL_GLOW_LEFT : ""}`}
+        className={`fixed left-0 top-0 z-20 hidden h-screen w-[216px] flex-col border-r border-neutral-200 bg-paper transition-[transform,box-shadow,border-color] duration-[420ms] ease-[cubic-bezier(0.32,0.72,0,1)] dark:border-neutral-700 dark:bg-neutral-925 xl:flex ${autoHideRails && leftRailOpen ? RAIL_GLOW_LEFT : ""}`}
         style={{ transform: autoHideRails && !leftRailOpen ? `translateX(-${RAIL_WIDTH}px)` : "translateX(0)" }}
         // A folded rail is off-screen: keep it out of the tab order and away
         // from assistive tech until it comes back.
@@ -2991,7 +2991,7 @@ export function ChunkReader({
             <span className="ml-1 shrink-0 text-neutral-400">▾</span>
           </button>
           {bookOpen && (
-            <div className="absolute left-3 right-3 top-full z-20 mt-1 max-h-[70vh] overflow-y-auto rounded-lg border border-neutral-200 bg-white py-1 shadow-lg dark:border-neutral-700 dark:bg-neutral-800">
+            <div className="absolute left-3 right-3 top-full z-20 mt-1 max-h-[70vh] overflow-y-auto rounded-lg border border-neutral-200 bg-paper py-1 shadow-lg dark:border-neutral-700 dark:bg-neutral-800">
               <BookMenu
                 books={sortedBooks}
                 firstNtBook={firstNtBook}
@@ -3026,7 +3026,7 @@ export function ChunkReader({
 
       {/* Right panel — brand, tools, and the settings menu */}
       <aside
-        className={`fixed right-0 top-0 z-20 hidden h-screen w-[216px] flex-col border-l border-neutral-200 bg-white transition-[transform,box-shadow,border-color] duration-[420ms] ease-[cubic-bezier(0.32,0.72,0,1)] dark:border-neutral-700 dark:bg-neutral-925 xl:flex ${autoHideRails && rightRailOpen ? RAIL_GLOW_RIGHT : ""}`}
+        className={`fixed right-0 top-0 z-20 hidden h-screen w-[216px] flex-col border-l border-neutral-200 bg-paper transition-[transform,box-shadow,border-color] duration-[420ms] ease-[cubic-bezier(0.32,0.72,0,1)] dark:border-neutral-700 dark:bg-neutral-925 xl:flex ${autoHideRails && rightRailOpen ? RAIL_GLOW_RIGHT : ""}`}
         style={{ transform: autoHideRails && !rightRailOpen ? `translateX(${RAIL_WIDTH}px)` : "translateX(0)" }}
         inert={autoHideRails && !rightRailOpen}
       >
@@ -3100,7 +3100,7 @@ export function ChunkReader({
                 Themes <span className="tabular-nums opacity-70">{themeCount}</span>
               </button>
               {themesOpen && (
-                <div className="absolute right-0 top-full z-20 mt-1 max-h-72 w-64 overflow-y-auto rounded-lg border border-neutral-200 bg-white py-1 shadow-lg dark:border-neutral-700 dark:bg-neutral-800">
+                <div className="absolute right-0 top-full z-20 mt-1 max-h-72 w-64 overflow-y-auto rounded-lg border border-neutral-200 bg-paper py-1 shadow-lg dark:border-neutral-700 dark:bg-neutral-800">
                   {chapterThemes.map((t) => (
                     <a
                       key={t.id}
@@ -3180,7 +3180,7 @@ export function ChunkReader({
               Settings
             </button>
             {settingsOpen && (
-              <div className="absolute right-0 top-full z-20 mt-1 w-60 rounded-lg border border-neutral-200 bg-white p-1.5 shadow-lg dark:border-neutral-700 dark:bg-neutral-800">
+              <div className="absolute right-0 top-full z-20 mt-1 w-60 rounded-lg border border-neutral-200 bg-paper p-1.5 shadow-lg dark:border-neutral-700 dark:bg-neutral-800">
                 <SettingsControls
                   mode={mode}
                   onMode={(m) => { setMode(m); setReadingMode(m); }}
@@ -3312,7 +3312,7 @@ export function ChunkReader({
               <section className="mb-10">
                 <div
                   ref={summaryHeadingRef}
-                  className="overflow-hidden rounded-2xl border border-amber-200 bg-white shadow-sm dark:border-amber-300/10 dark:bg-amber-400/5"
+                  className="overflow-hidden rounded-2xl border border-amber-200 bg-paper shadow-sm dark:border-amber-300/10 dark:bg-amber-400/5"
                 >
                   <button
                     onClick={() => setOverviewExpanded((v) => !v)}
@@ -3432,7 +3432,7 @@ export function ChunkReader({
               transform: "translate(-50%, -100%)",
             }}
           >
-            <div className="rounded-xl bg-white shadow-xl ring-1 ring-neutral-200 dark:bg-neutral-800 dark:ring-neutral-700">
+            <div className="rounded-xl bg-paper shadow-xl ring-1 ring-neutral-200 dark:bg-neutral-800 dark:ring-neutral-700">
               <div className="flex items-center gap-1.5 px-2.5 py-2">
                 <span className="text-sm font-bold text-neutral-500 dark:text-neutral-400">Highlight</span>
                 {HIGHLIGHT_COLORS.map((c) => (
@@ -3507,7 +3507,7 @@ export function ChunkReader({
             </div>
             {/* Arrow pointing down */}
             <div className="flex justify-center">
-              <div className="h-2 w-2 rotate-45 border-b border-r border-neutral-200 bg-white dark:border-neutral-700 dark:bg-neutral-800" />
+              <div className="h-2 w-2 rotate-45 border-b border-r border-neutral-200 bg-paper dark:border-neutral-700 dark:bg-neutral-800" />
             </div>
           </div>,
           document.body,

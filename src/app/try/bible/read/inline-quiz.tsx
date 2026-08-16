@@ -235,7 +235,7 @@ export function InlineQuiz({ bookName, chapterNumber, questions, onComplete, onS
   function optionClasses(option: string): string {
     const base = "w-full rounded-xl border-2 px-4 py-3 text-left text-sm font-medium transition-all ";
     if (!showFeedback) {
-      return base + "border-neutral-200 bg-white text-neutral-700 hover:border-amber-300 hover:bg-amber-50 active:scale-[0.98] dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-300 dark:hover:border-amber-600 dark:hover:bg-amber-900/20";
+      return base + "border-neutral-200 bg-paper text-neutral-700 hover:border-amber-300 hover:bg-amber-50 active:scale-[0.98] dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-300 dark:hover:border-amber-600 dark:hover:bg-amber-900/20";
     }
     if (normalize(option) === normalize(current!.answer)) {
       return base + "border-amber-500 bg-amber-50 text-amber-700 dark:border-amber-500 dark:bg-amber-900/30 dark:text-amber-400";
@@ -324,7 +324,7 @@ export function InlineQuiz({ bookName, chapterNumber, questions, onComplete, onS
                 placeholder="Type your answer…"
                 className={`w-full rounded-xl border-2 px-4 py-3 text-sm font-medium outline-none transition-all placeholder:text-neutral-400 ${
                   !showFeedback
-                    ? "border-neutral-200 bg-white text-neutral-700 focus:border-amber-400 dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-300 dark:focus:border-amber-500"
+                    ? "border-neutral-200 bg-paper text-neutral-700 focus:border-amber-400 dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-300 dark:focus:border-amber-500"
                     : wasCorrect
                       ? "border-amber-500 bg-amber-50 text-amber-700 dark:border-amber-500 dark:bg-amber-900/30 dark:text-amber-400"
                       : "border-red-400 bg-red-50 text-red-700 dark:border-red-500 dark:bg-red-900/30 dark:text-red-400"

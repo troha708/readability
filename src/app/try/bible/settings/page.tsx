@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function SettingsPage() {
   return (
-    <main className="min-h-screen bg-white dark:bg-neutral-925">
+    <main className="min-h-screen bg-paper dark:bg-neutral-925">
       <div className="mx-auto max-w-2xl px-4 py-6">
         <div className="mb-6 flex items-center justify-between">
           <Logo />

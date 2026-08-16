@@ -134,12 +134,12 @@ export default function HighlightsPage() {
   const filterBtnClass = (active: boolean) =>
     `rounded-md px-3 py-1.5 text-xs font-semibold transition-all ${
       active
-        ? "bg-white text-amber-700 shadow-sm dark:bg-neutral-700 dark:text-amber-400"
+        ? "bg-paper text-amber-700 shadow-sm dark:bg-neutral-700 dark:text-amber-400"
         : "text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-300"
     }`;
 
   return (
-    <main className="min-h-screen bg-white px-4 py-8 dark:bg-neutral-950">
+    <main className="min-h-screen bg-paper px-4 py-8 dark:bg-neutral-950">
       <div className="mx-auto max-w-2xl">
         {/* Navbar */}
         <div className="mb-2 flex items-center justify-between">
@@ -182,7 +182,7 @@ export default function HighlightsPage() {
                         onChange={(e) => setEditValue(e.target.value)}
                         placeholder={c.name.charAt(0).toUpperCase() + c.name.slice(1)}
                         maxLength={24}
-                        className="w-20 min-w-0 rounded border border-neutral-300 bg-white px-1.5 py-0 text-xs text-neutral-800 outline-none focus:border-amber-400 dark:border-neutral-600 dark:bg-neutral-700 dark:text-neutral-200"
+                        className="w-20 min-w-0 rounded border border-neutral-300 bg-paper px-1.5 py-0 text-xs text-neutral-800 outline-none focus:border-amber-400 dark:border-neutral-600 dark:bg-neutral-700 dark:text-neutral-200"
                         onBlur={handleSaveLabel}
                         onKeyDown={(e) => { if (e.key === "Escape") { setEditingColor(null); setEditValue(""); } }}
                       />
@@ -225,7 +225,7 @@ export default function HighlightsPage() {
               <select
                 value={bookFilter}
                 onChange={(e) => setBookFilter(e.target.value)}
-                className="rounded-lg border border-neutral-200 bg-white px-3 py-1.5 text-sm font-medium text-neutral-700 outline-none focus:border-amber-400 dark:border-neutral-600 dark:bg-neutral-800 dark:text-neutral-200"
+                className="rounded-lg border border-neutral-200 bg-paper px-3 py-1.5 text-sm font-medium text-neutral-700 outline-none focus:border-amber-400 dark:border-neutral-600 dark:bg-neutral-800 dark:text-neutral-200"
               >
                 <option value="all">All Books</option>
                 {allBooks.map((b) => (
