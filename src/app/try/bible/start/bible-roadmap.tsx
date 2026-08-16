@@ -128,6 +128,13 @@ export function BibleRoadmap({
     });
   }
 
+  // A drag-select that happens to end on a book row must not collapse the row
+  // the reader just selected out of — the release fires a click like any other.
+  function isSelectingText() {
+    const sel = typeof window !== "undefined" ? window.getSelection() : null;
+    return !!(sel && sel.type === "Range" && sel.toString().trim());
+  }
+
   function toggleSection(testament: string) {
     setExpandedSections((prev) => {
       const next = new Set(prev);
@@ -202,7 +209,19 @@ export function BibleRoadmap({
 
     return (
       <Fragment key={book.name}>
-        <tr ref={isActiveBook ? activeBookRef : undefined} className="scroll-mt-24 align-baseline">
+        {/* The whole line opens the book, not just the title: on a contents
+            page the line is the entry, and on a phone the title is a small
+            target with a wide empty column beside it. The title anchor below
+            keeps the URL and the keyboard; its click bubbles up to here, so
+            the toggle lives in one place. */}
+        <tr
+          ref={isActiveBook ? activeBookRef : undefined}
+          onClick={() => {
+            if (!hasChapters || isSelectingText()) return;
+            toggleBook(book.name);
+          }}
+          className={`scroll-mt-24 align-baseline ${hasChapters ? "cursor-pointer" : ""}`}
+        >
           {/* Three columns: title, original title, figure. The title cell
               shrinks to its content and the original-title cell takes the
               slack, so every Hebrew and Greek name starts on the same left
@@ -211,11 +230,12 @@ export function BibleRoadmap({
               originals scatter along the ragged edge of the English. */}
           <td className={`w-px whitespace-nowrap pr-4 ${cell}`}>
             {/* A real link to chapter 1 so crawlers reach every book — the
-                chapter grid below only exists when open — but click toggles.
-                draggable={false} and the selection guard keep the row's text
-                selectable: an anchor drags by default, which turns a
-                drag-select of the Greek into a drag, and the release-click
-                would then collapse the row you just selected out of. */}
+                chapter grid below only exists when open — and the row's
+                keyboard handle, since Enter on it clicks through to the row.
+                It only has to not navigate; the row does the toggling.
+                draggable={false} keeps the row's text selectable: an anchor
+                drags by default, which turns a drag-select of the Greek into
+                a drag. */}
             <a
               href={
                 hasChapters
@@ -223,13 +243,7 @@ export function BibleRoadmap({
                   : undefined
               }
               draggable={false}
-              onClick={(e) => {
-                e.preventDefault();
-                if (!hasChapters) return;
-                const sel = typeof window !== "undefined" ? window.getSelection() : null;
-                if (sel && sel.type === "Range" && sel.toString().trim()) return;
-                toggleBook(book.name);
-              }}
+              onClick={(e) => e.preventDefault()}
               aria-expanded={hasChapters ? isExpanded : undefined}
               className={`select-text font-scripture text-[17px] ${
                 hasChapters ? "cursor-pointer" : "cursor-default"
