@@ -1,12 +1,10 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
-import { Logo } from "@/components/logo";
-import { AuthButton } from "@/components/auth-button";
+import { SiteHeader } from "@/components/site-header";
 import { ReturningUserRedirect } from "@/components/returning-user-redirect";
 import { SiteFooter } from "@/components/site-footer";
 import { FeatureMontage } from "./feature-montage";
 import { HeroMockup } from "./hero-mockup";
-import { LandingSearch } from "./landing-search";
 import { SITE_URL } from "@/lib/site";
 import { loadAtlasData } from "@/lib/content/atlas-server";
 import { loadDictionaryIndex } from "@/lib/content/dictionary-server";
@@ -129,48 +127,7 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      {/* Header — a flat bar in the page's own black, closed by a single
-          hairline: logo, a surface-tone search field, quiet links, quiet
-          Sign in — no rules between items. The hairline runs edge to edge
-          but the items sit in the same max-w-6xl column as the rest of the
-          page. On phones the search drops to its own full-width row under
-          the logo. */}
-      <div className="border-b border-neutral-800">
-        <header className="mx-auto flex max-w-6xl flex-wrap items-stretch px-6 md:h-[72px] md:flex-nowrap">
-          <div className="flex h-14 items-center pr-4 md:h-auto md:pr-6">
-            <Logo />
-          </div>
-          <LandingSearch />
-          {/* Atlas/Dictionary live in the footer too, so on phones the bar
-              keeps just logo + Sign in. */}
-          {/* Bar type is footer-strip weight — 500 at 0.25px letter-spacing —
-              but kept at this bar's own size, so the links still fill the
-              header. The grey is neutral-400. */}
-          <nav className="hidden items-center text-sm font-medium tracking-[0.25px] max-md:ml-auto sm:flex">
-            <Link
-              href="/try/bible/map"
-              className="px-3 py-2 text-neutral-400 transition-colors hover:text-amber-400 sm:px-4"
-            >
-              Atlas
-            </Link>
-            <Link
-              href="/try/bible/dictionary"
-              className="px-3 py-2 text-neutral-400 transition-colors hover:text-amber-400 sm:px-4"
-            >
-              Dictionary
-            </Link>
-            <Link
-              href="/try/bible/quiz"
-              className="px-3 py-2 text-neutral-400 transition-colors hover:text-amber-400 sm:px-4"
-            >
-              Quiz
-            </Link>
-          </nav>
-          <div className="flex items-stretch max-sm:ml-auto">
-            <AuthButton variant="flat" />
-          </div>
-        </header>
-      </div>
+      <SiteHeader />
 
       {/* Two-column hero in a wide container; the document sections below
           stay single-column at max-w-2xl. */}

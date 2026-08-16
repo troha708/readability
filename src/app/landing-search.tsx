@@ -52,7 +52,7 @@ function Snippet({ text, query }: { text: string; query: string }) {
   );
 }
 
-export function LandingSearch() {
+export function LandingSearch({ className }: { className?: string } = {}) {
   const router = useRouter();
   const inputRef = useRef<HTMLInputElement>(null);
   const [query, setQuery] = useState("");
@@ -216,8 +216,13 @@ export function LandingSearch() {
     // The search reads as a field: a whisper of the surface tone over the
     // black bar (60% #202121 ≈ #171818), no rules around it. On phones it
     // takes its own full-width row under the logo.
-    <div className="relative order-last w-full pb-3 md:order-none md:ml-5 md:mr-3 md:flex md:w-auto md:flex-1 md:items-center md:self-stretch md:py-0">
-      <div className="flex h-10 w-full items-center gap-2 rounded-lg bg-neutral-900/60 px-4 text-sm">
+    <div
+      className={`relative ${
+        className ??
+        "order-last w-full pb-3 md:order-none md:ml-5 md:mr-3 md:flex md:w-auto md:flex-1 md:items-center md:self-stretch md:py-0"
+      }`}
+    >
+      <div className="flex h-10 w-full items-center gap-2 rounded-lg bg-neutral-100 px-4 text-sm dark:bg-neutral-900/60">
         <svg
           className="h-4 w-4 shrink-0 text-neutral-500"
           viewBox="0 0 24 24"
@@ -241,12 +246,12 @@ export function LandingSearch() {
           onKeyDown={handleKeyDown}
           placeholder="Search verses, people, places and concepts"
           aria-label="Search verses, people, places and concepts"
-          className="w-full truncate bg-transparent text-neutral-200 outline-none placeholder:text-neutral-500"
+          className="w-full truncate bg-transparent text-neutral-800 outline-none placeholder:text-neutral-500 dark:text-neutral-200"
         />
       </div>
 
       {showPanel && (
-        <div className="absolute left-0 top-full z-30 mt-1 max-h-[70vh] w-full overflow-y-auto rounded-xl border border-neutral-800 bg-neutral-900 py-1 shadow-xl md:w-[28rem]">
+        <div className="absolute left-0 top-full z-30 mt-1 max-h-[70vh] w-full overflow-y-auto rounded-xl border border-neutral-200 bg-white py-1 shadow-xl dark:border-neutral-800 dark:bg-neutral-900 md:w-[28rem]">
           {rows.map((row, i) => (
             <div key={i}>
               {i === firstDict && <p className={groupHeading}>Dictionary</p>}
