@@ -5,7 +5,6 @@ import { Fragment, useEffect, useRef, useState } from "react";
 import {
   getLastReadPosition,
   getReadingMode,
-  setReadingMode,
   type ReadingMode,
   type ReadingProgress,
 } from "@/lib/reading-progress";
@@ -440,36 +439,6 @@ export function BibleRoadmap({
         <div className="mb-6 flex flex-wrap items-center justify-between gap-y-2">
           <Logo />
           <div className="flex items-center gap-2">
-            {/* Mode toggle */}
-            <div className="inline-flex rounded-lg bg-neutral-100 p-0.5 dark:bg-neutral-800">
-              <button
-                onClick={() => {
-                  setMode("read");
-                  setReadingMode("read");
-                }}
-                className={`rounded-md px-2.5 py-1 text-xs font-medium tracking-[0.25px] transition-all ${
-                  mode === "read"
-                    ? "bg-white text-amber-700 shadow-sm dark:bg-neutral-700 dark:text-amber-400"
-                    : "text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-300"
-                }`}
-              >
-                Read
-              </button>
-              <button
-                onClick={() => {
-                  setMode("study");
-                  setReadingMode("study");
-                }}
-                className={`rounded-md px-2.5 py-1 text-xs font-medium tracking-[0.25px] transition-all ${
-                  mode === "study"
-                    ? "bg-white text-amber-700 shadow-sm dark:bg-neutral-700 dark:text-amber-400"
-                    : "text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-300"
-                }`}
-              >
-                Study
-              </button>
-            </div>
-
             <button
               onClick={() => setSearchOpen(true)}
               aria-label="Search"
@@ -523,6 +492,17 @@ export function BibleRoadmap({
                 <path d="M12 16.5h.01" />
               </svg>
               <span className="hidden md:inline">Quiz</span>
+            </Link>
+            <Link
+              href="/try/bible/highlights"
+              aria-label="Your highlights and notes"
+              title="Your highlights and notes"
+              className="inline-flex items-center gap-1.5 rounded-md px-2 py-1.5 text-sm font-medium tracking-[0.25px] text-neutral-500 hover:bg-neutral-100 hover:text-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-neutral-200"
+            >
+              <svg className="h-5 w-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+                <path d="M16.862 4.487l1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Z" />
+              </svg>
+              <span className="hidden md:inline">Notes</span>
             </Link>
             {isNative && (
               <Link
@@ -580,15 +560,6 @@ export function BibleRoadmap({
             <span className="text-xs font-normal normal-case text-neutral-950/70">
               {continueTarget.book} {continueTarget.chapter}
             </span>
-          </Link>
-          <Link
-            href="/try/bible/highlights"
-            className="inline-flex items-center gap-1.5 rounded-lg border border-neutral-200 bg-white px-4 py-2.5 text-sm font-medium text-neutral-600 shadow-sm transition-colors hover:border-amber-300 hover:text-amber-700 dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-400 dark:hover:border-amber-700 dark:hover:text-amber-400"
-          >
-            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Z" />
-            </svg>
-            Notes
           </Link>
         </div>
 
