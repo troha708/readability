@@ -11,7 +11,6 @@ import {
 import {
   loadAllProgress,
 } from "@/lib/progress-service";
-import { useUser } from "@/hooks/useUser";
 import { bibleBookSortIndex, bookGenre } from "@/lib/bible-book-order";
 import { originalName } from "@/lib/book-names-original";
 import { isOverviewAtStart } from "@/lib/overview-placement";
@@ -46,7 +45,6 @@ export function BibleRoadmap({
   booksWithSummary,
   purposeByBook = {},
 }: Props) {
-  const { user, loading: userLoading } = useUser();
   const [readingDone, setReadingDone] = useState<ReadingProgress>({});
   const [quizDone, setQuizDone] = useState<ReadingProgress>({});
   // Completion timestamps are still loaded — computeContinueTarget uses them
@@ -407,21 +405,6 @@ export function BibleRoadmap({
       <SiteHeader />
 
       <div className="mx-auto max-w-2xl px-4 py-8 lg:max-w-5xl">
-        {/* Sign-in banner for guests */}
-        {!userLoading && !user && (
-          <div className="mb-4 flex items-center justify-center gap-2 rounded-lg border border-blue-200 bg-blue-50 px-4 py-2.5 dark:border-blue-800 dark:bg-blue-950/40">
-            <svg className="h-4 w-4 flex-shrink-0 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z" />
-            </svg>
-            <p className="text-sm text-blue-700 dark:text-blue-300">
-              <Link href="/login?next=/try/bible/start" className="font-medium underline hover:no-underline">
-                Sign in
-              </Link>{" "}
-              to save your progress across devices
-            </p>
-          </div>
-        )}
-
         {/* Continue Reading — sticky so it stays reachable while scrolling the
             tree (and it's where a returning reader is scrolled past on load).
             Fully opaque, on the page's own ground rather than a tint of it:
