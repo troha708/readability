@@ -226,13 +226,27 @@ export function BibleRoadmap({
     const isExpanded = expandedBooks.has(book.name);
     const orig = originalName(book.name);
     const purpose = purposeByBook[book.name];
-    // Row rhythm. Wider than it was, because the hairline that used to hold
-    // the rows apart has gone and the space now has to do that on its own.
-    const cell = "py-[0.6rem]";
+    // Row rhythm, and the hairline that separates one book from the next.
+    // The rule belongs at the foot of the whole book, so an open book carries
+    // it on its chapter grid instead and the name never sits above a line
+    // dividing it from its own chapters.
+    const rule = "border-b border-neutral-100 dark:border-neutral-800";
+    const cell = `py-[0.6rem] ${isExpanded && hasChapters ? "" : rule}`;
 
     return (
       <Fragment key={book.name}>
-        <tr ref={isActiveBook ? activeBookRef : undefined} className="scroll-mt-24 align-baseline">
+        <tr
+          ref={isActiveBook ? activeBookRef : undefined}
+          onClick={() => {
+            if (!hasChapters) return;
+            // A drag-select of the Greek ends in a click; without this the
+            // row you just selected out of would collapse under you.
+            const sel = typeof window !== "undefined" ? window.getSelection() : null;
+            if (sel && sel.type === "Range" && sel.toString().trim()) return;
+            toggleBook(book.name);
+          }}
+          className={`scroll-mt-24 align-baseline ${hasChapters ? "cursor-pointer" : ""}`}
+        >
           {/* Three columns: title, original title, figure. The title cell
               shrinks to its content and the original-title cell takes the
               slack, so every Hebrew and Greek name starts on the same left
@@ -241,11 +255,12 @@ export function BibleRoadmap({
               originals scatter along the ragged edge of the English. */}
           <td className={`w-px whitespace-nowrap pr-4 ${cell}`}>
             {/* A real link to chapter 1 so crawlers reach every book — the
-                chapter grid below only exists when open — but click toggles.
-                draggable={false} and the selection guard keep the row's text
-                selectable: an anchor drags by default, which turns a
-                drag-select of the Greek into a drag, and the release-click
-                would then collapse the row you just selected out of. */}
+                chapter grid below only exists when open — and the row's one
+                focusable thing, so the keyboard can open a book: activating
+                it dispatches a click that bubbles to the row's handler.
+                draggable={false} keeps the row's text selectable; an anchor
+                drags by default, which turns a drag-select of the Greek into
+                a drag. */}
             <a
               href={
                 hasChapters
@@ -253,13 +268,7 @@ export function BibleRoadmap({
                   : undefined
               }
               draggable={false}
-              onClick={(e) => {
-                e.preventDefault();
-                if (!hasChapters) return;
-                const sel = typeof window !== "undefined" ? window.getSelection() : null;
-                if (sel && sel.type === "Range" && sel.toString().trim()) return;
-                toggleBook(book.name);
-              }}
+              onClick={(e) => e.preventDefault()}
               aria-expanded={hasChapters ? isExpanded : undefined}
               className={`select-text font-scripture text-[18px] ${
                 hasChapters ? "cursor-pointer" : "cursor-default"
@@ -300,9 +309,9 @@ export function BibleRoadmap({
         </tr>
         {isExpanded && hasChapters && (
           <tr>
-            {/* An open book keeps its grid close and takes its separation
-                from the next book below, since there is no rule to do it. */}
-            <td colSpan={3} className="pb-7">
+            {/* The open book's grid carries the book's dividing rule, so one
+                line falls between books whether a book is open or closed. */}
+            <td colSpan={3} className={`pb-7 ${rule}`}>
               {purpose && (
                 <p className="mb-2 max-w-prose font-scripture text-[14px] italic leading-relaxed text-neutral-500 dark:text-neutral-500">
                   {purpose}
