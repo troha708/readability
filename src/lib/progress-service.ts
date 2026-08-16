@@ -1,5 +1,6 @@
 import { createClient } from "@/lib/supabase/client";
-import { flagLastReadCompleted } from "./reading-progress";
+import { clearLastRead, flagLastReadCompleted } from "./reading-progress";
+import { clearReadingHistory } from "./reading-history";
 import type { ReadingProgress } from "./reading-progress";
 
 const READ_KEY = "bible-reading-progress";
@@ -355,3 +356,38 @@ export async function markChapterComplete(
   }
 }
 
+/**
+ * Delete every record of what has been read — this device's copy and, when
+ * signed in, the synced copy with it.
+ *
+ * Highlights and notes are deliberately left alone. They are the reader's own
+ * writing, not a record of where they have been, and someone clearing their
+ * progress to start the Bible again has no reason to expect their notes to go
+ * with it.
+ *
+ * The migration flags go too. Without that, signing in again would replay the
+ * local progress this just deleted straight back into the account.
+ */
+export async function deleteAllProgress(): Promise<void> {
+  if (typeof window !== "undefined") {
+    for (const key of [READ_KEY, QUIZ_KEY, DATES_KEY, TIMESTAMPS_KEY]) {
+      localStorage.removeItem(key);
+    }
+    // Collected first: removing while iterating the store skips entries.
+    const migrated = Object.keys(localStorage).filter((k) =>
+      k.startsWith(MIGRATED_PREFIX),
+    );
+    for (const key of migrated) localStorage.removeItem(key);
+    clearLastRead();
+    clearReadingHistory();
+  }
+
+  const userId = await getUserId();
+  if (!userId) return;
+  const supabase = createClient();
+  const { error } = await supabase
+    .from("user_progress")
+    .delete()
+    .eq("user_id", userId);
+  if (error) throw error;
+}

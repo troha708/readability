@@ -54,6 +54,13 @@ export function flagLastReadCompleted(book: string, chapter: number): void {
   }
 }
 
+/** Forget the saved position, so nothing resumes and nothing advances. */
+export function clearLastRead(): void {
+  if (typeof window === "undefined") return;
+  localStorage.removeItem(LAST_READ_KEY);
+  localStorage.removeItem(LAST_READ_DONE_KEY);
+}
+
 export function getLastReadUrl(): string | null {
   if (typeof window === "undefined") return null;
   return localStorage.getItem(LAST_READ_KEY);

@@ -7,6 +7,7 @@ import {
   groupHistoryByDay,
   type HistoryEntry,
 } from "@/lib/reading-history";
+import { deleteAllProgress } from "@/lib/progress-service";
 
 /**
  * The chapters this browser has opened, newest first, grouped by day. Read
@@ -17,6 +18,8 @@ import {
 export function ReadingHistorySheet({ onClose }: { onClose: () => void }) {
   const [entries, setEntries] = useState<HistoryEntry[]>([]);
   const [confirmingClear, setConfirmingClear] = useState(false);
+  const [confirmingWipe, setConfirmingWipe] = useState(false);
+  const [wiping, setWiping] = useState(false);
 
   useEffect(() => {
     setEntries(getReadingHistory());
@@ -94,9 +97,11 @@ export function ReadingHistorySheet({ onClose }: { onClose: () => void }) {
           )}
         </div>
 
-        {/* Foot: what this is, and the way to get rid of it. The clear is
-            two-step — it deletes without an undo, and it sits a few pixels
-            from links you click to navigate. */}
+        {/* Foot: what this is, and the ways to get rid of it. Both deletes
+            are two-step — they have no undo, and they sit a few pixels from
+            links you click to navigate. Each sits with its own sentence,
+            because the two claims are different: history never leaves the
+            device, progress does. */}
         <div className="flex items-center justify-between gap-4 border-t border-neutral-200 px-5 py-3 dark:border-neutral-800">
           <p className="font-scripture text-[12px] leading-relaxed text-neutral-400 dark:text-neutral-500">
             Kept on this device only — never uploaded, and not shared between
@@ -130,6 +135,49 @@ export function ReadingHistorySheet({ onClose }: { onClose: () => void }) {
                 Delete history
               </button>
             ))}
+        </div>
+
+        <div className="flex items-center justify-between gap-4 border-t border-neutral-200 px-5 py-3 dark:border-neutral-800">
+          <p className="font-scripture text-[12px] leading-relaxed text-neutral-400 dark:text-neutral-500">
+            Reading progress — the chapters you have finished and your streak
+            — is stored separately, and synced if you are signed in. Your
+            highlights and notes are kept.
+          </p>
+          {confirmingWipe ? (
+            <span className="flex shrink-0 items-center gap-2">
+              <button
+                disabled={wiping}
+                onClick={async () => {
+                  setWiping(true);
+                  try {
+                    await deleteAllProgress();
+                    // Every surface behind this sheet is holding progress in
+                    // state; a reload is the honest way to show it is gone.
+                    window.location.reload();
+                  } catch {
+                    setWiping(false);
+                    setConfirmingWipe(false);
+                  }
+                }}
+                className="rounded-md bg-red-600 px-3 py-1.5 font-scripture text-[13px] font-semibold text-white transition-colors hover:bg-red-700 disabled:opacity-60"
+              >
+                {wiping ? "Deleting…" : "Delete everything"}
+              </button>
+              <button
+                onClick={() => setConfirmingWipe(false)}
+                className="font-scripture text-[13px] text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-200"
+              >
+                Cancel
+              </button>
+            </span>
+          ) : (
+            <button
+              onClick={() => setConfirmingWipe(true)}
+              className="shrink-0 whitespace-nowrap rounded-md border border-neutral-300 px-3 py-1.5 font-scripture text-[13px] font-medium text-neutral-600 transition-colors hover:border-red-400 hover:text-red-600 dark:border-neutral-700 dark:text-neutral-400 dark:hover:border-red-500/60 dark:hover:text-red-400"
+            >
+              Delete all progress
+            </button>
+          )}
         </div>
       </div>
     </div>
