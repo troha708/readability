@@ -409,14 +409,14 @@ export function BibleRoadmap({
           way back into the book is always on screen without a bar pinned
           over the text. Below lg the two stack, title first — the phone
           layout, unchanged. */}
-      <div className="mx-auto max-w-2xl px-4 py-8 lg:grid lg:max-w-5xl lg:grid-cols-[20.5rem_minmax(0,1fr)] lg:gap-x-12">
+      <div className="mx-auto max-w-2xl px-4 py-8 lg:grid lg:max-w-5xl lg:grid-cols-[22.5rem_minmax(0,1fr)] lg:gap-x-12">
         {/* The landing's opening block, on this page: title then button,
             ranged left and sitting on the vertical centre — the landing
             centres the same pair against its mockup with md:items-center,
             and here the leaf is a full screen tall so the pair holds the
             middle as the canon scrolls past. Its subtitle is the one thing
             left out; the library doesn't need to be sold to. */}
-        <div className="pb-7 lg:sticky lg:top-0 lg:flex lg:h-screen lg:flex-col lg:justify-center lg:pb-0">
+        <div className="pb-7 lg:sticky lg:top-0 lg:flex lg:h-screen lg:flex-col lg:justify-center lg:pb-24">
           {/* Set exactly as the landing's h1 — same face, weight, slant,
               tracking and size steps — so the two pages open in one voice.
               Only the colour differs, because this page has a light theme
