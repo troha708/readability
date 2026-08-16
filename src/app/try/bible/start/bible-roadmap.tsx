@@ -409,7 +409,7 @@ export function BibleRoadmap({
           way back into the book is always on screen without a bar pinned
           over the text. Below lg the two stack, title first — the phone
           layout, unchanged. */}
-      <div className="mx-auto max-w-2xl px-4 py-8 lg:grid lg:max-w-5xl lg:grid-cols-[17rem_minmax(0,1fr)] lg:gap-x-12">
+      <div className="mx-auto max-w-2xl px-4 py-8 lg:grid lg:max-w-5xl lg:grid-cols-[20.5rem_minmax(0,1fr)] lg:gap-x-12">
         {/* The landing's opening block, on this page: title then button,
             ranged left and sitting on the vertical centre — the landing
             centres the same pair against its mockup with md:items-center,
@@ -446,9 +446,13 @@ export function BibleRoadmap({
         <div className="min-w-0">
           {renderSection("Old Testament", "OT", otBooks)}
           {renderSection("New Testament", "NT", ntBooks)}
-
-          <SiteFooter className="mt-8 border-t-0" />
         </div>
+      </div>
+
+      {/* Under the spread rather than in the right column: the footer closes
+          the page, so it takes the page's width. */}
+      <div className="mx-auto max-w-2xl px-4 pb-8 lg:max-w-5xl">
+        <SiteFooter className="border-t-0" />
       </div>
 
     </main>
