@@ -24,7 +24,6 @@ const SECTIONS = [
   { href: "/try/bible/map", label: "Atlas" },
   { href: "/try/bible/dictionary", label: "Dictionary" },
   { href: "/try/bible/quiz", label: "Quiz" },
-  { href: "/try/bible/highlights", label: "Notes" },
 ];
 
 const DESKTOP_LINK =
