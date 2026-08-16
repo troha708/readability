@@ -406,7 +406,7 @@ export function BibleRoadmap({
     <main className="min-h-screen dark:bg-neutral-950">
       <SiteHeader />
 
-      <div className="mx-auto max-w-2xl px-4 py-8">
+      <div className="mx-auto max-w-2xl px-4 py-8 lg:max-w-5xl">
         {/* Sign-in banner for guests */}
         {!userLoading && !user && (
           <div className="mb-4 flex items-center justify-center gap-2 rounded-lg border border-blue-200 bg-blue-50 px-4 py-2.5 dark:border-blue-800 dark:bg-blue-950/40">
@@ -451,10 +451,14 @@ export function BibleRoadmap({
           </Link>
         </div>
 
-        {/* Canonical order always: Old Testament first (collapsed unless the
-            reader is currently in it), New Testament below. */}
-        {renderSection("Old Testament", "OT", otBooks)}
-        {renderSection("New Testament", "NT", ntBooks)}
+        {/* Canonical order always: Old Testament first, New Testament after
+            it — beside it on a wide screen, beneath it on a narrow one. The
+            two columns are deliberately unequal, 39 books against 27: forcing
+            them level would mean breaking the canon across the fold. */}
+        <div className="lg:grid lg:grid-cols-2 lg:gap-x-12">
+          {renderSection("Old Testament", "OT", otBooks)}
+          {renderSection("New Testament", "NT", ntBooks)}
+        </div>
 
         <SiteFooter className="mt-8 border-t-0" />
       </div>
