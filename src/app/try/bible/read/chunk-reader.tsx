@@ -1057,8 +1057,8 @@ export function ChunkReader({
   }
 
   // The opening beat: rails start open, and fold once the reader has had a
-  // moment — after the map coachmark is dismissed if one is due, since losing
-  // the panels while reading a coachmark would be two things at once.
+  // moment — after a coachmark is dismissed if one is due, since losing the
+  // panels while reading a coachmark would be two things at once.
   useEffect(() => {
     if (!autoHideRails) return;
     let settle: number | undefined;
@@ -1069,7 +1069,10 @@ export function ChunkReader({
     };
     const alreadySeen = (() => {
       try {
-        return !!localStorage.getItem("hint-map-seen");
+        return (
+          !!localStorage.getItem("hint-verse-tap-seen") &&
+          !!localStorage.getItem("hint-map-seen")
+        );
       } catch {
         return true;
       }
@@ -1082,8 +1085,8 @@ export function ChunkReader({
       settle = window.setTimeout(fold, 1000);
     };
     window.addEventListener("first-contact-dismissed", onDismissed, { once: true });
-    // The hint only appears on chapters that have places; don't wait forever
-    // on one that doesn't.
+    // A hint due isn't a hint shown — the map one only appears on chapters
+    // that have places; don't wait forever on one that doesn't.
     const fallback = window.setTimeout(fold, 7000);
     return () => {
       window.removeEventListener("first-contact-dismissed", onDismissed);
@@ -3539,6 +3542,16 @@ export function ChunkReader({
           onOpenNote={openNoteAt}
         />
       )}
+      {/* Tapping a verse is the way into everything the sheet holds, and
+          nothing on the page announces it — so it's pointed out once, at a
+          verse number in the text. Listed before the map hint so it takes the
+          first slot: this one is on every chapter, the map is not. */}
+      <FirstContactHint
+        selector="sup[data-verse-num]"
+        storageKey="hint-verse-tap-seen"
+        title="Tap any verse"
+        description="A tap opens that verse's tools: cross-references, other translations, the original words, and study notes. Highlight it or leave a note from there too."
+      />
       {/* The chapter Map button isn't on every chapter, so it's taught on
           first contact rather than up front. */}
       <FirstContactHint
