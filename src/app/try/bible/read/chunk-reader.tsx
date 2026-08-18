@@ -47,6 +47,12 @@ import {
 import { SearchModal } from "@/components/search-modal";
 import { SiteFooter } from "@/components/site-footer";
 import { FirstContactHint } from "@/components/first-contact-hint";
+import {
+  readNightLight,
+  writeNightLight,
+  nextNightLight,
+  nightLightLabel,
+} from "@/components/night-light";
 import { fetchChapter, fetchBookPlaces, fetchBookThemes } from "@/lib/content/client";
 import { IS_MOBILE } from "@/lib/build-target";
 import type { BookPlaces, ChapterPlaces } from "@/lib/content/places";
@@ -565,6 +571,8 @@ type SettingsControlsProps = {
   onToggleVerseNumbers: () => void;
   redLetter: boolean;
   onToggleRedLetter: () => void;
+  nightLight: number;
+  onNightLight: () => void;
   showCrossRefs: boolean;
   onToggleCrossRefs: () => void;
   versionAbbr: string;
@@ -597,6 +605,8 @@ function SettingsControls({
   onToggleBionic,
   verseNumbers,
   onToggleVerseNumbers,
+  nightLight,
+  onNightLight,
   redLetter,
   onToggleRedLetter,
   showCrossRefs,
@@ -676,6 +686,20 @@ function SettingsControls({
       <ToggleRow label="Bionic reading" on={bionic} onClick={onToggleBionic} />
       <ToggleRow label="Verse numbers" on={verseNumbers} onClick={onToggleVerseNumbers} />
       <ToggleRow label="Red letters" on={redLetter} onClick={onToggleRedLetter} />
+      {/* Night light. A stepper rather than a switch: warmth is a dial, and
+          the value beside the label is the only place the temperature shows.
+          It warms the whole app at runtime — see components/night-light. */}
+      <button
+        onClick={onNightLight}
+        className={`flex w-full items-center justify-between rounded-md px-2 py-1.5 text-left ${MENU_HOVER}`}
+      >
+        <span className="text-xs font-medium tracking-[0.25px] text-neutral-500 dark:text-neutral-400">
+          Night light
+        </span>
+        <span className="text-xs font-medium tabular-nums text-neutral-700 dark:text-neutral-200">
+          {nightLightLabel(nightLight)}
+        </span>
+      </button>
       {/* Cross-references (BSB only) */}
       {versionAbbr === "BSB" && (
         <ToggleRow
@@ -973,6 +997,7 @@ export function ChunkReader({
   // Words of Jesus carry <wj> markup where the source text provides it.
   // Rendered in the normal body colour by default; opt-in via settings.
   const [redLetter, setRedLetter] = useState(false);
+  const [nightLight, setNightLight] = useState(0);
   const [mode, setMode] = useState<ReadingMode>("read");
   const [fontSize, setFontSize] = useState(17);
   const FONT_SIZE_MIN = 14;
@@ -1302,6 +1327,7 @@ export function ChunkReader({
     setVerseNumbers(localStorage.getItem("verseNumbers") !== "false");
     setShowCrossRefs(localStorage.getItem("bsbCrossRefs") === "true");
     setRedLetter(localStorage.getItem("redLetter") === "true");
+    setNightLight(readNightLight());
     setMode(getReadingMode());
     const saved = localStorage.getItem("bibleFontSize");
     if (saved) {
@@ -1814,6 +1840,14 @@ export function ChunkReader({
     const next = !redLetter;
     setRedLetter(next);
     localStorage.setItem("redLetter", String(next));
+  }
+
+  // Steps Off -> 5200K -> 4400K -> 3800K -> 3000K -> Off. The overlay lives in
+  // the root layout, so this only records the choice and announces it.
+  function cycleNightLight() {
+    const next = nextNightLight(nightLight);
+    setNightLight(next);
+    writeNightLight(next);
   }
 
   function changeFontSize(delta: number) {
@@ -2796,6 +2830,8 @@ export function ChunkReader({
                   onToggleVerseNumbers={toggleVerseNumbers}
                   redLetter={redLetter}
                   onToggleRedLetter={toggleRedLetter}
+                  nightLight={nightLight}
+                  onNightLight={cycleNightLight}
                   showCrossRefs={showCrossRefs}
                   onToggleCrossRefs={toggleCrossRefs}
                   versionAbbr={versionAbbr}
@@ -3196,6 +3232,8 @@ export function ChunkReader({
                   onToggleVerseNumbers={toggleVerseNumbers}
                   redLetter={redLetter}
                   onToggleRedLetter={toggleRedLetter}
+                  nightLight={nightLight}
+                  onNightLight={cycleNightLight}
                   showCrossRefs={showCrossRefs}
                   onToggleCrossRefs={toggleCrossRefs}
                   versionAbbr={versionAbbr}

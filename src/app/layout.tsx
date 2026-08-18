@@ -47,6 +47,7 @@ import { ReminderSync } from "@/components/reminder-sync";
 import { SignupNudge } from "@/components/signup-nudge";
 import { ErrorReporter } from "@/components/error-reporter";
 import { Analytics } from "@vercel/analytics/next";
+import { NightLight } from "@/components/night-light";
 import { IS_MOBILE } from "@/lib/build-target";
 
 export const metadata: Metadata = {
@@ -134,6 +135,11 @@ export default function RootLayout({
       </head>
       <body className="antialiased">
         {children}
+        {/* Warmth filter over the whole app, off unless the reader turns it on.
+            Mounted here rather than in the reader so it covers the library,
+            dictionary and atlas too — a night filter that stops at one route
+            is worse than none. */}
+        <NightLight />
         <ServiceWorkerRegister />
         <ReminderSync />
         <SignupNudge />
