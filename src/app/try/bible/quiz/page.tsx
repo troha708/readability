@@ -22,7 +22,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const total = totalQuestionCount();
   const title = `Bible Quiz — ${total.toLocaleString()} questions on every chapter`;
   const description =
-    `${total.toLocaleString()} Bible quiz questions covering all 66 books: ` +
+    `${total.toLocaleString()} Bible quiz questions: ` +
     `multiple choice, true or false, and fill in the blank, each linked to the ` +
     `verse it comes from.`;
   return {

@@ -8,13 +8,18 @@ import { IS_MOBILE } from "@/lib/build-target";
 import { loadChapterNumbers } from "@/lib/content/chapter-text";
 
 export const metadata: Metadata = {
-  title: "Bible Library — All 66 Books",
+  // No book count and no "every book of the Bible": this ships the
+  // Protestant canon, and a completeness claim states that canon as THE
+  // Bible — wrong for a Catholic or Orthodox reader, and it reads like
+  // advertising besides. The library says what it is; the shelf shows how
+  // much is on it.
+  title: "Bible Library",
   description:
-    "Browse every book and chapter of the Bible. Track your reading progress, take comprehension quizzes, and study with cross-references and word study.",
+    "Browse by book and chapter. Track your reading progress, take comprehension quizzes, and study with cross-references and word study.",
   openGraph: {
     title: "Bible Library | Readability",
     description:
-      "Browse every book and chapter of the Bible. Track your reading progress, take comprehension quizzes, and study with cross-references and word study.",
+      "Browse by book and chapter. Track your reading progress, take comprehension quizzes, and study with cross-references and word study.",
   },
 };
 

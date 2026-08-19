@@ -22,7 +22,7 @@ const jsonLd = {
   featureList: [
     "Comprehension quizzes for every chapter",
     "Chapter maps and a searchable Bible atlas",
-    "An introduction to every book of the Bible",
+    "An introduction to every book",
     "Cross-references, study notes, and Greek/Hebrew word study on any verse",
     "Translation comparison on any verse",
     "Full-text search, highlights, and personal notes",
