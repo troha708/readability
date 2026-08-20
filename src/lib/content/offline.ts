@@ -262,7 +262,14 @@ export async function getQuizData(
 }
 
 // ── Verse across translations (verse sheet) ─────────────────────────
-export type VerseVersion = { abbr: string; name: string; text: string };
+/** Mirrors the server type; the offline bundle may not carry the extras. */
+export type VerseVersion = {
+  abbr: string;
+  name: string;
+  text: string;
+  html?: string;
+  quote?: string;
+};
 
 export async function getVerseVersions(
   book: string,

@@ -33,7 +33,14 @@ export async function fetchChapter(
   };
 }
 
-export type VerseVersion = { abbr: string; name: string; text: string };
+/** `html` and `quote` carry the verse with its source formatting, for copying. */
+export type VerseVersion = {
+  abbr: string;
+  name: string;
+  text: string;
+  html?: string;
+  quote?: string;
+};
 
 /** One verse across every offered translation (verse sheet "Compare"). */
 export async function fetchVerseVersions(

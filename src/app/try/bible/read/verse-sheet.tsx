@@ -318,14 +318,41 @@ export function VerseSheet({
     ).values(),
   ];
 
+  // Copy the verse with its formatting: poetry lines stay lines, supplied
+  // words stay italic, the divine name stays small caps. Two flavours go on
+  // the clipboard at once — an editor takes the HTML, a plain-text field takes
+  // the other — so nothing has to choose on the reader's behalf.
+  //
+  // ClipboardItem is unavailable on older Safari and outside secure contexts,
+  // and a licensed translation arrives without markup, so both paths fall back
+  // to the plain text rather than failing the copy.
   function copyVerse() {
-    const text = current?.text ?? "";
-    void navigator.clipboard
-      .writeText(`“${text}” — ${reference} (${versionAbbr})`)
-      .then(() => {
-        setCopied(true);
-        setTimeout(() => setCopied(false), 1500);
-      });
+    // `quote` keeps the line breaks and indents; `text` is the flat form
+    // and only stands in when a translation arrives without markup.
+    const text = current?.quote ?? current?.text ?? "";
+    const citation = ` — ${reference} (${versionAbbr})`;
+    const plain = `“${text}”${citation}`;
+    const done = () => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1500);
+    };
+
+    const markup = current?.html;
+    if (markup && typeof ClipboardItem !== "undefined" && navigator.clipboard?.write) {
+      const rich = `<blockquote>“${markup}”${citation}</blockquote>`;
+      void navigator.clipboard
+        .write([
+          new ClipboardItem({
+            "text/html": new Blob([rich], { type: "text/html" }),
+            "text/plain": new Blob([plain], { type: "text/plain" }),
+          }),
+        ])
+        .then(done)
+        .catch(() => void navigator.clipboard.writeText(plain).then(done));
+      return;
+    }
+
+    void navigator.clipboard.writeText(plain).then(done);
   }
 
   return (
