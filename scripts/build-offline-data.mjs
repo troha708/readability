@@ -126,7 +126,7 @@ function buildTranslationText(abbr) {
 // fetched a verse at a time on the web and must never be copied to a device:
 // the publishers permit display, not redistribution. Kept as a literal list
 // so this guard has no import dependency on the app's TypeScript.
-const LICENSED_ONLY = ["NIV", "NLT", "NASB", "CSB", "NKJV", "GNT", "CEV"];
+const LICENSED_ONLY = ["ESV", "NIV", "NLT", "NASB", "CSB", "NKJV", "GNT", "CEV"];
 
 function main() {
   const args = process.argv.slice(2).map((a) => a.toUpperCase());

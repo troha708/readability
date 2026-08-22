@@ -1,8 +1,9 @@
 /**
  * Modern translations we don't own, shown one verse at a time in the verse
- * sheet's "Other translations" section and fetched live from API.Bible
- * (American Bible Society). Nothing here is ever written to data/ or bundled
- * into the native app — the publishers licence display, not redistribution.
+ * sheet's "Other translations" section and fetched live — most from API.Bible
+ * (American Bible Society), the ESV from Crossway's own API, which is the only
+ * place it is served. Nothing here is ever written to data/ or bundled into
+ * the native app — the publishers licence display, not redistribution.
  *
  * This module is client-safe metadata only: which abbreviations are licensed
  * and what notice each publisher requires on display. Which of them are
@@ -19,6 +20,10 @@ export type LicensedMeta = {
   year: number;
   approach: "word-for-word" | "balanced" | "thought-for-thought";
   note?: string;
+  /** Which API serves it. The two have separate keys, separate allowances and
+   *  separate terms, so this decides which path fetches the verse — and stops
+   *  an abbreviation being configured against the wrong provider. */
+  provider: "api.bible" | "crossway";
   publisher: string;
   publisherUrl: string;
   /** The publisher's required copyright line, shown wherever the text is. */
@@ -32,10 +37,22 @@ export type LicensedMeta = {
  * switching a version on — the publisher's wording is theirs to dictate.
  */
 export const LICENSED_META: Record<string, LicensedMeta> = {
+  ESV: {
+    name: "English Standard Version",
+    year: 2016,
+    approach: "word-for-word",
+    note: "Crossway's term for its own approach is \"essentially literal\".",
+    provider: "crossway",
+    publisher: "Crossway",
+    publisherUrl: "https://www.crossway.org",
+    notice:
+      "Scripture quotations are from the ESV® Bible (The Holy Bible, English Standard Version®), copyright © 2001 by Crossway, a publishing ministry of Good News Publishers. Used by permission. All rights reserved.",
+  },
   NIV: {
     name: "New International Version",
     year: 2011,
     approach: "balanced",
+    provider: "api.bible",
     publisher: "Biblica",
     publisherUrl: "https://www.biblica.com",
     notice:
@@ -45,6 +62,7 @@ export const LICENSED_META: Record<string, LicensedMeta> = {
     name: "New Living Translation",
     year: 2015,
     approach: "thought-for-thought",
+    provider: "api.bible",
     publisher: "Tyndale House Publishers",
     publisherUrl: "https://tyndale.com",
     notice:
@@ -54,6 +72,7 @@ export const LICENSED_META: Record<string, LicensedMeta> = {
     name: "New American Standard Bible",
     year: 2020,
     approach: "word-for-word",
+    provider: "api.bible",
     publisher: "The Lockman Foundation",
     publisherUrl: "https://www.lockman.org",
     notice:
@@ -63,6 +82,7 @@ export const LICENSED_META: Record<string, LicensedMeta> = {
     name: "Christian Standard Bible",
     year: 2017,
     approach: "balanced",
+    provider: "api.bible",
     publisher: "Holman Bible Publishers",
     publisherUrl: "https://csbible.com",
     notice:
@@ -72,6 +92,7 @@ export const LICENSED_META: Record<string, LicensedMeta> = {
     name: "New King James Version",
     year: 1982,
     approach: "word-for-word",
+    provider: "api.bible",
     publisher: "Thomas Nelson",
     publisherUrl: "https://www.thomasnelson.com",
     notice:
@@ -81,6 +102,7 @@ export const LICENSED_META: Record<string, LicensedMeta> = {
     name: "Good News Translation",
     year: 1992,
     approach: "thought-for-thought",
+    provider: "api.bible",
     publisher: "American Bible Society",
     publisherUrl: "https://www.americanbible.org",
     notice:
@@ -90,6 +112,7 @@ export const LICENSED_META: Record<string, LicensedMeta> = {
     name: "Contemporary English Version",
     year: 1995,
     approach: "thought-for-thought",
+    provider: "api.bible",
     publisher: "American Bible Society",
     publisherUrl: "https://www.americanbible.org",
     notice:
