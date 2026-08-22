@@ -280,6 +280,7 @@ type ChapterSectionProps = {
   bionic: boolean;
   showCrossRefs: boolean;
   redLetter: boolean;
+  showChapterNumber: boolean;
   fontSize: number;
   mode: ReadingMode;
   chapterHighlights: Record<number, VerseHighlight>;
@@ -296,6 +297,7 @@ const ChapterSection = React.memo(function ChapterSection({
   bionic,
   showCrossRefs,
   redLetter,
+  showChapterNumber,
   fontSize,
   mode,
   chapterHighlights,
@@ -357,7 +359,10 @@ const ChapterSection = React.memo(function ChapterSection({
           redLetter={redLetter}
           highlights={chapterHighlights}
           headings={headings ?? undefined}
-          chapterNumber={chapterNumber}
+          // Withholding the number is the whole switch: the formatter drops
+          // the drop cap and hands verse 1 back its own marker, which the
+          // numeral otherwise stands in for.
+          chapterNumber={showChapterNumber ? chapterNumber : undefined}
         />
       </article>
 
@@ -569,6 +574,8 @@ type SettingsControlsProps = {
   onToggleBionic: () => void;
   verseNumbers: boolean;
   onToggleVerseNumbers: () => void;
+  showChapterNumbers: boolean;
+  onToggleChapterNumbers: () => void;
   redLetter: boolean;
   onToggleRedLetter: () => void;
   nightLight: number;
@@ -605,6 +612,8 @@ function SettingsControls({
   onToggleBionic,
   verseNumbers,
   onToggleVerseNumbers,
+  showChapterNumbers,
+  onToggleChapterNumbers,
   nightLight,
   onNightLight,
   redLetter,
@@ -683,8 +692,14 @@ function SettingsControls({
         </span>
       </button>
 
-      <ToggleRow label="Bionic reading" on={bionic} onClick={onToggleBionic} />
       <ToggleRow label="Verse numbers" on={verseNumbers} onClick={onToggleVerseNumbers} />
+      {/* Beside verse numbers, because they are the same question asked of a
+          bigger unit: the opening numeral, not the little superscripts. */}
+      <ToggleRow
+        label="Chapter numbers"
+        on={showChapterNumbers}
+        onClick={onToggleChapterNumbers}
+      />
       <ToggleRow label="Red letters" on={redLetter} onClick={onToggleRedLetter} />
       {/* Night light. A stepper rather than a switch: warmth is a dial, and
           the value beside the label is the only place the temperature shows.
@@ -715,6 +730,9 @@ function SettingsControls({
           onClick={onToggleAutoHideRails}
         />
       )}
+      {/* Last, and deliberately: every other row here adjusts one detail of
+          the page, while bionic reading re-sets every word on it. */}
+      <ToggleRow label="Bionic reading" on={bionic} onClick={onToggleBionic} />
 
       {includeTranslation && (
         <>
@@ -997,6 +1015,9 @@ export function ChunkReader({
   // Words of Jesus carry <wj> markup where the source text provides it.
   // Rendered in the normal body colour by default; opt-in via settings.
   const [redLetter, setRedLetter] = useState(false);
+  // The chapter numeral that opens each chapter as a drop cap. On by default;
+  // off suits reading a book straight through.
+  const [showChapterNumbers, setShowChapterNumbers] = useState(true);
   const [nightLight, setNightLight] = useState(0);
   const [mode, setMode] = useState<ReadingMode>("read");
   const [fontSize, setFontSize] = useState(17);
@@ -1325,6 +1346,7 @@ export function ChunkReader({
     // !== "false", not === "true": absent means on. Readers who explicitly
     // turned them off keep that; only the untouched default moves.
     setVerseNumbers(localStorage.getItem("verseNumbers") !== "false");
+    setShowChapterNumbers(localStorage.getItem("chapterNumbers") !== "false");
     setShowCrossRefs(localStorage.getItem("bsbCrossRefs") === "true");
     setRedLetter(localStorage.getItem("redLetter") === "true");
     setNightLight(readNightLight());
@@ -1828,6 +1850,12 @@ export function ChunkReader({
     const next = !verseNumbers;
     setVerseNumbers(next);
     localStorage.setItem("verseNumbers", String(next));
+  }
+
+  function toggleChapterNumbers() {
+    const next = !showChapterNumbers;
+    setShowChapterNumbers(next);
+    localStorage.setItem("chapterNumbers", String(next));
   }
 
   function toggleCrossRefs() {
@@ -2828,6 +2856,8 @@ export function ChunkReader({
                   onToggleBionic={toggleBionic}
                   verseNumbers={verseNumbers}
                   onToggleVerseNumbers={toggleVerseNumbers}
+                  showChapterNumbers={showChapterNumbers}
+                  onToggleChapterNumbers={toggleChapterNumbers}
                   redLetter={redLetter}
                   onToggleRedLetter={toggleRedLetter}
                   nightLight={nightLight}
@@ -3230,6 +3260,8 @@ export function ChunkReader({
                   onToggleBionic={toggleBionic}
                   verseNumbers={verseNumbers}
                   onToggleVerseNumbers={toggleVerseNumbers}
+                  showChapterNumbers={showChapterNumbers}
+                  onToggleChapterNumbers={toggleChapterNumbers}
                   redLetter={redLetter}
                   onToggleRedLetter={toggleRedLetter}
                   nightLight={nightLight}
@@ -3412,6 +3444,7 @@ export function ChunkReader({
               bionic={bionic}
               showCrossRefs={showCrossRefs}
               redLetter={redLetter}
+              showChapterNumber={showChapterNumbers}
               fontSize={fontSize}
               mode={mode}
               chapterHighlights={highlightsByChapter.get(ch.chapterNumber) ?? EMPTY_HIGHLIGHTS}
