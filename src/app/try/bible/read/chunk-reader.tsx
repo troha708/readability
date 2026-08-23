@@ -557,20 +557,20 @@ function ToggleRow({
           as a list of settings instead of a row of lit switches. No drop
           shadow — nothing else in this menu floats.
 
-          The knob is the page's own text colour, which is the near-white the
-          dark theme reads in (neutral-300) and its ink counterpart in the
-          light one. Pure #fff would disappear against the light menu. */}
+          On is amber-400, the palette's anchor and the same gold the headings
+          take, in both themes — one colour for the state rather than a pair
+          tuned per surface. Off is a muted grey. */}
       <span
         className={`flex h-[18px] w-8 shrink-0 items-center rounded-full border p-[2px] transition-colors ${
           on
-            ? "border-neutral-500 dark:border-neutral-400"
+            ? "border-amber-400/70"
             : "border-neutral-400 dark:border-neutral-600"
         }`}
       >
         <span
           className={`h-3 w-3 rounded-full transition-transform ${
             on
-              ? "translate-x-[14px] bg-neutral-700 dark:bg-neutral-300"
+              ? "translate-x-[14px] bg-amber-400"
               : "translate-x-0 bg-neutral-400 dark:bg-neutral-600"
           }`}
         />
