@@ -512,7 +512,15 @@ function renderHtml(
   chapterNumber?: number,
   showCrossRefs?: boolean,
   redLetter?: boolean,
+  showHeadings = true,
 ) {
+  // Headings reach the page two ways — BSB carries its own \s1/\s2 paragraphs
+  // inline, while every other translation gets them as an overlay — so turning
+  // them off has to close both doors. Stripping the markup here, before any
+  // paragraph-index analysis, keeps the counts the rest of this function walks.
+  if (!showHeadings) {
+    html = html.replace(/<p class="s\d?">[\s\S]*?<\/p>/g, "");
+  }
   if (showCrossRefs) {
     // Fold each cross-reference paragraph onto the heading above it.
     html = inlineHeadingRefs(html);
@@ -524,7 +532,7 @@ function renderHtml(
   const metas = extractParagraphMetas(html);
 
   let paragraphHeadings: Map<number, SectionHeading[]> | undefined;
-  if (headings?.length) {
+  if (showHeadings && headings?.length) {
     paragraphHeadings = computeParagraphHeadings(metas, headings);
   }
 
@@ -671,6 +679,7 @@ export function FormattedChunkText({
   chapterNumber,
   showCrossRefs = false,
   redLetter = false,
+  showHeadings = true,
 }: {
   chunkText: string;
   bionic?: boolean;
@@ -679,6 +688,7 @@ export function FormattedChunkText({
   chapterNumber?: number;
   showCrossRefs?: boolean;
   redLetter?: boolean;
+  showHeadings?: boolean;
 }) {
   if (!chunkText?.trim()) {
     return (
@@ -690,7 +700,16 @@ export function FormattedChunkText({
 
   return isHtml(chunkText) ? (
     <div>
-      {renderHtml(chunkText, bionic, highlights, headings, chapterNumber, showCrossRefs, redLetter)}
+      {renderHtml(
+        chunkText,
+        bionic,
+        highlights,
+        headings,
+        chapterNumber,
+        showCrossRefs,
+        redLetter,
+        showHeadings,
+      )}
     </div>
   ) : (
     renderPlainText(chunkText, bionic, highlights, headings)

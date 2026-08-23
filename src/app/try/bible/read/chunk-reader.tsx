@@ -281,6 +281,7 @@ type ChapterSectionProps = {
   showCrossRefs: boolean;
   redLetter: boolean;
   showChapterNumber: boolean;
+  showHeadings: boolean;
   fontSize: number;
   mode: ReadingMode;
   chapterHighlights: Record<number, VerseHighlight>;
@@ -298,6 +299,7 @@ const ChapterSection = React.memo(function ChapterSection({
   showCrossRefs,
   redLetter,
   showChapterNumber,
+  showHeadings,
   fontSize,
   mode,
   chapterHighlights,
@@ -359,6 +361,7 @@ const ChapterSection = React.memo(function ChapterSection({
           redLetter={redLetter}
           highlights={chapterHighlights}
           headings={headings ?? undefined}
+          showHeadings={showHeadings}
           // Withholding the number is the whole switch: the formatter drops
           // the drop cap and hands verse 1 back its own marker, which the
           // numeral otherwise stands in for.
@@ -576,6 +579,8 @@ type SettingsControlsProps = {
   onToggleVerseNumbers: () => void;
   showChapterNumbers: boolean;
   onToggleChapterNumbers: () => void;
+  showHeadings: boolean;
+  onToggleHeadings: () => void;
   redLetter: boolean;
   onToggleRedLetter: () => void;
   nightLight: number;
@@ -614,6 +619,8 @@ function SettingsControls({
   onToggleVerseNumbers,
   showChapterNumbers,
   onToggleChapterNumbers,
+  showHeadings,
+  onToggleHeadings,
   nightLight,
   onNightLight,
   redLetter,
@@ -700,6 +707,7 @@ function SettingsControls({
         on={showChapterNumbers}
         onClick={onToggleChapterNumbers}
       />
+      <ToggleRow label="Section headings" on={showHeadings} onClick={onToggleHeadings} />
       <ToggleRow label="Red letters" on={redLetter} onClick={onToggleRedLetter} />
       {/* Night light. A stepper rather than a switch: warmth is a dial, and
           the value beside the label is the only place the temperature shows.
@@ -1018,6 +1026,9 @@ export function ChunkReader({
   // The chapter numeral that opens each chapter as a drop cap. On by default;
   // off suits reading a book straight through.
   const [showChapterNumbers, setShowChapterNumbers] = useState(true);
+  // The section headings above each passage: BSB's own inline ones, and the
+  // same set overlaid onto translations that ship without any.
+  const [showHeadings, setShowHeadings] = useState(true);
   const [nightLight, setNightLight] = useState(0);
   const [mode, setMode] = useState<ReadingMode>("read");
   const [fontSize, setFontSize] = useState(17);
@@ -1347,6 +1358,7 @@ export function ChunkReader({
     // turned them off keep that; only the untouched default moves.
     setVerseNumbers(localStorage.getItem("verseNumbers") !== "false");
     setShowChapterNumbers(localStorage.getItem("chapterNumbers") !== "false");
+    setShowHeadings(localStorage.getItem("sectionHeadings") !== "false");
     setShowCrossRefs(localStorage.getItem("bsbCrossRefs") === "true");
     setRedLetter(localStorage.getItem("redLetter") === "true");
     setNightLight(readNightLight());
@@ -1856,6 +1868,12 @@ export function ChunkReader({
     const next = !showChapterNumbers;
     setShowChapterNumbers(next);
     localStorage.setItem("chapterNumbers", String(next));
+  }
+
+  function toggleHeadings() {
+    const next = !showHeadings;
+    setShowHeadings(next);
+    localStorage.setItem("sectionHeadings", String(next));
   }
 
   function toggleCrossRefs() {
@@ -2858,6 +2876,8 @@ export function ChunkReader({
                   onToggleVerseNumbers={toggleVerseNumbers}
                   showChapterNumbers={showChapterNumbers}
                   onToggleChapterNumbers={toggleChapterNumbers}
+                  showHeadings={showHeadings}
+                  onToggleHeadings={toggleHeadings}
                   redLetter={redLetter}
                   onToggleRedLetter={toggleRedLetter}
                   nightLight={nightLight}
@@ -3262,6 +3282,8 @@ export function ChunkReader({
                   onToggleVerseNumbers={toggleVerseNumbers}
                   showChapterNumbers={showChapterNumbers}
                   onToggleChapterNumbers={toggleChapterNumbers}
+                  showHeadings={showHeadings}
+                  onToggleHeadings={toggleHeadings}
                   redLetter={redLetter}
                   onToggleRedLetter={toggleRedLetter}
                   nightLight={nightLight}
@@ -3445,6 +3467,7 @@ export function ChunkReader({
               showCrossRefs={showCrossRefs}
               redLetter={redLetter}
               showChapterNumber={showChapterNumbers}
+              showHeadings={showHeadings}
               fontSize={fontSize}
               mode={mode}
               chapterHighlights={highlightsByChapter.get(ch.chapterNumber) ?? EMPTY_HIGHLIGHTS}
