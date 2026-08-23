@@ -544,7 +544,7 @@ function ToggleRow({
   return (
     <button
       onClick={onClick}
-      className={`flex w-full items-center justify-between rounded-md px-2 py-1.5 text-left ${MENU_HOVER}`}
+      className={`flex w-full items-center justify-between rounded-md px-2 py-1 text-left ${MENU_HOVER}`}
     >
       <span className="text-xs font-medium tracking-[0.25px] text-neutral-500 dark:text-neutral-400">
         {label}
@@ -637,7 +637,7 @@ function SettingsControls({
   return (
     <>
       {/* Reading mode */}
-      <div className="flex items-center justify-between px-2 py-1.5">
+      <div className="flex items-center justify-between px-2 py-1">
         <span className="text-xs font-medium tracking-[0.25px] text-neutral-500 dark:text-neutral-400">Mode</span>
         <div className="inline-flex rounded-md bg-neutral-100 p-0.5 dark:bg-neutral-700">
           {(["read", "study"] as const).map((m) => (
@@ -659,14 +659,14 @@ function SettingsControls({
       <div className={MENU_RULE} />
 
       {/* Text size */}
-      <div className="flex items-center justify-between px-2 py-1.5">
+      <div className="flex items-center justify-between px-2 py-1">
         <span className="text-xs font-medium tracking-[0.25px] text-neutral-500 dark:text-neutral-400">Text size</span>
         <div className="flex items-center gap-1.5">
           <button
             onClick={() => onFontSize(-1)}
             disabled={fontSize <= fontSizeMin}
             aria-label="Decrease font size"
-            className={`flex h-7 w-7 items-center justify-center rounded text-sm font-medium tracking-[0.25px] text-neutral-600 disabled:cursor-not-allowed disabled:opacity-30 dark:text-neutral-300 ${MENU_HOVER}`}
+            className={`flex h-6 w-6 items-center justify-center rounded text-sm font-medium tracking-[0.25px] text-neutral-600 disabled:cursor-not-allowed disabled:opacity-30 dark:text-neutral-300 ${MENU_HOVER}`}
           >
             −
           </button>
@@ -677,7 +677,7 @@ function SettingsControls({
             onClick={() => onFontSize(1)}
             disabled={fontSize >= fontSizeMax}
             aria-label="Increase font size"
-            className={`flex h-7 w-7 items-center justify-center rounded text-sm font-medium tracking-[0.25px] text-neutral-600 disabled:cursor-not-allowed disabled:opacity-30 dark:text-neutral-300 ${MENU_HOVER}`}
+            className={`flex h-6 w-6 items-center justify-center rounded text-sm font-medium tracking-[0.25px] text-neutral-600 disabled:cursor-not-allowed disabled:opacity-30 dark:text-neutral-300 ${MENU_HOVER}`}
           >
             +
           </button>
@@ -687,7 +687,7 @@ function SettingsControls({
       {/* Theme */}
       <button
         onClick={onToggleTheme}
-        className={`flex w-full items-center justify-between rounded-md px-2 py-1.5 text-left ${MENU_HOVER}`}
+        className={`flex w-full items-center justify-between rounded-md px-2 py-1 text-left ${MENU_HOVER}`}
       >
         {/* "Appearance", not "Theme": the rail carries a Themes row a few
             lines up, and two controls a letter apart in one column read as
@@ -714,7 +714,7 @@ function SettingsControls({
           It warms the whole app at runtime — see components/night-light. */}
       <button
         onClick={onNightLight}
-        className={`flex w-full items-center justify-between rounded-md px-2 py-1.5 text-left ${MENU_HOVER}`}
+        className={`flex w-full items-center justify-between rounded-md px-2 py-1 text-left ${MENU_HOVER}`}
       >
         <span className="text-xs font-medium tracking-[0.25px] text-neutral-500 dark:text-neutral-400">
           Night light
@@ -2860,7 +2860,7 @@ export function ChunkReader({
               </svg>
             </button>
             {settingsOpen && (
-              <div className="absolute right-0 top-full z-20 mt-1 w-60 rounded-lg border border-neutral-200 bg-white p-1.5 shadow-lg dark:border-neutral-700 dark:bg-neutral-800">
+              <div className="absolute right-0 top-full z-20 mt-1 max-h-[calc(100vh-5rem)] w-60 overflow-y-auto overscroll-contain rounded-lg border border-neutral-200 bg-white p-1.5 shadow-lg dark:border-neutral-700 dark:bg-neutral-800">
                 <SettingsControls
                   mode={mode}
                   onMode={(m) => { setMode(m); setReadingMode(m); }}
@@ -3266,7 +3266,7 @@ export function ChunkReader({
               Settings
             </button>
             {settingsOpen && (
-              <div className="absolute right-0 top-full z-20 mt-1 w-60 rounded-lg border border-neutral-200 bg-white p-1.5 shadow-lg dark:border-neutral-700 dark:bg-neutral-800">
+              <div className="absolute right-0 top-full z-20 mt-1 max-h-[calc(100vh-5rem)] w-60 overflow-y-auto overscroll-contain rounded-lg border border-neutral-200 bg-white p-1.5 shadow-lg dark:border-neutral-700 dark:bg-neutral-800">
                 <SettingsControls
                   mode={mode}
                   onMode={(m) => { setMode(m); setReadingMode(m); }}
