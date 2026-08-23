@@ -9,6 +9,7 @@ import React, {
   useState,
 } from "react";
 import Link from "next/link";
+import { useUser } from "@/hooks/useUser";
 import { useRouter, useSearchParams } from "next/navigation";
 import { isChapterUrlSyncSuppressed } from "@/lib/reading-nav-guard";
 import {
@@ -551,14 +552,22 @@ function ToggleRow({
       <span className="text-xs font-medium tracking-[0.25px] text-neutral-500 dark:text-neutral-400">
         {label}
       </span>
+      {/* An outlined track with a solid knob, rather than a bar that fills
+          with colour: the amber says "on" from the knob alone, so a column of
+          these reads as a list of settings instead of a row of lit switches.
+          No drop shadow — nothing else in this menu floats. */}
       <span
-        className={`flex h-5 w-9 items-center rounded-full p-0.5 transition-colors ${
-          on ? "bg-amber-500" : "bg-neutral-300 dark:bg-neutral-600"
+        className={`flex h-[18px] w-8 shrink-0 items-center rounded-full border p-[2px] transition-colors ${
+          on
+            ? "border-amber-600/70 dark:border-amber-400/60"
+            : "border-neutral-400 dark:border-neutral-500"
         }`}
       >
         <span
-          className={`h-4 w-4 rounded-full bg-white shadow transition-transform ${
-            on ? "translate-x-4" : "translate-x-0"
+          className={`h-3 w-3 rounded-full transition-transform ${
+            on
+              ? "translate-x-[14px] bg-amber-600 dark:bg-amber-400"
+              : "translate-x-0 bg-neutral-400 dark:bg-neutral-500"
           }`}
         />
       </span>
@@ -786,25 +795,43 @@ function TranslationList({
   onPick: (abbr: string) => void;
   hover?: string;
 }) {
+  const [open, setOpen] = useState(false);
+
   return (
     <>
-      <div className="px-2 pb-1 pt-0.5 text-xs font-medium tracking-[0.25px] text-neutral-500 dark:text-neutral-400">
-        Translation
-      </div>
-      {versions.map((v) => (
-        <button
-          key={v.abbr}
-          onClick={() => onPick(v.abbr)}
-          className={`block w-full rounded-md px-2 py-1.5 text-left text-sm font-medium tracking-[0.25px] ${hover} ${
-            v.abbr === current
-              ? "font-semibold text-amber-700 dark:text-amber-400"
-              : "text-neutral-700 dark:text-neutral-300"
-          }`}
-        >
-          <span className="font-medium">{v.abbr}</span>{" "}
-          <span className="text-neutral-500 dark:text-neutral-400">{v.name}</span>
-        </button>
-      ))}
+      {/* Closed, this is a label-and-value row like Appearance or Night light,
+          so the current translation is readable without opening anything. The
+          list only unfolds when you intend to change it. */}
+      <button
+        onClick={() => setOpen((o) => !o)}
+        className={`flex w-full items-center justify-between rounded-md px-2 py-1 text-left ${hover}`}
+      >
+        <span className="text-xs font-medium tracking-[0.25px] text-neutral-500 dark:text-neutral-400">
+          Translation
+        </span>
+        <span className="flex items-center text-xs font-medium text-neutral-700 dark:text-neutral-200">
+          {current}
+          <span className="ml-1 text-neutral-400">{open ? "▴" : "▾"}</span>
+        </span>
+      </button>
+      {open &&
+        versions.map((v) => (
+          <button
+            key={v.abbr}
+            onClick={() => {
+              onPick(v.abbr);
+              setOpen(false);
+            }}
+            className={`block w-full rounded-md py-1 pl-4 pr-2 text-left text-xs tracking-[0.25px] ${hover} ${
+              v.abbr === current
+                ? "font-semibold text-amber-700 dark:text-amber-400"
+                : "font-medium text-neutral-700 dark:text-neutral-300"
+            }`}
+          >
+            <span>{v.abbr}</span>{" "}
+            <span className="text-neutral-500 dark:text-neutral-400">{v.name}</span>
+          </button>
+        ))}
     </>
   );
 }
@@ -1024,6 +1051,8 @@ export function ChunkReader({
   // component key, so ChunkReader doesn't remount and a mount-only effect never
   // fires.
   const highlightParam = useSearchParams().get("highlight");
+  // Only for the rail's sign-in link; reading itself never needs an account.
+  const { user, loading: userLoading } = useUser();
 
   // Display settings
   const [dark, setDark] = useState(false);
@@ -3177,8 +3206,19 @@ export function ChunkReader({
         style={{ transform: autoHideRails && !rightRailOpen ? `translateX(${RAIL_WIDTH}px)` : "translateX(0)" }}
         inert={autoHideRails && !rightRailOpen}
       >
-        <div className="shrink-0 border-b border-neutral-200 px-3 py-3 dark:border-neutral-700">
+        {/* The wordmark, and — until you have one — a way to get an account.
+            Nothing renders while the session is still loading, so the row
+            doesn't flicker a sign-in link at people who are already signed in. */}
+        <div className="flex shrink-0 items-center justify-between gap-2 border-b border-neutral-200 px-3 py-3 dark:border-neutral-700">
           <Logo compact icon={false} />
+          {!userLoading && !user && (
+            <Link
+              href="/login"
+              className="shrink-0 rounded-md px-1.5 py-0.5 text-xs font-medium tracking-[0.25px] text-neutral-500 hover:text-amber-700 dark:text-neutral-400 dark:hover:text-amber-400"
+            >
+              Sign in
+            </Link>
+          )}
         </div>
 
         {/* No overflow on this list: it's a handful of fixed rows that never
