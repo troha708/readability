@@ -553,21 +553,25 @@ function ToggleRow({
         {label}
       </span>
       {/* An outlined track with a solid knob, rather than a bar that fills
-          with colour: the amber says "on" from the knob alone, so a column of
-          these reads as a list of settings instead of a row of lit switches.
-          No drop shadow — nothing else in this menu floats. */}
+          with colour: position and weight say "on", so a column of these reads
+          as a list of settings instead of a row of lit switches. No drop
+          shadow — nothing else in this menu floats.
+
+          The knob is the page's own text colour, which is the near-white the
+          dark theme reads in (neutral-300) and its ink counterpart in the
+          light one. Pure #fff would disappear against the light menu. */}
       <span
         className={`flex h-[18px] w-8 shrink-0 items-center rounded-full border p-[2px] transition-colors ${
           on
-            ? "border-amber-600/70 dark:border-amber-400/60"
-            : "border-neutral-400 dark:border-neutral-500"
+            ? "border-neutral-500 dark:border-neutral-400"
+            : "border-neutral-400 dark:border-neutral-600"
         }`}
       >
         <span
           className={`h-3 w-3 rounded-full transition-transform ${
             on
-              ? "translate-x-[14px] bg-amber-600 dark:bg-amber-400"
-              : "translate-x-0 bg-neutral-400 dark:bg-neutral-500"
+              ? "translate-x-[14px] bg-neutral-700 dark:bg-neutral-300"
+              : "translate-x-0 bg-neutral-400 dark:bg-neutral-600"
           }`}
         />
       </span>
@@ -649,25 +653,15 @@ function SettingsControls({
 }: SettingsControlsProps) {
   return (
     <>
-      {/* Reading mode */}
-      <div className="flex items-center justify-between px-2 py-1">
-        <span className="text-xs font-medium tracking-[0.25px] text-neutral-500 dark:text-neutral-400">Mode</span>
-        <div className="inline-flex rounded-md bg-neutral-100 p-0.5 dark:bg-neutral-700">
-          {(["read", "study"] as const).map((m) => (
-            <button
-              key={m}
-              onClick={() => onMode(m)}
-              className={`rounded px-2.5 py-1 text-xs font-medium tracking-[0.25px] capitalize leading-none transition-all ${
-                mode === m
-                  ? "bg-white text-amber-700 shadow-sm dark:bg-neutral-600 dark:text-amber-400"
-                  : "text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-300"
-              }`}
-            >
-              {m}
-            </button>
-          ))}
-        </div>
-      </div>
+      {/* The one behavioural setting in here: everything below changes how the
+          page looks, this changes what happens at the end of a chapter. Read is
+          the base and study adds the quiz to it, so it is a single switch
+          rather than two modes posing as equals. Off is the default. */}
+      <ToggleRow
+        label="Study mode"
+        on={mode === "study"}
+        onClick={() => onMode(mode === "study" ? "read" : "study")}
+      />
 
       <div className={MENU_RULE} />
 
