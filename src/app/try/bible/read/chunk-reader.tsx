@@ -525,6 +525,8 @@ function NotesDrawer({
 // controls in different furniture, so the bodies live here and each layout
 // supplies its own container.
 
+const FONT_SIZE_DEFAULT = 17;
+
 const MENU_HOVER = "hover:bg-neutral-100 dark:hover:bg-neutral-700";
 const MENU_RULE = "my-1 h-px bg-neutral-100 dark:bg-neutral-700";
 // Rows in the wide-screen rails sit on the page ground, not a raised menu, so
@@ -581,6 +583,7 @@ type SettingsControlsProps = {
   onToggleChapterNumbers: () => void;
   showHeadings: boolean;
   onToggleHeadings: () => void;
+  onRestoreDefaults: () => void;
   redLetter: boolean;
   onToggleRedLetter: () => void;
   nightLight: number;
@@ -621,6 +624,7 @@ function SettingsControls({
   onToggleChapterNumbers,
   showHeadings,
   onToggleHeadings,
+  onRestoreDefaults,
   nightLight,
   onNightLight,
   redLetter,
@@ -741,6 +745,16 @@ function SettingsControls({
       {/* Last, and deliberately: every other row here adjusts one detail of
           the page, while bionic reading re-sets every word on it. */}
       <ToggleRow label="Bionic reading" on={bionic} onClick={onToggleBionic} />
+
+      <div className={MENU_RULE} />
+      <button
+        onClick={onRestoreDefaults}
+        className={`flex w-full items-center rounded-md px-2 py-1 text-left ${MENU_HOVER}`}
+      >
+        <span className="text-xs font-medium tracking-[0.25px] text-neutral-500 dark:text-neutral-400">
+          Restore defaults
+        </span>
+      </button>
 
       {includeTranslation && (
         <>
@@ -1031,7 +1045,7 @@ export function ChunkReader({
   const [showHeadings, setShowHeadings] = useState(true);
   const [nightLight, setNightLight] = useState(0);
   const [mode, setMode] = useState<ReadingMode>("read");
-  const [fontSize, setFontSize] = useState(17);
+  const [fontSize, setFontSize] = useState(FONT_SIZE_DEFAULT);
   const FONT_SIZE_MIN = 14;
   const FONT_SIZE_MAX = 28;
   const FONT_SIZE_STEP = 1;
@@ -1868,6 +1882,52 @@ export function ChunkReader({
     const next = !showChapterNumbers;
     setShowChapterNumbers(next);
     localStorage.setItem("chapterNumbers", String(next));
+  }
+
+  /**
+   * Every preference this menu owns, back to what a first-time reader sees.
+   * The keys are REMOVED rather than written with their defaults: "absent
+   * means default" is what the readers above assume, and writing "true" for a
+   * default would freeze it if the default ever moved. Night light is the one
+   * exception — writing 0 is also what lifts the filter off the page, and a
+   * missing key reads back as 0 anyway.
+   *
+   * Appearance is the exception worth noting — with no `theme` key the
+   * bootstrap script in layout.tsx follows the system preference, so that is
+   * what restoring means here, not "light".
+   */
+  function restoreDefaults() {
+    for (const key of [
+      "bionic",
+      "verseNumbers",
+      "chapterNumbers",
+      "sectionHeadings",
+      "redLetter",
+      "bsbCrossRefs",
+      "readerAutoHideRails",
+      "bibleFontSize",
+      "theme",
+    ]) {
+      localStorage.removeItem(key);
+    }
+    setBionic(false);
+    setVerseNumbers(true);
+    setShowChapterNumbers(true);
+    setShowHeadings(true);
+    setRedLetter(false);
+    setShowCrossRefs(false);
+    setAutoHideRails(true);
+    setFontSize(FONT_SIZE_DEFAULT);
+    setNightLight(0);
+    writeNightLight(0);
+    setMode("read");
+    setReadingMode("read");
+
+    const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    setDark(systemDark);
+    document.documentElement.classList.toggle("dark", systemDark);
+
+    setSettingsOpen(false);
   }
 
   function toggleHeadings() {
@@ -2878,6 +2938,7 @@ export function ChunkReader({
                   onToggleChapterNumbers={toggleChapterNumbers}
                   showHeadings={showHeadings}
                   onToggleHeadings={toggleHeadings}
+                  onRestoreDefaults={restoreDefaults}
                   redLetter={redLetter}
                   onToggleRedLetter={toggleRedLetter}
                   nightLight={nightLight}
@@ -3284,6 +3345,7 @@ export function ChunkReader({
                   onToggleChapterNumbers={toggleChapterNumbers}
                   showHeadings={showHeadings}
                   onToggleHeadings={toggleHeadings}
+                  onRestoreDefaults={restoreDefaults}
                   redLetter={redLetter}
                   onToggleRedLetter={toggleRedLetter}
                   nightLight={nightLight}
