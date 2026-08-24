@@ -733,7 +733,7 @@ function SettingsControls({
       {/* Cross-references (BSB only) */}
       {versionAbbr === "BSB" && (
         <ToggleRow
-          label="Cross-references"
+          label="BSB cross references"
           on={showCrossRefs}
           onClick={onToggleCrossRefs}
         />
