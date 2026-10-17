@@ -352,7 +352,7 @@ function getParserOptions(
               // and heavier stems than Fraunces did, so the numeral gained
               // apparent size when the face changed even though the em value
               // did not.
-              className="float-left mr-2.5 mt-[0.08em] font-display text-[3.1em] font-bold leading-[0.78] text-neutral-800 dark:text-neutral-300"
+              className="float-left mr-2.5 mt-[0.08em] font-display text-[3.1em] font-bold leading-[0.78] text-amber-700 dark:text-amber-400"
             >
               {chapterNumber}
             </span>
